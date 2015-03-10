@@ -3,8 +3,11 @@ country_decisions = {
 	french_nation = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { exists = FRA }
 			NOT = { exists = RFR }
 			NOT = { tag = HLR }
@@ -12,7 +15,7 @@ country_decisions = {
 			NOT = { tag = SPA }		# Basque is a valid culture for both FRA and SPA
 			OR = {
 				culture_group = french
-				culture = basque
+				primary_culture = basque
 				primary_culture = breton
 			}
 			is_colonial_nation = no

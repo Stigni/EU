@@ -3,7 +3,7 @@
 ########################################
 
 namespace = flavor_fra
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # The Birth of a Permanent Taxation System
 country_event = {

@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_nov
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Civil War in Novgorod
 country_event = {

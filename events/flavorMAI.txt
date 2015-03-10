@@ -6,7 +6,7 @@
 
 
 namespace = flavor_mai
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Gutenberg and the Printing Press
 country_event = {

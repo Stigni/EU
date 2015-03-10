@@ -3,8 +3,11 @@ country_decisions = {
 	manchu_nation_1 = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { exists = MCH }
 			OR = { 
 				tag = MJZ
@@ -58,8 +61,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			tag = MCH
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { exists = QNG }
 			NOT = { has_country_flag = manchu_dynasty_formed }
 
@@ -121,8 +127,11 @@ country_decisions = {
 				tag = MCH
 				tag = QNG
 			}
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { has_country_flag = green_standard_army }
 		}
 		allow = {
@@ -163,8 +172,11 @@ country_decisions = {
 				tag = MCH
 				tag = QNG
 			}
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { has_country_flag = eight_banners }
 		}
 		allow = {

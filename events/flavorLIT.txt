@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_lit
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Wave of Protestantism
 country_event = {

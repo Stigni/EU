@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_mng
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # The Strategic Decision after Zheng Ho's Journey
 country_event = {

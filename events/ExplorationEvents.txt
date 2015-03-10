@@ -1,3 +1,4 @@
+
 ########################################
 # Events for Map the Coastline
 #
@@ -28,16 +29,16 @@ province_event = {
 	option = {
 		name = exploration_events.1.a
 		FROM = {
-			add_years_of_income = 0.2
+			add_years_of_income = 0.05
 		}
-		change_native_hostileness = -2
+		change_native_hostileness = -1
 	}
 	option = {
 		name = exploration_events.1.b
 		FROM = {
 			add_years_of_income = 0.1
 		}
-		change_native_hostileness = -1
+		change_native_hostileness = 1
 	}
 }
 
@@ -63,9 +64,9 @@ province_event = {
 	option = {
 		name = exploration_events.2.a
 		FROM = {
-			add_years_of_income = -0.1
+			add_years_of_income = -0.05
 		}
-		change_native_hostileness = -2
+		change_native_hostileness = -1
 	}
 	option = {
 		name = exploration_events.2.b # Avenge our men
@@ -88,12 +89,14 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = no
-		OR = {
-			technology_group = sub_saharan
-			technology_group = north_american
-			technology_group = mesoamerican
-			technology_group = south_american
-			technology_group = andean
+		owner = {
+			OR = {
+				technology_group = sub_saharan
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+			}
 		}
 	}
 	
@@ -161,6 +164,15 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_year = 1492
 		is_empty = no
+		owner = {
+			OR = {
+				technology_group = sub_saharan
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -202,6 +214,7 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
+		base_tax = 2
 	}
 	
 	mean_time_to_happen = {
@@ -225,6 +238,7 @@ province_event = {
 	
 	trigger = {
 		is_empty = yes
+		native_hostileness = 5
 	}
 	
 	mean_time_to_happen = {
@@ -249,12 +263,14 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = no
-		OR = {
-			technology_group = sub_saharan
-			technology_group = north_american
-			technology_group = mesoamerican
-			technology_group = south_american
-			technology_group = andean
+		owner = {
+			OR = {
+				technology_group = sub_saharan
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+			}
 		}
 	}
 	
@@ -394,6 +410,9 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
+		FROM = {
+			NOT = { religion_group = muslim }
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -423,6 +442,13 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
+		OR = {
+			region = the_andes
+			region = la_plata_region
+			region = south_africa
+			region = australian_coast
+			region = new_zealand_region
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -455,12 +481,14 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = no
-		OR = {
-			technology_group = sub_saharan
-			technology_group = north_american
-			technology_group = mesoamerican
-			technology_group = south_american
-			technology_group = andean
+		owner = {
+			OR = {
+				technology_group = sub_saharan
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+			}
 		}
 	}
 	
@@ -494,12 +522,14 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = no
-		OR = {
-			technology_group = sub_saharan
-			technology_group = north_american
-			technology_group = mesoamerican
-			technology_group = south_american
-			technology_group = andean
+		owner = {
+			OR = {
+				technology_group = sub_saharan
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+			}
 		}
 	}
 	

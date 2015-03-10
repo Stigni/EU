@@ -37,6 +37,7 @@ country_event = {
 	picture = MERCHANTS_TALKING_eventPicture
 	
 	trigger = {
+		technology_group = western
 		NOT = { 1020 = { has_discovered = ROOT } }
 		NOT = { has_country_flag = japan_discovered }
 		japanese_region = {

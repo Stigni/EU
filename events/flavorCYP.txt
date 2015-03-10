@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_cyp
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Recovery of Famagusta
 country_event = {

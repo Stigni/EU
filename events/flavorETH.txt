@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_eth
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 	
 # Pero da Covilha
@@ -791,7 +791,8 @@ country_event = {
 	
 	option = {
 		name = flavor_eth.21.a #Ok.
-		oromo_spawn_region = {
+		every_province = {
+			limit = { region = oromo_spawn_region }
 			add_province_modifier = {
 				name = "eth_oromo_migration"
 				duration = 3650
@@ -863,6 +864,7 @@ province_event = {
 			region = maakhir_region
 			region = banaadir_region
 		}
+		NOT = { has_building = fort2 }
 		any_neighbor_province = {
 			has_province_modifier = eth_oromo_migration
 		}

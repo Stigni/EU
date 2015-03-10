@@ -3,7 +3,7 @@
 ########################################
 
 namespace = flavor_hab
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # The Imperial Parliament at Augsburg
 country_event = {
@@ -1465,10 +1465,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = HAB
 		owns = 73
 		is_year = 1460
 		NOT = { is_year = 1480 }
+		73 = {
+			NOT = { has_province_modifier = hab_schwaz_mine }
+		}
 	}
 
 	mean_time_to_happen = {

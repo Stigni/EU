@@ -3,8 +3,11 @@ country_decisions = {
 	pol_commonwealth = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { exists = PLC }
 			NOT = { tag = HLR }
 			tag = POL
@@ -86,8 +89,11 @@ country_decisions = {
 	lit_commonwealth = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { exists = PLC }
 			NOT = { tag = HLR }
 			tag = LIT

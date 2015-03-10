@@ -393,7 +393,6 @@ province_event = {
 	mean_time_to_happen = {
 		days = 1
 		
-		
 		modifier = {
 			factor = 2.0
 			is_empty = no
@@ -2869,6 +2868,11 @@ province_event = {
 				capital_scope = { continent = europe }
 			}
 		}
+		NOT = {
+			FROM = {
+				has_country_modifier = sce_lost_woods_timer
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -2880,6 +2884,13 @@ province_event = {
 			add_province_modifier = {
 				name = sce_lost_woods
 				duration = 365
+			}
+			FROM = {
+				add_country_modifier = {
+					name = sce_lost_woods_timer
+					duration = 1825
+					hidden = yes
+				}
 			}
 		}
 	}
@@ -3042,8 +3053,13 @@ province_event = {
 			}
 			has_opinion = { who = FROM value = -50 }
 		}
+		NOT = {
+			FROM = {
+				has_country_modifier = sce_shortcut_timer
+			}
+		}
 	}
-	 
+	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -3053,6 +3069,13 @@ province_event = {
 			add_province_modifier = {
 				name = sce_shortcut
 				duration = 365
+			}
+			FROM = {
+				add_country_modifier = {
+					name = sce_shortcut_timer
+					duration = 1825
+					hidden = yes
+				}
 			}
 		}
 	}
@@ -3369,6 +3392,7 @@ province_event = {
 				add_country_modifier = {
 					name = sce_mutiny_timer
 					duration = 365
+					hidden = yes
 				}
 			}
 		}
@@ -3481,6 +3505,7 @@ province_event = {
 			add_country_modifier = {
 				name = sce_estevanico_timer
 				duration = 7300
+				hidden = yes
 			}
 		}
 	}
@@ -3489,7 +3514,7 @@ province_event = {
 		name = seven_cities_events.400.a
 		FROM = {
 			define_conquistador = {
-			name = "Estevanico"
+				name = "Estevanico"
 				fire = 1
 				shock = 2
 				manuever = 3
@@ -3560,6 +3585,8 @@ province_event = {
 
 	is_triggered_only = yes
 	
+	fire_only_once = yes
+	
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
@@ -3580,7 +3607,6 @@ province_event = {
 				FROM = {
 					country_event = {
 						id = seven_cities_events.403
-						days = 5
 						tooltip = seven_cities_events.403.t
 					}
 				}
@@ -3589,7 +3615,6 @@ province_event = {
 				FROM = {
 					country_event = {
 						id = seven_cities_events.404
-						days = 5
 						tooltip = seven_cities_events.404.t					
 					}
 				}			
@@ -3715,6 +3740,11 @@ province_event = {
 			continent = asia
 			continent = oceania
 		}
+		NOT = {
+			FROM = {
+				has_country_modifier = sce_poison_rock_timer
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -3731,6 +3761,13 @@ province_event = {
 			add_province_modifier = {
 				name = sce_poison_rock
 				duration = 365
+			}
+			FROM = {
+				add_country_modifier = {
+					name = sce_poison_rock_timer
+					duration = 1825
+					hidden = yes
+				}
 			}
 		}
 	}
@@ -3797,6 +3834,14 @@ province_event = {
 			continent = asia
 			continent = oceania
 		}
+		FROM = {
+			NOT = {
+				OR = {
+					has_country_modifier = sce_cart_peddler_stopped
+					has_country_modifier = sce_cart_peddler_killed
+				}
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -3842,6 +3887,11 @@ province_event = {
 			continent = asia
 			continent = oceania
 		}
+		FROM = {
+			NOT = {
+				has_country_modifier = sce_new_domains
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -3872,17 +3922,31 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		continent = south_america
+		NOT = {
+			FROM = {
+				has_country_modifier = sce_mounds_timer
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		name = seven_cities_events.410.a
 		add_province_modifier = {
 			name = sce_mounds
 			duration = 365
+		}
+		hidden_effect = {
+			FROM = {
+				add_country_modifier = {
+					name = sce_mounds_timer
+					duration = 1825
+					hidden = yes
+				}
+			}
 		}
 		random_list = {
 			50 = {
@@ -4005,6 +4069,11 @@ province_event = {
 			continent = asia
 			continent = oceania
 		}
+		NOT = {
+			FROM = {
+				has_country_modifier = sce_monster_lake_timer
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -4016,6 +4085,15 @@ province_event = {
 		add_province_modifier = {
 			name = sce_monster_lake
 			duration = 365
+		}
+		hidden_effect = {
+			FROM = {
+				add_province_modifier = {
+					name = sce_monster_lake_timer
+					duration = 365
+					hidden = yes
+				}
+			}
 		}
 	}
 	option = {

@@ -3,8 +3,11 @@ country_decisions = {
 	make_st_petersburg_capital = {
 		potential = {
 			tag = RUS
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			owns = 33
 			NOT = { capital = 33 }
 			NOT = { has_country_flag = relocated_capital_st_petersburg }
@@ -39,8 +42,11 @@ country_decisions = {
 	establish_russian_patriarchate = {
 		potential = {
 			tag = RUS
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { has_country_modifier = russian_patriarchate }
 			religion = orthodox
 		}

@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_hun
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Diet of 1445
 country_event = {

@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_gen
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Cyprus takes Famagusta
 country_event = {

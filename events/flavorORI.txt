@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_ori
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 
 # The Gajapatis and the Cult of Jagganath
@@ -474,14 +474,13 @@ country_event = {
 		months = 195
 	}
 	
-	
 	option = { 
 		name = flavor_ori.11.a	#Ok.
 		add_prestige = 15
 		add_adm_power = 25
 		define_advisor = {
 			type = theologian
-			name = "Achytananda Das"
+			name = "Achyutananda Das"
 			skill = 3
 		}
 	}

@@ -3,8 +3,11 @@ country_decisions = {
 	moroccan_nation = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
 			NOT = { tag = TLC }
@@ -68,8 +71,11 @@ country_decisions = {
 	algiers_nation = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
 			NOT = { tag = TLC }
@@ -139,8 +145,11 @@ country_decisions = {
 	tunisian_nation = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
 			NOT = { tag = TLC }
@@ -210,8 +219,11 @@ country_decisions = {
 	tripoli_nation = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
 			NOT = { tag = TLC }

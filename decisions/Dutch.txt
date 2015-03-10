@@ -3,8 +3,11 @@ country_decisions = {
 	found_voc = {
 		potential = {
 			tag = NED
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { has_country_modifier = dutch_india_trade_co }
 			NOT = { has_country_flag = trade_company }
 			eastasian_trade_ports = {

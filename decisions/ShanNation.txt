@@ -4,8 +4,11 @@ country_decisions = {
 	shan_nation = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { exists = SST }
 			primary_culture = shan
 			is_colonial_nation = no

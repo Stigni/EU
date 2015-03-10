@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_vij
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Mysore Revolts
 country_event = {

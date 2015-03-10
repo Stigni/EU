@@ -3,8 +3,11 @@ country_decisions = {
 	hindustan_nation_dravidian = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = dravidian
@@ -65,8 +68,11 @@ country_decisions = {
 	hindustan_nation_western_aryan = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = western_aryan
@@ -133,8 +139,11 @@ country_decisions = {
 	hindustan_nation_hindusthani = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = hindusthani
@@ -195,8 +204,11 @@ country_decisions = {
 	hindustan_nation_eastern_aryan = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = eastern_aryan

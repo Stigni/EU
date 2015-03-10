@@ -5,8 +5,11 @@ country_decisions = {
 	triumph_greece = {
 		potential = {
 			tag = BYZ
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			has_dlc = "Purple Phoenix"
 			NOT = { has_country_flag = triumph_greece }
 			greece_region = { owned_by = BYZ }
@@ -28,8 +31,11 @@ country_decisions = {
 	triumph_balkans = {
 		potential = {
 			tag = BYZ
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			has_dlc = "Purple Phoenix"
 			NOT = { has_country_flag = triumph_balkans }
 			OR = {
@@ -63,8 +69,11 @@ country_decisions = {
 	triumph_asia = {
 		potential = {
 			tag = BYZ
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			has_dlc = "Purple Phoenix"
 			NOT = { has_country_flag = triumph_asia }
 			asia_minor = { owned_by = BYZ }
@@ -86,8 +95,11 @@ country_decisions = {
 	triumph_anatolia = {
 		potential = {
 			tag = BYZ
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			has_dlc = "Purple Phoenix"
 			NOT = { has_country_flag = triumph_anatolia }
 			anatolia = { owned_by = BYZ }
@@ -109,8 +121,11 @@ country_decisions = {
 	triumph_italy = {
 		potential = {
 			tag = BYZ
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			has_dlc = "Purple Phoenix"
 			NOT = { has_country_flag = triumph_italy }
 			italian_region = { owned_by = BYZ }

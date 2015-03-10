@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_tupi
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 	
 #Banderiante Raiders (Start of the Tamoyo Confederation)
@@ -124,6 +124,10 @@ country_event = {
 		name = flavor_tupi.2.b #We will fend for ourselves.
 		ai_chance = { factor = 5 }
 		add_stability = 1
+		random_known_country = {
+			limit = { has_country_flag = tamoyo_confederation_leader }
+			country_event = { id = flavor_tupi.4 }
+		}
 	}
 }
 

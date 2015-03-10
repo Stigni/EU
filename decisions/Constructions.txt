@@ -15,7 +15,7 @@ country_decisions = {
 			add_country_modifier = {
 				name = "improved_fort_defense"
 				duration = 3650
-		 	}
+			}
 		}
 		ai_will_do = {
 			factor = 0

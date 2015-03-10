@@ -826,7 +826,10 @@ religion_decisions = {
 			religion = sikhism
 		}
 		allow = {
-			advisor = inquisitor
+			OR = {
+				advisor = theologian
+				advisor = inquisitor
+			}
 		}
 		effect = {	
 			add_country_modifier = {

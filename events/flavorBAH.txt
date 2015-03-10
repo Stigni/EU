@@ -5,7 +5,7 @@
 ###########################################
 
 namespace = flavor_bah
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 #Bidar, a true capital for the Bahmanis
 country_event = {

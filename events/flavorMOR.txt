@@ -5,7 +5,7 @@
 ###########################################
 
 namespace = flavor_mor
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 #Crisis of the Maghreb
 country_event = {

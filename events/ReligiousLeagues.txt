@@ -57,16 +57,18 @@ country_event = {
 	immediate = {
 		set_country_flag = hre_religion_changed
 		hidden_effect = {
-			set_hre_religion = protestant
 			set_hre_heretic_religion = catholic
+			set_hre_religion = protestant
+			set_hre_religion_locked = yes			
 		}
 	}
 
 	option = {
 		name = "religious_leagues.2.a"
 		tooltip = { 
-			set_hre_religion = protestant
-			set_hre_heretic_religion = catholic		
+			set_hre_heretic_religion = catholic
+			set_hre_religion = protestant	
+			set_hre_religion_locked = yes			
 		}
 	}
 }
@@ -93,16 +95,18 @@ country_event = {
 	immediate = {
 		set_country_flag = hre_religion_changed
 		hidden_effect = {
-			set_hre_religion = catholic
 			set_hre_heretic_religion = protestant
+			set_hre_religion = catholic
+			set_hre_religion_locked = yes			
 		}
 	}
 
 	option = {
 		name = "religious_leagues.3.a"
 		tooltip = { 
-			set_hre_religion = catholic
 			set_hre_heretic_religion = protestant	
+			set_hre_religion = catholic
+			set_hre_religion_locked = yes
 		}
 	}
 }

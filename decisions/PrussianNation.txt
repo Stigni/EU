@@ -3,8 +3,11 @@ country_decisions = {
 	form_kingdom_of_prussia = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			tag = BRA
 			NOT = { exists = PRU }
 			OR = {
@@ -76,8 +79,11 @@ country_decisions = {
 	prussian_nation = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			tag = TEU
 			NOT = { exists = PRU }
 			OR = {
@@ -133,8 +139,11 @@ country_decisions = {
 	prussian_nation_general = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			OR = {
 				ai = no
 				is_religion_enabled = protestant

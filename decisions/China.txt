@@ -7,8 +7,11 @@ country_decisions = {
 				tag = QNG
 				tag = MNG
 			}
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			owns = 693
 			owns = 695
 			owns = 696
@@ -56,8 +59,11 @@ country_decisions = {
 				tag = MCH
 				tag = MNG
 			}
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			OR = {
 				capital = 1816
 				capital = 1821

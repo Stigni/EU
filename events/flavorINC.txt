@@ -5,7 +5,7 @@
 #######################################################
 
 namespace = flavor_inc
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # The Incan Civil War
 # Replaced by the Death of Huayna Capac
@@ -540,6 +540,7 @@ country_event = {
 		any_owned_province = {
 			has_province_modifier = inc_smallpox_outbreak
 		}
+		has_regency = no
 	}
 	
 	mean_time_to_happen = {
@@ -1071,11 +1072,11 @@ country_event = {
 		ai_chance = { factor = 1 }
 		name = flavor_inc.21.b
 		trigger = {
-			owner = { religion_group = pagan }
-			NOT = { owner = { religion = nahuatl } }
-			NOT = { owner = { religion = mesoamerican_religion } }
+			religion_group = pagan
+			NOT = { religion = nahuatl }
+			NOT = { religion = mesoamerican_religion }
 		}
-		owner = { change_religion = inti }
+		change_religion = inti
 	}
 	option = { #Let them worship the idol.
 		name = flavor_inc.21.c

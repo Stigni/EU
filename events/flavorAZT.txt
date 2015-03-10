@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_azt
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # The Great Pyramid of Tenochtitlan
 country_event = {
@@ -29,6 +29,7 @@ country_event = {
 	
 	option = {
 		name = flavor_azt.1.a #All our subjects must contribute to the Pyramid!
+		set_ruler_flag = temple_expansion
 		every_owned_province = {
 			limit = { not = { is_capital = yes } }
 			custom_tooltip = flavor_azt.1.a.tt #Our provinces will pay for part of the cost of the Pyramid.
@@ -54,6 +55,7 @@ country_event = {
 		name = flavor_azt.1.b #Let us use our own resources for this project.
 		add_adm_power = -75
 		add_dip_power = -75
+		set_ruler_flag = temple_expansion
 		852 = {
 			add_province_modifier = {
 				name = azt_templo_mayor
@@ -478,6 +480,12 @@ country_event = {
 		NOT = { TOT = { is_subject_of = AZT } }
 		is_year = 1450
 		NOT = { is_year = 1470 }
+		NOT = {
+			has_casus_belli = {
+				type = cb_trade_war_triggered
+				target = TOT
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -841,11 +849,11 @@ country_event = {
 		ai_chance = { factor = 1 }
 		name = flavor_azt.18.b
 		trigger = {
-			owner = { religion_group = pagan }
-			NOT = { owner = { religion = inti } }
-			NOT = { owner = { religion = mesoamerican_religion } }
+			religion_group = pagan
+			NOT = { religion = inti }
+			NOT = { religion = mesoamerican_religion }
 		}
-		owner = { change_religion = nahuatl }
+		change_religion = nahuatl
 	}
 	option = { #Let them continue worship there.
 		name = flavor_azt.18.c
