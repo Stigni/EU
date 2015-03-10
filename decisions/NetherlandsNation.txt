@@ -1,0 +1,107 @@
+country_decisions = {
+
+	netherlands_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { exists = NED }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			OR = {
+				primary_culture = dutch
+				primary_culture = flemish
+				tag = BUR
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 95 # Breda
+			owns_core_province = 96 # Zeeland
+			owns_core_province = 97 # Holland
+			owns_core_province = 98 # Utrecht
+			owns_core_province = 99 # Gelre
+			owns_core_province = 100 # Friesland
+		}
+	 	effect = {
+			
+	  		if = {
+	  			limit = {
+	  				tag = BUR
+	  			}
+	  			change_primary_culture = dutch
+	  			set_capital = 97
+			}
+			if = {
+				limit = {
+					tag = BUR
+					exists = FRA
+				}
+	  			french_region = {
+					limit = {
+						owned_by = BUR
+					}
+	  				remove_core = BUR
+	  				add_core = FRA
+	  				cede_province = FRA
+	  			}
+	  		}
+			if = {
+				limit = {
+					tag = BUR
+					exists = FRA
+					BUR = {
+						any_subject_country = {
+							french_region = {
+								owned_by = PREV
+							}
+						}
+					}
+				}
+				every_subject_country = {
+					limit = {
+						french_region = {
+							owned_by = PREV
+						}
+					}
+					french_region = {
+						limit = {
+							owned_by = PREV
+						}
+						remove_core = BUR
+						remove_core = PREV
+						add_core = FRA
+						cede_province = FRA
+					}
+				}
+	  		}
+			change_tag = NED
+			the_low_countries = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = NED
+			}
+			add_prestige = 25
+			swap_free_idea_group = yes		#keep progress
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				tag = BUR
+			}
+		}
+		ai_importance = 400
+	}
+	
+}

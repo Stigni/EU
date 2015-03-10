@@ -1,0 +1,207 @@
+country_decisions = {
+
+	hannoverian_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			NOT = { tag = GER }
+			NOT = { tag = PRU }
+			NOT = { tag = HSA }
+			NOT = { exists = HAN }
+			primary_culture = hannoverian
+			is_colonial_nation = no
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 5
+				}
+			}			
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			adm_tech = 10
+			government = monarchy
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 54	# Stade
+			owns_core_province = 57	# Brunswick
+			owns_core_province = 1758	# Hannover
+			owns_core_province = 1874	# Bremen
+		}
+		effect = {
+			change_tag = HAN
+			random_owned_province = {
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					culture = hannoverian
+				}
+				add_claim = HAN
+			}
+			add_prestige = 25
+			HAN = {
+				set_capital = 1758 # Hannover
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	westfalian_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { tag = HLR }
+			NOT = { tag = HAN }
+			NOT = { tag = PAP }
+			NOT = { tag = GER }
+			NOT = { tag = PRU }
+			NOT = { tag = SWI }
+			NOT = { exists = WES }
+			OR = {
+				primary_culture = rheinlaender
+				primary_culture = hessian
+			}
+			is_colonial_nation = no
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 5
+				}
+			}			
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			adm_tech = 22 # Constitution, 1687
+			is_subject = no
+			is_at_war = no
+			capital_scope = {
+				region = westphalian_region
+			}
+			owns_core_province = 52	# Altmark
+			owns_core_province = 81	# Hessen
+			owns_core_province = 82	# Westfalen
+			owns_core_province = 86	# Munster
+			owns_core_province = 1758	# Hannover
+			owns_core_province = 1762	# Kassel
+		}
+		effect = {
+			change_tag = WES
+			random_owned_province = {
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "decentralization_modifier"
+				duration = 7300
+			}
+			westphalian_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = WES
+			}
+			add_prestige = 25
+			change_government = constitutional_monarchy
+			WES = {
+				set_capital = 1762 # Kassel
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	greek_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			NOT = { tag = TUR }
+			NOT = { tag = BYZ }
+			NOT = { exists = BYZ }
+			NOT = { exists = GRE }
+			primary_culture = greek
+			is_colonial_nation = no
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}			
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 144
+			owns_core_province = 145
+			owns_core_province = 146
+			owns_core_province = 164
+			owns_core_province = 1773
+		}
+		effect = {
+			change_tag = GRE
+			random_owned_province = {
+				limit = { culture = greek }
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			greece_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { province_id = 143 }
+				}
+				add_claim = GRE
+			}
+			add_prestige = 10
+			if = {
+				limit = {
+					NOT = { capital_scope = { region = greece_region } }
+				}
+				set_capital = 146
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

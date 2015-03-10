@@ -1,0 +1,52 @@
+country_decisions = {
+
+	tibetan_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { exists = TIB }
+			primary_culture = tibetan
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 5
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			owns_core_province = 677
+			owns_core_province = 2135
+			owns_core_province = 678
+		}
+		effect = {
+			change_tag = TIB
+			tibet = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = TIB
+			}
+			add_prestige = 25
+			set_capital = 677
+			677 = { add_base_tax = 1 }
+			swap_free_idea_group = yes		#keep progress
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+}

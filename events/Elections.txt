@@ -1,0 +1,845 @@
+namespace = elections
+
+# Election!
+country_event = {
+	id = 700
+	title = "EVTNAME700"
+	desc = "EVTDESC700"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		#is_colonial_nation = no
+		NOT = { government = dutch_republic }
+	}
+
+	option = {
+		name = "EVTOPTA700"	# Current ruler stays
+		trigger = {
+			has_regency = no
+		}
+		ai_chance = { 
+			factor = 60
+			modifier = {
+				factor = 0
+				NOT = { republican_tradition = 0.25 }
+			}	
+			modifier = {
+				factor = 0.5
+				NOT = { republican_tradition = 0.5 }
+			}				
+			modifier = {
+				factor = 0.5
+				NOT = { republican_tradition = 0.75 }
+			}	
+			modifier = {
+				factor = 2.0
+				republican_tradition = 0.9
+			}		
+		}
+		custom_tooltip = remains_ruler
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+		if = {
+			limit = { 
+				is_tribal = yes
+				government = republic
+				NOT = { republican_tradition = 0.20 }	
+			}	
+			change_government = tribal_despotism
+		}
+		if = {
+			limit = {
+				is_tribal = no 
+				government = republic
+				NOT = { republican_tradition = 0.20 }				
+				has_dlc = "Res Publica"
+			}
+			change_government = republican_dictatorship	
+		}
+		if = {
+			limit = {
+				is_tribal = no  
+				government = republic
+				NOT = { republican_tradition = 0.20 }
+				NOT = { has_dlc = "Res Publica" }
+			}
+			change_government = despotic_monarchy
+		}	
+		add_scaled_republican_tradition = -0.10
+		random_list = {
+			10 = {
+				add_adm_power = 50
+			}
+			10 = {
+				add_dip_power = 50
+			}
+			10 = {
+				add_mil_power = 50
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTB700"	# An administrator type
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			mil = 1
+			adm = 4
+			dip = 1					
+			fixed = yes
+		}
+		if = {
+			limit = { 
+				has_faction = mr_guilds 
+			}
+			add_faction_influence = {
+				faction = mr_guilds
+				influence = 20
+			}				
+		}
+	}
+	option = {
+		name = "EVTOPTC700"	# A diplomat
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			dip = 4
+			adm = 1
+			mil = 1					
+			fixed = yes
+		}
+		if = {
+			limit = { 
+				has_faction = mr_traders 
+			}
+			add_faction_influence = {
+				faction = mr_traders
+				influence = 20
+			}				
+		}		
+	}
+	option = {
+		name = "EVTOPTD700"	# A military man
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			mil = 4
+			adm = 1
+			dip = 1					
+			fixed = yes
+		}
+		if = {
+			limit = { 
+				has_faction = mr_aristocrats 
+			}
+			add_faction_influence = {
+				faction = mr_aristocrats
+				influence = 20
+			}				
+		}		
+	}
+}
+
+# Election!
+country_event = {
+	id = 701
+	title = "EVTNAME700"
+	desc = "EVTDESC701"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		#is_colonial_nation = no
+		NOT = { government = dutch_republic }
+	}
+	
+	option = {
+		name = "EVTOPTB700"	# An administrator type
+		ai_chance = { factor = 40 }
+		define_ruler = {
+			mil = 1
+			adm = 4
+			dip = 1					
+			fixed = yes
+		}
+		if = {
+			limit = { 
+				has_faction = mr_guilds 
+			}
+			add_faction_influence = {
+				faction = mr_guilds
+				influence = 20
+			}				
+		}
+	}
+	option = {
+		name = "EVTOPTC700"	# A diplomat
+		ai_chance = { factor = 30 }
+		define_ruler = {
+			dip = 4
+			adm = 1
+			mil = 1					
+			fixed = yes
+		}
+		if = {
+			limit = { 
+				has_faction = mr_traders 
+			}
+			add_faction_influence = {
+				faction = mr_traders
+				influence = 20
+			}				
+		}			
+	}
+	option = {
+		name = "EVTOPTD700"	# A military man
+		ai_chance = { factor = 30 }
+		define_ruler = {
+			mil = 4
+			adm = 1
+			dip = 1					
+			fixed = yes
+		}
+		if = {
+			limit = { 
+				has_faction = mr_aristocrats 
+			}
+			add_faction_influence = {
+				faction = mr_aristocrats
+				influence = 20
+			}				
+		}		
+	}
+}
+
+########################################
+# Colonial Nations                     #
+########################################
+
+# Colonial Parent decides
+
+# Governor term ends
+country_event = {
+	id = elections.702
+	title = "elections.EVTNAME702"
+	desc = "elections.EVTDESC702"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		government = colonial_government
+		NOT = { has_country_flag = colonial_election }
+	}
+	
+	option = {
+		name = "elections.EVTOPTA702"	# Ask to keep GOVERNOR
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { republican_tradition = 0.25 }
+			}	
+			modifier = {
+				factor = 0.5
+				NOT = { republican_tradition = 0.5 }
+			}				
+			modifier = {
+				factor = 0.5
+				NOT = { republican_tradition = 0.75 }
+			}	
+			modifier = {
+				factor = 2.0
+				republican_tradition = 0.9
+			}				
+		}
+		set_country_flag = asked_to_keep_governor
+		hidden_effect = {
+			colonial_parent = {
+				country_event = { id = elections.703 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = "elections.EVTOPTB702"	# Ask them to send a new GOVERNOR
+		ai_chance = { factor = 50 }
+		set_country_flag = asked_to_replace_governor
+		hidden_effect = {
+			colonial_parent = {
+				country_event = { id = elections.704 days = 1 }
+			}
+		}
+	}
+}
+
+# GOVERNOR Dies!
+country_event = {
+	id = elections.709
+	title = "elections.EVTNAME709"
+	desc = "elections.EVTDESC709"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		government = colonial_government
+		NOT = { has_country_flag = colonial_election }
+	}
+
+	option = {
+		name = "elections.EVTOPTB709"	# Let us pray
+		hidden_effect = {
+			colonial_parent = {
+				country_event = { id = elections.710 days = 1 }
+			}
+		}
+	}
+}
+
+# GOVERNOR Dies!
+country_event = {
+	id = elections.710
+	title = "elections.EVTNAME710"
+	desc = "elections.EVTDESC710"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "elections.EVTOPTB703"	# Send a Bureaucrat Candidate
+		ai_chance = { factor = 40 }
+		FROM = {
+			define_ruler = {
+				adm = 4
+				dip = 1
+				mil = 1
+				fixed = yes
+			}
+		}
+	}
+	option = {
+		name = "elections.EVTOPTC703"	# Send a Diplomatic Candidate
+		ai_chance = { factor = 30 }
+		FROM = {
+			define_ruler = {
+				adm = 1
+				mil = 1
+				dip = 4
+				fixed = yes
+			}
+		}
+	}
+	option = {
+		name = "elections.EVTOPTD703"	# Send a Military Candidate
+		ai_chance = { factor = 30 }
+		FROM = {
+			define_ruler = {
+				adm = 1
+				dip = 1
+				mil = 4
+				fixed = yes
+			}
+		}
+	}
+}
+
+# Asked to keep governor
+country_event = {
+	id = elections.703
+	title = "elections.EVTNAME703"
+	desc = "elections.EVTDESC703"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "elections.EVTOPTA703"	# Keep GOVERNOR
+		ai_chance = { 
+			factor = 70	
+		}
+		add_prestige = -5
+		tooltip = {
+			FROM = {
+				custom_tooltip = "remains_governor_from"
+				change_adm = 1
+				change_dip = 1
+				change_mil = 1
+				add_scaled_republican_tradition = -0.1
+				add_liberty_desire = -1
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = elections.705 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = "elections.EVTOPTB703"	# Send a Bureaucrat Candidate
+		ai_chance = { factor = 10 }
+		tooltip = {
+			FROM = {
+				add_liberty_desire = 1
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = new_governor_bureaucrat
+				country_event = { id = elections.706 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = "elections.EVTOPTC703"	# Send a Diplomatic Candidate
+		ai_chance = { factor = 10 }
+		tooltip = {
+			FROM = {
+				add_liberty_desire = 1
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = new_governor_diplomatic
+				country_event = { id = elections.706 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = "elections.EVTOPTD703"	# Send a Military Candidate
+		ai_chance = { factor = 10 }
+		tooltip = {
+			FROM = {
+				add_liberty_desire = 1
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = new_governor_military
+				country_event = { id = elections.706 days = 1 }
+			}
+		}
+	}
+}
+
+# Asked to replace governor
+country_event = {
+	id = elections.704
+	title = "elections.EVTNAME704"
+	desc = "elections.EVTDESC704"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "elections.EVTOPTA704"	# Keep GOVERNOR
+		ai_chance = { 
+			factor = 30		
+		}
+		tooltip = {
+			FROM = {
+				custom_tooltip = "remains_governor_from"
+				change_adm = 1
+				change_dip = 1
+				change_mil = 1
+				add_scaled_republican_tradition = -0.1
+				add_liberty_desire = 1
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = elections.705 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = "elections.EVTOPTB704"	# Send a Bureaucrat Candidate
+		ai_chance = { factor = 30 }
+		add_prestige = -5
+		tooltip = {
+			FROM = {
+				add_liberty_desire = -1
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = new_governor_bureaucrat
+				country_event = { id = elections.706 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = "elections.EVTOPTC704"	# Send a Diplomatic Candidate
+		ai_chance = { factor = 20 }
+		add_prestige = -5
+		tooltip = {
+			FROM = {
+				add_liberty_desire = -1
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = new_governor_diplomatic
+				country_event = { id = elections.706 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = "elections.EVTOPTD704"	# Send a Military Candidate
+		ai_chance = { factor = 20 }
+		add_prestige = -5
+		tooltip = {
+			FROM = {
+				add_liberty_desire = -1
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = new_governor_military
+				country_event = { id = elections.706 days = 1 }
+			}
+		}
+	}
+}
+
+ # Governor stays
+country_event = {
+	id = elections.705
+	title = "elections.EVTNAME705"
+	desc = "elections.EVTDESC705"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "elections.EVTOPTA705"	# Excellent!
+		trigger = {
+			has_country_flag = asked_to_keep_governor
+		}
+		custom_tooltip = "remains_governor"
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+		add_scaled_republican_tradition = -0.1
+		add_liberty_desire = -1
+		clr_country_flag = asked_to_keep_governor
+	}
+	option = {
+		name = "elections.EVTOPTB705"	# Damn them!
+		trigger = {
+			has_country_flag = asked_to_replace_governor
+		}
+		custom_tooltip = "remains_governor"
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+		add_scaled_republican_tradition = -0.1
+		add_liberty_desire = 1
+		clr_country_flag = asked_to_replace_governor
+	}
+}
+
+# Governor replaced
+country_event = {
+	id = elections.706
+	title = "elections.EVTNAME706"
+	desc = "elections.EVTDESC706"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "elections.EVTOPTA706"	# Excellent!
+		trigger = {
+			has_country_flag = asked_to_replace_governor
+			has_country_flag = new_governor_bureaucrat
+		}
+		define_ruler = {
+			adm = 4
+			dip = 1
+			mil = 1
+			fixed = yes
+		}
+		add_liberty_desire = -1
+		clr_country_flag = asked_to_replace_governor
+		clr_country_flag = new_governor_bureaucrat
+	}
+	option = {
+		name = "elections.EVTOPTA706"	# Excellent!
+		trigger = {
+			has_country_flag = asked_to_replace_governor
+			has_country_flag = new_governor_diplomatic
+		}
+		define_ruler = {
+			adm = 1
+			dip = 4
+			mil = 1
+			fixed = yes
+		}
+		add_liberty_desire = -1
+		clr_country_flag = asked_to_replace_governor
+		clr_country_flag = new_governor_diplomatic
+	}
+	option = {
+		name = "elections.EVTOPTA706"	# Excellent!
+		trigger = {
+			has_country_flag = asked_to_replace_governor
+			has_country_flag = new_governor_military
+		}
+		define_ruler = {
+			adm = 1
+			dip = 1
+			mil = 4
+			fixed = yes
+		}
+		add_liberty_desire = -1
+		clr_country_flag = asked_to_replace_governor
+		clr_country_flag = new_governor_military
+	}
+	option = {
+		name = "elections.EVTOPTB706"	# Damn them!
+		trigger = {
+			has_country_flag = asked_to_keep_governor
+			has_country_flag = new_governor_bureaucrat
+		}
+		define_ruler = {
+			adm = 4
+			dip = 1
+			mil = 1
+			fixed = yes
+		}
+		add_liberty_desire = 1
+		clr_country_flag = asked_to_keep_governor
+		clr_country_flag = new_governor_bureaucrat
+	}
+	option = {
+		name = "elections.EVTOPTB706"	# Damn them!
+		trigger = {
+			has_country_flag = asked_to_keep_governor
+			has_country_flag = new_governor_diplomatic
+		}
+		define_ruler = {
+			adm = 1
+			dip = 4
+			mil = 1
+			fixed = yes
+		}
+		add_liberty_desire = 1
+		clr_country_flag = asked_to_keep_governor
+		clr_country_flag = new_governor_diplomatic
+	}
+	option = {
+		name = "elections.EVTOPTB706"	# Damn them!
+		trigger = {
+			has_country_flag = asked_to_keep_governor
+			has_country_flag = new_governor_military
+		}
+		define_ruler = {
+			adm = 1
+			dip = 1
+			mil = 4
+			fixed = yes
+		}
+		add_liberty_desire = 1
+		clr_country_flag = asked_to_keep_governor
+		clr_country_flag = new_governor_military
+	}
+}
+
+# Colonial Nation decides
+
+# Election!
+country_event = {
+	id = elections.707
+	title = "elections.EVTNAME707"
+	desc = "elections.EVTDESC707"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		government = colonial_government
+		has_country_flag = colonial_election
+	}
+	
+	option = {
+		name = "elections.EVTOPTA707"	# Keep GOVERNOR
+		ai_chance = { factor = 40 }
+		custom_tooltip = "remains_governor"
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+		add_scaled_republican_tradition = -0.1
+	}
+	option = {
+		name = "elections.EVTOPTB707"	# Bureaucrat Candidate
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			adm = 4
+			mil = 1
+			dip = 1
+			fixed = yes
+		}
+	}
+	option = {
+		name = "elections.EVTOPTC707"	# Diplomat Candidate
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			adm = 1
+			dip = 4
+			mil = 1
+			fixed = yes
+		}
+	}
+	option = {
+		name = "elections.EVTOPTD707"	# Military Candidate
+		ai_chance = { factor = 20 }
+		define_ruler = {
+			adm = 1
+			dip = 1
+			mil = 4
+			fixed = yes
+		}
+	}
+}
+
+# GOVERNOR Dies!
+country_event = {
+	id = elections.708
+	title = "elections.EVTNAME708"
+	desc = "elections.EVTDESC708"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		government = colonial_government
+		has_country_flag = colonial_election
+	}
+
+	option = {
+		name = "elections.EVTOPTB707"	# An administrator type
+		ai_chance = { factor = 40 }
+		define_ruler = {
+			adm = 4
+			dip = 1
+			mil = 1
+			fixed = yes
+		}
+	}
+	option = {
+		name = "elections.EVTOPTC707"	# A diplomat
+		ai_chance = { factor = 30 }
+		define_ruler = {
+			adm = 1
+			dip = 4
+			mil = 1
+			fixed = yes
+		}
+	}
+	option = {
+		name = "elections.EVTOPTD707"	# A military man
+		ai_chance = { factor = 30 }
+		define_ruler = {
+			adm = 1
+			dip = 1
+			mil = 4
+			fixed = yes
+		}
+	}
+}
+
+# Colonial Assembly
+country_event = {
+	id = elections.711
+	title = "elections.EVTNAME711"
+	desc = "elections.EVTDESC711"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "elections.EVTOPTB711"	# Suspicious indeed...
+		tooltip = {
+			FROM = {
+				add_liberty_desire = 5
+			}
+		}
+	}
+}
+
+# Winds of Liberty
+country_event = {
+	id = elections.712
+	title = "elections.EVTNAME712"
+	desc = "elections.EVTDESC712"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "elections.EVTOPTB712"	# Most worrisome...
+		tooltip = {
+			FROM = {
+				add_liberty_desire = -25
+			}
+		}
+	}
+}
+
+
+
+# Dutch Republic
+country_event = {
+	id = elections.720
+	title = elections.720.t
+	desc = elections.720.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		government = dutch_republic
+	}
+	
+	option = {
+		name = elections.720.a
+		define_ruler = {
+		}
+		change_statists_vs_orangists = -0.33
+	
+	}
+	option = {
+		name = elections.720.b
+		define_ruler = {
+		}
+		change_statists_vs_orangists = 0.33
+	}
+}
+
+country_event = {
+	id = elections.721
+	title = elections.720.t
+	desc = elections.721.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		government = dutch_republic
+	}
+	
+	option = {
+		name = elections.720.a
+		define_ruler = {
+		}
+		change_statists_vs_orangists = -0.33
+	
+	}
+	option = {
+		name = elections.720.b
+		define_ruler = {
+		}
+		change_statists_vs_orangists = 0.33
+	}
+}

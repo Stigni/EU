@@ -1,0 +1,135 @@
+namespace = aow_trade_goods_events
+
+#######################################
+#		TROPICAL WOOD      #
+#######################################
+province_event = {
+	id = aow_trade_goods_events.1
+	title = "aow_trade_goods_events.1.t"
+	desc = "aow_trade_goods_events.1.d"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = brazil_region
+			region = bolivia_region
+			region = amazonas
+			region = venezuela_region
+			region = the_spanish_main
+			region = central_africa
+			region = indonesian_region
+			region = pacific_ocean_islands
+			region = new_granada_region
+			region = goias_region
+			region = sao_paolo_region
+			region = rio_de_janeiro_region
+			region = bahia_region
+			region = pernambuco_region
+			region = maranhao_region
+			region = grao_para_region
+			province_id = 1194		# Madagascar
+			province_id = 1193		# Madagascar
+			province_id = 1792		# Madagascar
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 0.5
+			region = amazonas
+		}
+		modifier = {
+			factor = 0.8
+			region = indonesian_region
+		}
+
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = tropical_wood
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = tropical_wood
+			set_province_flag = received_trade_goods
+		}
+	}
+
+	option = {
+		name = "aow_trade_goods_events.1.a"
+		change_trade_goods = tropical_wood
+	}
+}
+
+#######################################
+#		DYES      #
+#######################################
+province_event = {
+	id = aow_trade_goods_events.2
+	title = "aow_trade_goods_events.2.t"
+	desc = "aow_trade_goods_events.2.d"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = amazonas
+			region = central_africa
+			region = central_america
+			region = the_carribean
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+
+		modifier = {
+			factor = 1.2
+			OR = {
+				region = central_america
+				region = amazonas
+			}
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = dyes
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = dyes
+			set_province_flag = received_trade_goods
+		}
+	}
+
+	option = {
+		name = "aow_trade_goods_events.2.a"
+		change_trade_goods = dyes
+	}
+}

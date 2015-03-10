@@ -1,0 +1,77 @@
+country_decisions = {
+
+	german_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { exists = GER }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					NOT = { government = theocracy }
+				}
+			}
+			OR = { 
+				primary_culture = hannoverian
+				primary_culture = pommeranian
+				primary_culture = hessian
+				primary_culture = saxon
+				primary_culture = bavarian
+				primary_culture = prussian
+				primary_culture = rheinlaender
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 46	# Mecklenburg
+			owns_core_province = 50	# Brandenburg
+			owns_core_province = 52	# Altmark
+			owns_core_province = 53	# Lüneburg
+			owns_core_province = 57	# Hannover
+			owns_core_province = 58	# Anhalt
+			owns_core_province = 61	# Dresden
+			owns_core_province = 62	# Leipzig
+			owns_core_province = 63	# Erfurt
+			owns_core_province = 67	# Franken
+		}
+		effect = {
+			change_tag = GER
+			german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = GER
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

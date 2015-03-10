@@ -1,0 +1,36 @@
+########################################
+# Japan Events                         #
+########################################
+
+namespace = japan
+
+# The DYNASTYNAME shogunate has fallen!
+country_event = {
+	id = japan.1
+	title = "japan.EVTNAME1"
+	desc = "japan.EVTDESC1"
+	picture = COURT_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = {
+			tag = JAP
+		}
+		government = daimyo
+	}
+	
+	option = {
+		name = "japan.EVTOPTA1"
+		change_government = shogunate
+		change_tag = JAP
+		swap_free_idea_group = yes		#keep progress
+		if = {
+			limit = {
+				owns = 1020 	# Kyoto
+			}
+			set_capital = 1020
+		}
+	}
+}

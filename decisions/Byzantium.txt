@@ -1,0 +1,88 @@
+country_decisions = {
+
+	reestablish_the_theme_system = {
+		potential = {
+			tag = BYZ
+			NOT = { has_country_modifier = the_theme_system }
+			OR = {
+				ai = no
+				num_of_cities = 3
+			}
+		}
+		allow = {
+			owns = 151 # Constantinople
+			owns = 149 # Edirne
+			owns = 316 # Izmit
+			owns = 317 # Hudavendigar
+			owns = 318 # Sugla (Izmir)
+			owns = 319 # Mentese
+			owns = 322 # Kütahya
+			owns = 323 # Konya
+			owns = 324 # Karaman
+			owns = 325 # Kastamonu
+			owns = 326 # Ankara
+			owns = 328 # Sinop
+			owns = 329 # Sivas
+			owns = 330 # Trebizond
+			owns = 327 # Adana
+			owns = 1846 # Amasya
+			owns = 1848 # Hamid
+			owns = 2296 # Biga
+			owns = 2297 # Saruhan
+			owns = 2298 # Tekke
+			owns = 2299 # Bolu
+			owns = 2300 # Bozok
+			owns = 2301 # Kayseri
+			owns = 2302 # Icel
+			owns = 2304 # Canik
+			owns = 2750 # Plovdiv
+		}
+		effect = {
+			149 = { change_province_name = Adrianople rename_capital = Adrianople }
+			316 = { change_province_name = Optimatoi rename_capital = Nikomedeia }
+			317 = { change_province_name = Opsikion rename_capital = Prussa }
+			318 = { change_province_name = Smyrna rename_capital = Smyrna }
+			319 = { change_province_name = Mylasa rename_capital = Mougla }
+			322 = { change_province_name = Kotyaion rename_capital = Kotyaion }
+			323 = { change_province_name = Ikonion rename_capital = Iconion }
+			324 = { change_province_name = Laranda rename_capital = Laranda }
+			325 = { change_province_name = Paphlagonia rename_capital = Timonio }
+			326 = { change_province_name = Galatia rename_capital = Ancyra }
+			328 = { change_province_name = Sinope rename_capital = Sinop }
+			329 = { change_province_name = Sebasteia rename_capital = Sebasteia }
+			330 = { change_province_name = Trebizond rename_capital = Trapezous }
+			327 = { change_province_name = Cilicia rename_capital = Atana }
+			1846 = { change_province_name = Armeniakon rename_capital = Amasea }
+			1848 = { change_province_name = Anatolikon rename_capital = Polydorion }
+			151 = { change_province_name = Constantinople rename_capital = Constantinople }
+			2296 = { change_province_name = Abydos rename_capital = Pigai }
+			2297 = { change_province_name = Thrakesion rename_capital = Magnesia }
+			2298 = { change_province_name = Attalia rename_capital = Attalia }
+			2299 = { change_province_name = Boukellarion rename_capital = Klaudiopol}
+			2300 = { change_province_name = Cappadocia rename_capital = Tavium }
+			2301 = { change_province_name = Charsianon rename_capital = Cesarea }
+			2302 = { change_province_name = Seleucia rename_capital = Kermarage }
+			2304 = { change_province_name = Chaldia rename_capital = Amissos}
+			2750 = { change_province_name = Philippopolis rename_capital = Philippopolis}
+			if = {
+				limit = {
+					NOT = { has_global_flag = constantinople_restored }
+				}
+				151 = {
+					add_base_tax = 6
+					add_province_manpower = 5
+				}
+				set_global_flag = constantinople_restored
+			}
+						
+			add_country_modifier = {
+				name = "the_theme_system"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

@@ -1,0 +1,65 @@
+country_decisions = {
+	indian_trade_company = {
+
+		potential = {
+			NOT = { tag = NED }
+			NOT = { has_country_modifier = hab_ostende_company }
+			NOT = { has_country_flag = trade_company }
+			technology_group = western
+			NOT = {
+				capital_scope = {
+					continent = asia
+				}
+			}
+			NOT = {
+				capital_scope = {
+					continent = oceania
+				}
+			}
+			eastasian_trade_ports = {
+				has_discovered = ROOT
+			}
+			# to prevent overfeeding of provinces into conquer
+			OR = {
+				ai = no
+				eastasian_trade_ports = {
+					owned_by = ROOT
+				}				
+			}
+			num_of_ports = 2
+			NOT = {
+				has_country_modifier = portuguese_india_trade_co
+			}
+		}
+
+		allow = {
+			dip_tech = 10
+			eastasian_trade_ports = {
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			set_country_flag = trade_company
+			add_treasury = 200
+			add_country_modifier = {
+				name = "india_trade_co"
+				duration = -1
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							tag = ENG
+							tag = GBR
+						}
+					}
+					country_event = { id = flavor_eng.9145 days = 1 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

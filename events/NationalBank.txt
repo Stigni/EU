@@ -1,0 +1,68 @@
+# National Bank
+country_event = {
+	id = 4042
+	title = "EVTNAME4042"
+	desc = "EVTDESC4042"
+	picture = ECONOMY_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = bank }
+		has_idea = national_bank
+		adm = 4
+	}
+
+	mean_time_to_happen = {
+		months = 480
+		
+		modifier = {
+			factor = 0.9
+			adm = 4
+		}
+		modifier = {
+			factor = 0.9
+			adm = 5
+		}
+		modifier = {
+			factor = 0.8
+			statesman = 3
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { stability = -2 }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA4042"		# National loans at 6 months income
+		ai_chance = { factor = 90 }
+		add_inflation = -5
+		add_stability = 1
+		loan_size = 6
+		set_country_flag = bank
+	}
+	option = {
+		name = "EVTOPTB4042"		# National loans at 12 months income
+		ai_chance = { factor = 5 }
+		add_inflation = -5
+		add_stability = 1
+		loan_size = 12
+		set_country_flag = bank
+	}
+	option = {
+		name = "EVTOPTC4042"		# National loans at 24 months income
+		ai_chance = { factor = 5 }
+		add_inflation = -5
+		add_stability = 1
+		loan_size = 24
+		set_country_flag = bank
+	}
+}
+

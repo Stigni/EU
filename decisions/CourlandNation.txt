@@ -1,0 +1,49 @@
+country_decisions = {
+
+	couronian_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			OR = {
+				tag = LIV
+				tag = RIG
+			}
+			NOT = { exists = KUR }
+			OR = {
+				ai = no
+				is_religion_enabled = protestant
+				is_religion_enabled = reformed
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_at_war = no
+			is_subject = no
+			OR = {
+				religion = reformed
+				religion = protestant
+			}
+			owns_core_province = 39	 # Kurland
+			owns_core_province = 1935	 # Semigallia
+		}
+		effect = {
+			change_tag = KUR
+			add_prestige = 10
+			change_government = feudal_monarchy
+			set_capital = 1935		# Semigallia
+			swap_free_idea_group = yes		#keep progress
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+			every_neighbor_country = {
+				limit = { government = monarchy }
+				add_opinion = { who = KUR modifier = secularized_monastic_order }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

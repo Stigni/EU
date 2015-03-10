@@ -1,0 +1,27 @@
+country_decisions = {
+
+	habsburg_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { exists = HAB }
+			tag = STY
+			primary_culture = austrian
+		}
+		allow = {
+			has_regency = no
+			is_at_war = no
+			owns = 134
+		}
+		effect = {
+			change_tag = HAB
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}

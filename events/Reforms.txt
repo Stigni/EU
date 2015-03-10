@@ -1,0 +1,147 @@
+#########################################################
+#		Financial reform			#
+#########################################################
+
+country_event = {
+	id = 4033
+	title = "EVTNAME4033"
+	desc = "EVTDESC4033"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		inflation = 10
+		NOT = {  has_country_flag = reforms_financial }
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+	
+	immediate = {
+		set_country_flag = reforms_financial
+	}
+
+	option = {
+		name = "EVTOPTA4033"		# Go through with the reforms
+		add_stability = -1
+		add_inflation = -5
+	}
+	option = {
+		name = "EVTOPTB4033"		# No, such restructuring would be too harsh.
+		add_prestige = -5
+	}
+}
+
+#########################################################
+#			Social reform			#
+#########################################################
+
+country_event = {
+	id = 4034
+	title = "EVTNAME4034"
+	desc = "EVTDESC4034"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		government = monarchy
+		adm_tech = 25
+		is_lesser_in_union = no
+		NOT = {  has_country_flag = reforms_social }
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	immediate = {
+		set_country_flag = reforms_social
+	}
+
+	option = {
+		name = "EVTOPTA4034"		# Abolish serfdom
+		add_legitimacy = -10
+		add_years_of_income = 0.50
+	}
+	option = {
+		name = "EVTOPTB4034"		# We are in no need of such a reform 
+		add_prestige = -10
+	}
+}
+
+
+
+#########################################################
+#		Military development			#
+#########################################################
+
+country_event = {
+	id = 4035
+	title = "EVTNAME4035"
+	desc = "EVTDESC4035"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		war_college = 1		
+		NOT = { has_country_flag = reforms_military }
+
+
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+	
+	
+	immediate = {
+		set_country_flag = reforms_military
+	}
+	
+
+	option = {
+		name = "EVTOPTA4035"		# Invest in quality troops
+		add_army_tradition = 25
+	}
+	option = {
+		name = "EVTOPTB4035"		# Invest in quantity
+		add_yearly_manpower = 2.0
+		
+	}
+}
+
+
+#########################################################
+#		Architectureal development		#
+#########################################################
+
+country_event = {
+	id = 4036
+	title = "EVTNAME4036"
+	desc = "EVTDESC4036"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		adm_tech = 20
+		NOT = { has_country_flag = reforms_architectural }
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+	immediate = {
+		set_country_flag = reforms_architectural
+	}
+
+	
+
+	option = {
+		name = "EVTOPTA4036"		# Support architectural development
+		add_adm_power = 33
+		add_mil_power = 33
+		add_dip_power = 33
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = "EVTOPTB4035"		# Don't support it
+		add_prestige = -1
+	}
+}

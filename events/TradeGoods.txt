@@ -1,0 +1,1378 @@
+# effect is both in immediate and in option!
+
+#######################################
+#		GRAIN		      #
+#######################################
+
+province_event = {
+	id = 9500
+	title = "EVTNAME9500"
+	desc = "EVTDESC9500"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			is_playing_historical_setup = no
+			region = la_plata_region
+			region = quito_region
+			region = paraguay_region
+			region = great_plains
+			region = rio_grande_do_sol_region
+			region = northeastern_america
+			region = eastern_america
+			region = the_andes
+			region = south_africa
+			region = central_africa
+			region = north_africa
+			region = australian_coast
+			region = indonesian_region
+			region = western_siberia
+			region = eastern_siberia
+			region = western_america
+			region = the_mississippi_region
+			region = manchuria
+			region = haud_region
+			region = banda_oriental_region
+			region = the_thirteen_colonies
+			region = maakhir_region
+			region = amhara_region
+			region = kaffa_region
+			region = st_lawrence_region
+			region = mesoamerica_region
+			region = venezuela_region
+			region = new_andalucia_region
+			region = new_granada_region
+			region = quito_region
+			region = chile_region
+			region = qullasuyu_region
+			region = antisuyu_region
+			region = kuntisuyu_region
+			region = chinchaysuyu_region
+			region = pampas_region
+			region = patagonia_region
+			region = southern_pampas_region
+			region = buenos_aires_region
+			region = tucuman_region
+			region = bahia_region
+			region = pernambuco_region
+			region = maranhao_region
+			region = grao_para_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 0.5
+			region = la_plata_region
+		}
+		modifier = {
+			factor = 1.3
+			OR = {
+				region = western_siberia
+				region = eastern_siberia
+			}
+		}
+		
+		modifier = {
+			factor = 1.2
+			region = indonesian_region
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = grain
+			set_province_flag = received_trade_goods
+		}
+	}
+
+	option = {
+		name = "EVTOPTA9500"
+		change_trade_goods = grain
+	}
+}
+
+#######################################
+#		FISH		      #
+#######################################
+
+province_event = {
+	id = 9501
+	title = "EVTNAME9501"
+	desc = "EVTDESC9501"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		has_port = yes
+		OR = {
+			is_playing_historical_setup = no
+			region = northern_america
+			region = northwestern_america
+			region = northeastern_america
+			region = the_mississippi_region
+			region = eastern_america
+			region = the_andes
+			region = amazonas
+			region = brazil_region
+			region = la_plata_region
+			region = australian_coast
+			region = greenland_region
+			region = new_zealand_region
+			region = indonesian_region
+			region = western_siberia
+			region = eastern_siberia
+			region = atlantic_ocean_islands
+			region = mascarene_islands
+			region = indian_ocean_islands
+			region = pacific_ocean_islands
+			region = japanese_region
+			region = manchuria
+			region = newfoundland_region
+			region = the_thirteen_colonies
+			region = maakhir_region
+			region = canada_region
+			region = acadia_region
+			region = st_lawrence_region
+			region = new_england_region
+			region = mesoamerica_region
+			region = castilla_del_oro_region
+			region = quito_region
+			region = chile_region
+			region = qullasuyu_region
+			region = kuntisuyu_region
+			region = chinchaysuyu_region
+			region = patagonia_region
+			region = southern_pampas_region
+			region = buenos_aires_region
+			province_id = 19
+			province_id = 315
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 1.2
+			any_neighbor_province = {
+				trade_goods = fish
+			}
+		}
+		modifier = {
+			factor = 1.2
+			region = mascarene_islands
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = fish
+			set_province_flag = received_trade_goods
+		}
+	}
+
+	option = {
+		name = "EVTOPTA9501"
+		change_trade_goods = fish
+	}
+}
+
+#######################################
+#		WINE		      #
+#######################################
+
+province_event = {
+	id = 9502
+	title = "EVTNAME9502"
+	desc = "EVTDESC9502"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = la_plata_region
+			region = cuyo_region
+			is_playing_historical_setup = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = wine
+			set_province_flag = received_trade_goods
+		}
+	}
+	option = {
+		name = "EVTOPTA9502"
+		change_trade_goods = wine
+	}
+}
+
+#######################################
+#		WOOL		      #
+#######################################
+
+province_event = {
+	id = 9503
+	title = "EVTNAME9503"
+	desc = "EVTDESC9503"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = central_america
+			region = western_america
+			region = australian_coast
+			region = new_zealand_region
+			region = the_spanish_main
+			region = the_andes
+			region = haud_region
+			region = maakhir_region
+			region = amhara_region
+			region = mesoamerica_region
+			region = qullasuyu_region
+			region = pampas_region
+			region = patagonia_region
+			region = chaco_region
+			is_playing_historical_setup = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 0.7
+			region = new_zealand_region
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = wool
+			set_province_flag = received_trade_goods
+		}
+	}
+	option = {
+		name = "EVTOPTA9503"
+		change_trade_goods = wool
+	}
+}
+
+#######################################
+#		CLOTH		      #
+#######################################
+
+province_event = {
+	id = 9504
+	title = "EVTNAME9504"
+	desc = "EVTDESC9504"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = indonesian_region
+			is_playing_historical_setup = no
+			province_id = 738
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = cloth
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9504"
+		change_trade_goods = cloth
+	}
+}
+
+#######################################
+#		FUR		      #
+#######################################
+
+province_event = {
+	id = 9505
+	title = "EVTNAME9505"
+	desc = "EVTDESC9505"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = great_plains
+			region = northern_america
+			region = northeastern_america
+			region = northwestern_america
+			region = greenland_region
+			region = western_siberia
+			region = eastern_siberia
+			region = russian_region
+			region = manchuria
+			region = the_mississippi_region
+			region = hudson_bay_region
+			region = the_thirteen_colonies
+			region = canada_region
+			region = acadia_region
+			region = st_lawrence_region
+			region = columbia_region
+			region = newfoundland_region
+			province_id = 18
+			province_id = 19
+			province_id = 315
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 0.7
+			region = northern_america
+		}
+		modifier = {
+			factor = 1.5
+			owner = { fur = 10 }
+		}
+		modifier = {
+			factor = 2.0
+			region = newfoundland_region
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = fur
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9505"
+		change_trade_goods = fur
+	}
+}
+
+#######################################
+#		SALT		      #
+#######################################
+
+province_event = {
+	id = 9506
+	title = "EVTNAME9506"
+	desc = "EVTDESC9506"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = central_america
+			region = the_andes
+			region = chile_region
+			region = tucuman_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = salt
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9506"
+		change_trade_goods = salt
+	}
+}
+
+#######################################
+#	    NAVAL SUPPLIES	      #
+#######################################
+
+province_event = {
+	id = 9507
+	title = "EVTNAME9507"
+	desc = "EVTDESC9507"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		has_port = yes
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = northern_america
+			region = northwestern_america
+			region = bolivia_region
+			region = northeastern_america
+			region = eastern_america
+			region = the_mississippi_region
+			region = the_andes
+			region = amazonas
+			region = brazil_region
+			region = australian_coast
+			region = greenland_region
+			region = new_zealand_region
+			region = indonesian_region
+			region = western_siberia
+			region = eastern_siberia
+			region = manchuria
+			region = atlantic_ocean_islands
+			region = pacific_ocean_islands
+			region = the_thirteen_colonies
+			region = acadia_region
+			region = st_lawrence_region
+			region = new_england_region
+			region = castilla_del_oro_region
+			is_playing_historical_setup = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 1.2
+			region = atlantic_ocean_islands
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = naval_supplies
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { naval_supplies = 10 }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = naval_supplies
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9507"
+		change_trade_goods = naval_supplies
+	}
+}
+
+#######################################
+#		COPPER		      #
+#######################################
+
+province_event = {
+	id = 9508
+	title = "EVTNAME9508"
+	desc = "EVTDESC9508"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = the_andes
+			region = western_siberia
+			region = eastern_siberia
+			region = minas_gerais_region
+			region = mato_grosso_region
+			is_playing_historical_setup = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = copper
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { copper = 10 }
+		}
+	}
+
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = copper
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9508"
+		change_trade_goods = copper
+	}
+}
+
+#########################################
+#		GOLD		      				#
+#########################################
+
+province_event = {
+	id = 9509
+	title = "EVTNAME9509"
+	desc = "EVTDESC9509"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = amazonas
+			region = minas_gerais_region
+			region = mato_grosso_region
+			region = goias_region
+			region = the_andes
+			region = south_africa
+			region = western_siberia
+			region = eastern_siberia
+			region = western_america
+			region = australian_coast
+			region = northwestern_america
+			region = antisuyu_region
+			region = central_america
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 3.0
+			any_neighbor_province = {
+				trade_goods = gold
+			}
+		}
+		modifier = {
+			factor = 3.0
+			owner = { gold = 6 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { gold = 4 }
+		}		
+		modifier = {
+			factor = 0.7
+			region = the_andes
+		}
+		modifier = {
+			factor = 0.6
+			OR = {
+				province_id = 852		# Mexico
+				province_id = 853		# Huastec
+				province_id = 854		# Sayultecas
+				province_id = 2617		# Huichol
+				province_id = 856		# Zacatecas
+				province_id = 857		# Guichichil
+				province_id = 858		# Tamaulipas
+				province_id = 2615		# Guamares
+			}
+		}
+		modifier = {
+			factor = 0.7
+			OR = {
+				region = minas_gerais_region
+				region = mato_grosso_region
+				region = goias_region
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = gold
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9509"
+		change_trade_goods = gold
+	}
+}
+
+#######################################
+#		IRON		      #
+#######################################
+
+province_event = {
+	id = 9510
+	title = "EVTNAME9510"
+	desc = "EVTDESC9510"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			province_id = 18
+			province_id = 990
+			region = western_siberia
+			region = eastern_siberia
+			is_playing_historical_setup = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 0.5
+			province_id = 990
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = iron
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = iron
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9510"
+		change_trade_goods = iron
+	}
+}
+
+#######################################
+#		SLAVES		      #
+#######################################
+
+province_event = {
+	id = 9511
+	title = "EVTNAME9511"
+	desc = "EVTDESC9511"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		owner = { NOT = { has_country_modifier = the_abolish_slavery_act } }
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = central_africa
+			region = south_africa
+			region = north_africa
+			region = haud_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			owner = { slaves = 5 }
+		}
+		modifier = {
+			factor = 1.3
+			owner = { plutocracy_ideas = 3 }
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = slaves
+			set_province_flag = received_trade_goods
+		}
+	}
+	option = {
+		name = "EVTOPTA9511"
+		change_trade_goods = slaves
+	}
+}
+
+#######################################
+#		IVORY		      #
+#######################################
+
+province_event = {
+	id = 9512
+	title = "EVTNAME9512"
+	desc = "EVTDESC9512"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = central_africa
+			region = south_africa
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+		
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			owner = { ivory = 3 }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = ivory
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9512"
+		change_trade_goods = ivory
+	}
+}
+
+#######################################
+#		TEA		      #
+#######################################
+
+province_event = {
+	id = 9513
+	title = "EVTNAME9513"
+	desc = "EVTDESC9513"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = indonesian_region
+			region = taiwan
+			region = paraguay_region #Yerba Mate
+			region = banda_oriental_region #Yerba Mate
+			region = rio_grande_do_sol_region #Yerba Mate
+			region = buenos_aires_region #Yerba Mate
+			region = bolivia_region #Yerba Mate
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				region = rio_grande_do_sol_region #Yerba Mate
+				region = buenos_aires_region #Yerba Mate
+				region = bolivia_region #Yerba Mate
+			}
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = tea
+			}
+		}
+	}
+
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = tea
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9513"
+		change_trade_goods = tea
+	}
+}
+
+#######################################
+#	       CHINAWARE	      #
+#######################################
+
+province_event = {
+	id = 9514
+	title = "EVTNAME9514"
+	desc = "EVTDESC9514"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = indonesian_region
+			province_id = 738
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = chinaware
+			}
+		}
+	}
+
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = chinaware
+			set_province_flag = received_trade_goods
+		}
+	}
+	option = {
+		name = "EVTOPTA9514"
+		change_trade_goods = chinaware
+	}
+}
+
+#######################################
+#		SPICES		      #
+#######################################
+
+province_event = {
+	id = 9515
+	title = "EVTNAME9515"
+	desc = "EVTDESC9515"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = indonesian_region
+			region = indian_ocean_islands
+			province_id = 1244		# Tahiti
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 1.2
+			region = indian_ocean_islands
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = spices
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = spices
+			set_province_flag = received_trade_goods
+		}
+	}
+	option = {
+		name = "EVTOPTA9515"
+		change_trade_goods = spices
+	}
+}
+
+#######################################
+#		COFFEE		      #
+#######################################
+
+province_event = {
+	id = 9516
+	title = "EVTNAME9516"
+	desc = "EVTDESC9516"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			AND = {
+				is_year = 1550
+				region = indonesian_region
+			}
+			AND = {
+				is_year = 1600
+				OR = {
+					region = la_plata_region
+					region = bolivia_region
+					region = the_andes
+					region = amazonas
+					region = brazil_region
+					region = the_carribean
+					region = central_america
+					region = the_spanish_main
+					region = quito_region
+					region = kaffa_region
+					region = new_andalucia_region
+					region = new_granada_region
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+		
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = coffee
+			}
+		}
+		modifier = {
+			factor = 0.8
+			region = the_spanish_main
+		}
+	}
+
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = coffee
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9516"
+		change_trade_goods = coffee
+	}
+}
+
+#######################################
+#		COTTON		      #
+#######################################
+
+province_event = {
+	id = 9517
+	title = "EVTNAME9517"
+	desc = "EVTDESC9517"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = eastern_america
+			region = the_carribean
+			region = the_mississippi_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = cotton
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = cotton
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9517"
+		change_trade_goods = cotton
+	}
+}
+
+#######################################
+#		SUGAR		      #
+#######################################
+
+province_event = {
+	id = 9518
+	title = "EVTNAME9518"
+	desc = "EVTDESC9518"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = the_carribean
+			region = amazonas
+			region = brazil_region
+			region = guyana_region
+			region = mascarene_islands
+			region = yucatan_region
+			region = mesoamerica_region
+			region = venezuela_region
+			region = new_andalucia_region
+			region = sao_paolo_region
+			region = rio_de_janeiro_region
+			region = bahia_region
+			region = pernambuco_region
+			region = maranhao_region
+			region = grao_para_region
+			province_id = 366
+			province_id = 368
+			province_id = 852		# Mexico
+			province_id = 853		# Huastec
+			province_id = 854		# Sayultecas
+			province_id = 855		# Huichol
+			province_id = 856		# Zacatecas
+			province_id = 857		# Guichichil
+			province_id = 858		# Tamaulipas
+			province_id = 1240		# Hawaii
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 5
+		
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 1.2
+			owner = { sugar = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { sugar = 10 }
+		}
+		modifier = {
+			factor = 0.7
+			OR = {
+				region = the_carribean
+				region = pernambuco_region
+				region = bahia_region
+				region = guyana_region
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = sugar
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9518"
+		change_trade_goods = sugar
+	}
+}
+
+#######################################
+#		TOBACCO		      #
+#######################################
+
+province_event = {
+	id = 9519
+	title = "EVTNAME9519"
+	desc = "EVTDESC9519"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = la_plata_region
+			region = paraguay_region
+			region = eastern_america
+			region = amazonas
+			region = brazil_region
+			region = the_carribean
+			region = banda_oriental_region
+			region = the_thirteen_colonies
+			region = new_england_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+		
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = tobacco
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = tobacco
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9519"
+		change_trade_goods = tobacco
+	}
+}
+
+#######################################
+#		COCOA		      #
+#######################################
+
+province_event = {
+	id = 9522
+	title = "EVTNAME9522"
+	desc = "EVTDESC9522"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		trade_goods = unknown
+		OR = {
+			colonysize = 300
+			is_city = yes
+		}
+		OR = {
+			region = central_america
+			region = the_spanish_main
+			region = the_andes
+			region = brazil_region
+			region = quito_region
+			region = mesoamerica_region
+			region = yucatan_region
+			region = new_granada_region
+			region = quito_region
+			region = chinchaysuyu_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+		
+		modifier = {
+			factor = 0.5
+			colonysize = 500
+		}
+		modifier = {
+			factor = 1.5
+			any_neighbor_province = {
+				trade_goods = cocoa
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_trade_goods = cocoa
+			set_province_flag = received_trade_goods
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9522"
+		change_trade_goods = cocoa
+	}
+}
+
+
+#######################################
+#		SLAVES	NO MORE!      #
+#######################################
+
+province_event = {
+	id = 9520
+	title = "EVTNAME9520"
+	desc = "EVTDESC9520"
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		owner = { has_country_modifier = the_abolish_slavery_act }
+		trade_goods = slaves
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA9520"
+		change_trade_goods = unknown
+		remove_building = tradecompany
+	}
+}

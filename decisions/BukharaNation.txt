@@ -1,0 +1,84 @@
+country_decisions = {
+
+	bukharan_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			tag = SHY
+			NOT = { exists = BUK }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 5
+				}
+			}
+			NOT = { has_country_flag = bukharan_nation }
+		}
+
+		allow = {
+			is_year = 1500
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 442 #Bukhara
+			NOT = { 
+				overlord_of = SIB
+			}
+		}
+		effect = {
+			set_country_flag = bukharan_nation
+			every_owned_province = {
+				limit = {
+					owned_by = SHY
+					OR = {
+						is_core = SIB
+						region = western_siberia
+					}
+				}
+				add_core = SIB
+				remove_core = SHY
+				if = {
+					limit = {
+						exists = SIB
+					}
+					cede_province = SIB
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = SIB }
+				}
+				release = SIB
+			}
+			change_tag = BUK
+			add_prestige = 25
+			set_capital = 442
+			if = {
+				limit = {
+					NOT = { has_global_flag = bukhara_formed }
+				}
+				442 = {
+					add_base_tax = 2 #Only the first time Bukhara is formed.
+				}
+			}
+			add_claim = 441 #Khiva
+			add_claim = 444 #Charjuy
+			add_claim = 453 #Qarshi
+			add_claim = 454 #Samarkand
+			add_claim = 457 #Tashkent
+			add_claim = 1967 #Khujand
+			add_claim = 1973 #Urgench
+			add_claim = 2363 #Khujand
+			change_government = iqta
+			change_technology_group = muslim
+			change_unit_type = muslim
+			set_global_flag = bukhara_formed
+			#swap_free_idea_group = yes		#Removed for now, add back if Bukhara gets own ideas
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

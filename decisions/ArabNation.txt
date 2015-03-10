@@ -1,0 +1,49 @@
+country_decisions = {
+
+	arab_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { exists = ARB }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				primary_culture = al_misr_arabic
+				primary_culture = al_suryah_arabic
+				primary_culture = al_iraqiya_arabic
+				primary_culture = bedouin_arabic
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no			
+			owns_core_province = 361			#Cairo
+			owns_core_province = 377			#Aleppo
+			owns_core_province = 379			#Jerusalem
+			owns_core_province = 382			#Damascus
+			owns_core_province = 384			#Medina
+			owns_core_province = 385			#Mecca
+			owns_core_province = 410			#Bagdad			
+		}
+		effect = {
+			arab_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ARB
+			}
+			add_prestige = 25
+			change_tag = ARB
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,33 @@
+country_decisions = {
+
+	move_capital_to_delhi = {
+		potential = {
+			tag = MUG
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { capital = 522 }
+			NOT = { has_country_flag = relocated_capital_delhi }
+		}
+		allow = {
+			owns = 522
+			is_at_war = no
+			prestige = 0
+			stability = 0
+		}
+		effect = {
+			set_country_flag = relocated_capital_delhi
+			add_prestige = 100
+			add_stability = 1
+			change_primary_culture = kanauji
+			set_capital = 522
+			522 = {
+			 	add_base_tax = 2
+			 	add_province_manpower = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

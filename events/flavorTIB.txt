@@ -1,0 +1,53 @@
+########################################
+# Flavor Events for Tibet
+#
+# Scripted by Sara Wendel-Örtqvist
+########################################
+
+namespace = flavor_tib
+is_playing_historical_setup = yes
+
+# The Dalai Lama takes control
+country_event = {
+	id = flavor_tib.1
+	title = "flavor_tib.EVTNAME1"
+	desc = "flavor_tib.EVTDESC1"
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TIB
+		OR = {
+			NOT = { dip = 2 }
+			NOT = { mil = 2 }
+			NOT = { adm = 2 }
+		}
+		NOT = { is_year = 1642 }
+		NOT = { government = theocratic_government }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_tib.EVTOPTA1"
+		ai_chance = { factor = 100 }
+		change_government = theocratic_government
+	}
+	option = {
+		name = "flavor_tib.EVTOPTB1"
+		ai_chance = { factor = 0 }
+		add_stability = -3
+		random_owned_province = {
+			limit = {
+				religion = ROOT
+			}
+			spawn_rebels = {
+				type = religious_rebels
+				size = 3
+			}
+		}
+	}
+}

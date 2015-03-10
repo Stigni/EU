@@ -1,0 +1,61 @@
+country_decisions = {
+
+	form_colonial_assembly = {
+		major = yes
+		potential = {
+			government = colonial_government
+			NOT = { has_country_flag = colonial_assembly }
+		}
+		allow = {
+			adm_power = 25
+			liberty_desire = 25
+		}
+		effect = {
+			set_country_flag = colonial_assembly
+			add_adm_power = -25
+			add_liberty_desire = -5
+			add_country_modifier = {
+				name = "colonial_assembly"
+				duration = -1
+			}
+			hidden_effect = {
+				colonial_parent = {
+					country_event = { id = elections.711 days = 3 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	demand_governor_election = {
+		major = yes
+		potential = {
+			government = colonial_government
+			NOT = { has_country_flag = colonial_election }
+		}
+		allow = {
+			has_country_modifier = colonial_assembly
+			liberty_desire = 50
+		}
+		effect = {
+			set_country_flag = colonial_election
+			custom_tooltip = "colonial_election"
+			add_liberty_desire = -25
+			hidden_effect = {
+				colonial_parent = {
+					country_event = { id = elections.712 days = 3 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { num_of_cities = 10 }
+			}
+		}
+	}
+
+}

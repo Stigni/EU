@@ -1,0 +1,26 @@
+country_decisions = {
+
+	move_capital_to_rome = {
+		major = yes
+		potential = {
+			always = no # redundant due to fixed_capital mechanics
+			tag = PAP
+			owns = 118 # Rome
+			NOT = { capital = 118 }
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			religion = catholic
+			owns = 118 # Rome
+		}
+		effect = {
+			set_capital = 118 # Rome
+			add_core = 118 # Rome
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

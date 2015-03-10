@@ -1,0 +1,145 @@
+########################################
+# Flavor Events for Mughal
+#
+# written by Sara Wendel-Örtqvist
+########################################
+
+namespace = flavor_mug
+is_playing_historical_setup = yes
+
+# The Marathi Revolt
+country_event = {
+	id = flavor_mug.1
+	title = "flavor_mug.EVTNAME1"
+	desc = "flavor_mug.EVTDESC1"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MUG
+		is_year = 1660
+		NOT = { is_year = 1680 }
+		NOT = { exists = MAR } # Marathas
+		OR = {
+			owns = 1946 # Desh
+			owns = 569 # Bijapur
+			owns = 544 # Ahmadnagar
+			owns = 545 # Marathwada
+			owns = 530 # Malvana
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_mug.EVTOPTA1" # Crush the rebels
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 1946
+					province_id = 569
+					province_id = 544
+					province_id = 545
+					province_id = 530
+					culture = marathi
+				}
+			}
+			add_core = MAR
+			add_unrest = 10
+		}
+	}
+}
+
+# Akbar's Reforms
+country_event = {
+	id = flavor_mug.2
+	title = "flavor_mug.EVTNAME2"
+	desc = "flavor_mug.EVTDESC2"
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MUG
+		is_year = 1570
+		NOT = { is_year = 1600 }
+	}
+	
+	mean_time_to_happen = {
+		months = 200	
+	}
+	
+	option = {
+		name = "flavor_mug.EVTOPTA2" # Reform
+		add_adm_power = 50
+	}
+	option = {
+		name = "flavor_mug.EVTOPTB2" # Reform
+		add_dip_power = 50
+	}
+	option = {
+		name = "flavor_mug.EVTOPTC2" # Reform
+		add_mil_power = 50
+	}
+}
+
+# The Sikh Rebellions
+country_event = {
+	id = flavor_mug.3
+	title = "flavor_mug.EVTNAME3"
+	desc = "flavor_mug.EVTDESC3"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MUG
+		any_owned_province = { is_core = PUN }
+		NOT = { exists = PUN }
+		is_year = 1675
+		NOT = { is_year = 1675 }
+	}
+	
+	mean_time_to_happen = {
+		months = 200	
+	}
+	
+	option = {
+		name = "flavor_mug.EVTOPTA3" #Execute the Guru as a heretic!
+		every_owned_province = {
+			limit = { is_core = PUN }
+			add_unrest = 10
+		}
+	}
+}
+
+#The Afghan Rebellions
+country_event = {
+	id = flavor_mug.4
+	title = "flavor_mug.EVTNAME4"
+	desc = "flavor_mug.EVTDESC4"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MUG
+		NOT = { exists = AFG }
+		any_owned_province = { culture = afghani }
+	}
+	
+	mean_time_to_happen = {
+		months = 2000
+	}
+	
+	option = {
+		name = "flavor_mug.EVTOPTA4"
+		every_owned_province = { 
+			limit = { culture = afghani } 
+			add_unrest = 10
+		}
+	}
+}

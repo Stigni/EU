@@ -1,0 +1,54 @@
+country_decisions = {
+
+	chile_nation = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+			}
+			colonial_la_plata = {
+				owned_by = ROOT
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_former_colonial_nation = yes
+			is_subject = no
+			is_at_war = no
+			NOT = { exists = CHL }
+			owns_core_province = 793	# Atacama
+			owns_core_province = 792	# Copiapo
+			owns_core_province = 787	# Picunmapu
+			owns_core_province = 784	# Huillimapu
+			owns_core_province = 783	# Patagonia Occidental
+		}
+		effect = {
+			change_tag = CHL
+			colonial_la_plata = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = changed_from_colonial_nation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

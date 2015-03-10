@@ -1,0 +1,54 @@
+country_decisions = {
+	
+	
+	shan_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { exists = SST }
+			primary_culture = shan
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				ai = no
+				num_of_cities = 6
+			}
+		}
+		allow = {
+			owns_core_province = 580 #Kale
+			owns_core_province = 582 #Mong Yang
+			owns_core_province = 583 #Hsenwi
+			owns_core_province = 584 #Ava
+			owns_core_province = 2396 #Mong Kawng
+			owns_core_province = 2399 #Pagan
+			owns_core_province = 2400 #Hsipaw
+			is_subject = no
+			is_at_war = no
+		}
+		effect = {
+			add_prestige = 20
+			change_tag = SST
+			every_province = {
+				limit = {
+					culture = shan
+					NOT = {
+						is_core = SST
+					}
+				}
+				add_claim = SST
+			}
+			swap_free_idea_group = yes		#keep progress
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

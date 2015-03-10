@@ -1,0 +1,68 @@
+country_decisions = {
+
+	mughal_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { exists = MUG }
+			NOT = { tag = PER }
+			NOT = { tag = TUR }
+			OR = {
+				culture_group = iranian
+				primary_culture = turkmeni
+				primary_culture = uzbehk
+				primary_culture = kirgiz
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 5
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_tribal = no
+			is_at_war = no
+			is_subject = no
+			owns_core_province = 578
+			owns_core_province = 507
+			owns_core_province = 510
+			owns_core_province = 522
+			owns_core_province = 524	
+		}
+		effect = {
+			change_tag = MUG
+			indian_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = MUG
+			}
+			add_prestige = 25
+			
+			if = {
+				limit = {
+					technology_group = nomad_group
+				}
+				change_technology_group = muslim
+			}
+			change_unit_type = indian
+			swap_free_idea_group = yes		#keep progress
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+}

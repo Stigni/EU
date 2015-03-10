@@ -1,0 +1,388 @@
+namespace = westernisation
+
+# Nobles Resist Westernization
+country_event = {
+	id = westernisation.1
+	title = "EVTNAME4001"
+	desc = "EVTDESC4001"
+	picture = WESTERNISATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA4001"
+		ai_chance = { factor = 3 }
+		random_owned_province = {
+			noble_rebels = 2
+		}
+	}
+	option = {
+		name = "EVTOPTB4001"
+		add_westernisation = -120
+	}
+}
+
+# Provinces resist Westernization
+country_event = {
+	id = westernisation.2
+	title = "EVTNAME4002"
+	desc = "EVTDESC4002"
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA4002"
+		ai_chance = { factor = 3 }
+		add_country_modifier = {
+			name = "decentralization_modifier"
+			duration = 3650
+		}
+	}
+	option = {
+		name = "EVTOPTB4002"
+		add_westernisation = -120
+	}
+}
+
+# Peasants resist Westernization
+country_event = {
+	id = westernisation.3
+	title = "EVTNAME4003"
+	desc = "EVTDESC4003"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA4003"
+		random_owned_province = {
+			add_province_modifier = {
+				name = peasants_westernization
+				duration = 3650
+			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 3 }
+		name = "EVTOPTB4003"
+		add_westernisation = -120
+	}
+}
+
+# The people resist Westernization
+country_event = {
+	id = westernisation.4
+	title = "EVTNAME4004"
+	desc = "EVTDESC4004"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		government = monarchy
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA4004"
+		ai_chance = { factor = 3 }
+		add_legitimacy = -30
+	}
+	option = {
+		name = "EVTOPTB4004"
+		add_westernisation = -120
+	}
+}
+
+# Reactionaries resist Westernization
+country_event = {
+	id = westernisation.5
+	title = "EVTNAME4005"
+	desc = "EVTDESC4005"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA4005"
+		ai_chance = { factor = 3 }
+
+		random_owned_province = {
+			reactionary_rebels = 2
+		}
+	}
+	option = {
+		name = "EVTOPTB4005"
+		add_westernisation = -120
+
+	}
+}
+
+# Merchants resist Westernization
+country_event = {
+	id = westernisation.6
+	title = "EVTNAME4006"
+	desc = "EVTDESC4006"
+	picture = WESTERNISATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_active_trade_node = {
+			is_sea = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA4006"
+		ai_chance = { factor = 3 }
+		add_dip_power = -100
+	}
+	option = {
+		name = "EVTOPTB4006"
+		add_westernisation = -120
+
+	}
+}
+
+# Cultural Establishment resist Westernization
+country_event = {
+	id = westernisation.7
+	title = "EVTNAME4007"
+	desc = "EVTDESC4007"
+	picture = LIBERUM_VETO_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA4007"
+		ai_chance = { factor = 3 }
+
+		add_prestige = -30
+	}
+	option = {
+		name = "EVTOPTB4007"
+		add_westernisation = -120
+	}
+}
+
+# Government Officials resist Westernization
+country_event = {
+	id = westernisation.8
+	title = "EVTNAME4008"
+	desc = "EVTDESC4008"
+	picture = WESTERNISATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA4008"
+		ai_chance = { factor = 3 }
+		add_adm_power = -100
+	}
+	option = {
+		name = "EVTOPTB4008"
+		add_westernisation = -120
+	}
+}
+
+# High Command resist Westernization
+country_event = {
+	id = westernisation.9
+	title = "EVTNAME4009"
+	desc = "EVTDESC4009"
+	picture = WESTERNISATION_eventPicture
+
+	is_triggered_only = yes
+
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA4009"
+		add_army_tradition = -30
+		add_navy_tradition = -30
+	}
+	option = {
+		name = "EVTOPTB4009"
+		add_westernisation = -120
+	}
+}
+
+# Advisers resist Westernization
+country_event = {
+	id = westernisation.10
+	title = "EVTNAME4010"
+	desc = "EVTDESC4010"
+	picture = WESTERNISATION_eventPicture
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA4010"
+		add_stability = -1
+	}
+	option = {
+		name = "EVTOPTB4010"
+		add_westernisation = -120
+	}
+}
+
+# Protestant Faith?
+country_event = {
+	id = westernisation.11
+	title = "EVTNAME6405"
+	desc = "EVTDESC6405"
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			religion = animism
+			religion = shamanism
+			religion = totemism
+		}
+		is_westernising = yes
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { technology_group = western }
+				religion = protestant
+			}
+		}
+		NOT = { has_country_flag = refused_protestant }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA6405"
+		change_religion = protestant
+	}
+    option = {
+		name = "EVTOPTB6405"
+		add_westernisation = -120
+		set_country_flag = refused_protestant
+	}
+}
+
+# The Reformed Religion
+country_event = {
+	id = westernisation.12
+	title = "EVTNAME6406"
+	desc = "EVTDESC6406"
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			religion = animism
+			religion = shamanism
+			religion = totemism
+		}
+		is_westernising = yes
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { technology_group = western }
+				religion = reformed
+			}
+		}
+		NOT = { has_country_flag = refused_reformed }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA6406"
+		change_religion = reformed
+	}
+	option = {
+		name = "EVTOPTB6406"
+		add_westernisation = -120
+		set_country_flag = refused_reformed
+		
+	}
+}
+
+# The Catholic Faith
+country_event = {
+	id = westernisation.13
+	title = "EVTNAME6407"
+	desc = "EVTDESC6407"
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			religion = animism
+			religion = shamanism
+			religion = totemism
+		}
+		is_westernising = yes
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { technology_group = western }
+				religion = catholic
+			}
+		}
+		NOT = { has_country_flag = refused_catholic }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVTOPTA6407"
+		change_religion = catholic
+	}
+    option = {
+		name = "EVTOPTB6407"
+		add_westernisation = -120
+		set_country_flag = refused_catholic
+	}
+}

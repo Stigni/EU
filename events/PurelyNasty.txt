@@ -1,0 +1,193 @@
+#######################################################
+# High Infamy - Patriots and Nationalists seize the day
+#######################################################
+province_event = {
+	id = 3098
+	title = "EVTNAME3098"
+	desc = "EVTDESC3098"
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	trigger = {
+		owner = { overextension_percentage = 1.01 }
+		NOT = { has_province_modifier = rebel_sentiment }
+		is_colony = no
+		OR = {
+			likely_rebels = nationalist_rebels
+			likely_rebels = patriot_rebels
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 780
+
+		modifier = {
+			factor = 0.5
+			owner = { overextension_percentage = 1.5 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { overextension_percentage = 2.0 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { owner = { stability = 0 } }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { owner = { stability = -1 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { legitimacy = 95 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 2 }
+		}
+		modifier = {
+			factor = 1.4
+			owner = { stability = 3 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { owner = { overextension_percentage = 1.1 } }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA3098" # A minor inconvenience
+		add_province_modifier = {
+			name = "rebel_sentiment"
+			duration = 1825
+		}
+		random_neighbor_province = {
+			limit = {
+				owned_by = ROOT
+				NOT = { has_province_modifier = rebel_sentiment }
+				is_colony = no
+				OR = {
+					likely_rebels = nationalist_rebels
+					likely_rebels = patriot_rebels
+				}
+			}
+			add_province_modifier = {
+				name = "rebel_sentiment"
+				duration = 1825
+			}
+		}
+	}
+}
+
+
+#######################################################
+# War is going badly events...    ie, sign peace now!
+#######################################################
+
+country_event = {
+	id = 743
+	title = "EVTNAME743"
+	desc = "EVTDESC743"
+	picture = WOUNDED_SOLDIERS_eventPicture
+
+	trigger = {
+		war_exhaustion = 15
+		NOT = { stability = -1 }
+		is_at_war = yes
+		NOT = { war_score = -10 }
+	}
+
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+	}
+
+	option = {
+		name = "EVTOPTA743"
+		add_stability = -1
+	}
+}
+
+# This War is Futile!
+country_event = {
+	id = 744
+	title = "EVTNAME744"
+	desc = "EVTDESC744"
+	picture = LAND_MILITARY_eventPicture
+
+	trigger = {
+		war_exhaustion = 15
+		is_at_war = yes
+		prestige = -50
+		NOT = { war_score = -10 }
+	}
+
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+	}
+
+	option = {
+		name = "EVTOPTA744"
+		add_prestige = -10
+	}
+}
+
+# War causes fractions
+country_event = {
+	id = 745
+	title = "EVTNAME745"
+	desc = "EVTDESC745"
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	trigger = {
+		war_exhaustion = 15
+		is_at_war = yes
+		has_regency = no
+		government = monarchy
+		NOT = { war_score = -10 }
+	}
+
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 5.0
+			luck = yes
+		}		
+	}
+
+	option = {
+		name = "EVTOPTA745"
+		random_owned_province = {
+			limit = {
+				controlled_by = owner
+				is_overseas = no
+			}
+			pretender_rebels = 1
+		}
+	}
+}
+
+# $FROM$ defects to $COUNTRY$
+country_event = {
+	id = 747
+	title = "EVTNAME747"
+	desc = "EVTDESC747"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA747"
+		FROM = { cede_province = controller }
+	}
+	option = {
+		name = "EVTOPTB747"
+		add_prestige = -1
+	}
+}

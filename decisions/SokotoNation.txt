@@ -1,0 +1,78 @@
+country_decisions = {
+
+	sokoto_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { exists = SOK }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			religion = sunni
+			has_country_flag = sok_dan_fodio_happened
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			OR = {
+				piety = 0.5
+				has_idea_group = religious_ideas
+			}
+			owns_core_province = 1148 #Gobir
+		}
+		effect = {
+			hausaland = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = SOK
+			}
+			central_africa = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { owner = { has_country_flag = fulani_jihad_state } }
+					NOT = { region = kongo }
+					NOT = {
+						province_id = 1201
+						province_id = 2796
+						province_id = 1204
+						province_id = 1203
+						province_id = 1202
+						province_id = 1200
+						province_id = 1199
+						province_id = 1197
+						province_id = 1196
+						province_id = 1198
+						province_id = 1195
+					}
+					OR = {
+						religion = sunni
+						religion = animism
+					}
+				}
+				add_claim = SOK
+			}
+			add_prestige = 25
+			add_piety = 25
+			change_tag = SOK
+			set_capital = 1148
+			if = {
+				limit = {
+					is_tribal = yes
+				}
+				change_government = theocratic_government
+			}
+			swap_free_idea_group = yes		#keep progress
+		}
+		ai_importance = 400 #The countries that qualify will hate the holder of Sokoto.
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

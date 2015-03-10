@@ -1,0 +1,499 @@
+############################
+# Muslim Piety Events      #
+#                          #
+# Written by Henrik Eklund #
+############################
+
+namespace = muslim_piety
+
+# Enclave of Infidels
+country_event = {
+	id = muslim_piety.1
+	title = muslim_piety.1.t
+	desc = muslim_piety.1.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.1.a
+		add_piety = 0.25
+		add_years_of_income = -0.20
+	}
+	option = {
+		name = muslim_piety.1.b
+		add_piety = -0.25
+		add_years_of_income = 0.10
+	}
+}
+
+# A Donation
+country_event = {
+	id = muslim_piety.2
+	title = muslim_piety.2.t
+	desc = muslim_piety.2.d
+	picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.2.a
+		add_piety = 0.25
+		add_years_of_income = -0.20
+	}
+	option = {
+		name = muslim_piety.2.b
+		add_piety = -0.25
+		add_prestige = -20
+	}
+}
+
+# Heretical Research
+country_event = {
+	id = muslim_piety.3
+	title = muslim_piety.3.t
+	desc = muslim_piety.3.d
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.3.a
+		add_piety = 0.25
+		add_adm_power = -25
+	}
+	option = {
+		name = muslim_piety.3.b
+		add_piety = -0.25
+	}
+}
+
+# Book Burning
+country_event = {
+	id = muslim_piety.4
+	title = muslim_piety.4.t
+	desc = muslim_piety.4.d
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.4.a
+		add_piety = -0.25
+	}
+	option = {
+		name = muslim_piety.4.b
+		add_piety = 0.25
+	}
+}
+
+# Brigands strike at Pilgrims
+country_event = {
+	id = muslim_piety.5
+	title = muslim_piety.5.t
+	desc = muslim_piety.5.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.5.a
+		add_piety = 0.25
+		add_prestige = 10
+	}
+	option = {
+		name = muslim_piety.5.b
+		add_piety = -0.25
+		add_prestige = -10
+	}
+}
+
+# Another Infidel!
+country_event = {
+	id = muslim_piety.6
+	title = muslim_piety.6.t
+	desc = muslim_piety.6.d
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.6.a
+		add_piety = 0.25
+		add_adm_power = -25
+	}
+	option = {
+		name = muslim_piety.6.b
+		add_piety = -0.25
+	}
+}
+
+# Influx of Unbelievers
+country_event = {
+	id = muslim_piety.7
+	title = muslim_piety.7.t
+	desc = muslim_piety.7.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.7.a
+		add_piety = 0.25
+	}
+	option = {
+		name = muslim_piety.7.b
+		add_piety = -0.25
+
+	}
+}
+
+# Mobs target Unbelievers
+country_event = {
+	id = muslim_piety.8
+	title = muslim_piety.8.t
+	desc = muslim_piety.8.d
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		religion_group = muslim
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.8.a
+		add_piety = 0.25
+	}
+	option = {
+		name = muslim_piety.8.b
+		add_piety = -0.25
+	}
+}
+
+# Men of Science
+country_event = {
+	id = muslim_piety.9
+	title = muslim_piety.9.t
+	desc = muslim_piety.9.d
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.9.a
+		add_piety = -0.25
+	}
+	option = {
+		name = muslim_piety.9.b
+		add_piety = 0.25
+	}
+}
+
+# Lack of Recruits
+country_event = {
+	id = muslim_piety.10
+	title = muslim_piety.10.t
+	desc = muslim_piety.10.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+		piety = 0.75
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.10.a
+		add_piety = -0.25
+		add_manpower = 0.1
+	}
+	option = {
+		name = muslim_piety.10.b
+		add_piety = 0.10
+	}
+}
+
+# Charity to the Poor
+country_event = {
+	id = muslim_piety.11
+	title = muslim_piety.11.t
+	desc = muslim_piety.11.d
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.11.a
+		add_piety = 0.25
+		add_years_of_income = -0.20
+	}
+	option = {
+		name = muslim_piety.11.b
+		add_piety = -0.25
+		add_prestige = -10
+	}
+}
+
+# Blasphemy
+country_event = {
+	id = muslim_piety.12
+	title = muslim_piety.12.t
+	desc = muslim_piety.12.d
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.12.a
+		add_piety = 0.25
+		add_dip_power = -10
+	}
+	option = {
+		name = muslim_piety.12.b
+		add_piety = -0.25
+		add_prestige = -10
+	}
+}
+
+# The Clergy are Demonstrating
+country_event = {
+	id = muslim_piety.13
+	title = muslim_piety.13.t
+	desc = muslim_piety.13.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+		NOT = { piety = -0.75 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.13.a
+		add_piety = 0.25
+	}
+	option = {
+		name = muslim_piety.13.b
+		add_piety = -0.25
+	}
+}
+
+# The Zeal of our Army
+country_event = {
+	id = muslim_piety.14
+	title = muslim_piety.14.t
+	desc = muslim_piety.14.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+		piety = 0.75
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.14.a
+		add_piety = 0.1
+		add_prestige = 10
+	}
+	option = {
+		name = muslim_piety.14.b
+		add_piety = -0.25
+		add_prestige = -10
+		add_manpower = 0.1
+	}
+}
+
+# Collecting Taxes
+country_event = {
+	id = muslim_piety.15
+	title = muslim_piety.15.t
+	desc = muslim_piety.15.d
+	picture = ECONOMY_eventPicture
+
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.15.a
+		add_piety = 0.25
+		add_prestige = 10
+	}
+	option = {
+		name = muslim_piety.15.b
+		add_piety = -0.25
+		add_prestige = -10
+		add_years_of_income = 0.35
+	}
+}
+
+# Rampant Corruption
+country_event = {
+	id = muslim_piety.16
+	title = muslim_piety.16.t
+	desc = muslim_piety.16.d
+	picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+		NOT = { piety = -0.75 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = muslim_piety.16.a
+		add_piety = 0.25
+	}
+	option = {
+		name = muslim_piety.16.b
+		add_piety = -0.1
+		add_years_of_income = -0.20
+	}
+}
+
+# Iqta: Underage ruler is replaced
+country_event = {
+	id = muslim_piety.20
+	title = muslim_piety.20.t
+	desc = muslim_piety.20.d
+	picture = DEATH_OF_HEIR_eventPicture
+
+	trigger = {
+		religion_group = muslim
+		government = iqta
+		has_regency = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 180
+	}
+	
+	option = {
+		name = muslim_piety.20.a
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			kill_heir = yes
+		}
+		define_ruler = {
+			name = "random"
+		}
+		add_piety =-0.25
+		add_legitimacy = -25
+		add_stability = -1
+	}
+}

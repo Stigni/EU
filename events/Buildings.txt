@@ -1,0 +1,102 @@
+# University
+province_event = {
+	id = 9464
+	title = "EVTNAME9464"
+	desc = "EVTDESC9464"
+	picture = UNIVERSITY_eventPicture
+	
+	trigger = {
+		has_building = university
+	}
+	
+	mean_time_to_happen = {
+		months = 3600
+		modifier = {
+			factor = 0.8
+			owner = { stability = 3 }
+		}
+		modifier = {
+			factor = 0.1
+			is_month = 6
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA9464"
+		owner = {
+			add_adm_power = 10
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9464"
+		owner = {
+			add_prestige = 10
+		}
+	}
+}
+
+# Veined Marble in Fine Arts Academy
+province_event = {
+	id = 9465
+	title = "EVTNAME9465"
+	desc = "EVTDESC9465"
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		has_building = fine_arts_academy
+	}
+
+	mean_time_to_happen = {
+		months = 600
+	}
+	
+	option = {
+		name = "EVTOPTA9465"
+		owner = {
+			add_prestige = 50
+		}
+	}
+	option = {
+		name = "EVTOPTB9465"
+		owner = {
+			add_prestige = 5
+			add_years_of_income = 0.25
+		}
+	}
+}
+
+# The PROVINCE Speech
+province_event = {
+	id = 9467
+	title = "EVTNAME9467"
+	desc = "EVTDESC9467"
+	picture = UNIVERSITY_eventPicture
+	
+	trigger = {
+		has_building = university
+		has_owner_culture = yes
+		has_owner_religion = yes
+		is_core = owner
+		owner = {
+			is_at_war = yes
+		}
+	}
+	mean_time_to_happen = {
+		months = 1500
+	}
+	option = {
+		name = "EVTOPTA9467"
+		owner = {
+			add_yearly_manpower = 0.25
+			add_adm_power = 10
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB9467"
+		owner = {
+			add_adm_power = 50
+		}
+	}
+}

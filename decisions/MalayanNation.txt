@@ -1,0 +1,87 @@
+country_decisions = {
+
+	malayan_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { exists = MSA }
+			culture_group = malay
+			NOT = { technology_group = nomad_group }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				ai = no
+				num_of_cities = 12
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns = 624 #Banten
+			owns = 2687 #Pakuan
+			owns = 629 #Demak
+			owns = 630 #Kalapa
+			OR = {
+				AND = {
+					malay_peninsula_region = {
+						type = all
+						owned_by = ROOT
+					}
+					borneo_region = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+				AND = {
+					malay_peninsula_region = {
+						type = all
+						owned_by = ROOT
+					}
+					sumatran_region = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+				AND = {
+					borneo_region = {
+						type = all
+						owned_by = ROOT
+					}
+					sumatran_region = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			change_tag = MSA
+			every_province ={
+				limit = {
+					OR = {
+						region = borneo_region
+						region = sumatran_region
+						region = malay_peninsula_region
+					}
+				}
+				add_claim = MSA
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

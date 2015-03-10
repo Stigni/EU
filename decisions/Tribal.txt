@@ -1,0 +1,182 @@
+country_decisions = {
+	
+	tribal_despotism_reform = {
+		major = yes
+		potential = {
+			government = tribal_despotism
+		}
+		allow = {
+			adm_power = 200
+			legitimacy = 60
+			stability = 3
+			OR = {
+				full_idea_group = economic_ideas
+				full_idea_group = innovativeness_ideas
+				full_idea_group = administrative_ideas
+			}
+		}
+		effect = {
+			change_government = despotic_monarchy
+			add_stability = -5
+			add_adm_power = -200
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	tribal_kingdom_reform = {
+		major = yes
+		potential = {
+			government = tribal_kingdom
+		}
+		allow = {
+			adm_power = 200
+			legitimacy = 60
+			stability = 3
+			OR = {
+				full_idea_group = economic_ideas
+				full_idea_group = innovativeness_ideas
+				full_idea_group = administrative_ideas
+			}
+		}
+		effect = {
+			change_government = feudal_monarchy
+			add_stability = -5
+			add_adm_power = -200
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	tribal_federation_reform = {
+		major = yes
+		potential = {
+			government = tribal_federation
+		}
+		allow = {
+			adm_power = 200
+			legitimacy = 60
+			stability = 3
+			OR = {
+				full_idea_group = economic_ideas
+				full_idea_group = innovativeness_ideas
+				full_idea_group = administrative_ideas
+			}
+		}
+		effect = {
+			change_government = feudal_monarchy
+			add_stability = -5
+			add_adm_power = -200
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tribal_democracy_reform = {
+		major = yes
+		potential = {
+			government = tribal_democracy
+		}
+		allow = {
+			adm_power = 200
+			republican_tradition = 0.99
+			stability = 3
+			OR = {
+				full_idea_group = economic_ideas
+				full_idea_group = innovativeness_ideas
+				full_idea_group = administrative_ideas
+			}
+		}
+		effect = {
+			change_government = oligarchic_republic
+			add_stability = -5
+			add_adm_power = -200
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	steppe_horde_reform = {
+		major = yes
+		potential = {
+			government = steppe_horde
+			OR = {
+				ai = no
+				full_idea_group = economic_ideas
+				full_idea_group = innovativeness_ideas
+				full_idea_group = administrative_ideas
+			}
+		}
+		allow = {
+			adm_power = 200
+			legitimacy = 60
+			stability = 3
+			OR = {
+				full_idea_group = economic_ideas
+				full_idea_group = innovativeness_ideas
+				full_idea_group = administrative_ideas
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { tag = TIM }
+					NOT = { tag = MCH }
+				}
+				swap_free_idea_group = yes		#keep progress
+			}
+			add_adm_power = -200
+			add_stability = -5
+			change_government = despotic_monarchy
+			if = {
+				limit = {
+					technology_group = nomad_group
+					NOT = { religion_group = eastern }
+				}
+				change_technology_group = muslim
+				change_unit_type = muslim
+			}
+			if = {
+				limit = {
+					technology_group = nomad_group
+					religion_group = eastern
+				}
+				change_technology_group = chinese
+				change_unit_type = chinese
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	siberian_reform = {
+		major = yes
+		potential = {
+			government = siberian_native_council
+		}
+		allow = {
+			adm_power = 200
+			stability = 3
+			OR = {
+				full_idea_group = economic_ideas
+				full_idea_group = innovativeness_ideas
+				full_idea_group = administrative_ideas
+			}
+		}
+		effect = {
+			change_government = despotic_monarchy
+			add_stability = -5
+			add_adm_power = -200
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

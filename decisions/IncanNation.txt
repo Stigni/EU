@@ -1,0 +1,74 @@
+country_decisions = {
+
+	incan_nation = {
+		major = yes
+		potential = {
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			NOT = { exists = INC }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			religion_group = pagan
+			OR = {
+				culture_group = andean_group
+				primary_culture = cara
+				primary_culture = chachapoyan
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				ai = no
+				tag = CSU
+				num_of_cities = 8
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			owns_core_province = 808 #Qusqu
+			owns_core_province = 813 #Kashamarka
+			owns_core_province = 810 #Wankawilka
+			owns_core_province = 814 #Wanuku
+			OR = {
+				owns_core_province = 804	#Puno
+				owns_core_province = 2831	#Tiwanuku
+			}
+			OR = {
+				owns_core_province = 812	#Chanchan
+				owns_core_province = 820	#Quito
+			}
+		}
+		effect = {
+			if = {
+				limit = { tag = CHM }
+				set_country_flag = INC_used_to_be_CHM
+			}
+			change_tag = INC
+			change_religion = inti
+			the_andes = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = INC
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					is_tribal = yes
+				}
+				change_government = despotic_monarchy
+			}
+			swap_free_idea_group = yes		#keep progress
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

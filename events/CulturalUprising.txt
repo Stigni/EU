@@ -1,0 +1,259 @@
+province_event = {
+	id = 3051
+	title = "EVTNAME3051"
+	desc = "EVTDESC3051"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = rebel_negotiations }
+			NOT = { accepted_culture = ROOT }
+			NOT = { primary_culture = ROOT }
+			NOT = { culture_group = ROOT }
+			NOT = { religion = ROOT }
+		}
+		OR = {
+			likely_rebels = nationalist_rebels
+			likely_rebels = patriot_rebels
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 420
+
+		modifier = {
+			factor = 0.5 
+			NOT = { is_core = ROOT }
+		}
+
+		modifier = {
+			factor = 0.95 
+			owner = { NOT = { adm = 1 } }
+		}					
+		modifier = {
+			factor = 0.95 
+		 	owner = { NOT = { mil = 1 } }
+		}		
+		modifier = {
+			factor = 1.05 
+			owner = { adm = 1 }
+		}			
+		modifier = {
+			factor = 1.05
+		 	owner = { mil = 1 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { revolt_percentage = 0.1 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { revolt_percentage = 0.3 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { revolt_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				has_country_flag = rebellion
+			}
+		}
+		modifier = {
+			factor = 1.6
+			owner = {
+				num_of_cities = 15
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = 0 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -1 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -2 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 1 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 2 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 3 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA3051"
+		ai_chance = { factor = 75 }
+		if = {
+			limit = {
+				likely_rebels = nationalist_rebels
+			}
+			nationalist_rebels = 2
+		}
+		if = {
+			limit = {
+				likely_rebels = patriot_rebels
+			}
+			patriot_rebels = 2
+		}
+		add_province_modifier = {
+			name = "suppress_minority"
+			duration = 150
+		}
+		owner = {
+			set_country_flag = rebellion
+		}
+	}
+	option = {
+		name = "EVTOPTB3051"
+		ai_chance = { factor = 25 }
+		owner = {
+			add_country_modifier = {
+				name = "rebel_negotiation"
+					duration = 150
+			}
+			set_country_flag = rebel_negotiations	
+			add_treasury = -30
+		}
+	}
+}
+
+province_event = {
+	id = 3052
+	title = "EVTNAME3051"
+	desc = "EVTDESC3051"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = rebel_negotiations } 
+			NOT = { accepted_culture = ROOT }
+			NOT = { primary_culture = ROOT }
+			NOT = { culture_group = ROOT }
+		}
+		OR = {
+			likely_rebels = nationalist_rebels
+			likely_rebels = patriot_rebels
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 420
+
+		modifier = {
+			factor = 0.5 
+			NOT = { is_core = ROOT }
+		}
+		modifier = {
+			factor = 0.95 
+			owner = { NOT = { adm = 1 } }
+		}				
+		modifier = {
+			factor = 0.95 
+			owner = { NOT = { mil = 1 } }
+		}		
+		modifier = {
+			factor = 1.05 
+			owner = { adm = 1 }
+		}				
+		modifier = {
+			factor = 1.05
+			owner = { mil = 1 }
+		}		
+		modifier = {
+			factor = 0.95
+			owner = { revolt_percentage = 0.1 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { revolt_percentage = 0.3 }
+		}
+		modifier = {
+			factor = 0.95
+			owner = { revolt_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 10
+			owner = {
+				has_country_flag = rebellion
+			}
+		}
+		modifier = {
+			factor = 1.6
+			owner = {
+				num_of_cities = 15
+			}
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = 0 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -1 } }
+		}
+		modifier = {
+			factor = 0.9
+			owner = { NOT = { stability = -2 } }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 1 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 2 }
+		}
+		modifier = {
+			factor = 1.1
+			owner = { stability = 3 }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA3051"
+		ai_chance = { factor = 75 }
+		if = {
+			limit = {
+				likely_rebels = nationalist_rebels
+			}
+			nationalist_rebels = 2
+		}
+		if = {
+			limit = {
+				likely_rebels = patriot_rebels
+			}
+			patriot_rebels = 2
+		}
+		add_province_modifier = {
+			name = "suppress_minority"
+			duration = 180
+		}
+		owner = {
+			set_country_flag = rebellion
+		}
+	}
+	option = {
+		name = "EVTOPTB3051"
+		ai_chance = { factor = 25 }
+		owner = {
+			add_country_modifier = {
+				name = "rebel_negotiation"
+				duration = 180
+			}
+			set_country_flag = rebel_negotiations
+			add_treasury = -30
+		}
+	}
+}

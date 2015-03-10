@@ -1,0 +1,67 @@
+country_decisions = {
+
+	kingdom_of_jerusalem = {
+		major = yes
+		potential = {
+			NOT = { exists = KOJ }
+			is_playing_historical_setup = yes
+			is_playing_custom_nation = no
+			religion = catholic
+			NOT = { government = republic }
+			OR = {
+				owns = 379
+				AND = {
+					ai = no
+					tag = KNI
+				}
+				AND = {
+					ai = no
+					tag = CYP
+				}
+			}
+			NOT = { is_year = 1650 } #end of crusades
+		}
+		allow = {
+			is_at_war = no
+			owns_core_province = 1854
+			owns_core_province = 364
+			owns_core_province = 379
+			379 = { religion = catholic }
+		}
+		effect = {
+			add_prestige = 25
+			
+			if = {
+				limit = {
+					NOT = { tag = KNI }
+					NOT = { tag = CYP }
+				}
+				KOJ = {
+					add_core = 379
+					add_core = 1854
+					add_core = 364
+				}
+				release = KOJ
+				KOJ = { change_primary_culture = ROOT }
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = KNI
+						tag = CYP
+					}
+				}
+				change_tag = KOJ
+				swap_free_idea_group = yes
+			}
+			KOJ = {
+				set_capital = 379
+				change_government = feudal_monarchy
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

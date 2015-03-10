@@ -1,0 +1,81 @@
+namespace = tribal_succession
+
+# Tribal Succession Crisis
+country_event = {
+	id = tribal_succession.1
+	title = tribal_succession.1.t
+	desc = tribal_succession.1.d
+	picture = KING_SICK_IN_BED_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		government = steppe_horde
+		OR = {
+			NOT = { legitimacy = 50 }
+			has_regency = yes
+		}
+	}
+	
+	option = {
+		name = tribal_succession.1.a
+		trigger = {
+			NOT = { legitimacy = 50 }
+		}
+		random_owned_province = {
+			pretender_rebels = 2
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { is_core = ROOT }
+			}
+			nationalist_rebels = 1
+		}
+		add_ruler_modifier = {
+			name = "tribal_succession_crisis"
+		}
+		custom_tooltip = tribal_crisis_can_end_when
+	}
+	
+	option = {
+		name = tribal_succession.1.b
+		trigger = {
+			has_regency = yes
+		}
+		kill_heir = yes
+		define_ruler = {
+			dip = 3
+			mil = 3
+			adm = 3
+		}
+	}
+}
+
+# Succession Secured!
+country_event = {
+	id = tribal_succession.2
+	title = tribal_succession.2.t
+	desc = tribal_succession.2.d
+	picture = NEW_HEIR_eventPicture
+	
+	trigger = {
+		government = steppe_horde
+		has_ruler_modifier = tribal_succession_crisis
+		NOT = {
+			has_spawned_rebels = pretender_rebels
+		}
+		has_regency = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = tribal_succession.1.a
+		remove_country_modifier = tribal_succession_crisis
+		add_stability = 1
+		add_legitimacy = 25
+	}
+}
+	
