@@ -866,7 +866,6 @@ country_event = {
 		every_owned_province = {
 			add_local_autonomy = -10
 		}
-		
 	}
 	option = {		# Leave it be
 		name = "flavor_tur.EVTOPTB3375"
@@ -889,6 +888,7 @@ country_event = {
 		tag = TUR
 		is_year = 1600
 		NOT = { is_year = 1650 }
+		is_female = no
 		has_regency = no
 		NOT = {
 			has_global_flag = wih_kosem_tur_flag
@@ -899,7 +899,6 @@ country_event = {
 		months = 100
 	}
 	
-
 	option = {		# Wed Kösem
 		name = "flavor_tur.EVTOPTA3377"
 		ai_chance = { factor = 90 }
@@ -932,6 +931,7 @@ country_event = {
 	picture = DEATH_OF_HEIR_eventPicture
 	
 	fire_only_once = yes
+	
 	trigger = {
 		tag = TUR
 		has_ruler_modifier = kosem_sultana
@@ -943,7 +943,6 @@ country_event = {
 	mean_time_to_happen = {
 		months = 300
 	}
-	
 	
 	option = {		# Kösem is murdered
 		name = "flavor_tur.EVTOPTA3384"
@@ -958,8 +957,6 @@ country_event = {
 	desc = "flavor_tur.EVTDESC3385"
 	picture = ADVISOR_eventPicture
 	
-	
-	
 	fire_only_once = yes
 
 	trigger = {
@@ -971,7 +968,6 @@ country_event = {
 	mean_time_to_happen = {
 		months = 100
 	}
-	
 	
 	option = {		# Support the Köprülü Family
 		name = "flavor_tur.EVTOPTA3385"
