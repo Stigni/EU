@@ -1129,7 +1129,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 260
+		months = 300
 	}
 	
 	option = {
@@ -1157,6 +1157,7 @@ country_event = {
 		has_dlc = "El Dorado"
 		uses_doom = yes
 		NOT = { has_ruler_flag = temple_expansion }
+		is_year = 1455
 		OR = {
 			NOT = { tag = AZT }
 			852 = { has_province_modifier = azt_templo_mayor }
@@ -1170,6 +1171,7 @@ country_event = {
 	option = {
 		name = nahuatl_events.29.a #It is time for an ambitious expansion of the Temple.
 		ai_chance = { factor = 0 }
+		set_ruler_flag = temple_expansion
 		add_years_of_income = -0.75
 		add_doom = -15
 		add_adm_power = 50
@@ -1177,6 +1179,7 @@ country_event = {
 	option = {
 		name = nahuatl_events.29.b #Add another layer to the Pyramid.
 		ai_chance = { factor = 0 }
+		set_ruler_flag = temple_expansion
 		add_years_of_income = -0.5
 		add_adm_power = 25
 		add_doom = -10
@@ -1184,11 +1187,13 @@ country_event = {
 	option = {
 		name = nahuatl_events.29.c #Maintaining what we have is enough.
 		ai_chance = { factor = 1 }
+		set_ruler_flag = temple_expansion
 		add_years_of_income = -0.05
 	}
 	option = {
 		name = nahuatl_events.29.dd #We cannot afford to do much this time.
 		ai_chance = { factor = 0 }
+		set_ruler_flag = temple_expansion
 		add_doom = 10
 	}
 }

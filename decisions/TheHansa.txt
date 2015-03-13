@@ -3,8 +3,11 @@ country_decisions = {
 	build_lubeck_krantor = {
 		potential = {	
 			tag = HSA
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			owns = 45
 			government = merchant_republic
 			45 = {
@@ -34,8 +37,11 @@ country_decisions = {
 	commission_adler_von_lubeck = {
 		potential = {
 			tag = HSA
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			owns = 45
 			controls = 45
 			NOT = {

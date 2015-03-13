@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_kbo
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 #The two branches of the Sayfawa dynasty
 country_event = {

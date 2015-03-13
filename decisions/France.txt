@@ -4,8 +4,11 @@ country_decisions = {
 	
 		potential = {
 			tag = FRA
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { has_country_flag = versailles_court }
 			capital = 183
 			government = monarchy
@@ -27,8 +30,11 @@ country_decisions = {
 	say_the_state_is_me = {
 		potential = {
 			tag = FRA
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { has_country_modifier = the_state_is_me }
 			government = monarchy
 		}
@@ -58,8 +64,11 @@ country_decisions = {
 	enact_edict_de_nantes = {
 		potential = {
 			tag = FRA
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { has_country_modifier = edict_de_nantes }
 			NOT = { has_country_flag = had_edict_de_nantes }
 			OR = {
@@ -99,8 +108,11 @@ country_decisions = {
 	revoke_edict_de_nantes = {
 		potential = {
 			has_country_modifier = edict_de_nantes
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 		}
 		allow = {
 			OR = {

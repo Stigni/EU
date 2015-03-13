@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_zan
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Shirazi Islam and the Patricians of Kilwa
 country_event = {

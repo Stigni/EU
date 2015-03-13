@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_mch
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Nurhachi's Reforms
 country_event = {

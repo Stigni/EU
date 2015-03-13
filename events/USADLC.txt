@@ -5,7 +5,7 @@
 ########################################
 
 namespace = usa_dlc
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Congress of the Confederation
 country_event = {
@@ -431,6 +431,7 @@ country_event = {
 		name = "usa_dlc.EVTOPTA12"
 		add_country_modifier = {
 			name = abolish_slavery
+			duration = -1
 		}		
 	}
 	option = {

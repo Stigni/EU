@@ -1933,7 +1933,10 @@ country_event = {
 		name = "EVTOPTA5077"		# Let them handle it
 		ai_chance = { factor = 25 }
 		random_owned_province = {
-			add_unrest = 10
+			limit = {
+				is_capital = no
+			}
+			add_local_autonomy = 40
 		}
 	}
 	option = {
@@ -2813,6 +2816,7 @@ country_event = {
 		army_tradition = 10
 		NOT = { army_tradition = 40 }
 		navy_tradition = 40
+		primitives = no
 	}
 
 	mean_time_to_happen = {
@@ -4027,6 +4031,7 @@ country_event = {
 	trigger = {
 		stability = 0
 		num_of_ports = 1
+		primitives = no
 	}
 
 	mean_time_to_happen = {
@@ -4743,6 +4748,7 @@ country_event = {
 				continent = south_america
 			}
 		}
+		NOT = { has_country_modifier = colonial_enthusiasm }
 	}
 	
 	mean_time_to_happen = {
@@ -4966,6 +4972,7 @@ country_event = {
 	
 	trigger = {
 		num_of_ports = 1
+		primitives = no
 	}
 	
 	mean_time_to_happen = {
@@ -6174,7 +6181,8 @@ country_event = {
 			has_port = yes
 			is_core = ROOT
 			controlled_by = ROOT
-		}		
+		}
+		primitives = no
 	}
 	
 	mean_time_to_happen = {
@@ -6350,6 +6358,7 @@ country_event = {
 			advisor = navigator
 			advisor = naval_reformer
 		}
+		primitives = no
 	}
 	
 	mean_time_to_happen = {

@@ -19,6 +19,7 @@ country_event = {
 	major = yes
 
 	trigger = {
+		NOT = { has_dlc = "Art of War" }
 		religion_group = christian
 		exists = FRA
 		NOT = { tag = FRA }
@@ -168,6 +169,7 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	trigger = {
+		NOT = { has_dlc = "Art of War" }
 		OR = {
 			AND = {
 				religion = protestant
@@ -196,6 +198,7 @@ country_event = {
 	
 	option = {
 		name = league_events.5.a
+		custom_tooltip = league_events.5.a.tt
 		every_country = {
 			limit = {
 				NOT = { tag = ROOT }
@@ -363,6 +366,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		NOT = { has_dlc = "Art of War" }
 		tag = PAP
 		exists = FRA
 		exists = VEN

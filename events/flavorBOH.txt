@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_boh
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 #Hussites march on Prague
 country_event = {

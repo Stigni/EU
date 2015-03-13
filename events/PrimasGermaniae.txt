@@ -1,6 +1,6 @@
 # Primas Germaniae event series
 
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Primas Germaniae
 country_event = {

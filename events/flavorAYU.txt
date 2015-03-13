@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_ayu
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Boromo Trailokanat's Reforms
 country_event = {

@@ -3,7 +3,7 @@
 ########################################
 
 namespace = flavor_per
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Turko-Persian Conflicts: Shiite rebels
 country_event = {

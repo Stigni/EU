@@ -6,7 +6,7 @@
 
 
 namespace = flavor_sul
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # Spawn Sulu
 province_event = {

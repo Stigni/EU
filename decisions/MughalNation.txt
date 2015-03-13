@@ -3,7 +3,7 @@ country_decisions = {
 	mughal_nation = {
 		major = yes
 		potential = {
-			is_playing_historical_setup = yes
+			normal_or_historical_nations = yes
 			is_playing_custom_nation = no
 			NOT = { exists = MUG }
 			NOT = { tag = PER }

@@ -3,7 +3,7 @@
 ########################################
 
 namespace = flavor_tur
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # The Economic Reforms of Mehmed II
 country_event = {
@@ -876,8 +876,6 @@ country_event = {
 	}
 }
 
-
-
 # Kösem Sultana
 country_event = {
 	id = flavor_tur.3377
@@ -892,6 +890,9 @@ country_event = {
 		is_year = 1600
 		NOT = { is_year = 1650 }
 		has_regency = no
+		NOT = {
+			has_global_flag = wih_kosem_tur_flag
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -923,8 +924,6 @@ country_event = {
 	}
 }
 
-
-
 # The Murder of Kösem Sultana
 country_event = {
 	id = flavor_tur.3384
@@ -936,6 +935,9 @@ country_event = {
 	trigger = {
 		tag = TUR
 		has_ruler_modifier = kosem_sultana
+		NOT = {
+			has_global_flag = wih_kosem_tur_flag
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1643,13 +1645,11 @@ country_event = {
 ########################################
 
 # The Decentralizing Effect of the Provincial System
-
 country_event = {
 	id = flavor_tur.5
-	title = flavor_tur.5.t
-	desc = flavor_tur.5.d
+	title = flavor_tur.EVTNAME5
+	desc = flavor_tur.EVTDESC5
 	picture = COURT_eventPicture
-	
 	
 	fire_only_once = yes
 	
@@ -1680,15 +1680,10 @@ country_event = {
 			}
 			set_province_flag = bey_uproar
 		}
-
-		
-
 	}
-
-	
 	
 	option = {		# Give in to their demands
-		name = flavor_tur.5.a
+		name = flavor_tur.EVTOPTA5
 		every_owned_province = {
 			limit = {
 				has_province_flag = bey_uproar
@@ -1698,7 +1693,7 @@ country_event = {
 		}
 	}
 	option = {		# Limit the concessions
-		name = flavor_tur.5.b
+		name = flavor_tur.EVTOPTB5
 		every_owned_province = {
 			limit = {
 				has_province_flag = bey_uproar
@@ -1709,7 +1704,7 @@ country_event = {
 		add_legitimacy = -20
 	}
 	option = {		# Rein them in
-		name = flavor_tur.5.c
+		name = flavor_tur.EVTOPTC5
 		add_stability = -2
 		every_owned_province = {
 			limit = {
@@ -1718,7 +1713,6 @@ country_event = {
 			add_unrest = 10
 			clr_province_flag = bey_uproar
 		}
-
 	}
 }
 

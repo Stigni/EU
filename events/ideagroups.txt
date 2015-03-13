@@ -1222,6 +1222,70 @@ country_event = {
 				}
 				set_country_flag = catholic_heresy
 			}
+			# Orthodox
+			if = {
+				limit = {
+					religion = orthodox
+					is_religion_enabled = protestant
+					is_religion_enabled = reformed
+				}
+				random_list = {
+					70 = { set_country_flag = protestant_heresy }
+					30 = { set_country_flag = reformed_heresy }
+				}
+			}
+			if = {
+				limit = {
+					religion = orthodox
+					is_religion_enabled = protestant
+					NOT = { is_religion_enabled = reformed }
+				}
+				set_country_flag = protestant_heresy
+			}
+			if = {
+				limit = {
+					religion = orthodox
+					NOT = {
+						OR = {
+							is_religion_enabled = protestant
+							is_religion_enabled = reformed						
+						}
+					}
+				}
+				set_country_flag = catholic_heresy
+			}
+			# Coptic
+			if = {
+				limit = {
+					religion = coptic
+					is_religion_enabled = protestant
+					is_religion_enabled = reformed
+				}
+				random_list = {
+					70 = { set_country_flag = protestant_heresy }
+					30 = { set_country_flag = reformed_heresy }
+				}
+			}
+			if = {
+				limit = {
+					religion = coptic
+					is_religion_enabled = protestant
+					NOT = { is_religion_enabled = reformed }
+				}
+				set_country_flag = protestant_heresy
+			}
+			if = {
+				limit = {
+					religion = coptic
+					NOT = {
+						OR = {
+							is_religion_enabled = protestant
+							is_religion_enabled = reformed						
+						}
+					}
+				}
+				set_country_flag = catholic_heresy
+			}
 		}
 	}
 	
@@ -2447,6 +2511,9 @@ country_event = {
 	option = {
 		name = "EVTOPTB6112"
 		random_core_province = {
+			limit = {
+				owned_by = ROOT
+			}
 			add_province_manpower = 1
 		}
 	}
@@ -2638,6 +2705,7 @@ country_event = {
 	trigger = {
 		has_idea_group = offensive_ideas	
 		num_of_ports = 1
+		primitives = no
 	}
 
 	mean_time_to_happen = {
@@ -5272,6 +5340,7 @@ country_event = {
 		dip_tech = 3
 		NOT = { has_country_modifier = timber_shortage }
 		num_of_ports = 1
+		primitives = no
 	}
 	
 	mean_time_to_happen = {
@@ -5323,7 +5392,7 @@ country_event = {
 		has_idea_group = quantity_ideas
 		dip_tech = 3
 		NOT = { has_country_modifier = timber_surplus }
-		
+		primitives = no		
 	}
 	
 	mean_time_to_happen = {
@@ -5438,6 +5507,9 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = expansion_ideas
+		NOT = {
+			has_country_modifier = "colonial_enthusiasm"
+		}
 	}
 
 	mean_time_to_happen = {

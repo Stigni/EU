@@ -17,7 +17,7 @@ province_event = {
 			is_city = yes
 		}
 		OR = {
-			is_playing_historical_setup = no
+			normal_or_historical_nations = no
 			region = la_plata_region
 			region = quito_region
 			region = paraguay_region
@@ -121,7 +121,7 @@ province_event = {
 		}
 		has_port = yes
 		OR = {
-			is_playing_historical_setup = no
+			normal_or_historical_nations = no
 			region = northern_america
 			region = northwestern_america
 			region = northeastern_america
@@ -215,7 +215,7 @@ province_event = {
 		OR = {
 			region = la_plata_region
 			region = cuyo_region
-			is_playing_historical_setup = no
+			normal_or_historical_nations = no
 		}
 	}
 
@@ -271,7 +271,7 @@ province_event = {
 			region = pampas_region
 			region = patagonia_region
 			region = chaco_region
-			is_playing_historical_setup = no
+			normal_or_historical_nations = no
 		}
 	}
 
@@ -318,7 +318,7 @@ province_event = {
 		}
 		OR = {
 			region = indonesian_region
-			is_playing_historical_setup = no
+			normal_or_historical_nations = no
 			province_id = 738
 		}
 	}
@@ -506,7 +506,7 @@ province_event = {
 			region = st_lawrence_region
 			region = new_england_region
 			region = castilla_del_oro_region
-			is_playing_historical_setup = no
+			normal_or_historical_nations = no
 		}
 	}
 
@@ -568,7 +568,7 @@ province_event = {
 			region = eastern_siberia
 			region = minas_gerais_region
 			region = mato_grosso_region
-			is_playing_historical_setup = no
+			normal_or_historical_nations = no
 		}
 	}
 
@@ -640,6 +640,12 @@ province_event = {
 
 	mean_time_to_happen = {
 		months = 12
+		
+		modifier = {
+			factor = 100
+			normal_or_historical_nations = no
+			is_city = yes
+		}	
 		
 		modifier = {
 			factor = 0.5
@@ -720,7 +726,7 @@ province_event = {
 			province_id = 990
 			region = western_siberia
 			region = eastern_siberia
-			is_playing_historical_setup = no
+			normal_or_historical_nations = no
 		}
 	}
 

@@ -121,6 +121,9 @@ country_decisions = {
 				full_idea_group = innovativeness_ideas
 				full_idea_group = administrative_ideas
 			}
+			NOT = {
+				has_ruler_modifier = tribal_succession_crisis
+			}
 		}
 		effect = {
 			if = {

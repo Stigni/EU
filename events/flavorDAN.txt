@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_dan
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # The Pluralistic Reforms of Christian II
 country_event = {

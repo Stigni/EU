@@ -6,8 +6,11 @@ country_decisions = {
 				tag = POL
 				tag = PLC
 			}
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			owns = 257
 			NOT = { capital = 257 }
 			NOT = { has_country_flag = relocated_capital_warsawa }
@@ -39,8 +42,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			tag = POL
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			LIT = {
 				ai = yes
 				exists = yes

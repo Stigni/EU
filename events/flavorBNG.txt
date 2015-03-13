@@ -5,7 +5,7 @@
 ########################################
 
 namespace = flavor_bng
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 #The Chishti Order and the Sultans of Bengal.
 country_event = {

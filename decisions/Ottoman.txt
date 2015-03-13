@@ -6,8 +6,11 @@ country_decisions = {
 			owns = 151
 			NOT = { capital = 151 }
 			NOT = { has_country_flag = relocated_capital_constantinople }
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 		}
 		allow = {
 			primary_culture = turkish
@@ -49,8 +52,11 @@ country_decisions = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_modifier = the_provincial_system }
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 		}
 		allow = {
 			adm_tech = 5
@@ -78,8 +84,11 @@ country_decisions = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_modifier = the_devshirme_system }
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 		}
 		allow = {
 			MIL = 4
@@ -105,8 +114,11 @@ country_decisions = {
 	disband_the_janissaries = {
 		potential = {
 			has_country_modifier = tur_janissary
-			is_playing_historical_setup = yes
-			is_playing_custom_nation = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 		}
 		allow = {
 			has_disaster = janissary_decadence

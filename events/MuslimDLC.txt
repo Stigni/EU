@@ -141,7 +141,7 @@ country_event = {
 		has_regency = no
 		is_at_war = no
 		NOT = {
-			piety = 75
+			piety = 0.75
 		}
 		NOT = {
 			has_ruler_modifier = muslim_hajj
@@ -506,7 +506,7 @@ country_event = {
 		}
 		religion_group = muslim
 		NOT = {
-			piety = 75
+			piety = 0.75
 		}
 		NOT = { has_country_flag = policy_changes_flag }
 		NOT = { has_ruler_modifier = banned_alcohol_tobacco_coffee }

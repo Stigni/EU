@@ -3,7 +3,7 @@
 ########################################
 
 namespace = flavor_rus
-is_playing_historical_setup = yes
+normal_or_historical_nations = yes
 
 # The Pomjestija Reform
 country_event = {
@@ -2354,6 +2354,7 @@ country_event = {
 	option = {		# Invite him to stay and study our governmental institutions
 		name = "flavor_rus.EVTOPTA1012"
 		ai_chance = { factor = 25 }
+		custom_tooltip = flavor_rus.1012.a.tt #[FromFrom.Monarch.GetName] will learn about our government institutions
 		random_country = {
 			limit = {
 				has_country_flag = RUS_had_event_1010
@@ -2371,6 +2372,7 @@ country_event = {
 	option = {		# Invite him to stay and study our army
 		name = "flavor_rus.EVTOPTB1012"
 		ai_chance = { factor = 25 }
+		custom_tooltip = flavor_rus.1012.b.tt #[FromFrom.Monarch.GetName] will learn about our army organization.
 		random_country = {
 			limit = {
 				has_country_flag = RUS_had_event_1010
@@ -2388,6 +2390,7 @@ country_event = {
 	option = {		# Invite him to stay and study our navy
 		name = "flavor_rus.EVTOPTC1012"
 		ai_chance = { factor = 25 }
+		custom_tooltip = flavor_rus.1012.c.tt #[FromFrom.Monarch.GetName] will learn about our naval organization.
 		random_country = {
 			limit = {
 				has_country_flag = RUS_had_event_1010
