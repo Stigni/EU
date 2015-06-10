@@ -42,6 +42,12 @@ country_decisions = {
 		effect = {
 			add_prestige = 25
 			change_tag = CRO
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

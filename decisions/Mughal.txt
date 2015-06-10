@@ -25,7 +25,7 @@ country_decisions = {
 			set_capital = 522
 			522 = {
 			 	add_base_tax = 2
-			 	add_province_manpower = 1
+			 	add_base_manpower = 1
 			}
 		}
 		ai_will_do = {

@@ -38,10 +38,11 @@ country_decisions = {
 				}
 				151 = {
 					add_base_tax = 6
-					add_province_manpower = 5
+					add_base_manpower = 5
 				}
 				set_global_flag = constantinople_restored
 			}
+			set_government_rank = 3
 		}
 		ai_will_do = {
 			factor = 1

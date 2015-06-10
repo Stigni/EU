@@ -50,6 +50,24 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = MOR
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			moroccan_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -119,6 +137,24 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = ALG
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			change_primary_culture = algerian
 			algerian_region = {
 				limit = {
@@ -193,6 +229,24 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = TUN
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			change_primary_culture = tunisian
 			tunisian_region = {
 				limit = {
@@ -263,6 +317,24 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = TRP
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			change_primary_culture = tunisian
 			tripoli_region = {
 				limit = {

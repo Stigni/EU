@@ -35,6 +35,24 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = EGY
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			add_prestige = 25
 			change_government = despotic_monarchy
 			add_country_modifier = {

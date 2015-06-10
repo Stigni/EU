@@ -27,7 +27,6 @@ country_decisions = {
 			}
 			OR = {
 				ai = no
-				tag = CSU
 				num_of_cities = 8
 			}
 		}
@@ -52,6 +51,19 @@ country_decisions = {
 				limit = { tag = CHM }
 				set_country_flag = INC_used_to_be_CHM
 			}
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			set_government_rank = 3
 			change_tag = INC
 			change_religion = inti
 			the_andes = {

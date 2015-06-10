@@ -27,7 +27,7 @@ country_decisions = {
 			is_subject = no
 			is_at_war = no
 			is_tribal = no
-			owns_core_province = 2218		# Sarvestan
+			owns_core_province = 2218		# Shiraz
 			owns_core_province = 414		# Hamadan
 			owns_core_province = 416		# Tabriz	
 			owns_core_province = 426		# Mazandaran
@@ -37,6 +37,22 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PER
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
 			persian_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
