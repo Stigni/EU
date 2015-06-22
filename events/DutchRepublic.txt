@@ -704,7 +704,7 @@ country_event = {
 
 	option = {
 		name = "dutch_republic.17.a"
-		add_prestige = -15
+		add_prestige = -5
 		clr_country_flag = supported_orangists
 	}
 

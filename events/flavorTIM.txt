@@ -154,7 +154,10 @@ country_event = {
 		name = "flavor_tim.EVTOPTA2" # Crush the Shiite rebels
 		every_owned_province = {
 			limit = { is_core = PER }
-			add_unrest = 10
+			add_province_modifier = {
+				name = add_unrest_10_modifier
+				duration = 1825
+			}
 		}
 	}
 }

@@ -545,7 +545,7 @@ country_event = {
 	option = {
 		name = flavor_tupi.13.a #Marry Caramuru to Paraguacu.
 		ai_chance = { factor = 95 }
-		set_country_flag = caramuru
+		set_country_flag = caramuru_married
 		add_prestige = 5
 		custom_tooltip = flavor_tupi.13.a.tt
 		add_country_modifier = {

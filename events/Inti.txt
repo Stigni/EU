@@ -483,6 +483,7 @@ province_event = {
 		is_city = yes
 		has_siege = no
 		NOT = { has_building = temple }
+		num_free_building_slots = 1
 		not = { is_capital = yes }
 	}
 	
@@ -566,7 +567,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = inti_events.14.c #We must go to the Oracle of ApurÃ­mac.
+		name = inti_events.14.c #We must go to the Oracle of Apurímac.
 		trigger = {
 			810 = {
 				OR = {

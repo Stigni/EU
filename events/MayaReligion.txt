@@ -1,7 +1,7 @@
 ########################################
 # Events for Maya Religion
 #
-# written by Sara Wendel-Ã–rtqvist
+# written by Sara Wendel-Örtqvist
 ########################################
 
 namespace = maya_religion_events
@@ -44,7 +44,10 @@ country_event = {
 			limit = {
 				unrest = 1
 			}
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 }
@@ -78,7 +81,10 @@ country_event = {
 					limit = {
 						unrest = 1
 					}
-					add_unrest = -1
+					add_province_modifier = {
+						name = remove_unrest_5_modifier
+						duration = 1825
+					}
 				}
 			}
 			30 = {
@@ -282,7 +288,10 @@ country_event = {
 			limit = {
 				unrest = 3
 			}
-			add_unrest = -1
+			add_province_modifier = {
+				name = remove_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 	option = {
@@ -471,35 +480,50 @@ country_event = {
 		name = "maya_religion_events.12.a"
 		add_stability = 1
 		random_owned_province = {
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 	option = {
 		name = "maya_religion_events.12.b"
 		add_stability = 1
 		random_owned_province = {
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 	option = {
 		name = "maya_religion_events.12.c"
 		add_stability = 1
 		random_owned_province = {
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 	option = {
 		name = "maya_religion_events.12.e"
 		add_stability = 1
 		random_owned_province = {
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 	option = {
 		name = "maya_religion_events.12.f"
 		add_stability = 1
 		random_owned_province = {
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 }

@@ -102,7 +102,10 @@ country_event = {
 	option = {
 		name = "flavor_jap.EVTOPTB2"
 		every_owned_province = {
-			add_unrest = 2
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 		add_prestige = -1
 	}
@@ -143,7 +146,10 @@ country_event = {
 	option = {
 		name = "flavor_jap.EVTOPTB2"
 		every_owned_province = {
-			add_unrest = 2
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 		add_prestige = -1
 	}
@@ -160,6 +166,10 @@ country_event = {
 		primary_culture = japanese
 		is_year = 1523
 		NOT = { is_year = 1588 }
+		OR = {
+			exists = KOR
+			exists = MNG
+		}
 		KOR = {
 			NOT = {
 				junior_union_with = ROOT
@@ -206,36 +216,51 @@ country_event = {
 	
 	option = {
 		name = "flavor_jap.EVTOPTA4" # Fund the pirates
-		add_years_of_income = -0.5
+		add_years_of_income = -0.25
+		add_prestige = -5
 		add_country_modifier = { 
 			name = jap_wokou 
-			duration = 3650 
+			duration = 7300 
 		}
-		KOR = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_displeased
+		if = {
+			limit = {
+				exists = KOR
+			}
+			KOR = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_displeased
+				}
 			}
 		}
-		MNG = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_displeased
+		if = {
+			limit = { exists = MNG }
+			MNG = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_displeased
+				}
 			}
 		}
 	}
 	option = {
 		name = "flavor_jap.EVTOPTB4" # Tell them to cease and desist
-		KOR = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_pleased
+		if = {
+			limit = { exists = KOR }
+			KOR = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_pleased
+				}
 			}
 		}
-		MNG = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_pleased
+		if = {
+			limit = { exists = MNG }
+			MNG = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_pleased
+				}
 			}
 		}
 	}
@@ -469,7 +494,10 @@ country_event = {
 			limit = {
 				has_province_flag = jap_kirishitan_flag
 			}
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 			clr_province_flag = jap_kirishitan_flag
 		}
 	}
@@ -530,7 +558,8 @@ country_event = {
 		primary_culture = japanese
 		MIL = 4
 		any_owned_province = {
-			can_build = fort3
+			fort_level = 1
+			NOT = { has_province_modifier = local_fortress }
 		}
 	}
 	
@@ -546,10 +575,13 @@ country_event = {
 		name = "flavor_jap.EVTOPTA11" # Build a fort
 		random_owned_province = {
 			limit = {
-				NOT = { has_building = fort3 }
-				can_build = fort3
+				fort_level = 1
+				NOT = { has_province_modifier = local_fortress }
 			}
-			add_building = fort3
+			add_province_modifier = {
+				name = "local_fortress"
+				duration = -1
+			}
 		}
 	}
 	option = {
@@ -661,14 +693,20 @@ country_event = {
 			limit = {
 				has_province_flag = jap_terakoya_flag1
 			}
-			add_unrest = 2
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 			clr_province_flag = jap_terakoya_flag1
 		}
 		random_owned_province = {
 			limit = {
 				has_province_flag = jap_terakoya_flag2
 			}
-			add_unrest = 2
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 			clr_province_flag = jap_terakoya_flag2
 		}
 	}
@@ -848,7 +886,10 @@ country_event = {
 		primary_culture = japanese
 		is_year = 1482
 		NOT = { is_year = 1505 }
-		any_owned_province = { NOT = { has_building = temple } }
+		any_owned_province = {
+			NOT = { has_building = temple }
+			num_free_building_slots = 1
+		}
 		has_country_flag = jap_higashiyama_culture_flag
 	}
 	
@@ -859,7 +900,8 @@ country_event = {
 	option = {
 		name = "flavor_jap.EVTOPTA18"
 		add_treasury = -30
-		random_owned_province = { 
+		random_owned_province = {
+			limit = { num_free_building_slots = 1 }
 			add_building = temple 
 		}
 	}
@@ -976,7 +1018,10 @@ country_event = {
 			modifier = opinion_mildly_displeased
 		}
 		every_owned_province = {
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 }
@@ -2044,7 +2089,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_jap.EVTOPTA46"
-		add_mercantilism = -0.05
+		add_prestige = 5
 		JAP = {
 			add_opinion = {
 				who = ROOT
@@ -2058,7 +2103,6 @@ country_event = {
 		add_ruler_modifier = {
 			name = jap_first_sake 
 		}
-		add_prestige = -5
 	}
 }
 
@@ -2359,14 +2403,14 @@ country_event = {
 			random_province = {
 				limit = {
 					culture = japanese
-					is_core = yes
+					is_core = owner
 				}
 				set_province_flag = shogunate_destabilized_flag1
 			}
 			random_province = {
 				limit = {
 					culture = japanese
-					is_core = yes
+					is_core = owner
 					NOT = {
 						has_province_flag = shogunate_destabilized_flag1
 					}
@@ -2376,7 +2420,7 @@ country_event = {
 			random_province = {
 				limit = {
 					culture = japanese
-					is_core = yes
+					is_core = owner
 					NOT = {
 						has_province_flag = shogunate_destabilized_flag1
 					}
@@ -2396,21 +2440,30 @@ country_event = {
 				has_province_flag = shogunate_destabilized_flag1
 			}
 			clr_province_flag = shogunate_destabilized_flag1
-			add_unrest = 2
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 		random_owned_province = {
 			limit = {
 				has_province_flag = shogunate_destabilized_flag2
 			}
 			clr_province_flag = shogunate_destabilized_flag2
-			add_unrest = 2
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 		random_owned_province = {
 			limit = {
 				has_province_flag = shogunate_destabilized_flag3
 			}
 			clr_province_flag = shogunate_destabilized_flag3
-			add_unrest = 2
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 	

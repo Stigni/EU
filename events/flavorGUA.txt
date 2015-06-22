@@ -1,7 +1,7 @@
 ########################################
 # Events for Guarani
 #
-# written by Sara Wendel-Ã–rtqvist
+# written by Sara Wendel-Örtqvist
 ####################################
 
 namespace = flavor_gua
@@ -179,7 +179,7 @@ country_event = {
 	}
 }
 
-# NheÃ§u
+# Nheçu
 country_event = {
 	id = flavor_gua.5
 	title = flavor_gua.5.t
@@ -232,12 +232,15 @@ country_event = {
 					}
 				}
 			}
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 }
 
-# SepÃ© Tiaraju
+# Sepé Tiaraju
 country_event = {
 	id = flavor_gua.6
 	title = flavor_gua.6.t
@@ -271,7 +274,7 @@ country_event = {
 	option = {
 		name = flavor_gua.6.a
 		define_general = {
-			name = "SepÃ© Tiaraju"
+			name = "Sepé Tiaraju"
 			shock = 3
 			fire = 2
 			manuever = 2
@@ -318,14 +321,20 @@ country_event = {
 		name = flavor_gua.7.a
 		add_years_of_income = -0.1
 		random_owned_province = {
-			add_unrest = -1
+			add_province_modifier = {
+				name = remove_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 	option = {
 		name = flavor_gua.7.b
 		add_prestige = 5
 		random_owned_province = {
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 }

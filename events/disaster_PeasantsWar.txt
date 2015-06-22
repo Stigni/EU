@@ -11,8 +11,6 @@ country_event = {
 	
 	is_triggered_only = yes
 
-
-
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -32,7 +30,6 @@ country_event = {
 		set_country_flag = had_peasant_war
 	}
 
-	
 	option = {
 		name = "EVTOPTA3021"			# Dire times are ahead of us	
 	}
@@ -68,13 +65,17 @@ country_event = {
 		}
 		capital_scope = { 
 			anti_tax_rebels = 2
-		}	
-		
-		add_country_modifier = {
-			name = "enforce_serfdom"
-			duration = -1
-			desc = "END_OF_PEASANTS_WAR"
-		}	
+		}
+		if = {
+			limit = {
+				has_disaster = peasant_war
+			}
+			add_country_modifier = {
+				name = "enforce_serfdom"
+				duration = -1
+				desc = "END_OF_PEASANTS_WAR"
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTB3022"			# Restrict serfdom
@@ -83,13 +84,16 @@ country_event = {
 			limit = { is_lesser_in_union = no }
 			add_legitimacy = -15
 		}
-		
-		add_country_modifier = {
-			name = "restrict_serfdom"
-			duration = -1
-			desc = "END_OF_PEASANTS_WAR"
-		}		
-
+		if = {
+			limit = {
+				has_disaster = peasant_war
+			}
+			add_country_modifier = {
+				name = "restrict_serfdom"
+				duration = -1
+				desc = "END_OF_PEASANTS_WAR"
+			}
+		}
 	}
 }
 
@@ -129,15 +133,16 @@ country_event = {
 			}
 		}
 		add_mil_power = -50
-		
-		
-		add_country_modifier = {
-			name = "religious_intolerance"
-			duration = -1
-			desc = "END_OF_PEASANTS_WAR"
+		if = {
+			limit = {
+				has_disaster = peasant_war
+			}
+			add_country_modifier = {
+				name = "religious_intolerance"
+				duration = -1
+				desc = "END_OF_PEASANTS_WAR"
+			}
 		}
-	
-
 	}
 	option = {
 		name = "EVTOPTB3023" # Let them chose their own faith
@@ -145,14 +150,16 @@ country_event = {
 		add_dip_power = -50
 		reverse_add_opinion = { who = PAP modifier = opinion_pope_religious_tolerance }
 		add_papal_influence = -10
-		
-		
-		add_country_modifier = {
-			name = "religious_tolerance"
-			duration = -1
-			desc = "END_OF_PEASANTS_WAR"
-		}		
-
+		if = {
+			limit = {
+				has_disaster = peasant_war
+			}
+			add_country_modifier = {
+				name = "religious_tolerance"
+				duration = -1
+				desc = "END_OF_PEASANTS_WAR"
+			}
+		}
 	}
 }
 
@@ -181,25 +188,31 @@ country_event = {
 	option = {
 		name = "EVTOPTA3024"			# They have no place in our society
 		ai_chance = { factor = 50 }
-		
-		add_country_modifier = {
-			name = "obsolete_forces"
-			duration = -1
-			desc = "END_OF_PEASANTS_WAR"
-		}		
-		
-
+		if = {
+			limit = {
+				has_disaster = peasant_war
+			}
+			add_country_modifier = {
+				name = "obsolete_forces"
+				duration = -1
+				desc = "END_OF_PEASANTS_WAR"
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTB3024"			# They may still be of some use
 		ai_chance = { factor = 50 }
 		add_years_of_income = -1.0
-		
-		add_country_modifier = {
-			name = "support_troops"
-			duration = -1
-			desc = "END_OF_PEASANTS_WAR"
-		}		
+		if = {
+			limit = {
+				has_disaster = peasant_war
+			}
+			add_country_modifier = {
+				name = "support_troops"
+				duration = -1
+				desc = "END_OF_PEASANTS_WAR"
+			}
+		}
 	}
 }
 

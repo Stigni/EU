@@ -704,35 +704,35 @@ country_event = {
 			limit = {
 				has_province_flag = DAN_agriculture_reform_flag1
 			}
-			add_province_manpower = 1
+			add_base_manpower = 1
 			clr_province_flag = DAN_agriculture_reform_flag1
 		}
 		random_owned_province = {
 			limit = {
 				has_province_flag = DAN_agriculture_reform_flag2
 			}
-			add_province_manpower = 1
+			add_base_manpower = 1
 			clr_province_flag = DAN_agriculture_reform_flag2
 		}
 		random_owned_province = {
 			limit = {
 				has_province_flag = DAN_agriculture_reform_flag3
 			}
-			add_province_manpower = 1
+			add_base_manpower = 1
 			clr_province_flag = DAN_agriculture_reform_flag3
 		}
 		random_owned_province = {
 			limit = {
 				has_province_flag = DAN_agriculture_reform_flag4
 			}
-			add_province_manpower = 1
+			add_base_manpower = 1
 			clr_province_flag = DAN_agriculture_reform_flag4
 		}
 		random_owned_province = {
 			limit = {
 				has_province_flag = DAN_agriculture_reform_flag5
 			}
-			add_province_manpower = 1
+			add_base_manpower = 1
 			clr_province_flag = DAN_agriculture_reform_flag5
 		}
 	}

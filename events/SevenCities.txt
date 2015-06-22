@@ -1,7 +1,7 @@
 ########################################
 # Events for Seven Cities
 #
-# written by Sara Wendel-Ã–rtqvist
+# written by Sara Wendel-Örtqvist
 ########################################
 
 namespace = seven_cities_events
@@ -1112,16 +1112,18 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
-			clr_country_flag = sce_eventchain_flag
-			
-			set_country_flag = sce_end_eldorado_flag
-			remove_country_modifier = sce_search_eldorado
+			FROM = {
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+				clr_country_flag = sce_eventchain_flag
+				
+				set_country_flag = sce_end_eldorado_flag
+				remove_country_modifier = sce_search_eldorado
+			}
 		}
 	}
 	
@@ -1179,21 +1181,22 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_global_flag = sce_ultimate_eldorado
+			FROM = {
+				set_global_flag = sce_ultimate_eldorado
 			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
-			clr_country_flag = sce_eventchain_flag
-			
-			set_country_flag = sce_end_eldorado_flag
-			remove_country_modifier = sce_search_eldorado
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+				clr_country_flag = sce_eventchain_flag
+				
+				set_country_flag = sce_end_eldorado_flag
+				remove_country_modifier = sce_search_eldorado
+			}
 		}
 	}
-	
 	
 	option = {
 		name = seven_cities_events.202.a
@@ -1245,16 +1248,18 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = sce_end_fountainofyouth_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_fountainofyouth
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_country_flag = sce_end_fountainofyouth_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_fountainofyouth
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -1305,18 +1310,20 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = sce_end_fountainofyouth_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_fountainofyouth
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
-			
-			remove_country_modifier = sce_search_fountainofyouth
+			FROM = {
+				set_country_flag = sce_end_fountainofyouth_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_fountainofyouth
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+				
+				remove_country_modifier = sce_search_fountainofyouth
+			}
 		}
 	}
 	
@@ -1375,19 +1382,21 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_global_flag = sce_ultimate_fountainofyouth
-			set_country_flag = sce_end_fountainofyouth_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_fountainofyouth
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
-			
-			remove_country_modifier = sce_search_fountainofyouth
+			FROM = {
+				set_global_flag = sce_ultimate_fountainofyouth
+				set_country_flag = sce_end_fountainofyouth_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_fountainofyouth
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+				
+				remove_country_modifier = sce_search_fountainofyouth
+			}
 		}
 	}
 	
@@ -1445,16 +1454,18 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = sce_end_cibola_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_cibola
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_country_flag = sce_end_cibola_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_cibola
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -1508,16 +1519,18 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = sce_end_cibola_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_cibola
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_country_flag = sce_end_cibola_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_cibola
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -1579,17 +1592,19 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_global_flag = sce_ultimate_cibola
-			set_country_flag = sce_end_cibola_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_cibola
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_global_flag = sce_ultimate_cibola
+				set_country_flag = sce_end_cibola_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_cibola
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -1643,16 +1658,18 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = sce_end_cityofcaesars_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_cityofcaesars
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_country_flag = sce_end_cityofcaesars_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_cityofcaesars
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -1703,16 +1720,18 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = sce_end_cityofcaesars_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_cityofcaesars
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_country_flag = sce_end_cityofcaesars_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_cityofcaesars
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -1772,17 +1791,19 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_global_flag = sce_ultimate_cityofcaesars
-			set_country_flag = sce_end_cityofcaesars_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_cityofcaesars
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_global_flag = sce_ultimate_cityofcaesars
+				set_country_flag = sce_end_cityofcaesars_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_cityofcaesars
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -1839,16 +1860,18 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = sce_end_sierradelaplata_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_sierradelaplata
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_country_flag = sce_end_sierradelaplata_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_sierradelaplata
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -1901,16 +1924,18 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = sce_end_sierradelaplata_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_sierradelaplata
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_country_flag = sce_end_sierradelaplata_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_sierradelaplata
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -1971,17 +1996,19 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_global_flag = sce_ultimate_sierradelaplata
-			set_country_flag = sce_end_sierradelaplata_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_sierradelaplata
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_global_flag = sce_ultimate_sierradelaplata
+				set_country_flag = sce_end_sierradelaplata_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_sierradelaplata
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -2042,16 +2069,18 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = sce_end_norumbega_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_norumbega
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_country_flag = sce_end_norumbega_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_norumbega
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -2107,16 +2136,18 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = sce_end_norumbega_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_norumbega
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_country_flag = sce_end_norumbega_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_norumbega
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -2180,17 +2211,19 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_global_flag = sce_ultimate_norumbega
-			set_country_flag = sce_end_norumbega_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_norumbega
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_global_flag = sce_ultimate_norumbega
+				set_country_flag = sce_end_norumbega_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_norumbega
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -2250,18 +2283,21 @@ province_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_country_flag = sce_end_saguenay_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_saguenay
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_country_flag = sce_end_saguenay_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_saguenay
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
+	
 	option = {
 		name = seven_cities_events.218.a
 		FROM = {
@@ -2314,16 +2350,18 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = sce_end_saguenay_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_saguenay
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_country_flag = sce_end_saguenay_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_saguenay
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -2387,17 +2425,19 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_global_flag = sce_ultimate_saguenay
-			set_country_flag = sce_end_saguenay_flag
-			clr_country_flag = sce_eventchain_flag
-			remove_country_modifier = sce_search_saguenay
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
+			FROM = {
+				set_global_flag = sce_ultimate_saguenay
+				set_country_flag = sce_end_saguenay_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_saguenay
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			}
 		}
 	}
 	
@@ -2455,16 +2495,18 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
-			clr_country_flag = sce_eventchain_flag
-			
-			set_country_flag = sce_end_quivira_flag
-			remove_country_modifier = sce_search_quivira
+			FROM = {
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+				clr_country_flag = sce_eventchain_flag
+				
+				set_country_flag = sce_end_quivira_flag
+				remove_country_modifier = sce_search_quivira
+			}
 		}
 	}
 	
@@ -2519,16 +2561,18 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
-			clr_country_flag = sce_eventchain_flag
-			
-			set_country_flag = sce_end_quivira_flag
-			remove_country_modifier = sce_search_quivira
+			FROM = {
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+				clr_country_flag = sce_eventchain_flag
+				
+				set_country_flag = sce_end_quivira_flag
+				remove_country_modifier = sce_search_quivira
+			}
 		}
 	}
 	
@@ -2590,18 +2634,20 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_global_flag = sce_ultimate_quivira
-			
-			clr_country_flag = sce_action01_flag
-			clr_country_flag = sce_action02_flag
-			clr_country_flag = sce_action03_flag
-			clr_country_flag = sce_action04_flag
-			clr_country_flag = sce_action05_flag
-			clr_country_flag = sce_action06_flag
-			clr_country_flag = sce_eventchain_flag
-			
-			set_country_flag = sce_end_quivira_flag
-			remove_country_modifier = sce_search_quivira
+			FROM = {
+				set_global_flag = sce_ultimate_quivira
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+				clr_country_flag = sce_eventchain_flag
+				
+				set_country_flag = sce_end_quivira_flag
+				remove_country_modifier = sce_search_quivira
+			}
 		}
 	}
 	
@@ -2612,11 +2658,9 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_quivira
 			}
-			owner = {
-				add_country_modifier = {
-					name = sce_quivira
-					duration = -1
-				}
+			add_country_modifier = {
+				name = sce_quivira
+				duration = -1
 			}
 		}
 	}
@@ -2640,21 +2684,29 @@ province_event = {
 			continent = south_america
 			continent = north_america
 		}
-		OR = {
-			technology_group = north_american
-			technology_group = mesoamerican
-			technology_group = south_american
-			technology_group = andean
-		}
-		NOT = {
-			owner = {
+		owner = {
+			OR = {
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+			}
+			NOT = {
 				capital_scope = { continent = europe }
 			}
+			NOT = { has_country_modifier = sce_sacagawea }
+			NOT = { has_ruler_flag = sce_sacagawea_flag }
 		}
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_ruler_flag = sce_sacagawea_flag
+		}
 	}
 	
 	option = {
@@ -2689,12 +2741,17 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = no
-		OR = {
-			technology_group = sub_saharan
-			technology_group = north_american
-			technology_group = mesoamerican
-			technology_group = south_american
-			technology_group = andean
+		owner = {
+			OR = {
+				technology_group = sub_saharan
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+			}
+			NOT = {
+				capital_scope = { continent = europe }
+			}
 		}
 		OR = {
 			continent = south_america
@@ -2702,11 +2759,6 @@ province_event = {
 			continent = africa
 			continent = asia
 			continent = oceania
-		}
-		NOT = {
-			owner = {
-				capital_scope = { continent = europe }
-			}
 		}
 	}
 	
@@ -2763,12 +2815,18 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = no
-		OR = {
-			technology_group = sub_saharan
-			technology_group = north_american
-			technology_group = mesoamerican
-			technology_group = south_american
-			technology_group = andean
+		owner = {
+			OR = {
+				technology_group = sub_saharan
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+			}
+			NOT = {
+				capital_scope = { continent = europe }
+			}
+			has_opinion = { who = FROM value = -50 }
 		}
 		OR = {
 			continent = south_america
@@ -2776,12 +2834,6 @@ province_event = {
 			continent = africa
 			continent = asia
 			continent = oceania
-		}
-		owner = {
-			NOT = {
-				capital_scope = { continent = europe }
-			}
-			has_opinion = { who = FROM value = -50 }
 		}
 	}
 	
@@ -2845,7 +2897,7 @@ province_event = {
 	}
 }
 
-# Lost in Mind and Space - dedicated to Maja Wendel-Ã–rtqvist (disappearing sister extraordinary)
+# Lost in Mind and Space - dedicated to Maja Wendel-Örtqvist (disappearing sister extraordinary)
 province_event = {
 	id = seven_cities_events.303
 	title = seven_cities_events.303.t
@@ -2924,12 +2976,17 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = no
-		OR = {
-			technology_group = sub_saharan
-			technology_group = north_american
-			technology_group = mesoamerican
-			technology_group = south_american
-			technology_group = andean
+		owner = {
+			OR = {
+				technology_group = sub_saharan
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+			}
+			NOT = {
+				capital_scope = { continent = europe }
+			}
 		}
 		OR = {
 			continent = south_america
@@ -2937,11 +2994,6 @@ province_event = {
 			continent = africa
 			continent = asia
 			continent = oceania
-		}
-		NOT = {
-			owner = {
-				capital_scope = { continent = europe }
-			}
 		}
 	}
 	
@@ -3033,12 +3085,18 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = no
-		OR = {
-			technology_group = sub_saharan
-			technology_group = north_american
-			technology_group = mesoamerican
-			technology_group = south_american
-			technology_group = andean
+		owner = {
+			NOT = {
+				capital_scope = { continent = europe }
+			}
+			has_opinion = { who = FROM value = -50 }
+			OR = {
+				technology_group = sub_saharan
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+			}
 		}
 		OR = {
 			continent = south_america
@@ -3046,12 +3104,6 @@ province_event = {
 			continent = africa
 			continent = asia
 			continent = oceania
-		}
-		owner = {
-			NOT = {
-				capital_scope = { continent = europe }
-			}
-			has_opinion = { who = FROM value = -50 }
 		}
 		NOT = {
 			FROM = {
@@ -3107,13 +3159,6 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = no
 		OR = {
-			technology_group = sub_saharan
-			technology_group = north_american
-			technology_group = mesoamerican
-			technology_group = south_american
-			technology_group = andean
-		}
-		OR = {
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3121,6 +3166,13 @@ province_event = {
 			continent = oceania
 		}
 		owner = {
+			OR = {
+				technology_group = sub_saharan
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+			}
 			NOT = {
 				capital_scope = { continent = europe }
 			}
@@ -3128,7 +3180,15 @@ province_event = {
 				NOT = {
 					capital_scope = { continent = europe }
 				}
-				is_rival = PREV
+				OR = {
+					is_rival = PREV
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = -75
+						}
+					}
+				}
 			}
 		}
 	}
@@ -3147,9 +3207,11 @@ province_event = {
 					}
 					OR = {
 						is_rival = ROOT
-						has_opinion = {
-							who = ROOT
-							value = -75
+						NOT = {
+							has_opinion = {
+								who = ROOT
+								value = -75
+							}
 						}
 					}
 				}
@@ -3179,7 +3241,6 @@ province_event = {
 								}
 							}
 						}
-						# TODO ADD NOTIFIER EVENT FOR FROM AS WELL!
 					}
 					50 = {
 						FROM = {
@@ -3197,7 +3258,6 @@ province_event = {
 									}
 								}
 							}
-							# TODO ADD NOTIFIER EVENT FOR FROM AS WELL!
 						}
 					}
 				}
@@ -3225,13 +3285,6 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = no
 		OR = {
-			technology_group = sub_saharan
-			technology_group = north_american
-			technology_group = mesoamerican
-			technology_group = south_american
-			technology_group = andean
-		}
-		OR = {
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3239,6 +3292,13 @@ province_event = {
 			continent = oceania
 		}
 		owner = {
+			OR = {
+				technology_group = sub_saharan
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+			}
 			NOT = {
 				capital_scope = { continent = europe }
 			}
@@ -3277,11 +3337,18 @@ province_event = {
 		OR = {
 			AND = {
 				is_empty = no
-				technology_group = sub_saharan
-				technology_group = north_american
-				technology_group = mesoamerican
-				technology_group = south_american
-				technology_group = andean
+				owner = {
+					OR = {
+						technology_group = sub_saharan
+						technology_group = north_american
+						technology_group = mesoamerican
+						technology_group = south_american
+						technology_group = andean
+					}
+					NOT = {
+						capital_scope = { continent = europe }
+					}
+				}
 			}
 			is_empty = yes
 		}
@@ -3292,11 +3359,6 @@ province_event = {
 			continent = asia
 			continent = oceania
 		}
-		owner = {
-			NOT = {
-				capital_scope = { continent = europe }
-			}
-		}
 	}
 	
 	mean_time_to_happen = {
@@ -3305,45 +3367,41 @@ province_event = {
 	
 	option = {
 		name = seven_cities_events.308.a
-		add_adm_power = 50
+		FROM = {
+			add_adm_power = 50
+		}
 	}
 	option = {
 		name = seven_cities_events.308.b
 		if = {
 			limit = {
-				ROOT = {
-					AND = {
-						is_empty = no
-						OR = {
-							technology_group = sub_saharan
-							technology_group = north_american
-							technology_group = mesoamerican
-							technology_group = south_american
-							technology_group = andean
-						}
+				is_empty = no
+				owner = {
+					OR = {
+						technology_group = sub_saharan
+						technology_group = north_american
+						technology_group = mesoamerican
+						technology_group = south_american
+						technology_group = andean
 					}
 				}
 			}
-			ROOT = {
-				owner = {
-					add_opinion = {
-						who = FROM
-						modifier = friendly_natives
-					}
-					hidden_effect = {
-						country_event = {
-							id = seven_cities_events.504
-							days = 1
-						}
+			owner = {
+				add_opinion = {
+					who = FROM
+					modifier = friendly_natives
+				}
+				hidden_effect = {
+					country_event = {
+						id = seven_cities_events.504
+						days = 1
 					}
 				}
 			}
 		}
 		if = {
 			limit = {
-				ROOT = {
-					is_empty = yes
-				}
+				is_empty = yes
 			}
 			FROM = {
 				add_dip_power = 50
@@ -3425,12 +3483,17 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = no
-		OR = {
-			technology_group = sub_saharan
-			technology_group = north_american
-			technology_group = mesoamerican
-			technology_group = south_american
-			technology_group = andean
+		owner = {
+			OR = {
+				technology_group = sub_saharan
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+			}
+			NOT = {
+				capital_scope = { continent = europe }
+			}
 		}
 		OR = {
 			continent = south_america
@@ -3438,11 +3501,6 @@ province_event = {
 			continent = africa
 			continent = asia
 			continent = oceania
-		}
-		NOT = {
-			owner = {
-				capital_scope = { continent = europe }
-			}
 		}
 	}
 	
@@ -3630,7 +3688,7 @@ province_event = {
 }
 
 # Peralta Gold Mine: Good
-province_event = {
+country_event = {
 	id = seven_cities_events.403
 	title = seven_cities_events.403.t
 	desc = seven_cities_events.403.d
@@ -3645,7 +3703,7 @@ province_event = {
 }
 
 # Peralta Gold Mine: Bad
-province_event = {
+country_event = {
 	id = seven_cities_events.404
 	title = seven_cities_events.404.t
 	desc = seven_cities_events.404.d
@@ -3952,7 +4010,7 @@ province_event = {
 			50 = {
 				FROM = {
 					country_event = {
-						id = 411
+						id = seven_cities_events.411
 						days = 30
 						tooltip = seven_cities_events.411.t
 					}
@@ -3961,7 +4019,7 @@ province_event = {
 			50 = {
 				FROM = {
 					country_event = {
-						id = 412
+						id = seven_cities_events.412
 						days = 30
 						tooltip = seven_cities_events.412.t
 					}
@@ -3978,7 +4036,7 @@ province_event = {
 }
 
 # Bad End: Abandoned Mounds
-province_event = {
+country_event = {
 	id = seven_cities_events.411
 	title = seven_cities_events.411.t
 	desc = seven_cities_events.411.d
@@ -3988,14 +4046,12 @@ province_event = {
 	
 	option = {
 		name = seven_cities_events.411.a
-		FROM = {
-			add_prestige = 5
-		}
+		add_prestige = 5
 	}
 }
 
 # Good End: Abandoned Mounds
-province_event = {
+country_event = {
 	id = seven_cities_events.412
 	title = seven_cities_events.412.t
 	desc = seven_cities_events.412.d
@@ -4005,9 +4061,7 @@ province_event = {
 	
 	option = {
 		name = seven_cities_events.412.a
-		FROM = {
-			add_years_of_income = 0.25
-		}
+		add_years_of_income = 0.25
 	}
 }
 
@@ -4088,7 +4142,7 @@ province_event = {
 		}
 		hidden_effect = {
 			FROM = {
-				add_province_modifier = {
+				add_country_modifier = {
 					name = sce_monster_lake_timer
 					duration = 365
 					hidden = yes

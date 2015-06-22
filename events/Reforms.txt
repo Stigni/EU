@@ -1,34 +1,37 @@
+namespace = reforms
+
 #########################################################
 #		Financial reform			#
 #########################################################
 
 country_event = {
-	id = 4033
-	title = "EVTNAME4033"
-	desc = "EVTDESC4033"
+	id = reforms.1
+	
+	title = reforms.1.t
+	desc = reforms.1.d
 	picture = REFORM_eventPicture
 
 	trigger = {
-		inflation = 10
-		NOT = {  has_country_flag = reforms_financial }
+		has_parliament = yes
+		inflation = 2
 	}
+
+	is_triggered_only = yes
 
 	mean_time_to_happen = {
-		months = 360
+		days = 1
 	}
 	
-	immediate = {
-		set_country_flag = reforms_financial
-	}
 
 	option = {
-		name = "EVTOPTA4033"		# Go through with the reforms
-		add_stability = -1
-		add_inflation = -5
+		name = reforms.1.a		# Go through with the reforms
+		add_inflation = -1
+		add_legitimacy = -5
+		add_republican_tradition = -0.05
 	}
 	option = {
-		name = "EVTOPTB4033"		# No, such restructuring would be too harsh.
-		add_prestige = -5
+		name = reforms.1.b		# No, such restructuring would be too harsh.
+		add_prestige = -1
 	}
 }
 
@@ -37,34 +40,38 @@ country_event = {
 #########################################################
 
 country_event = {
-	id = 4034
-	title = "EVTNAME4034"
-	desc = "EVTDESC4034"
+	id = reforms.2
+	title = reforms.2.t
+	desc = reforms.2.d
 	picture = REFORM_eventPicture
 
 	trigger = {
-		government = monarchy
-		adm_tech = 25
-		is_lesser_in_union = no
-		NOT = {  has_country_flag = reforms_social }
+		has_parliament = yes
 	}
+
+	is_triggered_only = yes
 
 	mean_time_to_happen = {
-		months = 360
+		days = 1
 	}
 
-	immediate = {
-		set_country_flag = reforms_social
-	}
+
 
 	option = {
-		name = "EVTOPTA4034"		# Abolish serfdom
-		add_legitimacy = -10
-		add_years_of_income = 0.50
+		name = "reforms.2.a"	
+		random_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+			}
+			add_base_production = 1
+		}
+		add_legitimacy = -5
+		add_republican_tradition = -0.05	
+		
 	}
 	option = {
-		name = "EVTOPTB4034"		# We are in no need of such a reform 
-		add_prestige = -10
+		name = "reforms.2.b"		
+		add_prestige = -5
 	}
 }
 
@@ -75,36 +82,29 @@ country_event = {
 #########################################################
 
 country_event = {
-	id = 4035
-	title = "EVTNAME4035"
-	desc = "EVTDESC4035"
+	id = reforms.3
+	title = reforms.3.t
+	desc = reforms.3.d
 	picture = REFORM_eventPicture
 
 	trigger = {
-		war_college = 1		
-		NOT = { has_country_flag = reforms_military }
-
-
+		has_parliament = yes
 	}
+	
+	is_triggered_only = yes
 
 	mean_time_to_happen = {
-		months = 360
+		days = 1
 	}
-	
-	
-	immediate = {
-		set_country_flag = reforms_military
-	}
-	
+
 
 	option = {
-		name = "EVTOPTA4035"		# Invest in quality troops
-		add_army_tradition = 25
+		name = reforms.3.a
+		add_army_tradition = 10
 	}
 	option = {
-		name = "EVTOPTB4035"		# Invest in quantity
-		add_yearly_manpower = 2.0
-		
+		name = reforms.3.b
+		add_yearly_manpower = 1	
 	}
 }
 
@@ -114,34 +114,33 @@ country_event = {
 #########################################################
 
 country_event = {
-	id = 4036
-	title = "EVTNAME4036"
-	desc = "EVTDESC4036"
+	id = reforms.4
+	title = reforms.4.t
+	desc = reforms.4.d
 	picture = REFORM_eventPicture
 
 	trigger = {
-		adm_tech = 20
-		NOT = { has_country_flag = reforms_architectural }
+		has_parliament = yes
 	}
+	
+	is_triggered_only = yes
 
 	mean_time_to_happen = {
-		months = 360
-	}
-	immediate = {
-		set_country_flag = reforms_architectural
+		days = 1
 	}
 
 	
 
 	option = {
-		name = "EVTOPTA4036"		# Support architectural development
-		add_adm_power = 33
-		add_mil_power = 33
-		add_dip_power = 33
+		name = reforms.4.a
+		
+		add_adm_power = 100
+		add_mil_power = 100
+		add_dip_power = 100
 		add_years_of_income = -0.33
 	}
 	option = {
-		name = "EVTOPTB4035"		# Don't support it
-		add_prestige = -1
+		name = reforms.4.b
+		add_prestige = -5
 	}
 }

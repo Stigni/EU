@@ -33,16 +33,24 @@ country_decisions = {
 		effect = {
 			change_tag = KUR
 			add_prestige = 10
-			change_government = feudal_monarchy
 			set_capital = 1935		# Semigallia
 			swap_free_idea_group = yes		#keep progress
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
+			if = {
+				limit = {
+					OR = {
+						government = theocratic_government
+						government = monastic_order_government
+					}
+				}
+				change_government = feudal_monarchy
+			}
 			every_neighbor_country = {
 				limit = { government = monarchy }
-				add_opinion = { who = KUR modifier = secularized_monastic_order }
+				add_opinion = { who = ROOT modifier = secularized_monastic_order }
 			}
 		}
 		ai_will_do = {

@@ -1085,10 +1085,15 @@ country_event = {
 		is_at_war = yes
 		num_of_cavalry = 1
 		manpower = 1
-		any_known_country = {
+		any_neighbor_country = {
 			war_with = ROOT
 			any_owned_province = {
-				has_climate = tropical
+				controlled_by = owner
+				has_terrain = jungle
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+				}
 			}
 		}
 	}
@@ -1103,7 +1108,13 @@ country_event = {
 		random_province = {
 			limit = {
 				owner = { war_with = ROOT }
-				has_climate = tropical
+				owner = { is_neighbor_of = ROOT }
+				controlled_by = owner
+				has_terrain = jungle
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+				}
 			}
 			add_province_modifier = {
 				name = "raided_by_cavalry"

@@ -174,27 +174,71 @@ country_event = {
 	
 	trigger = {
 		tag = PER
-		is_year = 1510
-		NOT = {
-			is_year = 1560
-		}
+		NOT = { is_subject = yes }
+		religion = shiite
+		stability = 1
+		religious_unity = 0.7
+		is_at_war = no
+		owns_core_province = 416 #Tabriz
+		owns_core_province = 429 #Isfahan
+		owns_core_province = 2215 #Qazvin
+		owns_core_province = 2218 #Shiraz
+		owns_core_province = 433 #Yazd
+		owns_core_province = 2213 #Qom
+		owns_core_province = 428 #Teheran
+		owns_core_province = 2212 #Zanjan
 	}
 
 	mean_time_to_happen = {
-		months = 300
+		months = 80
 	}
 	
 	option = { #Reform
 		name = "flavor_per.EVTOPTA1"
-		add_adm_power = 50
-	}
-	option = { #Reform
-		name = "flavor_per.EVTOPTB1"
-		add_dip_power = 50
-	}
-	option = { #Reform
-		name = "flavor_per.EVTOPTC1"
-		add_mil_power = 50
+		if = {
+			limit = {
+				NOT = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+		416 = { #Tabriz
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 1
+		}
+		429 = { #Isfahan
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 1
+		}
+		2215 = { #Qazvin
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 1
+		}
+		2218 = { #Shiraz
+			add_base_tax = 2
+			add_base_production = 2
+		}
+		428 = { #Teheran
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		433 = { #Yazd
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		2213 = { #Qom
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		2212 = { #Zanjan
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
 	}
 }
 
@@ -209,7 +253,7 @@ country_event = {
 	
 	trigger = {
 		tag = PER
-		is_year = 1590
+		is_year = 1580
 		owns = 429
 		NOT = {
 			is_year = 1640
@@ -217,20 +261,20 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 300
+		months = 150
 	}
 	
 	option = { #Reform
 		name = "flavor_per.EVTOPTA1"
-		add_adm_power = 50
-	}
-	option = { #Reform
-		name = "flavor_per.EVTOPTB1"
-		add_dip_power = 50
-	}
-	option = { #Reform
-		name = "flavor_per.EVTOPTC1"
-		add_mil_power = 50
+		add_adm_power = 25
+		add_mil_power = 25
+		add_dip_power = 25
+		if = {
+			limit = {
+				government = iqta
+			}
+			change_government = administrative_monarchy
+		}
 	}
 }
 
@@ -253,7 +297,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 300
+		months = 150
 	}
 	
 	option = { # Hire the English advisors
@@ -367,7 +411,7 @@ country_event = {
 				is_core = PER
 			}
 			add_base_tax = 1
-			add_province_manpower = 1
+			add_base_manpower = 1
 		}
 	}
 }
@@ -395,7 +439,10 @@ country_event = {
 		name = "flavor_per.EVTOPTA6"
 		every_owned_province = {
 			limit = { culture = afghani }
-			add_unrest = 10
+			add_province_modifier = {
+				name = add_unrest_10_modifier
+				duration = 1825
+			}
 		}
 	}
 }
@@ -660,7 +707,7 @@ country_event = {
 				has_province_flag = per_qizilbash
 			}
 			spawn_rebels = {
-				type = patriot_rebels
+				type = nationalist_rebels
 				size = 1
 				friend = PER
 			}
@@ -670,7 +717,7 @@ country_event = {
 				has_province_flag = per_qizilbash
 			}
 			spawn_rebels = {
-				type = patriot_rebels
+				type = nationalist_rebels
 				size = 1
 				friend = PER
 			}

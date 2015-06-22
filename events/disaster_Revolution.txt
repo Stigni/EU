@@ -19,7 +19,7 @@ country_event = {
 	immediate = {
 		random_owned_province = { 
 			limit = {
-				base_tax = 4
+				development = 8
 			}
 			spawn_rebels = {
 				type = revolutionary_rebels
@@ -70,10 +70,15 @@ country_event = {
 		name = "EVTOPTA3012"			# One nation, one belief
 		ai_chance = { factor = 75 }
 		set_country_flag = religious_revolution
-		add_country_modifier = {
-			name = "religious_intolerance"
-			duration = -1
-			desc = "END_OF_REVOLUTION"
+		if = {
+			limit = {
+				has_disaster = revolution
+			}
+			add_country_modifier = {
+				name = "religious_intolerance"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
 		}
 	}
 	option = {
@@ -86,10 +91,15 @@ country_event = {
 			}
 			reverse_add_opinion = { who = PAP modifier = opinion_too_tolerate }
 		}
-		add_country_modifier = {
-			name = "religious_tolerance"
-			duration = -1
-			desc = "END_OF_REVOLUTION"
+		if = {
+			limit = {
+				has_disaster = revolution
+			}
+			add_country_modifier = {
+				name = "religious_tolerance"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
 		}
 	}
 }
@@ -118,10 +128,15 @@ country_event = {
 	option = {
 		name = "EVTOPTA3013"			# Restrict serfdom
 		ai_chance = { factor = 30 }
-		add_country_modifier = {
-			name = "restrict_serfdom"
-			duration = -1
-			desc = "END_OF_REVOLUTION"
+		if = {
+			limit = {
+				has_disaster = revolution
+			}
+			add_country_modifier = {
+				name = "restrict_serfdom"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
 		}
 	}
 	option = {
@@ -129,10 +144,15 @@ country_event = {
 		ai_chance = { factor = 70 }
 		random_owned_province = { revolutionary_rebels = 1 }
 		add_stability = 1
-		add_country_modifier = {
-			name = "enforce_serfdom"
-			duration = -1
-			desc = "END_OF_REVOLUTION"
+		if = {
+			limit = {
+				has_disaster = revolution
+			}
+			add_country_modifier = {
+				name = "enforce_serfdom"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
 		}
 	}
 }
@@ -160,10 +180,15 @@ country_event = {
 	option = {
 		name = "EVTOPTA3014"			# Suppress the free thinkers
 		ai_chance = { factor = 60 }
-		add_country_modifier = {
-			name = "suppress_free_thinkers"
-			duration = -1
-			desc = "END_OF_REVOLUTION"			
+		if = {
+			limit = {
+				has_disaster = revolution
+			}
+			add_country_modifier = {
+				name = "suppress_free_thinkers"
+				duration = -1
+				desc = "END_OF_REVOLUTION"			
+			}
 		}
 	}
 	option = {
@@ -198,19 +223,29 @@ country_event = {
 	option = {
 		name = "EVTOPTA3015"			# Reduce the royal bureaucracy
 		ai_chance = { factor = 65 }
-		add_country_modifier = {
-			name = "bureaucratic_reduction"
-			duration = -1
-			desc = "END_OF_REVOLUTION"
+		if = {
+			limit = {
+				has_disaster = revolution
+			}
+			add_country_modifier = {
+				name = "bureaucratic_reduction"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
 		}		
 	}
 	option = {
 		name = "EVTOPTB3015"			# Expand the royal bureaucracy
 		ai_chance = { factor = 35 }
-		add_country_modifier = {
-			name = "bureaucratic_expansion"
-			duration = -1
-			desc = "END_OF_REVOLUTION"
+		if = {
+			limit = {
+				has_disaster = revolution
+			}
+			add_country_modifier = {
+				name = "bureaucratic_expansion"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
 		}
 	}
 }
@@ -247,20 +282,30 @@ country_event = {
 		add_adm_power = -25
 		add_dip_power = -25
 		add_mil_power = -25
-		add_country_modifier = {
-			name = "support_monarch"
-			duration = -1
-			desc = "END_OF_REVOLUTION"
+		if = {
+			limit = {
+				has_disaster = revolution
+			}
+			add_country_modifier = {
+				name = "support_monarch"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
 		}
 	}
 	option = {
 		name = "EVTOPTB3016"			# Oppose
 		ai_chance = { factor = 40 }
 		random_owned_province = { revolutionary_rebels = 2 }
-		add_country_modifier = {
-			name = "oppose_monarch"
-			duration = -1
-			desc = "END_OF_REVOLUTION"
+		if = {
+			limit = {
+				has_disaster = revolution
+			}
+			add_country_modifier = {
+				name = "oppose_monarch"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
 		}
 	}
 }
@@ -290,19 +335,29 @@ country_event = {
 	option = {
 		name = "EVTOPTA3017"			# Mint more money
 		ai_chance = { factor = 30 }
-		add_country_modifier = {
-			name = "mint_money"
-			duration = -1
-			desc = "END_OF_REVOLUTION"
+		if = {
+			limit = {
+				has_disaster = revolution
+			}
+			add_country_modifier = {
+				name = "mint_money"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
 		}
 	}
 	option = {
 		name = "EVTOPTB3017"			# We must strengthen our currency
 		ai_chance = { factor = 70 }
-		add_country_modifier = {
-			name = "fight_inflation"
-			duration = -1
-			desc = "END_OF_REVOLUTION"
+		if = {
+			limit = {
+				has_disaster = revolution
+			}
+			add_country_modifier = {
+				name = "fight_inflation"
+				duration = -1
+				desc = "END_OF_REVOLUTION"
+			}
 		}
 	}
 }
@@ -332,19 +387,29 @@ country_event = {
 	option = {
 		name = "EVTOPTA3018"			# Cut back on war expenditures
 		ai_chance = { factor = 70 }
-		add_country_modifier = {
-			name = "disarmament"
-			duration = -1
-			desc = "END_OF_REVOLUTION"			
+		if = {
+			limit = {
+				has_disaster = revolution
+			}
+			add_country_modifier = {
+				name = "disarmament"
+				duration = -1
+				desc = "END_OF_REVOLUTION"			
+			}
 		}
 	}
 	option = {
 		name = "EVTOPTB3018"			# The war has its purpose
 		ai_chance = { factor = 30 }
-		add_country_modifier = {
-			name = "financial_disaster"
-			duration = -1
-			desc = "END_OF_REVOLUTION"			
+		if = {
+			limit = {
+				has_disaster = revolution
+			}
+			add_country_modifier = {
+				name = "financial_disaster"
+				duration = -1
+				desc = "END_OF_REVOLUTION"			
+			}
 		}
 	}
 }

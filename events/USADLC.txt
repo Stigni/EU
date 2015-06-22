@@ -133,7 +133,10 @@ country_event = {
 	option = {
 		name = "usa_dlc.EVTOPTB3" # Let them decide for themselves
 		northern_america = {
-			add_unrest = -1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 		if = {
 			limit = {
@@ -397,11 +400,7 @@ country_event = {
 	
 	option = {
 		name = "usa_dlc.EVTOPTA11"
-		change_government = american_republic
-	}
-	option = {
-		name = "usa_dlc.EVTOPTB11"
-		change_government = federal_republic
+		change_government = constitutional_republic
 	}
 	option = {
 		name = "usa_dlc.EVTOPTC11"
@@ -832,21 +831,21 @@ country_event = {
 		name = "usa_dlc.EVTOPTA29"
 		add_years_of_income = -0.1
 		956 = {
-			add_province_manpower = 5
+			add_base_manpower = 5
 		}
 	}
 	option = {
 		name = "usa_dlc.EVTOPTB29"
 		add_years_of_income = -0.2
 		956 = {
-			add_province_manpower = 7
+			add_base_manpower = 7
 		}
 	}
 	option = {
 		name = "usa_dlc.EVTOPTC29"
 		add_years_of_income = -0.4
 		956 = {
-			add_province_manpower = 10
+			add_base_manpower = 10
 		}
 	}
 	option = {
@@ -1006,7 +1005,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
-				limit = { is_core = yes }
+				limit = { is_core = owner }
 				set_province_flag = whiskey_rebellion_flag1
 			}
 			random_owned_province = {
@@ -1072,20 +1071,29 @@ country_event = {
 				has_province_flag = whiskey_rebellion_flag1
 			}
 			clr_province_flag = whiskey_rebellion_flag1
-			add_unrest = 2
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 		random_owned_province = {
 			limit = { 
 				has_province_flag = whiskey_rebellion_flag2
 			}
 			clr_province_flag = whiskey_rebellion_flag2
-			add_unrest = 2
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 		random_owned_province = {
 			limit = { 
 				has_province_flag = whiskey_rebellion_flag3
 			}
-			add_unrest = 2
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 }
@@ -1731,7 +1739,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
-				limit = { is_core = yes }
+				limit = { is_core = owner }
 				set_province_flag = shays_rebellion_flag1
 			}
 			random_owned_province = {
@@ -1801,21 +1809,30 @@ country_event = {
 				has_province_flag = shays_rebellion_flag1
 			}
 			clr_province_flag = shays_rebellion_flag1
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 		random_owned_province = {
 			limit = { 
 				has_province_flag = shays_rebellion_flag2
 			}
 			clr_province_flag = shays_rebellion_flag2
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 		random_owned_province = {
 			limit = { 
 				has_province_flag = shays_rebellion_flag3
 			}
 			clr_province_flag = shays_rebellion_flag3
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 }
@@ -2421,14 +2438,14 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					is_core = yes
+					is_core = owner
 					continent = north_america
 				}
 				set_province_flag = federal_taxes_flag1
 			}
 			random_owned_province = {
 				limit = {
-					is_core = yes
+					is_core = owner
 					continent = north_america
 					NOT = {
 						has_province_flag = federal_taxes_flag1
@@ -2438,7 +2455,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					is_core = yes
+					is_core = owner
 					continent = north_america
 					NOT = {
 						has_province_flag = federal_taxes_flag1
@@ -3123,13 +3140,13 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					is_core = yes
+					is_core = owner
 				}
 				set_province_flag = dependency_flag1
 			}
 			random_owned_province = {
 				limit = {
-					is_core = yes
+					is_core = owner
 					NOT = {
 						has_province_flag = dependency_flag1
 					}
@@ -3138,7 +3155,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					is_core = yes
+					is_core = owner
 					NOT = {
 						has_province_flag = dependency_flag1
 					}

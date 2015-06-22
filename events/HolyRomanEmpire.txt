@@ -1,3 +1,7 @@
+
+
+namespace = hre_event
+
 # Privilegia triggers for Emperor...
 country_event = {
 	id = 9073
@@ -102,7 +106,7 @@ country_event = {
 			country_event = { id = 9076 }
 		}
 		dismantle_hre = yes
-		change_government = imperial_government
+		set_government_rank = 3
 		add_adm_power = 250
 	}
 }
@@ -140,6 +144,20 @@ country_event = {
 	option = {
 		name = "EVTOPTA900"
 		add_imperial_influence = 10
+		if = {
+			limit = { has_dlc = "Common Sense" }
+			random_country = {
+				limit = {
+					government = imperial_city 
+					religion = catholic
+					is_at_war = no
+				}
+				country_event = {
+					id = free_cities.6
+					tooltip = free_cities.6.tt1
+				}						
+			}			
+		}
 	}
 }
 
@@ -181,12 +199,12 @@ country_event = {
 	}
 	
 	immediate = {
-		hidden_effect = { add_scaled_imperial_influence = -10 }
+		hidden_effect = { add_scaled_imperial_influence = -5 }
 	}
 
 	option = {
 		name = "EVTOPTA902"
-		tooltip = { add_scaled_imperial_influence = -10 }
+		tooltip = { add_scaled_imperial_influence = -5 }
 	}
 }
 
@@ -205,12 +223,12 @@ country_event = {
 	}
 	
 	immediate = {
-		hidden_effect = { add_scaled_imperial_influence = 10 }
+		hidden_effect = { add_scaled_imperial_influence = 5 }
 	}
 	
 	option = {
 		name = "EVTOPTA903"
-		tooltip = { add_scaled_imperial_influence = 10 }
+		tooltip = { add_scaled_imperial_influence = 5 }
 	}
 }
 
@@ -228,12 +246,12 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = { add_scaled_imperial_influence = 15 }
+		hidden_effect = { add_scaled_imperial_influence = 5 }
 	}
 
 	option = {
 		name = "EVTOPTA904"
-		tooltip = { add_scaled_imperial_influence = 15 }
+		tooltip = { add_scaled_imperial_influence = 5 }
 	}
 }
 
@@ -347,5 +365,352 @@ province_event = {
 	option = {
 		name = "EVTOPTA950"
 		add_claim = ROOT
+	}
+}
+
+#The Shadow Kingdom
+country_event = {
+	id = hre_event.1
+	title = "hre_event.1.t"
+	desc = "hre_event.1.d"
+	picture = HRE_eventPicture
+
+	trigger = {
+		NOT = { has_global_flag = italy_out_of_HRE }
+		normal_or_historical_nations = yes
+		is_year = 1490
+		NOT = { is_year = 1550 }
+		capital_scope = {
+			region = italian_region
+		}
+		kingdom_of_italy_HRE_region = {	#Adding back this region entirely into the Empire prevents this event.
+			is_part_of_hre = no
+		}
+		is_part_of_hre = yes
+		NOT = {	#Won't happen unless atleast one Italian HRE state isn't a vassal of a German HRE state.
+			any_country = {
+				overlord_of = ROOT
+				is_part_of_hre = yes
+				culture_group = germanic
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = italy_out_of_HRE
+			set_country_flag = shadow_kingdom #To keep track of info events
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+					OR = {
+						culture_group = latin
+						capital_scope = {
+							region = italian_region
+						}
+					}
+					NOT = { has_country_flag = shadow_kingdom }
+				}
+				country_event = { id = hre_event.2 }
+				set_country_flag = shadow_kingdom #To keep track of info events
+			}
+			every_country = {
+				limit = {
+					OR = {
+						culture_group = latin
+						capital_scope = {
+							region = italian_region
+						}
+					}
+					is_part_of_hre = no
+					any_owned_province = {
+						is_part_of_hre = yes
+					}
+				}
+				country_event = { id = hre_event.3 } #Clears Italian provinces for countries not in the HRE
+			}
+		}
+	}
+
+	option = {			# 
+		name = "hre_event.1.a"
+		ai_chance = { factor = 1 }
+		set_country_flag = left_the_empire #To keep track of opinions
+		set_in_empire = no
+		every_country = {
+			limit = {
+				ai = no
+				overlord_of = ROOT
+				NOT = { has_country_flag = shadow_kingdom }
+				NOT = { has_country_flag = had_shadow_kingdom_info }
+			}
+			country_event = { id = hre_event.3 } #Info Event
+		}
+		every_neighbor_country = {
+			limit = {
+				ai = no
+				NOT = { overlord_of = ROOT }
+				NOT = { has_country_flag = shadow_kingdom }
+				NOT = { has_country_flag = had_shadow_kingdom_info }
+			}
+			country_event = { id = hre_event.3 } #Info Event
+		}
+		if = {
+			limit = {
+				is_elector = yes
+			}
+			elector = no
+		}
+		emperor = {
+			add_opinion = { who = ROOT modifier = slipped_out_of_empire }
+		}
+		add_opinion = { who = emperor modifier = slipped_out_of_empire }
+		add_prestige = 35
+	}
+	option = {			#Our country is a natural part of the Empire
+		name = "hre_event.1.b"
+		ai_chance = { factor = 0 }
+		add_prestige = -35
+		add_opinion = {
+			who = emperor
+			modifier = stayed_in_the_empire
+		}
+		emperor = {
+			add_imperial_influence = 5
+			add_opinion = {
+				who = ROOT
+				modifier = stayed_in_the_empire
+			}
+		}
+		every_country = {
+			limit = {
+				has_country_flag = left_the_empire
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = stayed_in_the_empire_hostile
+			}
+		}
+	}
+}
+
+#Shadow Kingdom - Other tags
+country_event = {
+	id = hre_event.2
+	title = "hre_event.1.t"
+	desc = "hre_event.1.d"
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # The Empire does not concern us.
+		name = "hre_event.1.a"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				emperor = {
+					overlord_of = ROOT
+				}
+			}
+		}
+		set_country_flag = left_the_empire #To keep track of opinions
+		set_in_empire = no
+		every_country = {
+			limit = {
+				ai = no
+				overlord_of = ROOT
+				NOT = { has_country_flag = shadow_kingdom }
+				NOT = { has_country_flag = had_shadow_kingdom_info }
+			}
+			country_event = { id = hre_event.3 } #Info Event
+		}
+		every_neighbor_country = {
+			limit = {
+				ai = no
+				NOT = { overlord_of = ROOT }
+				NOT = { has_country_flag = shadow_kingdom }
+				NOT = { has_country_flag = had_shadow_kingdom_info }
+			}
+			country_event = { id = hre_event.3 } #Info Event
+		}
+		if = {
+			limit = {
+				is_elector = yes
+			}
+			elector = no
+		}
+		add_prestige = 35
+		emperor = {
+			add_opinion = { who = ROOT modifier = slipped_out_of_empire }
+		}
+		add_opinion = { who = emperor modifier = slipped_out_of_empire }
+	}
+	option = {			#Our country is a natural part of the Empire
+		name = "hre_event.1.b"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				emperor = {
+					NOT = { overlord_of = ROOT }
+				}
+			}
+		}
+		add_prestige = -35
+		add_opinion = {
+			who = emperor
+			modifier = stayed_in_the_empire
+		}
+		emperor = {
+			add_imperial_influence = 5
+			add_opinion = {
+				who = ROOT
+				modifier = stayed_in_the_empire
+			}
+		}
+		every_country = {
+			limit = {
+				has_country_flag = left_the_empire
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = stayed_in_the_empire_hostile
+			}
+		}
+	}
+}
+
+#The Shadow Kingdom
+country_event = {
+	id = hre_event.3
+	title = "hre_event.3.t"
+	desc = "hre_event.3.d"
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_shadow_kingdom_info
+		}
+	}
+	
+	option = {	#Other Italian territory in HRE also broken off unless overlord is a member.
+		name = "hre_event.3.a" #Ok.
+		trigger = {
+			OR = {
+				culture_group = latin
+				capital_scope = {
+					region = italian_region
+				}
+			}
+			is_part_of_hre = no
+		}
+		every_owned_province = {
+			limit = {
+				is_part_of_hre = yes
+				region = italian_region
+			}
+			set_in_empire = no
+		}
+	}
+	option = {
+		name = "hre_event.3.b" #So they cannot count on his protection?
+		trigger = {
+			NOT = {
+				culture_group = latin
+				capital_scope = {
+					region = italian_region
+				}
+			}
+			is_part_of_hre = no
+		}
+	}
+	option = {
+		name = "hre_event.3.c" #Ok.
+		trigger = {
+			NOT = {
+				culture_group = latin
+				capital_scope = {
+					region = italian_region
+				}
+			}
+			is_part_of_hre = yes
+		}
+	}
+}
+
+#Warning that Italy might slip away.
+country_event = {
+	id = hre_event.4
+	title = "hre_event.4.t"
+	desc = "hre_event.4.d"
+	picture = HRE_eventPicture
+
+	trigger = {
+		ai = no
+		NOT = { has_global_flag = italy_out_of_HRE }
+		normal_or_historical_nations = yes
+		is_year = 1440
+		NOT = { is_year = 1450 }
+		is_part_of_hre = yes
+		NOT = { has_country_flag = italian_warning }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = italian_warning
+			every_country = {
+				limit = {
+					ai = no
+					is_part_of_hre = yes
+					NOT = { has_country_flag = italian_warning }
+				}
+			country_event = { id = hre_event.4 }
+			set_country_flag = italian_warning
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {			# 
+		name = "hre_event.4.a"
+		trigger = { NOT = { culture_group = latin } }
+		custom_tooltip = hre_event.4.a.tt
+	}
+	option = {			# 
+		name = "hre_event.4.b"
+		trigger = { culture_group = latin }
+		custom_tooltip = hre_event.4.b.tt
+	}
+}
+
+#Germany/Italy Formed - Leaving Empire
+country_event = {
+	id = hre_event.5
+	title = "hre_event.5.t"
+	desc = "hre_event.5.d"
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "hre_event.5.a" #Ok.
+		add_imperial_influence = -75
+		add_prestige = -10
+		tooltip = {
+			add_opinion = {
+				who = FROM
+				modifier = opinion_left_empire
+			}
+		}
 	}
 }

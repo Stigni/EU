@@ -63,6 +63,7 @@ province_event = {
 		owner = { 
 			add_prestige = 5 
 			add_papal_influence = 2
+			add_devotion = 1
 		}
 	}
 }
@@ -116,6 +117,9 @@ country_event = {
 		religion = catholic
 		NOT = { is_religion_enabled = protestant }
 		NOT = { tag = PAP }
+		NOT = {
+			has_global_flag = pap_disables_simony_flag
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -130,6 +134,7 @@ country_event = {
 	option = {
 		name = catholic_flavor.4.b
 		add_papal_influence = 10
+		add_devotion = 1
 	}
 }
 
@@ -147,6 +152,9 @@ country_event = {
 		NOT = { is_religion_enabled = protestant }
 		NOT = { tag = PAP }
 		is_year = 1480
+		NOT = {
+			has_global_flag = pap_disables_indulgences_flag
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -187,7 +195,9 @@ country_event = {
 			religion = catholic
 		}
 		is_year = 1490
-
+		NOT = {
+			has_global_flag = pap_disables_veneration_relics_flag
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -273,7 +283,7 @@ country_event = {
 		name = catholic_flavor.8.a
 		add_reform_desire = 0.01
 		add_papal_influence = 2
-		}
+	}
 	option = {
 		name = catholic_flavor.8.b
 		add_reform_desire = -0.01
@@ -315,8 +325,9 @@ country_event = {
 		name = catholic_flavor.9.b
 		add_reform_desire = 0.005
 		add_papal_influence = 5
-		}
+		add_devotion = 1
 	}
+}
 
 #A Promise of Safe Passage?
 country_event = {
@@ -348,5 +359,6 @@ country_event = {
 		name = catholic_flavor.10.b
 		add_reform_desire = 0.01
 		add_papal_influence = 10
-		}
+		add_devotion = 1
+	}
 }

@@ -133,7 +133,7 @@ country_event = {
 			limit = {
 				culture = greek
 			}
-			add_province_manpower = 1
+			add_base_manpower = 1
 		}
 	}
 }
@@ -466,7 +466,12 @@ country_event = {
 	
 	option = {		
 		name = flavor_ven.15.a
-		112 = { add_base_tax = 1 }
+		112 = { 
+			add_province_modifier = {
+				name = "ven_ministers_of_waterways"
+				duration = -1
+			}
+		}
 		add_adm_power = -100
 	}
 	option = {		
@@ -758,7 +763,12 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 60
-	}	
+	}
+	
+	immediate = {
+		set_global_flag = ven_galileo_galilei_flag
+	}
+	
 	option = {	
 		name = flavor_ven.23.a
 		add_dip_power = 100

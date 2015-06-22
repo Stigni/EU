@@ -48,7 +48,10 @@ country_event = {
 				}
 			}
 			add_core = MAR
-			add_unrest = 10
+			add_province_modifier = {
+				name = add_unrest_10_modifier
+				duration = 1825
+			}
 		}
 	}
 }
@@ -111,7 +114,10 @@ country_event = {
 		name = "flavor_mug.EVTOPTA3" #Execute the Guru as a heretic!
 		every_owned_province = {
 			limit = { is_core = PUN }
-			add_unrest = 10
+			add_province_modifier = {
+				name = add_unrest_10_modifier
+				duration = 1825
+			}
 		}
 	}
 }
@@ -139,7 +145,10 @@ country_event = {
 		name = "flavor_mug.EVTOPTA4"
 		every_owned_province = { 
 			limit = { culture = afghani } 
-			add_unrest = 10
+			add_province_modifier = {
+				name = add_unrest_10_modifier
+				duration = 1825
+			}
 		}
 	}
 }

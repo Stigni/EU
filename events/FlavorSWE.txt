@@ -84,10 +84,10 @@ country_event = {
 		}
 
 		1 = {	# Stockholm
-			add_province_manpower = 2
+			add_base_manpower = 2
 		}
 		27 = {	#Finland
-			add_province_manpower = 1
+			add_base_manpower = 1
 		}
 		
 		add_adm_power = -50
@@ -1614,12 +1614,12 @@ country_event = {
 		name = "flavor_swe.EVTOPTA3253"
 		ai_chance = { factor = 90 }
 		add_years_of_income = -0.5
-		add_mercantilism = 2
+		add_mercantilism = 0.2
 	}
 	option = {		# Mercantilism is Dead
 		name = "flavor_swe.EVTOPTB3253"
 		ai_chance = { factor = 10 }
-		add_mercantilism = -1
+		add_mercantilism = -0.1
 	}
 }
 
@@ -1933,11 +1933,12 @@ country_event = {
 	option = {		# The King shall rule!
 		name = "flavor_swe.EVTOPTA3262"
 		remove_country_modifier = age_of_fredom
-		change_government = elightened_despotism
+		change_government = enlightened_despotism
 	}
 	option = {		# No more tyrants!
 		name = "flavor_swe.EVTOPTB3262"
 		add_stability = 1
+		remove_country_modifier = age_of_fredom
 	}
 }
 

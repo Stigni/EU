@@ -16,13 +16,40 @@ country_event = {
 		days = 1
 	}
 	
-	immediate = {	
-		set_country_flag = had_internal_conflicts
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_internal_conflicts
+		}
+		add_stability = -2
+		random_owned_province = {
+			limit = {
+				is_capital = no
+				has_building = fort_15th
+				has_building = fort_16th
+				has_building = fort_17th
+				has_building = fort_18th
+			}
+			spawn_rebels = {
+					type = noble_rebels
+					size = 2
+					win = yes
+				}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+					type = anti_tax_rebels
+					size = 2
+					win = yes
+				}
+		}
 	}
 
 	option = {
 		name = "EVTOPTA3001" # Dire times are ahead of us
-		add_stability = -1
+		
 	}
 }
 
@@ -95,10 +122,15 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB3003"			# Our domestic problems are our main concern
-		add_disaster_modifier = {
-			name = "domestic_improvements"
-			duration = -1
-			disaster = internal_conflicts
+		if = {
+			limit = {
+				has_disaster = internal_conflicts
+			}
+			add_disaster_modifier = {
+				name = "domestic_improvements"
+				duration = -1
+				disaster = internal_conflicts
+			}
 		}
 	}
 }
@@ -126,20 +158,29 @@ country_event = {
 	option = {
 		name = "EVTOPTA3004"			# Restrict serfdom
 		random_owned_province = { noble_rebels = 1 }
-		add_disaster_modifier = {
-			name = "restrict_serfdom"
-			duration = -1
-			disaster = internal_conflicts
-
+		if = {
+			limit = {
+				has_disaster = internal_conflicts
+			}
+			add_disaster_modifier = {
+				name = "restrict_serfdom"
+				duration = -1
+				disaster = internal_conflicts
+			}
 		}
 	}
 	option = {
 		name = "EVTOPTB3004"			# Keep the masses in chains
 		random_owned_province = { anti_tax_rebels = 1 }
-		add_disaster_modifier = {
-			name = "enforce_serfdom"
-			duration = -1
-			disaster = internal_conflicts
+		if = {
+			limit = {
+				has_disaster = internal_conflicts
+			}
+			add_disaster_modifier = {
+				name = "enforce_serfdom"
+				duration = -1
+				disaster = internal_conflicts
+			}
 		}
 	}
 }
@@ -167,10 +208,15 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA3005"			# There is no immediate solution at hand
-		add_disaster_modifier = {
-			name = "decreased_morale"
-			duration = -1
-			disaster = internal_conflicts
+		if = {
+			limit = {
+				has_disaster = internal_conflicts
+			}
+			add_disaster_modifier = {
+				name = "decreased_morale"
+				duration = -1
+				disaster = internal_conflicts
+			}
 		}
 	}
 	
@@ -197,7 +243,7 @@ country_event = {
 			NOT = { mil = 3 }
 		}
 		government = monarchy
-		any_owned_province = { base_tax = 4 }
+		any_owned_province = { development = 8 }
 	}
 	
 	is_triggered_only = yes
@@ -210,29 +256,39 @@ country_event = {
 		name = "EVTOPTA3006"			# Leave the nation's fate in his hands
 		random_owned_province = { 
 			limit= {
-				base_tax = 4
+				development = 8
 			}
 			pretender_rebels = 3 
 		}
-		add_disaster_modifier = {
-			name = "support_monarch"
-			duration = -1
-			disaster = internal_conflicts
+		if = {
+			limit = {
+				has_disaster = internal_conflicts
+			}
+			add_disaster_modifier = {
+				name = "support_monarch"
+				duration = -1
+				disaster = internal_conflicts
+			}
 		}
 	}
 	option = {
 		name = "EVTOPTB3006"			# Oppose him
 		random_owned_province = { 
 			limit= {
-				base_tax = 4
+				development = 8
 			}
 			noble_rebels = 3 
 		}
 		random_owned_province = { noble_rebels = 2 }
-		add_disaster_modifier = {
-			name = "oppose_monarch"
-			duration = -1
-			disaster = internal_conflicts
+		if = {
+			limit = {
+				has_disaster = internal_conflicts
+			}
+			add_disaster_modifier = {
+				name = "oppose_monarch"
+				duration = -1
+				disaster = internal_conflicts
+			}
 		}
 	}
 }
@@ -258,18 +314,28 @@ country_event = {
 	option = {
 		name = "EVTOPTA3007"			# Try to alleviate the suffering
 		add_years_of_income = -1.0
-		add_disaster_modifier = {
-			name = "alleviate_population"
-			duration = -1
-			disaster = internal_conflicts
+		if = {
+			limit = {
+				has_disaster = internal_conflicts
+			}
+			add_disaster_modifier = {
+				name = "alleviate_population"
+				duration = -1
+				disaster = internal_conflicts
+			}
 		}
 	}
 	option = {
 		name = "EVTOPTB3007"			# We are helpless in the face of such a disaster...
-		add_disaster_modifier = {
-			name = "starvation"
-			duration = -1
-			disaster = internal_conflicts
+		if = {
+			limit = {
+				has_disaster = internal_conflicts
+			}
+			add_disaster_modifier = {
+				name = "starvation"
+				duration = -1
+				disaster = internal_conflicts
+			}
 		}
 	}
 }

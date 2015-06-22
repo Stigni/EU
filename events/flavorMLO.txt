@@ -35,24 +35,11 @@ country_event = {
 		ai_chance = { factor = 90 }
 		change_government = ambrosian_republic
 		add_republican_tradition = 0.05
-		every_country = {
+		every_neighbor_country  = {
 			limit = {
-				NOT = {
-					tag = MLO
-				}
-				OR= {
-					government = monarchy
-					tag = VEN
-					tag = PAP
-				}
-				OR = {
-					culture_group = germanic
-					culture_group = latin
-					culture_group = french
-					is_neighbor_of = ROOT
-				}
+				is_subject = no
+				government = monarchy
 				religion = catholic
-				num_of_cities = 5
 			}
 			
 			add_opinion = {
@@ -63,7 +50,6 @@ country_event = {
 				limit = {
 					government = monarchy
 					NOT = { government = elective_monarchy }
-					NOT = { government = archduchy }
 				}
 				
 				add_casus_belli = {	
@@ -101,7 +87,7 @@ country_event = {
 	option = {
 		name = flavor_mlo.2.a
 		add_republican_tradition = -0.2
-		add_stability = 1
+		add_prestige = 10
 	}
 	option = {
 		name = flavor_mlo.2.b
@@ -135,7 +121,7 @@ country_event = {
 		add_republican_tradition = 0.10
 		add_stability = 1
 		add_legitimacy = 10
-		104 = { add_base_tax = 1 add_province_manpower = 1 }
+		104 = { add_base_tax = 1 add_base_manpower = 1 }
 	}
 }
 

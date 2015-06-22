@@ -2,7 +2,7 @@
 ########################################
 # Events for Map the Coastline
 #
-# written by Sara Wendel-Ã–rtqvist
+# written by Sara Wendel-Örtqvist
 ########################################
 
 namespace = exploration_events
@@ -139,7 +139,7 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
-		NOT = { base_tax = 5 }
+		NOT = { base_tax = 8 }
 		NOT = { has_province_flag = base_tax_changed }
 	}
 	
@@ -217,7 +217,7 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
-		base_tax = 2
+		base_tax = 3
 		NOT = { has_province_flag = base_tax_changed }
 	}
 	
@@ -417,6 +417,7 @@ province_event = {
 		is_empty = yes
 		FROM = {
 			NOT = { religion_group = muslim }
+			NOT = { has_country_modifier = drunken_explorer }
 		}
 	}
 	
@@ -454,6 +455,7 @@ province_event = {
 			region = australian_coast
 			region = new_zealand_region
 		}
+		has_climate = arctic
 	}
 	
 	mean_time_to_happen = {

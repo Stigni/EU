@@ -29,7 +29,6 @@ country_decisions = {
 			owns_core_province = 1854
 			owns_core_province = 364
 			owns_core_province = 379
-			379 = { religion = catholic }
 		}
 		effect = {
 			add_prestige = 25
@@ -59,6 +58,7 @@ country_decisions = {
 			}
 			KOJ = {
 				set_capital = 379
+				change_religion = catholic
 				change_government = feudal_monarchy
 			}
 		}

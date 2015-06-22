@@ -71,8 +71,10 @@ country_event = {
 	option = {
 		name = flavor_mam.2.a
 		361 = { 
-			add_base_tax = 2 
-			add_province_manpower = 1
+			add_province_modifier = {
+				name = "public_works_of_cairo"
+				duration = 3650
+			}
 		}
 		
 	}

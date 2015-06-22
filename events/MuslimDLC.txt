@@ -370,7 +370,7 @@ country_event = {
 			set_country_flag = policy_changes_flag
 			random_owned_province = {
 				limit = {
-					is_core = yes
+					is_core = owner
 				}
 				set_province_flag = tobacco_flag1
 			}
@@ -521,7 +521,7 @@ country_event = {
 			set_country_flag = policy_changes_flag
 			random_owned_province = {
 				limit = {
-					is_core = yes
+					is_core = owner
 				}
 				set_province_flag = tobacco_flag1
 			}
@@ -771,7 +771,10 @@ country_event = {
 					religion_group = muslim
 				}
 			}
-			add_unrest = 2
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 }
@@ -892,14 +895,14 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					is_core = yes
+					is_core = owner
 					religion = owner
 				}
 				set_province_flag = sharia_flag1
 			}
 			random_owned_province = {
 				limit = {
-					is_core = yes
+					is_core = owner
 					religion = owner
 					NOT = { has_province_flag = sharia_flag1 }
 				}
@@ -944,14 +947,20 @@ country_event = {
 				has_province_flag = sharia_flag1
 			}
 			clr_province_flag = sharia_flag1
-			add_unrest = 5
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 		random_owned_province = {
 			limit = {
 				has_province_flag = sharia_flag2
 			}
 			clr_province_flag = sharia_flag2
-			add_unrest = 5
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 }
@@ -1207,9 +1216,10 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
+			set_country_flag = dev_madrassa_flag
 			random_owned_province = {
 				limit = {
-					is_core = yes
+					is_core = owner
 					religion_group = muslim
 				}
 				set_province_flag = madrassa_flag1
@@ -1441,54 +1451,42 @@ country_event = {
 }
 
 # People of the Book - Dhimmi
-country_event = {
+province_event = {
 	id = muslim_dlc.25
 	title = "muslim_dlc.EVTNAME25"
 	desc = "muslim_dlc.EVTDESC25"
 	picture = RELIGION_eventPicture
-	
-	fire_only_once = yes
+		
+	is_mtth_scaled_to_size = 1
 	
 	trigger = {
 		has_dlc = "Star and Crescent"
-		religion_group = muslim
-		any_owned_province = { religion_group = christian }
-		NOT = { 
-			any_owned_province = { 
-				has_province_modifier = dhimmi_residence 
-			}
+		owner = { religion_group = muslim }
+		OR = {
+			religion_group = christian
+			religion = jewish
 		}
+		development = 30
 	}
 	
 	mean_time_to_happen = {
-		months = 2000
+		months = 1000
 	}
 	
 	option = {
 		name = "muslim_dlc.EVTOPTA25"
-		every_owned_province = { 
-			limit = { 
-				religion_group = christian 
-			} 
-			add_province_modifier = { 
-				name = dhimmi_residence
-				duration = 50 
-			}
+		add_province_modifier = { 
+			name = dhimmi_residence
+			duration = -1 
 		}
 	}
 	option = {
 		name = "muslim_dlc.EVTOPTB25"
-		add_piety = 0.1
-		add_prestige = 10
-		every_owned_province = { 
-			limit = { 
-				religion_group = christian 
-			} 
-			spawn_rebels = {
-				type = religious_rebels
-				size = 1
-			}
+		owner = {
+			add_piety = 0.2
+			add_prestige = 15
 		}
+		add_unrest = 2
 	}
 }
 
@@ -1573,7 +1571,10 @@ country_event = {
 			limit = { 
 				religion = shiite 
 			} 
-			add_unrest = 2
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 }
@@ -1619,8 +1620,11 @@ country_event = {
 		every_owned_province = { 
 			limit = { 
 				religion = sunni 
-			} 
-			add_unrest = 2
+			}
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 }

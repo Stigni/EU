@@ -45,6 +45,26 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = SPI
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
+			}
 			set_capital = 103		# Piedmont
 			add_prestige = 10
 		}
@@ -118,6 +138,26 @@ country_decisions = {
 					tag = SAR
 				}
 				inherit = SAV
+			}
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
 			}
 			change_tag = SPI
 			set_capital = 103	# Piedmont

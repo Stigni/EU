@@ -251,7 +251,12 @@ country_event = {
 	option = {
 		name = "EVTOPTA10501"
 		add_legitimacy = 50
-		every_owned_province = { add_unrest = 3 }
+		every_owned_province = { 
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
+		}
 		add_country_modifier = {
 			name = "centralization_modifier"
 			duration = 3650

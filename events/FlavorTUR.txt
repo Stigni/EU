@@ -1527,7 +1527,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		add_piety = -0.5
 		capital_scope = {
-			add_manpower = 3
+			add_base_manpower = 3
 		}
 		every_known_country = {
 			limit = {
@@ -1658,7 +1658,7 @@ country_event = {
 			is_capital = no
 			culture = turkish
 			NOT = { local_autonomy = 50 }
-			base_tax = 4
+			development = 9
 		}
 	}
 	
@@ -1672,7 +1672,7 @@ country_event = {
 				is_capital = no
 				culture = turkish
 				NOT = { local_autonomy = 50 }
-				base_tax = 4
+				development = 9
 			}
 			set_province_flag = bey_uproar
 		}
@@ -1732,7 +1732,7 @@ country_event = {
 	
 	trigger ={
 		tag = TUR
-		army_tradition = 90
+		army_tradition = 50
 	}
 	
 	mean_time_to_happen = {
@@ -1965,7 +1965,32 @@ country_event = {
 	}
 }
 
-
+# Janissary Landholders
+country_event = {
+	id = flavor_tur.106
+	title = "flavor_tur.106.t"
+	desc = "flavor_tur.106.d"
+	picture = MILITARY_CAMP_eventPicture
+	
+	
+	trigger = {
+		has_country_modifier = tur_janissary
+		NOT = { tag = TUR }
+    }
+	
+	mean_time_to_happen = {
+		months = 10
+		
+	}
+	
+	immediate = {
+		remove_country_modifier = tur_janissary
+	}
+	
+	option = {		# Ok.
+		name = "flavor_tur.106.a"
+	}
+}
 
 
 

@@ -42,6 +42,12 @@ country_decisions = {
 			
 			add_prestige = 25
 			change_tag = MCH
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			MCH = {
 				set_capital = 730 #Girin
 			}
@@ -78,16 +84,19 @@ country_decisions = {
 			}
 		}
 		allow = {
-		    is_tribal = no
 			owns = 704		# Liaoxi
 			owns = 723		# Xilin Gol
 			owns = 726		# Liaodong
 			owns = 1816		# Beijing
 			is_at_war = no
 			is_subject = no
+			NOT = {
+				has_ruler_modifier = tribal_succession_crisis
+			}
 		}
 		effect = {
 			change_tag = QNG
+			set_government_rank = 3
 			chinese_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -110,7 +119,7 @@ country_decisions = {
 				}
 				change_technology_group = chinese
 				change_unit_type = chinese
-			}			
+			}
 			set_capital = 1816 # Beijing
 			1816 = { change_culture = ROOT }
 			add_prestige = 10

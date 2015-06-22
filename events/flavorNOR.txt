@@ -85,7 +85,7 @@ country_event = {
 		315 = { #Finnmark
 			owned_by = NOR
 			controlled_by = NOR
-			NOT = { has_building = fort2 }
+			fort_level = 1
 		}
 	}
 	
@@ -95,26 +95,11 @@ country_event = {
 	
 	option = {
 		name = "flavor_nor.EVTOPTA3"
-		if = {
-			limit = {
-				315 = { #Finnmark
-					has_building = fort1
-				}
-			}
-			add_treasury = -50
-			315 = { #Finnmark
-				add_building = fort2
-			}
-		}
-		if = {
-			limit = {
-				315 = { #Finnmark
-					NOT = { has_building = fort1 }
-				}
-			}
-			add_treasury = -25
-			315 = { #Finnmark
-				add_building = fort1
+		add_treasury = -25
+		315 = { #Finnmark
+			add_province_modifier = {
+				name = "local_fortress"
+				duration = -1
 			}
 		}
 	}
@@ -145,10 +130,6 @@ country_event = {
 		16 = { #Bohuslän
 			owned_by = NOR
 			controlled_by = NOR
-			has_building = fort2
-			NOT = {
-				has_building = fort3
-			}
 		}
 	}
 	
@@ -161,6 +142,7 @@ country_event = {
 		16 = { #Bohuslän
 			add_province_modifier = {
 				name = nor_bohus_fortress
+				duration = -1
 			}
 		}
 	}

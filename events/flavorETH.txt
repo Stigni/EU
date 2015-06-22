@@ -864,7 +864,6 @@ province_event = {
 			region = maakhir_region
 			region = banaadir_region
 		}
-		NOT = { has_building = fort2 }
 		any_neighbor_province = {
 			has_province_modifier = eth_oromo_migration
 		}
@@ -980,6 +979,7 @@ country_event = {
 		owns = 1224
 		ruler_age = 40
 		has_heir = no
+		government = monarchy
 	}
 	
 	mean_time_to_happen = {
@@ -1019,10 +1019,17 @@ country_event = {
 	trigger = {
 		has_ruler = "Zara Yakob"
 		NOT = { is_year = 1468 }
+		NOT = {
+			has_global_flag = wih_eleniethiopia_flag
+		}
 	}
 	
 	mean_time_to_happen = {
 		months = 24
+	}
+	
+	immediate = {
+		set_global_flag = wih_eleniethiopia_flag
 	}
 	
 	option = {
@@ -1032,9 +1039,9 @@ country_event = {
 			type = statesman
 			name = "Eleni"
 			skill = 3
+			female = yes
 		}
 	}
-	
 }
 
 #Disaster at the Mountain of Kings

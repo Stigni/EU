@@ -1,7 +1,7 @@
 ########################################
 # Events for Tarascan
 #
-# written by Sara Wendel-Ã–rtqvist
+# written by Sara Wendel-Örtqvist
 ####################################
 
 namespace = flavor_tar

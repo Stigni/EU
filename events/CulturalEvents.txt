@@ -116,6 +116,9 @@ country_event = {
 		adm_power = 30
 		prestige = 30
 		dip = 4
+		capital_scope = {
+			continent = europe
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -236,9 +239,6 @@ country_event = {
 
 	trigger = {
 		religion = catholic
-		any_owned_province = {
-			has_building = fine_arts_academy
-		}
 		NOT = {
 			has_country_flag = guild_of_st_luke
 		}
@@ -248,7 +248,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 240
+		months = 2400
 	}
 	
 	immediate = {
@@ -422,12 +422,7 @@ country_event = {
 			has_country_flag = blooming_renaissance
 		}
 		technology_group = western
-		OR = {
-			advisor = philosopher
-			any_owned_province = {
-				has_building = university
-			}
-		}
+		advisor = philosopher
 		adm_power = 30
 		years_of_income = 0.3
 		adm = 3
@@ -513,15 +508,12 @@ country_event = {
 			has_country_flag = the_sound_of_music
 		}
 		technology_group = western
-		any_owned_province = {
-			has_building = fine_arts_academy
-		}
 		adm_power = 10
 		years_of_income = 0.1
 	}
 	
 	mean_time_to_happen = {
-		months = 180
+		months = 1800
 	}
 	
 	immediate = {

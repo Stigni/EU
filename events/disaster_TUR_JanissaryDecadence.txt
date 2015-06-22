@@ -100,7 +100,7 @@ country_event = {
 country_event = {
 	id = janissary_decadence.4
 	title = janissary_decadence.4.t
-	desc = anissary_decadence.4.d
+	desc = janissary_decadence.4.d
 	picture = MILITARY_CAMP_eventPicture
 	
 	

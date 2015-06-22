@@ -5,9 +5,7 @@ country_event = {
 	id = war_of_the_roses.1
 	title = war_of_the_roses.1.t
 	desc = war_of_the_roses.1.d
-	
-	
-	
+		
 	picture = WAR_OF_THE_ROSES_eventPicture
 	major = yes
 	
@@ -618,7 +616,7 @@ country_event = {
 			has_country_flag = supports_house_of_york
 		}
 		NOT = { has_country_flag = support_for_war_of_the_roses }
-
+		NOT = { has_country_flag = no_support_for_rose_rebels }
 		ENG = {
 			any_owned_province = {
 				OR = {
@@ -640,13 +638,10 @@ country_event = {
 		}
 	}
 	
-	immediate = {
-		set_country_flag = support_for_war_of_the_roses
-	}
-	
 	option = {		# Send them a token force
 		name = war_of_the_roses.12.a
 		ai_chance = { factor = 50 }
+		set_country_flag = support_for_war_of_the_roses
 		add_manpower = -3
 		hidden_effect = {
 			ENG = {
@@ -657,6 +652,7 @@ country_event = {
 	option = {		# Send them some money
 		name = war_of_the_roses.12.b
 		ai_chance = { factor = 25 }
+		set_country_flag = support_for_war_of_the_roses
 		add_years_of_income = -0.5
 		hidden_effect = {
 			ENG = {
@@ -667,6 +663,7 @@ country_event = {
 	option = {		# We will not support rebels
 		name = war_of_the_roses.12.c
 		ai_chance = { factor = 25 }
+		set_country_flag = no_support_for_rose_rebels
 		add_prestige = 10
 	}
 }
@@ -678,10 +675,8 @@ country_event = {
 	desc = war_of_the_roses.13.d
 	picture = WAR_OF_THE_ROSES_eventPicture
 	
-	
-		trigger = {
+	trigger = {
 		is_neighbor_of = ENG
-
 		OR = {
 			capital_scope = {
 				region = british_isles
@@ -693,7 +688,7 @@ country_event = {
 			has_country_flag = supports_house_of_lancaster
 		}
 		NOT = { has_country_flag = support_for_war_of_the_roses }
-
+		NOT = { has_country_flag = no_support_for_rose_rebels }
 		ENG = {
 			any_owned_province = {
 				OR = {
@@ -716,13 +711,10 @@ country_event = {
 		}
 	}
 	
-	immediate = {
-		set_country_flag = support_for_war_of_the_roses
-	}
-	
 	option = {		# Send them a token force
 		name = war_of_the_roses.13.a
 		ai_chance = { factor = 50 }
+		set_country_flag = support_for_war_of_the_roses
 		add_manpower = -3
 		hidden_effect = {
 			ENG = {
@@ -733,6 +725,7 @@ country_event = {
 	option = {		# Send them some money
 		name = war_of_the_roses.13.b
 		ai_chance = { factor = 25 }
+		set_country_flag = support_for_war_of_the_roses
 		add_years_of_income = -0.5
 		hidden_effect = {
 			ENG = {
@@ -743,6 +736,7 @@ country_event = {
 	option = {		# We will not support rebels
 		name = war_of_the_roses.13.c
 		ai_chance = { factor = 25 }
+		set_country_flag = no_support_for_rose_rebels
 		add_prestige = 10
 	}
 }
@@ -882,6 +876,28 @@ country_event = {
 					country_event = { id = war_of_the_roses.105 days = 1 }
 				}
 				clr_country_flag = supports_house_of_lancaster
+			}
+			if = {
+				limit = {
+					has_country_flag = supports_house_of_york
+				}
+				every_country = {
+					limit = {
+						has_country_flag = no_support_for_rose_rebels
+					}
+					country_event = { id = war_of_the_roses.104 days = 1 }
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = supports_house_of_lancaster
+				}
+				every_country = {
+					limit = {
+						has_country_flag = no_support_for_rose_rebels
+					}
+					country_event = { id = war_of_the_roses.105 days = 1 }
+				}
 			}
 		}
 	}
@@ -1041,12 +1057,24 @@ country_event = {
 	
 	option = {		# Oh...
 		name = war_of_the_roses.104.a
+		trigger = { NOT = { has_country_flag = no_support_for_rose_rebels } }
 		FROM = {
 			add_opinion = {
 				who = ROOT
 				modifier = eng_supported_rebels_during_war_of_the_roses
 			}
 		}
+	}
+	option = {		# Good thing we didn't!
+		name = war_of_the_roses.104.b
+		trigger = { has_country_flag = no_support_for_rose_rebels }
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = eng_didnt_support_rebels
+			}
+		}
+		clr_country_flag = no_support_for_rose_rebels
 	}
 }
 
@@ -1065,12 +1093,24 @@ country_event = {
 	
 	option = {		# Oh...
 		name = war_of_the_roses.105.a
+		trigger = { NOT = { has_country_flag = no_support_for_rose_rebels } }
 		FROM = {
 			add_opinion = {
 				who = ROOT
 				modifier = eng_supported_rebels_during_war_of_the_roses
 			}
 		}
+	}
+	option = {		# Good thing we didn't!
+		name = war_of_the_roses.104.b
+		trigger = { has_country_flag = no_support_for_rose_rebels }
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = eng_didnt_support_rebels
+			}
+		}
+		clr_country_flag = no_support_for_rose_rebels
 	}
 }
 

@@ -49,7 +49,7 @@ country_event = {
 	}
 }
 
-# The Counter-Reformation Ends (LibertÃ©, Ã©galitÃ©, fraternitÃ©)
+# The Counter-Reformation Ends (Liberté, égalité, fraternité)
 country_event = {
 	id = 2052
 	title = "EVTNAME2050"
@@ -881,11 +881,25 @@ province_event = {
 
 	trigger = {
 		is_capital = no
-		religion = buddhism
-		owner = {
+		OR = {
 			religion = buddhism
-			confucianism = 2
-		} 
+			religion = vajrayana
+			religion = mahayana
+		}
+		OR = {
+			owner = {
+				religion = buddhism
+				confucianism = 2
+			}
+			owner = {
+				religion = vajrayana
+				confucianism = 2
+			}
+			owner = {
+				religion = mahayana
+				confucianism = 2
+			}
+		}
 		any_neighbor_province = {
 			religion = confucianism
 		}
@@ -933,12 +947,26 @@ province_event = {
 
 	trigger = {
 		is_capital = no
-		religion = buddhism
-		culture = japanese
-		owner = {
+		OR = {
 			religion = buddhism
-			shinto = 2
+			religion = vajrayana
+			religion = mahayana
 		}
+		OR = {
+			owner = {
+				religion = buddhism
+				shinto = 2
+			}
+			owner = {
+				religion = vajrayana
+				shinto = 2
+			}
+			owner = {
+				religion = mahayana
+				shinto = 2
+			}
+		}
+		culture = japanese
 		NOT = { has_province_modifier = religious_zeal_at_conv }
 	}
 
@@ -989,10 +1017,10 @@ province_event = {
 
 	trigger = {
 		is_capital = no
-		religion = confucianism 
+		religion = confucianism
 		owner = {
 			religion = confucianism
-			buddhism = 2
+			mahayana = 2
 		}
 		NOT = { has_province_modifier = religious_zeal_at_conv }
 	}
@@ -1022,7 +1050,7 @@ province_event = {
 		modifier = {
 			factor = 0.95
 			any_neighbor_province = {
-				religion = buddhism
+				religion = mahayana
 			}
 		}
 	}
@@ -1031,7 +1059,7 @@ province_event = {
 
 	option = {
 		name = "EVTOPTA6183"
-		change_religion = buddhism
+		change_religion = mahayana
 	}
 }
 
@@ -1097,7 +1125,7 @@ province_event = {
 		religion = shinto
 		owner = {
 			religion = shinto
-			buddhism = 2
+			mahayana = 2
 		}
 		NOT = { has_province_modifier = religious_zeal_at_conv }
 	}
@@ -1127,7 +1155,7 @@ province_event = {
 		modifier = {
 			factor = 0.95
 			any_neighbor_province = {
-				religion = buddhism
+				religion = mahayana
 			}
 		}
 	}
@@ -1136,7 +1164,7 @@ province_event = {
 
 	option = {
 		name = "EVTOPTA6186"
-		change_religion = buddhism
+		change_religion = mahayana
 	}
 }
 
@@ -2332,5 +2360,215 @@ country_event = {
 				num_of_missionaries = 4
 			}
 		}
+	}
+}
+
+country_event = {
+	id = religious_events.16
+	title = "religious_events.16.t"
+	desc = "religious_events.16.d"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		religion = hinduism
+		NOT = { has_country_flag = had_religious_coup }
+		is_force_converted = no
+		is_subject = no
+		OR = {
+			tag = BNG #Bengal
+			tag = BIJ #Bijapur
+			tag = BAH #Bahmani
+			tag = DLH #Delhi
+			tag = GOC #Golconda
+			tag = DEC #Deccan
+			tag = MUG #Mughals
+			tag = AHM #Ahmednagar
+			tag = GUJ #Gujarat
+			tag = JNP #Jaunpur
+			tag = MLW #Malwa
+			tag = MUL #Multan
+			tag = SND #Sindh
+			tag = BRR #Berar
+			tag = KSH #Kashmir
+			tag = KHD #Khandesh
+			tag = ODH #Oudh
+			tag = JAJ #Janjira
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_religious_coup
+			if = {
+				limit = {
+					OR  = {
+						tag = BNG #Bengal
+						tag = DLH #Delhi
+						tag = DEC #Deccan
+						tag = MUG #Mughals
+						tag = AHM #Ahmednagar
+						tag = JNP #Jaunpur
+						tag = MLW #Malwa
+						tag = MUL #Multan
+						tag = SND #Sindh
+						tag = BRR #Berar
+						tag = KHD #Khandesh
+					}
+				}
+				set_country_flag = sunni_coup
+			}
+			if = {
+				limit = {
+					OR  = {
+						tag = BIJ #Bijapur
+						tag = BAH #Bahmani
+						tag = GOC #Golconda
+						tag = GUJ #Gujarat
+						tag = KSH #Kashmir
+						tag = ODH #Oudh
+					}
+				}
+				set_country_flag = shia_coup
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 90
+		}
+		name = "religious_events.16.a"
+		if = {
+			limit = { has_country_flag = sunni_coup }
+			change_religion = sunni
+			clr_country_flag = sunni_coup
+		}
+		if = {
+			limit = { has_country_flag = shia_coup }
+			change_religion = shiite
+			clr_country_flag = shia_coup
+		}
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			kill_ruler = yes
+		}
+		if = {
+			limit = {
+				has_heir = no
+			}
+			define_ruler = {
+				dynasty = ROOT
+			}
+		}
+		add_stability = 2 #One is for placating the aristocrats and clergy the other to counteract the -1 stab on monarch death
+		swap_free_idea_group = yes		#keep progress
+		hidden_effect = {
+			every_neighbor_country = {
+				country_event = { id = religious_events.17 }
+			}
+		}
+	}
+	option = {
+		name = "religious_events.16.b"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { num_of_cities = 2 }
+			}
+		}
+		add_stability = -1
+		add_country_modifier = {
+			name = "indian_religious_tensions" 
+			duration = 1825
+		}
+		if = {
+			limit = {
+				has_country_flag = sunni_coup
+			}
+			clr_country_flag = sunni_coup
+			random_owned_province = {
+				limit = {
+					NOT = { is_capital = yes }
+					owner = {
+						fort_15th = 1
+					}
+					has_building = fort_15th
+				}
+				spawn_rebels = {
+					type = sunni_rebels	
+					size = 2	
+					win = yes
+				}
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { is_capital = yes }
+					owner = {
+						NOT = { fort_15th = 1 }
+					}
+				}
+				spawn_rebels = {
+					type = sunni_rebels	
+					size = 2	
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = shia_coup
+			}
+			clr_country_flag = shia_coup
+			random_owned_province = {
+				limit = {
+					NOT = { is_capital = yes }
+					owner = {
+						fort_15th = 1
+					}
+					has_building = fort_15th
+				}
+				spawn_rebels = {
+					type = shiite_rebels	
+					size = 2	
+					win = yes
+				}
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { is_capital = yes }
+					owner = {
+						NOT = { fort_15th = 1 }
+					}
+				}
+				spawn_rebels = {
+					type = shiite_rebels	
+					size = 2	
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = religious_events.17
+	title = "religious_events.17.t"
+	desc = "religious_events.17.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "religious_events.16.a" #This is an Outrage!
+		trigger = { NOT = { religion_group = muslim } }
+	}
+	option = {
+		name = "religious_events.16.b" #Excellent
+		trigger = { religion_group = muslim }
 	}
 }

@@ -679,6 +679,14 @@ country_event = {
 	
 	trigger = {
 		tag = AZT
+		OR = {
+			AND ={
+				religion = nahuatl
+				has_dlc = "El Dorado"
+				is_religion_reformed = no
+			}
+			technology_group = mesoamerican
+		}
 		any_known_country = {
 			capital_scope = { continent = europe }
 			war_with = AZT
@@ -700,10 +708,7 @@ country_event = {
 				limit = {
 					is_capital = no
 					controlled_by = ROOT
-					OR = {
-						can_spawn_rebels = nationalist_rebels
-						can_spawn_rebels = patriot_rebels
-					}
+					can_spawn_rebels = nationalist_rebels
 				}
 				set_province_flag = altepl_joins_invader
 			}
@@ -711,10 +716,7 @@ country_event = {
 				limit = {
 					is_capital = no
 					NOT = { has_province_flag = altepl_joins_invader }
-					OR = {
-						can_spawn_rebels = nationalist_rebels
-						can_spawn_rebels = patriot_rebels
-					}
+					can_spawn_rebels = nationalist_rebels
 					controlled_by = ROOT
 				}
 				set_province_flag = altepl_joins_invader
@@ -723,10 +725,7 @@ country_event = {
 				limit = {
 					is_capital = no
 					NOT = { has_province_flag = altepl_joins_invader }
-					OR = {
-						can_spawn_rebels = nationalist_rebels
-						can_spawn_rebels = patriot_rebels
-					}
+					can_spawn_rebels = nationalist_rebels
 					controlled_by = ROOT
 				}
 				set_province_flag = altepl_joins_invader
@@ -735,10 +734,7 @@ country_event = {
 				limit = {
 					is_capital = no
 					NOT = { has_province_flag = altepl_joins_invader }
-					OR = {
-						can_spawn_rebels = nationalist_rebels
-						can_spawn_rebels = patriot_rebels
-					}
+					can_spawn_rebels = nationalist_rebels
 					controlled_by = ROOT
 				}
 				set_province_flag = altepl_joins_invader
@@ -807,7 +803,7 @@ country_event = {
 				NOT = { can_spawn_rebels = nationalist_rebels }
 			}
 			spawn_rebels = {
-				type = patriot_rebels
+				type = nationalist_rebels
 				size = 1
 				win = yes
 				friend = PREV
@@ -850,6 +846,7 @@ country_event = {
 		name = flavor_azt.18.b
 		trigger = {
 			religion_group = pagan
+			is_colonial_nation = no
 			NOT = { religion = inti }
 			NOT = { religion = mesoamerican_religion }
 		}

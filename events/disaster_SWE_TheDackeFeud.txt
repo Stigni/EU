@@ -74,26 +74,26 @@ country_event = {
 	desc = the_dacke_feud.2.d
 	picture = ANGRY_MOB_eventPicture
 	
+	is_triggered_only = yes
+	
 	trigger = {
 		swedish_region = {
-			controlled_by = owner
+			controlled_by = SWE
 			has_siege = false
 			NOT = { local_autonomy = 50 }
 			NOT = { has_province_flag = dacke_prov }
 		}
 	}
 	
-	
-	is_triggered_only = yes
-	
 	mean_time_to_happen = {
 		days = 1
 	}
+	
 	immediate = {
 		hidden_effect = {
 			random_core_province = {
 				limit = {
-					controlled_by = owner
+					controlled_by = SWE
 					has_siege = false
 					NOT = { local_autonomy = 50 }
 					NOT = { has_province_flag = dacke_prov }
@@ -103,8 +103,6 @@ country_event = {
 			}
 		}
 	}
-	
-	
 	
 	option = {		# We will crush them as well!
 		name = the_dacke_feud.2.a
@@ -155,40 +153,61 @@ country_event = {
 	desc = the_dacke_feud.3.d
 	picture = ANGRY_MOB_eventPicture
 	
-	
 	is_triggered_only = yes
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
 	
 	trigger = {
 		swedish_region = {
-			controlled_by = owner
+			controlled_by = SWE
 			has_siege = false
 			NOT = { local_autonomy = 50 }
 			NOT = { has_province_modifier = dacke_feud_trade_embargo }
 		}
 	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
 
-
+	immediate = {
+		hidden_effect = {
+			random_core_province = {
+				limit = {
+					controlled_by = SWE
+					has_siege = false
+					NOT = { local_autonomy = 50 }
+					NOT = { has_province_modifier = dacke_feud_trade_embargo }
+					region = swedish_region
+				}
+				set_province_flag = dacke_feud_trade_embargo_flag
+			}
+		}
+	}
 	
 	option = {		# Enforce an embargo
 		name = the_dacke_feud.3.a
 		ai_chance = { factor = 75 }
-		add_province_modifier = {
-			name = dacke_feud_trade_embargo
-			duration = -1
-			desc = "END_OF_DACKE_FEUD_DIS"
+		every_core_province = {
+			limit = {
+				has_province_flag = dacke_feud_trade_embargo_flag
+			}
+			add_province_modifier = {
+				name = dacke_feud_trade_embargo
+				duration = -1
+				desc = "END_OF_DACKE_FEUD_DIS"
+			}
 		}
 	}
 	option = {		# It will only hurt us later
 		name = the_dacke_feud.3.b
 		ai_chance = { factor = 25 }
-		spawn_rebels = {
-			type = particularist_rebels
-			size = 1
+		every_core_province = {
+			limit = {
+				has_province_flag = dacke_feud_trade_embargo_flag
+			}
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 1
+			}
 		}
 	}
 }
@@ -203,18 +222,19 @@ country_event = {
 	
 	major = yes
 	is_triggered_only = yes
-	 
+
 	immediate = {
 		hidden_effect = {
 			every_owned_province = {
 				clr_province_flag = dacke_prov
+				clr_province_flag = dacke_feud_trade_embargo_flag
+				remove_province_modifier = dacke_feud_trade_embargo
 			}
 		}
 	}
-	
-	
+
 	option = {
-		name = "flavor_swe.EVTOPTA3278"
+		name = "the_dacke_feud.100.a"
 		add_stability = 1
 	}
 }

@@ -8,6 +8,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				ai = no
+				num_of_cities = 6
+			}
 			culture_group = maya
 			religion = mesoamerican_religion
 			NOT = { exists = MAY }
@@ -25,6 +29,7 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			is_subject = no
+			is_religion_reformed = yes
 			owns_core_province = 842 #Petén
 			owns_core_province = 846 #Sotuta
 			owns_core_province = 2633 #Mani
@@ -34,6 +39,24 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = MAY
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			yucatan_region = {
 				limit = {
 					NOT = { owned_by = ROOT }

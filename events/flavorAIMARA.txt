@@ -1,7 +1,7 @@
 ########################################
 # Events for the Aimara culture
 #
-# written by Sara Wendel-Ã–rtqvist
+# written by Sara Wendel-Örtqvist
 ########################################
 
 namespace = flavor_aimara
@@ -59,6 +59,7 @@ country_event = {
 			AND = {
 				owns = 2947
 				2947 = {
+					num_free_building_slots = 1
 					NOT = {
 						has_building = temple
 					}
@@ -75,6 +76,7 @@ country_event = {
 			AND = {
 				owns = 804
 				804 = {
+					num_free_building_slots = 1
 					NOT = {
 						has_building = temple
 					}
@@ -83,6 +85,7 @@ country_event = {
 			AND = {
 				owns = 802
 				802 = {
+					num_free_building_slots = 1
 					NOT = {
 						has_building = temple
 					}
@@ -103,6 +106,7 @@ country_event = {
 				NOT = {
 					has_building = temple
 				}
+				num_free_building_slots = 1
 				OR = {
 					province_id = 2947
 					province_id = 2831
@@ -119,7 +123,7 @@ country_event = {
 	}
 }
 
-# TÃºpac Amaru II and Micaela Bastidas Puyucahua
+# Túpac Amaru II and Micaela Bastidas Puyucahua
 country_event = {
 	id = flavor_aimara.3
 	title = flavor_aimara.3.t
@@ -186,7 +190,7 @@ country_event = {
 			female = yes
 		}
 		define_general = {
-			name = "TÃºpac Amaru II"
+			name = "Túpac Amaru II"
 			shock = 1
 			fire = 3
 			manuever = 3
@@ -234,7 +238,10 @@ country_event = {
 			limit = {
 				unrest = 2
 			}
-			add_unrest = -1
+			add_province_modifier = {
+				name = remove_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 	option = {
@@ -244,7 +251,10 @@ country_event = {
 			limit = {
 				unrest = 2
 			}
-			add_unrest = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 }

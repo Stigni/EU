@@ -188,7 +188,7 @@ province_event = {
 			modifier = {
 				factor = 0
 				OR = {
-					owner = { num_of_revolts = 1 }
+					owner = { num_of_rebel_controlled_provinces = 1 }
 					NOT = { owner = { stability = 0 } }
 				}
 			}

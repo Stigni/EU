@@ -158,6 +158,7 @@ country_event = {
 				owns = 507 # Punjab
 				507 = {
 					NOT = { has_building = temple }
+					num_free_building_slots = 1
 				}
 			}
 			507 = {
@@ -170,6 +171,7 @@ country_event = {
 					NOT = { owns = 507 }
 					507 = {
 						has_building = temple
+						num_free_building_slots = 1
 					}
 				}
 				any_owned_province = {
@@ -179,6 +181,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					NOT = { has_building = temple }
+					num_free_building_slots = 1
 				}
 				add_building = temple
 			}
@@ -432,6 +435,7 @@ province_event = {
 		NOT = {
 			has_province_modifier = religious_center
 		}
+		NOT = { religion = sikhism }
 		OR = {
 			AND = {
 				NOT = { is_year = 1513 }

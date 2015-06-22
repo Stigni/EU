@@ -770,6 +770,7 @@ country_event = {
 
 	option = {		# We need an East India Company
 		name = "flavor_por.EVTOPTA4"
+		add_mercantilism = 0.1
 		add_country_modifier = {
 			name = "portuguese_india_trade_co"
 			duration = -1
@@ -991,8 +992,10 @@ country_event = {
 	trigger = {
 		tag = POR
 		num_of_ports = 1
-		indian_region = {
+		2030 = {
 			has_discovered = POR
+			range = POR
+			owner = { ai = yes }
 		}
 	}
 
@@ -1003,14 +1006,9 @@ country_event = {
 
 	option = {		# Glorious!
 		name = "flavor_por.EVTOPTA11"
-
+	
+		2030 = { cede_province = POR }
 		add_core = 2030
-		if = {
-			limit = {
-				2030 = { owner = { ai = yes } }
-			}
-			2030 = { cede_province = POR }
-		}
 		add_prestige = 10
 	}
 }

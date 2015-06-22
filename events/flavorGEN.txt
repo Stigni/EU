@@ -69,11 +69,11 @@ country_event = {
 		exists = TUR
 		TUR = { owns = 151 }			#Constantinople
 		151 = { NOT = { months_since_defection = 60 } }	#within 5 years.
-		kaffa_and_azow = {
+		crimean_region = {
 			owned_by = GEN
 		}
 		capital_scope = {
-			NOT = { region = kaffa_and_azow }
+			NOT = { region = crimean_region }
 		}
 	}
 	
@@ -97,7 +97,10 @@ country_event = {
 		ai_chance = { factor = 90 }
 		name = flavor_gen.3.b
 		add_prestige = -10
-		kaffa_and_azow = {
+		every_owned_province = {
+			limit = {
+				region = crimean_region
+			}
 			add_province_modifier = {
 				name = gen_lost_trade_support
 				duration = -1
@@ -207,7 +210,7 @@ country_event = {
 			NOT = {TUR = { owns = 151 } }			#Constantinople
 			war_with = TUR
 			NOT = { 
-				kaffa_and_azow = { owned_by = GEN }
+				crimean_region = { owned_by = GEN }
 			}
 		}
 		151 = {
@@ -495,4 +498,83 @@ country_event = {
 			add_trade_node_income = 10
 		}		
 	}		
+}
+
+#Access to the Black Sea Restored by Force
+country_event = {
+	id = flavor_gen.14
+	title = flavor_gen.14.t
+	desc = flavor_gen.14.d
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GEN
+		government = merchant_republic
+		151 = {
+			OR = {
+				NOT = { owned_by = TUR }
+				country_or_vassal_holds = ROOT
+			}
+		}
+		any_owned_province = {
+			has_province_modifier = gen_lost_trade_support
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = flavor_gen.14.a
+		every_owned_province = {
+			limit = {
+				has_province_modifier = gen_lost_trade_support
+			}
+			remove_province_modifier = gen_lost_trade_support
+		}
+	}	
+}
+
+#Capital in Black Sea
+country_event = {
+	id = flavor_gen.15
+	title = flavor_gen.15.t
+	desc = flavor_gen.15.d
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GEN
+		government = merchant_republic
+		capital_scope = {
+			region = crimean_region
+		}
+		NOT = {
+			any_owned_province = {
+				region = italian_region
+			}
+		}
+		any_owned_province = {
+			has_province_modifier = gen_lost_trade_support
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = flavor_gen.14.a #Same as 14
+		every_owned_province = {
+			limit = {
+				has_province_modifier = gen_lost_trade_support
+			}
+			remove_province_modifier = gen_lost_trade_support
+		}
+	}
+	
 }

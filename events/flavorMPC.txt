@@ -1,7 +1,7 @@
 ########################################
 # Events for Mapuche
 #
-# written by Sara Wendel-√ñrtqvist
+# written by Sara Wendel-÷rtqvist
 ########################################
 
 namespace = flavor_mpc
@@ -31,7 +31,7 @@ country_event = {
 	option = {
 		name = flavor_mpc.1.a
 		define_general = {
-			name = "Caupolic√°n"
+			name = "Caupolic·n"
 			shock = 3
 			fire = 2
 			manuever = 2

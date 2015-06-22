@@ -1,3 +1,14 @@
+#1559.5.12 - New bishoprics in the Lowlands create an outrage
+#1565.1.1 - Letters of Segovia, Philip I orders the harsh persecution of Calvinists
+#1566.4.5 - 'Eedverbond der Edelen', Margaretha of Parma promises leniency
+#1567.9.10 - Counts of Egmont & Hoorne arrested
+#1569.1.1 - The Duke of Alba reforms the taxation system ('tiende penning')
+#1570.1.1 - The Duke of Alba reforms the penal system, 'Blood Council' (Bloedraad) established
+
+
+
+
+
 ########################################
 # Burgundy & Netherlands Events        #
 ########################################
@@ -87,6 +98,21 @@ country_event = {
 			set_country_flag = burgundian_succession_crisis
 			add_ruler_modifier = {
 				name = burgundian_succession_crisis
+			}
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = {
+						OR = {
+							region = french_region 
+							culture_group = french
+							culture = dutch
+							culture = flemish
+							is_part_of_hre = yes
+						}
+					}
+				}
+				BUR = { inherit = PREV }
 			}
 			# France
 			if = {
@@ -1931,25 +1957,10 @@ province_event = {
 	option = {
 		name = "flavor_bur.EVTOPTA8"
 		set_province_flag = dutch_revolt
-		if = {
-			limit = {
-				NOT = { exists = NED }
-			}
-			spawn_rebels = {
-				type = nationalist_rebels
-				size = 3
-				friend = NED
-			}
-		}
-		if = {
-			limit = {
-				exists = NED
-			}
-			spawn_rebels = {
-				type = patriot_rebels
-				size = 3
-				friend = NED
-			}
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 3
+			friend = NED
 		}
 	}
 	option = {
@@ -2047,25 +2058,10 @@ province_event = {
 	option = {
 		name = "flavor_bur.EVTOPTA9"
 		set_province_flag = dutch_revolt
-		if = {
-			limit = {
-				NOT = { exists = NED }
-			}
-			spawn_rebels = {
-				type = nationalist_rebels
-				size = 3
-				friend = NED
-			}
-		}
-		if = {
-			limit = {
-				exists = NED
-			}
-			spawn_rebels = {
-				type = patriot_rebels
-				size = 3
-				friend = NED
-			}
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 3
+			friend = NED
 		}
 	}
 	option = {
@@ -2313,63 +2309,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
-		modifier = {
-			factor = 0.75
-			primary_culture = dutch
-		}
-		modifier = {
-			factor = 1.25
-			primary_culture = flemish
-		}
-		modifier = {
-			factor = 0.9
-			has_opinion = {
-				who = NED
-				value = 50
-			}
-		}
-		modifier = {
-			factor = 0.9
-			has_opinion = {
-				who = NED
-				value = 100
-			}
-		}
-		modifier = {
-			factor = 0.9
-			has_opinion = {
-				who = NED
-				value = 150
-			}
-		}
-		modifier = {
-			factor = 1.1
-			NOT = {
-				has_opinion = {
-					who = NED
-					value = -50
-				}
-			}
-		}
-		modifier = {
-			factor = 1.1
-			NOT = {
-				has_opinion = {
-					who = NED
-					value = -100
-				}
-			}
-		}
-		modifier = {
-			factor = 1.1
-			NOT = {
-				has_opinion = {
-					who = NED
-					value = -150
-				}
-			}
-		}
+		months = 12
 	}
 	
 	option = {
@@ -2509,7 +2449,7 @@ province_event = {
 		}
 		set_province_flag = dutch_revolt
 		spawn_rebels = {
-			type = patriot_rebels
+			type = nationalist_rebels
 			size = 2
 			friend = NED
 		}

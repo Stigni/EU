@@ -57,6 +57,9 @@ country_event = {
 		has_regency = no
 		government = monarchy
 		NOT = { government = elective_monarchy }
+		any_owned_province = {
+			num_free_building_slots = 1
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -70,6 +73,7 @@ country_event = {
 			limit = {
 				NOT = {
 					has_building = temple
+					num_free_building_slots = 1
 				}
 			}
 			add_building = temple
@@ -307,7 +311,6 @@ country_event = {
 			75 = { kill_heir = yes}
 			25 = { add_legitimacy = 30}
 		}
-		
 	}
 }
 
@@ -431,7 +434,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB9459"
 		kill_heir = yes
-		add_prestige = -25
+		add_prestige = -10
 	}
 }
 
@@ -453,17 +456,17 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
 		
 	}
 	option = {
 		name = "EVTOPTA9460"
-		add_prestige = -5
+		add_prestige = -20
 	}
 	
 	option = {
 		name = "EVTOPTB9460"
-		add_heir_claim = -20
+		add_heir_claim = -10
 	}
 }
 
@@ -488,13 +491,13 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA9462"
-		ai_chance = { factor = 99 }
+		ai_chance = { factor = 95 }
 		add_adm_power = -100
 		add_stability = -1
 	}
 	option = {
 		name = "EVTOPTB9462"
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 5 }
 		kill_ruler = yes
 		add_stability = -6
 		change_government = bureaucratic_despotism
@@ -865,7 +868,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA9483"
 		add_stability = -3
-		add_treasury = -100
 		add_prestige = -20
 		clr_country_flag = contained_insanity
 	}
@@ -1100,36 +1102,29 @@ country_event = {
 }
 
 # The Moon
-province_event = {
+country_event = {
 	id = 9489
 	title = "EVTNAME9489"
 	desc = "EVTDESC9489"
 	picture = IMPORTANT_STATUE_eventPicture
 	
 	trigger = {
-		has_building = glorious_monument
-		owner = {
-			war_exhaustion = 4
-			adm = 3
-		}
+		war_exhaustion = 4
+		adm = 3
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 3000
 	}
 	
 	option = {
 		name = "EVTOPTA9489"
-		owner = {
-			add_prestige = 5
-		}
+		add_prestige = 5
 	}
 	
 	option = {
 		name = "EVTOPTB9489"
-		owner = {
-			add_adm_power = 25
-		}
+		add_adm_power = 25
 	}
 }
 
@@ -1169,6 +1164,543 @@ country_event = {
 		add_country_modifier = {
 			name = "a_woman_scorned"
 			duration = 1825
+		}
+	}
+}
+
+### Suggestions by Ex Mudder, scripted by Sara Wendel-Örtqvist
+
+namespace = dynastic_events
+
+# Lux Stella
+country_event = {
+	id = dynastic_events.1
+	title = dynastic_events.1.t
+	desc = dynastic_events.1.d
+	picture = NEW_HEIR_eventPicture
+	
+	trigger = {
+		has_heir = no
+		ruler_age = 40
+		government = monarchy
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		
+		modifier = {
+			factor = 0.5
+			ruler_age = 50
+		}
+		modifier = {
+			factor = 0.5
+			ruler_age = 60
+		}
+		modifier = {
+			factor = 0.5
+			ruler_age = 70
+		}
+		modifier = {
+			factor = 0.5
+			ruler_age = 80
+		}
+		modifier = {
+			factor = 0.5
+			ruler_age = 90
+		}
+	}
+	
+	option = {
+		name = dynastic_events.1.a
+		define_heir = {
+			name = "Elisabeth"
+			dynasty = ROOT
+			claim = 50
+			female = yes
+			adm = 4
+			dip = 3
+			mil = 3
+		}
+	}
+	
+	option = {
+		name = dynastic_events.1.b
+		define_heir = {
+			dynasty = ROOT
+			name = "Caterine"
+			claim = 50
+			adm = 3
+			dip = 3
+			mil = 4
+			female = yes
+		}
+	}
+	option = {
+		name = dynastic_events.1.c
+		define_heir = {
+			dynasty = ROOT
+			claim = 50
+			adm = 3
+			dip = 4
+			mil = 3
+			female = yes
+		}
+	}
+	option = {
+		name = dynastic_events.1.e
+		define_heir = {
+			dynasty = ROOT
+			name = "Sara"
+			claim = 50
+			adm = 3
+			dip = 3
+			mil = 4
+			female = yes
+		}
+	}
+}
+
+# Newborn Daughter
+country_event = {
+	id = dynastic_events.2
+	title = dynastic_events.2.t
+	desc = dynastic_events.2.d
+	picture = NEW_HEIR_eventPicture
+	
+	trigger = {
+		has_heir = no
+		ruler_age = 20
+		government = monarchy
+		NOT = {
+			has_country_modifier = dyn_newborn_daughter
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+	}
+	
+	option = {
+		name = dynastic_events.2.a
+		add_legitimacy = -10
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = -10
+		}
+		if = {
+			limit = {
+				religion_group = muslim
+			}
+			add_piety = -0.10
+		}
+		define_heir = {
+			dynasty = ROOT
+			female = yes
+			claim = 50
+		}
+	}
+	
+	option = {
+		name = dynastic_events.2.b
+		add_country_modifier = {
+			name = dyn_newborn_daughter
+			duration = 365
+		}
+	}
+}
+
+# Talented and Ambitious Daughter
+country_event = {
+	id = dynastic_events.3
+	title = dynastic_events.3.t
+	desc = dynastic_events.3.d
+	picture = NEW_HEIR_eventPicture
+	
+	trigger = {
+		has_heir = no
+		ruler_age = 40
+		government = monarchy
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		
+		modifier = {
+			factor = 0.5
+			ruler_age = 50
+		}
+		
+		modifier = {
+			factor = 0.5
+			ruler_age = 60
+		}
+		modifier = {
+			factor = 0.5
+			ruler_age = 70
+		}
+		modifier = {
+			factor = 0.5
+			ruler_age = 80
+		}
+		modifier = {
+			factor = 0.5
+			ruler_age = 90
+		}
+	}
+	
+	option = {
+		name = dynastic_events.3.a
+		add_legitimacy = -10
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = -10
+		}
+		if = {
+			limit = {
+				religion_group = muslim
+			}
+			add_piety = -0.10
+		}
+		define_heir = {
+			dynasty = ROOT
+			age = 13
+			adm = 3
+			dip = 3
+			mil = 3
+			claim = 50
+			female = yes
+		}
+	}
+	
+	option = {
+		name = dynastic_events.3.b
+		random_owned_province = {
+			limit = {
+				is_capital = yes
+			}
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
+		}
+	}
+}
+
+# The Ruler's Daughter
+country_event = {
+	id = dynastic_events.4
+	title = dynastic_events.4.t
+	desc = dynastic_events.4.d
+	picture = NEW_HEIR_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir = no
+		num_of_cities = 2
+		has_regency = yes
+		government = monarchy
+		religion_group = christian
+		capital_scope = {
+			continent = europe
+		}
+		any_known_country = {
+			government = monarchy
+			religion_group = christian
+			has_regency = no
+			is_subject = no
+			num_of_cities = ROOT
+			is_female = no
+			NOT = { has_country_flag = dyn_woman_pretender_flag }
+			capital_scope = {
+				continent = europe
+			}
+			NOT = {
+				war_with = ROOT
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_known_country = {
+				limit = {
+					government = monarchy
+					has_regency = no
+					is_subject = no
+					num_of_cities = ROOT
+					is_female = no
+					religion_group = christian
+					capital_scope = {
+						continent = europe
+					}
+					NOT = {
+						war_with = ROOT
+					}
+				}
+				set_country_flag = dyn_woman_pretender_flag
+			}
+		}
+	}
+	
+	option = {
+		name = dynastic_events.4.a
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = -10
+		}
+		define_ruler = {
+			dynasty = ROOT
+			age = 20
+			adm = 3
+			dip = 3
+			mil = 3
+			claim = 50
+			female = yes
+		}
+		random_known_country = {
+			limit = {
+				has_country_flag = dyn_woman_pretender_flag
+			}
+			add_casus_belli = {
+				target = ROOT
+				type = cb_restore_personal_union
+				months = 12
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_spurned_heir
+			}
+			clr_country_flag = dyn_woman_pretender_flag
+		}
+	}
+	
+	option = {
+		name = dynastic_events.4.b
+		random_known_country = {
+			limit = {
+				has_country_flag = dyn_woman_pretender_flag
+			}
+			clr_country_flag = dyn_woman_pretender_flag
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_choose_heir
+			}
+			ROOT = {
+				define_ruler = {
+					dynasty = PREV
+					age = 20
+				}
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				female = yes
+			}
+		}
+	}
+}
+
+# Offer Personal Union
+country_event = {
+	id = dynastic_events.5
+	title = dynastic_events.5.t
+	desc = dynastic_events.5.d
+	picture = DIPLOMACY_eventPicture
+	
+	trigger = {
+		has_heir = no
+		government = monarchy
+		is_subject = no
+		ruler_age = 16
+		NOT = {
+			ruler_age = 40
+		}
+		any_neighbor_country = {
+			government = monarchy
+			has_heir = no
+			ruler_age = 16
+			NOT = {
+				ruler_age = 40
+			}
+			NOT = {
+				OR = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = opinion_spurned_pu
+					}
+					reverse_has_opinion_modifier = {
+						who = ROOT
+						modifier = opinion_spurned_pu
+					}
+				}
+			}
+			OR = {
+				AND = {
+					is_female = no
+					ROOT = {
+						is_female = yes
+					}
+				}
+				AND = {
+					is_female = yes
+					ROOT = {
+						is_female = no
+					}
+				}
+			}
+			OR = {
+				dynasty = ROOT
+				culture_group = ROOT
+			}
+			has_opinion = { who = ROOT value = 75 }
+			reverse_has_opinion = { who = ROOT value = 75 }
+			is_subject = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+	}
+	
+	option = {
+		name = dynastic_events.5.a
+		random_neighbor_country = {
+			limit = {
+				government = monarchy
+				has_heir = no
+				ruler_age = 16
+				NOT = {
+					ruler_age = 40
+				}
+				OR = {
+					AND = {
+						is_female = no
+						ROOT = {
+							is_female = yes
+						}
+					}
+					AND = {
+						is_female = yes
+						ROOT = {
+							is_female = no
+						}
+					}
+				}
+				OR = {
+					dynasty = ROOT
+					culture_group = ROOT
+				}
+				has_opinion = { who = ROOT value = 75 }
+				reverse_has_opinion = { who = ROOT value = 75 }
+				is_subject = no
+			}
+			country_event = {
+				id = dynastic_events.6
+				tooltip = dynastic_events.6.t
+			}
+		}
+	}
+	
+	option = {
+		name = dynastic_events.5.b
+		add_legitimacy = 10
+	}
+}
+
+# Personal Union Offered
+country_event = {
+	id = dynastic_events.6
+	title = dynastic_events.6.t
+	desc = dynastic_events.6.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dynastic_events.6.a
+		add_legitimacy = 20
+		FROM = {
+			set_country_flag = dyn_pu_accepted_flag
+			create_union = ROOT
+			country_event = {
+				id = dynastic_events.7
+				tooltip = dynastic_events.7.t
+			}
+		}
+	}
+	
+	option = {
+		name = dynastic_events.6.b
+		FROM = {
+			set_country_flag = dyn_pu_refused_flag
+			add_opinion = {
+				modifier = opinion_spurned_pu
+				who = ROOT
+			}
+			add_casus_belli = {
+				target = ROOT
+				type = cb_insult
+				months = 12
+			}
+			country_event = {
+				id = dynastic_events.7
+				tooltip = dynastic_events.7.t
+			}
+		}
+	}
+}
+
+# A Political Marriage - Accepted or Not?
+country_event = {
+	id = dynastic_events.7
+	title = dynastic_events.7.t
+	desc = dynastic_events.7.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dynastic_events.7.a
+		trigger = {
+			has_country_flag = dyn_pu_accepted_flag
+		}
+		add_legitimacy = 20
+		tooltip = {
+			create_union = FROM
+		}
+	}
+	
+	option = {
+		name = dynastic_events.7.b
+		trigger = {
+			has_country_flag = dyn_pu_refused_flag
+		}
+		tooltip = {
+			add_opinion = {
+				modifier = opinion_spurned_pu
+				who = FROM
+			}
+			add_casus_belli = {
+				target = FROM
+				type = cb_insult
+				months = 12
+			}
 		}
 	}
 }

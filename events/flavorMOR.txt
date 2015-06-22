@@ -61,7 +61,7 @@ country_event = {
 	
 	trigger = {
 		tag = MOR
-		any_known_country = { has_country_flag = torquemada_expelled }
+		any_known_country = { has_country_flag = end_of_granada }
 	}
 	
 	mean_time_to_happen = {

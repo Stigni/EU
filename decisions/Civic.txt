@@ -1,8 +1,4 @@
 country_decisions = {
-
-
-	
-
 	
 	statue_in_restraint_of_appeals = {
 		potential = {

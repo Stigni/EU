@@ -163,9 +163,8 @@ country_event = {
 		NOT = { is_year = 1600 }
 		mil = 4
 		1949 = { #Rayalaseema
-			NOT = {
-				has_building = fort3
-			}
+			can_build = fort_16th
+			num_free_building_slots = 1
 		}
 	}
 	
@@ -177,13 +176,13 @@ country_event = {
 		name = "flavor_vij.EVTOPTA5" #Build the fort
 		add_treasury = -30
 		1949 = { #Rayalaseema
-			add_building = fort3
+			add_building = fort_16th
 		}
 		add_mil_power = 25
 	}
 	option = {
 		name = "flavor_vij.EVTOPTB5" #Ignore it
-		add_prestige = -1
+		add_prestige = -5
 	}
 }
 

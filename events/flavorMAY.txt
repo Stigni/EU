@@ -1,7 +1,7 @@
 ########################################
 # Events for Maya
 #
-# written by Sara Wendel-Ã–rtqvist
+# written by Sara Wendel-Örtqvist
 ####################################
 
 namespace = flavor_may
@@ -370,7 +370,10 @@ country_event = {
 						owner = {
 							OR = {
 								tag = MAY
+								tag = KIC
 								tag = ITZ
+								tag = XIU
+								tag = COC
 							}
 						}
 					}
@@ -403,49 +406,20 @@ country_event = {
 	option = {
 		name = flavor_may.6.b
 		add_prestige = 10 # TODO
-		SPA = {
-			tooltip = {
-				if = {
-					limit = {
-						ROOT = {
-							tag = MAY
+		tooltip = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_port = yes
+						any_neighbor_province = {
+							owned_by = SPA
 						}
 					}
-					add_claim = SPA
 				}
-				if = {
-					limit = {
-						ROOT = {
-							tag = KIC
-						}
-					}
-					add_claim = SPA
-				}
-				if = {
-					limit = {
-						ROOT = {
-							tag = ITZ
-						}
-					}
-					add_claim = SPA
-				}
-				if = {
-					limit = {
-						ROOT = {
-							tag = XIU
-						}
-					}
-					add_claim = SPA
-				}
-				if = {
-					limit = {
-						ROOT = {
-							tag = COC
-						}
-					}
-					add_claim = SPA
-				}
+				add_claim = SPA
 			}
+		}
+		SPA = {
 			country_event = {
 				id = flavor_may.7
 				days = 7
@@ -466,10 +440,20 @@ country_event = {
 	
 	option = {
 		name = flavor_may.7.a
-		add_prestige = 10 # TODO
-		add_papal_influence = 2 # TODO
+		add_prestige = 10
+		add_papal_influence = 2
 		FROM = {
-			add_claim = ROOT
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_port = yes
+						any_neighbor_province = {
+							owned_by = SPA
+						}
+					}
+				}
+				add_claim = SPA
+			}
 		}
 	}
 }

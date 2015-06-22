@@ -26,7 +26,7 @@ country_decisions = {
 				change_province_name = "St. Petersburg"
 				rename_capital = "St. Petersburg"
 			 	add_base_tax = 6 
-			 	add_province_manpower = 3
+			 	add_base_manpower = 3
 				change_culture = russian
 			 }
 		}

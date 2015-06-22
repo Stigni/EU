@@ -38,6 +38,22 @@ country_decisions = {
 		effect = {
 			add_prestige = 20
 			change_tag = SST
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
 			every_province = {
 				limit = {
 					culture = shan

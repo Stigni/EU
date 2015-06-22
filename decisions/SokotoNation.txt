@@ -62,7 +62,7 @@ country_decisions = {
 				add_claim = SOK
 			}
 			add_prestige = 25
-			add_piety = 25
+			add_piety = 0.25
 			change_tag = SOK
 			set_capital = 1148
 			if = {
@@ -70,6 +70,22 @@ country_decisions = {
 					is_tribal = yes
 				}
 				change_government = theocratic_government
+			}
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
 			}
 			swap_free_idea_group = yes		#keep progress
 		}

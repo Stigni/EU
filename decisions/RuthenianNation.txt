@@ -87,7 +87,27 @@ country_decisions = {
 			change_tag = UKR
 			UKR = {
 				set_capital = 280 #Kiev
-			}		
+			}
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
+			}
 			culture_group_union = east_slavic
 			swap_free_idea_group = yes		#keep progress			
 		}

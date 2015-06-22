@@ -1,7 +1,7 @@
 #######################################################
 # Flavor Events for the Incas
 #
-# Scripted by Sara Wendel-Örtqvist & Henrik Lohmander
+# Scripted by Sara Wendel-Örtqvist
 #######################################################
 
 namespace = flavor_inc
@@ -90,6 +90,12 @@ normal_or_historical_nations = yes
 #		}
 #	}
 #}
+
+#######################################################
+# Additional Flavor Events for the Incas
+#
+# Scripted by Henrik Lohmander
+#######################################################
 
 # Fall of the Chanka & the Rise of Cusco
 country_event = {
@@ -323,6 +329,12 @@ country_event = {
 		owns = 812 #Chanchan
 		owns = 2821 #Piwra
 		owns = 2822 #Tucume
+		OR = {
+			809 = { culture = chimuan } #Lima
+			812 = { culture = chimuan } #Chanchan
+			2821 = { culture = chimuan } #Piwra
+			2822 = { culture = chimuan } #Tucume
+		}
 	}
 	
 	immediate = {
@@ -447,7 +459,7 @@ country_event = {
 			limit = {
 				culture = chimuan
 			}
-			add_revolt_risk = -5
+			add_unrest = -5
 		}
 	}
 }
@@ -537,6 +549,7 @@ country_event = {
 	trigger = {
 		tag = INC
 		num_of_cities = 10
+		government = monarchy
 		any_owned_province = {
 			has_province_modifier = inc_smallpox_outbreak
 		}
@@ -659,7 +672,7 @@ country_event = {
 			has_country_flag = inc_civil_war_support_huascar
 			has_country_flag = inc_civil_war_support_atahualpa
 		}
-		NOT = { num_of_revolts = 1 }
+		NOT = { num_of_rebel_armies = 1 }
 		NOT = {
 			any_owned_province = {
 				controlled_by = REB
@@ -902,6 +915,7 @@ country_event = {
 		is_year = 1460
 		NOT = { is_year = 1495 }
 		owns = 816
+		government = monarchy
 		has_heir = yes
 		has_regency = no
 		heir_age = 15
@@ -1073,6 +1087,7 @@ country_event = {
 		name = flavor_inc.21.b
 		trigger = {
 			religion_group = pagan
+			is_colonial_nation = no
 			NOT = { religion = nahuatl }
 			NOT = { religion = mesoamerican_religion }
 		}

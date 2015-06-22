@@ -118,6 +118,9 @@ country_event = {
 		not = { is_year = 1480 }
 		religion_group = muslim
 		owns_core_province = 555 #Jaunpur
+		555 = {
+			fort_level = 1
+		}
 	}
 	
 	mean_time_to_happen = {

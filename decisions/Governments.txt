@@ -172,7 +172,6 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 12
-			technology_group = western
 			legitimacy = 90
 			adm_power = 100
 		}
@@ -180,5 +179,85 @@ country_decisions = {
 			change_government = administrative_monarchy
 			add_adm_power = -100
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { technology_group = western }
+			}
+		}
 	}
+	
+	elevate_bishopric = {
+		major = yes
+		potential = {
+			government = theocratic_government
+			is_part_of_hre = yes
+			NOT = { government_rank = 2 }
+		}
+		allow = {
+			is_elector = yes
+			papal_influence = 25
+		}
+		effect = {
+			set_government_rank = 2
+			add_papal_influence = -25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	secularization_of_protestant_theocracy = {
+		major = yes
+		potential = {
+			OR = {
+				government = theocratic_government
+				government = monastic_order_government
+			}
+			OR = {
+				religion = protestant
+				religion = reformed
+			}
+			NOT = {
+				tag = TEU
+				owns_core_province = 41 #Königsberg
+			}
+			NOT = {
+				tag = LIV
+				owns_core_province = 39 #Courland
+				owns_core_province = 1935 #Semigallia
+			}
+		}
+		allow = {
+			stability = 2
+			adm_tech = 12
+		}
+		effect = {
+			every_neighbor_country = {
+				limit = {
+					government = monarchy
+					ROOT = { government = monastic_order_government }
+				}
+				add_opinion = { who = ROOT modifier = secularized_monastic_order }
+			}
+			every_neighbor_country = {
+				limit = {
+					government = monarchy
+					ROOT = { government = theocratic_government }
+				}
+				add_opinion = { who = ROOT modifier = secularized_bishopric }
+			}
+			if = {
+				limit = { NOT = { total_development = 200 } }
+				set_government_rank = 1
+			}
+			change_government = administrative_monarchy
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 }

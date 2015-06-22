@@ -144,6 +144,7 @@ province_event = {
 			trade_goods = grain
 		}
 		can_build = weapons
+		num_free_building_slots = 1
 	}
 	
 	mean_time_to_happen = {
@@ -207,6 +208,7 @@ province_event = {
 			trade_goods = grain
 		}
 		can_build = textile
+		num_free_building_slots = 1
 	}
 	
 	mean_time_to_happen = {
@@ -272,6 +274,7 @@ province_event = {
 			trade_goods = grain
 		}
 		can_build = wharf
+		num_free_building_slots = 1
 	}
 	
 	mean_time_to_happen = {
@@ -622,7 +625,7 @@ country_event = {
 	option = {
 		name = "colonial_nation.EVTOPTA313" # Let them sort it out themselves
 		ai_chance = { factor = 25 }
-		add_prestige = -25
+		add_prestige = -10
 	}
 	option = {
 		name = "colonial_nation.EVTOPTB313" # Remove GOVERNOR

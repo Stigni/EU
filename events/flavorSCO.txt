@@ -33,14 +33,6 @@ province_event = {
 		infantry = ROOT
 		infantry = ROOT
 		infantry = ROOT
-		infantry = ROOT
-		infantry = ROOT
-		infantry = ROOT
-		infantry = ROOT
-		infantry = ROOT
-		cavalry = ROOT
-		cavalry = ROOT
-		cavalry = ROOT
 		cavalry = ROOT
 	}
 }
@@ -239,7 +231,10 @@ country_event = {
 		add_stability = -1
 		every_owned_province = {
 			limit = { religion = catholic }
-			add_unrest = 5
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 		add_papal_influence = -5
 		add_treasury = 300

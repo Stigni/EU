@@ -24,12 +24,20 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5008"		# Put into the treasury
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0
+				NOT = { num_of_cities = 5 }
+			}
+		}
 		add_years_of_income = 0.2
 	}
 	option = {
 		name = "EVTOPTB5008"		# Gain prestige
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+		}
 		add_prestige = 10
 	}
 }
@@ -48,16 +56,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		OR = {
-			government = feudal_monarchy
-			government = despotic_monarchy
-			government = administrative_monarchy
-			government = absolute_monarchy
-			government = constitutional_monarchy
-			government = enlightened_despotism
-			government = bureaucratic_despotism
-			government = imperial_government
-		}
+		government = monarchy
 		NOT = { adm = 2 }
 		NOT = { luck = yes }
 		has_regency = no
@@ -79,7 +78,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA5014"		# Request military guidance.
 		ai_chance = { factor = 55 }
-		add_prestige = -25
+		add_prestige = -10
 		add_years_of_income = -0.1
 		add_army_tradition = 5
 		add_navy_tradition = 5
@@ -87,7 +86,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB5014"		# Request administrative guidance.
 		ai_chance = { factor = 45 }
-		add_prestige = -25
+		add_prestige = -10
 		add_years_of_income = -0.1
 		add_adm_power = 25
 	}
@@ -106,16 +105,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		OR = {
-			government = feudal_monarchy
-			government = despotic_monarchy
-			government = administrative_monarchy
-			government = absolute_monarchy
-			government = constitutional_monarchy
-			government = enlightened_despotism
-			government = bureaucratic_despotism
-			government = imperial_government
-		}
+		government = monarchy
 		prestige = 2
 		has_regency = no
 	}
@@ -179,12 +169,36 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5017"		# Take the blame and move on.
-		ai_chance = { factor = 45 }
-		add_stability = -1
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 1.5
+				stability = 1
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTB5017"		# Bribe an advisor to take the blame.
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 1.5
+				NOT = { stability = 1 }
+				years_of_income = 0.4
+			}
+		}
 		add_years_of_income = -0.33
 	}
 }
@@ -230,13 +244,13 @@ country_event = {
 		ai_chance = { factor = 45 }
 		add_country_modifier = {
 			name = "obscurantism"
-			duration = 730
+			duration = 1825
 		}
 	}
 	option = {
 		name = "EVTOPTB5018"		# Ignorance is bliss
 		ai_chance = { factor = 55 }
-		add_prestige = -33
+		add_prestige = -10
 	}
 }
 
@@ -289,7 +303,13 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5019"		# Collect the benefits over time
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 2
+				NOT = { num_of_cities = 8 }
+			}
+		}
 		add_country_modifier = {
 			name = "exceptional_year"
 			duration = 365
@@ -297,7 +317,13 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5019"		# Take advantage of the benefits at once
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0
+				NOT = { num_of_cities = 8 }
+			}
+		}
 		add_years_of_income = 0.1
 	}
 }
@@ -341,7 +367,13 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5019"		# Collect the benefits over time
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 2
+				NOT = { num_of_cities = 8 }
+			}
+		}
 		add_country_modifier = {
 			name = "exceptional_year"
 			duration = 365
@@ -349,7 +381,13 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5019"		# Take advantage of the benefits at once
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0
+				NOT = { num_of_cities = 8 }
+			}
+		}
 		add_years_of_income = 0.08
 	}
 }
@@ -392,7 +430,13 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5019"		# Collect the benefits over time
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 2
+				NOT = { num_of_cities = 8 }
+			}
+		}
 		add_country_modifier = {
 			name = "exceptional_year"
 			duration = 365
@@ -400,7 +444,13 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5019"		# Take advantage of the benefits at once
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0
+				NOT = { num_of_cities = 8 }
+			}
+		}
 		add_years_of_income = 0.05
 	}
 }
@@ -554,6 +604,11 @@ country_event = {
 	option = {
 		name = "EVTOPTB5024" # Improve relations with neighboring states
 		ai_chance = { factor = 40 }
+		trigger = {
+			any_known_country = {
+				is_neighbor_of = ROOT
+			}
+		}
 		add_dip_power = 10
 		random_country = {
 			limit = { is_neighbor_of = ROOT }
@@ -594,12 +649,26 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5025"		# Bask in the Glory
-		ai_chance = { factor = 55 }
-		add_prestige = 5
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				NOT = { technology_group = western }
+				NOT = { technology_group = eastern }
+			}
+		}
+		add_prestige = 10
 	}
 	option = {
 		name = "EVTOPTB5025"		# Improve our Reputation
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				NOT = { technology_group = western }
+				NOT = { technology_group = eastern }
+			}
+		}
 		add_dip_power = 25
 	}
 }
@@ -646,7 +715,22 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5027"		# Improve our existing military
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 2
+				OR = {
+					technology_group = western
+					technology_group = eastern
+					technology_group = ottoman
+				}
+				NOT = { army_tradition = 80 }
+			}
+			modifier = {
+				factor = 0
+				army_tradition = 90
+			}
+		}
 		add_army_tradition = 20
 	}
 }
@@ -665,6 +749,8 @@ country_event = {
 
 	trigger = {
 		naval_reformer = 2
+		num_of_ports = 1
+		primitives = no
 	}
 
 	mean_time_to_happen = {
@@ -691,7 +777,13 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5032"		# Improve our existing navy
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0
+				NOT = { num_of_ports = 5 }
+			}
+		}
 		add_navy_tradition = 20
 	}
 }
@@ -730,9 +822,14 @@ country_event = {
 		name = "EVTOPTA5040"		# Use the money to bring stability to our nation
 		trigger = {
 			NOT = { stability = 3 }
-		
 		}
-		ai_chance = { factor = 40 }
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				NOT = { stability = 0 }
+			}
+		}
 		add_stability = 1
 	}
 	option = {
@@ -745,7 +842,13 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTC5040"		# Let's fill our treasury while we have their support
-		ai_chance = { factor = 30 }
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 2
+				num_of_cities = 30
+			}
+		}
 		add_years_of_income = 0.20
 	}
 }
@@ -782,12 +885,31 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5045"		# We have chosen the right path
-		ai_chance = { factor = 55 }
-		add_stability = -1
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 0 }
+			}
+		}
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTB5045"		# Attempt to improve the situation
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.3 }
+			}
+		}
 		add_years_of_income = -0.25
 	}
 }
@@ -830,7 +952,13 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5050"		# Ignore their Demands.
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				prestige = 90
+			}
+		}
 		if = {
 			limit = {
 				religion_group = muslim
@@ -853,7 +981,13 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5050"		# Agree to their Demands.
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 0 }
+			}
+		}
 		if = {
 			limit = {
 				religion_group = muslim
@@ -872,7 +1006,7 @@ country_event = {
 			}
 			add_patriarch_authority = 0.05
 		}
-		add_prestige = -25
+		add_prestige = -15
 	}
 }
 
@@ -908,12 +1042,35 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5051"		# Execute the troublemakers.
-		ai_chance = { factor = 55 }
-		add_stability = -1
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTB5051"		# Abolish a tax.
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0.5
+				NOT = { num_of_cities = 15 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.5 }
+			}
+		}
 		add_years_of_income = -0.50
 	}
 }
@@ -951,13 +1108,40 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5052"		# We rule as we see fit.
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 1.5
+				OR = {
+					technology_group = western
+					technology_group = eastern
+					technology_group = ottoman
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
 		add_prestige = 10
-		add_stability = -1
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTB5052"		# Prevent the discontent from spreading.
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.3 }
+			}
+		}
 		add_years_of_income = -0.25
 	}
 }
@@ -1002,7 +1186,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB5053"		# Get rid of the troublemakers.
 		ai_chance = { factor = 45 }
-		add_mercantilism = -0.025
+		add_mercantilism = -0.01
 	}
 }
 
@@ -1045,19 +1229,38 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5054"		# Given time, a solution will present itself.
-		ai_chance = { factor = 55 }
-		add_stability = -1
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTB5054"		# Reputation isn't everything.
-		ai_chance = { 
+		ai_chance = {
 			factor = 45 
 			modifier = {
 				factor = 0.5
 				government = republic
+				NOT = { republican_tradition = 0.8 }
+			}
+			modifier = {
+				factor = 0.5
+				government = monarchy
+				NOT = { legitimacy = 80 }
 			}
 		}
-		add_republican_tradition = -0.20
+		add_republican_tradition = -0.10
 		add_legitimacy = -25
 	}
 }
@@ -1094,12 +1297,31 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5055"		# Try to eradicate the problems.
-		ai_chance = { factor = 55 }
-		add_stability = -1
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTB5055"		# Ignore them.
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0.5
+				inflation = 10
+			}
+		}
 		add_inflation = 3
 	}
 }
@@ -1192,12 +1414,24 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5058"		# Accept their rightful claims.
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 1.5
+				prestige = 0.2
+			}
+		}
 		add_prestige = -10
 	}
 	option = {
 		name = "EVTOPTB5058"		# Ignore their demands.
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0.5
+				unrest = 5
+			}
+		}
 		add_country_modifier = {
 			name = "disorder"
 			duration = 365
@@ -1248,7 +1482,13 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5059"		# This isn't anything we can't handle.
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.15 }
+			}
+		}
 		add_years_of_income = -0.1
 	}
 }
@@ -1294,24 +1534,70 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5060"		# It's an omen
-		add_stability = -1
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTB5060"		# The end is nigh!
-		add_stability = -1
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTC5060"		# The economy, fools!
-		add_stability = -1
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTE5060"		# I wish I lived in more enlightened times.
-		add_stability = -1
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTF5060"		# Sacrifice a human heart to appease the comet!
-		add_stability = -1
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
+	option = {
+		name = "EVTOPTG5060"		# Sacrifice a human heart to appease the comet!
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
+	}	
 }
 
 #########################################################
@@ -1350,13 +1636,16 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5061"		# We have truly been blessed
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+		}
 		add_stability = 1
 		add_reform_desire = 0.005
 	}
 	option = {
 		name = "EVTOPTB5061"		# Their actions have shown us the true path
 		ai_chance = { factor = 45 }
+		trigger = { NOT = { tag = PAP } }
 		add_papal_influence = 20
 	}
 }
@@ -1424,8 +1713,14 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5064"		# We'll deal with them later
-		ai_chance = { factor = 45 }
-		add_prestige = -25
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 1.5
+				prestige = 35
+			}
+		}
+		add_prestige = -15
 	}
 }
 
@@ -1465,12 +1760,28 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5065"		# Let them solve it among themselves.
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				NOT = { legitimacy = 70 }
+			}
+		}
 		add_legitimacy = -30
 	}
 	option = {
 		name = "EVTOPTB5065"		# Take control of the situation
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 1.5
+				OR = {
+					technology_group = western
+					technology_group = eastern
+					technology_group = ottoman
+				}
+			}
+		}
 		add_adm_power = -50
 	}
 }
@@ -1524,7 +1835,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB5066"		# Decline
 		ai_chance = { factor = 45 }
-		add_stability = -1
+		add_stability = 1
 		add_papal_influence = -20
 	}
 }
@@ -1567,7 +1878,15 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5068"		# Accept
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 65
+			modifier = {
+				factor = 1.5
+				NOT = {
+					years_of_income = 0.2
+				}
+			}
+		}
 		add_years_of_income = 1
 		add_country_modifier = {
 			name = "reduced_taxes_off"	
@@ -1576,8 +1895,15 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5068"		# Decline
-		ai_chance = { factor = 45 }
-		add_prestige = 5
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 2
+				NOT = { stability = 1 }
+			}
+		}
+		add_stability = 1
+		add_prestige = 10
 	}
 }
 
@@ -1645,6 +1971,9 @@ country_event = {
 			government = monarchy
 			government = noble_republic
 		}
+		NOT = {
+			has_country_modifier = tax_income_loss
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1674,8 +2003,21 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5071"		# Refuse their demands.
-		ai_chance = { factor = 45 }
-		add_stability = -1
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 1.5
+				NOT = { stability = 1 }
+			}
+		}
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 }
 
@@ -1711,7 +2053,24 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5072" # Grant privileges
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 1.5
+				government = monarchy
+				legitimacy = 90
+			}
+			modifier = {
+				factor = 0.5
+				government = monarchy
+				NOT = { legitimacy = 50 }
+			}
+			modifier = {
+				factor = 0.5
+				government = republic
+				NOT = { republican_tradition = 0.6 }
+			}
+		}
 		random_country = {
 			limit = { is_neighbor_of = ROOT }
 			add_opinion = { who = ROOT modifier = opinion_granted_privileges }
@@ -1725,7 +2084,14 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5072" # Privileges have to be earned
-		ai_chance = { factor = 45 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 1.5
+				government = monarchy
+				NOT = { legitimacy = 60 }
+			}
+		}
 		add_legitimacy = 20
 		add_republican_tradition = 0.05
 		
@@ -1766,17 +2132,29 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5074"		# Draft citizens
-		ai_chance = { factor = 90 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.1
+				NOT = { treasury = 200 }
+			}
+		}
 		random_owned_province = {
-			add_province_manpower = 1
+			add_base_manpower = 1
 		}
 	}
 	option = {
 		name = "EVTOPTB5074"		# Mass draft with financial incentive
-		ai_chance = { factor = 10 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				NOT = { treasury = 100 }
+			}
+		}
 		add_treasury = -60
 		random_owned_province = {
-			add_province_manpower = 2
+			add_base_manpower = 2
 		}
 	}
 }
@@ -1816,6 +2194,9 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5075"		# Accept demands.
+		ai_chance = {
+			factor = 5
+		}
 		every_owned_province = {
 			limit = {
 				is_capital = no
@@ -1825,7 +2206,21 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5075"		# Reject demands.
-		add_stability = -1
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 }
 
@@ -1868,20 +2263,45 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5076"		# Deny old rights
-		ai_chance = { factor = 55 }
-		add_stability = -1
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTB5076"		# Accept
-		ai_chance = { factor = 45 }
-		add_legitimacy = -30
-		add_republican_tradition = -0.1
-		if = {
-			limit = {
-				government = theocracy
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0.5
+				government = monarchy
+				NOT = { legitimacy = 0.7 }
 			}
-			add_prestige = -25
+			modifier = {
+				factor = 0.5
+				government = republic
+				NOT = { republican_tradition = 0.7 }
+			}
+			modifier = {
+				factor = 0.5
+				government = theocracy
+				NOT = { prestige = 25 }
+			}
 		}
+		add_legitimacy = -20
+		add_republican_tradition = -0.1
+		add_devotion = -10
 	}
 }
 
@@ -1896,18 +2316,11 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	trigger = {	}
+	trigger = { num_of_cities = 2 }
 
 	mean_time_to_happen = {
 		days = 1
 		
-		modifier = {
-			factor = 2.0
-			OR = {
-				NOT = { constable = 1 }
-				NOT = { courthouse = 1 }
-			}
-		}
 		modifier = {
 			factor = 1.25
 			NOT = { stability = 0 }
@@ -1919,13 +2332,6 @@ country_event = {
 		modifier = {
 			factor = 0.8
 			stability = 1
-		}
-		modifier = {
-			factor = 0.66
-			OR = {
-				constable = 2
-				courthouse = 2
-			}
 		}
 	}
 
@@ -2019,7 +2425,13 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5083"		# Hire the engineer
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.2 }
+			}
+		}
 		add_mil_power = 40
 		add_years_of_income = -0.15
 	}
@@ -2064,7 +2476,17 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5084"		# Hire him
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.3 }
+			}
+			modifier = {
+				factor = 0.5
+				army_tradition = 90
+			}
+		}
 		add_army_tradition = 20
 		add_years_of_income = -0.25
 	}
@@ -2110,14 +2532,34 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5085" # Build the Palace
-		ai_chance = { factor = 40 }
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.3 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { legitimacy = 60 }
+			}
+		}
 		add_prestige = 10
 		add_legitimacy = 20
 		add_years_of_income = -0.25
 	}
 	option = {
 		name = "EVTOPTB5085" # Don't build it
-		ai_chance = { factor = 60 }
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0.5
+				prestige = 90
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { legitimacy = 40 }
+			}
+		}
 		add_prestige = -10
 	}
 }
@@ -2156,13 +2598,32 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5086"		# Imprison
-		ai_chance = { factor = 60 }
-		add_stability = -1		
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTB5086"		# Allow him to remain free
-		ai_chance = { factor = 40 }
-		add_prestige = -33
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 0.5 }
+			}
+		}
+		add_prestige = -10
 	}
 }
 
@@ -2268,12 +2729,24 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5089"		# Accept petition
-		ai_chance = { factor = 70 }
-		add_prestige = -25
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 30 }
+			}
+		}
+		add_prestige = -10
 	}
 	option = {
 		name = "EVTOPTB5089"		# Deny petition
-		ai_chance = { factor = 30 }
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 1.5
+				is_at_war = no
+			}
+		}
 		random_owned_province = {
 			limit = {
 				NOT = { is_colony = yes }
@@ -2314,7 +2787,13 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5090"		# Grant aid
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.7 }
+			}
+		}
 		add_years_of_income = -0.5
 	}
 	option = {
@@ -2430,10 +2909,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		OR = {
-			government = constitutional_monarchy
-			government = constitutional_republic
-		}
+		has_parliament = yes
 		advisor = statesman
 	}
 
@@ -2462,7 +2938,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB5093"		# We have faith in him
 		ai_chance = { factor = 60 }
-		add_stability = -1
+		add_prestige = -10
 	}
 }
 
@@ -2507,7 +2983,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB5094"		# We have faith in him
 		ai_chance = { factor = 60 }
-		add_stability = -1
+		add_prestige = -10
 	}
 }
 
@@ -2640,8 +3116,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA5097"		# Enforce serfdom
 		ai_chance = { factor = 80 }
-		add_adm_power = -25
-		
+		add_adm_power = -35
 	}
 	option = {
 		name = "EVTOPTB5097"		# These things happen
@@ -2671,12 +3146,6 @@ country_event = {
 		
 		modifier = {
 			factor = 2.0
-			any_owned_province = {
-				has_building = treasury_office
-			}
-		}
-		modifier = {
-			factor = 2.0
 			luck = yes
 		}
 		modifier = {
@@ -2688,11 +3157,13 @@ country_event = {
 	option = {
 		name = "EVTOPTA5098"		# Cleanse the temple
 		ai_chance = { factor = 55 }
+		add_devotion = 10
 		add_stability = 1
 	}
 	option = {
 		name = "EVTOPTB5098"		# Fine the sinners
 		ai_chance = { factor = 45 }
+		add_devotion = -10
 		add_years_of_income = 0.20
 	}
 }
@@ -2869,23 +3340,16 @@ country_event = {
 		days = 1
 		
 		modifier = {
-			factor = 2.0
-			NOT = { stability = 0 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			stability = 3
+			factor = 3.0
+			full_idea_group = offensive_ideas
+			full_idea_group = defensive_ideas
 		}
 	}
 
 	option = {
 		name = "EVTOPTA6002"		# Attack is always the best option
 		ai_chance = { factor = 55 }
-		add_stability = -1
+		add_adm_power = -100
 		add_country_modifier = {
 			name = offensive_modifier
 			duration = 3650
@@ -2894,7 +3358,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB6002"		# Let them come to us
 		ai_chance = { factor = 45 }
-		add_stability = -1
+		add_adm_power = -100
 		add_country_modifier = {
 			name = defensive_modifier
 			duration = 3650
@@ -2939,7 +3403,14 @@ country_event = {
 	option = {
 		name = "EVTOPTA6003"		# L'etat c'est moi!
 		ai_chance = { factor = 30 }
-		add_stability = -1
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTB6003"		# Give them what they want
@@ -3133,7 +3604,13 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6012"		# Hire him
-		ai_chance = { factor = 65 }
+		ai_chance = {
+			factor = 65
+			modifier = {
+				factor = 0
+				stability = 3
+			}
+		}
 		add_years_of_income = -0.25
 		add_prestige = 10
 		add_stability = 1
@@ -3200,7 +3677,9 @@ country_event = {
 
 	trigger = {
 		is_at_war = no
+		has_any_disaster = no
 		NOT = { overextension_percentage = 0.01 }
+		NOT = { num_of_rebel_armies = 1 }
 		adm = 3
 	}
 
@@ -3223,13 +3702,21 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6015"		# Arrange festivities
-		ai_chance = { factor = 30 }
+		trigger = { NOT = { stability = 3 } }
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
 		add_stability = 1
 	}
 	option = {
 		name = "EVTOPTB6015"		# Such nonsense, wasting money like that!
 		ai_chance = { factor = 70 }
 		random_owned_province = {
+			limit = { controlled_by = owner }
 			add_base_tax = 1
 		}
 	}
@@ -3258,11 +3745,36 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA710"
-		add_prestige = -33
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 35 }
+			}
+		}
+		add_prestige = -10
 	}
 	option = {
 		name = "EVTOPTB710"
-		add_stability = -1
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+			modifier = {
+				factor = 1.5
+				stability = 2
+			}
+		}
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 }
 
@@ -3279,6 +3791,7 @@ country_event = {
 		stability = 0
 		religion = catholic
 		is_at_war = no
+		num_of_cities = 2
 	}
 
 	mean_time_to_happen = {
@@ -3286,11 +3799,14 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			luck = yes
-		}		
+		}
 	}
 
 	option = {
 		name = "EVTOPTA711"
+		ai_chance = {
+			factor = 45
+		}
 		add_prestige = -5
 		random_owned_province = {
 			add_province_modifier = {
@@ -3301,6 +3817,9 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB711"
+		ai_chance = {
+			factor = 65
+		}
 		add_dip_power = -30
 	}
 }
@@ -3329,10 +3848,24 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA712"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.5
+				war_exhaustion = 4
+			}
+		}
 		add_stability = -1
 	}
 	option = {
 		name = "EVTOPTB712"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.5
+				inflation = 10
+			}
+		}
 		add_inflation = 3
 	}
 }
@@ -3376,23 +3909,16 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		stability = 0
-		is_at_war = no
 		NOT = { has_country_modifier = defensive_modifier }
 		NOT = { has_country_modifier = offensive_modifier }
 	}
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
 		name = "EVTOPTA714"
-		add_mil_power = -50
 		add_country_modifier = {
 			name = defensive_modifier
 			duration = 3650
@@ -3400,7 +3926,6 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB714"
-		add_mil_power = -50
 		add_country_modifier = {
 			name = offensive_modifier
 			duration = 3650
@@ -3421,6 +3946,7 @@ country_event = {
 		stability = 0
 		government = monarchy
 		has_regency = no
+		is_lesser_in_union = no
 		NOT = { DIP = 4 }
 	}
 
@@ -3461,12 +3987,26 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA716"
+		ai_chance = {
+			factor = 65
+			modifier = {
+				factor = 1.5
+				stability = 3
+			}
+		}
 		add_stability = -1
 	}
 	option = {
 		name = "EVTOPTB716"
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.6 }
+			}
+		}
 		add_years_of_income = -0.5
-	}	
+	}
 }
 
 # Monetary Reforms
@@ -3492,13 +4032,23 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA717"
+		ai_chance = {
+			factor = 25
+		}
 		add_stability = -1
 		add_inflation = -1
 	}
 	option = {
 		name = "EVTOPTB717"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.5
+				inflation = 15
+			}
+		}
 		add_inflation = 3
-	}	
+	}
 }
 
 # The Fortunes of War
@@ -3525,11 +4075,17 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA718"
+		ai_chance = {
+			factor = 9
+		}
 		add_war_exhaustion = -3
 		add_inflation = 1
 	}
 	option = {
 		name = "EVTOPTB718"
+		ai_chance = {
+			factor = 1
+		}
 		add_war_exhaustion = -1
 	}	
 }
@@ -3558,10 +4114,24 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA719"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				stability = 2
+			}
+		}
 		add_stability = -1
 	}
 	option = {
 		name = "EVTOPTB719"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				army_tradition = 90
+			}
+		}
 		add_army_tradition = -20
 	}	
 }
@@ -3590,10 +4160,20 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA720"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				stability = 2
+			}
+		}
 		add_stability = -1
 	}
 	option = {
 		name = "EVTOPTB720"
+		ai_chance = {
+			factor = 50
+		}
 		add_navy_tradition = -20
 	}	
 }
@@ -3665,6 +4245,13 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA723"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0.5
+				unrest = 5
+			}
+		}
 		random_owned_province = {
 			limit = {
 				has_owner_culture = no
@@ -3674,7 +4261,9 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB723"
-		
+		ai_chance = {
+			factor = 33
+		}
 		random_owned_province = {
 			limit = { 
 				has_owner_culture = no
@@ -3687,8 +4276,22 @@ country_event = {
 	}	
 	option = {
 		name = "EVTOPTC723"
-		add_stability = -1
-	}	
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
+	}
 }
 
 # Clergy condemns philosopher as heretic!
@@ -3716,6 +4319,13 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA724"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				NOT = { religious_unity = 0.8 }
+			}
+		}
 		add_stability = -1
 		add_country_modifier = {
 			name = narrowminded_modifier
@@ -3724,6 +4334,13 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB724"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				religious_unity = 1
+			}
+		}
 		add_stability = -1
 		add_country_modifier = {
 			name = innovative_modifier
@@ -3798,6 +4415,7 @@ country_event = {
 	trigger = {
 		NOT = { dip = 5 }
 		has_regency = no
+		is_lesser_in_union = no
 		stability = -1
 	}
 
@@ -3811,12 +4429,29 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA726"
+		ai_chance = {
+			factor = 50
+		}
 		add_dip_power = -100
 	}
 	option = {
 		name = "EVTOPTB726"
-		add_stability = -1
-	}	
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
+	}
 }
 
 # Fight the Good Fight!
@@ -3864,6 +4499,7 @@ country_event = {
 	
 	trigger = {
 		dip = 3
+		is_subject = no
 		any_rival_country = {
 			any_owned_province = {
 				NOT = { is_claim = ROOT }
@@ -3978,11 +4614,21 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA729"
+		ai_chance = {
+			factor = 50
+		}
 		add_prestige = 5
 		add_manpower = -0.1
 	}
 	option = {
 		name = "EVTOPTB729"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.2 }
+			}
+		}
 		add_prestige = 5
 		add_years_of_income = -0.1
 	}
@@ -4011,10 +4657,26 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA730"
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0.5
+				NOT = { technology_group = western }
+				NOT = { technology_group = eastern }
+				NOT = { technology_group = ottoman }
+			}
+		}
 		add_mil_power = -50
 	}
 	option = {
 		name = "EVTOPTB730"
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 0 }
+			}
+		}
 		add_prestige = -10
 	}
 }
@@ -4044,10 +4706,26 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA731"
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0.5
+				NOT = { technology_group = western }
+				NOT = { technology_group = eastern }
+				NOT = { technology_group = ottoman }
+			}
+		}
 		add_dip_power = -50
 	}
 	option = {
 		name = "EVTOPTB731"
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 0 }
+			}
+		}
 		add_prestige = -10
 	}
 }
@@ -4075,10 +4753,26 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA732"
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0.5
+				NOT = { technology_group = western }
+				NOT = { technology_group = eastern }
+				NOT = { technology_group = ottoman }
+			}
+		}
 		add_dip_power = -50
 	}
 	option = {
 		name = "EVTOPTB732"
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 0 }
+			}
+		}
 		add_prestige = -10
 	}
 }
@@ -4106,10 +4800,26 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA733"
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0.5
+				NOT = { technology_group = western }
+				NOT = { technology_group = eastern }
+				NOT = { technology_group = ottoman }
+			}
+		}
 		add_adm_power = -50
 	}
 	option = {
 		name = "EVTOPTB733"
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 0 }
+			}
+		}
 		add_prestige = -10
 	}
 }
@@ -4137,10 +4847,26 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA734"
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0.5
+				NOT = { technology_group = western }
+				NOT = { technology_group = eastern }
+				NOT = { technology_group = ottoman }
+			}
+		}
 		add_adm_power = -50
 	}
 	option = {
 		name = "EVTOPTB734"
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 0 }
+			}
+		}
 		add_prestige = -10
 	}
 }
@@ -4159,7 +4885,7 @@ country_event = {
 		is_at_war = no
 		has_truce = no
 		NOT = { war_exhaustion = 1 }
-		NOT = { num_of_revolts = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
 	}
 
 	mean_time_to_happen = {
@@ -4211,6 +4937,7 @@ country_event = {
 			10 = { create_advisor = artist }
 			10 = { create_advisor = philosopher }
 		}
+		add_prestige = 15
 	}
 }
 
@@ -4228,6 +4955,8 @@ country_event = {
 		any_owned_province = {
 			is_overseas = no
 			is_capital = no
+			fort_level = 1
+			NOT = { has_province_modifier = "local_fortress" }
 		}
 	}
 
@@ -4237,14 +4966,26 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA737"
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 0.5
+				has_advisor = fortification_expert
+			}
+		}
 		create_advisor = fortification_expert
 	}
 	option = {
 		name = "EVTOPTB737"
+		ai_chance = {
+			factor = 65
+		}
 		random_owned_province = {
 			limit = {
 				is_overseas = no
 				is_capital = no
+				fort_level = 1
+
 			}
 			add_province_modifier = {
 				name = "local_fortress"
@@ -4279,13 +5020,13 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA738"
-		add_adm_power = -25
+		add_prestige = -10
 	}
 	option = {
 		name = "EVTOPTB738"
 		add_country_modifier = {
 			name = "compromised_spy_defence"
-			duration = 3650
+			duration = 7300
 		}
 	}
 }
@@ -4302,7 +5043,7 @@ country_event = {
 	trigger = {
 		religion = catholic
 		NOT = { has_country_modifier = smugglers_dominating }
-		NOT= {
+		NOT = {
 			stability = 3
 		}
 	}
@@ -4340,12 +5081,25 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA740"
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 0.5
+				NOT = { stability = -1 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.35 }
+			}
+		}
 		add_stability = -1
 		add_years_of_income = -0.25
 	}
 	option = {
 		name = "EVTOPTB740"
-
+		ai_chance = {
+			factor = 65
+		}
 		add_country_modifier = {
 			name = "smugglers_dominating"
 			duration = 3650
@@ -4407,11 +5161,21 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA742"
+		ai_chance = {
+			factor = 8
+			modifier = {
+				factor = 0.1
+				war_exhaustion = 5
+			}
+		}
 		add_manpower = 0.15
 		add_war_exhaustion = 1
 	}
 	option = {
 		name = "EVTOPTB742"
+		ai_chance = {
+			factor = 2
+		}
 		add_manpower = 0.05
 	}	
 }
@@ -4439,12 +5203,34 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA850"
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				legitimacy = 90
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { legitimacy = 70 }
+			}
+		}
 		add_legitimacy = 5
 	}	
 	option = {
 		name = "EVTOPTB850"
-		add_prestige = 5
-	}	
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 1.5
+				NOT = { prestige = 0 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 91 }
+			}
+		}
+		add_prestige = 10
+	}
 }
 
 # Legitimacy loss or Prestige loss
@@ -4469,12 +5255,26 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA851"
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0.5
+				NOT = { legitimacy = 80 }
+			}
+		}
 		add_legitimacy = -5
-	}	
+	}
 	option = {
 		name = "EVTOPTB851"
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				NOT = { prestige = 0 }
+			}
+		}
 		add_prestige = -5
-	}	
+	}
 }
 
 # Treasury vs Prestige gain for Republic
@@ -4496,11 +5296,24 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA852"
+		ai_chance = {
+			factor = 65
+			modifier = {
+				factor = 1.5
+				NOT = { years_of_income = 0.1 }
+			}
+		}
 		add_years_of_income = 0.10
-		
-	}	
+	}
 	option = {
 		name = "EVTOPTB852"
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 1.5
+				NOT = { prestige = 0 }
+			}
+		}
 		add_prestige = 10
 		
 	}	
@@ -4663,10 +5476,20 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA859"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.5
+				war_exhaustion = 5
+			}
+		}
 		add_war_exhaustion = 2
 	}
 	option = {
 		name = "EVTOPTB859"
+		ai_chance = {
+			factor = 5
+		}
 		add_army_tradition = -5
 		add_navy_tradition = -5
 	}
@@ -4692,10 +5515,20 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA860"
+		ai_chance = {
+			factor = 65
+			modifier = {
+				factor = 1.5
+				war_exhaustion = 10
+			}
+		}
 		add_war_exhaustion = -2
 	}
 	option = {
 		name = "EVTOPTB860"
+		ai_chance = {
+			factor = 35
+		}
 		add_army_tradition = 5
 		add_navy_tradition = 5
 	}		
@@ -4759,12 +5592,12 @@ country_event = {
 		name = "EVTOPTA862"
 		add_country_modifier = {
 			name = "colonial_enthusiasm"
-			duration = 1095
+			duration = 1825
 		}
 	}
 	option = {
 		name = "EVTOPTB862"
-		create_conquistador = 5
+		create_conquistador = 25
 	}		
 }
 
@@ -4917,6 +5750,7 @@ country_event = {
 	
 	trigger = {
 		religion = catholic
+		NOT = { tag = PAP }
 	}
 	
 	mean_time_to_happen = {
@@ -4944,6 +5778,7 @@ country_event = {
 	
 	trigger = {
 		mil_tech = 6
+		NOT = { mil_tech = 15 }
 	}
 	
 	mean_time_to_happen = {
@@ -4952,11 +5787,21 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA866"
+		ai_chance = {
+			factor = 7
+			modifier = {
+				factor = 0.5
+				inflation = 15
+			}
+		}
 		add_inflation = 0.5
 		add_mil_power = 50
 	}
 	option = {
 		name = "EVTOPTB866"
+		ai_chance = {
+			factor = 3
+		}
 		add_mil_power = 10
 	}
 }
@@ -4981,11 +5826,21 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA867"
+		ai_chance = {
+			factor = 7
+			modifier = {
+				factor = 0.5
+				inflation = 15
+			}
+		}
 		add_inflation = 0.5
 		add_dip_power = 50
 	}
 	option = {
 		name = "EVTOPTB867"
+		ai_chance = {
+			factor = 3
+		}
 		add_dip_power = 10
 	}
 }
@@ -5008,11 +5863,21 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA868"
+		ai_chance = {
+			factor = 7
+			modifier = {
+				factor = 0.5
+				inflation = 15
+			}
+		}
 		add_inflation = 0.5
 		add_dip_power = 50
 	}
 	option = {
 		name = "EVTOPTB868"
+		ai_chance = {
+			factor = 3
+		}
 		add_dip_power = 10
 	}
 }
@@ -5034,11 +5899,21 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA869"
+		ai_chance = {
+			factor = 7
+			modifier = {
+				factor = 0.5
+				inflation = 15
+			}
+		}
 		add_inflation = 0.5
 		add_adm_power = 50
 	}
 	option = {
 		name = "EVTOPTB869"
+		ai_chance = {
+			factor = 3
+		}
 		add_adm_power = 10
 	}
 }
@@ -5060,11 +5935,21 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA870"
+		ai_chance = {
+			factor = 7
+			modifier = {
+				factor = 0.5
+				inflation = 15
+			}
+		}
 		add_inflation = 0.5
 		add_adm_power = 50
 	}
 	option = {
 		name = "EVTOPTB870"
+		ai_chance = {
+			factor = 3
+		}
 		add_adm_power = 10
 	}
 }
@@ -5086,10 +5971,25 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA871"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 1.5
+				NOT = { years_of_income = 0.3 }
+			}
+		}
 		add_years_of_income = 0.25
 	}
 	option = {
 		name = "EVTOPTB871"
+		trigger = { NOT = { stability = 3 } }
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 1.5
+				NOT = { stability = 1 }
+			}
+		}
 		add_stability = 1
 	}
 }
@@ -5107,6 +6007,9 @@ country_event = {
 		OR = {
 			technology_group = western
 			technology_group = eastern
+			technology_group = ottoman
+			technology_group = muslim
+			technology_group = indian
 		}
 	}
 	
@@ -5116,10 +6019,12 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA872"
+		trigger = { NOT = { stability = 3 } }
 		add_stability = 1
 	}
 	option = {
 		name = "EVTOPTB872"
+		add_prestige = 10
 		define_advisor = {
 			type = artist
 			skill = 2
@@ -5161,10 +6066,7 @@ country_event = {
 	
 	trigger = {
 		religion = catholic
-		OR = {
-			government = feudal_monarchy	
-			government = imperial_government
-		}
+		government = feudal_monarchy	
 		exists = PAP
 		capital_scope = {
 			continent = europe
@@ -5331,14 +6233,38 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA877"
-		add_stability = -1
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTB877"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.6 }
+			}
+		}
 		add_years_of_income = -0.50
 	}	
 	option = {
 		name = "EVTOPTC877"
+		ai_chance = {
+			factor = 33
+		}
 		add_dip_power = -100
 	}	
 }
@@ -5433,10 +6359,20 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA880"
+		ai_chance = {
+			factor = 5
+		}
 		create_admiral = 50
 	}
 	option = {
 		name = "EVTOPTB880"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.5
+				num_of_cities = 20
+			}
+		}
 		define_advisor = { 
 			type = naval_reformer
 			skill = 2
@@ -5504,11 +6440,21 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA883"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.2 }
+			}
+		}
 		add_years_of_income = -0.10
 		add_prestige = 10
 	}
 	option = {
 		name = "EVTOPTB883"
+		ai_chance = {
+			factor = 5
+		}
 		add_prestige = -5
 	}
 }
@@ -5586,7 +6532,6 @@ country_event = {
 		OR = {
 			government = feudal_monarchy
 			government = despotic_monarchy
-			government = imperial_government
 		}
 	}
 	
@@ -5596,6 +6541,9 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA884"
+		ai_chance = {
+			factor = 33
+		}
 		add_prestige = -10
 		random_owned_province = {
 			limit = { 
@@ -5613,11 +6561,28 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB884"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
 		add_prestige = 5
-		add_stability = -1
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}
 	}
 	option = {
 		name = "EVTOPTC884"
+		ai_chance = {
+			factor = 33
+		}
 		add_prestige = 5
 		random_owned_province = {
 			limit = { 
@@ -5671,7 +6636,8 @@ country_event = {
 	
 	trigger = {
 		war_exhaustion = 10
-	}	
+		NOT = { stability = -2 }
+	}
 
 	option = {
 		name = "EVTOPTB806A"
@@ -5766,6 +6732,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		num_of_ports = 1
+		primitives = no
 		NOT = { has_idea_group = maritime_ideas }
 		OR = { 
 			has_idea_group = offensive_ideas
@@ -5789,6 +6757,8 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		num_of_ports = 1
+		primitives = no
 		NOT = { has_idea_group = maritime_ideas }
 		OR = { 
 			has_idea_group = offensive_ideas
@@ -5989,7 +6959,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		government = republic
+		has_parliament = yes
 		is_at_war = yes
 	}
 	
@@ -5999,10 +6969,25 @@ country_event = {
 	
 	option = {
 		name = "random_event.EVTOPTA3"
+		trigger = { NOT = { stability = -2 } }
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 1 }
+			}
+		}
 		add_stability = -1
 	}
 	option = {
 		name = "random_event.EVTOPTB3"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.5
+				war_exhaustion = 8
+			}
+		}
 		add_war_exhaustion = 2
 	}
 }
@@ -6017,17 +7002,14 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		any_owned_province = {
-			has_building = university
-		}
+		is_year = 1700
+		technology_group = western
+		has_advisor = yes
 		NOT = {
 			any_owned_province = {
 				has_province_modifier = football_modifier
 			}
 		}
-		is_year = 1700
-		technology_group = western
-		has_advisor = yes
 	}
 	
 	mean_time_to_happen = {
@@ -6098,19 +7080,35 @@ country_event = {
 	
 	option = {
 		name = "random_event.EVTOPTA5"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.3 }
+			}
+		}
 		add_years_of_income = -0.20
-		
 		add_prestige = 20
 		add_legitimacy = 20
 	}
 	option = {
 		name = "random_event.EVTOPTB5"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.2 }
+			}
+		}
 		add_years_of_income = -0.10
 		add_prestige = 5
 		add_legitimacy = 5
 	}
 	option = {
 		name = "random_event.EVTOPTC5"
+		ai_chance = {
+			factor = 33
+		}
 		every_owned_province = {
 			limit = {
 				is_core = ROOT
@@ -6155,12 +7153,26 @@ country_event = {
 	
 	option = {
 		name = "random_event.EVTOPTA6"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0.5
+				NOT = { legitimacy = 70 }
+			}
+		}
 		create_general = 100
 		add_prestige = -25
 		add_legitimacy = -25
 	}
 	option = {
 		name = "random_event.EVTOPTB6"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 1.5
+				NOT = { legitimacy = 70 }
+			}
+		}
 		add_legitimacy = 25
 	}
 }
@@ -6191,6 +7203,13 @@ country_event = {
 	
 	option = {
 		name = "random_event.EVTOPTA7"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0.5
+				NOT = { treasury = 100 }
+			}
+		}
 		add_treasury = -50
 		add_prestige = 5
 		random_owned_province = {
@@ -6204,6 +7223,13 @@ country_event = {
 	}
 	option = {
 		name = "random_event.EVTOPTB7"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0.5
+				NOT = { treasury = 50 }
+			}
+		}
 		add_treasury = -20
 		add_prestige = 2
 		random_owned_province = {
@@ -6217,6 +7243,9 @@ country_event = {
 	}
 	option = {
 		name = "random_event.EVTOPTC7"
+		ai_chance = {
+			factor = 33
+		}
 		add_treasury = -10
 		add_prestige = 1
 		random_owned_province = {
@@ -6408,16 +7437,33 @@ country_event = {
 	
 	option = {
 		name = "random_event.EVTOPTA11"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0.5
+				NOT = { treasury = 50 }
+			}
+		}
 		add_years_of_income = -0.25
 		create_general = 100
 	}
 	option = {
 		name = "random_event.EVTOPTB11"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0.5
+				NOT = { treasury = 25 }
+			}
+		}
 		add_years_of_income = -0.10
 		create_general = 50
 	}
 	option = {
 		name = "random_event.EVTOPTC11"
+		ai_chance = {
+			factor = 33
+		}
 		add_legitimacy = 5
 	}
 }
@@ -6439,7 +7485,9 @@ country_event = {
 			culture_group = hindusthani
 			culture_group = western_aryan
 			culture_group = dravidian
+			culture_group = central_indic
 		}
+		NOT = { primary_culture = tibetan }
 		NOT = {
 			stability = 3
 		}
@@ -6530,11 +7578,21 @@ country_event = {
 	
 	option = {
 		name = "random_event.EVTOPTA14"
+		ai_chance = {
+			factor = 5
+		}
 		add_adm_power = 20
 	}
 	option = {
 		name = "random_event.EVTOPTB14"
-		add_prestige = -5
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_advisor = theologian
+			}
+		}
+		add_prestige = 5
 		create_advisor = theologian
 	}
 }
@@ -6622,10 +7680,10 @@ country_event = {
 			duration = 365
 		}
 	}
-	option = {
-		name = "random_event.EVTOPTC16"
-		add_prestige = 3
-	}
+	#option = {
+	#	name = "random_event.EVTOPTC16"
+	#	add_prestige = 3
+	#}
 }
 
 # The Four Kings
@@ -6835,7 +7893,9 @@ province_event = {
 	}
 	option = {
 		name = "random_event.EVTOPTB22" # We can't trust these people! Keep them in prison over here
-		add_adm_power = -10
+		owner = {
+			add_adm_power = -10
+		}
 	}
 }
 
@@ -6874,6 +7934,9 @@ province_event = {
 
 	option = {
 		name = "random_event.EVTOPTA23" # Quarantine the port and let them die!
+		ai_chance = {
+			factor = 9
+		}
 		add_province_modifier = {
 			name = "quarantined_influenza"
 			duration = 365
@@ -6881,6 +7944,9 @@ province_event = {
 	}
 	option = {
 		name = "random_event.EVTOPTB23" # This is not the first flu in our country, I don't care!
+		ai_chance = {
+			factor = 1
+		}
 		owner = { add_adm_power = -5 }
 		add_province_modifier = {
 			name = "influenza"
@@ -6920,6 +7986,9 @@ province_event = {
 	
 	option = {
 		name = "random_event.EVTOPTA24" # Quarantine the province!
+		ai_chance = {
+			factor = 9
+		}
 		add_province_modifier = {
 			name = "quarantined_influenza"
 			duration = 365
@@ -6928,6 +7997,9 @@ province_event = {
 	option = {
 		name = "random_event.EVTOPTB24" # It will soon go away
 		owner = { add_adm_power = -5 }
+		ai_chance = {
+			factor = 1
+		}
 		add_province_modifier = {
 			name = "influenza"
 			duration = 365
@@ -7035,9 +8107,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				owner = {
-					religion = catholic
-				}
+				religion = catholic
 			}
 		}
 		add_stability = -1
@@ -7444,7 +8514,12 @@ country_event = {
 	picture = HARBOUR_eventPicture
 
 	trigger = {
-		tea = 1
+		technology_group = western
+		any_owned_province = {
+			trade_goods = tea 
+			is_overseas = yes
+			is_city = yes
+		}
 	}
 	is_triggered_only = yes
 
@@ -7456,7 +8531,9 @@ country_event = {
 		name = "EVTOPTA6432"
 		random_owned_province = {
 			limit = {
-				trade_goods = tea
+				trade_goods = tea 
+				is_overseas = yes
+				is_city = yes
 			}
 			add_unrest = 10
 		}
@@ -7705,10 +8782,20 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5026"		# We have to do something!
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.2 }
+			}
+		}
 		add_years_of_income = -0.10
 	}
 	option = {
 		name = "EVTOPTB5026"		# There is nothing we can do.
+		ai_chance = {
+			factor = 45
+		}
 		random_owned_province = {
 			limit = {
 				trade_goods = grain
@@ -7747,7 +8834,7 @@ country_event = {
 			limit = {
 				trade_goods = grain
 			}		
-			add_province_manpower = 1
+			add_base_manpower = 1
 		}
 	}
 	option = {
@@ -7819,10 +8906,24 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6014"		# Put into the treasury
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.5
+				NOT = { num_of_cities = 10 }
+			}
+			modifier = {
+				factor = 1.5
+				num_of_cities = 20
+			}
+		}
 		add_years_of_income = 0.50
 	}
 	option = {
 		name = "EVTOPTB6014"		# Invest the money
 		add_adm_power = 50
+		ai_chance = {
+			factor = 45
+		}
 	}
 }

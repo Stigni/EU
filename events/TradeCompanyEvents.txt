@@ -11,6 +11,7 @@ province_event = {
 		is_owned_by_trade_company = yes
 		trade_company_size = 5
 		can_build = plantations
+		num_free_building_slots = 1
 		NOT = { culture_group = owner }
 		base_tax = 2
 	}
@@ -154,12 +155,8 @@ province_event = {
 				NOT = { owned_by = ROOT }
 			}
 		}
-		OR = {
-			can_build = fort1
-			can_build = fort2
-			can_build = fort3
-			can_build = fort4
-		}
+		num_free_building_slots = 1
+		can_build = fort_15th
 	}
 	
 	mean_time_to_happen = {
@@ -180,33 +177,7 @@ province_event = {
 
 	option = {	# Good initiative!
 		name = "trade_company_events.EVTOPTA4"
-		if = {
-			limit = {
-				has_building = fort3
-				NOT = { has_building = fort4}
-			}
-			add_building = fort4
-		}
-		if = {
-			limit = {
-				has_building = fort2
-				NOT = { has_building = fort3}
-			}
-			add_building = fort3
-		}
-		if = {
-			limit = {
-				has_building = fort1
-				NOT = { has_building = fort2}
-			}
-			add_building = fort2
-		}
-		if = {
-			limit = {
-				NOT = { has_building = fort1}
-			}
-			add_building = fort1
-		}
+		add_building = fort_15th
 	}
 }
 

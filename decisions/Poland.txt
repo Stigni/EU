@@ -26,7 +26,7 @@ country_decisions = {
 			add_prestige = 20
 			257 = {
 			 	add_base_tax = 1 
-			 	add_province_manpower = 1
+			 	add_base_manpower = 1
 			 }
 		}
 		ai_will_do = {

@@ -16,7 +16,7 @@ province_event = {
 			NOT = { owned_by = ROOT }
 			NOT = { is_core = ROOT }
 			NOT = { is_claim = ROOT }
-			base_tax = 5
+			development = 10
 			owner = { is_tribal = no }
 		}
 	}
@@ -37,7 +37,7 @@ province_event = {
 			limit = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
-				base_tax = 5
+				development = 10
 				owner = { is_tribal = no }
 			}
 			add_claim = ROOT
@@ -100,7 +100,7 @@ country_event = {
 		num_of_cities = 10
 		NOT = { war_exhaustion = 1 }
 		has_regency = no
-		NOT = { num_of_revolts = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { had_recent_war = 10 }
 		has_truce = no
 		NOT = { has_spawned_rebels = pretender_rebels }
@@ -140,7 +140,7 @@ country_event = {
 		NOT = { war_exhaustion = 1 }
 		has_regency = no
 		has_heir = yes
-		NOT = { num_of_revolts = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { had_recent_war = 10 }
 		has_truce = no
 		NOT = { has_spawned_rebels = pretender_rebels }		
@@ -185,7 +185,7 @@ country_event = {
 		has_regency = no
 		has_heir = no
 		legitimacy = 10
-		NOT = { num_of_revolts = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { had_recent_war = 10 }
 		has_truce = no
 	}

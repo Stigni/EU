@@ -23,18 +23,9 @@ country_decisions = {
 			owns = 1816
 		}
 		allow = {
-			OR = {
-				advisor = army_reformer
-				mil = 3
-			}
-			years_of_income = 1
-			adm_power = 50
-			mil_power = 50
+			MIL = 5
 		}
 		effect = {
-			add_years_of_income = -1
-			add_adm_power = -50
-			add_mil_power = -50
 			add_country_modifier = {
 				name = "great_wall_reparations"
 				duration = -1

@@ -191,7 +191,7 @@ province_event = {
 #		name = "aow_events.4.a"
 #		owner = { add_years_of_income = -0.4 }
 #		spawn_rebels = {
-#			type = patriot_rebels
+#			type = nationalist_rebels
 #			size = 2
 #			friend = ROOT
 #		}
@@ -960,6 +960,7 @@ province_event = {
 		}
 		NOT = { controlled_by = REB }
 		NOT = { religion = owner }
+		NOT = { is_core = controller }
 		religion = controller
 		any_neighbor_province = {
 			owned_by = controller
@@ -970,11 +971,11 @@ province_event = {
 		months = 640
 		modifier = {
 			factor = 1.5
-			tolerance_to_this = 0
+			owner = { tolerance_to_this = 0 }
 		}
 		modifier = {
 			factor = 2.0
-			tolerance_to_this = 1
+			owner = { tolerance_to_this = 1 }
 		}
 	}
 
@@ -1174,6 +1175,8 @@ province_event = {
 		religion = owner
 		NOT = { religion = confucianism }
 		NOT = { religion = buddhism }
+		NOT = { religion = mahayana }
+		NOT = { religion = vajrayana }
 		has_siege = no
 		controlled_by = owner
 		any_neighbor_province = {
@@ -1690,7 +1693,7 @@ country_event = {
 		religion = catholic
 		NOT = { num_of_cardinals = 7 }
 		any_owned_province = {
-			base_tax = 5
+			development = 10
 			has_cardinal = no
 			any_neighbor_province = {
 				has_cardinal = yes
@@ -1710,7 +1713,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				has_cardinal = no
-				base_tax = 5
+				development = 10
 				any_neighbor_province = {
 					has_cardinal = yes
 					NOT = { owned_by = ROOT }
@@ -1900,7 +1903,7 @@ country_event = {
 		NOT = { num_of_cardinals = 7 }
 		NOT = { total_number_of_cardinals = 49 }
 		any_owned_province = {
-			base_tax = 5
+			development = 10
 			continent = europe
 			has_cardinal = no
 		}
@@ -1916,7 +1919,7 @@ country_event = {
 		add_adm_power = -100
 		random_owned_province = {
 			limit = {
-				base_tax = 5
+				development = 10
 				continent = europe
 				has_cardinal = no
 			}

@@ -30,6 +30,7 @@ country_event = {
 	option = {
 		name = "flavor_kni.EVTOPTA1"
 		add_papal_influence = 5
+		add_devotion = 5
 		add_years_of_income = 1
 		PAP = {
 			add_opinion = {

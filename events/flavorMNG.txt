@@ -353,7 +353,10 @@ country_event = {
 			limit = {
 				culture = manchu
 			}
-			add_unrest = 10
+			add_province_modifier = {
+				name = add_unrest_10_modifier
+				duration = 1825
+			}
 		}
 	}
 	option = {
@@ -363,7 +366,10 @@ country_event = {
 			limit = {
 				culture = manchu
 			}
-			add_unrest = 5
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 	}
 }
@@ -762,7 +768,6 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		owns = 649
 		tag = MNG
 		is_year = 1770
 		NOT = { is_year = 1800 }
@@ -793,7 +798,6 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		owns = 649
 		OR = {
 			tag = QNG
 			AND = {
@@ -848,7 +852,6 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		owns = 649
 		OR = {
 			tag = QNG
 			AND = {

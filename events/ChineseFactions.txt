@@ -653,7 +653,7 @@ province_event = {
 	picture = REFORM_eventPicture
 	
 	trigger = {
-		manpower = 4
+		base_manpower = 4
 		owner = {
 			faction_in_power = bureaucrats
 		}
@@ -681,7 +681,7 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA11104"
-		add_province_manpower = 2
+		add_base_manpower = 2
 		owner = {
 			add_manpower = 1
 			add_army_tradition = 5
@@ -1171,7 +1171,8 @@ province_event = {
 		owner = {
 			faction_in_power = temples
 		}
-		base_tax = 4
+		base_tax = 5
+		base_manpower = 5
 		religion = confucianism
 		is_reformation_center = no
 	}
@@ -1206,7 +1207,7 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA11200"
-		change_religion = buddhism
+		change_religion = mahayana
 		add_base_tax = 1
 		owner = {
 			add_prestige = 5
@@ -1220,7 +1221,7 @@ province_event = {
 	option = {
 		name = "EVTOPTB11200"
 		add_base_tax = -2
-		add_province_manpower = -2
+		add_base_manpower = -2
 		owner = {
 			add_faction_influence = {
 				faction = temples
@@ -1795,11 +1796,11 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				NOT = {
-					religion = buddhism
+					religion = mahayana
 				}
 				is_reformation_center = no
 			}
-			change_religion = buddhism
+			change_religion = mahayana
 		}
 		add_faction_influence = {
 			faction = temples
@@ -2950,19 +2951,19 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				NOT = {
-					religion = buddhism
+					religion = mahayana
 				}
 				is_reformation_center = no
 			}
-			change_religion = buddhism
+			change_religion = mahayana
 		}
 		random_owned_province = {
 			limit = {
 				NOT = {
-					religion = buddhism
+					religion = mahayana
 				}
 			}
-			change_religion = buddhism
+			change_religion = mahayana
 		}
 		add_faction_influence = {
 			faction = temples
@@ -3013,11 +3014,11 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				NOT = {
-					religion = buddhism
+					religion = mahayana
 				}
 				is_reformation_center = no
 			}
-			change_religion = buddhism
+			change_religion = mahayana
 		}
 		add_faction_influence = {
 			faction = enuchs

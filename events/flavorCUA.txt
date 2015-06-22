@@ -1,7 +1,7 @@
 ########################################
 # Events for Charrua
 #
-# written by Sara Wendel-Ã–rtqvist
+# written by Sara Wendel-Örtqvist
 ########################################
 
 namespace = flavor_cua
@@ -74,7 +74,7 @@ country_event = {
 	}
 }
 
-# Juan DÃ­az de SolÃ­s
+# Juan Díaz de Solís
 country_event = {
 	id = flavor_cua.3
 	title = flavor_cua.3.t
@@ -123,7 +123,10 @@ country_event = {
 	option = {
 		name = flavor_cua.3.b
 		random_owned_province = {
-			add_unrest = 5
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 		random_known_country = {
 			limit = {
@@ -147,10 +150,13 @@ country_event = {
 		}
 		add_prestige = -5
 		random_owned_province = {
-			add_unrest = 5
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
 		}
 		define_explorer = {
-			name = "Juan DÃ­az de SolÃ­s"
+			name = "Juan Díaz de Solís"
 			fire = 2
 			shock = 3
 			manuever = 2

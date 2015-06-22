@@ -36,7 +36,18 @@ country_decisions = {
 			owns_core_province = 100 # Friesland
 		}
 	 	effect = {
-			
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
 	  		if = {
 	  			limit = {
 	  				tag = BUR
@@ -93,6 +104,14 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 				}
 				add_claim = NED
+			}
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
 			}
 			add_prestige = 25
 			swap_free_idea_group = yes		#keep progress

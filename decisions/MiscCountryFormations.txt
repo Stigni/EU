@@ -14,7 +14,7 @@ country_decisions = {
 			NOT = { tag = PRU }
 			NOT = { tag = HSA }
 			NOT = { exists = HAN }
-			primary_culture = hannoverian
+			primary_culture = hannoverian #Westphalian
 			is_colonial_nation = no
 			OR = {
 				ai = no
@@ -36,34 +36,59 @@ country_decisions = {
 			government = monarchy
 			is_subject = no
 			is_at_war = no
+			OR = {
+				is_part_of_hre = no
+				is_elector = yes
+			}
+			owns_core_province = 53	# Lüneburg
 			owns_core_province = 54	# Stade
-			owns_core_province = 57	# Brunswick
 			owns_core_province = 1758	# Hannover
-			owns_core_province = 1874	# Bremen
+			owns_core_province = 2971	# Hoya
 		}
 		effect = {
 			change_tag = HAN
-			random_owned_province = {
+			1758 = {
 				add_base_tax = 1
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			german_region = {
+			every_province = {
 				limit = {
 					NOT = { owned_by = ROOT }
-					culture = hannoverian
+					OR = {
+						#province_id = 53 # Luneburg
+						#province_id = 54 # Stade
+						province_id = 55 # Oldenburg
+						province_id = 56 # Osnabruck
+						province_id = 57 # Brunswick
+						#province_id = 1758 # Hannover
+						province_id = 1874 #Bremen
+						province_id = 1931 # East Frisia
+						#province_id = 2971 # Hoya
+					}
 				}
-				add_claim = HAN
+				add_claim = ROOT
 			}
 			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			HAN = {
 				set_capital = 1758 # Hannover
 			}
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				is_part_of_hre = yes
+				is_elector = no	
+			}
 		}
 	}
 	
@@ -83,8 +108,11 @@ country_decisions = {
 			NOT = { tag = SWI }
 			NOT = { exists = WES }
 			OR = {
-				primary_culture = rheinlaender
+				primary_culture = hannoverian #Westphalian
 				primary_culture = hessian
+				capital_scope = {
+					region = westphalian_region
+				}
 			}
 			is_colonial_nation = no
 			OR = {
@@ -103,21 +131,30 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 22 # Constitution, 1687
+			adm_tech = 10
 			is_subject = no
 			is_at_war = no
+			OR = {
+				is_elector = yes
+				is_part_of_hre = no
+			}
 			capital_scope = {
 				region = westphalian_region
 			}
-			owns_core_province = 52	# Altmark
-			owns_core_province = 81	# Hessen
+			owns_core_province = 52	# Magdeburg
 			owns_core_province = 82	# Westfalen
-			owns_core_province = 86	# Munster
 			owns_core_province = 1758	# Hannover
 			owns_core_province = 1762	# Kassel
+			owns_core_province = 2972	# Paderborn
 		}
 		effect = {
 			change_tag = WES
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			random_owned_province = {
 				add_base_tax = 1
 			}
@@ -139,6 +176,11 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				is_part_of_hre = yes
+				is_elector = no	
+			}
 		}
 	}
 	
@@ -185,6 +227,24 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = GRE
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			random_owned_province = {
 				limit = { culture = greek }
 				add_base_tax = 1

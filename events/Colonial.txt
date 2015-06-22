@@ -461,7 +461,7 @@ province_event = {
 	}
 }
 
-### Scripted by Sara Wendel-Ã–rtqvist ###
+### Scripted by Sara Wendel-Örtqvist ###
 
 # A Witch!
 province_event = {
@@ -600,7 +600,7 @@ province_event = {
 	trigger = {
 		any_empty_neighbor_province = {
 			NOT = { trade_goods = fur }
-			native_size = 1000
+			native_size = 10
 			OR = {
 				culture_group = eskaleut
 				culture_group = central_algonquian
@@ -619,7 +619,7 @@ province_event = {
 	
 	option = {
 		name = "colonial.EVTOPTA12"
-		add_province_manpower = 2
+		add_base_manpower = 2
 	}
 	option = {
 		name = "colonial.EVTOPTB12"
@@ -761,18 +761,6 @@ province_event = {
 			owner = {
 				has_country_modifier = roman_fever_timer
 			}
-		}
-		NOT = {
-			continent = asia
-		}
-		NOT = {
-			continent = africa
-		}
-		NOT = {
-			continent = south_america
-		}
-		NOT = {
-			continent = oceania
 		}
 	}
 	

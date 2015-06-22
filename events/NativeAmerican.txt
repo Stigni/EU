@@ -652,7 +652,7 @@ country_event = {
 		months = 480
 		modifier = {
 			factor = 0.5
-			capital_scope = { base_tax = 4 }
+			capital_scope = { development = 9 }
 		}
 	}
 

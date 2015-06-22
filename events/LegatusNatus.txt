@@ -46,6 +46,7 @@ country_event = {
 				OR = {
 					NOT = { prestige = -10 }
 					NOT = { legitimacy = 10 }
+					NOT = { devotion = 10 }
 				}
 				NOT = { has_opinion ={ who = PAP value = 100 } }
 			}

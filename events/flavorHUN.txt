@@ -29,7 +29,7 @@ country_event = {
 	}
 	
 	option = {
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 50 }
 		name = flavor_hun.1.a
 		define_ruler = {
 			name = "(Regent) János"
@@ -61,7 +61,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_hun.1.b
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 50 }
 		add_stability = 1
 		define_heir = {
 			name = "Ladislaus Postumus"
@@ -104,6 +104,8 @@ country_event = {
 	option = {
 		ai_chance = { factor = 75 }
 		name = flavor_hun.2.a
+		remove_historical_friend = HAB
+		HAB = { remove_historical_friend = HUN }
 		define_heir = {
 			name = "Mátyás"
 			dynasty = "Hunyadi"
@@ -219,7 +221,7 @@ country_event = {
 		name = flavor_hun.4.b
 		add_stability = 1
 		random_owned_province = {
-			add_province_manpower = 1
+			add_base_manpower = 1
 		}
 	}
 }
@@ -338,10 +340,13 @@ country_event = {
 	option = {
 		name = flavor_hun.8.a
 		if = {
-			limit = { is_lesser_in_union = no }
-			add_prestige = -33
+			limit = { is_lesser_in_union = yes }
+			add_prestige = -10
 		}
-		add_legitimacy = -33
+		if = {
+			limit = { is_lesser_in_union = no }
+			add_legitimacy = -10
+		}			
 	}
 	option = {
 		name = flavor_hun.8.b

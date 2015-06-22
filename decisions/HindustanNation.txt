@@ -8,9 +8,11 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			#NOT = { exists = BHA }
 			NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = dravidian
+			religion_group = muslim
 			NOT = { technology_group = nomad_group }
 			OR = {
 				ai = no
@@ -50,6 +52,19 @@ country_decisions = {
 			owns_core_province = 572
 		}
 		effect = {
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			set_government_rank = 3
 			change_tag = HIN
 			indian_region = {
 				limit = {
@@ -73,9 +88,11 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			#NOT = { exists = BHA }
 			NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = western_aryan
+			religion_group = muslim
 			NOT = { technology_group = nomad_group }
 			OR = {
 				ai = no
@@ -122,6 +139,19 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = HIN
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			set_government_rank = 3
 			indian_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -144,8 +174,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			#NOT = { exists = BHA }
 			NOT = { exists = HIN }
 			NOT = { tag = MUG }
+			religion_group = muslim
 			culture_group = hindusthani
 			NOT = { technology_group = nomad_group }
 			OR = {
@@ -187,6 +219,19 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = HIN
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			set_government_rank = 3
 			indian_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -209,8 +254,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			#NOT = { exists = BHA }
 			NOT = { exists = HIN }
 			NOT = { tag = MUG }
+			religion_group = muslim
 			culture_group = eastern_aryan
 			NOT = { technology_group = nomad_group }
 			OR = {
@@ -247,6 +294,19 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = HIN
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			set_government_rank = 3
 			indian_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -260,5 +320,81 @@ country_decisions = {
 		}
 		ai_importance = 50
 	}
-
+	
+	
+	hindustan_nation_central_indic = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			#NOT = { exists = BHA }
+			NOT = { exists = HIN }
+			NOT = { tag = MUG }
+			religion_group = muslim
+			culture_group = central_indic
+			NOT = { technology_group = nomad_group }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}		
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_subject = no
+			culture_group = central_indic
+			is_at_war = no
+			stability = 3
+			owns_core_province = 524 #Mathura
+			owns_core_province = 526 #Uijjain
+			owns_core_province = 546 #Nagpur
+			owns_core_province = 560 #Jharkand
+			owns_core_province = 561 #Bengal Delta
+			owns_core_province = 558 #Patna
+			owns_core_province = 559 #Bundelkhand
+			owns_core_province = 552 #Cuttack
+			owns_core_province = 553 #Sambalpur
+			owns_core_province = 1949 #Tirupati
+			owns_core_province = 2050 #Chanda
+		}
+		effect = {
+			change_tag = HIN
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			set_government_rank = 3
+			indian_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = HIN
+			}
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
 }

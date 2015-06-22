@@ -29,7 +29,7 @@ country_decisions = {
 			is_at_war = no
 			owns_core_province = 262				# Krakow
 			owns_core_province = 257				# Warszawa
-			owns_core_province = 43				# Danzig
+			owns_core_province = 43					# Danzig
 			owns_core_province = 1841				# Marienburg
 			senior_union_with = LIT
 			NOT = { num_of_unions = 2 }
@@ -38,6 +38,22 @@ country_decisions = {
 		effect = {
 			change_tag = PLC
 			inherit = LIT
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
 			if = {
 				limit = {
 					wielkopolska = {
@@ -123,6 +139,22 @@ country_decisions = {
 		effect = {
 			change_tag = PLC
 			inherit = POL
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
 			if = {
 				limit = {
 					wielkopolska = {

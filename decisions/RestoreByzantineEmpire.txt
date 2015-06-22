@@ -29,6 +29,7 @@ country_decisions = {
 			owns = 1853	# Kozani
 			owns = 2296	# Biga
 			is_at_war = no
+			is_subject = no
 		}
 		effect = {
 			change_tag = BYZ
@@ -104,7 +105,19 @@ country_decisions = {
 				set_capital = 151 # Constantinople
 				add_core = 151 # Constantinople
 			}
-			change_government = imperial_government
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			set_government_rank = 3
 			swap_free_idea_group = yes
 		}
 		ai_will_do = {

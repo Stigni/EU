@@ -19,7 +19,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				is_core = ROOT 
-				base_tax = 5
+				development = 10
 				is_capital = no
 			}
 			spawn_rebels = {
@@ -111,7 +111,6 @@ country_event = {
 	picture = CIVIL_WAR_eventPicture
 	
 	trigger = {
-		has_country_flag = civil_war
 		num_of_royal_marriages = 1
 	}
 

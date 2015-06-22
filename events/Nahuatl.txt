@@ -90,7 +90,7 @@ country_event = {
 		add_legitimacy = -10
 		if = {
 			limit = { government = republic }
-			add_republican_tradition = -10
+			add_republican_tradition = -0.1
 		}
 		custom_tooltip = nahuatl_events.2.b.tt #The child will be educated at the Calmecac, furthering his potential but our ruler loses face.
 		#hidden_effect = {

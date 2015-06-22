@@ -146,7 +146,7 @@ country_event = {
 		name = flavor_nap.4.a
 		121 = {
 			add_base_tax = 3
-			add_province_manpower = 2
+			add_base_manpower = 2
 		}
 	}
 }

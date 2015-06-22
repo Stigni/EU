@@ -22,8 +22,8 @@ country_event = {
 	
 	option = {
 		name = republics.1.a
-		add_republican_tradition = -0.2
-		add_stability = 1
+		add_republican_tradition = -0.25
+		add_prestige = 10
 	}
 	option = {
 		name = republics.1.b
@@ -160,9 +160,9 @@ country_event = {
 	
 	option = {
 		name = republics.4.a
-		add_adm_power = -50
-		add_dip_power = -50
-		add_mil_power = -50
+		add_adm_power = -40
+		add_dip_power = -40
+		add_mil_power = -40
 		add_republican_tradition = 0.05
 	}
 
@@ -537,7 +537,7 @@ country_event = {
 	
 	option = {
 		name = republics.13.a
-		add_prestige = -33
+		add_prestige = -10
 	}
 }
 
@@ -1248,11 +1248,11 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			num_of_revolts = 1
+			num_of_rebel_controlled_provinces = 1
 		}
 		modifier = {
 			factor = 0.9
-			num_of_revolts = 2
+			num_of_rebel_controlled_provinces = 2
 		}
 		modifier = {
 			factor = 1.1
@@ -2678,7 +2678,7 @@ country_event = {
 		random = {
 			chance = 40
 			random_owned_province = {
-				limit = { is_core = yes }
+				limit = { is_core = owner }
 				create_revolt = 1
 			}
 		}

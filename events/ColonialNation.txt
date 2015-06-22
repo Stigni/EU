@@ -928,6 +928,16 @@ country_event = {
 
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = spa_new_colonial_reforms_subject
+			remove_country_modifier = jesuits_expelled
+			remove_country_modifier = valladolid_las_casas
+			remove_country_modifier = valladolid_sepulveda
+			remove_country_modifier = laws_of_the_burgos
+		}
+	}
+	
 	option = {
 		name = "colonial_nation.EVTOPTA90"	# Administrative Monarchy
 		ai_chance = {
@@ -1028,7 +1038,7 @@ country_event = {
 	}
 	option = {
 		name = "colonial_nation.EVTOPTB91"	# Show leniency
-		add_prestige = -25
+		add_prestige = -10
 		FROM = {
 			tooltip = {
 				change_government = colonial_government

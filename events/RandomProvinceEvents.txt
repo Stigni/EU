@@ -310,7 +310,7 @@ province_event = {
 			mil_tech = 8
 			treasury = 100
 		}
-		has_building = fort1
+		fort_level = 1
 		NOT = { has_province_modifier = improved_fortifications }
 	}
 
@@ -367,10 +367,6 @@ province_event = {
 	mean_time_to_happen = {
 		months = 5000 # Random Province Event
 		
-		modifier = {
-			factor = 0.5
-			owner = { university = 1 }
-		}
 		modifier = {
 			factor = 0.5
 			owner = { luck = yes }
@@ -451,25 +447,22 @@ province_event = {
 
 	is_mtth_scaled_to_size = 1
 
+	immediate = {
+		set_province_flag = new_land
+	}
+
 	option = {
 		name = "EVTOPTA5073"		# Increase tax income.
-		ai_chance = { factor = 60 }
 		add_base_tax = 1
-		set_province_flag = new_land
+		
+	}
+	option = {
+		name = "EVTOPT5073_new"		# Increase production
+		add_base_production = 1
 	}
 	option = {
 		name = "EVTOPTB5073"		# Increase manpower.
-		ai_chance = { factor = 30 }
-		add_province_manpower = 1
-		set_province_flag = new_land		
-	}
-	option = {
-		name = "EVTOPTC5073"		# Increase both for a small additional cost.
-		ai_chance = { factor = 10 }				
-		add_base_tax = 1
-		add_province_manpower = 1
-		owner = { add_treasury = -30 }
-		set_province_flag = new_land
+		add_base_manpower = 1
 	}
 }
 
@@ -586,9 +579,19 @@ province_event = {
 				religion = shamanism
 				religion = totemism
 			}
-			any_neighbor_country = {
-				religion = buddhism
-				has_opinion = { who = ROOT value = 100 }
+			OR = {
+				any_neighbor_country = {
+					religion = mahayana
+					has_opinion = { who = ROOT value = 100 }
+				}
+				any_neighbor_country = {
+					religion = buddhism #Theravada
+					has_opinion = { who = ROOT value = 100 }
+				}
+				any_neighbor_country = {
+					religion = vajrayana
+					has_opinion = { who = ROOT value = 100 }
+				}
 			}
 		}
 	}
@@ -611,9 +614,43 @@ province_event = {
 	}
 
 	option = {
-		name = "EVTOPTA6016"		# Convert to Buddhism
+		name = "EVTOPTA6016"		# Convert to Vajrayana
+		trigger = {
+			owner = {
+				any_neighbor_country = {
+					religion = vajrayana
+					has_opinion = { who = ROOT value = 100 }
+				}
+			}
+		}
+		ai_chance = { factor = 30 }
+		change_religion = vajrayana
+	}
+	option = {
+		name = "EVTOPTC6016"		# Convert to Theravada
+		trigger = {
+			owner = {
+				any_neighbor_country = {
+					religion = buddhism
+					has_opinion = { who = ROOT value = 100 }
+				}
+			}
+		}
 		ai_chance = { factor = 30 }
 		change_religion = buddhism
+	}
+	option = {
+		name = "EVTOPTD6016"		# Convert to Mahayana
+		trigger = {
+			owner = {
+				any_neighbor_country = {
+					religion = vajrayana
+					has_opinion = { who = ROOT value = 100 }
+				}
+			}
+		}
+		ai_chance = { factor = 30 }
+		change_religion = mahayana
 	}
 	option = {
 		name = "EVTOPTB6016"		# Honor the beliefs of our ancestors
@@ -891,7 +928,7 @@ province_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
-		owner = { NOT = { num_of_revolts = 3 } }
+		owner = { NOT = { num_of_rebel_controlled_provinces = 3 } }
 		owner = { overextension_percentage = 1.01 }
 		owner = { war_exhaustion = 6 }
 		NOT = { controlled_by = REB }

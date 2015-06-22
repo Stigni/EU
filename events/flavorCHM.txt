@@ -1,7 +1,7 @@
 ########################################
 # Events for Chimu
 #
-# written by Sara Wendel-Ã–rtqvist
+# written by Sara Wendel-Örtqvist
 ####################################
 
 namespace = flavor_chm
@@ -34,7 +34,7 @@ country_event = {
 	}
 }
 
-# Reforming the Hierarchy of ChimÃº
+# Reforming the Hierarchy of Chimú
 country_event = {
 	id = flavor_chm.2
 	title = flavor_chm.2.t

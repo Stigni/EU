@@ -1403,7 +1403,7 @@ country_event = {
 	
 	trigger = {
 		had_country_flag = { flag = pol_zebrzydowski_rebellion_flag days = 1000 }
-		NOT = { num_of_revolts = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
 	}
 	
 	mean_time_to_happen = {
@@ -1536,7 +1536,7 @@ country_event = {
 					religion = catholic
 					NOT = { province_id = 260 }
 				}
-			set_province_flag = reading_lublin_bible
+			set_province_flag = reading_brest_bible
 			}
 			random_owned_province = {
 				limit = {
@@ -1546,7 +1546,7 @@ country_event = {
 					NOT = { province_id = 260 }
 					NOT = { has_province_flag = reading_brest_bible }
 				}
-			set_province_flag = reading_lublin_bible
+			set_province_flag = reading_brest_bible
 			}
 		}
 	}
@@ -1556,13 +1556,19 @@ country_event = {
 		add_papal_influence = 10
 		260 = {
 			change_religion = reformed
-			add_unrest = 10
+			add_province_modifier = {
+				name = add_unrest_10_modifier
+				duration = 1825
+			}
 		}
 		every_owned_province = {
 			limit = {
 				has_province_flag = reading_brest_bible
 			}
-			add_unrest = 10
+			add_province_modifier = {
+				name = add_unrest_10_modifier
+				duration = 1825
+			}
 		}
 	}
 	

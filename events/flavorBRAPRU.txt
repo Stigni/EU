@@ -373,7 +373,6 @@ country_event = {
 			}
 		}
 		is_year = 1540
-		any_owned_province = { has_building = university }
 	}
 	
 	mean_time_to_happen = {

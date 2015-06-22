@@ -90,7 +90,7 @@ country_event = {
 		}		
 		modifier = {
 			factor = 0.5
-			num_of_revolts = 1
+			num_of_rebel_controlled_provinces = 1
 		}
 		modifier = {
 			factor = 2.0

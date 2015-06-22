@@ -79,7 +79,7 @@ country_event = {
 				modifier = bav_reconcile_habsburg
 			}
 		}
-		add_prestige = -100
+		add_prestige = -25
 	}		
 }
 

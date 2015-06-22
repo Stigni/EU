@@ -168,12 +168,10 @@ country_event = {
 	title = "flavor_eng.EVTNAME9104"
 	desc = "flavor_eng.EVTDESC9104"
 	picture = DIPLOMACY_eventPicture
-
-	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9104 }
 		NOT = { is_year = 1500 }
+		NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
 		OR = {
 			AND = {
 				tag = ENG
@@ -184,19 +182,32 @@ country_event = {
 		primary_culture = english
 		NOT = {
 			french_region = {
-				NOT = { province_id = 87 }
 				owned_by = ROOT
 			}
 		}
 		FRA = {
 			exists = yes
+			NOT = { is_subject_of = ENG }
+			NOT = { is_subject_of = GBR }
 			NOT = { war_with = ENG }
 			NOT = { war_with = GBR }
 		}
 	}
-
+	
 	immediate = {
-		set_country_flag = ENG_had_event_9104
+		hidden_effect = {
+			set_global_flag = eng_had_end_of_hundred_years_war
+			if = {
+				limit = {
+					FRA = { NOT = { has_country_flag = had_end_of_HYW_france } }
+				}
+				FRA = { country_event = { id = flavor_fra.9104 } }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
 	}
 	
 	option = {			# We have lost our foothold in France
@@ -208,7 +219,7 @@ country_event = {
 				region = french_region
 				NOT = { owned_by = ROOT }
 			}
-			remove_core = ENG
+			remove_core = ROOT
 		}
 		FRA = {
 			add_opinion = {
@@ -248,6 +259,9 @@ country_event = {
 			}
 			tag = GBR
 		}
+		any_owned_province = {
+			num_free_building_slots = 1
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -270,6 +284,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				NOT = { has_building = courthouse }
+				num_free_building_slots = 1
 			}
 			add_building = courthouse
 		}
@@ -2334,814 +2349,47 @@ country_event = {
 	}
 }
 
-
-
-########################################
-# English Civil War
-########################################
-
-# The English Civil War
-country_event = {
-	id = flavor_eng.9225
-	title = "flavor_eng.EVTNAME9225"
-	desc = "flavor_eng.EVTDESC9225"
-	picture = CIVIL_WAR_eventPicture
-
-	major = yes
-	
-	trigger = {
-		NOT = { has_country_flag = english_civil_war_ended }
-		NOT = { has_country_flag = english_civil_war }
-		NOT = { has_country_flag = ENG_had_event_9225 }
-		is_year = 1600
-		NOT = { is_year = 1700 }
-		OR = {
-			AND = {
-				tag = ENG
-				NOT = { exists = GBR }
-			}
-			tag = GBR
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 2000
-		modifier = {
-			factor = 0.75
-			has_country_flag = ENG_had_event_9107	# Star Chamber
-		}
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9225
-		set_country_flag = english_civil_war
-	}
-	
-	option = {			# Parliamentarians
-		name = "flavor_eng.EVTOPTA9225"
-		ai_chance = { factor = 50 }
-		set_country_flag = supports_parliamentarians
-		add_stability = -3
-		if = {
-			limit = { has_heir = yes }
-			hidden_effect = {
-				kill_heir = yes
-			}
-		}
-		change_government = republican_dictatorship
-		define_ruler = {
-			name = "Oliver"
-			dynasty = Cromwell
-		}
-		add_manpower = -0.25
-		random_owned_province = {
-			limit = {
-				region = great_britain_region
-				NOT = { units_in_province = 1 }
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 6
-			}
-		}
-	}
-	option = {			# Royalists
-		name = "flavor_eng.EVTOPTB9225"
-		ai_chance = { factor = 50 }
-		set_country_flag = supports_royalists
-		add_stability = -3
-		add_manpower = -0.25
-		random_owned_province = {
-			limit = {
-				region = great_britain_region
-				NOT = { units_in_province = 1 }
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 6
-				leader = "Oliver Cromwell"
-			}
-		}
-	}
-}
-
-# Self-denying Ordinance and New Model Army
-country_event = {
-	id = flavor_eng.9226
-	title = "flavor_eng.EVTNAME9226"
-	desc = "flavor_eng.EVTDESC9226"
-	picture = MILITARY_CAMP_eventPicture
-
-	trigger = {
-		has_country_flag = english_civil_war
-		NOT = { has_country_flag = ENG_had_event_9226 }
-		OR = {
-			AND = {
-				tag = ENG
-				NOT = { exists = GBR }
-			}
-			tag = GBR
-		}
-		has_country_flag = supports_parliamentarians
-	}
-	
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9226
-	}
-	
-	option = {			# Pass the Ordinance and reform the army
-		name = "flavor_eng.EVTOPTA9226"
-		ai_chance = { factor = 90 }
-		add_country_modifier = {
-			name = new_model_army
-			duration = 3650
-		}
-	}
-	option = {			# It is not needed
-		name = "flavor_eng.EVTOPTB9226"
-		ai_chance = { factor = 10 }
-		add_manpower = 2
-	}
-}
-
-# New Model Army
-country_event = {
-	id = flavor_eng.9227
-	title = "flavor_eng.EVTNAME9227"
-	desc = "flavor_eng.EVTDESC9227"
-	picture = MILITARY_CAMP_eventPicture
-
-	trigger = {
-		has_country_flag = english_civil_war
-		NOT = { has_country_flag = ENG_had_event_9227 }
-		OR = {
-			AND = {
-				tag = ENG
-				NOT = { exists = GBR }
-			}
-			tag = GBR
-		}
-		has_country_flag = supports_royalists
-	}
-	
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9227
-	}
-	
-	option = {			# Pass the Ordinance and reform the army
-		name = "flavor_eng.EVTOPTA9227"
-		ai_chance = { factor = 90 }
-		add_country_modifier = {
-			name = new_model_army
-			duration = 7300
-		}
-	}
-	option = {			# It is not needed
-		name = "flavor_eng.EVTOPTB9227"
-		ai_chance = { factor = 10 }
-		add_manpower = 2
-	}
-}
-
-# Treaty with the Scots
-country_event = {
-	id = flavor_eng.9228
-	title = "flavor_eng.EVTNAME9228"
-	desc = "flavor_eng.EVTDESC9228"
+# The Rise of the Tudors
+country_event = { 
+	id = flavor_eng.9237
+	title = flavor_eng.9237.t
+	desc = flavor_eng.9237.d
 	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+ 
+	mean_time_to_happen = {
+		months = 1
+	}
 
 	trigger = {
-		has_country_flag = english_civil_war
-		NOT = { has_country_flag = ENG_had_event_9228 }
-		OR = {
-			AND = {
-				tag = ENG
-				NOT = { exists = GBR }
-			}
-			tag = GBR
-		}
-		has_country_flag = supports_parliamentarians
-		religion = catholic
-		NOT = { exists = SCO }
-		OR = {
-			any_owned_province = {
-				region = highlands
-				religion = catholic
-			}
-			any_owned_province = {
-				region = lowlands
-				religion = catholic
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 12
+		has_country_flag = had_war_of_the_roses
 	}
 
-	immediate = {
-		set_country_flag = ENG_had_event_9228
-	}
-	
-	option = {			# Give in to their demands
-		name = "flavor_eng.EVTOPTA9228"
-		ai_chance = { factor = 50 }
-		if = {
-			limit = {
-				any_owned_province = {
-					region = highlands
-					religion = catholic
-				}
-			}
-			every_owned_province = {
-				limit = {
-					region = highlands
-					religion = catholic
-				}
-				change_religion = protestant
-			}
-		}
-		if = {
-			limit = {
-				any_owned_province = {
-					region = lowlands
-					religion = catholic
-				}
-			}
-			every_owned_province = {
-				limit = {
-					region = lowlands
-					religion = catholic
-				}
-				change_religion = protestant
-			}
-		}
-	}
-	option = {			# Who are they to demand anything!
-		name = "flavor_eng.EVTOPTB9228"
-		ai_chance = { factor = 50 }
+	option = {
+	name = flavor_eng.9237.a  # There will never be reconciliation between our two houses
+		ai_chance = { factor = 0 }
 		every_owned_province = {
-			limit = {
-				OR = {
-					region = highlands
-					region = lowlands
-				}
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 1
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
 			}
 		}
-	}
-}
-
-# Treaty with the Scots
-country_event = {
-	id = flavor_eng.9229
-	title = "flavor_eng.EVTNAME9229"
-	desc = "flavor_eng.EVTDESC9229"
-	picture = ANGRY_MOB_eventPicture
-
-	trigger = {
-		has_country_flag = english_civil_war
-		NOT = { has_country_flag = ENG_had_event_9229 }
-		OR = {
-			AND = {
-				tag = ENG
-				NOT = { exists = GBR }
-			}
-			tag = GBR
-		}
-		has_country_flag = supports_royalists
-		religion = catholic
-		NOT = { exists = SCO }
-		OR = {
-			any_owned_province = {
-				region = highlands
-				religion = catholic
-			}
-			any_owned_province = {
-				region = lowlands
-				religion = catholic
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 12
+		add_prestige = 10
 	}
 
-	immediate = {
-		set_country_flag = ENG_had_event_9229
-	}
-	
-	option = {			# Give in to their demands
-		name = "flavor_eng.EVTOPTA9229"
-		ai_chance = { factor = 50 }
-		if = {
-			limit = {
-				any_owned_province = {
-					region = highlands
-					religion = catholic
-				}
-			}
-			every_owned_province = {
-				limit = {
-					region = highlands
-					religion = catholic
-				}
-				change_religion = protestant
-			}
+	option = {
+		name = flavor_eng.9237.b  # It is time for peace, let us join our two houses together in marriage 
+		ai_chance = { factor = 100 }
+		add_stability = 1
+		define_heir = {
+			claim = 100
+			name = "Henry"
+			dynasty = "Tudor"
+			adm = 3
+			dip = 4
+			mil = 2
+			age = 28
 		}
-		if = {
-			limit = {
-				any_owned_province = {
-					region = lowlands
-					religion = catholic
-				}
-			}
-			every_owned_province = {
-				limit = {
-					region = lowlands
-					religion = catholic
-				}
-				change_religion = protestant
-			}
-		}
-	}
-
-	option = {			# Who are they to demand anything!
-		name = "flavor_eng.EVTOPTB9229"
-		ai_chance = { factor = 50 }
-		every_owned_province = {
-			limit = {
-				OR = {
-					region = highlands
-					region = lowlands
-				}
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 1
-			}
-		}
-	}
-}
-
-# The Rebellion in Wales
-country_event = {
-	id = flavor_eng.9230
-	title = "flavor_eng.EVTNAME9230"
-	desc = "flavor_eng.EVTDESC9230"
-	picture = ANGRY_MOB_eventPicture
-
-	trigger = {
-		has_country_flag = english_civil_war
-		NOT = { has_country_flag = ENG_had_event_9230 }
-		OR = {
-			AND = {
-				tag = ENG
-				NOT = { exists = GBR }
-			}
-			tag = GBR
-		}
-		has_country_flag = supports_parliamentarians
-		any_owned_province = {
-			region = welsh_region
-			unrest = 1
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 24
-		modifier = {
-			factor = 0.75
-			any_owned_province = {
-				region = welsh_region
-				unrest = 3
-			}
-		}
-		modifier = {
-			factor = 0.75
-			any_owned_province = {
-				region = welsh_region
-				unrest = 5
-			}
-		}
-		modifier = {
-			factor = 0.75
-			any_owned_province = {
-				region = welsh_region
-				unrest = 7
-			}
-		}
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9230
-	}
-	
-	option = {			# Pay them
-		name = "flavor_eng.EVTOPTA9230"
-		ai_chance = { factor = 50 }
-		add_years_of_income = -0.25
-	}
-	option = {			# Let them revolt
-		name = "flavor_eng.EVTOPTB9230"
-		ai_chance = { factor = 50 }
-		every_owned_province = {
-			limit = {
-				region = welsh_region
-				unrest = 1
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 2
-			}
-		}
-	}
-}
-
-# The Rebellion in Wales
-country_event = {
-	id = flavor_eng.9231
-	title = "flavor_eng.EVTNAME9231"
-	desc = "flavor_eng.EVTDESC9231"
-	picture = ANGRY_MOB_eventPicture
-
-	trigger = {
-		has_country_flag = english_civil_war
-		NOT = { has_country_flag = ENG_had_event_9231 }
-		OR = {
-			AND = {
-				tag = ENG
-				NOT = { exists = GBR }
-			}
-			tag = GBR
-		}
-		has_country_flag = supports_royalists
-		any_owned_province = {
-			region = welsh_region
-			unrest = 1
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 24
-		modifier = {
-			factor = 0.75
-			any_owned_province = {
-				region = welsh_region
-				unrest = 3
-			}
-		}
-		modifier = {
-			factor = 0.75
-			any_owned_province = {
-				region = welsh_region
-				unrest = 5
-			}
-		}
-		modifier = {
-			factor = 0.75
-			any_owned_province = {
-				region = welsh_region
-				unrest = 7
-			}
-		}
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9231
-	}
-	
-	option = {			# Pay them
-		name = "flavor_eng.EVTOPTA9231"
-		ai_chance = { factor = 50 }
-		add_years_of_income = -0.25
-	}
-	option = {			# Let them revolt
-		name = "flavor_eng.EVTOPTB9231"
-		ai_chance = { factor = 50 }
-		every_owned_province = {
-			limit = {
-				region = welsh_region
-				unrest = 1
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 2
-			}
-		}
-	}
-}
-
-# The Rebellion in Ireland
-country_event = {
-	id = flavor_eng.9232
-	title = "flavor_eng.EVTNAME9232"
-	desc = "flavor_eng.EVTDESC9232"
-	picture = ANGRY_MOB_eventPicture
-
-	trigger = {
-		has_country_flag = english_civil_war
-		NOT = { has_country_flag = ENG_had_event_9232 }
-		OR = {
-			AND = {
-				tag = ENG
-				NOT = { exists = GBR }
-			}
-			tag = GBR
-		}
-		has_country_flag = supports_parliamentarians
-		any_owned_province = {
-			region = irish_region
-			unrest = 1
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 24
-		modifier = {
-			factor = 0.75
-			any_owned_province = {
-				region = irish_region
-				unrest = 3
-			}
-		}
-		modifier = {
-			factor = 0.75
-			any_owned_province = {
-				region = irish_region
-				unrest = 5
-			}
-		}
-		modifier = {
-			factor = 0.75
-			any_owned_province = {
-				region = irish_region
-				unrest = 7
-			}
-		}
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9232
-	}
-	
-	option = {			# Pay them
-		name = "flavor_eng.EVTOPTA9232"
-		ai_chance = { factor = 50 }
-		add_years_of_income = -0.25
-	}
-	option = {			# Let them revolt
-		name = "flavor_eng.EVTOPTB9232"
-		ai_chance = { factor = 50 }
-		every_owned_province = {
-			limit = {
-				region = irish_region
-				unrest = 1
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 2
-			}
-		}
-	}
-}
-
-# The Rebellion in Ireland
-country_event = {
-	id = flavor_eng.9233
-	title = "flavor_eng.EVTNAME9233"
-	desc = "flavor_eng.EVTDESC9233"
-	picture = ANGRY_MOB_eventPicture
-
-	trigger = {
-		has_country_flag = english_civil_war
-		NOT = { has_country_flag = ENG_had_event_9233 }
-		OR = {
-			AND = {
-				tag = ENG
-				NOT = { exists = GBR }
-			}
-			tag = GBR
-		}
-		has_country_flag = supports_royalists
-		any_owned_province = {
-			region = irish_region
-			unrest = 1
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 24
-		modifier = {
-			factor = 0.75
-			any_owned_province = {
-				region = irish_region
-				unrest = 3
-			}
-		}
-		modifier = {
-			factor = 0.75
-			any_owned_province = {
-				region = irish_region
-				unrest = 5
-			}
-		}
-		modifier = {
-			factor = 0.75
-			any_owned_province = {
-				region = irish_region
-				unrest = 7
-			}
-		}
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9233
-	}
-	
-	option = {			# Pay them
-		name = "flavor_eng.EVTOPTA9233"
-		ai_chance = { factor = 50 }
-		add_years_of_income = -0.25
-	}
-	option = {			# Let them revolt
-		name = "flavor_eng.EVTOPTB9233"
-		ai_chance = { factor = 50 }
-		every_owned_province = {
-			limit = {
-				region = irish_region
-				unrest = 1
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 2
-			}
-		}
-	}
-}
-
-# Pride's Purge
-country_event = {
-	id = flavor_eng.9234
-	title = "flavor_eng.EVTNAME9234"
-	desc = "flavor_eng.EVTDESC9234"
-	picture = BATTLE_eventPicture
-
-	trigger = {
-		has_country_flag = english_civil_war
-		NOT = { has_country_flag = ENG_had_event_9234 }
-		OR = {
-			AND = {
-				tag = ENG
-				NOT = { exists = GBR }
-			}
-			tag = GBR
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 24
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9234
-	}
-	
-	option = {			# Execute those not loyal
-		name = "flavor_eng.EVTOPTA9234"
-		ai_chance = { factor = 75 }
-		random_owned_province = {
-			limit = {
-				region = great_britain_region
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 3
-			}
-		}
-	}
-	option = {			# Pardon them
-		name = "flavor_eng.EVTOPTB9234"
-		ai_chance = { factor = 25 }
-		add_prestige = 25
-		random_owned_province = {
-			limit = {
-				region = great_britain_region
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 1
-			}
-		}
-	}
-}
-
-# End of the English Civil War
-country_event = {
-	id = flavor_eng.9235
-	title = "flavor_eng.EVTNAME9235"
-	desc = "flavor_eng.EVTDESC9235"
-	picture = CIVIL_WAR_eventPicture
-
-	major = yes
-	
-	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9235 }
-		had_country_flag = { flag = english_civil_war days = 365 }
-		NOT = { num_of_revolts = 1 }
-		stability = 1
-		has_country_flag = supports_parliamentarians
-	}
-	
-	mean_time_to_happen = {
-		months = 12
-		modifier = {
-			factor = 0.75
-			stability = 2
-		}
-		modifier = {
-			factor = 0.75
-			stability = 3
-		}
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9235
-
-		# Clear Flags
-		clr_country_flag = english_civil_war
-		clr_country_flag = supports_parliamentarians
-
-		# Set Flag
-		set_country_flag = english_civil_war_ended
-	}
-		
-	option = {			# Order has finally been restored
-		name = "flavor_eng.EVTOPTA9235"
-		add_prestige = 50
-		add_stability = 2
-	}
-}
-
-# End of the English Civil War
-country_event = {
-	id = flavor_eng.9236
-	title = "flavor_eng.EVTNAME9236"
-	desc = "flavor_eng.EVTDESC9236"
-	picture = CIVIL_WAR_eventPicture
-
-	major = yes
-	
-	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9236 }
-		had_country_flag = { flag = english_civil_war days = 365 }
-		NOT = { num_of_revolts = 1 }
-		stability = 1
-		has_country_flag = supports_royalists
-	}
-	
-	mean_time_to_happen = {
-		months = 12
-		modifier = {
-			factor = 0.75
-			stability = 2
-		}
-		modifier = {
-			factor = 0.75
-			stability = 3
-		}
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9236
-		
-		# Clear Flags
-		clr_country_flag = english_civil_war
-		clr_country_flag = supports_royalists
-
-		# Set Flag
-		set_country_flag = english_civil_war_ended
-	}
-	
-	option = {			# Order has finally been restored
-		name = "flavor_eng.EVTOPTA9236"
-		add_prestige = 50
-		add_stability = 2
 	}
 }

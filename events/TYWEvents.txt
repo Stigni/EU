@@ -1022,7 +1022,7 @@ province_event = {
 	option = {
 		name = "tyw_events.25.a"
 		spawn_rebels = {
-			type = patriot_rebels
+			type = nationalist_rebels
 			size = 2
 		}
 	}
@@ -1193,7 +1193,7 @@ country_event = {
 	}
 }
 
-# √ç√±igo V√©lez de Guevara
+# ÕÒigo VÈlez de Guevara
 country_event = {
 	id = tyw_events.30
 	title = "tyw_events.30.t"
@@ -2028,8 +2028,18 @@ country_event = {
 		any_known_country = {
 			offensive_war_with = ROOT
 		}
+		any_owned_province = {
+			is_capital = no
+			OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+			}
+		}
 		NOT = {
 			any_owned_province = {
+				fort_level = 1
 				OR = {
 					has_province_modifier = improved_fortifications
 					NOT = { controlled_by = ROOT }
@@ -2049,6 +2059,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					fort_level = 1
 					any_neighbor_province = {
 						owned_by = ROOT
 						is_capital = yes
@@ -2058,6 +2069,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					fort_level = 1
 					any_neighbor_province = {
 						owned_by = ROOT
 						is_capital = yes
@@ -2068,6 +2080,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					fort_level = 1
 					any_neighbor_province = {
 						NOT = { owned_by = ROOT }
 					}
@@ -2077,6 +2090,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					fort_level = 1
 					any_neighbor_province = {
 						NOT = { owned_by = ROOT }
 					}
@@ -2087,6 +2101,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
+					fort_level = 1
 					any_neighbor_province = {
 						NOT = { owned_by = ROOT }
 					}

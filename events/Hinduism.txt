@@ -74,7 +74,7 @@ country_event = {
 # Shaiva paths: Faces of Shiva
 ##################################################
 
-# Sadyojāta (Shiva the Creator)
+# Sadyojata (Shiva the Creator)
 country_event = {
 	id = hindu_events.2
 	title = "hindu_events.2.t"
@@ -110,7 +110,7 @@ country_event = {
 	}
 }
 
-# Sadyojāta Jnana (Srishti)
+# Sadyojata Jnana (Srishti)
 country_event = {
 	id = hindu_events.3
 	title = "hindu_events.3.t"
@@ -135,7 +135,7 @@ country_event = {
 	}
 }
 
-# Vāmadeva (Shiva the Preserver)
+# Vamadeva (Shiva the Preserver)
 country_event = {
 	id = hindu_events.4
 	title = "hindu_events.4.t"
@@ -181,7 +181,7 @@ country_event = {
 	}
 }
 
-# Vāmadeva Jnana (Sthiti)
+# Vamadeva Jnana (Sthiti)
 country_event = {
 	id = hindu_events.5
 	title = "hindu_events.5.t"
@@ -270,7 +270,7 @@ country_event = {
 	}
 }
 
-# Tatpuruṣa (Shiva Concealed)
+# Tatpuru?a (Shiva Concealed)
 country_event = {
 	id = hindu_events.8
 	title = "hindu_events.8.t"
@@ -306,7 +306,7 @@ country_event = {
 	}
 }
 
-# Tatpuruṣa Jnana (Tirodhana)
+# Tatpuru?a Jnana (Tirodhana)
 country_event = {
 	id = hindu_events.9
 	title = "hindu_events.9.t"
@@ -331,7 +331,7 @@ country_event = {
 	}
 }
 
-# Īśāna (Shiva Releaved)
+# Isana (Shiva Releaved)
 country_event = {
 	id = hindu_events.10
 	title = "hindu_events.10.t"
@@ -383,7 +383,7 @@ country_event = {
 	}
 }
 
-# Īśāna Jnana (Anugraha)
+# Isana Jnana (Anugraha)
 country_event = {
 	id = hindu_events.11
 	title = "hindu_events.11.t"
