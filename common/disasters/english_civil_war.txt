@@ -1,0 +1,94 @@
+english_civil_war = {
+	potential = {
+		is_year = 1600
+		NOT = { is_year = 1700 }
+		OR = {
+			AND = {
+				tag = ENG
+				NOT = { exists = GBR }
+			}
+			tag = GBR
+		}
+		NOT = { has_country_flag = eng_civil_war_happened }
+		government = english_monarchy
+		is_subject = no
+		is_lesser_in_union = no
+	}
+
+	
+	
+	can_start = {
+		has_any_disaster = no
+		OR = {
+			NOT = { stability = 1 }
+			current_size_of_parliament = 15 #Strong Parliament can start, not calling it progresses disaster
+		}
+	}
+	
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			NOT = { government = english_monarchy }
+		}
+	}
+	
+	
+	
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 50 }
+		} 
+		modifier = {
+			factor = 1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1
+			has_active_debate = no
+		}
+		modifier = {
+			factor = 1
+			current_debate = support_ruling_dynasty
+		}
+		modifier = {
+			factor = 1
+			war_exhaustion = 5
+		} 
+	}
+	
+	modifier = {
+		global_unrest = 10
+	}	
+	
+	can_end = {
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = { average_unrest = 1 }
+		stability = 1
+	}
+
+	
+	on_start = english_civil_war.1
+	on_end = english_civil_war.100
+	
+	on_monthly = {
+		events = {
+			
+		}
+		
+		random_events = {
+			1000 = 0
+			100 = english_civil_war.2 # Self-denying Ordinance and New Model Army
+			100 = english_civil_war.3 # New Model Army
+			100 = english_civil_war.4 # Treaty with the Scots
+			100 = english_civil_war.5 # Treaty with the Scots
+			100 = english_civil_war.6 # The Rebellion in Wales
+			100 = english_civil_war.7 # The Rebellion in Wales
+			100 = english_civil_war.8 # The Rebellion in Ireland
+			100 = english_civil_war.9 # The Rebellion in Ireland
+			100 = english_civil_war.10 # Pride's Purge
+		}
+	}
+}
+

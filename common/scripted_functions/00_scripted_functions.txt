@@ -1,0 +1,17 @@
+# Hard-coded functions made fully or partly scripted
+#
+# Note that most functions use unique mechanics
+
+can_join_hre_league = {
+	condition = {
+		tooltip = "CANNOT_JOIN_LEAGUE_AT_WAR"
+		potential = {
+		}
+		allow = {
+			is_at_war = no
+		}
+	}
+}
+
+can_leave_hre_league = {
+}

@@ -1,0 +1,1519 @@
+# Attitudes the AI can adopt towards another nation
+#
+# Flags
+# antagonize = yes/no - Does the AI consider them a potential target for war
+# annex = yes/no - Does the AI desire complete conquest of them
+# weaken = yes/no - Does the AI want to weaken them by releasing countries, allying/guaranteeing their neighbours, etc
+# coalition = yes/no - Does the AI want a coalition against them
+# vassalize = yes/no - Does the AI want to vassalize them
+# ally = yes/no - Does the AI actively desire an alliance with them
+# befriend = yes/no - Does the AI want to raise relations with them
+# protect = yes/no - Does the AI want to protect them
+# threat = yes/no - Does the AI want to protect themselves against them
+# ignore = yes/no - Does the AI want to actively ignore them
+# warn = yes/no - Does the AI want to send warnings
+#
+# ROOT is us
+# FROM is the target country
+#
+
+# Not a real attitude, only used for graphical display purposes. DO NOT REMOVE!
+attitude_human = {
+	icon = 1
+	
+	chance = {
+		factor = 0
+	}
+}
+
+# Neutral - not really interested in diplomacy/war
+attitude_neutral = {
+	icon = 2
+	
+	default = yes
+
+	antagonize = no
+	annex = no
+	weaken = no
+	coalition = no
+	warn = no
+	vassalize = no
+	ally = no
+	befriend = no
+	protect = no
+	threat = no
+	ignore = yes
+
+	chance = {
+		factor = 50
+		modifier = {
+			factor = 0
+			OR = {
+				overlord_of = from
+				is_subject_of = from			
+			}	
+		}	
+		modifier = {
+			factor = 0
+			alliance_with = FROM
+		}
+		modifier = {
+			factor = 0
+			is_rival = FROM
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { government = daimyo }
+			is_subject = yes
+			FROM = { is_subject = yes }
+			overlord = {
+				overlord_of = from
+			}
+			liberty_desire = 50
+		}		
+		modifier = {
+			factor = 0.5
+			OR = {
+				threat = {
+					who = FROM
+					value = 100
+				}	
+				befriend = {
+					who = FROM
+					value = 100
+				}	
+				antagonize = {
+					who = FROM
+					value = 100
+				}	
+				vassalize = {
+					who = FROM
+					value = 100
+				}	
+				protect = {
+					who = FROM
+					value = 100
+				}					
+			}
+		}			
+		modifier = {
+			factor = 0.5
+			OR = {
+				threat = {
+					who = FROM
+					value = 200
+				}
+				befriend = {
+					who = FROM
+					value = 200
+				}	
+				antagonize = {
+					who = FROM
+					value = 200
+				}	
+				vassalize = {
+					who = FROM
+					value = 200
+				}	
+				protect = {
+					who = FROM
+					value = 200
+				}					
+			}
+		}	
+		modifier = {
+			factor = 0
+			is_league_enemy = from
+		}			
+	}
+}
+
+# Hostile - desires conquest
+attitude_hostile = {
+	icon = 3
+
+	antagonize = yes
+	annex = yes
+	weaken = no
+	coalition = no
+	warn = yes
+	vassalize = no
+	ally = no
+	befriend = no
+	protect = no
+	threat = no
+	ignore = no
+
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			is_rival = FROM
+		}
+		modifier = {
+			factor = 0
+			NOT = { government = daimyo }
+			is_subject = yes
+			liberty_desire = 50
+		}		
+		modifier = {
+			factor = 0
+			is_subject_of = from
+		}			
+		modifier = {
+			factor = 1.5
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			alliance_with = FROM
+		}			
+		modifier = {
+			factor = 1.5
+			army_strength = {
+				who = FROM
+				value = 2.0
+			}
+		}		
+		modifier = {
+			factor = 1.5
+			army_strength = {
+				who = FROM
+				value = 1.5
+			}
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = {
+				army_strength = {
+					who = FROM
+					value = 0.75
+				}
+			}
+		}	
+		modifier = {
+			factor = 0.5
+			NOT = {
+				army_strength = {
+					who = FROM
+					value = 0.5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				army_strength = {
+					who = FROM
+					value = 0.25
+				}
+			}
+		}		
+		modifier = {
+			factor = 2.0
+			antagonize = {
+				who = FROM
+				value = 400
+			}
+		}		
+		modifier = {
+			factor = 2.0
+			antagonize = {
+				who = FROM
+				value = 300
+			}
+		}		
+		modifier = {
+			factor = 2.0
+			antagonize = {
+				who = FROM
+				value = 200
+			}
+		}			
+		modifier = {
+			factor = 0.5
+			NOT = {
+				antagonize = {
+					who = FROM
+					value = 100
+				}			
+			}
+		}		
+		modifier = {
+			factor = 0
+			NOT = {
+				antagonize = {
+					who = FROM
+					value = 25
+				}			
+			}
+			NOT = { is_league_enemy = from }
+		}
+		modifier = {
+			factor = 0
+			protectorate = {
+				who = FROM
+				value = 100
+			}			
+		}		
+		modifier = {
+			factor = 0
+			vassalize = {
+				who = FROM
+				value = 100
+			}
+		}			
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion = { who = FROM value = -199 }
+			}
+		}		
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion = { who = FROM value = -150 }
+			}
+		}
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion = { who = FROM value = -100 }
+			}
+		}
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion = { who = FROM value = -50 }
+			}
+		}	
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion = { who = FROM value = 0 }
+			}
+		}		
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = FROM value = 50 }
+		}
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = FROM value = 75 }
+		}			
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = FROM value = 100 }
+		}
+		modifier = {
+			factor = 0
+			has_opinion = { who = FROM value = 100 }
+		}			
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = FROM value = 125 }
+		}			
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = FROM value = 150 }
+		}		
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = FROM value = 175 }
+		}			
+		modifier = {
+			factor = 0
+			has_opinion = { who = FROM value = 200 }
+			is_colonial_nation = no
+			NOT = { is_league_enemy = from }
+		}
+		modifier = {
+			factor = 0
+			is_league_friend = from
+		}		
+		modifier = {
+			factor = 100
+			is_league_enemy = from
+		}
+	}
+}
+
+# Rivalry - wants to be stronger
+attitude_rivalry = {
+	icon = 4
+
+	antagonize = yes
+	annex = yes
+	weaken = yes
+	coalition = no
+	warn = no
+	vassalize = no
+	ally = no
+	befriend = no
+	protect = no
+	threat = no
+	ignore = no
+
+	chance = {
+		factor = 10000
+					
+		modifier = {
+			factor = 0
+			NOT = {
+				is_rival = FROM
+			}
+		}	
+	}
+}
+
+# Outraged - wants to prevent expansion
+attitude_outraged = {
+	icon = 5
+
+	antagonize = yes
+	annex = no
+	weaken = yes
+	coalition = yes
+	warn = yes
+	vassalize = no
+	ally = no
+	befriend = no
+	protect = no
+	threat = yes
+	ignore = no
+
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			is_rival = FROM
+		}
+		modifier = {
+			factor = 0
+			NOT = { government = daimyo }
+			is_subject = yes
+			FROM = { is_subject = yes }
+			overlord = {
+				overlord_of = from
+			}
+			liberty_desire = 50
+		}			
+		modifier = {
+			factor = 0
+			OR = {
+				overlord_of = from
+				is_subject_of = from			
+			}
+		}		
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -900
+				}
+			}
+		}			
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -800
+				}
+			}
+		}			
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -700
+				}
+			}
+		}			
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -600
+				}
+			}
+		}			
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -500
+				}
+			}
+		}			
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -400
+				}
+			}
+		}			
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -300
+				}
+			}
+		}			
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -200
+				}
+			}
+		}			
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -100
+				}
+			}
+		}					
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -75
+				}
+			}
+		}											
+		modifier = {
+			factor = 0.5
+			NOT = { coalition_target = FROM }
+			has_opinion_modifier = {
+				modifier = aggressive_expansion
+				who = FROM
+				value = -50
+			}
+		}			
+		modifier = {
+			factor = 0.25
+			NOT = { coalition_target = FROM }
+			has_opinion_modifier = {
+				modifier = aggressive_expansion
+				who = FROM
+				value = -40
+			}
+		}			
+		modifier = {
+			factor = 0
+			NOT = { coalition_target = FROM }
+			has_opinion_modifier = {
+				modifier = aggressive_expansion
+				who = FROM
+				value = -30
+			}
+		}				
+		modifier = {
+			factor = 0
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+				}
+			}
+		}		
+		modifier = {
+			factor = 2.0
+			threat = {
+				who = FROM
+				value = 400
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			threat = {
+				who = FROM
+				value = 300
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			threat = {
+				who = FROM
+				value = 200
+			}			
+		}			
+		modifier = {
+			factor = 0.5
+			NOT = {
+				threat = {
+					who = FROM
+					value = 100
+				}			
+			}
+		}				
+		modifier = {
+			factor = 1.25
+			NOT = {
+				has_opinion = { who = FROM value = -199 }
+			}
+		}		
+		modifier = {
+			factor = 1.25
+			NOT = {
+				has_opinion = { who = FROM value = -150 }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			NOT = {
+				has_opinion = { who = FROM value = -100 }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			NOT = {
+				has_opinion = { who = FROM value = -50 }
+			}
+		}	
+		modifier = {
+			factor = 0
+			NOT = { coalition_target = FROM }
+			has_opinion = { who = FROM value = 0 }
+		}
+		modifier = {
+			factor = 0
+			has_opinion = { who = FROM value = 50 }
+		}		
+		modifier = {
+			factor = 1.5
+			is_neighbor_of = FROM
+		}	
+		modifier = {
+			factor = 0
+			is_league_friend = from
+		}		
+		modifier = {
+			factor = 100
+			is_league_enemy = from
+		}			
+	}
+}
+
+# Cordial - wants good relations
+attitude_cordial = {
+	icon = 6
+
+	antagonize = no
+	annex = no
+	weaken = no
+	coalition = no
+	warn = no
+	vassalize = no
+	ally = no
+	befriend = yes
+	protect = no
+	threat = no
+	ignore = no
+
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			is_rival = FROM
+		}
+		modifier = {
+			factor = 0
+			NOT = { government = daimyo }
+			is_subject = yes
+			FROM = { is_subject = yes }
+			overlord = {
+				overlord_of = from
+			}
+			liberty_desire = 50
+		}		
+		modifier = {
+			factor = 0
+			OR = {
+				overlord_of = from
+				is_subject_of = from			
+			}
+		}		
+		modifier = {
+			factor = 1.5
+			personality = ai_diplomat
+		}			
+		modifier = {
+			factor = 0
+			NOT = { alliance_with = FROM }
+		}
+		modifier = {
+			factor = 0
+			befriend = {
+				who = FROM
+				value = 100
+			}
+		}			
+		modifier = {
+			factor = 0
+			befriend = {
+				who = FROM
+				value = 100
+			}
+		}		
+		modifier = {
+			factor = 0
+			antagonize = {
+				who = FROM
+				value = 200
+			}			
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_opinion = {
+					who = FROM
+					value = -25
+				}	
+			}
+		}	
+		modifier = {
+			factor = 100
+			is_league_friend = from
+		}		
+		modifier = {
+			factor = 0
+			is_league_enemy = from
+		}		
+	}
+}
+
+# Friendly - wants an alliance
+attitude_friendly = {
+	icon = 7
+	
+	antagonize = no
+	annex = no
+	weaken = no
+	coalition = no
+	warn = no
+	vassalize = no
+	ally = yes
+	befriend = yes
+	protect = no
+	threat = no
+	ignore = no
+
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			is_rival = FROM
+		}
+		modifier = {
+			factor = 1000
+			NOT = { government = daimyo }
+			is_subject = yes
+			FROM = { is_subject = yes }
+			overlord = {
+				overlord_of = from
+			}
+			liberty_desire = 50
+		}	
+		modifier = {
+			factor = 1000
+			is_subject = yes
+			overlord = {
+				is_enemy = FROM
+			}
+			liberty_desire = 50
+		}		
+		modifier = {
+			factor = 0
+			OR = {
+				overlord_of = from
+				is_subject_of = from			
+			}	
+		}			
+		modifier = {
+			factor = 1.25
+			trust = {
+				who = FROM
+				value = 50
+			}
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { 
+				trust = {
+					who = FROM
+					value = 0
+				}			
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { 
+				trust = {
+					who = FROM
+					value = -25
+				}			
+			}
+		}		
+		modifier = {
+			factor = 1.5
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 1.5
+			alliance_with = FROM
+		}		
+		modifier = {
+			factor = 2.0
+			befriend = {
+				who = FROM
+				value = 400
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			befriend = {
+				who = FROM
+				value = 300
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			befriend = {
+				who = FROM
+				value = 200
+			}			
+		}			
+		modifier = {
+			factor = 0.5
+			NOT = {
+				befriend = {
+					who = FROM
+					value = 100
+				}			
+			}
+		}		
+		modifier = {
+			factor = 0
+			NOT = {
+				befriend = {
+					who = FROM
+					value = 25
+				}			
+			}
+			OR = {
+				is_subject = no
+				NOT = { liberty_desire = 50	}
+			}			
+		}		
+		modifier = {
+			factor = 0
+			antagonize = {
+				who = FROM
+				value = 200
+			}
+			OR = {
+				is_subject = no
+				NOT = { liberty_desire = 50	}
+			}
+		}		
+		modifier = {
+			factor = 0
+			NOT = {
+				has_opinion = {
+					who = FROM
+					value = -25
+				}	
+			}		
+		}	
+		modifier = {
+			factor = 100
+			is_league_friend = from
+		}		
+		modifier = {
+			factor = 0
+			is_league_enemy = from
+		}		
+	}
+}
+
+# Protective - wants to defend
+attitude_protective = {
+	icon = 8
+
+	antagonize = no
+	annex = no
+	weaken = no
+	coalition = no
+	warn = no
+	vassalize = yes
+	ally = yes
+	befriend = yes
+	protect = yes
+	threat = no
+	ignore = no
+
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			is_rival = FROM
+		}
+		modifier = {
+			factor = 0
+			NOT = { government = daimyo }
+			is_subject = yes
+			FROM = { is_subject = yes }
+			overlord = {
+				overlord_of = from
+			}
+			liberty_desire = 50
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				overlord_of = from
+				is_subject_of = from			
+			}
+		}		
+		modifier = {
+			factor = 1.5
+			personality = ai_diplomat
+		}	
+		modifier = {
+			factor = 2.0
+			protect = {
+				who = FROM
+				value = 400
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			protect = {
+				who = FROM
+				value = 300
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			protect = {
+				who = FROM
+				value = 200
+			}			
+		}			
+		modifier = {
+			factor = 2.0
+			protect = {
+				who = FROM
+				value = 100
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			vassalize = {
+				who = FROM
+				value = 400
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			vassalize = {
+				who = FROM
+				value = 300
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			vassalize = {
+				who = FROM
+				value = 200
+			}			
+		}			
+		modifier = {
+			factor = 2.0
+			vassalize = {
+				who = FROM
+				value = 100
+			}			
+		}
+		modifier = {
+			factor = 2.0
+			protectorate = {
+				who = FROM
+				value = 400
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			protectorate = {
+				who = FROM
+				value = 300
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			protectorate = {
+				who = FROM
+				value = 200
+			}			
+		}			
+		modifier = {
+			factor = 2.0
+			protectorate = {
+				who = FROM
+				value = 100
+			}			
+		}		
+		modifier = {
+			factor = 0
+			NOT = {
+				vassalize = {
+					who = FROM
+					value = 25
+				}	
+				protectorate = {
+					who = FROM
+					value = 25
+				}				
+			}
+		}
+		modifier = {
+			factor = 0
+			antagonize = {
+				who = FROM
+				value = 50
+			}	
+		}	
+		modifier = {
+			factor = 100
+			is_league_friend = from
+		}		
+		modifier = {
+			factor = 0
+			is_league_enemy = from
+		}			
+	}
+}
+
+# Vassal - is vassal of
+attitude_vassal = {
+	icon = 9
+
+	antagonize = no
+	annex = no
+	weaken = no
+	coalition = no
+	warn = no
+	vassalize = no
+	ally = yes
+	befriend = yes
+	protect = no
+	threat = no
+	ignore = no
+
+	chance = {
+		factor = 10000	
+		modifier = {
+			factor = 0
+			NOT = { is_subject_of = from }
+		}
+		modifier = {
+			factor = 0
+			liberty_desire = 50
+		}						
+	}
+}
+
+# Overlord - is overlord of
+attitude_overlord = {
+	icon = 10
+
+	antagonize = no
+	annex = no
+	weaken = no
+	coalition = no
+	warn = no
+	vassalize = yes
+	ally = yes
+	befriend = yes
+	protect = yes
+	threat = no
+	ignore = no
+
+	chance = {
+		factor = 10000
+		modifier = {
+			factor = 0
+			is_rival = FROM
+		}	
+		modifier = {
+			factor = 0
+			NOT = { overlord_of = from }
+		}		
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { num_of_cities = from }
+				NOT = { has_opinion = { who = FROM value = -99 } }
+			}
+			from = {
+				government = daimyo
+			}
+		}			
+	}
+}
+
+# Dominating - wants to forcefully vassalize
+attitude_dominating = {
+	icon = 11
+
+	antagonize = yes
+	annex = no
+	weaken = no
+	coalition = no
+	warn = yes
+	vassalize = yes
+	ally = no
+	befriend = no
+	protect = no
+	threat = no
+	ignore = no
+
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			is_rival = FROM
+		}
+		modifier = {
+			factor = 0
+			NOT = { government = daimyo }
+			is_subject = yes
+			FROM = { is_subject = yes }
+			overlord = {
+				overlord_of = from
+			}
+			liberty_desire = 50
+		}			
+		modifier = {
+			factor = 0
+			OR = {
+				overlord_of = from
+				is_subject_of = from			
+			}
+		}		
+		modifier = {
+			factor = 1.5
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 2.0
+			protectorate = {
+				who = FROM
+				value = 400
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			protectorate = {
+				who = FROM
+				value = 300
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			protectorate = {
+				who = FROM
+				value = 200
+			}			
+		}			
+		modifier = {
+			factor = 2.0
+			protectorate = {
+				who = FROM
+				value = 100
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			vassalize = {
+				who = FROM
+				value = 400
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			vassalize = {
+				who = FROM
+				value = 300
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			vassalize = {
+				who = FROM
+				value = 200
+			}			
+		}			
+		modifier = {
+			factor = 2.0
+			vassalize = {
+				who = FROM
+				value = 100
+			}			
+		}			
+		modifier = {
+			factor = 0
+			NOT = {
+				antagonize = {
+					who = FROM
+					value = 50
+				}	
+			}
+			NOT = { is_league_enemy = from }
+		}		
+		modifier = {
+			factor = 0
+			NOT = {
+				vassalize = {
+					who = FROM
+					value = 25
+				}	
+				protectorate = {
+					who = FROM
+					value = 25
+				}					
+			}
+		}
+		modifier = {
+			factor = 0
+			is_league_friend = from
+		}		
+		modifier = {
+			factor = 100
+			is_league_enemy = from
+		}		
+	}
+}
+
+# Threatened - wants to remain safe from
+attitude_threatened = {
+	icon = 12
+
+	antagonize = no
+	annex = no
+	weaken = yes
+	coalition = no
+	warn = no
+	vassalize = no
+	ally = yes
+	befriend = yes
+	protect = no
+	threat = yes
+	ignore = no
+
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0
+			is_rival = FROM
+		}
+		modifier = {
+			factor = 0
+			NOT = { government = daimyo }
+			is_subject = yes
+			FROM = { is_subject = yes }
+			overlord = {
+				overlord_of = from
+			}
+			liberty_desire = 50
+		}			
+		modifier = {
+			factor = 0
+			OR = {
+				overlord_of = from
+				is_subject_of = from			
+			}	
+		}		
+		modifier = {
+			factor = 1.5
+			personality = ai_capitalist
+		}		
+		modifier = {
+			factor = 0.5
+			OR = {
+				army_strength = {
+					who = FROM
+					value = 0.33
+				}
+				military_strength = {
+					who = FROM
+					value = 0.66
+				}		
+			}
+		}		
+		modifier = {
+			factor = 1.25
+			NOT = {
+				army_strength = {
+					who = FROM
+					value = 0.25
+				}
+				military_strength = {
+					who = FROM
+					value = 0.5
+				}			
+			}
+		}	
+		modifier = {
+			factor = 0
+			OR = {
+				army_strength = {
+					who = FROM
+					value = 0.5
+				}
+				military_strength = {
+					who = FROM
+					value = 1.0
+				}		
+			}
+		}					
+		modifier = {
+			factor = 2.0
+			threat = {
+				who = FROM
+				value = 400
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			threat = {
+				who = FROM
+				value = 300
+			}			
+		}		
+		modifier = {
+			factor = 2.0
+			threat = {
+				who = FROM
+				value = 200
+			}			
+		}			
+		modifier = {
+			factor = 0.5
+			NOT = {
+				threat = {
+					who = FROM
+					value = 100
+				}			
+			}
+		}		
+		modifier = {
+			factor = 0
+			NOT = {
+				threat = {
+					who = FROM
+					value = 25
+				}			
+			}
+		}
+		modifier = {
+			factor = 0.5
+			coalition_target = FROM
+		}
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion = { who = FROM value = -199 }
+			}
+		}		
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion = { who = FROM value = -150 }
+			}
+		}
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion = { who = FROM value = -100 }
+			}
+		}
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion = { who = FROM value = -50 }
+			}
+		}	
+		modifier = {
+			factor = 2.0
+			NOT = {
+				has_opinion = { who = FROM value = 0 }
+			}
+		}		
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = FROM value = 50 }
+		}	
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = FROM value = 100 }
+		}
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = FROM value = 150 }
+		}
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = FROM value = 200 }
+		}			
+		modifier = {
+			factor = 0.25
+			has_opinion_modifier = {
+				modifier = aggressive_expansion
+				who = FROM	
+			}
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -100
+				}
+			}
+		}					
+		modifier = {
+			factor = 0.25
+			has_opinion_modifier = {
+				modifier = aggressive_expansion
+				who = FROM	
+			}
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -75
+				}
+			}
+		}											
+		modifier = {
+			factor = 0.5
+			has_opinion_modifier = {
+				modifier = aggressive_expansion
+				who = FROM	
+			}
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -50
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_opinion_modifier = {
+				modifier = aggressive_expansion
+				who = FROM	
+			}
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -25
+				}
+			}
+		}	
+		modifier = {
+			factor = 0
+			is_league_friend = from
+		}		
+		modifier = {
+			factor = 0
+			is_league_enemy = from
+		}		
+	}
+}
+
+attitude_disloyal_vassal = {
+	icon = 13
+
+	antagonize = no
+	annex = no
+	weaken = yes
+	coalition = no
+	warn = no
+	vassalize = no
+	ally = no
+	befriend = no
+	protect = no
+	threat = no
+	ignore = no
+
+	chance = {
+		factor = 10000	
+		modifier = {
+			factor = 0
+			NOT = { is_subject_of = from }
+		}
+		modifier = {
+			factor = 0			
+			NOT = { liberty_desire = 50 }
+		}			
+		modifier = {
+			factor = 0
+			liberty_desire = 100
+		}							
+	}
+}
+
+attitude_rebellious_vassal = {
+	icon = 14
+
+	antagonize = yes
+	annex = yes
+	weaken = no
+	coalition = no
+	warn = no
+	vassalize = yes
+	ally = no
+	befriend = no
+	protect = no
+	threat = yes
+	ignore = no
+
+	chance = {
+		factor = 10000
+		modifier = {
+			factor = 0
+			NOT = { is_subject_of = from }
+		}		
+		modifier = {
+			factor = 0
+			NOT = { liberty_desire = 100 }
+		}		
+	}
+}

@@ -1,0 +1,25 @@
+charter_trade_companies = {
+	
+	category = 2
+	
+	allow = {
+		OR = {
+			dip_tech = 10
+			has_idea_group = trade_ideas
+		}
+	}
+	
+	effect = {
+
+	}
+	
+	modifier = {
+		merchants = 1
+		trade_range_modifier = 0.2
+		global_foreign_trade_power = 0.05
+	}
+
+	ai_will_do = {
+		factor = 1	
+	}	
+}

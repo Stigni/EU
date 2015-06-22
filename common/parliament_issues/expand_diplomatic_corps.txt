@@ -1,0 +1,21 @@
+expand_diplomatic_corps = {
+
+	category = 3
+
+	allow = {
+		always = yes
+	}
+	
+	effect = {
+		
+	}
+	
+	modifier = {
+		diplomats = 1
+		spy_offence = 0.2
+	}
+
+	ai_will_do = {
+		factor = 1	
+	}	 
+}

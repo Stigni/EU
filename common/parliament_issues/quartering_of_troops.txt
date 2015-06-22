@@ -1,0 +1,21 @@
+quartering_of_troops = {
+
+	category = 1
+
+	allow = {
+		always = yes
+	}
+	
+	effect = {
+		
+	}
+	
+	modifier = {
+		land_attrition = -0.05
+		land_maintenance_modifier = -0.10
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}

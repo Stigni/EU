@@ -1,0 +1,14 @@
+#	Example:
+# 
+#	example_effect = {
+#		treasury = 100
+#		add_adm_power = 50
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#

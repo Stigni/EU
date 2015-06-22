@@ -1,0 +1,24 @@
+election_reform = {
+
+	category = 3
+
+	allow = {
+		government = republic
+	}
+	
+	effect = {
+		add_republican_tradition = 0.1
+	}
+	
+	modifier = {
+		republican_tradition = 0.005
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			NOT = { republican_tradition = 0.6 }
+		}		
+	}	
+}

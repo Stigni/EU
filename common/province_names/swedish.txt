@@ -1,0 +1,11 @@
+6 = "Skåne"
+10 = "Jämtland"
+12 = "Själland"
+15 = "Mittjylland"
+16 = "Bohuslän"
+33 = "Nöteborg"
+37 = "Livland"
+
+956 = "Nya Götheborg"
+957 = "Fort Kristina"
+962 = "Nya Elfsborg"

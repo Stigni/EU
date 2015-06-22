@@ -1,0 +1,20 @@
+colonial_taxation = {
+
+	category = 2
+
+	allow = {
+		num_of_colonial_subjects = 1
+	}
+	
+	effect = {
+		#
+	}
+	
+	modifier = {
+		global_tariffs = 0.25
+	}
+
+	ai_will_do = {
+		factor = 1
+	}	
+}

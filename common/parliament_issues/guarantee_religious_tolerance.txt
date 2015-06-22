@@ -1,0 +1,40 @@
+guarantee_religious_tolerance = {
+
+	category = 3
+
+	allow = {
+		any_owned_province = {
+			has_owner_religion = no
+		}
+		NOT = { has_idea_group = religious_ideas }
+	}
+	
+	effect = {
+		random_owned_province = {
+			limit = {
+				has_owner_religion = no
+			}
+			add_province_modifier = {
+				name = "provincial_religious_migration"
+				duration = 3650
+			}
+		}
+	}
+	
+	modifier = {
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+		religious_unity = 0.1
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			num_of_owned_provinces_with = {
+				value = 10
+				has_owner_religion = no
+			}
+		}	
+	}
+}

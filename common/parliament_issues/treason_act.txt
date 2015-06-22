@@ -1,0 +1,21 @@
+treason_act = {
+
+	category = 3
+
+	allow = {
+		always = yes
+	}
+	
+	effect = {
+		
+	}
+	
+	modifier = {
+		global_spy_defence = 0.15
+		global_unrest = -2
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}

@@ -1,0 +1,27 @@
+support_ruling_dynasty = {
+
+	category = 3
+
+	allow = {
+		government = monarchy
+		has_regency = no
+		is_lesser_in_union = no
+	}
+	
+	effect = {
+		add_legitimacy = 10
+		add_heir_claim = 10
+	}
+	
+	modifier = {
+		legitimacy = 1
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			NOT = { legitimacy = 0.7 }
+		}		
+	}	
+}

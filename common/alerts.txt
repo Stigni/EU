@@ -1,0 +1,218 @@
+sound = {
+	HIGH = "new_alert"
+	MEDIUM = "new_alert"
+	LOW = "new_alert"
+}
+
+icon = {
+	HIGH = "GFX_alerticon_banner"
+	MEDIUM = "GFX_alerticon_banner_med"
+	LOW = "GFX_alerticon_banner_low"
+}
+
+# category can be HIGH, MEDIUM, LOW, DISABLED
+
+alerts = {
+	alert_bankrupt = {
+		category = HIGH
+	}
+	
+	alert_unlawful_territory = {
+		category = MEDIUM
+	}
+	
+	alert_low_maintenance = {
+		category = HIGH
+	}
+	
+	alert_idea_slot = {
+		category = MEDIUM
+	}
+	
+	alert_advisor_slot = {
+		category = LOW
+	}
+
+	alert_fervor = {
+		category = LOW
+	}
+	
+	alert_loan_due = {
+		category = MEDIUM
+	}
+	
+	alert_country_at_war = {
+		category = MEDIUM
+	}
+	
+	alert_casus_belli_will_expire = {
+		category = HIGH
+	}
+	
+	alert_truce_will_expire = {
+		category = LOW
+	}
+	
+	alert_diplo_annexing = {
+		category = LOW
+	}
+	
+	alert_build_province_improvement = {
+		category = LOW
+	}
+	
+	alert_troops_in_foreign_territory = {
+		category = MEDIUM
+	}
+	
+	alert_rebel_faction_uprising = {
+		category = HIGH
+	}
+	
+	alert_national_decisions = {
+		category = LOW
+	}
+	
+	alert_disputed_succession = {
+		category = LOW
+	}
+	
+	alert_claim_defender_of_the_faith = {
+		category = LOW
+	}
+	
+	alert_superior_unit_type = {
+		category = MEDIUM
+	}
+	
+	alert_blockade = {
+		category = MEDIUM
+	}
+	
+	alert_no_major_mission = {
+		category = LOW
+	}
+	
+	alert_invest_in_tech = {
+		category = MEDIUM
+	}
+	
+	alert_max_loans = {
+		category = HIGH
+	}
+	
+	alert_no_mercs = {
+		category = LOW
+	}
+	
+	alert_idea_group_slot = {
+		category = MEDIUM
+	}
+	
+	alert_reinforcing_units = {
+		category = MEDIUM
+	}
+	
+	alert_rebels_enforce_demands = {
+		category = HIGH
+	}
+	
+	alert_uncontested_claims = {
+		category = LOW
+	}
+	
+	alert_high_overextension = {
+		category = HIGH
+	}
+	
+	alert_high_war_exhaustion = {
+		category = MEDIUM
+	}
+	
+	alert_free_leader_available = {
+		category = LOW
+	}	
+	
+	alert_call_to_peace = {
+		category = HIGH
+	}	
+	
+	alert_can_vote_for_cardinal = {
+		category = LOW
+	}
+	
+	alert_can_convert_province = {
+		category = MEDIUM
+	}
+	
+	alert_over_diplomatic_relations = {
+		category = LOW
+	}
+	
+	alert_can_westernize = {
+		category = MEDIUM
+	}
+	
+	alert_can_migrate = {
+		category = MEDIUM
+	}
+	
+	alert_native_advancement = {
+		category = MEDIUM
+	}
+	
+	alert_federation_drop = {
+		category = MEDIUM
+	}
+	
+	alert_high_liberty_desire = {
+		category = HIGH
+	}
+	
+	alert_too_few_rivals = {
+		category = HIGH
+	}
+	
+	alert_risk_of_union = {
+		category = HIGH
+	}
+	
+	alert_foreign_heir = {
+		category = MEDIUM
+	}
+	
+	alert_no_deity = {
+		category = LOW
+	}
+	
+	alert_high_unrest = {
+		category = MEDIUM
+	}
+	alert_incoming_disaster = {
+		category = HIGH
+	}	
+
+	alert_costly_trade_embargoes = {
+		category = MEDIUM
+	}
+
+	alert_can_upgrade_government = {
+		category = MEDIUM
+	}
+	
+	alert_religious_reform = {
+		category = MEDIUM
+	}
+	
+	alert_lack_of_parliament_debate = {
+		category = LOW
+	}
+	
+	alert_too_few_seats_of_parliament = {
+		category = LOW
+	}
+	
+	alert_mothballed_forts = {
+		category = MEDIUM
+	}
+}

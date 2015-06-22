@@ -1,0 +1,21 @@
+imports_exports = {
+#Restrict imports and support exports
+
+	category = 2
+
+	allow = {
+		always = yes
+	}
+	
+	effect = {
+		add_mercantilism = 0.02
+	}
+	
+	modifier = {
+		global_own_trade_power = 0.05
+	}
+
+	ai_will_do = {
+		factor = 1	
+	}	
+}

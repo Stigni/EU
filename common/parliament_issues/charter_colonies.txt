@@ -1,0 +1,24 @@
+charter_colonies = {
+
+	category = 2
+
+	allow = {
+		OR = {
+			full_idea_group = expansion_ideas
+			full_idea_group = exploration_ideas
+		}
+	}
+	
+	effect = {
+		#
+	}
+	
+	modifier = {
+		colonists = 1
+		global_colonial_growth = 20
+	}
+
+	ai_will_do = {
+		factor = 1
+	}	
+}

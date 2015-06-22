@@ -1,0 +1,19 @@
+fund_expansion_of_bureaucracy = {
+
+	category = 3
+
+	allow = {
+		always = yes
+	}
+	
+	effect = {
+	}
+	
+	modifier = {
+		advisor_cost = -0.1
+	}
+
+	ai_will_do = {
+		factor = 1	
+	}	
+}

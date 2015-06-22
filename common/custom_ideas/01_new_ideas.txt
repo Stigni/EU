@@ -1,0 +1,12 @@
+# cost = CFixedPoint( base_cost + ( level * level * level_cost ) ).GetTruncated()
+# DEFAULT: base_cost = 0, level_cost = 0.4, max_level = 4
+
+new_idea_adm_modifiers = {
+	category = ADM	
+	custom_idea_years_of_nationalism = {
+		years_of_nationalism = -5
+		max_level = 2
+		level_cost_1 = 5
+		level_cost_2 = 30
+	}
+}

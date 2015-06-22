@@ -1,0 +1,14 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = SWE
+#		ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
