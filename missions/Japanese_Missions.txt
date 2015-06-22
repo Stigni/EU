@@ -1,0 +1,398 @@
+convert_ezochi_to_shintoism = {
+	
+	type = country
+
+	category = ADM
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = JAP
+		religion = shinto
+		1031 = {
+			owned_by = ROOT
+			NOT = { religion = shinto }
+		}
+		1847 = {
+			owned_by = ROOT
+			NOT = { religion = shinto }
+		}
+		1852 = {
+			owned_by = ROOT
+			NOT = { religion = shinto }
+		}
+		num_of_missionaries = 1
+		NOT = { has_country_modifier = force_converted_province_mission }
+	}
+	abort = {
+		OR = {
+			NOT = { religion = shinto }
+			NOT = { owns 1031 }
+			NOT = { owns 1847 }
+			NOT = { owns 1852 }
+		}
+	}
+	success = {
+		1031 = { religion = shinto }
+		1847 = { religion = shinto }
+		1852 = { religion = shinto }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			dip = 4
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "force_converted_province_mission"
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_southern_korea = {
+
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = JAP
+		exists = KOR
+		is_subject = no
+		num_of_ports = 1
+		NOT = { alliance_with = KOR }
+		NOT = { has_country_modifier = military_victory }
+		KOR = {	
+			NOT = { num_of_cities = ROOT }
+			is_subject = no
+			owns = 737		# Jeolla
+			owns = 736		# Sangju
+			owns = 2745		# Gyeongju
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 737		# Jeolla
+		owns = 736		# Sangju
+		owns = 2745		# Gyeongju
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = KOR value = 0 } }
+		}
+	}
+	immediate = {
+		add_claim = 736
+		add_claim = 737
+		add_claim = 2745
+	}
+	abort_effect = {
+		remove_claim = 736
+		remove_claim = 737
+		remove_claim = 2745
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+
+colonize_the_northern_islands = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = JAP
+		1032 = { is_empty = yes }
+		num_of_colonists = 1
+		num_of_ports = 1
+		NOT = { has_country_modifier = colonial_enthusiasm }
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { owns = 1032 }
+				1032 = { is_empty = no }
+			}
+		}
+	}
+	success = {
+		owns = 1032
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+monopolize_japanese_cot = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = JAP
+		NOT = {
+			1376 = {		# South Korean Sea
+				is_strongest_trade_power = JAP
+			}
+		}
+		NOT = { has_country_flag = monopolize_japanese_cot }
+	}
+	abort = {
+	}
+	success = {
+		1376 = {		# South Korean Sea
+			is_strongest_trade_power = JAP
+		}	
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			has_idea = national_trade_policy
+		}	
+	}
+	effect = {
+		add_treasury = 40
+		add_dip_power = 40
+		set_country_flag = monopolize_japanese_cot
+	}
+}
+
+
+establish_footholding_in_manchuria = {
+
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = JAP
+		government = feudal_monarchy
+		exists = MCH
+		is_subject = no
+		MCH = {
+			is_subject = no
+		}
+		NOT = { manchuria = { owned_by = JAP } }
+		manchuria = {
+			has_port = yes
+			owned_by = MCH
+		}
+		NOT = { has_country_modifier = military_victory }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = {
+				manchuria = {
+					has_port = yes
+					owned_by = MCH
+				}
+			}
+		}
+	}
+	success = {
+		manchuria = { owned_by = JAP }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = MCH value = 0 } }
+		}
+	}
+	immediate = {
+		manchuria = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		manchuria = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_okinawa = {
+
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = JAP
+		is_subject = no
+		is_at_war = no
+		num_of_ports = 5
+		NOT = { alliance_with = RYU }
+		RYU = {
+			is_subject = no
+		}
+		1015 = {
+			owned_by = RYU
+		}
+		NOT = { has_country_modifier = military_victory }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { num_of_ports = 5 }
+		}
+	}
+	success = {
+		owns = 1015
+	}
+	chance = {
+		factor = 1000
+	}
+	immediate = {
+		add_claim = 1015
+	}
+	abort_effect = {
+		remove_claim = 1015
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+
+jap_colonize_taiwan = {
+
+	type = country
+	
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = JAP
+		government = feudal_monarchy
+		is_subject = no
+		is_at_war = no
+		num_of_cities = 8
+		num_of_ports = 1
+		num_of_colonists = 1
+		taiwan = {
+			has_discovered = ROOT
+			is_empty = yes
+		}
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		NOT = { has_country_flag = colony_in_taiwan }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		taiwan = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			dip = 4
+		}
+	}
+	effect = {
+		set_country_flag = colony_in_taiwan
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+recover_manga = {
+
+	type = country
+	
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = JAP
+		is_subject = no
+		is_at_war = no
+		num_of_cities = 20
+		num_of_ports = 1
+		africa = {
+			owned_by = ROOT
+		}
+		NOT = { owns = 2284 }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		owns = 2284
+	}
+	immediate = {
+		add_claim = 2284
+	}
+	abort_effect = {
+		remove_claim = 2284
+	}	
+	chance = {
+		factor = 10000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+	effect = {
+		add_prestige = 10
+		add_legitimacy = 10
+	}
+}

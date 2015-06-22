@@ -1,0 +1,179 @@
+defend_the_american_colonies = {
+	
+	type = country
+	
+	category = MIL
+
+	allow = {
+		normal_or_historical_nations = yes
+		tag = USA
+		is_subject = no
+		the_thirteen_colonies = {
+			owned_by = USA
+		}
+		the_thirteen_colonies = {
+			owned_by = GBR
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { war_with = GBR }
+		the_thirteen_colonies = {
+			type = all
+			owned_by = USA
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			ENG = { NOT = { mil = 2 } }
+		}
+	}
+	effect = {
+		add_army_tradition = 50
+		add_stability = 2
+	}
+}
+
+
+conquer_florida = {
+	
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+
+	target_provinces = {
+		OR = {
+			province_id = 923
+			province_id = 926
+			province_id = 927
+			province_id = 928
+			province_id = 2533
+			province_id = 2534
+			province_id = 2535
+			province_id = 2536
+		}
+		NOT = { owned_by = ROOT }
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = USA
+		is_subject = no
+		NOT = { has_country_modifier = military_victory }
+		OR = {
+			923 = {
+				NOT = { owned_by = ROOT }
+				any_neighbor_province = { owned_by = ROOT }
+			}
+			926 = {
+				NOT = { owned_by = ROOT }
+				any_neighbor_province = { owned_by = ROOT }
+			}
+			927 = {
+				NOT = { owned_by = ROOT }
+				any_neighbor_province = { owned_by = ROOT }
+			}
+			928 = {
+				NOT = { owned_by = ROOT }
+				any_neighbor_province = { owned_by = ROOT }
+			}
+			2533 = {
+				NOT = { owned_by = ROOT }
+				any_neighbor_province = { owned_by = ROOT }
+			}
+			2534 = {
+				NOT = { owned_by = ROOT }
+				any_neighbor_province = { owned_by = ROOT }
+			}
+			2535 = {
+				NOT = { owned_by = ROOT }
+				any_neighbor_province = { owned_by = ROOT }
+			}
+			2536 = {
+				NOT = { owned_by = ROOT }
+				any_neighbor_province = { owned_by = ROOT }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+
+reach_the_mississippi = {
+	
+	type = country
+	
+	category = ADM
+	ai_mission = yes
+
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_modifier = military_victory }
+		tag = USA
+		is_subject = no
+		the_mississippi_region = {
+			any_neighbor_province = { owned_by = ROOT }
+		}
+		NOT = { the_mississippi_region = { owned_by = ROOT } }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { the_mississippi_region = { any_neighbor_province = { owned_by = ROOT } } }
+		}
+	}
+	success = {
+		the_mississippi_region = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}

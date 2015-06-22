@@ -1,0 +1,297 @@
+conquer_hainaut = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = HAI
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = BUR
+		is_subject = no
+		exists = HAI
+		HAI = {
+			is_subject = no
+		}
+		NOT = { alliance_with = HAI }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { exists = HAI }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = HAI value = 0 } }
+		}	
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		every_target_province = {
+			add_province_modifier = {
+				name = "faster_integration"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+conquer_brabant = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = BRB
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = BUR
+		is_subject = no
+		BRB = {
+			is_subject = no
+		}
+		exists = BRB
+		NOT = { alliance_with = BRB }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { exists = BRB }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = BRB value = 0 } }
+		}	
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		every_target_province = {
+			add_province_modifier = {
+				name = "faster_integration"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+conquer_luxemburg = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = LUX
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = BUR
+		is_subject = no
+		exists = LUX
+		LUX = {
+			is_subject = no
+		}
+		NOT = { alliance_with = LUX }
+		NOT = { has_country_modifier = military_victory }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { exists = LUX }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = LUX value = 0 } }
+		}	
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_liege = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = LIE
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = BUR
+		is_subject = no
+		LIE = {
+			is_subject = no
+		}
+		exists = LIE
+		NOT = { alliance_with = LIE }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { exists = LIE }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = LIE value = 0 } }
+		}	
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		every_target_province = {
+			add_province_modifier = {
+				name = "faster_integration"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+vassalize_lorraine = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = BUR
+		exists = LOR
+		is_subject = no
+		NOT = { has_country_modifier = military_vassalization }
+		LOR = {
+			is_subject = no
+			is_neighbor_of = ROOT
+			NOT = { alliance_with = ROOT }
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = LOR }
+			LOR = { is_subject = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = LOR
+				}
+			}
+		}
+	}
+	success = {
+		LOR = { vassal_of = BUR }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = LOR value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = LOR
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = LOR
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_vassalization
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = LOR
+			}
+		}
+	}
+}

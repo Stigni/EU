@@ -1,0 +1,47 @@
+defend_bohemia_against_hungary = {
+	
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = BOH
+		exists = HUN
+		is_subject = no
+		is_neighbor_of = HUN
+		bohemian_region = {
+			owned_by = HUN
+		}
+		HUN = {
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = HUN }
+		}
+	}
+	success = {
+		NOT = { war_with = HUN }
+		NOT = { bohemian_region = { owned_by = HUN } }
+	}
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			HUN = { NOT = { mil = 2 } }
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "fought_back_the_hungarians"
+			duration = 3650
+		}
+	}
+}

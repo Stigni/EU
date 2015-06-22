@@ -1,0 +1,56 @@
+vij_reconquest_of_pulicat = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		province_id = 539
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = VIJ
+		NOT = { has_country_modifier = military_victory }
+		is_subject = no
+		is_core = 539
+		NOT = { alliance_with = ORI }
+		ORI = {
+			owns = 539
+			is_neighbor_of = ROOT
+			NOT = { is_subject_of = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = ORI }
+			any_target_province = {
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = ORI }
+			}
+		}
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = ORI value = 0 } }
+		}
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}

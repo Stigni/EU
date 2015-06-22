@@ -1,0 +1,184 @@
+vassalize_transylvania_hun = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = HUN
+		exists = TRA
+		NOT = { has_country_modifier = military_vassalization }
+		is_subject = no
+		TRA = {
+			is_subject = no
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = TRA }
+			TRA = { is_subject = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = TRA
+				}
+			}
+		}
+	}
+	success = {
+		TRA = { vassal_of = HUN }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = TRA value = 100 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = TRA value = 200 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = TRA
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = TRA
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_vassalization
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = TRA
+			}
+		}
+	}
+}
+
+conquer_the_banat = {
+	
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = HUN
+		exists = TUR
+		is_subject = no
+		NOT = { has_country_modifier = drove_back_the_turk }
+		NOT = { has_opinion = { who = TUR value = 0 } }
+		NOT = { alliance_with = TUR }
+		TUR = {
+			is_subject = no
+			owns = 156		# Banat
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 156
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	immediate = {
+		add_claim = 156
+	}
+	abort_effect = {
+		remove_claim = 156
+	}
+	effect = {
+		add_country_modifier = {
+			name = "drove_back_the_turk"
+			duration = 3650
+		}
+	}
+}
+
+retake_croatia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		region = croatian_region
+		owned_by = TUR
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = HUN
+		exists = TUR
+		is_subject = no
+		NOT = { alliance_with = TUR }
+		NOT = { has_country_modifier = drove_back_the_turk }
+		TUR = {
+			is_neighbor_of = ROOT
+		}
+		croatian_region = { owned_by = TUR }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "drove_back_the_turk"
+			duration = 3650
+		}
+	}
+}

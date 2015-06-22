@@ -1,0 +1,345 @@
+force_convert_mission = {
+
+	type = neighbor_countries
+
+	category = MIL
+
+	allow = {
+		ROOT = { 
+			religion = catholic 
+			has_country_modifier = counter_reformation
+			num_of_cities = 15
+			NOT = { has_country_modifier = force_converted_country_mission }
+		}
+		OR = {
+			religion = reformed
+			religion = protestant
+		}
+		NOT = {
+			alliance_with = ROOT
+			has_opinion = { who = ROOT value = 50 }
+			marriage_with = ROOT
+		}
+		NOT = { num_of_cities = ROOT }
+		army_size = ROOT
+	}
+	abort = {
+		OR = {
+			ROOT = { NOT = { religion = catholic } }
+			AND = {
+				NOT = { religion = reformed }
+				NOT = { religion = protestant }
+			}
+		}
+	}
+	success = {
+		religion = ROOT
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.1
+			ROOT = { has_idea_group = religious_ideas }
+		}	
+		modifier = {
+			factor = 1.25
+			is_defender_of_faith = yes
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "force_converted_country_mission"
+			duration = 3650
+		}
+	}
+}
+
+
+convert_province_mission = {
+
+	type = our_provinces
+
+	category = ADM
+
+	allow = {
+		FROM = {
+			is_at_war = no
+			num_of_missionaries = 1
+			NOT = { has_country_flag = converted_province_mission }
+		}
+		NOT =  { religion = FROM }
+		NOT = { has_province_modifier = religious_migration }
+	}
+	abort = {
+		OR = {
+			has_province_modifier = religious_migration
+			NOT = { owned_by = FROM }
+		}
+	}
+	success = {
+		religion = FROM
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.05
+			FROM = { has_idea_group = religious_ideas }
+		}		
+		modifier = {
+			factor = 1.05
+			FROM = {  num_of_missionaries = 2 }
+		}
+		modifier = {
+			factor = 1.05
+			FROM = {  is_defender_of_faith = yes }
+		}				
+	}
+	effect = {
+		owner = {
+			add_country_modifier = {
+				name = "force_converted_province_mission"
+				duration = 3650
+			}
+			set_country_flag = converted_province_mission
+		}
+	}
+}
+
+
+restore_holy_see = {
+
+	type = country
+
+	category = ADM
+
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_modifier = restored_holy_see_mission }
+		religion = catholic
+		monthly_income = 30
+		NOT = { owns = 118 }
+		NOT = { 118 = { owned_by = PAP } }
+		is_excommunicated = no
+		capital_scope = {
+			continent = europe
+		}
+	}
+	immediate = {
+		add_claim = 118
+	}
+	abort = {
+		OR = {
+			118 = { owned_by = PAP }
+			NOT = { religion = catholic }
+		}
+	}
+	abort_effect = {
+		remove_claim = 118
+	}
+	success = {
+		owns = 118
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 1.19
+			is_defender_of_faith = yes
+		}
+		modifier = {
+			factor = 1.10
+			mil = 4
+		}		
+		modifier = {
+			factor = 1.25
+			monthly_income = 100
+		}
+		modifier = {
+			factor = 1.10
+			tag = SPA
+		}		
+		modifier = {
+			factor = 2
+			118 = {	owner = { NOT = { religion = catholic } } }
+		}
+		modifier = {
+			factor = 1.25
+			118 = { any_neighbor_province = { owned_by = ROOT } }
+		}
+	}
+	effect = {
+		118 = { cede_province = PAP }
+		add_country_modifier = {
+			name = "restored_holy_see_mission"
+			duration = 3650
+		}
+		reverse_add_opinion = { who = PAP modifier = opinion_restored_holy_see }
+		hidden_effect = {
+			remove_claim = 118
+		}
+	}
+}
+
+
+solidify_our_papal_relations = {
+
+	type = country
+
+	category = DIP
+
+	allow = {
+		religion = catholic
+		NOT = { has_country_flag = solidified_papal_relations_mission }
+		NOT = { tag = PAP }
+		exists = PAP
+		NOT = { war_with = PAP }
+		is_excommunicated = no
+		is_papal_controller = no
+		PAP = {
+			has_opinion = { who = ROOT value = 0 }
+			NOT = { has_opinion = { who = ROOT value = 50 } }
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { religion = catholic }
+			tag = PAP
+			NOT = { exists = PAP }
+			war_with = PAP
+			is_excommunicated = yes
+		}
+	}
+	success = {
+		PAP = { has_opinion = { who = ROOT value = 100 } }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 1.1
+			is_defender_of_faith = yes
+		}
+		modifier = {
+			factor = 1.05
+			dip = 4
+		}		
+		modifier = {
+			factor = 1.1
+			has_idea_group = religious_ideas
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "solidified_papal_relations_modifier"
+			duration = 3650
+		}
+		set_country_flag = solidified_papal_relations_mission
+	}
+}
+
+control_the_pope = {
+
+	type = country
+
+	category = DIP
+
+	allow = {
+		NOT = { has_ruler_modifier = controlled_the_pope_mission }
+		papacy_active = yes
+		religion = catholic
+		is_excommunicated = no
+		is_papal_controller = no
+		invested_papal_influence = 10
+		num_of_cardinals = 1
+		NOT = { tag = PAP }
+	}
+	abort = {
+		OR = {
+			papacy_active = no
+			NOT = { religion = catholic }
+			is_excommunicated = yes
+			NOT = { num_of_cardinals = 1 }
+		}
+	}
+	success = {
+		is_papal_controller = yes
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 1.5
+			invested_papal_influence = 25
+		}
+		modifier = {
+			factor = 1.5
+			invested_papal_influence = 50
+		}		
+	}
+	effect = {
+		add_ruler_modifier = {
+			name = "controlled_the_pope_mission"
+		}
+	}
+}
+
+achive_religious_unity = {
+
+	type = country
+
+	category = ADM
+
+	allow = {
+		has_factions = no
+		NOT = { religious_unity = 0.8 }
+		NOT = { has_idea_group = humanist_ideas }
+		NOT = { has_idea_group = BAH_ideas }
+		NOT = { has_idea_group = JNP_ideas }
+		NOT = { has_idea_group = MUG_ideas }
+		NOT = { has_idea_group = JAJ_ideas }
+		NOT = { has_idea_group = TUR_ideas }
+		NOT = { has_idea_group = gujarati_ideas }
+		NOT = { has_idea_group = bengali_ideas }
+		NOT = { has_idea_group = indian_muslim_ideas }
+		NOT = { has_country_modifier = achieved_religious_unity_mission }
+	}
+	abort = {
+	}
+	success = {
+		religious_unity = 1
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.1
+			is_defender_of_faith = yes
+		}
+		modifier = {
+			factor = 1.1
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { religious_unity = 0.4 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { religious_unity = 0.5 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { religious_unity = 0.6 }
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { religious_unity = 0.7 }
+		}
+		modifier = {
+			factor = 1.5
+			has_idea = devoutness
+		}	
+	}
+	effect = {
+		add_country_modifier = {
+			name = "achieved_religious_unity_mission"
+			duration = 3650
+		}
+	}
+}

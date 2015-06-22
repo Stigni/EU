@@ -1,0 +1,590 @@
+control_scania = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SWE
+		is_subject = no
+		NOT = { alliance_with = DAN }
+		DAN = { owns = 6 }
+		NOT = { has_country_modifier = baltic_ambition }
+	}
+	abort = {
+		OR = {
+			AND = {
+				DAN = { NOT = { owns = 6 } }
+				NOT = { owns = 6 }
+			}
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 6
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 5
+			is_year = 1658
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "baltic_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+control_halland = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SWE
+		is_subject = no
+		DAN = { owns = 26 }
+		NOT = { alliance_with = DAN }
+	}
+	abort = {
+		OR = {
+			AND = {
+				DAN = { NOT = { owns = 26 } }
+				NOT = { owns = 26 }
+			}
+			is_subject = yes
+		}
+	}
+	success = {
+		owns = 26
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 5
+			is_year = 1645
+		}
+	}
+	effect = {
+		26 = {
+			add_province_modifier = {
+				name = "faster_integration"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+control_estonia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SWE
+		NOT = { has_country_modifier = baltic_ambition }
+		is_subject = no
+		NOT = { owns = 36 }
+		NOT = { owns = 37 }
+		36 = {
+			owner = { NOT = { alliance_with = ROOT } }
+		}
+		1842 = {
+			owner = { NOT = { alliance_with = ROOT } }
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 36
+		owns = 1842
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 5
+			is_year = 1561
+		}
+	}
+	immediate = {
+		add_claim = 36
+		add_claim = 1842
+	}
+	abort_effect = {
+		remove_claim = 36
+		remove_claim = 1842
+	}
+	effect = {
+		add_country_modifier = {
+			name = "baltic_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+control_latvia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SWE
+		NOT = { has_country_modifier = baltic_ambition }
+		is_subject = no
+		owns = 36
+		NOT = { owns = 35 }
+		NOT = { owns = 37 }
+		NOT = { owns = 38 }
+		NOT = { owns = 1834 }
+		35 = {
+			owner = { NOT = { alliance_with = ROOT } }
+		}
+		37 = {
+			owner = { NOT = { alliance_with = ROOT } }
+		}
+		38 = {
+			owner = { NOT = { alliance_with = ROOT } }
+		}
+		1834 = {
+			owner = { NOT = { alliance_with = ROOT } }
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 35
+		owns = 37
+		owns = 38
+		owns = 1834
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+	immediate = {
+		add_claim = 35
+		add_claim = 37
+		add_claim = 38
+		add_claim = 1834
+	}
+	abort_effect = {
+		remove_claim = 35
+		remove_claim = 37
+		remove_claim = 38
+		remove_claim = 1834
+	}
+	effect = {
+		add_country_modifier = {
+			name = "baltic_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+swedish_pommerania = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			province_id = 47
+			province_id = 1858
+			province_id = 2994
+		}
+		NOT = { owner = { alliance_with = ROOT } }
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SWE
+		is_subject = no
+		is_year = 1550
+		owns = 6
+		OR = {
+			47 = {
+				owner = { NOT = { alliance_with = ROOT } }
+				not = { owned_by = ROOT }
+			}
+			1858 = {
+				owner = { NOT = { alliance_with = ROOT } }
+				not = { owned_by = ROOT }
+			}
+			2994 = {
+				owner = { NOT = { alliance_with = ROOT } }
+				not = { owned_by = ROOT }
+			}
+		}
+		NOT = { has_country_modifier = baltic_ambition }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			owns = 36
+		}
+		modifier = {
+			factor = 2
+			owns = 37
+		}
+		modifier = {
+			factor = 2
+			owns = 38
+		}
+		modifier = {
+			factor = 5
+			is_year = 1649
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "baltic_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+control_gotland = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SWE
+		is_subject = no
+		NOT = { owns = 25 }
+		25 = {
+			owner = { NOT = { alliance_with = ROOT } }
+		}
+		NOT = { has_country_modifier = baltic_ambition }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 25
+	}
+	chance = {
+		factor = 1500
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 5
+			is_year = 1645
+		}
+		modifier = {
+			factor = 2
+			GOT = { owns = 25 }
+		}
+	}
+	immediate = {
+		add_claim = 25
+	}
+	abort_effect = {
+		remove_claim = 25
+	}
+	effect = {
+		add_country_modifier = {
+			name = "baltic_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+vassalize_norway_swe = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SWE
+		is_subject = no
+		exists = NOR
+		NOR = {
+			is_neighbor_of = ROOT
+			NOT = { vassal_of = ROOT }
+			NOT = { num_of_cities = ROOT }
+			is_subject = no
+			owns = 17		# Oslo, Akershus
+			NOT = { total_development = 50 }
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { exists = NOR }
+			NOR = { is_subject = yes }
+			is_subject = yes			
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = NOR
+				}
+			}
+		}
+	}
+	success = {
+		NOR = { vassal_of = SWE }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = NOR value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = NOR
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = NOR
+		}
+	}
+	effect = {
+		add_army_tradition = 20
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = NOR
+			}
+		}
+	}
+}
+
+
+annex_norway_swe = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SWE
+		is_subject = no
+		exists = NOR
+		NOR = {
+			religion_group = ROOT
+			vassal_of = ROOT
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			owns = 17		# Oslo, Akershus
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { exists = NOR }
+			NOR = { NOT = { religion_group = ROOT } }
+			is_subject = yes
+		}
+	}
+	success = {
+		NOT = { exists = NOR }
+		owns = 17
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			has_opinion = { who = NOR value = 100 }
+		}
+		modifier = {
+			factor = 2
+			has_opinion = { who = NOR value = 200 }
+		}
+	}
+	immediate = {
+	}
+	abort_effect = {
+	}
+	effect = {
+		add_prestige = 20
+		add_stability = 1
+	}
+}
+
+reconquer_finland = {
+
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	
+	target_provinces = {
+		region = finnish_region
+		OR = {
+			owned_by = RUS
+			owned_by = MOS
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SWE
+		is_subject = no
+		OR = {
+			finnish_region = { owned_by = MOS }
+			finnish_region = { owned_by = RUS }
+		}
+		NOT = { alliance_with = RUS }
+		NOT = { alliance_with = MOS }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_mil_power = 100
+		add_stability = 1
+	}
+}
+
+
+swedish_colony_in_north_america = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = {
+			has_country_modifier = "colonial_enthusiasm"
+		}
+		tag = SWE
+		is_year = 1600
+		northeastern_america = {
+			has_discovered = ROOT
+			is_empty = yes
+		}
+		NOT = {
+			northeastern_america = {
+				owned_by = ROOT
+			}
+		}
+		NOT = {
+			northeastern_america = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		num_of_colonists = 1
+	}
+	abort = {
+		NOT = { northeastern_america = { is_empty = yes } }
+		NOT = { northeastern_america = { owned_by = ROOT } }
+	}
+	success = {
+		northeastern_america = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}

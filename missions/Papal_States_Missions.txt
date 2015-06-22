@@ -1,0 +1,211 @@
+conquer_ferrara = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = PAP
+		is_subject = no
+		113 = {	# Ferrara
+			NOT = { owned_by = ROOT }
+			owner = {
+				is_papal_controller = no
+				NOT = { alliance_with = ROOT }
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			113 = {
+				owner = { is_papal_controller = yes }
+				NOT = { owned_by = ROOT }
+			}
+		}
+	}
+	success = {
+		owns = 113
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	immediate = {
+		add_claim = 113
+	}
+	abort_effect = {
+		remove_claim = 113
+	}
+	effect = {
+		add_province_modifier = {
+			name = "faster_integration"
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_ancona = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = PAP
+		is_subject = no
+		119 = { # Ancona
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = PAP }
+			owner = {
+				is_papal_controller = no
+				NOT = { alliance_with = ROOT }
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			119 = {
+				owner = { is_papal_controller = yes }
+				NOT = { owned_by = ROOT }
+			}
+		}
+	}
+	success = {
+		owns = 119
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	immediate = {
+		add_claim = 119
+	}
+	abort_effect = {
+		remove_claim = 119
+	}
+	effect = {
+		119 = {
+			add_province_modifier = {
+				name = "faster_integration"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+annex_avignon = {
+	
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = PAP
+		is_subject = no
+		AVI = {
+			owns = 202		# Avignon
+			religion_group = ROOT
+			is_papal_controller = no
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			AVI = {
+				OR = {
+					NOT = { religion_group = ROOT }
+					is_papal_controller = yes
+				}
+			}
+		}
+	}
+	success = {
+		owns = 202
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	immediate = {
+		add_claim = 202
+	}
+	abort_effect = {
+		remove_claim = 202
+	}
+	effect = {
+		202 = {
+			add_province_modifier = {
+				name = "faster_integration"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+catholic_italy = {
+
+	type = country
+
+	category = ADM
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = PAP
+		NOT = { has_country_flag = catholic_italy_done }
+		is_subject = no
+		is_at_war = no
+		italian_region = { NOT = { religion = catholic } }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { italian_region = { NOT = { religion = catholic } } }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 10
+			dip = 4
+		}
+	}
+	effect = {
+		set_country_flag = catholic_italy_done
+		add_country_modifier = {
+			name = "catholic_italy_modifier"
+			duration = 3650
+		}
+	}
+}

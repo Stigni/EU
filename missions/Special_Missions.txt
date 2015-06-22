@@ -1,0 +1,111 @@
+reclaim_jerusalem = {
+
+	type = country
+	
+	category = MIL
+
+	allow = {
+		NOT = { is_year = 1600 }
+		#Judea must be owned by non-christians.
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = reclaimed_jerusalem }
+		379 = {	
+			owner = { 
+				NOT = { religion_group = christian }
+				NOT = { alliance_with = ROOT }				
+			}
+		}
+		religion_group = christian
+		is_at_war = no
+		monthly_income = 80
+		is_subject = no
+		capital_scope = {
+			continent = europe
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { religion_group = christian }
+			379 = {
+				owner = { 
+					religion_group = christian
+				}
+			}
+			is_subject = yes
+		}
+	}
+	success = {
+		379 = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 0.05
+			is_year = 1500
+		}
+	}
+	immediate = {
+		add_claim = 379
+	}
+	abort_effect = {
+		remove_claim = 379
+	}
+	effect = {
+		set_country_flag = reclaimed_jerusalem
+		add_ruler_modifier = {
+			name = liberator_of_jerusalem
+		}
+	}
+}
+
+
+reclaim_mecca = {
+
+	type = country
+	
+	category = MIL
+
+	allow = {
+		#Mecca must be owned by non-muslims.
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = reclaimed_mecca }
+		385 = {	
+			owner = { 
+				NOT = { religion_group = muslim } 
+			}
+		}
+		religion_group = muslim
+		is_at_war = no
+		is_subject = no
+		monthly_income = 80
+	}
+	abort = {
+		OR = {
+			NOT = { religion_group = muslim }
+			385 = {
+				owner = { 
+					religion_group = muslim
+				}
+			}
+			is_subject = yes
+		}
+	}
+	success = {
+		385 = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 3000
+	}
+	immediate = {
+		add_claim = 385
+	}
+	abort_effect = {
+		remove_claim = 385
+	}
+	effect = {
+		set_country_flag = reclaimed_mecca
+		add_ruler_modifier = {
+			name = liberator_of_mecca
+		}
+	}
+}

@@ -1,0 +1,406 @@
+control_osel = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DAN
+		is_subject = no
+		NOT = { owns = 35 }
+		35 = { NOT = { owner = { alliance_with = DAN } } }
+		NOT = { has_country_modifier = baltic_ambition }
+		NOT = { has_country_flag = controlled_osel }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 35
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+	immediate = {
+		add_claim = 35
+	}
+	abort_effect = {
+		remove_claim = 35
+	}
+	effect = {
+		set_country_flag = controlled_osel
+		add_country_modifier = {
+			name = "baltic_ambition"
+			duration = 3650
+		}
+	}
+}
+
+retake_scania = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DAN
+		NOT = { has_country_modifier = baltic_ambition }
+		is_subject = no
+		SWE = {
+			owns = 6
+			NOT = { alliance_with = DAN }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = no
+			AND = {
+				SWE = { NOT = { owns = 6 } }
+				NOT = { owns = 6 }
+			}
+		}
+	}
+	success = {
+		owns = 6
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			is_monarch_leader = yes
+		}
+	}
+	immediate = {
+		add_claim = 6
+	}
+	abort_effect = {
+		remove_claim = 6
+	}
+	effect = {
+		add_country_modifier = {
+			name = "baltic_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+retake_halland = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DAN
+		is_subject = no
+		NOT = { has_country_modifier = military_victory }
+		SWE = {
+			owns = 26
+			NOT = { alliance_with = DAN }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			AND = {
+				SWE = { NOT = { owns = 26 } }
+				NOT = { owns = 26 }
+			}
+		}
+	}
+	success = {
+		owns = 26
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			is_monarch_leader = yes
+		}
+	}
+	immediate = {
+		add_claim = 26
+	}
+	abort_effect = {
+		remove_claim = 26
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+vassalize_norway = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DAN
+		exists = NOR
+		is_subject = no
+		NOT = { war_with = NOR }
+		NOR	= {
+			is_subject = no
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = NOR }
+			NOR = { is_subject = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = NOR
+				}
+			}
+		}
+	}
+	success = {
+		NOR = { vassal_of = DAN }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = NOR value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = NOR
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = NOR
+		}
+	}
+	effect = {
+		add_prestige = 10
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = NOR
+			}
+		}
+	}
+}
+
+defend_denmark = {
+
+	type = country
+	
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DAN
+		NOT = { has_country_flag = defended_denmark_flag }
+		is_subject = no
+		danish_region = { owned_by = SWE }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { war_with = SWE }
+		NOT = { danish_region = { owned_by = SWE } }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	effect = {
+		set_country_flag = defended_denmark_flag
+		add_ruler_modifier = {
+			name = defended_denmark
+		}
+	}
+}
+
+
+danish_controlled_cot = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			AND = {
+				province_id = 45
+				NOT = { has_province_flag = danish_controlled_mission }
+				NOT = { owner = { alliance_with = DAN } }
+			}
+			AND = {
+				province_id = 43
+				NOT = { has_province_flag = danish_controlled_mission }
+				NOT = { owner = { alliance_with = DAN } }
+			}
+			AND = {
+				province_id = 33
+				NOT = { has_province_flag = danish_controlled_mission }
+				NOT = { owner = { alliance_with = DAN } }
+			}
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DAN
+		NOT = { has_country_modifier = baltic_ambition }
+		is_subject = no
+		OR = {
+			45 = {
+				owned_by = DAN
+				NOT = { has_province_flag = danish_controlled_mission }
+				NOT = { owner = { alliance_with = DAN } }
+			}
+			43 = {
+				owned_by = DAN
+				NOT = { has_province_flag = danish_controlled_mission }
+				NOT = { owner = { alliance_with = DAN } }
+			}
+			33 = {
+				owned_by = DAN
+				NOT = { has_province_flag = danish_controlled_mission }
+				NOT = { owner = { alliance_with = DAN } }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		OR = {
+			owns = 45
+			owns = 43
+			owns = 33
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			has_idea = national_trade_policy
+		}	
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		if = {
+			limit = { owns = 45 }
+			45 = { set_province_flag = danish_controlled_mission }
+		}
+		if = {
+			limit = { owns = 43 }
+			43 = { set_province_flag = danish_controlled_mission }
+		}
+		if = {
+			limit = { owns = 33 }
+			33 = { set_province_flag = danish_controlled_mission }
+		}
+		add_country_modifier = {
+			name = "baltic_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+denmark_control_gotland = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DAN
+		NOT = { has_country_modifier = baltic_ambition }
+		NOT = { has_country_flag = controlled_gotland }
+		is_subject = no
+		NOT = { owns = 25 }
+		25 = {
+			owner = {
+				NOT = { alliance_with = ROOT }
+				NOT = { war_with = ROOT }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes		
+	}
+	success = {
+		owns = 25
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 5
+			mil = 4
+		}
+		modifier = {
+			factor = 10
+			GOT = { owns = 25 }
+		}
+	}
+	immediate = {
+		add_claim = 25
+	}
+	abort_effect = {
+		remove_claim = 25
+	}
+	effect = {
+		set_country_flag = controlled_gotland
+		add_country_modifier = {
+			name = "baltic_ambition"
+			duration = 3650
+		}
+	}
+}

@@ -1,0 +1,475 @@
+conquer_friuli = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = VEN
+		is_subject = no
+		NOT = { has_country_modifier = venetian_terra_firma }
+		NOT = { has_country_flag = conquered_fruili }
+		NOT = { owns = 111 }	# Friuli
+		111 = {
+			NOT = { owner = { alliance_with = ROOT } }
+			OR = {
+				is_capital = no
+				owner = {
+					NOT = { num_of_cities = 3 }
+				}
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 111
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		add_claim = 111
+	}
+	abort_effect = {
+		remove_claim = 111
+	}
+	effect = {
+		set_country_flag = conquered_fruili
+		add_country_modifier = {
+			name = "venetian_terra_firma"
+			duration = 3650
+		}
+	}
+}
+
+
+subjugate_aquileia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = VEN
+		is_subject = no
+		NOT = { has_country_modifier = military_vassalization }
+		AQU = {
+			is_subject = no
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = AQU }
+			AQU = { is_subject = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = AQU
+				}
+			}
+		}
+	}
+	success = {
+		AQU = { vassal_of = VEN }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = AQU value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = AQU
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = AQU
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_vassalization
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = AQU
+			}
+		}
+	}
+}
+
+
+conquer_brescia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = VEN
+		NOT = { has_country_modifier = venetian_terra_firma }
+		NOT = { has_country_flag = conquered_brescia }
+		is_subject = no
+		107 = {
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owned_by = ROOT }
+			any_neighbor_province = { owned_by = ROOT }
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 107
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		add_claim = 107
+	}
+	abort_effect = {
+		remove_claim = 107
+	}
+	effect = {
+		set_country_flag = conquered_brescia
+		add_country_modifier = {
+			name = "venetian_terra_firma"
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_verona = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+
+	allow = {
+		normal_or_historical_nations = yes
+		tag = VEN
+		NOT = { has_country_modifier = venetian_terra_firma }
+		NOT = { has_country_flag = conquered_verona }
+		is_subject = no
+		NOT = { owns = 108 }	# Verona
+		108 = {
+			NOT = { owner = { alliance_with = ROOT } }
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 108
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		add_claim = 108
+	}
+	abort_effect = {
+		remove_claim = 108
+	}
+	effect = {
+		set_country_flag = conquered_verona
+		add_country_modifier = {
+			name = "venetian_terra_firma"
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_istria = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = VEN
+		NOT = { has_country_modifier = mediterranean_ambition }
+		NOT = { has_country_flag = conquered_istria }
+		is_subject = no
+		owns = 108
+		NOT = { owns = 130 }	# Istria
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 130
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		add_claim = 130
+	}
+	abort_effect = {
+		remove_claim = 130
+	}
+	effect = {
+		set_country_flag = conquered_istria
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_cyprus = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = VEN
+		exists = TUR
+		NOT = { has_country_modifier = mediterranean_ambition }
+		NOT = { has_country_flag = conquered_cyprus }
+		is_subject = no
+		321 = {		# Cyprus
+			NOT = { owned_by = ROOT }
+			NOT = { owned_by = TUR }
+			NOT = { owner = { alliance_with = ROOT } }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			321 = { owned_by = TUR }
+		}
+	}
+	success = {
+		NOT = { war_with = TUR }
+		owns = 321
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		add_claim = 321
+	}
+	abort_effect = {
+		remove_claim = 321
+	}
+	effect = {
+		set_country_flag = conquered_cyprus
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+retake_crete = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = VEN
+		exists = TUR
+		NOT = { has_country_modifier = mediterranean_ambition }
+		NOT = { has_country_flag = crete_retaken }
+		NOT = { alliance_with = TUR }
+		is_subject = no
+		TUR = { owns = 163 }		# Crete
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { war_with = TUR }
+		owns = 163
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		add_claim = 163
+	}
+	abort_effect = {
+		remove_claim = 163
+	}
+	effect = {
+		set_country_flag = crete_retaken
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+monopolize_italian_cot = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = VEN
+		NOT = {
+			1308 = {			# Gulf of Venice
+				is_strongest_trade_power = VEN
+			}
+			1297  = {				# Cote d'Azur
+				is_strongest_trade_power = VEN
+			}
+		}
+		NOT = { has_country_flag = monopolize_italian_cot }
+	}
+	abort = {
+	}
+	success = {
+		1308 = {			# Gulf of Venice
+			is_strongest_trade_power = VEN
+		}
+		1297 = {				# Cote d'Azur
+			is_strongest_trade_power = VEN
+		}	
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = national_trade_policy
+		}	
+	}
+	effect = {
+		add_treasury = 60
+		add_dip_power = 60
+		set_country_flag = monopolize_italian_cot
+	}
+}
+
+
+disrupt_genoese_trade = {
+	
+	type = country
+	
+	category = DIP
+	
+	target_provinces = {
+		region = crimean_region
+		owned_by = GEN
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = VEN
+		exists = GEN
+		is_subject = no
+		GEN = {	
+			has_country_flag = black_sea_free_trade
+			NOT = { alliance_with = VEN }
+			is_subject = no
+			owns = 286
+			owns = 285
+			owns = 101
+		}
+	}
+	abort = {
+		GEN = {
+			NOT ={
+				has_country_flag = black_sea_free_trade
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			has_idea = national_trade_policy
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		1320 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = 5
+				key = genoese_trade_concession
+			}
+		}
+	}
+}

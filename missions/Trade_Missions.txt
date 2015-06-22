@@ -1,0 +1,152 @@
+gain_tradepost_in_china = {
+
+	type = country
+
+	category = MIL
+	
+	allow = {
+		is_at_war = no
+		capital_scope = {
+			continent = europe
+		}
+		num_of_ports = 6
+		NOT = { chinaware = 1 }
+		chinese_coast = {
+			has_port = yes
+			range = ROOT
+			has_discovered = ROOT
+		}
+		NOT = { has_country_modifier = growing_chinaware_trade }
+		OR = {
+			NOT = { has_country_flag = tradepost_in_china_was }
+			had_country_flag = { flag = tradepost_in_china_was days = 14600 }
+		}
+	}
+	abort = {
+		NOT = { num_of_ports = 1 }
+	}
+	success = {
+		chinaware = 1
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.15
+			full_idea_group = naval_ideas
+		}
+		modifier = {
+			factor = 1.10
+			full_idea_group = expansion_ideas
+		}
+		modifier = {
+			factor = 1.05
+			full_idea_group = exploration_ideas
+		}
+		modifier = {
+			factor = 1.12
+			any_owned_province = {
+				continent = asia
+			}
+		}
+	}
+	effect = {
+		set_country_flag = tradepost_in_china_was
+		add_country_modifier = {
+			name = "growing_chinaware_trade"
+			duration = 3650
+		}
+	}
+}
+
+
+increase_spices_trade = {
+
+	type = country
+
+	category = MIL
+
+	allow = {
+		is_at_war = no
+		capital_scope = {
+			OR = {
+				continent = europe
+				continent = africa
+			}
+		}
+		NOT = { has_country_modifier = growing_spice_trade }
+		OR = {
+			NOT = { has_country_flag = increased_spice_trade }
+			had_country_flag = { flag = increased_spice_trade days = 14600 }
+		}
+		num_of_ports = 3
+		spices = 1
+		NOT = { spices = 3}
+	}
+	abort = {
+		NOT = { num_of_ports = 1 }
+	}
+	success = {
+		spices = 3
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.15
+			full_idea_group = naval_ideas
+		}
+		modifier = {
+			factor = 1.10
+			full_idea_group = expansion_ideas
+		}
+		modifier = {
+			factor = 1.05
+			full_idea_group = exploration_ideas
+		}		
+	}
+	effect = {
+		set_country_flag = increased_spice_trade
+		add_country_modifier = {
+			name = "growing_spice_trade"
+			duration = 3650
+		}
+	}
+}
+
+
+earn_more_from_trade ={
+
+	type = country
+
+	category = ADM
+	
+	allow = {
+		is_at_war = no
+		
+		num_of_merchants = 4
+		trade_income_percentage = 0.40
+		NOT = { trade_income_percentage = 0.55 }
+		NOT = { last_mission = earn_more_from_trade }
+		NOT = { has_country_flag = earned_more_from_trade }
+	}
+	success = { 
+		trade_income_percentage = 0.60
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.2
+			full_idea_group = expansion_ideas
+		}		
+		modifier = {
+			factor = 1.5
+			full_idea_group = trade_ideas
+		}	
+	}
+	effect = {
+		set_country_flag = earned_more_from_trade
+		add_country_modifier = {
+			name = "merchant_society"
+			duration = 3650
+		}
+	}
+}

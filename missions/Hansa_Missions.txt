@@ -1,0 +1,46 @@
+end_sound_toll = {
+
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = HSA
+		government = merchant_republic
+		is_subject = no
+		NOT = {
+			45 = { has_province_modifier = free_shipping_through_the_sound }
+		}
+		12 = {
+			has_province_modifier = sound_toll
+			NOT = { owned_by = HSA }
+			owner = {
+				NOT = { alliance_with = HSA }
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = {	government = merchant_republic }
+			is_subject = yes
+		}
+	}
+	success = {
+		OR = {
+			controls = 6			# Skane
+			controls = 12			# Sjaelland
+		}
+	}
+	chance = {
+		factor = 3000
+	}
+	effect = {
+		45 = {							# Lubeck
+			add_province_modifier = {
+				name = "free_shipping_through_the_sound"
+				duration = -1
+			}
+		}
+	}
+}

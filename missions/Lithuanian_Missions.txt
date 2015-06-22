@@ -1,0 +1,242 @@
+conquer_samogitia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+		
+	allow = {
+		normal_or_historical_nations = yes
+		tag = LIT
+		exists = TEU
+		is_subject = no
+		NOT = { has_country_modifier = military_victory }
+		TEU = {
+			owns = 271		# Samogitia
+			is_neighbor_of = ROOT
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { war_with = TEU }
+		owns = 271
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	immediate = {
+		add_claim = 271
+	}
+	abort_effect = {
+		remove_claim = 271
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+
+retake_chernigov = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = LIT
+		NOT = { has_country_flag = retaken_chernigov }
+		NOT = { has_country_modifier = lithuanian_russian_ambition }
+		OR = {
+			exists = MOS
+			exists = RUS
+		}
+		is_subject = no
+		289 = {
+			owner = {
+				OR = {
+					tag = MOS
+					tag = RUS
+				}
+				NOT = { alliance_with = ROOT }
+			}
+			any_neighbor_province = { owned_by = ROOT }
+		}
+	}
+	abort = {
+		is_subject = yes		
+	}
+	success = {
+		owns = 289
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				NOT = { has_opinion = { who = MOS value = 0 } }
+				NOT = { has_opinion = { who = RUS value = 0 } }
+			}
+		}
+	}
+	immediate = {
+		add_claim = 289
+	}
+	abort_effect = {
+		remove_claim = 289
+	}
+	effect = {
+		set_country_flag = retake_chernigov
+		add_country_modifier = {
+			name = "lithuanian_russian_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+retake_smolensk = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = LIT
+		NOT = { has_country_modifier = lithuanian_russian_ambition }
+		NOT = { has_country_flag = retaken_smolensk }
+		OR = {
+			exists = MOS
+			exists = RUS
+		}
+		is_subject = no
+		293 = {
+			owner = {
+				OR = {
+					tag = MOS
+					tag = RUS
+				}
+				NOT = { alliance_with = ROOT }
+			}
+			any_neighbor_province = { owned_by = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_lesser_in_union = yes
+			is_subject = yes	
+		}
+	}
+	success = {
+		owns = 293
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				NOT = { has_opinion = { who = MOS value = 0 } }
+				NOT = { has_opinion = { who = RUS value = 0 } }
+			}
+		}
+	}
+	immediate = {
+		add_claim = 293
+	}
+	abort_effect = {
+		remove_claim = 293
+	}
+	effect = {
+		set_country_flag = retaken_smolensk
+		add_country_modifier = {
+			name = "lithuanian_russian_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+defeat_the_livonian_order = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = LIV
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = LIT
+		exists = LIV
+		is_subject = no
+		NOT = { has_opinion = { who = LIV value = 0 } }
+		LIV = {
+			is_neighbor_of = ROOT
+			NOT = { alliance_with = ROOT }
+			NOT = { num_of_cities = ROOT }
+		}
+		NOT = { has_country_modifier = military_victory }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = LIV }
+		}
+	}
+	success = {
+		NOT = { exists = LIV }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}

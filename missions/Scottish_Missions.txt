@@ -1,0 +1,189 @@
+conquer_orkney = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SCO
+		is_subject = no
+		369 = {
+			NOT = {
+				owned_by = ROOT
+				owner = {
+					NOT = { alliance_with = ROOT }
+				}
+			}
+		}		# Orkney
+	}
+	abort = {
+		is_subject = yes		
+	}
+	success = {
+		owns = 369
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	immediate = {
+		add_claim = 369
+	}
+	abort_effect = {
+		remove_claim = 369
+	}
+	effect = {
+		369 = {
+			add_province_modifier = {
+				name = "faster_integration"
+				duration = 3650
+			}
+		}
+	}
+}
+
+scottish_control = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		tag = SCO
+		normal_or_historical_nations = yes
+		exists = ENG
+		is_subject = no
+		is_at_war = no
+		NOT = { alliance_with = ENG }
+		NOT = { highlands = { owned_by = ENG } }
+		NOT = { lowlands = { owned_by = ENG } }
+		NOT = { northumbria = { owned_by = ROOT } }
+		NOT = { northumbria = { NOT = { owned_by = ENG } } }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { war_with = ENG }
+		NOT = { highlands = { owned_by = ENG } }
+		NOT = { lowlands = { owned_by = ENG } }
+		northumbria = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			ENG = { is_at_war = yes }
+		}
+	}
+	immediate = {
+		northumbria = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		northumbria = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 10
+	}
+}
+
+
+scottish_defense = {
+	
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SCO
+		exists = ENG
+		is_subject = no
+		is_at_war = no
+		OR = {
+			highlands = { owned_by = ENG }
+			lowlands = { owned_by = ENG }
+		}
+	}
+	abort = {
+		is_subject = no
+	}
+	success = {
+		NOT = { war_with = ENG }
+		NOT = { highlands = { NOT = { owned_by = ROOT } } }
+		NOT = { lowlands = { NOT = { owned_by = ROOT } } }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			ENG = { is_at_war = yes }
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				highlands = { owned_by = ENG }
+			}
+			highlands = {
+				limit = {
+					owned_by = ENG
+				}
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				lowlands = { owned_by = ENG }
+			}
+			lowlands = {
+				limit = {
+					owned_by = ENG
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	abort_effect = {
+		if = {
+			limit = {
+				highlands = { owned_by = ENG }
+			}
+			highlands = {
+				limit = {
+					owned_by = ENG
+				}
+				remove_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				lowlands = { owned_by = ENG }
+			}
+			lowlands = {
+				limit = {
+					owned_by = ENG
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_stability = 1
+		add_war_exhaustion = -5
+	}
+}

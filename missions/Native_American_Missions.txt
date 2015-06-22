@@ -1,0 +1,61 @@
+migrate_to_neighboring = {
+	
+	type = empty_provinces
+
+	category = DIP
+
+	allow = {
+		FROM = {
+			government = native_council
+			# Check if the tribe is still migrating
+			NOT = { num_of_cities = 2 }
+			NOT = { num_of_colonies = 1 }
+		}
+		any_neighbor_province = {
+			owned_by = FROM
+		}
+	}
+	abort = {
+		is_empty = no
+		FROM = {
+			NOT = { government = native_council }
+			num_of_cities = 2
+			num_of_colonies = 1
+		}
+	}
+	success = {
+		owned_by = FROM
+		is_capital = yes
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 0.5
+			FROM = { is_at_war = yes }
+		}
+		modifier = {
+			factor = 0.6
+			FROM = { num_of_colonists = 1 }
+		}
+		modifier = {
+			factor = 1.1
+			development = 2
+		}
+		modifier = {
+			factor = 1.1
+			development = 3
+		}
+		modifier = {
+			factor = 0.9
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0.9
+			has_climate = arid
+		}
+	}
+	effect = {
+		add_prestige = 10
+		add_dip_power = 10
+	}
+}

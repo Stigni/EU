@@ -1,0 +1,557 @@
+retake_corsica = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = GEN
+		is_subject = no
+		NOT = { owns = 1247 }		# Corsica
+		is_core = 1247
+		1247 = { owner = { NOT = { alliance_with = GEN } } }
+		NOT = { has_country_flag = retook_corsica }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 1247
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		add_claim = 1247
+	}
+	abort_effect = {
+		remove_claim = 1247
+	}
+	effect = {
+		set_country_flag = retook_corsica
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+retake_kaffa = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		region = crimean_region
+		is_core = GEN
+		NOT = { owned_by = GEN }
+		owner = {
+			NOT = { alliance_with = GEN }
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = GEN
+		is_subject = no
+		any_province = {
+			region = crimean_region
+			is_core = GEN
+			NOT = { owned_by = GEN }
+			owner = {
+				NOT = { alliance_with = GEN }
+			}
+		}
+		NOT = { has_country_flag = retook_kaffa }
+		NOT = { has_country_modifier = black_sea_ambition }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = retook_kaffa
+		add_country_modifier = {
+			name = "black_sea_ambition"
+			duration = 3650
+		}
+	}
+}
+
+end_bosphorous_sound_toll = {
+
+	type = country
+	
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = GEN
+		government = merchant_republic
+		is_subject = no
+		NOT = { has_country_flag = black_sea_free_trade }
+		OR = {
+			owns = 286
+			owns = 285
+		}
+		151 = {
+			has_province_modifier = bosphorous_sound_toll
+			owner = {
+				NOT = {
+					tag = GEN
+				}
+			}
+			NOT = {
+				has_trade_modifier = {
+					who = GEN
+					name = genoese_access_to_black_sea
+				}
+			}
+			NOT = { has_country_modifier = black_sea_ambition }
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		OR = {
+			controls = 151 #Constantinople
+			AND = {
+				controls = 149 #Edirne
+				controls = 2296 #Biga
+				controls = 317 #Bursa
+			}
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	effect = {
+		set_country_flag = black_sea_free_trade
+		1320 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = 5
+				key = genoese_trade_concession
+			}
+		}
+		add_country_modifier = {
+			name = "black_sea_ambition"
+			duration = 3650
+		}
+	}
+}
+
+# Take a strategic tradenode
+
+tradenode_tunis = {
+	
+	type = country
+	
+	category = DIP
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = GEN
+		government = merchant_republic
+		is_subject = no
+		NOT = {
+			owns = 341 # Tunis
+		}
+		341 = {
+			owner = {
+				NOT = { alliance_with = ROOT }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 341 # Tunis
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 0.5
+			341 = {
+				owner = {
+					army_size = GEN
+				}
+			}
+		}
+	}
+	immediate = {
+		add_claim = 341
+	}
+	abort_effect = {
+		remove_claim = 341
+	}
+	effect = {
+		add_mercantilism = 0.02
+	}
+}
+
+tradenode_alexandria = {
+	
+	type = country
+	
+	category = DIP
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = GEN
+		government = merchant_republic
+		is_subject = no
+		NOT = {
+			owns = 358 # Alexandria
+		}
+		358 = {
+			owner = {
+				NOT = { alliance_with = GEN }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 358 # Alexandria
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		
+		modifier = {
+			factor = 0.5
+			358 = {
+				owner = {
+					army_size = GEN
+				}
+			}
+		}
+	}
+	immediate = {
+		add_claim = 358
+	}
+	abort_effect = {
+		remove_claim = 358
+	}
+	effect = {
+		add_mercantilism = 0.02
+	}
+}
+
+tradenode_thrace = {
+	
+	type = country
+	
+	category = DIP
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = GEN
+		government = merchant_republic
+		is_subject = no
+		NOT = {
+			owns = 151 # Thrace
+		}
+		151 = {
+			owner = {
+				NOT = { alliance_with = GEN }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 151 # Thrace
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		
+		modifier = {
+			factor = 0.5
+			151 = {
+				owner = {
+					army_size = GEN
+				}
+			}
+		}
+	}
+	immediate = {
+		add_claim = 151
+	}
+	abort_effect = {
+		remove_claim = 151
+	}
+	effect = {
+		add_mercantilism = 0.02
+	}
+}
+
+tradenode_ragusa = {
+	
+	type = country
+	
+	category = DIP
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = GEN
+		government = merchant_republic
+		is_subject = no
+		NOT = {
+			owns = 137 # Ragusa
+		}
+		137 = {
+			owner = {
+				NOT = { alliance_with = GEN }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 137 # Ragusa
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		
+		modifier = {
+			factor = 0.5
+			137 = {
+				owner = {
+					army_size = GEN
+				}
+			}
+		}
+	}
+	immediate = {
+		add_claim = 137
+	}
+	abort_effect = {
+		remove_claim = 137
+	}
+	effect = {
+		add_mercantilism = 0.02
+	}
+}
+
+tradenode_ferrara = {
+	
+	type = country
+	
+	category = DIP
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = GEN
+		government = merchant_republic
+		is_subject = no
+		NOT = {
+			owns = 113 # Ferrara
+		}
+		113 = {
+			owner = {
+				NOT = { alliance_with = GEN }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 113 # Ferrara
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		
+		modifier = {
+			factor = 0.5
+			113 = {
+				owner = {
+					army_size = GEN
+				}
+			}
+		}
+	}
+	immediate = {
+		add_claim = 113
+	}
+	abort_effect = {
+		remove_claim = 113
+	}
+	effect = {
+		add_mercantilism = 0.02
+	}
+}
+
+tradenode_tangiers = {
+	
+	type = country
+	
+	category = DIP
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = GEN
+		government = merchant_republic
+		is_subject = no
+		NOT = {
+			owns = 334 # Tangiers
+		}
+		334 = {
+			owner = {
+				NOT = { alliance_with = ROOT }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 334 # Tangiers
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		
+		modifier = {
+			factor = 0.5
+			334 = {
+				owner = {
+					army_size = GEN
+				}
+			}
+		}
+	}
+	immediate = {
+		add_claim = 334
+	}
+	abort_effect = {
+		remove_claim = 334
+	}
+	effect = {
+		add_mercantilism = 0.02
+	}
+}
+
+tradenode_gibraltar = {
+	
+	type = country
+	
+	category = DIP
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = GEN
+		government = merchant_republic
+		is_subject = no
+		NOT = {
+			owns = 226 # Gibraltar
+		}
+		226 = {
+			owner = {
+				NOT = { alliance_with = ROOT }
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 226 # Gibraltar
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		
+		modifier = {
+			factor = 0.5
+			226 = {
+				owner = {
+					army_size = GEN
+				}
+			}
+		}
+	}
+	immediate = {
+		add_claim = 226
+	}
+	abort_effect = {
+		remove_claim = 226
+	}
+	effect = {
+		add_mercantilism = 0.02
+	}
+}

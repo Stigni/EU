@@ -1,0 +1,102 @@
+recover_abysmal_prestige = {
+
+	type = country
+
+	category = ADM
+	
+	allow = {
+		NOT = { prestige = -50 }
+		OR = {
+			NOT = { has_country_flag = recovered_abysmal_prestige }
+			had_country_flag = { flag = recovered_abysmal_prestige days = 3650 }
+		}
+	}
+	abort = {
+	}
+	success = {
+		prestige = 0
+	}
+	chance = {
+		factor = 1000
+		
+		modifier = {
+			factor = 1.05
+			is_at_war = yes
+			has_idea = naval_glory
+		}
+		modifier = {
+			factor = 1.05
+			is_at_war = yes
+			has_idea = glorious_arms
+		}
+		modifier = {
+			factor = 1.05
+			has_idea = patron_of_art
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { stability = 1 }
+		}		
+		modifier = {
+			factor = 1.05
+			NOT = { stability = 3 }
+		}		
+	}
+	effect = {
+		add_stability = 1
+		set_country_flag = recovered_abysmal_prestige
+	}
+	
+}
+
+
+improve_prestige = {
+
+	type = country
+	
+	category = ADM
+	
+	allow = {
+		prestige = -25
+		NOT = { prestige = 25 }
+		OR = {
+			NOT = { has_country_flag = improved_prestige_mission }
+			had_country_flag = { flag = improved_prestige_mission days = 3650 }
+		}
+	}
+	abort = {
+	}
+	success = {
+		prestige = 50
+	}
+	chance = {
+		factor = 1000
+		
+		modifier = {
+			factor = 1.05
+			is_at_war = yes
+			has_idea = naval_glory
+		}
+		modifier = {
+			factor = 1.05
+			is_at_war = yes
+			has_idea = glorious_arms
+		}
+		modifier = {
+			factor = 1.05
+			has_idea = patron_of_art
+		}
+		modifier = {
+			factor = 1.05
+			NOT = { stability = 1 }
+		}		
+		modifier = {
+			factor = 1.05
+			NOT = { stability = 3 }
+		}
+	}
+	effect = {
+		add_stability = 1
+		set_country_flag = improved_prestige_mission
+	}
+}

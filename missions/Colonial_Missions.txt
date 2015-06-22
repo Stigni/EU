@@ -1,0 +1,538 @@
+discover_mission = {
+
+	type = empty_provinces
+	
+	category = DIP
+	
+	allow = {
+		FROM = { has_idea = quest_for_the_new_world }
+		range = FROM
+		has_port = yes
+		NOT = { has_discovered = FROM }
+		FROM = {
+			is_at_war = no
+			num_of_ports = 1
+		}
+		NOT = {
+			FROM = { has_country_modifier = "colonial_enthusiasm" }
+		}
+		
+	}
+	abort = {
+		OR = {
+			FROM = { NOT = { num_of_ports = 1 } }
+			FROM = { NOT = { has_idea = quest_for_the_new_world } }
+		}
+	}
+	success = {
+		has_discovered = FROM
+	}
+	chance = {
+		factor = 1000
+		#tweak for some historical preferences.
+		modifier = {
+			factor = 0
+			FROM = { tag = POR }
+			continent = north_america
+		}
+		modifier = {
+			factor = 1.25
+			FROM = { tag = POR }
+			OR = {
+				region = brazil_region
+				region = west_african_coast
+			}
+		}		
+		modifier = {
+			factor = 0
+			FROM = { 
+				OR = {
+					tag = SPA
+					tag = CAS
+				}
+			}
+			OR = {
+				continent = north_america
+				region = brazil_region
+				region = west_african_coast
+			}
+		}
+		modifier = {
+			factor = 1.25
+			FROM = { 
+				OR = {
+					tag = SPA
+					tag = CAS
+				}
+			}
+			OR = {
+				region = the_spanish_main
+				region = central_america
+				region = the_carribean
+				region = la_plata_region
+			}
+		}
+		modifier = {
+			factor = 1.25
+			FROM = {
+				OR = {
+					tag = ENG
+					tag = GBR
+					tag = FRA
+				}
+			}
+			continent = north_america
+		}
+	}
+	effect = {
+		FROM = {
+			add_country_modifier = {
+				name = "colonial_enthusiasm"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+build_colony_to_city = {
+
+	type = our_provinces
+	
+	category = ADM
+	
+	allow = {
+		FROM = { is_at_war = no }
+		is_colony = yes
+		has_port = yes
+		owner = {
+			num_of_colonists = 1
+			monthly_income = 10
+			NOT = {
+				any_owned_province = {
+					has_province_modifier = local_colonial_expansion
+				}
+			}
+		}
+	}
+	abort = {
+		NOT = { owned_by = FROM }
+	}
+	success = {
+		is_colony = false
+		owned_by = FROM
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.2
+			development = 3
+		}		
+		modifier = {
+			factor = 1.25
+			development = 5
+		}		
+		
+	}
+	effect = {
+		if = {
+			limit = { NOT = { has_dlc = "Common Sense" } }
+			add_base_tax = 1
+			add_base_manpower = 1
+			add_base_manpower = 0.5
+		}
+		if = {
+			limit = { has_dlc = "Common Sense" }
+			add_province_modifier = {
+				name = "local_colonial_expansion"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+convert_the_pagans = {
+
+	type = our_provinces
+	
+	category = ADM
+	
+	allow = {
+		FROM = { is_at_war = no }
+		owner = { religion_group = christian }
+		OR = {
+			continent = north_america
+			continent = south_america
+		}
+		religion_group = pagan
+		is_overseas = yes
+		development = 6
+		owner = {
+			num_of_missionaries = 1
+			num_of_owned_provinces_with = {
+				value = 5
+				religion = root
+				continent = root
+			}
+			NOT = { has_country_modifier = converting_the_pagans }
+		}
+	}
+	abort = {
+		NOT = { owned_by = FROM }
+	}
+	success = {
+		religion_group = christian
+	}
+	chance = {
+		factor = 1000
+	}
+	effect = {
+		owner = {
+			add_country_modifier = {
+				name = "converting_the_pagans"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+establish_carribean_colony = {
+
+	type = country
+	
+	category = DIP
+	
+	allow = {
+		is_at_war = no
+		num_of_ports = 1
+		has_idea = quest_for_the_new_world 
+		religion_group = christian
+		is_colonial_nation = no
+		the_carribean = {
+			is_empty = yes
+			range = ROOT
+			has_discovered = ROOT
+		}
+		NOT = {
+			the_carribean = {
+				owned_by =  ROOT
+			}
+		}
+		NOT = {
+			the_carribean = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		NOT = {
+			has_country_modifier = "colonial_enthusiasm" 
+		}
+	}
+	abort = {
+		OR = {
+			NOT = {
+				the_carribean = {
+					is_empty = yes
+					has_discovered = ROOT
+				}
+			}
+			NOT = { num_of_ports = 1 }
+			NOT = { has_idea = quest_for_the_new_world }
+		}
+	}
+	success = {
+		the_carribean = {
+			owned_by =  ROOT
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.5
+			num_of_ports = 5
+		}
+
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 1875
+		}
+	}
+}
+
+
+establish_usa_colony = {
+
+	type = country
+	
+	category = DIP
+	
+	allow = {
+		is_at_war = no
+		num_of_ports = 1
+		has_idea = quest_for_the_new_world 
+		religion_group = christian
+		is_colonial_nation = no
+		the_thirteen_colonies = {
+			is_empty = yes
+			has_port = yes
+			range = ROOT
+			has_discovered = ROOT
+		}
+		NOT = {
+			the_thirteen_colonies = {
+				owned_by =  ROOT
+			}
+		}
+		NOT = {
+			the_thirteen_colonies = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		NOT = {
+			has_country_modifier = "colonial_enthusiasm" 
+		}
+	}
+	abort = {
+		OR = {
+			NOT = {
+				the_thirteen_colonies = {
+					is_empty = yes
+					has_port = yes
+					has_discovered = ROOT
+				}
+			}
+			NOT = { num_of_ports = 1 }
+			NOT = { has_idea = quest_for_the_new_world }
+		}
+	}
+	success = {
+		the_thirteen_colonies = {
+			owned_by =  ROOT
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.5
+			num_of_ports = 5
+		}
+		modifier = {
+			factor = 0
+			FROM = { tag = POR }
+		}
+		modifier = {
+			factor = 0
+			FROM = { 
+				OR = {
+					tag = SPA
+					tag = CAS
+				}
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 1875
+		}
+	}
+}
+
+
+establish_canada_colony = {
+
+	type = country
+	
+	category = DIP
+	
+	allow = {
+		is_at_war = no
+		num_of_ports = 1
+		religion_group = christian
+		is_colonial_nation = no
+		has_idea = quest_for_the_new_world 
+		northern_america = {
+			is_empty = yes
+			has_port = yes
+			range = ROOT
+			has_discovered = ROOT
+		}
+		NOT = {
+			northern_america = {
+				owned_by =  ROOT
+			}
+		}
+		NOT = {
+			northern_america = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		NOT = {
+			has_country_modifier = "colonial_enthusiasm" 
+		}
+	}
+	abort = {
+		OR = {
+			NOT = {
+				northern_america = {
+					is_empty = yes
+					has_port = yes
+					has_discovered = ROOT
+				}
+			}
+			NOT = { num_of_ports = 1 }
+			NOT = { has_idea = quest_for_the_new_world }
+		}
+	}
+	success = {
+		northern_america = {
+			owned_by =  ROOT
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.5
+			num_of_ports = 5
+		}
+		modifier = {
+			factor = 0
+			FROM = { tag = POR }
+		}
+		modifier = {
+			factor = 0
+			FROM = { 
+				OR = {
+					tag = SPA
+					tag = CAS
+				}
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 1875
+		}
+	}
+}
+
+
+establish_colony_mission = {
+
+	type = empty_provinces
+	
+	category = DIP
+	
+	allow = {
+		FROM = { 
+			num_of_ports = 1
+			num_of_colonists = 1
+			primitives = no
+		}
+		range = FROM
+		has_port = yes
+		has_discovered = FROM
+		OR = {
+			FROM = { is_colonial_nation = no }
+			any_neighbor_province = { owned_by = FROM }
+			FROM = {
+				capital_scope = { colonial_region = ROOT }
+			}
+		}
+		NOT = {
+			FROM = { has_country_modifier = "colonial_enthusiasm" }
+		}
+	}
+	abort = {
+		OR = {
+			is_empty = no
+			FROM = { NOT = { num_of_ports = 1 } }
+		}
+	}
+	success = {
+		owned_by = FROM
+	}
+	chance = {
+		factor = 1000
+		#tweak for some historical preferences.
+		modifier = {
+			factor = 0
+			FROM = { tag = POR }
+			continent = north_america
+		}
+		modifier = {
+			factor = 1.15
+			FROM = { tag = POR }
+			OR = {
+				region = brazil_region
+				region = west_african_coast
+			}
+		}		
+		modifier = {
+			factor = 0
+			FROM = { 
+				OR = {
+					tag = SPA
+					tag = CAS
+				}
+			}
+			OR = {
+				continent = north_america
+				region = brazil_region
+				region = west_african_coast
+			}
+		}
+		modifier = {
+			factor = 1.15
+			FROM = { 
+				OR = {
+					tag = SPA
+					tag = CAS
+				}
+			}
+			OR = {
+				region = the_spanish_main
+				region = central_america
+				region = the_carribean
+				region = la_plata_region
+			}
+		}	
+		modifier = {
+			factor = 1.15
+			FROM = {
+				OR = {
+					tag = ENG
+					tag = GBR
+					tag = FRA
+				}
+			}
+			continent = north_america
+		}
+		modifier = {
+			factor = 1.05
+			development = 3
+		}		
+		modifier = {
+			factor = 1.05
+			development = 5
+		}		
+	}
+	effect = {
+		FROM = {
+			add_country_modifier = {
+				name = "colonial_enthusiasm"
+				duration = 3650
+			}
+		}
+	}
+}

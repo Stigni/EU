@@ -1,0 +1,199 @@
+conquer_franken = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = BAV	
+		is_subject = no
+		67 = { # Franken
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 67
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	immediate = {
+		add_claim = 67
+	}
+	abort_effect = {
+		remove_claim = 67
+	}
+	effect = {
+		67 = {
+			add_province_modifier = {
+				name = "faster_integration"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+conquer_pfalz = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = BAV		
+		is_subject = no
+		77 = {		# Pfalz
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			any_neighbor_province = { owned_by = ROOT }
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 77
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	immediate = {
+		add_claim = 77
+	}
+	abort_effect = {
+		remove_claim = 77
+	}
+	effect = {
+		77 = {
+			add_province_modifier = {
+				name = "faster_integration"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+conquer_alzey = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = BAV
+		is_subject = no
+		1761 = {		# Worms
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			any_neighbor_province = { owned_by = ROOT }
+		}
+		NOT = { has_country_modifier = military_victory }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 1761
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	immediate = {
+		add_claim = 1761
+	}
+	abort_effect = {
+		remove_claim = 1761
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_ansbach = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = BAV	
+		is_subject = no
+		71 = {		# Ansbach
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			any_neighbor_province = { owned_by = ROOT }
+		}
+		NOT = { has_country_modifier = military_victory }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		owns = 71
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	immediate = {
+		add_claim = 71
+	}
+	abort_effect = {
+		remove_claim = 71
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}

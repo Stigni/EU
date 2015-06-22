@@ -1,0 +1,906 @@
+defend_the_lowlands = {
+	
+	type = country
+
+	category = MIL
+	
+	target_provinces = {
+		region = the_low_countries
+		NOT = { culture = wallonian }
+		owner = {
+			OR = {
+				capital_scope = {
+					NOT = { region = the_low_countries }
+				}
+				NOT = { primary_culture = flemish }
+				NOT = { primary_culture = dutch }
+			}
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = NED
+		the_low_countries = {
+			owner = {
+				OR = {
+					capital_scope = {
+						NOT = { region = the_low_countries }
+					}
+					NOT = { primary_culture = flemish }
+					NOT = { primary_culture = dutch }
+				}
+			}
+		}
+		NOT = { has_country_flag = defended_lowlands }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = NED
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 5
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = defended_lowlands
+		add_country_modifier = {
+			name = "defended_the_lowlands"
+			duration = 3650
+		}
+	}
+}
+
+
+reconquer_breda = {
+	
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		always = no #Removed
+		tag = NED
+		exists = SPA
+		is_subject = no
+		SPA = { owns = 95 }
+		NOT = { alliance_with = SPA }
+		NOT = { has_country_flag = reconquer_breda }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			AND = {
+				SPA = { NOT = { owns = 95 } }
+				NOT = { owns = 95 }
+			}
+		}
+	}
+	success = {
+		owns = 95
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 5
+		}
+	}
+	immediate = {
+		add_claim = 95
+	}
+	abort_effect = {
+		remove_claim = 95
+	}
+	effect = {
+		95 = { add_base_manpower = 1 }
+		set_country_flag = reconquer_breda
+	}
+}
+
+the_netherlands_discover_the_carribean = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = NED
+		has_idea = quest_for_the_new_world
+		num_of_ports = 1
+		NOT = { the_carribean = { has_discovered = ROOT } }
+		the_carribean = { range = ROOT }
+	}
+	abort = {
+		OR = {
+			NOT = { has_idea = quest_for_the_new_world }
+			NOT = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		the_carribean = { has_discovered = ROOT }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}	
+	}
+	effect = {
+		add_dip_power = 25
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+dutch_colony_in_the_carribean = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = NED
+		num_of_ports = 1
+		num_of_colonists = 1
+		the_carribean = {
+			has_discovered = ROOT
+			is_empty = yes
+		}
+		NOT = {
+			the_carribean = {
+				owned_by =  this
+			}
+		}
+		NOT = {
+			has_country_modifier = "colonial_enthusiasm"
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { the_carribean = { owned_by = ROOT } }	
+				NOT = { the_carribean = { is_empty = yes } }
+			}
+		}
+	}
+	success = {
+		the_carribean = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 3
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+the_netherlands_discover_north_america = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = NED
+		has_idea = quest_for_the_new_world
+		num_of_ports = 1
+		NOT = { northeastern_america = { has_discovered = ROOT } }
+		northeastern_america = { range = ROOT }
+		NOT = {
+			has_country_modifier = "colonial_enthusiasm"
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { has_idea = quest_for_the_new_world }
+			NOT = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		northeastern_america = { has_discovered = ROOT }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}	
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+dutch_colony_in_north_america = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = NED
+		num_of_ports = 1
+		num_of_colonists = 1
+		northeastern_america = {
+			has_discovered = ROOT
+			is_empty = yes
+		}
+		NOT = {
+			northeastern_america = {
+				owned_by =  this
+			}
+		}
+		NOT = {
+			northeastern_america = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		NOT = {
+			has_country_modifier = "colonial_enthusiasm"
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { northeastern_america = { owned_by = ROOT } }	
+				NOT = { northeastern_america = { is_empty = yes } }
+			}
+		}
+	}
+	success = {
+		northeastern_america = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 3
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+dutch_colony_in_south_africa = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = NED
+		num_of_colonists = 1
+		num_of_ports = 1
+		NOT = {
+			has_country_modifier = "colonial_enthusiasm"
+		}
+		OR = {
+			1175 = { has_discovered = ROOT }
+			1177 = { has_discovered = ROOT }
+			1179 = { has_discovered = ROOT }
+		}
+		NOT = { owns = 1175 }
+		NOT = { owns = 1177 }
+		NOT = { owns = 1179 }
+		OR = {
+			1175 = { range = ROOT }
+			1177 = { range = ROOT }
+			1179 = { range = ROOT }
+		}
+		OR = {
+			1175 = { is_empty = no }
+			1177 = { is_empty = no }
+			1179 = { is_empty = no }
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { owns = 1175 }
+				NOT = { owns = 1177 }
+				NOT = { owns = 1179 }
+				1175 = { is_empty = no }
+				1177 = { is_empty = no }
+				1179 = { is_empty = no }
+			}
+		}
+	}
+	success = {
+		OR = {
+			owns = 1175
+			owns = 1177
+			owns = 1179
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 3
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+dutch_colony_in_indonesia = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		always = no #replaced by general mission to do the same thing.
+		tag = NED
+		num_of_colonists = 1
+		num_of_ports = 1
+		indonesian_region = {
+			has_discovered = ROOT
+			is_empty = yes
+			range = ROOT
+		}
+		NOT = {
+			indonesian_region = {
+				owned_by =  this
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { indonesian_region = { owned_by = ROOT } }	
+				NOT = { indonesian_region = { is_empty = yes } }
+			}
+		}
+	}
+	success = {
+		indonesian_region = { owned_by =  this }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 3
+		}
+	}
+	effect = {
+		add_prestige = 10
+	}
+}
+
+
+dutch_colony_in_brazil = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = NED
+		num_of_colonists = 1
+		num_of_ports = 1
+		NOT = {
+			has_country_modifier = "colonial_enthusiasm"
+		}
+		south_america = {
+			has_discovered = ROOT
+		}
+		NOT = { owns_or_vassal_of = 743 }
+		NOT = { owns_or_vassal_of = 744 }
+		NOT = { owns_or_vassal_of = 745 }
+		NOT = { owns_or_vassal_of = 746 }
+		NOT = { owns_or_vassal_of = 2938 }
+		OR = {
+			AND = {
+				743 = {
+					is_empty = yes
+					range = ROOT
+				}
+			}
+			AND = {
+				744 = {
+					is_empty = yes
+					range = ROOT
+				}
+			}
+			AND = {
+				745 = {
+					is_empty = yes
+					range = ROOT
+				}
+			}
+			AND = {
+				746 = {
+					is_empty = yes
+					range = ROOT
+				}
+			}
+			AND = {
+				2938 = {
+					is_empty = yes
+					range = ROOT
+				}
+			}
+		}
+		NOT = { has_country_flag = dutch_brasil_mission }
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { owns_or_vassal_of = 743 }
+				NOT = { owns_or_vassal_of = 744 }
+				NOT = { owns_or_vassal_of = 745 }
+				NOT = { owns_or_vassal_of = 746 }
+				NOT = { owns_or_vassal_of = 2938 }
+				743 = { is_empty = no }
+				744 = { is_empty = no }
+				745 = { is_empty = no }
+				746 = { is_empty = no }
+				2938 = { is_empty = no }
+			}
+		}	
+	}
+	success = {
+		OR = {
+			owns_or_vassal_of = 743
+			owns_or_vassal_of = 744
+			owns_or_vassal_of = 745	
+			owns_or_vassal_of = 746	
+			owns_or_vassal_of = 2938	
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 3
+		}
+	}
+	effect = {
+		set_country_flag = dutch_brasil_mission
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+the_netherlands_discover_australia = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = NED
+		has_idea = quest_for_the_new_world
+		num_of_ports = 1
+		NOT = {
+			has_country_modifier = "colonial_enthusiasm"
+		}
+		northeastern_america = {
+			has_discovered = ROOT
+			owned_by = ROOT
+		}
+		indonesian_region = {
+			has_discovered = ROOT
+			owned_by = ROOT
+		}
+		NOT = { australian_coast = { has_discovered = ROOT } }
+		australian_coast = { range = ROOT }
+	}
+	abort = {
+		OR = {
+			NOT = { has_idea = quest_for_the_new_world }
+			NOT = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		australian_coast = { has_discovered = ROOT }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}	
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+dutch_control_of_taiwan = {
+	
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = NED
+		is_subject = no
+		indonesian_region = { owned_by = ROOT }
+		taiwan = {
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+			range = ROOT
+		}
+		NOT = { has_country_modifier = east_india_trade_rush }
+		NOT = { has_country_flag = took_taiwan }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		taiwan = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			is_year = 1650
+		}
+		modifier = {
+			factor = 2
+			is_year = 1700
+		}
+	}
+	immediate = {
+		taiwan = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		taiwan = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = took_taiwan
+		add_country_modifier = {
+			name = "east_india_trade_rush"
+			duration = 3650
+		}
+	}
+}
+
+
+embrace_the_reformation = {
+	
+	type = country
+
+	category = ADM
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = NED
+		religion = catholic
+		any_owned_province = { religion = reformed }
+		num_of_missionaries = 1
+		owns = 97
+		NOT = { has_country_modifier = innovative_modifier }
+	}
+	abort = {
+	}
+	success = {
+		religion = reformed
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			is_year = 1650
+		}
+		modifier = {
+			factor = 2
+			has_idea = humanist_tolerance
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = innovative_modifier
+			duration = 3650
+		}
+	}
+}
+
+
+take_malacca_from_portugal = {
+	
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = NED
+		exists = POR
+		is_subject = no
+		NOT = { alliance_with = POR }
+		indonesian_region = { has_discovered = ROOT }
+		NOT = { has_country_modifier = east_india_trade_rush }
+		NOT = { has_country_flag = took_malacca_from_por }
+		POR = { owns = 596 }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT ={ war_with = POR }
+		owns = 596
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			indonesian_region = { owned_by = ROOT }
+		}
+	}
+	immediate = {
+		add_claim = 596
+	}
+	abort_effect = {
+		remove_claim = 596
+	}
+	effect = {
+		add_country_modifier = {
+			name = "east_india_trade_rush"
+			duration = 3650
+		}
+		set_country_flag = took_malacca_from_por
+	}
+}
+
+
+take_ceylon_from_portugal = {
+	
+	type = country
+
+	category = MIL
+	
+	target_provinces = {
+		region = lanka_region
+		owned_by = POR
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = NED
+		exists = POR
+		NOT = { alliance_with = POR }
+		is_subject = no
+		indian_coast = { has_discovered = ROOT }
+		NOT = { has_country_flag = took_ceylon_from_por }
+		lanka_region = {
+			owned_by = POR
+		}
+		NOT = { has_country_modifier = east_india_trade_rush }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			indian_coast = { owned_by = ROOT }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = took_ceylon_from_por
+		add_country_modifier = {
+			name = "east_india_trade_rush"
+			duration = 3650
+		}
+	}
+}
+
+
+establish_trade_in_indonesian_cot = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = NED
+		indonesian_region = {
+			owned_by = ROOT
+		}
+		NOT = {
+			1361 = {		# Straits of Johor
+				is_strongest_trade_power = NED
+			}
+		}
+		NOT = { has_country_flag = establish_trade_in_indonesian_cot }
+		NOT = { has_country_modifier = east_india_trade_rush }
+	}
+	abort = {
+	}
+	success = {
+		1361 = {		# Straits of Johor
+			is_strongest_trade_power = NED
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = shrewd_commerce_practise
+		}
+	}
+	effect = {
+		set_country_flag = establish_trade_in_indonesian_cot
+		add_country_modifier = {
+			name = "east_india_trade_rush"
+			duration = 3650
+		}
+	}
+}

@@ -1,0 +1,919 @@
+subjugate_brittany = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_modifier = military_vassalization }
+		tag = FRA
+		is_subject = no
+		NOT = { exists = ORL }
+		NOT = { exists = AUV }
+		NOT = { exists = BOU }
+		NOT = { exists = PRO }
+		BRI = {
+			is_subject = no
+			is_neighbor_of = ROOT
+			NOT = { alliance_with = ROOT }
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = BRI }
+			BRI = { is_subject = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = BRI
+				}
+			}
+		}
+	}
+	success = {
+		BRI = { vassal_of = ROOT }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = BRI value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = BRI
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = BRI
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_vassalization
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = BRI
+			}
+		}
+	}
+}
+
+
+annex_savoy = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = SAV
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_modifier = military_victory }
+		tag = FRA
+		is_subject = no	
+		NOT = { exists = ORL }
+		NOT = { exists = AUV }
+		NOT = { exists = BOU }
+		NOT = { exists = PRO }
+		SAV = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			religion_group = ROOT
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			AND = {
+				NOT = { exists = SAV }
+				NOT = { exists = SPI }
+			}
+			SAV = { NOT = { religion_group = ROOT } }
+		}
+	}
+	success = {
+		NOT = { exists = SAV }
+		NOT = { exists = SPI }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			dip = 4
+		}
+		modifier = {
+			factor = 2
+			has_opinion = { who = SAV value = 100 }
+		}
+		modifier = {
+			factor = 2
+			has_opinion = { who = SAV value = 200 }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+annex_alsace = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = ALS
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_modifier = military_victory }
+		tag = FRA
+		is_subject = no	
+		ALS = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			religion_group = ROOT
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = ALS }
+			ALS = { NOT = { religion_group = ROOT } }
+		}
+	}
+	success = {
+		NOT = { exists = ALS }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			dip = 4
+		}
+		modifier = {
+			factor = 2
+			has_opinion = { who = ALS value = 100 }
+		}
+		modifier = {
+			factor = 2
+			has_opinion = { who = ALS value = 200 }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+
+france_discovers_north_america = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		tag = FRA
+		has_idea = quest_for_the_new_world
+		NOT = { northeastern_america = { has_discovered = ROOT } }
+		northeastern_america = { range = ROOT }
+		num_of_ports = 1
+	}
+	abort = {
+		OR = {
+			NOT = { has_idea = quest_for_the_new_world }
+			NOT = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		northeastern_america = {
+			has_discovered = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}	
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+french_colony_in_north_america = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		tag = FRA
+		northeastern_america = {
+			has_discovered = ROOT
+			is_empty = yes
+			range = ROOT
+		}
+		NOT = { northeastern_america = { owned_by = ROOT } }
+		NOT = {
+			northeastern_america = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		num_of_colonists = 1
+		num_of_ports = 1
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { northeastern_america = { owned_by = ROOT } }
+				NOT = { northeastern_america = { is_empty = yes } }
+			}
+		}
+	}
+	success = {
+		northeastern_america = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 3
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+france_discovers_the_carribean = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		tag = FRA
+		has_idea = quest_for_the_new_world
+		NOT = { the_carribean = { has_discovered = ROOT } }
+		the_carribean = { range = ROOT }
+		num_of_ports = 1
+	}
+	abort = {
+		OR = {
+			NOT = { has_idea = quest_for_the_new_world }
+			NOT = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		the_carribean = {
+			has_discovered = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}	
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 730
+		}
+	}
+}
+
+
+french_colony_in_the_carribean = {
+	
+	type = country
+
+	category = DIP
+
+	allow = {
+		normal_or_historical_nations = yes
+		tag = FRA
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		the_carribean = {
+			has_discovered = ROOT
+			is_empty = yes
+			range = ROOT
+		}
+		NOT = { the_carribean = { owned_by = ROOT } }
+		NOT = {
+			the_carribean = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		num_of_colonists = 1
+		num_of_ports = 1
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { the_carribean = { owned_by = ROOT } }
+				NOT = { the_carribean = { is_empty = yes } }
+			}	
+		}
+	}
+	success = {
+		the_carribean = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 3
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+defend_france_against_england = {
+	
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = FRA
+		OR = {
+			exists = ENG
+			exists = GBR
+		}
+		is_subject = no
+		NOT = { alliance_with = ENG }
+		NOT = { alliance_with = GBR }
+		NOT = { is_year = 1475 }
+		OR = {
+			french_region = { owned_by = ENG }
+			french_region = { owned_by = GBR }
+		}
+		NOT = { has_country_flag = england_out_of_france }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { war_with = GBR }
+		NOT = { war_with = ENG }
+		NOT = { french_region = { owned_by = ENG } }
+		NOT = { french_region = { owned_by = GBR } }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			ENG = { NOT = { mil = 2 } }
+		}
+	}
+	effect = {
+		set_country_flag = england_out_of_france
+		add_country_modifier = {
+			name = "english_out_of_france"
+			duration = 3650
+		}
+	}
+}
+
+
+recover_calais = {
+
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_modifier = military_victory }
+		tag = FRA
+		OR = {
+			exists = ENG
+			exists = GBR
+		}
+		is_subject = no
+		OR = {
+			GBR = {
+				owns = 87
+				NOT = { alliance_with = FRA }
+				NOT = { war_with = FRA }
+			}		# Calais
+			ENG = {
+				owns = 87
+				NOT = { alliance_with = FRA }
+				NOT = { war_with = FRA }
+			}		# Calais
+		}
+		87 = {
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			AND = {
+				ENG = { NOT = { owns = 87 } }
+				GBR = { NOT = { owns = 87 } }
+				NOT = { owns = 87 }
+			}
+		}
+	}
+	success = {
+		NOT = { war_with = GBR }
+		NOT = { war_with = ENG }
+		owns = 87
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			war_with = ENG
+		}
+	}
+	immediate = {
+		add_claim = 87
+	}
+	abort_effect = {
+		remove_claim = 87
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+
+recover_aquitaine = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			owned_by = ENG
+			owned_by = GBR
+		}
+		OR = {
+			province_id = 173
+			province_id = 174
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = FRA
+		is_subject = no	
+		NOT = { is_year = 1475 }
+		OR = {
+			GBR = {
+				owns = 173
+				owns = 174
+				NOT = { alliance_with = FRA }
+				NOT = { war_with = FRA }
+			}
+			ENG = {
+				owns = 173
+				owns = 174
+				NOT = { alliance_with = FRA }
+				NOT = { war_with = FRA }
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			AND = {
+				173 = {	# Saintonge
+					NOT = { owned_by = ENG }
+					NOT = { owned_by = GBR }
+					NOT = { owned_by = ROOT }
+				}
+				174 = {	# Gascogne
+					NOT = { owned_by = ENG }
+					NOT = { owned_by = GBR }
+					NOT = { owned_by = ROOT }
+				}
+			}
+		}
+	}
+	success = {
+		NOT = { war_with = GBR }
+		NOT = { war_with = ENG }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = ENG value = -100 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = ENG value = -200 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		every_target_province = {
+			add_province_modifier = {
+				name = "faster_integration"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+conquer_milan = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = FRA
+		is_subject = no
+		MLO = {
+			owns = 104
+			is_neighbor_of = ROOT
+			religion_group = ROOT
+			NOT = { war_with = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes	
+			MLO = { NOT = { is_neighbor_of = ROOT } }
+			AND = {
+				MLO = { NOT = { owns = 104 } }
+				NOT = { owns = 104 }
+			}
+		}
+	}
+	success = {
+		NOT = { war_with = MLO }
+		owns = 104
+	}
+	chance = {
+		factor = 2500
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = MLO value = -100 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = MLO value = -200 } }
+		}
+	}
+	immediate = {
+		add_claim = 104
+	}
+	abort_effect = {
+		remove_claim = 104
+	}
+	effect = {
+		104 = {
+			add_province_modifier = {
+				name = "faster_integration"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+annex_genoa = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = GEN
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = FRA
+		is_subject = no
+		NOT = { has_country_modifier = italian_ambition_modifier }
+		GEN = {
+			is_neighbor_of = ROOT
+			religion_group = ROOT
+			NOT = { war_with = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = GEN }
+			AND = {
+				GEN = { NOT = { owns = 101 } }
+				NOT = { owns = 101 }
+			}
+			GEN = {
+				OR = {
+					NOT = { is_neighbor_of = ROOT }
+					NOT = { religion_group = ROOT }
+				}
+			}
+		}
+	}
+	success = {
+		NOT = { exists = GEN }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2500
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = GEN value = -100 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = GEN value = -200 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = italian_ambition_modifier
+			duration = 3650
+		}
+	}
+}
+
+subjugate_lorraine = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = FRA
+		is_subject = no	
+		NOT = { exists = ORL }
+		NOT = { exists = AUV }
+		NOT = { exists = BOU }
+		NOT = { exists = PRO }
+		NOT = { has_country_modifier = military_vassalization }
+		LOR = {
+			is_subject = no
+			is_neighbor_of = ROOT
+			NOT = { alliance_with = FRA }
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = LOR }
+			LOR = { is_subject = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = LOR
+				}
+			}
+		}
+	}
+	success = {
+		LOR = { vassal_of = ROOT }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = LOR value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = LOR
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = LOR
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_vassalization
+			duration 1825
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = LOR
+			}
+		}
+	}
+}
+
+defend_the_netherlands = {
+	
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = FRA
+		exists = SPA
+		is_subject = no
+		SPA = {
+			is_neighbor_of = ROOT
+			NOT = { alliance_with = ROOT }
+		}
+		the_low_countries = {
+			owned_by = SPA
+			any_neighbor_province = {
+				owned_by = FRA
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		NOT = { war_with = SPA }
+		NOT = { the_low_countries = { owned_by = SPA } }
+		the_low_countries = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 1500
+		modifier = {
+			factor = 2
+			SPA = { NOT = { num_of_cities = ROOT } }
+		}
+		modifier = {
+			factor = 2
+			SPA = {
+				NOT = { num_of_infantry = ROOT }
+				NOT = { num_of_cavalry = ROOT }
+			}
+		}
+	}
+	effect = {
+		every_owned_province = {
+			limit = { region = the_low_countries }
+			add_province_modifier = faster_integration
+			duration = 3650
+		}
+	}
+}

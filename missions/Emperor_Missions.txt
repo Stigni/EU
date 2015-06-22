@@ -1,0 +1,214 @@
+improved_relations_with_electors = {
+	
+	type = elector_countries
+
+	category = DIP
+
+	allow = {
+		FROM = {
+			is_emperor = yes
+		}
+		is_elector = yes
+		is_emperor = no
+		has_opinion = { who = FROM value = 0 }
+		NOT = { has_opinion = { who = FROM value = 50 } }
+		NOT = { hre_reform_level = 6 }
+	}
+	abort = {
+		FROM = { is_emperor = no }
+	}
+	success = {
+		has_opinion = { who = FROM value = 100 }
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.05
+			NOT = { has_opinion = { who = FROM value = 0 } }
+		}
+		modifier = {
+			factor = 1.07
+			preferred_emperor = FROM
+		}
+		modifier = {
+			factor = 1.04
+			num_of_cities = 4
+		}	
+		modifier = {
+			factor = 1.20
+			religion = FROM
+		}			
+		modifier = {
+			factor = 1.15
+			primary_culture = FROM
+		}
+		modifier = {
+			factor = 1.05
+			dynasty = FROM
+		}
+		modifier = {
+			factor = 1.02
+			is_neighbor_of = FROM
+		}	
+	}
+	effect = {
+		FROM = { 
+			add_adm_power = 10
+			add_legitimacy = 5
+			add_imperial_influence = 5
+		}
+	}
+}
+
+
+become_emperor = {
+	
+	type = country
+
+	category = DIP
+
+	allow = {
+		is_emperor = no
+		OR = {
+			is_elector = yes
+			capital_scope = {
+				is_part_of_hre = yes
+			}
+		}
+		any_known_country = {
+			is_elector = yes
+			preferred_emperor = FROM
+		}
+		NOT = {
+			tag = HAB
+		}
+		is_subject = no
+		is_lesser_in_union = no
+		government = monarchy
+		num_of_cities = 6
+		OR = {
+			NOT = { has_country_flag = empire_reclaimed }
+			had_country_flag = { flag = empire_reclaimed days = 7300 }
+		}
+	}
+	abort = {
+		OR = {
+			NOT = {
+				OR = {
+					is_elector = yes
+					capital_scope = {
+						is_part_of_hre = yes
+					}
+				}
+			}		
+			is_subject = yes
+			is_lesser_in_union = yes
+			NOT = { government = monarchy }
+		}
+	}
+	success = {
+		is_emperor = yes
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 1.25
+			num_of_cities = 8
+		}
+		modifier = {
+			factor = 1.50
+			num_of_cities = 12
+		}		
+		modifier = {
+			factor = 1.10
+			culture_group = germanic
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "succesful_bid_for_imperial_crown"
+			duration = 3650
+		}
+	}
+}
+
+
+convince_elector = {
+	
+	type = elector_countries
+
+	category = DIP
+
+	allow = {
+		FROM = {
+			OR = {
+				culture_group = germanic
+				capital_scope = { is_part_of_hre = yes }
+			}
+			government = monarchy
+			religion_group = christian
+			num_of_cities = 4
+			is_female = no
+		}
+		hre_religion = FROM
+		has_opinion = { who = FROM value = 50 }
+		NOT = { preferred_emperor = FROM }
+		NOT = { preferred_emperor = ROOT }
+		NOT = { num_of_cities = 6 }
+		is_subject = no
+		ai = yes
+	}
+	abort = {
+		OR = {
+			ai = no
+			is_elector = no
+			is_subject = yes
+			num_of_cities = 6
+			NOT = {
+				FROM = {
+					OR = {
+						culture_group = germanic
+						capital_scope = { is_part_of_hre = yes }
+					}
+					government = monarchy
+					religion_group = christian
+					num_of_cities = 4
+				}
+			}
+			FROM = { is_female = yes }
+		}
+	}
+	success = {
+		preferred_emperor = FROM
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.07
+			has_opinion = { who = FROM value = 50 }
+		}
+		modifier = {
+			factor = 1.1
+			religion = FROM
+		}			
+		modifier = {
+			factor = 1.1
+			primary_culture = FROM
+		}
+		modifier = {
+			factor = 1.1
+			dynasty = FROM
+		}
+		modifier = {
+			factor = 1.1
+			is_neighbor_of = FROM
+		}	
+	}
+	effect = {
+		FROM = { 
+			add_prestige = 25
+			add_legitimacy = 10
+			add_dip_power = 50
+		}
+	}
+}
