@@ -6,6 +6,7 @@ country_decisions = {
 			NOT = { exists = ADU }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
+			NOT = { tag = SPA }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no

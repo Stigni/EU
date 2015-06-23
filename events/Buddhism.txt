@@ -2086,6 +2086,7 @@ country_event = {
 		religion = vajrayana
 		has_regency = no
 		has_country_modifier = vajrayana_lama
+		NOT = { has_country_flag = search_for_lama }
 		OR = {
 			NOT = { has_country_flag = reincarnated }
 			had_country_flag = { flag = reincarnated days = 5475 }
@@ -2099,6 +2100,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = search_for_lama
+			clr_country_flag = reincarnated
 		}
 	}
 	
@@ -2126,6 +2128,7 @@ country_event = {
 		religion = vajrayana
 		has_regency = no
 		has_country_flag = search_for_lama
+		NOT = { has_country_flag = reincarnated }
 	}
 
 	mean_time_to_happen = {
@@ -2139,6 +2142,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = helped_search
+			clr_country_flag = search_for_lama
 			set_country_flag = reincarnated
 		}
 	}
