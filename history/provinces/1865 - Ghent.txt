@@ -12,7 +12,6 @@ base_tax = 8
 base_production = 8
 trade_goods = cloth
 base_manpower = 3
-add_core = FLA
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

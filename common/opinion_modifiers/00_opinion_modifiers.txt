@@ -27,6 +27,11 @@ enemy_of_my_enemy = {
 	max = 20
 }
 
+opinion_invasion = {
+	opinion = -1000
+	min = -1000
+}
+
 republic_same_religion = {
 	opinion = 10
 }
@@ -2756,45 +2761,59 @@ inti_refused_to_attend_inti_raymi = {
 # Christian Theocracy
 opinion_swiss_guard = {
 	opinion = 50
+	yearly_decay = 1
 }
 opinion_no_swiss_guard = {
 	opinion = -50
+	yearly_decay = 1
 }
 opinion_popes_pet = {
 	opinion = -25
+	yearly_decay = 1
 }
 opinion_cardinal_nephew = {
 	opinion = 50
+	yearly_decay = 1
 }
 opinion_condemn_slavery = {
 	opinion = 50
+	yearly_decay = 1
 }
 opinion_allows_slavery = {
 	opinion = -50
+	yearly_decay = 1
 }
 opinion_condemn_witchtrials_good = {
 	opinion = 50
+	yearly_decay = 1
 }
 opinion_condemn_witchtrials_bad = {
 	opinion = -50
+	yearly_decay = 1
 }
 opinion_allows_witchtrials_good = {
 	opinion = 50
+	yearly_decay = 1
 }
 opinion_allows_witchtrials_bad = {
 	opinion = -50
+	yearly_decay = 1
 }
 opinion_erased_rival_pope = {
 	opinion = 50
+	yearly_decay = 1
 }
 opinion_erased_pope = {
 	opinion = -60
+	yearly_decay = 1
 }
 opinion_not_erased_rival_pope = {
 	opinion = 60
+	yearly_decay = 1
 }
 opinion_not_erased_pope = {
 	opinion = -50
+	yearly_decay = 1
 }
 
 #Castilian Civil War

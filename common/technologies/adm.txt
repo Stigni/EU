@@ -170,6 +170,9 @@ technology = {
 	year = 1622
 	
 	university = yes	
+	
+	administrative_efficiency = 0.2
+	development_efficiency = 0.2
 }
 
 technology = {
@@ -177,7 +180,6 @@ technology = {
 	year = 1635
 	
 	allowed_idea_groups	= 5
-	
 }
 
 technology = {
@@ -219,7 +221,8 @@ technology = {
 	# Tech 23
 	year = 1700
 	
-	administrative_efficiency = 0.25
+	administrative_efficiency = 0.2
+	development_efficiency = 0.2
 }
 
 technology = {
@@ -227,7 +230,6 @@ technology = {
 	year = 1715
 	
 	counting_house = yes  
-	development_efficiency = 0.25
 }
 
 technology = {
@@ -249,7 +251,8 @@ technology = {
 	# Tech 27
 	year = 1760
 
-	administrative_efficiency = 0.25		
+	administrative_efficiency = 0.2
+	development_efficiency = 0.2	
 }
 
 technology = {
@@ -258,7 +261,6 @@ technology = {
 	
 	#Rotherham Plough
 	production_efficiency 	=	0.1
-	development_efficiency = 0.25
 }
 
 technology = {

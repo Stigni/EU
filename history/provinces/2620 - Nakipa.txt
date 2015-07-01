@@ -17,6 +17,7 @@ discovered_by = north_american
 1769.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	is_city = yes
 	culture = castillian
 	religion = catholic	
@@ -24,7 +25,6 @@ discovered_by = north_american
 } # Missionaries arrived
 1775.1.1 = { unrest = 4 } # The natives rebelled
 1776.1.1 = { unrest = 0 }
-1794.1.1 = { add_core = SPA }
 1810.9.16 = {
 	owner = MEX
 	add_core = MEX

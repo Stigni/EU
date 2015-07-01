@@ -27,16 +27,20 @@ native_hostileness = 6
 	owner = GBR
 	controller = GBR
 	add_core = GBR
+	remove_core = FRA
 } # Treaty of Paris gives the island to the British
 1779.6.20 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
+	remove_core = GBR
 	religion = catholic
 	culture = cosmopolitan_french
 } # French regain possession of the island
 1783.9.4 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	culture = english
 	religion = reformed
 	remove_core = FRA

@@ -28,6 +28,7 @@ discovered_by = north_american
 1808.1.1 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	capital = "Grandes Fourches"
 	culture = english
 	religion = protestant
@@ -36,6 +37,7 @@ discovered_by = north_american
 	owner = USA
 	controller = USA
 	add_core = USA
+	remove_core = GBR
 	culture = american
 	religion = protestant
 } #ceded in the treaty of 1818, not renamed Grand Forks until 1870

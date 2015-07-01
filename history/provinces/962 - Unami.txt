@@ -15,8 +15,9 @@ discovered_by = north_american
 
 1609.1.1 = { discovered_by = NED } # Henry Hudson
 1643.1.1 = {
- owner = SWE
+ 	owner = SWE
 	controller = SWE
+	add_core = SWE
 	is_city = yes
 	culture = swedish
 	religion = protestant
@@ -26,17 +27,20 @@ discovered_by = north_american
 1655.9.15 = {
 	owner = NED
 	controller = NED
+	add_core = NED
+	remove_core = SWE
 	culture = dutch
 	religion = reformed
 } # Incorporated into the Dutch new Netherlands
 1665.6.1 = { controller = ENG } # English seize New Netherlands at outset of Second Anglo-Dutch war
 1667.7.31 = {
 	owner = ENG
+	add_core = ENG
+	remove_core = NED
 	culture = english
 	religion = protestant
 	capital = "Trenton"
 } # Treaty of Breda
-1692.7.31 = { add_core = ENG }
 1707.5.12 = {
 	discovered_by = GBR
 	owner = GBR

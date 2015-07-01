@@ -18,7 +18,8 @@ discovered_by = mesoamerican
 1524.1.1 = {
 	capital = "Triunfo de la Cruz"
 	owner = SPA 
-	controller = SPA 
+	controller = SPA
+	add_core = SPA
 	culture = castillian
 	religion = catholic
 	trade_goods = naval_supplies
@@ -26,5 +27,4 @@ discovered_by = mesoamerican
 } # Founded by de Olid
 1525.1.1 = { capital = "La Navidad" } #New settlement by Cortez
 1536.1.1 = { capital = "Puerto de Caballos" } #New name again
-1588.1.1 = { add_core = SPA }
 1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence

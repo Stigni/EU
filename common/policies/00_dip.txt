@@ -91,7 +91,7 @@ convoy_system = {
 		full_idea_group = offensive_ideas
 	}
 	
-	global_trade_income_modifier = 0.1
+	trade_efficiency = 0.1
 	ship_durability = 0.05
 	
 	ai_will_do = {
@@ -183,7 +183,7 @@ the_importation_act = {
 		full_idea_group = administrative_ideas
 	}
 	
-	global_trade_income_modifier = 0.20
+	trade_efficiency = 0.20
 	
 	ai_will_do = {
 		factor = 1
@@ -412,7 +412,7 @@ the_banking_system = {
 	}
 
 	interest = -1
-	global_trade_income_modifier = 0.1
+	trade_efficiency = 0.1
 
 
 	ai_will_do = {

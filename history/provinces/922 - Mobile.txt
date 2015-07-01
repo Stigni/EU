@@ -17,21 +17,21 @@ discovered_by = north_american
 1702.1.20 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	is_city = yes
 	culture = cosmopolitan_french
 	religion = catholic
 	trade_goods = cotton
 } # Founding of Mobile
-1727.1.1 = { add_core = FRA }
 1756.5.16 = { controller = GBR } # Occupied by the British
 1763.2.10 = {
 	owner = GBR
+	add_core = GBR
 	remove_core = FRA
 	culture = english
 	religion = protestant
 } # Treaty of Paris - ceded to Britain, France gave up its claim
-1783.9.3 = { owner = SPA controller = SPA } # Spanish occupation
-1808.9.3 = { add_core = SPA }
+1783.9.3 = { owner = SPA controller = SPA add_core = SPA remove_core = GBR } # Spanish occupation
 1813.4.1 = {
 	owner = USA
 	controller = USA

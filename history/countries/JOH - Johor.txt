@@ -291,16 +291,6 @@ capital = 597	# Johor
 	}
 }
 
-1812.1.1 = {
-	monarch = {
-		name = "Abd al-Rahmân Shâh"
-		dynasty = "Melaka"
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
-
 1776.1.1 = {
 	heir = {
 		name = "Hussein Shâh"
@@ -312,6 +302,16 @@ capital = 597	# Johor
 		adm = 1
 		dip = 2
 		mil = 1
+	}
+}
+
+1812.1.1 = {
+	monarch = {
+		name = "Abd al-Rahmân Shâh"
+		dynasty = "Melaka"
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 

@@ -49,7 +49,7 @@ surya =
 {
 	#(Economic - Income)
 	global_tax_modifier = 0.10
-	global_trade_income_modifier = 0.10
+	trade_efficiency = 0.10
 	
 	allow = { religion = hinduism }
 	sprite = 3

@@ -19,6 +19,7 @@ discovered_by = north_american
 1620.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	is_city = yes
 	culture = cosmopolitan_french
 	religion = catholic

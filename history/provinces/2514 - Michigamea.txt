@@ -29,18 +29,18 @@ discovered_by = north_american
 1724.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	is_city = yes
+	trade_goods = grain
 	religion = catholic
 	culture = cosmopolitan_french
 }
-1749.1.1 = { add_core = FRA }
-1750.1.1 = { trade_goods = grain }
 1762.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	remove_core = FRA
 } # Treaty of Fontainebleau, secretely ceded to Spain
-1787.1.1 = { add_core = SPA }
 1800.10.1 = {
 	owner = FRA
 	controller = FRA

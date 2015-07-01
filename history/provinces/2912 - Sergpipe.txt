@@ -27,12 +27,14 @@ native_hostileness = 3
 1624.5.1 = {
 	owner = NED
 	controller = NED
+	add_core = NED
 	religion = reformed
 	culture = dutch
 }
 1625.4.1 = {
 	owner = POR
 	controller = POR
+	remove_core = NED
 	culture = portugese
 	religion = catholic
 }

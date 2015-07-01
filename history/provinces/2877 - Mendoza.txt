@@ -17,10 +17,12 @@ native_hostileness = 9
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
+	is_city = yes
+	trade_goods = copper
 	culture = castillian
 	religion = catholic
 } # Founded by Pedro del Castillo
-1576.1.1 = { add_core = SPA is_city = yes trade_goods = copper }
 1816.7.9 = {
 	owner = LAP
 	controller = LAP

@@ -19,10 +19,10 @@ discovered_by = north_american
 1602.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	culture = castillian
 	religion = catholic 
 } #Santa Catalina de Guale mission
-1627.1.1 = { add_core = SPA } 
 1702.1.1 = {
 	owner = CRE
 	controller = CRE
@@ -35,11 +35,11 @@ discovered_by = north_american
 1733.2.12 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	culture = english
 	religion = protestant
 	capital = "Savannah"
 } # Founding of Savannah, James Oglethorpe
-1758.2.12 = { add_core = GBR }
 1760.1.19 = { unrest = 5 } # Cherokee war
 1761.1.1 = { unrest = 0 } # Peace attempt
 1764.7.1 = {

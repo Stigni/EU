@@ -1,5 +1,4 @@
 government = iqta
-mercantilism = 0.25
 technology_group = muslim
 unit_type = sub_saharan
 religion = sunni

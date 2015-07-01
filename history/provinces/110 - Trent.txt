@@ -5,7 +5,7 @@ controller = HAB
 add_core = STY
 add_core = HAB
 add_core = TIR
-culture = austrian
+culture = venetian
 religion = catholic
 hre = yes
 base_tax = 4 
@@ -28,7 +28,7 @@ discovered_by = ottoman
 	controller = HAB
 	remove_core = STY
 }
-1511.6.23 = { base_manpower = 0.5 } # Landslibell - Tyrolean's only military duty is the defence of their homeland. 
+1511.6.23 = { base_manpower = 1 } # Landslibell - Tyrolean's only military duty is the defence of their homeland. 
 1525.3.1 = { unrest = 8 }
 1525.9.1 = { unrest = 0 }
 1564.7.25 = { base_manpower = 1 } #Ferdinand I dies, Habsburgs split in 3 lines
@@ -39,7 +39,7 @@ base_production = 4 } #Maximilian's economic reforms
 1665.6.25 = { 
 	owner = HAB
 	controller = HAB
-	base_manpower = 0.5 
+	base_manpower = 1 
 }# base_manpower decreased as Landslibell is still in effect under foreign governance
 1805.12.26 = {	
 	owner = BAV

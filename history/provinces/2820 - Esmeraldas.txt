@@ -27,11 +27,9 @@ discovered_by = andean
 	controller = SPA
 	culture = castillian
 	religion = catholic
-} # Founded by Sebastián de Benalcázar
-1550.1.1 = {
 	add_core = SPA
 	trade_goods = grain
-}
+} # Founded by Sebastián de Benalcázar
 1819.12.17 = {
 	owner = COL
 	controller = COL

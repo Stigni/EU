@@ -1,6 +1,5 @@
 government = tribal_kingdom
 government_rank = 1
-mercantilism = 0.25
 primary_culture = tibetan
 religion = vajrayana
 technology_group = chinese

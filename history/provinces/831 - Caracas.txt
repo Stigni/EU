@@ -17,11 +17,12 @@ native_hostileness = 5
 1567.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
+	is_city = yes
 	culture = castillian
 	religion = catholic
 	trade_goods = fur
 }
-1577.1.1 = { add_core = SPA is_city = yes }
 1795.1.1 = { unrest = 4 } # Slave rebellion
 1796.1.1 = { unrest = 0 }
 1811.7.5 = {

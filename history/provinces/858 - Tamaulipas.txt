@@ -18,11 +18,11 @@ discovered_by = north_american
 1554.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	is_city = yes
 	capital = "Tampico Alto"
 	culture = castillian
 	trade_goods = sugar
 	religion = catholic
 } # First permanent settlement
-1579.1.1 = { add_core = SPA }
 1810.9.16 = { owner = MEX add_core = MEX controller = MEX } # Mexican War of Independence

@@ -19,23 +19,27 @@ discovered_by = north_american
 1623.1.1 = {
 	owner = ENG
 	controller = ENG
+	add_core = ENG
 	capital = "St. John"
 	religion = protestant
 	culture = english
 	is_city = yes
 	trade_goods = fish
 }
-1648.1.1 = { add_core = ENG }
 1663.1.1 = { unrest = 4 } # Conflicts between the French rulers
 1664.6.1 = {
 	owner = NED
 	controller = NED
+	add_core = NED
+	remove_core = ENG
 	culture = dutch
 	religion = reformed
 } # Seized by Michiel de Ruyter
 1673.1.1 = {
 	owner = ENG
 	controller = ENG
+	add_core = ENG
+	remove_core = NED
 	culture = english
 	religion = protestant
 } # The Dutch are chased away 

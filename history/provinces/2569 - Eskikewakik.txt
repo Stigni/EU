@@ -18,6 +18,7 @@ discovered_by = north_american
 1659.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	is_city = yes
 	culture = cosmopolitan_french
 	religion = catholic
@@ -27,7 +28,7 @@ discovered_by = north_american
 1710.10.1 = { controller = GBR } # Queen Anne's war
 1713.4.11 = {
 	owner = GBR
+	add_core = GBR
 	remove_core = FRA
 } # Treaty of Utrecht
-1738.1.1 = { add_core = GBR }
 1750.1.1 = { culture = english religion = protestant } #British forcibly remove Acadians

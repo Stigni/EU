@@ -34,7 +34,6 @@ monarch_names = {
 	"Saidullah #0" = 20
 	"Ri'ayatullah #0" = 20
 	"Amrullah Bagus Kasuma #0" = 20
-	"Tahmidullah #0" = 20
 	"Panembahan Kasuma Dilaga #0" = 20
 	"Hamidullah #0" = 20
 	"Tamjidullah #0" = 20

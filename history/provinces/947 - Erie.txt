@@ -37,6 +37,7 @@ discovered_by = north_american
 1753.8.3 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	culture = cosmopolitan_french
 	religion = catholic
 	trade_goods = fur
@@ -44,6 +45,8 @@ discovered_by = north_american
 1760.1.1 = { controller = GBR } # Occupied by the British
 1763.2.10 = {
 	owner = GBR
+	add_core = GBR
+	remove_core = FRA
 	culture = english
 	religion = protestant
 } # Treaty of Paris - ceded to Britain, France gave up its claim
@@ -51,6 +54,7 @@ discovered_by = north_american
 	owner = LEN
 	controller = LEN
 	add_core = LEN
+	remove_core = GBR
 	is_city = yes
 	culture = delaware
 	religion = totemism
@@ -58,6 +62,7 @@ discovered_by = north_american
 1795.8.3 = {
 	owner = USA
 	controller = USA
+	add_core = USA
 	culture = american
 	religion = protestant
 } # Treaty of Greenville, much of Ohio ceded by Natives.

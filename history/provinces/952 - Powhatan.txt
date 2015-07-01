@@ -20,11 +20,11 @@ discovered_by = north_american
 1584.1.1 = { discovered_by = ENG }
 1646.1.1 = {
 	owner = ENG
-	controller = ENG 
+	controller = ENG
+	add_core = ENG
 	culture = english 
 	religion = protestant
 } #Ceded by Powhatan after third Powhatan War.
-1702.1.1 = { add_core = ENG }
 1707.5.12 = {
 	discovered_by = GBR
 	owner = GBR

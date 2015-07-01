@@ -20,8 +20,8 @@ discovered_by = north_american
 	discovered_by = GBR
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	is_city = yes
 	capital = "Eastmain Post"
 	trade_goods = fur
 }
-1761.1.1 = { add_core = GBR }

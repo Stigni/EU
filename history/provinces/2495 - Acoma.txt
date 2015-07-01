@@ -21,9 +21,9 @@ discovered_by = north_american
 1598.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	trade_goods = wool
  } # conquered by Spain
-1623.1.1 = { add_core = SPA }
 1680.8.10 = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Pueblo revolt
 1680.8.21 = {
 	owner = PUE

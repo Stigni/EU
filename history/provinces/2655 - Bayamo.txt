@@ -15,6 +15,7 @@ native_hostileness = 2
 1513.11.5 = {
 	owner = CAS
 	controller = CAS
+	add_core = CAS
 	culture = castillian
 	religion = catholic
 	is_city = yes
@@ -24,6 +25,8 @@ native_hostileness = 2
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
+	remove_core = CAS
 }
-1517.1.1 = { add_core = SPA } # The Taíno ( Arawak ) culture was nearly destroyed
+#1517.1.1 = { } # The Taíno ( Arawak ) culture was nearly destroyed
 

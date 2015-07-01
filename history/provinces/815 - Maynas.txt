@@ -19,6 +19,7 @@ discovered_by = CHM
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	culture = castillian
 	religion = catholic
 	trade_goods = cocoa
@@ -26,7 +27,6 @@ discovered_by = CHM
 }
 1537.1.1 = { unrest = 8 } # Fighting breaks out when Almagro seizes Cuzco
 1538.1.1 = { unrest = 5 } # Almagro is defeated & executed
-1558.8.29 = { add_core = SPA }
 1810.7.20 = {
 	owner = COL
 	controller = COL

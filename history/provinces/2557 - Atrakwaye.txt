@@ -24,18 +24,20 @@ discovered_by = north_american
 1677.1.1 = {
  	owner = LEN
 	controller = LEN
+	add_core = LEN
 	culture = delaware 
 } #Lenape vassals of Iroquois resettle
 1707.5.12 = { discovered_by = GBR }
 1756.1.1 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	culture = english
 	religion = protestant 
 } #Shamokin Fort
 1776.7.4 = {
 	owner = USA
 	controller = USA
+	add_core = USA
 } # Declaration of independence
-1782.11.1 = { unrest = 0 } # Preliminary articles of peace, the British recognized Amercian independence
-1801.7.4 = { add_core = USA }
+1782.11.1 = { remove_core = GBR unrest = 0 } # Preliminary articles of peace, the British recognized Amercian independence

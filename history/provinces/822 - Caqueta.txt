@@ -19,12 +19,12 @@ native_hostileness = 1
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	culture = castillian
 	trade_goods = cocoa
 	is_city = yes
 	religion = catholic
 } # The death of Atahualpa
-1558.8.29 = { add_core = SPA }
 1810.7.20 = {
 	owner = COL
 	controller = COL

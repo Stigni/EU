@@ -18,6 +18,7 @@ native_hostileness = 5
 1509.1.1 = {
 	owner = CAS
 	controller = CAS
+	add_core = CAS
 	religion = catholic
 	culture = castillian
 	trade_goods = naval_supplies
@@ -27,8 +28,9 @@ native_hostileness = 5
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
+	remove_core = CAS
 }
-1534.1.1 = { add_core = SPA }
 1671.1.1 = { unrest = 7 } # Henry Morgan, believing England to still be at war with Spain took the city of Panama 
 1671.6.6 = { unrest = 0 } # Morgan is arrested and Panama returned to Spain 
 1739.11.22 = { controller = GBR } # Portobelo & Chagres are seized by the English 

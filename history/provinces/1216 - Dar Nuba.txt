@@ -11,10 +11,13 @@ base_production = 1
 base_manpower = 1
 native_ferocity = 4
 native_hostileness = 9
+discovered_by = ALO
+discovered_by = MAK
 
-1503.1.1 = {	owner = NUB
+1503.1.1 = {
+	owner = NUB
 	controller = NUB
-	  	add_core = NUB
+	add_core = NUB
 	discovered_by = NUB
 	is_city = yes
 	discovered_by = ETH

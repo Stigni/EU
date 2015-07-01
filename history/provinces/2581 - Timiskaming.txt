@@ -18,16 +18,16 @@ discovered_by = north_american
 1668.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	is_city = yes
 	culture = cosmopolitan_french
 	religion = catholic
 	trade_goods = fur
 } #Fort Témiscamingue founded
-1693.1.1 = { add_core = FRA }
 1707.5.12 = { discovered_by = GBR } 
 1760.1.1 = { controller = GBR } # The government of New France capitulate at Montreal
 1763.2.10 = {
 	owner = GBR
+	add_core = GBR
 	remove_core = FRA
 } # Treaty of Paris - ceded to Britain
-1788.2.10 = { add_core = GBR }

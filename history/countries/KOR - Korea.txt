@@ -358,6 +358,14 @@ capital = 735	# Hanseong
 	government_rank = 1
 }
 
+1645.6.30 = {
+	government_rank = 2
+}
+
+1645.7.1 = {
+	government_rank = 1
+}
+
 1649.7.5 = {
 	monarch = {
 		name = "Ho" #Hyojong
@@ -390,14 +398,6 @@ capital = 735	# Hanseong
 		dip = 0
 		mil = 2
 	}
-}
-
-1645.6.30 = {
-	government_rank = 2
-}
-
-1645.7.1 = {
-	government_rank = 1
 }
 
 1661.8.15 = {

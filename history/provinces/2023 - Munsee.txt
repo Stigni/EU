@@ -28,14 +28,14 @@ discovered_by = north_american
 	owner = GBR
 	controller = GBR
 	discovered_by = GBR 
+	add_core = GBR
 	culture = english
 	religion = protestant
+	trade_goods = grain
  } #Settlers from Connecticut
 1764.7.4 = { culture = american }
 1768.11.5 = {
 	capital = "Wilkes-Barre" 
-	trade_goods = grain
-	add_core = GBR
 }
 1769.1.1 = { unrest = 5 } #conflicts between Pennsylvania and Connecticut over the region.
 1775.12.1 = { unrest = 9 } #Pennsylvania militia attacks Connecticut settlement

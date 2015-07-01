@@ -18,12 +18,12 @@ native_hostileness = 2
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	is_city = yes
 	culture = castillian
 	religion = catholic
 	trade_goods = fur
 } # Gonzalo Jimanez de Quesada
-1562.1.1 = { add_core = SPA }
 1810.7.20 = {
 	owner = COL
 	controller = COL

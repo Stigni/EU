@@ -18,17 +18,17 @@ native_hostileness = 2
 1680.1.1 = {
 	owner = POR
 	controller = POR
+	add_core = POR
 	culture = portugese
 	religion = catholic
 	is_city = yes
 	trade_goods = fish
 } 
-1705.1.1 = { add_core = POR }
 1724.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	culture = castillian
 	remove_core = POR
 } # The portugese are chased out
-1749.1.1 = { add_core = SPA }
 1762.1.1 = { fort_17th = yes }

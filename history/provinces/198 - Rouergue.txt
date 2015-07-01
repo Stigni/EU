@@ -7,8 +7,8 @@ is_city = yes
 culture = occitain
 religion = catholic
 hre = no
-base_tax = 3 
-base_production = 3
+base_tax = 4
+base_production = 4
 trade_goods = wool
 base_manpower = 2
 add_local_autonomy = 25
@@ -20,15 +20,8 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1304.1.1 = { add_core = AMG }
-1549.12.22 = {	
-	owner = AUV
-	controller = AUV
-	add_core = AUV
-	remove_core = AMG
-}
 1588.12.1 = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
-1589.1.5 = { owner = NAV controller = NAV add_core = NAV remove_core = AUV }
+1589.1.5 = { owner = NAV controller = NAV add_core = NAV }
 1589.8.2 = { owner = FRA controller = FRA } # To France proper, after Henri IV, King of France & Duke of Armagnac
 1594.1.1 = { unrest = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
 1650.1.14 = { unrest = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde

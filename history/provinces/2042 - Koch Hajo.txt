@@ -31,11 +31,10 @@ discovered_by = chinese
 	add_core = ASS
 } # Koch Hajo independent but seeks support of Assam
 1612.1.1 = { controller = MUG } #Mughals
-1614.1.1 = { owner = MUG } #Mughals
+1614.1.1 = { owner = MUG add_core = MUG } #Mughals
 1622.10.1 = { controller = REB revolt = { type = pretender_rebels size = 0 name = "Khurrams Faction" leader = "Shah Jahan Timurid" } } #With some aid from Golconda Khurrams rebelion against his father continues
 1624.1.1 = { controller = MUG revolt = { } } #Khurram is defeated and is chased away by Mughal forces and rebelious Zamindars. Takes refuge in Ahmednagar and eventually surrenders on terms dictated by Nur Jahan
 1627.1.1 = { discovered_by = POR }
-1664.1.1 = { add_core = MUG }
 1682.1.1 = {
 	owner = ASS
 	controller = ASS

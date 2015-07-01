@@ -19,11 +19,11 @@ discovered_by = MCA
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	culture = castillian
 	religion = catholic
 	trade_goods = coffee
 }
-1564.1.1 = { add_core = SPA is_city = yes}
 1810.7.20 = {
 	owner = COL
 	controller = COL

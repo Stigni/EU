@@ -25,6 +25,7 @@ discovered_by = ottoman
 }
 1481.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB }
 1486.1.1 = { revolt = {} controller = MLO }
+1495.1.1 = { hre = no }
 1499.1.1 = {
 	owner = GEN
 	controller = GEN
@@ -55,4 +56,3 @@ discovered_by = ottoman
 	remove_core = GEN
 } # Ceded to France, since the Republic of Genoa is unable to restore control
 1769.6.13 = { revolt = {} controller = FRA } # France managed to overcome the resistance & Paoli flees
-1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

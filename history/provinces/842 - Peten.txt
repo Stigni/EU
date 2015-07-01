@@ -19,8 +19,8 @@ discovered_by = mesoamerican
 1700.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	culture = castillian
 	religion = catholic
 } # The remaining pop. was forced to resettle at Ciudad de Flores
-1725.1.1 = { add_core = SPA }
 1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence

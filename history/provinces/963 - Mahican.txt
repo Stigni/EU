@@ -17,27 +17,29 @@ discovered_by = north_american
 1624.1.1 = {
 	owner = NED 
 	controller = NED
+	add_core = NED
 	culture = dutch
 	religion = reformed
 	trade_goods = fur
 } # Dutch settlers
 1629.1.1 = { discovered_by = ENG }
-1649.1.1 = { add_core = NED }
 1650.1.1 = { is_city = yes }
 1665.6.1 = { controller = ENG } # English seize New Netherlands at outset of Second Anglo-Dutch war
 1667.7.31 = {
 	owner = ENG
+	add_core = ENG
+	remove_core = NED
 	culture = english
 	religion = protestant
 	capital = "Albany"
 } # The Dutch surrendered the region without a struggle
-1673.1.1 = { owner = NED controller = NED } # Recaptured by the Dutch
+1673.1.1 = { owner = NED controller = NED add_core = NED } # Recaptured by the Dutch
 1674.1.1 = {
 	owner = ENG
 	controller = ENG
 	remove_core = NED
+	add_core = ENG
 }
-1689.1.1 = { add_core = ENG }
 1707.5.12 = {
 	discovered_by = GBR
 	owner = GBR

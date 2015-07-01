@@ -17,6 +17,7 @@ native_hostileness = 4
 1600.1.1 = {
 	owner = ENG
 	controller = ENG
+	add_core = ENG
 	culture = english
 	religion = reformed
 	is_city = yes
@@ -27,11 +28,11 @@ native_hostileness = 4
 1651.1.1 = {
 	owner = FRA 
 	controller = FRA
+	add_core = FRA
 	remove_core = ENG
 	culture = cosmopolitan_french
 	religion = catholic
 } # The French's turn to attempt colonization
-1676.1.1 = { add_core = FRA }
 1815.11.20 = {
 	owner = GBR
 	controller = GBR

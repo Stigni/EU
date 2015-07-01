@@ -17,15 +17,12 @@ discovered_by = INC
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
+	trade_goods = grain
 	is_city = yes
 	culture = castillian
 	religion = catholic
 } # Fray Tomás de Berlanga
-1600.1.1 = {
-	add_core = SPA
-
-	trade_goods = grain
-}
 1819.12.17 = {
 	owner = COL
 	controller = COL

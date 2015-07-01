@@ -1,7 +1,7 @@
 #396 - Bahrain
 
-owner = NAJ
-controller = NAJ
+owner = ALH
+controller = ALH
 culture = bedouin_arabic
 religion = shiite
 capital = "Manama"
@@ -11,7 +11,8 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 is_city = yes
-add_core = NAJ
+add_core = ALH
+add_core = ORM #Tributary to Hormuz up until conquest by Jabrids
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = indian
@@ -33,7 +34,7 @@ discovered_by = SFA
 	owner = POR
 	controller = POR
 	add_core = POR
-} # Invaded by the Portuguese
+} # Invaded by the Portuguese, using the Hormuzi claim
 1602.1.1 = {
 	owner = PER
 	controller = PER

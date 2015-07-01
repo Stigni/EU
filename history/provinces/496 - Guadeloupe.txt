@@ -16,14 +16,14 @@ native_hostileness = 5
 1516.1.23 = { discovered_by = SPA }
 1635.1.1 = {
 	owner = FRA
-	controller = FRA 
+	controller = FRA
+	add_core = FRA
 	is_city = yes
 	religion = catholic
 	culture = cosmopolitan_french
 	trade_goods = sugar 
 } # Most of the Caribs were wiped out by the French
 1643.1.1 = { capital = "Basse-Terre" }
-1660.1.1 = { add_core = FRA }
 1793.1.1 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Slave rebellion
 1794.4.21 = { revolt = {} controller = GBR } # Seized by the British
 1794.6.2 = { controller = FRA } # French control is restored

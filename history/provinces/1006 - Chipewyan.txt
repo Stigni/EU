@@ -18,9 +18,9 @@ discovered_by = north_american
 1717.1.1 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	is_city = yes
 	culture = english
 	religion = protestant
+	trade_goods = fur
 } # Founding of Churchill
-1742.1.1 = { add_core = GBR }
-1750.1.1 = { trade_goods = fur }

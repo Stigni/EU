@@ -73,7 +73,7 @@ capital = 739	# kashgar
 	}
 }
 
-1514.1.1 = {
+1514.5.1 = {
 	heir = {
 		name = "Abdurashid"
 		monarch_name = "Abdurashid"
@@ -283,7 +283,7 @@ capital = 739	# kashgar
 	}
 }
 
-1666.1.1 = {
+1668.1.1 = {
 	monarch = {
 		name = "Ismail"
 		dynasty = "Chagatayid"

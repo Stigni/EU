@@ -16,11 +16,11 @@ discovered_by = mesoamerican
 1523.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	capital = "Managua"
 	culture = castillian
 	religion = catholic
 	is_city = yes
 	trade_goods = coffee
 } # First permanent Spanish settlement 
-1548.1.1 = { add_core = SPA }
 1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence

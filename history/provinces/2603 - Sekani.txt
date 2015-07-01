@@ -17,9 +17,9 @@ discovered_by = north_american
 	discovered_by = GBR
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	is_city = yes
 	culture = english
 	religion = protestant 
 	trade_goods = fur 
 } #Fort St John, first western settlement in modern British Columbia
-1818.1.1 = { add_core = GBR }

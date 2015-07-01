@@ -4,7 +4,7 @@ pay_inflation = {
 	}
 	
 	effect = {
-		add_inflation = 1
+		add_inflation = 0.5
 	}
 	
 	ai_will_do = {

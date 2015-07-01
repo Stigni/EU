@@ -1,5 +1,4 @@
-government = revolutionary_republic
-government_rank = 3
+government = constitutional_republic
 technology_group = western
 religion = catholic
 primary_culture = castillian

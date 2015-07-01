@@ -27,9 +27,9 @@ discovered_by = south_american
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
-
+	add_core = SPA
+	remove_core = CAS
 }
-1523.1.1 = { add_core = SPA }
 1680.1.1 = { capital = "Port-of-Spain" }
 1690.1.1 = { unrest = 5 } # Religious convertion of the natives
 1699.1.1 = { unrest = 0 revolt = { type = nationalist_rebels size = 2 } controller = REB } # Arena Massacre, Indian uprising

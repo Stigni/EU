@@ -1,5 +1,4 @@
 government = noble_republic
-mercantilism = 0.25
 primary_culture = tibetan
 religion = vajrayana
 technology_group = chinese

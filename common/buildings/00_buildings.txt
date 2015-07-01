@@ -165,22 +165,12 @@ shipyard = {
 		factor = 100
 		modifier = {
 			factor = 0
-			NOT = { development = 20 }
+			NOT = { development = 10 }
 		}	
 		modifier = {
-			factor = 2
-			development = 20
-		}
-		modifier = {
-			factor = 0		
-			any_neighbor_province = {
-				owned_by = ROOT
-				OR = {
-					has_building = shipyard
-					has_building = grand_shipyard
-				}
-			}
-		}		
+			factor = 10
+			development = 10
+		}	
 		modifier = {
 			factor = 0
 			is_overseas = yes
@@ -300,7 +290,7 @@ regimental_camp = {
 		}	
 		modifier = {
 			factor = 0.1
-			NOT = { development = 10 }
+			NOT = { development = 20 }
 		}			
 	}
 }
@@ -481,48 +471,10 @@ grand_shipyard = {
 		modifier = {
 			factor = 0
 			NOT = { development = 10 }
-		}		
+		}	
 		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
-		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}		
-		modifier = {
-			factor = 2
-			NOT = {
-				ROOT = {
-					any_owned_province = {
-						OR = {
-							has_building = shipyard
-							has_building = grand_shipyard
-						}
-					}				
-				}
-			}
-		}		
-		modifier = {
-			factor = 2
-			NOT = {
-				ROOT = {
-					any_owned_province = {
-						OR = {
-							has_building = shipyard
-							has_building = grand_shipyard
-						}
-					}				
-				}
-			}
+			factor = 10
+			development = 10
 		}	
 		modifier = {
 			factor = 0
@@ -770,7 +722,7 @@ conscription_center = {
 		}
 		modifier = {
 			factor = 0.1
-			NOT = { development = 10 }
+			NOT = { development = 20 }
 		}		
 	}
 }
@@ -1001,7 +953,6 @@ tradecompany = {
 		spices
 		fur
 		wine
-		sugar
 	}
 	modifier = {
 		trade_goods_size = 1.0	

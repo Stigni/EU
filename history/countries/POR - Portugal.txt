@@ -107,6 +107,8 @@ national_focus = DIP
 	}
 }
 
+1443.1.1 = { leader = {	name = "Diogo Gomes"		type = explorer 	rank = 6	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1462.12.31 } }
+
 1448.6.9 = {
 	monarch = {
 		name = "Afonso V"
@@ -120,8 +122,6 @@ national_focus = DIP
 }
 
 #1441.1.1 = { leader = {	name = "Nuno Tristão"		type = explorer		rank = 6	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1444.12.31 } }
-
-1443.1.1 = { leader = {	name = "Diogo Gomes"		type = explorer 	rank = 6	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1462.12.31 } }
 
 #1444.1.1 = { leader = {	name = "Álvaro Fernandes"	type = explorer		rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1447.12.31 } }
 

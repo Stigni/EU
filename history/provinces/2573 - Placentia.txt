@@ -19,12 +19,12 @@ discovered_by = north_american
 1620.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	is_city = yes
 	culture = cosmopolitan_french
 	religion = catholic
 	trade_goods = fish
 } # French fishermen dominate the southern coast and northern peninsula
-1645.1.1 = { add_core = FRA }
 1655.1.1 = { capital = "Plaisance" } #Actually in Beothuk, but was the French capital, so in the French province
 1713.4.11 = {
 	owner = GBR

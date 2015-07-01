@@ -19,14 +19,21 @@ discovered_by = ottoman
 
 1399.1.1 = { unrest = 3 owner = MLO controller = MLO } # The city's seigniory given to Gian Galeazzo, Visconti of Milan
 1404.1.1 = { unrest = 0 owner = SIE controller = SIE } # Visconti is driven out
+1495.1.1 = { hre = no }
 1531.1.1 = { controller = SPA owner = SPA add_core = SPA }
 1552.1.1 = { controller = FRA owner = FRA add_core = FRA }
 1555.1.1 = { controller = SPA owner = SPA remove_core = FRA }
 1557.1.1 = {
-	controller = TUS
-	owner = TUS
-	add_core = TUS
+	controller = LAN
+	owner = LAN
+	add_core = LAN
 	remove_core = SPA
+}
+1569.8.1 = {
+	owner = TUS
+	controller = TUS
+	add_core = TUS
+	remove_core = LAN
 }
 1583.1.1 = { fort_16th = yes } #Medicean Walls
 1750.1.1 = { add_core = ITA } 
@@ -40,7 +47,6 @@ discovered_by = ottoman
 	controller = ETR
 	add_core = ETR
 } # The Kingdom of Etruria
-1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1807.12.10 = {
 	owner = FRA
 	controller = FRA

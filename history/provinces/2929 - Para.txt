@@ -18,11 +18,11 @@ native_hostileness = 3
 1635.12.24 = {
 	owner = POR
 	controller = POR
+	add_core = POR
 	is_city = yes
 	culture = portugese
 	religion = catholic
 	capital = "Cameta"
 	trade_goods = sugar
 }
-1641.1.1 = { add_core = POR }
 1758.1.24 = { capital = "Portel" }

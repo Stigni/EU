@@ -26,25 +26,27 @@ native_hostileness = 6
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
+	remove_core = CAS
 }
-1524.1.1 = { add_core = SPA }
 1634.1.1 = {
 	owner = NED
 	controller = NED
+	add_core = NED
 	culture = dutch
 	religion = reformed
 	capital = "Punda"
-
 	remove_core = SPA
 } # Dutch occupation, Punda is founded ( later: Willemstad )
-1659.1.1 = { add_core = NED }
 1807.1.1 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	remove_core = NED
 } # Occupied by British forces
 1815.6.9 = {
 	owner = NED
 	controller = NED
 	add_core = NED
+	remove_core = GBR
 } # Restored to the Netherlands

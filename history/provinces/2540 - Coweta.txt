@@ -24,10 +24,10 @@ discovered_by = north_american
 1736.1.1 = {
 	owner = GBR 
 	controller = GBR
+	add_core = GBR
 	culture = english
 	religion = protestant 
 } #Settlement of Fort Augusta
-1761.1.1 = { add_core = GBR }
 1764.7.1 = {
 	culture = american
 	unrest = 6

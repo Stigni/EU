@@ -15,14 +15,14 @@ discovered_by = north_american
 
 1607.1.1 = { discovered_by = ENG } # John Smith
 1646.1.1 = {
- owner = ENG
+	owner = ENG
 	controller = ENG
+	add_core = ENG
 	is_city = yes
 	religion = protestant
 	trade_goods = tobacco
 	culture = english 
 } #Fort Henry
-1671.1.1 = { add_core = ENG }
 1707.5.12 = {
 	discovered_by = GBR
 	owner = GBR

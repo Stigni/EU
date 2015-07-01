@@ -1,6 +1,9 @@
 peasant_war = {
 	potential = {
-		government = monarchy
+		OR = {
+			government = monarchy
+			government = theocracy
+		}
 		NOT = { government = celestial_empire }
 		NOT = { government = steppe_horde }		
 		uses_doom = no
@@ -35,6 +38,7 @@ peasant_war = {
 		}		
 		modifier = {
 			factor = 1.5
+			government = monarchy
 			NOT = { legitimacy = 50 }
 		} 
 		modifier = {

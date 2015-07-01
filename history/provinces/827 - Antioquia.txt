@@ -19,13 +19,13 @@ native_hostileness = 1
 1616.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	capital = "Medellin"
 	culture = castillian
 	religion = catholic
 	is_city = yes
 	trade_goods = coffee
 }
-1641.1.1 = { add_core = SPA }
 1810.7.20 = {
 	owner = COL
 	controller = COL

@@ -32,7 +32,7 @@ union = {
 # Milan and Florence
 alliance = {
 	first = MLO
-	second = TUS
+	second = LAN
 	start_date = 1450.5.1
 	end_date = 1454.4.9
 }
@@ -311,7 +311,7 @@ royal_marriage = {
 #Alfonso II ~ Lucrezia de Medici, dt. Cosimo I of Tuscany
 royal_marriage = {
 	first = MOD
-	second = TUS
+	second = LAN
 	start_date = 1558.7.3
 	end_date = 1562.4.21
 }
@@ -494,7 +494,7 @@ royal_marriage = {
 
 # Allesandro ~ Margareta, dt. Charles V Habsburg
 royal_marriage = {
-	first = TUS
+	first = LAN
 	second = SPA
 	start_date = 1536.2.29
 	end_date = 1537.1.5
@@ -502,9 +502,16 @@ royal_marriage = {
 
 # Francesco I ~ Johanna, dt. Ferdinand I Habsburg 
 royal_marriage = {
-	first = TUS
+	first = LAN
 	second = HAB
 	start_date = 1565.12.18
+	end_date = 1578.4.11
+}
+
+royal_marriage = {
+	first = TUS
+	second = HAB
+	start_date = 1569.8.1
 	end_date = 1578.4.11
 }
 	

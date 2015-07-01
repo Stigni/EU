@@ -12,6 +12,7 @@ base_manpower = 4
 capital = "Parma" 
 is_city = yes	# Estimated 
 add_core = MLO
+add_core = PAR
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -24,7 +25,7 @@ discovered_by = ottoman
 1515.1.1 = { controller = FRA } # French occupation
 1515.12.14 = { owner = FRA } # The Pope makes peace
 1521.1.1 = { owner = PAP controller = PAP remove_core = FRA }
-1545.1.1 = { owner = PAR controller = PAR add_core = PAR} # Duchy created for the son of Pope Paul III.
+1545.1.1 = { owner = PAR controller = PAR } # Duchy created for the son of Pope Paul III.
 1589.1.1 = { fort_16th = yes }
 1735.1.1 = {
 	owner = HAB

@@ -75,12 +75,10 @@ monarch_names = {
 	"Ignace #0" = 0
 	"Isaac #0" = 0
 	"Jacob #0" = 0
-	"Jacques #0" = 0
 	"Jean-Baptiste #0" = 0
 	"Charles-Michel #0" = 0
 	"Jeremiah #0" = 0
 	"John #0" = 0
-	"Joseph #0" = 0
 	"Louis-Joseph #0" = 0
 	"Louis-Hippolyte #0" = 0
 	"Mathew #0" = 0
@@ -134,13 +132,12 @@ ship_names = {
 	Acadia Hochelaga Stadacona Laurentian
 	Québec Ontario
 	Athabaskan Cayuga Huron Iroquois Micmac Algonquin Sioux Ojibwa Onondaga
-	Saguenay "St. Maurice" Ottawa Chaudière Richelieu "St. Laurent" Ottawa Gatineau Margaree
+	Saguenay "St. Maurice" Ottawa Chaudière Richelieu "St. Laurent" Gatineau Margaree
 	Restigouche Saskatchewan Qu'Appelle "St. Francis" "St. Croix" Niagara
 	Bonaventure Manitoulin Anticosti Baffin Miscou Magdalen
 	Gaspe Fundy Labrador Chaleur Chignecto Fortune Miramichi Quinte Thunder Ungava
 	"Cape Breton"
 	Memphrémagog "Bras d'Or" Nipigon
 	Preserver Protecteur
-	Cormorant Lynx Badger Caribou Otter Wolf Grizzly Raccoon Loon "Blue Heron" Mallard Vison Renard Elk Beaver Ambler Husky Reindeer Moose Outarde 
-	Bonaventure Manitoulin 
+	Cormorant Lynx Badger Caribou Otter Wolf Grizzly Raccoon Loon "Blue Heron" Mallard Vison Renard Elk Beaver Ambler Husky Reindeer Moose Outarde  
 }

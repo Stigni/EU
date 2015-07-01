@@ -27,11 +27,12 @@ capital = 92 # Brabant
 
 1575.1.1 = { religion = reformed }
 
+1579.1.1 = { leader = {	name = "Willem L. van Nassau"	type = general		rank = 1	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1620.6.13 } }
+
+
 1579.1.23 = {
 	government_rank = 2
 }
-
-1579.1.1 = { leader = {	name = "Willem L. van Nassau"	type = general		rank = 1	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1620.6.13 } }
 
 1580.1.1 = { decision = enlist_privateers }
 
@@ -233,7 +234,7 @@ capital = 92 # Brabant
 		dip = 2
 		mil = 2
 	}
-	government = revolutionary_republic
+	government = constitutional_republic
 	government_rank = 1
 }
 
@@ -260,6 +261,7 @@ capital = 92 # Brabant
 		mil = 2
 	}
 	government = constitutional_monarchy # Napoleonic monarchy
+	government_rank = 2
 }
 
 1810.7.1 = {

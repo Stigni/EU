@@ -1,5 +1,4 @@
 government = feudal_monarchy
-mercantilism = 0.25
 primary_culture = czech
 religion = catholic
 elector = yes

@@ -5,7 +5,6 @@ controller = HOL
 add_core = HOL
 is_city = yes
 capital = "Middelburg"
-is_city = yes
 culture = dutch
 religion = catholic
 hre = yes

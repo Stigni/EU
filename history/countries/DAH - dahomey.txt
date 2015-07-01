@@ -16,7 +16,7 @@ capital = 1140 #Allada
 	}
 }
 
-1440.1.1 = {
+1450.1.1 = {
 	monarch = {
 		name = "De Nufion"
 		dynasty = "Ajahutonon"

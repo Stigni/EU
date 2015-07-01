@@ -18,9 +18,9 @@ native_hostileness = 3
 1616.1.12 = {
 	owner = POR
 	controller = POR
+	add_core = POR
 	is_city = yes
 	culture = portugese
 	religion = catholic
 	trade_goods = cocoa
 }
-1641.1.1 = { add_core = POR }

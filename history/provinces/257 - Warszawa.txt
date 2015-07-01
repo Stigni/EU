@@ -7,9 +7,9 @@ culture = polish
 religion = catholic
 trade_goods = cloth
 hre = no
-base_tax = 8 
-base_production = 8
-base_manpower = 4
+base_tax = 5
+base_production = 5
+base_manpower = 2
 is_city = yes
 add_core = MAZ
 discovered_by = eastern
@@ -48,6 +48,7 @@ discovered_by = ottoman
 	revolt = {}
 	owner = POL
 	controller = POL
+	add_core = POL
 	remove_core = PRU
 } # The Duchy of Warsaw is established after the treaty of Tilsit, ruled by Frederick Augustus I of Saxony
 1812.12.12 = { controller = RUS }

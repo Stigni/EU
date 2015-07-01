@@ -31,6 +31,7 @@ discovered_by = north_american
 1761.1.1 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	is_city = yes
 	culture = english
 	religion = protestant 
@@ -38,6 +39,7 @@ discovered_by = north_american
 1776.7.4 = {
 	owner = USA
 	controller = USA
+	add_core = USA
+	remove_core = GBR
 } # Declaration of independence
 1782.11.1 = { unrest = 0 } # Preliminary articles of peace, the British recognized Amercian independence
-1801.7.4 = { add_core = USA }

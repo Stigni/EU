@@ -17,13 +17,13 @@ native_hostileness = 4
 1632.1.1 = {
 	owner = ENG
 	controller = ENG
+	add_core = ENG
 	capital = "St. John"
 	religion = protestant
 	culture = english 
 	is_city = yes
 	trade_goods = sugar 
 } # The first English settlers arrived
-1657.1.1 = { add_core = ENG }
 1707.5.12 = {
 	discovered_by = GBR
 	owner = GBR

@@ -12,8 +12,8 @@ capital = 394	# Al Hasa
 		name = "Ajwad ibn Zamil"
 		dynasty = "Jabrid"
 		dip = 4
-		mil = 2
-		adm = 4
+		mil = 5
+		adm = 3
 	}
 	add_piety = 0.1
 }

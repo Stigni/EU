@@ -20,14 +20,14 @@ discovered_by = south_american
 1569.11.1 = {
  	capital = "Santa Cruz"
 	owner = SPA 
-	controller = SPA 
+	controller = SPA
+	add_core = SPA
 	culture = castillian
 	religion = catholic
 	trade_goods = naval_supplies
 	is_city = yes
 } # Founded 
 1579.1.1 = { capital = "Los Santos" }
-1594.1.1  = { add_core = SPA }
 1810.7.20 = {
 	owner = COL
 	controller = COL

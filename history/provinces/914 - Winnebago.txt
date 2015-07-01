@@ -18,12 +18,12 @@ discovered_by = north_american
 1671.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	is_city = yes
 	culture = cosmopolitan_french
 	religion = catholic
 	trade_goods = fur
 } # Founding of La Baye
-1696.1.1 = { add_core = FRA }
 1707.5.12 = { discovered_by = GBR }
 1712.1.1 = { unrest = 5 } # Fox war
 1714.1.1 = { unrest = 0 }
@@ -32,6 +32,7 @@ discovered_by = north_american
 1763.2.10 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	remove_core = FRA
 	culture = english
 	religion = protestant
@@ -40,12 +41,14 @@ discovered_by = north_american
 	owner = OJI
 	controller = OJI
 	add_core = OJI
+	remove_core = GBR
 	culture = anishinabe
 	religion = totemism
 } # Royal Proclamation, land set aside for natives
 1813.10.5 = {
 	owner = USA
 	controller = USA
+	add_core = USA
 	culture = american
 	religion = protestant
 } #The death of Tecumseh mark the end of organized native resistance 

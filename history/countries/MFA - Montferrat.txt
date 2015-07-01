@@ -226,17 +226,6 @@ capital = 2981	# Montferrat
 	}
 }
 
-1533.4.30 = {
-	monarch = {
-		name = "Margherita"
-		dynasty = "Palaiologos"
-		female = yes
-		adm = 3
-		dip = 3
-		mil = 1
-	}
-}
-
 #From this point on in union with Mantua
 
 1533.3.10 = {
@@ -249,6 +238,17 @@ capital = 2981	# Montferrat
 		claim = 95
 		adm = 2
 		dip = 2
+		mil = 1
+	}
+}
+
+1533.4.30 = {
+	monarch = {
+		name = "Margherita"
+		dynasty = "Palaiologos"
+		female = yes
+		adm = 3
+		dip = 3
 		mil = 1
 	}
 }

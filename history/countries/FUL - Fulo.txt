@@ -366,7 +366,7 @@ capital = 2237
 	}
 }
 
-1772.5.1 = {
+1772.9.1 = {
 	monarch = {
 		name = "Sule Bubu"
 		dynasty = "Denianke"

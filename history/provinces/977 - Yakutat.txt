@@ -18,6 +18,7 @@ discovered_by = north_american
 1784.1.1 = {
 	owner = RUS
 	controller = RUS
+	add_core = RUS
 	is_city = yes
 	culture = russian
 	religion = orthodox
@@ -25,4 +26,3 @@ discovered_by = north_american
 }
 1786.1.1 = { discovered_by = FRA } # Jean Francois la Perouse
 1791.1.1 = { discovered_by = SPA } # Alessandro Malaspina
-1809.1.1 = { add_core = RUS }

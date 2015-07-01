@@ -20,7 +20,7 @@ discovered_by = mesoamerican
 	add_core = AZT
 } #Moctezuma I expand the empire along the coast
 1500.1.1 = { add_core = AZT }
-1519.3.13 = { discovered_by = SPA } # Hernán Cortés
+1517.1.1 = { discovered_by = SPA }
 1521.8.13 = {
 	owner = SPA
 	controller = SPA

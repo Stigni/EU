@@ -583,7 +583,6 @@ capital = 563	# Pandua
 #Nawabs of Bengal
 
 1707.3.15 = {
-	government_rank = 1
 	monarch = {
 		name = "Murshid Quli"
 		dynasty = "Nasiri"

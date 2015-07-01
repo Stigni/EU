@@ -19,13 +19,13 @@ discovered_by = MCA
 1525.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	capital = "Santa María la Antigua del Darién"
 	culture = castillian
 	religion = catholic
 	is_city = yes
 	trade_goods = fur
 } # Spanish conquest, Francisco Pizarro
-1550.1.1 = { add_core = SPA }
 1690.1.1 = { capital = "Quibdó" }
 1810.7.20 = {
 	owner = COL

@@ -18,18 +18,19 @@ discovered_by = north_american
 1722.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
+	trade_goods = cotton
 	is_city = yes
 	religion = catholic
 	culture = cosmopolitan_french
 } # French settlement
-1747.1.1 = { add_core = FRA trade_goods = cotton }
 1762.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	culture = castillian
 	remove_core = FRA
 } # Treaty of Fontainebleau, secretely ceded to Spain
-1787.1.1 = { add_core = SPA }
 1800.10.1 = {
 	owner = FRA
 	controller = FRA

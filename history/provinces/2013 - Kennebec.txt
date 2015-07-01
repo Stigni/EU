@@ -16,12 +16,12 @@ discovered_by = north_american
 1632.1.1 = {
 	owner = ENG
 	controller = ENG
+	add_core = ENG
 	is_city = yes
+	trade_goods = naval_supplies
 	culture = english
 	religion = protestant
 } # Founding of Casco
-1650.1.1 = { trade_goods = naval_supplies }
-1657.1.1 = { add_core = ENG }
 1707.5.12 = {
 	discovered_by = GBR
 	owner = GBR

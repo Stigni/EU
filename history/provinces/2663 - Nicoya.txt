@@ -20,11 +20,11 @@ discovered_by = south_american
 1544.1.1 = {
 	capital = "San Blas de Nicoya"
 	owner = SPA 
-	controller = SPA 
+	controller = SPA
+	add_core = SPA
 	culture = castillian
 	religion = catholic
 	trade_goods = naval_supplies
 	is_city = yes
 } # Founded 
-1569.1.1 = { add_core = SPA }
 1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence

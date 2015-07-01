@@ -26,14 +26,15 @@ discovered_by = north_american
 1734.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	culture = cosmopolitan_french
 	religion = catholic
 } # Construction of Fort St. Frédérick
 1755.1.1 = { fort_18th = yes }
-1759.1.1 = { add_core = FRA }
 1763.2.10 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	culture = english
 	religion = protestant
 	remove_core = FRA
@@ -41,6 +42,7 @@ discovered_by = north_american
 1775.5.10 = { revolt = { type = nationalist_rebels size = 2 } controller = REB culture = american } #Capture of Ticonderoga
 1776.7.4 = {
 	owner = USA
-	controller = USA 
+	controller = USA
+	add_core = USA
+	remove_core = GBR
 } 
-1801.7.4 = { add_core = USA }

@@ -18,6 +18,7 @@ discovered_by = north_american
 1623.1.1 = {
 	owner = ENG
 	controller = ENG
+	add_core = ENG
 	capital = "Casco"
 	is_city = yes
 	culture = english
@@ -25,7 +26,6 @@ discovered_by = north_american
 	trade_goods = naval_supplies
 } # Settled by the British
  # Fort William & Mary
-1648.1.1 = { add_core = ENG }
 1653.1.1 = { capital = "Portsmouth" }
 1707.5.12 = {
 	discovered_by = GBR

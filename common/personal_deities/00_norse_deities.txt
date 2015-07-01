@@ -99,7 +99,7 @@ tyr =
 
 njord =
 {
-	global_trade_income_modifier = 0.1
+	trade_efficiency = 0.1
 	global_trade_goods_size_modifier = 0.1
 	
 	allow = { religion = norse_pagan_reformed }

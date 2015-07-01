@@ -23,16 +23,17 @@ discovered_by = north_american
 1733.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	remove_core = FOX
 	culture = cosmopolitan_french
 	religion = catholic
 	trade_goods = iron 
 } #End of the second Fox war
-1758.1.1 = { add_core = FRA }
 1763.2.10 = {
 	discovered_by = GBR
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	remove_core = FRA
 	culture = english
 	religion = protestant
@@ -41,6 +42,7 @@ discovered_by = north_american
 	owner = FOX
 	controller = FOX
 	add_core = FOX
+	remove_core = GBR
 	is_city = yes
 	culture = chiwere
 	religion = totemism
@@ -48,6 +50,7 @@ discovered_by = north_american
 1813.10.5 = {
 	owner = USA
 	controller = USA
+	add_core = USA
 	culture = american
 	religion = protestant 
 } #The death of Tecumseh mark the end of organized native resistance 

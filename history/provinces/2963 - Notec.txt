@@ -35,6 +35,7 @@ discovered_by = ottoman
 	revolt = {}
 	owner = POL
 	controller = POL
+	add_core = POL
 	remove_core = PRU
 } # The Duchy of Warsaw is established after the treaty of Tilsit, ruled by Frederick Augustus I of Saxony
 1813.3.17 = { controller = PRU }

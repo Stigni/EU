@@ -18,6 +18,7 @@ discovered_by = north_american
 1635.1.1 = {
 	owner = ENG
 	controller = ENG
+	add_core = ENG
 	culture = english
 	religion = reformed
 	is_city = yes
@@ -25,7 +26,6 @@ discovered_by = north_american
 	trade_goods = grain
 }
 1640.1.1 = { capital = "Springfield"  }
-1660.1.1 = { add_core = ENG }
 1707.5.12 = {
 	discovered_by = GBR
 	owner = GBR

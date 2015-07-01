@@ -17,11 +17,11 @@ discovered_by = north_american
 1690.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	is_city = yes
 	religion = catholic
 	trade_goods = cotton
 	culture = castillian 
 } #San Franciso de los Tejas mission
-1715.1.1 = { add_core = SPA }
  #Dolores de los Ais, expansion of Spanish missions
 1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence

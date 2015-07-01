@@ -21,11 +21,11 @@ discovered_by = north_american
 1598.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	culture = castillian
 	religion = catholic
 	trade_goods = salt 
 } # Spanish conquest of the Pueblo people
-1623.1.1 = { add_core = SPA }
 1660.1.1 = { unrest = 4 }
 1670.1.1 = { unrest = 5 }
 1672.1.1 = { unrest = 0 }

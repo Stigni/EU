@@ -32,4 +32,3 @@ discovered_by = north_american
 	culture = anishinabe
 } #Iroquois focus on Lake Ontario, Ojibwe moves in
 1707.5.12 = { discovered_by = GBR }
-1726.1.1 = { add_core = FRA }

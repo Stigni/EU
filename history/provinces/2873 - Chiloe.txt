@@ -17,11 +17,12 @@ native_hostileness = 9
 1558.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
+	is_city = yes
 	culture = castillian
 	religion = catholic
 	trade_goods = fish
 }
-1583.1.1 = { add_core = SPA is_city = yes }
 1600.1.1 = { unrest = 9 } # Great uprising, all Spaniards south of Biobio are driven out
 1601.1.1 = { unrest = 0 }
 1810.9.18 = {

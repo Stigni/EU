@@ -17,10 +17,10 @@ discovered_by = mesoamerican
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	culture = castillian
 	religion = catholic
 	trade_goods = gold
 	is_city = yes
 } # First discoveries of silver 
-1571.1.1 = { add_core = SPA }
 1810.9.16 = { owner = MEX add_core = MEX controller = MEX } # Mexican War of Independence

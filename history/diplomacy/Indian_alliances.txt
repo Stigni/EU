@@ -30,14 +30,14 @@ protectorate = {
 }
 
 #Janjira
-march = {
+vassal = {
 	first = AHM
 	second = JAJ
 	start_date = 1570.1.1
 	end_date = 1633.7.27
 }
 
-march = {
+vassal = {
 	first = MUG
 	second = JAJ
 	start_date = 1633.7.27
@@ -119,6 +119,13 @@ vassal = {
 }
 
 #Vijayanagar
+
+alliance = { #Vijayanagara and the Reddys
+	first = VIJ
+	second = YOR
+	start_date = 1443.1.1
+	end_date = 1448.1.1
+}
 
 #Vassal of Vijayanagara
 vassal = {
@@ -753,7 +760,7 @@ protectorate = {
 
 #Orissa & Garjats
 
-march = {
+vassal = {
 	first = ORI
 	second = GRJ
 	start_date = 1444.1.1

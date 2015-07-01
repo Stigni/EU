@@ -17,14 +17,13 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-extra_cost = 20
+extra_cost = 15
 
-1000.1.1 = {
-	add_permanent_province_modifier = {
-		name = center_of_trade_modifier
-		duration = -1
-	}
+add_permanent_province_modifier = {
+	name = center_of_trade_modifier
+	duration = -1
 }
+
 1531.1.1 = { religion = protestant }
 1550.1.1 = { base_tax = 7 
 base_production = 7 } # Gradual shift in trading power from Lübeck to Hamburg

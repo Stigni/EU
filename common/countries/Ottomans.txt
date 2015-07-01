@@ -40,9 +40,9 @@ historical_units = {
 }
 
 monarch_names = {
-	"Mehmet #0" = 80
+	"Mehmet #2" = 80
 	"Mustafa #0" = 80
-	"Murat #1" = 60
+	"Murad #1" = 60
 	"Ahmet #0" = 60
 	"Selim #0" = 60
 	"Osman #1" = 40

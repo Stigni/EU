@@ -13,14 +13,13 @@ hre = no
 base_tax = 6 
 base_production = 6
 discovered_by = sub_saharan
-extra_cost = 15
+extra_cost = 10
 
-1000.1.1 = {
-	add_permanent_province_modifier = {
-		name = inland_center_of_trade_modifier
-		duration = -1
-	}
+add_permanent_province_modifier = {
+	name = inland_center_of_trade_modifier
+	duration = -1
 }
+
 1489.1.1 = { unrest = 4 } # Invasion by Kano
 1491.1.1 = { unrest = 0 } # Peace between Kano and Katsina arranged
 1514.1.1 = { unrest = 6 } # Songhai raids Hausa pay tribute to Songhai

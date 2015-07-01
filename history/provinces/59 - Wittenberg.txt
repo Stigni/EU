@@ -17,7 +17,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1445.9.10 = { owner = THU controller = THU }
+1445.9.10 = { owner = THU controller = THU add_core = THU }
 1520.12.10 = {
 	religion = protestant
 	reformation_center = protestant

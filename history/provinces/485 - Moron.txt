@@ -16,6 +16,7 @@ native_hostileness = 3
 1511.1.1 = {
 	owner = CAS
 	controller = CAS
+	add_core = CAS
 	is_city = yes
 	culture = castillian
 	religion = catholic
@@ -25,7 +26,8 @@ native_hostileness = 3
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
+	remove_core = CAS
 }
 1522.1.1 = { unrest = 2 } # Relatively small attack against the conquistadors
 1532.1.1 = { unrest = 0 } # Guama is killed
-1536.1.1 = { add_core = SPA }

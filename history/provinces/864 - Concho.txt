@@ -18,11 +18,11 @@ discovered_by = mesoamerican
 1569.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	is_city = yes
 	religion = catholic 
 	culture = castillian
 	capital = "Chihuahua"
 	trade_goods = wool 
 } # Francisco de Ibarra 
-1594.1.1 = { add_core = SPA }
 1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence

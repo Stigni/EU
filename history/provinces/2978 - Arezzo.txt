@@ -1,7 +1,7 @@
 # - Arezzo
 
-owner = TUS
-controller = TUS
+owner = LAN
+controller = LAN
 culture = tuscan 
 religion = catholic 
 hre = yes 
@@ -11,14 +11,21 @@ trade_goods = grain
 base_manpower = 2
 capital = "Arezzo" 
 is_city = yes # Estimated 
-add_core = TUS
+add_core = LAN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1495.1.1 = { hre = no }
 1527.1.1 = { controller = SPA } # War of the League of Cognac
-1529.8.3 = { controller = TUS } # Treaty of Cambrai
+1529.8.3 = { controller = LAN } # Treaty of Cambrai
+1569.8.1 = {
+	owner = TUS
+	controller = TUS
+	add_core = TUS
+	remove_core = LAN
+}
 1750.1.1 = { add_core = ITA } 
 1801.2.9 = {
 	owner = FRA

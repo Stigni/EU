@@ -4,7 +4,7 @@ grant_local_autonomy = {
 	}
 	
 	effect = {
-		FROM = { add_local_autonomy = 5 }
+		FROM = { add_local_autonomy = 20 }
 	}
 	
 	ai_will_do = {

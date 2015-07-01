@@ -17,12 +17,13 @@ discovered_by = north_american
 1668.1.1  = {
 	owner = ENG
 	controller = ENG
+	add_core = ENG
+	trade_goods = fur
+	is_city = yes
 	culture = english
 	religion = protestant
 } # Founding of Rupert House
 1672.1.1  = { discovered_by = FRA } # Charles Albanel
-1693.1.1  = { add_core = ENG }
-1700.1.1  = { trade_goods = fur }
 1707.5.12  = {
 	discovered_by = GBR
 	owner = GBR
@@ -30,4 +31,3 @@ discovered_by = north_american
 	add_core = GBR
 	remove_core = ENG
 }
-1750.1.1  = { is_city = yes }

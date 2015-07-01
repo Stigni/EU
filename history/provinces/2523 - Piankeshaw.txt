@@ -37,6 +37,7 @@ discovered_by = north_american
 1804.1.1 = {
 	owner = USA
 	controller = USA
+	add_core = USA
 	culture = american
 	religion = protestant
 } # Treaty of Vincennes and subsequent, Natives cede much of this region

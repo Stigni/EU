@@ -28,5 +28,5 @@ native_hostileness = 2
 	owner = SPA
 	controller = SPA
 	add_core = SPA
+	remove_core = CAS
 }
-1529.1.1 = { add_core = SPA}

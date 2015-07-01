@@ -36,8 +36,8 @@ discovered_by = north_american
 1763.2.10 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	remove_core = FRA
 	culture = english
 	religion = protestant
 } # Treaty of Paris 
-1788.2.10 = { add_core = GBR }

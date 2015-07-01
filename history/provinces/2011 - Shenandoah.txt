@@ -19,12 +19,12 @@ discovered_by = north_american
 	discovered_by = GBR
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	culture = english
 	religion = protestant
+	trade_goods = iron
 	is_city = yes
 } # Settlement of the Shenandoah Valley
-1750.1.1 = { trade_goods = iron }
-1755.1.1 = { add_core = GBR }
 1764.7.1 = {
 	culture = american
 	unrest = 6

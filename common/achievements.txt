@@ -781,7 +781,7 @@ achievement_trade_hegemon = {
 	
 	happened = {
 		owns_core_province = 388 # Aden
-		owns_core_province = 431 # Hormoz
+		owns_core_province = 2999 # Hormoz
 		owns_core_province = 596 # Malacca
 	}
 }
@@ -1544,7 +1544,10 @@ achievement_the_princess_is_in_this_castle = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
-		has_female_heir = no
+		OR = {
+			has_female_heir = no
+			has_heir = no
+		}
 	}
 
 	happened = {
@@ -1935,7 +1938,7 @@ achievement_die_please_die = {
 		NOT = { adm = 2 }
 		NOT = { dip = 2 }
 		NOT = { mil = 2 }
-		ruler_age = 80
+		ruler_age = 70
 	}
 }
 
@@ -2786,14 +2789,20 @@ achievement_industrial_evolution = {
 		northumbria = {
 			type = all
 			development = 25
+			owned_by = ROOT
+			is_core = ROOT			
 		}
 		mercia = {
 			type = all
 			development = 25
+			owned_by = ROOT
+			is_core = ROOT			
 		}
 		essex = {
 			type = all
 			development = 25
+			owned_by = ROOT
+			is_core = ROOT			
 		}
 		
 	}
@@ -2814,6 +2823,7 @@ achievement_city_of_cities = {
 		has_switched_nation = no
 		any_owned_province = {
 			development = 60
+			is_core = ROOT
 		}
 	}
 }

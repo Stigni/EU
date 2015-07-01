@@ -3,7 +3,7 @@ government_rank = 1
 primary_culture = turkish
 religion = sunni
 technology_group = ottoman
-#capital = 318	# Smyrna
+capital = 2297	# Saruhan
 
 
 1388.1.1 = {

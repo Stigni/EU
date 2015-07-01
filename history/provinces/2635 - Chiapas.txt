@@ -21,11 +21,11 @@ discovered_by = mesoamerican
 1528.1.1 = {
 	discovered_by = SPA 
 	owner = SPA 
-	controller = SPA 
+	controller = SPA
+	add_core = SPA
 }
 1535.1.1 = {
 	culture = castillian
 	religion = catholic
 } # First settlers
-1553.1.1 = { add_core = SPA }
 1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence

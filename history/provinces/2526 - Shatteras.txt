@@ -53,10 +53,9 @@ discovered_by = north_american
 	is_city = yes 
 } #return of the Shawnee
 1774.10.19 = {
- owner = GBR
+	owner = GBR
 	controller = GBR
 	culture = american
 	religion = protestant 
 } #Treaty of Camp Charlotte, becomes part of Virginia
-1776.7.4 = { owner = USA controller = USA } #Then part of Virginia, one of the thirteen colonies.
-1801.7.4 = { add_core = USA }
+1776.7.4 = { owner = USA controller = USA add_core = USA } #Then part of Virginia, one of the thirteen colonies.

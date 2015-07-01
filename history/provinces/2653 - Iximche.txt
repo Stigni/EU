@@ -29,10 +29,10 @@ discovered_by = mesoamerican
 	discovered_by = SPA 
 	owner = SPA 
 	controller = SPA 
+	add_core = SPA
 }
 1529.1.1 = {
 	culture = castillian
 	religion = catholic
 }
-1552.1.1 = { add_core = SPA }
 1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence

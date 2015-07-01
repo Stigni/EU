@@ -92,7 +92,7 @@ horse_artillery = {
 		full_idea_group = offensive_ideas
 		full_idea_group = economic_ideas
 	}
-	artillery_power = 0.2
+	artillery_power = 0.1
 
 	ai_will_do = {
 		factor = 1
@@ -143,7 +143,7 @@ anti_smuggling_act = {
 		full_idea_group = trade_ideas
 	}
 	
-	global_trade_income_modifier = 0.1
+	embargo_efficiency = 0.25
 	trade_efficiency = 0.10
 
 	ai_will_do = {
@@ -646,8 +646,9 @@ the_tenures_abolition_act = {
 		full_idea_group = aristocracy_ideas
 	}
 
-	legitimacy = 0.5
-	republican_tradition = 0.002
+	legitimacy = 1
+	republican_tradition = 0.004
+	devotion = 1
 		
 	ai_will_do = {
 		factor = 1
@@ -824,7 +825,7 @@ autonomous_estates = {
 	}	
 	
 	global_unrest = -1
-	vassal_forcelimit_bonus = 0.25
+	vassal_forcelimit_bonus = 1
 	
 	ai_will_do = {
 		factor = 1
@@ -948,7 +949,7 @@ unified_army_command = {
 		full_idea_group = offensive_ideas
 	}	
 	
-	vassal_forcelimit_bonus = 0.5
+	vassal_forcelimit_bonus = 2
 	
 	ai_will_do = {
 		factor = 1

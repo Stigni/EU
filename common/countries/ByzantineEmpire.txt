@@ -65,7 +65,6 @@ monarch_names = {
 	"Traianos #1" = 5
 	"Alexandros #1" = 5
 	"Philippos #1" = 5
-	"Herakleios #1" = 5
 	"Athanasios #0" = 0
 	"Antonios #0" = 0
 	"Bartholomaios #0" = 0
@@ -139,7 +138,7 @@ ship_names = {
 	Naxos Nike Nikephoros
 	Odysseus Okeanos Orestes "Orge Theou" Orthodoxia "Osios Loukas" Ouranos
 	Panaghia Panther Pantokrator Panteleimon Pantodynamos Paphlagonia Pegasos Pelagos
-	Peloponnesos Pegasos Perseus Polydynamos Pontos Poseidon Propontis
+	Peloponnesos Perseus Polydynamos Pontos Poseidon Propontis
 	Rhodos Rhomaios Romanos
 	Samos Samothrake Sebastokrator Sikelia Soter Stratelates
 	Taxiarchis Theophilos Theophylaktos Thessalia Thessalonike Thalassokrator Thrake Thrylos Triton

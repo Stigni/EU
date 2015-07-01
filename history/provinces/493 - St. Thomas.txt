@@ -27,15 +27,16 @@ native_hostileness = 4
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	remove_core = CAS
+	add_core = SPA
 }
-1518.1.1 = { add_core = SPA }
 1672.1.1 = {
 	discovered_by = DAN
 	owner = DAN
 	controller = DAN
+	add_core = DAN
 	culture = danish
 	religion = protestant
 	remove_core = SPA
 }
 1691.1.1 = { capital = "Charlotte Amalie" } # Primary settlement
-1697.1.1 = { add_core = DAN }

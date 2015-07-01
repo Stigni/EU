@@ -19,10 +19,10 @@ discovered_by = mesoamerican
 	capital = "Saltillo"
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	is_city = yes
 	culture = castillian
 	religion = catholic
 	trade_goods = wool
 }
-1602.1.1 = { add_core = SPA }
 1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence

@@ -17,14 +17,15 @@ discovered_by = north_american
 1744.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	culture = cosmopolitan_french
 	religion = catholic
 	is_city = yes
 } # Construction of Fort Cavagnal
-1749.1.1 = { add_core = FRA }
 1762.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	remove_core = FRA
 	trade_goods = grain
 } # Treaty of Fontainebleau, secretely ceded to Spain

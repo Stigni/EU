@@ -18,6 +18,7 @@ discovered_by = north_american
 1714.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	is_city = yes
 	culture = cosmopolitan_french
 	religion = catholic
@@ -29,7 +30,6 @@ discovered_by = north_american
 1725.1.1 = { unrest = 2 }
 1729.1.1 = { unrest = 5 }
 1732.1.1 = { unrest = 0 }
-1739.1.1 = { add_core = FRA }
 1762.1.1 = {
 	owner = SPA
 	controller = SPA

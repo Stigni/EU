@@ -40,6 +40,7 @@ the_court_of_wards_and_liveries = {
 		
 	global_tax_modifier = 0.10
 	legitimacy = 0.5
+	devotion = 0.5
 		
 	ai_will_do = {
 		factor = 1	
@@ -234,32 +235,7 @@ noble_loyalty_act = {
 	cavalry_power = 0.20
 	
 	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			government = monarchy
-			legitimacy = 95
-		}		
-		modifier = {
-			factor = 1.5
-			government = monarchy
-			NOT = { legitimacy = 80 }
-		}
-		modifier = {
-			factor = 1.5
-			government = monarchy
-			NOT = { legitimacy = 60 }
-		}			
-		modifier = {
-			factor = 1.5
-			government = monarchy
-			NOT = { legitimacy = 40 }
-		}
-		modifier = {
-			factor = 1.5
-			government = monarchy
-			NOT = { legitimacy = 20 }
-		}			
+		factor = 1		
 	}
 }
 
@@ -1053,7 +1029,7 @@ vassal_obligations_act = {
 	}	
 	
 	vassal_income = 0.25
-	vassal_forcelimit_bonus = 0.25
+	vassal_forcelimit_bonus = 1
 	
 	ai_will_do = {
 		factor = 1

@@ -13,6 +13,7 @@ base_manpower = 3
 is_city = yes
 add_core = KRK
 add_core = VIJ
+add_core = YOR
 fort_15th = yes #Great forts of the East - Penukonda, Chandragiri, etc
 discovered_by = indian
 discovered_by = muslim 

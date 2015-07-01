@@ -17,12 +17,12 @@ discovered_by = north_american
 1721.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	is_city = yes
 	religion = catholic
 	trade_goods = cotton
 	culture = castillian 
 } #Los Adaes Mission
-1746.1.1 = { add_core = SPA }
 1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence
 1819.1.1 = {
 	owner = USA

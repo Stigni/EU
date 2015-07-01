@@ -174,15 +174,10 @@ technology = {
 	
 	#Pike and Shot
 	infantry_fire		= 	0.25
-	military_tactics 	= 	0.25
 	cavalry_shock		=	1.0
 
 	
 	regimental_camp = yes
-
-		
-
-	combat_width = 1
 }
 
 technology = {
@@ -200,7 +195,10 @@ technology = {
 	enable = swiss_landsknechten
 	enable = gaelic_mercenary
 	enable = germanized_pike
-	enable = asian_arquebusier		
+	enable = asian_arquebusier	
+
+	military_tactics 	= 	0.25
+	combat_width = 1	
 }
 
 technology = {

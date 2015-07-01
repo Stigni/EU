@@ -1,5 +1,4 @@
 government = iqta
-mercantilism = 0.25
 technology_group = indian
 unit_type = sub_saharan
 religion = sunni
@@ -57,7 +56,7 @@ capital = 2788 #Hafun
 	}
 }
 
-1679.1.1 = {
+1779.1.1 = {
 	monarch = {
 		name= "Yusuf II"
 		dynasty = "Harti"

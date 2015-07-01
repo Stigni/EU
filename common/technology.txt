@@ -30,12 +30,12 @@ groups = {
 	}
 	indian = {
 		modifier = 0.5
-		start_level = 2
+		start_level = 3
 		cav_to_inf_ratio = 0.5
 	}
 	chinese = {
 		modifier = 0.6
-		start_level = 2
+		start_level = 3
 		cav_to_inf_ratio = 0.5
 	}
 	nomad_group = {

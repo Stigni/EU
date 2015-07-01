@@ -23,10 +23,10 @@ discovered_by = north_american
 	discovered_by = GBR
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	culture = english
 	religion = protestant
 } # Fort Dummer, British settlement
-1749.1.1 = { add_core = GBR }
 1764.7.1 = {
 	culture = american
 	unrest = 6

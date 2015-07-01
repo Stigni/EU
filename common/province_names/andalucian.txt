@@ -34,7 +34,7 @@
 1750 = "Medina Laqant"
 1751 = "Sebtah"
 1851 = "Qulumriya"
-2473 = "Sūsa"
+2473 = "Susa"
 2751 = "Qunka"
 2753 = "Arbouna"
 2754 = "Al-Mansha"

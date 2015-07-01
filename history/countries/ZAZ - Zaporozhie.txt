@@ -23,7 +23,7 @@ capital = 283	# Zaporozhia
 	}
 }
 
-1550.1.1 = {	
+1550.1.1 = {
 	monarch = {		
 		name = "Vishnevetsky-Bayda"		
 		adm = 3		
@@ -32,7 +32,7 @@ capital = 283	# Zaporozhia
 	}
 }
 
-1555.1.1 = [
+1555.1.1 = {
 	government_rank = 1
 }
 

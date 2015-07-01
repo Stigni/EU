@@ -828,7 +828,7 @@ latin = {
 		primary = SIC
 	}
 	maltese = {
-		primary = KNI
+		primary = JAI
 		dynasty_names = {
 			"de la Valette" "de Villaret" "L'Isle-Adam" "de Ponte" "de Saint-Jaille" "de la Sengle"
 			"de Monte" "de la Cassière" "de Vasconcellos" "de Paule" Cotoner Carafa "de Wignacourt"
@@ -1304,6 +1304,7 @@ finno_ugric = {
 		}
 	}
 	estonian = {
+		primary = EST
 		dynasty_names = {
 			Bielke Horn Tott Fleming Paijkull Bonde Wrede Soop
 			Mannerheim Furuhjelm Aminoff Armfelt Carpelan Rehbinder Schulman
@@ -1395,6 +1396,7 @@ finno_ugric = {
 		}
 	}
 	sapmi = {
+		primary = SMI
 		male_names = {
 			Baeivvet Biejan Bijás Bilzi Dávgon Duttá Gáivvas Elmar Hain Haljas Igapäiv Ihalemb Kahar Eeri Heameel Heatõiv 
 			Hoovatõiv Hurmas Hurmetõiv Hõimulemb Hüvalemb Hüvameel Hüvatõiv Tõnn Uku Vootele Väino Värvo Õigemeel Ülo Küllelemb 
@@ -1435,6 +1437,7 @@ finno_ugric = {
 		}
 	}
 	karelian = {
+		primary = KRL
 		male_names = {
 			Mohkku Mokci Náhkol Náinnas Njulgu Oaván Orddot Rástos Riibma Ruigi Sárra Speaidna Viggu Kaarel Kaaren Kahus Kaido 
 			Kalev Kalju Kaljuvald Kalle Kaomeel Karuvald Kaugemeel Kaupo Pihl Piho Pikne Päevalemb Pärt Raak Raho Rahuleid Sulev 
@@ -1885,6 +1888,7 @@ baltic	= {
 		}
 	}
 	latvian = {
+		primary = LVA
 		male_names = {
 			Aishno Ako Ankad Baise Balodis Bikshe Borut Bulei Butovit Cirulis Dangeruthe Darbeslave 
 			Davins Demas Dobre Dovyat Dzintis Dausprungas Imanta

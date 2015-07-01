@@ -18,6 +18,7 @@ native_hostileness = 3
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	culture = castillian
 	religion = catholic
 	trade_goods = grain
@@ -26,7 +27,6 @@ native_hostileness = 3
 	capital = "Cali"
 	is_city = yes
 } # Founded by Sebastian de Belalcazar
-1550.1.1 = { add_core = SPA }
 1810.7.20 = {
 	owner = COL
 	controller = COL

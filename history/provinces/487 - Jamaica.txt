@@ -26,16 +26,17 @@ native_hostileness = 6
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
+	remove_core = CAS
 }
-1519.1.1 = { add_core = SPA }
 1655.1.1 = {
 	owner = ENG
 	controller = ENG
+	add_core = ENG
 	culture = english
 	religion = protestant
 	remove_core = SPA
 } # General Venables seized the island
-1680.1.1 = { add_core = ENG }
 1693.1.1 = { capital = "Kingston" }
  # African slave labor
 1707.5.12 = {

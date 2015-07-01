@@ -19,6 +19,7 @@ discovered_by = north_american
 1638.3.29 = {
 	owner = SWE
 	controller = SWE
+	add_core = SWE
 	culture = swedish
 	religion = protestant
 	is_city = yes
@@ -27,12 +28,16 @@ discovered_by = north_american
 1655.9.15 = {
 	owner = NED
 	controller = NED
+	add_core = NED
+	remove_core = SWE
 	culture = dutch
 	religion = reformed
 } # Incorporated into the Dutch new Netherlands
 1665.6.1 = { controller = ENG } # English seize New Netherlands at outset of Second Anglo-Dutch war
 1667.7.31 = {
 	owner = ENG
+	add_core = ENG
+	remove_core = NED
 	culture = english
 	capital = "Wilmington"
 	religion = protestant

@@ -14,7 +14,7 @@ capital = 2198
 		adm = 2
 		dip = 3
 		mil = 2
-		}
+	}
 }
 
 1494.1.1 = {			
@@ -24,7 +24,7 @@ capital = 2198
 		adm = 2
 		dip = 2
 		mil = 2
-		}
+	}
 }
 
 
@@ -37,7 +37,7 @@ capital = 2198
 		adm = 2
 		dip = 3
 		mil = 3
-		}
+	}
 }
 
 1566.1.1 = {
@@ -49,20 +49,19 @@ capital = 2198
 		adm = 2
 		dip = 1
 		mil = 4
-		}
+	}
 }
 
 1567.1.1 = {
 	monarch = {
-		name = "Surkhay"
-		monarch_name = "Surkhay I"
+		name = "Surkhay I"
 		dynasty = "Shamkhal"
 		birth_date = 1518.1.1
 		#death_Date = 1569.1.1
 		adm = 3
 		dip = 1
 		mil = 2
-		}
+	}
 }
 
 1569.1.1 = {
@@ -74,31 +73,29 @@ capital = 2198
 		adm = 1
 		dip = 3
 		mil = 1
-		}
+	}
 }
 
 1600.1.1 = {
 	monarch = {
-		name = "Alibek"
-		monarch_name = "Alibek I"
+		name = "Alibek I"
 		dynasty = "Shamkhal"
 		#death_Date = 1605.1.1
 		adm = 2
 		dip = 2
 		mil = 2
-		}
+	}
 }
 
 1605.1.1 = {
 	monarch = {
-		name = "Surkhay"
-		monarch_name = "Surkhay II"
+		name = "Surkhay II"
 		dynasty = "Shamkhal"
 		#death_Date = 1614.1.1
 		adm = 2
 		dip = 3
 		mil = 3
-		}
+	}
 }
 
 1614.1.1 = {
@@ -109,7 +106,7 @@ capital = 2198
 		adm = 2
 		dip = 3
 		mil = 2
-		}
+	}
 }
 
 1623.1.1 = {
@@ -120,7 +117,7 @@ capital = 2198
 		adm = 2
 		dip = 1
 		mil = 2
-		}
+	}
 }
 
 1635.1.1 = {
@@ -131,31 +128,29 @@ capital = 2198
 		adm = 2
 		dip = 3
 		mil = 2
-		}
+	}
 }
 
 1642.1.1 = {
 	monarch = {
-		name = "Alibek"
-		monarch_name = "Alibek II"
+		name = "Alibek II"
 		dynasty = "Shamkhal"
 		#death_Date = 1680.1.1
 		adm = 2
 		dip = 3
 		mil = 3
-		}
+	}
 }
 
 1680.1.1 = {
 	monarch = {
-		name = "Surkhay"
-		monarch_name = "Surkhay III"
+		name = "Surkhay III"
 		dynasty = "Shamkhal"
 		#death_Date = 1721.1.1
 		adm = 2
 		dip = 3
 		mil = 4
-		}
+	}
 }
 
 1680.1.1 = { capital = 2031 } # Tarki
@@ -168,7 +163,7 @@ capital = 2198
 		adm = 4
 		dip = 5
 		mil = 4
-		}
+	}
 }
 
 1725.1.1 = { capital = 421 } # Shirvan
@@ -181,17 +176,16 @@ capital = 2198
 		adm = 3
 		dip = 3
 		mil = 3
-		}
+	}
 }
 
 1789.1.1 = {
 	monarch = {
-		name = "Surkhay"
-		monarch_name = "Surkhay IV"
+		name = "Surkhay IV"
 		dynasty = "Shamkhal"
 		#death_Date = 1820.1.1
 		adm = 1
 		dip = 1
 		mil = 2
-		}
+	}
 }

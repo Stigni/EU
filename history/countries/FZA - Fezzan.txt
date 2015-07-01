@@ -278,7 +278,7 @@ fixed_capital = 2448 # Cannot move capital away from this province & no power co
 	}
 }
 
-1789.1.1 = {
+1780.1.1 = {
 	heir = {
 		name = "Muhammad"
 		monarch_name = "Muhammad V"

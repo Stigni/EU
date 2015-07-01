@@ -30,5 +30,6 @@ native_hostileness = 5
 	owner = POR
 	controller = POR
 	add_core = POR
+	remove_core = SPA
 	culture = portugese
 }

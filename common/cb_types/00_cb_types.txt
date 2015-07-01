@@ -242,7 +242,7 @@ cb_colonial_independance_war = {
 cb_nationalist = {
 	
 	prerequisites = {
-		dip_tech = 22
+		dip_tech = 23
 		is_subject = no
 		culture_group_claim = FROM
 		is_revolution_target = no
@@ -256,7 +256,10 @@ cb_imperial = {
 	valid_for_subject = no
 	
 	prerequisites = {
-		dip_tech = 22
+		OR = {
+			dip_tech = 23
+			invasion_nation = yes
+		}
 		is_subject = no
 		is_revolution_target = no
 	}
@@ -617,8 +620,14 @@ cb_primitives = {
 		}
 		NOT = { has_country_modifier = the_proclamation_of_year_timer } # Used from event
 		FROM = { 
-			primitives = yes 
-			is_subject = no
+			primitives = yes
+			OR = {
+				is_subject = no
+				AND = {
+					is_subject = yes
+					overlord = { primitives = yes }
+				}
+			}
 		}
 		is_revolution_target = no
 	}

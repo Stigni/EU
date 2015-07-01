@@ -21,12 +21,16 @@ english_civil_war = {
 		has_any_disaster = no
 		OR = {
 			NOT = { stability = 1 }
-			current_size_of_parliament = 15 #Strong Parliament can start, not calling it progresses disaster
+			AND = {
+				current_size_of_parliament = 20
+				NOT = { stability = 2 }
+			}
 		}
 	}
 	
 	
 	can_stop = {
+		stability = 3
 		OR = {
 			has_any_disaster = yes
 			NOT = { government = english_monarchy }
@@ -46,11 +50,11 @@ english_civil_war = {
 		}
 		modifier = {
 			factor = 1
-			has_active_debate = no
+			current_debate = support_ruling_dynasty
 		}
 		modifier = {
-			factor = 1
-			current_debate = support_ruling_dynasty
+			factor = 0.5
+			has_country_modifier = eng_court_star_chamber
 		}
 		modifier = {
 			factor = 1
@@ -59,10 +63,11 @@ english_civil_war = {
 	}
 	
 	modifier = {
-		global_unrest = 10
+		global_unrest = 9
 	}	
 	
 	can_end = {
+		NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { average_unrest = 1 }
 		stability = 1

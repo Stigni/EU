@@ -25,11 +25,13 @@ discovered_by = north_american
 1680.1.1 = {
  	owner = IRO
 	controller = IRO
+	add_core = IRO
 	culture = iroquois 
 } #Taken by Iroquois in Beaver Wars.
 1701.8.14 = {
 	owner = XXX
 	controller = XXX
+	remove_core = IRO
 	is_city = no
 	culture = illini 
 } #Vast areas left deserted after the Beaver Wars and the Iroquois withdrawal
@@ -37,15 +39,16 @@ discovered_by = north_american
 1732.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	is_city = yes
 	culture = cosmopolitan_french
 	religion = catholic 
 } #French settlement at Vincennes (really across the river in Wea, represented here for gameplay reasons)
-1757.1.1 = { add_core = FRA }
 1763.2.10 = {
 	discovered_by = GBR
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	remove_core = FRA
 	culture = english
 	religion = protestant
@@ -54,6 +57,7 @@ discovered_by = north_american
 1778.7.4 = {
 	owner = USA
 	controller = USA
+	add_core = USA
+	remove_core = GBR
 	culture = american
 } # Americans capture Kaskaskia; Illinois country french join the revolt.
-1803.7.4 = { add_core = USA } 

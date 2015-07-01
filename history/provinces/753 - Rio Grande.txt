@@ -31,6 +31,7 @@ native_hostileness = 2
 1599.12.25 = { capital = "Natal" }
 1633.1.1 = {	owner = NED
 	controller = NED
+	add_core = NED
 	culture = dutch
 	religion = reformed
 } # The battleground between the Dutch & the Portugese, under Dutch rule
@@ -39,5 +40,6 @@ native_hostileness = 2
 1661.1.1 = {
 	owner = POR
 	controller = POR
+	remove_core = NED
 	culture = portugese
 } # The Netherlands formally ceded their Brazilian territories

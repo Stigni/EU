@@ -17,18 +17,18 @@ native_hostileness = 4
 1623.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	culture = cosmopolitan_french
 	religion = catholic
 	is_city = yes
 	trade_goods = sugar 
 } # Eventually inhabited by both French and English
 1627.1.1 = { capital = "Basseterre" } # The territory went back & forth between the two, Basseterre was founded by the French
-1648.1.1 = { add_core = FRA }
 1713.4.11 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	remove_core = FRA
 	religion = protestant
 	culture = english
 } # Treaty of Utrecht
-1738.1.1 = { add_core = GBR }

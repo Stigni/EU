@@ -24,10 +24,10 @@ discovered_by = andean
 1537.1.1 = {	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	culture = castillian
 	religion = catholic
 }
-1562.1.1 = { add_core = SPA }
 1810.9.18 = {	owner = CHL
 	controller = CHL
 	add_core = CHL

@@ -17,18 +17,23 @@ discovered_by = north_american
 1717.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	culture = cosmopolitan_french
-	religion = catholic } #Fort Toulouse
-1732.1.1 = { add_core = FRA trade_goods = cotton }
+	trade_goods = cotton
+	religion = catholic
+	is_city = yes
+} #Fort Toulouse
 1763.2.10 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	remove_core = FRA
 } # Treaty of Paris, France gave up its claim to New France
 1763.10.9 = {
 	owner = CRE
 	controller = CRE
 	add_core = CRE
+	remove_core = GBR
 	is_city = yes
 	culture = creek
 	religion = totemism

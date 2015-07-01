@@ -28,11 +28,11 @@ discovered_by = north_american
 1737.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	culture = cosmopolitan_french
 	religion = catholic
 	is_city = yes
 } # Construction of Fort St. Pierce
-1763.1.1 = { add_core = FRA }
 1763.2.10 = {
 	discovered_by = GBR
 	owner = GBR
@@ -51,6 +51,7 @@ discovered_by = north_american
 1813.10.5 = {
 	owner = USA
 	controller = USA
+	add_core = USA
 	culture = american
 	religion = protestant 
 } #The death of Tecumseh mark the end of organized native resistance 

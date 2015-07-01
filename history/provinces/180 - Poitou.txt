@@ -1,7 +1,7 @@
 # 180 Poitou - Principal cities: Poitiers
 
-owner = AUV
-controller = AUV
+owner = FRA
+controller = FRA
 capital = "Poitiers"
 is_city = yes
 culture = cosmopolitan_french
@@ -18,8 +18,6 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1398.1.1 = { add_core = AUV }
-1416.3.15 = { owner = FRA controller = FRA } # Death of Jean de Valois
 1560.1.1 = { religion = reformed }
 1565.1.1 = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear
 1568.9.1 = { unrest = 15 } # Catherine de Medici and Charles IX side with the Guise faction, religious intolerance peaks

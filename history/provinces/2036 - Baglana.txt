@@ -22,9 +22,9 @@ discovered_by = chinese
 1573.6.1 = {
 	owner = MUG
 	controller = MUG
+	add_core = MUG
 	capital = "Khuldabad"
 } # Conquered by Akbar
-1623.1.1 = { add_core = MUG }
 1650.1.1 = { add_core = MAR }
 1674.1.1 = {
 	owner = MAR

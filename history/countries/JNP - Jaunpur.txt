@@ -227,7 +227,7 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1781.8.19 = {
+1781.9.14 = {
 	heir = {
 		name = "Udit Singh"
 		monarch_name = "Udit Singh"

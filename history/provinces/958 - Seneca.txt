@@ -26,13 +26,14 @@ discovered_by = north_american
 1726.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	religion = catholic
 	culture = cosmopolitan_french	
 } # Construction of Fort Niagara
-1751.1.1 = { add_core = FRA }
 1763.2.10 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	remove_core = FRA
 	culture = english
 	religion = protestant
@@ -42,6 +43,7 @@ discovered_by = north_american
 	owner = IRO
 	controller = IRO
 	add_core = IRO
+	remove_core = GBR
 	is_city = yes
 	culture = iroquois
 	religion = totemism
@@ -49,6 +51,7 @@ discovered_by = north_american
 1784.10.22 = {
 	owner = USA
 	controller = USA
+	add_core = USA
 	culture = american
 	religion = protestant 
 } #Second Treaty of Fort Stanwix, Iroquois confederacy no longer dominant
@@ -56,4 +59,3 @@ discovered_by = north_american
 1794.9.7 = { unrest = 0 } # The revolt is suppressed
 1799.1.1 = { unrest = 4 } # John Fries's "House tax rebellion" 
 1800.1.1 = { unrest = 0 } # Fries is arrested
-1809.10.22 = { add_core = USA }

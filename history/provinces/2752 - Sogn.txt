@@ -12,7 +12,6 @@ trade_goods = fish
 base_manpower = 1
 is_city = yes
 capital = "Sogndal"
-is_city = yes
 discovered_by = western
 discovered_by = eastern
 

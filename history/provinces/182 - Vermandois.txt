@@ -12,6 +12,7 @@ base_production = 5
 trade_goods = grain
 base_manpower = 4
 add_core = CHP
+add_core = PIC
 add_core = FRA
 discovered_by = eastern
 discovered_by = western

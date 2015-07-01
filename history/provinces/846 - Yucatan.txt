@@ -17,12 +17,12 @@ discovered_by = mesoamerican
 1517.1.1 = { discovered_by = SPA } # Francisco Hernandez de Cordoba
 1547.1.1 = {
 	owner = SPA 
-	controller = SPA 
+	controller = SPA
+	add_core = SPA
 	unrest = 5
 } # final defeat of eastern Yucatan alliance
 1572.1.1 = { 
 	unrest = 0
-	add_core = SPA
 	culture = castillian
 	religion = catholic 
 }

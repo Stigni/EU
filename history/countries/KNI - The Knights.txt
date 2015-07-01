@@ -1,6 +1,6 @@
 government = monastic_order_government
 government_rank = 1
-primary_culture = cosmopolitan_french
+primary_culture = occitain
 religion = catholic
 technology_group = western
 capital = 320 # Rhodes

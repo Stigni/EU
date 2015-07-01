@@ -18,12 +18,12 @@ native_hostileness = 1
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	culture = castillian
 	religion = catholic
 	is_city = yes
 	trade_goods = cocoa
 }
-1558.8.29 = { add_core = SPA }
 1578.1.1 = { unrest = 8 } # Abused indians rebel & destroy Avila & Archidona
 1579.1.1 = { unrest = 0 } # Help arives from Quito
 1810.7.20 = {

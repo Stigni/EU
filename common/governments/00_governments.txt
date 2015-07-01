@@ -1034,7 +1034,7 @@ ambrosian_republic = {
 	
 	valid_for_new_country = no
 	allow_convert = yes
-	duration = 3
+	duration = 4
 	
 	republican_name = yes
 	royal_marriage = no
@@ -1082,17 +1082,17 @@ dutch_republic = {
 	rank = {
 		1 = {
 			heavy_ship_power = 0.10
-			global_trade_income_modifier = 0.10
+			trade_efficiency = 0.10
 			global_autonomy = -0.05
 		}
 		2 = {
 			heavy_ship_power = 0.10
-			global_trade_income_modifier = 0.10
+			trade_efficiency = 0.10
 			global_autonomy = -0.10	
 		}
 		3 = {	
 			heavy_ship_power = 0.10
-			global_trade_income_modifier = 0.10
+			trade_efficiency = 0.10
 			global_autonomy = -0.15	
 		}
 	}

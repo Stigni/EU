@@ -18,9 +18,9 @@ native_hostileness = 2
 1637.1.1 = {
 	owner = POR
 	controller = POR
+	add_core = POR
 	is_city = yes
 	culture = portugese
 	religion = catholic
 	trade_goods = fish
 } # Granted to Bento Manuel Parent as an hereditary captaincy
-1662.1.1 = { add_core = POR }

@@ -19,6 +19,12 @@ national_focus = DIP
 	}
 }
 
+#1434.1.1 = { leader = {	name = "Richard Neville"	type = general	rank = 5	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1460.12.31 } }
+
+1435.1.1 = { leader = {	name = "Richard Plantagenet"	type = general	rank = 1	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1460.12.30 } }
+
+1450.1.1 = { leader = {	name = "John Mowbray"		type = general	rank = 1	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1461.3.4 } }
+
 1453.10.13 = { # Edward of Westminster
 	heir = {
 		name = "Edward"
@@ -32,11 +38,6 @@ national_focus = DIP
 		mil = 4
 	}
 }
-#1434.1.1 = { leader = {	name = "Richard Neville"	type = general	rank = 5	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1460.12.31 } }
-
-1435.1.1 = { leader = {	name = "Richard Plantagenet"	type = general	rank = 1	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1460.12.30 } }
-
-1450.1.1 = { leader = {	name = "John Mowbray"		type = general	rank = 1	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1461.3.4 } }
 
 1455.1.1 = { leader = {	name = "Edmund Beaufort"	type = general	rank = 1	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1461.3.4 } }
 
@@ -204,6 +205,9 @@ national_focus = DIP
 	} 
 }
 
+1497.1.1 = { leader = {	name = "John Cabot"              	type = explorer	rank = 9	fire = 2	shock = 4	manuever = 5	siege = 0	death_date = 1499.7.2 } }
+
+
 1502.4.2 = {
 	heir = {
 	    name = "Henry"
@@ -217,8 +221,6 @@ national_focus = DIP
 	    mil = 4
 	} 
 }
-
-1497.1.1 = { leader = {	name = "John Cabot"              	type = explorer	rank = 9	fire = 2	shock = 4	manuever = 5	siege = 0	death_date = 1499.7.2 } }
 
 1508.1.1 = { leader = {	name = "Sebastian Cabot"              	type = explorer	rank = 9	fire = 5	shock = 2	manuever = 4	siege = 0	death_date = 1557.2.8 } }
 
@@ -447,6 +449,12 @@ national_focus = DIP
 	}
 }
 
+1610.1.1 = { leader = {	name = "Dudd Dudley"                	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1684.3.3 } }
+
+1612.1.1 = { leader = {	name = "William Baffin"                	type = explorer	rank = 13	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1622.1.23 } }
+
+1612.1.1 = { leader = {	name = "Thomas Button"                	type = explorer	rank = 3	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1634.4.8 } }
+
 1612.11.6 = {
 	heir = {
 		name = "Charles"
@@ -460,12 +468,6 @@ national_focus = DIP
 		mil = 2
 	}
 }
-
-1610.1.1 = { leader = {	name = "Dudd Dudley"                	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1684.3.3 } }
-
-1612.1.1 = { leader = {	name = "William Baffin"                	type = explorer	rank = 13	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1622.1.23 } }
-
-1612.1.1 = { leader = {	name = "Thomas Button"                	type = explorer	rank = 3	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1634.4.8 } }
 
 1623.1.1 = { leader = {	name = "George Villiers"            	type = general	rank = 0	fire = 3	shock = 1	manuever = 2	siege = 0	death_date = 1624.8.23 } }
 

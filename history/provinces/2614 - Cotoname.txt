@@ -18,6 +18,7 @@ discovered_by = mesoamerican
 1582.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	is_city = yes
 	religion = catholic
 	capital = "San Luis Rey de Francia"
@@ -25,5 +26,4 @@ discovered_by = mesoamerican
 	trade_goods = wool 
 } # First Spanish colonists
 1596.1.1 = { capital = "Monterrey" }
-1607.1.1 = { add_core = SPA }
 1810.9.16 = { owner = MEX add_core = MEX controller = MEX } # Mexican War of Independence

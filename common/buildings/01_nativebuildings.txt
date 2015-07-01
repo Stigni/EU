@@ -20,7 +20,7 @@
 
 
 native_earthwork = {
-	cost = 100
+	cost = 50
 	time = 12
 	trigger = {
 		owner = { government = native_council }
@@ -40,7 +40,7 @@ native_earthwork = {
 }
 
 native_palisade = {
-	cost = 100
+	cost = 50
 	time = 12
 	trigger = {
 		owner = { government = native_council }
@@ -63,7 +63,7 @@ native_palisade = {
 }
 
 native_fortified_house = {
-	cost = 100
+	cost = 50
 	time = 12
 	trigger = {
 		owner = { government = native_council }
@@ -86,7 +86,7 @@ native_fortified_house = {
 
 
 native_ceremonial_fire_pit = {
-	cost = 100
+	cost = 50
 	time = 12
 	trigger = {
 		owner = { government = native_council }
@@ -107,7 +107,7 @@ native_ceremonial_fire_pit = {
 }
 
 native_irrigation = {
-	cost = 100
+	cost = 50
 	time = 12
 	trigger = {
 		owner = { government = native_council }
@@ -127,7 +127,7 @@ native_irrigation = {
 }
 
 native_storehouse = {
-	cost = 100
+	cost = 50
 	time = 12
 	trigger = {
 		owner = { government = native_council }
@@ -147,7 +147,7 @@ native_storehouse = {
 }
 
 native_longhouse = {
-	cost = 100
+	cost = 50
 	time = 12
 	trigger = {
 		owner = { government = native_council }
@@ -168,7 +168,7 @@ native_longhouse = {
 }
 
 native_sweat_lodge = {
-	cost = 100
+	cost = 50
 	time = 12
 	trigger = {
 		owner = { government = native_council }
@@ -189,7 +189,7 @@ native_sweat_lodge = {
 }
 
 native_great_trail = {
-	cost = 100
+	cost = 50
 	time = 12
 	trigger = {
 		owner = { government = native_council }
@@ -211,7 +211,7 @@ native_great_trail = {
 
 
 native_three_sisters_field = {
-	cost = 100
+	cost = 50
 	time = 12
 	trigger = {
 		owner = { government = native_council }

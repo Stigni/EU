@@ -18,11 +18,12 @@ native_hostileness = 3
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
+	is_city = yes
 	culture = castillian
 	religion = catholic
 	trade_goods = tropical_wood
 } 
-1596.1.1 = { add_core = SPA is_city = yes }
 1811.7.5 = {
 	owner = VNZ
 	controller = VNZ

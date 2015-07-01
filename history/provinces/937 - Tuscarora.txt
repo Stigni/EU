@@ -18,11 +18,11 @@ discovered_by = north_american
 1720.1.1 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	is_city = yes
 	culture = english
 	religion = protestant
 } # Settlement after the Tuscarora War
-1745.1.1 = { add_core = GBR }
 1750.1.1 = { trade_goods = tobacco }
 1764.7.1 = {
 	culture = american

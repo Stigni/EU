@@ -17,6 +17,7 @@ native_hostileness = 4
 1631.1.1 = {
 	owner = NED
 	controller = NED
+	add_core = NED
 	culture = dutch
 	religion = reformed
 	is_city = yes
@@ -25,16 +26,19 @@ native_hostileness = 4
 1633.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
+	remove_core = NED
 	culture = castillian
 	religion = catholic
 } # Recaptured by Spain, expelled all Dutch
 1648.1.1 = {
 	owner = NED
 	controller = NED
+	add_core = NED
+	remove_core = SPA
 	culture = dutch
 	religion = reformed
 } # Several attempts were made by the Dutch to reclaim the city, finally Spain gave up 
-1671.1.1 = { add_core = NED }
 1810.7.10 = {
 	owner = GBR
 	controller = GBR
@@ -44,5 +48,6 @@ native_hostileness = 4
 1815.6.9 = {
 	owner = NED
 	controller = NED
+	add_core = NED
 	remove_core = FRA
 } # The United Kingdom of the Netherlands

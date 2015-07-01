@@ -20,11 +20,11 @@ discovered_by = mesoamerican
 1638.1.1 = {
 	owner = ENG
 	controller = ENG
+	add_core = ENG
 	culture = english
 	religion = protestant
 } # British privateers settled in the area 
 1650.1.1 = { capital = "Belize Town" }
-1663.1.1 = { add_core = ENG }
 1707.5.12 = {
 	discovered_by = GBR
 	owner = GBR

@@ -17,6 +17,7 @@ discovered_by = north_american
 1564.1.1 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	culture = cosmopolitan_french
 	religion = catholic
 	is_city = yes
@@ -26,10 +27,11 @@ discovered_by = north_american
 1565.8.28 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
+	remove_core = FRA
 	culture = castillian
 	capital = "St. Augustine"
 }
-1590.8.28 = { add_core = SPA }
 1670.1.1 = { unrest = 8 } # Conflict erupted when British settlers began to arrive
 1680.1.1 = { unrest = 0 }
 1695.1.1 = { fort_17th = yes } #First star fort completed
@@ -37,12 +39,12 @@ discovered_by = north_american
 1763.2.10 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	remove_core = SPA
 	culture = english
 	religion = protestant
 } # Primarily a British province
-1783.9.3 = { owner = SPA controller = SPA }
-1808.9.3 = { add_core = SPA}
+1783.9.3 = { owner = SPA controller = SPA add_core = SPA remove_core = GBR }
 1819.2.22 = {
 	owner = USA
 	controller = USA

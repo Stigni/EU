@@ -28,21 +28,20 @@ discovered_by = north_american
 1701.8.4 = {
 	owner = FRA
 	controller = FRA
+	add_core = FRA
 	culture = cosmopolitan_french
 	religion = catholic
 } #Great Peace of Montreal, French and allies dominant in this area
 1750.1.1 = {	
 	capital = "Fort Rouillé"
-	is_city = yes
-	add_core = FRA
 }
 1763.2.10 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	remove_core = FRA
 } # Treaty of Paris - ceded to Britain, France gave up its claim
 1783.1.1 = {
  	culture = english
 	religion = protestant 
 } #Loyalist migration after the revolution
-1788.2.10 = { add_core = GBR }

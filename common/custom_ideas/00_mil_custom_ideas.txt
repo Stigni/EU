@@ -102,10 +102,13 @@ mil_idea_modifiers = {
 		siege_ability = 0.05
 	}
 	custom_idea_vassal_forcelimit_bonus = {
-		vassal_forcelimit_bonus = 0.25		
+		vassal_forcelimit_bonus = 0.5		
 	}	
 	custom_idea_infantry_power = {
 		infantry_power = 0.05
+		level_cost_2 = 3
+		level_cost_3 = 9
+		level_cost_4 = 18		
 	}
 	custom_idea_cavalry_power = {
 		cavalry_power = 0.05

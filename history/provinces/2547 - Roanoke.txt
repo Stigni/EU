@@ -17,13 +17,13 @@ discovered_by = north_american
 1653.1.1 = {
 	owner = ENG
 	controller = ENG
+	add_core = ENG
 	is_city = yes
 	culture = english
 	religion = protestant
 } # Albemarle settlements
 1676.1.1 = { unrest = 4 } # Bacon's rebellion, high taxes, low prices for tobacco
 1677.1.1 = { unrest = 0 }
-1678.1.1 = { add_core = ENG }
 1700.1.1 = { trade_goods = tobacco }
 1707.5.12 = {
 	discovered_by = GBR

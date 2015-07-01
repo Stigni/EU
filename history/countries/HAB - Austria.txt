@@ -564,6 +564,20 @@ national_focus = ADM
 
 1675.1.1 = { leader = {	name = "Charles V de Lorraine" 	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1690.1.1 } }
 
+1678.7.26 = {
+	heir = {
+		name = "Josef"
+		monarch_name = "Josef I"
+		dynasty = "von Habsburg"
+		birth_date = 1678.7.26
+		death_date = 1711.4.17
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
 #Trade Good Events
 1680.1.1 = {
 	set_global_flag = calicoes_happened
@@ -580,20 +594,6 @@ national_focus = ADM
 			value = 0.5
 			duration = -1
 		}
-}
-
-1678.7.26 = {
-	heir = {
-		name = "Josef"
-		monarch_name = "Josef I"
-		dynasty = "von Habsburg"
-		birth_date = 1678.7.26
-		death_date = 1711.4.17
-		claim = 95
-		adm = 3
-		dip = 1
-		mil = 3
-	}
 }
 
 1685.1.1 = { leader = {	name = "Prinz Eugen"           	type = general	rank = 1	fire = 5	shock = 5	manuever = 5	siege = 1	death_date = 1730.1.1 } }

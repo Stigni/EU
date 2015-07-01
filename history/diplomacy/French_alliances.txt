@@ -22,15 +22,6 @@ union = {
 	end_date = 1461.1.1
 }
 
-# Nevers as vassal after Burgundy
-vassal = {
-	first = BUR
-	second = NEV
-	start_date = 1477.1.5
-	end_date = 1539.1.1 
-}
-
-
 # Provence and Lorraine under René of Anjou
 union = {
 	first = PRO
@@ -98,7 +89,7 @@ vassal = {
 	first = FRA
 	second = NEV
 	start_date = 1465.1.1
-	end_date = 1477.1.5
+	end_date = 1539.1.1
 }
 
 # The Batavian Republic & later the kingdom of Holland
@@ -622,12 +613,12 @@ vassal = {
 }
 
 # Poland and France
-vassal = {
-	first = FRA
-	second = POL
-	start_date = 1807.7.9
-	end_date = 1814.4.11
-}
+#vassal = {
+#	first = FRA
+#	second = POL
+#	start_date = 1807.7.9
+#	end_date = 1814.4.11
+#}
 
 # Danzig and France
 vassal = {
@@ -680,7 +671,7 @@ royal_marriage = {
 # Henry II of France and Catherine de Medici
 royal_marriage = {
 	first = FRA
-	second = TUS
+	second = LAN
 	start_date = 1533.10.28
 	end_date = 1559.7.10
 }

@@ -23,6 +23,6 @@ discovered_by = sub_saharan
 	add_core = POR
 	is_city = yes
 } # At Sao Felipe de Benguela
-1641.1.1 = { owner = NED controller = NED } # Captured by the Dutch
-1648.1.1 = { owner = POR controller = POR } # A Brazilian-Portuguese expedition expelled the Dutch
+1641.1.1 = { owner = NED controller = NED add_core = NED } # Captured by the Dutch
+1648.1.1 = { owner = POR controller = POR remove_core = NED } # A Brazilian-Portuguese expedition expelled the Dutch
 1650.1.1 = { trade_goods = slaves }

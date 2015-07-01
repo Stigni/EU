@@ -17,13 +17,12 @@ discovered_by = north_american
 1670.1.1 = { discovered_by = FRA } # Robert Cavelier de La Salle
 1699.1.1 = {	owner = FRA
 	controller = FRA
-	capital = "Biloxi"
+	add_core = FRA
 	culture = cosmopolitan_french
 	religion = catholic
 	is_city = yes
 	trade_goods = cotton
 } # Pierre Le Moyne d'lberville
-1724.1.1 = { add_core = FRA }
 1763.2.10 = {
 	owner = GBR
 	controller = GBR

@@ -18,6 +18,7 @@ discovered_by = north_american
 1750.1.1 = {
 	owner = GBR
 	controller = GBR
+	add_core = GBR
 	culture = english
 	religion = protestant
 	is_city = yes
@@ -26,7 +27,6 @@ discovered_by = north_american
 	culture = american
 	unrest = 6
 } # Growing unrest
-1775.1.1 = { add_core = GBR }
 1776.7.4 = {
 	owner = USA
 	controller = USA

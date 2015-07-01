@@ -58,7 +58,7 @@
 211 = "Pyrenäen"
 227 = "Lissabon"
 254 = "Posen"
-255 = "Kalisch"
+255 = "Gnesen"
 257 = "Warschau"
 258 = "Schieratz"
 259 = "Sandomir"

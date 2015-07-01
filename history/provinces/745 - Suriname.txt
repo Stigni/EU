@@ -18,6 +18,7 @@ native_hostileness = 3
 1593.1.1 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	culture = castillian
 	religion = catholic
 	is_city = yes
@@ -26,11 +27,11 @@ native_hostileness = 3
 1616.1.1 = {
 	owner = NED
 	controller = NED
+	add_core = NED
+	remove_core = SPA
 	religion = reformed
 	culture = dutch
-
 }
-1641.1.1 = { add_core = NED }
 1670.1.1 = { unrest = 6 } # Violent conflicts between native tribes & the Dutch
 1731.1.1 = { unrest = 8 } # Slave rebellion
 1732.1.1 = { unrest = 4 }

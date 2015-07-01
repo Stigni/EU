@@ -21,10 +21,10 @@ discovered_by = mesoamerican
 	discovered_by = SPA
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	religion = catholic
 	culture = castillian
 } # Alvarado conquers the Tlapanec
-1547.1.1 = { add_core = SPA }
 1810.9.16 = { owner = MEX add_core = MEX controller = MEX } # Mexican War of Independence
 
 

@@ -31,6 +31,7 @@ native_hostileness = 2
 	capital = "Recife"
 	owner = NED
 	controller = NED
+	add_core = NED
 	culture = dutch
 	religion = reformed
 } # Dutch occupation, capital moved from Olinda
@@ -38,6 +39,7 @@ native_hostileness = 2
 1654.1.1 = {
 	owner = POR
 	controller = POR
+	remove_core = NED
 	culture = portugese
 	religion = catholic
 	unrest = 0
