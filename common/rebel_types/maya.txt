@@ -124,7 +124,10 @@ maya_rebels = {
 	siege_won_effect = {
 		if = {
 			limit = {
-				religion = mesoamerican_religion
+				OR = {
+					religion = mesoamerican_religion
+					is_reformation_center = yes
+				}
 			}
 			add_province_modifier = {
 				name = "religious_violence"
@@ -134,6 +137,7 @@ maya_rebels = {
 		if = {
 			limit = {
 				NOT = { religion = mesoamerican_religion }
+				is_reformation_center = no
 			}
 			change_religion = mesoamerican_religion
 			add_province_modifier = {

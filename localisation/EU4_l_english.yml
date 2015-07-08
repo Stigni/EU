@@ -178,6 +178,7 @@
  FORT_MAIN_NONC: "Maintenance can only be toggled on forts you control, as those are the only ones you pay money for."
  FORT_MAIN_SIEGE: "Maintenance cannot be toggled when the province is under siege!"
  development: "Development"
+ development_scaled: "Development"
  DEVELOPMENT_LESS_THAN: "Development less than $VAL|Y$.\n"
  DEVELOPMENT_AT_LEAST: "Development at least $VAL|Y$.\n"
  TOTAL_DEVELOPMENT_LESS_THAN: "Total Development less than $VAL|Y$.\n"

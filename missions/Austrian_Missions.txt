@@ -670,6 +670,7 @@ protect_belgium_from_the_french = {
 		NOT = { alliance_with = FRA }
 		spanish_netherlands = { owned_by = ROOT }
 		spanish_netherlands = { owned_by = FRA }
+		NOT = { has_country_flag = protected_belgium_from_the_french }
 	}
 	abort = {
 		is_subject = yes
@@ -703,6 +704,7 @@ protect_belgium_from_the_french = {
 		}
 	}
 	effect = {
+		set_country_flag = protected_belgium_from_the_french
 		every_owned_province = {
 			limit = { region = spanish_netherlands }
 			add_province_modifier = {

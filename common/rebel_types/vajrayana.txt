@@ -125,7 +125,10 @@ vajrayana_rebels = {
 	siege_won_effect = {
 		if = {
 			limit = {
-				religion = vajrayana
+				OR = {
+					religion = vajrayana
+					is_reformation_center = yes
+				}
 			}
 			add_province_modifier = {
 				name = "religious_violence"
@@ -135,6 +138,7 @@ vajrayana_rebels = {
 		if = {
 			limit = {
 				NOT = { religion = vajrayana }
+				is_reformation_center = no
 			}
 			change_religion = vajrayana
 			add_province_modifier = {

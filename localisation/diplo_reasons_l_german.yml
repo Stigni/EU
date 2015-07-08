@@ -270,3 +270,6 @@
  DIPLO_BORDERING_UNCOLONIZED: "$WHO$ grenzt an ein kolonisierbares Gebiet: "
  DIPLO_WAR_UNOCCUPIED_FORTS: "Verlangt $PROV$ ohne Besetzung von Festungen in dem Gebiet: "
  DIPLO_GAVE_WAR_ACCESS_TO_ENEMY: "Gewährte Feinden militärischen Zugang: "
+ DIPLO_RECENT_OFFENSIVE_CALL: "Nicht bereit, sich vor dem §Y$DATE$§! einem weiteren Angriffskrieg von $WHO$ anzuschließen: "
+ DIPLO_NUMBER_OF_POWERFUL_ALLIES: "$WHO$ hat bereits einen mächtigen Verbündeten in $ALLY$: "
+ DIPLO_THREATENED_BY_RIVAL: "$WHO$ wird von $RIVAL$ bedroht: "

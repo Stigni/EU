@@ -636,6 +636,7 @@ theocratic_government = {
 
 monastic_order_government = {
 	religion = yes	
+	monastic = yes
 	
 	valid_for_new_country = no
 	valid_for_nation_designer = yes

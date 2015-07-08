@@ -129,7 +129,10 @@ reformed_rebels = {
 	siege_won_effect = {
 		if = {
 			limit = {
-				religion = reformed
+				OR = {
+					religion = reformed
+					is_reformation_center = yes
+				}
 			}
 			add_province_modifier = {
 				name = "religious_violence"
@@ -139,6 +142,7 @@ reformed_rebels = {
 		if = {
 			limit = {
 				NOT = { religion = reformed }
+				is_reformation_center = no
 			}
 			change_religion = reformed
 			add_province_modifier = {

@@ -1072,3 +1072,6 @@
  custom_idea_imperial_authority_desc: "Der Herrscher eines Kaiserreichs, eines Heiligen Römischen Reichs, muss bereit sein, Autorität über diejenigen auszuüben, die er beherrschen möchte, und sicherstellen, dass dies von allen akzeptiert wird. Diese Autorität muss praktiziert, ausgeübt und beibehalten werden, so dass niemand Euer Herrschaftsrecht über ein Heiliges Römisches Reich in Frage stellen kann."
  ND_PROVINCE_COST: "Gesamtentwicklung aus Provinzen: $VALUE$"
  ND_PROVINCE_COST_TERRAIN: "Provinzgebiet: $VALUE$"
+ TREASURE_FLEET_TOOLTIP_CANT_REACH: "$COUNTRY$ kann keine Silberflotte aussenden, da unsere Handelshauptstadt $OURNODE|Y$ nicht stromabwärts von ihrer Handelshauptstadt $THEIRNODE|Y$ liegt."
+ TREASURE_FLEET_TOOLTIP_CANT_REACH_DELAYED: "§RStattdessen behalten sie ihre Goldeinnahmen.§!\n\nWenn wir unsere Handelshauptstadt zu einem Umschlagsplatz stromabwärts zu ihnen verlagern würden, würden wir Silberflotten empfangen können."
+ AUTHORITY_FROM_LA: "Hierdurch verändert sich Eure Autorität um höchstens $CHANGE$."

@@ -736,3 +736,4 @@
  PEACETREATY_RELEASE_VASSAL: "Untertan entlassen"
  PEACEOFFER_GOLD_DESC: "Gold $VAL$"
  SIEGE_DISEASE: "Seuchenausbruch"
+ PEACEOFFER_CANNOT_MAKE_CORE: "Diese Provinz kann nicht ausgewählt werden, da $TAG$ diese nicht zu einer Kernprovinz machen kann."

@@ -2716,7 +2716,6 @@ achievement_neither_holy_nor_german = {
 	}
 
 	happened = {
-		has_switched_nation = no
 		is_emperor = yes
 		
 		calc_true_if = {
@@ -2741,8 +2740,6 @@ achievement_colonial_management = {
 	}
 
 	happened = {
-		has_switched_nation = no
-		
 		calc_true_if = {
 			all_subject_country = {
 				is_colonial_nation = yes
@@ -2766,7 +2763,6 @@ achievement_voting_streak = {
 	}
 
 	happened = {
-		has_switched_nation = no
 		check_variable = { which = voting_streak value = 11 }
 	}
 }
@@ -2784,7 +2780,7 @@ achievement_industrial_evolution = {
 	}
 
 	happened = {
-		has_switched_nation = no
+		has_switched_nation = no	
 		tag = GBR
 		northumbria = {
 			type = all
@@ -2820,7 +2816,6 @@ achievement_city_of_cities = {
 	}
 
 	happened = {
-		has_switched_nation = no
 		any_owned_province = {
 			development = 60
 			is_core = ROOT
@@ -2841,7 +2836,6 @@ achievement_one_family_to_rule_them_all = {
 
 	happened = {
 		has_regency = no
-		has_switched_nation = no
 		government = monarchy
 		
 		calc_true_if = {
@@ -2865,7 +2859,6 @@ achievement_this_is_my_faith = {
 	}
 
 	happened = {
-		has_switched_nation = no
 		religion = protestant
 		num_of_aspects = 3
 	}
@@ -2883,7 +2876,6 @@ achievement_bleed_them_dry = {
 	}
 
 	happened = {
-		has_switched_nation = no
 		num_of_war_reparations = 10
 	}
 }
@@ -2900,7 +2892,6 @@ achievement_subsidize_my_love = {
 	}
 
 	happened = {
-		has_switched_nation = no
 		is_in_deficit = no
 		calc_true_if = {
 			all_ally = {
@@ -3045,7 +3036,6 @@ achievement_full_house = {
 	}
 
 	happened = {
-		has_switched_nation = no
 		num_of_marches = 2
 		num_of_vassals = 3
 	}
@@ -3063,7 +3053,6 @@ achievement_black_jack = {
 	}
 
 	happened = {
-		has_switched_nation = no
 		calc_true_if = {
 			all_subject_country = {
 				NOT = { liberty_desire = 50 }
@@ -3086,7 +3075,6 @@ achievement_a_decent_reserve = {
 	}
 
 	happened = {
-		has_switched_nation = no
 		manpower = 1000
 	}
 }
@@ -3229,7 +3217,6 @@ achievement_all_your_trade_are_belong_to_us = {
 	}
 
 	happened = {
-		has_switched_nation = no
 		
 		monthly_income = 300
 		

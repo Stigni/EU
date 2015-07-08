@@ -126,7 +126,10 @@ catholic_rebels = {
 	siege_won_effect = {
 		if = {
 			limit = {
-				religion = catholic
+				OR = {
+					religion = catholic
+					is_reformation_center = yes
+				}
 			}
 			add_province_modifier = {
 				name = "religious_violence"
@@ -136,6 +139,7 @@ catholic_rebels = {
 		if = {
 			limit = {
 				NOT = { religion = catholic }
+				is_reformation_center = no
 			}
 			change_religion = catholic
 			add_province_modifier = {

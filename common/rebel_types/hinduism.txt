@@ -124,7 +124,10 @@ hinduism_rebels = {
 	siege_won_effect = {
 		if = {
 			limit = {
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					is_reformation_center = yes
+				}
 			}
 			add_province_modifier = {
 				name = "religious_violence"
@@ -134,6 +137,7 @@ hinduism_rebels = {
 		if = {
 			limit = {
 				NOT = { religion = hinduism }
+				is_reformation_center = no
 			}
 			change_religion = hinduism
 			add_province_modifier = {

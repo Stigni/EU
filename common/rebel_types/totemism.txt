@@ -125,7 +125,10 @@ totemism_rebels = {
 	siege_won_effect = {
 		if = {
 			limit = {
-				religion = totemism
+				OR = {
+					religion = totemism
+					is_reformation_center = yes
+				}
 			}
 			add_province_modifier = {
 				name = "religious_violence"
@@ -135,6 +138,7 @@ totemism_rebels = {
 		if = {
 			limit = {
 				NOT = { religion = totemism }
+				is_reformation_center = no
 			}
 			change_religion = totemism
 			add_province_modifier = {

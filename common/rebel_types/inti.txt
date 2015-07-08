@@ -124,7 +124,10 @@ inti_rebels = {
 	siege_won_effect = {
 		if = {
 			limit = {
-				religion = inti
+				OR = {
+					religion = inti
+					is_reformation_center = yes
+				}
 			}
 			add_province_modifier = {
 				name = "religious_violence"
@@ -134,6 +137,7 @@ inti_rebels = {
 		if = {
 			limit = {
 				NOT = { religion = inti }
+				is_reformation_center = no
 			}
 			change_religion = inti
 			add_province_modifier = {

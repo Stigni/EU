@@ -125,7 +125,10 @@ ibadi_rebels = {
 	siege_won_effect = {
 		if = {
 			limit = {
-				religion = ibadi
+				OR = {
+					religion = ibadi
+					is_reformation_center = yes
+				}
 			}
 			add_province_modifier = {
 				name = "religious_violence"
@@ -135,6 +138,7 @@ ibadi_rebels = {
 		if = {
 			limit = {
 				NOT = { religion = ibadi }
+				is_reformation_center = no
 			}
 			change_religion = ibadi
 			add_province_modifier = {

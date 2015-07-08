@@ -172,7 +172,7 @@ technology = {
 	university = yes	
 	
 	administrative_efficiency = 0.2
-	development_efficiency = 0.2
+	development_efficiency = 0.1
 }
 
 technology = {
@@ -222,7 +222,7 @@ technology = {
 	year = 1700
 	
 	administrative_efficiency = 0.2
-	development_efficiency = 0.2
+	development_efficiency = 0.1
 }
 
 technology = {
@@ -252,7 +252,7 @@ technology = {
 	year = 1760
 
 	administrative_efficiency = 0.2
-	development_efficiency = 0.2	
+	development_efficiency = 0.1	
 }
 
 technology = {

@@ -125,7 +125,10 @@ sunni_rebels = {
 	siege_won_effect = {
 		if = {
 			limit = {
-				religion = sunni
+				OR = {
+					religion = sunni
+					is_reformation_center = yes
+				}
 			}
 			add_province_modifier = {
 				name = "religious_violence"
@@ -135,6 +138,7 @@ sunni_rebels = {
 		if = {
 			limit = {
 				NOT = { religion = sunni }
+				is_reformation_center = no
 			}
 			change_religion = sunni
 			add_province_modifier = {

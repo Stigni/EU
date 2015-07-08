@@ -124,7 +124,10 @@ orthodox_rebels = {
 	siege_won_effect = {
 		if = {
 			limit = {
-				religion = orthodox
+				OR = {
+					religion = orthodox
+					is_reformation_center = yes
+				}
 			}
 			add_province_modifier = {
 				name = "religious_violence"
@@ -134,6 +137,7 @@ orthodox_rebels = {
 		if = {
 			limit = {
 				NOT = { religion = orthodox }
+				is_reformation_center = no
 			}
 			change_religion = orthodox
 			add_province_modifier = {

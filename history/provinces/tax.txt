@@ -1,0 +1,2724 @@
+./1-Uppland.txt:base_tax = 5 
+./1-Uppland.txt:	base_tax = 6 
+./10-Jamtland.txt:base_tax = 1 
+./100 - Friesland.txt:base_tax = 6 
+./100 - Friesland.txt:1569.1.1 = { unrest = 12 } # The Duke of Alba reforms the tax system ('tiende penning')
+./100 - Friesland.txt:1681.1.1 = { base_tax = 9 
+./1000 - Cree.txt:base_tax = 1 
+./1001 - Sault.txt:base_tax = 1 
+./1002 - Abitbi.txt:base_tax = 1 
+./1003 - Moose Cree.txt:base_tax = 1 
+./1004 - Attawapiskat.txt:base_tax = 1 
+./1005 - Swampy Cree.txt:base_tax = 1 
+./1006 - Chipewyan.txt:base_tax = 1 
+./1007 - Ojibwa.txt:base_tax = 1
+./1008 - Winnipeg.txt:base_tax = 1 
+./1009 - Atikaki.txt:base_tax = 1 
+./101 - Genoa.txt:base_tax = 10 
+./1010 - Manitoba.txt:base_tax = 1 
+./1011 - Woods Cree.txt:base_tax = 1 
+./1012 - Satsuma.txt:base_tax = 3
+./1013 - Chungcheong.txt:base_tax = 4 
+./1014 - Bungo.txt:base_tax = 4 
+./1015 - Okinawa.txt:base_tax = 2 
+./1016 - Ha Tinh.txt:base_tax = 2 
+./1017 - Suo.txt:base_tax = 5
+./1018 - Izumo.txt:base_tax = 4 
+./1019 - Harima.txt:base_tax = 3
+./102 - Nice.txt:base_tax = 4 
+./1020 - Yamashiro.txt:base_tax = 7 
+./1021 - Settsu.txt:base_tax = 7
+./1022 - Indrapura.txt:base_tax = 4 
+./1023 - Echizen.txt:base_tax = 4
+./1024 - Echigo.txt:base_tax = 4 
+./1025 - Dewa.txt:base_tax = 2 
+./1026 - Mutsu.txt:base_tax = 3
+./1027 - Hitachi.txt:base_tax = 2 
+./1028 - Musashi.txt:base_tax = 6
+./1029 - Kai.txt:base_tax = 3
+./103 - Piedmont.txt:base_tax = 7 
+./1030 - Owari.txt:base_tax = 5 
+./1031 - Kamikawa.txt:base_tax = 1 
+./1032 - Kurils.txt:base_tax = 1 
+./1033 - Sakhalin.txt:base_tax = 1 
+./1034 - Kamchatka.txt:base_tax = 1 
+./1035 - Penchisky.txt:base_tax = 1 
+./1036 - Podzhiversk.txt:base_tax = 1 
+./1037 - Nizhe-Kolymsk.txt:base_tax = 1 
+./1038 - Anadyrsk.txt:base_tax = 1 
+./1039 - Verkhoyansk.txt:base_tax = 1 
+./104 - Milan.txt:base_tax = 11 
+./1040 - Suntar Khayat.txt:base_tax = 1 
+./1041 - Gizhiga.txt:base_tax = 1 
+./1042 - Kamnuskoye.txt:base_tax = 1 
+./1043 - Okhotsk.txt:base_tax = 1 
+./1044 - Tauisk.txt:base_tax = 1 
+./1045 - Yakutsk.txt:base_tax = 1 
+./1046 - Butalsk.txt:base_tax = 1 
+./1047 - Jugjur.txt:base_tax = 1 
+./1048 - Udskoye.txt:base_tax = 3 
+./1049 - Hailanboo.txt:base_tax = 2 
+./105 - Parma.txt:base_tax = 6 
+./1050 - Deren.txt:base_tax = 4 
+./1051 - Uchurskoye.txt:base_tax = 1 
+./1052 - Verkohzehkoye.txt:base_tax = 1 
+./1053 - Hinggan.txt:base_tax = 2 
+./1054 - Ilimsk.txt:base_tax = 1 
+./1055 - Verkne-Angarsky.txt:base_tax = 3 
+./1056 - Barguzinsky.txt:base_tax = 4 
+./1057 - Udinsky.txt:base_tax = 3 
+./1058 - Nerchinsky.txt:base_tax = 1 
+./1059 - Bratsk.txt:base_tax = 1 
+./106 - Modena.txt:base_tax = 5 
+./1060 - Irkutsk.txt:base_tax = 1 
+./1061 - Yeniseysk.txt:base_tax = 1 
+./1062 - Kachinsk.txt:base_tax = 1 
+./1063 - Sayan.txt:base_tax = 1 
+./1064 - Tomsk.txt:base_tax = 1 
+./1065 - Kuznetsk.txt:base_tax = 1 
+./1066 - Altai.txt:base_tax = 1 
+./1067 - Narym.txt:base_tax = 1 
+./1068 - Pegaya Orda.txt:base_tax = 1 
+./1069 - Surgut.txt:base_tax = 1 
+./107 - Brescia.txt:base_tax = 8 
+./1070 - Koda.txt:base_tax = 1 
+./1071 - Tara.txt:base_tax = 3 
+./1072 - Obdorsk.txt:base_tax = 1 
+./1073 - Berezov.txt:base_tax = 1 
+./1074 - Sibir.txt:base_tax = 2 
+./1075 - Tyumen.txt:base_tax = 4 
+./1076 - Kurgan.txt:base_tax = 3 
+./1077 - Solikamsk.txt:base_tax = 3 
+./1078 - Middle Urals.txt:base_tax = 1 
+./1078 - Middle Urals.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./1079 - Viatka.txt:base_tax = 3 
+./108 - Verona.txt:base_tax = 8 
+./1080 - North Urals.txt:base_tax = 1 
+./1081 - Simbirsk.txt:base_tax = 2 
+./1081 - Simbirsk.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 3 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+./1081 - Simbirsk.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./1082 - Kazan.txt:base_tax = 6
+./1082 - Kazan.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 }
+./1082 - Kazan.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 }
+./1083 - Zavolochye.txt:base_tax = 2 
+./1084 - Wadjuk.txt:base_tax = 2 
+./1085 - Paredarerme.txt:base_tax = 2 
+./1086 - Kaurna.txt:base_tax = 3 
+./1087 - Wurundjeri.txt:base_tax = 3 
+./1088 - Wergaia.txt:base_tax = 1 
+./1089 - Wiradjuri.txt:base_tax = 3 
+./109 - Mantua.txt:base_tax = 9 
+./1090 - Eora.txt:base_tax = 4 
+./1091 - Kamilaroi.txt:base_tax = 1 
+./1092 - Bundjalung.txt:base_tax = 3 
+./1093 - Barunggam.txt:base_tax = 1 
+./1094 - Turrbal.txt:base_tax = 3 
+./1095 - Falklands.txt:base_tax = 1 
+./1096 - Cape Verde.txt:base_tax = 1 
+./1097 - Fernando Po.txt:base_tax = 2 
+./1098 - St. Helena.txt:base_tax = 1 
+./1099 - Socotra.txt:base_tax = 2 
+./11-Vasterbotten.txt:base_tax = 1 
+./110 - Trent.txt:base_tax = 4 
+./110 - Trent.txt:1577.1.1 = { base_tax = 3 
+./110 - Trent.txt:1602.1.1 = { base_tax = 4 
+./1100 - Mahe.txt:base_tax = 2 
+./1101 - Diego Garcia.txt:base_tax = 1 
+./1102 - Mauritius.txt:base_tax = 5 
+./1103 - Bourbon.txt:base_tax = 5 
+./1104 - Eiriksfjord.txt:base_tax = 1 
+./1105 - Vestbygden.txt:base_tax = 1 
+./1106 - Whangarei.txt:base_tax = 4 
+./1107 - Taranaki.txt:base_tax = 3 
+./1108 - Tauranga.txt:base_tax = 6 
+./1109 - Timaru.txt:base_tax = 3 
+./111 - Friuli.txt:base_tax = 6 
+./1110 - Rio de Oro.txt:base_tax = 3 
+./1111 - Arguin.txt:base_tax = 1 
+./1112 - Trarza.txt:base_tax = 1 
+./1113 - Cayor.txt:base_tax = 3 
+./1114 - Gabu.txt:base_tax = 3 
+./1115 - Brakna.txt:base_tax = 1 
+./1116 - Wolof.txt:base_tax = 3 
+./1117 - Futa Jallon.txt:base_tax = 3 
+./1118 - Sierra Leone.txt:base_tax = 1 
+./1119 - Grain Coast.txt:base_tax = 1 
+./112 - Venezia.txt:base_tax = 10 
+./1120 - Bambuk.txt:base_tax = 6 
+./1121 - Bure.txt:base_tax = 6 
+./1121 - Bure.txt:1600.1.1 = { base_tax = 2 base_production = 2 base_manpower = 1 } #Collapse of mali into minor states after Jennéambara takes over
+./1122 - Bagoe.txt:base_tax = 1 
+./1123 - Segu.txt:base_tax = 5 
+./1124 - Wasuju.txt:base_tax = 4 
+./1124 - Wasuju.txt:1600.1.1 = { base_tax = 2 
+./1125 - Kong.txt:base_tax = 2 
+./1126 - Ivory Coast.txt:base_tax = 1 
+./1127 - Tuat.txt:base_tax = 1 
+./1128 - Taodeni.txt:base_tax = 1 
+./1129 - Azawadd.txt:base_tax = 1 
+./113 - Ferrara.txt:base_tax = 6 
+./1130 - Tadmekka.txt:base_tax = 1 
+./1131 - Massina.txt:base_tax = 4 
+./1132 - Timbuktu.txt:base_tax = 8
+./1133 - Gao.txt:base_tax = 7 
+./1134 - Jenne.txt:base_tax = 7 
+./1135 - Yatenga.txt:base_tax = 3 
+./1136 - Gurma.txt:base_tax = 1 
+./1137 - Wagadugi.txt:base_tax = 3 
+./1138 - Kumasi.txt:base_tax = 4 
+./1139 - Gold Coast.txt:base_tax = 2 
+./114 - Romagna.txt:base_tax = 6 
+./1140 - Abomey.txt:base_tax = 1 
+./1141 - Whydah.txt:base_tax = 1 
+./1142 - Dendi.txt:base_tax = 3 
+./1143 - Borgu.txt:base_tax = 1 
+./1144 - Oyo.txt:base_tax = 3 
+./1145 - Nupe.txt:base_tax = 2 
+./1146 - Ife.txt:base_tax = 1 
+./1147 - Benin.txt:base_tax = 4 
+./1148 - Gobir.txt:base_tax = 3 
+./1149 - Katsina.txt:base_tax = 6 
+./115 - Pisa.txt:base_tax = 6 
+./1150 - Zamfara.txt:base_tax = 3 
+./1151 - Bonny.txt:base_tax = 1 
+./1152 - Idah.txt:base_tax = 1 
+./1153 - Pindinga.txt:base_tax = 1 
+./1154 - Zazzau.txt:base_tax = 3 
+./1155 - Kano.txt:base_tax = 5 
+./1156 - Damagaram.txt:base_tax = 1 
+./1157 - Borno.txt:base_tax = 4 
+./1158 - Kanem.txt:base_tax = 3 
+./1159 - Bagirmi.txt:base_tax = 3 
+./116 - Firenze.txt:base_tax = 10 
+./1160 - Mandara.txt:base_tax = 1 
+./1161 - Bauchi.txt:base_tax = 1 
+./1162 - Wukari.txt:base_tax = 1 
+./1163 - Calabar.txt:base_tax = 1 
+./1164 - Cameroon.txt:base_tax = 1 
+./1165 - Gabon.txt:base_tax = 2 
+./1166 - Loango.txt:base_tax = 3 
+./1167 - Luanda.txt:base_tax = 2 
+./1168 - Kisarna.txt:base_tax = 2 
+./1169 - Mayombe.txt:base_tax = 2 
+./117 - Siena.txt:base_tax = 8 
+./1170 - Kongo.txt:base_tax = 4 
+./1171 - Ndongo.txt:base_tax = 2 
+./1172 - Benguela.txt:base_tax = 4 
+./1174 - Greater Namaqualand.txt:base_tax = 1 
+./1175 - Lesser Namaqualand.txt:base_tax = 1 
+./1176 - Roggeveld.txt:base_tax = 1 
+./1177 - Cape.txt:base_tax = 7 
+./1178 - Great Karoo.txt:base_tax = 3 
+./1179 - Little Karoo.txt:base_tax = 2 
+./118 - Roma.txt:base_tax = 10 
+./1180 - Transkei.txt:base_tax = 1 
+./1181 - Natal.txt:base_tax = 1 
+./1182 - Delagoa Bay.txt:base_tax = 4 
+./1183 - Inhambane.txt:base_tax = 4 
+./1184 - Zimbabwe.txt:base_tax = 4 
+./1185 - Uteve.txt:base_tax = 3 
+./1186 - Sofala.txt:base_tax = 2 
+./1187 - Urungwe.txt:base_tax = 2 
+./1188 - Masapa.txt:base_tax = 3 
+./1189 - Barwe.txt:base_tax = 2 
+./119 - Ancona.txt:base_tax = 5 
+./1190 - Zumbo.txt:base_tax = 2 
+./1191 - Sena.txt:base_tax = 2 
+./1192 - Quelimane.txt:base_tax = 2 
+./1193 - Menabe.txt:base_tax = 1 
+./1194 - Boina.txt:base_tax = 2 
+./1195 - Mozambique.txt:base_tax = 2 
+./1196 - Kilwa.txt:base_tax = 3 
+./1197 - Ujiji.txt:base_tax = 2 
+./1198 - Tabora.txt:base_tax = 2 
+./1199 - Bagamoyo.txt:base_tax = 1 
+./12-Sjaelland.txt:base_tax = 7 
+./120 - Abbruzzi.txt:base_tax = 5 
+./1200 - Tanga.txt:base_tax = 1 
+./1201 - Zanzibar.txt:base_tax = 2 
+./1202 - Mombasa.txt:base_tax = 4 
+./1203 - Malindi.txt:base_tax = 3 
+./1204 - Lamu.txt:base_tax = 3 
+./1205 - Mogadishu.txt:base_tax = 3 
+./1206 - Mayertern.txt:base_tax = 1 
+./1207 - Ogaden.txt:base_tax = 1 
+./1208 - Haud.txt:base_tax = 1 
+./1209 - Berbera.txt:base_tax = 4 
+./121 - Napoli.txt:base_tax = 9 
+./1210 - Ifat.txt:base_tax = 1 
+./1211 - Harer.txt:base_tax = 3 
+./1212 - Zeila.txt:base_tax = 2 
+./1213 - Shoa.txt:base_tax = 2 
+./1214 - Awsa.txt:base_tax = 2 
+./1215 - Tajura.txt:base_tax = 1 
+./1216 - Dar Nuba.txt:base_tax = 1 
+./1217 - Fazughli.txt:base_tax = 1 
+./1218 - Kefa.txt:base_tax = 2 
+./1219 - Kordofan.txt:base_tax = 1 
+./122 - Apulia.txt:base_tax = 3 
+./1220 - Dar Jaal.txt:base_tax = 1 
+./1221 - Taqali.txt:base_tax = 1 
+./1222 - Gezira.txt:base_tax = 1 
+./1223 - Gojjam.txt:base_tax = 2 
+./1224 - Gonder.txt:base_tax = 3 
+./1225 - Butana.txt:base_tax = 1 
+./1226 - Taka.txt:base_tax = 1 
+./1227 - Tigre.txt:base_tax = 2 
+./1228 - Dongola.txt:base_tax = 1 
+./1229 - Berber.txt:base_tax = 1 
+./123 - Calabria.txt:base_tax = 2 
+./1230 - Massawa.txt:base_tax = 2 
+./1231 - Aswan.txt:base_tax = 2 
+./1232 - Suakin.txt:base_tax = 1 
+./1233 - Kharga.txt:base_tax = 1 
+./1234 - Qasr Ibrim.txt:base_tax = 2 
+./1235 - Guam.txt:base_tax = 1 
+./1236 - Rabaul.txt:base_tax = 1 
+./1237 - Hanuabada.txt:base_tax = 1 
+./1238 - Solomon Islands.txt:base_tax = 1 
+./1239 - Vanuatu.txt:base_tax = 1 
+./124 - Messina.txt:base_tax = 6 
+./1240 - Hawaii.txt:base_tax = 3 
+./1241 - Kiribati.txt:base_tax = 1 
+./1242 - Fiji.txt:base_tax = 1 
+./1243 - Samoa.txt:base_tax = 2 
+./1244 - Tahiti.txt:base_tax = 3 
+./1245 - Manokwari.txt:base_tax = 1 
+./1246 - Waihopai.txt:base_tax = 2 
+./1247 - Corsica.txt:base_tax = 3 
+./1248 - Maldives.txt:base_tax = 2 
+./1249 - Yola.txt:base_tax = 1 
+./125 - Palermo.txt:base_tax = 8 
+./126 - Malta.txt:base_tax = 3 
+./127 - Sassari.txt:base_tax = 3 
+./128 - Karnten.txt:base_tax = 6
+./129 - Krain.txt:base_tax = 7 
+./13-Slesvig.txt:base_tax = 4 
+./130 - Istria.txt:base_tax = 2 
+./1306 - Sao Tomel.txt:base_tax = 1 
+./131 - Zagorje.txt:base_tax = 3 
+./131 - Zagorje.txt:1573.1.20 = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Peasant uprising against Habsburg rule & the feudal system
+./1318 - Spis.txt:base_tax = 4
+./132 - Steiermark.txt:base_tax = 5
+./133 - Linz.txt:base_tax = 5 
+./134 - Wien.txt:base_tax = 7 
+./135 - Sopron.txt:base_tax = 5 
+./135 - Sopron.txt:1506.1.1 = { revolt = { type = anti_tax_rebels size = 0 } controller = REB } # Szekely rebellion
+./135 - Sopron.txt:1514.4.1 = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Peasant rebellion against Hungary's magnates
+./136 - Dalmatia.txt:base_tax = 6 
+./137 - Ragusa.txt:base_tax = 5 
+./138 - Zeta.txt:base_tax = 2 
+./139 - Hum.txt:base_tax = 3 
+./14-Fyn.txt:base_tax = 3 
+./140 - Bosnia.txt:base_tax = 3
+./140 - Bosnia.txt:1738.1.1 = { unrest = 5 } # The constant fighting, increased taxation caused tax revolts
+./141 - Serbia.txt:base_tax = 5 
+./142 - Corfu.txt:base_tax = 4 
+./143 - Albania.txt:base_tax = 4 
+./144 - Janina.txt:base_tax = 2 
+./145 - Morea.txt:base_tax = 3 
+./145 - Morea.txt:1690.1.1 = { base_tax = 1 
+./146 - Athens.txt:base_tax = 4 
+./146 - Athens.txt:1690.1.1 = { base_tax = 3 base_production = 3 } #The Decentralizing Effect of the Provincial System
+./147 - Salonica.txt:base_tax = 6 
+./147 - Salonica.txt:1615.1.1 = { base_tax = 8 
+./148 - Thessaloniki.txt:base_tax = 6 
+./148 - Thessaloniki.txt:1615.1.1 = { base_tax = 4 
+./149 - Edirne.txt:base_tax = 7
+./149 - Edirne.txt:1615.1.1 = { base_tax = 4 
+./149 - Edirne.txt:1718.1.1 = { unrest = 3 base_tax = 6 
+./15-Jylland.txt:base_tax = 3 
+./150 - Tarnovo.txt:base_tax = 6 
+./151 - Constantinople.txt:base_tax = 9 
+./151 - Constantinople.txt:1690.1.1 = { base_tax = 10 
+./151 - Constantinople.txt:1718.1.1 = { unrest = 3 base_tax = 12 
+./152 - Belovar.txt:base_tax = 4
+./153 - Pest.txt:base_tax = 7 
+./153 - Pest.txt:1506.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Szekely rebellion
+./153 - Pest.txt:1514.4.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Peasant rebellion against Hungary's magnates
+./154 - Szepes.txt:base_tax = 4
+./155 - Bekes.txt:base_tax = 4 
+./155 - Bekes.txt:1506.1.1 = { revolt = { type = anti_tax_rebels size = 0 } controller = REB } # Szekely rebellion
+./155 - Bekes.txt:1514.4.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Peasant rebellion against Hungary's magnates
+./156 - Temes.txt:base_tax = 3 
+./156 - Temes.txt:1514.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Rebel peasant troops led by Gheorghe Doja
+./157 - Bihar.txt:base_tax = 3 
+./157 - Bihar.txt:1506.1.1 = { revolt = { type = anti_tax_rebels size = 0.5 } controller = REB } # Szekely rebellion
+./157 - Bihar.txt:1514.4.1 = { revolt = { type = anti_tax_rebels size = 0.5 } controller = REB } # Peasant rebellion against Hungary's magnates
+./157 - Bihar.txt:1517.1.1 = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Szekely rebellion
+./158 - Maros.txt:base_tax = 4 
+./158 - Maros.txt:1514.4.1 = { revolt = { type = anti_tax_rebels size = 0 } controller = REB } # Peasant rebellion against Hungary's magnates
+./158 - Maros.txt:1784.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Peasant rebellion against the nobles
+./159 - Silistria.txt:base_tax = 4
+./16-Bohuslan.txt:base_tax = 2 
+./160 - Oltenia.txt:base_tax = 4
+./161 - Tirgoviste.txt:base_tax = 6
+./162 - Zemplen.txt:base_tax = 3 
+./163 - Crete.txt:base_tax = 5 
+./163 - Crete.txt:1690.1.1 = { base_tax = 3 
+./164 - Naxos.txt:base_tax = 2 
+./164 - Naxos.txt:1740.1.1 = { base_tax = 1 base_production = 1 } # The decentralizing effect of the provincial system
+./165 - Bern.txt:base_tax = 5 
+./165 - Bern.txt:1653.1.1 = { unrest = 5 } # Peasant rebellion against overtaxation
+./166 - Schwyz.txt:base_tax = 4 
+./166 - Schwyz.txt:1653.1.1 = { unrest = 5 } # Peasant rebellion against overtaxation
+./167 - Caux.txt:base_tax = 5
+./168 - Normandie.txt:base_tax = 6 
+./168 - Normandie.txt:1786.1.1 = { base_tax = 5 base_production = 5 } # The Eden Agreement
+./169 - Armor.txt:base_tax = 5 
+./169 - Armor.txt:1786.1.1 = { base_tax = 6 base_production = 6 } # The Eden Agreement }
+./17-Akershus.txt:base_tax = 3 
+./170 - Finistere.txt:base_tax = 3 
+./171 - Morbihan.txt:base_tax = 4 
+./172 - Vendee.txt:base_tax = 6
+./173 - Labourd.txt:base_tax = 3 
+./174 - Gascogne.txt:base_tax = 8 
+./174 - Gascogne.txt:1749.1.1 = { base_tax = 8 base_production = 8 } # Machault & the 5% tax
+./1742 - Limburg.txt:base_tax = 6 
+./1743 - Cambray.txt:base_tax = 5 
+./1743 - Cambray.txt:1789.5.5 = { base_tax = 6 base_production = 6 } # The General Estates
+./1744 - Antwerpen.txt:base_tax = 8 
+./1745 - Cantabria.txt:base_tax = 4
+./1746 - Burgos.txt:base_tax = 5 
+./1747 - Caceres.txt:base_tax = 2 
+./1748 - La Mancha.txt:base_tax = 3
+./1749 - Cadiz.txt:base_tax = 5 
+./175 - Armagnac.txt:base_tax = 5 
+./1750 - Alicante.txt:base_tax = 3
+./1751 - Ceuta.txt:base_tax = 3 
+./1752 - Rzhev.txt:base_tax = 5 
+./1752 - Rzhev.txt:1560.1.1 = { base_tax = 6 base_production = 6 } # Treasury reforms
+./1752 - Rzhev.txt:1711.1.1 = { base_tax = 7 base_production = 7 } # Governmental reforms and the absolutism
+./1752 - Rzhev.txt:1767.1.1 = { base_tax = 8 base_production = 8 } # Legislative reform
+./1753 - Kostroma.txt:base_tax = 4 
+./1754 - Orel.txt:base_tax = 4 
+./1755 - Ustyug.txt:base_tax = 3
+./1756 - Budjak.txt:base_tax = 5 
+./1757 - Oberpfalz.txt:base_tax = 4
+./1757 - Oberpfalz.txt:1743.1.1 = { base_tax = 4 base_production = 4 } # Economic crisis as effect of the Austrian succession war (e.g. Straubing bancrupt)
+./1758 - Hannover.txt:base_tax = 4
+./1759 - Potsdam.txt:base_tax = 4
+./1759 - Potsdam.txt:	base_tax = 8 
+./176 - Bearn.txt:base_tax = 4 
+./1760 - Koblenz.txt:base_tax = 4 
+./1761 - Alzey.txt:base_tax = 6 
+./1761 - Alzey.txt:1689.8.1 = { base_tax = 5 
+./1762 - Kassel.txt:base_tax = 2 
+./1763 - Niederlausitz.txt:base_tax = 3
+./1764 - Burgas.txt:base_tax = 3 
+./1765 - Nis.txt:base_tax = 4 
+./1766 - Kosovo.txt:base_tax = 2 
+./1767 - Veroce.txt:base_tax = 4 
+./1768 - Lienz.txt:base_tax = 4 
+./1769 - Gorz.txt:base_tax = 5 
+./177 - Maine.txt:base_tax = 6 
+./177 - Maine.txt:1786.1.1 = { base_tax = 6 base_production = 6 } # The Eden Agreement
+./1770 - Ostmarch.txt:base_tax = 5 
+./1771 - Erz.txt:base_tax = 5 
+./1772 - Pozsony.txt:base_tax = 8 
+./1773 - Achaea.txt:base_tax = 3 
+./1773 - Achaea.txt:1690.1.1 = { base_tax = 1 
+./1774 - Treviso.txt:base_tax = 7 
+./1775 - Holstein.txt:base_tax = 3
+./1775 - Holstein.txt:1550.1.1 = { base_tax = 5 
+./1776-Karelia.txt:base_tax = 1 
+./1777-Kola.txt:base_tax = 1 
+./1778 - Kasimov.txt:base_tax = 4 
+./1778 - Kasimov.txt:1711.1.1 = { base_tax = 7 
+./1778 - Kasimov.txt:1767.1.1 = { base_tax = 8 
+./178 - Anjou.txt:base_tax = 7
+./1780 - Komi.txt:base_tax = 2 
+./179 - Berry.txt:base_tax = 7 
+./1792 - Antananarivo.txt:base_tax = 1 
+./18-Lappland.txt:base_tax = 1 
+./180 - Poitou.txt:base_tax = 6 
+./180 - Poitou.txt:1749.1.1 = { base_tax = 6 base_production = 6 } # Machault and the 5% tax
+./1809 - Cheyenne.txt:base_tax = 1 
+./181 - Rethel.txt:base_tax = 6 
+./181 - Rethel.txt:1789.5.5 = { base_tax = 10 base_production = 10 } # The General Estates
+./1813 - Saskatchewan.txt:base_tax = 1 
+./1815 - Pathein.txt:base_tax = 4
+./1816 - Beijing.txt:base_tax = 14 
+./1817 - Nan.txt:base_tax = 3 
+./1818 - Chikuzen.txt:base_tax = 6
+./1819 - Tosa.txt:base_tax = 2 
+./182 - Vermandois.txt:base_tax = 5 
+./1820 - Awa.txt:base_tax = 3
+./1821 - Nanjing.txt:base_tax = 15 
+./1822 - Suzhou.txt:base_tax = 9 
+./1823 - Stung Treng.txt:base_tax = 4
+./1824 - Wenzhou.txt:base_tax = 3 
+./1825 - Aki.txt:base_tax = 4
+./1826 - Lika.txt:base_tax = 5 
+./1826 - Lika.txt:1573.1.20 = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Peasant uprising against Habsburg rule & the feudal system
+./1827 - Raska.txt:base_tax = 3 
+./1828 - Soli.txt:base_tax = 2 
+./1828 - Soli.txt:1738.1.1 = { unrest = 5 } # The constant fighting, increased taxation caused tax revolts
+./1829 - Quanzhou.txt:base_tax = 8 
+./183 - Ile-de-France.txt:base_tax = 11
+./183 - Ile-de-France.txt:1589.1.1 = { base_tax = 14 
+./183 - Ile-de-France.txt:1621.1.1 = { base_tax = 15 
+./183 - Ile-de-France.txt:1648.5.1 = { unrest = 5 } # New tax levied by the Parliament of Paris, first Fronde coming up
+./183 - Ile-de-France.txt:1773.1.1 = { base_tax = 16 
+./1830 - Tajima.txt:base_tax = 2 
+./1831 - Travunia.txt:base_tax = 2 
+./1832 - Yamato.txt:base_tax = 3
+./1833 - Ji'an.txt:base_tax = 4 
+./1834 - Dorpat.txt:base_tax = 3 
+./1835 - Mino.txt:base_tax = 4
+./1836 - Luoyang.txt:base_tax = 6 
+./1836 - Luoyang.txt:1641.1.1 = { revolt = { type = anti_tax_rebels size = 0 } controller = REB }
+./1837 - Etchu.txt:base_tax = 4 
+./1838 - Hefei.txt:base_tax = 4 
+./1839 - Suruga.txt:base_tax = 4 
+./184 - Orleanais.txt:base_tax = 8 
+./184 - Orleanais.txt:1589.1.1 = { base_tax = 9 
+./184 - Orleanais.txt:1621.1.1 = { base_tax = 10 
+./1840 - Guilin.txt:base_tax = 2 
+./1841 - Marienburg.txt:base_tax = 5 
+./1842 - Narva.txt:base_tax = 2 
+./1843 - Kozuke.txt:base_tax = 2 
+./1844 - Xiankhouang.txt:base_tax = 2 
+./1845 - South Pyongan.txt:base_tax = 3 
+./1846 - Amasya.txt:base_tax = 4 
+./1846 - Amasya.txt:1740.1.1 = { base_tax = 3 base_production = 3 } # The decentralizing effect of the provincial system
+./1847 - Shiribeshi.txt:base_tax = 1 
+./1848 - Hamid.txt:base_tax = 5 
+./1848 - Hamid.txt:1740.1.1 = { base_tax = 2 
+./1849 - Hama.txt:base_tax = 3 
+./185 - Othe.txt:base_tax = 6
+./185 - Othe.txt:1621.1.1 = { base_tax = 7 
+./185 - Othe.txt:1773.1.1 = { base_tax = 8 
+./1850 - Yaran.txt:base_tax = 2 
+./1851 - Ribatejo.txt:base_tax = 5 
+./1852 - Tokachi.txt:base_tax = 1 
+./1853- Kastoria.txt:base_tax = 2 
+./1853- Kastoria.txt:1615.1.1 = { base_tax = 8 
+./1854 - Nablus.txt:base_tax = 3 
+./1855 - Sidon.txt:base_tax = 5 
+./1856 - Abkhazia.txt:base_tax = 2 
+./1857 - Lauenburg.txt:base_tax = 2 
+./1857 - Lauenburg.txt:1550.1.1 = { base_tax = 4 base_production = 4 }
+./1858 - Stettin.txt:base_tax = 4
+./1858 - Stettin.txt:1725.1.1 = { base_tax = 8 
+./1859 - Torun.txt:base_tax = 5
+./186 - Champagne.txt:base_tax = 8
+./186 - Champagne.txt:1621.1.1 = { base_tax = 10 base_production = 10 } # Richelieu
+./186 - Champagne.txt:1773.1.1 = { base_tax = 11 base_production = 11 } # Turgot & the Economical Reforms
+./1860 - Norfolk.txt:base_tax = 2
+./1861 - Derby.txt:base_tax = 2
+./1862 - Cremona.txt:base_tax = 8
+./1863 - Graz.txt:base_tax = 5 
+./1864 - Somogy.txt:base_tax = 3 
+./1864 - Somogy.txt:1506.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Szekely rebellion
+./1864 - Somogy.txt:1514.4.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Peasant rebellion against Hungary's magnates
+./1865 - Ghent.txt:base_tax = 8 
+./1866 - Namur.txt:base_tax = 7 
+./1866 - Namur.txt:1569.1.1 = { unrest = 10 } # The Duke of Alba reforms the taxation system ('tiende penning')
+./1867 - Freiburg.txt:base_tax = 4 
+./1867 - Freiburg.txt:1653.1.1 = { unrest = 5 } # Peasant rebellion against overtaxation
+./1868 - Augsburg.txt:base_tax = 7 
+./1869 - Zurich.txt:base_tax = 4 
+./1869 - Zurich.txt:1653.1.1 = { unrest = 5 } # Peasant rebellion against overtaxation
+./187 - Barrois.txt:base_tax = 5 
+./1870 - St Gallen.txt:base_tax = 3 
+./1870 - St Gallen.txt:1653.1.1 = { unrest = 5 } # Peasant rebellion against overtaxation
+./1871 - Wallis.txt:base_tax = 3 
+./1871 - Wallis.txt:1653.1.1 = { unrest = 5 } # Peasant rebellion against overtaxation
+./1872 - Ulm.txt:base_tax = 7 
+./1873 - Chur.txt:base_tax = 3 
+./1873 - Chur.txt:1653.1.1 = { unrest = 5 } # Peasant rebellion against overtaxation
+./1874 - Bremen.txt:base_tax = 6 
+./1875 - Turin.txt:base_tax = 5 
+./1876 - Frankfurt.txt:base_tax = 7
+./1876 - Frankfurt.txt:1685.1.1 = { base_tax = 10 
+./1877 - Charolais.txt:base_tax = 4
+./1878 - Aachen.txt:base_tax = 5
+./1879 - Alencon.txt:base_tax = 6 
+./1879 - Alencon.txt:1786.1.1 = { base_tax = 6 base_production = 6 } # The Eden Agreement
+./188 - Metz.txt:base_tax = 6 
+./188 - Metz.txt:1749.1.1 = { base_tax = 8 base_production = 8 } # Machault & the 5% tax
+./1880 - Sundgau.txt:base_tax = 4 
+./1881 - St. Martin.txt:base_tax = 4 
+./1882 - Bone.txt:base_tax = 2 
+./189 - Lothringen.txt:base_tax = 6 
+./19-Osterbotten.txt:base_tax = 1 
+./190 - Bourbon.txt:base_tax = 5 
+./1901 - Lake Volta.txt:base_tax = 2 
+./191 - Nevers.txt:base_tax = 6 
+./192 - Bourgogne.txt:base_tax = 8 
+./192 - Bourgogne.txt:1773.1.1 = { base_tax = 11 base_production = 11 } # Turgot & the Economical Reforms
+./193 - Franche-Comte.txt:base_tax = 5 
+./1930 - Aland.txt:base_tax = 1 
+./1931 - East Frisia.txt:base_tax = 2
+./1933 - Bari.txt:base_tax = 3 
+./1934 - Lucania.txt:base_tax = 2 
+./1935 - Semigallia.txt:base_tax = 2 
+./1936 - Kovno.txt:base_tax = 2 
+./1937 - Grodno.txt:base_tax = 4 
+./1938 - Wizna.txt:base_tax = 2 
+./1939 - Leczyca.txt:base_tax = 4
+./194 - Perigord.txt:base_tax = 5 
+./194 - Perigord.txt:1589.1.1 = { base_tax = 4 
+./194 - Perigord.txt:1749.1.1 = { base_tax = 5 base_production = 5 } # Machault and the 5% tax
+./1940 - Belz.txt:base_tax = 4 
+./1941 - Turov.txt:base_tax = 2 
+./1942 - Zhytomyr.txt:base_tax = 3
+./1943 - Bratslav.txt:base_tax = 3 
+./1944 - Cherkasy.txt:base_tax = 3 
+./1945 - Novgorod-Seversky.txt:base_tax = 3
+./1946 - Desh.txt:base_tax = 4 
+./1947 - Gingee.txt:base_tax = 3 
+./1948 - Bidar.txt:base_tax = 4 
+./1949 - Rayalaseema.txt:base_tax = 4
+./195 - Limousin.txt:base_tax = 5 
+./195 - Limousin.txt:1589.1.1 = { base_tax = 5 
+./1951 - Hunyad.txt:base_tax = 4 
+./1951 - Hunyad.txt:1514.4.1 = { revolt = { type = anti_tax_rebels size = 0 } controller = REB } # Peasant rebellion against Hungary's magnates
+./1951 - Hunyad.txt:1784.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Peasant rebellion against the nobles
+./1952 - Maramaros.txt:base_tax = 2 
+./1953 - Szabolcs.txt:base_tax = 3 
+./1953 - Szabolcs.txt:1506.1.1 = { revolt = { type = anti_tax_rebels size = 1.5 } controller = REB } # Szekely rebellion
+./1953 - Szabolcs.txt:1514.4.1 = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Peasant rebellion against Hungary's magnates
+./1953 - Szabolcs.txt:1517.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Szekely rebellion
+./1954 - Torontal.txt:base_tax = 3
+./1954 - Torontal.txt:1514.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Rebel peasant troops led by Gheorghe Doja
+./1955 - Kholmogory.txt:base_tax = 2 
+./1956 - Suzdal.txt:base_tax = 8 
+./1956 - Suzdal.txt:1719.1.1 = { base_tax = 5 base_production = 5 } # Governmental reforms and the absolutism
+./1956 - Suzdal.txt:1767.1.1 = { base_tax = 7 base_production = 7 } # Legislative reform
+./1957 - Galich.txt:base_tax = 5 
+./1958 - Kargopol.txt:base_tax = 3
+./1959 - Torzhok.txt:base_tax = 5 
+./196 - Toulouse.txt:base_tax = 7
+./1960 - Ostrov.txt:base_tax = 2 
+./1961 - Ladoga.txt:base_tax = 4
+./1962 - Kudymkar.txt:base_tax = 1 
+./1963 - Cherdyn.txt:base_tax = 3 
+./1964 - Ust-Sysolsk.txt:base_tax = 1 
+./1965 - Buzuluk.txt:base_tax = 2 
+./1965 - Buzuluk.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./1966 - Chelyaba.txt:base_tax = 3 
+./1966 - Chelyaba.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 1 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./1967 - Khujand.txt:base_tax = 2 
+./1968 - Kulob.txt:base_tax = 2 
+./1969 - Sozak.txt:base_tax = 1 
+./197 - Roussillon.txt:base_tax = 4 
+./1970 - Syghnak.txt:base_tax = 2 
+./1971 - Tsaritsyn.txt:base_tax = 3 
+./1971 - Tsaritsyn.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+./1971 - Tsaritsyn.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./1972 - Udmurtia.txt:base_tax = 2 
+./1972 - Udmurtia.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./1973 - Urgench.txt:base_tax = 4 
+./1974 - Yedishkul.txt:base_tax = 4
+./1978 - Shetlands.txt:base_tax = 1 
+./1979 -Faroes.txt:base_tax = 1 
+./198 - Rouergue.txt:base_tax = 4
+./1981-Bornholm.txt:base_tax = 1 
+./1982-Blekinge.txt:base_tax = 2 
+./1983-Lolland.txt:base_tax = 2 
+./1984-Nordjylland.txt:base_tax = 2 
+./1985-Narke.txt:base_tax = 2 
+./1986 - New Caledonia.txt:base_tax = 1 
+./1987 - Society Islands.txt:base_tax = 1 
+./1988 - Rapa Nui.txt:base_tax = 1 
+./1989 - Tonga.txt:base_tax = 1 
+./199 - Auvergne.txt:base_tax = 4
+./1990 - Tuvalu.txt:base_tax = 1 
+./1991 - Gilbert Islands.txt:base_tax = 1 
+./1992 - Nauru.txt:base_tax = 1 
+./1993 - Masrshall Islands.txt:base_tax = 1 
+./1994 - Wake.txt:base_tax = 1 
+./1995 - Micronesia.txt:base_tax = 1 
+./1996  Palau.txt:base_tax = 1 
+./1997 - Midway.txt:base_tax = 1 
+./1998 - Christmas Island.txt:base_tax = 1 
+./1999 - Cocos Island.txt:base_tax = 1 
+./2-Ostergotland.txt:base_tax = 3 
+./20-Trondelag.txt:base_tax = 2 
+./200 - Languedoc.txt:base_tax = 7
+./2002 - Galapagos Islands.txt:base_tax = 1 
+./2003 - Ktunaxa.txt:base_tax = 1 
+./2004 - Niitsitapi.txt:base_tax = 1 
+./2005 - Asinaan.txt:base_tax = 1 
+./2006 - Apsaalooke.txt:base_tax = 1 
+./2007 - Arikara.txt:base_tax = 1 
+./2008 - Yankton.txt:base_tax = 1 
+./2009 - Teton.txt:base_tax = 1 
+./201 - Provence.txt:base_tax = 7 
+./2010 - Connecticut.txt:base_tax = 4 
+./2011 - Shenandoah.txt:base_tax = 1
+./2012 - Arsigantegok.txt:base_tax = 1
+./2013 - Kennebec.txt:base_tax = 1
+./2014 - Natchitoches.txt:base_tax = 1
+./2015 - Nipigon.txt:base_tax = 1
+./2016 - Bungi.txt:base_tax = 1 
+./2017 - Nehiyawewin.txt:base_tax = 1 
+./2018 - Tsuutina.txt:base_tax = 1 
+./2019 - Nimiipu.txt:base_tax = 1 
+./202 - Avignon.txt:base_tax = 3 
+./2020 - Bannock.txt:base_tax = 1 
+./2021 - Miwok.txt:base_tax = 3 
+./2022 - Haida.txt:base_tax = 1 
+./2023 - Munsee.txt:base_tax = 1
+./2024 - Ajuuran.txt:base_tax = 1 
+./2025 - South Georgia.txt:base_tax = 1 
+./2026 - Tanjore.txt:base_tax = 8 
+./2027 - Arcot.txt:base_tax = 4
+./2028 - Mahur.txt:base_tax = 2 
+./2029 - South Kanara.txt:base_tax = 4
+./203 - Lyonnais.txt:base_tax = 8
+./2030 - Goa.txt:base_tax = 4 
+./2031 - Morasanadu.txt:base_tax = 4 
+./2032 - Malenadu.txt:base_tax = 2 
+./2033 - Savanaur.txt:base_tax = 4 
+./2034 - Pune.txt:base_tax = 5 
+./2035 - Gulbarga.txt:base_tax = 3 
+./2036 - Baglana.txt:base_tax = 2 
+./2037 - Warangal.txt:base_tax = 3 
+./2038 - Midnapore.txt:base_tax = 5 
+./2039 - Sunderbans.txt:base_tax = 1 
+./204 - Dauphine.txt:base_tax = 5 
+./2040 - Sadiya.txt:base_tax = 2 
+./2041 - Manipur.txt:base_tax = 1 
+./2042 - Koch Hajo.txt:base_tax = 2 
+./2043 - Balasore.txt:base_tax = 4 
+./2044 - Bhagalpur.txt:base_tax = 4 
+./2045 - Barind.txt:base_tax = 6 
+./2046 - Nasirabad.txt:base_tax = 5
+./2047 - Tirhut.txt:base_tax = 5 
+./2048 - Garjat.txt:base_tax = 1 
+./2049 - Khurda.txt:base_tax = 2 
+./205 - Savoie.txt:base_tax = 9
+./2050 - Chanda.txt:base_tax = 2 
+./2051 - Bhavnagar.txt:base_tax = 4 
+./2052 - Navanagar.txt:base_tax = 2 
+./2053 - Patan.txt:base_tax = 4 
+./2054 - Ahmadabad.txt:base_tax = 6 
+./2055 - Gorakhpur.txt:base_tax = 5 
+./2055 - Gorakhpur.txt:	revolt = { type = anti_tax_rebels name = "Landless Nobles" }
+./2056 - Rewa Kantha.txt:base_tax = 2 
+./2057 - Bhelsa.txt:base_tax = 2 
+./2058 - Mewar.txt:base_tax = 4 
+./2059 - Kalpi.txt:base_tax = 3 
+./206 - Galicia.txt:base_tax = 3
+./2060 - Upper Doab.txt:base_tax = 7 
+./2061 - Katehar.txt:base_tax = 5 
+./2062 - Panipat.txt:base_tax = 6 
+./2063 - Etawah.txt:base_tax = 6 
+./2064 - Shekhawati.txt:base_tax = 2 
+./2065 - Bhattiana.txt:base_tax = 4 
+./2066 - Nagaur.txt:base_tax = 2 
+./2067 - Gorwar.txt:base_tax = 3 
+./2068 - Siwistan.txt:base_tax = 1 
+./2069 - Kumaon.txt:base_tax = 1 
+./207 - Asturias.txt:base_tax = 5
+./2070 - Chaubisi Rajya.txt:base_tax = 3 
+./2071 - Limbuwan.txt:base_tax = 2 
+./2072 - Bhakkar.txt:base_tax = 2 
+./2073 - Baltistan.txt:base_tax = 1 
+./2074 - Ladakh.txt:base_tax = 1 
+./2075 - Doaba.txt:base_tax = 7 
+./2076 - Sialkot.txt:base_tax = 7 
+./2077 - Margalla.txt:base_tax = 3 
+./2078 - Sind Sagar.txt:base_tax = 5 
+./2079 - Derajat.txt:base_tax = 3 
+./208 - Leon.txt:base_tax = 5 
+./2080 - Srikakulam.txt:base_tax = 3 
+./2081 - Lakhnor.txt:base_tax = 4 
+./2082 - Raipur.txt:base_tax = 2 
+./2083 - Kosta.txt:base_tax = 3 
+./2084 - Konaseema.txt:base_tax = 3
+./2085 - Tiruchirapalli.txt:base_tax = 3 
+./2086 - Cholistan.txt:base_tax = 1 
+./2087 - Ajmer.txt:base_tax = 2 
+./2088 - Umarkot.txt:base_tax = 3 
+./2089 - Chaul.txt:base_tax = 4 
+./209 - Vizcaya.txt:base_tax = 2 
+./209 - Vizcaya.txt:1630.1.1 = { unrest = 3 } # Riots in Vizcaya against the imposition of war taxes by the Count of Olivares
+./2090 - Kurnool.txt:base_tax = 4 
+./2091 - Tripura.txt:base_tax = 1 
+./2092 - Mahadeo.txt:base_tax = 1 
+./2093 - Mandsaur.txt:base_tax = 3 
+./2094 - Bahreich.txt:base_tax = 5 
+./2094 - Bahreich.txt:	revolt = { type = anti_tax_rebels name = "Landless Nobles" }
+./2095 - Varanasi.txt:base_tax = 6 
+./2095 - Varanasi.txt:	revolt = { type = anti_tax_rebels name = "Landless Nobles" }
+./2096 - Damin.txt:base_tax = 1 
+./2097 - Bagelkhand.txt:base_tax = 2 
+./2098 - Surguja.txt:base_tax = 1 
+./2099 - Kandy.txt:base_tax = 2 
+./21-Halogaland.txt:base_tax = 1 
+./210 - Navarra.txt:base_tax = 3 
+./2100 - Vanni.txt:base_tax = 2 
+./2101 - Tirunelveli.txt:base_tax = 3 
+./2102 - Urkan.txt:base_tax = 2 
+./2103 - Udi.txt:base_tax = 1 
+./2104 - Birija.txt:base_tax = 1 
+./2105 - Kuru.txt:base_tax = 2 
+./2106 - Furdan.txt:base_tax = 5 
+./2107 - Ningguta.txt:base_tax = 4 
+./2108 - Huncun.txt:base_tax = 3 
+./2109 - Boduna.txt:base_tax = 3 
+./211 - Pirineo.txt:base_tax = 3 
+./2110 - Yehe.txt:base_tax = 3 
+./2111 - Hetu Ala.txt:base_tax = 5 
+./2112 - Andong.txt:base_tax = 2 
+./2113 - Gaizhou.txt:base_tax = 3 
+./2114 - Ereen.txt:base_tax = 2 
+./2115 - Chahar.txt:base_tax = 2 
+./2116 - Ih Huree.txt:base_tax = 3 
+./2117 - Zasagt.txt:base_tax = 1 
+./2118 - Urzhar.txt:base_tax = 1 
+./2119 - Chuguchak.txt:base_tax = 1 
+./212 - Girona.txt:base_tax = 3 
+./2120 - Ili.txt:base_tax = 3 
+./2121 - Kuqa.txt:base_tax = 2 
+./2122 - Hami.txt:base_tax = 3 
+./2123 - Qakilik.txt:base_tax = 1 
+./2124 - Yarkand.txt:base_tax = 3 
+./2125 - Kochkor.txt:base_tax = 2 
+./2126 - Chuy.txt:base_tax = 1 
+./2127 - Yashilkul.txt:base_tax = 1 
+./2128 - Ngari.txt:base_tax = 1 
+./2129 - Changtang.txt:base_tax = 1 
+./213 - Barcelona.txt:base_tax = 6 
+./213 - Barcelona.txt:1689.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Peasant revolt against new taxes to fund the war against France
+./2130 - Nyingchi.txt:base_tax = 1 
+./2131 - Qamdo.txt:base_tax = 1 
+./2132 - Markam.txt:base_tax = 1 
+./2133 - Dege.txt:base_tax = 1 
+./2134 - Rebgong.txt:base_tax = 1 
+./2135 - Garze.txt:base_tax = 1 
+./2136 - Xuanhua.txt:base_tax = 3 
+./2137 - Daming.txt:base_tax = 3 
+./2138 - Wuding.txt:base_tax = 4 
+./2139 - Laizhou.txt:base_tax = 3 
+./214 - Aragon.txt:base_tax = 6
+./2140 - Yanzhou.txt:base_tax = 4 
+./2141 - Xuzhou.txt:base_tax = 6 
+./2142 - Huai'an.txt:base_tax = 5 
+./2143 - Fengyang.txt:base_tax = 2 
+./2144 - Fuyang.txt:base_tax = 2 
+./2145 - Zhenjiang.txt:base_tax = 5 
+./2146 - Ningguo.txt:base_tax = 4 
+./2147 - Huizhou.txt:base_tax = 5 
+./2148 - Shaoxin.txt:base_tax = 6 
+./2149 - Ningbo.txt:base_tax = 7 
+./215 - Castilla La Vieja.txt:base_tax = 5
+./2150 - Jinhua.txt:base_tax = 3 
+./2151 - Poyang.txt:base_tax = 3 
+./2152 - Jianning.txt:base_tax = 2 
+./2153 -Tingzhou.txt:base_tax = 2 
+./2154 - Kelang.txt:base_tax = 2 
+./2155 - Middag.txt:base_tax = 2 
+./2156 - Chaochow.txt:base_tax = 6 
+./2157 - Waichow.txt:base_tax = 8 
+./2158 - Shiukwan.txt:base_tax = 4 
+./2159 - Leichow.txt:base_tax = 3 
+./216 - Salamanca.txt:base_tax = 6 
+./2160 - Ngaichow.txt:base_tax = 1 
+./2161 - Limchow.txt:base_tax = 3 
+./2162 - Wuchow.txt:base_tax = 1 
+./2163 - Liuzhou.txt:base_tax = 3 
+./2164 - Namnig.txt:base_tax = 1 
+./2165 - Pu'er.txt:base_tax = 2 
+./2166 - Dehong.txt:base_tax = 1 
+./2167 - Lijiang.txt:base_tax = 1 
+./2168 - Bozhou.txt:base_tax = 2 
+./2169 - Langzhong.txt:base_tax = 4 
+./217 - Madrid.txt:base_tax = 6
+./2170 - Songqu.txt:base_tax = 1 
+./2171 - Xiangyang.txt:base_tax = 4 
+./2172 - Jingzhou.txt:base_tax = 3 
+./2173 - Yuanling.txt:base_tax = 3 
+./2174 - Hengyang.txt:base_tax = 3 
+./2175 - Runing.txt:base_tax = 3 
+./2176 - Shangqiu.txt:base_tax = 5 
+./2177 - Ningwu.txt:base_tax = 1 
+./2178 - Lu'an.txt:base_tax = 3 
+./2179 - Yan'an.txt:base_tax = 3 
+./218 - Badajoz.txt:base_tax = 4
+./2180 - Tianshui.txt:base_tax = 3 
+./2181 - Pingliang.txt:base_tax = 3 
+./2182 - Liangzhou.txt:base_tax = 3 
+./2183 - Taozhou.txt:base_tax = 2 
+./2184 - Xining.txt:base_tax = 3 
+./2185 - Mergen.txt:base_tax = 4 
+./2186 - Iman.txt:base_tax = 2 
+./2187 - Sartu.txt:base_tax = 2 
+./2188 - Alchuka.txt:base_tax = 4 
+./2189 - Tsetserleg.txt:base_tax = 2 
+./219 - Toledo.txt:base_tax = 6 
+./2190 - Qaraqorum.txt:base_tax = 3 
+./2191 - Ejin.txt:base_tax = 1 
+./2192 - Korla.txt:base_tax = 1 
+./2193 - Govi.txt:base_tax = 1 
+./2195 - Adyghe.txt:base_tax = 2 
+./2196 - Guria.txt:base_tax = 2 
+./2197 - Kabardia.txt:base_tax = 1 
+./2198 - Khundzia.txt:base_tax = 3 
+./2199 - Tarki.txt:base_tax = 2 
+./22-Eisdiva.txt:base_tax = 1 
+./220 - Valencia.txt:base_tax = 6 
+./2201 - Alania.txt:base_tax = 1 
+./2202 - Melikates.txt:base_tax = 1 
+./2203 - Kahketi.txt:base_tax = 3 
+./2204 - Samtskhe.txt:base_tax = 1 
+./2205 - Nakhchivan.txt:base_tax = 2 
+./2206 - Urmia.txt:base_tax = 3 
+./2207 - Maragheh.txt:base_tax = 2 
+./2208 - Terek.txt:base_tax = 3 
+./2209 - Ilam.txt:base_tax = 3 
+./221 - Murcia.txt:base_tax = 5 
+./2210 - Kirmanshah.txt:base_tax = 2 
+./2211 - Ardalan.txt:base_tax = 3 
+./2212 - Zanjan.txt:base_tax = 3 
+./2213 - Markazi.txt:base_tax = 3 
+./2214 - Golestan.txt:base_tax = 2 
+./2214 - Golestan.txt:1715.12.1 = { base_tax = 4 base_production = 4 } # Political fragmentation
+./2215 - Qazvin.txt:base_tax = 2 
+./2216 - Semnan.txt:base_tax = 2 
+./2216 - Semnan.txt:1597.12.1 = { base_tax = 2 base_production = 2 } # The Reforms of Abbas the Great
+./2217 - Yasuj.txt:base_tax = 3 
+./2218 - Sarvestan.txt:base_tax = 4 
+./2219 - Bandar Langeh.txt:base_tax = 2 
+./222 - Almeria.txt:base_tax = 2 
+./2220 - Bam.txt:base_tax = 1 
+./2221 - Mashhad.txt:base_tax = 2 
+./2221 - Mashhad.txt:1597.12.1 = { base_tax = 2 
+./2222 - Ardakan.txt:base_tax = 2 
+./2222 - Ardakan.txt:1597.12.1 = { base_tax = 2 base_production = 2 } # The Reforms of Abbas the Great
+./2223 - Larestan.txt:base_tax = 2 
+./2224 - Ferah.txt:base_tax = 1 
+./2225 - Bamyan.txt:base_tax = 2 
+./2226 - Jalalabad.txt:base_tax = 4 
+./2227 - Kunduz.txt:base_tax = 1 
+./2228 - Maymana.txt:base_tax = 3 
+./2229 - Bust.txt:base_tax = 1 
+./223 - Granada.txt:base_tax = 6 
+./2230 - Chagai.txt:base_tax = 1 
+./2231 - Bela.txt:base_tax = 2 
+./2232 - Kharan.txt:base_tax = 1 
+./2233 - Western Makran.txt:base_tax = 1 
+./2234 - Rafsanjan.txt:base_tax = 2 
+./2235 - Sabzevar.txt:base_tax = 3 
+./2235 - Sabzevar.txt:1715.12.1 = { base_tax = 4 base_production = 4 } # Political fragmentation
+./2236 - Bojnord.txt:base_tax = 2 
+./2236 - Bojnord.txt:1715.12.1 = { base_tax = 4 base_production = 4 } # Political fragmentation
+./2237 - Tekrur.txt:base_tax = 3 
+./2238 - Kantor.txt:base_tax = 1 
+./2239 - Siine.txt:base_tax = 2 
+./224 - Andalucia.txt:base_tax = 7
+./2240 - Galam.txt:base_tax = 3 
+./2241 - Beafada.txt:base_tax = 1 
+./2242 - Karou.txt:base_tax = 1 
+./2243 - Termes.txt:base_tax = 1 
+./2244 - Tagant.txt:base_tax = 1 
+./2245 - Wagadu.txt:base_tax = 2 
+./2246 - Baghena.txt:base_tax = 2 
+./2247 - Hodh.txt:base_tax = 2 
+./2248 - Do.txt:base_tax = 4 
+./2248 - Do.txt:1600.1.1 = { base_tax = 2 base_production = 2 base_manpower = 1 } #Collapse of mali into minor states after Jenné
+./2249 - Sibiridugu.txt:base_tax = 2 
+./225 - Cordoba.txt:base_tax = 4 
+./2250 - Bendugu.txt:base_tax = 3 
+./2252 - Lobi.txt:base_tax = 2 
+./2253 - Gwiriko.txt:base_tax = 1 
+./2254 - Bonoman.txt:base_tax = 3 
+./2255 - Gyaaman.txt:base_tax = 2 
+./2256 - Dagbon.txt:base_tax = 1 
+./2257 - Denkyira.txt:base_tax = 2 
+./2258 - Cape Coast.txt:base_tax = 2 
+./2259 - Bara.txt:base_tax = 3 
+./226 - Gibraltar.txt:base_tax = 2 
+./2260 - Mema.txt:base_tax = 2 
+./2261 - Kala.txt:base_tax = 4 
+./2262 - Karabara.txt:base_tax = 3 
+./2263 - Haayre.txt:base_tax = 1 
+./2264 - Hombori.txt:base_tax = 1 
+./2265 - Liptako.txt:base_tax = 1 
+./2266 - Bilanga.txt:base_tax = 1 
+./2267 - Tenkodogo.txt:base_tax = 3 
+./2268 - Aribanda.txt:base_tax = 3 
+./2269 - Zarmaganda.txt:base_tax = 2 
+./227 - Lisboa.txt:base_tax = 7 
+./2270 - Dallol.txt:base_tax = 2 
+./2271 - Azawagh.txt:base_tax = 1 
+./2272 - Azbin.txt:base_tax = 1 
+./2273 - Ader.txt:base_tax = 1 
+./2274 - Air.txt:base_tax = 4 
+./2275 - Tenere.txt:base_tax = 1 
+./2276 - Itesan.txt:base_tax = 1 
+./2277 - Kawar.txt:base_tax = 1 
+./2278 - Kebbi.txt:base_tax = 2 
+./2279 - Daura.txt:base_tax = 3 
+./228 - Beira.txt:base_tax = 5 
+./2280 - Biram.txt:base_tax = 2 
+./2281 - Rano.txt:base_tax = 2 
+./2282 - Muniyo.txt:base_tax = 2 
+./2283 - Bedde.txt:base_tax = 1 
+./2284 - Manga.txt:base_tax = 2 
+./2285 - Marghi.txt:base_tax = 1 
+./2286 - Logone.txt:base_tax = 2 
+./2287 - Kotoko.txt:base_tax = 3 
+./2288 - Yao.txt:base_tax = 3 
+./2289 - Ondo.txt:base_tax = 2 
+./229 - Alentejo.txt:base_tax = 5
+./2290 - Ijebu.txt:base_tax = 2 
+./2291 - Ketu.txt:base_tax = 2 
+./2292 - Moshi.txt:base_tax = 1 
+./2293 - Yawuri.txt:base_tax = 1 
+./2294 - Warri.txt:base_tax = 1 
+./2295 - Atakora.txt:base_tax = 1 
+./2296 - Biga.txt:base_tax = 4 
+./2296 - Biga.txt:1690.1.1 = { base_tax = 2 base_production = 2 } #The Decentralizing Effect of the Provincial System
+./2297 - Saruhan.txt:base_tax = 4 
+./2297 - Saruhan.txt:1615.1.1 = { base_tax = 2 
+./2298 - Tekke.txt:base_tax = 3 
+./2298 - Tekke.txt:1690.1.1 = { base_tax = 1 
+./2299 - Bolu.txt:base_tax = 3 
+./2299 - Bolu.txt:1615.1.1 = { base_tax = 3 base_production = 3 } #The Decentralizing Effect of the Provincial System
+./2299 - Bolu.txt:1718.1.1 = { unrest = 3 base_tax = 4 
+./23-Bergenshus.txt:base_tax = 3 
+./230 - Algarve.txt:base_tax = 4
+./2300 - Bozok.txt:base_tax = 3 
+./2300 - Bozok.txt:1740.1.1 = { base_tax = 1 base_production = 1 } # The decentralizing effect of the provincial system
+./2301 - Kayseri.txt:base_tax = 3 
+./2301 - Kayseri.txt:1740.1.1 = { base_tax = 1 
+./2302 - Icel.txt:base_tax = 3 
+./2302 - Icel.txt:1740.1.1 = { base_tax = 1 base_production = 1 } # The decentralizing effect of the provincial system
+./2303 - Malatya.txt:base_tax = 4 
+./2304 - Canik.txt:base_tax = 3 
+./2305 - Erzincan.txt:base_tax = 3 
+./2306 - Mush.txt:base_tax = 3 
+./2307 - Van.txt:base_tax = 3 
+./2308 - Cizre.txt:base_tax = 2 
+./2309 - Sinjar.txt:base_tax = 2 
+./231 - Porto.txt:base_tax = 7 
+./2310 - Tikrit.txt:base_tax = 2 
+./2311 - Samawah.txt:base_tax = 3 
+./2312 - Wasit.txt:base_tax = 2 
+./2313 - Antioch.txt:base_tax = 3 
+./2314 - Rahba.txt:base_tax = 2 
+./2315 - Suez.txt:base_tax = 2 
+./2316 - Al Gharbia.txt:base_tax = 4 
+./2317 - Minya.txt:base_tax = 2 
+./2317 - Minya.txt:1789.10.22 = { unrest = 6 } # Introduction of house tax, strained relations 
+./2318 - Al Wahat.txt:base_tax = 1 
+./2319 - Asyut.txt:base_tax = 2 
+./2319 - Asyut.txt:1789.10.22 = { unrest = 6 } # Introduction of house taxes, strained relations 
+./232 - Braganca.txt:base_tax = 5 
+./2320 - Ras Gharib.txt:base_tax = 1 
+./2320 - Ras Gharib.txt:1789.10.22 = { unrest = 6 } # Introduction of house taxes, strained relations 
+./2321 - Queseer.txt:base_tax = 1 
+./2322 - Wadi Halfa.txt:base_tax = 1 
+./2323 - Sahra an Nubyah.txt:base_tax = 1 
+./2324 - Halaib.txt:base_tax = 1 
+./2325 - Tarrana.txt:base_tax = 1 
+./2326 - Bardiyah.txt:base_tax = 1 
+./2327 - Maan.txt:base_tax = 2 
+./2328 - Tayma.txt:base_tax = 1 
+./2329 - Yanbu.txt:base_tax = 1 
+./233 - Cornwall.txt:base_tax = 4 
+./2330 - Ma'din Sulaym.txt:base_tax = 1 
+./2331 - Jeddah.txt:base_tax = 2 
+./2332 - Truba.txt:base_tax = 1 
+./2333 - Abd al-Qays.txt:base_tax = 1 
+./2335 - Tamara.txt:base_tax = 1 
+./2336 - Falaj.txt:base_tax = 1 
+./2337 - Unaizah.txt:base_tax = 1 
+./2338 - Hafar.txt:base_tax = 1 
+./2339 - Yabrin.txt:base_tax = 1 
+./234 - Wessex.txt:base_tax = 6 
+./2340 - Grane.txt:base_tax = 1 
+./2341 - Sharqiyah.txt:base_tax = 1 
+./2342 - Wusta.txt:base_tax = 1 
+./2343 - Hadramawt.txt:base_tax = 1 
+./2344 - Al Jawf.txt:base_tax = 1 
+./2345 - Ahqaf.txt:base_tax = 1 
+./2346 - Jazan.txt:base_tax = 1 
+./2347 - Hofuf.txt:base_tax = 1 
+./2348 - Chios.txt:base_tax = 2 
+./2348 - Chios.txt:1740.1.1 = { base_tax = 1 base_production = 1 } # The decentralizing effect of the provincial system
+./2349 - Kizil-Su.txt:base_tax = 1 
+./235 - Kent.txt:base_tax = 5 
+./235 - Kent.txt:1450.5.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Jack Cade's rebellion
+./2350 - Konjikala.txt:base_tax = 1 
+./2351 - Shekty.txt:base_tax = 1 
+./2352 - Alty-Kuduk.txt:base_tax = 3 
+./2353 - Tortkara.txt:base_tax = 1 
+./2354 - Shegendyk.txt:base_tax = 3 
+./2355 - Narym.txt:base_tax = 1 
+./2356 - Shymkent.txt:base_tax = 1 
+./2357 - Aksary.txt:base_tax = 1 
+./2358 - Altyn.txt:base_tax = 2 
+./2359 - Baganaly.txt:base_tax = 1 
+./236 - London.txt:base_tax = 8 
+./236 - London.txt:1580.1.1 = { base_tax = 13 
+./236 - London.txt:1650.1.1 = {  base_tax = 15 
+./236 - London.txt:	base_tax = 16 
+./236 - London.txt:1741.1.1 = { base_tax = 18 base_production = 18 } # Royal Military Academy, Woolwich
+./2360 - Tobykty.txt:base_tax = 1 
+./2361 - Dzhaman-Kuduk.txt:base_tax = 1 
+./2362 - Gurganj.txt:base_tax = 1 
+./2363 - Atakent.txt:base_tax = 1 
+./2364 - Talas.txt:base_tax = 2 
+./2365 - Orda.txt:base_tax = 1 
+./2366 - Utva.txt:base_tax = 1 
+./2367 - Lower Yik.txt:base_tax = 2 
+./2368 - Karamegdan.txt:base_tax = 2 
+./2369 - Lower Ishim.txt:base_tax = 1 
+./237 - Oxfordshire.txt:base_tax = 6 
+./2370 - Kungirot.txt:base_tax = 1 
+./2371 - Song La.txt:base_tax = 2 
+./2372 - Hai Phong.txt:base_tax = 5
+./2373 - Hue.txt:base_tax = 5 
+./2374 - Kauthara.txt:base_tax = 2 
+./2375 - Tay Nguyen.txt:base_tax = 2 
+./2376 - Prek Russey.txt:base_tax = 3 
+./2377 - Teuk Khmao.txt:base_tax = 4
+./2378 - Kratie.txt:base_tax = 2 
+./2379 - Battambang.txt:base_tax = 2 
+./238 - Essex.txt:base_tax = 7
+./2380 - Phnom Penh.txt:base_tax = 6
+./2381 - Luang Namtha.txt:base_tax = 2 
+./2382 - Savanh Nakhone.txt:base_tax = 3 
+./2383 - Khukhanor Surin.txt:base_tax = 2 
+./2384 - Nong Khai.txt:base_tax = 2 
+./2385 - Nongbua Lamphu.txt:base_tax = 2 
+./2386 - Chaiyaphum.txt:base_tax = 2 
+./2387 - Phetchaburi.txt:base_tax = 3 
+./2388 - Phitsanulok.txt:base_tax = 4 
+./2389 - Phra Bang.txt:base_tax = 5
+./239 - Gloucestershire.txt:base_tax = 5 
+./239 - Gloucestershire.txt:1575.1.1 = { base_tax = 7 base_production = 7 }
+./2390 -  Chaiya.txt:base_tax = 2 
+./2391 -  Thalang.txt:base_tax = 4
+./2392 - Selangor.txt:base_tax = 3 
+./2393 - Terengganu.txt:base_tax = 2 
+./2394 - Kedah.txt:base_tax = 4 
+./2395 - Hkamti Long.txt:base_tax = 2 
+./2396 - Mong Kawng.txt:base_tax = 4
+./2397 - Tamanthi.txt:base_tax = 2 
+./2398 - Thaungdut.txt:base_tax = 2 
+./2399 - Pagan.txt:base_tax = 4 
+./24-Agder.txt:base_tax = 2 
+./240 - Marches.txt:base_tax = 4
+./240 - Marches.txt:1550.1.1 = { base_tax = 6 
+./2400 - Hsipaw.txt:base_tax = 3 
+./2401 - Mong Pai.txt:base_tax = 2 
+./2402 - Sandoway.txt:base_tax = 4 
+./2403 - Martaban.txt:base_tax = 4
+./2404 - Mergui.txt:base_tax = 4 
+./2405 - Bendery.txt:base_tax = 3
+./2406 - Ingil.txt:base_tax = 3 
+./2407 - Pereyaslav.txt:base_tax = 4
+./2407 - Pereyaslav.txt:1648.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Antifeudal insurrection
+./2408 - Lipetsk.txt:base_tax = 3
+./2409 - Bahmut.txt:base_tax = 2 
+./2409 - Bahmut.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+./2409 - Bahmut.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./241 - Glamorgan.txt:base_tax = 3 
+./2410 - Theodoro.txt:base_tax = 3 
+./2411 - Mansur.txt:base_tax = 3 
+./2412 - Kyzyl-Yar.txt:base_tax = 4 
+./2413 - Tyn.txt:base_tax = 3
+./2413 - Tyn.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+./2413 - Tyn.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./2414 - Azaraba.txt:base_tax = 3 
+./2415 - Etkara.txt:base_tax = 3 
+./2416 - Majar.txt:base_tax = 2 
+./2417 - Kuma.txt:base_tax = 2 
+./2418 - Ukek.txt:base_tax = 2 
+./2418 - Ukek.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+./2418 - Ukek.txt:1764.7.24 = { culture = hessian religion = catholic base_tax = 9 
+./2418 - Ukek.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 2 } # Pugachev rebellion
+./2419 - Kanadey.txt:base_tax = 2 
+./2419 - Kanadey.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+./2419 - Kanadey.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./242 - Gwynedd.txt:base_tax = 2 
+./2420 - Agyidel.txt:base_tax = 4 
+./2421 - Ar-Chally.txt:base_tax = 2 
+./2421 - Ar-Chally.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+./2421 - Ar-Chally.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./2422 - Veda-Suvar.txt:base_tax = 2 
+./2423 - Alatyr.txt:base_tax = 3 
+./2423 - Alatyr.txt:1560.1.1 = { base_tax = 7 base_production = 7 } # Treasury reform
+./2423 - Alatyr.txt:1719.1.1 = { base_tax = 8 base_production = 8  } # Governmental reforms and the absolutism, Nizhegorod governorate
+./2424 - Peremyshl.txt:base_tax = 3
+./2427 - Ostyaki.txt:base_tax = 3 
+./2427 - Ostyaki.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 1 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./2428 - Yugan.txt:base_tax = 1 
+./2429 - Agan.txt:base_tax = 1 
+./243 - Lincoln.txt:base_tax = 4
+./2430 - Baykha.txt:base_tax = 1 
+./2431 - Uchamin.txt:base_tax = 1 
+./2432 - Chulym.txt:base_tax = 1 
+./2433 - Vah.txt:base_tax = 2 
+./2434 - Barnaul.txt:base_tax = 1 
+./2435 - Nukhtui.txt:base_tax = 1 
+./2436 - Chuna.txt:base_tax = 1 
+./2437 - Seganka.txt:base_tax = 1 
+./2438 - Kharya.txt:base_tax = 1 
+./2439 - Yarmanka.txt:base_tax = 1 
+./244 - Lancashire.txt:base_tax = 5 
+./2440 - Kagyrgyn.txt:base_tax = 1 
+./2441 - Iglino.txt:base_tax = 3 
+./2441 - Iglino.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 1 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./2442 - Ust-Kut.txt:base_tax = 1 
+./2443 - Kan.txt:base_tax = 1 
+./2444 - Bashgird.txt:base_tax = 2 
+./2444 - Bashgird.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./2445 - Mangazea.txt:base_tax = 3 
+./2445 - Mangazea.txt:1700.1.1 = { base_tax = 1 base_production = 1 }
+./2446 - Chara.txt:base_tax = 4 
+./2447 - Mantrega.txt:base_tax = 2 
+./2448 - Fezzan.txt:base_tax = 1 
+./2449 - Jufra.txt:base_tax = 1 
+./245 - Yorkshire.txt:base_tax = 6 
+./2450 - Ghadames.txt:base_tax = 1 
+./2451 - Thubaqt.txt:base_tax = 1 
+./2452 - Zuwarah.txt:base_tax = 1 
+./2453 - Sfax.txt:base_tax = 3 
+./2454 - Kairouan.txt:base_tax = 2 
+./2455 - Bizerte.txt:base_tax = 4 
+./2456 - Touggourt.txt:base_tax = 1 
+./2457 - Mzab.txt:base_tax = 1 
+./2458 - Kabylia.txt:base_tax = 1 
+./2459 - Titteri.txt:base_tax = 1 
+./246 - Northumberland.txt:base_tax = 5
+./2460 - Saoura.txt:base_tax = 1 
+./2461 - Dahra.txt:base_tax = 3 
+./2462 - Ouarsenis.txt:base_tax = 2 
+./2463 - Maaskar.txt:base_tax = 1 
+./2464 - Ouarzazate.txt:base_tax = 2 
+./2465 - Oudja.txt:base_tax = 3 
+./2466 - Draa.txt:base_tax = 4 
+./2467 - Meknes.txt:base_tax = 4 
+./2468 - Tadla.txt:base_tax = 3 
+./2469 - Dukkala.txt:base_tax = 2 
+./247 - Cumbria.txt:base_tax = 2 
+./247 - Cumbria.txt:1575.1.1 = {  base_tax = 4 base_production = 4 }
+./2470 - Haha.txt:base_tax = 2 
+./2472 - Ouargla.txt:base_tax = 1 
+./2473 - Souss.txt:base_tax = 5 
+./2474 - Tajhari.txt:base_tax = 1 
+./2475 - Djado.txt:base_tax = 1 
+./2476 - Kumeyaay.txt:base_tax = 1
+./2477 - Yuki.txt:base_tax = 1 
+./2478 - Tachi.txt:base_tax = 1 
+./2479 - Maidu.txt:base_tax = 1 
+./248 - Lothian.txt:base_tax = 7 
+./2480 - Shasta.txt:base_tax = 1 
+./2481 - Klamath.txt:base_tax = 1 
+./2482 - Kalapuya.txt:base_tax = 1 
+./2483 - Umatilla.txt:base_tax = 1 
+./2484 - Quileute.txt:base_tax = 1
+./2485 - Chehalis.txt:base_tax = 1
+./2486- Yakima.txt:base_tax = 1
+./2487 - Spokane.txt:base_tax = 1 
+./2488 - Palus.txt:base_tax = 1 
+./2489 - Bohogue.txt:base_tax = 1 
+./249 - Ayrshire.txt:base_tax = 4 
+./2490 - Goshute.txt:base_tax = 1 
+./2491 - Hualapai.txt:base_tax = 1 
+./2492 - Chiricahua.txt:base_tax = 1 
+./2493 - Hopi.txt:base_tax = 1 
+./2494 - Zuni.txt:base_tax = 1 
+./2495 - Acoma.txt:base_tax = 1
+./2496 - Jicarilla.txt:base_tax = 1 
+./2497 - Lipiyanes.txt:base_tax = 1 
+./2498 - Jumao.txt:base_tax = 1 
+./2499 - Coahuilteco.txt:base_tax = 1 
+./25-Gotland.txt:base_tax = 4 
+./250 - Fife.txt:base_tax = 5 
+./2500 - Querecho.txt:base_tax = 1 
+./2501 - Piegan.txt:base_tax = 1 
+./2502 - Haaninin.txt:base_tax = 1 
+./2503 - Ashshipite.txt:base_tax = 1 
+./2504 - Eelalapito.txt:base_tax = 1 
+./2505 - Tsitsistas.txt:base_tax = 1 
+./2506 - Kuccuntikka.txt:base_tax = 1 
+./2507 - Baachinena.txt:base_tax = 1 
+./2508 - Skiri.txt:base_tax = 1 
+./2509 - Utsehta.txt:base_tax = 1 
+./251 - Aberdeen.txt:base_tax = 4 
+./2510 - Mandan.txt:base_tax = 1 
+./2511 - Itscheabine.txt:base_tax = 1 
+./2512 - Wahpekute.txt:base_tax = 1 
+./2513 - Moingwena.txt:base_tax = 1 
+./2514 - Michigamea.txt:base_tax = 1 
+./2515 - Satuskhdin.txt:base_tax = 1 
+./2516 - Adai.txt:base_tax = 1 
+./2517 - Mdewakanton.txt:base_tax = 1 
+./2518 - Noquet.txt:base_tax = 1 
+./2519 - Kilatika.txt:base_tax = 1 
+./252 - Highlands.txt:base_tax = 2 
+./2520 - Mengkonkia.txt:base_tax = 1 
+./2521 - Okouara.txt:base_tax = 1 
+./2522 - Mascouten.txt:base_tax = 1 
+./2523 - Piankeshaw.txt:base_tax = 1 
+./2524 - Wabash.txt:base_tax = 1 
+./2525 - Chillicothe.txt:base_tax = 1 
+./2526 - Shatteras.txt:base_tax = 1
+./2527 - Chickamauga.txt:base_tax = 1
+./2528 - Yazoo.txt:base_tax = 1
+./2529 - Natchez.txt:base_tax = 1
+./253 - Western Isles.txt:base_tax = 1 
+./2530 - Biloxi.txt:base_tax = 2
+./2531 - Napochi.txt:base_tax = 1 
+./2532 - Tohome.txt:base_tax = 1 
+./2533 - Chatot.txt:base_tax = 1 
+./2534 - Yustaga.txt:base_tax = 1 
+./2535 - Calusa.txt:base_tax = 1 
+./2536 - Mayaimi.txt:base_tax = 1 
+./2537 - Hitchiti.txt:base_tax = 1 
+./2538 - Yamasee.txt:base_tax = 1 
+./2539 - Mocama.txt:base_tax = 1
+./254 - Poznan.txt:base_tax = 6
+./2540 - Coweta.txt:base_tax = 1
+./2541 - Saluda.txt:base_tax = 1
+./2542 - Cusabo.txt:base_tax = 1 
+./2543 - Waccamaw.txt:base_tax = 1 
+./2544 - Yadkin.txt:base_tax = 1 
+./2545 - Waxhaw.txt:base_tax = 1 
+./2546 - Chicora.txt:base_tax = 1
+./2547 - Roanoke.txt:base_tax = 1 
+./2547 - Roanoke.txt:1676.1.1 = { unrest = 4 } # Bacon's rebellion, high taxes, low prices for tobacco
+./2548 - Tutelo.txt:base_tax = 2 
+./2549 - Moratok.txt:base_tax = 1 
+./255 - Kalisz.txt:base_tax = 6
+./2550 - Doeg.txt:base_tax = 1 
+./2551 - Monongahela.txt:base_tax = 1
+./2552 - Manahoac.txt:base_tax = 1
+./2553 - Potomac.txt:base_tax = 2 
+./2554 - Nanticoke.txt:base_tax = 1
+./2555 - Honniasont.txt:base_tax = 1
+./2556 - Juniata.txt:base_tax = 1
+./2557 - Atrakwaye.txt:base_tax = 1
+./2558 - Espachomy.txt:base_tax = 1
+./2559 - Adirondack.txt:base_tax = 1 
+./256 - Plock.txt:base_tax = 2
+./2560 - Quinnipiac.txt:base_tax = 2 
+./2561 - Wampanoag.txt:base_tax = 2 
+./2562 - Pennacook.txt:base_tax = 2
+./2563 - Missiquoi.txt:base_tax = 1
+./2564 - Sokoki.txt:base_tax = 1 
+./2565 - Kennebec.txt:base_tax = 1 
+./2566 - Passamaquoddy.txt:base_tax = 1
+./2567 - Aroostook.txt:base_tax = 1 
+./2568 - Kespukwitk.txt:base_tax = 3 
+./2569 - Eskikewakik.txt:base_tax = 1
+./257 - Warszawa.txt:base_tax = 5
+./2570 - Wolystoq.txt:base_tax = 1
+./2571 - Madawaska.txt:base_tax = 1 
+./2572 - Siknikt.txt:base_tax = 1
+./2573 - Placentia.txt:base_tax = 1 
+./2574 - Sikumiut.txt:base_tax = 1 
+./2575 - Naskapi.txt:base_tax = 1 
+./2576 - Mingan.txt:base_tax = 1 
+./2577 - Manicouagan.txt:base_tax = 1 
+./2578 - Anticosti.txt:base_tax = 1 
+./2579 - Piekougami.txt:base_tax = 1 
+./258 - Lodz.txt:base_tax = 6
+./2580 - Atikamekw.txt:base_tax = 1 
+./2581 - Timiskaming.txt:base_tax = 1 
+./2582 - Maliseet.txt:base_tax = 1
+./2583 - Etchemins.txt:base_tax = 1
+./2584 - Loup.txt:base_tax = 1
+./2585 - Kichesipi.txt:base_tax = 2
+./2586 - Tionontate.txt:base_tax = 3 
+./2587 - Odawa.txt:base_tax = 1 
+./2588 - Piscatang.txt:base_tax = 1 
+./2589 - Kesagami.txt:base_tax = 1 
+./259 - Sandomierz.txt:base_tax = 6
+./2590 - Shaggami.txt:base_tax = 1 
+./2591 - Outoulibi.txt:base_tax = 1 
+./2592 - Omushkego.txt:base_tax = 1 
+./2593 - Wappus.txt:base_tax = 1 
+./2594 - Quenebigon.txt:base_tax = 1 
+./2595 - Kesyehotinne.txt:base_tax = 1 
+./2596 - Mahmikiwiniyak.txt:base_tax = 1 
+./2597 - Sipiwininiwak.txt:base_tax = 1 
+./2598 - Hebina.txt:base_tax = 1 
+./2599 - Athabasca.txt:base_tax = 1 
+./26-Halland.txt:base_tax = 3 
+./260 - Lublin.txt:base_tax = 6
+./2600 - Nihithawak.txt:base_tax = 1 
+./2601 - Danezaa.txt:base_tax = 1 
+./2602 - Siksikawa.txt:base_tax = 1 
+./2603 - Sekani.txt:base_tax = 1 
+./2604 - Dakelh.txt:base_tax = 1 
+./2605 - Secwepemc.txt:base_tax = 1 
+./2606 - Tsilhoqotin.txt:base_tax = 1 
+./2607 - Okanagan.txt:base_tax = 1 
+./2609 - Nisga'a.txt:base_tax = 1 
+./261 - Halicz.txt:base_tax = 3
+./2610 - Heiltsuk.txt:base_tax = 1 
+./2611 - Kodiak.txt:base_tax = 1 
+./2612 - Eyak.txt:base_tax = 1 
+./2613 - Sitka.txt:base_tax = 1 
+./2614 - Cotoname.txt:base_tax = 1 
+./2615 - Guamares.txt:base_tax = 1
+./2616 - Seri.txt:base_tax = 1 
+./2617 - Huichol.txt:base_tax = 1
+./2618 - Toboso.txt:base_tax = 1 
+./2619 - Laguneros.txt:base_tax = 1 
+./262 - Krakow.txt:base_tax = 8
+./2620 - Nakipa.txt:base_tax = 1 
+./2621 - Tizapan.txt:base_tax = 3 
+./2622 - Cuitzeo.txt:base_tax = 3 
+./2623 - Cutzamala.txt:base_tax = 3 
+./2624 - Patzcuaro.txt:base_tax = 4 
+./2625 - Hinonoeino.txt:base_tax = 1 
+./2626 - Tulucan.txt:base_tax = 3 
+./2627 - Cihuatlan.txt:base_tax = 2 
+./2628 - Tepeacac.txt:base_tax = 2 
+./2629 - Coyolapan.txt:base_tax = 2 
+./263 - Ratibor.txt:base_tax = 3 
+./263 - Ratibor.txt:	base_tax = 4 
+./263 - Ratibor.txt:1750.1.1 = { base_tax = 5 
+./2630 - Tochtepec.txt:base_tax = 2 
+./2631 - Zaachila.txt:base_tax = 2 
+./2632 - Xicallanco.txt:base_tax = 2 
+./2633 - Mani.txt:base_tax = 4 
+./2634 - Uaymil.txt:base_tax = 3 
+./2635 - Chiapas.txt:base_tax = 2 
+./2636 - Chacujal.txt:base_tax = 2 
+./2637 - Chortli.txt:base_tax = 1 
+./2638 - Xoconochco.txt:base_tax = 3 
+./2639 - Raritan.txt:base_tax = 1 
+./264 - Breslau.txt:base_tax = 6 
+./264 - Breslau.txt:1750.1.1 = {  base_tax = 8 
+./2640 - Lenca.txt:base_tax = 1 
+./2641 - Tziccoac.txt:base_tax = 1 
+./2642 - Metztitlan.txt:base_tax = 1 
+./2643 - Apatzingan.txt:base_tax = 2 
+./2644 - Cholula.txt:base_tax = 4 
+./2645 - Teloloapan.txt:base_tax = 2 
+./2646 - Coixtlahuacan.txt:base_tax = 3 
+./2647 - Cuetlaxtlan.txt:base_tax = 2 
+./2648 - Yopitzinco.txt:base_tax = 3 
+./2649 - Tehuantepec.txt:base_tax = 2 
+./265 - Moravia.txt:base_tax = 6 
+./2650 - Champutun.txt:base_tax = 3 
+./2651 - Ah Canul.txt:base_tax = 3 
+./2652 - Ecab.txt:base_tax = 3 
+./2653 - Iximche.txt:base_tax = 3 
+./2654 - Baracoa.txt:base_tax = 2 
+./2655 - Bayamo.txt:base_tax = 2
+./2656 - Camaguey.txt:base_tax = 2
+./2657 - Colima.txt:base_tax = 4 
+./2658 - Maguana.txt:base_tax = 2 
+./2659 - Magua.txt:base_tax = 2
+./266 - Prague.txt:base_tax = 8 
+./2660 - Managua.txt:base_tax = 1
+./2661 - Uluas.txt:base_tax = 1 
+./2662 - Olancho.txt:base_tax = 1
+./2663 - Nicoya.txt:base_tax = 1
+./2664 - Veraguas.txt:base_tax = 1
+./2665 - Ais.txt:base_tax = 1
+./2666 - Tuintsunde.txt:base_tax = 1 
+./2667 - Cacaxtes.txt:base_tax = 1 
+./2668 - Borrado.txt:base_tax = 1 
+./2669 - Hasinai.txt:base_tax = 1 
+./267 - Plsen.txt:base_tax = 5 
+./2670 - Tkaronto.txt:base_tax = 3 
+./2671 - Mississage.txt:base_tax = 1
+./2672 - Kitkehaki.txt:base_tax = 1 
+./2673 - Pasai.txt:base_tax = 6
+./2674 - Peureulak.txt:base_tax = 4
+./2675 - Rokan.txt:base_tax = 3 
+./2676 - Indragiri.txt:base_tax = 2 
+./2677 - Jambi.txt:base_tax = 3 
+./2678 - Bangka.txt:base_tax = 3 
+./2679 - Belitung.txt:base_tax = 3
+./268 - Moldavia.txt:base_tax = 6 
+./2680 - Muko-Muko.txt:base_tax = 2 
+./2681 - Pagarruyung.txt:base_tax = 3
+./2682 - Pariaman.txt:base_tax = 2 
+./2683 - Mentawai.txt:base_tax = 1 
+./2684 - Nias.txt:base_tax = 1 
+./2685 - Gayo.txt:base_tax = 3
+./2686 - Bintan.txt:base_tax = 3 
+./2687 - Pakuan.txt:base_tax = 3 
+./2688 - Cirebon.txt:base_tax = 4
+./2689 - Kendal.txt:base_tax = 2 
+./269 - Podlasia.txt:base_tax = 6
+./2690 - Pajang.txt:base_tax = 2 
+./2691 - Kediri.txt:base_tax = 2 
+./2692 - Madura.txt:base_tax = 1 
+./2693 - Lombok.txt:base_tax = 2 
+./2694 - East Gangwon.txt:base_tax = 3 
+./2695 - East Timor.txt:base_tax = 3
+./2696 - Yamdena.txt:base_tax = 3
+./2697 - Tondo.txt:base_tax = 5
+./2698 - Pangasinan.txt:base_tax = 2 
+./2699 - Bikol.txt:base_tax = 2 
+./27-Finland.txt:base_tax = 3 
+./270 - Troki.txt:base_tax = 4 
+./2700 - Panay.txt:base_tax = 2 
+./2701 - Tagloc.txt:base_tax = 2 
+./2702 - Butuan.txt:base_tax = 2 
+./2703 - Lehad Datu.txt:base_tax = 3 
+./2704 - Sibu.txt:base_tax = 5
+./2705 - Kuching.txt:base_tax = 3 
+./2706 - Katapang.txt:base_tax = 2 
+./2707 - Barito.txt:base_tax = 3
+./2708 - Sampit.txt:base_tax = 2 
+./2709 - Tarakan.txt:base_tax = 2 
+./271 - Samogitia.txt:base_tax = 2 
+./2710 - Berau.txt:base_tax = 2 
+./2711 - Bulungan.txt:base_tax = 2 
+./2712 - Samarinda.txt:base_tax = 3 
+./2713 - Gorontalo.txt:base_tax = 2 
+./2714 - Palu.txt:base_tax = 3 
+./2715 - Palopo.txt:base_tax = 3 
+./2716 - Buton.txt:base_tax = 3 
+./2717 - Sula.txt:base_tax = 2 
+./2718 - Fak-Fak.txt:base_tax = 1 
+./2719 - Madang.txt:base_tax = 1 
+./272 - Lithuania.txt:base_tax = 6 
+./2720 - Lae.txt:base_tax = 1 
+./2721 - Kerema.txt:base_tax = 1 
+./2722 - Daru.txt:base_tax = 1 
+./2723 - Yos Sudarso.txt:base_tax = 1 
+./2724 - Asmat.txt:base_tax = 1 
+./2725 - Aru.txt:base_tax = 1 
+./2726 - Malgana.txt:base_tax = 2 
+./2727 - Minang.txt:base_tax = 2 
+./2728 - Tiwi.txt:base_tax = 2 
+./2729 - Yolngu.txt:base_tax = 2 
+./273 - Latgalia.txt:base_tax = 2 
+./2730 - Awngthim.txt:base_tax = 2 
+./2731 - Guugu Yimithirr.txt:base_tax = 2 
+./2732 - Wulgurukaba.txt:base_tax = 2 
+./2733 - Baiali.txt:base_tax = 3 
+./2734 - Yuin.txt:base_tax = 3 
+./2735 - Gunditjmara.txt:base_tax = 2 
+./2736 - Nukunu.txt:base_tax = 3 
+./2737 - Ahuriri.txt:base_tax = 3 
+./2738 - Waitaha.txt:base_tax = 3 
+./2739 - Kirikiriroa.txt:base_tax = 3 
+./274 - Pskov.txt:base_tax = 7 
+./274 - Pskov.txt:1672.1.1 = { base_tax = 7 base_production = 7 } # Tax revenues increased
+./2741 - Jeju.txt:base_tax = 1 
+./2742 - Yukjin.txt:base_tax = 1 
+./2743 - North Hamgyeong.txt:base_tax = 2 
+./2744 - North Pyongan.txt:base_tax = 1 
+./2745 - East Gyeongsang.txt:base_tax = 4 
+./2746 - East Gangwon.txt:base_tax = 2 
+./2747 - Khara Narin Ula.txt:base_tax = 1 
+./2748 - Jianchang.txt:base_tax = 2 
+./2749 - Tikhvin.txt:base_tax = 5 
+./275 - Polotsk.txt:base_tax = 7 
+./2750 - Plovdiv.txt:base_tax = 4 
+./2751 - Cuenca.txt:base_tax = 4 
+./2752 - Sogn.txt:base_tax = 1 
+./2753 - Narbonne.txt:base_tax = 5
+./2754 - La Mancha.txt:base_tax = 3 
+./2755 - Soria.txt:base_tax = 2 
+./2756 - Welayta.txt:base_tax = 2 
+./2757 - Kaffa.txt:base_tax = 3 
+./2758 - Illubabor.txt:base_tax = 2 
+./2759 - Gambela.txt:base_tax = 1 
+./276 - Minsk.txt:base_tax = 6 
+./2760 - Hadiya.txt:base_tax = 2 
+./2761 - Arsi.txt:base_tax = 1 
+./2762 - Damot.txt:base_tax = 2 
+./2763 - Asosa.txt:base_tax = 2 
+./2764 - Aussa.txt:base_tax = 1 
+./2765 - Assab.txt:base_tax = 1 
+./2766 - Mendefera.txt:base_tax = 2 
+./2767 - Enderta.txt:base_tax = 1 
+./2768 - Angot.txt:base_tax = 1 
+./2769 - Lasta.txt:base_tax = 2 
+./277 - Brest.txt:base_tax = 4
+./2770 - Agew.txt:base_tax = 2 
+./2771 - Semien.txt:base_tax = 1 
+./2772 - Dembiya.txt:base_tax = 2 
+./2773 - Mora.txt:base_tax = 1 
+./2774 - Kismayo.txt:base_tax = 2 
+./2775 - Merca.txt:base_tax = 2 
+./2776 - Afgooye.txt:base_tax = 1 
+./2777 - Bardera.txt:base_tax = 1 
+./2778 - Werder.txt:base_tax = 1 
+./2779 - Afder.txt:base_tax = 1 
+./278 - Pinsk.txt:base_tax = 4 
+./2780 - Beledweyne.txt:base_tax = 1 
+./2781 - Gedo.txt:base_tax = 1 
+./2782 - Warsheikh.txt:base_tax = 2 
+./2783 - Hobyo.txt:base_tax = 1 
+./2784 - Galkayo.txt:base_tax = 1 
+./2785 - El Buur.txt:base_tax = 1 
+./2786 - Bosaso.txt:base_tax = 3 
+./2787 - Hamasien.txt:base_tax = 2 
+./2788 - Hafun.txt:base_tax = 2 
+./2789 - Las Khorey.txt:base_tax = 2 
+./279 - Volhynia.txt:base_tax = 4
+./2790 - Sanaag.txt:base_tax = 1 
+./2791 - Ankober.txt:base_tax = 1 
+./2792 - Togdheer.txt:base_tax = 1 
+./2793 - Hargeisa.txt:base_tax = 2 
+./2794 - Barawa.txt:base_tax = 2 
+./2795 - Meregh.txt:base_tax = 2 
+./2796 - Pate.txt:base_tax = 3 
+./2797 - Shendy.txt:base_tax = 1 
+./2798 - Soba.txt:base_tax = 1 
+./2799 - Sennar.txt:base_tax = 1 
+./28 - Nyland.txt:base_tax = 2 
+./280 - Kiev.txt:base_tax = 8
+./2800 - Kosti.txt:base_tax = 1 
+./2801 - Medwa.txt:base_tax = 1 
+./2802 - Kobbe.txt.txt:base_tax = 1 
+./2803 - Delta.txt:base_tax = 2 
+./2804 - Guasipati.txt:base_tax = 1 
+./2805 - Uyapari.txt:base_tax = 1 
+./2806 - Guajira.txt:base_tax = 1 
+./2807 - Altagracia.txt:base_tax = 3
+./2808 - Coro.txt:base_tax = 1 
+./2809 - Llanos.txt:base_tax = 1
+./281 - Kamienec.txt:base_tax = 4
+./2810 - Apure.txt:base_tax = 1 
+./2811 - Atabapo.txt:base_tax = 1 
+./2812 - Pore.txt:base_tax = 1 
+./2813 - Merida.txt:base_tax = 2
+./2814 - Meta.txt:base_tax = 1 
+./2815 - Puerto Carreno.txt:base_tax = 1 
+./2816 - Guavire.txt:base_tax = 1 
+./2817 - Neiva.txt:base_tax = 4 
+./2818 - Popayan.txt:base_tax = 2 
+./2819 - Darien.txt:base_tax = 1 
+./282 - Yedisan.txt:base_tax = 4
+./2820 - Esmeraldas.txt:base_tax = 3 
+./2821 - Piwra.txt:base_tax = 1 
+./2822 - Tucume.txt:base_tax = 1 
+./2823 - Moyobamba.txt:base_tax = 1 
+./2824 - Wankapampa.txt:base_tax = 3 
+./2825 - Pisqupampa.txt:base_tax = 1 
+./2826 - Chimbote.txt:base_tax = 1 
+./2827 - Huaraz.txt:base_tax = 2 
+./2828 - Camana.txt:base_tax = 2 
+./2829 - Ayaviri.txt:base_tax = 3 
+./283 - Zaporozhia.txt:base_tax = 3 
+./2830 - Quero.txt:base_tax = 1 
+./2831 - Tiahuanaco.txt:base_tax = 3 
+./2832 - Exaltacion.txt:base_tax = 1 
+./2833 - Madre de Dios.txt:base_tax = 1 
+./2834 - Santa Cruz de la Sierra.txt:base_tax = 3 
+./2835 - Sucre.txt:base_tax = 4 
+./2836 - Tucuman.txt:base_tax = 4 
+./2837 - Santa Catalina.txt:base_tax = 1 
+./2838 - Tarija.txt:base_tax = 3 
+./2839 - Puna de Atacama.txt:base_tax = 1 
+./284 - Crimea.txt:base_tax = 6 
+./2840 - Calama.txt:base_tax = 1 
+./2841 - Antofagasta.txt:base_tax = 1 
+./2842 - Santiago del Estero.txt:base_tax = 2 
+./2843 - La Rioja.txt:base_tax = 2 
+./2844 - Chepes.txt:base_tax = 1 
+./2845 - San Juan.txt:base_tax = 1
+./2846 - Quisquisacate.txt:base_tax = 2
+./2847 - San Luis.txt:base_tax = 2 
+./2848 - Santa Fe.txt:base_tax = 2
+./2848 - Santa Fe.txt:1750.1.1 = { unrest = 2 } # Spanish administration required all trade to pass via Lima, extracted taxes
+./2849 - Rosario.txt:base_tax = 1
+./285 - Kaffa.txt:base_tax = 5 
+./2850 - Montevideo.txt:base_tax = 2 
+./2851 - Colonia.txt:base_tax = 1 
+./2852 - Salto.txt:base_tax = 1 
+./2853 - Yareyu.txt:base_tax = 2 
+./2854 - Chaco Central.txt:base_tax = 1 
+./2855 - Misiones.txt:base_tax = 1 
+./2856 - Highveld.txt:base_tax = 2 
+./2857 - Rio Grande do Sul.txt:base_tax = 2 
+./2858 - Santiago.txt:base_tax = 1 
+./2859 - Itapua.txt:base_tax = 1 
+./286 - Azow.txt:base_tax = 4 
+./2860 - Querandi.txt:base_tax = 1 
+./2861 - Sauce.txt:base_tax = 1 
+./2862 - Coquimbo.txt:base_tax = 2 
+./2863 - Rio Negro.txt:base_tax = 1 
+./2864 - Senqu.txt:base_tax = 1 
+./2865 - Sergpipe.txt:base_tax = 1 
+./2866 - Jeremoabo.txt:base_tax = 1 
+./2867 - Inhambupe.txt:base_tax = 1 
+./2868 - Pambu.txt:base_tax = 1 
+./2869 - Florida Blanca.txt:base_tax = 1 
+./287 - Kouban.txt:base_tax = 3 
+./2870 - Tehuelmapu.txt:base_tax = 1 
+./2871 - Poya.txt:base_tax = 1 
+./2872 - Chiquiyami.txt:base_tax = 2 
+./2873 - Chiloe.txt:base_tax = 1 
+./2874 - Alegoas.txt:base_tax = 1 
+./2875 - Borborema.txt:base_tax = 1 
+./2876 - Teush.txt:base_tax = 1 
+./2877 - Mendoza.txt:base_tax = 2
+./2878 - Matara.txt:base_tax = 1 
+./2879 - Santa Tecla.txt:base_tax = 1 
+./288 - Cherkassk.txt:base_tax = 3
+./288 - Cherkassk.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+./288 - Cherkassk.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./2880 - Griqualand.txt:base_tax = 1 
+./2881 - Corumba.txt:base_tax = 1
+./2882 - Fuerte Borbon.txt:base_tax = 1 
+./2883 - Melodia.txt:base_tax = 1 
+./2884 - Povos das Missoes.txt:base_tax = 1 
+./2885 - Barra.txt:base_tax = 2
+./2886 - Parnaiba.txt:base_tax = 1
+./2887 - Santa Catarina.txt:base_tax = 1
+./2888 - Cuiaba.txt:base_tax = 2 
+./2889 - Rio Branco.txt:base_tax = 1 
+./289 - Chernigov.txt:base_tax = 5
+./2890 - Marajo.txt:base_tax = 1 
+./2891 - Santa Ana das Minas.txt:base_tax = 1 
+./2892 - Araxas.txt:base_tax = 2 
+./2893 - Ofaie.txt:base_tax = 1 
+./2894 - Sao Joao del Rei.txt:base_tax = 1 
+./2895 - Castro.txt:base_tax = 1 
+./2896 - Campinas.txt:base_tax = 1 
+./2897 - Araraquara.txt:base_tax = 1 
+./2898 - Serro.txt:base_tax = 1 
+./2899 - Vila Rica.txt:base_tax = 2 
+./29 -Tavastland.txt:base_tax = 1 
+./290 - Poltava.txt:base_tax = 4 
+./2900 - Guapore.txt:base_tax = 1 
+./2901 - Cerejeiras.txt:base_tax = 1 
+./2902 - Vila Bela.txt:base_tax = 1 
+./2903 - Caceres.txt:base_tax = 2 
+./2904 - Diamantino.txt:base_tax = 1 
+./2905 - Rio Das Mortes.txt:base_tax = 1 
+./2906 - Ipora.txt:base_tax = 1 
+./2907 - Vila Boa.txt:base_tax = 1 
+./2908 - Arrial dos Couros.txt:base_tax = 1 
+./2909 - Conceicao.txt:base_tax = 1 
+./291 - Kharkov.txt:base_tax = 4 
+./2910 - Pontal.txt:base_tax = 1 
+./2911 - Natividad.txt:base_tax = 1 
+./2912 - Sergpipe.txt:base_tax = 2 
+./2913 - Jeremoabo.txt:base_tax = 1 
+./2914 - Inhambupe.txt:base_tax = 1 
+./2915 - Pambu.txt:base_tax = 2
+./2916 - Rio Contas.txt:base_tax = 1 
+./2917 - Paratinga.txt:base_tax = 1 
+./2918 - Campo Largo.txt:base_tax = 1 
+./2919 - Luziana.txt:base_tax = 1 
+./292 - Mogilyov.txt:base_tax = 4 
+./2920 - Coxim.txt:base_tax = 1 
+./2921 - Alagoas.txt:base_tax = 2
+./2922 - Borborema.txt:base_tax = 1 
+./2923 - Pastos Bons.txt:base_tax = 1 
+./2924 - Timon.txt:base_tax = 1 
+./2925 - Parnagua.txt:base_tax = 1 
+./2926 - Grajau.txt:base_tax = 1 
+./2927 - Alcantara.txt:base_tax = 1
+./2928 - Tucurui.txt:base_tax = 1 
+./2929 - Para.txt:base_tax = 1 
+./293 - Smolensk.txt:base_tax = 8 
+./293 - Smolensk.txt:1711.1.1 = { base_tax = 5 
+./2930 - Santarem.txt:base_tax = 2 
+./2931 - Alenquer.txt:base_tax = 1 
+./2932 - Obidos.txt:base_tax = 1 
+./2933 - Faro.txt:base_tax = 1 
+./2934 - Manaus.txt:base_tax = 2 
+./2935 - Muturu.txt:base_tax = 1
+./2937 - Suriname.txt:base_tax = 1 
+./2938 - Oiapoque.txt:base_tax = 1 
+./2939 - Zaraza.txt:base_tax = 2 
+./294 - Tver.txt:base_tax = 8 
+./294 - Tver.txt:1560.1.1 = { base_tax = 6 
+./294 - Tver.txt:1711.1.1 = { base_tax = 7 base_production = 7 } # Governmental reforms and the absolutism
+./294 - Tver.txt:1767.1.1 = { base_tax = 8 base_production = 8 } # Legislative reform
+./2940 - Chichas.txt:base_tax = 2 
+./2941 - Choquechaca.txt:base_tax = 2 
+./2942 - Charcas.txt:base_tax = 2 
+./2943 - Chachapoyas.txt:base_tax = 1 
+./2944 - Ucayali.txt:base_tax = 1 
+./2945 - Yurimaguas.txt:base_tax = 1 
+./2946 - Quillacas.txt:base_tax = 2 
+./2947 - Macaya.txt:base_tax = 2 
+./2948 - Matamba.txt:base_tax = 2 
+./2949 - Mbata.txt:base_tax = 2 
+./295 - Moskva.txt:base_tax = 8 
+./295 - Moskva.txt:1560.1.1 = { base_tax = 14 base_production = 14 } # Treasury reform
+./295 - Moskva.txt:1580.1.1 = { base_tax = 13 base_production = 13 }
+./295 - Moskva.txt:1711.1.1 = { base_tax = 14 base_production = 14  } # Governmental reforms and the absolutism
+./295 - Moskva.txt:1767.1.1 = { base_tax = 15 base_production = 15 } # Legislative reform
+./2950 - Buhera.txt:base_tax = 1 
+./2951 - Manikya.txt:base_tax = 2 
+./2952 - Madanda.txt:base_tax = 1 
+./2954 - Djerba.txt:base_tax = 1 
+./2955 - Ingolstadt.txt:base_tax = 3 
+./2956 - Straubing.txt:base_tax = 5 
+./2957 - Regensburg.txt:base_tax = 6
+./2958 - Osterode.txt:base_tax = 3
+./2959 - Tarnow.txt:base_tax = 3
+./296 - Mozhaisk.txt:base_tax = 5
+./296 - Mozhaisk.txt:1711.1.1 = { base_tax = 6 base_production = 6 } # Governmental reforms and the absolutism
+./296 - Mozhaisk.txt:1767.1.1 = { base_tax = 7 base_production = 7 } # Legislative reform
+./2960 - Sadecki.txt:base_tax = 6
+./2961 - Lwow.txt:base_tax = 6
+./2962 - Rowne.txt:base_tax = 2
+./2963 - Notec.txt:base_tax = 4
+./2964 - Altmark.txt:base_tax = 3
+./2964 - Altmark.txt:1750.1.1 = { base_manpower = 5 base_tax = 10 base_production = 10 }
+./2965 - Vogtland.txt:base_tax = 3
+./2966 - Leignitz.txt:base_tax = 4
+./2966 - Leignitz.txt:1750.1.1 = { base_tax = 8 base_production = 8 base_manpower = 13 }
+./2967 - Eger.txt:base_tax = 4
+./2968 - Budejovice.txt:base_tax = 5
+./2969 - Sternberg.txt:base_tax = 3
+./2969 - Sternberg.txt:	base_tax = 8 
+./2969 - Sternberg.txt:1725.1.1 = { base_tax = 10 base_production = 10 }
+./297 - Bryansk.txt:base_tax = 7 
+./2970 - Hradecko.txt:base_tax = 5
+./2971 - Hoya.txt:base_tax = 2
+./2972 - Paderborn.txt:base_tax = 2
+./2973 - Meppen.txt:base_tax = 4
+./2973 - Meppen.txt: 	base_tax = 8 
+./2974 - Loon.txt:base_tax = 6
+./2975 - Kleves.txt:base_tax = 4
+./2976 - Umbria.txt:base_tax = 6
+./2977 - Urbino.txt:base_tax = 5
+./2978 - Arezzo.txt:base_tax = 6
+./2979 - Novarra.txt:base_tax = 7
+./298 - Kursk.txt:base_tax = 4 
+./2980 - Lucca.txt:base_tax = 6
+./2981 - Montferrat.txt:base_tax = 5
+./2982 - Syracuse.txt:base_tax = 6
+./2983 - Salerno.txt:base_tax = 5
+./2984 - Costenza.txt:base_tax = 2
+./2985 - Capitanata.txt:base_tax = 4
+./2986 - Cagliari.txt:base_tax = 4
+./2987 - Urgell.txt:base_tax = 3
+./2988 - Tarragona.txt:base_tax = 5
+./2988 - Tarragona.txt:1689.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Peasant revolt against new taxes to fund the war against France
+./2989 - Rioja.txt:base_tax = 2
+./299 - Voronezh.txt:base_tax = 4 
+./2990 - Teruel.txt:base_tax = 3
+./2991 - Draguignan.txt:base_tax = 4 
+./2992 - Albenga.txt:base_tax = 6
+./2993 - Uckermark.txt:base_tax = 4
+./2994 - Greifswald.txt:base_tax = 2
+./2994 - Greifswald.txt:1630.1.1 = { base_tax = 4 } # Devastating population losses in Thirty Years War
+./2995 - Stolp.txt:base_tax = 2
+./2996 - Wismar.txt:base_tax = 2
+./2997 - Pomorskie.txt:base_tax = 3 
+./2998 - Buzau.txt:base_tax = 5
+./2999 - Hormuz.txt:base_tax = 3 
+./2999 - Hormuz.txt:	base_tax = 1
+./3-Smaland.txt:base_tax = 2 
+./30-Viborg.txt:base_tax = 2 
+./300 - Tula.txt:base_tax = 5 
+./300 - Tula.txt:1711.1.1 = { base_tax = 4 base_production = 4 } # Governmental reforms and the absolutism
+./300 - Tula.txt:1767.1.1 = { base_tax = 5 base_production = 5 } # Legislative reform
+./300 - Tula.txt:1771.1.1 = { base_tax = 4 base_production = 4 }
+./3000 - Nis.txt:base_tax = 3
+./3001 - Skopje.txt:base_tax = 3
+./3002 - Sarajevo.txt:base_tax = 2
+./3002 - Sarajevo.txt:1738.1.1 = { unrest = 5 } # The constant fighting, increased taxation caused tax revolts
+./3003 - Euboea.txt:base_tax = 3
+./3003 - Euboea.txt:1740.1.1 = { base_tax = 1 base_production = 1 } # The decentralizing effect of the provincial system
+./301 - Ryazan.txt:base_tax = 8
+./301 - Ryazan.txt:1711.1.1 = { base_tax = 7 base_production = 7 } # Governmental reforms and the absolutism
+./301 - Ryazan.txt:1767.1.1 = { base_tax = 8 base_production = 8 } # Legislative reform
+./302 - Tambow.txt:base_tax = 3 
+./303 - Saratow.txt:base_tax = 3 
+./303 - Saratow.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 }
+./303 - Saratow.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 }
+./304 - Pensa.txt:base_tax = 3 
+./304 - Pensa.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 }
+./304 - Pensa.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./305 - Perm.txt:base_tax = 4
+./306 - Nijni-Novgorod.txt:base_tax = 5
+./306 - Nijni-Novgorod.txt:1560.1.1 = { base_tax = 7 base_production = 7 } # Treasury reform
+./306 - Nijni-Novgorod.txt:1719.1.1 = { base_tax = 8 base_production = 8  } # Governmental reforms and the absolutism, Nizhegorod governorate
+./306 - Nijni-Novgorod.txt:1767.1.1 = { base_tax = 9 base_production = 9 } # Legislative reform
+./307 - Vladimir.txt:base_tax = 8
+./307 - Vladimir.txt:1711.1.1 = { base_tax = 4 base_production = 4 } # Governmental refoms and the absolutism
+./307 - Vladimir.txt:1767.1.1 = { base_tax = 5 base_production = 5 } # Legislative reform
+./308 - Yaroslavl.txt:base_tax = 7 
+./308 - Yaroslavl.txt:1560.1.1 = { base_tax = 4 base_production = 4 } # Treasury reforms
+./308 - Yaroslavl.txt:1711.1.1 = { base_tax = 5 base_production = 5  } # Governmental reforms and the absolutism
+./308 - Yaroslavl.txt:1767.1.1 = { base_tax = 6 base_production = 6 } # Legislative reforms 
+./309 - Olonets.txt:base_tax = 3 
+./31-Savolaks.txt:base_tax = 1 
+./310 - Novgorod.txt:base_tax = 8 
+./310 - Novgorod.txt:1615.1.1 = { base_tax = 5 base_production = 5 } # Ingrian war
+./311 - Kholm.txt:base_tax = 4 
+./312 - Vologda.txt:base_tax = 5 
+./312 - Vologda.txt:1711.1.1 = { base_tax = 7 base_production = 7 } # Governmental reforms and the absolutism
+./312 - Vologda.txt:1767.1.1 = { base_tax = 8 base_production = 8 } # Legislative reform
+./313 - Archangelsk.txt:base_tax = 2 
+./314 - Ustyug.txt:base_tax = 4
+./315 - Finnmark.txt:base_tax = 1 
+./316 - Kocaeli.txt:base_tax = 4 
+./316 - Kocaeli.txt:1615.1.1 = { base_tax = 5 
+./316 - Kocaeli.txt:1718.1.1 = { unrest = 3 base_tax = 7 
+./317 - Hudavendigar.txt:base_tax = 7 
+./317 - Hudavendigar.txt:1690.1.1 = { base_tax = 2 base_production = 2 } #The Decentralizing Effect of the Provincial System
+./317 - Hudavendigar.txt:1718.1.1 = { unrest = 3 base_tax = 3 base_production = 3 } # Lale Devri (the tulip age), not appreciated by everyone 
+./318 - Sugla.txt:base_tax = 5 
+./318 - Sugla.txt:1615.1.1 = { base_tax = 2 
+./319 - Mentese.txt:base_tax = 3 
+./319 - Mentese.txt:1690.1.1 = { base_tax = 1 
+./32-Keksholm.txt:base_tax = 2 
+./320 - Rhodes.txt:base_tax = 4 
+./321 - Cyprus.txt:base_tax = 6 
+./321 - Cyprus.txt:1690.1.1 = { base_tax = 6 
+./322 - Kutahya.txt:base_tax = 6
+./322 - Kutahya.txt:1690.1.1 = { base_tax = 4 base_production = 4 } # The Decentralizing Effect of the Provincial System
+./322 - Kutahya.txt:1718.1.1 = { unrest = 3 base_tax = 8 base_production = 8 } # Lale Devri (the tulip age), not appreciated by everyone 
+./323 - Konya.txt:base_tax = 5 
+./323 - Konya.txt:1740.1.1 = { base_tax = 1 
+./324 - Karaman.txt:base_tax = 6 
+./324 - Karaman.txt:1740.1.1 = { base_tax = 2 base_production = 2 } # The decentralizing effect of the provincial system
+./325 - Kastamonu.txt:base_tax = 3 
+./325 - Kastamonu.txt:1740.1.1 = { base_tax = 5 base_production = 5 } # The decentralizing effect of the provincial system
+./326 - Ankara.txt:base_tax = 4 
+./326 - Ankara.txt:1740.1.1 = { base_tax = 3 base_production = 3 } # The decentralizing effect of the provincial system
+./327 - Adana.txt:base_tax = 4 
+./327 - Adana.txt:1740.1.1 = { base_tax = 1 base_production = 1 } # The decentralizing effect of the provincial system
+./328 - Sinop.txt:base_tax = 3 
+./329 - Sivas.txt:base_tax = 4 
+./33-Neva.txt:base_tax = 3 
+./33-Neva.txt:1703.5.27 = { owner = RUS add_core = RUS capital = "St.Petersburg" culture = russian base_tax = 4 base_production = 4 } # St. Petersburg founded, Peter and Paul fortress
+./330 - Trebizond.txt:base_tax = 4 
+./331 - Erzurum.txt:base_tax = 4 
+./332 - Marash.txt:base_tax = 5 
+./333 - The Baleares.txt:base_tax = 2 
+./334 - Tangiers.txt:base_tax = 3 
+./335 - Mellila.txt:base_tax = 3 
+./336 - Tlemcen.txt:base_tax = 5 
+./337 - Oran.txt:base_tax = 2 
+./338 - Al-Djazair.txt:base_tax = 5 
+./339 - Bejaia.txt:base_tax = 3 
+./34-Ingermanland.txt:base_tax = 3 
+./340 - Constantine.txt:base_tax = 3 
+./341 - Tunis.txt:base_tax = 6 
+./342 - Toubkhal.txt:base_tax = 4 
+./343 - Fez.txt:base_tax = 4 
+./344 - Marrakech.txt:base_tax = 5 
+./345 - Safi.txt:base_tax = 1 
+./346 - Figuig.txt:base_tax = 4 
+./347 - Ifni.txt:base_tax = 1 
+./348 - Sus.txt:base_tax = 5 
+./349 - Atlas.txt:base_tax = 2 
+./35 - Osel.txt:base_tax = 1 
+./350 - Aures.txt:base_tax = 1 
+./351 - Biskra.txt:base_tax = 1 
+./352 - Gafsa.txt:base_tax = 2 
+./353 - Gabes.txt:base_tax = 1 
+./354 - Tripolitania.txt:base_tax = 2 
+./355 - Sirt.txt:base_tax = 1 
+./356 - Benghazi.txt:base_tax = 2 
+./357 - Darnah.txt:base_tax = 1 
+./358 - Alexandria.txt:base_tax = 7 
+./359 - Faiyum.txt:base_tax = 3 
+./359 - Faiyum.txt:1789.10.22 = { unrest = 6 } # Introduction of house tax, strained relations 
+./36 - Estland.txt:base_tax = 4
+./360 - Qena.txt:base_tax = 2 
+./360 - Qena.txt:1789.10.22 = { unrest = 6 } # Introduction of house taxes, strained relations 
+./361 - Cairo.txt:base_tax = 9 
+./361 - Cairo.txt:1609.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Attempts to stop the troops from extracting payment
+./361 - Cairo.txt:1789.10.22 = { unrest = 6 } # Introduction of house tax, strained relations 
+./362 - Rosetta.txt:base_tax = 5 
+./362 - Rosetta.txt:1789.10.22 = { unrest = 6 } # Introduction of house tax, strained relations 
+./363 - Damietta.txt:base_tax = 4 
+./363 - Damietta.txt:1789.10.22 = { unrest = 6 } # Introduction of house tax, strained relations 
+./364 - Gaza.txt:base_tax = 3 
+./365 - Sinai.txt:base_tax = 1 
+./366 - The Canarias.txt:base_tax = 3 
+./367 - The Azores.txt:base_tax = 3 
+./368 - Madeira.txt:base_tax = 4 
+./369 - Orkney.txt:base_tax = 1 
+./37 - Livland.txt:base_tax = 4 
+./370 - Reykjavik.txt:base_tax = 1 
+./371 - Akureyri.txt:base_tax = 1 
+./372 - Ulster.txt:base_tax = 4 
+./373 - Meath.txt:base_tax = 5 
+./374 - Leinster.txt:base_tax = 4 
+./375 - Munster.txt:base_tax = 4 
+./376 - Connaught.txt:base_tax = 2 
+./377 - Aleppo.txt:base_tax = 7 
+./378 - Tripoli.txt:base_tax = 6 
+./379 - Jerusalem.txt:base_tax = 5 
+./38 - Riga.txt:base_tax = 5 
+./380 - Al Karak.txt:base_tax = 1 
+./381 - Ajlun.txt:base_tax = 2 
+./382 - Damascus.txt:base_tax = 8 
+./383 - Tabuk.txt:base_tax = 2 
+./384 - Medina.txt:base_tax = 3 
+./385 - Mecca.txt:base_tax = 4 
+./386 - Asir.txt:base_tax = 1 
+./387 - Mokha.txt:base_tax = 3 
+./388 - Aden.txt:base_tax = 2 
+./389 - Kinda.txt:base_tax = 1 
+./39 - Kurland.txt:base_tax = 4
+./390 - Sanaa.txt:base_tax = 2 
+./391 - Najran.txt:base_tax = 1 
+./392 - Al-Arid.txt:base_tax = 1 
+./393 - Jabal Shammar.txt:base_tax = 1 
+./394 - El Catif.txt:base_tax = 1 
+./395 - Qatar.txt:base_tax = 2 
+./396 - Bahrain.txt:base_tax = 1 
+./397 - Bani Yas.txt:base_tax = 1 
+./398 - Qawasim.txt:base_tax = 2 
+./399 - Suhar.txt:base_tax = 3 
+./4-Bergslagen.txt:base_tax = 2 
+./4-Bergslagen.txt:1434.6.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Engelbrekt" } controller = REB } # Engelbrekt rebellion
+./4-Bergslagen.txt:1436.4.28 = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Karl Knutsson Bonde elected leader
+./4-Bergslagen.txt:1438.10.1 = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Karl Knutsson Bonde, unclear date
+./4-Bergslagen.txt:1617.1.1 = { base_tax = 4 base_production = 4 } # Iron is king!
+./40 - Memel.txt:base_tax = 5
+./40 - Memel.txt:1750.1.1 = { base_tax = 5 base_production = 5 }
+./400 - Muscat.txt:base_tax = 4 
+./401 - Dhofar.txt:base_tax = 1 
+./402 - Mahra.txt:base_tax = 1 
+./403 - Nizwa.txt:base_tax = 2 
+./404 - Liwa.txt:base_tax = 1 
+./405 - Tadmor.txt:base_tax = 2 
+./406 - As Sahiliyah.txt:base_tax = 2 
+./407 - Ar Raqqa.txt:base_tax = 4 
+./408 - Basra.txt:base_tax = 3 
+./409 - Hillah.txt:base_tax = 2 
+./41 - Konigsberg.txt:base_tax = 7
+./41 - Konigsberg.txt:1750.1.1 = { base_manpower = 4 base_tax = 8 
+./410 - Baghdad.txt:base_tax = 7 
+./411 - Mosul.txt:base_tax = 4 
+./412 - Khuzestan.txt:base_tax = 6 
+./413 - Lorestan.txt:base_tax = 3 
+./414 - Hamadan.txt:base_tax = 3 
+./415 - Shahrizor.txt:base_tax = 3 
+./416 - Azerbaijan.txt:base_tax = 6 
+./417 - Gilan.txt:base_tax = 4 
+./418 - Diyarbakir.txt:base_tax = 4 
+./419 - Yerevan.txt:base_tax = 3 
+./42 - Warmia.txt:base_tax = 5
+./420 - Ganja.txt:base_tax = 1 
+./421 - Shirvan.txt:base_tax = 2 
+./422 - Imereti.txt:base_tax = 3 
+./423 - Kartli.txt:base_tax = 4 
+./424 - Ardabil.txt:base_tax = 2 
+./425 - Dagestan.txt:base_tax = 3 
+./426 - Mazandaran.txt:base_tax = 7 
+./427 - Qumis.txt:base_tax = 3 
+./427 - Qumis.txt:1715.12.1 = { base_tax = 4 base_production = 4 } # Political fragmentation
+./428 - Rey.txt:base_tax = 5 
+./428 - Rey.txt:1675.12.1 = { base_tax = 6 
+./429 - Isfahan.txt:base_tax = 3 
+./43 - Danzig.txt:base_tax = 7
+./430 - Bushehr.txt:base_tax = 4 
+./431 - Mogostan.txt:base_tax = 5 
+./432 - Kerman.txt:base_tax = 3 
+./433 - Yazd.txt:base_tax = 2 
+./433 - Yazd.txt:1597.12.1 = { base_tax = 2 
+./434 - Quhistan.txt:base_tax = 2 
+./435 - Sistan.txt:base_tax = 2 
+./435 - Sistan.txt:1597.12.1 = { base_tax = 3 
+./436 - Birjand.txt:base_tax = 3 
+./436 - Birjand.txt:1597.12.1 = { base_tax = 2 
+./437 - Atak.txt:base_tax = 1 
+./438 - Kara Kum.txt:base_tax = 1 
+./439 - Mangyshlak.txt:base_tax = 1 
+./44 - Hamburg.txt:base_tax = 7
+./440 - Qaraqalpak.txt:base_tax = 3 
+./441 - Khiva.txt:base_tax = 3 
+./442 - Bukhara.txt:base_tax = 5 
+./442 - Bukhara.txt:1533.1.1 = { base_tax = 7 } # Bukhara becomes capital
+./443 - Ust Yurt.txt:base_tax = 2 
+./444 - Charjuy.txt:base_tax = 2 
+./445 - Merv.txt:base_tax = 3 
+./446 - Herat.txt:base_tax = 5 
+./447 - Kandahar.txt:base_tax = 2 
+./448 - Gazni.txt:base_tax = 2 
+./449 - Ghor.txt:base_tax = 3 
+./45 - Lubeck.txt:base_tax = 7
+./45 - Lubeck.txt:1550.1.1 = { base_tax = 7 
+./45 - Lubeck.txt:1600.1.1 = { base_tax = 10 
+./45 - Lubeck.txt:1617.1.1 = { base_tax = 8 
+./450 - Balkh.txt:base_tax = 3 
+./451 - Kabul.txt:base_tax = 4 
+./452 - Badakhshan.txt:base_tax = 1 
+./453 - Qarshi.txt:base_tax = 2 
+./454 - Samarkand.txt:base_tax = 7 
+./455 - Kyrzyl-Kum.txt:base_tax = 1 
+./456 - Turkestan.txt:base_tax = 1 
+./457 - Tashkent.txt:base_tax = 3 
+./458 - Kokand.txt:base_tax = 4 
+./459 - Taraz.txt:base_tax = 1 
+./46 - Rostock.txt:base_tax = 4 
+./460 - Uzkend.txt:base_tax = 4 
+./461 - Almaty.txt:base_tax = 2 
+./462 - Mingrelia.txt:base_tax = 2 
+./463 - Circassia.txt:base_tax = 2 
+./464 - Astrakhan.txt:base_tax = 5 
+./464 - Astrakhan.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 3 leader = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion based here
+./464 - Astrakhan.txt:1705.7.30 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB unrest = 5 } # Astrakhan rebellion
+./464 - Astrakhan.txt:1707.10.9 = { revolt = { type = anti_tax_rebels size = 4 leader = "Kondraty Bulavin" } controller = REB unrest = 5 } # Bulavin rebellion
+./465 - Nogay.txt:base_tax = 3 
+./465 - Nogay.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB revolt_risk = 6 } # Pugachev rebellion
+./466 - Sarai.txt:base_tax = 6 
+./466 - Sarai.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+./466 - Sarai.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./467 - Borisoglebsk.txt:base_tax = 2 
+./467 - Borisoglebsk.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 1 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./468 - Khazaria.txt:base_tax = 2 
+./468 - Khazaria.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+./469 - Ryn.txt:base_tax = 1 
+./469 - Ryn.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 1 name = "Yemelyan Pugachev" } controller = REB revolt_risk = 6 } # Pugachev rebellion
+./47 - Stralsund.txt:base_tax = 3 
+./47 - Stralsund.txt:1630.1.1 = { base_tax = 4 } # Devastating population losses in Thirty Years War
+./470 - Bayuly.txt:base_tax = 2 
+./471 - Alimuly.txt:base_tax = 2 
+./472 - Jetyru.txt:base_tax = 2 
+./473 - Samara.txt:base_tax = 3 
+./473 - Samara.txt:1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+./473 - Samara.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./474 - Yaik.txt:base_tax = 2 
+./474 - Yaik.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 4 leader = "Yemelyan Pugachev" } controller = REB revolt_risk = 6 } # Pugachev rebellion begins here
+./474 - Yaik.txt:1775.2.1 = { revolt = {} controller = RUS revolt_risk = 0 capital = "Uralsk" base_tax = 4 
+./475 - Bashkortostan.txt:base_tax = 3 
+./475 - Bashkortostan.txt:1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+./476 - Kypshak.txt:base_tax = 6 
+./477 - Nadym.txt:base_tax = 2 
+./478 - Argyn.txt:base_tax = 2 
+./479 - Kerey.txt:base_tax = 2 
+./48 - Kolberg.txt:base_tax = 3 
+./48 - Kolberg.txt:1550.1.1 = { base_tax = 4 
+./480 - Kulunda.txt:base_tax = 1 
+./481 - Bermuda.txt:base_tax = 2 
+./482 - Bahamas.txt:base_tax = 2 
+./483 - Turks Islands.txt:base_tax = 3
+./484 - Havana.txt:base_tax = 5
+./485 - Moron.txt:base_tax = 2
+./486 - Guantanamo.txt:base_tax = 2
+./487 - Jamaica.txt:base_tax = 4
+./488 - Les Cayes.txt:base_tax = 2
+./489 - Tortuga.txt:base_tax = 2
+./49 - Neumark.txt:base_tax = 3 
+./49 - Neumark.txt:1725.1.1 = {  base_manpower = 4 base_tax = 6 base_production = 6 }
+./49 - Neumark.txt:1750.1.1 = { base_manpower = 5 base_tax = 7 base_production = 7 }
+./490 - Barahonas.txt:base_tax = 2
+./491 - Curacao.txt:base_tax = 3
+./492 - Puerto Rico.txt:base_tax = 4
+./493 - St. Thomas.txt:base_tax = 4
+./494 - St. Kitts.txt:base_tax = 4
+./495 - Antigua.txt:base_tax = 4
+./496 - Guadeloupe.txt:base_tax = 4
+./497 - Dominica.txt:base_tax = 4
+./498 - Martinique.txt:base_tax = 4
+./499 - St. Lucia.txt:base_tax = 4 
+./5-Varmland.txt:base_tax = 2 
+./50 - Berlin.txt:base_tax = 4
+./50 - Berlin.txt:	base_tax = 8 
+./50 - Berlin.txt:1725.1.1 = {  base_tax = 10 base_production = 10 }
+./500 - St. Vincent.txt:base_tax = 4 
+./501 - Barbados.txt:base_tax = 4 
+./502 - Trinidad.txt:base_tax = 4 
+./503 - Kutch.txt:base_tax = 1 
+./504 - Thatta.txt:base_tax = 4 
+./505 - Sehwan.txt:base_tax = 3
+./506 - Multan.txt:base_tax = 8 
+./507 - Lahore.txt:base_tax = 11
+./508 - Kashmir.txt:base_tax = 3
+./509 - Kangra.txt:base_tax = 2 
+./51 - Ruppin.txt:base_tax = 3 
+./51 - Ruppin.txt:1725.1.1 = { base_manpower = 3 base_tax = 6 base_production = 6 }
+./510 - Sirhind.txt:base_tax = 5 
+./511 - Garhwal.txt:base_tax = 1 
+./512 - Jangladesh.txt:base_tax = 1 
+./513 - Jaisalmer.txt:base_tax = 1 
+./514 - Marwar.txt:base_tax = 4 
+./515 - Girnar.txt:base_tax = 2 
+./516 - Baroda.txt:base_tax = 6 
+./517 - Surat.txt:base_tax = 8 
+./518 - Chittor.txt:base_tax = 3 
+./519 - Dhundar.txt:base_tax = 4 
+./52 - Magdeburg.txt:base_tax = 4
+./52 - Magdeburg.txt:1750.1.1 = {  base_manpower = 5 base_tax = 10 base_production = 10 }
+./520 - Mewat.txt:base_tax = 1 
+./521 - Kathiawar.txt:base_tax = 4 
+./522 - Delhi.txt:base_tax = 8 
+./523 - Oudh.txt:base_tax = 8
+./524 - Central Doab.txt:base_tax = 10
+./525 - Gird.txt:base_tax = 3 
+./526 - Mandu.txt:base_tax = 6 
+./527 - Khandesh.txt:base_tax = 7 
+./528 - Hadoti.txt:base_tax = 3 
+./529 - North Konkan.txt:base_tax = 4 
+./53 - Luneburg.txt:base_tax = 3
+./53 - Luneburg.txt:1550.1.1 = { base_tax = 4 base_production = 4 }
+./530 - South Konkan.txt:base_tax = 4 
+./531 - North Kanara.txt:base_tax = 4 
+./532 - Raichur Doab.txt:base_tax = 5 
+./533 - Mysore.txt:base_tax = 5 
+./534 - Malabar.txt:base_tax = 3 
+./535 - Kochin.txt:base_tax = 2
+./536 - Madurai.txt:base_tax = 7 
+./537 - Venad.txt:base_tax = 2
+./538 - Kongu.txt:base_tax = 3 
+./539 - Tondainadu.txt:base_tax = 6
+./54 - Stade.txt:base_tax = 3
+./540 - Coromandel.txt:base_tax = 8 
+./541 - Vijayanagar.txt:base_tax = 6 
+./542 - Golconda.txt:base_tax = 7 
+./543 - Velanadu.txt:base_tax = 5 
+./544 - Ahmadnagar.txt:base_tax = 4 
+./545 - Marathwada.txt:base_tax = 6 
+./546 - East Berar.txt:base_tax = 3 
+./547 - Bastar.txt:base_tax = 1 
+./548 - West Berar.txt:base_tax = 4 
+./549 - Kalingandhra.txt:base_tax = 3 
+./55 - Oldenburg.txt:base_tax = 3 
+./550 - Mahakoshal.txt:base_tax = 3 
+./551 - Mandla.txt:base_tax = 3
+./552 - Cuttack.txt:base_tax = 6 
+./553 - Sambalpur.txt:base_tax = 2
+./554 - Baisi Rajya.txt:base_tax = 2 
+./555 - Jaunpur.txt:base_tax = 6 
+./555 - Jaunpur.txt:	revolt = { type = anti_tax_rebels name = "Landless Nobles" }
+./556 - Lower Doab.txt:base_tax = 7 
+./557 - Katmandu.txt:base_tax = 3 
+./558 - Patna.txt:base_tax = 7 
+./558 - Patna.txt:	revolt = { type = anti_tax_rebels size = 1 name = "Landless Nobles" }
+./559 - Bundelkhand.txt:base_tax = 2 
+./56 - Osnabruck.txt:base_tax = 2
+./560 - Jharkand.txt:base_tax = 1 
+./561 - Bengal Delta.txt:base_tax = 9
+./562 - Koch Behar.txt:base_tax = 2 
+./563 - Gauda.txt:base_tax = 7
+./564 - Dakha.txt:base_tax = 5 
+./565 - Bhutan.txt:base_tax = 2 
+./566 - Assam.txt:base_tax = 4
+./567 - Silhet.txt:base_tax = 4 
+./568 - Chittagong.txt:base_tax = 6 
+./569 - Bijapur.txt:base_tax = 5 
+./57 - Brunswick.txt:base_tax = 4 
+./570 - Naga.txt:base_tax = 2
+./571 - Darrang.txt:base_tax = 3 
+./572 - Kotte.txt:base_tax = 2 
+./573 - Cachar.txt:base_tax = 1 
+./574 - The Andamans.txt:base_tax = 1 
+./575 - Eastern Makran.txt:base_tax = 1 
+./576 - Kalat.txt:base_tax = 3 
+./577 - Quetta.txt:base_tax = 3 
+./578 - Roh.txt:base_tax = 4 
+./579 - Mrauk U.txt:base_tax = 4
+./58 - Anhalt.txt:base_tax = 2 
+./580 - Kale.txt:base_tax = 3
+./581 - Sagaing.txt:base_tax = 5 
+./582 - Mong Yang.txt:base_tax = 4
+./583 - Hsenwi.txt:base_tax = 4
+./584 - Ava.txt:base_tax = 6
+./585 - Taungoo.txt:base_tax = 6
+./586 - Pegu.txt:base_tax = 5 
+./587 - Kengtung.txt:base_tax = 3 
+./588 - Mong Nai.txt:base_tax = 3 
+./589 - Chiang Mai.txt:base_tax = 5
+./59 - Wittenberg.txt:base_tax = 4
+./590 - Moulmein.txt:base_tax = 4 
+./591 - Tavoy.txt:base_tax = 4 
+./592 - Ratchaburi.txt:base_tax = 3 
+./593 - Nakhon Si Thammarat.txt:base_tax = 5
+./594 - Pattani.txt:base_tax = 6
+./595 - Perak.txt:base_tax = 5
+./596 - Malacca.txt:base_tax = 7 
+./597 - Johor.txt:base_tax = 5
+./598 - Pahang.txt:base_tax = 2 
+./599 - Kelantan.txt:base_tax = 2 
+./6-Skane.txt:base_tax = 6 
+./60 - Lausitz.txt:base_tax = 3
+./600 - Ayutthaya.txt:base_tax = 8
+./601 - Sukhothai.txt:base_tax = 6
+./602 - Chiang Rai.txt:base_tax = 4
+./603 - Nakhon Thung Yai.txt:base_tax = 4
+./604 - Oudong.txt:base_tax = 4 
+./605 - Prey Nokor.txt:base_tax = 5
+./606 - Panduranga.txt:base_tax = 4
+./607 - Vijaya.txt:base_tax = 5
+./608 - Champassak.txt:base_tax = 3 
+./609 - Angkor.txt:base_tax = 5
+./61 - Dresden.txt:base_tax = 5
+./610 - Thanh Hoa.txt:base_tax = 2 
+./611 - Sikhottabong.txt:base_tax = 2 
+./612 - Khorat.txt:base_tax = 2 
+./613 - Dong Kinh.txt:base_tax = 7
+./614 - Vientiane.txt:base_tax = 5 
+./615 - Luang Prabang.txt:base_tax = 4 
+./616 - Cao Bang.txt:base_tax = 2 
+./617 - Lamuri.txt:base_tax = 4
+./618 - Deli.txt:base_tax = 3
+./619 - Batak.txt:base_tax = 2 
+./62 - Leipzig.txt:base_tax = 4
+./620 - Siak.txt:base_tax = 5
+./621 - Bengkulu.txt:base_tax = 3
+./622 - Palembang.txt:base_tax = 4
+./623 - Tulangbewang.txt:base_tax = 3 
+./624 - Banten.txt:base_tax = 4 
+./625 - Ciamis.txt:base_tax = 3 
+./626 - Karta.txt:base_tax = 5
+./627 - Blambangan.txt:base_tax = 5
+./628 - Surabaya.txt:base_tax = 5
+./629 - Demak.txt:base_tax = 5
+./63 - Erfurt.txt:base_tax = 3 
+./630 - Kalapa.txt:base_tax = 4
+./631 - Bali.txt:base_tax = 3 
+./632 - Sumbawa.txt:base_tax = 3 
+./633 - Flores.txt:base_tax = 4 
+./634 - Sumba.txt:base_tax = 2
+./635 -West Timor.txt:base_tax = 3
+./636 - Brunei.txt:base_tax = 7
+./637 - Jesselton.txt:base_tax = 3 
+./638 - Kutai.txt:base_tax = 5
+./639 - Banjar.txt:base_tax = 4
+./64 - Landshut.txt:base_tax = 5
+./64 - Landshut.txt:1743.1.1 = { base_tax = 4 base_production = 4 } # Economic crisis as effect of the Austrian succession war (e.g. Straubing bancrupt)
+./640 - Pontianak.txt:base_tax = 5
+./641 - Makassar.txt:base_tax = 8 
+./642 - Kendari.txt:base_tax = 4
+./643 - Poso.txt:base_tax = 4
+./644 - Manado.txt:base_tax = 4
+./645 - Buru.txt:base_tax = 2 
+./646 - Ambon.txt:base_tax = 5
+./647 - Ceram.txt:base_tax = 3 
+./648 - Halmahera.txt:base_tax = 2 
+./649 - Ternate.txt:base_tax = 5
+./65 - Munchen.txt:base_tax = 6 
+./65 - Munchen.txt:1632.1.1 = { base_tax = 12 base_production = 12 } # Swedish troops ravage the countryside and extort 300.000$ from Munich. 
+./65 - Munchen.txt:1700.1.1 = { base_tax = 14 
+./650 - Tidore.txt:base_tax = 5
+./651 - Sulu.txt:base_tax = 4 
+./652 - Maguindanao.txt:base_tax = 5
+./653 - Lanao.txt:base_tax = 3 
+./654 - Visayas.txt:base_tax = 2 
+./655 - Palawan.txt:base_tax = 3
+./656 - Manila.txt:base_tax = 6
+./657 - Ilocos.txt:base_tax = 2 
+./658 - Cagayan.txt:base_tax = 2 
+./659 - Lingga.txt:base_tax = 1 
+./66 - Bamberg.txt:base_tax = 2
+./660 - Sibsongbanna.txt:base_tax = 3 
+./661 - Dali.txt:base_tax = 3 
+./662 - Yunnan.txt:base_tax = 6 
+./663 - Guangnan.txt:base_tax = 1 
+./664 - Lingyun.txt:base_tax = 1 
+./665 - Shiuhing.txt:base_tax = 4 
+./666 - Kiungchow.txt:base_tax = 1 
+./667 - Canton.txt:base_tax = 12 
+./668 - Macau.txt:base_tax = 3 
+./669 - Fuzhou.txt:base_tax = 8 
+./67 - Nurnberg.txt:base_tax = 8
+./670 - Ganzhou.txt:base_tax = 4 
+./671 - Changsha.txt:base_tax = 6 
+./672 - Wulin.txt:base_tax = 3 
+./673 - Zhenyuan.txt:base_tax = 1 
+./674 - Guiyang.txt:base_tax = 3 
+./675 - Umung.txt:base_tax = 1 
+./676 - Shigatse.txt:base_tax = 2 
+./677 - Lhasa.txt:base_tax = 2 
+./678 - Tachienlu.txt:base_tax = 2 
+./679 - Chengdu.txt:base_tax = 10 
+./68 - Memmingen.txt:base_tax = 5
+./680 - Chongqing.txt:base_tax = 8 
+./681 - Yichang.txt:base_tax = 3 
+./681 - Yichang.txt:1637.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Zhang Xianzhong rebellion
+./682 - Wuchang.txt:base_tax = 9 
+./682 - Wuchang.txt:1642.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Zhang Xianzhong rebellion
+./683 - Nanchang.txt:base_tax = 6 
+./684 - Hangzhou.txt:base_tax = 12 
+./685 - Yangzhou.txt:base_tax = 12 
+./686 - Anqing.txt:base_tax = 6 
+./687 - Nanyang.txt:base_tax = 4 
+./687 - Nanyang.txt:1641.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB }
+./688 - Kaifeng.txt:base_tax = 8 
+./688 - Kaifeng.txt:1642.1.1 = { revolt = { type = anti_tax_rebels size = 0 } controller = REB } #Li Zicheng rebellion
+./689 - Hanzhong.txt:base_tax = 4 
+./689 - Hanzhong.txt:1796.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # The White Lotus rebellion
+./69 - Oberschwaben.txt:base_tax = 5
+./690 - Qingzhou.txt:base_tax = 5 
+./691 - Jinan.txt:base_tax = 6 
+./692 - Huaiqing.txt:base_tax = 3 
+./693 - Taiyuan.txt:base_tax = 6 
+./694 - Pingyang.txt:base_tax = 4 
+./695 - Hejian.txt:base_tax = 3 
+./696 - Baoding.txt:base_tax = 4 
+./697 - Datong.txt:base_tax = 4 
+./698 - Ningxia.txt:base_tax = 3 
+./699 - Lanzhou.txt:base_tax = 6 
+./7-Vastergotland.txt:base_tax = 3 
+./70 - Wurttemberg.txt:base_tax = 3
+./70 - Wurttemberg.txt:	base_tax = 5 
+./700 - Xi'an.txt:base_tax = 8 
+./701 - Ordos.txt:base_tax = 2 
+./702 - Hohhot.txt:base_tax = 4 
+./703 - Chengde.txt:base_tax = 3 
+./704 - Ningyuan.txt:base_tax = 2 
+./704 - Ningyuan.txt:1500.1.1 = { base_tax = 9 
+./705 - Gyegu.txt:base_tax = 1 
+./706 - Tsaidam.txt:base_tax = 1 
+./707 - Yumen.txt:base_tax = 2 
+./708 - Gansu.txt:base_tax = 3 
+./709 - Alxa.txt:base_tax = 1 
+./71 - Ansbach.txt:base_tax = 3
+./710 - Hotan.txt:base_tax = 2 
+./711 - Qarqan.txt:base_tax = 1 
+./712 - Aksu.txt:base_tax = 2 
+./713 - Bechbaliq.txt:base_tax = 2 
+./714 - Hoboksar.txt:base_tax = 1 
+./715 - Urumqi.txt:base_tax = 2 
+./716 - Tannu Uriankhai.txt:base_tax = 1 
+./717 - Kherlen.txt:base_tax = 1 
+./718 - Kobdo.txt:base_tax = 2 
+./719 - Uliastai.txt:base_tax = 3 
+./72 - Breisgau.txt:base_tax = 2 
+./720 - Dorno Govi.txt:base_tax = 1 
+./721 - Setsen.txt:base_tax = 2 
+./722 - Jirem.txt:base_tax = 2 
+./723 - Xilin Gol.txt:base_tax = 2 
+./724 - Hulunbuir.txt:base_tax = 1 
+./725 - Cicigar.txt:base_tax = 4 
+./726 - Shenyang.txt:base_tax = 5 
+./727 - Aigun.txt:base_tax = 3 
+./728 - Tuwan.txt:base_tax = 2 
+./729 - Bohori.txt:base_tax = 2 
+./73 - Tirol.txt:base_tax = 4
+./73 - Tirol.txt:1577.1.1 = { base_tax = 7 
+./73 - Tirol.txt:1602.1.1 = { base_tax = 8 
+./730 - Girin.txt:base_tax = 5 
+./731 - Ilan Hala.txt:base_tax = 3 
+./732 - South Hamgyeong.txt:base_tax = 2 
+./733 - Hwanghae.txt:base_tax = 3 
+./734 - West Gangwon.txt:base_tax = 4 
+./735 - Gyeonggi.txt:base_tax = 5 
+./736 - West Gyeongsang.txt:base_tax = 2 
+./737 - Jeolla.txt:base_tax = 4 
+./738 - Sakam.txt:base_tax = 4 
+./739 - Kashgar.txt:base_tax = 2 
+./74 - Baden.txt:base_tax = 2 
+./74 - Baden.txt:1771.1.1 = { base_tax = 4 
+./740 - Chanderi.txt:base_tax = 3
+./741 - Cumana.txt:base_tax = 1
+./742 - Guayana.txt:base_tax = 2 
+./743 - Essequibo.txt:base_tax = 1 
+./744 - Demerara.txt:base_tax = 1 
+./745 - Suriname.txt:base_tax = 1 
+./746 - Cayenne.txt:base_tax = 1 
+./747 - Tucujulandia.txt:base_tax = 1
+./748 - Grao Para.txt:base_tax = 1
+./749 - Maranhao.txt:base_tax = 3
+./75 - Elsass.txt:base_tax = 4 
+./75 - Elsass.txt:1525.5.14 = { unrest = 0 revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Rebels take control of Strasbourg in the Peasant's War
+./75 - Elsass.txt:1749.1.1 = { base_tax = 8 
+./75 - Elsass.txt:base_production = 8 } # Machault & the 5% tax
+./750 - Alpercatas.txt:base_tax = 1
+./751 - Ceara.txt:base_tax = 2
+./752 - Oeiras.txt:base_tax = 1
+./753 - Rio Grande.txt:base_tax = 3
+./754 - Itamaraca.txt:base_tax = 2
+./755 - Pernambuco.txt:base_tax = 3
+./756 - Bahia.txt:base_tax = 3
+./757 - Ilheus.txt:base_tax = 2
+./758 - Goias.txt:base_tax = 1
+./759 - Diamentina.txt:base_tax = 2
+./76 - Salzburg.txt:base_tax = 6 
+./760 - Porto Seguro.txt:base_tax = 2
+./761 - Espirito Santo.txt:base_tax = 2
+./762 - Sao Tome.txt:base_tax = 2
+./763 - Rio de Janeiro.txt:base_tax = 3
+./764 - Santo Amaro.txt:base_tax = 1
+./765 - Minas Gerais.txt:base_tax = 2 
+./766 - Sao Vicente.txt:base_tax = 2 
+./767 - Mato Grosso.txt:base_tax = 3
+./768 - Guayra.txt:base_tax = 1 
+./769 - Santana.txt:base_tax = 2 
+./77 - Pfalz.txt:base_tax = 4
+./77 - Pfalz.txt:1689.8.1 = { base_tax = 5 
+./770 - Tape.txt:base_tax = 5 
+./771 - Patos.txt:base_tax = 4 
+./772 - Uruguay.txt:base_tax = 1
+./773 - Banda Oriente.txt:base_tax = 1 
+./774 - Mbaracayu.txt:base_tax = 1 
+./775 - Xeres.txt:base_tax = 1
+./776 - Itenines.txt:base_tax = 1 
+./777 - Parana.txt:base_tax = 1
+./778 - Rio de la Plata.txt:base_tax = 4 
+./778 - Rio de la Plata.txt:1750.1.1 = { unrest = 2 } # Spanish administration required all trade to pass via Lima, extracted taxes
+./779 - Serranos.txt:base_tax = 1 
+./78 - Mainz.txt:base_tax = 5 
+./780 - Tehuelmapu.txt:base_tax = 1 
+./781 - Patagonia Oriental.txt:base_tax = 1 
+./782 - Tierra del Fuego.txt:base_tax = 1 
+./783 - Patagonia Occidental.txt:base_tax = 1 
+./784 - Huillimapu.txt:base_tax = 1 
+./785 - Pehuenmapu.txt:base_tax = 1 
+./786 - Salinas Grande.txt:base_tax = 1 
+./787 - Pincunmapu.txt:base_tax = 2
+./788 - Cuyo.txt:base_tax = 2 
+./789 - Pampas.txt:base_tax = 1 
+./79 - Wurzburg.txt:base_tax = 2
+./790 - Chaco Austral.txt:base_tax = 1 
+./791 - Catamarca.txt:base_tax = 2 
+./792 - Copiapo.txt:base_tax = 2 
+./793 - Atacama.txt:base_tax = 2 
+./794 - Jujuy.txt:base_tax = 3 
+./795 - Potosi.txt:base_tax = 4 
+./796 - Arica.txt:base_tax = 2 
+./797 - Caracara.txt:base_tax = 2 
+./798 - Charcas.txt:base_tax = 2 
+./799 - Chaco Boreal.txt:base_tax = 1 
+./8-Dalaskogen.txt:base_tax = 1 
+./8-Dalaskogen.txt:1434.6.1 = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Engelbrekt rebellion
+./8-Dalaskogen.txt:1436.4.28 = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Karl Knutsson Bonde elected leader
+./8-Dalaskogen.txt:1438.10.1 = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Karl Knutsson Bonde, unclear date
+./8-Dalaskogen.txt:1617.1.1 = { base_tax = 3 base_production = 3 } #Copper is king!
+./80 - Trier.txt:base_tax = 5
+./800 - Chiquitos.txt:base_tax = 1 
+./801 - Caranga.txt:base_tax = 2 
+./802 - Chuquiabo.txt:base_tax = 4 
+./803 - Moxos.txt:base_tax = 1 
+./804 - Puno.txt:base_tax = 2 
+./805 - Arequipa.txt:base_tax = 2 
+./806 - Nazca.txt:base_tax = 1 
+./807 - Huamanga.txt:base_tax = 3 
+./808 - Cuzco.txt:base_tax = 6 
+./809 - Lima.txt:base_tax = 3 
+./81 - Hessen.txt:base_tax = 4 
+./81 - Hessen.txt:1555.1.1 = { base_tax = 14 
+./810 - Huancavelica.txt:base_tax = 2 
+./811 - Tarma.txt:base_tax = 2 
+./812 - Chanchan.txt:base_tax = 4 
+./813 - Cajamarca.txt:base_tax = 3 
+./814 - Huanuco.txt:base_tax = 2 
+./815 - Maynas.txt:base_tax = 1 
+./816 - Tumbes.txt:base_tax = 2 
+./817 - Cuenca.txt:base_tax = 3 
+./818 - Canelos.txt:base_tax = 2 
+./819 - Guayaquil.txt:base_tax = 3 
+./82 - Lippe.txt:base_tax = 3 
+./820 - Quito.txt:base_tax = 6 
+./821 - Quijos.txt:base_tax = 1 
+./822 - Caqueta.txt:base_tax = 1 
+./823 - Cauca.txt:base_tax = 2 
+./824 - Mariquita.txt:base_tax = 2 
+./825 - Bogota.txt:base_tax = 6 
+./826 - Choco.txt:base_tax = 1 
+./827 - Antioquia.txt:base_tax = 2 
+./828 - Cartagena.txt:base_tax = 3
+./829 - Magdalena.txt:base_tax = 1 
+./83 - Nassau.txt:base_tax = 2 
+./83 - Nassau.txt:1585.1.1 = { base_tax = 3 
+./830 - Maracaibo.txt:base_tax = 1
+./831 - Caracas.txt:base_tax = 1
+./832 - Chiancon.txt:base_tax = 5 
+./833 - Tunja.txt:base_tax = 2 
+./834 - Barinas.txt:base_tax = 1 
+./835 - Panama.txt:base_tax = 1
+./836 - Chorotega.txt:base_tax = 1
+./837 - Nicaragua.txt:base_tax = 1
+./838 - Mosquito.txt:base_tax = 1 
+./839 - Pipil.txt:base_tax = 1
+./84 - Berg.txt:base_tax = 3
+./840 - Honduras.txt:base_tax = 1
+./841 - Guatemala.txt:base_tax = 3 
+./842 - Peten.txt:base_tax = 2 
+./843 - Belize.txt:base_tax = 4 
+./844 - Zapotec.txt:base_tax = 2 
+./845 - Campeche.txt:base_tax = 4 
+./846 - Yucatan.txt:base_tax = 4 
+./847 - Mixtec.txt:base_tax = 3 
+./848 - Tohancapan.txt:base_tax = 2 
+./849 - Tlapanec.txt:base_tax = 4 
+./85 - Koln.txt:base_tax = 6 
+./85 - Koln.txt:1638.1.1 = { base_tax = 10 
+./85 - Koln.txt:1716.1.1 = { base_tax = 12 
+./850 - Tlaxcala.txt:base_tax = 4 
+./851 - Tarasco.txt:base_tax = 3 
+./852 - Mexico.txt:base_tax = 7 
+./853 - Huastec.txt:base_tax = 3 
+./854 - Sayultecas.txt:base_tax = 4 
+./855 - Huichol.txt:base_tax = 2
+./856 - Zacatecas.txt:base_tax = 1
+./857 - Guachichil.txt:base_tax = 1
+./858 - Tamaulipas.txt:base_tax = 1
+./859 - Sinaloa.txt:base_tax = 1
+./86 - Munster.txt:base_tax = 4
+./86 - Munster.txt: 	base_tax = 8 
+./860 - Tepehuan.txt:base_tax = 1 
+./861 - Coahuila.txt:base_tax = 1 
+./862 - Yaqui.txt:base_tax = 1 
+./863 - Suma.txt:base_tax = 1 
+./864 - Concho.txt:base_tax = 1 
+./865 - Cochimi.txt:base_tax = 1 
+./866 - Guaycura.txt:base_tax = 1 
+./867 - Mojave.txt:base_tax = 1 
+./868 - Chumash.txt:base_tax = 1 
+./869 - Salinan.txt:base_tax = 1 
+./87 - Calais.txt:base_tax = 5 
+./870 - Yorkuts.txt:base_tax = 1 
+./871 - Pomo.txt:base_tax = 1 
+./872 - Kalapuya.txt:base_tax = 1
+./873 - Chinook.txt:base_tax = 3 
+./874 - Salish.txt:base_tax = 3 
+./875 - Canyon.txt:base_tax = 1 
+./876 - Yavapai.txt:base_tax = 1 
+./877 - Pima.txt:base_tax = 1 
+./878 - Navajo.txt:base_tax = 3 
+./879 - Apache.txt:base_tax = 1 
+./88 - Artois.txt:base_tax = 6 
+./88 - Artois.txt:1569.1.1 = { unrest = 7 } # The Duke of Alba reforms the taxation system ('tiende penning')
+./88 - Artois.txt:1789.5.5 = { base_tax = 10 
+./880 - Pueblo.txt:base_tax = 3 
+./881 - Piro.txt:base_tax = 2 
+./882 - Mescalero.txt:base_tax = 1
+./883 - Lipan.txt:base_tax = 1
+./884 - Karankawa.txt:base_tax = 1
+./885 - Comanche.txt:base_tax = 1 
+./886 - Waco.txt:base_tax = 1 
+./887 - Tonkawa.txt:base_tax = 1 
+./888 - Atakapa.txt:base_tax = 1
+./889 - Arapaho.txt:base_tax = 1 
+./89 - Picardie.txt:base_tax = 6 
+./89 - Picardie.txt:	base_tax = 5 
+./890 - Kiowa.txt:base_tax = 1 
+./891 - Jicarilla.txt:base_tax = 1 
+./892 - Wichita.txt:base_tax = 1
+./893 - Chitimacha.txt:base_tax = 2 
+./894 - Caddo.txt:base_tax = 1 
+./895 - Arkansas.txt:base_tax = 1 
+./896 - Ozark.txt:base_tax = 1 
+./897 - Quapaw.txt:base_tax = 1 
+./898 - Kansas.txt:base_tax = 1 
+./899 - Osage.txt:base_tax = 1 
+./9-Halsingland.txt:base_tax = 2 
+./90 - Vlaanderen.txt:base_tax = 6 
+./900 - Tamaroa.txt:base_tax = 1 
+./901 - Pawnee.txt:base_tax = 2 
+./902 - Missouri.txt:base_tax = 1 
+./903 - Omaha.txt:base_tax = 1 
+./904 - Nakota.txt:base_tax = 1 
+./905 - Iowa.txt:base_tax = 1
+./906 - Lakota.txt:base_tax = 1 
+./907 - Dakota.txt:base_tax = 1
+./908 - Minnesota.txt:base_tax = 1 
+./909 - Mandan.txt:base_tax = 1 
+./91 - Hainaut.txt:base_tax = 6 
+./91 - Hainaut.txt:1569.1.1 = { unrest = 10 } # The Duke of Alba reforms the taxation system ('tiende penning')
+./910 - Chippewa.txt:base_tax = 1 
+./911 - Menominee.txt:base_tax = 2 
+./912 - Sauk.txt:base_tax = 1 
+./913 - Fox.txt:base_tax = 1
+./914 - Winnebago.txt:base_tax = 1
+./915 - Illinois.txt:base_tax = 2 
+./916 - Kaskaskia.txt:base_tax = 1
+./917 - Cahokia.txt:base_tax = 1 
+./918 - Tennessee.txt:base_tax = 1 
+./919 - Chickasaw.txt:base_tax = 2 
+./92 - Brabant.txt:base_tax = 8 
+./92 - Brabant.txt:1719.2.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Under the guidance of guildmaster Anneesens, Brussels revolts against the Austrian taxation policy
+./92 - Brabant.txt:1798.10.12 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # The Flemish Peasant Rebellion
+./920 - Choctaw.txt:base_tax = 2 
+./921 - Bayougoula.txt:base_tax = 1
+./922 - Mobile.txt:base_tax = 1 
+./923 - Pensacola.txt:base_tax = 1
+./924 - Alabama.txt:base_tax = 1 
+./925 - Tuskegee.txt:base_tax = 2 
+./926 - Seminole.txt:base_tax = 1 
+./927 - Timucua.txt:base_tax = 1
+./928 - Apalachee.txt:base_tax = 1
+./929 - Muskogee.txt:base_tax = 2
+./93 - Liege.txt:base_tax = 6 
+./930 - Yamasee.txt:base_tax = 2 
+./931 - Chiaha.txt:base_tax = 3 
+./932 - Santee.txt:base_tax = 2 
+./933 - Catawba.txt:base_tax = 1 
+./934 - Shawnee.txt:base_tax = 1
+./935 - Cherokee.txt:base_tax = 3 
+./936 - Cheraw.txt:base_tax = 2 
+./937 - Tuscarora.txt:base_tax = 1 
+./938 - Pamlico.txt:base_tax = 1
+./939 - Pennyrile.txt:base_tax = 1 
+./94 - Luxemburg.txt:base_tax = 6 
+./94 - Luxemburg.txt:1569.1.1 = { unrest = 8 } # The Duke of Alba reforms the taxation system ('tiende penning')
+./94 - Luxemburg.txt:1789.5.5 = { base_tax = 9 
+./940 - Kentucky.txt:base_tax = 1
+./941 - Cumberland.txt:base_tax = 1
+./942 - Wea.txt:base_tax = 1
+./943 - Miami.txt:base_tax = 1 
+./944 - Potawatomi.txt:base_tax = 3 
+./945 - Michigan.txt:base_tax = 3 
+./946 - Wyandot.txt:base_tax = 1 
+./947 - Erie.txt:base_tax = 1 
+./948 - Ohio.txt:base_tax = 1
+./949 - Monacan.txt:base_tax = 1 
+./95 - Breda.txt:base_tax = 7 
+./95 - Breda.txt:1681.1.1 = { base_tax = 10 
+./950 - Powhatan.txt:base_tax = 1
+./950 - Powhatan.txt:1676.1.1 = { unrest = 6 } # Bacon's rebellion, high taxes, low prices for tobacco
+./951 - Kanawha.txt:base_tax = 1 
+./952 - Powhatan.txt:base_tax = 3 
+./953 - Conoy.txt:base_tax = 1
+./954 - Allegheny.txt:base_tax = 1
+./954 - Allegheny.txt:1794.6.1 = { unrest = 5 }	# Whiskey rebellion, opposition to federal taxation
+./955 - Susquehanna.txt:base_tax = 2 
+./956 - Lenape.txt:base_tax = 3 
+./957 - Delaware.txt:base_tax = 2 
+./958 - Seneca.txt:base_tax = 1
+./958 - Seneca.txt:1794.6.1 = { unrest = 7 } # Whiskey rebellion, opposition to federal taxation
+./958 - Seneca.txt:1799.1.1 = { unrest = 4 } # John Fries's "House tax rebellion" 
+./959 - Cayuga.txt:base_tax = 2 
+./96 - Zeeland.txt:base_tax = 8 
+./96 - Zeeland.txt:1681.1.1 = { base_tax = 6 
+./960 - Onondaga.txt:base_tax = 3 
+./961 - Oneida.txt:base_tax = 2 
+./962 - Unami.txt:base_tax = 1
+./963 - Mahican.txt:base_tax = 1 
+./964 - Mohawk.txt:base_tax = 3 
+./965 - Manhattan.txt:base_tax = 2 
+./966 - Nipmuc.txt:base_tax = 1 
+./967 - Narraganset.txt:base_tax = 1
+./968 - Massachusetts.txt:base_tax = 1 
+./969 - Pocumtuk.txt:base_tax = 2 
+./969 - Pocumtuk.txt:1799.1.1 = { base_tax = 2 base_production = 2 } # Federal tax on property
+./97 - Holland.txt:base_tax = 8 
+./97 - Holland.txt:1681.1.1 = { base_tax = 14 base_production = 14 } # Protestants expelled from France
+./970 - Pennacook.txt:base_tax = 1
+./971 - Abnaki.txt:base_tax = 3 
+./972 - Nootka.txt:base_tax = 1
+./973 - Squamish.txt:base_tax = 1
+./974 - Kwakiutl.txt:base_tax = 1
+./975 - Tsimshian.txt:base_tax = 1 
+./976 - Tlingit.txt:base_tax = 1 
+./977 - Yakutat.txt:base_tax = 1 
+./978 - Alaska.txt:base_tax = 1 
+./979 - Aleut.txt:base_tax = 1 
+./98 - Utrecht.txt:base_tax = 7 
+./98 - Utrecht.txt:1569.1.1 = { unrest = 12 } # The Duke of Alba reforms the taxation system ('tiende penning')
+./98 - Utrecht.txt:1681.1.1 = { base_tax = 10 
+./980 - Beothuk.txt:base_tax = 1 
+./981 - Taqamkuk.txt:base_tax = 1 
+./982 - Unamakik.txt:base_tax = 1
+./983 - Epekwitk.txt:base_tax = 1 
+./984 - Acadia.txt:base_tax = 1
+./985 - Micmac.txt:base_tax = 1
+./986 - Kespek.txt:base_tax = 1
+./987 - Niagara.txt:base_tax = 3 
+./988 - Huron.txt:base_tax = 3 
+./989 - Ontario.txt:base_tax = 1 
+./99 - Gelre.txt:base_tax = 6 
+./99 - Gelre.txt:1569.1.1 = { unrest = 12 } # The Duke of Alba reforms the taxation system ('tiende penning')
+./99 - Gelre.txt:1681.1.1 = { base_tax = 9 
+./990 - Kwedech.txt:base_tax = 1
+./991 - Ottawa.txt:base_tax = 1 
+./992 - Algonquin.txt:base_tax = 1 
+./993 - Hochelega.txt:base_tax = 2 
+./994 - Stadacona.txt:base_tax = 2 
+./995 - Atiamekw.txt:base_tax = 1
+./996 - Innu.txt:base_tax = 1 
+./997 - Labrador.txt:base_tax = 1 
+./998 - Ungava.txt:base_tax = 1 
+./999 - Nunavik.txt:base_tax = 1 
+./culture.txt:./2418 - Ukek.txt:1764.7.24 = { culture = hessian religion = catholic base_tax = 9 
+./culture.txt:./33-Neva.txt:1703.5.27 = { owner = RUS add_core = RUS capital = "St.Petersburg" culture = russian base_tax = 4 base_production = 4 } # St. Petersburg founded, Peter and Paul fortress

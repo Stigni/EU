@@ -2262,3 +2262,4 @@
  CS_EDIT_STATE_DESC: "Ihr könnt nun den Namen, die Farbe und die Flagge eures Untertanen ändern."
  WARSCORE_COST_CAPITAL: "Hauptstadt: $VALUE$\n"
  CS_EDIT_COLONY_DESC: "Ihr könnt nun den Namen Eures Untertanen ändern."
+ PEACEOFFER_HRE_RELIGIOUS_PEACE: "Dieser Handel führt zu einem Religionsfrieden im Kaiserreich."

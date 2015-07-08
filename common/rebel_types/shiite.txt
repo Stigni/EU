@@ -125,7 +125,10 @@ shiite_rebels = {
 	siege_won_effect = {
 		if = {
 			limit = {
-				religion = shiite
+				OR = {
+					religion = shiite
+					is_reformation_center = yes
+				}
 			}
 			add_province_modifier = {
 				name = "religious_violence"
@@ -135,6 +138,7 @@ shiite_rebels = {
 		if = {
 			limit = {
 				NOT = { religion = shiite }
+				is_reformation_center = no
 			}
 			change_religion = shiite
 			add_province_modifier = {

@@ -2775,14 +2775,6 @@ province_event = {
 				modifier = respected_tribe
 			}
 		}
-		owner = {
-			hidden_effect = {
-				country_event = {
-					id = seven_cities_events.501
-					days = 1
-				}
-			}
-		}
 	}
 	option = {
 		name = seven_cities_events.301.b
@@ -2790,14 +2782,6 @@ province_event = {
 			reverse_add_opinion = {
 				who = ROOT
 				modifier = insulted_tribe
-			}
-		}
-		owner = {
-			hidden_effect = {
-				country_event = {
-					id = seven_cities_events.502
-					days = 1
-				}
 			}
 		}
 	}
@@ -2987,6 +2971,10 @@ province_event = {
 			NOT = {
 				capital_scope = { continent = europe }
 			}
+			NOT = {
+				has_opinion_modifier = { who = FROM modifier = friendly_natives }
+				has_opinion_modifier = { who = FROM modifier = threatening_punishment }
+			}				
 		}
 		OR = {
 			continent = south_america
@@ -3011,29 +2999,6 @@ province_event = {
 				who = FROM
 				modifier = threatening_punishment
 			}
-			hidden_effect = {
-				country_event = {
-					id = seven_cities_events.503
-					days = 1
-				}
-			}
-			every_neighbor_country = {
-				limit = {
-					NOT = {
-						capital_scope = { continent = europe }
-					}
-				}
-				add_opinion = {
-					who = FROM
-					modifier = threatening_punishment
-				}
-				hidden_effect = {
-					country_event = {
-						id = seven_cities_events.503
-						days = 1
-					}
-				}
-			}
 		}
 	}
 	option = {
@@ -3045,29 +3010,6 @@ province_event = {
 			add_opinion = {
 				who = FROM
 				modifier = friendly_natives
-			}
-			hidden_effect = {
-				country_event = {
-					id = seven_cities_events.504
-					days = 1
-				}
-			}
-			every_neighbor_country = {
-				limit = {
-					NOT = {
-						capital_scope = { continent = europe }
-					}
-				}
-				add_opinion = {
-					who = FROM
-					modifier = friendly_natives
-				}
-				hidden_effect = {
-					country_event = {
-						id = seven_cities_events.504
-						days = 1
-					}
-				}
 			}
 		}
 	}
@@ -3391,12 +3333,12 @@ province_event = {
 					who = FROM
 					modifier = friendly_natives
 				}
-				hidden_effect = {
-					country_event = {
-						id = seven_cities_events.504
-						days = 1
-					}
-				}
+				#hidden_effect = {
+				#	country_event = {
+				#		id = seven_cities_events.504
+				#		days = 1
+				#	}
+				#}
 			}
 		}
 		if = {
@@ -3494,6 +3436,9 @@ province_event = {
 			NOT = {
 				capital_scope = { continent = europe }
 			}
+			NOT = {
+				has_opinion_modifier = { who = FROM modifier = friendly_natives }
+			}			
 		}
 		OR = {
 			continent = south_america
@@ -3515,12 +3460,12 @@ province_event = {
 				who = FROM
 				modifier = friendly_natives
 			}
-			hidden_effect = {
-				country_event = {
-					id = seven_cities_events.504
-					days = 1
-				}
-			}
+			#hidden_effect = {
+			#	country_event = {
+			#		id = seven_cities_events.504
+			#		days = 1
+			#	}
+			#}
 		}
 	}
 }

@@ -125,7 +125,10 @@ animism_rebels = {
 	siege_won_effect = {
 		if = {
 			limit = {
-				religion = animism
+				OR = {
+					religion = animism
+					is_reformation_center = yes
+				}
 			}
 			add_province_modifier = {
 				name = "religious_violence"
@@ -135,6 +138,7 @@ animism_rebels = {
 		if = {
 			limit = {
 				NOT = { religion = animism }
+				is_reformation_center = no
 			}
 			change_religion = animism
 			add_province_modifier = {

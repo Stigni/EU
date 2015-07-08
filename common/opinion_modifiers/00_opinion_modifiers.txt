@@ -2678,7 +2678,7 @@ angry_natives = {
 	yearly_decay = 1
 }
 friendly_natives = {
-	opinion = 50
+	opinion = 100
 	yearly_decay = 1
 }
 
@@ -2701,11 +2701,11 @@ declared_independence = {
 }
 
 respected_tribe = {
-	opinion = 25
+	opinion = 50
 	yearly_decay = 1
 }
 insulted_tribe = {
-	opinion = -25
+	opinion = -50
 	yearly_decay = 1
 }
 
@@ -2715,7 +2715,7 @@ cannibal_conquistador = {
 	yearly_decay = 1
 }
 threatening_punishment = {
-	opinion = -50
+	opinion = -100
 	yearly_decay = 1
 }
 sce_interfering_intruder = {

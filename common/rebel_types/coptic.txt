@@ -125,7 +125,10 @@ coptic_rebels = {
 	siege_won_effect = {
 		if = {
 			limit = {
-				religion = coptic
+				OR = {
+					religion = coptic
+					is_reformation_center = yes
+				}
 			}
 			add_province_modifier = {
 				name = "religious_violence"
@@ -135,6 +138,7 @@ coptic_rebels = {
 		if = {
 			limit = {
 				NOT = { religion = coptic }
+				is_reformation_center = no
 			}
 			change_religion = coptic
 			add_province_modifier = {

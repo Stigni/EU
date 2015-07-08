@@ -3798,6 +3798,7 @@
  FORT_MAINTENANCE_ECO_IRO: "Estamos pagando el mantenimiento de $PAID|Y$ fortalezas, mientras que actualmente $MOTH|Y$ están en la reserva."
  FORT_MAIN_NONC: "Solo se puede alternar el mantenimiento de las fortalezas que controles, ya que son las unicas por las que pagas."
  development: "desarrollo"
+ development_scaled: "desarrollo"
  DEVELOPMENT_LESS_THAN: "Desarrollo menos que $VAL|Y$.\n"
  DEVELOPMENT_AT_LEAST: "Desarrollo al menos que $VAL|Y$.\n"
  EMPTY_BUILDING_SLOT: "Este es un terreno vacio, puedes construir otro edificio aqui."
