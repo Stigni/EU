@@ -220,8 +220,14 @@ country_event = {
 
 	trigger = {
 		owns = 126	# Malta
+		num_of_cities = 2
+		capital_scope = {
+			NOT = { province_id = 126 }
+		}
+		NOT = { is_subject = yes }
 		is_at_war = no
 		NOT = { has_country_flag = KNIGHT_WANTS_MALTA }
+		NOT = { has_country_flag = knights_formed_jerusalem }
 		religion = catholic
 		NOT = { exists = KNI }
 	}

@@ -55,7 +55,9 @@ migrate_to_neighboring = {
 		}
 	}
 	effect = {
-		add_prestige = 10
-		add_dip_power = 10
+		FROM = {
+			add_prestige = 10
+			add_dip_power = 10
+		}
 	}
 }

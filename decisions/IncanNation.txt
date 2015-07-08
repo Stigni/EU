@@ -8,10 +8,14 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = INC }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
+			NOT = { tag = INC }
 			religion_group = pagan
+			OR = {
+				ai = no
+				NOT = { exists = INC }
+			}
 			OR = {
 				culture_group = andean_group
 				primary_culture = cara
@@ -31,6 +35,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = INC }
 			is_at_war = no
 			is_subject = no
 			owns_core_province = 808 #Qusqu

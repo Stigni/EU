@@ -457,7 +457,6 @@ country_event = {
 		government = republic
 		is_year = 1500
 		NOT = { is_year = 1550 }
-		adm_power = 100
 	}	
 
 	mean_time_to_happen = {
@@ -472,7 +471,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		add_adm_power = -100
+		add_adm_power = -50
 	}
 	option = {		
 		name = flavor_ven.15.b

@@ -149,6 +149,11 @@ convince_elector = {
 			religion_group = christian
 			num_of_cities = 4
 			is_female = no
+			NOT = { has_country_modifier = foreign_contacts }
+			OR = {
+				NOT = { has_country_flag = convinced_elector }
+				had_country_flag = { flag = convinced_elector days = 7300 }
+			}
 		}
 		hre_religion = FROM
 		has_opinion = { who = FROM value = 50 }
@@ -205,10 +210,12 @@ convince_elector = {
 		}	
 	}
 	effect = {
+		set_country_flag = convinced_elector
 		FROM = { 
-			add_prestige = 25
-			add_legitimacy = 10
-			add_dip_power = 50
+			add_country_modifier = {
+				name = "foreign_contacts"
+				duration = 3650
+			}
 		}
 	}
 }

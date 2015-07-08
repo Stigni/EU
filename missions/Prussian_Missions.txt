@@ -297,10 +297,6 @@ connect_the_prussian_lands = {
 		}
 		modifier = {
 			factor = 2
-			owns = 2995
-		}
-		modifier = {
-			factor = 2
 			owns = 1841
 		}
 	}
@@ -485,6 +481,7 @@ vassalize_prussia = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 		NOT = {
 			has_country_modifier = military_vassalization

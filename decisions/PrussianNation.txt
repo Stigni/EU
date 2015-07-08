@@ -9,7 +9,11 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			tag = BRA
-			NOT = { exists = PRU }
+			NOT = { tag = PRU }
+			OR = {
+				NOT = { exists = PRU }
+				ai = no
+			}
 			OR = {
 				ai = no
 				is_religion_enabled = protestant
@@ -17,6 +21,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = PRU }
 			adm_tech = 10
 			OR = {
 				religion = protestant
@@ -101,7 +106,11 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			tag = TEU
-			NOT = { exists = PRU }
+			NOT = { tag = PRU }
+			OR = {
+				NOT = { exists = PRU }
+				ai = no
+			}
 			OR = {
 				ai = no
 				is_religion_enabled = protestant
@@ -117,8 +126,8 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = PRU }
 			adm_tech = 10
-			is_subject = no
 			is_at_war = no
 			OR = {
 				religion = reformed
@@ -143,18 +152,6 @@ country_decisions = {
 					}
 				}
 				change_government = feudal_monarchy
-			}
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
 			}
 			every_neighbor_country = {
 				limit = { government = monarchy }
@@ -190,7 +187,11 @@ country_decisions = {
 				primary_culture = saxon
 				primary_culture = prussian
 			}
-			NOT = { exists = PRU }
+			NOT = { tag = PRU }
+			OR = {
+				NOT = { exists = PRU }
+				ai = no
+			}
 			NOT = { tag = GER }
 			NOT = { tag = HLR }
 			NOT = { tag = BRA }
@@ -200,6 +201,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = PRU }
 			adm_tech = 10
 			is_subject = no
 			is_at_war = no

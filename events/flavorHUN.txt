@@ -93,6 +93,7 @@ country_event = {
 		NOT = { num_of_unions = 1 }
 		any_country = {
 			is_subject = no
+			government = monarchy
 			dynasty = "von Habsburg"
 		}
 	}
@@ -119,6 +120,7 @@ country_event = {
 		every_country = {
 			limit = {
 				NOT = { tag = ROOT }
+				government = monarchy
 				dynasty = "von Habsburg"
 			}
 			tooltip = {
@@ -140,6 +142,7 @@ country_event = {
 		random_country = {
 			limit = {
 				is_subject = no
+				government = monarchy
 				dynasty = "von Habsburg"
 			}
 			create_union = HUN
@@ -497,6 +500,7 @@ country_event = {
 		define_advisor = {
 			type = statesman
 			name = "Tamás Bakócz"
+			discount = yes
 			skill = 2
 		}
 		if = {

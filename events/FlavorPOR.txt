@@ -432,6 +432,7 @@ country_event = {
 		define_advisor = {
 			type = statesman
 			name = "Dom Luís de Meneses"
+			discount = yes
 			skill = 2
 		}
 	}
@@ -795,23 +796,19 @@ country_event = {
 
 		NOT = { is_year = 1650 }
 
-		OR = {
+		any_active_trade_node = {
+			OR = {
+				region = indian_coast
+				region = indonesian_region
+				region = pacific_ocean_islands
+			}
+		}
+		NED = {
 			any_active_trade_node = {
 				OR = {
 					region = indian_coast
 					region = indonesian_region
 					region = pacific_ocean_islands
-				}
-			}
-		}
-		NED = {
-			OR = {
-				any_active_trade_node = {
-					OR = {
-						region = indian_coast
-						region = indonesian_region
-						region = pacific_ocean_islands
-					}
 				}
 			}
 		}
@@ -1006,9 +1003,21 @@ country_event = {
 
 	option = {		# Glorious!
 		name = "flavor_por.EVTOPTA11"
-	
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				overextension_percentage = 1.5
+			}
+		}
 		2030 = { cede_province = POR }
-		add_core = 2030
+		add_claim = 2030
+		add_prestige = 10
+	}
+	option = {		# Glorious!
+		name = "flavor_por.EVTOPTB11"
+		ai_chance = { factor = 10 }
+		add_claim = 2030
 		add_prestige = 10
 	}
 }

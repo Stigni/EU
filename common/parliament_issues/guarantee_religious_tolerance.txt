@@ -9,14 +9,56 @@ guarantee_religious_tolerance = {
 		NOT = { has_idea_group = religious_ideas }
 	}
 	
-	effect = {
+	on_issue_taken = {
+		every_owned_province = {
+			clr_province_flag = guarantee_religious_tolerance_flag
+		}
 		random_owned_province = {
 			limit = {
-				has_owner_religion = no
+				is_in_capital_area = yes
 			}
-			add_province_modifier = {
-				name = "provincial_religious_migration"
-				duration = 3650
+			set_province_flag = guarantee_religious_tolerance_flag
+		}
+	}
+	
+	effect = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_owner_religion = no
+				}
+				add_province_modifier = {
+					name = "provincial_religious_migration"
+					duration = 3650
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_owned_province = {
+						has_province_flag = guarantee_religious_tolerance_flag
+					}
+				}
+			}
+			tooltip = {
+				custom_tooltip = guarantee_religious_tolerance_tooltip
+			}
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					has_province_flag = guarantee_religious_tolerance_flag
+				}
+			}
+			tooltip = {
+				every_owned_province = {
+					limit = { has_province_flag = guarantee_religious_tolerance_flag }
+					add_province_modifier = {
+						name = "provincial_religious_migration"
+						duration = 3650
+					}
+				}
 			}
 		}
 	}
@@ -24,7 +66,6 @@ guarantee_religious_tolerance = {
 	modifier = {
 		tolerance_heretic = 1
 		tolerance_heathen = 1
-		religious_unity = 0.1
 	}
 
 	ai_will_do = {

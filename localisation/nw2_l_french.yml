@@ -107,7 +107,6 @@
  temperate: "Tempéré"
  SupportIndependenceREQDESC: "§Y$ACTOR$§! demande à ce que nous soutenions son indépendance. Si nous l'acceptons, cela signifie que nous serons appelés à participer à une guerre d'indépendance. Devons-nous accepter ?"
  ALREADY_CALLED_TO_ARMS: "A déjà été appelé à intervenir dans une guerre en cours."
- NO_RANDOM_MOD: "Le Nouveau Monde aléatoire n'est pas disponible à cause de ces mods ou DLC :"
  LIBERATECOLONY: "libération colonie"
  PROTECTORATES_NOT_ADVANCED: "Nous ne sommes pas assez avancés pour créer des protectorats."
  OWNED_BY_OR_VASSALS: "Possédé par §Y$COUNTRY$§! ou ses sujets."

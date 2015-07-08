@@ -927,8 +927,6 @@ country_event = {
 			1138 = {
 				add_core = ASH
 				cede_province = ASH
-				infantry = ASH
-				cavalry = ASH
 			}
 		}
 		if = {
@@ -938,7 +936,6 @@ country_event = {
 			2257 = {
 				add_core = ASH
 				cede_province = ASH
-				infantry = ASH
 			}
 		}
 		set_country_flag = met_ashanti

@@ -138,6 +138,7 @@ country_event = {
 			type = philosopher
 			name = "Immanuel Kant"
 			skill = 3
+			discount = yes
 		}
 	}
 }
@@ -452,6 +453,7 @@ country_event = {
 			type = natural_scientist
 			name = "Leonhard Thurneysser"
 			skill = 2
+			discount = yes
 		}
 	}
 	option = {

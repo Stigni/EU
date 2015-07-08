@@ -19,8 +19,10 @@ country_decisions = {
 			OR = {
 				ai = no
 				AND = {
-					ai = yes
-					num_of_cities = 5
+					owns_core_province = 53	# Lüneburg
+					owns_core_province = 54	# Stade
+					owns_core_province = 1758	# Hannover
+					owns_core_province = 2971	# Hoya
 				}
 			}			
 			OR = {
@@ -37,7 +39,7 @@ country_decisions = {
 			is_subject = no
 			is_at_war = no
 			OR = {
-				is_part_of_hre = no
+				NOT = { is_part_of_hre = yes }
 				is_elector = yes
 			}
 			owns_core_province = 53	# Lüneburg
@@ -118,8 +120,11 @@ country_decisions = {
 			OR = {
 				ai = no
 				AND = {
-					ai = yes
-					num_of_cities = 5
+					owns_core_province = 52	# Magdeburg
+					owns_core_province = 82	# Westfalen
+					owns_core_province = 1758	# Hannover
+					owns_core_province = 1762	# Kassel
+					owns_core_province = 2972	# Paderborn
 				}
 			}			
 			OR = {
@@ -136,7 +141,7 @@ country_decisions = {
 			is_at_war = no
 			OR = {
 				is_elector = yes
-				is_part_of_hre = no
+				NOT = { is_part_of_hre = yes }
 			}
 			capital_scope = {
 				region = westphalian_region
@@ -169,7 +174,7 @@ country_decisions = {
 				add_claim = WES
 			}
 			add_prestige = 25
-			change_government = constitutional_monarchy
+			change_government = administrative_monarchy
 			WES = {
 				set_capital = 1762 # Kassel
 			}
@@ -204,7 +209,7 @@ country_decisions = {
 				ai = no
 				AND = {
 					ai = yes
-					num_of_cities = 3
+					num_of_cities = 5
 				}
 			}			
 			OR = {
@@ -266,6 +271,10 @@ country_decisions = {
 					NOT = { capital_scope = { region = greece_region } }
 				}
 				set_capital = 146
+			}
+			if = {
+				limit = { NOT = { has_idea_group = greek_ideas } }
+				swap_free_idea_group = yes
 			}
 		}
 		ai_will_do = {

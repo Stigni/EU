@@ -344,6 +344,7 @@ country_event = {
 			type = spymaster
 			name = "Jöran Persson"
 			location = 4
+			discount = yes
 			skill = 2
 		}
 	}
@@ -378,6 +379,7 @@ country_event = {
 		define_advisor = {
 			type = statesman
 			name = "Per Brahe den äldre"
+			discount = yes
 			location = 1
 			skill = 3
 		}
@@ -543,6 +545,7 @@ country_event = {
 			type = statesman
 			name = "Per Brahe den yngre"
 			location = 1
+			discount = yes
 			skill = 3
 		}
 	}
@@ -579,6 +582,7 @@ country_event = {
 		define_advisor = {
 			type = statesman
 			name = "Magnus Gabriel De la Gardie"
+			discount = yes
 			location = 36
 			skill = 2
 		}
@@ -857,7 +861,7 @@ country_event = {
 				is_in_capital_area = yes
 				culture = swedish
 			}
-			add_manpower = 1
+			add_base_manpower = 1
 		}
 	}
 }
@@ -976,7 +980,7 @@ country_event = {
 				is_in_capital_area = yes
 			}
 			add_base_tax = 2
-			add_manpower = 1
+			add_base_manpower = 1
 			set_province_flag = reduction_of_charles_xi
 		}
 		random_owned_province = {

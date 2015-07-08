@@ -7,6 +7,7 @@ NGame = {
 },
 
 NDiplomacy = {
+	OFFENSIVE_WAR_COOLDOWN = 10,					-- Years between when you can call a country into an offensive war on your behalf
 	MAX_CLIENT_STATES = 10,							-- Max client states for one country
 
 	ALLOW_LEADER_DEMAND_TOGGLE = 0,					-- Whether or not player is allowed to set if warleader can negotiate for them
@@ -20,19 +21,20 @@ NDiplomacy = {
 	PEACE_IMPACT_MIL_SCORE = 0.25,
 
 
-	AUTONOMY_WARSCORE_COST_MODIFIER = 0.5,			-- How much autonomy reduces score by (at 1, 50% autonomy = 50% reduction)	
+	AUTONOMY_WARSCORE_COST_MODIFIER = 0.33,			-- How much autonomy reduces score by (at 1, 50% autonomy = 50% reduction)	
 	RIVAL_PRESTIGE_BONUS = 0.25,
 	RIVAL_SPY_OFFENCE = 0.20,
 	OVEREXTENSION_THRESHOLD = 1.0,				-- at which threshold you can get events
 	OVEREXTENSTION_POLL_BASE = 365,				-- days between at lower.
 	OVEREXTENSTION_POLL_CHANGE = 0.05,				-- each % reduces with this.
 	RIVAL_PEACE_COST_REDUCTION = -0.33,	
+	MAX_PEACE_TREATY_COST = 200,					-- in diplo power
 	DESIRED_NUM_OF_ELECTORS = 7,
 	MAX_FREE_CITIES = 7,
 	MIN_NUM_ELECTORS_FOR_REMOVE_ELECTORATE = 2,		-- Limit is inclusive.
 	HRE_PRINCE_AUTHORITY_THRESHOLD = 25,			-- Threshold below which you lose IA, and above which you gain it
-	IMPERIAL_AUTHORITY_FROM_PRINCES = 0.2,			-- Scales to threshold
-	HRE_FOREIGN_CONTROL_PENALTY = -0.01,			-- Each foreign-controlled province in the empire (owned or vassalised) lowers IA by this amount
+	IMPERIAL_AUTHORITY_FROM_PRINCES = 0.1,			-- Scales to threshold
+	HRE_FOREIGN_CONTROL_PENALTY = -0.005,			-- Each foreign-controlled province in the empire (owned or vassalised) lowers IA by this amount
 	HRE_HERETIC_PENALTY = -0.01,					-- Per heretic prince (halved by Peace of Westphalia)
 	LACK_OF_ELECTORS_HIT = -0.1,					-- Also applied to vassalized electors
 	IMPERIAL_REFORM_COST = 50,						-- Minium Cost of enacting a new reform.
@@ -66,18 +68,19 @@ NDiplomacy = {
 	AE_SAME_RELIGION_GROUP = 0.0,
 	AE_DIFFERENT_RELIGION = -0.5,
 	AE_HRE_INTERNAL = 0.5,
-	AE_ATTACKER_PROVINCE = 0.0,
+	AE_ATTACKER_DEVELOPMENT = 0.001,	-- +50% cap (at 500 development)
 	AE_DISTANCE_BASE = 0.75,
 	AE_SAME_OVERLORD = 0.5,	
+	AE_PROVINCE_CAP = 30,				-- Province development above this will not count for AE (also used for warscore cost cap)
 	
 	AE_FABRICATE_CLAIM = 5,
 	AE_TRADE_CONFLICT = 5,
 	
 	-- Peace Option Effects, base values for the winner. The loser gets the inverse.
 	PO_DEMAND_PROVINCES_AE = 0.5, 				-- _DDEF_PO_DEMAND_PROVINCES_AE = 10, (Per development)
-	PO_RETURN_CORES_AE = 0.35, 					-- (Per core, only applied if returning cores to vassals of winner)
+	PO_RETURN_CORES_AE = 0.4, 					-- (Per core, only applied if returning cores to vassals of winner)
 	PO_FORM_PU_AE = 0.25, 							-- _DDEF_PO_FORM_PU_AE = 10, (Per development)
-	PO_BECOME_VASSAL_AE = 0.35, 					-- _DDEF_PO_BECOME_VASSAL_AE = 10, (Per development)
+	PO_BECOME_VASSAL_AE = 0.4, 					-- _DDEF_PO_BECOME_VASSAL_AE = 10, (Per development)
 	PO_BECOME_PROTECTORATE_AE = 0.25, 					-- _DDEF_PO_BECOME_VASSAL_AE = 10, (Per development)
 	PO_ANNEX_PRESTIGE = 0.25, 						-- _DDEF_PO_ANNEX_PRESTIGE = 10, (No effect on loser :)
 	PO_DEMAND_PROVINCES_PRESTIGE = 0.25, 				-- _DDEF_PO_DEMAND_PROVINCES_PRESTIGE = 10, (Per development)
@@ -189,12 +192,17 @@ NDiplomacy = {
 	GRANT_ELECTORATE_INFLUENCE = 0,					-- The amount of AI Grant Electorate gives.
 	GRANT_FREECITY_INFLUENCE = 0,					-- The amount of IA Grant Free Gity gives.
 	REMOVE_FREECITY_INFLUENCE_COST = 5,				-- The amount of IA Grant Free Gity costs.
-	IMPERIAL_CITY_IA = 0.01,						-- Monthly per imperial free city
+	IMPERIAL_CITY_IA = 0.005,						-- Monthly per imperial free city
 },
 
 NCountry = {
 	MIN_DEV_FOR_FREE_CITY = 10,					-- Capital must have at least this much development to be a free city
 	MAX_PROVINCES_FOR_FREE_CITY = 1,			-- A free city cannot have more provinces than this
+	
+	HRE_RANK = 3,								-- Emperor of the HRE is displayed as this rank (for ruler title only)
+	HRE_MAX_RANK = 1,							-- for members
+	HRE_MAX_RANK_ELECTOR = 2,					-- for electors	
+	SUBJECT_MAX_RANK = 1,						-- max government rank of subjects
 	
 	PRESTIGE_GAIN_FOR_GOV_RANK_2 = 10,			-- Prestige gained on upgrading to government rank 2
 	PRESTIGE_GAIN_FOR_GOV_RANK_3 = 25,			-- Prestige gained on upgrading to government rank 3
@@ -257,7 +265,8 @@ NCountry = {
 	PIETY_PERCENTAGE_AT_NEW_RULER = 0.25,			-- percentage of piety kept at new ruler.
 	PIETY_INCREASE_AT_GOOD_WAR = 0.25,
 	PIETY_DECREASE_AT_BAD_WAR = -0.33,
-	ADVISOR_COST_INCREASE_PER_YEAR = 0.01,			-- yearly increase in price in percent,
+	ADVISOR_COST_INCREASE_PER_YEAR = 0.005,			-- yearly increase in price in percent,
+	SCRIPTED_ADVISOR_DISCOUNT = 0.5,				-- Multiplier on cost for advisors scripted with discount=yes
 	MINIMUM_ADVISOR_DURATION = 10, 					-- _CDEF_MINIMUM_ADVISOR_DURATION_
 	MINIMUM_ADVISOR_DURATION_CHANCE_VALUE = 15,		-- Higher value here gives lower daily death chance after MINIMUM_ADVISOR_DURATION
 	ADVISOR_CUT_OFF_AGE = 30, 						-- _CDEF_ADVISOR_CUT_OFF_AGE = 10,
@@ -318,9 +327,9 @@ NCountry = {
 	PS_RAISE_WAR_TAXES = 50,
 	PS_CREATE_TRADE_POST = 50,
 	PS_IMPROVE_PROVINCE_BASE = 50,
-	PS_IMPROVE_PROVINCE_MUL = 5,
+	PS_IMPROVE_PROVINCE_MUL = 0,
 	
-	CORE_COLONY = 0.75,								-- Multiplied with development, colonized by country or overseas
+	CORE_COLONY = 0.5,								-- Multiplied with development, colonized by country or overseas
 	CORE_OVERSEAS = 0.5,							-- Multiplied with development, colonized by country or overseas
 	CORE_SAME_REGION = 0.25,						-- Multiplied with development, for colonial nations 
 	CORE_SAME_CONTINENT = 0.75,						-- Multiplied with development, for colonial nations
@@ -439,7 +448,7 @@ NCountry = {
 	ENFORCE_RELIGION_LIBERTY_THRESHOLD = 50,
 	ENFORCE_CULTURE_LIBERTY = 50,
 	ENFORCE_CULTURE_LIBERTY_THRESHOLD = 50,
-	ENFORCE_CULTURE_TAX_MULTIPLIER = 1,
+	ENFORCE_CULTURE_TAX_MULTIPLIER = 2,
 	SIPHON_INCOME_FRACTION = 0.5,
 	SIPHON_INCOME_LIBERTY = 10,
 	DIVERT_TRADE_FRACTION = 1,
@@ -494,7 +503,7 @@ NEconomy = {
 	BASE_INTERESTS = 4.0,							-- Base interests
 	LAND_MAINTENANCE_FACTOR = 0.25,					-- _EDEF_LAND_MAINTENANCE_FACTOR
 	HEAVY_SHIP_MAINT_FACTOR = 0.10,					-- _EDEF_HEAVY_SHIP_MAINT_FACTOR_
-	LIGHT_SHIP_MAINT_FACTOR = 0.05,					-- _EDEF_LIGHT_SHIP_MAINT_FACTOR_
+	LIGHT_SHIP_MAINT_FACTOR = 0.03,					-- _EDEF_LIGHT_SHIP_MAINT_FACTOR_
 	GALLEY_MAINT_FACTOR = 0.04,						-- _EDEF_GALLEY_MAINT_FACTOR_
 	TRANSPORT_MAINT_FACTOR = 0.04,					-- _EDEF_TRANSPORT_MAINT_FACTOR_
 	COLONIAL_MAINTENANCE_FACTOR = 8.0,				-- _EDEF_COLONIAL_MAINTENANCE_FACTOR_
@@ -541,6 +550,7 @@ NEconomy = {
 },
 
 NMilitary = {
+	FORT_PER_DEV_RATIO = 50,						-- 1 non-obsolete maintained fort per this amount of development = +1 AT
 	MOVE_LOCK_PERCENTAGE = 0.5,						-- Unit movement is locked after this percentage of progress
 	REGULAR_LEADER_POWER = 1,						-- Used for generals & admirals (affects total pips)
 	EXPLORER_LEADER_POWER = 0.8,					-- Used for conquistadors & explorers (affects total pips)
@@ -653,6 +663,8 @@ NMilitary = {
 	INF_LOOT = 0.1,								-- How many ducats/month will a single full strength infantry regiment loot?
 	CAV_LOOT = 0.3,								-- How many ducats/month will a single full strength cavalry regiment loot?
 	ART_LOOT = 0.05,							-- How many ducats/month will a single full strength artillery regiment loot?
+	FORT_FLIPPING_TIME = 30,					-- Number of days it takes an influencing fort to revert the control of a province if left unhindered.
+	STACKWIPE_MANPOWER_RETURN_FRACTION = 0.5,	-- Fraction of manpower that returns to pool when a stack is wiped.
 },
 
 NAI = {
@@ -673,7 +685,7 @@ NAI = {
 	BIGSHIP_FRACTION = 0.4,	-- The proportion of big ships in an AI navy of light ships and big ships (for coastal sea countries, this fraction is mostly galleys)
 	ARTILLERY_FRACTION = 0.35, 	-- Ratio of artillery to infantry AI will build
 	FORCE_COMPOSITION_CHANGE_TECH_LEVEL = 11, -- Tech level at which AI will double its artillery fraction
-	TRANSPORT_FRACTION = 0.3, -- Max fraction of naval forcelimit that should be transports
+	TRANSPORT_FRACTION = 0.5, -- Max fraction of naval forcelimit that should be transports
 	INCOME_SAVINGS_FRACTION = 0.25, -- AI will reserve this amount of their surplus for long-term savings
 	OVER_FORCELIMIT_AVOIDANCE_FACTOR = 10, -- The higher this number is, the less willing the AI will be to exceed forcelimits
 	DESIRED_SURPLUS = 0.1, -- AI will aim for having at least this fraction of their income as surplus when they don't have large savings
@@ -695,6 +707,7 @@ NAI = {
 	CALL_IN_ALLIES_POWER_RATIO = 4.0, -- AI will only call in allies in an offensive war if their military power ratio to the enemy is less than this
 	NUM_GREAT_POWER_ALLIES_ALLOWED = 0, -- Number of Great Power allies allowed before a penalty is applied to alliance chance
 	GREAT_POWER_ALLIANCE_PENALTY = 0, -- Penalty on alliance chance for having more GP allies than allowed
+	POWERFUL_ALLY_PENALTY = 50,	-- Penalty on alliance for them already having a powerful ally if much stronger
 	RIVAL_ALLIANCE_PENALTY = 50, -- Penalty on alliance chance for being allied to rivals
 
 	PEACE_BASE_RELUCTANCE = 0, -- AI base stubbornness to refuse peace (always applied)
@@ -959,6 +972,10 @@ NGraphics = {
 	BORDER_COLOR_CUSTOM_HIGHLIGHT_G = 0.61,
 	BORDER_COLOR_CUSTOM_HIGHLIGHT_B = 0.75,
 	BORDER_COLOR_CUSTOM_HIGHLIGHT_A = 1.0,
+	BORDER_COLOR_CUSTOM_TEMP_HIGHLIGHT_R = 0.61, --for find province
+	BORDER_COLOR_CUSTOM_TEMP_HIGHLIGHT_G = 0.0,
+	BORDER_COLOR_CUSTOM_TEMP_HIGHLIGHT_B = 0.75,
+	BORDER_COLOR_CUSTOM_TEMP_HIGHLIGHT_A = 1.0,
 	DRAW_REFRACTIONS_CUTOFF = 250,
 	DRAW_SHADOWS_CUTOFF = 500,
 	AGGRESSIVE_EXPANSION_MAX_R = 1.0,
@@ -1123,7 +1140,7 @@ NReligion = {
 	MAX_PAPAL_INFLUENCE = 200.0,								-- The maximum stored amount of papal influence for each country.
 	REFORM_DESIRE_PER_YEAR = 0.005,								-- Increase of reform descire for each year.
 	MINIMUM_DEVELOPMENT_ALLOWED = 10.0,								-- You will need a higher development than this for your province to be eligible for cardinal
-	COUNTRY_DEVELOPMENT_DIVIDER = 50.0,							-- When a cardinal is chosen the formula is diving a countrys development by this number.
+	COUNTRY_DEVELOPMENT_DIVIDER = 100.0,							-- When a cardinal is chosen the formula is diving a countrys development by this number.
 	INVEST_PAPAL_INFLUENCE = 10.0,								-- The amount of papal influence you invest in becoming controller of the curia.
 	NUMBER_OF_POSSIBLE_CARDINALS = 10,							-- Number of cardinals from said number of most successful provinces to be randomly picked from.
 	
@@ -1141,6 +1158,7 @@ NReligion = {
 	KARMA_TOO_LOW = -50,
 	KARMA_JUST_RIGHT_HIGH = 25,
 	KARMA_JUST_RIGHT_LOW = -25,
+	KARMA_RESTORE_ON_RULER_DEATH = 25,
 },
 
 NNationDesigner = {

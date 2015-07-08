@@ -12,7 +12,18 @@ conquer_bombay = {
 		religion_group = christian
 		OR = {
 			technology_group = western
-			ai = no
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
 		}
 		OR = {
 			has_idea_group = expansion_ideas
@@ -125,7 +136,18 @@ conquer_goa = {
 		religion_group = christian
 		OR = {
 			technology_group = western
-			ai = no
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
 		}
 		OR = {
 			has_idea_group = expansion_ideas
@@ -234,7 +256,18 @@ conquer_madras = {
 		religion_group = christian
 		OR = {
 			technology_group = western
-			ai = no
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
 		}
 		OR = {
 			has_idea_group = expansion_ideas
@@ -347,7 +380,18 @@ conquer_pondicherry = {
 		religion_group = christian
 		OR = {
 			technology_group = western
-			ai = no
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
 		}
 		OR = {
 			has_idea_group = expansion_ideas
@@ -462,7 +506,18 @@ conquer_diu = {
 		religion_group = christian
 		OR = {
 			technology_group = western
-			ai = no
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
 		}
 		OR = {
 			has_idea_group = expansion_ideas
@@ -571,7 +626,18 @@ conquer_calcutta = {
 		religion_group = christian
 		OR = {
 			technology_group = western
-			ai = no
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
 		}
 		OR = {
 			has_idea_group = expansion_ideas
@@ -683,7 +749,18 @@ conquer_kotte = {
 		religion_group = christian
 		OR = {
 			technology_group = western
-			ai = no
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
 		}
 		OR = {
 			has_idea_group = expansion_ideas
@@ -797,7 +874,18 @@ conquer_kochin = {
 		religion_group = christian
 		OR = {
 			technology_group = western
-			ai = no
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
 		}
 		OR = {
 			has_idea_group = expansion_ideas
@@ -905,7 +993,18 @@ make_base_on_spice_islands = {
 		religion_group = christian
 		OR = {
 			technology_group = western
-			ai = no
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
 		}
 		NOT = { has_country_flag = spice_islands_completed }
 		NOT = { has_country_modifier = east_india_trade_rush }
@@ -982,7 +1081,18 @@ conquer_macau = {
 		religion_group = christian
 		OR = {
 			technology_group = western
-			ai = no
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
 		}
 		OR = {
 			has_idea_group = expansion_ideas
@@ -1083,7 +1193,18 @@ conquer_ningbo = {
 		religion_group = christian
 		OR = {
 			technology_group = western
-			ai = no
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
 		}
 		OR = {
 			has_idea_group = expansion_ideas
@@ -1184,7 +1305,18 @@ conquer_canton = {
 		religion_group = christian
 		OR = {
 			technology_group = western
-			ai = no
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
 		}
 		OR = {
 			has_idea_group = expansion_ideas

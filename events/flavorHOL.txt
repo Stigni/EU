@@ -38,6 +38,7 @@ country_event = {
 			define_advisor = {
 				type = philosopher
 				name = "Erasmus"
+				discount = yes
 				skill = 3
 			}
 		}
@@ -78,6 +79,7 @@ country_event = {
 			define_advisor = {
 				type = statesman
 				name = "Hugo Grotius"
+				discount = yes
 				skill = 3
 				location = 97 #Holland
 			}
@@ -117,6 +119,7 @@ country_event = {
 			define_advisor = {
 				type = treasurer
 				name = "Christiaan Huygens"
+				discount = yes
 				skill = 2
 				location = 97
 			}
@@ -156,6 +159,7 @@ country_event = {
 			define_advisor = {
 				type = navigator
 				name = "Mercator"
+				discount = yes
 				skill = 2
 				location = 92 #Brabant
 			}
@@ -605,6 +609,7 @@ country_event = {
 		define_advisor = {
 			type = natural_scientist
 			name = "Simon Stevin"
+			discount = yes
 			skill = 3
 			location = 97
 		}
@@ -1167,6 +1172,7 @@ country_event = {
 	
 	trigger = {
 		tag = NED
+		exists = FRA
 		is_year = 1650
 		OR = {
 			religion = protestant
@@ -1174,10 +1180,10 @@ country_event = {
 		}
 		FRA = {
 			religion = catholic
-		}
-		OR = {
-			NOT = { has_country_modifier = edict_de_nantes }
-			is_neighbor_of = NED
+			OR = {
+				NOT = { has_country_modifier = edict_de_nantes }
+				is_neighbor_of = NED
+			}
 		}
 	}
 	
@@ -1407,6 +1413,7 @@ country_event = {
 			define_advisor = {
 				type = philosopher
 				name = "Baruch Spinoza"
+				discount = yes
 				skill = 3
 				location = 97
 			}
@@ -1414,4 +1421,3 @@ country_event = {
 		
 	}
 }
-

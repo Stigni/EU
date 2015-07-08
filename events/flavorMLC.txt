@@ -160,7 +160,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		TAG = MLC
+		tag = MLC
 		is_year = 1450
 		NOT = { is_year = 1500 }
 	}

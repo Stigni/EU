@@ -8,7 +8,11 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = RUS }
+			NOT = { tag = POL }
+			OR = {
+				NOT = { exists = RUS }
+				ai = no
+			}
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			primary_culture = russian
@@ -29,6 +33,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = RUS }
 			adm_tech = 10
 			is_subject = no
 			is_at_war = no

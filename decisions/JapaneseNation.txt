@@ -19,6 +19,7 @@ country_decisions = {
 		}
 		effect = {
 			change_government = feudal_monarchy
+			set_government_rank = 3
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -65,6 +66,7 @@ country_decisions = {
 		}
 		effect = {
 			change_government = feudal_monarchy
+			set_government_rank = 3
 			add_legitimacy = 100
 			add_adm_power = 100
 			add_dip_power = 100
@@ -110,7 +112,7 @@ country_decisions = {
 				}
 			}
 			change_government = feudal_monarchy
-			set_government_rank = 2 #Daimyo was always 1
+			set_government_rank = 3
 			add_legitimacy = 100
 			add_adm_power = 100
 			add_dip_power = 100

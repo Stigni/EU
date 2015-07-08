@@ -18,10 +18,8 @@ country_event = {
 	
 	
 	trigger = {
-		AND = {
-			tag = CAS
-			NOT = { exists = SPA }
-		}
+		tag = CAS
+		NOT = { exists = SPA }
 		is_year = 1450
 		NOT = { is_year = 1530 }
 		is_subject = no
@@ -145,6 +143,7 @@ country_event = {
 			type = inquisitor
 			name = "Tomás de Torquemada"
 			location = 215 # Castilla La Vieja 
+			discount = yes
 			skill = 1
 		}
 		
@@ -341,7 +340,8 @@ country_event = {
 		define_advisor = {
 			type = theologian 
 			name = "Ignacio de Loyola"
-			skill = 1
+			discount = yes
+			skill = 2
 		}
 	}
 }
@@ -831,6 +831,7 @@ country_event = {
 		define_advisor = {
 			type = statesman
 			name = "Baltasar de Zuniga"
+			discount = yes
 			skill = 3
 		}
 	}
@@ -868,6 +869,7 @@ country_event = {
 		define_advisor = {
 			type = statesman
 			name = "Conde-Duque Olivares"
+			discount = yes
 			skill = 3
 		}
 	}
@@ -1152,7 +1154,8 @@ country_event = {
 		define_advisor = {
 			type = statesman
 			name = "Giulio Alberoni"
-			skill = 1
+			discount = yes
+			skill = 2
 		}
 	}
 }
@@ -1183,6 +1186,7 @@ country_event = {
 		define_advisor = {
 			type = statesman
 			name = "José Monino"
+			discount = yes
 			skill = 3
 		}
 	}
@@ -1916,8 +1920,16 @@ country_event = {
 				is_core = GRA
 			}
 			change_religion = catholic
-			change_culture = castillian
 			remove_core = GRA
+		}
+		every_owned_province = {
+			limit = {
+				culture = andalucian
+				owner = {
+					NOT = { primary_culture = castillian }
+				}
+			}
+			change_culture = castillian
 		}
 		#Repeat of effect from earlier persecutions:
 		random_country = {

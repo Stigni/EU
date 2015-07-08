@@ -843,7 +843,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA4032"	# His efforts will be admired throughout the nation
+		name = "EVTOPTA4104"	# His efforts will be admired throughout the nation
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -860,7 +860,7 @@ country_event = {
 	}
 		
 	option = {
-		name = "EVTOPTB4032"	# His reputation will reach further than our borders
+		name = "EVTOPTB4104"	# His reputation will reach further than our borders
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -912,7 +912,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA4032"	# His efforts will be admired throughout the nation
+		name = "EVTOPTA4110"	# His efforts will be admired throughout the nation
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -929,7 +929,7 @@ country_event = {
 	}
 		
 	option = {
-		name = "EVTOPTB4032"	# His reputation will reach further than our borders
+		name = "EVTOPTB4110"	# His reputation will reach further than our borders
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -981,7 +981,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA4032"	# His efforts will be admired throughout the nation
+		name = "EVTOPTA4114"	# His efforts will be admired throughout the nation
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -998,7 +998,7 @@ country_event = {
 	}
 
 	option = {
-		name = "EVTOPTB4032"	# His reputation will reach further than our borders
+		name = "EVTOPTB4114"	# His reputation will reach further than our borders
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1050,7 +1050,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA4032"	# His efforts will be admired throughout the nation
+		name = "EVTOPTA4115"	# His efforts will be admired throughout the nation
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1067,7 +1067,7 @@ country_event = {
 	}
 
 	option = {
-		name = "EVTOPTB4032"	# His reputation will reach further than our borders
+		name = "EVTOPTB4115"	# His reputation will reach further than our borders
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1120,7 +1120,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA4032"	# His efforts will be admired throughout the nation
+		name = "EVTOPTA4116"	# His efforts will be admired throughout the nation
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1137,7 +1137,7 @@ country_event = {
 	}
 
 	option = {
-		name = "EVTOPTB4032"	# His reputation will reach further than our borders
+		name = "EVTOPTB4116"	# His reputation will reach further than our borders
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1189,7 +1189,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA4032"	# His efforts will be admired throughout the nation
+		name = "EVTOPTA4117"	# His efforts will be admired throughout the nation
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1206,7 +1206,7 @@ country_event = {
 	}
 
 	option = {
-		name = "EVTOPTB4032"	# His reputation will reach further than our borders
+		name = "EVTOPTB4117"	# His reputation will reach further than our borders
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1258,7 +1258,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA4032"	# His efforts will be admired throughout the nation
+		name = "EVTOPTA4118"	# His efforts will be admired throughout the nation
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1275,7 +1275,7 @@ country_event = {
 	}
 		
 	option = {
-		name = "EVTOPTB4032"	# His reputation will reach further than our borders
+		name = "EVTOPTB4118"	# His reputation will reach further than our borders
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1327,7 +1327,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA4032"	# His efforts will be admired throughout the nation
+		name = "EVTOPTA4119"	# His efforts will be admired throughout the nation
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1344,7 +1344,7 @@ country_event = {
 	}
 		
 	option = {
-		name = "EVTOPTB4032"	# His reputation will reach further than our borders
+		name = "EVTOPTB4119"	# His reputation will reach further than our borders
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1397,7 +1397,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA4032"	# His efforts will be admired throughout the nation
+		name = "EVTOPTA4120"	# His efforts will be admired throughout the nation
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1414,7 +1414,7 @@ country_event = {
 	}
 		
 	option = {
-		name = "EVTOPTB4032"	# His reputation will reach further than our borders
+		name = "EVTOPTB4120"	# His reputation will reach further than our borders
 		ai_chance = {
 			factor = 50
 			modifier = {

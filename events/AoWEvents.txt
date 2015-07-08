@@ -688,9 +688,7 @@ province_event = {
 	picture = ANGRY_MOB_eventPicture
 
 	trigger = {
-		OR = {
-			has_province_modifier = local_witch_hunts
-		}
+		has_province_modifier = local_witch_hunts
 		owner = {
 			is_at_war = no
 		}
@@ -956,8 +954,8 @@ province_event = {
 	trigger = {
 		owner = {
 			is_at_war = yes
-			NOT = { controls = ROOT }
 		}
+		NOT = { controlled_by = owner }
 		NOT = { controlled_by = REB }
 		NOT = { religion = owner }
 		NOT = { is_core = controller }
@@ -1691,6 +1689,7 @@ country_event = {
 	trigger = {
 		papacy_active = yes
 		religion = catholic
+		NOT = { tag = PAP }
 		NOT = { num_of_cardinals = 7 }
 		any_owned_province = {
 			development = 10
@@ -1896,6 +1895,7 @@ country_event = {
 	trigger = {
 		papacy_active = yes
 		religion = catholic
+		NOT = { tag = PAP }
 		OR = {
 			advisor = theologian
 			advisor = inquisitor
@@ -1973,6 +1973,7 @@ country_event = {
 
 	trigger = {
 		has_country_modifier = cardinal_in_administration
+		NOT = { has_country_modifier = centralization_modifier }
 		num_of_cardinals = 1
 	}
 

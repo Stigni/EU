@@ -78,10 +78,6 @@ country_event = {
 				who = ROOT
 				casus_belli = cb_independence_war
 			}
-			random_owned_province = {
-				infantry = JAJ
-				infantry = JAJ
-			}
 		}
 	}
 }

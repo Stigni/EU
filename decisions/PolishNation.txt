@@ -8,8 +8,15 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = POL }
 			NOT = { exists = PLC }
+			NOT = { tag = POL }
+			OR = {
+				ai = no
+				AND = {
+					NOT = { exists = POL }
+					num_of_cities = 6
+				}
+			}
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 			OR = {
@@ -26,16 +33,9 @@ country_decisions = {
 					ai = no
 				}
 			}
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					num_of_cities = 6
-					#NOT = { primary_culture = pommeranian }
-				}
-			}
 		}
 		allow = {
+			NOT = { exists = POL }
 			is_at_war = no
 			owns_core_province = 262	# Krakow
 			owns_core_province = 257	# Warszawa

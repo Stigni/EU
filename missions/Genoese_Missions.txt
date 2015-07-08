@@ -124,6 +124,7 @@ end_bosphorous_sound_toll = {
 			owns = 286
 			owns = 285
 		}
+		NOT = { has_country_modifier = black_sea_ambition }
 		151 = {
 			has_province_modifier = bosphorous_sound_toll
 			owner = {
@@ -137,7 +138,6 @@ end_bosphorous_sound_toll = {
 					name = genoese_access_to_black_sea
 				}
 			}
-			NOT = { has_country_modifier = black_sea_ambition }
 		}
 	}
 	abort = {

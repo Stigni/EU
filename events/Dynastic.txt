@@ -51,14 +51,14 @@ country_event = {
 		has_heir = yes
 		heir_claim = 90
 		is_female = no
-		NOT = {
-			is_lesser_in_union = yes
-		}
+		is_lesser_in_union = no
 		has_regency = no
 		government = monarchy
 		NOT = { government = elective_monarchy }
 		any_owned_province = {
 			num_free_building_slots = 1
+			NOT = { has_building = cathedral }
+			NOT = { has_building = temple }
 		}
 	}
 	
@@ -73,8 +73,9 @@ country_event = {
 			limit = {
 				NOT = {
 					has_building = temple
-					num_free_building_slots = 1
 				}
+				NOT = { has_building = cathedral }
+				num_free_building_slots = 1
 			}
 			add_building = temple
 		}
@@ -101,8 +102,8 @@ country_event = {
 		has_heir = yes
 		heir_age = 15
 		heir_claim = 90
+		is_lesser_in_union = no
 		NOT = {
-			is_lesser_in_union = yes
 			stability = -2
 		}
 		has_regency = no
@@ -143,6 +144,7 @@ country_event = {
 	trigger = {
 		has_heir = yes
 		has_wartaxes = yes
+		is_lesser_in_union = no
 		treasury = 40
 		war_exhaustion = 4
 		has_regency = no
@@ -322,10 +324,8 @@ country_event = {
 	picture = NEW_HEIR_eventPicture
 	
 	trigger = {
-		NOT = {
-			has_heir = yes
-			is_lesser_in_union = yes
-		}
+		has_heir = no
+		is_lesser_in_union = no
 		government = monarchy
 		religion_group = christian
 		has_regency = no
@@ -370,9 +370,9 @@ country_event = {
 	trigger = {
 		has_heir = yes
 		heir_age = 15
+		is_lesser_in_union = no
 		NOT = {
 			is_year = 1450
-			is_lesser_in_union = yes
 		}
 		NOT = {
 			has_country_flag = last_jousting_tournament_held
@@ -625,7 +625,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2000
+		months = 5000
 	}
 	
 	option = {
@@ -1172,7 +1172,7 @@ country_event = {
 
 namespace = dynastic_events
 
-# Lux Stella
+# Starlight
 country_event = {
 	id = dynastic_events.1
 	title = dynastic_events.1.t
@@ -1183,10 +1183,11 @@ country_event = {
 		has_heir = no
 		ruler_age = 40
 		government = monarchy
+		is_lesser_in_union = no
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 10000
 		
 		modifier = {
 			factor = 0.5
@@ -1271,6 +1272,7 @@ country_event = {
 		has_heir = no
 		ruler_age = 20
 		government = monarchy
+		is_lesser_in_union = no
 		NOT = {
 			has_country_modifier = dyn_newborn_daughter
 		}
@@ -1322,30 +1324,36 @@ country_event = {
 		has_heir = no
 		ruler_age = 40
 		government = monarchy
+		is_lesser_in_union = no
+		NOT = { has_ruler_flag = talented_daughter_happened }
+	}
+	
+	immediate = {
+		set_ruler_flag = talented_daughter_happened
 	}
 	
 	mean_time_to_happen = {
 		months = 500
 		
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			ruler_age = 50
 		}
 		
 		modifier = {
-			factor = 0.5
+			factor = 0.8
 			ruler_age = 60
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.8
 			ruler_age = 70
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.8
 			ruler_age = 80
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.8
 			ruler_age = 90
 		}
 	}
@@ -1403,6 +1411,7 @@ country_event = {
 		has_heir = no
 		num_of_cities = 2
 		has_regency = yes
+		is_lesser_in_union = no
 		government = monarchy
 		religion_group = christian
 		capital_scope = {

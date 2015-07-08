@@ -17,8 +17,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = HAN
-		is_year = 1684
+		owns = 1758
+		is_year = 1676
 		NOT = {	is_year = 1716 }
 		NOT = {
 			is_advisor_employed = 562
@@ -29,15 +29,16 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 120
 	}
 	
 	option = {
 		name = "flavor_han.EVTOPTA1"
 		define_advisor = {
 			type = philosopher
-			skill = 2
+			skill = 3
 			name = "Gottfried Wilhelm Leibniz"
+			discount = yes
 		}
 	}
 }

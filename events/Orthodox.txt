@@ -15,10 +15,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 8
-			government = republic
-		}
 	}
 	
 	option = {
@@ -48,10 +44,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 8
-			government = republic
-		}
 	}
 	
 	option = {
@@ -81,10 +73,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 8
-			government = republic
-		}
 	}
 	
 	option = {
@@ -114,10 +102,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 8
-			government = republic
-		}
 	}
 	
 	option = {
@@ -146,10 +130,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 8
-			government = republic
-		}
 	}
 	
 	option = {

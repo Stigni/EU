@@ -24,7 +24,6 @@ country_event = {
 			set_country_flag = in_theocracy_heir_selection
 			
 			clr_country_flag = theo_local_noble_flag
-			clr_country_flag = theo_local_noble_flag
 			clr_country_flag = theo_foreign_noble_flag
 			clr_country_flag = theo_merchants_son_flag
 			clr_country_flag = theo_talented_theologian_flag

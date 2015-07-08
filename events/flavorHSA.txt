@@ -34,6 +34,7 @@ country_event = {
 		define_advisor = {
 			type = trader
 			name = "Georg Giese"
+			discount = yes
 			skill = 3
 			location = 43
 		}
@@ -159,6 +160,7 @@ country_event = {
 		define_advisor = {
 			type = trader
 			name = "Heinrich Sudermann"
+			discount = yes
 			skill = 3
 		}
 	}

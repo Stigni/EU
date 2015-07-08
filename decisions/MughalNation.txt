@@ -8,9 +8,13 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = MUG }
 			NOT = { tag = PER }
+			NOT = { tag = MUG }
 			NOT = { tag = TUR }
+			OR = {
+				NOT = { exists = MUG }
+				ai = no
+			}
 			OR = {
 				culture_group = iranian
 				primary_culture = turkmeni
@@ -34,6 +38,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = MUG }
 			is_tribal = no
 			is_at_war = no
 			is_subject = no

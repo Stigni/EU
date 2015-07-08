@@ -372,6 +372,7 @@ vassalize_norway_swe = {
 			is_subject = no
 			owns = 17		# Oslo, Akershus
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 	}
 	abort = {

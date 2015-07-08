@@ -138,6 +138,35 @@ country_event = {
 			}				
 		}		
 	}
+	option = {
+		name = "elections.700.e"	# We need a Medici to rule us
+		trigger = { tag = LAN }
+		ai_chance = { factor = 90 }
+		define_ruler = {
+			mil = 3
+			adm = 2
+			dip = 1					
+			fixed = yes
+		}
+		if = {
+			limit = { 
+				has_faction = mr_aristocrats 
+			}
+			add_faction_influence = {
+				faction = mr_aristocrats
+				influence = 10
+			}				
+		}
+		if = {
+			limit = { 
+				has_faction = mr_guilds 
+			}
+			add_faction_influence = {
+				faction = mr_guilds
+				influence = 10
+			}				
+		}			
+	}
 }
 
 # Election!

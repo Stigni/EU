@@ -47,7 +47,7 @@ two_sicilies =
 
 italy = 
 {
-	region = italy
+	region = italian_region
 	
 	name = {
 		name = "KINGDOM_OF_ITALY"

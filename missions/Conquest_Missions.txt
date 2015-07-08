@@ -25,6 +25,8 @@ annex_minor_mission = {
 		}
 		num_of_cities = 1
 		NOT = { num_of_cities = 2 }
+		NOT = { government = native_council }
+		NOT = { government = siberian_native_council }
 		NOT = { has_opinion = { who = FROM value = 0 } }
 		OR = {
 			is_part_of_hre = no
@@ -564,10 +566,7 @@ keep_rival_out_of_italy = {
 			num_of_cities = 10 
 			is_at_war = no
 			has_regency = no
-			OR = {
-				NOT = { has_country_flag = kept_rival_out_of_italy }
-				had_country_flag = { flag = kept_rival_out_of_italy days = 7300 }
-			}
+			NOT = { has_country_flag = kept_rival_out_of_italy }
 		}
 		num_of_cities = 5
 		NOT = { culture_group = latin }
@@ -644,7 +643,6 @@ italian_ambition = {
 		normal_or_historical_nations = yes
 		is_subject = no
 		NOT = { has_country_flag = had_italian_ambition_mission }
-		NOT = { tag = HAB }
 		num_of_cities = 10 
 		is_year = 1480
 		NOT = { is_year = 1600 }
@@ -656,8 +654,9 @@ italian_ambition = {
 			culture_group = iberian
 		}
 		NOT = {
-			any_owned_province = {	
-				region = italian_region
+			num_of_owned_provinces_with = {
+			value = 2
+			region = italian_region
 			}
 		}
 		capital_scope = {
@@ -682,6 +681,18 @@ italian_ambition = {
 		modifier = {
 			factor = 0.5
 			NOT = { dip = 2 }
+		}
+		modifier = {
+			factor = 1.5
+			tag = HAB
+		}
+		modifier = {
+			factor = 1.5
+			tag = FRA
+		}
+		modifier = {
+			factor = 1.5
+			tag = SPA
 		}
 	}
 	effect = {

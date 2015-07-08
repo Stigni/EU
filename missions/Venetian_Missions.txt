@@ -68,6 +68,7 @@ subjugate_aquileia = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 	}
 	abort = {
@@ -431,14 +432,14 @@ disrupt_genoese_trade = {
 		}
 	}
 	abort = {
-		GEN = {
-			NOT ={
-				has_country_flag = black_sea_free_trade
+		OR = {
+			is_subject = yes
+			GEN = {
+				NOT ={
+					has_country_flag = black_sea_free_trade
+				}
 			}
 		}
-	}
-	abort = {
-		is_subject = yes
 	}
 	success = {
 		all_target_province = {

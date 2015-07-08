@@ -12,7 +12,7 @@ get_an_alliance_mission = {
 		}
 		NOT = { num_of_allies = 2 }
 		NOT = { is_enemy = FROM }
-		NOT = { is_rival = PREV }
+		NOT = { is_rival = FROM }
 		is_at_war = no
 		has_opinion = { who = FROM value = 10 }
 		NOT = { alliance_with = FROM }
@@ -56,7 +56,7 @@ get_an_alliance_mission = {
 		FROM = {
 			add_country_modifier = {
 				name = "foreign_contacts"
-				duration = 365
+				duration = 3650
 			}
 			set_country_flag = got_an_alliance_mission
 		}
@@ -123,7 +123,7 @@ improve_relations_mission = {
 			set_country_flag = improved_relations_mission
 			add_country_modifier = {
 				name = "foreign_contacts"
-				duration = 365
+				duration = 3650
 			}
 		}
 	}	
@@ -148,6 +148,13 @@ generic_annex_vassal_mission = {
 		vassal_of = FROM
 		NOT = { num_of_cities = FROM }
 		religion_group = FROM
+		OR = {
+			num_of_cities = 2
+			AND = {
+				NOT = { government = native_council }
+				NOT = { government = siberian_native_council }
+			}
+		}
 	}
 	abort = {
 		OR = {
@@ -193,6 +200,7 @@ improve_reputation_mission = {
 	
 	allow = {
 		overextension_percentage = 0.50
+		NOT = { has_country_modifier = foreign_contacts }
 	}
 	abort = {
 	}
@@ -215,7 +223,10 @@ improve_reputation_mission = {
 		}
 	}
 	effect = {
-		define_advisor = { type = diplomat skill = 3 }
+		add_country_modifier = {
+			name = "foreign_contacts"
+			duration = 3650
+		}
 	}
 }
 
@@ -230,6 +241,7 @@ vassalize_mission = {
 		NOT = { government = steppe_horde }
 		NOT = { government = daimyo }
 		NOT = { government = shogunate }
+		NOT = { government = imperial_city }
 		is_subject = no
 		has_regency = no
 		FROM = { 
@@ -249,6 +261,7 @@ vassalize_mission = {
 	abort = {
 		OR = {
 			NOT = { num_of_cities = 1 }
+			government = imperial_city
 			AND = {
 				is_subject = yes
 				NOT = { vassal_of = FROM }

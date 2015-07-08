@@ -461,10 +461,8 @@ country_event = {
 		capital_scope = {
 			continent = europe
 		}
-		AND = {
-			has_regency = yes
-			has_heir = no
-		}
+		has_regency = yes
+		has_heir = no
 		FRA = {
 			exists = yes
 			is_subject = no

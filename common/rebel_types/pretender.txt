@@ -285,6 +285,8 @@ pretender_rebels = {
 						government = colonial_government
 						government = siberian_native_council
 						government = native_council
+						government = elective_monarchy
+						government = english_monarchy
 					}
 				}
 			}

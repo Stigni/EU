@@ -611,9 +611,7 @@ country_event = {
 		has_dlc = "Common Sense"
 		tag = PAP
 		NOT = {
-			OR = {
-				has_country_modifier = pap_indulgences
-			}
+			has_country_modifier = pap_indulgences
 		}
 		reform_desire = 0.50
 		NOT = { is_religion_enabled = protestant }
@@ -664,9 +662,7 @@ country_event = {
 		has_dlc = "Common Sense"
 		tag = PAP
 		NOT = {
-			OR = {
-				has_country_modifier = pap_simony
-			}
+			has_country_modifier = pap_simony
 		}
 		reform_desire = 0.50
 		NOT = { is_religion_enabled = protestant }
@@ -717,9 +713,7 @@ country_event = {
 		has_dlc = "Common Sense"
 		tag = PAP
 		NOT = {
-			OR = {
-				has_country_modifier = pap_veneration_relics
-			}
+			has_country_modifier = pap_veneration_relics
 		}
 		reform_desire = 0.25
 		NOT = { is_religion_enabled = protestant }
@@ -808,6 +802,8 @@ country_event = {
 	trigger = {
 		has_dlc = "Common Sense"
 		tag = PAP
+		NOT = { has_country_flag = pap_condemned_slavery }
+		NOT = { stability = 3 }
 		any_known_country = {
 			religion = catholic 
 			any_owned_province = {
@@ -821,11 +817,16 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 500
+		modifier = {
+			factor = 0.9
+			NOT = { is_year = 1600 }
+		}
 	}
 	
 	option = {
 		name = papacy_events.18.a
+		set_country_flag = pap_condemned_slavery
 		add_devotion = 10
 		every_known_country = {
 			limit = {
@@ -837,6 +838,7 @@ country_event = {
 						continent = north_america
 					}
 				}
+				NOT = { has_country_modifier = pap_condemn_slavery }
 			}
 			country_event = {
 				id = papacy_events.19
@@ -848,6 +850,7 @@ country_event = {
 	option = {
 		name = papacy_events.18.b
 		add_stability = 1
+		add_devotion = -15
 	}
 }
 
@@ -861,11 +864,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = papacy_events.19.a
+		name = papacy_events.19.a #Accept the Papal Bull
 		add_papal_influence = 5
 		add_country_modifier = {
 			name = pap_condemn_slavery
-			duration = 36500
+			duration = 3650
 		}
 		PAP = {
 			add_opinion = {
@@ -880,7 +883,8 @@ country_event = {
 	}
 	
 	option = {
-		name = papacy_events.19.b
+		name = papacy_events.19.b #Refuse and Continue the practice
+		add_papal_influence = -5
 		PAP = {
 			add_opinion = {
 				who = ROOT
@@ -1269,7 +1273,21 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = papacy_events.28.a
+		name = papacy_events.28.a #We understand, and we accept
+		PAP = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_allows_witchtrials_good
+			}
+			set_country_flag = pap_allows_witchtrials_good_flag
+			country_event = {
+				id = papacy_events.25
+				tooltip = papacy_events.25.tooltip
+			}
+		}
+	}
+	option = {
+		name = papacy_events.28.b #No, we refuse
 		add_papal_influence = 5
 		PAP = {
 			add_opinion = {
@@ -1280,21 +1298,6 @@ country_event = {
 			country_event = {
 				id = papacy_events.24
 				tooltip = papacy_events.24.tooltip
-			}
-		}
-	}
-	
-	option = {
-		name = papacy_events.28.b
-		PAP = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_allows_witchtrials_good
-			}
-			set_country_flag = pap_allows_witchtrials_good_flag
-			country_event = {
-				id = papacy_events.25
-				tooltip = papacy_events.25.tooltip
 			}
 		}
 	}

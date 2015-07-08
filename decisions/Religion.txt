@@ -514,6 +514,7 @@ religion_decisions = {
 			any_owned_province = {
 				religion = vajrayana
 			}
+			is_subject = no
 		}
 		allow = {
 			stability = 1
@@ -627,15 +628,11 @@ religion_decisions = {
 		potential = {
 			NOT = { has_country_modifier = house_of_worship }
 			religion_group = muslim
-			any_owned_province = {
-				has_owner_religion = no
-			}
 		}
 		allow = {
-			is_defender_of_faith = no
 			full_idea_group = innovativeness_ideas
 		}
-		effect = {	
+		effect = {
 			add_country_modifier = {
 				name = "house_of_worship"
 				duration = -1
@@ -643,19 +640,6 @@ religion_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				NOT = { stability = 2 }
-				factor = 0
-			}
-			modifier = {
-				NOT = { 
-					OR = {
-						war_exhaustion = 10
-						revolt_percentage = 5
-						}
-					}
-				factor = 0
-			}
 		}
 	}
 	

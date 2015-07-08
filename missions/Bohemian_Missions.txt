@@ -4,6 +4,11 @@ defend_bohemia_against_hungary = {
 
 	category = MIL
 	
+	target_provinces = {
+		owned_by = HUN
+		region = bohemian_region
+	}
+	
 	allow = {
 		normal_or_historical_nations = yes
 		tag = BOH
@@ -16,16 +21,28 @@ defend_bohemia_against_hungary = {
 		HUN = {
 			NOT = { alliance_with = ROOT }
 		}
+		NOT = { has_country_flag = fought_back_hun }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			NOT = { exists = HUN }
-		}
+		is_subject = yes
 	}
 	success = {
-		NOT = { war_with = HUN }
-		NOT = { bohemian_region = { owned_by = HUN } }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	immediate = {
+		every_target_province = {
+			if = {
+				limit = { NOT = { is_core = ROOT } }
+				add_claim = ROOT
+			}
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
 	}
 	chance = {
 		factor = 4000
@@ -39,6 +56,7 @@ defend_bohemia_against_hungary = {
 		}
 	}
 	effect = {
+		set_country_flag = fought_back_hun
 		add_country_modifier = {
 			name = "fought_back_the_hungarians"
 			duration = 3650

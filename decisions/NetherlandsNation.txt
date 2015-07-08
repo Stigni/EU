@@ -8,8 +8,12 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = NED }
+			OR = {
+				NOT = { exists = NED }
+				ai = no
+			}
 			NOT = { tag = PAP }
+			NOT = { tag = NED }
 			NOT = { tag = HLR }
 			OR = {
 				primary_culture = dutch
@@ -28,6 +32,7 @@ country_decisions = {
 			adm_tech = 10
 			is_subject = no
 			is_at_war = no
+			NOT = { exists = NED }
 			owns_core_province = 95 # Breda
 			owns_core_province = 96 # Zeeland
 			owns_core_province = 97 # Holland
@@ -69,6 +74,26 @@ country_decisions = {
 	  				cede_province = FRA
 	  			}
 	  		}
+			if = {
+				limit = {
+					government = theocracy
+					religion = catholic
+				}
+				change_government = administrative_monarchy
+				PAP = {
+					add_opinion = {
+						who = ROOT
+						modifier = opinion_displeased
+					}
+				}
+			}
+			if = {
+				limit = {
+					government = theocracy
+					NOT = { religion = catholic }
+				}
+				change_government = administrative_monarchy
+			}
 			if = {
 				limit = {
 					tag = BUR

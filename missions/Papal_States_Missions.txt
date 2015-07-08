@@ -11,6 +11,7 @@ conquer_ferrara = {
 		is_subject = no
 		113 = {	# Ferrara
 			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
 			owner = {
 				is_papal_controller = no
 				NOT = { alliance_with = ROOT }
@@ -47,9 +48,11 @@ conquer_ferrara = {
 		remove_claim = 113
 	}
 	effect = {
-		add_province_modifier = {
-			name = "faster_integration"
-			duration = 3650
+		113 = {
+			add_province_modifier = {
+				name = "faster_integration"
+				duration = 3650
+			}
 		}
 	}
 }

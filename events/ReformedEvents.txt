@@ -83,8 +83,10 @@ province_event = {
 	option = {
 		name = "reformed_events.EVTOPTB1" # We better not
 		ai_chance = { factor = 50 }
-		add_fervor = -10
-		add_prestige = -10
+		owner = {
+			add_fervor = -10
+			add_prestige = -10
+		}
 		hidden_effect = {
 			random_neighbor_province = {
 				limit = {

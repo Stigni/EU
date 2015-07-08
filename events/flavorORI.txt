@@ -95,7 +95,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		TAG = ORI
+		tag = ORI
 		is_year = 1460
 		NOT = { is_year = 1470 }
 		has_ruler = "Kapilendra"
@@ -339,7 +339,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		TAG = ORI
+		tag = ORI
 		has_country_flag = ori_hamviras_offer_happened
 		NOT = { had_country_flag = { flag = ori_hamviras_offer_happened days = 7300 } } #Offer expired
 		has_ruler = "Hamvira"
@@ -407,7 +407,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		TAG = ORI
+		tag = ORI
 		NOT = { dynasty = "Gajapati" }
 		has_country_modifier = ori_jagannath_cult
 	}
@@ -449,6 +449,7 @@ country_event = {
 		define_advisor = {
 			type = theologian
 			name = "Sarala Das"
+			discount = yes
 			skill = 2
 		}
 	}
@@ -464,7 +465,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		TAG = ORI
+		tag = ORI
 		owns = 552
 		is_year = 1475
 		NOT = { is_year = 1540 }
@@ -481,6 +482,7 @@ country_event = {
 		define_advisor = {
 			type = theologian
 			name = "Achyutananda Das"
+			discount = yes
 			skill = 3
 		}
 	}

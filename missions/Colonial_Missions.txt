@@ -139,10 +139,11 @@ build_colony_to_city = {
 			limit = { NOT = { has_dlc = "Common Sense" } }
 			add_base_tax = 1
 			add_base_manpower = 1
-			add_base_manpower = 0.5
+			add_base_production = 1
 		}
 		if = {
 			limit = { has_dlc = "Common Sense" }
+			add_base_production = 1
 			add_province_modifier = {
 				name = "local_colonial_expansion"
 				duration = 3650
@@ -172,8 +173,8 @@ convert_the_pagans = {
 			num_of_missionaries = 1
 			num_of_owned_provinces_with = {
 				value = 5
-				religion = root
-				continent = root
+				religion = ROOT
+				continent = ROOT
 			}
 			NOT = { has_country_modifier = converting_the_pagans }
 		}

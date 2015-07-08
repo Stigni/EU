@@ -383,6 +383,7 @@ vassalize_wallachia = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 	}
 	abort = {
@@ -453,6 +454,7 @@ vassalize_transylvania = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 	}
 	abort = {
@@ -743,10 +745,8 @@ conquer_levant = {
 	ai_mission = yes
 	
 	target_provinces = {
-		AND = {
-			region = syrian_region
-			owned_by = MAM
-		}
+		region = syrian_region
+		owned_by = MAM
 	}
     allow = {
 		normal_or_historical_nations = yes
@@ -890,6 +890,10 @@ safeguard_eastern_anatolia = {
 	
 	target_provinces = {
 		region = armenian_region
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+		}
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -898,6 +902,7 @@ safeguard_eastern_anatolia = {
 		armenian_region = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
 		}
 		is_subject = no
 	}
@@ -943,6 +948,10 @@ conquer_mesopotamia = {
 	
 	target_provinces = {
 		region = mesopotamian_region
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+		}
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -952,6 +961,7 @@ conquer_mesopotamia = {
 		mesopotamian_region = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
 		}
 		is_subject = no
 	}
@@ -998,6 +1008,10 @@ conquer_hedjaz = {
 	
 	target_provinces = {
 		region = hedjazi_region
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+		}
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -1006,6 +1020,7 @@ conquer_hedjaz = {
 		hedjazi_region = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
 		}
 		is_subject = no
 		NOT = { has_country_modifier = indian_ocean_ambition }
@@ -1225,6 +1240,10 @@ conquer_tripolitania = {
 	
 	target_provinces = {
 		region = tripoli_region
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+		}
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -1235,6 +1254,7 @@ conquer_tripolitania = {
 		tripoli_region = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
 		}
 		is_subject = no
 	}
@@ -1281,16 +1301,25 @@ conquer_tunisia = {
 	
 	target_provinces = {
 		region = tunisian_region
+		NOT = { region = tripoli_region }
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+		}
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		tag = TUR
-		owns = 358
+		OR = {
+			owns = 358 #Tripoli
+			owns = 2954 #Djerba
+		}
 		NOT = { has_country_modifier = mediterranean_ambition }
 		NOT = { has_country_flag = conquer_tunisia_flag }
 		tunisian_region = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
 		}
 		is_subject = no
 	}
@@ -1348,6 +1377,7 @@ subjugate_algiers = {
 			is_subject = no
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 	}
 	abort = {
@@ -1411,6 +1441,10 @@ conquer_algeria = {
 	
 	target_provinces = {
 		region = algerian_region
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+		}
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -1423,6 +1457,7 @@ conquer_algeria = {
 		algerian_region = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
 		}
 		is_subject = no
 	}

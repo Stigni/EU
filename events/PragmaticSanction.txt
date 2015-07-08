@@ -5,96 +5,6 @@
 namespace = pragmatic_sanction
 normal_or_historical_nations = yes
 
-# The Effect of the Pragmatic Sanction
-country_event = {
-	id = pragmatic_sanction.1
-	title = "pragmatic_sanction.EVTNAME1"
-	desc = "pragmatic_sanction.EVTDESC1"
-	picture = REFORM_eventPicture
-
-	trigger = {
-		NOT = { has_country_flag = pragmatic_sanction }
-		HAB = {
-			exists = yes
-			has_female_heir = yes
-			is_emperor = yes
-			has_country_flag = pragmatic_sanction
-		}
-		OR = {
-			tag = FRA
-			tag = SWE
-			tag = BAV
-			tag = DAN
-			tag = PRU
-			tag = SAX
-			OR = {
-				AND = {
-					tag = CAS
-					NOT = { exists = SPA }
-				}
-				tag = SPA
-			}
-			OR = {
-				AND = {
-					tag = ENG
-					NOT = { exists = GBR }
-				}
-				tag = GBR
-			}
-			OR = {
-				AND = {
-					tag = MOS
-					NOT = { exists = RUS }
-				}
-				tag = RUS
-			}
-			OR = {
-				AND = {
-					tag = HOL
-					NOT = { exists = NED }
-				}
-				tag = NED
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	immediate = {
-		set_country_flag = pragmatic_sanction
-	}
-
-	option = {		# Pro-Habsburg
-		name = "pragmatic_sanction.EVTOPTA1"
-		ai_chance = { factor = 25 }
-		add_stability = 1
-		HAB = {
-			add_opinion = {
-				who = ROOT
-				modifier = pro_pragmatic_sanction
-			}
-		}
-	}
-	option = {		# Neutral
-		name = "pragmatic_sanction.EVTOPTB1"
-		ai_chance = { factor = 25 }
-		add_stability = -1
-	}
-	option = {		# Anti-Habsburg
-		name = "pragmatic_sanction.EVTOPTC1"
-		ai_chance = { factor = 50 }
-		add_stability = 1
-		HAB = {
-			add_opinion = {
-				who = ROOT
-				modifier = anti_pragmatic_sanction
-			}
-		}
-	}
-}
-
 # The Pragmatic Sanction
 country_event = {
 	id = pragmatic_sanction.2
@@ -103,18 +13,8 @@ country_event = {
 	picture = REFORM_eventPicture
 
 	major = yes
-
-	trigger = {
-		tag  = HAB
-		allows_female_emperor = no
-		NOT = { has_country_flag = pragmatic_sanction }
-		has_female_heir = yes
-		is_emperor = yes
-	}
 	
-	mean_time_to_happen = {
-		months = 6
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		set_country_flag = pragmatic_sanction
@@ -122,7 +22,6 @@ country_event = {
 
 	option = {
 		name = "pragmatic_sanction.EVTOPTA2"
-		add_legitimacy = -25
 		set_allow_female_emperor = yes
 	}
 }

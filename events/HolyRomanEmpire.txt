@@ -469,12 +469,12 @@ country_event = {
 			add_opinion = { who = ROOT modifier = slipped_out_of_empire }
 		}
 		add_opinion = { who = emperor modifier = slipped_out_of_empire }
-		add_prestige = 35
+		add_prestige = 25
 	}
 	option = {			#Our country is a natural part of the Empire
 		name = "hre_event.1.b"
 		ai_chance = { factor = 0 }
-		add_prestige = -35
+		custom_tooltip = PENALTY_SHADOW_KINGDOM
 		add_opinion = {
 			who = emperor
 			modifier = stayed_in_the_empire

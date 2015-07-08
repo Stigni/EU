@@ -93,6 +93,7 @@ country_event = {
 		define_advisor = {
 			type = spymaster
 			name = "Malyuta Skuratov"
+			discount = yes
 			location = 295
 			skill = 3
 		}
@@ -372,12 +373,14 @@ country_event = {
 		define_advisor = {
 			type = statesman
 			name = "Alexi Adashev"
+			discount = yes
 			location = 295
 			skill = 2
 		}
 		define_advisor = {
 			type = theologian
 			name = "Sylvestr"
+			discount = yes
 			location = 295
 			skill = 3
 		}
@@ -702,6 +705,7 @@ country_event = {
 		define_advisor = {
 			type = treasurer
 			name = "Boris Morozov"
+			discount = yes
 			location = 295
 			skill = 2
 		}

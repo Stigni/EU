@@ -1,28 +1,24 @@
 # For specific combinations of culture, religion and other such triggers
 # Will pick the first valid one it finds in list
 
-march_muslim_monarchy = {
+ottoman_marches = {
 	rank = {
-		1 = BEYLIK
-		2 = PASHALIK
-		3 = EMPIRE
+		1 = PASHALIK
 	}	
 
 	ruler_male = {
-		1 = BEY
-		2 = PASHA
-		3 = EMPEROR
+		1 = PASHA
 	}
 
 	ruler_female = {
-		1 = HATUN
-		2 = PASHA	
-		3 = EMPRESS 
+		1 = PASHA
 	}
 	
 	trigger = {
 		is_march = yes
-		religion_group = muslim
+		overlord = {
+			primary_culture = turkish
+		}
 	}
 }
 
@@ -106,6 +102,32 @@ holy_roman_electors_bishoprics = {
 		government = theocracy
 		is_elector = yes
 		is_emperor = no
+	}
+}
+
+japanese_shogunate = {
+	rank = {
+		3 = EMPIRE
+		2 = KINGDOM
+		1 = DAIMYO
+	}
+
+	ruler_male = {
+		3 = SHOGUN
+		2 = KING
+		1 = LORD		
+	}
+	
+	ruler_female = {
+		3 = SHOGUNESS
+		2 = QUEEN
+		1 = LADY		
+	}
+
+	trigger = {
+		tag = JAP
+		government = monarchy
+		NOT = { government = shogunate }
 	}
 }
 
@@ -495,6 +517,32 @@ grand_duchy_of_baden = {
 		government = monarchy
 		tag = BAD
 		has_idea = bad_grand_duchy
+	}
+}
+
+grand_duchy_of_luxembourg = {
+	rank = {
+		1 = GRAND_DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = GRAND_DUKE
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = GRAND_DUCHESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		government = monarchy
+		tag = LUX
+		has_idea = lux_grand_duchy_of_luxembourg
 	}
 }
 
@@ -989,58 +1037,6 @@ hindu_maratha_monarchy = {
 		1 = RANI
 		2 = MAHARANI
 		3 = CHHATRAPATI
-	}
-
-	trigger = {
-		government = monarchy
-		primary_culture = marathi
-		religion = hinduism
-	}
-}
-
-hindu_maratha_monarchy = {
-	rank = {
-		1 = PRINCEDOM
-		2 = KINGDOM
-		3 = EMPIRE
-	}
-
-	ruler_male = {
-		1 = THAKUR
-		2 = RANA
-		3 = CHHATRAPATI
-	}
-
-	ruler_female = {
-		1 = THAKUR
-		2 = RANI
-		3 = CHHATRAPATI
-	}
-
-	trigger = {
-		government = monarchy
-		primary_culture = marathi
-		religion = hinduism
-	}
-}
-
-hindu_dravidian_monarchy = {
-	rank = {
-		1 = NAYAKA
-		2 = KINGDOM
-		3 = EMPIRE
-	}
-
-	ruler_male = {
-		1 = NAYAK
-		2 = RAJA
-		3 = MAHARAJA
-	}
-
-	ruler_female = {
-		1 = NAYAK
-		2 = RANI
-		3 = MAHARANI
 	}
 
 	trigger = {
@@ -1584,7 +1580,34 @@ florentine_republic = {
 
 	trigger = {
 		government = republic
-		tag = TUS
+		OR = {
+			tag = TUS
+			tag = LAN
+		}
+	}
+}
+
+ambrosian_republic = {
+	rank = {
+		1 = REPUBLIC
+		2 = GRAND_REPUBLIC
+		3 = GREAT_REPUBLIC
+	}
+
+	ruler_male = {
+		1 = CAPTAIN_DEFENDER
+		2 = GRAND_CONSUL
+		3 = GREAT_CONSUL
+	}
+
+	ruler_female = {
+		1 = CAPTAIN_DEFENDER_fem
+		2 = GRAND_CONSULESS
+		3 = GREAT_CONSULESS
+	}
+
+	trigger = {
+		government = ambrosian_republic
 	}
 }
 

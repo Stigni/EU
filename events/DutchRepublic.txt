@@ -1088,7 +1088,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Res Publica"
-		owner = { government = dutch_republic }
+		government = dutch_republic
 		any_neighbor_country = {
 			NOT = { has_opinion = { who = ROOT value = 0 } }
 			ROOT = { is_threat = PREV }

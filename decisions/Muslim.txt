@@ -53,6 +53,8 @@ country_decisions = {
 			has_dlc = "Star and Crescent"
 			religion = shiite
 			dominant_religion = sunni
+			is_subject = no
+			is_force_converted = no
 		}
 		allow = {
 			capital_scope = {
@@ -70,10 +72,12 @@ country_decisions = {
 	}
 	
 	change_religion_shiite = {
-		has_dlc = "Star and Crescent"
 		potential = {
+			has_dlc = "Star and Crescent"
 			religion = sunni
 			dominant_religion = shiite
+			is_subject = no
+			is_force_converted = no
 		}
 		allow = {
 			capital_scope = {

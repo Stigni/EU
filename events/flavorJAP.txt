@@ -414,6 +414,7 @@ country_event = {
 		define_advisor = {
 			name = "William Adams"
 			type = trader
+			discount = yes
 			skill = 2
 		}
 	}
@@ -1962,7 +1963,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_jap.EVTOPTA44"
-		every_country = {
+		every_known_country = {
 			limit = {
 				government = daimyo
 				primary_culture = japanese
@@ -2249,7 +2250,7 @@ country_event = {
 	option = {
 		name = "flavor_jap.EVTOPTA49"
 		add_prestige = 10
-		every_country = {
+		every_known_country = {
 			limit = {
 				government = daimyo
 				primary_culture = japanese

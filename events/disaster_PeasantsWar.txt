@@ -27,7 +27,6 @@ country_event = {
 				unrest = 15
 			}
 		}
-		set_country_flag = had_peasant_war
 	}
 
 	option = {
@@ -81,7 +80,10 @@ country_event = {
 		name = "EVTOPTB3022"			# Restrict serfdom
 		ai_chance = { factor = 35 }
 		if = {
-			limit = { is_lesser_in_union = no }
+			limit = {
+				government = monarchy
+				is_lesser_in_union = no
+			}
 			add_legitimacy = -15
 		}
 		if = {
@@ -150,6 +152,7 @@ country_event = {
 		add_dip_power = -50
 		reverse_add_opinion = { who = PAP modifier = opinion_pope_religious_tolerance }
 		add_papal_influence = -10
+		add_devotion = -25
 		if = {
 			limit = {
 				has_disaster = peasant_war
@@ -274,7 +277,10 @@ country_event = {
 	option = {
 		name = "EVTOPTA3026"			# Restore order
 		if = {
-			limit = { is_lesser_in_union = no }
+			limit = {
+				government = monarchy
+				is_lesser_in_union = no
+			}
 			add_legitimacy = 10
 		}
 		add_prestige = 20

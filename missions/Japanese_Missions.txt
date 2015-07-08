@@ -26,9 +26,9 @@ convert_ezochi_to_shintoism = {
 	abort = {
 		OR = {
 			NOT = { religion = shinto }
-			NOT = { owns 1031 }
-			NOT = { owns 1847 }
-			NOT = { owns 1852 }
+			NOT = { owns = 1031 }
+			NOT = { owns = 1847 }
+			NOT = { owns = 1852 }
 		}
 	}
 	success = {

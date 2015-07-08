@@ -493,6 +493,7 @@ province_event = {
 			num_of_cities = 2
 		}
 		is_capital = no
+		is_reformation_center = no
 		OR = {
 			owner = {
 				NOT = { catholic = 1 }
@@ -514,10 +515,12 @@ province_event = {
 			factor = 1
 			modifier = {
 				factor = 0
-				OR = {
-					NOT = { stability = 1 }
-					war_exhaustion = 4
-					num_of_rebel_armies = 3
+				owner = {
+					OR = {
+						NOT = { stability = 1 }
+						war_exhaustion = 4
+						num_of_rebel_armies = 3
+					}
 				}
 			}
 		}
@@ -806,6 +809,7 @@ country_event = {
 		has_regency = no
 		is_religion_enabled = protestant
 		NOT = { has_country_flag = catholic_leaning_heir }
+		is_lesser_in_union = no
 		government = monarchy
 		NOT = { government = elective_monarchy }
 		has_heir = yes
@@ -861,7 +865,9 @@ country_event = {
 		is_religion_enabled = protestant
 		has_regency = no
 		government = monarchy
+		is_lesser_in_union = no
 		has_country_flag = catholic_leaning_heir #Should not be cleared
+		NOT = { has_country_flag = catholic_leaning_monarch_happened }
 		NOT = { has_country_flag = heir_no_longer_catholic }
 		NOT = { has_ruler_flag = heir_catholic }
 	}
@@ -874,6 +880,7 @@ country_event = {
 			factor = 1
 		}
 		set_ruler_flag = personal_catholic_sympathies
+		set_country_flag = catholic_leaning_monarch_happened
 		add_ruler_modifier = {
 			name = "tolerant_monarch"
 		}
@@ -897,6 +904,7 @@ country_event = {
 		religion = protestant
 		has_dlc = "Common Sense"
 		is_religion_enabled = protestant
+		is_lesser_in_union = no
 		has_ruler_flag = personal_catholic_sympathies
 	}
 	
@@ -951,6 +959,7 @@ country_event = {
 		has_regency = no
 		has_country_flag = catholic_leaning_heir
 		has_ruler_flag = heir_catholic
+		is_lesser_in_union = no
 		heir_age = 26
 	}
 	
@@ -1902,7 +1911,7 @@ province_event = {
 	
 	option = {
 		name = protestantism_events.34.a #Ok.
-		add_church_power = 25
+		owner = { add_church_power = 25 }
 		spawn_rebels = {
 			type = protestant_rebels
 			size = 2
@@ -1951,8 +1960,10 @@ province_event = {
 		months = 300
 		modifier = {
 			factor = 0.8
-			colonial_parent = {
-				has_country_modifier = spread_of_pietism
+			owner = {
+				colonial_parent = {
+					has_country_modifier = spread_of_pietism
+				}
 			}
 		}
 	}

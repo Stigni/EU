@@ -616,7 +616,7 @@ country_event = {
 		change_price = {
 			trade_goods = wine
 			key = WINE_CORKS
-			value = 0.50
+			value = 0.25
 			duration = -1
 		}
 	}

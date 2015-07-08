@@ -1038,7 +1038,6 @@
  ND_EXTRA_IDEA_COST: "Las tradiciones y las ideas tempranas cuestan más: $VALUE$"
  MEMBER_OF_HRE: "Miembro del imperio: $VALUE$"
  TREASURE_FLEET_TOOLTIP: "La siguiente Flota de Indias de $COUNTRY$ llegará el §Y$DATE$§!. Estimamos que nos traerá oro y de plata por valor de §Y$NUM$§!."
- TREASURE_FLEET_TOOLTIP_CANT_REACH: "§R$COUNTRY$ no puede enviar una Flota del Indias porque $OURNODE$ no está río abajo de $THEIRNODE$. En su lugar, se guardarán su ingreso de oro.§!"
  ND_IDEA_ALREADY_SELECTED: "§YYa has seleccionado este modificador. Seleccionarlo intercambiará puestos con el modificador seleccionado previamente.§!"
  RANDOM_OR_EMPTY_SETUP_DESC: "§YHas seleccionado el ajuste Aleatorio o Personalizado en Opciones. Por favor, crea una nación personalizada para empezar a jugar.§!"
  custom_idea_years_of_nationalism: "Una nación, un pueblo"

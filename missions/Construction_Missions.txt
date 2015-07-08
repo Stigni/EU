@@ -296,6 +296,7 @@ rival_army = {
 	allow = {
 		FROM = {
 			NOT = { army_size = ROOT }
+			land_forcelimit = ROOT
 			NOT = { has_country_modifier = thriving_arms_industry }
 			OR = {
 				NOT = { has_country_flag = rival_army_mission }
@@ -312,7 +313,7 @@ rival_army = {
 			is_subject_of = FROM
 			overlord_of = FROM
 		}
-	}	
+	}
 	success = {
 		FROM = { army_size = ROOT }
 	}

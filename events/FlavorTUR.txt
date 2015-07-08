@@ -1733,6 +1733,11 @@ country_event = {
 	trigger ={
 		tag = TUR
 		army_tradition = 50
+		OR = {
+			adm = 5
+			dip = 5
+			mil = 5
+		}		
 	}
 	
 	mean_time_to_happen = {

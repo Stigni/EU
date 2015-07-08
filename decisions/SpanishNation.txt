@@ -8,7 +8,7 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = SPA }
+			NOT = { tag = SPA }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			NOT = { tag = FRA }		# Basque is a valid culture for both FRA and SPA
@@ -28,7 +28,8 @@ country_decisions = {
 				ai = no
 				AND = {
 					ai = yes
-					num_of_cities = 3	
+					num_of_cities = 3
+					NOT = { exists = SPA }
 				}
 			}
 			OR = {
@@ -52,6 +53,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = SPA }
 			adm_tech = 10
 			is_subject = no
 			is_at_war = no

@@ -8,8 +8,12 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = PER }
+			OR = {
+				ai = no
+				NOT = { exists = PER }
+			}
 			NOT = { tag = MUG }
+			NOT = { tag = PER }
 			OR = {
 				culture_group = iranian
 				primary_culture = azerbaijani
@@ -27,6 +31,7 @@ country_decisions = {
 			is_subject = no
 			is_at_war = no
 			is_tribal = no
+			NOT = { exists = PER }
 			owns_core_province = 2218		# Shiraz
 			owns_core_province = 414		# Hamadan
 			owns_core_province = 416		# Tabriz	

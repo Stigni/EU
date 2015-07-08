@@ -4,19 +4,20 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { government = merchant_republic }
-			OR = {
-				technology_group = western
-				technology_group = eastern
-				technology_group = ottoman
-				technology_group = muslim
-			}
+			NOT = { government = tribal_democracy }
+			NOT = { government = native_council }
+			NOT = { government = siberian_native_council }
+			NOT = { government = imperial_city }
+			NOT = { government = ambrosian_republic }
+			NOT = { government = dutch_republic }
+			NOT = { government = colonial_government }
 			government = republic
 			NOT = { num_of_cities = 20 }
 		}
 		allow =  {
 			stability = 1	
 			NOT = { num_of_cities = 20 }
-			trade_income_percentage = 0.4
+			trade_income_percentage = 0.3
 			full_idea_group = trade_ideas
 			full_idea_group = economic_ideas
 			is_at_war = no 
@@ -32,6 +33,19 @@ country_decisions = {
 				factor = 0
 				num_of_cities = 5
 			}
+			modifier = {
+				factor = 0
+				OR = {
+					technology_group = muslim
+					technology_group = indian
+					technology_group = chinese
+					technology_group = sub_saharan
+					technology_group = north_american
+					technology_group = mesoamerican
+					technology_group = south_american
+					technology_group = andean
+				}
+			}
 		}
 	}
 	
@@ -39,12 +53,19 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { government = merchant_republic }
-			OR = {
-				technology_group = western
-				technology_group = eastern
-				technology_group = ottoman
-				technology_group = muslim
-			}
+			NOT = { government = steppe_horde }
+			NOT = { government = iqta }
+			NOT = { government = tribal_despotism }
+			NOT = { government = tribal_kingdom }
+			NOT = { government = tribal_federation }
+			NOT = { government = native_council }
+			NOT = { government = siberian_native_council }
+			NOT = { government = english_monarchy }
+			NOT = { government = elective_monarchy }
+			NOT = { government = celestial_empire }
+			NOT = { government = daimyo }
+			NOT = { government = shogunate }
+			NOT = { government = revolutionary_empire }
 			government = monarchy
 			NOT = { num_of_cities = 20 }
 		}
@@ -75,6 +96,19 @@ country_decisions = {
 				factor = 0
 				num_of_cities = 5
 			}
+			modifier = {
+				factor = 0
+				OR = {
+					technology_group = muslim
+					technology_group = indian
+					technology_group = chinese
+					technology_group = sub_saharan
+					technology_group = north_american
+					technology_group = mesoamerican
+					technology_group = south_american
+					technology_group = andean
+				}
+			}
 		}
 	}
 	
@@ -82,19 +116,26 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { government = merchant_republic }
-			OR = {
-				technology_group = western
-				technology_group = eastern
-				technology_group = ottoman
-				technology_group = muslim
-			}
+			NOT = { government = steppe_horde }
+			NOT = { government = iqta }
+			NOT = { government = tribal_despotism }
+			NOT = { government = tribal_kingdom }
+			NOT = { government = tribal_federation }
+			NOT = { government = native_council }
+			NOT = { government = siberian_native_council }
+			NOT = { government = english_monarchy }
+			NOT = { government = elective_monarchy }
+			NOT = { government = celestial_empire }
+			NOT = { government = daimyo }
+			NOT = { government = shogunate }
+			NOT = { government = revolutionary_empire }
 			government = monarchy
 			NOT = { num_of_cities = 20 }
 		}
 		allow =  {
 			stability = 1	
 			NOT = { num_of_cities = 20 }		
-			NOT = { trade_income_percentage = 0.2 }
+			num_of_cavalry = 10
 			full_idea_group = aristocracy_ideas
 			full_idea_group = influence_ideas
 			is_at_war = no 
@@ -118,8 +159,93 @@ country_decisions = {
 				factor = 0
 				num_of_cities = 5
 			}
+			modifier = {
+				factor = 0
+				OR = {
+					technology_group = muslim
+					technology_group = indian
+					technology_group = chinese
+					technology_group = sub_saharan
+					technology_group = north_american
+					technology_group = mesoamerican
+					technology_group = south_american
+					technology_group = andean
+				}
+			}
 		}
-	}	
+	}
+	
+	theocratic_administration = {
+		major = yes
+		potential = {
+			has_dlc = "Common Sense"
+			NOT = { government = theocratic_government }
+			NOT = { government = steppe_horde }
+			NOT = { government = iqta }
+			NOT = { government = tribal_despotism }
+			NOT = { government = tribal_kingdom }
+			NOT = { government = tribal_federation }
+			NOT = { government = tribal_democracy }
+			NOT = { government = native_council }
+			NOT = { government = siberian_native_council }
+			NOT = { government = english_monarchy }
+			NOT = { government = elective_monarchy }
+			NOT = { government = imperial_city }
+			NOT = { government = ambrosian_republic }
+			NOT = { government = dutch_republic }
+			NOT = { government = celestial_empire }
+			NOT = { government = daimyo }
+			NOT = { government = shogunate }
+			NOT = { government = colonial_government }
+			NOT = { government = revolutionary_empire }
+			OR = {
+				government = monarchy
+				government = republic
+			}
+			NOT = { num_of_cities = 20 }
+		}
+		allow =  {
+			stability = 1	
+			NOT = { num_of_cities = 20 }
+			full_idea_group = religious_ideas
+			full_idea_group = diplomatic_ideas
+			is_at_war = no
+			religious_unity = 1
+			is_subject = false
+		}
+		effect = {
+			change_government = theocratic_government
+			add_stability = -4
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					adm = 2
+					dip = 2
+					mil = 2
+				}
+			}
+			modifier = {
+				factor = 0
+				num_of_cities = 5
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					technology_group = muslim
+					technology_group = indian
+					technology_group = chinese
+					technology_group = sub_saharan
+					technology_group = north_american
+					technology_group = mesoamerican
+					technology_group = south_american
+					technology_group = andean
+				}
+			}
+		}
+	}
 	
 	formalize_separation_of_powers = {
 		potential = {
@@ -249,7 +375,7 @@ country_decisions = {
 				add_opinion = { who = ROOT modifier = secularized_bishopric }
 			}
 			if = {
-				limit = { NOT = { total_development = 200 } }
+				limit = { NOT = { total_development = 300 } }
 				set_government_rank = 1
 			}
 			change_government = administrative_monarchy
@@ -257,6 +383,59 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	secularization_of_christian_theocracy = {
+		major = yes
+		potential = {
+			OR = {
+				government = theocratic_government
+				government = monastic_order_government
+			}
+			religion_group = christian
+			NOT = { religion = protestant }
+			NOT = { religion = reformed }
+		}
+		allow = {
+			stability = 2
+			adm_tech = 20
+		}
+		effect = {
+			every_neighbor_country = {
+				limit = {
+					government = monarchy
+					ROOT = { government = monastic_order_government }
+				}
+				add_opinion = { who = ROOT modifier = secularized_monastic_order }
+			}
+			every_neighbor_country = {
+				limit = {
+					government = monarchy
+					ROOT = { government = theocratic_government }
+				}
+				add_opinion = { who = ROOT modifier = secularized_bishopric }
+			}
+			if = {
+				limit = {
+					religion = catholic
+				}
+				PAP = {
+					add_opinion = {
+						who = ROOT
+						modifier = opinion_displeased
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { total_development = 300 } }
+				set_government_rank = 1
+			}
+			change_government = administrative_monarchy
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 	

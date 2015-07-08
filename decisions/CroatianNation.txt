@@ -8,9 +8,13 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = CRO}
 			NOT = { tag = HLR }
+			NOT = { tag = CRO }
 			NOT = { tag = PAP }
+			OR = {
+				NOT = { exists = CRO}
+				ai = no
+			}
 			primary_culture = croatian
 			OR = {
 				ai = no
@@ -30,6 +34,7 @@ country_decisions = {
 		}
 		allow = {
 			#adm_tech = 10
+			NOT = { exists = CRO}
 			is_subject = no
 			is_at_war = no			
 			owns_core_province = 131			# Zagreb

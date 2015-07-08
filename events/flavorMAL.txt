@@ -111,12 +111,6 @@ province_event = {
 				MIL = 4
 				claim = 100
 			}
-			capital_scope = {
-				cavalry = FUL
-			}
-			every_owned_province = {
-				infantry = FUL
-			}
 		}
 	}
 }

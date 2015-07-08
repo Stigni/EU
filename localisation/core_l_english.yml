@@ -551,7 +551,7 @@
  CN_TAX_TOOLTIP1: "This option determines the base tax and manpower of all provinces."
  CN_TAX_TOOLTIP2: "§YNormal Values:§! All provinces have their historical tax and manpower values.\n§YRandom Values:§! All provinces have randomized tax and manpower values.\n§YFlat Values:§! All provinces have the same tax and manpower values."
  CN_ADD_TO_SAVE_TOOLTIP1: "Allows adding new Custom Nations after loading a Save Game"
- CN_ADD_TO_SAVE_TOOLTIP2:
+ CN_ADD_TO_SAVE_TOOLTIP2: ""
  CN_TAX_NORMAL: "Normal Values"
  CN_TAX_RANDOM: "Random Values"
  CN_TAX_FLAT: "Flat Values"
@@ -700,7 +700,7 @@
  SAVEGAME_ERROR_LOADING: "Error loading savegame"
  SAVEGAME_ERROR_LOADING_CORRUPT: "Failed to load save game. The file is corrupted."
  SAVEGAME_WARNING_OLD_VERSION_TITLE: "Old Savegame"
- SAVEGAME_WARNING_OLD_VERSION_DESC: "The loaded savegame $NAME$ is from an a different version of EU4.\n\n This can cause problems in the game.\n\nSaving again, closing the game and reloading may help."
+ SAVEGAME_WARNING_OLD_VERSION_DESC: "The loaded savegame $NAME$ is from a different version of EU4.\n\n This can cause problems in the game and §Rcan potentially ruin Ironman saves§!.\n\nSaving again, closing the game and reloading may help."
  CHECKBOX_COMPRESSED_SAVEGAMES: "Compress game data"
  FE_RANDOM_NEW_WORLD: "Random New World"
  INVALID_REGENCY: "$COUNTRY$ is currently ruled by a temporary council. A new ruler will be randomly generated for them on game start."
@@ -745,3 +745,5 @@
  WAR_REPARATIONS: "War Reparations"
  SHOW_AS_ALERT: "Shown as alert"
  SHOW_AS_POPUP: "Shown as popup"
+ FE_IRONMAN_CHECKSUM: "Ironman cannot be started until game version has been calculated, please wait a while more."
+ PLX_WAIT: "Please wait"

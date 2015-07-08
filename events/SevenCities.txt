@@ -1321,8 +1321,6 @@ province_event = {
 				clr_country_flag = sce_action04_flag
 				clr_country_flag = sce_action05_flag
 				clr_country_flag = sce_action06_flag
-				
-				remove_country_modifier = sce_search_fountainofyouth
 			}
 		}
 	}
@@ -1394,8 +1392,6 @@ province_event = {
 				clr_country_flag = sce_action04_flag
 				clr_country_flag = sce_action05_flag
 				clr_country_flag = sce_action06_flag
-				
-				remove_country_modifier = sce_search_fountainofyouth
 			}
 		}
 	}
@@ -2694,8 +2690,10 @@ province_event = {
 			NOT = {
 				capital_scope = { continent = europe }
 			}
-			NOT = { has_country_modifier = sce_sacagawea }
 			NOT = { has_ruler_flag = sce_sacagawea_flag }
+		}
+		FROM = {
+			NOT = { has_country_modifier = sce_sacagawea }
 		}
 	}
 	
@@ -2705,7 +2703,9 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_ruler_flag = sce_sacagawea_flag
+			owner = {
+				set_ruler_flag = sce_sacagawea_flag
+			}
 		}
 	}
 	

@@ -8,10 +8,8 @@ country_decisions = {
 				is_former_colonial_nation = yes
 				is_colonial_nation = yes
 			}
-			OR = {
-				colonial_colombia = {
-					owned_by = ROOT
-				}
+			colonial_colombia = {
+				owned_by = ROOT
 			}
 			OR = {
 				ai = no

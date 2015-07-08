@@ -246,8 +246,8 @@ country_event = {
 			limit = {
 				senior_union_with = BOH
 			}
-			break_union = BOH
-		}		
+			BOH = { break_union = HAB }
+		}
 	}
 }
 

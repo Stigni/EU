@@ -125,16 +125,14 @@ on_war_lost = {
 # country
 # root = winning country, from = loser country
 on_battle_won_country = {
-	events = {
-		friendship_events.2 #Historical Friendship Broken
-	}
 }
 
 # country
 # root = loser country, from = winner country
 on_battle_lost_country = {
-	events = {
-		friendship_events.1 #Historical Friendship Broken
+	random_events = {
+		90 = 0
+		10 = friendship_events.1 #Historical Friendship Broken
 	}
 }
 
@@ -670,15 +668,6 @@ on_bi_yearly_pulse = {
 		100 = trade.10
 		100 = trade.11
 		100 = trade.12
-
-		# Catholic  Events      
-		100 = catholic_flavor.4 
-		100 = catholic_flavor.5 
-		100 = catholic_flavor.6 
-		100 = catholic_flavor.7 
-		100 = catholic_flavor.8 
-		100 = catholic_flavor.9 
-		100 = catholic_flavor.10
 		
 		# Tradegoods events
 		100 = 6418
@@ -697,31 +686,6 @@ on_bi_yearly_pulse = {
 		100 = 6432
 		100 = 6433
 		100 = 6434
-		
-		# Muslim Piety Events
-		100 = muslim_piety.1
-		100 = muslim_piety.2
-		100 = muslim_piety.3
-		100 = muslim_piety.4
-		100 = muslim_piety.5
-		100 = muslim_piety.6
-		100 = muslim_piety.7
-		100 = muslim_piety.8
-		100 = muslim_piety.9
-		100 = muslim_piety.10
-		100 = muslim_piety.11
-		100 = muslim_piety.12
-		100 = muslim_piety.13
-		100 = muslim_piety.14
-		100 = muslim_piety.15
-		100 = muslim_piety.16
-
-		# Random to increase or decrease patriarch authority.
-		100 = orthodox_flavor.1
-		100 = orthodox_flavor.2
-		100 = orthodox_flavor.3
-		100 = orthodox_flavor.4
-		100 = orthodox_flavor.5
 
 		# Refoms, when having parliaments.
 		100 = reforms.1
@@ -783,6 +747,28 @@ on_bi_yearly_pulse = {
 		
 		1000 = 0
 	}
+}
+
+on_bi_yearly_pulse_2 = {
+	random_events = {
+		
+		# Catholic  Events      
+		100 = catholic_flavor.4 
+		100 = catholic_flavor.5 
+		100 = catholic_flavor.6 
+		100 = catholic_flavor.7 
+		100 = catholic_flavor.8 
+		100 = catholic_flavor.9 
+		100 = catholic_flavor.10
+		
+		1000 = 0
+	}
+}
+
+on_bi_yearly_pulse_3 = {
+}
+
+on_bi_yearly_pulse_4 = {
 }
 
 # country random events
@@ -883,6 +869,42 @@ on_thri_yearly_pulse = {
 		
 		1000 = 0		
 	}
+}
+
+on_thri_yearly_pulse_2 = {
+	random_events = {
+		# Random to increase or decrease patriarch authority.
+		25 = orthodox_flavor.1
+		25 = orthodox_flavor.2
+		25 = orthodox_flavor.3
+		25 = orthodox_flavor.4
+		25 = orthodox_flavor.5
+		
+		# Muslim Piety Events
+		50 = muslim_piety.1
+		50 = muslim_piety.2
+		50 = muslim_piety.3
+		50 = muslim_piety.4
+		50 = muslim_piety.5
+		50 = muslim_piety.6
+		50 = muslim_piety.7
+		50 = muslim_piety.8
+		50 = muslim_piety.9
+		50 = muslim_piety.10
+		50 = muslim_piety.11
+		50 = muslim_piety.12
+		50 = muslim_piety.13
+		50 = muslim_piety.14
+		50 = muslim_piety.15
+		50 = muslim_piety.16
+		300 = 0		
+	}
+}
+
+on_thri_yearly_pulse_3 = {
+}
+
+on_thri_yearly_pulse_4 = {
 }
 
 on_four_year_pulse = {
@@ -994,6 +1016,15 @@ on_four_year_pulse = {
 		
 		1000 = 0	
 	}
+}
+
+on_four_year_pulse_2 = {
+}
+
+on_four_year_pulse_3 = {
+}
+
+on_four_year_pulse_4 = {
 }
 
 on_five_year_pulse = {
@@ -1287,6 +1318,15 @@ on_five_year_pulse = {
 		
 		1000 = 0
 	}
+}
+
+on_five_year_pulse_2 = {
+}
+
+on_five_year_pulse_3 = {
+}
+
+on_five_year_pulse_4 = {
 }
 
 # El Dorado

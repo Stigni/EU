@@ -294,10 +294,15 @@ country_event = {
 		has_dlc = "Common Sense"
 		has_regency = no
 		government = monarchy
+		num_of_cities = 2
 		NOT = {
 			legitimacy = 50
 		}
 		any_subject_country = {
+			OR = {
+				is_vassal = yes
+				is_march = yes
+			}
 			government = monarchy
 			has_regency = no
 			has_new_dynasty = yes
@@ -317,6 +322,10 @@ country_event = {
 					has_regency = no
 					has_new_dynasty = yes
 					dynasty = ROOT
+					OR = {
+						is_vassal = yes
+						is_march = yes
+					}
 				}
 				set_country_flag = si_subject_state
 			}
@@ -343,7 +352,7 @@ country_event = {
 					spawn_rebels = {
 						type = pretender_rebels
 						friend = PREV
-						size = 3
+						size = 1
 					}
 				}
 			}
@@ -351,12 +360,12 @@ country_event = {
 	}
 	option = {
 		name = subject_interaction_events.6.b
-		add_years_of_income = -0.5
+		add_treasury = -100
 		random_subject_country = {
 			limit = {
 				has_country_flag = si_subject_state
 			}
-			add_years_of_income = 0.5
+			add_treasury = 100
 			clr_country_flag = si_subject_state
 		}
 	}
@@ -376,11 +385,9 @@ country_event = {
 		any_subject_country = {
 			has_subsidize_armies = yes
 			is_at_war = no
-			OR = {
-				NOT = {
-					culture_group = ROOT
-					religion = ROOT
-				}
+			NOT = {
+				culture_group = ROOT
+				religion = ROOT
 			}
 			NOT = {
 				has_opinion_modifier = { who = ROOT modifier = opinion_reprimanded }
@@ -399,11 +406,9 @@ country_event = {
 				limit = {
 					has_subsidize_armies = yes
 					is_at_war = no
-					OR = {
-						NOT = {
-							culture_group = ROOT
-							religion = ROOT
-						}
+					NOT = {
+						culture_group = ROOT
+						religion = ROOT
 					}
 				}
 				set_country_flag = si_subject_state
@@ -503,11 +508,9 @@ country_event = {
 		is_subject = yes
 		any_known_country = {
 			overlord_of = ROOT
-			OR = {
-				NOT = {
-					culture_group = ROOT
-					religion = ROOT
-				}
+			NOT = {
+				culture_group = ROOT
+				religion = ROOT
 			}
 		}
 		NOT = {
@@ -525,11 +528,9 @@ country_event = {
 		random_known_country = {
 			limit = {
 				overlord_of = ROOT
-				OR = {
-					NOT = {
-						culture_group = ROOT
-						religion = ROOT
-					}
+				NOT = {
+					culture_group = ROOT
+					religion = ROOT
 				}
 			}
 			set_country_flag = si_purge_flag

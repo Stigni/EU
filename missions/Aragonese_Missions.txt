@@ -16,6 +16,7 @@ vassalize_navarra = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 	}
 	abort = {
@@ -83,14 +84,28 @@ conquer_sardinia = {
 		tag = ARA
 		is_subject = no
 		NOT = { owns = 127 }
-		is_core = 127
-		127 = { owner = { NOT = { alliance_with = ROOT } } }
+		NOT = { owns = 2986 }
+		127 = {
+			owner = {
+				NOT = { alliance_with = ROOT }
+				NOT = { vassal_of = ROOT }
+			}
+		}
+		2986 = {
+			owner = {
+				NOT = { alliance_with = ROOT }
+				NOT = { vassal_of = ROOT }
+			}
+		}
+		NOT = { has_country_flag = conquest_of_sardinia_ara }
+		NOT = { has_country_modifier = mediterranean_ambition }
 	}
 	abort = {
 		is_subject = yes		
 	}
 	success = {
 		owns = 127
+		owns = 2986
 	}
 	chance = {
 		factor = 3000
@@ -101,16 +116,17 @@ conquer_sardinia = {
 	}
 	immediate = {
 		add_claim = 127
+		add_claim = 2986
 	}
 	abort_effect = {
 		remove_claim = 127
+		remove_claim = 2986
 	}
 	effect = {
-		127 = {
-			add_province_modifier = {
-				name = "faster_integration"
-				duration = 3650
-			}
+		set_country_flag = conquest_of_sardinia_ara
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
 		}
 	}
 }
@@ -124,35 +140,29 @@ conquer_sicily = {
 	ai_mission = yes
 	
 	target_provinces = {
-		owned_by = SIC
-		OR = {
-			province_id = 124
-			province_id = 125
-			province_id = 126
+		region = sicily_region
+		NOT = {
+			owner = { alliance_with = ROOT }
+			owner = { vassal_of = ROOT }
 		}
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		tag = ARA
-		exists = SIC
 		NOT = { has_country_modifier = mediterranean_ambition }
+		NOT = { has_country_flag = conquest_of_sicily_ara }
 		is_subject = no
-		SIC = {
-			OR = {
-				owns = 124
-				owns = 125
-				owns = 126
+		sicily_region = {
+			NOT = { owned_by = ROOT }
+			owner = {
+				NOT = { war_with = ROOT }
+				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
 			}
-			NOT = { war_with = ROOT }
-			NOT = { alliance_with = ROOT }
-			NOT = { is_subject_of = ROOT }
 		}
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			SIC = { is_subject_of = ROOT }
-		}
+		is_subject = yes
 	}
 	success = {
 		all_target_province = {
@@ -160,7 +170,7 @@ conquer_sicily = {
 		}
 	}
 	chance = {
-		factor = 3000
+		factor = 3500
 		modifier = {
 			factor = 2
 			mil = 4
@@ -177,6 +187,7 @@ conquer_sicily = {
 		}
 	}
 	effect = {
+		set_country_flag = conquest_of_sicily_ara
 		add_country_modifier = {
 			name = "mediterranean_ambition"
 			duration = 3650
@@ -199,6 +210,7 @@ conquer_naples = {
 		tag = ARA
 		exists = NAP
 		NOT = { has_country_modifier = mediterranean_ambition }
+		NOT = { has_country_flag = conquered_naples_ara }
 		is_subject = no
 		NAP = {
 			NOT = { is_subject_of = ARA }
@@ -237,6 +249,7 @@ conquer_naples = {
 		}
 	}
 	effect = {
+		set_country_flag = conquered_naples_ara
 		add_country_modifier = {
 			name = "mediterranean_ambition"
 			duration = 3650

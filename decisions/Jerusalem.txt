@@ -32,7 +32,6 @@ country_decisions = {
 		}
 		effect = {
 			add_prestige = 25
-			
 			if = {
 				limit = {
 					NOT = { tag = KNI }
@@ -56,10 +55,20 @@ country_decisions = {
 				change_tag = KOJ
 				swap_free_idea_group = yes
 			}
+			if = {
+				limit = { tag = KNI }
+				set_country_flag = knights_formed_jerusalem
+			}
 			KOJ = {
 				set_capital = 379
 				change_religion = catholic
 				change_government = feudal_monarchy
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
 			}
 		}
 		ai_will_do = {

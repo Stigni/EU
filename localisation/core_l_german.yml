@@ -744,3 +744,5 @@
  IS_NOT_FEDERATION_LEADER: "Ist KEIN Föderationsführer"
  KARMA_DESC2: "Karma repräsentiert die Göttlichkeit unserer vergangenen Handlungen in den Augen des buddhistischen Glaubens. Es steigt oder sinkt abhängig von der Moralität Eurer vergangenen Handlungen. Ein Herrscher mit zu viel Karma wird weltfremd, während ein Herrscher mit zu wenig Karma das Vertrauen seiner Soldaten verlieren wird."
  KARMA_DESC: "Karma steigt durch:\n- §YKriegserklärung gegen Euch§!\n- §YEhrung von Allianzen§!\n- §YEntlassung von Vasallen!\n- §YEntlassung von Nationen in Friedensverhandlungen§!\n- §YRückgabe von Kernprovinzen§!\n\nKarma sinkt durch:\n- §YBeginn von Kriegen§!\n- §YÜbernahme von Provinzen in Friedensverhandlungen§!"
+ FE_IRONMAN_CHECKSUM: "Ironman kann nicht gestartet werden, bis Spiel-Version berechnet worden ist, warten Sie bitte eine Weile mehr."
+ PLX_WAIT: "Warten Sie mal"

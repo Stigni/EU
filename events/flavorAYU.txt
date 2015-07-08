@@ -400,6 +400,7 @@ country_event = {
 			type = philosopher
 			name = "Constantine Phaulkon"
 			skill = 2
+			discount = yes
 		}
 	}
 	option = {

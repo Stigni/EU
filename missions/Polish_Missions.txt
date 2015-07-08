@@ -19,6 +19,11 @@ conquer_danzig = {
 			NOT = { vassal_of = POL }
 			NOT = { vassal_of = PLC }
 		}
+		43 = {
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
 		NOT = { war_with = TEU }
 		NOT = { has_country_modifier = baltic_ambition }
 	}
@@ -33,7 +38,7 @@ conquer_danzig = {
 		owns = 43
 	}
 	chance = {
-		factor = 1000
+		factor = 5050
 		modifier = {
 			factor = 2
 			mil = 4
@@ -102,7 +107,7 @@ conquer_warmia = { #Conquer Western Prussia
 		}
 	}
 	chance = {
-		factor = 1000
+		factor = 5050
 		modifier = {
 			factor = 2
 			mil = 4
@@ -143,6 +148,7 @@ vassalize_mazovia = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 		NOT = { has_country_modifier = polish_ambition }
 	}
@@ -212,6 +218,11 @@ conquer_smolensk = {
 			NOT = { vassal_of = PLC }
 			NOT = { vassal_of = POL }
 		}
+		293 = {
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
 		NOT = { alliance_with = RUS }
 		NOT = { war_with = RUS }
 		NOT = { has_country_modifier = polish_ambition }
@@ -228,7 +239,7 @@ conquer_smolensk = {
 		owns = 293
 	}
 	chance = {
-		factor = 1000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -283,7 +294,7 @@ retake_podolia = {
 		owns = 281
 	}
 	chance = {
-		factor = 1000
+		factor = 3000
 		modifier = {
 			factor = 2
 			NOT = { has_opinion = { who = TUR value = 0 } }
@@ -320,6 +331,7 @@ vassalize_lithuania = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 		NOT = { has_country_flag = vassalized_lithuania }
 		NOT = { has_country_modifier = polish_ambition }
@@ -388,7 +400,10 @@ vassalize_the_teutonic_order = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		tag = POL
+		OR = {
+			tag = POL
+			tag = PLC
+		}
 		exists = TEU
 		is_subject = no
 		TEU = {
@@ -396,6 +411,7 @@ vassalize_the_teutonic_order = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 		NOT = { has_country_flag = vassalized_teutonic_order }
 		NOT = { has_country_modifier = polish_ambition }
@@ -404,7 +420,10 @@ vassalize_the_teutonic_order = {
 		OR = {
 			is_subject = yes
 			NOT = { exists = TEU }
-			TEU = { is_subject = yes }
+			TEU = {
+				is_subject = yes
+				NOT = { vassal_of = ROOT }
+			}
 			NOT = {
 				has_casus_belli = {
 					type = cb_vassalize_mission
@@ -414,7 +433,7 @@ vassalize_the_teutonic_order = {
 		}
 	}
 	success = {
-		TEU = { vassal_of = POL }
+		TEU = { vassal_of = ROOT }
 	}
 	chance = {
 		factor = 3000
@@ -472,6 +491,11 @@ retake_minsk = {
 			NOT = { vassal_of = PLC }
 			NOT = { vassal_of = POL }
 		}
+		276 = {
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
 		NOT = { alliance_with = RUS }
 		NOT = { war_with = RUS }
 		NOT = { has_country_modifier = polish_ambition }
@@ -488,7 +512,7 @@ retake_minsk = {
 		owns = 276
 	}
 	chance = {
-		factor = 1000
+		factor = 2000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -544,7 +568,7 @@ defend_polands_western_border = {
 		}
 	}
 	chance = {
-		factor = 1000
+		factor = 2000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -609,7 +633,7 @@ defend_polands_northern_border = {
 		}
 	}
 	chance = {
-		factor = 1000
+		factor = 2000
 		modifier = {
 			factor = 2
 			mil = 4

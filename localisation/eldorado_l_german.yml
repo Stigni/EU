@@ -1062,7 +1062,6 @@
  custom_idea_idea_cost_desc: "Durch die Förderung freidenkerischer Philosophen an unserem Hof können wir sicherstellen, dass unsere Nation bereit ist, sich allem anzupassen, was die Zukunft für uns bereithalten mag."
  ND_EXTRA_IDEA_COST: "Hohes Maß an Tradition und frühe Ideen: $VALUE$"
  TREASURE_FLEET_TOOLTIP: "Die nächste Silberflotte aus $COUNTRY$ trifft am §Y$DATE$§! ein. Wir schätzen, dass sie Gold und Silber im Wert von §Y$NUM$§! führt."
- TREASURE_FLEET_TOOLTIP_CANT_REACH: "§R$COUNTRY$ kann keine Silberflotte aussenden, da $OURNODE$ nicht $THEIRNODE$ nachgelagert ist. Sie werden ihre Goldeinnahmen stattdessen behalten.§!"
  ND_IDEA_ALREADY_SELECTED: "§YIhr habt diesen Modifikator bereits ausgewählt. Durch die Auswahl werden die vorherigen Slots ausgetauscht.§!"
  RANDOM_OR_EMPTY_SETUP_DESC: "§YZufällige oder benutzerdefinierte Einstellung wurde in den Optionen ausgewählt. Bitte erstellt eine benutzerdefinierte Nation, um das Spiel zu starten.§!"
  desc_inti_yana_lord: "Wir haben die Häuptlinge dieser Region persönlich aus den Reihen unserer engsten Diener ausgewählt. Vorläufig bedeutet das zumindest, dass die Provinz unter enger, zentraler Kontrolle steht."

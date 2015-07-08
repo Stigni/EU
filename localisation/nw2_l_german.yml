@@ -107,7 +107,6 @@
  temperate: "Temperiert"
  SupportIndependenceREQDESC: "§Y$ACTOR$§! bittet darum, dass wir unterstützen ihre Unabhängigkeit. Das bedeutet, dass wir in den Krieg genannt sollten sie einen Befreiungskrieg zu starten. Nehmen Sie an?"
  ALREADY_CALLED_TO_ARMS: "Bereits zu einem der aktiven Kriege genannt."
- NO_RANDOM_MOD: "Random Neue Welt aufgrund der folgenden MODs / DLCs deaktiviert"
  LIBERATECOLONY: "Kolonie Loslassen"
  PROTECTORATES_NOT_ADVANCED: "Wir sind nicht genug, um Protektorate erstellen fortgeschritten."
  DIPLO_ALLY_IN_WAR: "Verbündeter im Krieg: "

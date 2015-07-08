@@ -11,6 +11,10 @@ country_event = {
 	trigger = {
 		historical_friend_with = FROM
 	}
+	
+	immediate = {
+		FROM = { hidden_effect = { country_event = { id = friendship_events.2 } } }
+	}
 
 	is_triggered_only = yes
 	

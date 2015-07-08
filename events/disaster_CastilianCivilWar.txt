@@ -20,8 +20,8 @@ country_event = {
 	}
 	
 	immediate = {
-		add_stability = -2
 		set_country_flag = had_cas_civil_war
+		add_stability = -2
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
@@ -45,7 +45,7 @@ country_event = {
 				}
 				set_province_flag = cas_civil_war_3
 			}
-			random_owned_province = { #While primarily a pretender rebelion there are parts of the nobility that will makes use of this to further their own positions in general.
+			random_owned_province = { #While primarily a pretender rebellion there are parts of the nobility that will makes use of this to further their own positions in general.
 				limit = {
 					is_capital = no
 					NOT = { has_province_flag = cas_civil_war_start } 
@@ -440,7 +440,7 @@ country_event = {
 }
 
 # Aragonese Support
-province_event = {
+country_event = {
 	id = castilian_civil_war.6
 	title = "castilian_civil_war.6.t"
 	desc = "castilian_civil_war.6.d"
@@ -475,7 +475,7 @@ province_event = {
 }
 
 # Castilian Civil War - France
-province_event = {
+country_event = {
 	id = castilian_civil_war.7
 	title = "castilian_civil_war.7.t"
 	desc = "castilian_civil_war.7.d"
@@ -527,7 +527,7 @@ province_event = {
 }
 
 # French Meddling
-province_event = {
+country_event = {
 	id = castilian_civil_war.8
 	title = "castilian_civil_war.8.t"
 	desc = "castilian_civil_war.8.d"

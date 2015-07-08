@@ -1430,18 +1430,22 @@ country_event = {
 		NOT = { has_ruler_modifier = hindu_ganga }
 		# Does not own a province containing Ganges
 		NOT = {
-			OR = {
-				owns = 561
-				owns = 564
-				owns = 564
-				owns = 563
-				owns = 558
-				owns = 555
-				owns = 556
-				owns = 524
-				owns = 522
-				owns = 511
-			}
+			owns = 511
+			owns = 522
+			owns = 523
+			owns = 524
+			owns = 555
+			owns = 556
+			owns = 558
+			owns = 561
+			owns = 563
+			owns = 564
+			owns = 2044
+			owns = 2060
+			owns = 2061
+			owns = 2063
+			owns = 2069
+			owns = 2095
 		}
 	}
 
@@ -1490,16 +1494,22 @@ country_event = {
 		NOT = { has_ruler_modifier = hindu_ganga }
 		# Owns a province containing Ganges
 		OR = {
-			owns = 561
-			owns = 564
-			owns = 564
-			owns = 563
-			owns = 558
+			owns = 511
+			owns = 522
+			owns = 523
+			owns = 524
 			owns = 555
 			owns = 556
-			owns = 524
-			owns = 522
-			owns = 511
+			owns = 558
+			owns = 561
+			owns = 563
+			owns = 564
+			owns = 2044
+			owns = 2060
+			owns = 2061
+			owns = 2063
+			owns = 2069
+			owns = 2095
 		}
 	}
 

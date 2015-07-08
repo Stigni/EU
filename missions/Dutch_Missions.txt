@@ -7,14 +7,19 @@ defend_the_lowlands = {
 	target_provinces = {
 		region = the_low_countries
 		NOT = { culture = wallonian }
+		NOT = { owned_by = ROOT }
 		owner = {
 			OR = {
 				capital_scope = {
 					NOT = { region = the_low_countries }
 				}
-				NOT = { primary_culture = flemish }
-				NOT = { primary_culture = dutch }
+				AND = {
+					NOT = { primary_culture = flemish }
+					NOT = { primary_culture = dutch }
+				}
 			}
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
 		}
 	}
 	allow = {
@@ -26,9 +31,14 @@ defend_the_lowlands = {
 					capital_scope = {
 						NOT = { region = the_low_countries }
 					}
-					NOT = { primary_culture = flemish }
-					NOT = { primary_culture = dutch }
+					AND = {
+						NOT = { primary_culture = flemish }
+						NOT = { primary_culture = dutch }
+					}
 				}
+				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				NOT = { tag = NED }
 			}
 		}
 		NOT = { has_country_flag = defended_lowlands }

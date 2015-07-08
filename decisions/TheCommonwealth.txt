@@ -203,4 +203,114 @@ country_decisions = {
 		ai_importance = 200
 	}
 	
+	commonwealth_enforced = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = PLC }
+			LIT = {
+				NOT = { senior_union_with = POL }
+				NOT = { junior_union_with = POL }
+			}
+			POL = {
+				NOT = { senior_union_with = LIT }
+				NOT = { junior_union_with = LIT }
+			}
+			OR = {
+				tag = LIT
+				tag = POL
+			}
+			OR = {
+				ai = no
+				AND = {
+					NOT = { exists = POL }
+					NOT = { exists = LIT }
+				}
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_subject = no
+			stability = 3
+			is_at_war = no
+			owns_core_province = 272				# Vilna
+			owns_core_province = 276				# Minsk
+			owns_core_province = 280				# Kiev
+			owns_core_province = 1941				# Turov
+			owns_core_province = 262				# Krakow
+			owns_core_province = 257				# Warszawa
+			owns_core_province = 43					# Danzig
+			owns_core_province = 1841				# Marienburg
+			MAZ = { exists = no }
+		}
+		effect = {
+			change_tag = PLC
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					wielkopolska = {
+						NOT = { owned_by = POL }
+						NOT = { owned_by = LIT }
+						NOT = { owned_by = PLC }
+					}
+				}
+				wielkopolska = {
+					add_claim = PLC
+				}
+			}
+			if = {
+				limit = {
+					malopolska = {
+						NOT = { owned_by = POL }
+						NOT = { owned_by = LIT }
+						NOT = { owned_by = PLC }
+					}
+				}
+				malopolska = {
+					add_claim = PLC
+				}
+			}
+			if = {
+				limit = {
+					belarus = {
+						NOT = { owned_by = POL }
+						NOT = { owned_by = LIT }
+						NOT = { owned_by = PLC }
+					}
+				}
+				belarus = {
+					add_claim = PLC
+				}
+			}
+			random_owned_province = {
+				limit = { has_owner_culture = yes }
+				add_base_tax = 1
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 200
+	}
+	
 }

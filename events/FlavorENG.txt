@@ -352,8 +352,8 @@ country_event = {
 
 	trigger = {
 		NOT = { has_country_flag = ENG_had_event_9107 }
-		is_year = 1485
-		NOT = { is_year = 1509 }
+		is_year = 1470
+		NOT = { is_year = 1600 }
 		OR = {
 			AND = {
 				tag = ENG
@@ -365,7 +365,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 390
 	}
 
 	immediate = {
@@ -375,7 +375,10 @@ country_event = {
 	option = {				# Yes we need one
 		name = "flavor_eng.EVTOPTA9107"
 		ai_chance = { factor = 90 }
-		add_adm_power = 30
+		add_country_modifier = {
+			name = "eng_court_star_chamber"
+			duration = -1
+		}
 	}
 	option = {				# No we don't
 		name = "flavor_eng.EVTOPTB9107"
@@ -821,6 +824,7 @@ country_event = {
 				name = "Francis Walsingham"
 				location = 235
 				skill = 3
+				discount = yes
 			}
 		}
 		if = {
@@ -833,6 +837,7 @@ country_event = {
 				name = "Francis Walsingham"
 				location = 236
 				skill = 3
+				discount = yes
 			}
 		}
 	}
@@ -876,6 +881,7 @@ country_event = {
 		define_advisor = {
 			type = treasurer
 			name = "Thomas Gresham"
+			discount = yes
 			location = 236
 			skill = 3
 		}
@@ -1604,6 +1610,7 @@ country_event = {
 			define_advisor = {
 				type = statesman
 				name = "Robert Walpole"
+				discount = yes
 				location = 238
 				skill = 3
 			}
@@ -1616,6 +1623,7 @@ country_event = {
 			define_advisor = {
 				type = statesman
 				name = "Robert Walpole"
+				discount = yes
 				location = 236
 				skill = 3
 			}
@@ -1796,6 +1804,7 @@ country_event = {
 			define_advisor = {
 				type = statesman
 				name = "W. Pitt the Elder"
+				discount = yes
 				location = 236
 				skill = 3
 			}
@@ -1859,6 +1868,7 @@ country_event = {
 			define_advisor = {
 				type = statesman
 				name = "W. Pitt the Younger"
+				discount = yes
 				location = 235
 				skill = 3
 			}
@@ -1871,6 +1881,7 @@ country_event = {
 			define_advisor = {
 				type = statesman
 				name = "W. Pitt the Younger"
+				discount = yes
 				location = 236
 				skill = 3
 			}

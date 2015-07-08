@@ -1119,7 +1119,6 @@ country_event = {
 		owns = 968 # Massachusetts
   		owns = 2561 # Quinnipiac
 		owns = 2010 # Connecticut
-		owns = 2561 # Wampanoag
 	}
 	
 	mean_time_to_happen = { months = 200 }

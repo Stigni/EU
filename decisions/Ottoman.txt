@@ -13,9 +13,9 @@ country_decisions = {
 			}
 		}
 		allow = {
+			is_at_war = no
 			primary_culture = turkish
 			religion = sunni
-			ADM = 3
 			controls = 151
 			owns = 149		# Edirne
 			owns = 316		# Bithnyia
@@ -37,8 +37,9 @@ country_decisions = {
 					NOT = { has_global_flag = constantinople_restored }
 				}
 				151 = {
-					add_base_tax = 6
-					add_base_manpower = 5
+					add_base_tax = 4
+					add_base_production = 4
+					add_base_manpower = 3
 				}
 				set_global_flag = constantinople_restored
 			}

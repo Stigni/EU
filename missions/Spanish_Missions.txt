@@ -171,7 +171,6 @@ continue_reconquista = {
 			tag = SPA
 		}		
 		religion = catholic
-		is_at_war = no
 		NOT = {
 			iberian_peninsula = {
 				owner = { religion_group = muslim }

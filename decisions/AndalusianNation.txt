@@ -3,10 +3,10 @@ country_decisions = {
 	andalusian_nation = {
 		major = yes
 		potential = {
-			NOT = { exists = ADU }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			NOT = { tag = SPA }
+			NOT = { tag = ADU }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -23,6 +23,7 @@ country_decisions = {
 			OR = {
 				ai = no
 				AND = {
+					NOT = { exists = ADU }
 					num_of_cities = 6
 					any_owned_province = {
 						region = andalusia
@@ -31,6 +32,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = ADU }
 			is_subject = no
 			is_at_war = no
 			is_tribal = no

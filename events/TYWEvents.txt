@@ -2029,21 +2029,17 @@ country_event = {
 			offensive_war_with = ROOT
 		}
 		any_owned_province = {
-			is_capital = no
-			OR = {
-					has_building = fort_15th
-					has_building = fort_16th
-					has_building = fort_17th
-					has_building = fort_18th
+			fort_level = 1
+			any_neighbor_province = {
+				owned_by = ROOT
+				is_capital = yes
 			}
 		}
-		NOT = {
-			any_owned_province = {
-				fort_level = 1
-				OR = {
-					has_province_modifier = improved_fortifications
-					NOT = { controlled_by = ROOT }
-				}
+		any_owned_province = {
+			fort_level = 1
+			NOT = { has_province_modifier = improved_fortifications }
+			any_neighbor_province = {
+				NOT = { controlled_by = ROOT }
 			}
 		}
 	}

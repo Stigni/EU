@@ -1062,7 +1062,6 @@
  custom_idea_idea_cost_desc: "La présence de philosophes libres penseurs à la cour permettra à notre nation de s'adapter aux futurs changements."
  ND_EXTRA_IDEA_COST: "Traditions de haut niveau et idées précoces : $VALUE$"
  TREASURE_FLEET_TOOLTIP: "La prochaine flotte des Trésors de $COUNTRY$ arrivera à la date suivante : §Y$DATE$§!. Nous estimons qu'elle nous apportera §Y$NUM$§! en or et en argent."
- TREASURE_FLEET_TOOLTIP_CANT_REACH: "§R$COUNTRY$ ne peut pas envoyer de flotte des Trésors car $OURNODE$ ne se trouve pas en aval de $THEIRNODE$. Ils préfèrent garder leur or.§!"
  ND_IDEA_ALREADY_SELECTED: "§YVous avez déjà sélectionné ce modificateur. Sa sélection rétablira les précédentes sélections.§!"
  RANDOM_OR_EMPTY_SETUP_DESC: "§YLe paramètre Configuration aléatoire ou personnalisée a été sélectionné dans les Options. Veuillez créer une nation personnalisée pour démarrer la partie.§!"
  desc_inti_yana_lord: "Nous avons personnellement désigné les chefs de cette région parmi nos plus proches serviteurs. Cette province est sous strict contrôle du pouvoir central, du moins pour le moment."

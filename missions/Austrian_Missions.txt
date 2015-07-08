@@ -38,14 +38,14 @@ unite_austria = {
 		}
 	}
 	chance = {
-		factor = 3000
+		factor = 3500
 		modifier = {
 			factor = 2
-			TIR = { has_opinion = { who = HAB value = 100 } }
+			TIR = { NOT = { has_opinion = { who = HAB value = 0 } } }
 		}
 		modifier = {
 			factor = 2
-			STY = { has_opinion = { who = HAB value = 100 } }
+			STY = { NOT = { has_opinion = { who = HAB value = 0 } } }
 		}
 	}
 	immediate = {
@@ -75,15 +75,48 @@ recover_silesia = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces = {
+		OR = {
+			province_id = 263
+			province_id = 264
+			province_id = 2966
+		}
+		owner = {
+			NOT = { vassal_of = HAB }
+			NOT = { alliance_with = HAB }
+		}
+	}
+	
 	allow = {
 		normal_or_historical_nations = yes
 		tag = HAB
 		is_subject = no
-		NOT = { owns = 264 }	# Silesia
-		264 = {
-			is_core = ROOT
+		owns = 266 #Prague
+		OR = {
+			owns = 60
+			owns = 154
+			owns = 265
+			owns = 2970
+		}
+		263 = {
+			NOT = { owned_by = ROOT }
 			owner = {
 				NOT = { alliance_with = HAB }
+				NOT = { vassal_of = HAB }
+			}
+		}
+		264 = {
+			NOT = { owned_by = ROOT }
+			owner = {
+				NOT = { alliance_with = HAB }
+				NOT = { vassal_of = HAB }
+			}
+		}
+		2966 = {
+			NOT = { owned_by = ROOT }
+			owner = {
+				NOT = { alliance_with = HAB }
+				NOT = { vassal_of = HAB }
 			}
 		}
 	}
@@ -91,7 +124,9 @@ recover_silesia = {
 		is_subject = yes
 	}
 	success = {
-		owns = 264
+		all_target_province = {
+			owned_by = ROOT
+		}
 	}
 	chance = {
 		factor = 3000
@@ -100,8 +135,18 @@ recover_silesia = {
 			mil = 4
 		}	
 	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
 	effect = {
-		264 = {
+		every_target_province = {
 			add_province_modifier = {
 				name = "faster_integration"
 				duration = 3650
@@ -121,7 +166,10 @@ reclaim_the_empire = {
 		normal_or_historical_nations = yes
 		tag = HAB
 		is_emperor = no
-		is_female = no
+		OR = {
+			allows_female_emperor = yes
+			is_female = no
+		}
 		is_subject = no
 		is_lesser_in_union = no
 		has_regency = no
@@ -138,7 +186,10 @@ reclaim_the_empire = {
 	abort = {
 		OR = {
 			has_regency = yes
-			is_female = yes
+			AND = {
+				is_female = yes
+				allows_female_emperor = no
+			}
 			is_subject = yes
 			is_lesser_in_union = yes
 			NOT = { government = monarchy }
@@ -151,7 +202,7 @@ reclaim_the_empire = {
 		is_emperor = yes
 	}
 	chance = {
-		factor = 2000
+		factor = 5000
 	}
 	effect = {
 		add_country_modifier = {
@@ -292,41 +343,63 @@ no_ottomans_in_eastern_balkans = {
 
 	category = MIL
 	
+	target_provinces = {
+		owned_by = TUR
+		region = eastern_balkans
+	}
+	
 	allow = {
 		normal_or_historical_nations = yes
 		tag = HAB
 		exists = TUR
 		is_subject = no
+		num_of_cities = 25
+		OR = {
+			owns = 161
+			owns = 150
+			owns = 148
+			owns = 3000
+		}
 		TUR = {
 			num_of_cities = 15
 			is_neighbor_of = ROOT
 			NOT = { alliance_with = HAB }
 		}
 		eastern_balkans = { owned_by = TUR }
+		NOT = { has_country_flag = conquered_eastern_balkans }
 		NOT = { has_country_modifier = drove_back_the_turk }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			NOT = { eastern_balkans = { owned_by = TUR } }
-		}
+		is_subject = yes
 	}
 	success = {
-		NOT = { eastern_balkans = { owned_by = TUR } }
-		eastern_balkans = { owned_by = ROOT }
+		all_target_province = {
+			owned_by = ROOT
+		}
 	}
 	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			NOT = { has_opinion = { who = TUR value = 0 } }
-		}
+		factor = 1000
 		modifier = {
 			factor = 2
 			TUR = { NOT = { num_of_cities = ROOT } }
 		}
+		modifier = {
+			factor = 3
+			western_balkans = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		modifier = {
+			factor = 3
+			hungarian_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
 	}
 	effect = {
+		set_country_flag = conquered_eastern_balkans
 		add_country_modifier = {
 			name = "drove_back_the_turk"
 			duration = 3650
@@ -341,11 +414,22 @@ no_ottomans_in_western_balkans = {
 
 	category = MIL
 	
+	target_provinces = {
+		owned_by = TUR
+		region = western_balkans
+	}
+	
 	allow = {
 		normal_or_historical_nations = yes
 		tag = HAB
 		exists = TUR
 		is_subject = no
+		num_of_cities = 25
+		OR = {
+			owns = 1767
+			owns = 131
+			owns = 1826
+		}
 		TUR = {
 			num_of_cities = 15
 			is_neighbor_of = ROOT
@@ -353,29 +437,49 @@ no_ottomans_in_western_balkans = {
 		}
 		western_balkans = { owned_by = TUR }
 		NOT = { has_country_modifier = drove_back_the_turk }
+		NOT = { has_country_flag = conquest_of_western_balkans }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			NOT = { western_balkans = { owned_by = TUR } }
-		}
+		is_subject = yes
 	}
 	success = {
-		NOT = { western_balkans = { owned_by = TUR } }
-		western_balkans = { owned_by = HAB }
+		all_target_province = {
+			owned_by = ROOT
+		}
 	}
 	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			NOT = { has_opinion = { who = TUR value = 0 } }
-		}
+		factor = 1000
 		modifier = {
 			factor = 2
 			TUR = { NOT = { num_of_cities = ROOT } }
 		}
+		modifier = {
+			factor = 3
+			croatian_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		modifier = {
+			factor = 3
+			hungarian_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
 	}
 	effect = {
+		set_country_flag = conquest_of_western_balkans
 		add_country_modifier = {
 			name = "drove_back_the_turk"
 			duration = 3650
@@ -390,69 +494,114 @@ partition_poland = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces = {
+		OR = {
+			owned_by = POL
+			owned_by = PLC
+		}
+		OR = {
+			region = malopolska
+			region = eastern_balkans
+			region = hungarian_region
+		}
+	}
+	
 	allow = {
 		normal_or_historical_nations = yes
 		tag = HAB
-		is_year = 1700
-		exists = POL
-		exists = PRU
-		exists = RUS
 		NOT = { has_country_modifier = polish_partitions }
 		NOT = { has_country_flag = partitioned_poland }
-		is_neighbor_of = POL
-		num_of_cities = 10
 		OR = {
-			owns = 154
-			owns = 162
-			owns = 263
+			is_neighbor_of = POL
+			is_neighbor_of = PLC
 		}
-		POL = {
-			owns = 259
-			owns = 260
-			owns = 261
-			owns = 262
-			owns = 1940
-			owns = 2424
-			is_neighbor_of = PRU
-			is_neighbor_of = RUS
-			NOT = { alliance_with = HAB }
+		num_of_cities = 20
+		owns_core_province = 153 #Budapest
+		OR = {
+			owns_core_province = 154
+			owns_core_province = 162
+			owns_core_province = 1318
 		}
 		OR = {
-			is_core = 259
-			is_core = 260
-			is_core = 261
-			is_core = 262
-			is_core = 1940
-			is_core = 2424
+			PLC = {
+				is_neighbor_of = ROOT
+				num_of_cities = 10
+				NOT = { alliance_with = ROOT }
+				any_owned_province = {
+					OR = {
+						region = malopolska
+						region = eastern_balkans
+						region = hungarian_region
+					}
+				}
+			}
+			AND = {
+				NOT = { exists = PLC }
+				POL = {
+					is_neighbor_of = ROOT
+					num_of_cities = 10
+					NOT = { alliance_with = ROOT }
+					any_owned_province = {
+					OR = {
+						region = malopolska
+						region = eastern_balkans
+						region = hungarian_region
+					}
+				}
+				}
+			}
 		}
-		has_opinion = { who = RUS value = 0 }
-		has_opinion = { who = PRU value = 0 }
 	}
 	abort = {
-		OR = {
-			NOT = { exists = POL }
-			NOT = { is_neighbor_of = POL }
-		}
+		is_subject = yes
 	}
 	success = {
-		OR = {
-			owns = 259
-			owns = 260
-			owns = 261
-			owns = 262
-			owns = 1940
-			owns = 2424
+		all_target_province = {
+			owned_by = ROOT
 		}
 	}
 	chance = {
 		factor = 3000
 		modifier = {
 			factor = 2
-			POL = { NOT = { num_of_cities = ROOT } }
+			any_owned_province = {
+				region = malopolska
+			}
+		}
+		modifier = {
+			factor = 5
+			hungarian_region = {
+				type = all
+				owned_by = HAB
+			}
+		}
+		modifier = {
+			factor = 5
+			is_year = 1700
 		}
 		modifier = {
 			factor = 2
-			NOT = { has_opinion = { who = POL value = 0 } }
+			exists = POL
+			POL = {
+				has_any_disaster = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			exists = PLC
+			PLC = {
+				has_any_disaster = yes
+			}
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
 		}
 	}
 	effect = {
@@ -500,89 +649,16 @@ no_territory_to_the_ottomans = {
 	}
 }
 
-
-hegemony_over_north_italy = {
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	allow = {
-		normal_or_historical_nations = yes
-		tag = HAB
-		NOT = { has_country_flag = had_italian_ambition_mission }
-		is_subject = no
-		is_year = 1500
-		OR = {
-			owns = 110
-			owns = 111
-			owns = 1774
-			owns = 1873
-			is_part_of_hre = yes
-		}
-		NOT = { owns = 107 }	# Brescia
-		NOT = { owns = 108 }	# Verona
-		NOT = { owns = 1862 }	# Cremona
-		107 = {
-			NOT = { owner = { alliance_with = HAB } }
-		}
-		108 = {
-			NOT = { owner = { alliance_with = HAB } }
-		}
-		109 = {
-			NOT = { owner = { alliance_with = HAB } }
-		}
-		1862 = {
-			NOT = { owner = { alliance_with = HAB } }
-		}
-	}
-	abort = {
-		is_subject = yes
-	}
-	success = {
-		owns = 107
-		owns = 108
-		owns = 109
-		owns = 1862
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			mil = 4
-		}
-		modifier = {
-			factor = 2
-			mil = 5
-		}
-	}
-	immediate = {
-		add_claim = 107
-		add_claim = 108
-		add_claim = 109
-		add_claim = 1862
-	}
-	abort_effect = {
-		remove_claim = 107
-		remove_claim = 108
-		remove_claim = 109
-		remove_claim = 1862
-	}
-	effect = {
-		set_country_flag = had_italian_ambition_mission
-		add_country_modifier = {
-			name = "italian_ambition_modifier"
-			duration = 3650
-		}
-	}
-}
-
 protect_belgium_from_the_french = {
 	
 	type = country
 
 	category = MIL
+	
+	target_provinces = {
+		region = spanish_netherlands
+		owned_by = FRA
+	}
 	
 	allow = {
 		normal_or_historical_nations = yes
@@ -596,20 +672,34 @@ protect_belgium_from_the_french = {
 		spanish_netherlands = { owned_by = FRA }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			NOT = { spanish_netherlands = { owned_by = ROOT } }
-		}
+		is_subject = yes
 	}
 	success = {
-		NOT = { war_with = FRA }
-		NOT = { spanish_netherlands = { owned_by = FRA } }
+		all_target_province = {
+			owned_by = ROOT
+		}
 	}
 	chance = {
 		factor = 2000
 		modifier = {
 			factor = 2
 			mil = 4
+		}
+		modifier = {
+			factor = 2
+			FRA = {
+				has_any_disaster = yes
+			}
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
 		}
 	}
 	effect = {
@@ -646,6 +736,7 @@ protect_hungary_from_the_ottomans = {
 		hungarian_region = { owned_by =  ROOT }
 		hungarian_region = { owned_by =  TUR }
 		NOT = { has_country_modifier = drove_back_the_turk }
+		NOT = { has_country_flag = protected_hungary_from_ottomans }
 	}
 	abort = {
 		OR = {
@@ -675,6 +766,7 @@ protect_hungary_from_the_ottomans = {
 		}
 	}
 	effect = {
+		set_country_flag = protected_hungary_from_ottomans
 		add_country_modifier = {
 			name = "drove_back_the_turk"
 			duration = 3650
@@ -682,63 +774,14 @@ protect_hungary_from_the_ottomans = {
 	}
 }
 
-
-protect_italy_from_the_french = {
+free_croatia_from_the_ottomans = { 
 	
 	type = country
 
 	category = MIL
 	
 	target_provinces = {
-		region = italian_region
-		owned_by = FRA
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		always = no #Removed, replaced by generic keep rival out of Italy mission
-		tag = HAB
-		exists = FRA
-		is_subject = no
-		FRA = { is_neighbor_of = ROOT }
-		italian_region = { owned_by = FRA }
-	}
-	abort = {
-		is_subject = yes
-	}
-	success = {
-		NOT = { war_with = FRA }
-		NOT = { italian_region = { owned_by = FRA } }
-	}
-	chance = {
-		factor = 1000
-		modifier = {
-			factor = 2
-			mil = 4
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			remove_claim = ROOT
-		}
-	}
-	effect = {
-		add_prestige = 10
-	}
-}
-
-free_transylvania_from_the_ottomans = {
-	
-	type = country
-
-	category = MIL
-	
-	target_provinces = {
-		region = dacia
+		region = croatian_region
 		owned_by = TUR
 	}
 	allow = {
@@ -746,28 +789,28 @@ free_transylvania_from_the_ottomans = {
 		tag = HAB
 		exists = TUR
 		is_subject = no
-		dacia = { owned_by = TUR }
+		croatian_region = { owned_by = TUR }
+		num_of_cities = 20
 		TUR = {
 			num_of_cities = 15
 			is_neighbor_of = ROOT
 			NOT = { alliance_with = HAB }
+			NOT = { vassal_of = HAB }
 		}
 		NOT = { war_with = TUR }
 		NOT = { has_country_modifier = drove_back_the_turk }
+		NOT = { has_country_flag = freed_croatia }
 	}
 	abort = {
-		OR = {
-			is_subject = yes		
-			NOT = { exists = TUR }
-			NOT = {	TUR = { is_neighbor_of = ROOT } }
-		}
+		is_subject = yes
 	}
 	success = {
-		NOT = { war_with = TUR }
-		NOT = { dacia = { owned_by = TUR } }
+		all_target_province = {
+			owned_by = ROOT
+		}
 	}
 	chance = {
-		factor = 3000
+		factor = 3500
 		modifier = {
 			factor = 2
 			NOT = { has_opinion = { who = TUR value = 0 } }
@@ -788,6 +831,7 @@ free_transylvania_from_the_ottomans = {
 		}
 	}
 	effect = {
+		set_country_flag = freed_croatia
 		add_country_modifier = {
 			name = "drove_back_the_turk"
 			duration = 3650

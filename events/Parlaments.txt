@@ -73,6 +73,14 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 400
+		modifier = {
+			factor = 0.8
+			NOT = { development = 6 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { development = 4 }
+		}
 	}
 
 	option = {
@@ -154,6 +162,14 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 400
+		modifier = {
+			factor = 0.8
+			NOT = { development = 6 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { development = 4 }
+		}
 	}
 
 	option = {
@@ -219,6 +235,10 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = { percentage_backing_issue = 0.5 }
+		}
 	}
 
 	option = {
@@ -256,6 +276,26 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 120
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.7 }
+		}
 	}
 
 	option = {
@@ -277,6 +317,7 @@ province_event = {
 		has_seat_in_parliament = yes
 		NOT = { has_province_modifier = rotten_borough }
 		OR = {
+			has_port = yes
 			has_building = wharf
 			has_building = dock
 			has_building = shipyard
@@ -284,7 +325,6 @@ province_event = {
 			has_building = marketplace
 			has_building = trade_depot
 			has_building = stock_exchange
-			is_overseas = yes
 		}
 		owner = { has_active_debate = yes }
 		is_backing_current_issue = no
@@ -299,7 +339,31 @@ province_event = {
 	is_mtth_scaled_to_size = 1
 	
 	mean_time_to_happen = {
-		months = 160
+		months = 120
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 1.8
+			owner = { percentage_backing_issue = 0.9 }
+		}
 	}
 
 	option = {
@@ -330,7 +394,7 @@ province_event = {
 			has_building = fort_16th
 			has_building = fort_17th
 			has_building = fort_18th
-			base_manpower = 11
+			base_manpower = 6
 		}
 		owner = { has_active_debate = yes }
 		is_backing_current_issue = no
@@ -347,6 +411,30 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 160
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 1.8
+			owner = { percentage_backing_issue = 0.9 }
+		}
 	}
 
 	option = {
@@ -373,7 +461,7 @@ province_event = {
 			has_building = tradecompany
 			has_building = workshop
 			has_building = counting_house
-			base_production = 11
+			base_production = 8
 		}
 		owner = { has_active_debate = yes }
 		is_backing_current_issue = no
@@ -384,6 +472,30 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 160
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 1.8
+			owner = { percentage_backing_issue = 0.9 }
+		}
 	}
 
 	option = {
@@ -418,6 +530,30 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 160
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 1.8
+			owner = { percentage_backing_issue = 0.9 }
+		}
 	}
 
 	option = {
@@ -448,11 +584,93 @@ province_event = {
 	is_mtth_scaled_to_size = 1
 	
 	mean_time_to_happen = {
-		months = 240 #More Rare
+		months = 180
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 1.8
+			owner = { percentage_backing_issue = 0.9 }
+		}
 	}
 
 	option = {
 		name = parlaments.10.a #
+		back_current_issue = yes
+	}
+}
+
+#We trust the Ruler
+province_event = {
+	id = parlaments.29
+	
+	title = parlaments.29.t
+	desc = parlaments.29.d
+	picture = PARLIAMENT_eventPicture
+
+	trigger = {
+		has_dlc = "Common Sense"
+		has_seat_in_parliament = yes
+		NOT = { has_province_modifier = rotten_borough }
+		owner = {
+			has_active_debate = yes
+			OR = {
+				legitimacy = 80
+				republican_tradition = 0.8
+			}
+		}
+		is_backing_current_issue = no
+	}
+	
+	is_mtth_scaled_to_size = 1
+	
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 1.8
+			owner = { percentage_backing_issue = 0.9 }
+		}
+	}
+
+	option = {
+		name = parlaments.29.a #
 		back_current_issue = yes
 	}
 }
@@ -480,10 +698,144 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 160
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 0.6
+			owner = { percentage_backing_issue = 0.9 }
+		}
 	}
 
 	option = {
 		name = parlaments.11.a #
+		back_current_issue = no
+	}
+}
+
+#We don't trust the ruler.
+province_event = {
+	id = parlaments.30
+	
+	title = parlaments.30.t
+	desc = parlaments.30.d
+	picture = PARLIAMENT_eventPicture
+
+	trigger = {
+		has_dlc = "Common Sense"
+		has_seat_in_parliament = yes
+		NOT = { has_province_modifier = rotten_borough }
+		owner = {
+			has_active_debate = yes
+		}
+		is_backing_current_issue = yes
+	}
+	
+	is_mtth_scaled_to_size = 1
+	
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 0.6
+			owner = { percentage_backing_issue = 0.9 }
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				government = monarchy
+				NOT = { legitimacy = 80 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				government = monarchy
+				NOT = { legitimacy = 65 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				government = monarchy
+				legitimacy = 85
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				government = monarchy
+				legitimacy = 100
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				government = republic
+				NOT = { republican_tradition = 0.80 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				government = republic
+				NOT = { republican_tradition = 0.65 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = {
+				government = republic
+				republican_tradition = 0.85
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				government = republic
+				republican_tradition = 1
+			}
+		}
+	}
+
+	option = {
+		name = parlaments.30.a #
 		back_current_issue = no
 	}
 }
@@ -540,6 +892,30 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 160
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 0.6
+			owner = { percentage_backing_issue = 0.9 }
+		}
 	}
 
 	option = {
@@ -565,7 +941,7 @@ province_event = {
 			has_building = tradecompany
 			has_building = workshop
 			has_building = counting_house
-			base_production = 11
+			base_production = 8
 		}
 		owner = { has_active_debate = yes }
 		is_backing_current_issue = yes
@@ -576,6 +952,30 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 160
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 0.6
+			owner = { percentage_backing_issue = 0.9 }
+		}
 	}
 
 	option = {
@@ -605,7 +1005,7 @@ province_event = {
 			has_building = fort_16th
 			has_building = fort_17th
 			has_building = fort_18th
-			base_manpower = 11
+			base_manpower = 6
 		}
 		owner = { has_active_debate = yes }
 		is_backing_current_issue = yes
@@ -621,6 +1021,30 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 160
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 0.6
+			owner = { percentage_backing_issue = 0.9 }
+		}
 	}
 
 	option = {
@@ -646,7 +1070,7 @@ province_event = {
 			has_building = dock
 			has_building = shipyard
 			has_building = grand_shipyard
-			is_overseas = yes
+			has_port = yes
 		}
 		owner = { has_active_debate = yes }
 		is_backing_current_issue = yes
@@ -663,6 +1087,30 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 160
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 0.6
+			owner = { percentage_backing_issue = 0.9 }
+		}
 	}
 
 	option = {
@@ -701,6 +1149,30 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 160
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 0.6
+			owner = { percentage_backing_issue = 0.9 }
+		}
 	}
 
 	option = {
@@ -740,6 +1212,30 @@ province_event = {
 				adm_tech = 20
 			}
 		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 0.6
+			owner = { percentage_backing_issue = 0.9 }
+		}
 	}
 
 	option = {
@@ -776,6 +1272,30 @@ province_event = {
 			factor = 0.5
 			NOT = { development = 10 } #Poor
 		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.1 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.25 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { percentage_backing_issue = 0.5 }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { percentage_backing_issue = 0.75 }
+		}
+		modifier = {
+			factor = 0.6
+			owner = { percentage_backing_issue = 0.9 }
+		}
 	}
 
 	option = {
@@ -804,6 +1324,14 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 300
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { percentage_backing_issue = 0.5 }
+		}
 	}
 
 	option = {
@@ -847,6 +1375,14 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 700
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 0.8
+			owner = { percentage_backing_issue = 0.5 }
+		}
 	}
 
 	option = {
@@ -890,7 +1426,15 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 400
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { percentage_backing_issue = 0.5 } }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { percentage_backing_issue = 0.5 }
+		}
 	}
 
 	option = {

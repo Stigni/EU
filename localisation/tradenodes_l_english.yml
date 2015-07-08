@@ -120,7 +120,7 @@
  TRADE_MISSION_SORT: "Sort by Merchant Mission."
  TRADE_MISSION_SORT_DELAYED: "Your traders can either collect money, bring money forward if they have a downstream collection point or send money back if there is an upstream collection point."
  TRADE_INCOME_MOD_SORT: "Sort by income modifier."
- TRADE_INCOME_MOD_SORT_DELAYED: "The income the state actually collects is modified by things like tech level and prestige."
+ TRADE_INCOME_MOD_SORT_DELAYED: "The modifier on the income the state actually collects."
  TRADE_CURRENT_POWER_SORT: "Sort by current Trade Power."
  TRADE_CURRENT_POWER_SORT_DELAYED: "Current Trade Power is your power to compete over trade in this trade node. Your current Trade Power will increase when you send a Merchant to the node."
  TRADE_CURRENT_VALUE_SORT: "Sort by Value."

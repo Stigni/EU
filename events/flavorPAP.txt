@@ -222,6 +222,9 @@ country_event = {
 		any_known_country = {
 			religion = protestant
 		}
+		any_known_country = {
+			religion = catholic
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -232,10 +235,24 @@ country_event = {
 		name = "flavor_pap.EVTOPTA7"
 		add_prestige = 10
 		add_years_of_income = -0.5
-		every_known_country = { 
-			limit = { 
-				religion = protestant 
-			} 
+		custom_tooltip = flavor_pap.7.tt
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					religion = catholic
+					NOT = { war_with = ROOT }
+				}
+				country_event = {
+					id = flavor_pap.8
+				}
+			}
+		}
+		every_known_country = {
+			limit = {
+				religion = protestant
+				has_opinion = { who = ROOT value = 50 }
+				NOT = { war_with = ROOT }
+			}
 			country_event = {
 				id = flavor_pap.8
 			}
@@ -259,21 +276,52 @@ country_event = {
 	
 	option = {
 		name = "flavor_pap.EVTOPTA8"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				religion = catholic
+				has_opinion = { who = ROOT value = 50 }
+			}
+			modifier = {
+				factor = 0.5
+				religion = catholic
+				NOT = { has_opinion = { who = ROOT value = 0 } }
+			}
+			modifier = {
+				factor = 0.5
+				religion = protestant
+				NOT = { has_opinion = { who = ROOT value = 100 } }
+			}
+		}
 		PAP = {
 			add_opinion = {
 				who = ROOT
 				modifier = opinion_good_relations
-				years = 10
+				years = 30
 			}
 		}
 	}
 	option = {
 		name = "flavor_pap.EVTOPTB8"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				religion = catholic
+				NOT = { has_opinion = { who = ROOT value = -25 } }
+			}
+			modifier = {
+				factor = 1.5
+				religion = protestant
+				NOT = { has_opinion = { who = ROOT value = 75 } }
+			}
+		}
 		PAP = {
 			add_opinion = {
 				who = ROOT
 				modifier = opinion_displeased
-				years = 10
+				years = 30
 			}
 		}
 	}

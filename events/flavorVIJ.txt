@@ -64,6 +64,7 @@ country_event = {
 		define_advisor = {
 			type = philosopher
 			name = "Kanaka Dasa"
+			discount = yes
 			skill = 3
 		}
 	}
@@ -367,6 +368,7 @@ country_event = {
 		define_advisor = {
 			type = philosopher
 			name = "Vyasatirtha"
+			discount = yes
 			skill = 2
 		}
 	}

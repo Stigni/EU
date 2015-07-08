@@ -39,7 +39,7 @@ east_indian_trade_route = {
 		}
 	}
 
-	global_trade_income_modifier = 0.05	
+	trade_efficiency = 0.05	
 }
 
 ######################################
@@ -188,22 +188,26 @@ western_arms_trade = {
 
 
 ######################################
-# Time of Troubles.
+# Italian - Submission to Emperor
 ######################################
-#time_of_troubles = {
-#	potential = {
-#		has_country_flag = time_of_troubles
-#		NOT = { has_country_flag = time_of_troubles_ended }
-#	}
-#
-#	trigger = {
-#		has_country_flag = time_of_troubles
-#		NOT = { has_country_flag = time_of_troubles_ended }
-#	}
-#
-#	global_unrest = 10
-#	stability_cost_modifier = 0.20
-#}
+submission_to_emperor = {
+	potential = {
+		has_global_flag = italy_out_of_HRE
+		culture_group = latin
+	}
+
+	trigger = {
+		is_emperor = no
+		NOT = { tag = ITA }
+		capital_scope = {
+			is_part_of_hre = yes
+		}
+	}
+
+	global_unrest = 3
+	stability_cost_modifier = 0.1
+	prestige = -1
+}
 
 
 	

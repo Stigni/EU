@@ -243,12 +243,15 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = TUS
+		OR = {
+			tag = TUS
+			tag = LAN
+		}
 		is_year = 1490
 		NOT = { advisor_exists = 796 }
 		government = republic
 		owns = 116
-		NOT = { is_year = 1495 }
+		NOT = { is_year = 1515 }
 	}
 	
 	mean_time_to_happen = {
@@ -262,22 +265,25 @@ country_event = {
 	option = {
 		name = flavor_mlo.6.a
 		ai_chance = { factor = 90 }
-		add_adm_power = 25
 		define_advisor = {
 			type = philosopher
 			name = "Niccolò Machiavelli"
+			discount = yes
 			location = 116
-			skill = 3
+			skill = 2
+			discount = yes
 		}	
+		add_prestige = 20
 	}
 	option = {
 		name = flavor_mlo.6.b
-		add_adm_power = 25
 		define_advisor = {
 			type = statesman
 			name = "Niccolò Machiavelli"
+			discount = yes
 			location = 116
 			skill = 2
+			discount = yes
 		}	
 		add_stability = 1		
 	}
@@ -293,9 +299,12 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = TUS
+		OR = {
+			tag = TUS
+			tag = LAN
+		}
 		is_year = 1513
-		NOT = { is_year = 1520 }
+		NOT = { is_year = 1530 }
 		OR = {
 			is_advisor_employed = 796
 			has_country_flag = we_have_macchiavelli
@@ -356,7 +365,6 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = MLO
 		is_year = 1497
 		NOT = { advisor_exists = 790 }
 		owns = 104
@@ -374,6 +382,7 @@ country_event = {
 				type = natural_scientist
 				name = "Leonardo da Vinci"
 				location = 104
+				discount = yes
 				skill = 3
 			}
 		add_dip_power = 50

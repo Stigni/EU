@@ -13,15 +13,13 @@ country_event = {
 		any_subject_country = {
 			is_colonial_nation_of = ROOT
 			tariff_value = 0.25
-			AND = {
-				OR = {
-					NOT = { has_country_flag = increased_tariffs }
-					had_country_flag = { flag = increased_tariffs days = 3650 }
-				}
-				OR = {
-					NOT = { has_country_flag = reduced_tariffs }
-					had_country_flag = { flag = reduced_tariffs days = 3650 }
-				}
+			OR = {
+				NOT = { has_country_flag = increased_tariffs }
+				had_country_flag = { flag = increased_tariffs days = 3650 }
+			}
+			OR = {
+				NOT = { has_country_flag = reduced_tariffs }
+				had_country_flag = { flag = reduced_tariffs days = 3650 }
 			}
 		}
 	}

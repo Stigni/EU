@@ -215,4 +215,12 @@ alerts = {
 	alert_mothballed_forts = {
 		category = MEDIUM
 	}
+	
+	alert_pick_church_aspect = {
+		category = LOW
+	}
+	
+	alert_explorer_ready = {
+		category = LOW
+	}
 }

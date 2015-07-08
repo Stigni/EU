@@ -27,7 +27,9 @@ province_event = {
 	option = {
 		name = "EVTOPTB6138"
 		trigger = {
+			owner = {
 			num_of_colonies = 1
+			}
 		}
 		random_owned_province = {
 			limit = {

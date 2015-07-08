@@ -140,6 +140,7 @@ country_event = {
 		}
 		any_owned_province = {
 			has_influencing_fort = yes
+			NOT = { is_capital = yes }
 		}
 	}
 	
@@ -154,6 +155,7 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_influencing_fort = yes
+				NOT = { is_capital = yes }
 			}
 			add_local_autonomy = 10
 		}
@@ -164,6 +166,7 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				has_influencing_fort = yes
+				NOT = { is_capital = yes }
 			}
 			add_unrest = 5
 		}
@@ -225,6 +228,7 @@ country_event = {
 			any_owned_province = {
 				religion = catholic
 				development = 10
+				NOT = { is_capital = yes }
 				any_neighbor_province = {
 					religion = protestant
 				}
@@ -238,6 +242,7 @@ country_event = {
 				limit = {
 					religion = catholic
 					development = 10
+					NOT = { is_capital = yes }
 					any_neighbor_province = {
 						religion = protestant
 					}
@@ -649,6 +654,7 @@ province_event = {
 			local_autonomy = 20
 		}
 		has_influencing_fort = yes
+		NOT = { is_capital = yes }
 	}
 	
 	is_mtth_scaled_to_size = 1
@@ -918,6 +924,12 @@ country_event = {
 			government = theocratic_government
 			government = monastic_order_government
 			government = papal_government
+		}
+		OR = {
+			at_war_with_religious_enemy = yes
+			any_neighbor_country = {
+				truce_with = ROOT
+			}
 		}
 		devotion = 75
 	}

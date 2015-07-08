@@ -108,12 +108,9 @@ country_event = {
 			tag = PLC
 		}
 		NOT = { exists = MAZ } 
-		owns = 257 # Warszawa
-		owns = 1938
-		owns = 256
-		is_core = 257 # Warszawa
-		is_core = 1938
-		is_core = 256
+		owns_core_province = 257 # Warszawa
+		owns_core_province = 1938 #Wizna
+		owns_core_province = 256 #Plock
 	}
 	
 	mean_time_to_happen = {
@@ -123,7 +120,21 @@ country_event = {
 	option = {
 		name = "flavor_pol.EVTOPTA3473" # Make it a personal royal fiefdom
 		257 = { # Warszawa
-			add_base_tax = 2
+			if = {
+				limit = {
+					NOT = { has_dlc = "Common Sense" }
+				}
+				add_base_tax = 2
+			}
+			if = {
+				limit = {
+					has_dlc = "Common Sense"
+				}
+				add_province_modifier = {
+					name = "economic_development_of_mazovia"
+					duration = -1
+				}
+			}
 		}
 	}
 }
@@ -377,43 +388,39 @@ country_event = {
 					}
 				}
 			}
-			AND = {
-				any_known_country = {
-					vassal_of = ROOT
-					is_neighbor_of = TUR
-					TUR = {
-						any_owned_province = {
-							any_neighbor_province = {
-								owner = {
-									vassal_of = ROOT
-								}
+			any_known_country = {
+				vassal_of = ROOT
+				is_neighbor_of = TUR
+				TUR = {
+					any_owned_province = {
+						any_neighbor_province = {
+							owner = {
+								vassal_of = ROOT
 							}
-							NOT = { is_core = ROOT }
-							NOT = { is_claim = ROOT }
 						}
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
 					}
 				}
 			}
-			AND = {
-				any_known_country = {
-					OR = {
-						junior_union_with = ROOT
-						senior_union_with = ROOT
-					}
-					is_neighbor_of = TUR
-					TUR = {
-						any_owned_province = {
-							any_neighbor_province = {
-								owner = {
-									OR = {
-										junior_union_with = ROOT
-										senior_union_with = ROOT
-									}
+			any_known_country = {
+				OR = {
+					junior_union_with = ROOT
+					senior_union_with = ROOT
+				}
+				is_neighbor_of = TUR
+				TUR = {
+					any_owned_province = {
+						any_neighbor_province = {
+							owner = {
+								OR = {
+									junior_union_with = ROOT
+									senior_union_with = ROOT
 								}
 							}
-							NOT = { is_core = ROOT }
-							NOT = { is_claim = ROOT }
 						}
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
 					}
 				}
 			}
@@ -1096,6 +1103,7 @@ country_event = {
 		define_advisor = {
 			type = natural_scientist
 			name = "Jan Brozek"
+			discount = yes
 			skill = 2
 		}
 	}
@@ -1137,6 +1145,7 @@ country_event = {
 		define_advisor = {
 			type = philosopher
 			name = "Michal Sedziwój"
+			discount = yes
 			skill = 3
 		}
 	}

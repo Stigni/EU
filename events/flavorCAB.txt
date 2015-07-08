@@ -130,14 +130,14 @@ country_event = {
 				colonial_region = colonial_colombia
 			}
 			add_base_tax = 1
-			add_manpower = 1
+			add_base_manpower = 1
 		}
 		random_owned_province = {
 			limit = {
 				colonial_region = colonial_colombia
 			}
 			add_base_tax = 1
-			add_manpower = 1
+			add_base_manpower = 1
 		}
 		add_country_modifier = {
 			name = "garifuna_migration"

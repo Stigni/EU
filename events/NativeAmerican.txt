@@ -71,10 +71,8 @@ province_event = {
 		colonysize = 100
 		NOT = { colonysize = 500 }
 		has_climate = arid
-		AND = {
-			is_month = 5
-			NOT = { is_month = 10 }
-		}
+		is_month = 5
+		NOT = { is_month = 10 }
 	}
 
 	mean_time_to_happen = {
@@ -181,10 +179,8 @@ province_event = {
 			NOT = { has_country_flag = natives_adapted_arid }
 		}
 		has_climate = arid
-		AND = {
-			is_month = 5
-			NOT = { is_month = 10 }
-		}
+		is_month = 5
+		NOT = { is_month = 10 }
 	}
 
 	mean_time_to_happen = {
@@ -584,10 +580,8 @@ country_event = {
 		capital_scope = {
 			region = great_plains
 		}
-		AND = {
-			is_month = 3
-			NOT = { is_month = 8 }
-		}
+		is_month = 3
+		NOT = { is_month = 8 }
 		NOT = { has_country_flag = preparing_sundance }
 	}
 

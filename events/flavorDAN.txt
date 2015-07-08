@@ -161,6 +161,7 @@ country_event = {
 				name = "Peder Oxe"
 				location = 12
 				skill = 2
+				discount = yes
 			}
 		}
 	}
@@ -291,6 +292,7 @@ country_event = {
 			name = "Peder Griffenfeld"
 			location = 12
 			skill = 2
+			discount = yes
 		}
 	}
 }
@@ -768,6 +770,7 @@ country_event = {
 		define_advisor = {
 			type = natural_scientist
 			name = "Tycho Brahe"
+			discount = yes
 			location = 12
 			skill = 3
 		}

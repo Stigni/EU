@@ -46,17 +46,6 @@ province_event = {
 			}
 			cede_province = NUB
 		}
-
-		NUB = {
-			random_owned_province = {
-				infantry = NUB
-				infantry = NUB
-				infantry = NUB
-				infantry = NUB
-				cavalry = NUB
-				cavalry = NUB
-			}
-		}
 	}
 }
 

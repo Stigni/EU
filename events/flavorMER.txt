@@ -71,11 +71,6 @@ country_event = {
 					MIL = 4
 					ADM = 4
 				}
-				random_owned_province = {
-					infantry = MAW
-					infantry = MAW
-					cavalry = MAW
-				}
 			}
 		}
 	}
@@ -112,7 +107,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		TAG = MER
+		tag = MER
 		NOT = { is_year = 1460 }
 		owns_core_province = 2067
 	}
@@ -156,7 +151,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		TAG = MER
+		tag = MER
 		is_year = 1480
 		not = { is_year = 1550 }
 	}
@@ -181,7 +176,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		TAG = MER
+		tag = MER
 		has_ruler = "Kumbhakarna Singh"
 		is_year = 1460
 		NOT = { is_year = 1470 }

@@ -9,9 +9,12 @@ conquer_punjab_MUG = {
 		region = punjab_region
 		NOT = { province_id = 2079 } #Derajat
 		NOT = { province_id = 2086 } #Cholistan
-		NOT = { province_id = 2065 } #Cholistan
+		NOT = { province_id = 2065 } #Bhattiana
 		NOT = { owned_by = ROOT }
-		NOT = { owner = { alliance_with = ROOT } }
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+		}
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -32,9 +35,10 @@ conquer_punjab_MUG = {
 			region = punjab_region
 			NOT = { province_id = 2079 } #Derajat
 			NOT = { province_id = 2086 } #Cholistan
-			NOT = { province_id = 2065 } #Cholistan
+			NOT = { province_id = 2065 } #Bhattiana
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
 		}
 		NOT = { owns = 2075 }
 		NOT = { owns = 510 }
@@ -228,6 +232,7 @@ vassalize_gondwana = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 	}
 	abort = {
@@ -666,6 +671,7 @@ vassalize_orissa = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 	}
 	abort = {
@@ -866,6 +872,7 @@ vassalize_the_akkoyunlu = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 	}
 	abort = {
@@ -938,6 +945,7 @@ vassalize_the_qara_qoyunlu = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 	}
 	abort = {
@@ -1010,6 +1018,7 @@ vassalize_georgia = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
 		}
 	}
 	abort = {

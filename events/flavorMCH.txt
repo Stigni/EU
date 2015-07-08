@@ -334,6 +334,7 @@ country_event = {
 		add_years_of_income = -0.25
 		define_advisor = {
 			type = statesman
+			discount = yes
 			skill = 2
 			name = "Heshen"
 		}

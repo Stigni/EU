@@ -730,6 +730,10 @@ attitude_friendly = {
 			is_rival = FROM
 		}
 		modifier = {
+			factor = 0
+			war_with = FROM
+		}
+		modifier = {
 			factor = 1000
 			NOT = { government = daimyo }
 			is_subject = yes

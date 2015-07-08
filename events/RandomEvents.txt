@@ -2079,7 +2079,7 @@ country_event = {
 		add_republican_tradition = -0.05
 		add_country_modifier = {
 			name = "tax_income_boost"
-			duration = 1825
+			duration = 7300
 		}	
 	}
 	option = {
@@ -2092,7 +2092,7 @@ country_event = {
 				NOT = { legitimacy = 60 }
 			}
 		}
-		add_legitimacy = 20
+		add_legitimacy = 10
 		add_republican_tradition = 0.05
 		
 		random_country = {
@@ -8103,6 +8103,7 @@ country_event = {
 	}
 	option = {
 		name = "random_event.EVTOPTC25" # Time to take the lead and break Papal stranglehold!
+		trigger = { NOT = { tag = PAP } }
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -8678,6 +8679,7 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
+		num_of_rebel_armies = 1
 		NOT = { religious_unity = 1.0 }
 		any_owned_province = {
 			has_owner_culture = no
@@ -8845,6 +8847,16 @@ country_event = {
 				trade_goods = grain
 			}		
 			add_base_tax = 1
+		}
+	}
+	option = {
+		name = "EVTOPTC5037"		#  Invest in Infrastructure
+		ai_chance = { factor = 45 }
+		random_owned_province = {
+			limit = {
+				trade_goods = grain
+			}		
+			add_base_production = 1
 		}
 	}
 }

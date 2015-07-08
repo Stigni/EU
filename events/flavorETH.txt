@@ -1040,6 +1040,7 @@ country_event = {
 			name = "Eleni"
 			skill = 3
 			female = yes
+			discount = yes
 		}
 	}
 }

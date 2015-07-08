@@ -80,9 +80,7 @@ country_event = {
 						religion = protestant
 						can_spawn_rebels = protestant_rebels
 					}
-					AND = {
-						has_province_flag = lit_wave_of_protestanitsm_flag
-					}
+					has_province_flag = lit_wave_of_protestanitsm_flag
 				}
 			}
 			spawn_rebels = {
@@ -175,9 +173,7 @@ country_event = {
 						religion = reformed
 						can_spawn_rebels = reformed_rebels
 					}
-					AND = {
-						has_province_flag = lit_wave_of_calvinism_flag
-					}
+					has_province_flag = lit_wave_of_calvinism_flag
 				}
 			}
 			spawn_rebels = {

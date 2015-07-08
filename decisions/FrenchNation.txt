@@ -8,11 +8,14 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = FRA }
-			NOT = { exists = RFR }
 			NOT = { tag = HLR }
+			NOT = { tag = FRA }
 			NOT = { tag = PAP }
 			NOT = { tag = SPA }		# Basque is a valid culture for both FRA and SPA
+			OR = {
+				ai = no
+				NOT = { exists = FRA }
+			}
 			OR = {
 				culture_group = french
 				primary_culture = basque
@@ -29,6 +32,7 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
+			NOT = { exists = FRA }
 			owns_core_province = 177	# Maine
 			owns_core_province = 179	# Blois
 			owns_core_province = 182	# Vermandois

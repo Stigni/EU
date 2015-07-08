@@ -165,7 +165,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = aristocracy_ideas	
+		has_idea_group = aristocracy_ideas
+		NOT = {	has_country_modifier =  "freesubjects_modifier" }
 		NOT = {	has_country_modifier =  "serf_exploitation" }
 	}
 
@@ -194,6 +195,7 @@ country_event = {
 	trigger = {
 		has_idea_group = aristocracy_ideas	
 		NOT = {	has_country_modifier =  "freesubjects_modifier" }
+		NOT = {	has_country_modifier =  "serfdom_modifier" }
 	}
 
 	mean_time_to_happen = {
@@ -604,6 +606,7 @@ country_event = {
 	trigger = {
 		has_idea_group = plutocracy_ideas
 		NOT = {	has_country_modifier =  "serfdom_modifier" }
+		NOT = {	has_country_modifier =  "freesubjects_modifier" }
 	}
 
 	mean_time_to_happen = {
@@ -1870,6 +1873,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = spy_ideas
+		NOT = { has_country_modifier = enhanced_spies }
+		NOT = { has_country_modifier = spy_defections }
 	}
 
 	mean_time_to_happen = {
@@ -1896,6 +1901,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = spy_ideas
+		NOT = { has_country_modifier = enhanced_spies }
+		NOT = { has_country_modifier = spy_defections }
 	}
 
 	mean_time_to_happen = {
@@ -1961,6 +1968,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = spy_ideas
+		NOT = {	has_country_modifier =  "hidden_agents" }
 	}
 
 	mean_time_to_happen = {
@@ -1987,6 +1995,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = spy_ideas
+		NOT = {	has_country_modifier =  "better_rebel_support" }
 	}
 	
 	mean_time_to_happen = {
@@ -2041,6 +2050,7 @@ country_event = {
 		has_regency = no
 		is_female = no
 		religion_group = christian
+		NOT = {	has_ruler_modifier =  "extra_heir" }
 	}
 	
 	mean_time_to_happen = {
@@ -2077,6 +2087,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = spy_ideas
+		NOT = {	has_country_modifier =  "focus_on_covert_actions" }
 	}
 	
 	mean_time_to_happen = {
@@ -2138,6 +2149,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = diplomatic_ideas
+		NOT = {	has_country_modifier =  "cabinet_dynamism" }
 	}
 
 	mean_time_to_happen = {
@@ -2164,6 +2176,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = diplomatic_ideas
+		NOT = {	has_country_modifier =  "government_corruption" }
 	}
 
 	mean_time_to_happen = {
@@ -2227,6 +2240,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = diplomatic_ideas
+		NOT = {	has_country_modifier =  "incompetent_fabrication" }
 	}
 
 	mean_time_to_happen = {
@@ -2258,6 +2272,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = diplomatic_ideas
+		NOT = {	has_country_modifier =  "brilliant_diplomat" }
 	}
 
 	mean_time_to_happen = {
@@ -2348,6 +2363,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = diplomatic_ideas
+		NOT = {	has_country_modifier =  "improved_dip_reputation" }
+		NOT = {	has_country_modifier =  "reduced_dip_reputation" }
 	}
 
 	mean_time_to_happen = {
@@ -2374,6 +2391,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = diplomatic_ideas
+		NOT = {	has_country_modifier =  "improved_dip_reputation" }
+		NOT = {	has_country_modifier =  "reduced_dip_reputation" }
 	}
 	
 	mean_time_to_happen = {
@@ -2400,6 +2419,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = diplomatic_ideas
+		NOT = {	has_country_modifier =  "dip_jusitified_demands" }
 	}
 	
 	mean_time_to_happen = {
@@ -2501,7 +2521,9 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = offensive_ideas	
+		has_idea_group = offensive_ideas
+		NOT = {	has_country_modifier =  "recruits_flock" }
+		NOT = {	has_country_modifier =  "resist_conscription" }
 	}
 	
 	mean_time_to_happen = {
@@ -2515,14 +2537,15 @@ country_event = {
 			duration = 3650
 		}
 	}
-	option = {
-		name = "EVTOPTB6112"
-		random_core_province = {
-			limit = {
-				owned_by = ROOT
-			}
-		}
-	}
+	#option = {
+	#	name = "EVTOPTB6112"
+	#	random_core_province = {
+	#		limit = {
+	#			owned_by = ROOT
+	#		}
+	#		add_base_manpower = 1
+	#	}
+	#}
 }
 
 # Nations don't want to be conscripted
@@ -2535,7 +2558,9 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = offensive_ideas	
+		has_idea_group = offensive_ideas
+		NOT = {	has_country_modifier =  "recruits_flock" }
+		NOT = {	has_country_modifier =  "resist_conscription" }		
 	}
 	
 	mean_time_to_happen = {
@@ -2565,7 +2590,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = offensive_ideas	
+		has_idea_group = offensive_ideas
+		NOT = {	has_country_modifier =  "grander_army" }
+		NOT = {	has_country_modifier =  "less_grand_army" }
+		
 	}
 
 	mean_time_to_happen = {
@@ -2591,7 +2619,9 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = offensive_ideas	
+		has_idea_group = offensive_ideas
+		NOT = {	has_country_modifier =  "grander_army" }
+		NOT = {	has_country_modifier =  "less_grand_army" }
 	}
 	
 	mean_time_to_happen = {
@@ -2715,6 +2745,8 @@ country_event = {
 		has_idea_group = offensive_ideas	
 		num_of_ports = 1
 		primitives = no
+		NOT = {	has_country_modifier =  "land_focus" }
+		NOT = {	has_country_modifier =  "naval_modifier" }
 	}
 
 	mean_time_to_happen = {
@@ -2747,7 +2779,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = offensive_ideas	
+		has_idea_group = offensive_ideas
+		NOT = {	has_country_modifier =  "full_elan" }
 	}
 
 	mean_time_to_happen = {
@@ -2773,7 +2806,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = offensive_ideas	
+		has_idea_group = offensive_ideas
+		NOT = {	has_country_modifier =  "finest_infantry" }		
 	}
 
 	mean_time_to_happen = {
@@ -2799,7 +2833,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = offensive_ideas	
+		has_idea_group = offensive_ideas
+		NOT = {	has_country_modifier =  "cavalry_companions" }
 	}
 
 	mean_time_to_happen = {
@@ -2950,7 +2985,9 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = defensive_ideas	
+		has_idea_group = defensive_ideas
+		NOT = {	has_country_modifier =  "military_improvements" }
+		NOT = {	has_country_modifier =  "military_complacency" }		
 	}
 	
 	mean_time_to_happen = {
@@ -2976,7 +3013,9 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = defensive_ideas	
+		has_idea_group = defensive_ideas
+		NOT = {	has_country_modifier =  "military_improvements" }
+		NOT = {	has_country_modifier =  "military_complacency" }			
 	}
 	
 	mean_time_to_happen = {
@@ -3128,7 +3167,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = defensive_ideas	
+		has_idea_group = defensive_ideas
+		NOT = {	has_country_modifier =  "relentless_drill" }
 	}
 
 	mean_time_to_happen = {
@@ -3154,7 +3194,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = defensive_ideas	
+		has_idea_group = defensive_ideas
+		NOT = {	has_country_modifier =  "regimental_pride" }
 	}
 
 	mean_time_to_happen = {
@@ -3180,7 +3221,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = defensive_ideas	
+		has_idea_group = defensive_ideas
+		NOT = {	has_country_modifier =  "prepared_defence" }
 		is_at_war = yes
 	}
 
@@ -3207,7 +3249,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = defensive_ideas	
+		has_idea_group = defensive_ideas
+		NOT = {	has_country_modifier =  "to_the_last_man" }		
 		is_at_war = yes
 	}
 
@@ -3234,7 +3277,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = defensive_ideas	
+		has_idea_group = defensive_ideas
+		NOT = {	has_country_modifier =  "regimental_spirit" }		
 		is_at_war = yes
 	}
 
@@ -3293,6 +3337,7 @@ country_event = {
 
 	trigger = {
 		has_idea_group = trade_ideas
+		NOT = { has_country_modifier = "out_of_date_commerce" }
 	}
 	
 	mean_time_to_happen = {
@@ -3323,6 +3368,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = trade_ideas
+		NOT = { has_country_modifier = "adventuring_merchants" }
+		NOT = { has_country_modifier = "poor_merchants" }
 	}
 
 	mean_time_to_happen = {
@@ -3349,6 +3396,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = trade_ideas
+		NOT = { has_country_modifier = "adventuring_merchants" }
+		NOT = { has_country_modifier = "poor_merchants" }
 	}
 
 	mean_time_to_happen = {
@@ -3380,6 +3429,8 @@ country_event = {
 
 	trigger = {
 		has_idea_group = trade_ideas
+		NOT = { has_country_modifier = "trade_policy_working" }
+		NOT = { has_country_modifier = "trade_policy_failing" }
 	}
 	
 	mean_time_to_happen = {
@@ -3406,6 +3457,8 @@ country_event = {
 
 	trigger = {
 		has_idea_group = trade_ideas
+		NOT = { has_country_modifier = "trade_policy_working" }
+		NOT = { has_country_modifier = "trade_policy_failing" }
 	}
 	
 	mean_time_to_happen = {
@@ -3482,6 +3535,7 @@ country_event = {
 
 	trigger = {
 		has_idea_group = trade_ideas
+		NOT = { has_country_modifier = "competitive_advantage" }
 	}
 	
 	mean_time_to_happen = {
@@ -3508,6 +3562,8 @@ country_event = {
 
 	trigger = {
 		has_idea_group = trade_ideas
+		NOT = { has_country_modifier = "cooperation_with_merchant_class" }
+		NOT = { has_country_modifier = "trade_collapse" }
 	}
 	
 	mean_time_to_happen = {
@@ -3558,6 +3614,8 @@ country_event = {
 
 	trigger = {
 		has_idea_group = trade_ideas
+		NOT = { has_country_modifier = "cooperation_with_merchant_class" }
+		NOT = { has_country_modifier = "trade_collapse" }
 	}
 	
 	mean_time_to_happen = {
@@ -3592,6 +3650,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = maritime_ideas
+		NOT = { has_country_modifier = "faster_ships" }
+		NOT = { has_country_modifier = "slower_ships" }
 	}
 
 	mean_time_to_happen = {
@@ -3618,6 +3678,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = maritime_ideas
+		NOT = { has_country_modifier = "faster_ships" }
+		NOT = { has_country_modifier = "slower_ships" }
 	}
 
 	mean_time_to_happen = {
@@ -3698,6 +3760,8 @@ country_event = {
 
 	trigger = {
 		has_idea_group = maritime_ideas
+		NOT = { has_country_modifier = "naval_developments" }
+		NOT = { has_country_modifier = "naval_hubris" }
 	}
 	
 	mean_time_to_happen = {
@@ -3724,6 +3788,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = maritime_ideas
+		NOT = { has_country_modifier = "naval_developments" }
+		NOT = { has_country_modifier = "naval_hubris" }
 	}
 
 	mean_time_to_happen = {
@@ -3754,6 +3820,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = maritime_ideas
+		NOT = { has_country_modifier = "blockade_tactics" }
+		NOT = { has_country_modifier = "slipping_standards" }
 	}
 	
 	mean_time_to_happen = {
@@ -3780,6 +3848,8 @@ country_event = {
 
 	trigger = {
 		has_idea_group = maritime_ideas
+		NOT = { has_country_modifier = "blockade_tactics" }
+		NOT = { has_country_modifier = "slipping_standards" }
 	}
 	
 	mean_time_to_happen = {
@@ -3810,6 +3880,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = maritime_ideas
+		NOT = { has_country_modifier = "naval_technical_developments" }
+		NOT = { has_country_modifier = "concerned_shipwrights" }
 	}
 	
 	mean_time_to_happen = {
@@ -3836,6 +3908,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = maritime_ideas
+		NOT = { has_country_modifier = "naval_technical_developments" }
+		NOT = { has_country_modifier = "concerned_shipwrights" }
 	}
 
 	mean_time_to_happen = {
@@ -4008,6 +4082,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = maritime_ideas
+		NOT = { has_country_modifier = "naval_focus" }
+		NOT = { has_country_modifier = "land_modifier" }
 	}
 
 	mean_time_to_happen = {
@@ -4191,6 +4267,8 @@ country_event = {
 	
 	trigger = {
 		has_idea = smithian_economics
+		NOT = { has_country_modifier = "production_improvements" }
+		NOT = { has_country_modifier = "production_stifled" }
 	}
 	
 	mean_time_to_happen = {
@@ -4217,6 +4295,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = economic_ideas
+		NOT = { has_country_modifier = "production_improvements" }
+		NOT = { has_country_modifier = "production_stifled" }
 	}
 	
 	mean_time_to_happen = {
@@ -4247,6 +4327,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = economic_ideas
+		NOT = { has_country_modifier = "successful_bureaucracy" }
+		NOT = { has_country_modifier = "corrupt_bureaucracy" }
 	}
 	
 	mean_time_to_happen = {
@@ -4273,6 +4355,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = economic_ideas
+		NOT = { has_country_modifier = "successful_bureaucracy" }
+		NOT = { has_country_modifier = "corrupt_bureaucracy" }
 	}
 	
 	mean_time_to_happen = {
@@ -4583,6 +4667,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = exploration_ideas
+		NOT = { has_country_modifier = "excellent_administration" }
+		NOT = { has_country_modifier = "corrupt_viceroys" }
 		any_country = {
 			is_colonial_nation_of = ROOT
 		}
@@ -4615,6 +4701,8 @@ country_event = {
 		any_country = {
 			is_colonial_nation_of = ROOT
 		}
+		NOT = { has_country_modifier = corrupt_viceroys }
+		NOT = { has_country_modifier = "excellent_administration" }
 	}
 	
 	mean_time_to_happen = {
@@ -4724,6 +4812,7 @@ country_event = {
 			is_colony = yes 
 			native_size = 1
 			NOT = { trade_goods = unknown }
+			NOT = { has_province_modifier = encomienda_system }
 		}
 	}
 
@@ -4765,6 +4854,7 @@ country_event = {
 		any_owned_province = {
 			is_overseas = yes
 			religion_group = pagan
+			NOT = { has_province_modifier = evangelical_system }
 		}
 	}
 
@@ -4941,6 +5031,7 @@ country_event = {
 	trigger = {
 		has_idea_group = quality_ideas
 		has_idea_group = quantity_ideas
+		NOT = { has_country_modifier = "quality_modifier" }
 	}
 	
 	mean_time_to_happen = {
@@ -5026,6 +5117,7 @@ country_event = {
 		has_idea_group = quality_ideas
 		num_of_heavy_ship = 3
 		is_at_war = yes
+		NOT = { has_country_modifier = "iron_ships" }
 	}
 	
 	mean_time_to_happen = {
@@ -5054,6 +5146,7 @@ country_event = {
 		has_idea_group = quality_ideas
 		num_of_light_ship = 3
 		is_at_war = yes
+		NOT = { has_country_modifier = "protected_commerce" }
 	}
 	
 	mean_time_to_happen = {
@@ -5086,6 +5179,7 @@ country_event = {
 			num_of_light_ship = 5
 			num_of_galley = 5
 		}
+		NOT = { has_country_modifier = "power_of_the_fleet" }
 	}	
 	
 	mean_time_to_happen = {
@@ -5113,6 +5207,7 @@ country_event = {
 	trigger = {
 		has_idea_group = quality_ideas
 		is_at_war = yes
+		NOT = { has_country_modifier = "good_discipline" }
 	}
 	
 	mean_time_to_happen = {
@@ -5140,6 +5235,7 @@ country_event = {
 	trigger = {
 		has_idea_group = quality_ideas
 		is_at_war = yes
+		NOT = { has_country_modifier = "back_to_the_front" }
 	}
 	
 	mean_time_to_happen = {
@@ -5269,6 +5365,7 @@ country_event = {
 
 	trigger = {
 		has_idea_group = quantity_ideas
+		NOT = { has_country_modifier = "horse_population_boom" }
 	}
 	
 	mean_time_to_happen = {
@@ -5295,6 +5392,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = quantity_ideas
+		NOT = { has_country_modifier = "surplus_equipment" }
 	}
 	
 	mean_time_to_happen = {
@@ -5322,6 +5420,7 @@ country_event = {
 	trigger = {
 		has_idea_group = quantity_ideas
 		mil_tech = 7
+		NOT = { has_country_modifier = "cheap_iron" }
 	}	
 
 	mean_time_to_happen = {
@@ -5350,6 +5449,7 @@ country_event = {
 		has_idea_group = quantity_ideas
 		dip_tech = 3
 		NOT = { has_country_modifier = timber_shortage }
+		NOT = { has_country_modifier = "timber_surplus" }
 		num_of_ports = 1
 		primitives = no
 	}
@@ -5402,7 +5502,8 @@ country_event = {
 	trigger = {
 		has_idea_group = quantity_ideas
 		dip_tech = 3
-		NOT = { has_country_modifier = timber_surplus }
+		NOT = { has_country_modifier = timber_shortage }
+		NOT = { has_country_modifier = "timber_surplus" }
 		primitives = no		
 	}
 	
@@ -5547,6 +5648,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = expansion_ideas
+		NOT = { has_country_modifier = "diplomatic_moves" }
 	}
 
 	mean_time_to_happen = {
@@ -5573,6 +5675,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = expansion_ideas
+		NOT = { has_country_modifier = "ship_building_problems" }
+		NOT = { has_country_modifier = "ship_building_boom" }
 	}
 
 	mean_time_to_happen = {
@@ -5599,6 +5703,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = expansion_ideas
+		NOT = { has_country_modifier = "enhanced_reputation" }
+		NOT = { has_country_modifier = "diplo_fuax_pas" }
 	}
 
 	mean_time_to_happen = {
@@ -5625,6 +5731,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = expansion_ideas
+		NOT = { has_country_modifier = "trade_success" }
+		NOT = { has_country_modifier = "trade_failure" }
 	}
 
 	mean_time_to_happen = {
@@ -5684,6 +5792,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = expansion_ideas
+		NOT = { has_country_modifier = "trade_success" }
+		NOT = { has_country_modifier = "trade_failure" }
 	}
 
 	mean_time_to_happen = {
@@ -5714,6 +5824,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = expansion_ideas
+		NOT = { has_country_modifier = "ship_building_problems" }
+		NOT = { has_country_modifier = "ship_building_boom" }
 	}
 
 	mean_time_to_happen = {
@@ -5740,6 +5852,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = expansion_ideas
+		NOT = { has_country_modifier = "enhanced_reputation" }
+		NOT = { has_country_modifier = "diplo_fuax_pas" }
 	}
 
 	mean_time_to_happen = {
@@ -5770,6 +5884,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = administrative_ideas
+		NOT = { has_country_modifier = "centralised_state" }
 	}
 
 	mean_time_to_happen = {
@@ -5875,6 +5990,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = administrative_ideas
+		NOT = { has_country_modifier = "trust_from_mercs" }
 	}
 
 	mean_time_to_happen = {
@@ -5901,6 +6017,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = administrative_ideas
+		NOT = { has_country_modifier = "glut_of_mercs" }
 	}
 
 	mean_time_to_happen = {
@@ -5927,6 +6044,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = administrative_ideas
+		NOT = { has_country_modifier = "generous_terms" }
 		num_of_loans = 1
 	}
 
@@ -5954,6 +6072,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = administrative_ideas
+		NOT = { has_country_modifier = "good_advise" }
 	}
 
 	mean_time_to_happen = {
@@ -6057,6 +6176,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = administrative_ideas
+		NOT = { has_country_modifier = "payment_demands" }
 		is_at_war = yes	
 		num_of_mercenaries = 1
 	}
@@ -6089,6 +6209,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = naval_ideas
+		NOT = { has_country_modifier = "hardened_oak" }
 	}
 
 	mean_time_to_happen = {
@@ -6143,6 +6264,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = naval_ideas
+		NOT = { has_country_modifier = "patriotic_curriculum" }
+		NOT = { has_country_modifier = "maintenance_curriculum" }
 	}
 
 	mean_time_to_happen = {
@@ -6177,6 +6300,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = naval_ideas
+		NOT = { has_country_modifier = "galley_veterans" }
+		NOT = { has_country_modifier = "heavy_ship_veterans" }
 	}
 
 	mean_time_to_happen = {
@@ -6294,6 +6419,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = naval_ideas
+		NOT = { has_country_modifier = "grieving_sailors" }
 	}
 
 	mean_time_to_happen = {
@@ -6348,6 +6474,8 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = naval_ideas
+		NOT = { has_country_modifier = "repairing_decayed_ships" }
+		NOT = { has_country_modifier = "rotting_wood" }
 		any_owned_province = {
 			has_port = yes
 		}
@@ -6387,6 +6515,7 @@ country_event = {
 		has_idea_group = naval_ideas
 		any_owned_province = {
 			has_port = yes
+			NOT = { has_province_modifier = shipyard_fire }
 		}
 	}
 
@@ -6421,6 +6550,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = influence_ideas
+		NOT = { has_country_modifier = "skilled_diplomat" }
 	}
 
 	mean_time_to_happen = {
@@ -6452,6 +6582,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = influence_ideas
+		NOT = { has_country_modifier = "just_causes" }
 	}
 
 	mean_time_to_happen = {
@@ -6478,6 +6609,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = influence_ideas
+		NOT = { has_country_modifier = "popular_noble" }
 	}
 
 	mean_time_to_happen = {
@@ -6504,6 +6636,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = influence_ideas
+		NOT = { has_country_modifier = "vassals_feel_safe" }
 		num_of_vassals = 1
 	}
 
@@ -6563,6 +6696,7 @@ country_event = {
 	trigger = {
 		has_idea_group = influence_ideas
 		num_of_vassals = 1
+		NOT = { has_country_modifier = "firm_hand" }
 	}
 
 	mean_time_to_happen = {
@@ -6589,6 +6723,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = influence_ideas
+		NOT = { has_country_modifier = "emissary_authority" }
 	}
 
 	mean_time_to_happen = {
@@ -6646,6 +6781,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = influence_ideas
+		NOT = { has_country_modifier = "suspected_diplomats" }
 	}
 
 	mean_time_to_happen = {
@@ -6673,6 +6809,7 @@ country_event = {
 	trigger = {
 		has_idea_group = influence_ideas
 		num_of_vassals = 1
+		NOT = { has_country_modifier = "slow_negotiations" }
 	}
 
 	mean_time_to_happen = {
@@ -6699,6 +6836,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = influence_ideas
+		NOT = { has_country_modifier = "hostile_rhetoric" }
 	}
 
 	mean_time_to_happen = {
@@ -6734,6 +6872,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = humanist_ideas
+		NOT = { has_country_modifier = "free_freethinkers" }
 	}
 
 	mean_time_to_happen = {
@@ -6760,6 +6899,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = humanist_ideas
+		NOT = { has_country_modifier = "fair_laws" }
 	}
 
 	mean_time_to_happen = {

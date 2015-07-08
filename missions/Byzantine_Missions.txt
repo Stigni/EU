@@ -14,15 +14,18 @@ recover_greece = {
 			province_id = 148
 			province_id = 1773
 			province_id = 1853
+			province_id = 3003
 		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { vassal_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		tag = BYZ
 		is_subject = no
-		owns = 151		# Thrace
-		NOT = { has_country_modifier = military_victory }
+		NOT = { has_country_modifier = byzantium_resurgent }
+		NOT = { has_country_flag = retook_greece_byz }
 		is_at_war = no
 		OR = {
 			NOT = { owns = 144 }	# Janina
@@ -32,6 +35,7 @@ recover_greece = {
 			NOT = { owns = 148 }	# Selanik
 			NOT = { owns = 1773 }	# Achaea
 			NOT = { owns = 1853 }	# Monastir
+			NOT = { owns = 3003 }	# Monastir
 		}
 	}
 	abort = {
@@ -43,7 +47,7 @@ recover_greece = {
 		}
 	}
 	chance = {
-		factor = 1500
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -64,8 +68,9 @@ recover_greece = {
 		}
 	}
 	effect = {
+		set_country_flag = retook_greece_byz
 		add_country_modifier = {
-			name = "military_victory"
+			name = "byzantium_resurgent"
 			duration = 3650
 		}
 	}
@@ -104,6 +109,8 @@ recover_the_coast_of_asia_minor = {
 			NOT = { owns = 2296 }
 			NOT = { owns = 2348 }
 		}
+		NOT = { has_country_flag = BYZ_asia_minor }
+		NOT = { has_country_modifier = byzantium_resurgent }
 	}
 	abort = {
 		is_subject = yes
@@ -114,7 +121,7 @@ recover_the_coast_of_asia_minor = {
 		}
 	}
 	chance = {
-		factor = 1500
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -135,9 +142,11 @@ recover_the_coast_of_asia_minor = {
 		}
 	}
 	effect = {
-		add_prestige = 25
-		add_legitimacy = 25
-		add_army_tradition = 25
+		set_country_flag = BYZ_asia_minor
+		add_country_modifier = {
+			name = "byzantium_resurgent"
+			duration = 3650
+		}
 	}
 }
 
@@ -160,6 +169,8 @@ recover_the_balkans = {
 		bulgarian_region = {
 			NOT = { owned_by = ROOT }
 		}
+		NOT = { has_country_flag = BYZ_recovered_balkans }
+		NOT = { has_country_modifier = byzantium_resurgent }
 	}
 	abort = {
 		is_subject = yes
@@ -170,7 +181,7 @@ recover_the_balkans = {
 		}
 	}
 	chance = {
-		factor = 1500
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -191,8 +202,11 @@ recover_the_balkans = {
 		}
 	}
 	effect = {
-		add_prestige = 10
-		add_legitimacy = 10
+		set_country_flag = BYZ_recovered_balkans
+		add_country_modifier = {
+			name = "byzantium_resurgent"
+			duration = 3650
+		}
 	}
 }
 
@@ -226,7 +240,7 @@ convert_asia_minor = {
 		}
 	}
 	chance = {
-		factor = 1500
+		factor = 3000
 		modifier = {
 			factor = 2
 			adm = 3
@@ -250,37 +264,39 @@ recover_south_italy = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces = {
+		region = southern_italy_region
+		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { vassal_of = ROOT } }
+	}
+	
 	allow = {
 		normal_or_historical_nations = yes
 		tag = BYZ
 		is_subject = no
 		is_at_war = no
 		owns = 151
-		owns = 144	# Janina
-		owns = 145	# Morea
-		owns = 146	# Athens
-		owns = 147	# Salonica
-		owns = 1773	# Achaea
-		NOT = { owns = 120 }	# Abruzzi
-		NOT = { owns = 121 }	# Napoli
-		NOT = { owns = 122 }	# Apulia
-		NOT = { owns = 123 }	# Calabria
-		NOT = { owns = 1933 }	# Bari
-		NOT = { owns = 1934}	# Lucania
+		greece_region = {
+			type = all
+			owned_by = ROOT
+		}
+		southern_italy_region = {
+			NOT = { owned_by = ROOT }
+		}
+		NOT = { has_country_flag = BYZ_recovered_s_italy }
+		NOT = { has_country_modifier = byzantium_resurgent }
 	}
 	abort = {
 		is_subject = yes
 	}
 	success = {
-		owns = 120
-		owns = 121
-		owns = 122
-		owns = 123
-		owns = 1933
-		owns = 1934
+		all_target_province = {
+			owned_by = ROOT
+		}
 	}
 	chance = {
-		factor = 1500
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -291,24 +307,21 @@ recover_south_italy = {
 		}
 	}
 	immediate = {
-		add_claim = 120
-		add_claim = 121
-		add_claim = 122
-		add_claim = 123
-		add_claim = 1933
-		add_claim = 1934
+		every_target_province = {
+			add_claim = ROOT
+		}
 	}
 	abort_effect = {
-		remove_claim = 120
-		remove_claim = 121
-		remove_claim = 122
-		remove_claim = 123
-		remove_claim = 1933
-		remove_claim = 1934
+		every_target_province = {
+			remove_claim = ROOT
+		}
 	}
 	effect = {
-		add_prestige = 10
-		add_legitimacy = 10
+		set_country_flag = BYZ_recovered_s_italy
+		add_country_modifier = {
+			name = "byzantium_resurgent"
+			duration = 3650
+		}
 	}
 }
 
@@ -326,12 +339,12 @@ recover_rome = {
 		is_subject = no
 		is_at_war = no
 		NOT = { owns = 118 }	# Rome
-		owns = 120 	# Abruzzi
-		owns = 121 	# Napoli
-		owns = 122 	# Apulia
-		owns = 123 	# Calabria
-		owns = 1933
-		owns = 1934
+		southern_italy_region = {
+			type = all
+			owned_by = ROOT
+		}
+		NOT = { has_country_flag = BYZ_recovered_rome }
+		NOT = { has_country_modifier = byzantium_resurgent }
 	}
 	abort = {
 		is_subject = yes
@@ -340,7 +353,7 @@ recover_rome = {
 		owns = 118 # Rome
 	}
 	chance = {
-		factor = 1500
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -357,8 +370,12 @@ recover_rome = {
 		remove_claim = 118
 	}
 	effect = {
-		add_prestige = 10
-		add_legitimacy = 20
+		set_country_flag = BYZ_recovered_rome
+		add_prestige = 25
+		add_country_modifier = {
+			name = "byzantium_resurgent"
+			duration = 3650
+		}
 	}
 }
 
@@ -370,30 +387,38 @@ recover_sicily = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces = {
+		region = sicily_region
+		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { vassal_of = ROOT } }
+	}
+	
 	allow = {
 		tag = BYZ
 		normal_or_historical_nations = yes
 		is_subject = no
 		is_at_war = no
-		owns = 121 	# Napoli
-		owns = 122 	# Apulia
-		owns = 123 	# Calabria
-		owns = 1933
-		owns = 1934
-		NOT = { owns = 124 }	# Messina
-		NOT = { owns = 125 }	# Palermo
-		NOT = { owns = 126 }	# Malta
+		southern_italy_region = {
+			type = all
+			owned_by = ROOT
+		}
+		sicily_region = {
+			not = { owned_by = ROOT }
+		}
+		NOT = { has_country_flag = BYZ_recovered_sicily }
+		NOT = { has_country_modifier = byzantium_resurgent }
 	}
 	abort = {
 		is_subject = yes
 	}
 	success = {
-		owns = 124	# Messina
-		owns = 125	# Palermo
-		owns = 126	# Malta
+		all_target_province = {
+			owned_by = ROOT
+		}
 	}
 	chance = {
-		factor = 1500
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -404,18 +429,21 @@ recover_sicily = {
 		}
 	}
 	immediate = {
-		add_claim = 124
-		add_claim = 125
-		add_claim = 126
+		every_target_province = {
+			add_claim = ROOT
+		}
 	}
 	abort_effect = {
-		remove_claim = 124
-		remove_claim = 125
-		remove_claim = 126
+		every_target_province = {
+			remove_claim = ROOT
+		}
 	}
 	effect = {
-		add_prestige = 10
-		add_legitimacy = 10
+		set_country_flag = BYZ_recovered_sicily
+		add_country_modifier = {
+			name = "byzantium_resurgent"
+			duration = 3650
+		}
 	}
 }
 
@@ -428,7 +456,7 @@ the_pentarchy = {
 	ai_mission = yes
 	
 	target_provinces = {
-		NOT = { owned_by = FROM }
+		NOT = { owned_by = ROOT }
 		OR = {
 			province_id = 118
 			province_id = 151
@@ -473,7 +501,7 @@ the_pentarchy = {
 		358 = { religion = orthodox }
 	}
 	chance = {
-		factor = 1500
+		factor = 3000
 		modifier = {
 			factor = 1.5
 			owns = 118
@@ -501,12 +529,12 @@ the_pentarchy = {
 	}
 	immediate = {
 		every_target_province = {
-			add_claim = FROM
+			add_claim = ROOT
 		}
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = FROM
+			remove_claim = ROOT
 		}
 	}
 	effect = {
@@ -537,6 +565,8 @@ destroy_venice = {
 			army_size = VEN
 			navy_size = VEN
 		}
+		NOT = { has_country_flag = BYZ_destroyed_venice }
+		NOT = { has_country_modifier = byzantium_resurgent }
 	}
 	abort = {
 		OR = {
@@ -550,7 +580,7 @@ destroy_venice = {
 		owns = 112	# Venice
 	}
 	chance = {
-		factor = 1500
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -567,7 +597,10 @@ destroy_venice = {
 		remove_claim = 112
 	}
 	effect = {
-		add_prestige = 10
-		add_legitimacy = 30
+		set_country_flag = BYZ_destroyed_venice
+		add_country_modifier = {
+			name = "byzantium_resurgent"
+			duration = 3650
+		}
 	}
 }

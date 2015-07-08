@@ -61,6 +61,10 @@ ai_capitalist = {
 			government = merchant_republic
 		}	
 		modifier = {
+			factor = 2
+			tag = PAP
+		}
+		modifier = {
 			factor = 1.5
 			tag = MNG
 		}
@@ -153,7 +157,11 @@ ai_diplomat = {
 		modifier = {
 			factor = 3
 			tag = BYZ
-		}	
+		}
+		modifier = {
+			factor = 2
+			tag = PAP
+		}		
 		modifier = {
 			factor = 1.5
 			tag = MNG
@@ -244,6 +252,10 @@ ai_militarist = {
 			tag = MCH
 		}
 		modifier = {
+			factor = 100
+			invasion_nation = yes
+		}
+		modifier = {
 			factor = 3
 			government = native_council
 		}
@@ -274,7 +286,11 @@ ai_militarist = {
 		modifier = {
 			factor = 0.5
 			tag = FRA
-		}			
+		}	
+		modifier = {
+			factor = 0.5
+			tag = PAP
+		}		
 		modifier = {
 			factor = 0.75
 			tag = MNG

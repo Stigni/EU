@@ -280,6 +280,7 @@ country_event = {
 		name = "muslim_dlc.EVTOPTA7"
 		define_advisor = {
 			name = "Mimar Sinan"
+			discount = yes
 			type = artist
 			skill = 3
 		}
@@ -675,6 +676,7 @@ country_event = {
 		name = "muslim_dlc.EVTOPTB11"
 		define_advisor = {
 			name = "Muhammad Salih Tahtawi"
+			discount = yes
 			type = artist
 			skill = 3
 		}
@@ -717,6 +719,7 @@ country_event = {
 		define_advisor = {
 			name = "Mian Mir"
 			type = theologian
+			discount = yes
 			skill = 2
 			location = 507
 		}
@@ -1042,8 +1045,9 @@ country_event = {
 		add_years_of_income = -0.5
 		define_advisor = {
 			name = "Reza Abbasi"
+			discount = yes
 			type = artist
-			skill = 1
+			skill = 2
 		}
 	}
 	option = {
@@ -1083,7 +1087,8 @@ country_event = {
 		define_advisor = {
 			name = "Baha al-din al-Amili"
 			type = philosopher
-			skill = 1
+			discount = yes
+			skill = 2
 		}
 	}
 	option = {
@@ -1396,6 +1401,7 @@ country_event = {
 		define_advisor = {
 			name = "Serafeddin Sabuncuoglu"
 			type = natural_scientist
+			discount = yes
 			skill = 2
 		}
 		add_years_of_income = -0.5
@@ -1436,6 +1442,7 @@ country_event = {
 		define_advisor = {
 			name = "Al-Birjandi"
 			type = artist
+			discount = yes
 			skill = 3
 		}
 	}

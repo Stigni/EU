@@ -118,6 +118,7 @@ country_event = {
 			type = trader
 			name = "Mahmud Gawan"
 			skill = 3
+			discount = yes
 		}
 	}
 }

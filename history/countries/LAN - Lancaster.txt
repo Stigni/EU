@@ -1,7 +1,0 @@
-government = feudal_monarchy
-government_rank = 1
-technology_group = western
-primary_culture = english
-religion = catholic
-capital = 244	# Chester
-fixed_capital = 244 # Cannot move capital away from this province & no power cost to move to it

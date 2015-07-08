@@ -364,7 +364,7 @@ country_event = {
 			factor = 9
 		}
 		add_years_of_income = 0.05
-		add_prestige = -15
+		add_prestige = -10
 		add_karma = -10
 	}
 	option = {
@@ -401,12 +401,12 @@ country_event = {
 		name = buddhism_events.6.a #Let us take good care of it.
 		add_years_of_income = -0.1
 		add_karma = 10
-		add_prestige = 15
+		add_prestige = 10
 	}
 	option = {
 		name = buddhism_events.6.b #Sell it
 		add_years_of_income = 0.05
-		add_prestige = -15
+		add_prestige = -10
 		add_karma = -10
 		FROM = {
 			add_opinion = {
@@ -468,7 +468,7 @@ province_event = {
 		}
 		owner = {
 			add_karma = -15
-			add_prestige = -15
+			add_prestige = -10
 		}
 		add_province_modifier = {
 			name = monastaries_blooming
@@ -754,7 +754,7 @@ province_event = {
 	}
 	option = {
 		name = buddhism_events.13.b #Abandon the Idea
-		owner = { add_prestige = -15 }
+		owner = { add_prestige = -10 }
 		ai_chance = {
 			factor = 33
 			modifier = {
@@ -768,7 +768,7 @@ province_event = {
 	}
 	option = {
 		name = buddhism_events.13.c #Demand that they work without compensation
-		owner = { add_karma = -10 }
+		owner = { add_karma = -5 }
 		ai_chance = {
 			factor = 33
 			modifier = {
@@ -1031,7 +1031,7 @@ country_event = {
 			}
 		}
 		add_karma = 10
-		add_prestige = -15
+		add_prestige = -10
 		set_ruler_flag = had_tapa
 	}
 	option = {
@@ -1102,7 +1102,7 @@ country_event = {
 			}
 		}
 		add_karma = 10
-		add_prestige = 10
+		add_prestige = 5
 	}
 	option = {
 		name = buddhism_events.19.c #This is a time for Charity, let us help this man.
@@ -1145,6 +1145,7 @@ country_event = {
 		add_adm_power = 25
 		define_advisor = {
 			skill = 2
+			discount = yes
 		}
 	}
 }
@@ -1277,7 +1278,7 @@ country_event = {
 			}
 		}
 		add_karma = 10
-		add_prestige = 10
+		add_prestige = 5
 	}
 	option = {
 		name = buddhism_events.23.b #Rule in favor of the Monastery
@@ -1342,6 +1343,11 @@ province_event = {
 		owner = {
 			religion = buddhism
 			has_regency = no
+			NOT = {
+				any_owned_province = {
+					has_province_modifier = powerful_benevolent_monastery
+				}
+			}
 		}
 	}
 	
@@ -1541,7 +1547,7 @@ province_event = {
 		}
 		owner = {
 			add_karma = 10
-			add_prestige = 10
+			add_prestige = 5
 		}
 		remove_province_modifier = social_bandit
 		remove_province_modifier = social_bandit_local_search
@@ -1796,7 +1802,7 @@ country_event = {
 			NOT = { karma = -25 }
 		}
 		add_karma = 10
-		add_prestige = -10
+		add_prestige = -5
 		custom_tooltip = buddhism_events.31.a.tt1
 	}
 	option = {
@@ -1809,7 +1815,7 @@ country_event = {
 			karma = 25
 		}
 		add_karma = 10
-		add_prestige = 10
+		add_prestige = 5
 		custom_tooltip = buddhism_events.31.a.tt2
 	}
 	option = {
@@ -2112,7 +2118,7 @@ country_event = {
 	option = {
 		name = buddhism_events.36.b #Let them sort it out themselves
 		add_karma = -10
-		add_prestige = -20
+		add_prestige = -10
 	}
 }
 
@@ -2298,7 +2304,7 @@ country_event = {
 			}
 		}
 		add_dip_power = 50
-		add_prestige = 25
+		add_prestige = 10
 		add_opinion = {
 			who = FROM
 			modifier = lankan_monks_sent
@@ -2363,7 +2369,7 @@ country_event = {
 	
 	option = {
 		name = buddhism_events.43.a #
-		add_prestige = -15
+		add_prestige = -10
 		add_opinion = {
 			who = FROM
 			modifier = no_lankan_monks_sent

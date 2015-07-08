@@ -107,7 +107,6 @@
  temperate: "Temperar"
  SupportIndependenceREQDESC: "§Y$ACTOR$§! pide que apoyemos a su independencia. Esto significa que seremos llamados a la guerra en caso de que lanzar una guerra de liberación. ¿Aceptas?"
  ALREADY_CALLED_TO_ARMS: "Ya llamaron a una de las guerras activas."
- NO_RANDOM_MOD: "Random New world desactivado debido a los siguientes MODs / DLCs:"
  LIBERATECOLONY: "Colonia de liberación"
  PROTECTORATES_NOT_ADVANCED: "No estamos lo suficientemente avanzada como para crear protectorados."
  flavor_fra.EVTDESC112: "?"

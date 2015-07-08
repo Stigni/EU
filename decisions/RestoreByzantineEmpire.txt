@@ -11,7 +11,10 @@ country_decisions = {
 			NOT = { exists = BYZ }
 			NOT = { tag = HLR }
 			NOT = { tag = TUR }
-			primary_culture = greek
+			OR = {
+				primary_culture = greek
+				primary_culture = pontic_greek
+			}
 			religion = orthodox
 		}
 		allow = {

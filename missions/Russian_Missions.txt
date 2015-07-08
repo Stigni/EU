@@ -23,13 +23,7 @@ conquer_finland = {
 		NOT = { last_mission = conquer_finland }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			any_target_province = {
-				NOT = { owned_by = ROOT }
-				NOT = { owned_by = SWE }
-			}
-		}
+		is_subject = yes
 	}
 	success = {
 		NOT = { war_with = SWE }
@@ -91,12 +85,7 @@ subjugate_tver = {
 		NOT = { last_mission = subjugate_tver }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			NOT = { exists = TVE }
-			NOT = { religion_group = ROOT }
-			TVE = { is_subject_of = ROOT }
-		}
+		is_subject = yes
 	}
 	success = {
 		NOT = { exists = TVE }
@@ -175,15 +164,13 @@ annex_yaroslavl = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
 		}
 		NOT = { has_country_flag = yaroslavl_subjugated }
 		NOT = { last_mission = annex_yaroslavl }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			YAR = { is_subject_of = ROOT }
-		}
+		is_subject = yes
 	}
 	success = {
 		NOT = { exists = YAR }
@@ -266,15 +253,13 @@ annex_ryazan = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
 		}
 		NOT = { has_country_flag = ryazan_subjugated }
 		NOT = { last_mission = annex_ryazan }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			RYA = { is_subject_of = ROOT }
-		}
+		is_subject = yes
 	}
 	success = {
 		NOT = { exists = RYA }
@@ -670,10 +655,7 @@ annex_the_qasim_khanate = {
 		NOT = { last_mission = annex_the_qasim_khanate }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			QAS = { is_subject_of = ROOT }
-		}
+		is_subject = yes
 	}
 	success = {
 		NOT = { exists = QAS }
@@ -764,10 +746,7 @@ defend_russia_against_the_mongols = {
 		NOT = { last_mission = defend_russia_against_the_mongols }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			GOL = { is_subject_of = ROOT }
-		}
+		is_subject = yes
 	}
 	immediate = {
 		every_target_province = {
@@ -823,10 +802,7 @@ cross_the_mongol_border = {
 		NOT = { last_mission = cross_the_mongol_border }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			GOL = { is_subject_of = ROOT }
-		}
+		is_subject = yes
 	}
 	success = {
 		all_target_province = {
@@ -901,11 +877,7 @@ subjugate_novgorod = {
 		NOT = { last_mission = subjugate_novgorod }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			NOT = { exists = NOV }
-			NOV = { is_subject_of = ROOT }
-		}
+		is_subject = yes
 	}
 	success = {
 		NOT = { exists = NOV }
@@ -1061,7 +1033,7 @@ russia_partitions_poland = {
 			}
 		}
 		modifier = {
-			factor = 10
+			factor = 2
 			russian_region = {
 				OR = {
 					owned_by = POL
@@ -1070,7 +1042,7 @@ russia_partitions_poland = {
 			}
 		}
 		modifier = {
-			factor = 10
+			factor = 2
 			russian_region = {
 				type = all
 				owned_by = ROOT
@@ -1149,11 +1121,7 @@ subjugate_crimea = {
 		NOT = { last_mission = subjugate_crimea }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			NOT = { exists = CRI }
-			CRI = { is_subject_of = ROOT }
-		}
+		is_subject = yes
 	}
 	success = {
 		NOT = { exists = CRI }
@@ -1222,11 +1190,7 @@ subjugate_kazan = {
 		NOT = { last_mission = subjugate_kazan }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			NOT = { exists = KAZ }
-			KAZ = { is_subject_of = ROOT }
-		}
+		is_subject = yes
 	}
 	success = {
 		NOT = { exists = KAZ }
@@ -1235,7 +1199,7 @@ subjugate_kazan = {
 		}
 	}
 	chance = {
-		factor = 3000
+		factor = 3500
 		modifier = {
 			factor = 2
 			num_of_owned_provinces_with = {
@@ -1302,11 +1266,7 @@ subjugate_the_siberian_khanate = {
 		NOT = { last_mission = subjugate_the_siberian_khanate }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			NOT = { exists = SIB }
-			SIB = { is_subject_of = ROOT }
-		}
+		is_subject = yes
 	}
 	success = {
 		NOT = { exists = SIB }
@@ -1315,7 +1275,7 @@ subjugate_the_siberian_khanate = {
 		}
 	}
 	chance = {
-		factor = 3000
+		factor = 3500
 		modifier = {
 			factor = 2
 			num_of_owned_provinces_with = {
@@ -1383,11 +1343,7 @@ subjugate_astrakhan = {
 		
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			NOT = { exists = AST }
-			AST = { is_subject_of = ROOT }
-		}
+		is_subject = yes
 	}
 	success = {
 		NOT = { exists = AST }

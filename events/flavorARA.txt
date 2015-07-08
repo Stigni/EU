@@ -97,6 +97,7 @@ country_event = {
 			type = artist
 			name = "Antonio Beccadelli"
 			skill = 2
+			discount = yes
 		}
 	}
 }

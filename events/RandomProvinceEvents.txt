@@ -863,6 +863,7 @@ province_event = {
 	picture = DIPLOMACY_eventPicture
 
 	trigger = {
+		always = no
 		owner = {
 			war_exhaustion = 15
 			is_at_war = yes

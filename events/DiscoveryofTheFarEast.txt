@@ -548,7 +548,7 @@ country_event = {
 		name = "EVTOPTA9018"
 		add_country_modifier = {
 			name = a_batch_of_western_muskets
-			duration = 730
+			duration = 7300
 		}
 		add_years_of_income = -0.5
 	}
@@ -599,6 +599,7 @@ country_event = {
 		name = "EVTOPTB9020"
 		define_advisor = { 
 			type = artist
+			discount = yes
 			skill = 2
 		}
 	}
