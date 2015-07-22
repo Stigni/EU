@@ -5629,7 +5629,6 @@
  HRE_DECISIONS: "Reformas imperiales"
  ALL_OWNED_PROVS: "todas las provincias poseídas"
  alert_disputed_succession_instant: "§YSucesión disputada§W"
- alert_disputed_succession_delayed: "Los siguientes países carecen de herederos con aspiraciones fundadas:\n$LIST$"
  NOT_THE_EMPEROR: "¡Tú no eres el emperador!"
  YEARLY_LEGITIMACY: "Legitimidad anual"
  num_of_marriages: "Número de matrimonios reales"

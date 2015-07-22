@@ -41,7 +41,7 @@ client_ideas = {
 
 colonial_ideas = {
 	start = {
-		inflation_reduction = 0.1
+		development_cost = -0.1
 		republican_tradition = 0.005
 	}
 	

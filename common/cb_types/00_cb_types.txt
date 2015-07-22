@@ -591,6 +591,7 @@ cb_liberate_elector = {
 
 # Coalition CB
 cb_super_badboy = {
+	coalition = yes
 
 	prerequisites = {	
 		coalition_target = FROM
@@ -784,6 +785,7 @@ cb_support_rebels = {
 cb_crush_the_revolution = {
 	ai_peace_desire = -50
 	valid_for_subject = no
+	
 
 	prerequisites = {
 		OR = {	

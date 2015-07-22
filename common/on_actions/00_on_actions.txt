@@ -669,6 +669,15 @@ on_bi_yearly_pulse = {
 		100 = trade.11
 		100 = trade.12
 		
+		# Catholic  Events      
+		100 = catholic_flavor.4 
+		100 = catholic_flavor.5 
+		100 = catholic_flavor.6 
+		100 = catholic_flavor.7 
+		100 = catholic_flavor.8 
+		100 = catholic_flavor.9 
+		100 = catholic_flavor.10
+		
 		# Tradegoods events
 		100 = 6418
 		100 = 6419
@@ -750,19 +759,6 @@ on_bi_yearly_pulse = {
 }
 
 on_bi_yearly_pulse_2 = {
-	random_events = {
-		
-		# Catholic  Events      
-		100 = catholic_flavor.4 
-		100 = catholic_flavor.5 
-		100 = catholic_flavor.6 
-		100 = catholic_flavor.7 
-		100 = catholic_flavor.8 
-		100 = catholic_flavor.9 
-		100 = catholic_flavor.10
-		
-		1000 = 0
-	}
 }
 
 on_bi_yearly_pulse_3 = {

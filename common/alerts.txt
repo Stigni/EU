@@ -102,7 +102,7 @@ alerts = {
 	}
 	
 	alert_no_mercs = {
-		category = LOW
+		category = MEDIUM
 	}
 	
 	alert_idea_group_slot = {
@@ -129,8 +129,8 @@ alerts = {
 		category = MEDIUM
 	}
 	
-	alert_free_leader_available = {
-		category = LOW
+	alert_too_many_leaders = {
+		category = MEDIUM
 	}	
 	
 	alert_call_to_peace = {
@@ -142,11 +142,11 @@ alerts = {
 	}
 	
 	alert_can_convert_province = {
-		category = MEDIUM
+		category = LOW
 	}
 	
 	alert_over_diplomatic_relations = {
-		category = LOW
+		category = MEDIUM
 	}
 	
 	alert_can_westernize = {
@@ -154,7 +154,7 @@ alerts = {
 	}
 	
 	alert_can_migrate = {
-		category = MEDIUM
+		category = LOW
 	}
 	
 	alert_native_advancement = {
@@ -222,5 +222,17 @@ alerts = {
 	
 	alert_explorer_ready = {
 		category = LOW
+	}
+	
+	alert_can_core_province = {
+		category = LOW
+	}
+	
+	alert_can_call_allies = {
+		category = LOW
+	}
+	
+	alert_low_stability = {
+		category = MEDIUM
 	}
 }

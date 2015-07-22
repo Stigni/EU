@@ -6747,7 +6747,6 @@
  alert_incoming_disaster_instant: "§YDésastre imminent§!"
  alert_incoming_disaster_delayed: "Au moins un désastre est sur le point de survenir.\n$LIST$"
  alert_disputed_succession_instant: "§YSuccessions contestées§W"
- alert_disputed_succession_delayed: "Les héritiers de ces pays ne disposent pas d'une revendication bien établie:\n$LIST$\n§YLes héritiers dont la légitimité est trop faible peuvent voir leur trône être revendiqué par un monarque ayant plus de prestige.\nIl n'est possible de revendiquer le trône que de pays avec lesquels nous avons contracté un mariage royal, ce qui peut déboucher aussi bien sur une union personnelle que sur une guerre de succession.§!"
  NOT_THE_EMPEROR: "Vous n'êtes pas l'empereur!"
  num_of_marriages: "Nombre de mariages royaux"
  num_of_provinces: "Nombre de provinces"

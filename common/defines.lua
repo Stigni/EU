@@ -68,7 +68,7 @@ NDiplomacy = {
 	AE_SAME_RELIGION_GROUP = 0.0,
 	AE_DIFFERENT_RELIGION = -0.5,
 	AE_HRE_INTERNAL = 0.5,
-	AE_ATTACKER_DEVELOPMENT = 0.001,	-- +50% cap (at 500 development)
+	AE_ATTACKER_DEVELOPMENT = 0.01,	-- +50% cap (at 1000 development)
 	AE_DISTANCE_BASE = 0.75,
 	AE_SAME_OVERLORD = 0.5,	
 	AE_PROVINCE_CAP = 30,				-- Province development above this will not count for AE (also used for warscore cost cap)
@@ -79,7 +79,7 @@ NDiplomacy = {
 	-- Peace Option Effects, base values for the winner. The loser gets the inverse.
 	PO_DEMAND_PROVINCES_AE = 0.5, 				-- _DDEF_PO_DEMAND_PROVINCES_AE = 10, (Per development)
 	PO_RETURN_CORES_AE = 0.4, 					-- (Per core, only applied if returning cores to vassals of winner)
-	PO_FORM_PU_AE = 0.25, 							-- _DDEF_PO_FORM_PU_AE = 10, (Per development)
+	PO_FORM_PU_AE = 0.1, 							-- _DDEF_PO_FORM_PU_AE = 10, (Per development)
 	PO_BECOME_VASSAL_AE = 0.4, 					-- _DDEF_PO_BECOME_VASSAL_AE = 10, (Per development)
 	PO_BECOME_PROTECTORATE_AE = 0.25, 					-- _DDEF_PO_BECOME_VASSAL_AE = 10, (Per development)
 	PO_ANNEX_PRESTIGE = 0.25, 						-- _DDEF_PO_ANNEX_PRESTIGE = 10, (No effect on loser :)
@@ -260,7 +260,7 @@ NCountry = {
 	WESTERN_NEEDED_MAX_POWER = 5000,					-- needed for full westernisation
 	WESTERN_POWER_TICK_REDUCTION_FACTOR = 100,		-- reduce max power transfer by 1 for each multiplication of this in total development
 	LAND_FORCELIMIT_EXTRA_COST_FACTOR = 2,			-- extra expense for being above forcelimit
-	NAVAL_FORCELIMIT_EXTRA_COST_FACTOR = 1,			-- extra expense for being above forcelimit	
+	NAVAL_FORCELIMIT_EXTRA_COST_FACTOR = 2,			-- extra expense for being above forcelimit	
 	REPUBLICAN_TRADITION_YEARLY_INCREASE = 0.01,	-- how much it increases each year.
 	PIETY_PERCENTAGE_AT_NEW_RULER = 0.25,			-- percentage of piety kept at new ruler.
 	PIETY_INCREASE_AT_GOOD_WAR = 0.25,
@@ -560,7 +560,8 @@ NMilitary = {
 	NATIVE_FEROCITY_IMPACT = 0.05,					-- how many percentage each ferocity gives in combat bonus
 	GALLEY_BONUS_INLAND_SEA = 1.0,
 	INSUFFICIENT_SUPPORT = -0.25,
-	SIEGE_MEMORY = 12,
+	SIEGE_MEMORY = 11,
+	SIEGE_MEMORY_SCALED = 0.5,						-- per fort level
 	SIEGE_WIN = 20,
 	UNLOAD_COST_FRIENDLY = 12,						-- cost to unload to friendly territory
 	UNLOAD_COST_ENEMY = 36,							-- cost to hostile.
@@ -787,7 +788,7 @@ NAI = {
 	PEACE_TERMS_PROVINCE_REAL_ADJACENT_MULT = 0.5, -- AI desire for a province is increased by this multiplier for each owned adjacent province
 	PEACE_TERMS_PROVINCE_NOT_ADJACENT_MULT = 0.5, -- AI desire for a province is multiplied by this if it is not adjacent at all (including vassals and other provinces being taken in peace)
 	PEACE_TERMS_PROVINCE_NO_INTEREST_MULT = 0, -- AI desire for a province is multiplied by this if it is not on their conquest list
-	PEACE_TERMS_PROVINCE_OVEREXTENSION_MIN_MULT = 0.5, -- AI desire for a province is multiplied by this if it has 99% overextension (not applied to cores)
+	PEACE_TERMS_PROVINCE_OVEREXTENSION_MIN_MULT = 0.25, -- AI desire for a province is multiplied by this if it has 99% overextension (not applied to cores)
 	PEACE_TERMS_PROVINCE_OVEREXTENSION_MAX_MULT = 1.5, -- AI desire for a province is multiplied by this if it has 0% overextension (not applied to cores)
 	PEACE_TERMS_PROVINCE_ISOLATED_CAPITAL_MULT = 0.9, -- AI desire for a province if it is capital (costs a bit more to take)
 	PEACE_TERMS_PROVINCE_ALLY_MULT = 0.5, -- AI desire for giving (non-core) provinces to its allies
@@ -821,7 +822,7 @@ NAI = {
 	PEACE_TERMS_RELEASE_ANNEXED_SAME_CULTURE_GROUP_MULT = 0.75, -- AI desire for releasing a country is multiplied by this if they are the same culture group (but not same culture) as releaser
 	PEACE_TERMS_MIL_ACCESS_BASE_MULT = 0, -- AI desire for mil access through peace
 	PEACE_TERMS_FLEET_BASING_BASE_MULT = 0, -- AI desire for fleet basing rights through peace
-	PEACE_TERMS_WAR_REPARATIONS_BASE_MULT = 0.5, -- AI desire for war reparations through peace
+	PEACE_TERMS_WAR_REPARATIONS_BASE_MULT = 0.1, -- AI desire for war reparations through peace
 	PEACE_TERMS_WAR_REPARATIONS_MIN_INCOME_RATIO = 0.5, -- AI only wants war reparations if other country has at least this % of their income
 	
 	DIPLOMATIC_ACTION_RANDOM_FACTOR = 1.0, -- How much of the AI diplomatic action scoring is randomly determined (1.0 = half random, 2.0 = 2/3rd random, etc)
@@ -1114,7 +1115,7 @@ NReligion = {
 	MAYA_COLLAPSE_PROVINCES_PER_REFORM = 2,					-- Maya keeps this many extra provinces per reform
 	YEARLY_DOOM_INCREASE = 1,								-- Multiplied by number of provinces
 	DOOM_REDUCTION_FROM_REFORMS = 0.2,						-- This much less monthly doom (as a fraction of whole) for each reform passed
-	DOOM_REDUCTION_FROM_OCCUPATION = 1,						-- Multiplied by development
+	DOOM_REDUCTION_FROM_OCCUPATION = 0.05,					-- Multiplied by development
 	DOOM_REDUCTION_FROM_BATTLE = 1,							-- Per 1000 men killed
 	DOOM_REDUCTION_FROM_SACRIFICE = 1,						-- Multiplied by power
 	SACRIFICE_COOLDOWN = 3,									-- Years before you can sacrifice a ruler/heir from same country

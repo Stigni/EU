@@ -387,6 +387,7 @@ university = {
 	time = 12
 	modifier = {
 		local_development_cost = -0.20
+		allowed_num_of_buildings = 1
 	}
 	
 	ai_will_do = {

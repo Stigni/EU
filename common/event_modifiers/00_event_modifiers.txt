@@ -5046,8 +5046,7 @@ defender_evacuated_siege = {}
 attacker_evacuated_siege = {}
 
 lingering_plague = {
-	local_hostile_attrition = 5
-	max_attrition = 5
+	supply_limit_modifier = -0.5
 	local_manpower_modifier = -0.5
 	local_tax_modifier = -0.5
 	trade_goods_size = -0.5
@@ -5749,7 +5748,7 @@ wih_heonanseolheon = {
 # The Papal States
 
 pap_swiss_guard = {
-	global_manpower_modifier = 0.25
+	global_manpower_modifier = 0.1
 }
 mil_vatican_library = { 
 	technology_cost = -0.05
@@ -5761,7 +5760,7 @@ dip_vatican_library = {
 }
 adm_vatican_library = { 
 	technology_cost = -0.05
-	global_unrest = -1
+	global_unrest = -2
 }
 pap_sistine_chapel = {
 	devotion = 0.1
@@ -5772,15 +5771,15 @@ pap_sistinechapel_botticelli = {
 }
 pap_sistinechapel_ghirlandaio = { 
 	devotion = 0.1
-	prestige = 0.1
+	prestige = 0.5
 }
 pap_sistinechapel_perugino = { 
 	devotion = 0.1
-	diplomatic_reputation = 1
+	relations_decay_of_me = 0.1
 }
 pap_sistinechapel_michelangelo = { 
 	devotion = 0.1
-	technology_cost = -0.05
+	idea_cost = -0.05
 }
 pap_sistinechapel_decorated = { 
 	devotion = 0.1

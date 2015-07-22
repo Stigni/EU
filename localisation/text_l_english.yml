@@ -6749,7 +6749,7 @@
  alert_incoming_disaster_instant: "§YLooming Disaster§!"
  alert_incoming_disaster_delayed: "At least one major disaster is about to happen to your nation.\n$LIST$"
  alert_disputed_succession_instant: "§YDisputed Succession§W"
- alert_disputed_succession_delayed: "The following countries lack heirs with a decent claim:\n$LIST$\n§YCountries which lack heirs with a strong claim may have their thrones claimed by a monarch with more prestige. You can only Claim Throne of a country you're in a Royal Marriage with. Claiming their throne might lead to a Personal Union or a war of succession over their crown.§!"
+ alert_disputed_succession_delayed: "The following countries lack heirs:\n$LIST$\n§YCountries that lack heirs may end up in a Personal Union under another country with which they have a Royal Marriage when their ruler dies. They can also have their thrones claimed by other countries of the same dynasty.§!"
  NOT_THE_EMPEROR: "You are not the Emperor!"
  num_of_marriages: "Number of Royal Marriages"
  num_of_provinces: "Number of Provinces"

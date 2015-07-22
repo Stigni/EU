@@ -1751,6 +1751,11 @@ opinion_abandoned_hre = {
 	yearly_decay = 1
 }
 
+opinion_forced_return_territory = {
+	opinion = -100
+	yearly_decay = 2
+}
+
 opinion_unlawful_territory = {
 	opinion = -25
 	years = 25

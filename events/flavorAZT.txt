@@ -370,6 +370,7 @@ country_event = {
 	trigger = {
 		tag = AZT
 		num_of_cities = 8
+		NOT = { adm_tech = 5 }
 		OR = {
 			NOT = { stability = 1 }
 			war_exhaustion = 5

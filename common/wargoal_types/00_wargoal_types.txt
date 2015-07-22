@@ -422,7 +422,6 @@ defend_capital_independence = {
 			always = yes
 		}		
 		
-		po_annex = yes
 		po_demand_provinces = yes
 		allow_annex = yes
 	}
@@ -441,7 +440,7 @@ take_capital_conquest = {
 		is_claim = ROOT
 	}
 
-	po_annex = yes
+	#po_annex = yes
 	po_demand_provinces = yes
 	allow_leader_change = yes
 	
@@ -460,7 +459,6 @@ take_core = {
 			is_core = ROOT
 		}
 		
-		po_annex = yes
 		po_demand_provinces = yes
 		
 		prov_desc = ALL_CORES
@@ -475,7 +473,6 @@ take_core = {
 			is_core = FROM
 		}
 		
-		po_annex = yes
 		po_demand_provinces = yes
 		
 		prov_desc = ALL_CORES	
@@ -496,7 +493,7 @@ take_capital_claim = {
 		is_claim = ROOT
 	}
 	
-	po_annex = yes
+	#po_annex = yes
 	po_demand_provinces = yes
 	allow_leader_change = yes
 	
@@ -515,7 +512,7 @@ take_claim = {
 		is_claim = ROOT
 	}
 	
-	po_annex = yes
+	#po_annex = yes
 	po_demand_provinces = yes
 	allow_leader_change = yes
 	
@@ -535,7 +532,6 @@ take_province_nationalist = {
 			culture_group = ROOT
 		}
 		
-		po_annex = yes
 		po_demand_provinces = yes
 		
 		country_desc = ALL_CGROUP_COUNTRIES
@@ -551,7 +547,6 @@ take_province_nationalist = {
 			culture_group = FROM
 		}
 		
-		po_annex = yes
 		po_demand_provinces = yes
 		
 		country_desc = ALL_CGROUP_COUNTRIES
@@ -575,7 +570,6 @@ take_capital_imperial = {
 			always = yes
 		}
 		
-		po_annex = yes
 		po_demand_provinces = yes
 		
 		country_desc = ALL_COUNTRIES
@@ -592,7 +586,6 @@ take_capital_imperial = {
 			always = yes
 		}
 		
-		po_annex = yes
 		po_demand_provinces = yes
 		
 		country_desc = ALL_COUNTRIES
@@ -617,7 +610,6 @@ take_province_revolutionary = {
 			always = yes
 		}
 		
-		po_annex = yes
 		po_demand_provinces = yes
 		
 		country_desc = ALL_GOV_ENEMIES
@@ -633,7 +625,6 @@ take_province_revolutionary = {
 			always = yes
 		}
 		
-		po_annex = yes
 		po_demand_provinces = yes
 		
 		country_desc = ALL_GOV_ENEMIES
@@ -724,7 +715,6 @@ superiority_crusade = {
 		}
 		
 		po_demand_provinces = yes
-		po_annex = yes
 		
 		country_desc = ALL_INFIDELS
 		prov_desc = ALL_PROVS
@@ -740,7 +730,6 @@ superiority_crusade = {
 		}
 		
 		po_demand_provinces = yes
-		po_annex = yes
 		
 		country_desc = ALL_INFIDELS
 		prov_desc = ALL_PROVS
@@ -763,7 +752,6 @@ take_province_religion = {
 		}
 		
 		po_demand_provinces = yes
-		po_annex = yes
 		
 		prov_desc = ALL_REL_GROUP_PROVS
 	}
@@ -778,7 +766,6 @@ take_province_religion = {
 		}
 		
 		po_demand_provinces = yes
-		po_annex = yes
 		
 		prov_desc = ALL_REL_GROUP_PROVS
 	}	
@@ -830,7 +817,7 @@ take_province_excommunication = {
 	po_release_vassals = yes
 	po_release_annexed = yes
 	po_return_cores = yes
-	po_annex = yes
+	#po_annex = yes
 	po_demand_provinces = yes
 	po_revoke_cores = yes
 	po_become_vassal = yes
@@ -987,7 +974,7 @@ superiority_primitives = {
 		}
 	}
 	
-	po_annex = yes
+	#po_annex = yes
 	po_demand_provinces = yes
 	po_revoke_cores = yes
 	po_release_vassals = yes
@@ -1029,7 +1016,7 @@ superiority_overseas = {
 		}
 	}
 	
-	po_annex = yes
+	#po_annex = yes
 	po_demand_provinces = yes
 	po_revoke_cores = yes
 	po_release_vassals = yes
@@ -1090,7 +1077,6 @@ superiority_horde = {
 			always = yes
 		}
 
-		po_annex = yes
 		po_demand_provinces = yes
 		po_become_vassal = yes
 		po_become_protectorate = yes
@@ -1108,7 +1094,6 @@ superiority_horde = {
 			always = yes
 		}
 
-		po_annex = yes
 		po_demand_provinces = yes
 		po_become_vassal = yes
 		po_become_protectorate = yes
@@ -1134,7 +1119,6 @@ take_province_tribal_feud = {
 			always = yes
 		}
 
-		po_annex = yes
 		po_demand_provinces = yes
 		po_become_vassal = yes
 		po_become_protectorate = yes
@@ -1152,7 +1136,6 @@ take_province_tribal_feud = {
 			always = yes
 		}
 
-		po_annex = yes
 		po_demand_provinces = yes
 		po_become_vassal = yes
 		po_become_protectorate = yes
@@ -1177,7 +1160,7 @@ annex_country = {
 		is_claim = ROOT
 	}
 
-	po_annex = yes
+	#po_annex = yes
 	po_demand_provinces = yes
 	
 	allow_annex = yes
@@ -1371,7 +1354,6 @@ superiority_chinese_unification = {
 			}
 		}
 		
-		po_annex = yes
 		po_demand_provinces = yes
 		
 		country_desc = ALL_CGROUP_COUNTRIES
@@ -1390,7 +1372,6 @@ superiority_chinese_unification = {
 			}
 		}
 		
-		po_annex = yes
 		po_demand_provinces = yes
 		
 		country_desc = ALL_CGROUP_COUNTRIES

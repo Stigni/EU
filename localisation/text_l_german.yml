@@ -5933,7 +5933,6 @@
  HRE_DECISIONS: "Reichsreformen"
  ALL_OWNED_PROVS: "alle Provinzen in Besitz"
  alert_disputed_succession_instant: "§YUmkämpfte Nachfolge§W"
- alert_disputed_succession_delayed: "Die folgenden Nationen haben keine Thronfolger mit gutem Anspruch:\n$LIST$"
  NOT_THE_EMPEROR: "Ihr seit nicht Kaiser!"
  YEARLY_LEGITIMACY: "Jährliche Legitimität"
  num_of_marriages: "Anzahl von Staatsehen"
