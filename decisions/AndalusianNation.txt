@@ -3,6 +3,11 @@ country_decisions = {
 	andalusian_nation = {
 		major = yes
 		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			NOT = { tag = SPA }
@@ -26,13 +31,17 @@ country_decisions = {
 					NOT = { exists = ADU }
 					num_of_cities = 6
 					any_owned_province = {
-						region = andalusia
+						OR = {
+							area = upper_andalucia_area
+							area = lower_andalucia_area
+						}
 					}
 				}
 			}
 		}
 		allow = {
 			NOT = { exists = ADU }
+			is_nomad = no
 			is_subject = no
 			is_at_war = no
 			is_tribal = no
@@ -84,12 +93,29 @@ country_decisions = {
 				}
 				change_primary_culture = andalucian
 			}
-			#andalusia = {
-			#	limit = {
-			#		NOT = { owned_by = ROOT }
-			#	}
-			#	add_claim = ADU
-			#}
+			if = {
+				limit = {
+					OR = {
+						government = tribal_kingdom
+						government = tribal_despotism
+						government = tribal_federation
+						government = tribal_democracy
+					}
+				}
+				change_government = despotic_monarchy #Desert tribes settling down, theocracies become monarchies.
+			}
+			lower_andalucia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ADU
+			}
+			upper_andalucia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ADU
+			}
 		}
 		ai_will_do = {
 			factor = 400

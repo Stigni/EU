@@ -53,15 +53,28 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 2
+				set_government_rank = 3
 			}
-			arab_region = {
+			mashriq_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = ARB
+				add_permanent_claim = ARB
+			}
+			egypt_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { area = lower_nubia_area }
+				}
+				add_permanent_claim = ARB
+			}
+			arabia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ARB
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
