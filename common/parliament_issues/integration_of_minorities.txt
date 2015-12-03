@@ -4,7 +4,10 @@ integration_of_minorities = {
 
 	allow = {
 		any_owned_province = {
+			has_seat_in_parliament = no
 			has_owner_accepted_culture = no
+			has_owner_culture = no
+			is_overseas = no
 		}
 		NOT = { has_idea_group = religious_ideas }
 	}
@@ -13,7 +16,9 @@ integration_of_minorities = {
 		random_owned_province = {
 			limit = {
 				has_owner_accepted_culture = no
+				has_owner_culture = no
 				has_seat_in_parliament = no
+				is_overseas = no
 			}
 			set_seat_in_parliament = yes
 		}
@@ -30,6 +35,7 @@ integration_of_minorities = {
 			num_of_owned_provinces_with = {
 				value = 10
 				has_owner_accepted_culture = no
+				has_owner_culture = no
 			}
 		}	
 	}
