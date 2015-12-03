@@ -4,6 +4,7 @@
 odin =
 {
 	legitimacy = 0.1
+	horde_unity = 0.1
 	core_creation = -0.10
 	
 	allow = { religion = norse_pagan_reformed }
