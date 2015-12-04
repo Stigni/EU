@@ -26,6 +26,11 @@ christian = {
 			tolerance_heretic = -1
 		}
 		
+		country_as_secondary = {
+			diplomatic_reputation = 1
+			advisor_pool = 1
+		}
+		
 		hre_religion = yes
 		
 		on_convert = {
@@ -203,6 +208,7 @@ christian = {
 				}
 				allow = {
 					NOT = { war_with = PAP }
+					NOT = { mercantilism = 1 }
 				}
 				effect = {
 					add_mercantilism = 0.01
@@ -231,7 +237,11 @@ christian = {
 		}
 		country = {
 			global_tax_modifier = 0.1
-			tolerance_own = 1
+			improve_relation_modifier = 0.15
+		}
+		
+		country_as_secondary = {
+			idea_cost = -0.1
 		}
 		
 		uses_church_power = yes				# Uses church power/aspect mechanics
@@ -262,6 +272,10 @@ christian = {
 				not = { province_id = 118 }
 				is_in_capital_area = yes
 				is_reformation_center = no
+				development = 10
+				NOT = { has_climate = arctic }
+				NOT = { has_climate = arid }
+				NOT = { has_climate = tropical }
 			}
 		}
 
@@ -280,40 +294,54 @@ christian = {
 				limit = {
 					has_country_flag = reformation_money
 				}
-				random_owned_province = {
-					limit = {
-						OR = {
-							religion = protestant
-							religion = catholic
-							religion = reformed
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							OR = {
+								religion = protestant
+								religion = catholic
+								religion = reformed
+							}
+							is_in_capital_area = yes
+							is_reformation_center = no
+							development = 10
+							not = { province_id = 118 }
+							NOT = { has_climate = arctic }
+							NOT = { has_climate = arid }
+							NOT = { has_climate = tropical }
 						}
-						is_in_capital_area = yes
-						is_reformation_center = no
-						not = { province_id = 118 }
+						change_religion = protestant
+						add_reform_center = protestant
 					}
-					change_religion = protestant
-					add_reform_center = protestant
 				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
 			}	
 			if = {
 				limit = {
 					NOT = { has_country_flag = reformation_money }
 				}
 				add_years_of_income = 1.0
-				random_owned_province = {
-					limit = {
-						OR = {
-							religion = protestant
-							religion = catholic
-							religion = reformed
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							OR = {
+								religion = protestant
+								religion = catholic
+								religion = reformed
+							}
+							is_in_capital_area = yes
+							is_reformation_center = no
+							not = { province_id = 118 }
+							development = 10
+							NOT = { has_climate = arctic }
+							NOT = { has_climate = arid }
+							NOT = { has_climate = tropical }
 						}
-						is_in_capital_area = yes
-						is_reformation_center = no
-						not = { province_id = 118 }
+						change_religion = protestant
+						add_reform_center = protestant
 					}
-					change_religion = protestant
-					add_reform_center = protestant
 				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
 			}
 			
 			add_country_modifier = {
@@ -354,6 +382,11 @@ christian = {
 			tolerance_heretic = 2
 			advisor_pool = 1
 		}
+		
+		country_as_secondary = {
+			global_unrest = -1
+			advisor_cost = -0.1
+		}
 
 		will_get_center = {
 			any_owned_province = {
@@ -365,6 +398,10 @@ christian = {
 				not = { province_id = 118 }
 				is_in_capital_area = yes
 				is_reformation_center = no
+				development = 10
+				NOT = { has_climate = arctic }
+				NOT = { has_climate = arid }
+				NOT = { has_climate = tropical }
 			}
 		}
 		
@@ -383,40 +420,54 @@ christian = {
 				limit = {
 					has_country_flag = reformation_money
 				}
-				random_owned_province = {
-					limit = {
-						OR = {
-							religion = protestant
-							religion = catholic
-							religion = reformed
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							OR = {
+								religion = protestant
+								religion = catholic
+								religion = reformed
+							}
+							not = { province_id = 118 }
+							is_in_capital_area = yes
+							is_reformation_center = no
+							development = 10
+							NOT = { has_climate = arctic }
+							NOT = { has_climate = arid }
+							NOT = { has_climate = tropical }
 						}
-						not = { province_id = 118 }
-						is_in_capital_area = yes
-						is_reformation_center = no
+						change_religion = reformed
+						add_reform_center = reformed
 					}
-					change_religion = reformed
-					add_reform_center = reformed
 				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
 			}	
 			if = {
 				limit = {
 					NOT = { has_country_flag = reformation_money }
 				}
 				add_years_of_income = 1.0
-				random_owned_province = {
-					limit = {
-						OR = {
-							religion = protestant
-							religion = catholic
-							religion = reformed
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							OR = {
+								religion = protestant
+								religion = catholic
+								religion = reformed
+							}
+							is_in_capital_area = yes
+							is_reformation_center = no
+							not = { province_id = 118 }
+							development = 10
+							NOT = { has_climate = arctic }
+							NOT = { has_climate = arid }
+							NOT = { has_climate = tropical }
 						}
-						is_in_capital_area = yes
-						is_reformation_center = no
-						not = { province_id = 118 }
+						change_religion = reformed
+						add_reform_center = reformed
 					}
-					change_religion = reformed
-					add_reform_center = reformed
 				}
+				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
 			}
 			add_country_modifier = {
 				name = "conversion_zeal"
@@ -451,9 +502,14 @@ christian = {
 			stability_cost_modifier = -0.1
 			tolerance_own = 1
 		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
 		province = {
 			local_missionary_strength = -0.01
 		}
+		
 		
 		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY ICONOCLAST }
 		
@@ -472,6 +528,10 @@ christian = {
 		country = {
 			defensiveness = 0.1
 			tolerance_own = 2
+		}
+		country_as_secondary = {
+			siege_ability = 0.1
+			defensiveness = 0.1
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -500,6 +560,10 @@ muslim = {
 			tolerance_own = 1
 			heir_chance = 1.0
 		}
+		country_as_secondary = {
+			trade_efficiency = 0.1
+			heir_chance = 1.0
+		}
 		province = {
 			local_missionary_strength = -0.02
 		}
@@ -514,7 +578,11 @@ muslim = {
 		icon = 6
 		country = {
 			heir_chance = 1.0
-			land_morale = 0.1
+			land_morale = 0.05
+		}
+		country_as_secondary = {
+			land_morale = 0.05
+			advisor_cost = -0.1
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -531,6 +599,10 @@ muslim = {
 		country = {
 			heir_chance = 1.0
 			naval_morale = 0.1
+		}
+		country_as_secondary = {
+			global_ship_cost = -0.1
+			advisor_cost = -0.1
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -560,6 +632,10 @@ eastern = {
 			tolerance_heretic = 2
 			advisor_cost = -0.1
 		}
+		country_as_secondary = {
+			development_cost = -0.1
+			diplomats = 1
+		}
 		on_convert = {
 			add_prestige = -100
 			add_stability = -1
@@ -583,7 +659,11 @@ eastern = {
 		}
 		country = {
 			tolerance_heretic = 1
-			land_morale = 0.1
+			land_morale = 0.05
+		}
+		country_as_secondary = {
+			horde_unity = 1
+			tolerance_own = 1
 		}
 		on_convert = {
 			add_prestige = -100
@@ -610,7 +690,10 @@ eastern = {
 			tolerance_heretic = 2
 			tolerance_heathen = 1
 		}
-		
+		country_as_secondary = {
+			global_tax_modifier = 0.1
+			tolerance_heathen = 2
+		}
 		on_convert = {
 			add_prestige = -100
 			add_stability = -1
@@ -632,7 +715,10 @@ eastern = {
 			tolerance_heretic = 2
 			tolerance_heathen = 1
 		}
-		
+		country_as_secondary = {
+			adm_tech_cost_modifier = -0.1
+			stability_cost_modifier = -0.1
+		}
 		heretic = { TAOIST }
 	}
 
@@ -641,12 +727,14 @@ eastern = {
 		icon = 10
 		country = {
 			land_morale = 0.1
-			tolerance_heathen = -1
 		}
 		province = {
 			local_missionary_strength = -0.02
 		}
-		
+		country_as_secondary = {
+			discipline = 0.05
+			global_unrest = -1
+		}
 		heretic = { SHUGENDO }
 	}
 	
@@ -667,6 +755,10 @@ dharmic = {
 		country = {
 			tolerance_heathen = 1
 			tolerance_own = 1
+		}
+		country_as_secondary = {
+			tolerance_heretic = 1
+			tolerance_heathen = 2
 		}
 		
 		personal_deity = yes
@@ -691,8 +783,12 @@ dharmic = {
 			hinduism
 		}
 		country = {
-			mil_tech_cost_modifier = -0.05
+			mil_tech_cost_modifier = -0.1
 			land_morale = 0.1
+		}
+		country_as_secondary = {
+			land_morale = 0.05
+			global_unrest = -1
 		}
 		province = {
 			local_missionary_strength = -0.01
@@ -728,6 +824,10 @@ pagan = {
 			tolerance_own = 1
 			global_unrest = -1
 		}
+		country_as_secondary = {
+			tolerance_own = 2
+			loot_amount = 0.25
+		}
 		province = {
 			local_missionary_strength = 0.02
 		}
@@ -745,6 +845,10 @@ pagan = {
 		province = {
 			local_missionary_strength = 0.02
 		}
+		country_as_secondary = {
+			tolerance_own = 2
+			loot_amount = 0.25
+		}
 		
 		heretic = { GOAT_SKULL }	
 	}
@@ -755,6 +859,10 @@ pagan = {
 		country = {
 			tolerance_own = 1
 			global_unrest = -1
+		}
+		country_as_secondary = {
+			tolerance_own = 2
+			loot_amount = 0.25
 		}
 		province = {
 			local_missionary_strength = 0.02
@@ -770,6 +878,12 @@ pagan = {
 			tolerance_own = 1
 			global_autonomy = -0.05
 		}
+
+		country_as_secondary = {
+			tolerance_own = 1
+			global_autonomy = -0.05
+		}
+		
 		province = {
 			local_missionary_strength = 0.02
 		}
@@ -787,6 +901,10 @@ pagan = {
 		country = {
 			land_morale = 0.1
 			global_unrest = -2
+		}
+		country_as_secondary = {
+			land_morale = 0.05
+			raze_power_gain = 0.2
 		}
 		province = {
 			local_missionary_strength = 0.02
@@ -808,6 +926,10 @@ pagan = {
 			tolerance_own = 1
 			advisor_pool = 1
 		}
+		country_as_secondary = {
+			advisor_pool = 1
+			stability_cost_modifier = -0.1
+		}
 		province = {
 			local_missionary_strength = 0.02
 		}
@@ -825,6 +947,10 @@ pagan = {
 			land_forcelimit_modifier = 0.10
 			naval_forcelimit_modifier = 0.10
 		}
+		country_as_secondary = {
+			merc_maintenance_modifier = -0.1
+			galley_power = 0.2
+		}
 		province = {
 			local_missionary_strength = 0.02
 		}
@@ -841,8 +967,8 @@ pagan = {
 			global_unrest = -2
 			global_regiment_cost = -0.1
 		}
-		
-		heretic = { OLD_TENGRI }	
+		can_have_secondary_religion = yes
+		heretic = { OLD_TENGRI }
 	}
 	
 	crusade_name = CRUSADE
@@ -859,6 +985,10 @@ jewish_group = {
 		country = {
 			tolerance_own = 2
 			advisor_pool = 1
+		}
+		country_as_secondary = {
+			advisor_pool = 1
+			advisor_cost = -0.1
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -882,6 +1012,10 @@ zoroastrian_group = {
 		country = {
 			tolerance_own = 2
 			trade_efficiency = 0.1
+		}
+		country_as_secondary = {
+			merchants = 1
+			tolerance_own = 1
 		}
 		
 		heretic = { MAZDAKI MANICHEAN }	

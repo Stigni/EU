@@ -16,7 +16,7 @@ civil_war = {
 	can_start = {
 		has_any_disaster = no
 		has_regency = no
-		NOT = { legitimacy = 50 }
+		NOT = { legitimacy_or_horde_unity = 50 }
 		average_home_autonomy = 20
 	}
 	
@@ -24,7 +24,7 @@ civil_war = {
 	can_stop = {
 		OR = {
 			has_any_disaster = yes
-			legitimacy = 75
+			legitimacy_or_horde_unity = 75
 			has_regency = yes
 		}
 	}
@@ -61,7 +61,7 @@ civil_war = {
 	
 	
 	can_end = {
-		legitimacy = 90
+		legitimacy_or_horde_unity = 90
 	}
 	
 

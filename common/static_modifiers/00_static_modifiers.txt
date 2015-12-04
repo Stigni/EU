@@ -52,7 +52,7 @@ ai_handicap = {
 
 city = {
 	local_tax_modifier = 0.25
-	allowed_num_of_buildings = 1
+	allowed_num_of_buildings = 2
 	
 	garrison_growth = 0.05
 }
@@ -76,10 +76,6 @@ seat_in_parliament = {
 	local_tax_modifier = 0.1
 	local_production_efficiency = 0.1
 	local_autonomy = -0.01
-	
-	
-	stability_cost_modifier = 0.02
-	war_exhaustion_cost = 0.02
 }
 
 non_coastal = {
@@ -94,7 +90,6 @@ tropical = {
 	local_hostile_attrition = 2
 	
 	local_development_cost = 0.15
-	local_build_cost = 0.15
 
 	picture = "climate_tropical"
 }
@@ -104,8 +99,8 @@ arctic = {
 	supply_limit_modifier = -0.4
 	local_hostile_attrition = 1
 	
+	allowed_num_of_buildings = -1
 	local_development_cost = 0.5
-	local_build_cost = 0.5
 
 	picture = "climate_arctic"
 }
@@ -116,7 +111,6 @@ arid = {
 	local_hostile_attrition = 1
 	
 	local_development_cost = 0.15
-	local_build_cost = 0.15
 	
 	picture = "climate_arid"
 }
@@ -163,7 +157,6 @@ no_adjacent_controlled = {
 }
 
 provincial_tax_income = {
-	local_spy_defence = 0.01				#1% for each tax income.
 }
 
 provincial_production_size = {
@@ -177,6 +170,10 @@ manpower = {
 	
 }
 
+# Caps at 600
+horde_development = {
+	horde_unity = -3
+}
 
 development = {
 	allowed_num_of_buildings = 0.1
@@ -193,7 +190,6 @@ development_scaled = {
 
 capital_city = {
 	fort_level = 1
-	local_development_cost = -0.1
 }
 
 # Multiplied in provinces of same religion.
@@ -209,16 +205,16 @@ patriarch_authority_global = {
 }
 
 colony_level = {
-	local_colonist_placement_chance = 0.04	#4% chance for each level.  (up to 40% bonus)
+	local_colonist_placement_chance = 0.01	#1% chance for each level.  (up to 10% bonus)
 	local_tax_modifier = 0.02
 }
 
 native_assimilation = {
-	local_development_cost = -0.02
+	trade_goods_size = 0.05
 }
 
 native_aggressiveness = {
-	local_colonist_placement_chance = -0.005
+	#local_colonist_placement_chance = -0.005
 }
 
 native_presence = {
@@ -231,8 +227,6 @@ core = {
 }
 
 non_core = {
-	#no current effects.
-	allowed_num_of_buildings = -2
 }
 
 march_bonus = {
@@ -305,7 +299,6 @@ intolerance = {
 }
 
 unrest = {
-	local_spy_defence = -0.01				#reduce defence by 1%
 	regiment_recruit_speed = 0.1			#10% longer time to build troops for each rr
 	ship_recruit_speed = 0.1
 }
@@ -318,19 +311,22 @@ harsh_treatment = {
 	local_unrest = -10
 }
 
-local_autonomy = {
+local_autonomy_multiplicative = {
 	local_manpower_modifier = -1.0
 	local_tax_modifier = -1.0
 	local_production_efficiency = -1.0
+}
+
+local_autonomy = {
 	province_trade_power_modifier = -0.5
-	regiment_recruit_speed = 1.0
-	ship_recruit_speed = 1.0	
+	regiment_recruit_speed = 0.5
+	ship_recruit_speed = 0.5
 }
 
 
 
 recent_uprising = {
-	local_unrest = -20
+	local_unrest = -100
 }
 
 
@@ -357,7 +353,7 @@ in_trade_company = {
 	naval_forcelimit = 0.5
 	local_manpower_modifier = -1
 	local_tax_modifier = -0.50
-	local_missionary_strength = -0.02
+	local_missionary_strength = -1
 }
 
 
@@ -388,6 +384,7 @@ base_values = {
 	republican_tradition = 0.01
 	monthly_fervor_increase = 1
 	vassal_income = 0.10
+	horde_unity = -2
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
@@ -399,6 +396,7 @@ ai_nation = {
 war_taxes = {
 	land_maintenance_modifier = -0.20
 	naval_maintenance_modifier = -0.20
+	possible_mercenaries = 0.05
 }
 
 stability = {
@@ -446,7 +444,7 @@ inflation = {
 	transport_cost = 0.01					#1% for each inflation step
 	advisor_cost = 0.01						#1% for each inflation step
 	mercenary_cost = 0.01					#1% for each inflation step
-
+	fort_maintenance_modifier = 0.01		#1% for each inflation step
 }
 
 bankruptcy = {
@@ -617,6 +615,12 @@ legitimacy = {
 	vassal_income = 0.1
 }
 
+#Multiplied by current Horde Unity - 50
+horde_unity = {
+	global_unrest = -4
+	discipline = 0.10
+}
+
 
 # Multiplied by current Devotion - 50
 devotion = {
@@ -624,6 +628,18 @@ devotion = {
 	church_power_modifier = 0.25
 	prestige = 2
 	global_tax_modifier = 0.50
+}
+
+
+recovery_motivation = {
+	global_tax_modifier = 0.5
+	defensiveness = 0.25
+	manpower_recovery_speed = 0.5
+	army_tradition = 1
+	navy_tradition = 1
+	global_unrest = -5
+	interest = -2
+	horde_unity = 10
 }
 
 
@@ -642,7 +658,6 @@ luck = {
 	republican_tradition = 0.005
 	interest = -1
 	mercenary_cost = -0.25
-	manpower_recovery_speed = 0.33
 	improve_relation_modifier = 0.25
 	monthly_fervor_increase = 1
 	church_power_modifier = 0.25
@@ -756,6 +771,7 @@ liberty_desire = {
 power_projection = {
 	defensiveness = 0.1
 	global_trade_power = 0.2
+	prestige = 0.5
 	land_morale = 0.1
 	naval_morale = 0.1
 	legitimacy = 0.5
@@ -801,9 +817,12 @@ indep_nation = {
 }
 
 subject_nation = {
-	global_tax_income = 4
-	land_forcelimit	= 2
-	naval_forcelimit = 4
+	global_tax_income = 6
+	land_forcelimit	= 3
+	naval_forcelimit = 6
+}
+
+vassal_nation = {
 	development_cost = 0.5
 }
 
@@ -885,7 +904,9 @@ spies_infiltrated = {
 discontent_sowed = {
 	global_unrest = 3
 	legitimacy = -1
-	republican_tradition = -0.01
+	republican_tradition = -0.005
+	devotion = -1
+	horde_unity = -1
 }
 
 
@@ -960,12 +981,12 @@ karma_just_right =
 
 karma_too_high =
 {
-	diplomatic_reputation = -2
+	discipline = -0.05
 }
 
 karma_too_low =
 {
-	discipline = -0.10
+	diplomatic_reputation = -1
 }
 
 ########################################
@@ -983,3 +1004,25 @@ invasion_nation = {
 	global_unrest = -10
 	land_attrition = -0.5
 }
+
+
+########################################
+# Native policy
+########################################
+
+native_policy_coexist =
+{
+	native_uprising_chance = -1.0
+}
+
+native_policy_trade =
+{
+	native_assimilation = 0.5
+	native_uprising_chance = -0.5	
+}
+
+native_policy_hostile =
+{
+	global_colonial_growth = 20
+}
+

@@ -156,14 +156,14 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_province = {
-					region = french_region
+					region = france_region
 					has_owner_religion = no
 					NOT = { has_province_modifier = religious_massacre }
 				}
 				NOT = {
 					num_of_owned_provinces_with = {
 						value = 5
-						region = french_region
+						region = france_region
 						has_owner_religion = no
 						NOT = { has_province_modifier = religious_massacre }
 					}
@@ -171,7 +171,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					region = french_region
+					region = france_region
 					has_owner_religion = no
 					NOT = { has_province_modifier = religious_massacre }
 				}
@@ -186,14 +186,14 @@ country_event = {
 			limit = {
 				num_of_owned_provinces_with = {
 					value = 5
-					region = french_region
+					region = france_region
 					has_owner_religion = no
 					NOT = { has_province_modifier = religious_massacre }
 				}
 				NOT = {
 					num_of_owned_provinces_with = {
 						value = 10
-						region = french_region
+						region = france_region
 						has_owner_religion = no
 						NOT = { has_province_modifier = religious_massacre }
 					}
@@ -201,7 +201,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					region = french_region
+					region = france_region
 					has_owner_religion = no
 					NOT = { has_province_modifier = religious_massacre }
 				}
@@ -212,7 +212,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					region = french_region
+					region = france_region
 					has_owner_religion = no
 					NOT = { has_province_modifier = religious_massacre }
 				}
@@ -227,25 +227,14 @@ country_event = {
 			limit = {
 				num_of_owned_provinces_with = {
 					value = 10
-					region = french_region
+					region = france_region
 					has_owner_religion = no
 					NOT = { has_province_modifier = religious_massacre }
 				}
 			}
 			random_owned_province = {
 				limit = {
-					region = french_region
-					has_owner_religion = no
-					NOT = { has_province_modifier = religious_massacre }
-				}
-				add_province_modifier = {
-					name = religious_massacre
-					duration = 1825
-				}
-			}
-			random_owned_province = {
-				limit = {
-					region = french_region
+					region = france_region
 					has_owner_religion = no
 					NOT = { has_province_modifier = religious_massacre }
 				}
@@ -256,7 +245,18 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					region = french_region
+					region = france_region
+					has_owner_religion = no
+					NOT = { has_province_modifier = religious_massacre }
+				}
+				add_province_modifier = {
+					name = religious_massacre
+					duration = 1825
+				}
+			}
+			random_owned_province = {
+				limit = {
+					region = france_region
 					has_owner_religion = no
 					NOT = { has_province_modifier = religious_massacre }
 				}
@@ -385,20 +385,20 @@ country_event = {
 			if = {
 				limit = {
 					any_owned_province = {
-						region = french_region
+						region = france_region
 						has_owner_religion = yes
 					}
 					NOT = {
 						num_of_owned_provinces_with = {
 							value = 5
-							region = french_region
+							region = france_region
 							has_owner_religion = yes
 						}
 					}
 				}
 				random_owned_province = {
 					limit = {
-						region = french_region
+						region = france_region
 						has_owner_religion = yes
 					}
 					set_province_flag = religious_rebels
@@ -409,27 +409,27 @@ country_event = {
 				limit = {
 					num_of_owned_provinces_with = {
 						value = 5
-						region = french_region
+						region = france_region
 						has_owner_religion = yes
 					}
 					NOT = {
 						num_of_owned_provinces_with = {
 							value = 10
-							region = french_region
+							region = france_region
 							has_owner_religion = yes
 						}
 					}
 				}
 				random_owned_province = {
 					limit = {
-						region = french_region
+						region = france_region
 						has_owner_religion = yes
 					}
 					set_province_flag = religious_rebels
 				}
 				random_owned_province = {
 					limit = {
-						region = french_region
+						region = france_region
 						has_owner_religion = yes
 						NOT = { has_province_flag = religious_rebels }
 					}
@@ -441,20 +441,20 @@ country_event = {
 				limit = {
 					num_of_owned_provinces_with = {
 						value = 10
-						region = french_region
+						region = france_region
 						has_owner_religion = yes
 					}
 				}
 				random_owned_province = {
 					limit = {
-						region = french_region
+						region = france_region
 						has_owner_religion = yes
 					}
 					set_province_flag = religious_rebels
 				}
 				random_owned_province = {
 					limit = {
-						region = french_region
+						region = france_region
 						has_owner_religion = yes
 						NOT = { has_province_flag = religious_rebels }
 					}
@@ -462,7 +462,7 @@ country_event = {
 				}
 				random_owned_province = {
 					limit = {
-						region = french_region
+						region = france_region
 						has_owner_religion = yes
 						NOT  = { has_province_flag = religious_rebels }
 					}
@@ -503,7 +503,7 @@ country_event = {
 		add_prestige = -25
 		random_owned_province = {
 			limit = {
-				region = french_region
+				region = france_region
 				has_owner_religion = no
 			}
 			spawn_rebels = {
@@ -952,7 +952,7 @@ country_event  = {
 		FRA = {
 			has_disaster = french_wars_of_religion
 			any_owned_province = {
-				region = french_region
+				region = france_region
 				has_owner_religion = no
 			}
 		}
@@ -973,7 +973,13 @@ country_event  = {
 					religion = PREV
 				}
 				capital_scope = {
-					region = lotharingia
+					OR = {
+						area = bourgogne_area
+						area = lorraine_area
+						area = palatinate_area
+						area = hesse_area
+						area = north_rhine_area
+					}
 				}
 			}
 		}

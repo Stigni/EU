@@ -58,6 +58,7 @@ country_event = {
 		name = "EVTOPTA3096"
 		clr_country_flag = civilwar_on_capital
 		add_legitimacy = 10
+		add_horde_unity = 10
 		add_stability = 3
 	}
 }
@@ -91,6 +92,7 @@ country_event = {
 		name = "EVTOPTB3092"			# Rely on your own strength
 		ai_chance = { factor = 60 }
 		add_legitimacy = 5
+		add_horde_unity = 5
 		
 		random_owned_province = {
 			limit = { is_core = ROOT }
@@ -192,6 +194,7 @@ country_event = {
 		name = "EVTOPTA3095"			# Try to strengthen their morale
 		add_years_of_income = -0.50
 		add_legitimacy = 5		
+		add_horde_unity = 5		
 		add_country_modifier = {
 			name = "morale_boost"
 			duration = 1825
@@ -277,12 +280,14 @@ country_event = {
 		name = "EVTOPTB6018"				# Support one of the factions
 		add_adm_power = -100
 		add_legitimacy = 10
+		add_horde_unity = 10
 	}
 	option = {
 		name = "EVTOPTC6018"				# Start negotiations to minimize the damage
 		add_years_of_income = -0.25
 		add_prestige = -25
 		add_legitimacy = 5
+		add_horde_unity = 5
 	}
 }
 
@@ -314,6 +319,7 @@ country_event = {
 		add_years_of_income = -0.25
 		add_prestige = -25
 		add_legitimacy = 5
+		add_horde_unity = 5
 	}
 }
 
@@ -338,6 +344,7 @@ country_event = {
 		}
 		set_country_flag = favoured_faction
 		add_legitimacy = 5
+		add_horde_unity = 5
 	}
 	option = {
 		name = "EVTOPTB6020"			# Don't support any faction
@@ -366,11 +373,13 @@ country_event = {
 		name = "EVTOPTA6021"			# Lend support
 		add_years_of_income = -0.5
 		add_legitimacy = 5
+		add_horde_unity = 5
 	}
 	option = {
 		name = "EVTOPTB6021"			# Ignore their pleas
 		add_prestige = -10
 		add_legitimacy = -5
+		add_horde_unity = -5
 		ai_chance = { factor = 0 }
 	}
 }
@@ -406,11 +415,13 @@ country_event = {
 			add_local_autonomy = 50
 		}
 		add_legitimacy = 10
+		add_horde_unity = 10
 	}
 	option = {
 		name = "EVTOPTC6022"		# Summon the faction leaders to begin negotiations
 		add_prestige = -50
 		add_legitimacy = 5
+		add_horde_unity = 5
 	}
 }
 
@@ -439,6 +450,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA6023"			# We can't do anything about it
 		add_legitimacy = -5
+		add_horde_unity = -5
 		every_core_province = {
 			limit = {
 				is_capital = no
@@ -453,6 +465,7 @@ country_event = {
 		add_dip_power = -100
 		add_mil_power = -100
 		add_legitimacy = 5
+		add_horde_unity = 5
 	}
 }
 
@@ -485,11 +498,13 @@ country_event = {
 			pretender_rebels = 1
 		}
 		add_legitimacy = 1
+		add_horde_unity = 1
 	}
 	option = {
 		name = "EVTOPTB6026"			# Negotiate a settlement between all major factions
 		add_years_of_income = -0.50
 		add_legitimacy = 5
+		add_horde_unity = 5
 	}
 }
 

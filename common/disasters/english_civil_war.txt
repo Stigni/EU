@@ -13,6 +13,9 @@ english_civil_war = {
 		government = english_monarchy
 		is_subject = no
 		is_lesser_in_union = no
+		british_isles_region = {
+			owned_by = ROOT
+		}
 	}
 
 	

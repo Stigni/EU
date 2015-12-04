@@ -72,6 +72,9 @@ war_of_the_roses = {
 	
 	can_end = {
 		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = {
+			has_spawned_rebels = pretender_rebels
+		}
 		stability = 1
 		OR = {
 			AND = {
@@ -86,7 +89,7 @@ war_of_the_roses = {
 
 
 	modifier = {
-		possible_mercenaries = 0.25
+		possible_mercenaries = 0.125
 		global_trade_goods_size_modifier = -0.10
 	}	
 	

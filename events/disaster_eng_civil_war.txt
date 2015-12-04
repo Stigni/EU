@@ -47,7 +47,8 @@ country_event = {
 		change_government = republican_dictatorship
 		random_owned_province = {
 			limit = {
-				region = great_britain_region
+				region = british_isles_region
+				NOT = { area = ireland_area }
 				NOT = { units_in_province = 1 }
 				is_capital = no
 			}
@@ -64,7 +65,8 @@ country_event = {
 		add_manpower = -0.25
 		random_owned_province = {
 			limit = {
-				region = great_britain_region
+				region = british_isles_region
+				NOT = { area = ireland_area }
 				NOT = { units_in_province = 1 }
 				is_capital = no
 			}
@@ -169,11 +171,11 @@ country_event = {
 		NOT = { exists = SCO }
 		OR = {
 			any_owned_province = {
-				region = highlands
+				area = highlands_area
 				religion = catholic
 			}
 			any_owned_province = {
-				region = lowlands
+				area = lowlands_area
 				religion = catholic
 			}
 		}
@@ -193,13 +195,13 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_province = {
-					region = highlands
+					area = highlands_area
 					religion = catholic
 				}
 			}
 			every_owned_province = {
 				limit = {
-					region = highlands
+					area = highlands_area
 					religion = catholic
 				}
 				change_religion = protestant
@@ -208,13 +210,13 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_province = {
-					region = lowlands
+					area = lowlands_area
 					religion = catholic
 				}
 			}
 			every_owned_province = {
 				limit = {
-					region = lowlands
+					area = lowlands_area
 					religion = catholic
 				}
 				change_religion = protestant
@@ -227,8 +229,8 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				OR = {
-					region = highlands
-					region = lowlands
+					area = highlands_area
+					area = lowlands_area
 				}
 			}
 			spawn_rebels = {
@@ -255,11 +257,11 @@ country_event = {
 		NOT = { exists = SCO }
 		OR = {
 			any_owned_province = {
-				region = highlands
+				area = highlands_area
 				religion = catholic
 			}
 			any_owned_province = {
-				region = lowlands
+				area = lowlands_area
 				religion = catholic
 			}
 		}
@@ -279,13 +281,13 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_province = {
-					region = highlands
+					area = highlands_area
 					religion = catholic
 				}
 			}
 			every_owned_province = {
 				limit = {
-					region = highlands
+					area = highlands_area
 					religion = catholic
 				}
 				change_religion = protestant
@@ -294,13 +296,13 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_province = {
-					region = lowlands
+					area = lowlands_area
 					religion = catholic
 				}
 			}
 			every_owned_province = {
 				limit = {
-					region = lowlands
+					area = lowlands_area
 					religion = catholic
 				}
 				change_religion = protestant
@@ -314,8 +316,8 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				OR = {
-					region = highlands
-					region = lowlands
+					area = highlands_area
+					area = lowlands_area
 				}
 			}
 			spawn_rebels = {
@@ -339,7 +341,7 @@ country_event = {
 		NOT = { has_country_flag = ENG_had_event_9230 }
 		has_country_flag = supports_parliamentarians
 		any_owned_province = {
-			region = welsh_region
+			area = wales_area
 			unrest = 1
 		}
 	}
@@ -362,7 +364,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		every_owned_province = {
 			limit = {
-				region = welsh_region
+				area = wales_area
 				unrest = 1
 			}
 			spawn_rebels = {
@@ -386,7 +388,7 @@ country_event = {
 		NOT = { has_country_flag = ENG_had_event_9231 }
 		has_country_flag = supports_royalists
 		any_owned_province = {
-			region = welsh_region
+			area = wales_area
 			unrest = 1
 		}
 	}
@@ -409,7 +411,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		every_owned_province = {
 			limit = {
-				region = welsh_region
+				area = wales_area
 				unrest = 1
 			}
 			spawn_rebels = {
@@ -433,7 +435,7 @@ country_event = {
 		NOT = { has_country_flag = ENG_had_event_9232 }
 		has_country_flag = supports_parliamentarians
 		any_owned_province = {
-			region = irish_region
+			area = ireland_area
 			unrest = 1
 		}
 	}
@@ -456,7 +458,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		every_owned_province = {
 			limit = {
-				region = irish_region
+				area = ireland_area
 				unrest = 1
 			}
 			spawn_rebels = {
@@ -480,7 +482,7 @@ country_event = {
 		NOT = { has_country_flag = ENG_had_event_9233 }
 		has_country_flag = supports_royalists
 		any_owned_province = {
-			region = irish_region
+			area = ireland_area
 			unrest = 1
 		}
 	}
@@ -503,7 +505,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		every_owned_province = {
 			limit = {
-				region = irish_region
+				area = ireland_area
 				unrest = 1
 			}
 			spawn_rebels = {
@@ -540,7 +542,8 @@ country_event = {
 		ai_chance = { factor = 75 }
 		random_owned_province = {
 			limit = {
-				region = great_britain_region
+				region = british_isles_region
+				NOT = { area = ireland_area }
 				is_capital = no
 			}
 			spawn_rebels = {
@@ -556,7 +559,8 @@ country_event = {
 		add_stability = -1
 		random_owned_province = {
 			limit = {
-				region = great_britain_region
+				region = british_isles_region
+				NOT = { area = ireland_area }
 				is_capital = no
 			}
 			spawn_rebels = {

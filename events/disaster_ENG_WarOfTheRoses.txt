@@ -42,7 +42,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					NOT = { units_in_province = 1 }
 				}
 				add_province_modifier = {
@@ -96,7 +96,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					NOT = { units_in_province = 1 }
 				}
 				add_province_modifier = {
@@ -485,7 +485,7 @@ country_event = {
 	
 	trigger = {
 		any_owned_province = {
-			NOT = { region = great_britain_region }
+			NOT = { region = british_isles_region }
 			unrest = 3
 			OR = {
 				has_province_modifier = wotr_local_support_for_lancaster
@@ -515,7 +515,7 @@ country_event = {
 		ai_chance = { factor = 75 }
 		random_owned_province = {
 			limit = {
-				NOT = { region = great_britain_region }
+				NOT = { region = british_isles_region }
 				unrest = 3
 				OR = {
 					has_province_modifier = wotr_local_support_for_lancaster
@@ -607,7 +607,7 @@ country_event = {
 
 		OR = {
 			capital_scope = {
-				region = british_isles
+				region = british_isles_region
 			}
 			tag = FRA
 		}
@@ -679,7 +679,7 @@ country_event = {
 		is_neighbor_of = ENG
 		OR = {
 			capital_scope = {
-				region = british_isles
+				region = british_isles_region
 			}
 			tag = FRA
 		}
