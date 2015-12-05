@@ -24,10 +24,12 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				is_capital = no
-				has_building = fort_15th
-				has_building = fort_16th
-				has_building = fort_17th
-				has_building = fort_18th
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
 			}
 			spawn_rebels = {
 					type = noble_rebels

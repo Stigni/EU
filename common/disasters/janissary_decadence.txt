@@ -14,6 +14,13 @@ janissary_decadence = {
 		NOT = { adm = 5 }
 		NOT = { dip = 5 }
 		NOT = { mil = 5 }
+		custom_trigger_tooltip = {
+			tooltip = janissary_decadence_trigger
+			had_country_flag = {
+				flag = janissary_timer
+				days = 36500
+			}
+		}
 	}
 	
 	can_stop = {
@@ -23,7 +30,7 @@ janissary_decadence = {
 			adm = 5
 			dip = 5
 			mil = 5
-		}	
+		}
 	}
 
 	

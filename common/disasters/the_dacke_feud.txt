@@ -6,7 +6,12 @@ the_dacke_feud = {
 		uses_doom = no
 		NOT = { has_country_flag = had_the_dacke_feud }
 		any_owned_province = {
-			region = swedish_region
+			OR = {
+				area = norrland_area
+				area = svealand_area
+				area = gotaland_area
+				area = skaneland_area
+			}
 		}
 	}
 
