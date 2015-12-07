@@ -32,6 +32,8 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
+			is_subject = no
+			is_nomad = no			
 			NOT = { exists = FRA }
 			owns_core_province = 177	# Maine
 			owns_core_province = 179	# Blois
@@ -61,23 +63,11 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			gallia = {
+			france_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = FRA
-			}
-			aquitania = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = FRA
-			}
-			occitania = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = FRA
+				add_permanent_claim = FRA
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
