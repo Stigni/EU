@@ -4,6 +4,7 @@ owner = LOR
 controller = LOR 
 capital = "Metz"
 is_city = yes
+estate = estate_burghers
 culture = burgundian
 religion = catholic
 hre = yes

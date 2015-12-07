@@ -1,10 +1,10 @@
-#2343 - Hadramawt
+#2343 - Kathiri
 
 owner = ADE
 controller = ADE
 culture = yemeni_culture
 religion = sunni
-capital = "Hadramawt"
+capital = "Say'un"
 trade_goods = wool
 hre = no
 base_tax = 1 

@@ -333,3 +333,5 @@
  HINT_PRIVATEERING_TEXT: "Freibeuterei ist mit jeder Flotte möglich, die leichte Schiffe umfasst. Eine Freibeuterflotte gewährt einer Piratennation an einem ausgewählten Umschlagplatz die Handelsmacht ihrer leichten Schiffe. Im Gegensatz zur Handelsschutzmission ist keine Handelsmacht an einem Umschlagplatz notwendig, um eine Freibeutermission zu beginnen."
  HINT_IMPROVERELATIONS_TITLE: "Beziehungen verbessern"
  HINT_IMPROVERELATIONS_TEXT: "Ihr könnt einen Diplomaten aussenden, um die Beziehungen zu einer anderen Nation zu verbessern. Für jeden Monat der Aktivität des Diplomaten wird ihre Meinung über Euch verbessert, bis sie das Maximum erreicht. Daraufhin werdet Ihr gefragt, ob der Diplomat die Beziehungen fortführen oder zurückkehren soll. Beziehungen zu Vasallen, Marke und untergeordneten Unionspartnern können weiter verbessert werden als jene zu anderen Nationen."
+ HINT_TERRAINCOGNITA_NEED_EXPLORER: "§R- Eure Flotte muss von einem Entdecker angeführt werden, um Terra Incognita aufzudecken.§!"
+ HINT_TERRAINCOGNITA_OUT_OF_RANGE: "§R- Unsere Kolonialreichweite erlaubt es uns noch nicht, dies zu erkunden.§!"

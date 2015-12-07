@@ -17,7 +17,7 @@
  SIEGE_CHANCE_EXPLANATION: "In jeder Belagerungsphase wird ein Würfelergebnis ausgewürfelt (§Y$MIN$§! bis §Y$MAX$§!). Dieses Ergebnis wird zu den Belagerungsmodifikatoren addiert ($MODIFIERS$).\nDie Ergebnisse des Würfelwurfes sind wie folgt:"
  SIEGE_CHANCE_LINE: "$NAME$: $RANGE$ (Chance: $CHANCE$)"
  SIEGE_DATES: "Die Belagerung läuft seit §Y$TOTAL$§! Tagen. Die nächste Belagerungsphase ist in §Y$LEFT$§! Tagen."
- SIEGE_PAUSING_CONSTRUCTION: "§RDer Fortschritt wird unterbrochen, solange die Provinz belagert wird.\nGeht die Belagerung verloren, so ist auch der Fortschritt dahin.§!"
+ SIEGE_PAUSING_CONSTRUCTION: "§RDer Fortschritt wird unterbrochen, solange die Provinz belagert wird.§!"
  PEACE_OFFER_GOLD_LIMIT: "Beschränkt auf §G$MAX$§!¤, da die Staatskasse von §Y$TAG$§! §Y$TRE$§!¤ enthält, zuzüglich eines Darlehens von §Y$LOA$§!¤."
  ANNUL_TREATIES_CANT_GUARANTEE: "Können keine Garantie aussprechen, da wir bis §Y$DATE$§! jährliche Verträge haben."
  ANNUL_TREATIES_CANT_ALLIANCE: "Können keine Allianz bilden, da wir bis §Y$DATE$§! jährliche Verträge haben."

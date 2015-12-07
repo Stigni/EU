@@ -62,7 +62,7 @@
  muslim_dlc.EVTOPTA15: "Soutenons son enseignement véritable"
  muslim_dlc.EVTOPTB15: "Nous n'avons rien à apprendre de cet ordre"
  muslim_dlc.EVTNAME16: "ash-Sharî'a: la loi religieuse"
- muslim_dlc.EVTDESC16: "Le code moral et la loi religieuse de l'islam traitent de nombreux sujets, tels le crime, la politique, ou encore l'économie; mais aussi de sujets plus personnels, comme les relations sexuelles, l'hygiène, l'alimentation, la prière et le jeûne. Elle est la loi infaillible d'Allâh, et s'appuie sur deux sources: les préceptes énoncés par le Coran, et l'exemple donné par le prophète Muhammad tel qu'il est rapporté par la Sunna.\n\nMais cadis et imams se plaignent du laxisme dans l'application de la sharî'a en $COUNTRY$, et exigent du $MONARCHTITLE$ qu'il fasse le nécessaire pour la faire appliquer, quelles que soient les circonstances."
+ muslim_dlc.EVTDESC16: "Le code moral et la loi religieuse de l'islam traitent de nombreux sujets, tels le crime, la politique, ou encore l'économie; mais aussi de sujets plus personnels, comme les relations sexuelles, l'hygiène, l'alimentation, la prière et le jeûne. Elle est la loi infaillible d'Allâh, et s'appuie sur deux sources: les préceptes énoncés par le Coran, et l'exemple donné par le prophète Muhammad tel qu'il est rapporté par la Sunna.\n\nMais qâdis et imams se plaignent du laxisme dans l'application de la sharî'a en $COUNTRY$, et exigent du $MONARCHTITLE$ qu'il fasse le nécessaire pour la faire appliquer, quelles que soient les circonstances."
  muslim_dlc.EVTOPTA16: "Appliquons une sharî'a stricte"
  muslim_dlc.EVTOPTB16: "Appliquons une sharî'a plus accommodante"
  muslim_dlc.EVTNAME17: "Ghilmân et mamâlîk: les soldats esclaves"

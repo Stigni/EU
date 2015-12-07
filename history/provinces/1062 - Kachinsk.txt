@@ -1,7 +1,7 @@
 #1062 - Kachinsk
 
 culture = buryat
-religion = shamanism
+religion = tengri_pagan_reformed
 capital = "Angara"
 trade_goods = unknown
 hre = no

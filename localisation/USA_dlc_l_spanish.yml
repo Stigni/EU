@@ -222,7 +222,7 @@
  american_republic_ruler: "Presidente "
  american_republic_ruler_female: "Presidente "
  american_republic_desc: "La República Americana es una confederación de Trece Estados de Américacada uno con su propia independencia y gobiernoscon un Presidente que gobierna en periodos electorales de siete años. "
- federal_republic: "República Federal "
+ FEDERAL_REPUBLIC: "República Federal "
  federal_republic_ruler: "Presidente "
  federal_republic_ruler_female: "Presidente "
  federal_republic_desc: "La República Federal es una federación de Trece Estados de Américacada uno con su propia independencia y gobiernoscon un Presidente que gobierna en periodos electorales de siete años. "

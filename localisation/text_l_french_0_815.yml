@@ -19,7 +19,7 @@
  SIEGE_CHANCE_EXPLANATION: "Pour chaque phase du siège un dé, dont le résultat varie entre §Y$MIN$§! et §Y$MAX$§!, est lancé. À ce jet sont ensuite ajoutés les modificateurs de siège (ici $MODIFIERS$). Lorsque le jet brut est de 1, l'attaquant souffre d'une épidémie, réduisant ses effectifs de §R$VAL$%§! de son maximum de troupes.\n\nLe jet est le suivant:"
  SIEGE_CHANCE_LINE: "$NAME$: $RANGE$ ($CHANCE$ de chance)"
  SIEGE_DATES: "Ce siège a commencé il y a §Y$TOTAL$§! jours. La prochaine phase débutera dans §Y$LEFT$§! jours."
- SIEGE_PAUSING_CONSTRUCTION: "§RL'avancée est stoppée pour la durée du siège.\nSi la province est perdue, l'avancée le sera aussi.§!"
+ SIEGE_PAUSING_CONSTRUCTION: "§RL'avancée est stoppée pour la durée du siège.§!"
  PEACE_OFFER_GOLD_LIMIT: "Limité à §G$MAX$§!¤ car la trésorerie de §Y$TAG$§! est de §Y$TRE$§!¤ et son emprunt maximum de §Y$LOA$§!¤."
  ANNUL_TREATIES_CANT_GUARANTEE: "Tout traité ayant été interdit jusqu'au §Y$DATE$§!, il nous est impossible de garantir la sécurité d'un autre pays."
  ANNUL_TREATIES_CANT_ALLIANCE: "Tout traité ayant été interdit jusqu'au §Y$DATE$§!, il nous est impossible de forger une alliance."

@@ -129,7 +129,7 @@
 2544 = "Charlotte"
 2546 = "Cape Fear"
 2548 = "New River"
-2549 = "Charlottesville" OR 2549 = "Virginia Piedmont" 
+2549 = "Charlottesville"
 2550 = "Rappahannock"
 2552 = "Pearsall"
 2554 = "Baltimore"

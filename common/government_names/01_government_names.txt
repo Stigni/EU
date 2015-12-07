@@ -110,7 +110,7 @@ gov_constitutional_republic = {
 	rank = {
 		1 = REPUBLIC
 		2 = GRAND_REPUBLIC
-		3 = GREAT_REPUBLIC
+		3 = FEDERAL_REPUBLIC
 	}
 	
 	ruler_male = {
@@ -132,21 +132,21 @@ gov_constitutional_republic = {
 
 gov_republican_dictatorship = {
 	rank = {
-		1 = REPUBLIC
-		2 = GRAND_REPUBLIC
-		3 = GREAT_REPUBLIC
+		1 = DESPOTISM
+		2 = DICTATORSHIP
+		3 = PRESIDENTIAL_DICTATORSHIP
 	}
 	
 	ruler_male = {
 		1 = PROTECTOR
 		2 = LORD_PROTECTOR
-		3 = HIGH_LORD_PROTECTOR
+		3 = PRESIDENT
 	}
 	
 	ruler_female = {
 		1 = PROTECTOR_fem
 		2 = LADY_PROTECTOR
-		3 = HIGH_LADY_PROTECTOR
+		3 = PRESIDENT_fem
 	}
 	
 	trigger = {

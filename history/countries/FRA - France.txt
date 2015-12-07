@@ -1,6 +1,5 @@
 government = feudal_monarchy
 primary_culture = cosmopolitan_french
-culture_group_union = french
 religion = catholic
 technology_group = western
 capital = 183 # Paris

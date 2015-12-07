@@ -5,6 +5,7 @@ temples =
 {
 	#Allows to fight wars.
 	monarch_power = MIL
+	always = yes
 	
 	modifier = 
 	{
@@ -17,6 +18,7 @@ temples =
 enuchs =
 {
 	monarch_power = DIP
+	always = yes
 
 	#Merchants, Traders, Expansions.
 	modifier = 
@@ -30,6 +32,7 @@ enuchs =
 bureaucrats =
 {
 	monarch_power = ADM
+	always = yes
 
 	#buildings, Internal Stability.
 	modifier = 
@@ -48,6 +51,7 @@ bureaucrats =
 mr_aristocrats =
 {
 	monarch_power = MIL
+	always = yes
 
 	modifier = 
 	{
@@ -61,6 +65,7 @@ mr_aristocrats =
 mr_traders =
 {
 	monarch_power = DIP
+	always = yes
 
 	modifier = 
 	{
@@ -74,6 +79,7 @@ mr_traders =
 mr_guilds =
 {
 	monarch_power = ADM
+	always = yes
 
 	modifier = 
 	{

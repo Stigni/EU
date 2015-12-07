@@ -20,13 +20,13 @@ aristocracy_ideas = {
 			government = noble_republic
 			government = theocracy
 		}
-		
-		
+
+
 	}
-	
+
 	noble_knights = {
 		cavalry_power = 0.10
-		cavalry_cost = -0.15
+		cavalry_cost = -0.10
 	}
 	local_nobility = {
 		enemy_core_creation = 0.5
@@ -50,15 +50,20 @@ aristocracy_ideas = {
 	military_traditions = {
 		mil_tech_cost_modifier  = -0.1
 	}
-	
+
 	ai_will_do = {
 		factor = 1
-		
+
 		# AI generally should not pick this
 		modifier = {
 			factor = 0.1
 			always = yes
-		}		
+		}
+		
+		modifier = {
+			factor = 0
+			is_subject = yes
+		}	
 	}
 }
 
@@ -75,9 +80,9 @@ plutocracy_ideas = {
 		NOT = { government = noble_republic }
 		NOT = { government = theocracy }
 	}
-	
+
 	tradition_of_payment = {
-		possible_mercenaries = 0.50
+		possible_mercenaries = 0.25
 	}
 	abolished_serfdom = {
 		land_morale = 0.10
@@ -95,9 +100,9 @@ plutocracy_ideas = {
 		caravan_power = 0.25
 	}
 	emancipation = {
-		manpower_recovery_speed = 0.1
+		manpower_recovery_speed = 0.2
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 	}
@@ -110,8 +115,8 @@ innovativeness_ideas = {
 	bonus = {
 		advisor_cost = -0.25
 	}
-	
-	patron_of_art  = { 
+
+	patron_of_art  = {
 		prestige_decay = -0.01
 	}
 	pragmatism = {
@@ -125,20 +130,20 @@ innovativeness_ideas = {
 	}
 	resilient_state = {
 		inflation_action_cost = -0.10
-	}	
+	}
 	optimism = {
 		war_exhaustion = -0.05
 	}
 	formalized_officer_corps = {
 		free_leader_pool = 1
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 3
+			factor = 2
 			government = steppe_horde
-		}		
+		}
 	}
 }
 
@@ -159,7 +164,7 @@ religious_ideas = {
 	church_attendance_duty = {
 		stability_cost_modifier = -0.25
 	}
-	divine_supremacy = { 
+	divine_supremacy = {
 		global_missionary_strength = 0.03
 	}
 	devoutness = {
@@ -175,13 +180,13 @@ religious_ideas = {
 	inquisition = {
 		global_heretic_missionary_strength = 0.02
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
 			factor = 0
 			has_idea_group = humanist_ideas
-		}			
+		}
 	}
 }
 
@@ -192,7 +197,7 @@ spy_ideas = {
 	bonus = {
 		rebel_support_efficiency = 0.50
 	}
-	
+
 	privateers = {
 		embargo_efficiency = 0.25
 		privateer_efficiency = 0.33
@@ -209,17 +214,19 @@ spy_ideas = {
 	}
 	shady_recruitment = {
 		discovered_relations_impact = -0.33
+		may_study_technology = yes
 	}
 	destabilising_efforts = {
 		may_sow_discontent = yes
+		may_agitate_for_liberty = yes
 	}
 	espionage  = {
 		may_infiltrate_administration = yes
 	}
-	
+
 	ai_will_do = {
 		factor = 1
-		
+
 		# AI generally should not pick this
 		modifier = {
 			factor = 0.1
@@ -249,25 +256,25 @@ diplomatic_ideas = {
 	}
 	experienced_diplomats  = {
 		diplomatic_reputation = 2
-	}		
+	}
 	flexible_negotiation = {
 		province_warscore_cost = -0.2
 	}
 	diplomatic_corps = {
 		dip_tech_cost_modifier = -0.1
 	}
-	
+
 	ai_will_do = {
 		factor = 1
-		
+
 		modifier = {
 			factor = 2
 			is_emperor = yes
-		}	
+		}
 		modifier = {
 			factor = 1.5
 			num_of_vassals = 2
-		}		
+		}
 	}
 }
 
@@ -300,7 +307,7 @@ offensive_ideas = {
 	napoleonic_warfare = {
 		discipline = 0.05
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 	}
@@ -325,7 +332,7 @@ defensive_ideas = {
 	}
 	regimental_system = {
 		land_maintenance_modifier = -0.10
-	}	
+	}
 	defensive_mentality = {
 		defensiveness = 0.2
 		fort_maintenance_modifier = -0.1
@@ -336,7 +343,7 @@ defensive_ideas = {
 	improved_foraging = {
 		land_attrition = -0.25
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 	}
@@ -348,8 +355,8 @@ trade_ideas = {
 
 	bonus = {
 		merchants = 1
-	}	
-	
+	}
+
 	shrewd_commerce_practise = {
  		global_trade_power = 0.2
   	}
@@ -371,7 +378,7 @@ trade_ideas = {
 	fast_negotiations = {
 		caravan_power = 0.25
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -382,7 +389,7 @@ trade_ideas = {
 		modifier = {
 			factor = 0.33
 			NOT = { government = merchant_republic }
-		}		
+		}
 	}
 }
 
@@ -394,8 +401,8 @@ economic_ideas = {
 
 	bonus = {
 		development_cost = -0.2
-	}	
-	
+	}
+
 	bureaucracy = {
 		global_tax_modifier = 0.10
 	}
@@ -417,7 +424,7 @@ economic_ideas = {
 	smithian_economics = {
 		production_efficiency = 0.1
  	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -429,7 +436,7 @@ economic_ideas = {
 			inflation = 10
 		}
 		modifier = {
-			factor = 3
+			factor = 2
 			government = steppe_horde
 		}
 	}
@@ -443,7 +450,7 @@ exploration_ideas = {
 	bonus = {
 		cb_on_primitives = yes
 	}
-	
+
 	colonial_ventures = {
 		colonists = 1
 	}
@@ -452,7 +459,7 @@ exploration_ideas = {
 	}
 	overseas_exploration = {
 		range = 0.5
-	}	
+	}
 	land_of_opportunity = {
 		global_colonial_growth = 20
 	}
@@ -465,57 +472,123 @@ exploration_ideas = {
 	global_empire = {
 		naval_forcelimit_modifier = 0.25
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
 			factor = 0
+			is_colonial_nation = yes
+		}
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			is_subject = yes
+		}		
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
+		modifier = {
+			factor = 0
 			NOT = { num_of_ports = 1 }
-			NOT = { is_colonial_nation = yes }
-			NOT = { tag = MOS }
-			NOT = { tag = RUS }
-		}	
+			NOT = { 
+				any_owned_province = { 
+					is_in_capital_area = yes
+					any_neighbor_province = {
+						is_empty = yes
+					}
+				} 
+			}
+		}
 		modifier = {
 			factor = 0.1
 			NOT = { num_of_ports = 3 }
-		}				
+			NOT = { 
+				any_owned_province = { 
+					is_in_capital_area = yes
+					any_neighbor_province = {
+						is_empty = yes
+					}
+				} 
+			}			
+		}
 		modifier = {
 			factor = 0.1
 			NOT = { technology_group = western }
-		}			
+			NOT = { technology_group = high_american }
+		}
 		modifier = {
 			factor = 0.1
 			capital_scope = {
 				NOT = {
-					region = french_region
-					region = iberian_peninsula
-					region = british_isles
-					region = the_low_countries
+					region = france_region
+					region = iberia_region
+					region = british_isles_region
+					region = low_countries_region
+				}
+			}
+			NOT = { technology_group = high_american }
+		}
+		modifier = {
+			factor = 0.5
+			tag = ARA
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_year = 1490 }
+			capital_scope = {
+				NOT = {
+					region = iberia_region
 				}
 			}
 		}
 		modifier = {
-			factor = 2.0
-			num_of_ports = 5	
-		}			
+			factor = 10
+			technology_group = high_american
+		}
 		modifier = {
 			factor = 2.0
-			num_of_ports = 10		
-		}			
+			num_of_ports = 5
+		}
 		modifier = {
 			factor = 2.0
-			num_of_ports = 15		
-		}	
+			num_of_ports = 10
+		}
 		modifier = {
 			factor = 2.0
-			num_of_ports = 20	
-		}		
+			num_of_ports = 15
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 20
+		}
+		modifier = {
+			factor = 10
+			tag = POR
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = GBR
+				tag = NED
+				tag = ENG
+				tag = FRA
+				tag = CAS
+			}
+		}
 	}
 }
 
 
 maritime_ideas = {
 	category = DIP
+
+	trigger = {
+		primitives = no
+	}
 
 	bonus = {
 		sea_repair = yes
@@ -542,9 +615,17 @@ maritime_ideas = {
 	naval_fighting_instruction = {
 		blockade_efficiency = 0.5
 	}
-	
+
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
 		modifier = {
 			factor = 0
 			NOT = { num_of_ports = 1 }
@@ -553,7 +634,7 @@ maritime_ideas = {
 		modifier = {
 			factor = 0.1
 			NOT = { num_of_ports = 10 }
-		}			
+		}
 	}
 }
 
@@ -564,7 +645,7 @@ quality_ideas = {
 	bonus = {
 		discipline = 0.05
 	}
-	
+
 	private_to_marshal = {
 		infantry_power = 0.1
 	}
@@ -586,7 +667,7 @@ quality_ideas = {
 	massed_battery = {
 		artillery_power = 0.1
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 	}
@@ -611,16 +692,16 @@ quantity_ideas = {
 	the_old_and_infirm = {
 		land_maintenance_modifier = -0.10
 	}
-	national_arsenal = {
-		naval_forcelimit_modifier = 0.25
+	mercenary_contracts = {
+		possible_mercenaries = 0.25
 	}
 	garrison_conscription = {
-		garrison_size = 0.25	
-    }
+		garrison_size = 0.25
+	}
 	expanded_supply_trains = {
 		land_attrition = -0.1
-	}	
-	
+	}
+
 	ai_will_do = {
 		factor = 1
 	}
@@ -630,7 +711,7 @@ quantity_ideas = {
 expansion_ideas = {
 	category = ADM
 	important = yes
-	
+
 	bonus = {
  		cb_on_overseas = yes
 	}
@@ -646,7 +727,7 @@ expansion_ideas = {
 	}
 	organised_recruiting = {
 		global_regiment_recruit_speed = -0.1
-	}	
+	}
 	additional_diplomats = {
 		diplomatic_upkeep = 1
 	}
@@ -656,43 +737,46 @@ expansion_ideas = {
 	competetive_merchants  = {
 		global_trade_power = 0.2
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 2
-			has_idea_group = exploration_ideas
+			factor = 10
+			OR = {
+				has_idea_group = exploration_ideas
+				is_colonial_nation = yes
+			}
 		}
 		modifier = {
 			factor = 0
 			NOT = { has_idea_group = exploration_ideas }
 			NOT = { is_colonial_nation = yes }
-		}	
+		}
 		modifier = {
 			factor = 0.1
-			NOT = { 
+			NOT = {
 				technology_group = western
 				technology_group = eastern
 				technology_group = muslim
 			}
-		}				
+		}
 	}
 }
 
 
 administrative_ideas = {
 	category = ADM
-	
+
 	bonus = {
 		global_trade_goods_size_modifier = 0.1
 	}
-	
+
 	organised_mercenary_payment = {
 		mercenary_cost = -0.25
 	}
 	adaptability = {
 		core_creation = -0.25
-	}	
+	}
 	benefits_for_mercenaries = {
 		merc_maintenance_modifier = -0.33
 	}
@@ -700,7 +784,7 @@ administrative_ideas = {
 		interest = -1
 	}
 	organised_mercenary_recruitment = {
-		possible_mercenaries = 0.50
+		possible_mercenaries = 0.25
 	}
 	administrative_efficiency_idea = {
 		advisor_pool = 1
@@ -708,32 +792,32 @@ administrative_ideas = {
 	civil_servants = {
 		adm_tech_cost_modifier = -0.1
 	}
-	
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 3
+			factor = 2
 			government = steppe_horde
-		}		
+		}
 	}
 }
 
 humanist_ideas = {
 	category = ADM
-	
+
 	bonus = {
 		idea_cost = -0.1
 	}
-	
+
 	tolerance_idea = {
 		religious_unity = 0.25
-	}	
+	}
 	local_traditions = {
 		global_unrest = -2
 	}
 	ecumenism = {
 		tolerance_heretic = 3
-	}	
+	}
 	indirect_rule = {
 		years_of_nationalism = -10
 	}
@@ -741,24 +825,24 @@ humanist_ideas = {
 		accepted_culture_threshold = -0.5
 	}
 	benevolence = {
-		relations_decay_of_me = 0.33
-	}	
+		relations_decay_of_me = 0.3
+	}
 	humanist_tolerance = {
 		tolerance_heathen = 3
-	}		
-	
+	}
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
 			factor = 0
 			has_idea_group = religious_ideas
-		}		
+		}
 	}
 }
 
 influence_ideas = {
 	category = DIP
-	
+
 	bonus = {
 		unjustified_demands = -0.5
 	}
@@ -768,7 +852,7 @@ influence_ideas = {
 	}
 	claim_fabrication = {
 		fabricate_claims_time = -0.33
-	}		
+	}
 	integrated_elites = {
 		diplomatic_annexation_cost = -0.25
 	}
@@ -784,8 +868,8 @@ influence_ideas = {
 	}
 	marcher_lords = {
 		vassal_forcelimit_bonus = 1
-	}	
-	
+	}
+
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -796,16 +880,20 @@ influence_ideas = {
 			factor = 2
 			num_of_vassals = 2
 		}
-	}	
+	}
 }
 
 naval_ideas = {
 	category = MIL
-	
+
+	trigger = {
+		primitives = no
+	}
+
 	bonus = {
 		ship_durability = 0.1
 	}
-	
+
 	boarding_parties = {
 		leader_naval_shock = 1
 	}
@@ -819,17 +907,25 @@ naval_ideas = {
 		prestige_from_naval = 1.0
 	}
 	press_gangs = {
-		naval_maintenance_modifier = -0.1		
+		naval_maintenance_modifier = -0.1
 	}
 	oak_forests_for_ships = {
 		heavy_ship_power = 0.20
 	}
 	superior_seamanship = {
 		naval_morale = 0.15
-	}	
-	
+	}
+
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0
+			primitives = yes
+		}
 		modifier = {
 			factor = 0
 			NOT = { num_of_ports = 1 }
@@ -838,6 +934,6 @@ naval_ideas = {
 		modifier = {
 			factor = 0.1
 			NOT = { num_of_ports = 10 }
-		}		
-	}	
+		}
+	}
 }

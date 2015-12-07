@@ -221,7 +221,7 @@
  american_republic_ruler: "Präsident "
  american_republic_ruler_female: "Präsident "
  american_republic_desc: "Die amerikanische Republik ist eine Konföderation der dreizehn amerikanischen Staaten. Die Mitgliedsstaaten sind unabhängig, mit eigener Regierung. Es gibt einen Präsidenten, der für sieben Jahre gewählt wird. "
- federal_republic: "Föderale Republik "
+ FEDERAL_REPUBLIC: "Föderale Republik "
  federal_republic_ruler: "Präsident "
  federal_republic_ruler_female: "Präsident "
  federal_republic_desc: "Die föderale Republik ist eine Föderation der dreizehn amerikanischen Staaten. Die Mitgliedsstaaten sind unabhängig, mit eigener Regierung. Es gibt einen Präsidenten, der für vier Jahre gewählt wird. "

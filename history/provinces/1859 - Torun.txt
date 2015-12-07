@@ -4,6 +4,7 @@ owner = TEU
 controller = TEU
 capital = "Torun"
 is_city = yes
+estate = estate_burghers
 culture = polish
 religion = catholic
 trade_goods = grain

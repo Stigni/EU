@@ -11,6 +11,7 @@ trade_goods = wool
 base_manpower = 3
 capital = "Hajibey"
 is_city = yes
+estate = estate_cossacks
 add_local_autonomy = 25
 add_core = CRI
 add_core = ZAZ

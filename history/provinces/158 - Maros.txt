@@ -5,6 +5,7 @@ controller = HUN
 culture = hungarian
 religion = catholic
 capital = "Targu Mures"
+estate = estate_nobles #Szekelyföld
 trade_goods = wool
 hre = no
 base_tax = 4 

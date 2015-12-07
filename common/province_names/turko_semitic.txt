@@ -95,7 +95,6 @@
 2340 = "Grane"	
 2341 = "Ash Sharqiyah"
 2342 = "Wusta"
-2343 = "Hadramawt"	
 2344 = "Jawf"	
 2345 = "Ahqaf"	
 2346 = "Jazan"	

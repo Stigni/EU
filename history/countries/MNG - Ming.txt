@@ -1,6 +1,5 @@
 government = celestial_empire
 government_rank = 3
-culture_group_union = east_asian #Chinese
 technology_group = chinese
 religion = confucianism
 primary_culture = jianghuai

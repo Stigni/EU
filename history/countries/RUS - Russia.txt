@@ -1,6 +1,5 @@
 government = feudal_monarchy
 primary_culture = russian
-culture_group_union = east_slavic
 religion = orthodox
 technology_group = eastern
 unit_type = eastern

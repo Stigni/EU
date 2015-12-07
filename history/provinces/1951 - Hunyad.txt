@@ -6,6 +6,7 @@ culture = hungarian
 religion = catholic
 capital = "Alba Iulia"
 trade_goods = salt # Famous salt mines
+estate = estate_burghers #Kiralyföld
 hre = no
 base_tax = 4 
 base_production = 4

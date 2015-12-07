@@ -195,7 +195,7 @@ form_coalition = {
 				has_opinion_modifier = {
 					modifier = aggressive_expansion
 					who = FROM
-					value = -30
+					value = -50
 				}
 			}
 		}

@@ -10,6 +10,7 @@ trade_goods = grain
 base_manpower = 2
 capital = "Laibach"
 is_city = yes
+estate = estate_nobles #Counts of Cilli
 hre = yes
 discovered_by = western
 discovered_by = eastern
@@ -19,7 +20,6 @@ discovered_by = ottoman
 1420.1.1 = {
 	add_core = STY
 } # To the Habsburgs
-
 1452.1.1 = {
 	owner = STY
 	controller = STY

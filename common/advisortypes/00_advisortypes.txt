@@ -175,7 +175,7 @@ diplomat = {
 	monarch_power = DIP
 	
 	# Bonus
-	relations_decay_of_me = 0.3
+	relations_decay_of_me = 0.2
 	
 	chance = {
 		factor = 1

@@ -41,6 +41,7 @@ the_court_of_wards_and_liveries = {
 	global_tax_modifier = 0.10
 	legitimacy = 0.5
 	devotion = 0.5
+	horde_unity = 0.5
 		
 	ai_will_do = {
 		factor = 1	
@@ -117,8 +118,8 @@ agricultural_cultivations = {
 		full_idea_group = quantity_ideas
 	}		
 	
-	land_forcelimit_modifier = 0.33
-
+	land_forcelimit_modifier = 0.1
+	development_cost = -0.1
 
 	ai_will_do = {
 		factor = 1
@@ -362,7 +363,7 @@ the_mercenary_registration_act = {
 		full_idea_group = quantity_ideas
 	}
 
-	possible_mercenaries = 0.25
+	possible_mercenaries = 0.125
 	mercenary_cost = -0.15
 	
 	ai_will_do = {

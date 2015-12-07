@@ -1,0 +1,5 @@
+16 = "Båhuslen"
+369 = "Orkneyjar"
+
+1978 = "Hjaltland"
+1979 = "Færøyene"

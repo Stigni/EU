@@ -10,7 +10,6 @@ technology = {
 	# Tech 0
 	year = 1350
 	
-	naval_maintenance		=	0.1
 	naval_morale			=	2.0
 	range					=	60
 
@@ -45,7 +44,7 @@ technology = {
 	naval_morale			=	0.1
 	naval_maintenance		= 	0.1
 	range					= 	100
-	trade_efficiency 		= 	0.1
+	trade_efficiency 		= 	0.05
 	global_colonial_growth	= 	15
 	
 	enable = early_carrack
@@ -65,7 +64,8 @@ technology = {
 	# Tech 5
 	year = 1466
 	
-	trade_efficiency 		= 	0.1
+	naval_maintenance		=	0.1	
+	trade_efficiency 		= 	0.05
 	trade_range				=	20
 }
 
@@ -101,7 +101,7 @@ technology = {
 	# Tech 9
 	year = 1518
 	
-	naval_maintenance		= 	0.2	
+	naval_maintenance		= 	0.1
 	range					=	50
 	
 	enable = carrack
@@ -113,7 +113,7 @@ technology = {
 	# Tech 10
 	year = 1531
 	
-	trade_efficiency		= 	0.1
+	trade_efficiency		= 	0.05
 	trade_range				=	20
 	global_colonial_growth  = 	10
 	enable = flute
@@ -141,7 +141,7 @@ technology = {
 	# Tech 13
 	year = 1570
 	
-	trade_efficiency 		= 	0.1
+	trade_efficiency 		= 	0.05
 	enable = brig
 
 }
@@ -160,7 +160,7 @@ technology = {
 	# Tech 15
 	year = 1596
 	
-	naval_maintenance		= 	0.2	
+	naval_maintenance		= 	0.1
 	range					=	50
 	global_colonial_growth  = 	15
 	
@@ -172,7 +172,7 @@ technology = {
 	# Tech 16
 	year = 1609
 	
-	trade_efficiency 		= 	0.1
+	trade_efficiency 		= 	0.05
 	trade_range				=	20
 
 }
@@ -204,7 +204,7 @@ technology = {
 	# Tech 19
 	year = 1648
 	
-	naval_maintenance		= 	0.25	
+	naval_maintenance		= 	0.1	
 	range					=	50
 	
 	grand_shipyard = yes 
@@ -218,7 +218,7 @@ technology = {
 	# Tech 20
 	year = 1661
 
-	trade_efficiency 		= 	0.1
+	trade_efficiency 		= 	0.05
 	trade_range				=	20
 	
 }
@@ -236,7 +236,7 @@ technology = {
 	year = 1687
 	
 	naval_morale			=	0.5
-	naval_maintenance		= 	0.25
+	naval_maintenance		= 	0.1
 	
 
 	stock_exchange = yes
@@ -266,7 +266,7 @@ technology = {
 	drydock = yes 
 
 	
-	trade_efficiency 		= 	0.1
+	trade_efficiency 		= 	0.05
 	trade_range				=	20
 	enable = archipelago_frigate
 }
@@ -276,7 +276,7 @@ technology = {
 	year = 1730
 	
 	naval_morale			=	0.5
-	naval_maintenance		= 	0.25
+	naval_maintenance		= 	0.1
 	
 	enable = threedecker
 }
@@ -297,14 +297,14 @@ technology = {
 	year = 1760
 	
 	naval_morale			=	0.5
-	naval_maintenance		= 	0.25
+	naval_maintenance		= 	0.1
 }
 
 technology = {
 	# Tech 28
 	year = 1775
 	
-	trade_efficiency 		= 	0.1
+	trade_efficiency 		= 	0.05
 	trade_range				=	20
 }
 
@@ -313,14 +313,14 @@ technology = {
 	year = 1790
 	
 	naval_morale			=	0.5
-	naval_maintenance		= 	0.25
+	naval_maintenance		= 	0.1
 }
 
 technology = {
 	# Tech 30
 	year = 1805
 	
-	trade_efficiency 		= 	0.1
+	trade_efficiency 		= 	0.05
 	trade_range				=	20
 }
 
@@ -329,14 +329,14 @@ technology = {
 	year = 1820
 	
 	naval_morale			=	0.5
-	naval_maintenance		= 	0.25	
+	naval_maintenance		= 	0.1	
 }
 
 technology = {
 	# Tech 32
 	year = 1835
 	
-	trade_efficiency 		= 	0.1
+	trade_efficiency 		= 	0.05
 	trade_range				=	20
 	global_colonial_growth  = 	50
 }

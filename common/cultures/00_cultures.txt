@@ -562,33 +562,80 @@ british	= {
 	}
 	american = {
 		primary = USA
-		dynasty_names = { 
-			Washington Adams Jefferson Jackson Johnson
-			Madison Monroe "Van Buren" Harrison Tyler Knox Polk Taylor Fillmore Pierce Buchanan Lincoln Grant Hayes Garfield Arthur Cleveland Harrison McKinley Roosevelt Taft Wilson Harding Coolidge Hoover Roosevelt 
-		}
 		male_names = {
-			George James John Thomas Charles Daniel Henry Samuel Arthur Cyrus David Elias Frederick 	
-			Augustus Nathaniel Peyton Richard Aaron Angus August Benjamin Calvin Darren Elbridge Eric 
-			Francis Frederick Isaac Jonathan Joseph Kyran Luke Milton Patrick Paul Philip Randolf 
-			Silvester Timothy Wilbur William Alexander Stephen 
+			Abraham Aaron Alexander Atticus August Andrew Anthony Angus Allen Asa Alvin Albert Ambrose Arthur
+			Buford Benjamin Benedict Bartholomew Brigham Braxton Barnabas
+			Cyrus Charles Cyril Christopher Casey Clarence Clark Calvin Chester
+			David Donald Daniel Duncan
+			Elihu Elias Eric Ebenezer Elbridge Eugene Eustace Ernest Edmund Ephraim Earl Ezra Emory
+			Francis Frederick Ferdinand
+			George Gregory Gideon Gerald Grover Gouveneur Gordon
+			Humphrey Howard Hector Harold Horatio Henry
+			Isaac Israel Ian Irving
+			Joseph Jeffrey Jubal John Jebediah James Jacob Julius Julian Justin Josiah Joshua
+			Leonard Louis Lawrence Leland Luke Lionel Lorenzo Lamont Lyman
+			Moses Michael Mark Martin Milton Merriweather
+			Nathaniel Noah Nehemiah Nicholas
+			Oliver Obadiah Orville Owen
+			Philip Peter Paul Patrick
+			Rutherford Robert Richard Ronald Reuchlin Rufus Rhett
+			Samuel Stephen Sampson Sylvester
+			Theodore Thomas Timothy
+			Upton Ulysses
+			Victor Vincent
+			William Walter Winfield Wilbur Wallace Walker
+			Zachary
 		}
 		female_names = {
-			Deborah Sarah Anne Jessica Emily Sarah Samantha Brittany Amanda Elizabeth Taylor Megan Stephanie Kayla Lauren 
-			Jennifer Rachel Hannah Nicole Amber Alexis Courtney Victoria Danielle Alyssa Rebecca Jasmine Katherine Melissa 
-			Alexandra Brianna Chelsea Michelle Morgan Kelsey Tiffany Kimberly Christina Madison Heather Shelby Anna Mary 
-			Maria Allison Sara Laura Andrea Olivia Erin Haley Abigail Kaitlyn Jordan Natalie Vanessa Kelly Brooke Erica 
-			Kristen Julia Crystal Amy Katelyn Marissa Lindsey Paige Cassandra Sydney Katie Caitlin Kathryn Emma Shannon 
-			Angela Gabrielle Jacqueline Jenna Jamie Mariah Alicia Briana Alexandria Destiny Miranda Monica Brittney 
-			Catherine Savannah Sierra Sabrina Breanna Whitney Caroline Molly Madeline Erika Grace Diana Leah Angelica 
-			Lindsay Christine Kaitlin Cynthia Meghan Margaret Veronica Melanie Bailey Kristin Bianca Lisa 
-			Holly Kristina Alexa Ariel Bethany Hailey Leslie April Casey Brenda Kathleen Julie Patricia Autumn Karen 
-			Gabriela Brandi Ana Rachael Kendra Karina Dominique Valerie Desiree Kara Carly Claire Tara Adriana Kaylee 
-			Natasha Michaela Chloe Jocelyn Kylie Krystal Hayley Caitlyn Alison Nancy Sophia Daisy Rebekah Dana Jillian 
-			Cassidy Alejandra Raven Jade Angel Summer Audrey Gabriella Chelsey Sandra Ariana Katrina Claudia Monique Meagan 
-			Joanna Kirsten Faith Mikayla Brandy Kiara Makayla Mallory Krista Deanna Yesenia Ashlee Cindy Mercedes Alisha 
-			Gina Lydia Felicia Mckenzie Zoe Bridget Marisa Priscilla Karla Kassandra Denise Jasmin Tori Isabella Selena 
-			Evelyn Anne Amelia Cristina Allyson Tabitha Abby Ashleigh Lacey Jazmin Isabel Asia Candace Ciara Cierra 
-			Colleen Jaclyn Carolyn Hope Linda Naomi Ellen Mia Teresa Meredith Guadalupe Hanna Renee Nichole Kendall
+			Anne Amanda Ada April Amphyllis Abigail Alice Adell Amelia Antoinette Arabella Alma Agnes Agatha
+			Barbara Brigit Blanche Bertha Belle
+			Caroline Charlotte Christine Catharine Clementine Clara Constance Claudia Carrie Cora
+			Dolley Dorothy Deborah Daisy Doris
+			Edith Evangeline Elizabeth Esther Emily Emma Ernestine Ethel
+			Flora Frances Florence
+			Gladys Gloria Grace Gertrude
+			Heather Hannah Hermina Harriet Helen Hortense Hope
+			Ida Isabella
+			Joan Jane Julia Josephine
+			Laura Lucy Lydia Lillie Lena
+			Michelle Mary Marta Muriel Mildred Margaret Mercy Mathilda Marion Madeline Marilla Mabel
+			Nancy Noami Nell
+			Olympia
+			Prudence Patricia Pauline Patience Pamela Phoebe Paula
+			Rachel Rebecca Rhoda Rosalie Ruth Rosa
+			Scarlett Sarah Sally Sylvia Susanna Sybil Susa Sophia
+			Tabitha Theodora
+			Victoria Virginia Verina Valeria
+			Winifred
+			Zerelda
+		}
+		dynasty_names = {
+			Austin Anderson Adams Armstrong Astor Albright Averill Ayers Arnold Armistead
+			Boone Bannister Brown Buchanan Bacon Bryant Barclay Butler Brooks Bowie Bagge Berlin Baird Baker
+			Banks Banning Bailey Booth Barnum Barlett Bates Boyle Buell Burnside Burr
+			Coolidge Chamberlain Crockett Cooper Carpenter Coles Coffey Clemens Cleveland Cass Curley Choate
+			Custis Curtiss Clinch Cranston Call Canby Crawford Corbin
+			Davis Daniels Dolan Durant Dewitt Dent Drake Dilworth
+			Early Evans Eppes
+			Findlay Franklin Ford Farragut Featherstone Fitzgerald Firefly Fox Fillmore
+			Garrett Gurney Grant Gibson Garfield Gage Gallatin Gorslin
+			Harding Hayes Hamilton Hughes Hart Harrison Hannegan Hill Hicks Holly Hammer Harney Halleck
+			Hancock Hawkins Harris
+			Jackson Jefferson Jones Jennings Johnson Jessup Jay Joslyn
+			Kirkpatrick Key Kent Kearney
+			Lee Lincoln Langley Lovelace London Larned Lewis
+			Monroe Madison McKinley Meade Morganson McNeely Miller McClellan Mulhouse May Malone McCarthy
+			McGivney MacGregor Morris Mason McCauley
+			Owens "O'Hara" Oswald "O'Neill"
+			Peck Peterson Peel Poole Pierce Pickett Palmer Payne Penn Parton Parker
+			Rogers Richardson Roberts Reed Rice Ratliffe Randolph Revere Ross
+			Scott Stevens Smith Sanders "St. Paul" "St. Germaine" Simmons "St. Vincent" Stuart Sewall Sousa
+			Sullivan Sherman Sheridan Stuyvesant Short Shaftoe
+			Taft Thompson Tweed Taylor Todd Temple Trump Twiggs Totten Tuttle Twigden
+			Vane
+			Washington Wayne Wilson Wood Williams Whitney Waldron Wolfe Wright Wyatt Worsam Wilkes Wythe
+			Waterhouse
+			Young Yelverton
 		}
 	}
 	scottish = {
@@ -2556,8 +2603,8 @@ maghrebi = {
 			Tabghurin "al-Malshuti"
 		}
 		male_names = {
-			"Abu Abdallah" "Abu Abbas Ahmad" "Abu Tashufin" "Abu Hammu" "Abu Muh" "Abu Zayyan" "Abu Malek" "Abul 
-			Hadjdjadj" "Abu Thabid" "Abu Said" "'Abd al-Karim" Barakat Basir Dawud Faris Haidar Hashim Jabbar 
+			"Abu Abdallah" "Abu Abbas Ahmad" "Abu Tashufin" "Abu Hammu" "Abu Muh" "Abu Zayyan" "Abu Malek" "Abul Hadjdjadj"
+			"Abu Thabid" "Abu Said" "'Abd al-Karim" Barakat Basir Dawud Faris Haidar Hashim Jabbar 
 			Junayd Najib Qasim Rahim Rashîd Safi Sakhr Wahid Zahir Jamal Mustafa Muzaffaraddin N'Guna Nasr Nazar Niptasan 
 			Nizamaddin Ptolemee Ptolemy Qutaiba Rashid Sa'id Salah Salla Salomon Solomon Sammer Sayyid Seghada Sekla Shamsaddin 
 			Sifaks Sifal Sinbad Sisso Stembanos Suggut Sultan T'ar'iq Tabat Tacfin Taffounnout Tahir Takfarinas Tanan Tariq 
@@ -4471,8 +4518,8 @@ east_asian = {	# Chinese Group
 			Heseri Guwalgiya Tunggiya Hata Hoifa Yeren Udige
 		}
 		male_names = {
-			"Bukuri Yongson" "Sibeoci Fiyanggu" "Dudu Mengtemu" "Huang Taiji" "Hiowan Yei" "In Jen" "Hung Li" "Yong 
-			Yan" "Min Ning" Cungsan Tolo Fuman Giocangga Taksi Nurhachi Dorgon Hooge Fulin Fanca Hoogle Yinzhi Yinreng 
+			"Bukuri Yongson" "Sibeoci Fiyanggu" "Dudu Mengtemu" "Huang Taiji" "Hiowan Yei" "In Jen" "Hung Li" "Yong Yan"
+			"Min Ning" Cungsan Tolo Fuman Giocangga Taksi Nurhachi Dorgon Hooge Fulin Fanca Hoogle Yinzhi Yinreng 
 			Yinti Daisan Abatai Ajige Dodo Yinxiang Yinsi Yintang Hongshi Hongzhou Yongqi Akjan Ayan Baohu Chengjun 
 			Dorgide Eje Encehen Fisin Fulu Ganyong Ganzhan Hurong Jabsan Jakdan Leli Liyi Lung Mergen Muduri Mujin Oori 
 			Radi Talman Wehe Yelu Yongyi Zhanhung Zhenghu Zhengrong Zhongcheng Zhongchun Zhongho Zhonghu Zhonghung 
@@ -4928,11 +4975,9 @@ mon_khmer = {
 			Angkor "Siem Reap" Oudong Battambang "Stung Treng" Kratie "Phnom Penh"
 		}
 		male_names = {
-			"Barom Reachea" "Noreay Ramathipatei" "Soriyotei" "Thommo Reachea" "Srey Sukonthor" "Ang Chan" "Reachea 
-			Ramathipatei" "Barom Reachea" "Chey Chettha" "Ney Khan" "Preah Ram" "Keo Hua" "Outey Reachea" "Sri 
-			Dharmaraja" "Padumaraja" "Ramathipadi" "Satha" "Ream Reachea" "Narayanaraja" "Ponhea Yat" "Narayanaraja" 
-			"Sri Raja" "Rajadhiraja" "Dharmarajadhiraja" "Damkhat Sukonthor" "Reamea Chungprey" "Keo Ban On" "Ponhea 
-			Yor" "Ponhea An" "Ponhea Nhom" "Srei Soriyopear" "Udayaraja" "Ponhea To" "Ang Non" "Ponhea Chan" "Ang Sur" 
+			"Barom Reachea" "Noreay Ramathipatei" "Soriyotei" "Thommo Reachea" "Srey Sukonthor" "Ang Chan" "Reachea Ramathipatei"
+			"Barom Reachea" "Chey Chettha" "Ney Khan" "Preah Ram" "Keo Hua" "Outey Reachea" "Dharmaraja" "Padumaraja" "Ramathipadi" "Satha" "Ream Reachea" "Narayanaraja" "Ponhea Yat" "Narayanaraja" 
+			"Sri Raja" "Rajadhiraja" "Dharmarajadhiraja" "Damkhat Sukonthor" "Reamea Chungprey" "Keo Ban On" "Ponhea Yor" "Ponhea An" "Ponhea Nhom" "Srei Soriyopear" "Udayaraja" "Ponhea To" "Ang Non" "Ponhea Chan" "Ang Sur" 
 			"Ang Chea" "Ang Nan" "Ang Sor" "Ang Yong" "Ang Em" "Ang Tham" "Ang Sngoun" "Ang Tong" "Ang Ton" "Ang Eng" 
 			"Ang Duong"
 		}
@@ -4999,9 +5044,7 @@ malay = {
 			Vijaya Kauthara Panduranga Indrapura
 		}
 		male_names = {
-			"Ko cheng" "Jaya Sinhavarman" "Maija Vijaya" "Moho Kouei-Lai" "Maha Kui Yu" "Maha P'an-lo-yue" "Po 
-			Saktirai" "Po Ganvuh" "Po Thuttirai" "Po Rattirai" "Po Tathun" "Po Tithuntirai" "Chei Krei Brei" "Po 
-			Tithun" "Po Lathun" "Po Chong Chan" "Che Anan" "Tra Hoa" "Che Bong Nga" "Ko Cheng" "Jaya Indravarman"
+			"Ko cheng" "Jaya Sinhavarman" "Maija Vijaya" "Moho Kouei-Lai" "Maha Kui Yu" "Maha P'an-lo-yue" "Po Saktirai" "Po Ganvuh" "Po Thuttirai" "Po Rattirai" "Po Tathun" "Po Tithuntirai" "Chei Krei Brei" "Po Tithun" "Po Lathun" "Po Chong Chan" "Che Anan" "Tra Hoa" "Che Bong Nga" "Ko Cheng" "Jaya Indravarman"
 		}
 		female_names = {
 			Hòng Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nu’utea Orama Poe Pear Poehina Poenui Poerava Puaiti 
@@ -5016,8 +5059,7 @@ malay = {
 			Melaka Johor Perak Kedah Pattani Pahang Kelantan Selangor Terengganu
 		}
 		male_names = {
-			"Sam Agi" "Paramesvara" "Megat Iskander" "Muhammad Shâh" "Abu Syahid" "Muzaffar Shâh" "Mansûr Shâh" "Riayat 
-			Shah" "Mahmûd Shâh" "'Abd al-Jalîl Shâh" "Ma'ayat Shâh" "Ibrâhîm Shâh" "Rahmat Shâh" "Sulaymân Badr Shâh" 
+			"Sam Agi" "Paramesvara" "Megat Iskander" "Muhammad Shâh" "Abu Syahid" "Muzaffar Shâh" "Mansûr Shâh" "Riayat Shah" "Mahmûd Shâh" "'Abd al-Jalîl Shâh" "Ma'ayat Shâh" "Ibrâhîm Shâh" "Rahmat Shâh" "Sulaymân Badr Shâh" 
 			"Mu'azzam Shâh" "Mahmûd Ri'âyat Shâh" "'Abd ar-Rahmân Shâh" "Rajah Qasim"
 		}
 		female_names = {
@@ -5067,10 +5109,9 @@ malay = {
 			Sulu Maguindanao Tondo Lanao Butuan Palawan Panay
 		}
 		male_names = {
-			"Sharif ul Hashim" "Kamal ud Din" "Sharif Sayyid Ala ud Din" "Amirul Umara" "Muizz ul Mutawadiin" "Batarah 
-			Shah Tengah" "Muwallit Wasit" "Muhammad Alimuddin" "Muhammad al Halim" "Muizz ul Din" "Nasir ud Din" 
-			"Azimuddin" "Salah ud Din Bakhtiyar" "Shihab ud Din" "Mustafa Shafi" "Muhammad Badaruddin" "Muizz ud Din 
-			Bantilan" "Muhammad Israil" "Muhammad Sharafuddin" "Aliyuddin" "Shakirullah" 
+			"Sharif ul Hashim" "Kamal ud Din" "Sharif Sayyid Ala ud Din" "Amirul Umara" "Muizz ul Mutawadiin" "Batarah Shah Tengah" "Muwallit Wasit" "Muhammad Alimuddin" "Muhammad al Halim" "Muizz ul Din" "Nasir ud Din" 
+			"Azimuddin" "Salah ud Din Bakhtiyar" "Shihab ud Din" "Mustafa Shafi" "Muhammad Badaruddin" "Muizz ud Din Bantilan"
+			"Muhammad Israil" "Muhammad Sharafuddin" "Aliyuddin" "Shakirullah" 
 		}
 		female_names = {
 			"Anela" Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nu’utea Orama Poe Pear Poehina Poenui Poerava Puaiti 
@@ -5085,9 +5126,7 @@ malay = {
 			Burnei Kutai Sibu Kuching
 		}
 		male_names = {
-			"Muhammad" "Ahmad" "Sulaymân" "Bulkiah" "'Abd al-Qahhar" "Sayf ar-Rijal" "Hasan" "'Abd al-Jalîl" "Muhammad 
-			'Alî" "'Abd al-Mubin" "Muhyî ad-Dîn" "Nasr ad-Dîn" "Kamâl ad-Dîn" "Alâ' ad-Dîn" "Sayf ad-Dîn" "Muhammad 
-			Jamâl ad-Dîn" "Muhammad Tâj ad-Dîn"
+			"Muhammad" "Ahmad" "Sulaymân" "Bulkiah" "'Abd al-Qahhar" "Sayf ar-Rijal" "Hasan" "'Abd al-Jalîl" "Muhammad 'Alî" "'Abd al-Mubin" "Muhyî ad-Dîn" "Nasr ad-Dîn" "Kamâl ad-Dîn" "Alâ' ad-Dîn" "Sayf ad-Dîn" "Muhammad Jamâl ad-Dîn" "Muhammad Tâj ad-Dîn"
 		}
 		female_names = {
 			"Rim" Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nu’utea Orama Poe Pear Poehina Poenui Poerava Puaiti 
@@ -5103,8 +5142,7 @@ malay = {
 		male_names = {
 			"Tunitangkalopi" "Batara Gowa" "Tuni Djallori" "Tuni Parisi" "Tuni Palonga" "Tuni Butta" "Tunyachoka-ri" 
 			"Karaeng Tunibatta" "Tuni Djallo" "Parabung" "Tuni Pasulu" "Allâh ad-Dîn" "Muhammad Malik" "Muhammad Sa'îd" 
-			"Amir Hamza" "'Abd al-Jalîl" "Shihâb ad-Dîn Ismâ'îl" "Muhammad Bakr Hasan" "Hamaza Tumammalianga" "Muhammad 
-			'Ali" "Fakhr" "Shahab" "Siraj ad-Dîn" "'Abd al-Khayr al-Mansûr" "'Abd al-Qudus" "'Uthmân" "Muhammad Imad" 
+			"Amir Hamza" "'Abd al-Jalîl" "Shihâb ad-Dîn Ismâ'îl" "Muhammad Bakr Hasan" "Hamaza Tumammalianga" "Muhammad 'Ali" "Fakhr" "Shahab" "Siraj ad-Dîn" "'Abd al-Khayr al-Mansûr" "'Abd al-Qudus" "'Uthmân" "Muhammad Imad" 
 			"Zain" "'Imâd ad-Dîn" "Zaynal-'Abidîn" "Sankilang" "'Abd al-Hâdî" "'Abd al-Khaliq" "Limbangparang"
 		}
 		female_names = {
@@ -5122,8 +5160,8 @@ malay = {
 		male_names = {
 			"Tunitangkalopi" "Batara Gowa" "Tuni Djallori" "Tuni Parisi" "Tuni Palonga" "Tuni Butta" "Tunyachoka-ri" 
 			"Karaeng Tunibatta" "Tuni Djallo" "Parabung" "Tuni Pasulu" "Allâh ad-Dîn" "Muhammad Malik" "Muhammad Sa'îd" 
-			"Amir Hamza" "'Abd al-Jalîl" "Shihâb ad-Dîn Ismâ'îl" "Muhammad Bakr Hasan" "Hamaza Tumammalianga" "Muhammad 
-			'Ali" "Fakhr" "Shahab" "Siraj ad-Dîn" "'Abd al-Khayr al-Mansûr" "'Abd al-Qudus" "'Uthmân" "Muhammad Imad" 
+			"Amir Hamza" "'Abd al-Jalîl" "Shihâb ad-Dîn Ismâ'îl" "Muhammad Bakr Hasan" "Hamaza Tumammalianga" "Muhammad 'Ali" "Fakhr"
+			"Shahab" "Siraj ad-Dîn" "'Abd al-Khayr al-Mansûr" "'Abd al-Qudus" "'Uthmân" "Muhammad Imad" 
 			"Zain" "'Imâd ad-Dîn" "Zaynal-'Abidîn" "Sankilang" "'Abd al-Hâdî" "'Abd al-Khaliq" "Limbangparang"
 		}
 		female_names = {
@@ -5150,8 +5188,7 @@ thai = {
 		male_names = {
 			"Ramaracha" "Intha Racha" "Borommaracha" "Trailokanat" "Ramathibodi" "Ratsada" "Chairacha" "Keo Fa" 
 			"Bun Si" "Chakkraphat" "Mahin" "Thammaracha" "Naresuen" "Ekathotsarot" "Si Saowaphak" "Songtham" "Chettha" 
-			"Athittayawong" "Prasat Thong" "Chao Fa Jai" "Narai" "Si Suthammaracha" "Phetracha" "Phrachao Suea" "Thai 
-			Sa" "Boromakot" "Uthumphon" "Taksin" "Rama"
+			"Athittayawong" "Prasat Thong" "Chao Fa Jai" "Narai" "Si Suthammaracha" "Phetracha" "Phrachao Suea" "Thai Sa" "Boromakot" "Uthumphon" "Taksin" "Rama"
 		}
 		female_names = {
 			"Amporn" "Chanarong" "Sri Suriyothai" "Panjapapee" "Komol"
@@ -5167,8 +5204,8 @@ thai = {
 			"Khai Bua Ban" "Khong Kham" "Sai Tia Kaphut" "Theng Kham" "Laasaenthai" "Sompou" "Visunarat" "Photisarat" 
 			"Setthathirat" "Saensurin" "Maha Oupahat" "Nakhon Noi" "Nokeo Koumanh" "Thammikarat" "Upanyuvarat" 
 			"Mon Keo" "Tone Kham" "Vichai" "Souligna Vongsa" "Tian Thala" "Nan Tharat" "Ong Long" "Anouvong" "Sai" 
-			"Khamteam" "Kongkeo" "Leu Xay" "Fa Kheun" "Yu Khong" "Nan Rat" "Saya Kumane" "Xiang Keo" "Fay Na" "No 
-			Muong" "Cha Nou" "Ma Noi" "Rajabud Yo" "Kin Kitsarat" "Ong Kham" "Thao Ang" "Inthara Vongsa" "Inthaphom Yo" 
+			"Khamteam" "Kongkeo" "Leu Xay" "Fa Kheun" "Yu Khong" "Nan Rat" "Saya Kumane" "Xiang Keo" "Fay Na" "No Muong"
+			"Cha Nou" "Ma Noi" "Rajabud Yo" "Kin Kitsarat" "Ong Kham" "Thao Ang" "Inthara Vongsa" "Inthaphom Yo" 
 			"Sotika Koumane" "Anurutha" "Manthaturat"
 		}
 		female_names = {
@@ -5183,8 +5220,7 @@ thai = {
 		male_names = {
 			"Kü Na" "Saenmuenagma" "Samfangkaen" "Tilokaracha" "Yotchiangrai" "Kaeo" "Ket" "Saikham" "Setthathirat" 
 			"Mekuti" "Nawrahta Minsaw" "Phra Choi" "Phra Chaiyathip" "Sisongmueang" "Luangthipphanet" "Phra Saenmueang" 
-			"Phrae" "Ingsemang" "Cheputarai" "Mangraenara" "Ong Kham" "Ong Chan" "Khihut" "Po Aphaikhamini" "Po 
-			Mayunguan" "Phraya Chaban" "Thammalangka" "Kawila"
+			"Phrae" "Ingsemang" "Cheputarai" "Mangraenara" "Ong Kham" "Ong Chan" "Khihut" "Po Aphaikhamini" "Po Mayunguan" "Phraya Chaban" "Thammalangka" "Kawila"
 		}
 		female_names = {
 			"Dara" "Mya" "Chiraprapha" "Wisutthithewi" "Yasuntarathewi"
@@ -5252,11 +5288,10 @@ burman = {
 			Khjungpo Dbas Mnyammed
 		}
 		male_names = {
-			"Gendun Drup" "Trakpa Chunge" "Sangye Gyantesen Pal Zangpo" "Dön-yö Dorje" "Ngawang Namgyal" "Töndup 
-			Tseten" "Phüntso Namgye" "Karma Tseten" "Lhawang Dorje" "Karma Ten-Kyong" "Gusri" "Dayan" "Tenzin Dalai" 
+			"Gendun Drup" "Trakpa Chunge" "Sangye Gyantesen Pal Zangpo" "Dön-yö Dorje" "Ngawang Namgyal" "Töndup Tseten" "Phüntso Namgye" "Karma Tseten" "Lhawang Dorje" "Karma Ten-Kyong" "Gusri" "Dayan" "Tenzin Dalai" 
 			"Lhabzang" "Tsewang Arabtan" "Phola Sonam Topbgye" "Gyurme Namgyal" "Lozang Gyastro" "Tsangyang Gyatso" 
-			"Kelzang Gyatso" "Jamphel Gyatso" "Lungtok Gyatso" "Tsultrim Gyatso" "Gendun Gyastro" "Sonam Gyastro" "Desi 
-			Sangay Gyatso" "Ngwaang Yeshi Gyatso" "Chang-chub" "Sakya Gyantsen" "Trakpa Richen" "Trakpa Chang-chub" 
+			"Kelzang Gyatso" "Jamphel Gyatso" "Lungtok Gyatso" "Tsultrim Gyatso" "Gendun Gyastro" "Sonam Gyastro" "Desi Sangay Gyatso"
+			"Ngwaang Yeshi Gyatso" "Chang-chub" "Sakya Gyantsen" "Trakpa Richen" "Trakpa Chang-chub" 
 			"Trakpa Chungne" "Sangye Gyamtso" "Lobsang Yeshe" "Palden Yeshi" "Ngapoi Takna" "Jigme Wangyal" "Tashi Chophel" "Bapu Gendun" "Rabtan" "Sengge" "Galdan" "Gushi" Dorjee Dote Kalden
 		}
 		female_names = {
@@ -5346,8 +5381,7 @@ burman = {
 			"Ran Aung O" "Salingathu" "Raza" "Gazapati" "Saw O" "Thazata" "Minkhaung" "Min Bin" "Dikha" "Saw Hla" 
 			"Sekkya" "Hpalaung" "Razagri" "Khamaung" "Thiri Thudhamma" "Sanay" "Narapati" "Thado" "Sanda Thudhamma" 
 			"Wara Dhamma" "Mani Dhamma" "Sanda Thuriya" "Nawrahta" "Mayonpiya" "Kalagandat" "Naradipati" "Sanda Wimala" 
-			"Sanda Wizaya" "Naradipadi" "Narapawara" "Madarit" "Nara Apaya" "Thirithu" "Apaya" "Sanda Thumana" "Sanda 
-			Thaditha" "Thammada"
+			"Sanda Wizaya" "Naradipadi" "Narapawara" "Madarit" "Nara Apaya" "Thirithu" "Apaya" "Sanda Thumana" "Sanda Thaditha" "Thammada"
 		}
 		female_names = {
 			"Saw Sit" "Saw Pu Nyo" "Saw Pyauk" "Saw Pyinsa" "Saw Yin Mi"
@@ -5413,8 +5447,8 @@ pacific = {
 	melanesian = {
 		male_names = {
 			"Komala Pulu" "Marhum" "Zainal Abidin" "Bayanullah" "Hidayatullah" "Abu Hayat" "Tabariji" "Khairun Jamil" 
-			"Babullah Datu Shah" "Said Barakat Shah" "Muzaffar Shah" "Hamzah" "Manilha" "Mandar Shah" "Sibori" "Said 
-			Fathullah" "Amir Iskandar Zulkarnain Saifuddin" "Ayan Shah" "Syah Mardan" "Jalaluddin" "Harun Shah" 
+			"Babullah Datu Shah" "Said Barakat Shah" "Muzaffar Shah" "Hamzah" "Manilha" "Mandar Shah" "Sibori" "Said Fathullah"
+			"Amir Iskandar Zulkarnain Saifuddin" "Ayan Shah" "Syah Mardan" "Jalaluddin" "Harun Shah" 
 			"Achral" "Muhammad Yasin" "Muhammad Ali"
 		}
 		female_names = {
@@ -5425,8 +5459,8 @@ pacific = {
 		primary = TER
 		male_names = {
 			"Komala Pulu" "Marhum" "Zainal Abidin" "Bayanullah" "Hidayatullah" "Abu Hayat" "Tabariji" "Khairun Jamil" 
-			"Babullah Datu Shah" "Said Barakat Shah" "Muzaffar Shah" "Hamzah" "Manilha" "Mandar Shah" "Sibori" "Said 
-			Fathullah" "Amir Iskandar Zulkarnain Saifuddin" "Ayan Shah" "Syah Mardan" "Jalaluddin" "Harun Shah" 
+			"Babullah Datu Shah" "Said Barakat Shah" "Muzaffar Shah" "Hamzah" "Manilha" "Mandar Shah" "Sibori" "Said Fathullah"
+			"Amir Iskandar Zulkarnain Saifuddin" "Ayan Shah" "Syah Mardan" "Jalaluddin" "Harun Shah" 
 			"Achral" "Muhammad Yasin" "Muhammad Ali"
 		}
 		female_names = {
@@ -5471,8 +5505,8 @@ eastern_aryan = {
 			"Sur"
 		}
 		male_names = {
-			"Sikandar" "Sher" "Ala-ud-Din Firuz" "Rukn ad-Din Barbak" "Jalal ad-Din Fateh" "Nasir-ud-Din Mahmud" "Nasir 
-			ad-Din Nasrat" "Jalaluddin Mohammed" "Islam" "Mirza Muhammad" "Shams-ud-Din Yusuf" "Shams-ud-Din Ahmad" 
+			"Sikandar" "Sher" "Ala-ud-Din Firuz" "Rukn ad-Din Barbak" "Jalal ad-Din Fateh" "Nasir-ud-Din Mahmud" "Nasir ad-Din Nasrat"
+			"Jalaluddin Mohammed" "Islam" "Mirza Muhammad" "Shams-ud-Din Yusuf" "Shams-ud-Din Ahmad" 
 			"Shams-ud-Din Muhammad" "Mir Muhammad Ja'far" "Shihab-ud-Din Bayazid" "Mir Qasim 'Ali" "Sayf-ud-Din Hamza" 
 			"Ghiyasuddin Azam" "Ghiyasuddin Mahmud" "Ghiyat ad-Din Bahadur" "Ghiyat ad-Din Jalal" "Da'ud" "Sulayman" 
 			"Murshid Quli" "Shuja' ad-Din Muhammad" "Azam" "Ahmad" "Abu Nasr" "Barbak" "Farid" "Yusuf" "Husain" "Firuz" 
@@ -5697,8 +5731,8 @@ hindusthani = {
 			"Ladakhi"
 		}
 		male_names = {
-			"Sikandar" "Ali Shah" "Zayn al-'Abidin" "Haydar Shah" "Hasan Shah" "Muhammad Shah" "Sayyid Hassan" "Fath 
-			Shah" "Ibrahim Shah" "Nazuk Shah" "Shams ad-Din" "Ismail Shah" "Ghazi Shah" "Husayn Shah" "Yusuf Shah" 
+			"Sikandar" "Ali Shah" "Zayn al-'Abidin" "Haydar Shah" "Hasan Shah" "Muhammad Shah" "Sayyid Hassan" "Fath Shah" "Ibrahim Shah"
+			"Nazuk Shah" "Shams ad-Din" "Ismail Shah" "Ghazi Shah" "Husayn Shah" "Yusuf Shah" 
 			"Lohir Shah" "Nabib Shah" "Ya'qub Shah" "Ibrahim" "Hassan" "Nazuk" "Yusuf" "Ya'qub" "Muhammad" "Ali" 
 			"Ismail" "Gulab" "Ranbir" "Hari" "Pratap" "Kishore" "Zorawar" "Jonaraja" "Prajna" "Hamza"
 		}
@@ -6027,10 +6061,8 @@ dravidian = {
 			"Kolathiri" "Saamoothiri" "Perumal" "Perumpadappu" "Kulasekhara" "Cheraman"
 		}
 		male_names = {
-			"Chera Udaya Varma" "Mootha" "Sri Vira Martanda" "Aditya" "Bala Rama Varma" "Martanda" 
-			"Sri Vira" "Udaya Martanda Varma" "Gouri Laksmi Bai" "Gouri Parvati Bai" "Ravi Varma" "Kotha 
-			Aditya Varma" "Ravi Ravi Varma" "Rama" "Unni" "Sri Vira Udaya Varma" "Sri Vira Varma" "Sri Vira 
-			Ravi Varma" "Marthanda Varma" "Udaya" "Ravi" "Unni" "Sri" "Kallada" "Marthanda" "Raman" "Eman" "Ramayyan" 
+			"Chera Udaya" "Mootha" "Sri Vira Martanda" "Aditya" "Bala Rama" "Martanda" 
+			"Sri Vira" "Udaya Martanda" "Gouri Laksmi Bai" "Gouri Parvati Bai" "Ravi" "Kotha Aditya" "Ravi Ravi" "Rama" "Unni" "Sri Vira Udaya" "Sri Vira" "Marthanda" "Udaya" "Ravi" "Unni" "Kallada" "Marthanda" "Raman" "Eman" "Ramayyan" 
 			"Thiruvattar" "Kodassery" "Koratty"
 		}
 		female_names = {
@@ -6120,8 +6152,7 @@ dravidian = {
 		}
 		male_names = {
 			"Quli" "Jamshid" "Subhan Quli" "Ibrahim" "Muhammed Quli" "Muhammed" "'Abdullah" "Abul'l-Hassan" "Kabir" 
-			"Mir Musa" "Quli Sultan" "Mahmud Gawan" "Sayid Hanif" "Imad al-Mulk" "Saif Allah" "Iftikhar al-Mulk" "Mir 
-			Abu'l-Qasim" "Ubbaid Allah" "Sayid Nasir al-Din" "Shah Khalil Allah" "Mullah Qutb al-Din" "Abd Allah" 
+			"Mir Musa" "Quli Sultan" "Mahmud Gawan" "Sayid Hanif" "Imad al-Mulk" "Saif Allah" "Iftikhar al-Mulk" "Mir Abu'l-Qasim" "Ubbaid Allah" "Sayid Nasir al-Din" "Shah Khalil Allah" "Mullah Qutb al-Din" "Abd Allah" 
 			"Rustam Khan" "Mir Shams al-Din" "Qasim Beg" "Khwaja Imad al-Din" "Mir Ali" "Khusrau" "Daud Khan" "Mujahid" 
 			"Quazi Siraj-ud-din" "Fulad Khan" "Jamal-ud-din" "Abdul" "Malik" "Ala-ud-din" "Malik-ut-Tujjar" "Sikandar" 
 			"Hakim"
@@ -6154,8 +6185,7 @@ central_indic = {
 		}
 		male_names = {
 			"Narsingh Rai" "Arjuna Simha" "Sangrama Simha" "Daipat Simha" "Vir Narayana" "Chandra Sahi" "Hirde" 
-			"Madhukara Sahi" "Dhundya Ram Sah" "Krasna Sah" "Bir Sah" "Hiradi" "Ram Sah" "Nilkanth Sah" "Chanda" "Bahkt 
-			Buland" "Bhuma" "Lokba" "Babji" "Dhundya" "Kondya" "Ram" "Krasna"
+			"Madhukara Sahi" "Dhundya Ram Sah" "Krasna Sah" "Bir Sah" "Hiradi" "Ram Sah" "Nilkanth Sah" "Chanda" "Bahkt Buland" "Bhuma" "Lokba" "Babji" "Dhundya" "Kondya" "Ram" "Krasna"
 		}
 		female_names = {
 			"Durgavati" "Hirai" "Ratna Kuvar"
@@ -6254,8 +6284,8 @@ mande = {
 		}
 		male_names = {
 			"Mule" "Mamadu" "Al-Hajj" "'Ali Zalil" "Muhammad" "Da'ud" "Bakari" "'Abd al-Rahman" "Bakr" "Al-Mukhtar" 
-			"Mahmud" "Majan" "Birahim" "'Ali" "Amada Sire" "Nguia" "Bubu" "Ilo" "Kanta" "Al-Mansur" "'Ammar" "Sa'ud 
-			'Arjud" "Haddu" "Sa'id" "Dhu al-Nun" "'Abd Allah" "Nasr" "Yahya" "Sanibar" "Hammadi" "'Abbas" "Benkano" 
+			"Mahmud" "Majan" "Birahim" "'Ali" "Amada Sire" "Nguia" "Bubu" "Ilo" "Kanta" "Al-Mansur" "'Ammar" "Sa'ud 'Arjud"
+			"Haddu" "Sa'id" "Dhu al-Nun" "'Abd Allah" "Nasr" "Yahya" "Sanibar" "Hammadi" "'Abbas" "Benkano" 
 			"Zenka" "Mami" "Ba-Bakribin" "'Abd al-Qadir" "Yusuf" "Santa'a" "Al-Fa' Ibrahim" "Sandaki" 
 		}
 		female_names = {
@@ -7062,8 +7092,7 @@ tartar	= {
 			"Arslan" "Baraq" "Bek Bulat" "Bolaq" "Cherkes" "Chokra" "Daniyal" "Darwish" "Darwish Ali" "Devlet Berdi" 
 			"Edigu" "Hajji Muhammad" "Husayn" "Ibak" "Ibrahim" "Ilham" "Ishim" "Jabbar Berdi" "Jalal al-Din" "Jan Ali" 
 			"Janay" "Jani Beg" "Jumaduq" "Karim Berdi" "Kebek" "Khalil" "Khaqan Beg" "Küchük Muhammad" "Kuchum" 
-			"Mahmud" "Mahmudak" "Mamai" "Mamuk" "Mansur" "Muhammad" "Murtaza" "Mustafa Ali" "Nogai" "Pulad" "Pulad 
-			Timur" "Qadir Berdi" "Qasim" "Sain Bulat" "Satilghan" "Sayid Ahmad" "Sayid Burhan" "Sayid Mahmud" 
+			"Mahmud" "Mahmudak" "Mamai" "Mamuk" "Mansur" "Muhammad" "Murtaza" "Mustafa Ali" "Nogai" "Pulad" "Pulad Timur" "Qadir Berdi" "Qasim" "Sain Bulat" "Satilghan" "Sayid Ahmad" "Sayid Burhan" "Sayid Mahmud" 
 			"Shadi Beg" "Shah Ali" "Shaikh Ahmad" "Shaikh Awliar" "Shaikh Haidar" "Shiban" "Taibugha" "Timur" 
 			"Timur Qutlugh" "Toqtamish" "Ulugh Muhammad" "Urus" "Urus Muhammad" "Yadigar Muhammad" "Yamghurchi"
 		}
@@ -7082,8 +7111,7 @@ tartar	= {
 			"Arslan" "Baraq" "Bek Bulat" "Bolaq" "Cherkes" "Chokra" "Daniyal" "Darwish" "Darwish Ali" "Devlet Berdi" 
 			"Edigu" "Hajji Muhammad" "Husayn" "Ibak" "Ibrahim" "Ilham" "Ishim" "Jabbar Berdi" "Jalal al-Din" "Jan Ali" 
 			"Janay" "Jani Beg" "Jumaduq" "Karim Berdi" "Kebek" "Khalil" "Khaqan Beg" "Küchük Muhammad" "Kuchum" 
-			"Mahmud" "Mahmudak" "Mamai" "Mamuk" "Mansur" "Muhammad" "Murtaza" "Mustafa Ali" "Nogai" "Pulad" "Pulad 
-			Timur" "Qadir Berdi" "Qasim" "Sain Bulat" "Satilghan" "Sayid Ahmad" "Sayid Burhan" "Sayid Mahmud" 
+			"Mahmud" "Mahmudak" "Mamai" "Mamuk" "Mansur" "Muhammad" "Murtaza" "Mustafa Ali" "Nogai" "Pulad" "Pulad Timur" "Qadir Berdi" "Qasim" "Sain Bulat" "Satilghan" "Sayid Ahmad" "Sayid Burhan" "Sayid Mahmud" 
 			"Shadi Beg" "Shah Ali" "Shaikh Ahmad" "Shaikh Awliar" "Shaikh Haidar" "Shiban" "Taibugha" "Timur" 
 			"Timur Qutlugh" "Toqtamish" "Ulugh Muhammad" "Urus" "Urus Muhammad" "Yadigar Muhammad" "Yamghurchi"
 		}

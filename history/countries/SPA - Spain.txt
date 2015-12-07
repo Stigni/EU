@@ -1,7 +1,6 @@
 government = despotic_monarchy
 primary_culture = castillian
 add_accepted_culture = sicilian
-culture_group_union = iberian
 religion = catholic
 technology_group = western
 historical_friend = POR

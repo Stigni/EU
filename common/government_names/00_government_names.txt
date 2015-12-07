@@ -43,11 +43,7 @@ march_christian_monarchy = {
 
 	trigger = {
 		government = monarchy
-		OR = {
-			religion = catholic
-			religion = protestant
-			religion = reformed
-		}
+		religion_group = christian
 		is_march = yes
 	}
 }
@@ -1615,7 +1611,7 @@ german_republic = {
 	rank = {
 		1 = REPUBLIC
 		2 = GRAND_REPUBLIC
-		3 = GREAT_REPUBLIC
+		3 = FEDERAL_REPUBLIC
 	}
 
 	ruler_male = {
@@ -1999,7 +1995,7 @@ shiite_theocracy = {
 	}
 
 	trigger = {
-		religion = ibadi
+		religion = shiite
 		government = theocracy
 	}
 }
@@ -2026,7 +2022,10 @@ uyghur_theocracy = {
 	trigger = {
 		religion = sunni
 		government = theocracy
-		primary_culture = uyghur
+		OR = {
+			primary_culture = uyghur
+			has_country_flag = end_of_khojas
+		}
 	}
 }
 
@@ -2044,8 +2043,8 @@ sunni_theocracy = {
 	}
 
 	ruler_female = {
-		2 = IMAM
 		1 = SHEIKH
+		2 = IMAM
 		3 = HIGH_IMAM
 	}
 

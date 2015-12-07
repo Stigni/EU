@@ -10,6 +10,7 @@ base_production = 5
 trade_goods = iron
 base_manpower = 2
 capital = "Gorizia"
+estate = estate_nobles
 is_city = yes
 hre = yes
 discovered_by = western
@@ -29,7 +30,6 @@ discovered_by = ottoman
 	owner = HAB
 	controller = HAB
 	remove_core = STY
-	add_core = HAB
 }
 1525.5.1 = { unrest = 5 } # Farmer insurrections 
 1526.1.1 = { unrest = 0 }

@@ -1,7 +1,6 @@
 government = feudal_monarchy
 government_rank = 3
 primary_culture = greek
-culture_group_union = byzantine
 religion = orthodox
 technology_group = eastern
 historical_rival = TUR

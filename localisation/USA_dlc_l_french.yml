@@ -225,7 +225,7 @@
  american_republic_ruler: "Président"
  american_republic_ruler_female: "Présidente"
  american_republic_desc: "Les Treize États-Unis d'Amérique sont une confédération, chaque État étant indépendant et possédant son gouvernement propre. Toutefois un président, élu pour sept ans, dirige l'ensemble de la confédération."
- federal_republic: "République fédérale"
+ FEDERAL_REPUBLIC: "République fédérale"
  federal_republic_ruler: "Président"
  federal_republic_ruler_female: "Présidente"
  federal_republic_desc: "Les Treize États-Unis d'Amérique sont une fédération, chaque État étant indépendant et possédant son gouvernement propre. Toutefois un président, élu pour quatre ans, dirige l'ensemble de la fédération."

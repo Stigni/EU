@@ -1,7 +1,7 @@
 #1036 - Podzhiversk
 
 culture = yukagyr
-religion = shamanism
+religion = tengri_pagan_reformed
 capital = "Srednekolymsk"
 trade_goods = unknown
 hre = no

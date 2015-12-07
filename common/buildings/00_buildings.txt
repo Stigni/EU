@@ -29,24 +29,12 @@ marketplace = {
 	ai_will_do = {
 		factor = 100
 		modifier = {
-			factor = 0
-			NOT = { province_trade_power = 4 }
-		}		
-		modifier = {
 			factor = 0.1
-			NOT = { province_trade_power = 6 }
-		}
-		modifier = {
-			factor = 1.5
-			province_trade_power = 8
+			NOT = { province_trade_power = 5 }
 		}		
 		modifier = {
-			factor = 1.5
+			factor = 20
 			province_trade_power = 10
-		}
-		modifier = {
-			factor = 1.5
-			province_trade_power = 12
 		}	
 	}
 }
@@ -430,24 +418,12 @@ trade_depot = {
 	ai_will_do = {
 		factor = 100
 		modifier = {
-			factor = 0
-			NOT = { province_trade_power = 4 }
-		}		
-		modifier = {
 			factor = 0.1
-			NOT = { province_trade_power = 6 }
-		}
-		modifier = {
-			factor = 1.5
-			province_trade_power = 8
+			NOT = { province_trade_power = 5 }
 		}		
 		modifier = {
-			factor = 1.5
+			factor = 20
 			province_trade_power = 10
-		}
-		modifier = {
-			factor = 1.5
-			province_trade_power = 12
 		}		
 	}
 }
@@ -585,25 +561,13 @@ stock_exchange = {
 	ai_will_do = {
 		factor = 100
 		modifier = {
-			factor = 0
-			NOT = { province_trade_power = 4 }
-		}		
-		modifier = {
 			factor = 0.1
-			NOT = { province_trade_power = 6 }
-		}
-		modifier = {
-			factor = 1.5
-			province_trade_power = 8
+			NOT = { province_trade_power = 5 }
 		}		
 		modifier = {
-			factor = 1.5
+			factor = 20
 			province_trade_power = 10
-		}
-		modifier = {
-			factor = 1.5
-			province_trade_power = 12
-		}			
+		}				
 	}
 }
 

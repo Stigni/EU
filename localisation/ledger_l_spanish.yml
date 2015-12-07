@@ -195,4 +195,4 @@
  LEDGER_SCORE_PLACEMENT: "Colocación"
  LEDGER_CURRENT_PRICE_WITH_BASE: "Precio actual: $PRICE$ (Base: $BASE$)"
  LEDGER_DEVELOPMENT: "Desarrollo"
- LEDGER_COUNTRY_DESC2: "$WHO$ es un \\'$GOV|Y$\\'."
+ LEDGER_COUNTRY_DESC2: "$WHO$ es un '$GOV|Y$'."

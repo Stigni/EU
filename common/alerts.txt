@@ -235,4 +235,16 @@ alerts = {
 	alert_low_stability = {
 		category = MEDIUM
 	}
+	
+	alert_no_native_policy = {
+		category = MEDIUM
+	}
+	
+	alert_disloyal_estate = {
+		category = MEDIUM
+	}
+	
+	alert_weak_estate = {
+		category = MEDIUM
+	}
 }

@@ -333,3 +333,5 @@
  HINT_PRIVATEERING_TEXT: "Piratear es posible con cualquier flota que contenga barcos ligeros. Una flota que piratea añadirá que el poder comercial de sus navios ligeros a una nación pirata en cualquier nodo comercial seleccionado. A diferencia de la misión de proteger el comercio, no se requiere poder comercial existente en un nodo comercial para comenzar una misión de corsario. "
  HINT_IMPROVERELATIONS_TITLE: "Mejorar las relaciones"
  HINT_IMPROVERELATIONS_TEXT: "Puedes enviar a un diplomático para mejorar las relaciones con otro pais. Cada mes que el diplomático permanezca activo su opinión sobre ti aumentará hasta alcanzar un máximo, en el que se te preguntará si deseas que el diplomático mantenga las relaciones o regrese a su hogar. Las relaciones con vasallos, marcas y socios menores en una unión personal subalterno puede mejorar más que con otras naciones. "
+ HINT_TERRAINCOGNITA_NEED_EXPLORER: "§RPara descubrir Tierra Incognita, tu flota debe estar dirigida por un explorador.§!"
+ HINT_TERRAINCOGNITA_OUT_OF_RANGE: "§R- Nuestro rango de colonización todavía no nos permite explorar esto.§!"

@@ -79,22 +79,23 @@ monarch_names = {
 	"Theodoros #0" = 0
 	"Timotheos #0" = 0
 	
-	"Agape #0" = -1
+	"Maria #0" = -1
 	"Photine #0" = -1
 	"Sotiria #0" = -1
 }
 
 leader_names = {
-	Kamil
-	Akyel
-	Atan
-	Yattara
-	Cimsir
-	Sungur
-	Bulut
-	Riza
-	Zengin
-	Said
+	Komnenos
+	Gidos
+	Axuochos
+	Amiroutzes
+	Trepizuntius
+	Choniades
+	Lazaropoulos
+	Panaretos
+	Xiphilinos
+	Bessarion
+	Chalkokondyles
 }
 
 ship_names = {

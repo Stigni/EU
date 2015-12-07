@@ -17,7 +17,7 @@
  SIEGE_CHANCE_EXPLANATION: "Cada vez que hay una fase de asedio, hay una tirada de dado (§Y$MIN$§! to §Y$MAX$§!). Esta tirada se añade a los modificadores de asedio ($MODIFIERS$).\nLos resultados de la tirada son los siguientes::"
  SIEGE_CHANCE_LINE: "$NAME$: $RANGE$ (Probabilidad: $CHANCE$)"
  SIEGE_DATES: "días.días."
- SIEGE_PAUSING_CONSTRUCTION: "§REl progreso se para mientras la provincia esté asediada.\nSi el asedio se pierde, el progreso se perderá también.§!"
+ SIEGE_PAUSING_CONSTRUCTION: "§REl progreso se para mientras la provincia esté asediada.§!"
  PEACE_OFFER_GOLD_LIMIT: "préstamo"
  ANNUL_TREATIES_CANT_GUARANTEE: "No se puede garantizar ya que tenemos tratados que anular antes de  §Y$DATE$§!"
  ANNUL_TREATIES_CANT_ALLIANCE: "No se puede crear la alianza ya que tenemos tratados que anular antes de  §Y$DATE$§!"

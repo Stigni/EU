@@ -61,7 +61,7 @@ ai_capitalist = {
 			government = merchant_republic
 		}	
 		modifier = {
-			factor = 2
+			factor = 3
 			tag = PAP
 		}
 		modifier = {
@@ -149,7 +149,11 @@ ai_diplomat = {
 			factor = 1.5
 			is_emperor = yes
 			num_of_cities = 10
-		}				
+		}
+		modifier = {
+			factor = 2
+			tag = HAB
+		}		
 		modifier = {
 			factor = 2
 			tag = FRA
@@ -159,7 +163,7 @@ ai_diplomat = {
 			tag = BYZ
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			tag = PAP
 		}		
 		modifier = {

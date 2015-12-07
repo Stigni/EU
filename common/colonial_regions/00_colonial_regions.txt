@@ -123,8 +123,8 @@ colonial_canada = {
 			OR = {
 				any_owned_province = {
 					OR = {
-						region = highlands
-						region = lowlands
+						area = highlands_area
+						area = lowlands_area
 					}
 				}
 				overlord_of = SCO
@@ -186,8 +186,8 @@ colonial_canada = {
 			}
 			any_owned_province = {
 				OR = {
-					region = highlands
-					region = lowlands
+					area = highlands_area
+					area = lowlands_area
 				}
 			}
 		}
@@ -1025,7 +1025,7 @@ colonial_la_plata = {
 		785 2843 2844 2845 2847 2867 2871 2872 2877 #Cuyo
 		779 2860 2861 2865 2866 #Southern Pampas
 		777 778 2846 2848 2849 2853 2855 2858 2859 #Buenos Aires
-		791 794 2836 2837 2839 2842 #Tucoman
+		791 794 2836 2837 2839 2842 #tucuman
 		790 2854 2878 #Chaco
 		772 773 2850 2851 2852 #Banda Oriental
 		783 784 787 792 793 796 2840 2841 2862 2873 2874 #Chile
@@ -1222,4 +1222,45 @@ colonial_australia = {
 	names = {
 		name = "COLONIAL_REGION_Terra_Australis"
 	}
+}
+
+# Used for RNW
+colonial_placeholder_1 = {
+	color = { 211 108 45 }
+}
+
+colonial_placeholder_2 = {
+	color = { 152 148 183 }
+}
+
+colonial_placeholder_3 = {
+	color = { 247 158 146 }
+}
+
+colonial_placeholder_4 = {
+	color = { 20 107 142 }
+}
+
+colonial_placeholder_5 = {
+	color = { 228 168 201 }
+}
+
+colonial_placeholder_6 = {
+	color = { 13 81 174 }
+}
+
+colonial_placeholder_7 = {
+	color = { 64 54 203 }
+}
+
+colonial_placeholder_8 = {
+	color = { 171 41 160 }
+}
+
+colonial_placeholder_9 = {
+	color = { 113 23 68 }
+}
+
+colonial_placeholder_10 = {
+	color = { 95 125 183 }
 }

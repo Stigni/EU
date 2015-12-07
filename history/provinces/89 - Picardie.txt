@@ -5,6 +5,7 @@ controller = FRA
 add_core = FRA
 capital = "Amiens"
 is_city = yes
+estate = estate_nobles
 culture = cosmopolitan_french
 religion = catholic
 hre = no

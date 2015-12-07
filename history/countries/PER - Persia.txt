@@ -1,6 +1,5 @@
 government = iqta
 primary_culture = persian
-culture_group_union = iranian
 religion = shiite
 technology_group = muslim
 capital = 416 # Tabriz
