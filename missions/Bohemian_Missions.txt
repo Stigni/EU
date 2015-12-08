@@ -6,7 +6,10 @@ defend_bohemia_against_hungary = {
 	
 	target_provinces = {
 		owned_by = HUN
-		region = bohemian_region
+		OR = {
+			area = bohemia_area
+			area = erzgebirge_area
+		}
 	}
 	
 	allow = {
@@ -15,8 +18,13 @@ defend_bohemia_against_hungary = {
 		exists = HUN
 		is_subject = no
 		is_neighbor_of = HUN
-		bohemian_region = {
-			owned_by = HUN
+		OR = {
+			erzgebirge_area = {
+				owned_by = HUN
+			}
+			bohemia_area = {
+				owned_by = HUN
+			}
 		}
 		HUN = {
 			NOT = { alliance_with = ROOT }

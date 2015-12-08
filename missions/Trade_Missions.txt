@@ -11,7 +11,7 @@ gain_tradepost_in_china = {
 		}
 		num_of_ports = 6
 		NOT = { chinaware = 1 }
-		chinese_coast = {
+		south_china_region = {
 			has_port = yes
 			range = ROOT
 			has_discovered = ROOT
@@ -81,6 +81,20 @@ increase_spices_trade = {
 		num_of_ports = 3
 		spices = 1
 		NOT = { spices = 3}
+		OR = {
+			coromandel_region = {
+				has_discovered = ROOT
+				range = ROOT
+			}
+			deccan_region = {
+				has_discovered = ROOT
+				range = ROOT
+			}
+			indonesia_region = {
+				has_discovered = ROOT
+				range = ROOT
+			}
+		}
 	}
 	abort = {
 		NOT = { num_of_ports = 1 }
@@ -99,9 +113,9 @@ increase_spices_trade = {
 			full_idea_group = expansion_ideas
 		}
 		modifier = {
-			factor = 1.05
+			factor = 1.10
 			full_idea_group = exploration_ideas
-		}		
+		}	
 	}
 	effect = {
 		set_country_flag = increased_spice_trade

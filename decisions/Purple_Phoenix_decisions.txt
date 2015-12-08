@@ -12,11 +12,14 @@ country_decisions = {
 			}
 			has_dlc = "Purple Phoenix"
 			NOT = { has_country_flag = triumph_greece }
-			greece_region = { owned_by = BYZ }
+			OR = {
+				morea_area = { owned_by = BYZ }
+				northern_greece_area = { owned_by = BYZ }
+			}
 		}
 		allow = {
-			greece_region = { type = all owned_by = BYZ }
-			
+			northern_greece_area = { type = all owned_by = BYZ }
+			morea_area = { type = all owned_by = BYZ }
 		}
 		effect = {
 			add_prestige = 10
@@ -38,10 +41,7 @@ country_decisions = {
 			}
 			has_dlc = "Purple Phoenix"
 			NOT = { has_country_flag = triumph_balkans }
-			OR = {
-				eastern_balkans = { owned_by = BYZ }
-				western_balkans = { owned_by = BYZ }
-			}
+			balkan_region = { owned_by = BYZ }
 		}
 		allow = {
 			owns = 159
@@ -76,11 +76,16 @@ country_decisions = {
 			}
 			has_dlc = "Purple Phoenix"
 			NOT = { has_country_flag = triumph_asia }
-			asia_minor = { owned_by = BYZ }
+			OR = {
+				eastern_aegean_area = { owned_by = BYZ }
+				aydin_area = { owned_by = BYZ }
+				hudavendigar_area = { owned_by = BYZ }
+			}
 		}
 		allow = {
-			asia_minor = { type = all owned_by = BYZ }
-			
+			eastern_aegean_area = { type = all owned_by = BYZ }
+			aydin_area = { type = all owned_by = BYZ }
+			hudavendigar_area = { type = all owned_by = BYZ }
 		}
 		effect = {
 			add_prestige = 10
@@ -102,11 +107,10 @@ country_decisions = {
 			}
 			has_dlc = "Purple Phoenix"
 			NOT = { has_country_flag = triumph_anatolia }
-			anatolia = { owned_by = BYZ }
+			anatolia_region = { owned_by = BYZ }
 		}
 		allow = {
-			anatolia = { type = all owned_by = BYZ }
-			
+			anatolia_region = { type = all owned_by = BYZ }
 		}
 		effect = {
 			add_prestige = 20
@@ -128,10 +132,10 @@ country_decisions = {
 			}
 			has_dlc = "Purple Phoenix"
 			NOT = { has_country_flag = triumph_italy }
-			italian_region = { owned_by = BYZ }
+			italy_region = { owned_by = BYZ }
 		}
 		allow = {
-			italian_region = { type = all owned_by = BYZ }
+			italy_region = { type = all owned_by = BYZ }
 			
 		}
 		effect = {

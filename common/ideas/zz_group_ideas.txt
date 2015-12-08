@@ -7,7 +7,7 @@ client_ideas = {
 	}
 	
 	bonus = {
-		build_cost = -0.2
+		build_cost = -0.1
 	}
 	
 	trigger = {
@@ -61,7 +61,7 @@ colonial_ideas = {
 		global_prov_trade_power_modifier = 0.25
 	}
 	religious_outposts = {
-		global_missionary_strength = 0.03
+		global_missionary_strength = 0.02
 	}
 	free_thinkers = {
 		idea_cost = -0.1
@@ -102,6 +102,7 @@ berber_ideas = {
 	}
 	trans_saharan_trade = {
 		trade_efficiency = 0.1
+		caravan_power = 0.2
 	}
 	corsairs = {
 		navy_tradition = 1
@@ -333,7 +334,7 @@ indian_muslim_ideas = {
 
 horde_ideas = {
 	start = {
-		no_cost_for_reinforcing = yes
+		ae_impact = -0.10
 		years_of_nationalism = -5
 	}
 	
@@ -353,7 +354,7 @@ horde_ideas = {
 		cavalry_power = 0.20
 	}
 	horse_supplies = {
-		land_maintenance_modifier = -0.20
+		land_maintenance_modifier = -0.10
 	}
 	steppe_leaders = {
 		leader_land_shock = 1
@@ -690,7 +691,7 @@ latin_ideas = {
 	
 	trigger = {
 		culture_group = latin
-		capital_scope = { region = italian_region }
+		capital_scope = { region = italy_region }
 	}
 	free = yes
 	
@@ -1200,7 +1201,7 @@ caucasus_ideas = {
 	}
 	alan_mercenaries = {
 		mercenary_cost = -0.1
-		possible_mercenaries = 0.25
+		possible_mercenaries = 0.125
 	}
 	caucasus_hit_and_run = {
 		leader_land_manuever = 1		

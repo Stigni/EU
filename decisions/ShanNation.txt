@@ -33,6 +33,7 @@ country_decisions = {
 			owns_core_province = 2399 #Pagan
 			owns_core_province = 2400 #Hsipaw
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 		}
 		effect = {
@@ -61,9 +62,9 @@ country_decisions = {
 						is_core = SST
 					}
 				}
-				add_claim = SST
+				add_permanent_claim = SST
 			}
-			swap_free_idea_group = yes		#keep progress
+			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		ai_will_do = {
 			factor = 1

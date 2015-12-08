@@ -29,6 +29,7 @@ country_decisions = {
 		}
 		allow = {
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			is_tribal = no
 			NOT = { exists = PER }
@@ -58,11 +59,11 @@ country_decisions = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
-			persian_region = {
+			persia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = PER
+				add_permanent_claim = PER
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -78,7 +79,7 @@ country_decisions = {
 				change_technology_group = muslim
 				change_unit_type = muslim
 			}
-			swap_free_idea_group = yes		#keep progress
+			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		ai_will_do = {
 			factor = 1

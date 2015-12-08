@@ -140,7 +140,7 @@ conquer_sicily = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = sicily_region
+		area = sicily_area
 		NOT = {
 			owner = { alliance_with = ROOT }
 			owner = { vassal_of = ROOT }
@@ -152,7 +152,7 @@ conquer_sicily = {
 		NOT = { has_country_modifier = mediterranean_ambition }
 		NOT = { has_country_flag = conquest_of_sicily_ara }
 		is_subject = no
-		sicily_region = {
+		sicily_area = {
 			NOT = { owned_by = ROOT }
 			owner = {
 				NOT = { war_with = ROOT }
@@ -220,10 +220,7 @@ conquer_naples = {
 		owns = 125		# Palermo
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			NOT = { is_subject_of = ROOT }
-		}
+		is_subject = yes
 	}
 	success = {
 		NOT = { exists = NAP }

@@ -14,6 +14,7 @@ reclaim_jerusalem = {
 				NOT = { religion_group = christian }
 				NOT = { alliance_with = ROOT }				
 			}
+			range = ROOT
 		}
 		religion_group = christian
 		is_at_war = no
@@ -73,6 +74,7 @@ reclaim_mecca = {
 			owner = { 
 				NOT = { religion_group = muslim } 
 			}
+			range = ROOT
 		}
 		religion_group = muslim
 		is_at_war = no

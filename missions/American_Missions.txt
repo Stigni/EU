@@ -8,10 +8,10 @@ defend_the_american_colonies = {
 		normal_or_historical_nations = yes
 		tag = USA
 		is_subject = no
-		the_thirteen_colonies = {
+		northeast_america_region = {
 			owned_by = USA
 		}
-		the_thirteen_colonies = {
+		northeast_america_region = {
 			owned_by = GBR
 		}
 	}
@@ -20,7 +20,7 @@ defend_the_american_colonies = {
 	}
 	success = {
 		NOT = { war_with = GBR }
-		the_thirteen_colonies = {
+		northeast_america_region = {
 			type = all
 			owned_by = USA
 		}
@@ -149,19 +149,19 @@ reach_the_mississippi = {
 		NOT = { has_country_modifier = military_victory }
 		tag = USA
 		is_subject = no
-		the_mississippi_region = {
+		mississippi_region = {
 			any_neighbor_province = { owned_by = ROOT }
 		}
-		NOT = { the_mississippi_region = { owned_by = ROOT } }
+		NOT = { mississippi_region = { owned_by = ROOT } }
 	}
 	abort = {
 		OR = {
 			is_subject = yes
-			NOT = { the_mississippi_region = { any_neighbor_province = { owned_by = ROOT } } }
+			NOT = { mississippi_region = { any_neighbor_province = { owned_by = ROOT } } }
 		}
 	}
 	success = {
-		the_mississippi_region = { owned_by = ROOT }
+		mississippi_region = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 3000

@@ -289,7 +289,8 @@ FRA_ideas = {
 		global_tax_modifier = 0.1
 	}
 	native_trading_principles = {
-		reduced_native_attacks = yes
+		native_uprising_chance = -0.5
+		native_assimilation = 0.5
 	}
 	vauban_fortifications = {
 		fort_maintenance_modifier = -0.2
@@ -351,7 +352,7 @@ VEN_ideas = {
 	}
 	
 	bonus = {
-		galley_power = 0.50
+		galley_power = 0.25
 	}
 	
 	trigger = {
@@ -458,7 +459,7 @@ POR_ideas = {
 		merchants = 1
 	}
 	royal_absolutism = {
-		build_cost = -0.25
+		build_cost = -0.15
 	}
 	land_before_faith = {
 		global_colonial_growth = 15
@@ -471,7 +472,7 @@ POR_ideas = {
 
 POL_ideas = {
 	start = {
-		cavalry_cost = -0.2
+		cavalry_cost = -0.1
 		accepted_culture_threshold = -0.15
 	}
 	
@@ -706,7 +707,7 @@ BUR_Ideas = {
 		mercenary_cost = -0.20
 	}
 	bur_estates_general = {
-		possible_mercenaries = 1.0
+		possible_mercenaries = 0.5
 	}
 	reform_of_feudal_army = {
 		discipline = 0.05
@@ -1201,7 +1202,7 @@ VIJ_ideas = {
 	}
 	
 	bonus = {
-		possible_mercenaries = 1.0
+		possible_mercenaries = 0.5
 	}
 	
 	trigger = {
@@ -1356,7 +1357,7 @@ OMA_ideas = {
 KOR_ideas = {
 	start = {
 		global_own_trade_power = 0.25
-		build_cost = -0.20
+		build_cost = -0.1
 	}
 	
 	bonus = {
@@ -1474,8 +1475,8 @@ ITA_ideas = {
 
 MCH_ideas = {
 	start = {
-		no_cost_for_reinforcing = yes	
-		land_maintenance_modifier = -0.2
+		leader_land_shock = 1	
+		land_maintenance_modifier = -0.1
 	}
 	
 	bonus = {
@@ -2527,7 +2528,7 @@ NPL_ideas = {
 KNI_ideas = {
 	start = {
 		discipline = 0.05
-		global_unrest = -2
+		tolerance_heretic = 4		
 	}
 	
 	bonus = {
@@ -2553,7 +2554,7 @@ KNI_ideas = {
 		privateer_efficiency = 0.25
 	}
 	ecumenical_defenders_of_christendom = {
-		tolerance_heretic = 3
+		global_unrest = -2
 	}
 	scourge_of_the_corsairs = {
 		naval_forcelimit_modifier = 0.5
@@ -2746,7 +2747,7 @@ CHICK_ideas = {
 	free = yes		# will be added at load
 	
 	moundbilders_legacy = {
-		build_cost = -0.15
+		build_cost = -0.1
 	}
 	spartans_of_miss = {
 		infantry_power = 0.1
@@ -2789,7 +2790,7 @@ CHE_ideas = {
 	free = yes		# will be added at load
 	
 	moundbilders_legacy_CHE = {
-		build_cost = -0.15
+		build_cost = -0.1
 	}
 	massacre_of_the_anikutani = {
 		stability_cost_modifier = -0.1
@@ -2831,7 +2832,7 @@ PUE_ideas = {
 		enemy_core_creation = 0.25
 	}
 	adobe_architecture = {
-		build_cost = -0.20
+		build_cost = -0.1
 	}
 	mesa_settlements = {
 		defensiveness = 0.15
@@ -2907,7 +2908,7 @@ CRE_ideas = {
 	free = yes		# will be added at load
 	
 	moundbilders_legacy_CRE = {
-		build_cost = -0.15
+		build_cost = -0.1
 	}
 	creek_caste_system = {
 		stability_cost_modifier = -0.1
@@ -3286,11 +3287,11 @@ CRO_ideas = {
 
 CYP_ideas = {
 	start = {
-		naval_forcelimit_modifier = 0.2
 		galley_cost = -0.2
+		tolerance_heretic = 4
 	}
 	bonus = {
-		navy_tradition_decay = -0.01
+		naval_forcelimit_modifier = 0.33
 	}
 	trigger = {
 		tag = CYP
@@ -3820,7 +3821,7 @@ PSK_ideas = {
 		global_unrest = -2
 	}
 	psk_knights_guard = {
-		possible_mercenaries = 0.50
+		possible_mercenaries = 0.25
 	}
 	arts_and_crafts_of_pskov = {
  		global_trade_power = 0.1
@@ -3873,7 +3874,7 @@ SMO_ideas = {
 BOS_ideas = {
 	start = {	
 		religious_unity = 0.25
-		tolerance_heretic = 3	
+		tolerance_heretic = 4	
 	}
 	
 	bonus = {
@@ -4253,7 +4254,7 @@ ROM_ideas = {
 ATH_ideas = {
 	start = {
 		defensiveness = 0.1
-		stability_cost_modifier = -0.1		
+		tolerance_heretic = 4
 	}
 	bonus = {
 		land_morale = 0.1
@@ -4290,11 +4291,11 @@ ATH_ideas = {
 GOT_ideas = {
 	start = {
 		privateer_efficiency = 0.15
-		naval_forcelimit_modifier = 0.25
+		core_creation = -0.15
 	}
 	
 	bonus = {
-		mercenary_cost = -0.2
+		trade_efficiency = 0.1
 	}
 	
 	trigger = {
@@ -4303,10 +4304,10 @@ GOT_ideas = {
 	free = yes
 	
 	rebuild_visby = {
-		build_cost = -0.1
+		development_cost = -0.1
 	}
 	invite_mercenaries_to_visby = {
-		possible_mercenaries = 1.0
+		merc_maintenance_modifier = -0.25
 	}
 	expand_visby_dockyard = {
 		global_ship_cost = -0.1
@@ -4318,7 +4319,7 @@ GOT_ideas = {
 		merchants = 1
 	}
 	gutnish_merchant_navy = {
- 		light_ship_power = 0.15
+		naval_forcelimit_modifier = 0.33
 	}
 	found_visby_bank = {
 		interest = -1
@@ -4350,7 +4351,8 @@ FIN_ideas = {
 		production_efficiency = 0.1
 	}
 	settle_middle_finland = {
-		build_cost = -0.15
+		build_cost = -0.1
+		development_cost = -0.1
 	}
 	found_turun_akatemia = {
 		technology_cost = -0.05
@@ -4460,7 +4462,7 @@ PRM_ideas = {
 		advisor_cost = -0.1
 	}
 	turkic_mercenaries = {
-		cavalry_cost = -0.15
+		cavalry_cost = -0.1
 	}	
 	the_old_traditions = {
 		global_unrest = -1		
@@ -4585,7 +4587,7 @@ INC_ideas = {
 		global_manpower_modifier = 0.1
 	}
 	mita_system = {
-		build_cost = -0.2
+		build_cost = -0.1
 	}
 	llama_michis = {
 		production_efficiency = 0.1
@@ -4829,7 +4831,7 @@ KIE_ideas = {
 
 NAX_ideas = {
 	start = {
-		galley_power = 0.2
+		tolerance_heretic = 4
 		fabricate_claims_time = -0.2
 	}
 	
@@ -4843,6 +4845,7 @@ NAX_ideas = {
 	free = yes
 	
 	maritime_state = {
+		galley_power = 0.1	
 		naval_forcelimit_modifier = 0.2
 	}
 	naxos_rules_the_waves = {
@@ -4948,7 +4951,7 @@ POM_ideas = {
 
 KAZ_ideas = {
 	start = {
-		no_cost_for_reinforcing = yes		
+		ae_impact = -0.10		
 		tolerance_heathen = 2		
 	}
 	
@@ -5003,7 +5006,7 @@ ARM_ideas = {
 		global_missionary_strength = 0.02
 	}
 	land_reclamation = {
-		build_cost = -0.15
+		build_cost = -0.1
 	}
 	border_nation = {
 		diplomatic_reputation = 1
@@ -5104,7 +5107,7 @@ hausa_ideas = {
 	}
 
 	sarkin_bayi = {
-		build_cost = -0.20
+		build_cost = -0.1
 	}
 	
 	borno_refugees = { 
@@ -5817,7 +5820,7 @@ WBG_ideas = {
 CEY_ideas = {
 	start = {
 		defensiveness = 0.1
-		merchants = 1
+		trade_efficiency = 0.1		
 	}
 
 	bonus = {
@@ -5836,7 +5839,7 @@ CEY_ideas = {
 		prestige = 1
 	}
 	pearl_of_the_indian_ocean = {
-		trade_efficiency = 0.1
+		merchants = 1
 	}
 	cey_centre_of_learning = {
 		diplomatic_reputation = 1
@@ -6648,7 +6651,7 @@ PEG_ideas = {
 
 KUT_ideas = {
 	start = {
-		global_own_trade_power = 0.1
+		global_prov_trade_power_modifier = 0.1
 		trade_steering = 0.2
 	}
 
@@ -6747,7 +6750,7 @@ LDK_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	ldk_great_monasteries = {
-		build_cost = -0.15
+		build_cost = -0.1
 	}
 	ldk_la_dvags_rgyal_rabs = {
 		stability_cost_modifier = -0.1
@@ -6844,7 +6847,7 @@ ORL_ideas = {
 	}
 
 	bonus = {
-		build_cost = -0.15
+		build_cost = -0.1
 	}
 	
 	trigger = {
@@ -6901,6 +6904,7 @@ ORM_ideas = {
 	}
 	orm_far_reaching_diplomacy = {
 		diplomatic_upkeep = 1
+		diplomatic_reputation = 1
 	}
 	orm_secure_trading_monopoly = {
 		global_trade_power = 0.1
@@ -7450,4 +7454,42 @@ JMN_ideas = {
 		development_cost = -0.1
 	}
 	
+}
+
+TRT_ideas = {
+	start = {
+		global_tax_modifier = 0.10
+		tolerance_own = 2
+	}
+
+	bonus = {
+		diplomatic_reputation = 1
+	}
+	
+	trigger = {
+		tag = TRT
+	}
+	free = yes
+
+	trt_scholars_and_poets = {
+		advisor_cost = -0.1
+	}
+	trt_gateway_to_india = {
+		trade_efficiency = 0.1
+	}
+	trt_brahmin_kings = {
+		prestige = 1
+	}
+	trt_purbias = {
+		infantry_power = 0.1
+	}
+	trt_river_landscape = {
+		hostile_attrition = 1.0
+	}
+	trt_tirhuta = {
+		stability_cost_modifier = -0.1
+	}
+	trt_indigo = {
+		global_trade_goods_size_modifier = 0.1
+	}
 }

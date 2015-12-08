@@ -21,57 +21,13 @@ country_decisions = {
 		}
 		effect = {
 			set_country_flag = relocated_capital_warsawa
-			add_years_of_income = -1
 			set_capital = 257
 			add_prestige = 20
 			257 = {
 			 	add_base_tax = 1 
+				add_base_production = 1
 			 	add_base_manpower = 1
-			 }
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { years_of_income = 1.25 }
 			}
-		}
-	}
-
-	form_union_with_lithuania = {
-		major = yes
-		potential = {
-			tag = POL
-			normal_or_historical_nations = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			LIT = {
-				ai = yes
-				exists = yes
-				was_player = no
-				NOT = { junior_union_with = POL }
-				has_ruler = "Kazimierz"
-				dynasty = "Jagiellon"
-			}
-		}
-		allow = {
-			stability = 1
-			dip_power = 100
-			has_regency = yes
-			has_heir = no
-			is_subject = no
-			is_at_war = no
-			LIT = {
-				has_ruler = "Kazimierz"
-				dynasty = "Jagiellon"
-				is_subject = no
-			}
-		}
-		effect = {
-			add_dip_power = -200
-			create_union = LIT
 		}
 		ai_will_do = {
 			factor = 1

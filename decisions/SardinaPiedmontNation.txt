@@ -26,6 +26,7 @@ country_decisions = {
 		allow = {
 			adm_tech = 10
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			OR = {
 				AND = {
@@ -103,6 +104,7 @@ country_decisions = {
 		allow = {
 			adm_tech = 10
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			prestige = 75
 			dip = 3
@@ -114,6 +116,7 @@ country_decisions = {
 					senior_union_with = SAV
 					SAV = {
 						owns_core_province = 103		# Piedmont
+						NOT = { num_of_cities = 16 } #Original 6+10
 					}
 				}
 				AND = {
@@ -122,6 +125,7 @@ country_decisions = {
 					senior_union_with = SAR
 					SAR = {
 						owns_core_province = 127		# Sardinia
+						NOT = { num_of_cities = 12 } #Original 2 + 10
 					}
 				}
 			}

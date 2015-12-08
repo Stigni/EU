@@ -17,6 +17,7 @@ country_event = {
 		name = "EVTOPTA4001"
 		ai_chance = { factor = 3 }
 		random_owned_province = {
+			limit = { is_in_capital_area = yes }
 			noble_rebels = 2
 		}
 	}
@@ -128,6 +129,7 @@ country_event = {
 		ai_chance = { factor = 3 }
 
 		random_owned_province = {
+			limit = { is_in_capital_area = yes }
 			reactionary_rebels = 2
 		}
 	}

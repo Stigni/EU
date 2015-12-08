@@ -34,6 +34,7 @@ country_decisions = {
 		allow = {
 			adm_tech = 10
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			
 			OR = {
@@ -53,36 +54,20 @@ country_decisions = {
 			}
 		}
 		effect = {
-			ukrainian_region = {
-				limit = {
-					region = ukrainian_region
-					NOT = { is_core = ROOT }
-				}
-				add_core = UKR
-			}
-			belarus = {
+			ruthenia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
-					region = belarus
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = UKR
+				add_permanent_claim = UKR
 			}
-			lithuanian_region = {
+			red_ruthenia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
-					region = lithuanian_region
 					NOT = { is_claim = ROOT }
 				}
-				add_claim = UKR
-			}			
-			UKR = {
-				261 = { add_core = UKR } 	#Ruthenia
-				2424 = { add_core = UKR } 	#Peremyshl
-				1940 = { add_core = UKR }	#Belz
-			
+				add_permanent_claim = UKR
 			}
-			
 			add_prestige = 25
 			change_tag = UKR
 			UKR = {
@@ -103,13 +88,12 @@ country_decisions = {
 			if = {
 				limit = {
 					NOT = {
-						government_rank = 2
+						government_rank = 3
 					}
 				}
-				set_government_rank = 2
+				set_government_rank = 3
 			}
-			culture_group_union = east_slavic
-			swap_free_idea_group = yes		#keep progress			
+			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		ai_importance = 500		
 	}

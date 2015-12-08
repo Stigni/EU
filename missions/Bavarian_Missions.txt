@@ -6,7 +6,7 @@ conquer_franken = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = franconian_region
+		area = franconia_area
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { vassal_of = ROOT }
@@ -17,11 +17,15 @@ conquer_franken = {
 		normal_or_historical_nations = yes
 		tag = BAV	
 		is_subject = no
-		bavarian_region = {
+		upper_bavaria_area = {
 			type = all
 			owned_by = ROOT
 		}
-		franconian_region = {
+		lower_bavaria_area = {
+			type = all
+			owned_by = ROOT
+		}
+		franconia_area = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { vassal_of = root } }
 			NOT = { owner = { alliance_with = root } }

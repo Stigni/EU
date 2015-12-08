@@ -413,7 +413,7 @@ disrupt_genoese_trade = {
 	category = DIP
 	
 	target_provinces = {
-		region = crimean_region
+		area = crimea_area
 		owned_by = GEN
 	}
 	

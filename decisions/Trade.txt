@@ -4,10 +4,14 @@ country_decisions = {
 	close_foreign_trade = {
 		potential = {
 			technology_group = chinese
+			num_of_ports = 1
 			any_known_country = {
 				technology_group = western
 				any_active_trade_node = {
-					region = chinese_coast
+					OR = {
+						region = south_china_region
+						region = north_china_region
+					}
 					is_strongest_trade_power = PREV
 				}
 			}
@@ -17,7 +21,10 @@ country_decisions = {
 			any_known_country = {
 				technology_group = western
 				any_active_trade_node = {
-					region = chinese_coast
+					OR = {
+						region = south_china_region
+						region = north_china_region
+					}
 					is_strongest_trade_power = PREV
 				}
 				NOT = { has_opinion = { who = ROOT value = -100 } }

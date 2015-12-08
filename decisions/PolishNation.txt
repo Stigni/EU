@@ -37,6 +37,8 @@ country_decisions = {
 		allow = {
 			NOT = { exists = POL }
 			is_at_war = no
+			is_subject = no
+			is_nomad = no			
 			owns_core_province = 262	# Krakow
 			owns_core_province = 257	# Warszawa
 			owns_core_province = 254	# Poznan
@@ -63,17 +65,11 @@ country_decisions = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
-			wielkopolska = {
+			poland_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = POL
-			}
-			malopolska = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = POL
+				add_permanent_claim = POL
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -88,7 +84,7 @@ country_decisions = {
 				change_primary_culture = polish
 			}
 			add_prestige = 25
-			swap_free_idea_group = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		ai_will_do = {
 			factor = 1
