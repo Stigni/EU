@@ -1,82 +1,82 @@
 # The dawn of a new era
-country_event = {
-	id = 1071
-	title = "EVTNAME1071"
-	desc = "EVTDESC1071"
-	picture = SHIP_SAILING_eventPicture
-	
-	trigger = {
-		num_of_cities = 25
-		num_of_ports = 2
-		is_year = 1600
-		NOT = { has_idea_group = exploration_ideas  }
-		NOT = { num_of_colonial_subjects = 1 }
-		technology_group = western
-		NOT = {
-			has_country_modifier = cut_military_investments
-			has_country_modifier = cut_trade_investments
-			has_country_modifier = cut_government_investments
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 240
-
-		modifier = {
-			factor = 0.9
-			economic_ideas = 4
-		}		
-		modifier = {
-			factor = 0.9
-			economic_ideas = 6
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { economic_ideas = 2 }
-		}
-		modifier = {
-			factor = 1.1
-			NOT = { economic_ideas = 1 }
-		}
-		modifier = {
-			factor = 0.9
-			trade_efficiency = 0.5
-		}
-		modifier = {
-			factor = 0.9
-			trade_efficiency = 0.6
-		}
-		modifier = {
-			factor = 0.9
-			trade_efficiency = 0.7
-		}
-	}
-
-	option = {
-		name = "EVTOPTA1071"			# Reduce military expenses
-		ai_chance = { factor = 40 }
-		add_country_modifier = {
-			name = "cut_military_investments"
-			duration = 3650
-		}
-	}
-	option = {
-		name = "EVTOPTB1071"			# Reduce trade expsenses
-		ai_chance = { factor = 40 }
-		add_country_modifier = {
-			name = "cut_trade_investments"
-			duration = 3650
-		}
-	}
-	option = {
-		name = "EVTOPTC1071"			# Reduce government expsenses
-		ai_chance = { factor = 20 }
-		add_country_modifier = {
-			name = "cut_government_investments"
-			duration = 3650
-		}
-	}
-}
+#country_event = {
+#	id = 1071
+#	title = "EVTNAME1071"
+#	desc = "EVTDESC1071"
+#	picture = SHIP_SAILING_eventPicture
+#	
+#	trigger = {
+#		num_of_cities = 25
+#		num_of_ports = 2
+#		is_year = 1600
+#		NOT = { has_idea_group = exploration_ideas  }
+#		NOT = { num_of_colonial_subjects = 1 }
+#		technology_group = western
+#		NOT = {
+#			has_country_modifier = cut_military_investments
+#			has_country_modifier = cut_trade_investments
+#			has_country_modifier = cut_government_investments
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 240
+#
+#		modifier = {
+#			factor = 0.9
+#			economic_ideas = 4
+#		}		
+#		modifier = {
+#			factor = 0.9
+#			economic_ideas = 6
+#		}
+#		modifier = {
+#			factor = 1.1
+#			NOT = { economic_ideas = 2 }
+#		}
+#		modifier = {
+#			factor = 1.1
+#			NOT = { economic_ideas = 1 }
+#		}
+#		modifier = {
+#			factor = 0.9
+#			trade_efficiency = 0.5
+#		}
+#		modifier = {
+#			factor = 0.9
+#			trade_efficiency = 0.6
+#		}
+#		modifier = {
+#			factor = 0.9
+#			trade_efficiency = 0.7
+#		}
+#	}
+#
+#	option = {
+#		name = "EVTOPTA1071"			# Reduce military expenses
+#		ai_chance = { factor = 40 }
+#		add_country_modifier = {
+#			name = "cut_military_investments"
+#			duration = 3650
+#		}
+#	}
+#	option = {
+#		name = "EVTOPTB1071"			# Reduce trade expsenses
+#		ai_chance = { factor = 40 }
+#		add_country_modifier = {
+#			name = "cut_trade_investments"
+#			duration = 3650
+#		}
+#	}
+#	option = {
+#		name = "EVTOPTC1071"			# Reduce government expsenses
+#		ai_chance = { factor = 20 }
+#		add_country_modifier = {
+#			name = "cut_government_investments"
+#			duration = 3650
+#		}
+#	}
+#}
 
 # Threats to the crown
 country_event = {
@@ -287,11 +287,11 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA1075"			# Invest in better infrastructure
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 50 }		
+		add_adm_power = 25
 		random_owned_province = {
 			add_base_tax = 1
-		}		
-		add_adm_power = 25
+		}
 	}
 	option = {
 		name = "EVTOPTB1075"			# Invest in the we

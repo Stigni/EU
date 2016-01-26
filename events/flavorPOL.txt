@@ -1426,6 +1426,9 @@ country_event = {
 		clr_country_flag = pol_zebrzydowski_rebellion_flag
 		clr_country_flag = pol_konfederacja_flag
 		clr_country_flag = pol_pact_conventa_flag
+		remove_country_modifier = pol_sejm_veto
+		remove_country_modifier = pol_sejm_refuse_troops
+		remove_country_modifier = pol_sejm_comply_policies
 		add_prestige = 50
 		add_stability = 3
 		add_legitimacy = 50
@@ -1460,6 +1463,9 @@ country_event = {
 		name = "flavor_pol.EVTOPTA12" # The nobles has formally surrendered
 		remove_country_modifier = pol_pact_conventa
 		remove_country_modifier = pol_zebrzydowski_rebellion_flag
+		remove_country_modifier = pol_sejm_veto
+		remove_country_modifier = pol_sejm_refuse_troops
+		remove_country_modifier = pol_sejm_comply_policies		
 	}
 }
 
@@ -1631,6 +1637,117 @@ country_event = {
 	}
 }
 
+#Clearing of Teutonic Rivalry
+country_event = {
+	id = flavor_pol.17
+	title = flavor_pol.17.t
+	desc = flavor_pol.17.d
+
+	picture = LIBERUM_VETO_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				tag = POL
+				NOT = { exists = PLC }
+			}
+			tag = PLC
+		}
+		historical_rival_with = TEU
+		TEU = {
+			is_subject_of = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = flavor_pol.17.a #
+		add_prestige = 10
+		remove_historical_rival = TEU
+		TEU = {
+			remove_historical_rival = ROOT
+		}
+	}
+}
+
+#Election of Kasimir
+country_event = {
+	id = flavor_pol.18
+	title = flavor_pol.18.t
+	desc = flavor_pol.18.d
+
+	picture = LIBERUM_VETO_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = POL
+		is_subject = no
+		has_regency = yes
+		LIT = {
+			ai = yes
+			exists = yes
+			was_player = no
+			is_subject = no
+			NOT = { junior_union_with = POL }
+			dynasty = "Jagiellon"
+		}
+		NOT = { is_year = 1450 }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.1
+			is_year = 1447
+		}
+		modifier = {
+			factor = 0.01
+			is_year = 1448
+		}
+		modifier = {
+			factor = 0.001
+			is_year = 1449
+		}
+	}
+	
+	option = {
+		name = flavor_pol.18.a #We must retain the Jagiellon Dynasty
+		ai_chance = { 
+			factor = 75 
+		}
+		create_union = LIT
+		country_event = {
+			id = flavor_pol.20
+		}
+	}
+	
+	option = {
+		name = flavor_pol.18.b #Appoint a Local Noble.
+		ai_chance = { 
+			factor = 25
+		}
+		define_ruler = {
+			DIP = 4
+			ADM = 4
+			MIL = 4
+			claim = 60
+		}
+		LIT = {
+			add_opinion = {
+				who = ROOT
+				modifier = lit_denied_birthright
+			}
+		}
+	}
+}
+
 # Become elective
 country_event = {
 	id = flavor_pol.20
@@ -1640,18 +1757,7 @@ country_event = {
 	picture = LIBERUM_VETO_eventPicture
 	
 	fire_only_once = yes
-	
-	trigger = {
-		tag = POL
-		government = monarchy
-		NOT = { government = elective_monarchy }
-		NOT = { is_year = 1600 }
-		has_regency = no
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = flavor_pol.20.a

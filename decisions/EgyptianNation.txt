@@ -26,6 +26,7 @@ country_decisions = {
 		allow = {
 			adm_tech = 20
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			owns_core_province = 361 # Cairo
 			owns_core_province = 362 # Rashid

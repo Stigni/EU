@@ -19,6 +19,8 @@ country_decisions = {
 		allow = {
 			NOT = { exists = HAB }
 			has_regency = no
+			is_subject = no
+			is_nomad = no			
 			is_at_war = no
 			owns = 134
 		}

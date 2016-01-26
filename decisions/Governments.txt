@@ -112,7 +112,7 @@ country_decisions = {
 		}
 	}
 	
-	aristocratic_administration = {
+	oligarchic_administration = {
 		major = yes
 		potential = {
 			NOT = { government = merchant_republic }
@@ -130,19 +130,16 @@ country_decisions = {
 			NOT = { government = shogunate }
 			NOT = { government = revolutionary_empire }
 			government = monarchy
-			NOT = { num_of_cities = 20 }
 		}
 		allow =  {
-			stability = 1	
-			NOT = { num_of_cities = 20 }		
-			num_of_cavalry = 10
+			stability = 1		
 			full_idea_group = aristocracy_ideas
 			full_idea_group = influence_ideas
 			is_at_war = no 
 			is_subject = false
 		}
 		effect = {
-			change_government = noble_republic
+			change_government = oligarchic_republic
 			add_stability = -4
 		}
 		ai_will_do = {
@@ -198,15 +195,14 @@ country_decisions = {
 			NOT = { government = shogunate }
 			NOT = { government = colonial_government }
 			NOT = { government = revolutionary_empire }
+			NOT = { government = noble_republic }
 			OR = {
 				government = monarchy
 				government = republic
 			}
-			NOT = { num_of_cities = 20 }
 		}
 		allow =  {
 			stability = 1	
-			NOT = { num_of_cities = 20 }
 			full_idea_group = religious_ideas
 			full_idea_group = diplomatic_ideas
 			is_at_war = no
@@ -218,32 +214,7 @@ country_decisions = {
 			add_stability = -4
 		}
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					adm = 2
-					dip = 2
-					mil = 2
-				}
-			}
-			modifier = {
-				factor = 0
-				num_of_cities = 5
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					technology_group = muslim
-					technology_group = indian
-					technology_group = chinese
-					technology_group = sub_saharan
-					technology_group = north_american
-					technology_group = mesoamerican
-					technology_group = south_american
-					technology_group = andean
-				}
-			}
+			factor = 0
 		}
 	}
 	
@@ -322,8 +293,12 @@ country_decisions = {
 			NOT = { government_rank = 2 }
 		}
 		allow = {
+			is_subject = no
 			is_elector = yes
-			papal_influence = 25
+			OR = {
+				NOT = { religion = catholic }
+				papal_influence = 25
+			}
 		}
 		effect = {
 			set_government_rank = 2
@@ -360,6 +335,10 @@ country_decisions = {
 			adm_tech = 12
 		}
 		effect = {
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = yes
+			}
 			every_neighbor_country = {
 				limit = {
 					government = monarchy
@@ -375,7 +354,12 @@ country_decisions = {
 				add_opinion = { who = ROOT modifier = secularized_bishopric }
 			}
 			if = {
-				limit = { NOT = { total_development = 300 } }
+				limit = {
+					OR = {
+						is_subject = no
+						NOT = { total_development = 300 }
+					}
+				}
 				set_government_rank = 1
 			}
 			change_government = administrative_monarchy
@@ -428,11 +412,20 @@ country_decisions = {
 				}
 			}
 			if = {
-				limit = { NOT = { total_development = 300 } }
+				limit = {
+					OR = {
+						NOT = { total_development = 300 }
+						is_subject = yes
+					}
+				}
 				set_government_rank = 1
 			}
 			change_government = administrative_monarchy
 			add_stability = -1
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = yes
+			}
 		}
 		ai_will_do = {
 			factor = 0

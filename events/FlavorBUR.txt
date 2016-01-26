@@ -104,7 +104,7 @@ country_event = {
 					ai = yes
 					capital_scope = {
 						OR = {
-							region = french_region 
+							region = france_region 
 							culture_group = french
 							culture = dutch
 							culture = flemish
@@ -119,8 +119,12 @@ country_event = {
 				limit = {
 					any_owned_province = {
 						OR = {
-							region = french_region
+							AND = {
+								region = france_region
+								NOT = { province_id = 1743 }
+							}
 							culture_group = french
+							province_id = 181 #Rethel
 						}
 						is_part_of_hre = no
 					}
@@ -258,7 +262,7 @@ country_event = {
 						is_subject = no
 						capital_scope = {
 							continent = europe
-							NOT = { region = british_isles }
+							NOT = { region = british_isles_region }
 						}
 					}
 				}
@@ -269,7 +273,7 @@ country_event = {
 						is_subject = no
 						capital_scope = {
 							continent = europe
-							NOT = { region = british_isles }
+							NOT = { region = british_isles_region }
 						}
 					}
 					set_country_flag = bur_neighbor
@@ -286,7 +290,7 @@ country_event = {
 							is_subject = no
 							capital_scope = {
 								continent = europe
-								NOT = { region = british_isles }
+								NOT = { region = british_isles_region }
 							}
 						}
 					}
@@ -295,7 +299,7 @@ country_event = {
 						is_subject = no
 						capital_scope = {
 							continent = europe
-							NOT = { region = british_isles }
+							NOT = { region = british_isles_region }
 						}
 					}
 				}
@@ -305,7 +309,7 @@ country_event = {
 						is_subject = no
 						capital_scope = {
 							continent = europe
-							NOT = { region = british_isles }
+							NOT = { region = british_isles_region }
 						}
 					}
 					set_country_flag = bur_neighbor
@@ -527,7 +531,11 @@ country_event = {
 				limit = {
 					any_owned_province = {
 						OR = {
-							region = french_region
+							AND = {
+								region = france_region
+								NOT = { province_id = 1743 } #Cambray
+							}
+							province_id = 181 #Rethel
 							culture_group = french
 						}
 						is_part_of_hre = no
@@ -658,7 +666,7 @@ country_event = {
 						is_subject = no
 						capital_scope = {
 							continent = europe
-							NOT = { region = british_isles }
+							NOT = { region = british_isles_region }
 						}
 					}
 				}
@@ -669,7 +677,7 @@ country_event = {
 						is_subject = no
 						capital_scope = {
 							continent = europe
-							NOT = { region = british_isles }
+							NOT = { region = british_isles_region }
 						}
 					}
 					set_country_flag = bur_neighbor
@@ -686,7 +694,7 @@ country_event = {
 							is_subject = no
 							capital_scope = {
 								continent = europe
-								NOT = { region = british_isles }
+								NOT = { region = british_isles_region }
 							}
 						}
 					}
@@ -695,7 +703,7 @@ country_event = {
 						is_subject = no
 						capital_scope = {
 							continent = europe
-							NOT = { region = british_isles }
+							NOT = { region = british_isles_region }
 						}
 					}
 				}
@@ -705,7 +713,7 @@ country_event = {
 						is_subject = no
 						capital_scope = {
 							continent = europe
-							NOT = { region = british_isles }
+							NOT = { region = british_isles_region }
 						}
 					}
 					set_country_flag = bur_neighbor
@@ -853,7 +861,11 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						region = french_region
+						AND = {
+							region = france_region
+							NOT = { province_id = 1743 }
+						}
+						province_id = 181 #Rethel
 						culture_group = french
 					}
 					is_part_of_hre = no
@@ -863,7 +875,11 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						region = french_region
+						AND = {
+							region = france_region
+							NOT = { province_id = 1743 }
+						}
+						province_id = 181 #Rethel
 						culture_group = french
 					}
 					is_part_of_hre = no
@@ -1880,7 +1896,7 @@ province_event = {
 		owner = { ai = no }
 		NOT = { has_global_flag = dutch_revolt }
 		NOT = { local_autonomy = 1 }
-		region = the_low_countries
+		region = low_countries_region
 		OR = {
 			culture = dutch
 			culture = flemish
@@ -1892,7 +1908,7 @@ province_event = {
 			is_subject = no
 			num_of_cities = 6
 			capital_scope = {
-				NOT = { region = the_low_countries }
+				NOT = { region = low_countries_region }
 			}
 			NOT = {
 				OR = {
@@ -1983,7 +1999,7 @@ province_event = {
 		NOT = { has_province_flag = dutch_revolt }
 		NOT = { has_province_flag = no_dutch_revolt }
 		NOT = { local_autonomy = 1 }
-		region = the_low_countries
+		region = low_countries_region
 		OR = {
 			culture = dutch
 			culture = flemish
@@ -1995,7 +2011,7 @@ province_event = {
 			is_subject = no
 			num_of_cities = 6
 			capital_scope = {
-				NOT = { region = the_low_countries }
+				NOT = { region = low_countries_region }
 			}
 			NOT = {
 				OR = {
@@ -2089,7 +2105,7 @@ country_event = {
 		is_subject = no
 		num_of_cities = 6
 		any_owned_province = {
-			region = the_low_countries
+			region = low_countries_region
 			OR = {
 				culture = dutch
 				culture = flemish
@@ -2097,7 +2113,7 @@ country_event = {
 			}
 		}
 		capital_scope = {
-			NOT = { region = the_low_countries }
+			NOT = { region = low_countries_region }
 		}
 		NOT = {
 			OR = {
@@ -2121,7 +2137,7 @@ country_event = {
 			factor = 0.75
 			num_of_owned_provinces_with = {
 				value = 2
-				region = the_low_countries
+				region = low_countries_region
 				OR = {
 					culture = dutch
 					culture = flemish
@@ -2132,7 +2148,7 @@ country_event = {
 			factor = 0.75
 			num_of_owned_provinces_with = {
 				value = 4
-				region = the_low_countries
+				region = low_countries_region
 				OR = {
 					culture = dutch
 					culture = flemish
@@ -2143,7 +2159,7 @@ country_event = {
 			factor = 0.75
 			num_of_owned_provinces_with = {
 				value = 6
-				region = the_low_countries
+				region = low_countries_region
 				OR = {
 					culture = dutch
 					culture = flemish
@@ -2154,7 +2170,7 @@ country_event = {
 			factor = 0.75
 			num_of_owned_provinces_with = {
 				value = 8
-				region = the_low_countries
+				region = low_countries_region
 				OR = {
 					culture = dutch
 					culture = flemish
@@ -2167,7 +2183,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					region = the_low_countries
+					region = low_countries_region
 					OR = {
 						culture = dutch
 						culture = flemish
@@ -2184,7 +2200,7 @@ country_event = {
 			}
 			every_owned_province = {
 				limit = {
-					region = the_low_countries
+					region = low_countries_region
 				}
 				add_claim = NED
 			}
@@ -2208,7 +2224,7 @@ country_event = {
 					NOT = { tag = ROOT }
 					NOT = { tag = NED }
 					any_owned_province = {
-						region = the_low_countries
+						region = low_countries_region
 					}
 				}
 				country_event = { id = flavor_bur.12 days = 10 }
@@ -2267,7 +2283,7 @@ country_event = {
 		name = "flavor_bur.EVTOPTA12"
 		every_owned_province = {
 			limit = {
-				region = the_low_countries
+				region = low_countries_region
 			}
 			add_claim = NED
 		}
@@ -2296,9 +2312,9 @@ country_event = {
 		}
 		is_subject = no
 		is_at_war = no
-		NOT = { num_of_cities = 3 }
-		all_owned_province = {
-			region = the_low_countries
+		NOT = { num_of_cities = 5 }
+		any_owned_province = {
+			region = low_countries_region
 		}
 		OR = {
 			primary_culture = dutch
@@ -2356,7 +2372,7 @@ province_event = {
 		owner = {
 			NOT = { tag = NED }
 		}
-		region = the_low_countries
+		region = low_countries_region
 		OR = {
 			culture = dutch
 			culture = flemish
@@ -2369,7 +2385,7 @@ province_event = {
 		owner = {
 			OR = {
 				capital_scope = {
-					NOT = { region = the_low_countries }
+					NOT = { region = low_countries_region }
 				}
 				NOT = {
 					OR = {
@@ -2496,7 +2512,7 @@ country_event = {
 	
 	option = {		# No Concessions
 		name = "flavor_bur.EVTOPTA13"
-		the_low_countries = {
+		low_countries_region = {
 			limit = {
 				owned_by = BUR
 			}
@@ -2509,7 +2525,7 @@ country_event = {
 		name = "flavor_bur.EVTOPTB13"
 		ai_chance = { factor = 0 }
 		
-		the_low_countries = {
+		low_countries_region = {
 			limit = {
 				owned_by = BUR
 			}
@@ -2542,7 +2558,7 @@ country_event = {
 	
 	option = {		# No Concessions
 		name = "flavor_bur.EVTOPTA14"
-		the_low_countries = {
+		low_countries_region = {
 			limit = {
 				owned_by = BUR
 			}
@@ -2577,7 +2593,7 @@ country_event = {
 	
 	option = {		# Sign the Union of Arras
 		name = "flavor_bur.EVTOPTA15"
-		the_low_countries = { 
+		low_countries_region = { 
 			limit = {
 				owned_by = BUR
 				NOT= { religion = catholic }
@@ -2590,7 +2606,7 @@ country_event = {
 	}
 	option = {		# No Concessions
 		name = "flavor_bur.EVTOPTB15"
-		the_low_countries = {
+		low_countries_region = {
 			limit = {
 				owned_by = BUR
 				NOT= { religion = catholic }

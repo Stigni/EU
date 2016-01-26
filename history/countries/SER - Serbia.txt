@@ -3,6 +3,7 @@ primary_culture = serbian
 religion = orthodox
 technology_group = eastern
 capital = 141	# Beograd
+historical_friend = BOS
 
 1389.1.1 = {
 	government_rank = 1

@@ -303,7 +303,10 @@ country_event = {
 		add_years_of_income = -0.2
 		random_list = {
 			50 = { kill_heir = yes}
-			50 = { add_legitimacy = 5}
+			50 = {
+				add_legitimacy = 5
+				add_horde_unity = 5
+			}
 		}
 	}
 	
@@ -311,7 +314,10 @@ country_event = {
 		name = "EVTOPTB9456"
 		random_list = {
 			75 = { kill_heir = yes}
-			25 = { add_legitimacy = 30}
+			25 = {
+				add_legitimacy = 30
+				add_horde_unity = 30
+			}
 		}
 	}
 }
@@ -575,8 +581,8 @@ country_event = {
 			is_lesser_in_union = yes
 		}
 		government = monarchy
+		legitimacy_or_horde_unity = 100
 		has_regency = yes
-		legitimacy = 100
 		has_heir = yes
 	}
 	
@@ -594,6 +600,7 @@ country_event = {
 		}
 		add_stability = -3
 		add_legitimacy = -90
+		add_horde_unity = -90
 		add_country_modifier = {
 			name = "plutocracy_modifier"
 			duration = 7300
@@ -1284,6 +1291,7 @@ country_event = {
 	
 	option = {
 		name = dynastic_events.2.a
+		add_horde_unity = 10
 		add_legitimacy = -10
 		if = {
 			limit = {
@@ -1341,25 +1349,26 @@ country_event = {
 		}
 		
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			ruler_age = 60
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			ruler_age = 70
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			ruler_age = 80
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.9
 			ruler_age = 90
 		}
 	}
 	
 	option = {
 		name = dynastic_events.3.a
+		add_horde_unity = -10
 		add_legitimacy = -10
 		if = {
 			limit = {
@@ -1535,6 +1544,7 @@ country_event = {
 	trigger = {
 		has_heir = no
 		government = monarchy
+		religion_group = christian
 		is_subject = no
 		ruler_age = 16
 		NOT = {
@@ -1542,6 +1552,7 @@ country_event = {
 		}
 		any_neighbor_country = {
 			government = monarchy
+			religion_group = christian
 			has_heir = no
 			ruler_age = 16
 			NOT = {
@@ -1594,6 +1605,7 @@ country_event = {
 				government = monarchy
 				has_heir = no
 				ruler_age = 16
+				religion_group = christian
 				NOT = {
 					ruler_age = 40
 				}

@@ -578,7 +578,7 @@ country_event = {
 		government = native_council
 		is_at_war = no
 		capital_scope = {
-			region = great_plains
+			region = great_plains_region
 		}
 		is_month = 3
 		NOT = { is_month = 8 }
@@ -987,8 +987,9 @@ country_event = {
 		NOT = { has_country_flag = moundbuilders_completed }
 		capital_scope = {
 			OR = {
-				region = the_mississippi_region
-				region = eastern_america
+				region = mississippi_region
+				region = northeast_america_region
+				region = southeast_america_region
 			}
 		}
 		any_neighbor_country = {

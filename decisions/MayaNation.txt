@@ -3,6 +3,7 @@ country_decisions = {
 	maya_nation = {
 		major = yes
 		potential = {
+			is_random_new_world = no
 			normal_or_historical_nations = yes
 			OR = {
 				ai = no
@@ -29,6 +30,7 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			is_subject = no
+			is_nomad = no
 			is_religion_reformed = yes
 			owns_core_province = 842 #Petén
 			owns_core_province = 846 #Sotuta
@@ -53,15 +55,15 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 2
+				set_government_rank = 3
 			}
-			yucatan_region = {
+			yucatan_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = MAY
+				add_permanent_claim = MAY
 			}
 			add_prestige = 25
 			change_government = despotic_monarchy

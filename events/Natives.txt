@@ -6,6 +6,7 @@ province_event = {
 	picture = NATIVES_eventPicture
 	
 	trigger = {
+		NOT = { has_dlc = "The Cossacks" }
 		native_size = 3
 		owner = {
 			NOT = { has_country_flag = NF_colony }

@@ -24,22 +24,30 @@ country_decisions = {
 			owns_core_province = 2108		#Huncun
 		}
 		effect = {
-			inner_manchuria = {
+			ilan_hala_area = {
 				limit = {
-					region = inner_manchuria
 					NOT = { is_core = ROOT }
 				}
 				add_core = MCH
 			}
-			outer_manchuria = {
+			jilin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_core = MCH
+			}
+			liaoning_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_core = MCH
+			}
+			heilongjiang_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
-					region = outer_manchuria
-					NOT = { is_claim = ROOT }
 				}
-				add_claim = MCH
-			}			
-			
+				add_permanent_claim = MCH
+			}
 			add_prestige = 25
 			change_tag = MCH
 			if = {
@@ -56,9 +64,8 @@ country_decisions = {
 					NOT = { religion = confucianism }
 				}
 				change_religion = confucianism
-			}			
-#			culture_group_union = east_asian
-			swap_free_idea_group = yes		#keep progress
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		ai_importance = 500		
 	}
@@ -97,11 +104,23 @@ country_decisions = {
 		effect = {
 			change_tag = QNG
 			set_government_rank = 3
-			chinese_region = {
+			south_china_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = QNG
+				add_permanent_claim = QNG
+			}
+			xinan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = QNG
+			}
+			north_china_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = QNG
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

@@ -35,12 +35,17 @@ country_decisions = {
 					}
 				}
 				inherit = ARA
-			}	
-			spanish_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
+			}
+			custom_tooltip = spanish_unification_effect.tooltip
+			hidden_effect = {
+				iberia_region = {
+					limit = {
+						NOT = { area = macaronesia_area }
+						NOT = { area = alentejo_area }
+						NOT = { area = beieras_area }
+					}
+					add_permanent_claim = SPA
 				}
-				add_claim = SPA
 			}
 			if = {
 				limit = {

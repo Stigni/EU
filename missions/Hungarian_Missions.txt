@@ -131,7 +131,10 @@ retake_croatia = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = croatian_region
+		OR = {
+			area = east_adriatic_coast_area
+			area = croatia_area
+		}
 		owned_by = TUR
 	}
 	
@@ -145,7 +148,10 @@ retake_croatia = {
 		TUR = {
 			is_neighbor_of = ROOT
 		}
-		croatian_region = { owned_by = TUR }
+		OR = {
+			east_adriatic_coast_area = { owned_by = TUR }
+			croatia_area = { owned_by = TUR }
+		}
 	}
 	abort = {
 		is_subject = yes

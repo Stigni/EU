@@ -40,9 +40,12 @@ discover_mission = {
 			FROM = { tag = POR }
 			OR = {
 				region = brazil_region
-				region = west_african_coast
+				AND = {
+					region = west_africa_region
+					has_port = yes
+				}
 			}
-		}		
+		}
 		modifier = {
 			factor = 0
 			FROM = { 
@@ -54,7 +57,10 @@ discover_mission = {
 			OR = {
 				continent = north_america
 				region = brazil_region
-				region = west_african_coast
+				AND = {
+					region = west_africa_region
+					has_port = yes
+				}
 			}
 		}
 		modifier = {
@@ -66,9 +72,10 @@ discover_mission = {
 				}
 			}
 			OR = {
-				region = the_spanish_main
-				region = central_america
-				region = the_carribean
+				region = colombia_region
+				region = central_america_region
+				region = mexico_region
+				region = carribeans_region
 				region = la_plata_region
 			}
 		}
@@ -211,18 +218,18 @@ establish_carribean_colony = {
 		has_idea = quest_for_the_new_world 
 		religion_group = christian
 		is_colonial_nation = no
-		the_carribean = {
+		carribeans_region = {
 			is_empty = yes
 			range = ROOT
 			has_discovered = ROOT
 		}
 		NOT = {
-			the_carribean = {
+			carribeans_region = {
 				owned_by =  ROOT
 			}
 		}
 		NOT = {
-			the_carribean = {
+			carribeans_region = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -235,7 +242,7 @@ establish_carribean_colony = {
 	abort = {
 		OR = {
 			NOT = {
-				the_carribean = {
+				carribeans_region = {
 					is_empty = yes
 					has_discovered = ROOT
 				}
@@ -245,7 +252,7 @@ establish_carribean_colony = {
 		}
 	}
 	success = {
-		the_carribean = {
+		carribeans_region = {
 			owned_by =  ROOT
 		}
 	}
@@ -278,19 +285,37 @@ establish_usa_colony = {
 		has_idea = quest_for_the_new_world 
 		religion_group = christian
 		is_colonial_nation = no
-		the_thirteen_colonies = {
+		northeast_america_region = {
+			is_empty = yes
+			has_port = yes
+			range = ROOT
+			has_discovered = ROOT
+		}
+		southeast_america_region = {
 			is_empty = yes
 			has_port = yes
 			range = ROOT
 			has_discovered = ROOT
 		}
 		NOT = {
-			the_thirteen_colonies = {
+			northeast_america_region = {
 				owned_by =  ROOT
 			}
 		}
 		NOT = {
-			the_thirteen_colonies = {
+			southeast_america_region = {
+				owned_by =  ROOT
+			}
+		}
+		NOT = {
+			northeast_america_region = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		NOT = {
+			southeast_america_region = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -302,10 +327,15 @@ establish_usa_colony = {
 	}
 	abort = {
 		OR = {
-			NOT = {
-				the_thirteen_colonies = {
-					is_empty = yes
-					has_port = yes
+			AND = {
+				northeast_america_region = {
+					is_empty = no
+					has_port = no
+					has_discovered = ROOT
+				}
+				southeast_america_region = {
+					is_empty = no
+					has_port = no
 					has_discovered = ROOT
 				}
 			}
@@ -314,8 +344,13 @@ establish_usa_colony = {
 		}
 	}
 	success = {
-		the_thirteen_colonies = {
-			owned_by =  ROOT
+		OR = {
+			northeast_america_region = {
+				owned_by =  ROOT
+			}
+			southeast_america_region = {
+				owned_by =  ROOT
+			}
 		}
 	}
 	chance = {
@@ -359,19 +394,19 @@ establish_canada_colony = {
 		religion_group = christian
 		is_colonial_nation = no
 		has_idea = quest_for_the_new_world 
-		northern_america = {
+		canada_region = {
 			is_empty = yes
 			has_port = yes
 			range = ROOT
 			has_discovered = ROOT
 		}
 		NOT = {
-			northern_america = {
+			canada_region = {
 				owned_by =  ROOT
 			}
 		}
 		NOT = {
-			northern_america = {
+			canada_region = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -384,7 +419,7 @@ establish_canada_colony = {
 	abort = {
 		OR = {
 			NOT = {
-				northern_america = {
+				canada_region = {
 					is_empty = yes
 					has_port = yes
 					has_discovered = ROOT
@@ -395,7 +430,7 @@ establish_canada_colony = {
 		}
 	}
 	success = {
-		northern_america = {
+		canada_region = {
 			owned_by =  ROOT
 		}
 	}
@@ -476,9 +511,12 @@ establish_colony_mission = {
 			FROM = { tag = POR }
 			OR = {
 				region = brazil_region
-				region = west_african_coast
+				AND = {
+					region = west_africa_region
+					has_port = yes
+				}
 			}
-		}		
+		}
 		modifier = {
 			factor = 0
 			FROM = { 
@@ -490,7 +528,7 @@ establish_colony_mission = {
 			OR = {
 				continent = north_america
 				region = brazil_region
-				region = west_african_coast
+				region = west_africa_region
 			}
 		}
 		modifier = {
@@ -502,9 +540,10 @@ establish_colony_mission = {
 				}
 			}
 			OR = {
-				region = the_spanish_main
-				region = central_america
-				region = the_carribean
+				region = colombia_region
+				region = central_america_region
+				region = mexico_region
+				region = carribeans_region
 				region = la_plata_region
 			}
 		}	

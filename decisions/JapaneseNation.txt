@@ -14,29 +14,26 @@ country_decisions = {
 		}
 		allow = {
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			num_of_cities = 15
 		}
 		effect = {
 			change_government = feudal_monarchy
 			set_government_rank = 3
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-			}
-			every_country = {
-				limit = {
-					vassal_of = JAP
-					government = daimyo
-				}
-				change_government = feudal_monarchy
-				ROOT = {
-					free_vassal = PREV
-				}
-				every_owned_province = {
-					remove_core = JAP
+			custom_tooltip = unite_japan_subject_tooltip
+			hidden_effect = {
+				every_subject_country = {
+					limit = {
+						government = daimyo
+					}
+					change_government = feudal_monarchy
+					ROOT = {
+						free_vassal = PREV
+					}
+					every_owned_province = {
+						remove_core = JAP
+					}
 				}
 			}
 		}

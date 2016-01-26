@@ -154,7 +154,7 @@ alliance = {
 royal_marriage = {
 	first = POR
 	second = ENG
-	start_date = 1399.1.1
+	start_date = 1444.1.1
 	end_date = 1415.7.19
 }
 

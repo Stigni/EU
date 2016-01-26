@@ -53,7 +53,7 @@ country_decisions = {
 					}
 				}
 				change_tag = KOJ
-				swap_free_idea_group = yes
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			if = {
 				limit = { tag = KNI }
@@ -63,12 +63,12 @@ country_decisions = {
 				set_capital = 379
 				change_religion = catholic
 				change_government = feudal_monarchy
-			}
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
+				if = {
+					limit = {
+						NOT = { government_rank = 2 }
+					}
+					set_government_rank = 2
 				}
-				set_government_rank = 2
 			}
 		}
 		ai_will_do = {

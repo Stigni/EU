@@ -15,6 +15,8 @@ country_event = {
 		has_dlc = "Purple Phoenix"
 		num_of_cities = 8
 		NOT = { has_idea = byz_admin_power }
+		government = monarchy
+		NOT = { government = steppe_horde }
 		OR = {
 			NOT = { legitimacy = 50 }
 			has_regency = yes
@@ -223,7 +225,10 @@ country_event = {
 			owns = 147
 			owns = 148
 		}
-		western_balkans = { type = all NOT = { owned_by = TUR }}
+		serbia_area = { type = all NOT = { owned_by = TUR }}
+		bosnia_area = { type = all NOT = { owned_by = TUR }}
+		croatia_area = { type = all NOT = { owned_by = TUR }}
+		east_adriatic_coast_area = { type = all NOT = { owned_by = TUR }}
 	}
 	
 	mean_time_to_happen = {
@@ -254,7 +259,9 @@ country_event = {
 			owns = 150
 			owns = 1764
 		}
-		eastern_balkans = { type = all NOT = { owned_by = TUR }}
+		bulgaria_area = { type = all NOT = { owned_by = TUR }}
+		wallachia_area = { type = all NOT = { owned_by = TUR }}
+		macedonia_area = { type = all NOT = { owned_by = TUR }}
 	}
 	
 	mean_time_to_happen = {
@@ -287,8 +294,7 @@ country_event = {
 			owns = 326
 			owns = 329
 		}
-		anatolia = { type = all NOT = { owned_by = TUR }}
-		asia_minor = { type = all NOT = { owned_by = TUR }}
+		anatolia_region = { type = all NOT = { owned_by = TUR }}
 	}
 	
 	mean_time_to_happen = {

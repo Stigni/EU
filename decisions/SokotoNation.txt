@@ -22,6 +22,7 @@ country_decisions = {
 		}
 		allow = {
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			OR = {
 				piety = 0.5
@@ -30,36 +31,22 @@ country_decisions = {
 			owns_core_province = 1148 #Gobir
 		}
 		effect = {
-			hausaland = {
+			hausa_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = SOK
+				add_permanent_claim = SOK
 			}
-			central_africa = {
+			west_africa_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { owner = { has_country_flag = fulani_jihad_state } }
-					NOT = { region = kongo }
-					NOT = {
-						province_id = 1201
-						province_id = 2796
-						province_id = 1204
-						province_id = 1203
-						province_id = 1202
-						province_id = 1200
-						province_id = 1199
-						province_id = 1197
-						province_id = 1196
-						province_id = 1198
-						province_id = 1195
-					}
 					OR = {
 						religion = sunni
 						religion = animism
 					}
 				}
-				add_claim = SOK
+				add_permanent_claim = SOK
 			}
 			add_prestige = 25
 			add_piety = 0.25
@@ -87,7 +74,7 @@ country_decisions = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
-			swap_free_idea_group = yes		#keep progress
+			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		ai_importance = 400 #The countries that qualify will hate the holder of Sokoto.
 		ai_will_do = {

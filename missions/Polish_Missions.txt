@@ -541,7 +541,7 @@ defend_polands_western_border = {
 	category = ADM
 	
 	target_provinces = {
-		region = wielkopolska
+		area = wielkopolska_area
 		owned_by = PRU
 	}
 	allow = {
@@ -554,8 +554,8 @@ defend_polands_western_border = {
 		is_subject = no
 		NOT = { war_with = PRU }
 		NOT = { alliance_with = PRU }
-		wielkopolska = { owned_by = ROOT }
-		wielkopolska = { owned_by = PRU }
+		wielkopolska_area = { owned_by = ROOT }
+		wielkopolska_area = { owned_by = PRU }
 		NOT = { has_country_flag = defended_western_polish_border }
 		NOT = { has_country_modifier = polish_ambition }
 	}
@@ -602,8 +602,8 @@ defend_polands_northern_border = {
 	
 	target_provinces = {
 		OR = {
-			region = lithuanian_region
-			region = belarus
+			area = white_ruthenia_area
+			area = lithuania_area
 		}
 		owned_by = RUS
 	}
@@ -614,13 +614,18 @@ defend_polands_northern_border = {
 			tag = PLC
 		}
 		exists = RUS
+		is_neighbor_of = RUS
 		is_subject = no
 		NOT = { war_with = RUS }
 		NOT = { alliance_with = RUS }
-		lithuanian_region = { owned_by = ROOT }
-		belarus = { owned_by = ROOT }
-		lithuanian_region = { owned_by = RUS }
-		belarus = { owned_by = RUS }
+		OR = {
+			lithuania_area = { owned_by = ROOT }
+			white_ruthenia_area = { owned_by = ROOT }
+		}
+		OR = {
+			lithuania_area = { owned_by = RUS }
+			white_ruthenia_area = { owned_by = RUS }
+		}
 		NOT = { has_country_modifier = polish_ambition }
 		NOT = { has_country_flag = defended_northern_polish_border }
 	}

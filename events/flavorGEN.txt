@@ -69,11 +69,11 @@ country_event = {
 		exists = TUR
 		TUR = { owns = 151 }			#Constantinople
 		151 = { NOT = { months_since_defection = 60 } }	#within 5 years.
-		crimean_region = {
+		crimea_area = {
 			owned_by = GEN
 		}
 		capital_scope = {
-			NOT = { region = crimean_region }
+			NOT = { area = crimea_area }
 		}
 	}
 	
@@ -99,7 +99,7 @@ country_event = {
 		add_prestige = -10
 		every_owned_province = {
 			limit = {
-				region = crimean_region
+				area = crimea_area
 			}
 			add_province_modifier = {
 				name = gen_lost_trade_support
@@ -210,7 +210,7 @@ country_event = {
 			NOT = {TUR = { owns = 151 } }			#Constantinople
 			war_with = TUR
 			NOT = { 
-				crimean_region = { owned_by = GEN }
+				crimea_area = { owned_by = GEN }
 			}
 		}
 		151 = {
@@ -425,10 +425,10 @@ country_event = {
 		has_country_flag = gen_andrea_doria_censor_event
 		exists = FRA
 		exists = SPA
-		italian_region = {
+		italy_region = {
 			owned_by = FRA
 		}
-		italian_region = {
+		italy_region = {
 			owned_by = SPA
 		}
 		NOT = {
@@ -551,11 +551,11 @@ country_event = {
 		tag = GEN
 		government = merchant_republic
 		capital_scope = {
-			region = crimean_region
+			area = crimea_area
 		}
 		NOT = {
 			any_owned_province = {
-				region = italian_region
+				region = italy_region
 			}
 		}
 		any_owned_province = {

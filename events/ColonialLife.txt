@@ -143,7 +143,8 @@ province_event = {
 			trade_goods = fur
 			trade_goods = grain
 		}
-		can_build = weapons
+		NOT = { has_building = plantations }
+		NOT = { has_building = tradecompany }
 		num_free_building_slots = 1
 	}
 	
@@ -151,7 +152,7 @@ province_event = {
 		months = 2000
 		modifier = {
 			factor = 2.0
-			NOT = { is_year = 1650}
+			NOT = { is_year = 1650 }
 		}
 	}
 
@@ -207,7 +208,8 @@ province_event = {
 			trade_goods = fur
 			trade_goods = grain
 		}
-		can_build = textile
+		NOT = { has_building = plantations }
+		NOT = { has_building = tradecompany }
 		num_free_building_slots = 1
 	}
 	
@@ -273,7 +275,8 @@ province_event = {
 			trade_goods = fur
 			trade_goods = grain
 		}
-		can_build = wharf
+		NOT = { has_building = plantations }
+		NOT = { has_building = tradecompany }
 		num_free_building_slots = 1
 	}
 	

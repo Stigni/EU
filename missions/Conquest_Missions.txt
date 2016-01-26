@@ -11,8 +11,8 @@ annex_minor_mission = {
 		FROM = {	
 			is_subject = no
 			is_at_war = no
-			NOT = { alliance_with = FROM }
 		}
+		NOT = { alliance_with = FROM }
 		NOT = { tag = PAP }
 		OR = {
 			NOT = { tag = JAP }
@@ -570,10 +570,10 @@ keep_rival_out_of_italy = {
 		}
 		num_of_cities = 5
 		NOT = { culture_group = latin }
-		italian_region = { owned_by = FROM }
+		italy_region = { owned_by = FROM }
 		NOT = { has_opinion = { who = FROM value = 100 } }
 		any_owned_province = {
-			region = italian_region
+			region = italy_region
 		}
 		OR = {
 			is_part_of_hre = no
@@ -585,12 +585,12 @@ keep_rival_out_of_italy = {
 		FROM = { NOT = { is_subject = yes } }
 		capital_scope = {
 			continent = europe
-			NOT = { region = italian_region }
+			NOT = { region = italy_region }
 		}
 	}
 	abort = {
 		NOT = {
-			italian_region = {
+			italy_region = {
 				owned_by = FROM
 			}
 		}
@@ -598,7 +598,7 @@ keep_rival_out_of_italy = {
 	success = {
 		NOT = {
 			any_owned_province = {	
-				region = italian_region
+				region = italy_region
 			}
 		}
 	}
@@ -621,7 +621,7 @@ keep_rival_out_of_italy = {
 				set_country_flag = kept_rival_out_of_italy
 				every_owned_province = {
 					limit = {
-						region = italian_region
+						region = italy_region
 					}
 					add_province_modifier = {
 						name = "protected_italian_interests"
@@ -656,7 +656,7 @@ italian_ambition = {
 		NOT = {
 			num_of_owned_provinces_with = {
 			value = 2
-			region = italian_region
+			region = italy_region
 			}
 		}
 		capital_scope = {
@@ -669,7 +669,7 @@ italian_ambition = {
 	success = {
 		num_of_owned_provinces_with = {
 			value = 5
-			region = italian_region
+			region = italy_region
 		}
 	}
 	chance = {

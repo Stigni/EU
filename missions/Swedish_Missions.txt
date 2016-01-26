@@ -483,7 +483,7 @@ reconquer_finland = {
 	
 	
 	target_provinces = {
-		region = finnish_region
+		area = finland_area
 		OR = {
 			owned_by = RUS
 			owned_by = MOS
@@ -493,10 +493,11 @@ reconquer_finland = {
 	allow = {
 		normal_or_historical_nations = yes
 		tag = SWE
+		NOT = { has_country_flag = recovered_finland }
 		is_subject = no
 		OR = {
-			finnish_region = { owned_by = MOS }
-			finnish_region = { owned_by = RUS }
+			finland_area = { owned_by = MOS }
+			finland_area = { owned_by = RUS }
 		}
 		NOT = { alliance_with = RUS }
 		NOT = { alliance_with = MOS }
@@ -529,6 +530,7 @@ reconquer_finland = {
 	effect = {
 		add_mil_power = 100
 		add_stability = 1
+		set_country_flag = recovered_finland
 	}
 }
 
@@ -546,17 +548,17 @@ swedish_colony_in_north_america = {
 		}
 		tag = SWE
 		is_year = 1600
-		northeastern_america = {
+		northeast_america_region = {
 			has_discovered = ROOT
 			is_empty = yes
 		}
 		NOT = {
-			northeastern_america = {
+			northeast_america_region = {
 				owned_by = ROOT
 			}
 		}
 		NOT = {
-			northeastern_america = {
+			northeast_america_region = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -565,11 +567,11 @@ swedish_colony_in_north_america = {
 		num_of_colonists = 1
 	}
 	abort = {
-		NOT = { northeastern_america = { is_empty = yes } }
-		NOT = { northeastern_america = { owned_by = ROOT } }
+		NOT = { northeast_america_region = { is_empty = yes } }
+		NOT = { northeast_america_region = { owned_by = ROOT } }
 	}
 	success = {
-		northeastern_america = { owned_by = ROOT }
+		northeast_america_region = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 2000

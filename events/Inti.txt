@@ -66,6 +66,7 @@ country_event = {
 		is_religion_reformed = no
 		has_heir = yes
 		heir_age = 10
+		has_female_heir = no
 		NOT = { has_ruler_flag = inti_heir_matched }
 	}
 	

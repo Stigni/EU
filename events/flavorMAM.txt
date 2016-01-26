@@ -431,6 +431,7 @@ country_event = {
 	trigger = {
 		tag = MAM
 		is_year = 1492
+		owns = 361
 	}
 	
 	mean_time_to_happen = {
@@ -511,8 +512,7 @@ country_event = {
 
 		exists = POR
 		manpower_percentage = 0.5
-		owns = 361
-		
+		owns = 2315
 		1331 = {				#Gulf of Aden
 			is_strongest_trade_power = POR
 		}
@@ -534,7 +534,7 @@ country_event = {
 			}
 			add_manpower = -40
 			
-			361 = {
+			2315 = {
 				add_unit_construction = {
 					type = light_ship
 					amount = 20

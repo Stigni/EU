@@ -34,6 +34,7 @@ country_decisions = {
 		allow = {
 			adm_tech = 10
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			owns_core_province = 236		# London
 			owns_core_province = 237		# Oxfordshire
@@ -61,11 +62,11 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			british_isles = {
+			british_isles_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = GBR
+				add_permanent_claim = GBR
 			}
 			add_prestige = 25
 			
@@ -87,6 +88,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { exists = GBR }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -123,6 +125,7 @@ country_decisions = {
 		allow = {
 			adm_tech = 10
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			legitimacy = 100
 			OR = {
@@ -132,6 +135,7 @@ country_decisions = {
 						SCO = {	junior_union_with = ENG	}
 						SCO = {	vassal_of = ENG	}
 					}
+					SCO = { NOT = { num_of_cities = 11 } }
 				}
 				AND = {
 					tag = SCO
@@ -139,6 +143,7 @@ country_decisions = {
 						ENG = {	junior_union_with = SCO	}
 						ENG = {	vassal_of = SCO	}
 					}
+					ENG = { NOT = { num_of_cities = 28 } }
 				}
 			}
 		}
@@ -180,11 +185,11 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			british_isles = {
+			british_isles_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = GBR
+				add_permanent_claim = GBR
 			}
 			add_prestige = 25
 			

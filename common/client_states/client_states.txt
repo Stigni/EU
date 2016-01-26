@@ -1,6 +1,6 @@
 westphalia = 
 {
-	region = westphalian_region
+	area = westphalia_area
 	
 	name = {
 		name = "KINGDOM_OF_WESTPHALIA"
@@ -23,7 +23,12 @@ westphalia =
 
 two_sicilies = 
 {
-	region = two_sicilies
+	OR = {
+		area = naples_area
+		area = calabria_area
+		area = apulia_area
+		area = sicily_area
+	}
 	
 	name = {
 		name = "KINGDOM_OF_NAPLES"
@@ -47,7 +52,7 @@ two_sicilies =
 
 italy = 
 {
-	region = italian_region
+	region = italy_region
 	
 	name = {
 		name = "KINGDOM_OF_ITALY"

@@ -1,0 +1,256 @@
+religious_intolerance
+       3
+       0
+       0
+religious_tolerance
+       4
+       0
+       0
+forced_conversion
+       2
+       0
+       0
+decreased_morale
+       2
+       0
+       0
+enforce_serfdom
+       3
+       0
+       0
+restrict_serfdom
+       3
+       0
+       0
+support_monarch
+       2
+       0
+       0
+oppose_monarch
+       2
+       0
+       0
+heresy
+       3
+       0
+       0
+plague
+       3
+       0
+       0
+colonial_enthusiasm
+       2
+       0
+      10
+colonial
+       8
+       1
+      10
+spy
+       2
+       0
+       0
+the_abolish_slavery_act
+       1
+       1
+       0
+portuguese_india_trade_co
+       2
+       0
+       0
+improved_fortifications
+       3
+       0
+       0
+bad_discipline
+       2
+       0
+       0
+local_fortress
+       4
+       0
+       0
+religious_zeal_at_conv
+       5
+       0
+       0
+centralization_modifier
+       9
+      37
+       0
+decentralization_modifier
+       6
+       1
+       0
+aristocracy_modifier
+       5
+       0
+       0
+plutocracy_modifier
+       2
+       0
+       0
+serfdom_modifier
+       4
+       0
+       0
+innovative_modifier
+       4
+       1
+       1
+narrowminded_modifier
+       7
+       1
+       0
+mercantilism_modifier
+       3
+       0
+       0
+freetrade_modifier
+       3
+       0
+       0
+offensive_modifier
+       2
+       0
+       0
+defensive_modifier
+       2
+       0
+       0
+land_modifier
+       2
+       0
+       0
+naval_modifier
+       2
+       0
+       0
+aristocratic_privileges
+       2
+       0
+       0
+the_conventicle_edict
+       3
+       0
+       0
+pietism
+       3
+       0
+       0
+famine
+       3
+       0
+       0
+fighting_famine
+       2
+       0
+       0
+severe_famine
+       2
+       0
+       0
+severe_plague
+       6
+       0
+       0
+contained_plague
+       4
+       0
+       0
+religious_violence
+       2
+       0
+       0
+concessions_to_the_nobility
+       2
+       0
+       0
+pol_nieszawa_privileges
+       2
+       0
+       0
+jap_rangaku
+       2
+       0
+       0
+inc_smallpox_outbreak
+       2
+       0
+       0
+plundered_in_war
+       2
+       0
+       0
+add_unrest_
+      17
+       0
+       0
+add_unrest_
+      17
+       0
+       0
+remove_unrest_
+       4
+       0
+       0
+achieved_religious_unity_mission
+       0
+       0
+       2
+force_converted_province_mission
+       0
+       0
+       3
+east_india_trade_rush
+       0
+       0
+       4
+faster_integration
+       0
+       0
+      10
+military_victory
+       0
+       0
+      14
+military_vassalization
+       0
+       0
+       8
+italian_ambition_modifier
+       0
+       0
+       2
+foreign_contacts
+       0
+       0
+       2
+succesful_bid_for_imperial_crown
+       0
+       0
+       2
+baltic_ambition
+       0
+       0
+       4
+mediterranean_ambition
+       0
+       0
+       5
+black_sea_ambition
+       0
+       0
+       2
+indian_ambition
+       0
+       0
+       2
+polish_partitions
+       0
+       0
+       3
+drove_back_the_turk
+       0
+       0
+       2

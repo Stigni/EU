@@ -35,7 +35,7 @@ province_event = {
 		}
 		modifier = {
 			factor = 1.5
-			owner = { legitimacy = 95 }
+			owner = { legitimacy_or_horde_unity = 95 }
 		}
 		modifier = {
 			factor = 1.1

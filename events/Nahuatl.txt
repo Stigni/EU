@@ -313,11 +313,31 @@ country_event = {
 	
 	option = {
 		name = nahuatl_events.9.a #The Artisan must die.
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -5
+			}
+		}
 		add_doom = -10
 		add_adm_power = -50
 	}
 	option = {
 		name = nahuatl_events.9.b #His work is too important for him to die.
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 5
+			}
+		}
 		add_doom = 10
 		add_adm_power = 50
 	}
@@ -817,12 +837,32 @@ country_event = {
 	
 	option = {
 		name = nahuatl_events.20.a #Sacrifice the prisoners
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 5
+			}
+		}
 		add_doom = -5
 	}
 	option = {
 		name = nahuatl_events.20.b #Hold a grander festival and sacrifice prisoners from all our subject states.
 		trigger = {
 			num_of_vassals = 2
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
 		}
 		if = {
 			limit = {
@@ -984,14 +1024,6 @@ country_event = {
 		}
 		if = {
 			limit = {
-				num_of_vassals = 1
-				NOT = { num_of_vassals = 2 }
-			}
-			add_doom = -2
-			add_prestige = 5
-		}
-		if = {
-			limit = {
 				num_of_vassals = 2
 				NOT = { num_of_vassals = 3 }
 			}
@@ -1057,6 +1089,16 @@ country_event = {
 	option = {
 		name = nahuatl_events.26.a #Confiscate their goods.
 		ai_chance = { factor = 5 }
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -5
+			}
+		}
 		add_years_of_income = 0.1
 		add_country_modifier = {
 			name = "nahuatl_angered_pochtecas"
@@ -1067,6 +1109,16 @@ country_event = {
 		name = nahuatl_events.26.b #Imprison the Pochtecas.
 		ai_chance = { factor = 5 }
 		add_years_of_income = 0.1
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
+		}
 		add_country_modifier = {
 			name = "nahuatl_angered_pochtecas"
 			duration = 3650
@@ -1089,6 +1141,16 @@ country_event = {
 	option = {
 		name = nahuatl_events.26.c #We don't dare to do anything.
 		ai_chance = { factor = 0 }
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 5
+			}
+		}
 		add_country_modifier = {
 			name = "nahuatl_allowed_spying_pochtecas"
 			duration = 1825
@@ -1171,6 +1233,16 @@ country_event = {
 	option = {
 		name = nahuatl_events.29.a #It is time for an ambitious expansion of the Temple.
 		ai_chance = { factor = 0 }
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 5
+			}
+		}
 		set_ruler_flag = temple_expansion
 		add_years_of_income = -0.75
 		add_doom = -15
@@ -1193,6 +1265,16 @@ country_event = {
 	option = {
 		name = nahuatl_events.29.dd #We cannot afford to do much this time.
 		ai_chance = { factor = 0 }
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -5
+			}
+		}
 		set_ruler_flag = temple_expansion
 		add_doom = 10
 	}

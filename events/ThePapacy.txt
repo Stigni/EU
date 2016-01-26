@@ -206,7 +206,7 @@ country_event = {
 		}
 		any_known_country = {
 			capital_scope = {
-				region = italian_region
+				region = italy_region
 			}
 			has_opinion = { who = ROOT value = 25 }
 			reverse_has_opinion = { who = ROOT value = 25 }
@@ -237,7 +237,7 @@ country_event = {
 		random_known_country = {
 			limit = {
 				capital_scope = {
-					region = italian_region
+					region = italy_region
 				}
 				has_opinion = { who = ROOT value = 25 }
 				reverse_has_opinion = { who = ROOT value = 25 }
@@ -632,6 +632,9 @@ country_event = {
 	
 	option = {
 		name = papacy_events.14.a
+		ai_chance = {
+			factor = 10
+		}
 		add_stability = -1
 		add_reform_desire = -0.1
 		add_devotion = 10
@@ -641,6 +644,9 @@ country_event = {
 	
 	option = {
 		name = papacy_events.14.b
+		ai_chance = {
+			factor = 90
+		}
 		add_devotion = -10
 		add_country_modifier = {
 			name = pap_indulgences
@@ -683,6 +689,9 @@ country_event = {
 	
 	option = {
 		name = papacy_events.15.a
+		ai_chance = {
+			factor = 1
+		}
 		add_stability = -1
 		add_reform_desire = -0.1
 		add_devotion = 10
@@ -692,6 +701,9 @@ country_event = {
 	
 	option = {
 		name = papacy_events.15.b
+		ai_chance = {
+			factor = 90
+		}
 		add_devotion = -10
 		add_country_modifier = {
 			name = pap_simony
@@ -734,6 +746,9 @@ country_event = {
 	
 	option = {
 		name = papacy_events.16.a
+		ai_chance = {
+			factor = 10
+		}
 		add_stability = -1
 		add_reform_desire = -0.1
 		add_devotion = 10
@@ -743,6 +758,9 @@ country_event = {
 	
 	option = {
 		name = papacy_events.16.b
+		ai_chance = {
+			factor = 90
+		}
 		add_devotion = -10
 		add_country_modifier = {
 			name = pap_veneration_relics
@@ -1182,6 +1200,9 @@ country_event = {
 	
 	option = {
 		name = papacy_events.26.a
+		ai_chance = {
+			factor = 90
+		}
 		add_devotion = 10
 		FROM = {
 			country_event = {
@@ -1193,6 +1214,9 @@ country_event = {
 	
 	option = {
 		name = papacy_events.26.b
+		ai_chance = {
+			factor = 10
+		}
 		add_reform_desire = -0.1
 		FROM = {
 			country_event = {

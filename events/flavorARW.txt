@@ -61,7 +61,7 @@ country_event = {
 		always = no # For now
 		tag = ARW
 		capital_scope = {
-			region = guyana_region
+			area = guyana_area
 		}
 		any_known_country = {
 			is_neighbor_of = ROOT

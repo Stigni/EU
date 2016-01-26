@@ -6,7 +6,11 @@ conquer_punjab_MUG = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = punjab_region
+		OR = {
+			area = lahore_area
+			area = multan_area
+			area = sirhind_area
+		}
 		NOT = { province_id = 2079 } #Derajat
 		NOT = { province_id = 2086 } #Cholistan
 		NOT = { province_id = 2065 } #Bhattiana
@@ -25,14 +29,23 @@ conquer_punjab_MUG = {
 		NOT = { has_country_modifier = indian_ambition }
 		NOT = { has_country_flag = conquered_punjab }
 		is_subject = no
-		NOT = { capital_scope = { region = indian_region } }
+		NOT = { capital_scope = { region = hindusthan_region } }
+		NOT = { capital_scope = { region = rajputana_region } }
+		NOT = { capital_scope = { region = bengal_region } }
+		NOT = { capital_scope = { region = west_india_region } }
+		NOT = { capital_scope = { region = deccan_region } }
+		NOT = { capital_scope = { region = coromandel_region } }
 		OR = {
 			owns = 578 	#Roh
 			owns = 2226 #Jallalabad / Adinapur
 			owns = 452 #Badakshan
 		}
 		any_province = {
-			region = punjab_region
+			OR = {
+				area = lahore_area
+				area = multan_area
+				area = sirhind_area
+			}
 			NOT = { province_id = 2079 } #Derajat
 			NOT = { province_id = 2086 } #Cholistan
 			NOT = { province_id = 2065 } #Bhattiana
@@ -107,6 +120,7 @@ conquer_delhi = {
 			tag = TIM
 			tag = MUG
 		}
+		NOT = { has_country_flag = conquered_delhi }
 		exists = DLH	
 		is_subject = no
 		DLH = {
@@ -150,6 +164,7 @@ conquer_delhi = {
 	effect = {
 		add_prestige = 25
 		add_adm_power = 400
+		set_country_flag = conquered_delhi
 	}
 }
 
@@ -294,7 +309,10 @@ defend_the_mughal_borders = {
 	category = MIL
 	
 	target_provinces = {
-		region = afghanistan_region
+		OR = {
+			area = kabulistan_area
+			area = ghor_area
+		}
 		owned_by = PER
 	}
 	allow = {
@@ -309,12 +327,18 @@ defend_the_mughal_borders = {
 		NOT = { war_with = PER }
 		MUG = {
 			any_owned_province = {
-				region = afghanistan_region
+				OR = {
+					area = kabulistan_area
+					area = ghor_area
+				}
 			}
 		}
 		PER = {
 			any_owned_province = {
-				region = afghanistan_region
+				OR = {
+					area = kabulistan_area
+					area = ghor_area
+				}
 			}
 		}
 	}
@@ -364,7 +388,7 @@ mughal_break_the_persian_border = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = persian_region
+		region = khorasan_region
 		owned_by = PER
 	}
 	allow = {
@@ -372,13 +396,14 @@ mughal_break_the_persian_border = {
 		tag = MUG
 		exists = PER
 		is_subject = no
+		num_of_cities = PER
 		PER = {
 			is_neighbor_of = ROOT
 			num_of_cities = 15
 			NOT = { alliance_with = MUG }
 		}
-		persian_region = { owned_by = PER }
-		NOT = { persian_region = { owned_by = ROOT } }
+		khorasan_region = { owned_by = PER }
+		NOT = { khorasan_region = { owned_by = ROOT } }
 		NOT = { has_country_modifier = conquest_of_persia }
 		NOT = { has_country_flag = persia_conquered_mug }
 	}
@@ -733,7 +758,14 @@ defeat_england = {
 	category = MIL
 	
 	target_provinces = {
-		region = indian_region
+		OR = {
+			region = bengal_region
+			region = hindusthan_region
+			region = rajputana_region
+			region = deccan_region
+			region = coromandel_region
+			region = west_india_region
+		}
 		owned_by = ENG
 	}
 	allow = {
@@ -746,7 +778,14 @@ defeat_england = {
 			is_neighbor_of = ROOT
 			num_of_owned_provinces_with = {
 				value = 20
-				region = indian_region
+				OR = {
+					region = bengal_region
+					region = hindusthan_region
+					region = rajputana_region
+					region = deccan_region
+					region = coromandel_region
+					region = west_india_region
+				}
 			}
 		}
 		NOT = { alliance_with = ENG }
@@ -759,7 +798,12 @@ defeat_england = {
 	}
 	success = {
 		NOT = { war_with = ENG }
-		NOT = { indian_region = { owned_by = ENG } }
+		NOT = { bengal_region = { owned_by = ENG } }
+		NOT = { hindusthan_region = { owned_by = ENG } }
+		NOT = { rajputana_region = { owned_by = ENG } }
+		NOT = { deccan_region = { owned_by = ENG } }
+		NOT = { coromandel_region = { owned_by = ENG } }
+		NOT = { west_india_region = { owned_by = ENG } }
 	}
 	chance = {
 		factor = 3000
@@ -797,7 +841,7 @@ defend_timurid_lands = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = transoxiana_region
+		area = transoxiana_area
 		owned_by = SHY
 	}
 	allow = {
@@ -809,8 +853,8 @@ defend_timurid_lands = {
 		is_neighbor_of = SHY
 		NOT = { alliance_with = PER }
 		NOT = { alliance_with = SHY }
-		transoxiana_region = { owned_by = ROOT }
-		transoxiana_region = { owned_by = SHY }
+		transoxiana_area = { owned_by = ROOT }
+		transoxiana_area = { owned_by = SHY }
 		NOT = { has_country_modifier = defended_against_shybanids }
 		NOT = { has_country_flag = defend_timurid_lands_mission }
 	}
@@ -822,7 +866,7 @@ defend_timurid_lands = {
 	}
 	success = {
 		NOT = { war_with = SHY }
-		NOT = { transoxiana_region = { owned_by = SHY } }
+		NOT = { transoxiana_area = { owned_by = SHY } }
 	}
 	chance = {
 		factor = 3000

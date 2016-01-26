@@ -8,7 +8,7 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = ENG }
+			NOT = { tag = ENG }
 			NOT = { exists = GBR }
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
@@ -24,6 +24,9 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
+			is_subject = no
+			is_nomad = no			
+			NOT = { exists = ENG }
 			owns_core_province = 236		# London
 			owns_core_province = 237		# Oxfordshire
 			owns_core_province = 234		# Wessex
@@ -50,29 +53,35 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			northumbria = {
+			northern_england_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = ENG
+				add_permanent_claim = ENG
 			}
-			mercia = {
+			mercia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = ENG
+				add_permanent_claim = ENG
 			}
-			essex = {
+			east_anglia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = ENG
+				add_permanent_claim = ENG
 			}
-			welsh_region = {
+			wales_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = ENG
+				add_permanent_claim = ENG
+			}
+			wessex_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ENG
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

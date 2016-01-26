@@ -51,7 +51,7 @@ retake_kaffa = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = crimean_region
+		area = crimea_area
 		is_core = GEN
 		NOT = { owned_by = GEN }
 		owner = {
@@ -64,7 +64,7 @@ retake_kaffa = {
 		tag = GEN
 		is_subject = no
 		any_province = {
-			region = crimean_region
+			area = crimea_area
 			is_core = GEN
 			NOT = { owned_by = GEN }
 			owner = {

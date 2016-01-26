@@ -85,7 +85,7 @@ country_event = {
 	
 	option = {
 		name = subject_interaction_events.2.a
-		add_years_of_income = -0.1
+		add_treasury = -100
 		add_manpower = -2
 		FROM = {
 			set_country_flag = si_pretender_help_flag
@@ -131,7 +131,7 @@ country_event = {
 		trigger = {
 			has_country_flag = si_pretender_help_flag
 		}
-		add_years_of_income = 0.1
+		add_treasury = 100
 		add_manpower = 2
 		tooltip = {
 			add_opinion = {
@@ -201,6 +201,7 @@ country_event = {
 	option = {
 		name = subject_interaction_events.4.a
 		add_legitimacy = -10
+		add_horde_unity = -10
 		random_subject_country = {
 			limit = {
 				government = monarchy
@@ -237,7 +238,7 @@ country_event = {
 		has_dlc = "Common Sense"
 		has_regency = no
 		government = monarchy
-		NOT = { legitimacy = 100 }
+		NOT = { legitimacy_or_horde_unity = 100 }
 		any_subject_country = {
 			government = monarchy
 			has_regency = no
@@ -271,11 +272,14 @@ country_event = {
 	option = {
 		name = subject_interaction_events.5.a
 		if = {
-			limit = { NOT = { legitimacy = 91 } }
+			limit = { NOT = { legitimacy_or_horde_unity = 91 } }
 			add_legitimacy = 10
+			add_horde_unity = 10
 		}
 		if = {
-			limit = { legitimacy = 91 }
+			limit = {
+				legitimacy_or_horde_unity = 91
+			}
 			add_prestige = 10
 		}
 	}
@@ -294,6 +298,8 @@ country_event = {
 		has_dlc = "Common Sense"
 		has_regency = no
 		government = monarchy
+		NOT = { government = steppe_horde }
+		religion_group = christian
 		num_of_cities = 2
 		NOT = {
 			legitimacy = 50
@@ -589,6 +595,8 @@ country_event = {
 		is_subject = yes
 		any_known_country = {
 			overlord_of = ROOT
+			manpower = 8
+			treasury = 65
 			NOT = {
 				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_sent_general }
 				reverse_has_opinion_modifier = { who = ROOT modifier = opinion_sent_advisor }
@@ -653,7 +661,7 @@ country_event = {
 	}
 	option = {
 		name = subject_interaction_events.12.b
-		add_years_of_income = -0.15
+		add_treasury = -25
 		FROM = {
 			tooltip = {
 				create_advisor = army_reformer
@@ -671,12 +679,12 @@ country_event = {
 	}
 	option = {
 		name = subject_interaction_events.12.c
-		add_years_of_income = -0.1
-		add_manpower = -0.2
+		add_treasury = -50
+		add_manpower = -5
 		FROM = {
 			tooltip = {
-				add_years_of_income = 0.1
-				add_manpower = 0.2
+				add_treasury = 50
+				add_manpower = 5
 			}
 			set_country_flag = si_sent_gold_flag
 			country_event = {
@@ -1615,16 +1623,16 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		NOT = {
-			legitimacy = 50
-		}
+		NOT = { legitimacy_or_horde_unity = 50 }
+		government = monarchy
 		any_subject_country = {
+			government = monarchy
 			OR = {
 				NOT = {
 					has_opinion = { who = ROOT value = 0 }
 				}
 				liberty_desire = 50
-				legitimacy = 75
+				legitimacy_or_horde_unity = 75
 			}
 			NOT = {
 				has_opinion_modifier = { who = ROOT modifier = opinion_low_legitimacy }
@@ -1640,12 +1648,13 @@ country_event = {
 		hidden_effect = {
 			random_subject_country = {
 				limit = {
+					government = monarchy
 					OR = {
 						NOT = {
 							has_opinion = { who = ROOT value = 0 }
 						}
 						liberty_desire = 50
-						legitimacy = 75
+						legitimacy_or_horde_unity = 75
 					}
 					NOT = {
 						has_opinion_modifier = { who = ROOT modifier = opinion_low_legitimacy }
@@ -1674,6 +1683,7 @@ country_event = {
 		name = subject_interaction_events.29.b
 		add_prestige = -5
 		add_legitimacy = -5
+		add_horde_unity = -5
 		random_subject_country = {
 			limit = {
 				has_country_flag = si_legitimacy_flag
@@ -1775,6 +1785,7 @@ country_event = {
 					is_claim = ROOT
 					is_core = ROOT
 				}
+				controlled_by = owner
 			}
 		}
 	}
@@ -1808,6 +1819,7 @@ country_event = {
 							is_core = ROOT
 							is_claim = ROOT
 						}
+						controlled_by = owner
 					}
 					set_province_flag = si_provincecore_flag
 				}
@@ -2194,7 +2206,7 @@ country_event = {
 	}
 	option = {
 		name = subject_interaction_events.38.b  
-		add_prestige = -10
+		add_prestige = 10
 		hidden_effect = {
 			random_subject_country = {
 				limit = {

@@ -11,6 +11,7 @@ hinduism_rebels = {
 	independence = none				# Does not strive for independence
 	unit_transfer = no
 	gfx_type = culture_province
+	will_relocate = yes	
 	
 	resilient = no
 	reinforcing = yes
@@ -127,6 +128,7 @@ hinduism_rebels = {
 				OR = {
 					religion = hinduism
 					is_reformation_center = yes
+					owner = { religion = hinduism }
 				}
 			}
 			add_province_modifier = {
@@ -138,6 +140,7 @@ hinduism_rebels = {
 			limit = {
 				NOT = { religion = hinduism }
 				is_reformation_center = no
+				NOT = { owner = { religion = hinduism } }
 			}
 			change_religion = hinduism
 			add_province_modifier = {
@@ -188,8 +191,26 @@ hinduism_rebels = {
 				religion = hinduism
 			}
 			add_country_modifier = {
-				name = "religious_intolerance"
+				name = "religious_intolerance_enforced"
 				duration = 3650
+			}
+		}
+		if = {
+			limit = {
+				religion = hinduism
+				has_estate = estate_church
+				NOT = {
+					has_estate_influence_modifier = {
+						estate = estate_church
+						modifier = EST_VAL_RELIGIOUS_ZEALOTS_TRIUMPH
+					}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = EST_VAL_RELIGIOUS_ZEALOTS_TRIUMPH
+				duration = 3650
+				influence = 15
 			}
 		}
 		if = {

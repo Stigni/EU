@@ -70,26 +70,56 @@ province_event = {
 		province_id = 2238
 		NOT = { exists = FUL }
 		is_year = 1470
-		fulo_spawning_region = {
+		tekrur_area = {
 			is_empty = yes
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 180
+		months = 36
 	}
 	
 	
 	option = {
 		name = flavor_mal.2.a
-		fulo_spawning_region = {
+		every_province = {
+			limit = {
+				OR = {
+					area = tekrur_area
+					province_id = 1112 #Trarza
+					province_id = 1112 #Futa Jallon
+					province_id = 1120 #Bambuk
+					province_id = 2238 #Kantor
+					province_id = 2243 #Termes
+					province_id = 2245 #Wagadu
+					province_id = 2246 #Bagena
+				}
+			}
 			add_core = FUL
-			owner = {
-				country_event = { id = flavor_mal.3 }
+			hidden_effect = {
+				if = {
+					limit = {
+						owner = {
+							NOT = { has_country_flag = fulani_info_flag }
+						}
+					}
+					country_event = { id = flavor_mal.3 }
+					set_country_flag = fulani_info_flag
+				}
 			}
 		}
-		fulo_spawning_region = {
+		every_province = {
 			limit = {
+				OR = {
+					area = tekrur_area
+					province_id = 1112 #Trarza
+					province_id = 1112 #Futa Jallon
+					province_id = 1120 #Bambuk
+					province_id = 2238 #Kantor
+					province_id = 2243 #Termes
+					province_id = 2245 #Wagadu
+					province_id = 2246 #Bagena
+				}
 				is_empty = no
 			}
 			add_province_modifier = {
@@ -98,8 +128,18 @@ province_event = {
 			}
 			change_culture = fulani
 		}
-		fulo_spawning_region = {
+		every_province = {
 			limit = {
+				OR = {
+					area = tekrur_area
+					province_id = 1112 #Trarza
+					province_id = 1112 #Futa Jallon
+					province_id = 1120 #Bambuk
+					province_id = 2238 #Kantor
+					province_id = 2243 #Termes
+					province_id = 2245 #Wagadu
+					province_id = 2246 #Bagena
+				}
 				is_empty = yes
 			}
 			cede_province = FUL
@@ -128,10 +168,22 @@ country_event = {
 		NOT = { owns = 2238 }
 	}
 
-	option = { 
+	option = {
 		name = flavor_nub.2.a
 		tooltip = {
-			fulo_spawning_region = {
+			every_province = {
+				limit = {
+					OR = {
+						area = tekrur_area
+						province_id = 1112 #Trarza
+						province_id = 1112 #Futa Jallon
+						province_id = 1120 #Bambuk
+						province_id = 2238 #Kantor
+						province_id = 2243 #Termes
+						province_id = 2245 #Wagadu
+						province_id = 2246 #Bagena
+					}
+				}
 				add_core = FUL
 			}
 		}
@@ -153,7 +205,7 @@ country_event = {
 		exists = POR
 		is_year = 1455 #ie after the initial, more violent encounters.
 		any_owned_province = {
-			region = west_african_coast
+			has_port = yes
 			has_discovered = POR
 		}
 	}
@@ -186,7 +238,7 @@ country_event = {
 		is_year = 1465
 		has_country_modifier = mal_portuguese_traders
 		any_owned_province = {
-			region = west_african_coast
+			has_port = yes
 		}
 	}
 	
@@ -212,8 +264,8 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				OR = {
-					region = west_african_coast
-					region = senegambia
+					has_port = yes
+					area = cap_verde_area
 					province_id = 2238
 					province_id = 1117
 					province_id = 1120

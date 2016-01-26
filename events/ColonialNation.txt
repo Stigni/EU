@@ -937,7 +937,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "colonial_nation.EVTOPTA90"	# Administrative Monarchy
+		name = "colonial_nation.EVTOPTA90"	# Monarchy
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -947,11 +947,45 @@ country_event = {
 				}
 			}
 		}
-		change_government = administrative_monarchy
+		if = {
+			limit = {
+				NOT = {
+					adm_tech = 12
+				}
+			}
+			change_government = despotic_monarchy
+		}
+		if = {
+			limit = {
+				adm_tech = 12
+				NOT = { adm_tech = 20 }
+			}
+			change_government = administrative_monarchy
+		}
+		if = {
+			limit = {
+				adm_tech = 20
+				NOT = { adm_tech = 22 }
+			}
+			change_government = absolute_monarchy
+		}
+		if = {
+			limit = {
+				adm_tech = 22
+				NOT = { adm_tech = 29 }
+			}
+			change_government = constitutional_monarchy
+		}
+		if = {
+			limit = {
+				adm_tech = 29
+			}
+			change_government = enlightened_despotism
+		}
 		kill_ruler = yes
 	}
 	option = {
-		name = "colonial_nation.EVTOPTB90"	# Administrative Republic
+		name = "colonial_nation.EVTOPTB90"	# Republic
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -967,47 +1001,32 @@ country_event = {
 				}
 			}
 		}
-		change_government = administrative_republic
-		kill_ruler = yes
-	}
-	option = {
-		name = "colonial_nation.EVTOPTC90"	# Noble Republic
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 2
-				colonial_parent = {
-					government = republic
-				}
+		if = {
+			limit = {
+				NOT = { adm_tech = 7 }
 			}
-			modifier = {
-				factor = 2
-				colonial_parent = {
-					government = noble_republic
-				}
-			}
+			change_government = oligarchic_republic
 		}
-		change_government = noble_republic
-		kill_ruler = yes
-	}
-	option = {
-		name = "colonial_nation.EVTOPTD90"	# Merchant Republic
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 2
-				colonial_parent = {
-					government = republic
-				}
+		if = {
+			limit = {
+				adm_tech = 7
+				NOT = { adm_tech = 12 }
 			}
-			modifier = {
-				factor = 2
-				colonial_parent = {
-					government = merchant_republic
-				}
-			}
+			change_government = noble_republic
 		}
-		change_government = merchant_republic
+		if = {
+			limit = {
+				adm_tech = 12
+				NOT = { adm_tech = 22 }
+			}
+			change_government = administrative_republic
+		}
+		if = {
+			limit = {
+				adm_tech = 22
+			}
+			change_government = constitutional_republic
+		}
 		kill_ruler = yes
 	}
 }

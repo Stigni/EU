@@ -62,8 +62,11 @@ province_event = {
 		name = catholic_flavor.1.a
 		owner = { 
 			add_prestige = 5 
-			add_papal_influence = 2
 			add_devotion = 1
+			if = {
+				limit = { NOT = { tag = PAP } }
+				add_papal_influence = 2
+			}
 		}
 	}
 }

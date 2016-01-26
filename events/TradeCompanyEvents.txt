@@ -139,62 +139,6 @@ province_event = {
 	}
 }
 
-# New Fort
-province_event = {
-	id = trade_company_events.4
-	title = "trade_company_events.EVTNAME4"
-	desc = "trade_company_events.EVTDESC4"
-	picture = FORT_eventPicture
-	
-	trigger = {
-		is_owned_by_trade_company = yes
-		trade_company_size = 8
-		OR = {
-			has_port = yes
-			any_neighbor_province = {
-				NOT = { owned_by = ROOT }
-			}
-		}
-		NOT = {
-			any_neighbor_province = {
-				has_building = fort_15th
-				owned_by = ROOT
-			}
-		}
-		num_free_building_slots = 1
-		can_build = fort_15th
-		NOT = { has_building = fort_15th }
-		NOT = { has_building = fort_16th }
-		NOT = { has_building = fort_17th }
-		NOT = { has_building = fort_18th }
-	}
-	
-	mean_time_to_happen = {
-		months = 2000
-		modifier = {
-			factor = 0.95
-			trade_company_size = 10
-		}
-		modifier = {
-			factor = 0.95
-			trade_company_size = 15
-		}
-		modifier = {
-			factor = 0.95
-			trade_company_size = 20
-		}
-	}
-
-	option = {	# Good initiative!
-		name = "trade_company_events.EVTOPTA4"
-		add_building = fort_15th
-	}
-	option = {	# Best not anger the locals.
-		name = "trade_company_events.EVTOPTB4"
-		add_unrest = -1
-	}
-}
-
 # Border Conflict
 province_event = {
 	id = trade_company_events.5
@@ -261,7 +205,7 @@ province_event = {
 	
 	trigger = {
 		is_owned_by_trade_company = yes
-		trade_company_size = 5
+		trade_company_size = 10
 		any_neighbor_province = {
 			NOT = { owned_by = ROOT }
 			is_owned_by_trade_company = yes
@@ -271,12 +215,10 @@ province_event = {
 		}
 	}
 	
+	is_mtth_scaled_to_size = 1
+
 	mean_time_to_happen = {
-		months = 2000
-		modifier = {
-			factor = 0.95
-			trade_company_size = 10
-		}
+		months = 500
 		modifier = {
 			factor = 0.95
 			trade_company_size = 15
@@ -284,6 +226,10 @@ province_event = {
 		modifier = {
 			factor = 0.95
 			trade_company_size = 20
+		}
+		modifier = {
+			factor = 0.95
+			trade_company_size = 25
 		}
 		modifier = {
 			factor = 0.75
@@ -369,6 +315,11 @@ province_event = {
 			NOT = { owned_by = ROOT }
 			NOT = { is_core = ROOT }
 			NOT = { is_claim = ROOT }
+			owner = {
+				NOT = { alliance_with = ROOT }
+				NOT = { truce_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+			}
 		}
 	}
 	
@@ -396,6 +347,11 @@ province_event = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
 				NOT = { is_claim = ROOT }
+				owner = {
+					NOT = { alliance_with = ROOT }
+					NOT = { truce_with = ROOT }
+					NOT = { is_subject_of = ROOT }
+				}
 			}
 			add_claim = ROOT
 			set_province_flag = claimed_for_trade_company

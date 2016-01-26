@@ -715,6 +715,7 @@ country_event = {
 			}
 			INC = {
 				capital_scope = { controlled_by = ROOT }
+				has_regency = no
 			}
 		}
 	}
@@ -1092,6 +1093,10 @@ country_event = {
 			NOT = { religion = mesoamerican_religion }
 		}
 		change_religion = inti
+		if = {
+			limit = { government = native_council }
+			change_government = tribal_despotism
+		}
 	}
 	option = { #Let them worship the idol.
 		name = flavor_inc.21.c

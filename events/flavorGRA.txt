@@ -25,14 +25,15 @@ country_event = {
 		capital_scope = {
 			OR = {
 				region = egypt_region
-				region = cyrenaica_region
-				region = tripoli_region
-				region = tunisian_region
-				region = algerian_region
-				region = moroccan_region
-				region = syrian_region
-				region = anatolia
-				region = greece_region
+				region = maghreb_region
+				region = anatolia_region
+				area = syria_area
+				area = palestine_area
+				area = aleppo_area
+				area = northern_greece_area
+				area = morea_area
+				area = macedonia_area
+				area = western_aegean_area
 			}
 		}
 		religion_group = muslim

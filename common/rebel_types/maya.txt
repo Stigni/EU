@@ -11,6 +11,7 @@ maya_rebels = {
 	independence = none				# Does not strive for independence
 	unit_transfer = yes
 	gfx_type = culture_province
+	will_relocate = yes	
 	
 	resilient = no
 	reinforcing = yes
@@ -127,6 +128,7 @@ maya_rebels = {
 				OR = {
 					religion = mesoamerican_religion
 					is_reformation_center = yes
+					owner = { religion = mesoamerican_religion }
 				}
 			}
 			add_province_modifier = {
@@ -138,6 +140,7 @@ maya_rebels = {
 			limit = {
 				NOT = { religion = mesoamerican_religion }
 				is_reformation_center = no
+				NOT = { owner = { religion = mesoamerican_religion } }
 			}
 			change_religion = mesoamerican_religion
 			add_province_modifier = {
@@ -185,8 +188,26 @@ maya_rebels = {
 				religion = mesoamerican_religion
 			}
 			add_country_modifier = {
-				name = "religious_intolerance"
+				name = "religious_intolerance_enforced"
 				duration = 3650
+			}
+		}
+		if = {
+			limit = {
+				religion = mesoamerican_religion
+				has_estate = estate_church
+				NOT = {
+					has_estate_influence_modifier = {
+						estate = estate_church
+						modifier = EST_VAL_RELIGIOUS_ZEALOTS_TRIUMPH
+					}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = EST_VAL_RELIGIOUS_ZEALOTS_TRIUMPH
+				duration = 3650
+				influence = 15
 			}
 		}
 		#if = {

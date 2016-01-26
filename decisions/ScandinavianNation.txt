@@ -16,7 +16,8 @@ country_decisions = {
 				ai = no
 				AND = {
 					ai = yes
-					num_of_cities = 3
+					num_of_cities = 10
+					adm_tech = 20
 				}
 			}
 			is_colonial_nation = no
@@ -29,8 +30,9 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
+			adm_tech = 20
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			owns_core_province = 1		# Uppland
 			owns_core_province = 6		# Skane
@@ -57,11 +59,11 @@ country_decisions = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
-			scandinavian_region = {
+			scandinavia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = SCA
+				add_permanent_claim = SCA
 			}	
 			add_country_modifier = {
 				name = "centralization_modifier"

@@ -34,3 +34,9 @@ alliance = {
 	start_date = 1380.1.1
 	end_date = 1719.9.30
 }
+alliance = {
+	first = HSA
+	second = HAM
+	start_date = 1380.1.1
+	end_date = 1719.9.30
+}

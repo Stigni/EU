@@ -34,11 +34,7 @@ country_event = {
 		every_known_country = {
 			limit = {
 				capital_scope = {
-					OR = {
-						region = moroccan_region
-						region = algerian_region
-						region = tunisian_region
-					}
+					region = maghreb_region
 				}
 			}
 			add_country_modifier = {
@@ -296,8 +292,14 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			timbuktu_region = {
-				owner = { set_country_flag = mor_crosses_sahara }
+			every_country = {
+				limit = {
+					owns = 1128
+					owns = 1129
+					owns = 1132
+					owns = 2247
+				}
+				set_country_flag = mor_crosses_sahara
 			}
 		}
 	}
@@ -313,7 +315,13 @@ country_event = {
 			add_core = MOR
 			cede_province = MOR
 		}
-		timbuktu_region = {
+		every_province = {
+			limit = {
+				province_id = 1128
+				province_id = 1129
+				province_id = 1132
+				province_id = 2247
+			}
 			add_claim = MOR
 		}
 		every_country = {
@@ -345,8 +353,14 @@ country_event = {
 	option = {
 		name = flavor_mor.10.a #This cannot end well.
 		tooltip = {
-			timbuktu_region = {
-			add_claim = MOR
+			every_province = {
+				limit = {
+					province_id = 1128
+					province_id = 1129
+					province_id = 1132
+					province_id = 2247
+				}
+				add_claim = MOR
 			}
 		}
 	}

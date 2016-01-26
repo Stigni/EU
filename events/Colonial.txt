@@ -31,11 +31,13 @@ province_event = {
 			num_of_colonies = 1
 			}
 		}
-		random_owned_province = {
-			limit = {
-				is_colony = yes
+		owner = {
+			random_owned_province = {
+				limit = {
+					is_colony = yes
+				}
+				add_colonysize = 50
 			}
-			add_colonysize = 50
 		}
 	}
 }
@@ -917,12 +919,16 @@ province_event = {
 			had_province_flag = { flag = received_trade_goods days = 3650 }
 		}
 		OR = {
-			region = la_plata_region
-			region = the_andes
-			region = amazonas
-			region = the_carribean
-			region = central_america
-			region = the_spanish_main
+			region = peru_region
+			region = carribeans_region
+			region = central_america_region
+			region = mexico_region
+			region = colombia_region
+			area = amazon_area
+			area = grao_para_area
+			area = sao_francisco_area
+			area = bahia_area
+			area = pernambuco_area
 		}
 		OR = {
 			trade_goods = grain

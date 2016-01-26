@@ -57,6 +57,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Star and Crescent"
+		religion_group = muslim
 		had_country_flag = { flag = ramadan_flag days = 30 }
 	}
 	
@@ -194,6 +195,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Star and Crescent"
+		religion_group = muslim
 		has_ruler_modifier = muslim_hajj
 		had_country_flag = { flag = hajj_flag days = 30 }
 		NOT = {
@@ -221,6 +223,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Star and Crescent"
+		religion_group = muslim
 		has_country_flag = hajj_flag
 		had_country_flag = { flag = hajj_almost_completed days = 30 }
 	}
@@ -286,10 +289,18 @@ country_event = {
 		}
 		add_years_of_income = -0.5
 		add_ruler_modifier = { name = repaired_masjid_al_haram }
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
 	}
 	option = {
 		name = "muslim_dlc.EVTOPTB7"
 		add_years_of_income = -0.2
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
 		add_ruler_modifier = { name = repaired_masjid_al_haram }
 	}
 	option = {
@@ -431,6 +442,12 @@ country_event = {
 				size = 2
 			}
 		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_BANNED_ACOHOL_TOBACCO_COFFEE
+			influence = 10
+			duration = 3650
+		}
 	}
 	option = {
 		name = "muslim_dlc.EVTOPTB9"
@@ -462,6 +479,12 @@ country_event = {
 				}
 				clr_province_flag = tobacco_flag3
 			}
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_TAXED_ACOHOL_TOBACCO_COFFEE
+			influence = 5
+			duration = 3650
 		}
 	}
 	option = {
@@ -552,6 +575,18 @@ country_event = {
 		name = "muslim_dlc.EVTOPTA10"
 		add_ruler_modifier = { name = banned_alcohol_tobacco_coffee }
 		add_adm_power = 25
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_BANNED_ACOHOL_TOBACCO_COFFEE
+			influence = 10
+			duration = 3650
+		}
+		add_estate_influence_modifier = {
+			estate = estate_dhimmi
+			desc = EST_VAL_BANNED_ACOHOL_TOBACCO_COFFEE
+			influence = -10
+			duration = 3650
+		}
 		random_owned_province = {
 			limit = {
 				has_province_flag = tobacco_flag1
@@ -586,6 +621,18 @@ country_event = {
 	option = {
 		name = "muslim_dlc.EVTOPTB10"
 		add_ruler_modifier = { name = tax_alcohol_tobacco_coffee }
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_TAXED_ACOHOL_TOBACCO_COFFEE
+			influence = 5
+			duration = 3650
+		}
+		add_estate_influence_modifier = {
+			estate = estate_dhimmi
+			desc = EST_VAL_TAXED_ACOHOL_TOBACCO_COFFEE
+			influence = -5
+			duration = 3650
+		}
 		random_owned_province = {
 			limit = {
 				has_province_flag = tobacco_flag1
@@ -919,6 +966,12 @@ country_event = {
 		add_dip_power = 20
 		add_mil_power = 20
 		add_adm_power = 20
+		add_estate_influence_modifier = {
+			estate = estate_church
+			influence = 10
+			desc = EST_VAL_SHARIA
+			duration = 3650
+		}
 		random_owned_province = {
 			limit = {
 				has_province_flag = sharia_flag1
@@ -1118,6 +1171,7 @@ country_event = {
 		owns = 151 # Thrace/Constantinople/Istanbul
 		151 = {
 			is_reformation_center = no
+			NOT = { religion_group = muslim }
 		}
 	}
 	
@@ -1341,10 +1395,6 @@ country_event = {
 	trigger = {
 		has_dlc = "Star and Crescent"
 		religion_group = muslim
-		any_owned_province = {
-			region = middle_east
-			religion_group = muslim
-		}
 		385 = { # Mecca
 			religion_group = muslim
 			owner = { religion_group = muslim }
@@ -1474,6 +1524,13 @@ province_event = {
 			religion = jewish
 		}
 		development = 30
+		OR = {
+			NOT = { has_dlc = "The Cossacks" }
+			AND = {
+				NOT = { has_estate = yes }
+				has_seat_in_parliament = no
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1482,9 +1539,16 @@ province_event = {
 	
 	option = {
 		name = "muslim_dlc.EVTOPTA25"
-		add_province_modifier = { 
-			name = dhimmi_residence
-			duration = -1 
+		if = {
+			limit = { owner = { has_estate = estate_dhimmi } }
+			set_estate = estate_dhimmi
+		}
+		if = {
+			limit = { NOT = { owner = { has_estate = estate_dhimmi } } }
+			add_province_modifier = { 
+				name = dhimmi_residence
+				duration = -1 
+			}
 		}
 	}
 	option = {

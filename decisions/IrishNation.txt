@@ -31,6 +31,7 @@ country_decisions = {
 		allow = {
 			adm_tech = 10
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			owns = 372			# Ulster
 			owns = 373			# Meath

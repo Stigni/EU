@@ -333,6 +333,7 @@ the_divine_wind = {
 			num_of_heavy_ship = 10
 			has_idea = grand_navy
 		}
+		NOT = { has_country_flag = divined_wind }
 	}
 	success = {
 		OR = {
@@ -355,5 +356,6 @@ the_divine_wind = {
 		add_navy_tradition = 20
 		add_prestige = 10
 		add_adm_power = 30
+		set_country_flag = divined_wind
 	}
 }

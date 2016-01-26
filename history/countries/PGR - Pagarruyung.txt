@@ -18,7 +18,7 @@ capital = 2681	# Pagarruyung
 	monarch = {
 		name = "Ananggawarman"
 		dynasty = "Mauli"
-		adm = 3
+		adm = 4
 		dip = 3
 		mil = 3
 	}
@@ -29,8 +29,8 @@ capital = 2681	# Pagarruyung
 		name = "Inayat" # fictional
 		dynasty = "Mauli"
 		adm = 3
-		dip = 3
-		mil = 3
+		dip = 4
+		mil = 2
 	}
 }
 
@@ -38,9 +38,9 @@ capital = 2681	# Pagarruyung
 	monarch = {
 		name = "Gadzabadi" # fictional
 		dynasty = "Mauli"
-		adm = 3
-		dip = 3
-		mil = 3
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 
@@ -48,8 +48,8 @@ capital = 2681	# Pagarruyung
 	monarch = {
 		name = "Menradza" # fictional
 		dynasty = "Mauli"
-		adm = 3
-		dip = 3
+		adm = 2
+		dip = 1
 		mil = 3
 	}
 }
@@ -58,7 +58,7 @@ capital = 2681	# Pagarruyung
 	monarch = {
 		name = "Tsalenggathu" # fictional
 		dynasty = "Mauli"
-		adm = 3
+		adm = 2
 		dip = 3
 		mil = 3
 	}
@@ -69,7 +69,7 @@ capital = 2681	# Pagarruyung
 		name = "Tsau-Lha" # fictional
 		dynasty = "Mauli"
 		adm = 3
-		dip = 3
+		dip = 2
 		mil = 3
 	}
 }
@@ -79,8 +79,8 @@ capital = 2681	# Pagarruyung
 		name = "Inayat" # fictional
 		dynasty = "Mauli"
 		adm = 3
-		dip = 3
-		mil = 3
+		dip = 2
+		mil = 2
 	}
 }
 
@@ -93,38 +93,38 @@ capital = 2681	# Pagarruyung
 	monarch = {
 		name = "Menradza" # fictional
 		dynasty = "Mauli"
-		adm = 3
-		dip = 3
+		adm = 1
+		dip = 2
 		mil = 3
 	}
 }
 
-1669.1.1 = {
+1668.1.1 = {
 	monarch = {
-		name = "Mengtsekya" # fictional
+		name = "Ahmadsyah"
 		dynasty = "Mauli"
-		adm = 3
-		dip = 3
+		adm = 4
+		dip = 4
 		mil = 3
 	}
 }
 
-1699.1.1 = {
+1674.1.1 = {
 	monarch = {
-		name = "Tsalenggathu" # fictional
+		name = "Indermasyah"
 		dynasty = "Mauli"
-		adm = 3
+		adm = 4
 		dip = 3
 		mil = 3
 	}
 }
 
-1729.1.1 = {
+1730.1.1 = {
 	monarch = {
 		name = "Gadzabadi" # fictional
 		dynasty = "Mauli"
-		adm = 3
-		dip = 3
+		adm = 1
+		dip = 1
 		mil = 3
 	}
 }
@@ -133,28 +133,18 @@ capital = 2681	# Pagarruyung
 	monarch = {
 		name = "Menradza" # fictional
 		dynasty = "Mauli"
-		adm = 3
+		adm = 2
 		dip = 3
-		mil = 3
+		mil = 2
 	}
 }
 
-1789.1.1 = {
+1780.1.1 = {
 	monarch = {
-		name = "Tsalenggathu" # fictional
+		name = "Muningsyah"
 		dynasty = "Mauli"
-		adm = 3
+		adm = 1
 		dip = 3
-		mil = 3
-	}
-}
-
-1819.1.1 = {
-	monarch = {
-		name = "Tsau-Lha" # fictional
-		dynasty = "Mauli"
-		adm = 3
-		dip = 3
-		mil = 3
+		mil = 1
 	}
 }

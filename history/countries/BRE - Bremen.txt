@@ -1,4 +1,4 @@
-government = oligarchic_republic
+government = imperial_city
 government_rank = 1
 mercantilism = 0.25
 technology_group = western

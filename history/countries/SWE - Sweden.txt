@@ -4,7 +4,6 @@ unit_type = western
 primary_culture = swedish
 religion = catholic
 add_accepted_culture = finnish
-historical_rival = DAN
 capital = 1	#Stockholm
 
 national_focus = MIL

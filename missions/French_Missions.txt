@@ -90,6 +90,7 @@ annex_savoy = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { alliance_with = ROOT }
+			NOT = { num_of_cities = 15 }
 		}
 	}
 	abort = {
@@ -154,6 +155,7 @@ annex_alsace = {
 			NOT = { alliance_with = ROOT }
 			NOT = { vassal_of = ROOT }
 			NOT = { num_of_cities = ROOT }
+			NOT = { num_of_cities = 15 }
 		}
 	}
 	abort = {
@@ -205,8 +207,8 @@ france_discovers_north_america = {
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		tag = FRA
 		has_idea = quest_for_the_new_world
-		NOT = { northeastern_america = { has_discovered = ROOT } }
-		northeastern_america = { range = ROOT }
+		NOT = { northeast_america_region = { has_discovered = ROOT } }
+		northeast_america_region = { range = ROOT }
 		num_of_ports = 1
 	}
 	abort = {
@@ -216,7 +218,7 @@ france_discovers_north_america = {
 		}
 	}
 	success = {
-		northeastern_america = {
+		northeast_america_region = {
 			has_discovered = ROOT
 		}
 	}
@@ -250,14 +252,14 @@ french_colony_in_north_america = {
 		normal_or_historical_nations = yes
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		tag = FRA
-		northeastern_america = {
+		northeast_america_region = {
 			has_discovered = ROOT
 			is_empty = yes
 			range = ROOT
 		}
-		NOT = { northeastern_america = { owned_by = ROOT } }
+		NOT = { northeast_america_region = { owned_by = ROOT } }
 		NOT = {
-			northeastern_america = {
+			northeast_america_region = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -270,13 +272,13 @@ french_colony_in_north_america = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { northeastern_america = { owned_by = ROOT } }
-				NOT = { northeastern_america = { is_empty = yes } }
+				NOT = { northeast_america_region = { owned_by = ROOT } }
+				NOT = { northeast_america_region = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		northeastern_america = { owned_by = ROOT }
+		northeast_america_region = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -317,8 +319,8 @@ france_discovers_the_carribean = {
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		tag = FRA
 		has_idea = quest_for_the_new_world
-		NOT = { the_carribean = { has_discovered = ROOT } }
-		the_carribean = { range = ROOT }
+		NOT = { carribeans_region = { has_discovered = ROOT } }
+		carribeans_region = { range = ROOT }
 		num_of_ports = 1
 	}
 	abort = {
@@ -328,7 +330,7 @@ france_discovers_the_carribean = {
 		}
 	}
 	success = {
-		the_carribean = {
+		carribeans_region = {
 			has_discovered = ROOT
 		}
 	}
@@ -362,14 +364,14 @@ french_colony_in_the_carribean = {
 		normal_or_historical_nations = yes
 		tag = FRA
 		NOT = { has_country_modifier = colonial_enthusiasm }
-		the_carribean = {
+		carribeans_region = {
 			has_discovered = ROOT
 			is_empty = yes
 			range = ROOT
 		}
-		NOT = { the_carribean = { owned_by = ROOT } }
+		NOT = { carribeans_region = { owned_by = ROOT } }
 		NOT = {
-			the_carribean = {
+			carribeans_region = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -382,13 +384,13 @@ french_colony_in_the_carribean = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { the_carribean = { owned_by = ROOT } }
-				NOT = { the_carribean = { is_empty = yes } }
+				NOT = { carribeans_region = { owned_by = ROOT } }
+				NOT = { carribeans_region = { is_empty = yes } }
 			}	
 		}
 	}
 	success = {
-		the_carribean = { owned_by = ROOT }
+		carribeans_region = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -425,7 +427,7 @@ defend_france_against_england = {
 	category = MIL
 	
 	target_provinces = {
-		region = french_region
+		region = france_region
 		OR = {
 			owned_by = ENG
 			owned_by = GBR
@@ -444,8 +446,8 @@ defend_france_against_england = {
 		NOT = { alliance_with = GBR }
 		NOT = { is_year = 1475 }
 		OR = {
-			french_region = { owned_by = ENG }
-			french_region = { owned_by = GBR }
+			france_region = { owned_by = ENG }
+			france_region = { owned_by = GBR }
 		}
 		NOT = { has_country_flag = england_out_of_france }
 	}
@@ -456,8 +458,8 @@ defend_france_against_england = {
 		all_target_province = {
 			owned_by = ROOT
 		}
-		NOT = { french_region = { owned_by = ENG } }
-		NOT = { french_region = { owned_by = GBR } }
+		NOT = { france_region = { owned_by = ENG } }
+		NOT = { france_region = { owned_by = GBR } }
 	}
 	chance = {
 		factor = 4000
@@ -593,6 +595,7 @@ conquer_milan = {
 			NOT = { alliance_with = ROOT }
 			NOT = { vassal_of = ROOT }
 			is_part_of_hre = no
+			NOT = { num_of_cities = 15 }
 		}
 		
 	}
@@ -643,7 +646,7 @@ annex_genoa = {
 	
 	target_provinces = {
 		owned_by = GEN
-		region = italian_region
+		region = italy_region
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -657,6 +660,10 @@ annex_genoa = {
 			NOT = { num_of_cities = ROOT }
 			NOT = { alliance_with = ROOT }
 			NOT = { vassal_of = ROOT }
+			NOT = { num_of_cities = 20 }
+			any_owned_province = {
+				region = italy_region
+			}
 		}
 	}
 	abort = {
@@ -775,7 +782,7 @@ defend_the_netherlands = {
 	
 	target_provinces = {
 		owned_by = SPA
-		region = the_low_countries
+		region = low_countries_region
 	}
 	
 	allow = {
@@ -788,7 +795,7 @@ defend_the_netherlands = {
 			NOT = { alliance_with = ROOT }
 			NOT = { vassal_of = ROOT }
 		}
-		the_low_countries = {
+		low_countries_region = {
 			owned_by = SPA
 			any_neighbor_province = {
 				owned_by = FRA

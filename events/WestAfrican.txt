@@ -685,9 +685,10 @@ country_event = {
 		has_dlc = "Art of War"
 		capital_scope = {
 			OR = {
-				region = west_african_coast
-				region = south_africa
-				region = central_africa
+				region = west_africa_region
+				region = south_africa_region
+				region = central_africa_region
+				region = kongo_region
 			}
 		}
 		has_idea_group = innovativeness_ideas
@@ -1036,9 +1037,10 @@ province_event = {
 			NOT = { accepted_culture = ROOT }
 			capital_scope = {
 				OR = {
-					region = west_african_coast
-					region = south_africa
-					region = central_africa
+					region = west_africa_region
+					region = south_africa_region
+					region = central_africa_region
+					region = kongo_region
 				}
 			}
 		}

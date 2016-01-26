@@ -294,6 +294,32 @@ subjugate_hungary = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 		}
+		OR = {
+			transylvania_area = {
+				NOT = { owned_by = HUN }
+				NOT = {
+					owner = {
+						is_subject_of = HUN
+					}
+				}
+			}
+			slovakia_area = {
+				NOT = { owned_by = HUN }
+				NOT = {
+					owner = {
+						is_subject_of = HUN
+					}
+				}
+			}
+			alfold_area = {
+				NOT = { owned_by = HUN }
+				NOT = {
+					owner = {
+						is_subject_of = HUN
+					}
+				}
+			}
+		}
 	}
 	abort = {
 		OR = {
@@ -310,6 +336,90 @@ subjugate_hungary = {
 		modifier = {
 			factor = 2
 			NOT = { has_opinion = { who = HUN value = 0 } }
+		}
+		modifier = {
+			factor = 2
+			alfold_area = {
+				NOT = { owned_by = HUN }
+				NOT = {
+					owner = {
+						is_subject_of = HUN
+					}
+				}
+			}
+			transylvania_area = {
+				NOT = { owned_by = HUN }
+				NOT = {
+					owner = {
+						is_subject_of = HUN
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			slovakia_area = {
+				NOT = { owned_by = HUN }
+				NOT = {
+					owner = {
+						is_subject_of = HUN
+					}
+				}
+			}
+			transylvania_area = {
+				NOT = { owned_by = HUN }
+				NOT = {
+					owner = {
+						is_subject_of = HUN
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			alfold_area = {
+				NOT = { owned_by = HUN }
+				NOT = {
+					owner = {
+						is_subject_of = HUN
+					}
+				}
+			}
+			slovakia_area = {
+				NOT = { owned_by = HUN }
+				NOT = {
+					owner = {
+						is_subject_of = HUN
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			alfold_area = {
+				NOT = { owned_by = HUN }
+				NOT = {
+					owner = {
+						is_subject_of = HUN
+					}
+				}
+			}
+			transylvania_area = {
+				NOT = { owned_by = HUN }
+				NOT = {
+					owner = {
+						is_subject_of = HUN
+					}
+				}
+			}
+			slovakia_area = {
+				NOT = { owned_by = HUN }
+				NOT = {
+					owner = {
+						is_subject_of = HUN
+					}
+				}
+			}
 		}
 	}
 	immediate = {
@@ -345,7 +455,10 @@ no_ottomans_in_eastern_balkans = {
 	
 	target_provinces = {
 		owned_by = TUR
-		region = eastern_balkans
+		OR = {
+			area = wallachia_area
+			area = bulgaria_area
+		}
 	}
 	
 	allow = {
@@ -365,7 +478,10 @@ no_ottomans_in_eastern_balkans = {
 			is_neighbor_of = ROOT
 			NOT = { alliance_with = HAB }
 		}
-		eastern_balkans = { owned_by = TUR }
+		OR = {
+			wallachia_area = { owned_by = TUR }
+			bulgaria_area = { owned_by = TUR }
+		}
 		NOT = { has_country_flag = conquered_eastern_balkans }
 		NOT = { has_country_modifier = drove_back_the_turk }
 	}
@@ -385,14 +501,14 @@ no_ottomans_in_eastern_balkans = {
 		}
 		modifier = {
 			factor = 3
-			western_balkans = {
+			serbia_area = {
 				type = all
 				owned_by = ROOT
 			}
 		}
 		modifier = {
 			factor = 3
-			hungarian_region = {
+			transdanubia_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -416,7 +532,10 @@ no_ottomans_in_western_balkans = {
 	
 	target_provinces = {
 		owned_by = TUR
-		region = western_balkans
+		OR = {
+			area = serbia_area
+			area = bosnia_area
+		}
 	}
 	
 	allow = {
@@ -435,7 +554,10 @@ no_ottomans_in_western_balkans = {
 			is_neighbor_of = ROOT
 			NOT = { alliance_with = HAB }
 		}
-		western_balkans = { owned_by = TUR }
+		OR = {
+			bosnia_area = { owned_by = TUR }
+			serbia_area = { owned_by = TUR }
+		}
 		NOT = { has_country_modifier = drove_back_the_turk }
 		NOT = { has_country_flag = conquest_of_western_balkans }
 	}
@@ -455,14 +577,14 @@ no_ottomans_in_western_balkans = {
 		}
 		modifier = {
 			factor = 3
-			croatian_region = {
+			croatia_area = {
 				type = all
 				owned_by = ROOT
 			}
 		}
 		modifier = {
 			factor = 3
-			hungarian_region = {
+			transdanubia_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -500,9 +622,8 @@ partition_poland = {
 			owned_by = PLC
 		}
 		OR = {
-			region = malopolska
-			region = eastern_balkans
-			region = hungarian_region
+			area = malopolska_area
+			region = carpathia_region
 		}
 	}
 	
@@ -529,9 +650,8 @@ partition_poland = {
 				NOT = { alliance_with = ROOT }
 				any_owned_province = {
 					OR = {
-						region = malopolska
-						region = eastern_balkans
-						region = hungarian_region
+						area = malopolska_area
+						region = carpathia_region
 					}
 				}
 			}
@@ -543,9 +663,8 @@ partition_poland = {
 					NOT = { alliance_with = ROOT }
 					any_owned_province = {
 					OR = {
-						region = malopolska
-						region = eastern_balkans
-						region = hungarian_region
+						area = malopolska_area
+						region = carpathia_region
 					}
 				}
 				}
@@ -565,12 +684,12 @@ partition_poland = {
 		modifier = {
 			factor = 2
 			any_owned_province = {
-				region = malopolska
+				area = malopolska_area
 			}
 		}
 		modifier = {
 			factor = 5
-			hungarian_region = {
+			alfold_area = {
 				type = all
 				owned_by = HAB
 			}
@@ -625,14 +744,23 @@ no_territory_to_the_ottomans = {
 		exists = TUR
 		is_subject = no
 		is_neighbor_of = TUR
-		austrian_region = { owned_by = TUR }
+		OR = {
+			inner_austria_area = { owned_by = TUR }
+			austria_proper_area = { owned_by = TUR }
+			tirol_area = { owned_by = TUR }
+			carinthia_area = { owned_by = TUR }
+		}
+		NOT = { has_country_modifier = drove_back_the_turk }
 	}
 	abort = {
 		is_subject = yes
 	}
 	success = {
 		NOT = { war_with = TUR }
-		NOT = { austrian_region = { owned_by = TUR } }
+		NOT = { inner_austria_area = { owned_by = TUR } }
+		NOT = { austria_proper_area = { owned_by = TUR } }
+		NOT = { tirol_area = { owned_by = TUR } }
+		NOT = { carinthia_area = { owned_by = TUR } }
 	}
 	chance = {
 		factor = 3000
@@ -656,7 +784,7 @@ protect_belgium_from_the_french = {
 	category = MIL
 	
 	target_provinces = {
-		region = spanish_netherlands
+		region = low_countries_region
 		owned_by = FRA
 	}
 	
@@ -668,8 +796,8 @@ protect_belgium_from_the_french = {
 		is_subject = no
 		FRA = { is_neighbor_of = ROOT }
 		NOT = { alliance_with = FRA }
-		spanish_netherlands = { owned_by = ROOT }
-		spanish_netherlands = { owned_by = FRA }
+		low_countries_region = { owned_by = ROOT }
+		low_countries_region = { owned_by = FRA }
 		NOT = { has_country_flag = protected_belgium_from_the_french }
 	}
 	abort = {
@@ -706,7 +834,7 @@ protect_belgium_from_the_french = {
 	effect = {
 		set_country_flag = protected_belgium_from_the_french
 		every_owned_province = {
-			limit = { region = spanish_netherlands }
+			limit = { region = low_countries_region }
 			add_province_modifier = {
 				name = "protected_austrian_low_countries"
 				duration = 7300
@@ -722,7 +850,12 @@ protect_hungary_from_the_ottomans = {
 	category = MIL
 	
 	target_provinces = {
-		region = hungarian_region
+		OR = {
+			area = alfold_area
+			area = transdanubia_area
+			area = transylvania_area
+			area = slovakia_area
+		}
 		owned_by = TUR
 	}
 	allow = {
@@ -735,20 +868,28 @@ protect_hungary_from_the_ottomans = {
 			is_neighbor_of = ROOT
 			NOT = { alliance_with = HAB }
 		}
-		hungarian_region = { owned_by =  ROOT }
-		hungarian_region = { owned_by =  TUR }
+		OR = {
+			transylvania_area = { owned_by =  ROOT }
+			slovakia_area = { owned_by =  ROOT }
+			alfold_area = { owned_by =  ROOT }
+			transdanubia_area = { owned_by =  ROOT }
+		}
+		OR = {
+			slovakia_area = { owned_by =  TUR }
+			alfold_area = { owned_by =  TUR }
+			transylvania_area = { owned_by =  TUR }
+			transdanubia_area = { owned_by =  TUR }
+		}
 		NOT = { has_country_modifier = drove_back_the_turk }
 		NOT = { has_country_flag = protected_hungary_from_ottomans }
 	}
 	abort = {
-		OR = {
-			is_subject = yes
-			NOT = { hungarian_region = { owned_by =  ROOT } }
-		}
+		is_subject = yes
 	}
 	success = {
-		NOT = { war_with = TUR }
-		NOT = { hungarian_region = { owned_by =  TUR } }
+		all_target_province = {
+			owned_by = ROOT
+		}
 	}
 	chance = {
 		factor = 3000
@@ -783,7 +924,10 @@ free_croatia_from_the_ottomans = {
 	category = MIL
 	
 	target_provinces = {
-		region = croatian_region
+		OR = {
+			area = east_adriatic_coast_area
+			area = croatia_area
+		}
 		owned_by = TUR
 	}
 	allow = {
@@ -791,7 +935,10 @@ free_croatia_from_the_ottomans = {
 		tag = HAB
 		exists = TUR
 		is_subject = no
-		croatian_region = { owned_by = TUR }
+		OR = {
+			east_adriatic_coast_area = { owned_by = TUR }
+			croatia_area = { owned_by = TUR }
+		}
 		num_of_cities = 20
 		TUR = {
 			num_of_cities = 15

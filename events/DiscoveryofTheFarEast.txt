@@ -13,7 +13,7 @@ country_event = {
 			religion = catholic
 			religion = protestant
 		}
-		japanese_region = {
+		japan_region = {
 			has_discovered = ROOT
 		}
 	}
@@ -40,7 +40,7 @@ country_event = {
 		technology_group = western
 		NOT = { 1020 = { has_discovered = ROOT } }
 		NOT = { has_country_flag = japan_discovered }
-		japanese_region = {
+		japan_region = {
 			has_discovered = ROOT
 		}
 	}

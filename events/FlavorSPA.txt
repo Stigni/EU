@@ -23,6 +23,7 @@ country_event = {
 		is_year = 1450
 		NOT = { is_year = 1530 }
 		is_subject = no
+		num_of_cities = 10
 		ARA = {
 			exists = yes
 			ai = yes
@@ -122,7 +123,7 @@ country_event = {
 		religion = catholic
 		is_at_war = no
 		any_owned_province = {
-			region = iberian_peninsula
+			region = iberia_region
 			religion_group = muslim
 		}
 	}
@@ -149,7 +150,7 @@ country_event = {
 		
 		every_owned_province = {
 			limit = {
-				region = iberian_peninsula
+				region = iberia_region
 				religion_group = muslim
 			}
 			change_religion = catholic
@@ -288,6 +289,9 @@ country_event = {
 			south_america = {
 				has_discovered = ROOT
 			}
+			new_world = {
+				has_discovered = ROOT
+			}
 		}
 	}
 
@@ -421,7 +425,7 @@ country_event = {
 			tag = SPA
 		}
 		NOT = {
-			iberian_peninsula = {
+			iberia_region = {
 				religion_group = muslim
 			}
 			is_claim = 337
@@ -668,7 +672,7 @@ country_event = {
 		name = "flavor_spa.EVTOPTA3155"
 		every_owned_province = {
 			limit = {
-				region = iberian_peninsula
+				region = iberia_region
 			}
 			add_unrest = 10
 		}
@@ -957,7 +961,7 @@ country_event = {
 	trigger = {
 		tag = SPA
 		num_of_cities = 4
-		iberian_peninsula = {
+		iberia_region = {
 			owned_by = ROOT
 		}
 		is_year = 1550
@@ -1096,7 +1100,7 @@ country_event = {
 
 
 		any_owned_province = {
-			region = italian_region
+			region = italy_region
 		}
 	}
 
@@ -1109,7 +1113,7 @@ country_event = {
 		name = "flavor_spa.EVTOPTA3170"
 		every_owned_province = {
 			limit = {
-				region = italian_region
+				region = italy_region
 			}
 			add_unrest = 20
 		}
@@ -1118,7 +1122,7 @@ country_event = {
 		name = "flavor_spa.EVTOPTB3170"
 		every_owned_province = {
 			limit = {
-				region = italian_region
+				region = italy_region
 			}
 			add_local_autonomy = 25
 		}
@@ -1307,10 +1311,10 @@ country_event = {
 		NOT = { alliance_with = FRA }
 		NOT = { is_subject_of = FRA }
 		NOT = { war_with = FRA }
-		italian_region = {
+		italy_region = {
 			is_part_of_hre = yes
 		}
-		italian_region = {
+		italy_region = {
 			owned_by = FRA
 		}
 	}
@@ -1334,7 +1338,7 @@ country_event = {
 			}
 			every_owned_province = {
 				limit = {
-					region = italian_region
+					region = italy_region
 				}
 				add_claim = ROOT
 			}
@@ -1368,7 +1372,7 @@ country_event = {
 		FROM = {
 			every_owned_province = {
 				limit = {
-					region = italian_region
+					region = italy_region
 				}
 				add_claim = ROOT
 			}
@@ -1788,7 +1792,7 @@ country_event = {
 		owns = 223 #Granada
 		any_owned_province = {
 			NOT = { has_province_modifier = forced_conversion }
-			region = iberian_peninsula
+			region = iberia_region
 			culture = andalucian
 			is_core = GRA
 		}
@@ -1809,11 +1813,10 @@ country_event = {
 	}
 	
 	immediate = {
-		set_country_flag = alpujarras_revolt_happened
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					region = iberian_peninsula
+					region = iberia_region
 					is_core = GRA
 					OR = {
 						has_building = fort_15th
@@ -1827,7 +1830,7 @@ country_event = {
 			}
 			every_owned_province = {
 				limit = {
-					region = iberian_peninsula
+					region = iberia_region
 					is_core = GRA
 					NOT = { has_province_flag = alpujarras_centre_of_revolt }
 				}
@@ -1839,6 +1842,7 @@ country_event = {
 	option = {		# Ok.
 		name = "flavor_spa.7.a"
 		add_stability = -1
+		set_country_flag = alpujarras_revolt_happened
 		random_owned_province = {
 			limit = {
 				has_province_flag = alpujarras_centre_of_revolt
@@ -1925,9 +1929,6 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				culture = andalucian
-				owner = {
-					NOT = { primary_culture = castillian }
-				}
 			}
 			change_culture = castillian
 		}
@@ -1991,14 +1992,14 @@ country_event = {
 		is_year = 1530
 		NOT = { is_year = 1560 }
 		NOT = {
-			iberian_peninsula = {
+			iberia_region = {
 				is_reformation_center = yes
 			}
 		}
 		NOT = {
 			num_of_owned_provinces_with = {
 				value = 4
-				region = iberian_peninsula
+				region = iberia_region
 				OR = {
 					religion = reformed
 					religion = protestant

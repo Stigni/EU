@@ -3,7 +3,6 @@ primary_culture = danish
 religion = catholic
 technology_group = western
 historical_friend = NOR
-historical_rival = SWE
 capital = 12 #Sjaelland
 
 

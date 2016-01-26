@@ -95,7 +95,7 @@ defend_korea = {
 	}
 	success = {
 		NOT = { war_with = JAP }
-		NOT = { korean_region = { owned_by = JAP } }
+		NOT = { korea_region = { owned_by = JAP } }
 	}
 	chance = {
 		factor = 3000
@@ -105,7 +105,7 @@ defend_korea = {
 		}	
 	}
 	effect = {
-		korean_region = { add_claim = ROOT }
+		korea_region = { add_claim = ROOT }
 	}
 }
 
@@ -127,7 +127,7 @@ colonize_taiwan = {
 			faction_in_power = enuchs
 		}
 		owns = 1821
-		taiwan = {
+		taiwan_area = {
 			is_empty = yes
 			NOT = { owned_by = ROOT }
 		}
@@ -142,15 +142,15 @@ colonize_taiwan = {
 				NOT = { faction_in_power = enuchs }
 				has_factions = yes
 			}
-			AND = {
-				738 = { is_empty = no }
-				NOT = { owns = 738 }
+			taiwan_area = {
+				is_empty = no
+				NOT = { owned_by = ROOT }
 			}
 			NOT = { num_of_ports = 1 }
 		}
 	}
 	success = {
-		taiwan = {
+		taiwan_area = {
 			owned_by = ROOT
 		}
 		OR = {

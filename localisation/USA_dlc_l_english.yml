@@ -225,7 +225,7 @@
  american_republic_ruler: "President"
  american_republic_ruler_female: "President"
  american_republic_desc: "The American Republic is a confederation of the Thirteen States of America, each with their own independence and governments, with a President who rules for seven years after election."
- federal_republic: "Federal Republic"
+ FEDERAL_REPUBLIC: "Federal Republic"
  federal_republic_ruler: "President"
  federal_republic_ruler_female: "President"
  federal_republic_desc: "The Federal Republic is a federation of the Thirteen States of America, each with their own independence and governments, with a President who rules for four years after election."

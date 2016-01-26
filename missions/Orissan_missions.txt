@@ -73,7 +73,7 @@ ori_conquest_of_telingana = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = telingana_region
+		area = telingana_area
 		owner = { NOT = { alliance_with = ROOT } }
 		owner = { NOT = { is_subject_of = ROOT } }
 	}
@@ -86,7 +86,7 @@ ori_conquest_of_telingana = {
 		NOT = { has_country_modifier = kapilendras_ambition }
 		NOT = { has_country_flag = had_conquest_of_telingana }
 		is_subject = no
-		telingana_region = {
+		telingana_area = {
 			NOT = { owned_by = ROOT }
 			owner = { NOT = { alliance_with = ROOT } }
 			owner = { NOT = { is_subject_of = ROOT } }

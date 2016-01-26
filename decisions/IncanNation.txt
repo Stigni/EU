@@ -3,6 +3,7 @@ country_decisions = {
 	incan_nation = {
 		major = yes
 		potential = {
+			is_random_new_world = no
 			normal_or_historical_nations = yes
 			OR = {
 				ai = no
@@ -38,6 +39,7 @@ country_decisions = {
 			NOT = { exists = INC }
 			is_at_war = no
 			is_subject = no
+			is_nomad = no
 			owns_core_province = 808 #Qusqu
 			owns_core_province = 813 #Kashamarka
 			owns_core_province = 810 #Wankawilka
@@ -71,11 +73,31 @@ country_decisions = {
 			set_government_rank = 3
 			change_tag = INC
 			change_religion = inti
-			the_andes = {
+			peru_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { area = ucayali_area }
+					NOT = { area = beni_area }
+				}
+				add_permanent_claim = INC
+			}
+			chile_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = INC
+				add_permanent_claim = INC
+			}
+			tucuman_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = INC
+			}
+			cuyo_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = INC
 			}
 			add_prestige = 25
 			if = {
@@ -84,7 +106,7 @@ country_decisions = {
 				}
 				change_government = despotic_monarchy
 			}
-			swap_free_idea_group = yes		#keep progress
+			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		ai_will_do = {
 			factor = 1

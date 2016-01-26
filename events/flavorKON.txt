@@ -21,7 +21,7 @@ country_event = {
 		POR = {
 			religion = catholic
 		}
-		kongo = {
+		kongo_area = {
 			has_discovered = POR
 		}
 		NOT = { religion = catholic }

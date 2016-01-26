@@ -134,53 +134,54 @@ religion_decisions = {
 		}
 	}
 	
-	suffragan_bishop_act = {
-		potential = {
-			NOT = { has_country_modifier = the_suffragan_bishop_act }
-			religion_group = christian
-		}
-		allow = {
-			adm_tech = 8
-		}
-		effect = {	
-			add_country_modifier = {
-				name = "the_suffragan_bishop_act"
-				duration = -1
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
+#	suffragan_bishop_act = {
+#		potential = {
+#			NOT = { has_country_modifier = the_suffragan_bishop_act }
+#			religion_group = christian
+#		}
+#		allow = {
+#			adm_tech = 8
+#		}
+#		effect = {	
+#			add_country_modifier = {
+#				name = "the_suffragan_bishop_act"
+#				duration = -1
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
 	
-	church_tax = {
-		potential = {
-			NOT = { has_country_modifier = church_taxes }
-			religion_group = christian
-			NOT = { tag = PAP }
-		}
-		allow = {
-			# Raises the king to be the legal authority in all religious matters
-			OR = {
-				NOT = { religion = catholic }
-				has_country_modifier = the_statue_in_restraint_of_appeals
-			}
-			advisor = theologian
-		}
-		effect = {	
-			add_country_modifier = {
-				name = "church_taxes"
-				duration = -1
-			}
-		}
-		ai_will_do = {
-			factor = 0
-			modifier = { 
-				NOT = { revolt_percentage = 0 }
-				factor = 0 
-			}
-		}
-	}
+#	church_tax = {
+#		potential = {
+#			NOT = { has_country_modifier = church_taxes }
+#			religion_group = christian
+#			NOT = { tag = PAP }
+#			NOT = { government = republic }
+#		}
+#		allow = {
+#			# Raises the king to be the legal authority in all religious matters
+#			OR = {
+#				NOT = { religion = catholic }
+#				has_country_modifier = the_statue_in_restraint_of_appeals
+#			}
+#			advisor = theologian
+#		}
+#		effect = {	
+#			add_country_modifier = {
+#				name = "church_taxes"
+#				duration = -1
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 0
+#			modifier = { 
+#				NOT = { revolt_percentage = 0 }
+#				factor = 0 
+#			}
+#		}
+#	}
 	
 	sunday_school = {
 		potential = {
@@ -227,31 +228,31 @@ religion_decisions = {
 		}
 	}
 
-	superintendents = {
-		potential = {
-			NOT = { has_country_modifier = superintendent_office }
-			OR = {
-				religion = protestant
-				religion = reformed
-			}
-		}
-		allow = {
-			advisor = theologian
-		}
-		effect = {	
-			add_country_modifier = {
-				name = "superintendent_office"
-				duration = -1
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = { 
-				NOT = { stability = 2 }
-				factor = 0
-			}
-		}
-	}
+#	superintendents = {
+#		potential = {
+#			NOT = { has_country_modifier = superintendent_office }
+#			OR = {
+#				religion = protestant
+#				religion = reformed
+#			}
+#		}
+#		allow = {
+#			advisor = theologian
+#		}
+#		effect = {	
+#			add_country_modifier = {
+#				name = "superintendent_office"
+#				duration = -1
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#			modifier = { 
+#				NOT = { stability = 2 }
+#				factor = 0
+#			}
+#		}
+#	}
 	
 	test_act = {
 		potential = {
@@ -440,6 +441,7 @@ religion_decisions = {
 			any_owned_province = {
 				has_owner_religion = no
 			}
+			NOT = { has_dlc = "The Cossacks" }
 		}
 		allow = {
 			adm = 3
@@ -519,6 +521,10 @@ religion_decisions = {
 		allow = {
 			stability = 1
 			is_at_war = no
+			OR = {
+				NOT = { has_secondary_religion = yes }
+				secondary_religion = vajrayana
+			}
 		}
 		effect = {
 			change_religion = vajrayana
@@ -1005,6 +1011,7 @@ religion_decisions = {
 			NOT = { has_country_modifier = yellow_shamanism_modifier }
 			NOT = { has_country_modifier = black_shamanism_modifier }
 			religion = tengri_pagan_reformed
+			NOT = { has_secondary_religion = yes }
 		}
 		allow = {
 			advisor = theologian
@@ -1020,6 +1027,67 @@ religion_decisions = {
 			modifier = {
 				has_idea_group = humanist_ideas
 				factor = 0
+			}
+		}
+	}
+	
+	tengri_expel_the_khojas = {
+		potential = {
+			religion = tengri_pagan_reformed
+			has_country_flag = khojas_established
+			NOT = { has_country_flag = end_of_khojas }
+			num_of_cities = 2
+		}
+		allow = {
+			legitimacy_or_horde_unity = 75
+			NOT = { has_ruler_modifier = support_of_the_khojas }
+		}
+		effect = {
+			hidden_effect = {
+				set_country_flag = end_of_khojas
+			}
+			custom_tooltip = tengri_events.16.b.tt
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				if = {
+					limit = {
+						owner = {
+							NOT = { check_variable = { which = khojas_retained value = 5 } }
+						}
+					}
+					spawn_rebels = {
+						type = sunni_rebels
+						size = 1
+						win = yes
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							check_variable = { which = khojas_retained value = 5 }
+							NOT = { check_variable = { which = khojas_retained value = 7 } }
+						}
+					}
+					spawn_rebels = {
+						type = sunni_rebels
+						size = 2
+						win = yes
+					}
+				}
+				if = {
+					limit = {
+						owner = {
+							check_variable = { which = khojas_retained value = 7 }
+						}
+					}
+					spawn_rebels = {
+						type = sunni_rebels
+						size = 3
+						win = yes
+					}
+				}
 			}
 		}
 	}

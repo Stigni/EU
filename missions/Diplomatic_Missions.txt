@@ -14,10 +14,15 @@ get_an_alliance_mission = {
 		NOT = { is_enemy = FROM }
 		NOT = { is_rival = FROM }
 		is_at_war = no
-		has_opinion = { who = FROM value = 10 }
+		has_opinion = { who = FROM value = 50 }
 		NOT = { alliance_with = FROM }
 		NOT = { is_subject = yes }
 		FROM = { NOT = { is_subject = yes } }
+		NOT = {
+			any_owned_province = {
+				is_core = FROM
+			}
+		}
 	}
 	abort = {
 		OR = {
@@ -81,6 +86,11 @@ improve_relations_mission = {
 		has_opinion = { who = FROM value = 0 }
 		NOT = { government = daimyo }
 		NOT = { government = shogunate }
+		NOT = {
+			any_owned_province = {
+				is_core = FROM
+			}
+		}
 		OR = {
 			is_subject = no
 			overlord = {
@@ -359,8 +369,14 @@ royal_marriage_mission = {
 			is_rival = FROM
 		}
 		has_opinion = { who = FROM value = 10 }
+		NOT = {
+			any_owned_province = {
+				is_core = FROM
+			}
+		}
 		NOT = { government = daimyo }
 		NOT = { government = shogunate }
+		NOT = { government = steppe_horde }
 	}
 	abort = {
 		OR = {

@@ -251,7 +251,10 @@ connect_the_prussian_lands = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = prussian_region
+		OR = {
+			area = west_prussia_area
+			area = east_prussia_area
+		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 	}
@@ -270,7 +273,11 @@ connect_the_prussian_lands = {
 		is_subject = no
 		owns = 50			# Berlin
 		owns = 41			# Königsberg
-		prussian_region = {
+		west_prussia_area = {
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+		}
+		east_prussia_area = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
 		}
@@ -653,10 +660,9 @@ prussia_partitions_poland = {
 			owned_by = PLC
 		}
 		OR = {
-			region = prussian_region
-			region = wielkopolska
-			province_id = 258
-			province_id = 1939
+			area = west_prussia_area
+			area = east_prussia_area
+			area = wielkopolska_area
 		}
 	}
 	
@@ -673,8 +679,9 @@ prussia_partitions_poland = {
 				NOT = { alliance_with = PRU }
 				any_owned_province = {
 					OR = {
-						region = prussian_region
-						region = wielkopolska
+						area = east_prussia_area
+						area = west_prussia_area
+						area = wielkopolska_area
 					}
 				}
 			}
@@ -686,8 +693,9 @@ prussia_partitions_poland = {
 					NOT = { alliance_with = PRU }
 					any_owned_province = {
 						OR = {
-							region = prussian_region
-							region = wielkopolska
+							area = east_prussia_area
+							area = west_prussia_area
+							area = wielkopolska_area
 						}
 					}
 				}
@@ -712,12 +720,19 @@ prussia_partitions_poland = {
 		modifier = {
 			factor = 2
 			any_owned_province = {
-				region = wielkopolska
+				area = wielkopolska_area
 			}
 		}
 		modifier = {
 			factor = 10
-			prussian_region = {
+			east_prussia_area = {
+				type = all
+				owned_by = PRU
+			}
+		}
+		modifier = {
+			factor = 5
+			west_prussia_area = {
 				type = all
 				owned_by = PRU
 			}
@@ -820,7 +835,7 @@ subjugate_westphalia = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = westphalian_region
+		area = westphalia_area
 		NOT = { owned_by = ROOT }
 		NOT = {
 			owner = {
@@ -835,7 +850,7 @@ subjugate_westphalia = {
 		exists = WES
 		is_subject = no
 		NOT = {
-			westphalian_region = {
+			westphalia_area = {
 				owned_by = ROOT
 			}
 		}
@@ -843,7 +858,7 @@ subjugate_westphalia = {
 			is_neighbor_of = ROOT
 			NOT = { alliance_with = ROOT }
 			any_owned_province = {
-				region = westphalian_region
+				area = westphalia_area
 			}
 		}
 	}

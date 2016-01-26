@@ -90,7 +90,7 @@ country_event = {
 		modifier = {
 			factor = 0.8
 			any_owned_province = {
-				region = malay_peninsula_region
+				area = malaya_area
 				has_discovered = POR
 			}
 		}
@@ -231,7 +231,7 @@ country_event = {
 		tag = MLC
 		exists = POR
 		any_owned_province = {
-			region = malay_peninsula_region
+			area = malaya_area
 			has_discovered = POR
 		}
 	}

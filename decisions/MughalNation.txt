@@ -39,7 +39,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = MUG }
-			is_tribal = no
+			total_development = 600
 			is_at_war = no
 			is_subject = no
 			owns_core_province = 578
@@ -63,11 +63,41 @@ country_decisions = {
 				}
 			}
 			set_government_rank = 3
-			indian_region = {
+			bengal_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = MUG
+				add_permanent_claim = MUG
+			}
+			hindusthan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MUG
+			}
+			rajputana_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MUG
+			}
+			deccan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MUG
+			}
+			coromandel_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MUG
+			}
+			west_india_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MUG
 			}
 			add_prestige = 25
 			
@@ -77,8 +107,9 @@ country_decisions = {
 				}
 				change_technology_group = muslim
 			}
+			change_government = iqta
 			change_unit_type = indian
-			swap_free_idea_group = yes		#keep progress
+			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		ai_will_do = {
 			factor = 1

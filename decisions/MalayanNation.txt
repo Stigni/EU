@@ -26,40 +26,82 @@ country_decisions = {
 		}
 		allow = {
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			owns = 624 #Banten
 			owns = 2687 #Pakuan
 			owns = 629 #Demak
 			owns = 630 #Kalapa
 			OR = {
-				AND = {
-					malay_peninsula_region = {
-						type = all
-						owned_by = ROOT
-					}
-					borneo_region = {
-						type = all
-						owned_by = ROOT
+				custom_trigger_tooltip = {
+					tooltip = malay_nation_malaya_borneo_tooltip
+					AND = { #Malay Peninsula and Borneo
+						malaya_area = {
+							type = all
+							owned_by = ROOT
+						}
+						kalimantan_area = {
+							type = all
+							owned_by = ROOT
+						}
+						brunei_area = {
+							type = all
+							owned_by = ROOT
+						}
+						kutai_area = {
+							type = all
+							owned_by = ROOT
+						}
 					}
 				}
-				AND = {
-					malay_peninsula_region = {
-						type = all
-						owned_by = ROOT
-					}
-					sumatran_region = {
-						type = all
-						owned_by = ROOT
+				custom_trigger_tooltip = {
+					tooltip = malay_nation_malaya_sumatra_tooltip
+					AND = { #Malay Peninsula and Sumatra
+						malaya_area = {
+							type = all
+							owned_by = ROOT
+						}
+						north_sumatra_area = {
+							type = all
+							owned_by = ROOT
+						}
+						central_sumatra_area = {
+							type = all
+							owned_by = ROOT
+						}
+						south_sumatra_area = {
+							type = all
+							owned_by = ROOT
+						}
 					}
 				}
-				AND = {
-					borneo_region = {
-						type = all
-						owned_by = ROOT
-					}
-					sumatran_region = {
-						type = all
-						owned_by = ROOT
+				custom_trigger_tooltip = {
+					tooltip = malay_nation_borneo_sumatra_tooltip
+					AND = { #Borneo and Sumatra
+						kalimantan_area = {
+							type = all
+							owned_by = ROOT
+						}
+						brunei_area = {
+							type = all
+							owned_by = ROOT
+						}
+						kutai_area = {
+							type = all
+							owned_by = ROOT
+						}
+						north_sumatra_area = {
+							type = all
+							owned_by = ROOT
+						}
+						central_sumatra_area = {
+							type = all
+							owned_by = ROOT
+						}
+						south_sumatra_area = {
+							type = all
+							owned_by = ROOT
+						}
 					}
 				}
 			}
@@ -87,12 +129,16 @@ country_decisions = {
 			every_province ={
 				limit = {
 					OR = {
-						region = borneo_region
-						region = sumatran_region
-						region = malay_peninsula_region
+						area = kutai_area
+						area = brunei_area
+						area = kalimantan_area
+						area = north_sumatra_area
+						area = central_sumatra_area
+						area = south_sumatra_area
+						area = malaya_area
 					}
 				}
-				add_claim = MSA
+				add_permanent_claim = MSA
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

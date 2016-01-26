@@ -8,8 +8,21 @@ country_event = {
 	trigger = {
 		has_country_modifier = india_trade_co
 		NOT = {
-			eastasian_trade_ports = {
-				owned_by =  ROOT
+			any_owned_province = {
+				OR = {
+					region = west_india_region
+					region = coromandel_region
+					region = deccan_region
+					region = bengal_region
+					region = indonesia_region
+					region = indo_china_region
+					region = burma_region
+					region = japan_region
+					region = south_china_region
+					region = north_china_region
+					region = korea_region
+				}
+				has_port = yes
 			}
 		}
 	}
@@ -68,8 +81,21 @@ country_event = {
 	trigger = {
 		has_country_modifier = dutch_india_trade_co
 		NOT = {
-			eastasian_trade_ports = {
-				owned_by =  ROOT
+			any_owned_province = {
+				OR = {
+					region = west_india_region
+					region = coromandel_region
+					region = deccan_region
+					region = bengal_region
+					region = indonesia_region
+					region = indo_china_region
+					region = burma_region
+					region = japan_region
+					region = south_china_region
+					region = north_china_region
+					region = korea_region
+				}
+				has_port = yes
 			}
 		}
 	}

@@ -37,6 +37,14 @@ country_event = {
 	}
 	option = {
 		name = "usa_dlc.EVTOPTB1"
+		trigger = {
+			any_owned_province = {
+				OR = {
+					region = great_lakes_region
+					region = canada_region
+				}
+			}
+		}
 		country_event = {
 			id = usa_dlc.3 # Northwest Ordinance
 		}
@@ -73,6 +81,12 @@ country_event = {
 				NOT = {
 					has_country_flag = northwest_ordinance_flag
 				}
+				any_owned_province = {
+					OR = {
+						region = great_lakes_region
+						region = canada_region
+					}
+				}
 			}
 			country_event = {
 				id = usa_dlc.3
@@ -87,6 +101,12 @@ country_event = {
 			limit = {
 				NOT = {
 					has_country_flag = northwest_ordinance_flag
+				}
+				any_owned_province = {
+					OR = {
+						region = great_lakes_region
+						region = canada_region
+					}
 				}
 			}
 			country_event = {
@@ -113,7 +133,13 @@ country_event = {
 	
 	option = {
 		name = "usa_dlc.EVTOPTA3" # Prohibit slavery!
-		northern_america = {
+		every_owned_province = {
+			limit = {
+				OR = {
+					region = canada_region
+					region = great_lakes_region
+				}
+			}
 			add_province_modifier = {
 				name = northwest_ordinance_slavery_prohibited
 				duration = -1
@@ -132,7 +158,13 @@ country_event = {
 	}
 	option = {
 		name = "usa_dlc.EVTOPTB3" # Let them decide for themselves
-		northern_america = {
+		every_owned_province = {
+			limit = {
+				OR = {
+					region = canada_region
+					region = great_lakes_region
+				}
+			}
 			add_province_modifier = {
 				name = add_unrest_5_modifier
 				duration = 1825
@@ -166,8 +198,7 @@ country_event = {
 		OR = {
 			tag = USA
 			has_country_flag = usa_declaration_independence_flag
-		} 
-		has_country_flag = northwest_ordinance_flag
+		}
 		has_country_flag = import_duty_flag
 	}
 	
@@ -1369,10 +1400,10 @@ country_event = {
 		}
 		is_year = 1800 
 		OR = {
-			great_plains = {
+			great_plains_region = {
 				NOT = { has_discovered = ROOT }
 			}
-			northwestern_america = {
+			cascadia_region = {
 				NOT = { has_discovered = ROOT }
 			}
 		}
@@ -1385,21 +1416,21 @@ country_event = {
 		add_years_of_income = -0.3
 		if = {
 			limit = {
-				great_plains = {
+				great_plains_region = {
 					NOT = { has_discovered = ROOT }
 				}
 			}
-			great_plains = {
+			great_plains_region = {
 				discover_country = ROOT
 			}
 		}
 		if = {
 			limit = {
-				northwestern_america = {
+				cascadia_region = {
 					NOT = { has_discovered = ROOT }
 				}
 			}
-			northwestern_america = {
+			cascadia_region = {
 				discover_country = ROOT
 			}
 		}
@@ -2001,7 +2032,7 @@ country_event = {
 			has_country_flag = usa_declaration_independence_flag
 		}
 		is_year = 1785
-		new_england_region = { type = all owned_by = ROOT }
+		northeast_america_region = { type = all owned_by = ROOT }
 		num_of_cities = 16
 		any_owned_province = {
 			has_province_modifier = usa_slavery
@@ -2024,13 +2055,13 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					NOT = { region = new_england_region }
+					NOT = { region = northeast_america_region }
 				}
 				set_province_flag = manumission_flag1
 			}
 			random_owned_province = {
 				limit = {
-					NOT = { region = new_england_region }
+					NOT = { region = northeast_america_region }
 					NOT = {
 						has_province_flag = manumission_flag1
 					}
@@ -2039,7 +2070,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					NOT = { region = new_england_region }
+					NOT = { region = northeast_america_region }
 					NOT = {
 						has_province_flag = manumission_flag1
 					}
@@ -2051,7 +2082,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					NOT = { region = new_england_region }
+					NOT = { region = northeast_america_region }
 					NOT = {
 						has_province_flag = manumission_flag1
 					}
@@ -2066,7 +2097,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					NOT = { region = new_england_region }
+					NOT = { region = northeast_america_region }
 					NOT = {
 						has_province_flag = manumission_flag1
 					}
@@ -2084,7 +2115,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					NOT = { region = new_england_region }
+					NOT = { region = northeast_america_region }
 					NOT = {
 						has_province_flag = manumission_flag1
 					}
@@ -2105,7 +2136,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					NOT = { region = new_england_region }
+					NOT = { region = northeast_america_region }
 					NOT = {
 						has_province_flag = manumission_flag1
 					}
@@ -2129,7 +2160,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					NOT = { region = new_england_region }
+					NOT = { region = northeast_america_region }
 					NOT = {
 						has_province_flag = manumission_flag1
 					}
@@ -2161,7 +2192,7 @@ country_event = {
 		add_dip_power = 100
 		every_owned_province = {
 			limit = {
-				region = new_england_region
+				region = northeast_america_region
 			}
 			add_province_modifier = {
 				name = protest_manumission_society

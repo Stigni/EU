@@ -1,92 +1,3 @@
-# Get a claim on a neighbouring richer province
-province_event = {
-	id = 9200
-	title = "EVTNAME9200"
-	desc = "EVTDESC9200"
-	picture = DEBATE_REPUBLICAN_eventPicture
-
-	trigger = {
-		owner = {
-			government = steppe_horde
-			is_at_war = no
-			num_of_cities = 10
-		}
-		is_core = ROOT
-		any_neighbor_province = {
-			NOT = { owned_by = ROOT }
-			NOT = { is_core = ROOT }
-			NOT = { is_claim = ROOT }
-			development = 10
-			owner = { is_tribal = no }
-		}
-	}
-	
-	mean_time_to_happen = {
-	
-		months = 1800
-
-		modifier = {
-			factor = 0.8
-			owner = { mil = 5 }
-		}
-	}
-
-	option = {
-		name = "EVTOPTA9200"
-		random_neighbor_province = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				development = 10
-				owner = { is_tribal = no }
-			}
-			add_claim = ROOT
-		}
-		
-	}
-}
-
-# Get conquest CB on a weaker neighbour
-country_event = {
-	id = 9201
-	title = "EVTNAME9201"
-	desc = "EVTDESC9201"
-	picture = DIPLOMACY_eventPicture
-
-	trigger = {
-		always = no # unnecessary, already has CB
-		government = steppe_horde
-		is_at_war = no
-		num_of_cities = 10
-		any_neighbor_country = {
-			NOT = { num_of_cities = 4 }	
-			NOT = { has_country_flag = is_tribal_target }		
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 500
-		modifier = {
-			factor = 0.8
-			mil = 5
-		}
-	}
-
-	option = {
-		name = "EVTOPTA9201"
-		random_country = {
-			limit = {
-				is_neighbor_of = ROOT
-				NOT = { num_of_cities = 4 }
-				NOT = { has_country_flag = is_tribal_target }				
-			}
-			set_country_flag = is_tribal_target
-			capital_scope = { add_claim = ROOT }
-		}
-		
-	}
-}
-
 # Get a pretender rising if low war-exhaustion and not in a war
 country_event = {
 	id = 9202
@@ -96,12 +7,14 @@ country_event = {
 
 	trigger = {
 		government = steppe_horde
+		is_year = 1450
+		NOT = { has_dlc = "The Cossacks" }
 		is_at_war = no
 		num_of_cities = 10
 		NOT = { war_exhaustion = 1 }
 		has_regency = no
 		NOT = { num_of_rebel_controlled_provinces = 1 }
-		NOT = { had_recent_war = 10 }
+		NOT = { had_recent_war = 15 }
 		has_truce = no
 		NOT = { has_spawned_rebels = pretender_rebels }
 	}
@@ -135,13 +48,15 @@ country_event = {
 	
 	trigger = {
 		government = steppe_horde
+		is_year = 1450
+		NOT = { has_dlc = "The Cossacks" }
 		num_of_cities = 10
 		is_at_war = no
 		NOT = { war_exhaustion = 1 }
 		has_regency = no
 		has_heir = yes
 		NOT = { num_of_rebel_controlled_provinces = 1 }
-		NOT = { had_recent_war = 10 }
+		NOT = { had_recent_war = 15 }
 		has_truce = no
 		NOT = { has_spawned_rebels = pretender_rebels }		
 	}
@@ -179,6 +94,8 @@ country_event = {
 	
 	trigger = {
 		government = steppe_horde
+		is_year = 1450
+		NOT = { has_dlc = "The Cossacks" }
 		num_of_cities = 10
 		is_at_war = no
 		NOT = { war_exhaustion = 1 }
@@ -186,7 +103,7 @@ country_event = {
 		has_heir = no
 		legitimacy = 10
 		NOT = { num_of_rebel_controlled_provinces = 1 }
-		NOT = { had_recent_war = 10 }
+		NOT = { had_recent_war = 15 }
 		has_truce = no
 	}
 	
@@ -201,50 +118,5 @@ country_event = {
 	option = {
 		name = "EVTOPTA9204"
 		add_legitimacy = -15
-	}
-}
-
-
-# Plundering event for tribes
-province_event = {
-	id = 9206
-	title = "EVTNAME9206"
-	desc = "EVTDESC9206"
-	picture = HORDE_ON_HORSEBACK_eventPicture
-
-	is_triggered_only = yes
-	
-	trigger = {
-		always = no
-		FROM = { government = steppe_horde }
-		NOT = { owner = { government = steppe_horde} }
-	}
-	
-	option = {
-		name = "EVTOPTA9206"
-		owner = { add_prestige = -1 }
-		controller = {
-			country_event = {
-				id = 9205
-				days = 1
-			}
-		}
-	}
-}
-
-# For the tribe
-country_event = {
-	id = 9205
-	title = "EVTNAME9205"
-	desc = "EVTDESC9205"
-	picture = HORDE_ON_HORSEBACK_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA9205"
-		add_legitimacy = 1
-		add_prestige = 2
-		add_war_exhaustion = -0.25
 	}
 }

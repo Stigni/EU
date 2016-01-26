@@ -35,8 +35,8 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			government = monarchy
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			OR = {
 				NOT = { is_part_of_hre = yes }
@@ -71,7 +71,7 @@ country_decisions = {
 						#province_id = 2971 # Hoya
 					}
 				}
-				add_claim = ROOT
+				add_permanent_claim = HAN
 			}
 			add_prestige = 25
 			if = {
@@ -113,9 +113,10 @@ country_decisions = {
 				primary_culture = hannoverian #Westphalian
 				primary_culture = hessian
 				capital_scope = {
-					region = westphalian_region
+					area = westphalia_area
 				}
 			}
+			NOT = { has_country_flag = formed_westphalia }
 			is_colonial_nation = no
 			OR = {
 				ai = no
@@ -138,13 +139,14 @@ country_decisions = {
 		allow = {
 			adm_tech = 10
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			OR = {
 				is_elector = yes
 				NOT = { is_part_of_hre = yes }
 			}
 			capital_scope = {
-				region = westphalian_region
+				area = westphalia_area
 			}
 			owns_core_province = 52	# Magdeburg
 			owns_core_province = 82	# Westfalen
@@ -167,17 +169,36 @@ country_decisions = {
 				name = "decentralization_modifier"
 				duration = 7300
 			}
-			westphalian_region = {
+			westphalia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = WES
+				add_permanent_claim = WES
+			}
+			lower_saxony_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WES
+			}
+			every_province = {
+				limit = {
+					OR = {
+						province_id = 52
+						province_id = 81
+						province_id = 1762
+						province_id = 2964
+					}
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = WES
 			}
 			add_prestige = 25
 			change_government = administrative_monarchy
 			WES = {
 				set_capital = 1762 # Kassel
 			}
+			set_country_flag = formed_westphalia
 		}
 		ai_will_do = {
 			factor = 1
@@ -223,6 +244,7 @@ country_decisions = {
 		allow = {
 			adm_tech = 10
 			is_subject = no
+			is_nomad = no
 			is_at_war = no
 			owns_core_province = 144
 			owns_core_province = 145
@@ -258,23 +280,48 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			greece_region = {
+			western_aegean_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { province_id = 143 }
 				}
-				add_claim = GRE
+				add_permanent_claim = GRE
+			}
+			northern_greece_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { province_id = 143 }
+				}
+				add_permanent_claim = GRE
+			}
+			morea_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { province_id = 143 }
+				}
+				add_permanent_claim = GRE
+			}
+			macedonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { province_id = 143 }
+				}
+				add_permanent_claim = GRE
 			}
 			add_prestige = 10
 			if = {
 				limit = {
-					NOT = { capital_scope = { region = greece_region } }
+					NOT = {
+						capital_scope = { area = morea_area }
+						capital_scope = { area = northern_greece_area }
+						capital_scope = { area = macedonia_area }
+					}
 				}
 				set_capital = 146
 			}
 			if = {
 				limit = { NOT = { has_idea_group = greek_ideas } }
-				swap_free_idea_group = yes
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
 		ai_will_do = {

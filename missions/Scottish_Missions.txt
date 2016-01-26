@@ -65,19 +65,19 @@ scottish_control = {
 		is_subject = no
 		is_at_war = no
 		NOT = { alliance_with = ENG }
-		NOT = { highlands = { owned_by = ENG } }
-		NOT = { lowlands = { owned_by = ENG } }
-		NOT = { northumbria = { owned_by = ROOT } }
-		NOT = { northumbria = { NOT = { owned_by = ENG } } }
+		NOT = { highlands_area = { owned_by = ENG } }
+		NOT = { lowlands_area = { owned_by = ENG } }
+		NOT = { northern_england_area = { owned_by = ROOT } }
+		NOT = { northern_england_area = { NOT = { owned_by = ENG } } }
 	}
 	abort = {
 		is_subject = yes
 	}
 	success = {
 		NOT = { war_with = ENG }
-		NOT = { highlands = { owned_by = ENG } }
-		NOT = { lowlands = { owned_by = ENG } }
-		northumbria = { owned_by = ROOT }
+		NOT = { highlands_area = { owned_by = ENG } }
+		NOT = { lowlands_area = { owned_by = ENG } }
+		northern_england_area = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 1000
@@ -87,12 +87,12 @@ scottish_control = {
 		}
 	}
 	immediate = {
-		northumbria = {
+		northern_england_area = {
 			add_claim = ROOT
 		}
 	}
 	abort_effect = {
-		northumbria = {
+		northern_england_area = {
 			remove_claim = ROOT
 		}
 	}
@@ -115,8 +115,8 @@ scottish_defense = {
 		is_subject = no
 		is_at_war = no
 		OR = {
-			highlands = { owned_by = ENG }
-			lowlands = { owned_by = ENG }
+			highlands_area = { owned_by = ENG }
+			lowlands_area = { owned_by = ENG }
 		}
 	}
 	abort = {
@@ -124,8 +124,8 @@ scottish_defense = {
 	}
 	success = {
 		NOT = { war_with = ENG }
-		NOT = { highlands = { NOT = { owned_by = ROOT } } }
-		NOT = { lowlands = { NOT = { owned_by = ROOT } } }
+		NOT = { highlands_area = { NOT = { owned_by = ROOT } } }
+		NOT = { lowlands_area = { NOT = { owned_by = ROOT } } }
 	}
 	chance = {
 		factor = 3000
@@ -137,9 +137,9 @@ scottish_defense = {
 	immediate = {
 		if = {
 			limit = {
-				highlands = { owned_by = ENG }
+				highlands_area = { owned_by = ENG }
 			}
-			highlands = {
+			highlands_area = {
 				limit = {
 					owned_by = ENG
 				}
@@ -148,9 +148,9 @@ scottish_defense = {
 		}
 		if = {
 			limit = {
-				lowlands = { owned_by = ENG }
+				lowlands_area = { owned_by = ENG }
 			}
-			lowlands = {
+			lowlands_area = {
 				limit = {
 					owned_by = ENG
 				}
@@ -161,9 +161,9 @@ scottish_defense = {
 	abort_effect = {
 		if = {
 			limit = {
-				highlands = { owned_by = ENG }
+				highlands_area = { owned_by = ENG }
 			}
-			highlands = {
+			highlands_area = {
 				limit = {
 					owned_by = ENG
 				}
@@ -172,9 +172,9 @@ scottish_defense = {
 		}
 		if = {
 			limit = {
-				lowlands = { owned_by = ENG }
+				lowlands_area = { owned_by = ENG }
 			}
-			lowlands = {
+			lowlands_area = {
 				limit = {
 					owned_by = ENG
 				}

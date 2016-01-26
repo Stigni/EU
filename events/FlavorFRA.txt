@@ -18,6 +18,7 @@ country_event = {
 	trigger = {
 		tag = FRA
 		NOT = { is_year = 1500 }
+		owns = 183
 	}
 
 	mean_time_to_happen = {
@@ -36,7 +37,7 @@ country_event = {
 		}
 		random_owned_province = {
 			limit = {
-				region = french_region
+				region = france_region
 				is_capital = no
 			}
 			add_base_tax = 1
@@ -66,10 +67,10 @@ country_event = {
 		NOT = { is_year = 1500 }
 		NOT = { has_country_flag = had_end_of_HYW_france }
 		NOT = {
-			french_region = { owned_by = ENG }
+			france_region = { owned_by = ENG }
 		}
 		NOT = {
-			french_region = { owned_by = GBR }
+			france_region = { owned_by = GBR }
 		}
 		ENG = {
 			NOT = { war_with = FRA }
@@ -126,12 +127,20 @@ country_event = {
 		tag = FRA
 		NOT = { is_year = 1550 }
 		NOT = { senior_union_with = NAP }
-		southern_italy_region = {
+		any_country = {
 			OR = {
-				owned_by = NAP
-				owned_by = ARA
-				owned_by = CAS
-				owned_by = SPA
+				tag = NAP
+				tag = ARA
+				tag = CAS
+				tag = SPA
+			}
+			any_owned_province = {
+				OR = {
+					area = sicily_area
+					area = naples_area
+					area = apulia_area
+					area = calabria_area
+				}
 			}
 		}
 	}
@@ -145,7 +154,12 @@ country_event = {
 		name = "flavor_fra.EVTOPTA3105"
 		every_province = {
 			limit = {
-				region = southern_italy_region
+				OR = {
+					area = sicily_area
+					area = naples_area
+					area = calabria_area
+					area = apulia_area
+				}
 				OR = {
 					owned_by = NAP 
 					owned_by = ARA
@@ -164,7 +178,12 @@ country_event = {
 					tag = SPA
 				}
 				any_owned_province = {
-					region = southern_italy_region
+					OR = {
+						area = sicily_area
+						area = naples_area
+						area = calabria_area
+						area = apulia_area
+					}
 				}
 			}
 			add_opinion = {
@@ -185,7 +204,12 @@ country_event = {
 					tag = SPA
 				}
 				any_owned_province = {
-					region = southern_italy_region
+					OR = {
+						area = sicily_area
+						area = naples_area
+						area = calabria_area
+						area = apulia_area
+					}
 				}
 			}
 			add_opinion = {
@@ -243,11 +267,11 @@ country_event = {
 		tag = FRA
 		is_at_war = no
 		NOT = {
-			italian_region = {
+			italy_region = {
 				owned_by = FRA
 			}
 		}
-		italian_region = {
+		italy_region = {
 			is_claim = FRA
 		}
 	}
@@ -270,7 +294,7 @@ country_event = {
 		name = "flavor_fra.EVTOPTA3106"
 		every_known_country = {
 			limit = {
-				italian_region = {
+				italy_region = {
 					owned_by = PREV
 					is_claim = FRA
 				}
@@ -280,7 +304,7 @@ country_event = {
 				modifier = renounced_italian_claims
 			}
 		}
-		italian_region = {
+		italy_region = {
 			limit = {
 				is_claim = FRA
 			}

@@ -1,6 +1,7 @@
 government = steppe_horde
 technology_group = nomad_group
-religion = vajrayana
+religion = tengri_pagan_reformed
+secondary_religion = vajrayana
 primary_culture = chahar
 capital = 2109	# Boduna
 

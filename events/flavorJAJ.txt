@@ -23,7 +23,10 @@ country_event = {
 		num_of_ports = 2
 		religion_group = muslim
 		any_owned_province = {
-			region = konkan_region
+			OR = {
+				area = konkan_area
+				area = kanara_area
+			}
 		}
 	}
 
@@ -39,7 +42,10 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					region = konkan_region
+					OR = {
+						area = konkan_area
+						area = kanara_area
+					}
 				}
 				if = {
 					limit = {

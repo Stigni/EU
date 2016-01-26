@@ -70,8 +70,8 @@ conquer_scotland = {
 	
 	target_provinces = {
 		OR = {
-			region = highlands
-			region = lowlands
+			area = highlands_area
+			area = lowlands_area
 		}
 		owned_by = SCO
 	}
@@ -87,8 +87,8 @@ conquer_scotland = {
 			is_subject = no
 			NOT = { alliance_with = ROOT }
 			OR = {
-				highlands = { owned_by = SCO }
-				lowlands = { owned_by = SCO }
+				highlands_area = { owned_by = SCO }
+				lowlands_area = { owned_by = SCO }
 			}
 		}
 		NOT = { has_opinion = { who = SCO value = 50 } }
@@ -229,8 +229,8 @@ england_discovers_north_america = {
 		has_idea = quest_for_the_new_world
 		num_of_ports = 3
 		num_of_heavy_ship = 1
-		northeastern_america = { range = ROOT }
-		NOT = { northeastern_america = { has_discovered = ROOT } }
+		northeast_america_region = { range = ROOT }
+		NOT = { northeast_america_region = { has_discovered = ROOT } }
 	}
 	abort = {
 		OR = {
@@ -239,7 +239,7 @@ england_discovers_north_america = {
 		}
 	}
 	success = {
-		northeastern_america = { has_discovered = ROOT }
+		northeast_america_region = { has_discovered = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -285,14 +285,14 @@ english_colony_in_north_america = {
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		num_of_colonists = 1
 		num_of_ports = 3
-		northeastern_america = {
+		northeast_america_region = {
 			has_discovered = ROOT
 			is_empty = yes
 			range = ROOT
 		}
-		NOT = { northeastern_america = { owned_by = ROOT } }
+		NOT = { northeast_america_region = { owned_by = ROOT } }
 		NOT = {
-			northeastern_america = {
+			northeast_america_region = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -303,13 +303,13 @@ english_colony_in_north_america = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { northeastern_america = { is_empty = yes } }
-				NOT = { northeastern_america = { owned_by = ROOT } }
+				NOT = { northeast_america_region = { is_empty = yes } }
+				NOT = { northeast_america_region = { owned_by = ROOT } }
 			}
 		}
 	}
 	success = {
-		northeastern_america = { owned_by = ROOT }
+		northeast_america_region = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -354,9 +354,9 @@ england_discovers_the_carribean = {
 		num_of_ports = 3
 		has_idea = quest_for_the_new_world
 		NOT = { has_country_modifier = colonial_enthusiasm }
-		northeastern_america = { has_discovered = ROOT }
-		the_carribean = { range = ROOT }
-		NOT = { the_carribean = { has_discovered = ROOT } }
+		northeast_america_region = { has_discovered = ROOT }
+		carribeans_region = { range = ROOT }
+		NOT = { carribeans_region = { has_discovered = ROOT } }
 	}
 	abort = {
 		OR = {
@@ -365,7 +365,7 @@ england_discovers_the_carribean = {
 		}
 	}
 	success = {
-		the_carribean = { has_discovered = ROOT }
+		carribeans_region = { has_discovered = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -402,14 +402,14 @@ english_colony_in_the_carribean = {
 		num_of_colonists = 1
 		num_of_ports = 3
 		NOT = { has_country_modifier = colonial_enthusiasm }
-		the_carribean = {
+		carribeans_region = {
 			has_discovered = ROOT
 			is_empty = yes
 			range = ROOT
 		}
-		NOT = { the_carribean = { owned_by = ROOT } }
+		NOT = { carribeans_region = { owned_by = ROOT } }
 		NOT = {
-			the_carribean = {
+			carribeans_region = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -420,13 +420,13 @@ english_colony_in_the_carribean = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { the_carribean = { is_empty = yes } }
-				NOT = { the_carribean = { owned_by = ROOT } }
+				NOT = { carribeans_region = { is_empty = yes } }
+				NOT = { carribeans_region = { owned_by = ROOT } }
 			}
 		}
 	}
 	success = {
-		the_carribean = { owned_by = ROOT }
+		carribeans_region = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -449,7 +449,7 @@ english_colony_in_the_carribean = {
 		modifier = {
 			factor = 0.5
 			any_subject_country = {
-				the_carribean = { owned_by = PREV }
+				carribeans_region = { owned_by = PREV }
 			}
 		}
 	}
@@ -476,10 +476,18 @@ england_discovers_india = {
 		}
 		num_of_ports = 3
 		has_idea = quest_for_the_new_world
-		northeastern_america = { has_discovered = ROOT }
-		the_carribean = { has_discovered = ROOT } 
-		indian_coast = { range = ROOT }
-		NOT = { indian_coast = { has_discovered = ROOT } }
+		northeast_america_region = { has_discovered = ROOT }
+		carribeans_region = { has_discovered = ROOT }
+		NOT = { west_india_region = { has_discovered = ROOT } }
+		NOT = { coromandel_region = { has_discovered = ROOT } }
+		NOT = { deccan_region = { has_discovered = ROOT } }
+		NOT = { bengal_region = { has_discovered = ROOT } }
+		OR = {
+			west_india_region = { range = ROOT }
+			bengal_region = { range = ROOT }
+			coromandel_region = { range = ROOT }
+			deccan_region = { range = ROOT }
+		}
 	}
 	abort = {
 		OR = {
@@ -488,7 +496,12 @@ england_discovers_india = {
 		}
 	}
 	success = {
-		indian_coast = { has_discovered = ROOT }
+		OR = {
+			west_india_region = { has_discovered = ROOT }
+			bengal_region = { has_discovered = ROOT }
+			coromandel_region = { has_discovered = ROOT }
+			deccan_region = { has_discovered = ROOT }
+		}
 	}
 	chance = {
 		factor = 2000
@@ -510,59 +523,6 @@ england_discovers_india = {
 	}
 }
 
-
-conquer_indian_coastal_province = {
-	
-	type = country
-	ai_mission = yes
-
-	category = MIL
-	
-	allow = {
-		always = no #Replaced by Generic Mission with weights
-		normal_or_historical_nations = yes
-		OR = {
-			tag = ENG
-			tag = GBR
-		}
-		num_of_ports = 3
-		indian_coast = { has_discovered = ROOT }
-		NOT = { indian_coast = { owned_by = ROOT } }
-	}
-	abort = {
-		is_subject = yes
-	}
-	success = {
-		indian_coast = { owned_by = ROOT }
-	}
-	chance = {
-		factor = 1000
-		modifier = {
-			factor = 5
-			has_idea = land_of_opportunity
-		}
-		modifier = {
-			factor = 5
-			has_idea = colonial_ventures
-		}
-	}
-	immediate = {
-		indian_coast = {
-			limit = { has_discovered = ROOT }
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		indian_coast = {
-			remove_claim = ROOT
-		}
-	}
-	effect = {
-		add_treasury = 50
-	}
-}
- 
-
 england_discovers_australia = {
 	
 	type = country
@@ -577,10 +537,10 @@ england_discovers_australia = {
 		}
 		num_of_ports = 3
 		has_idea = quest_for_the_new_world
-		northeastern_america = { has_discovered = ROOT }
-		indian_coast = { has_discovered = ROOT }
-		australian_coast = { range = ROOT }
-		NOT = { australian_coast = { has_discovered = ROOT } }
+		northeast_america_region = { has_discovered = ROOT }
+		bengal_region = { has_discovered = ROOT }
+		australia_region = { range = ROOT }
+		NOT = { australia_region = { has_discovered = ROOT } }
 	}
 	abort = {
 		OR = {
@@ -589,7 +549,7 @@ england_discovers_australia = {
 		}
 	}
 	success = {
-		australian_coast = { has_discovered = ROOT }
+		australia_region = { has_discovered = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -627,14 +587,14 @@ english_colony_in_australia = {
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		num_of_colonists = 1
 		num_of_ports = 3
-		australian_coast = {
+		australia_region = {
 			has_discovered = ROOT
 			is_empty = yes
 			range = ROOT
 		}
-		NOT = { australian_coast = { owned_by = ROOT } }
+		NOT = { australia_region = { owned_by = ROOT } }
 		NOT = {
-			australian_coast = {
+			australia_region = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -645,13 +605,13 @@ english_colony_in_australia = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { australian_coast = { is_empty = yes } }
-				NOT = { australian_coast = { owned_by = ROOT } }
+				NOT = { australia_region = { is_empty = yes } }
+				NOT = { australia_region = { owned_by = ROOT } }
 			}
 		}
 	}
 	success = {
-		australian_coast = { owned_by = ROOT }
+		australia_region = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -765,7 +725,7 @@ establish_trade_in_american_cot = {
 			tag = ENG
 			tag = GBR
 		}
-		northeastern_america = {
+		northeast_america_region = {
 			has_discovered = ROOT
 		}
 		NOT = {
@@ -868,7 +828,7 @@ occupy_paris = {
 		exists = FRA
 		war_with = FRA
 		NOT = { is_year = 1475 }
-		french_region = { owned_by = ROOT }
+		france_region = { owned_by = ROOT }
 		FRA = { controls = 183 }
 		183 = { is_capital = yes }
 		NOT = { has_country_flag = has_occupied_paris }
@@ -897,7 +857,11 @@ occupy_paris = {
 		}
 	}
 	effect = {
-		gallia = { add_claim = ROOT }
+		seine_area = { add_claim = ROOT }
+		bourgogne_area = { add_claim = ROOT }
+		normandy_area = { add_claim = ROOT }
+		loire_area = { add_claim = ROOT }
+		picardy_area = { add_claim = ROOT }
 		add_prestige = 5
 		set_country_flag = has_occupied_paris
 	}
@@ -921,7 +885,7 @@ conquer_normandie_and_caux = {
 		NOT = { truce_with = FRA }
 		NOT = { has_country_modifier = military_victory }
 		NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
-		french_region = { owned_by = ROOT }
+		france_region = { owned_by = ROOT }
 		FRA = {
 			owns = 167	# Caux
 			owns = 168	# Normandie
@@ -977,7 +941,7 @@ conquer_aquitaine = {
 		NOT = { alliance_with = FRA }
 		NOT = { truce_with = FRA }
 		NOT = { is_year = 1475 }
-		french_region = { owned_by = ROOT }
+		france_region = { owned_by = ROOT }
 		FRA = {
 			owns = 173	# Saintonge 
 			owns = 174	# Gascogne
@@ -988,7 +952,7 @@ conquer_aquitaine = {
 	abort = {
 		OR = {
 			is_subject = yes
-			NOT = { french_region = { owned_by = ROOT } }
+			NOT = { france_region = { owned_by = ROOT } }
 		}
 	}
 	success = {
@@ -1033,7 +997,7 @@ vassalize_france = {
 		tag = ENG
 		exists = FRA
 		is_subject = no
-		french_region = {
+		france_region = {
 			owned_by = ROOT
 			is_core = ROOT
 		}

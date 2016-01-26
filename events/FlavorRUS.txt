@@ -1235,14 +1235,14 @@ country_event = {
 			exists = QNG
 		}
 		any_owned_province = {
-			region = western_siberia
+			region = siberia_region
 		}
 		OR = {
 			MNG = {
 				NOT = { war_with = ROOT }
 				any_owned_province = {
 					any_neighbor_province = {
-						region = manchuria
+						region = manchuria_region
 						owned_by = ROOT
 					}
 				}
@@ -1251,7 +1251,7 @@ country_event = {
 				NOT = { war_with = ROOT }
 				any_owned_province = {
 					any_neighbor_province = {
-						region = manchuria
+						region = manchuria_region
 						owned_by = ROOT
 					}
 				}
@@ -1272,7 +1272,7 @@ country_event = {
 						NOT = { war_with = ROOT }
 						any_owned_province = {
 							any_neighbor_province = {
-								region = manchuria
+								region = manchuria_region
 								owned_by = ROOT
 							}
 						}
@@ -1291,7 +1291,7 @@ country_event = {
 						NOT = { war_with = ROOT }
 						any_owned_province = {
 							any_neighbor_province = {
-								region = manchuria
+								region = manchuria_region
 								owned_by = ROOT
 							}
 						}
@@ -1319,7 +1319,7 @@ country_event = {
 			every_province = {
 				limit = {
 					owned_by = ROOT
-					region = manchuria
+					region = manchuria_region
 				}
 				cede_province = PREV
 			}
@@ -1327,7 +1327,7 @@ country_event = {
 		}
 		every_province = {
 			limit = {
-				region = western_siberia
+				region = siberia_region
 				NOT = { owned_by = ROOT }
 			}
 			add_claim = ROOT
@@ -1335,7 +1335,7 @@ country_event = {
 		every_country = {
 			limit = {
 				any_owned_province = {
-					region = western_siberia
+					region = siberia_region
 				}
 			}
 			add_opinion = {
@@ -1359,7 +1359,7 @@ country_event = {
 		}
 		every_province = {
 			limit = {
-				region = western_siberia
+				region = siberia_region
 				NOT = { owned_by = ROOT }
 			}
 			add_claim = ROOT
@@ -1367,7 +1367,7 @@ country_event = {
 		every_country = {
 			limit = {
 				any_owned_province = {
-					region = western_siberia
+					region = siberia_region
 				}
 			}
 			add_opinion = {

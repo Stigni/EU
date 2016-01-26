@@ -844,15 +844,16 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = per_shiite_immigration
-			duration = 3650
+			duration = 7300
 		}
 	}
 	
-	option = { # Turn them away
-		name = flavor_per.15.b
-		ai_chance = { factor = 0 }
-		add_piety = -0.1
-	}
+	#option = { # Turn them away
+	#	name = flavor_per.15.b
+	#	ai_chance = { factor = 0 }
+	#	add_piety = -0.25
+	#	add_stability = 1
+	#}
 }
 
 #Restructuring of Isfahan
@@ -885,6 +886,7 @@ country_event = {
 		}
 		add_years_of_income = -0.15
 		set_country_flag = per_isfahan_construction
+		set_capital = 429
 		429 = {
 			add_province_modifier = {
 				name = "per_building_isfahan"

@@ -58,7 +58,7 @@ humiliated_by_rival = {
 }
 
 eclipsed_rival = {
-	power = 5
+	power = 10
 	yearly_decay = 1
 	max = 30
 }
@@ -94,7 +94,7 @@ took_province_from_rival = {
 }
 
 lost_province_to_rival = {
-	power = -1			# multiplied with basetax
+	power = -0.5			# multiplied with basetax
 	yearly_decay = 1
 	min = -100
 }

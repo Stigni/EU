@@ -4,7 +4,7 @@ religion = sunni
 add_accepted_culture = berber
 technology_group = muslim
 capital = 223	# Granada
-
+government_rank = 1
 
 1392.1.1 = {
 	monarch = {

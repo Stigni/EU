@@ -197,7 +197,7 @@ l_english:
  republic_factions.6.a: "Their disloyalty to [Root.GetName] must be punished."
  republic_factions.6.b: "Try to defuse the situation."
  republic_factions.7.t: "International Guild Contacts"
- republic_factions.7.d: "One of our diplomatic envoys with strong connections to a domestic guild has been accused by some older ambassadors of cutting deals with a guild across the border. While he admits to attending to guild business as well while abroad, he denies accusations of this compromising his political missions. He is open, however, to the idea of attempting to use his connections abroad to our advantage.\n\nThe old guard of aristocratic diplomats finds this practice highly dubious, but leveraging the connections between guilds to could give us an edge in clandestine operations."
+ republic_factions.7.d: "One of our diplomatic envoys with strong connections to a domestic guild has been accused by some older ambassadors of cutting deals with a guild across the border. While he admits to attending to guild business while abroad, he denies accusations of compromising his political missions. On the other hand he says he is open to the idea of attempting to use his connections abroad to our advantage.\n\nThe old guard of aristocratic diplomats find this practice highly dubious, but leveraging connections between guilds could give us an edge in clandestine operations."
  republic_factions.7.a: "We'll see whose guild members show the most loyalty to their country."
  republic_factions.7.b: "Suspend their service until we have straightened things out."
  republic_factions.8.t: "Noble Legacy of [Root.GetName]"

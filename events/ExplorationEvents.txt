@@ -449,10 +449,11 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
-			region = the_andes
+			region = peru_region
+			region = chile_region
 			region = la_plata_region
-			region = south_africa
-			region = australian_coast
+			region = south_africa_region
+			region = australia_region
 			region = new_zealand_region
 		}
 		has_climate = arctic

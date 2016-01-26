@@ -8,7 +8,7 @@ conquer_bombay = {
 	allow = {
 		normal_or_historical_nations = yes
 		num_of_ports = 3
-		
+		is_subject = no
 		religion_group = christian
 		OR = {
 			technology_group = western
@@ -30,7 +30,16 @@ conquer_bombay = {
 			has_idea_group = exploration_ideas
 		}
 		NOT = {
-			indian_region = {
+			west_india_region = {
+				owned_by = ROOT
+			}
+			deccan_region = {
+				owned_by = ROOT
+			}
+			bengal_region = {
+				owned_by = ROOT
+			}
+			coromandel_region = {
 				owned_by = ROOT
 			}
 		}
@@ -50,12 +59,15 @@ conquer_bombay = {
 		}
 	}
 	abort = {
-		NOT = { num_of_ports = 1 }
-		529 = {
-			owner = {
-				alliance_with = ROOT
-				technology_group = western
-				is_subject_of = ROOT
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+			529 = {
+				owner = {
+					alliance_with = ROOT
+					technology_group = western
+					is_subject_of = ROOT
+				}
 			}
 		}
 	}
@@ -132,7 +144,7 @@ conquer_goa = {
 	allow = {
 		normal_or_historical_nations = yes
 		num_of_ports = 3
-		
+		is_subject = no
 		religion_group = christian
 		OR = {
 			technology_group = western
@@ -154,7 +166,16 @@ conquer_goa = {
 			has_idea_group = exploration_ideas
 		}
 		NOT = {
-			indian_region = {
+			west_india_region = {
+				owned_by = ROOT
+			}
+			deccan_region = {
+				owned_by = ROOT
+			}
+			bengal_region = {
+				owned_by = ROOT
+			}
+			coromandel_region = {
 				owned_by = ROOT
 			}
 		}
@@ -174,12 +195,15 @@ conquer_goa = {
 		}
 	}
 	abort = {
-		NOT = { num_of_ports = 1 }
-		2030 = {
-			owner = {
-				alliance_with = ROOT
-				technology_group = western
-				is_subject_of = ROOT
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+			2030 = {
+				owner = {
+					alliance_with = ROOT
+					technology_group = western
+					is_subject_of = ROOT
+				}
 			}
 		}
 	}
@@ -252,7 +276,7 @@ conquer_madras = {
 	allow = {
 		normal_or_historical_nations = yes
 		num_of_ports = 3
-		
+		is_subject = no
 		religion_group = christian
 		OR = {
 			technology_group = western
@@ -274,7 +298,16 @@ conquer_madras = {
 			has_idea_group = exploration_ideas
 		}
 		NOT = {
-			indian_region = {
+			west_india_region = {
+				owned_by = ROOT
+			}
+			deccan_region = {
+				owned_by = ROOT
+			}
+			bengal_region = {
+				owned_by = ROOT
+			}
+			coromandel_region = {
 				owned_by = ROOT
 			}
 		}
@@ -294,12 +327,15 @@ conquer_madras = {
 		}
 	}
 	abort = {
-		NOT = { num_of_ports = 1 }
-		539 = {
-			owner = {
-				alliance_with = ROOT
-				technology_group = western
-				is_subject_of = ROOT
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+			539 = {
+				owner = {
+					alliance_with = ROOT
+					technology_group = western
+					is_subject_of = ROOT
+				}
 			}
 		}
 	}
@@ -376,7 +412,7 @@ conquer_pondicherry = {
 	allow = {
 		normal_or_historical_nations = yes
 		num_of_ports = 3
-		
+		is_subject = no
 		religion_group = christian
 		OR = {
 			technology_group = western
@@ -398,7 +434,16 @@ conquer_pondicherry = {
 			has_idea_group = exploration_ideas
 		}
 		NOT = {
-			indian_region = {
+			west_india_region = {
+				owned_by = ROOT
+			}
+			deccan_region = {
+				owned_by = ROOT
+			}
+			bengal_region = {
+				owned_by = ROOT
+			}
+			coromandel_region = {
 				owned_by = ROOT
 			}
 		}
@@ -418,12 +463,15 @@ conquer_pondicherry = {
 		}
 	}
 	abort = {
-		NOT = { num_of_ports = 1 }
-		540 = {
-			owner = {
-				alliance_with = ROOT
-				technology_group = western
-				is_subject_of = ROOT
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+			540 = {
+				owner = {
+					alliance_with = ROOT
+					technology_group = western
+					is_subject_of = ROOT
+				}
 			}
 		}
 	}
@@ -502,7 +550,7 @@ conquer_diu = {
 	allow = {
 		normal_or_historical_nations = yes
 		num_of_ports = 3
-		
+		is_subject = no
 		religion_group = christian
 		OR = {
 			technology_group = western
@@ -524,7 +572,16 @@ conquer_diu = {
 			has_idea_group = exploration_ideas
 		}
 		NOT = {
-			indian_region = {
+			west_india_region = {
+				owned_by = ROOT
+			}
+			deccan_region = {
+				owned_by = ROOT
+			}
+			bengal_region = {
+				owned_by = ROOT
+			}
+			coromandel_region = {
 				owned_by = ROOT
 			}
 		}
@@ -544,12 +601,15 @@ conquer_diu = {
 		}
 	}
 	abort = {
-		NOT = { num_of_ports = 1 }
-		515 = {
-			owner = {
-				alliance_with = ROOT
-				technology_group = western
-				is_subject_of = ROOT
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+			515 = {
+				owner = {
+					alliance_with = ROOT
+					technology_group = western
+					is_subject_of = ROOT
+				}
 			}
 		}
 	}
@@ -622,7 +682,7 @@ conquer_calcutta = {
 	allow = {
 		normal_or_historical_nations = yes
 		num_of_ports = 3
-		
+		is_subject = no
 		religion_group = christian
 		OR = {
 			technology_group = western
@@ -644,7 +704,16 @@ conquer_calcutta = {
 			has_idea_group = exploration_ideas
 		}
 		NOT = {
-			indian_region = {
+			west_india_region = {
+				owned_by = ROOT
+			}
+			deccan_region = {
+				owned_by = ROOT
+			}
+			bengal_region = {
+				owned_by = ROOT
+			}
+			coromandel_region = {
 				owned_by = ROOT
 			}
 		}
@@ -664,12 +733,15 @@ conquer_calcutta = {
 		}
 	}
 	abort = {
-		NOT = { num_of_ports = 1 }
-		561 = {
-			owner = {
-				alliance_with = ROOT
-				technology_group = western
-				is_subject_of = ROOT
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+			561 = {
+				owner = {
+					alliance_with = ROOT
+					technology_group = western
+					is_subject_of = ROOT
+				}
 			}
 		}
 	}
@@ -745,7 +817,7 @@ conquer_kotte = {
 	allow = {
 		normal_or_historical_nations = yes
 		num_of_ports = 3
-		
+		is_subject = no
 		religion_group = christian
 		OR = {
 			technology_group = western
@@ -767,7 +839,16 @@ conquer_kotte = {
 			has_idea_group = exploration_ideas
 		}
 		NOT = {
-			indian_region = {
+			west_india_region = {
+				owned_by = ROOT
+			}
+			deccan_region = {
+				owned_by = ROOT
+			}
+			bengal_region = {
+				owned_by = ROOT
+			}
+			coromandel_region = {
 				owned_by = ROOT
 			}
 		}
@@ -787,12 +868,15 @@ conquer_kotte = {
 		}
 	}
 	abort = {
-		NOT = { num_of_ports = 1 }
-		572 = {
-			owner = {
-				alliance_with = ROOT
-				technology_group = western
-				is_subject_of = ROOT
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+			572 = {
+				owner = {
+					alliance_with = ROOT
+					technology_group = western
+					is_subject_of = ROOT
+				}
 			}
 		}
 	}
@@ -870,7 +954,7 @@ conquer_kochin = {
 	allow = {
 		normal_or_historical_nations = yes
 		num_of_ports = 3
-		
+		is_subject = no
 		religion_group = christian
 		OR = {
 			technology_group = western
@@ -892,7 +976,16 @@ conquer_kochin = {
 			has_idea_group = exploration_ideas
 		}
 		NOT = {
-			indian_region = {
+			west_india_region = {
+				owned_by = ROOT
+			}
+			deccan_region = {
+				owned_by = ROOT
+			}
+			bengal_region = {
+				owned_by = ROOT
+			}
+			coromandel_region = {
 				owned_by = ROOT
 			}
 		}
@@ -912,12 +1005,15 @@ conquer_kochin = {
 		}
 	}
 	abort = {
-		NOT = { num_of_ports = 1 }
-		535 = {
-			owner = {
-				alliance_with = ROOT
-				technology_group = western
-				is_subject_of = ROOT
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+			535 = {
+				owner = {
+					alliance_with = ROOT
+					technology_group = western
+					is_subject_of = ROOT
+				}
 			}
 		}
 	}
@@ -980,7 +1076,7 @@ conquer_kochin = {
 	}
 }
 
-make_base_on_spice_islands = {
+make_base_on_spice_islands_jakarta = {
 
 	type = country
 	
@@ -990,6 +1086,7 @@ make_base_on_spice_islands = {
 	allow = {
 		normal_or_historical_nations = yes
 		num_of_ports = 3
+		is_subject = no
 		religion_group = christian
 		OR = {
 			technology_group = western
@@ -1009,23 +1106,246 @@ make_base_on_spice_islands = {
 		NOT = { has_country_flag = spice_islands_completed }
 		NOT = { has_country_modifier = east_india_trade_rush }
 		NOT = { tag = POR }
-		indonesian_region = {
-			has_port = yes
-			range = ROOT
+		indonesia_region = {
 			has_discovered = ROOT
+			NOT = { owned_by = ROOT }
 		}
-		NOT = {
-			indonesian_region = {
-				owned_by =  ROOT
+		630 = {
+			has_discovered = ROOT
+			owner = {
+				NOT = { is_subject_of = ROOT }
+				NOT = { truce_with = ROOT }
+				NOT = { alliance_with = ROOT }
+				NOT = { technology_group = western }
 			}
 		}
+
 	}
 	abort = {
-		NOT = { num_of_ports = 1 }
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+		}
 	}
 	success = {
-		indonesian_region = {
+		630 = {
 			owned_by =  ROOT
+		}
+	}
+	immediate = {
+		630 = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		630 = {
+			remove_claim = ROOT
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			has_idea_group = expansion_ideas
+			has_idea_group = exploration_ideas
+		}
+		modifier = {
+			factor = 1.5
+			num_of_ports = 5
+		}
+		modifier = {
+			factor = 1.5
+			has_idea = vice_roys
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 3
+		}
+		modifier = {
+			factor = 1.5
+			has_idea = quest_for_the_new_world
+		}
+	}
+	effect = {
+		set_country_flag = spice_islands_completed
+		add_country_modifier = {
+			name = "east_india_trade_rush"
+			duration = 3650
+		}
+	}
+}
+
+make_base_on_spice_islands_pasai = {
+
+	type = country
+	
+	category = DIP
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		num_of_ports = 3
+		is_subject = no
+		religion_group = christian
+		OR = {
+			technology_group = western
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+		}
+		NOT = { has_country_flag = spice_islands_completed }
+		NOT = { has_country_modifier = east_india_trade_rush }
+		NOT = { tag = POR }
+		indonesia_region = {
+			has_discovered = ROOT
+			NOT = { owned_by = ROOT }
+		}
+		2673 = {
+			has_discovered = ROOT
+			owner = {
+				NOT = { is_subject_of = ROOT }
+				NOT = { truce_with = ROOT }
+				NOT = { alliance_with = ROOT }
+				NOT = { technology_group = western }
+			}
+		}
+
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+		}
+	}
+	success = {
+		2673 = {
+			owned_by =  ROOT
+		}
+	}
+	immediate = {
+		2673 = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		2673 = {
+			remove_claim = ROOT
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2
+			has_idea_group = expansion_ideas
+			has_idea_group = exploration_ideas
+		}
+		modifier = {
+			factor = 1.5
+			num_of_ports = 5
+		}
+		modifier = {
+			factor = 1.5
+			has_idea = vice_roys
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 3
+		}
+		modifier = {
+			factor = 1.5
+			has_idea = quest_for_the_new_world
+		}
+	}
+	effect = {
+		set_country_flag = spice_islands_completed
+		add_country_modifier = {
+			name = "east_india_trade_rush"
+			duration = 3650
+		}
+	}
+}
+
+make_base_on_spice_islands_makassar = {
+
+	type = country
+	
+	category = DIP
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		num_of_ports = 3
+		is_subject = no
+		religion_group = christian
+		OR = {
+			technology_group = western
+			AND = {
+				technology_group = eastern
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+			AND = {
+				technology_group = ottoman
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				ai = no
+			}
+		}
+		NOT = { has_country_flag = spice_islands_completed }
+		NOT = { has_country_modifier = east_india_trade_rush }
+		NOT = { tag = POR }
+		indonesia_region = {
+			has_discovered = ROOT
+			NOT = { owned_by = ROOT }
+		}
+		641 = {
+			has_discovered = ROOT
+			owner = {
+				NOT = { is_subject_of = ROOT }
+				NOT = { truce_with = ROOT }
+				NOT = { alliance_with = ROOT }
+				NOT = { technology_group = western }
+			}
+		}
+
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+		}
+	}
+	success = {
+		641 = {
+			owned_by =  ROOT
+		}
+	}
+	immediate = {
+		641 = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		641 = {
+			remove_claim = ROOT
 		}
 	}
 	chance = {
@@ -1078,6 +1398,7 @@ conquer_macau = {
 		normal_or_historical_nations = yes
 		num_of_ports = 5
 		monthly_income = 100
+		is_subject = no
 		religion_group = christian
 		OR = {
 			technology_group = western
@@ -1117,12 +1438,26 @@ conquer_macau = {
 				owned_by =  ROOT
 			}
 		}
-		indian_coast = {
-			owned_by =  ROOT
+		OR = {
+			coromandel_region = {
+				owned_by =  ROOT
+			}
+			west_india_region = {
+				owned_by =  ROOT
+			}
+			deccan_region = {
+				owned_by =  ROOT
+			}
+			bengal_region = {
+				owned_by =  ROOT
+			}
 		}
 	}
 	abort = {
-		NOT = { num_of_ports = 1 }
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+		}
 	}
 	success = {
 		668 = {
@@ -1191,6 +1526,7 @@ conquer_ningbo = {
 		num_of_ports = 5
 		monthly_income = 100
 		religion_group = christian
+		is_subject = no
 		OR = {
 			technology_group = western
 			AND = {
@@ -1229,12 +1565,26 @@ conquer_ningbo = {
 				owned_by =  ROOT
 			}
 		}
-		indian_coast = {
-			owned_by =  ROOT
+		OR = {
+			coromandel_region = {
+				owned_by =  ROOT
+			}
+			west_india_region = {
+				owned_by =  ROOT
+			}
+			deccan_region = {
+				owned_by =  ROOT
+			}
+			bengal_region = {
+				owned_by =  ROOT
+			}
 		}
 	}
 	abort = {
-		NOT = { num_of_ports = 1 }
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+		}
 	}
 	success = {
 		2149 = {
@@ -1303,6 +1653,7 @@ conquer_canton = {
 		num_of_ports = 5
 		monthly_income = 100
 		religion_group = christian
+		is_subject = no
 		OR = {
 			technology_group = western
 			AND = {
@@ -1341,12 +1692,26 @@ conquer_canton = {
 				owned_by =  ROOT
 			}
 		}
-		indian_coast = {
-			owned_by =  ROOT
+		OR = {
+			coromandel_region = {
+				owned_by =  ROOT
+			}
+			west_india_region = {
+				owned_by =  ROOT
+			}
+			deccan_region = {
+				owned_by =  ROOT
+			}
+			bengal_region = {
+				owned_by =  ROOT
+			}
 		}
 	}
 	abort = {
-		NOT = { num_of_ports = 1 }
+		OR = {
+			NOT = { num_of_ports = 1 }
+			is_subject = yes
+		}
 	}
 	success = {
 		667 = {

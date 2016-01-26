@@ -2564,11 +2564,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "religious_events.16.a" #This is an Outrage!
+		name = "religious_events.17.a" #This is an Outrage!
 		trigger = { NOT = { religion_group = muslim } }
 	}
 	option = {
-		name = "religious_events.16.b" #Excellent
+		name = "religious_events.17.b" #Excellent
 		trigger = { religion_group = muslim }
 	}
 }

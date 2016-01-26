@@ -8,7 +8,8 @@ ronin_rebels = {
 	defection = none				# Does not defect
 	independence = none				# Does not strive for independence
 	unit_transfer = yes
-	gfx_type = culture_province	
+	gfx_type = culture_province
+	will_relocate = yes	
 	
 	resilient = no
 	reinforcing = yes

@@ -36,7 +36,7 @@ country_event = {
 		name = flavor_sok.1.a	#Accept the invitation of dan Fodio
 		ai_chance = { factor = 1 }
 		trigger = {
-			capital_scope = { region = hausaland }
+			capital_scope = { area = hausa_area }
 		}
 		if = {
 			limit = {
@@ -54,7 +54,7 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 0
-				capital_scope = { region = hausaland }
+				capital_scope = { area = hausa_area }
 			}
 		}
 		add_stability = -1
@@ -67,7 +67,7 @@ country_event = {
 		hidden_effect = {
 			every_neighbor_country = {
 				limit = {
-					capital_scope = { region = hausaland }
+					capital_scope = { area = hausa_area }
 				}
 				set_country_flag = sok_dan_fodio_happened
 				country_event = { id = flavor_sok.2 }

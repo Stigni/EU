@@ -824,9 +824,15 @@ country_event = {
 		has_country_modifier = dutch_india_trade_co
 		any_owned_province = {
 			OR = {
-				region = indonesian_region
-				region = indian_region
-				region = indochinan_region
+				region = indonesia_region
+				region = west_india_region
+				region = coromandel_region
+				region = deccan_region
+				region = rajputana_region
+				region = hindusthan_region
+				region = bengal_region
+				region = burma_region
+				region = indo_china_region
 			}
 			is_owned_by_trade_company = yes
 		}
@@ -873,9 +879,15 @@ country_event = {
 		has_country_modifier = dutch_india_trade_co
 		any_owned_province = {
 			OR = {
-				region = indonesian_region
-				region = indian_region
-				region = indochinan_region
+				region = indonesia_region
+				region = west_india_region
+				region = coromandel_region
+				region = deccan_region
+				region = rajputana_region
+				region = hindusthan_region
+				region = bengal_region
+				region = burma_region
+				region = indo_china_region
 			}
 			is_owned_by_trade_company = yes
 		}
@@ -919,9 +931,15 @@ country_event = {
 		has_country_modifier = dutch_india_trade_co
 		any_owned_province = {
 			OR = {
-				region = indonesian_region
-				region = indian_region
-				region = indochinan_region
+				region = indonesia_region
+				region = west_india_region
+				region = coromandel_region
+				region = deccan_region
+				region = rajputana_region
+				region = hindusthan_region
+				region = bengal_region
+				region = burma_region
+				region = indo_china_region
 			}
 		}
 	}
@@ -1260,7 +1278,7 @@ country_event = {
 		has_country_flag = sakoku_law
 		exists = NED
 		any_owned_province = {
-			region = japanese_region
+			region = japan_region
 			has_discovered = NED
 		}
 		NED = {

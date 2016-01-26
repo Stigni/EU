@@ -223,6 +223,11 @@ country_event = {
 		NOT = { has_country_flag = heir_dip_education }
 		NOT = { has_country_flag = heir_mil_education }
 		is_lesser_in_union = no
+		OR = {
+			NOT = { heir_adm = 6 }
+			NOT = { heir_mil = 6 }
+			NOT = { heir_dip = 6 }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -241,6 +246,7 @@ country_event = {
 				advisor = master_of_mint
 				advisor = inquisitor
 			}
+			NOT = { heir_adm = 6 }
 		}
 		set_country_flag = heir_adm_education
 		custom_tooltip = "tyw_events.7.a.tt"
@@ -258,6 +264,7 @@ country_event = {
 				advisor = diplomat
 				advisor = navigator
 			}
+			NOT = { heir_dip = 6 }
 		}
 		set_country_flag = heir_dip_education
 		custom_tooltip = "tyw_events.7.b.tt"
@@ -275,6 +282,7 @@ country_event = {
 				advisor = fortification_expert
 				advisor = grand_captain
 			}
+			NOT = { heir_mil = 6 }
 		}
 		set_country_flag = heir_mil_education
 		custom_tooltip = "tyw_events.7.c.tt"

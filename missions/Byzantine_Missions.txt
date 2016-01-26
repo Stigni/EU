@@ -159,14 +159,14 @@ recover_the_balkans = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = bulgarian_region
+		area = bulgaria_area
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		tag = BYZ
 		is_subject = no
 		is_at_war = no
-		bulgarian_region = {
+		bulgaria_area = {
 			NOT = { owned_by = ROOT }
 		}
 		NOT = { has_country_flag = BYZ_recovered_balkans }
@@ -222,21 +222,46 @@ convert_asia_minor = {
 		tag = BYZ
 		religion = orthodox
 		is_at_war = no
-		asia_minor = {
-			owned_by = ROOT
-			NOT = { religion = orthodox }
-		}
-	}
-	abort = {
-		NOT = { religion = orthodox }
-		NOT = { asia_minor = { owned_by = ROOT } }
-	}
-	success = {
-		NOT = {
-			asia_minor = {
+		OR = {
+			aydin_area = {
 				owned_by = ROOT
 				NOT = { religion = orthodox }
 			}
+			hudavendigar_area = {
+				owned_by = ROOT
+				NOT = { religion = orthodox }
+			}
+			eastern_aegean_area = {
+				owned_by = ROOT
+				NOT = { religion = orthodox }
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { religion = orthodox }
+			AND = {
+				NOT = { aydin_area = { owned_by = ROOT } }
+				NOT = { hudavendigar_area = { owned_by = ROOT } }
+				NOT = { eastern_aegean_area = { owned_by = ROOT } }
+			}
+		}
+	}
+	success = {
+		aydin_area = {
+			type = all
+			owned_by = ROOT
+			religion = orthodox
+		}
+		hudavendigar_area = {
+			type = all
+			owned_by = ROOT
+			religion = orthodox
+		}
+		eastern_aegean_area = {
+			type = all
+			owned_by = ROOT
+			religion = orthodox
 		}
 	}
 	chance = {
@@ -265,7 +290,11 @@ recover_south_italy = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = southern_italy_region
+		OR = {
+			area = naples_area
+			area = apulia_area
+			area = calabria_area
+		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { vassal_of = ROOT } }
@@ -277,12 +306,24 @@ recover_south_italy = {
 		is_subject = no
 		is_at_war = no
 		owns = 151
-		greece_region = {
+		northern_greece_area = {
 			type = all
 			owned_by = ROOT
 		}
-		southern_italy_region = {
-			NOT = { owned_by = ROOT }
+		morea_area = {
+			type = all
+			owned_by = ROOT
+		}
+		OR = {
+			naples_area = {
+				NOT = { owned_by = ROOT }
+			}
+			apulia_area = {
+				NOT = { owned_by = ROOT }
+			}
+			calabria_area = {
+				NOT = { owned_by = ROOT }
+			}
 		}
 		NOT = { has_country_flag = BYZ_recovered_s_italy }
 		NOT = { has_country_modifier = byzantium_resurgent }
@@ -339,7 +380,15 @@ recover_rome = {
 		is_subject = no
 		is_at_war = no
 		NOT = { owns = 118 }	# Rome
-		southern_italy_region = {
+		naples_area = {
+			type = all
+			owned_by = ROOT
+		}
+		apulia_area = {
+			type = all
+			owned_by = ROOT
+		}
+		calabria_area = {
 			type = all
 			owned_by = ROOT
 		}
@@ -388,7 +437,7 @@ recover_sicily = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = sicily_region
+		area = sicily_area
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { vassal_of = ROOT } }
@@ -399,11 +448,19 @@ recover_sicily = {
 		normal_or_historical_nations = yes
 		is_subject = no
 		is_at_war = no
-		southern_italy_region = {
+		naples_area = {
 			type = all
 			owned_by = ROOT
 		}
-		sicily_region = {
+		apulia_area = {
+			type = all
+			owned_by = ROOT
+		}
+		calabria_area = {
+			type = all
+			owned_by = ROOT
+		}
+		sicily_area = {
 			not = { owned_by = ROOT }
 		}
 		NOT = { has_country_flag = BYZ_recovered_sicily }
@@ -471,14 +528,16 @@ the_pentarchy = {
 		religion = orthodox
 		is_subject = no
 		is_at_war = no
-		num_of_cities = 10
-		OR = {
-			owns = 118 	# Rome
-			owns = 151 	# Constantinople
-			owns = 377 	# Aleppo
-			owns = 2313 # Antioch
-			owns = 379 	# Jerusalem
-			owns = 358	# Alexandria
+		num_of_cities = 15
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				province_id = 118 #Rome
+				province_id = 377 #Aleppo
+				province_id = 2313 #Antioch
+				province_id = 379 #Jerusalem
+				province_id = 358 #Alexandria
+			}
 		}
 		OR = {
 			118 = { NOT = { religion = orthodox } }

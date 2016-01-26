@@ -18,6 +18,7 @@ recover_west_anatolia = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = recovered_west_anatolia }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -66,6 +67,7 @@ recover_west_anatolia = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 25
+		set_country_flag = recovered_west_anatolia
 	}
 }
 
@@ -93,6 +95,7 @@ recover_central_anatolia = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = recovered_central_anatolia }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -145,6 +148,7 @@ recover_central_anatolia = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 25
+		set_country_flag = recovered_central_anatolia
 	}
 }
 
@@ -171,6 +175,7 @@ recover_east_anatolia = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = byz_recovered_eastern_anatolia }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -225,6 +230,7 @@ recover_east_anatolia = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 25
+		set_country_flag = byz_recovered_eastern_anatolia
 	}
 }
 
@@ -245,6 +251,7 @@ recover_crimea = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = byz_recovered_crimea }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -289,6 +296,7 @@ recover_crimea = {
 	effect = {
 		add_prestige = 5
 		add_adm_power = 10
+		set_country_flag = byz_recovered_crimea
 	}
 }
 
@@ -310,6 +318,7 @@ recover_east_islands = {
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
+		NOT = { has_country_flag = recovered_eastern_islands }
 		tag = BYZ
 		is_subject = no
 		owns = 151		# Thrace
@@ -356,6 +365,7 @@ recover_east_islands = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 25
+		set_country_flag = recovered_eastern_islands
 	}
 }
 
@@ -378,6 +388,7 @@ recover_albania = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = recovered_albania }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -425,6 +436,7 @@ recover_albania = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 25
+		set_country_flag = recovered_albania
 	}
 }
 
@@ -446,6 +458,7 @@ recover_isteria = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = recovered_isteria }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -491,6 +504,7 @@ recover_isteria = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 25
+		set_country_flag = recovered_isteria
 	}
 }
 
@@ -520,6 +534,7 @@ recover_north_italy = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = recovered_northern_italy_byz }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -570,6 +585,7 @@ recover_north_italy = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 75
+		set_country_flag = recovered_northern_italy_byz
 	}
 }
 
@@ -598,6 +614,7 @@ recover_lombardia = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = recovered_lombardia }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -650,6 +667,7 @@ recover_lombardia = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 75
+		set_country_flag = recovered_lombardia
 	}
 }
 
@@ -670,6 +688,7 @@ recover_west_islands = {
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
+		has_country_flag = recovered_west_islands
 		tag = BYZ
 		is_subject = no
 		owns = 151		# Thrace
@@ -716,6 +735,7 @@ recover_west_islands = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 25
+		set_country_flag = recovered_west_islands
 	}
 }
 
@@ -740,6 +760,7 @@ recover_south_spain = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = recovered_south_spain }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -789,6 +810,7 @@ recover_south_spain = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 50
+		set_country_flag = recovered_south_spain
 	}
 }
 
@@ -814,6 +836,7 @@ recover_tripoli = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = recovered_tripoli }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -866,6 +889,7 @@ recover_tripoli = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 25
+		set_country_flag = recovered_tripoli
 	}
 }
 
@@ -876,12 +900,13 @@ recover_tunis = {
 	category = MIL
 	
 	target_provinces = {
-		region = tunisian_region
+		area = tunisia_area
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = recovered_tunis }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -894,7 +919,7 @@ recover_tunis = {
 			owns = 2451
 			owns = 2452	
 		}
-		tunisian_region = {
+		tunisia_area = {
 			NOT = { owned_by = ROOT }
 		}
 	}
@@ -930,6 +955,7 @@ recover_tunis = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 25
+		set_country_flag = recovered_tunis
 	}
 }
 
@@ -952,6 +978,7 @@ recover_antioch = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = recovered_antiocha }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -999,6 +1026,7 @@ recover_antioch = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 50
+		set_country_flag = recovered_antiocha
 	}
 }
 
@@ -1021,6 +1049,7 @@ recover_jerusalem = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = recovered_jerusalem }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -1069,6 +1098,7 @@ recover_jerusalem = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 50
+		set_country_flag = recovered_jerusalem
 	}
 }
 
@@ -1081,7 +1111,6 @@ recover_alexandria = {
 	target_provinces = {
 		OR = {
 			province_id = 358
-			province_id = 357
 			province_id = 2325
 			province_id = 362
 			province_id = 363
@@ -1092,6 +1121,7 @@ recover_alexandria = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		tag = BYZ
+		NOT = { has_country_flag = recovered_alexandria }
 		is_subject = no
 		owns = 151		# Thrace
 		is_at_war = no
@@ -1101,7 +1131,6 @@ recover_alexandria = {
 		}
 		OR = {
 			NOT = { owns = 358 }	
-			NOT = { owns = 357 }	
 			NOT = { owns = 2325 }
 			NOT = { owns = 362 }	
 			NOT = { owns = 363 }			
@@ -1139,5 +1168,6 @@ recover_alexandria = {
 	effect = {
 		add_prestige = 10
 		add_adm_power = 75
+		set_country_flag = recovered_alexandria
 	}
 }

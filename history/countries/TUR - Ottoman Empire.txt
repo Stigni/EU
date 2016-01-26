@@ -7,9 +7,9 @@ technology_group = ottoman
 historical_rival = MAM
 historical_rival = BYZ
 historical_rival = TIM
+historical_rival = HAB
 capital = 149 # Edirne
 national_focus = MIL
-
 
 1425.1.1 = { decision = sheikh_ul_islam }
 
@@ -46,6 +46,11 @@ national_focus = MIL
 		dip = 2
 		mil = 1
 	}
+	add_country_modifier = {
+		name = tur_janissary
+		duration = -1
+	}
+	set_country_flag = janissary_timer
 }
 
 1446.1.1 = {

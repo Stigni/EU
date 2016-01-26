@@ -229,8 +229,8 @@ country_event = {
 			knows_country = ROOT
 			any_owned_province = {
 				OR = {
-					region = the_carribean
-					region = the_spanish_main
+					region = carribeans_region
+					region = colombia_region
 				}
 			}
 		}

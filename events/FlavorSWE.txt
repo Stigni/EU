@@ -417,7 +417,7 @@ country_event = {
 		ai_chance = { factor = 90 }
 		every_owned_province = {
 			limit = {
-				region = scandinavian_region
+				region = scandinavia_region
 				OR = {
 					trade_goods = iron
 					trade_goods = copper

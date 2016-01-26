@@ -14,17 +14,16 @@ country_decisions = {
 		allow = {
 			owns = 522
 			is_at_war = no
-			prestige = 0
-			stability = 0
 		}
 		effect = {
 			set_country_flag = relocated_capital_delhi
-			add_prestige = 100
+			add_prestige = 20
 			add_stability = 1
 			change_primary_culture = kanauji
 			set_capital = 522
 			522 = {
-			 	add_base_tax = 2
+			 	add_base_tax = 1
+				add_base_production = 1
 			 	add_base_manpower = 1
 			}
 		}

@@ -106,9 +106,9 @@ country_event = {
 		random_known_country = {
 			limit = { has_country_flag = tamoyo_confederation_leader }
 			country_event = { id = flavor_tupi.3 }
-			create_alliance = FROM
+			create_alliance = PREV
 			add_opinion = {
-				who = FROM
+				who = PREV
 				modifier = tamoyo_confederates
 			}
 		}

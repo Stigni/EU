@@ -9,6 +9,7 @@ revolutionary_rebels = {
 	independence = none				# Does not strive for independence
 	unit_transfer = yes
 	gfx_type = culture_province	
+	will_relocate = yes	
 	
 	resilient = no
 	reinforcing = yes

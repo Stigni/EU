@@ -9,6 +9,7 @@ reactionary_rebels = {
 	defection = none				# Will not defect
 	independence = none				# Does not strive for independence
 	gfx_type = culture_province
+	will_relocate = yes	
 	
 	resilient = no					# Can retreat
 	reinforcing = yes				# Can reinforce

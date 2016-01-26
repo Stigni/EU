@@ -475,6 +475,7 @@ province_event = {
 
 	trigger = {
 		has_province_modifier = terrorized_by_mercenaries
+		NOT = { has_province_modifier = plundered_in_war }
 	}
 
 	mean_time_to_happen = {
@@ -535,6 +536,9 @@ country_event = {
 	trigger = {
 		NOT = { manpower_percentage = 0.1 }
 		had_recent_war = 3
+		NOT = { has_country_modifier = post_war_tax_relief }
+		NOT = { has_country_modifier = decreased_drafting }
+		NOT = { has_country_modifier = suffering_bereaved }
 	}
 
 	mean_time_to_happen = {
@@ -1694,6 +1698,7 @@ country_event = {
 		any_owned_province = {
 			development = 10
 			has_cardinal = no
+			religion = catholic
 			any_neighbor_province = {
 				has_cardinal = yes
 				NOT = { owned_by = ROOT }
@@ -1703,6 +1708,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 480
+		modifier = {
+			factor = 1.2
+			num_of_cardinals = 5
+		}
 	}
 
 	# 
@@ -1712,6 +1721,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				has_cardinal = no
+				religion = catholic
 				development = 10
 				any_neighbor_province = {
 					has_cardinal = yes
@@ -1798,6 +1808,8 @@ province_event = {
 		}
 	}
 
+	is_mtth_scaled_to_size = 1
+	
 	mean_time_to_happen = {
 		months = 480
 	}
@@ -1954,7 +1966,7 @@ country_event = {
 		name = "aow_events.49.a"
 		add_country_modifier = {
 			name = "cardinal_in_administration"
-			duration = 3650
+			duration = 7300
 		}
 	}
 
@@ -1978,7 +1990,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 180
+		months = 1200
 	}
 
 	# 
@@ -2022,13 +2034,14 @@ country_event = {
 
 	trigger = {
 		has_idea_group = spy_ideas
+		religion = catholic
 		any_neighbor_country = {
 			num_of_cardinals = 1
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 	}
 
 	# 

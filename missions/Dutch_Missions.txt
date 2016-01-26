@@ -5,13 +5,13 @@ defend_the_lowlands = {
 	category = MIL
 	
 	target_provinces = {
-		region = the_low_countries
+		region = low_countries_region
 		NOT = { culture = wallonian }
 		NOT = { owned_by = ROOT }
 		owner = {
 			OR = {
 				capital_scope = {
-					NOT = { region = the_low_countries }
+					NOT = { region = low_countries_region }
 				}
 				AND = {
 					NOT = { primary_culture = flemish }
@@ -25,11 +25,12 @@ defend_the_lowlands = {
 	allow = {
 		normal_or_historical_nations = yes
 		tag = NED
-		the_low_countries = {
+		low_countries_region = {
+			NOT = { culture = wallonian }
 			owner = {
 				OR = {
 					capital_scope = {
-						NOT = { region = the_low_countries }
+						NOT = { region = low_countries_region }
 					}
 					AND = {
 						NOT = { primary_culture = flemish }
@@ -144,8 +145,8 @@ the_netherlands_discover_the_carribean = {
 		tag = NED
 		has_idea = quest_for_the_new_world
 		num_of_ports = 1
-		NOT = { the_carribean = { has_discovered = ROOT } }
-		the_carribean = { range = ROOT }
+		NOT = { carribeans_region = { has_discovered = ROOT } }
+		carribeans_region = { range = ROOT }
 	}
 	abort = {
 		OR = {
@@ -154,7 +155,7 @@ the_netherlands_discover_the_carribean = {
 		}
 	}
 	success = {
-		the_carribean = { has_discovered = ROOT }
+		carribeans_region = { has_discovered = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -188,13 +189,13 @@ dutch_colony_in_the_carribean = {
 		tag = NED
 		num_of_ports = 1
 		num_of_colonists = 1
-		the_carribean = {
+		carribeans_region = {
 			has_discovered = ROOT
 			is_empty = yes
 		}
 		NOT = {
-			the_carribean = {
-				owned_by =  this
+			carribeans_region = {
+				owned_by = ROOT
 			}
 		}
 		NOT = {
@@ -205,13 +206,13 @@ dutch_colony_in_the_carribean = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { the_carribean = { owned_by = ROOT } }	
-				NOT = { the_carribean = { is_empty = yes } }
+				NOT = { carribeans_region = { owned_by = ROOT } }	
+				NOT = { carribeans_region = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		the_carribean = { owned_by = ROOT }
+		carribeans_region = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -252,8 +253,8 @@ the_netherlands_discover_north_america = {
 		tag = NED
 		has_idea = quest_for_the_new_world
 		num_of_ports = 1
-		NOT = { northeastern_america = { has_discovered = ROOT } }
-		northeastern_america = { range = ROOT }
+		NOT = { northeast_america_region = { has_discovered = ROOT } }
+		northeast_america_region = { range = ROOT }
 		NOT = {
 			has_country_modifier = "colonial_enthusiasm"
 		}
@@ -265,7 +266,7 @@ the_netherlands_discover_north_america = {
 		}
 	}
 	success = {
-		northeastern_america = { has_discovered = ROOT }
+		northeast_america_region = { has_discovered = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -298,17 +299,17 @@ dutch_colony_in_north_america = {
 		tag = NED
 		num_of_ports = 1
 		num_of_colonists = 1
-		northeastern_america = {
+		northeast_america_region = {
 			has_discovered = ROOT
 			is_empty = yes
 		}
 		NOT = {
-			northeastern_america = {
-				owned_by =  this
+			northeast_america_region = {
+				owned_by = ROOT
 			}
 		}
 		NOT = {
-			northeastern_america = {
+			northeast_america_region = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -322,13 +323,13 @@ dutch_colony_in_north_america = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { northeastern_america = { owned_by = ROOT } }	
-				NOT = { northeastern_america = { is_empty = yes } }
+				NOT = { northeast_america_region = { owned_by = ROOT } }	
+				NOT = { northeast_america_region = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		northeastern_america = { owned_by = ROOT }
+		northeast_america_region = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -373,32 +374,32 @@ dutch_colony_in_south_africa = {
 			has_country_modifier = "colonial_enthusiasm"
 		}
 		OR = {
-			1175 = { has_discovered = ROOT }
+			833 = { has_discovered = ROOT }
 			1177 = { has_discovered = ROOT }
 			1179 = { has_discovered = ROOT }
 		}
-		NOT = { owns = 1175 }
+		NOT = { owns = 833 }
 		NOT = { owns = 1177 }
 		NOT = { owns = 1179 }
 		OR = {
-			1175 = { range = ROOT }
+			833 = { range = ROOT }
 			1177 = { range = ROOT }
 			1179 = { range = ROOT }
 		}
 		OR = {
-			1175 = { is_empty = no }
-			1177 = { is_empty = no }
-			1179 = { is_empty = no }
+			833 = { is_empty = yes }
+			1177 = { is_empty = yes }
+			1179 = { is_empty = yes }
 		}
 	}
 	abort = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { owns = 1175 }
+				NOT = { owns = 833 }
 				NOT = { owns = 1177 }
 				NOT = { owns = 1179 }
-				1175 = { is_empty = no }
+				833 = { is_empty = no }
 				1177 = { is_empty = no }
 				1179 = { is_empty = no }
 			}
@@ -406,7 +407,7 @@ dutch_colony_in_south_africa = {
 	}
 	success = {
 		OR = {
-			owns = 1175
+			owns = 833
 			owns = 1177
 			owns = 1179
 		}
@@ -451,14 +452,14 @@ dutch_colony_in_indonesia = {
 		tag = NED
 		num_of_colonists = 1
 		num_of_ports = 1
-		indonesian_region = {
+		indonesia_region = {
 			has_discovered = ROOT
 			is_empty = yes
 			range = ROOT
 		}
 		NOT = {
-			indonesian_region = {
-				owned_by =  this
+			indonesia_region = {
+				owned_by = ROOT
 			}
 		}
 	}
@@ -466,13 +467,13 @@ dutch_colony_in_indonesia = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { indonesian_region = { owned_by = ROOT } }	
-				NOT = { indonesian_region = { is_empty = yes } }
+				NOT = { indonesia_region = { owned_by = ROOT } }	
+				NOT = { indonesia_region = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		indonesian_region = { owned_by =  this }
+		indonesia_region = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 1000
@@ -624,16 +625,16 @@ the_netherlands_discover_australia = {
 		NOT = {
 			has_country_modifier = "colonial_enthusiasm"
 		}
-		northeastern_america = {
+		northeast_america_region = {
 			has_discovered = ROOT
 			owned_by = ROOT
 		}
-		indonesian_region = {
+		indonesia_region = {
 			has_discovered = ROOT
 			owned_by = ROOT
 		}
-		NOT = { australian_coast = { has_discovered = ROOT } }
-		australian_coast = { range = ROOT }
+		NOT = { australia_region = { has_discovered = ROOT } }
+		australia_region = { range = ROOT }
 	}
 	abort = {
 		OR = {
@@ -642,7 +643,7 @@ the_netherlands_discover_australia = {
 		}
 	}
 	success = {
-		australian_coast = { has_discovered = ROOT }
+		australia_region = { has_discovered = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -674,8 +675,8 @@ dutch_control_of_taiwan = {
 		normal_or_historical_nations = yes
 		tag = NED
 		is_subject = no
-		indonesian_region = { owned_by = ROOT }
-		taiwan = {
+		indonesia_region = { owned_by = ROOT }
+		taiwan_area = {
 			NOT = { owned_by = ROOT }
 			has_discovered = ROOT
 			range = ROOT
@@ -687,7 +688,7 @@ dutch_control_of_taiwan = {
 		is_subject = yes
 	}
 	success = {
-		taiwan = {
+		taiwan_area = {
 			owned_by = ROOT
 		}
 	}
@@ -703,12 +704,12 @@ dutch_control_of_taiwan = {
 		}
 	}
 	immediate = {
-		taiwan = {
+		taiwan_area = {
 			add_claim = ROOT
 		}
 	}
 	abort_effect = {
-		taiwan = {
+		taiwan_area = {
 			remove_claim = ROOT
 		}
 	}
@@ -774,7 +775,7 @@ take_malacca_from_portugal = {
 		exists = POR
 		is_subject = no
 		NOT = { alliance_with = POR }
-		indonesian_region = { has_discovered = ROOT }
+		indonesia_region = { has_discovered = ROOT }
 		NOT = { has_country_modifier = east_india_trade_rush }
 		NOT = { has_country_flag = took_malacca_from_por }
 		POR = { owns = 596 }
@@ -790,7 +791,7 @@ take_malacca_from_portugal = {
 		factor = 3000
 		modifier = {
 			factor = 2
-			indonesian_region = { owned_by = ROOT }
+			indonesia_region = { owned_by = ROOT }
 		}
 	}
 	immediate = {
@@ -816,7 +817,7 @@ take_ceylon_from_portugal = {
 	category = MIL
 	
 	target_provinces = {
-		region = lanka_region
+		area = lanka_area
 		owned_by = POR
 	}
 	
@@ -826,9 +827,9 @@ take_ceylon_from_portugal = {
 		exists = POR
 		NOT = { alliance_with = POR }
 		is_subject = no
-		indian_coast = { has_discovered = ROOT }
+		coromandel_region = { has_discovered = ROOT }
 		NOT = { has_country_flag = took_ceylon_from_por }
-		lanka_region = {
+		lanka_area = {
 			owned_by = POR
 		}
 		NOT = { has_country_modifier = east_india_trade_rush }
@@ -845,7 +846,7 @@ take_ceylon_from_portugal = {
 		factor = 3000
 		modifier = {
 			factor = 2
-			indian_coast = { owned_by = ROOT }
+			coromandel_region = { owned_by = ROOT }
 		}
 	}
 	immediate = {
@@ -877,7 +878,7 @@ establish_trade_in_indonesian_cot = {
 	allow = {
 		normal_or_historical_nations = yes
 		tag = NED
-		indonesian_region = {
+		indonesia_region = {
 			owned_by = ROOT
 		}
 		NOT = {

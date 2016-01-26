@@ -12,6 +12,7 @@ coptic_rebels = {
 	independence = none				# Does not strive for independence
 	unit_transfer = no
 	gfx_type = culture_province
+	will_relocate = yes	
 	
 	resilient = no
 	reinforcing = yes
@@ -128,6 +129,7 @@ coptic_rebels = {
 				OR = {
 					religion = coptic
 					is_reformation_center = yes
+					owner = { religion = coptic }
 				}
 			}
 			add_province_modifier = {
@@ -139,6 +141,7 @@ coptic_rebels = {
 			limit = {
 				NOT = { religion = coptic }
 				is_reformation_center = no
+				NOT = { owner = { religion = coptic } }
 			}
 			change_religion = coptic
 			add_province_modifier = {
@@ -189,8 +192,26 @@ coptic_rebels = {
 				religion = coptic
 			}
 			add_country_modifier = {
-				name = "religious_intolerance"
+				name = "religious_intolerance_enforced"
 				duration = 3650
+			}
+		}
+		if = {
+			limit = {
+				religion = coptic
+				has_estate = estate_church
+				NOT = {
+					has_estate_influence_modifier = {
+						estate = estate_church
+						modifier = EST_VAL_RELIGIOUS_ZEALOTS_TRIUMPH
+					}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = EST_VAL_RELIGIOUS_ZEALOTS_TRIUMPH
+				duration = 3650
+				influence = 15
 			}
 		}
 		if = {

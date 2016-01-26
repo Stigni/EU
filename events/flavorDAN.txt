@@ -56,27 +56,24 @@ country_event = {
 	trigger = {
 		tag = DAN
 		exists = SWE
-		SWE = {
-			OR = {
-				alliance_with = DAN
-				is_subject_of = DAN
-			}
-		}
-		is_year = 1480
-		NOT = { is_year = 1500 }		
+		SWE = {	is_subject_of = DAN }
+		is_year = 1450
+		NOT = { is_year = 1550 }		
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 500
 	}
 	
 	option = {
 		name = "flavor_dan.EVTOPTA3287"
 		add_stability = 1
-		add_adm_power = 25
-		add_dip_power = 25
-		add_mil_power = 25
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_historical_rival = SWE
 		SWE = {
+			add_historical_rival = DAN
 			add_opinion = {
 				who = DAN
 				modifier = opinion_enforced_scandinavian_constitution
@@ -85,6 +82,10 @@ country_event = {
 	}
 	option = {
 		name = "flavor_dan.EVTOPTB3287"
+		add_prestige = -25
+		add_legitimacy = -25
+		ai_chance = { factor = 0 }
+
 		SWE = {
 			add_opinion = {
 				who = DAN

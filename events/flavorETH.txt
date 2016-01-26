@@ -792,7 +792,16 @@ country_event = {
 	option = {
 		name = flavor_eth.21.a #Ok.
 		every_province = {
-			limit = { region = oromo_spawn_region }
+			limit = {
+				OR = {
+					province_id = 1207
+					province_id = 1210
+					province_id = 1218
+					province_id = 2760
+					province_id = 2761
+					province_id = 2779
+				}
+			}
 			add_province_modifier = {
 				name = "eth_oromo_migration"
 				duration = 3650
@@ -803,7 +812,16 @@ country_event = {
 		every_country = {
 			limit = {
 				not = { has_country_flag = eth_start_oromo }
-				any_owned_province = { region = oromo_spawn_region }
+				any_owned_province = {
+					OR = {
+						province_id = 1207
+						province_id = 1210
+						province_id = 1218
+						province_id = 2760
+						province_id = 2761
+						province_id = 2779
+					}
+				}
 			}
 			country_event = { id = flavor_eth.22 }
 		}
@@ -857,13 +875,9 @@ province_event = {
 	trigger = {
 		NOT = { has_province_modifier = eth_oromo_migration }
 		NOT = { has_global_flag = end_of_oromo_migrations }
-		OR = {
-			region = amhara_region
-			region = kaffa_region
-			region = haud_region
-			region = maakhir_region
-			region = banaadir_region
-		}
+		region = horn_of_africa_region
+		NOT = { area = red_sea_coast_area }
+		NOT = { area = upper_nubia_area }
 		any_neighbor_province = {
 			has_province_modifier = eth_oromo_migration
 		}

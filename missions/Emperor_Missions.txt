@@ -13,6 +13,13 @@ improved_relations_with_electors = {
 		has_opinion = { who = FROM value = 0 }
 		NOT = { has_opinion = { who = FROM value = 50 } }
 		NOT = { hre_reform_level = 6 }
+		OR = {
+			NOT = { has_country_flag = improved_relations_with_electors_flag }
+			had_country_flag = { flag = improved_relations_with_electors_flag days = 7300 }
+		}
+		NOT = {
+			has_country_modifier = emperor_friendly_with_elector
+		}
 	}
 	abort = {
 		FROM = { is_emperor = no }
@@ -53,9 +60,11 @@ improved_relations_with_electors = {
 	}
 	effect = {
 		FROM = { 
-			add_adm_power = 10
-			add_legitimacy = 5
-			add_imperial_influence = 5
+			add_country_modifier = {
+				name = "emperor_friendly_with_elector"
+				duration = 3650
+			}
+			set_country_flag = improved_relations_with_electors_flag
 		}
 	}
 }
@@ -69,11 +78,8 @@ become_emperor = {
 
 	allow = {
 		is_emperor = no
-		OR = {
-			is_elector = yes
-			capital_scope = {
-				is_part_of_hre = yes
-			}
+		capital_scope = {
+			is_part_of_hre = yes
 		}
 		any_known_country = {
 			is_elector = yes
@@ -86,6 +92,7 @@ become_emperor = {
 		is_lesser_in_union = no
 		government = monarchy
 		num_of_cities = 6
+		total_development = 100
 		OR = {
 			NOT = { has_country_flag = empire_reclaimed }
 			had_country_flag = { flag = empire_reclaimed days = 7300 }
@@ -93,14 +100,9 @@ become_emperor = {
 	}
 	abort = {
 		OR = {
-			NOT = {
-				OR = {
-					is_elector = yes
-					capital_scope = {
-						is_part_of_hre = yes
-					}
-				}
-			}		
+			capital_scope = {
+				is_part_of_hre = no
+			}	
 			is_subject = yes
 			is_lesser_in_union = yes
 			NOT = { government = monarchy }

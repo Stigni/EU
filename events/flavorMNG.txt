@@ -1256,8 +1256,8 @@ country_event = {
 		NOT = { stability = 2 }
 		any_owned_province = {
 			OR = {
-				region = guangxi
-				region = guangdong
+				area = guangxi_area
+				area = guangdong_area
 				stability = -1
 			}
 			NOT = { religion = catholic }
@@ -1308,13 +1308,21 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					NOT = { religion = catholic }
-					NOT = { is_capital = yes }
+					is_capital = no
 					OR = {
-						region = guangxi
-						region = guangdong
+						area = guangxi_area
+						area = guangdong_area
 						AND = {
-							NOT = { stability = -1 }
-							region = chinese_region
+							NOT = { owner = { stability = -1 } }
+							region = north_china_region
+						}
+						AND = {
+							NOT = { owner = { stability = -1 } }
+							region = xinan_region
+						}
+						AND = {
+							NOT = { owner = { stability = -1 } }
+							region = south_china_region
 						}
 					}
 				}

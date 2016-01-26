@@ -28,6 +28,7 @@ province_event = {
 			}
 		}
 		OR = {
+			continent = new_world
 			continent = south_america
 			any_neighbor_province = {
 				continent = south_america
@@ -115,6 +116,7 @@ province_event = {
 			}
 		}
 		OR = {
+			continent = new_world
 			continent = south_america
 			any_neighbor_province = {
 				continent = south_america
@@ -203,12 +205,15 @@ province_event = {
 			}
 		}
 		OR = {
+			continent = new_world
 			continent = south_america
-			region = mesoamerica_region
+			region = mexico_region
+			region = central_america_region
 			any_neighbor_province = {
 				OR = {
 					continent = south_america
-					region = mesoamerica_region
+					region = central_america_region
+					region = mexico_region
 				}
 			}
 		}
@@ -294,9 +299,11 @@ province_event = {
 			}
 		}
 		OR = {
-			region = patagonia_region
+			area = patagonia_area
+			area = southern_pampas_area
 			any_neighbor_province = {
-				region = patagonia_region
+				area = patagonia_area
+				area = southern_pampas_area
 			}
 		}
 	}
@@ -383,9 +390,11 @@ province_event = {
 			}
 		}
 		OR = {
-			region = the_andes
+			region = peru_region
+			region = chile_region
+			region = la_plata_region
 			any_neighbor_province = {
-				region = the_andes
+				region = peru_region
 			}
 		}
 	}
@@ -470,14 +479,18 @@ province_event = {
 			}
 		}
 		OR = {
-			region = northern_america
-			region = northeastern_america
-			region = eastern_america
+			region = canada_region
+			area = james_bay_area
+			area = hudson_bay_area
+			region = northeast_america_region
+			region = southeast_america_region
 			any_neighbor_province = {
 				OR = {
-					region = northern_america
-					region = northeastern_america
-					region = eastern_america
+					region = canada_region
+					area = james_bay_area
+					area = hudson_bay_area
+					region = northeast_america_region
+					region = southeast_america_region
 				}
 			}
 		}
@@ -563,14 +576,18 @@ province_event = {
 			}
 		}
 		OR = {
-			region = northern_america
-			region = northeastern_america
-			region = eastern_america
+			region = canada_region
+			area = james_bay_area
+			area = hudson_bay_area
+			region = northeast_america_region
+			region = southeast_america_region
 			any_neighbor_province = {
 				OR = {
-					region = northern_america
-					region = northeastern_america
-					region = eastern_america
+					region = canada_region
+					area = james_bay_area
+					area = hudson_bay_area
+					region = northeast_america_region
+					region = southeast_america_region
 				}
 			}
 		}
@@ -661,14 +678,18 @@ province_event = {
 			}
 		}
 		OR = {
-			region = northern_america
-			region = northeastern_america
-			region = eastern_america
+			region = canada_region
+			area = james_bay_area
+			area = hudson_bay_area
+			region = northeast_america_region
+					region = southeast_america_region
 			any_neighbor_province = {
 				OR = {
-					region = northern_america
-					region = northeastern_america
-					region = eastern_america
+					region = canada_region
+					area = james_bay_area
+					area = hudson_bay_area
+					region = northeast_america_region
+					region = southeast_america_region
 				}
 			}
 		}
@@ -1424,8 +1445,10 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
+			continent = new_world
 			continent = south_america
-			region = mesoamerica_region
+			region = mexico_region
+			region = central_america_region
 		}
 		FROM = {
 			has_country_modifier = sce_search_cibola
@@ -1489,8 +1512,10 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
+			continent = new_world
 			continent = south_america
-			region = mesoamerica_region
+			region = mexico_region
+			region = central_america_region
 		}
 		FROM = {
 			has_country_modifier = sce_search_cibola
@@ -1562,8 +1587,10 @@ province_event = {
 		}
 		is_empty = yes
 		OR = {
+			continent = new_world
 			continent = south_america
-			region = mesoamerica_region
+			region = mexico_region
+			region = central_america_region
 		}
 		FROM = {
 			has_country_modifier = sce_search_cibola
@@ -1630,7 +1657,10 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
-		region = patagonia_region
+		OR = {
+			area = patagonia_area
+			area = southern_pampas_area
+		}
 		FROM = {
 			has_country_modifier = sce_search_cityofcaesars
 			OR = {
@@ -1692,7 +1722,10 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
-		region = patagonia_region
+		OR = {
+			area = patagonia_area
+			area = southern_pampas_area
+		}
 		FROM = {
 			has_country_modifier = sce_search_cityofcaesars
 			OR = {
@@ -1762,7 +1795,10 @@ province_event = {
 			has_global_flag = sce_ultimate_cityofcaesars
 		}
 		is_empty = yes
-		region = patagonia_region
+		OR = {
+			area = patagonia_area
+			area = southern_pampas_area
+		}
 		FROM = {
 			has_country_modifier = sce_search_cityofcaesars
 			OR = {
@@ -1831,7 +1867,12 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
-		region = the_andes
+		OR = {
+			region = peru_region
+			region = chile_region
+			area = tucuman_area
+			area = cuyo_area
+		}
 		FROM = {
 			has_country_modifier = sce_search_sierradelaplata
 			OR = {
@@ -1895,7 +1936,12 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		is_empty = yes
-		region = the_andes
+		OR = {
+			region = peru_region
+			region = chile_region
+			area = tucuman_area
+			area = cuyo_area
+		}
 		FROM = {
 			has_country_modifier = sce_search_sierradelaplata
 			OR = {
@@ -1967,7 +2013,12 @@ province_event = {
 			has_global_flag = sce_ultimate_sierradelaplata
 		}
 		is_empty = yes
-		region = the_andes
+		OR = {
+			region = peru_region
+			region = chile_region
+			area = tucuman_area
+			area = cuyo_area
+		}
 		FROM = {
 			has_country_modifier = sce_search_sierradelaplata
 			OR = {
@@ -2037,9 +2088,11 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
-			region = northern_america
-			region = northeastern_america
-			region = eastern_america
+			region = canada_region
+			area = james_bay_area
+			area = hudson_bay_area
+			region = northeast_america_region
+			region = southeast_america_region
 		}
 		FROM = {
 			has_country_modifier = sce_search_norumbega
@@ -2104,9 +2157,11 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
-			region = northern_america
-			region = northeastern_america
-			region = eastern_america
+			region = canada_region
+			area = james_bay_area
+			area = hudson_bay_area
+			region = northeast_america_region
+			region = southeast_america_region
 		}
 		FROM = {
 			has_country_modifier = sce_search_norumbega
@@ -2180,9 +2235,11 @@ province_event = {
 		}
 		is_empty = yes
 		OR = {
-			region = northern_america
-			region = northeastern_america
-			region = eastern_america
+			region = canada_region
+			area = james_bay_area
+			area = hudson_bay_area
+			region = northeast_america_region
+			region = southeast_america_region
 		}
 		FROM = {
 			has_country_modifier = sce_search_norumbega
@@ -2251,9 +2308,11 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
-			region = northern_america
-			region = northeastern_america
-			region = eastern_america
+			region = canada_region
+			area = james_bay_area
+			area = hudson_bay_area
+			region = northeast_america_region
+			region = southeast_america_region
 		}
 		FROM = {
 			has_country_modifier = sce_search_saguenay
@@ -2318,9 +2377,11 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
-			region = northern_america
-			region = northeastern_america
-			region = eastern_america
+			region = canada_region
+			area = james_bay_area
+			area = hudson_bay_area
+			region = northeast_america_region
+			region = southeast_america_region
 		}
 		FROM = {
 			has_country_modifier = sce_search_saguenay
@@ -2393,9 +2454,11 @@ province_event = {
 		}
 		is_empty = yes
 		OR = {
-			region = northern_america
-			region = northeastern_america
-			region = eastern_america
+			region = canada_region
+			area = james_bay_area
+			area = hudson_bay_area
+			region = northeast_america_region
+			region = southeast_america_region
 		}
 		FROM = {
 			has_country_modifier = sce_search_saguenay
@@ -2465,9 +2528,11 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
-			region = northern_america
-			region = northeastern_america
-			region = eastern_america
+			region = canada_region
+			area = james_bay_area
+			area = hudson_bay_area
+			region = northeast_america_region
+			region = southeast_america_region
 		}
 		FROM = {
 			has_country_modifier = sce_search_quivira
@@ -2530,9 +2595,11 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
-			region = northern_america
-			region = northeastern_america
-			region = eastern_america
+			region = canada_region
+			area = james_bay_area
+			area = hudson_bay_area
+			region = northeast_america_region
+			region = southeast_america_region
 		}
 		FROM = {
 			has_country_modifier = sce_search_quivira
@@ -2599,9 +2666,11 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		OR = {
-			region = northern_america
-			region = northeastern_america
-			region = eastern_america
+			region = canada_region
+			area = james_bay_area
+			area = hudson_bay_area
+			region = northeast_america_region
+			region = southeast_america_region
 		}
 		NOT = {
 			has_global_flag = sce_ultimate_quivira
@@ -2677,6 +2746,7 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = no
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 		}
@@ -2754,6 +2824,7 @@ province_event = {
 			}
 		}
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -2813,6 +2884,7 @@ province_event = {
 			has_opinion = { who = FROM value = -50 }
 		}
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -2893,6 +2965,7 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -2977,6 +3050,7 @@ province_event = {
 			}				
 		}
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3041,6 +3115,7 @@ province_event = {
 			}
 		}
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3101,6 +3176,7 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = no
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3227,6 +3303,7 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = no
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3295,6 +3372,7 @@ province_event = {
 			is_empty = yes
 		}
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3364,6 +3442,7 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3441,6 +3520,7 @@ province_event = {
 			}			
 		}
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3485,6 +3565,7 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3547,6 +3628,7 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3594,6 +3676,7 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 		}
@@ -3675,6 +3758,7 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3737,6 +3821,7 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3799,6 +3884,7 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3831,6 +3917,7 @@ province_event = {
 	trigger = {
 		has_dlc = "El Dorado"
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -3884,6 +3971,7 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -4023,6 +4111,7 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa
@@ -4062,6 +4151,7 @@ province_event = {
 		has_dlc = "El Dorado"
 		is_empty = yes
 		OR = {
+			continent = new_world
 			continent = south_america
 			continent = north_america
 			continent = africa

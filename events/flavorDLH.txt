@@ -23,7 +23,8 @@ country_event = {
 		NOT = { exists = MAR } # Marathas
 		any_owned_province = {
 			OR = {
-					region = maharashtra_region
+					area = maharashtra_area
+					area = desh_area
 					culture = marathi
 				}
 		}
@@ -38,7 +39,8 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				OR = {
-					region = maharashtra_region
+					area = maharashtra_area
+					area = desh_area
 					culture = marathi
 				}
 			}
@@ -50,7 +52,11 @@ country_event = {
 		name = "flavor_dlh.EVTOPTB1"
 		every_owned_province = {
 			limit = {
-				region = maharashtra_region
+				OR = {
+					area = maharashtra_area
+					area = desh_area
+					culture = marathi
+				}
 				is_capital = no
 			}
 			add_local_autonomy = 100
@@ -70,8 +76,6 @@ country_event = {
 	trigger = {
 		tag = DLH
 		exists = MUG
-		is_year = 1510
-		NOT = { is_year = 1530 }
 		NOT = { war_with = MUG }
 		any_neighbor_country = { tag = MUG }
 	}
@@ -114,13 +118,13 @@ country_event = {
 	
 	trigger = {
 		tag = DLH
-		is_year = 1452
-		NOT = { is_year = 1553 }
 		dynasty = "Lodi" 
 		OR = { 
-			NOT = { dip = 0 } 
-			NOT = { mil = 0 } 
-			NOT = { adm = 0 } 
+			NOT = { dip = 2 } 
+			NOT = { mil = 2 } 
+			NOT = { adm = 2 }
+			NOT = { legitimacy = 70 }
+			NOT = { stability = 1 }
 		}
 	}
 	
@@ -131,11 +135,7 @@ country_event = {
 	option = {
 		name = "flavor_dlh.EVTOPTA3"
 		add_stability = -1
-		every_owned_province = {
-			limit = { is_core = MAR }
-			add_unrest = 2
-		}
-		add_inflation = 1
+		add_inflation = 2
 		set_country_flag = dlh_lodi_flag
 	}
 }
@@ -151,13 +151,11 @@ country_event = {
 	
 	trigger = {
 		tag = DLH
-		is_year = 1452
-		NOT = { is_year = 1553 }
 		dynasty = "Lodi" 
 		OR = { 
-			NOT = { dip = 0 } 
-			NOT = { mil = 0 } 
-			NOT = { adm = 0 }
+			NOT = { dip = 3 } 
+			NOT = { mil = 3 } 
+			NOT = { adm = 3 }
 		}
 		has_country_flag = dlh_lodi_flag
 	}

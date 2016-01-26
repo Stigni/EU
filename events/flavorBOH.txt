@@ -49,7 +49,7 @@ country_event = {
 			kill_heir = yes
 		}
 		define_ruler = {
-			name = "Jiri"
+			name = "Jirí"
 			dynasty = "z Podebrad"
 			adm = 5
 			dip = 3
@@ -64,7 +64,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 1
-				leader = "Jiri z Podebrad"
+				leader = "Jirí z Podebrad"
 			}		
 		}
 		random_owned_province = {

@@ -205,8 +205,8 @@ establish_footholding_in_manchuria = {
 		MCH = {
 			is_subject = no
 		}
-		NOT = { manchuria = { owned_by = JAP } }
-		manchuria = {
+		NOT = { manchuria_region = { owned_by = JAP } }
+		manchuria_region = {
 			has_port = yes
 			owned_by = MCH
 		}
@@ -216,7 +216,7 @@ establish_footholding_in_manchuria = {
 		OR = {
 			is_subject = yes
 			NOT = {
-				manchuria = {
+				manchuria_region = {
 					has_port = yes
 					owned_by = MCH
 				}
@@ -224,7 +224,7 @@ establish_footholding_in_manchuria = {
 		}
 	}
 	success = {
-		manchuria = { owned_by = JAP }
+		manchuria_region = { owned_by = JAP }
 	}
 	chance = {
 		factor = 1000
@@ -234,12 +234,12 @@ establish_footholding_in_manchuria = {
 		}
 	}
 	immediate = {
-		manchuria = {
+		manchuria_region = {
 			add_claim = ROOT
 		}
 	}
 	abort_effect = {
-		manchuria = {
+		manchuria_region = {
 			remove_claim = ROOT
 		}
 	}
@@ -316,7 +316,7 @@ jap_colonize_taiwan = {
 		num_of_cities = 8
 		num_of_ports = 1
 		num_of_colonists = 1
-		taiwan = {
+		taiwan_area = {
 			has_discovered = ROOT
 			is_empty = yes
 		}
@@ -330,7 +330,7 @@ jap_colonize_taiwan = {
 		}
 	}
 	success = {
-		taiwan = {
+		taiwan_area = {
 			owned_by = ROOT
 		}
 	}
@@ -394,5 +394,6 @@ recover_manga = {
 	effect = {
 		add_prestige = 10
 		add_legitimacy = 10
+		add_horde_unity = 10
 	}
 }

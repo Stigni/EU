@@ -189,13 +189,13 @@ catholic_italy = {
 		NOT = { has_country_flag = catholic_italy_done }
 		is_subject = no
 		is_at_war = no
-		italian_region = { NOT = { religion = catholic } }
+		italy_region = { NOT = { religion = catholic } }
 	}
 	abort = {
 		is_subject = yes
 	}
 	success = {
-		NOT = { italian_region = { NOT = { religion = catholic } } }
+		NOT = { italy_region = { NOT = { religion = catholic } } }
 	}
 	chance = {
 		factor = 1000

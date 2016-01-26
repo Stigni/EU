@@ -195,7 +195,7 @@ country_event = {
 		NOT = { has_global_flag = coffee_boom_happened }
 		OR = {
 			any_owned_province = {
-				region = indonesian_region
+				region = indonesia_region
 				trade_goods = coffee
 			}
 			any_subject_country = {
@@ -1136,6 +1136,7 @@ country_event = {
 		owns = 2047 #Tirhut
 		owns = 2063 #Central Doabd
 		bengal_region = { type = all owned_by = ROOT }
+		bihar_area = { type = all owned_by = ROOT }
 	}
 	mean_time_to_happen = {
 		months = 60
@@ -1154,7 +1155,7 @@ country_event = {
 		}
 		random_owned_province = {
 			limit = {
-				region = bengal_region
+				area = bihar_area
 				NOT = { trade_goods = silk }
 				NOT = { trade_goods = dyes }
 			}
@@ -1258,7 +1259,7 @@ country_event = {
 
 	trigger = {
 		is_year = 1750
-		capital_scope = { region = indochinan_region }
+		capital_scope = { region = indo_china_region }
 		NOT = { has_global_flag = ivory_shortage_happened }
 	}
 	mean_time_to_happen = {

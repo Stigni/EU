@@ -89,11 +89,7 @@ country_event = {
 			knows_country = ROOT
 			capital_scope = { continent = europe }
 			any_owned_province = {
-				OR = {
-					region = la_plata_region
-					region = pampas_region
-					region = buenos_aires_region
-				}
+				region = la_plata_region
 			}
 		}
 	}
@@ -110,11 +106,7 @@ country_event = {
 				knows_country = ROOT
 				capital_scope = { continent = europe }
 				any_owned_province = {
-					OR = {
-						region = la_plata_region
-						region = pampas_region
-						region = buenos_aires_region
-					}
+					region = la_plata_region
 				}
 			}
 			add_opinion = { who = ROOT modifier = cua_killed_juan }
@@ -133,11 +125,7 @@ country_event = {
 				knows_country = ROOT
 				capital_scope = { continent = europe }
 				any_owned_province = {
-					OR = {
-						region = la_plata_region
-						region = pampas_region
-						region = buenos_aires_region
-					}
+					region = la_plata_region
 				}
 			}
 			add_opinion = { who = ROOT modifier = cua_released_juan }

@@ -1,7 +1,8 @@
 government = steppe_horde
 technology_group = nomad_group
 primary_culture = manchu
-religion = confucianism
+religion = tengri_pagan_reformed
+secondary_religion = confucianism
 capital = 2108
 
 1399.1.1 = {

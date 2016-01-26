@@ -227,7 +227,7 @@ country_event = {
 		tag = GUJ
 		religion_group = muslim
 		any_owned_province = {
-			region = gujarat_region
+			region = west_india_region
 			has_discovered = POR
 		}
 		TUR = {

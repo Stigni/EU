@@ -11,11 +11,11 @@
 ##############
 
 rival = {
-	opinion = -75
+	opinion = -100
 }
 
 enemy = {
-	opinion = -25
+	opinion = -50
 }
 
 allied_to_rival = {
@@ -62,6 +62,10 @@ republic_misguided_heretic_border = {
 
 same_religion = {
 	opinion = 25
+}
+
+same_secondary_religion = {
+	opinion = 10
 }
 
 different_religions_group = {
@@ -111,8 +115,12 @@ in_war_together = {
 	opinion = 25
 }
 
+have_core = {
+	opinion = -20
+}
+
 have_claim = {
-	opinion = -5
+	opinion = -10
 }
 
 getting_subsidies = {
@@ -158,6 +166,8 @@ transfers_trade_power = {
 getting_trade_power = {
 	opinion = 20
 }
+
+
 
 ##################################
 # Strategy
@@ -208,6 +218,17 @@ opinion_fleet_access = {
 ##############
 # TIMED
 ##############
+
+converted_our_culture = {
+	opinion = -30
+	yearly_decay = 1
+}
+
+forced_other_to_give_up_claim_on_us = {
+	opinion = 15
+	max = 15
+	yearly_decay = 1
+}
 
 released_vassal = {
 	opinion = 300
@@ -329,6 +350,16 @@ vassal_abandoned = {
 	min = -200
 }
 
+they_force_vassalized_us = [
+	opinion = -100
+	yearly_decay = 2
+}
+
+they_force_unioned_us = {
+	opinion = -100
+	yearly_decay = 2
+}
+
 protectorate_broke_free = {
 	opinion = -50
 	yearly_decay = 1
@@ -431,7 +462,7 @@ break_alliance = {
 
 break_marriage = {
 	opinion = -75
-	yearly_decay = 1
+	yearly_decay = 3
 }
 
 
@@ -542,6 +573,7 @@ improved_relation = {
 	yearly_decay = 3
 	max = 100
 	max_vassal = 200
+	max_in_other_direction = 50
 }
 
 sabotage_reputation = {
@@ -1887,6 +1919,11 @@ opinion_polish_aggressions = {
 	yearly_decay = 3
 }
 
+lit_denied_birthright = {
+	opinion = -100
+	yearly_decay = 2
+}
+
 opinion_accepted_jesuits = {
 	opinion = 50
 	years = 10
@@ -3106,4 +3143,68 @@ opinion_withheld_reforms = {
 opinion_introduced_reforms = {
 	opinion = 25
 	yearly_decay = 1
+}
+
+#Tengri
+
+tengri_closer_ties = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+tengri_turned_away_monks = {
+	opinion = -25
+	yearly_decay = 1
+}
+
+tengri_turned_away_mission = {
+	opinion = -25
+	yearly_decay = 1
+}
+
+tengri_syncretic_fears = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+opinion_tengri_tea_ceremony = {
+	opinion = 25
+	yearly_decay = 1
+}
+
+tengri_pope_spurned = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+tengri_nahuatl_sacrifices = {
+	opinion = -75
+	yearly_decay = 2
+}
+
+tengri_nahuatl_extradition = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+#End Tengri
+
+#Estates
+
+cossack_raids_opinion = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+#End Estates
+
+threatened_war = {
+	opinion = -75
+	yearly_decay = 3
+}
+
+share_advanced_neighbor = {
+	opinion = 50
+	months = 1 #Updated every month.
+	max = 50
 }

@@ -1,0 +1,11376 @@
+the_proper_old_ways
+       1
+       0
+       0
+eth_mil_aid_from_portugal
+       1
+       0
+       0
+incompetent_fabrication
+       1
+       0
+       0
+brilliant_diplomat
+       1
+       0
+       0
+eng_tolerates_lollards
+       1
+       0
+       0
+eng_opposes_lollards
+       1
+       0
+       0
+eng_court_star_chamber
+       1
+       0
+       0
+annexers_legacy
+       1
+       0
+       0
+improved_dip_reputation
+       1
+       0
+       0
+reduced_dip_reputation
+       1
+       0
+       0
+dip_jusitified_demands
+       1
+       0
+       0
+tolerant_society
+       1
+       0
+       0
+intolerant_society
+       1
+       0
+       0
+religious_intolerance
+       3
+       0
+       0
+religious_tolerance
+       4
+       0
+       0
+forced_conversion
+       3
+       0
+       0
+decreased_morale
+       2
+       0
+       0
+domestic_improvements
+       1
+       0
+       0
+enforce_serfdom
+       3
+       0
+       0
+restrict_serfdom
+       3
+       0
+       0
+disarmament
+       1
+       0
+       0
+support_monarch
+       2
+       0
+       0
+oppose_monarch
+       2
+       0
+       0
+alleviate_population
+       1
+       0
+       0
+starvation
+       1
+       0
+       0
+suppress_free_thinkers
+       1
+       0
+       0
+bureaucratic_expansion
+       1
+       0
+       0
+bureaucratic_reduction
+       1
+       0
+       0
+fight_inflation
+       1
+       0
+       0
+mint_money
+       1
+       0
+       0
+financial_disaster
+       1
+       0
+       0
+encomienda_system
+       1
+       0
+       0
+support_troops
+       1
+       0
+       0
+obsolete_forces
+       1
+       0
+       0
+isolate_rebels
+       1
+       0
+       0
+suppress_minority
+       1
+       0
+       0
+army_reform
+       1
+       0
+       0
+naval_reform
+       1
+       0
+       0
+military_reform
+       1
+       0
+       0
+competitive_advantage
+       1
+       0
+       0
+cooperation_with_merchant_class
+       1
+       0
+       0
+trade_collapse
+       1
+       0
+       0
+diplomatic_negotiation
+       1
+       0
+       0
+disregard_natives
+       3
+       0
+       0
+aid_natives
+       3
+       0
+       0
+expand_colonial_territory
+       1
+       0
+       0
+restrict_colonial_expansion
+       1
+       0
+       0
+export_restrictions
+       1
+       0
+       0
+military_reinforcement
+       1
+       0
+       0
+heresy
+       4
+       0
+       0
+military_funding
+       1
+       0
+       0
+military_funding
+       1
+       0
+       0
+disorder
+       1
+       0
+       0
+cut_military_investments
+       1
+       0
+       0
+cut_trade_investments
+       1
+       0
+       0
+cut_government_investments
+       1
+       0
+       0
+debt_funding_plan
+       1
+       0
+       0
+tax_reform
+       1
+       0
+       0
+naval_improvements
+       1
+       0
+       0
+naval_disarmament
+       1
+       0
+       0
+church_functions
+       1
+       0
+       0
+reduced_taxes_off
+       1
+       0
+       0
+obscurantism
+       1
+       0
+       0
+exceptional_year
+       3
+       0
+       0
+monetary_benefits
+       2
+       0
+       0
+plague
+       3
+       0
+       0
+severe_plague_local
+       1
+       0
+       0
+contained_plague_local
+       1
+       0
+       0
+trade_disaster
+       1
+       0
+       0
+medical_evolution
+       1
+       0
+       0
+trade_income_increase
+       1
+       0
+       0
+tax_income_loss
+       1
+       0
+       0
+tax_income_boost
+       1
+       0
+       0
+scientific_evolution
+       2
+       0
+       0
+land_investment
+       2
+       0
+       0
+naval_investment
+       2
+       0
+       0
+trading_investment
+       2
+       0
+       0
+government_investment
+       2
+       0
+       0
+reduced_stability_cost
+       2
+       0
+       0
+colonial_tensions
+       1
+       0
+       0
+morale_boost
+       1
+       0
+       0
+deserters
+       1
+       0
+       0
+theology
+       2
+       0
+       0
+colonial_enthusiasm
+       4
+       0
+      44
+colonial
+     232
+       1
+      44
+spy
+       3
+       0
+       0
+faster_ships
+       1
+       0
+       0
+slower_ships
+       1
+       0
+       0
+naval_developments
+       1
+       0
+       0
+naval_hubris
+       1
+       0
+       0
+blockade_tactics
+       1
+       0
+       0
+slipping_standards
+       1
+       0
+       0
+naval_technical_developments
+       1
+       0
+       0
+concerned_shipwrights
+       1
+       0
+       0
+recruits_flock
+       1
+       0
+       0
+resist_conscription
+       1
+       0
+       0
+grander_army
+       1
+       0
+       0
+less_grand_army
+       1
+       0
+       0
+military_improvements
+       1
+       0
+       0
+military_complacency
+       1
+       0
+       0
+adventuring_merchants
+       1
+       0
+       0
+poor_merchants
+       1
+       0
+       0
+out_of_date_commerce
+       1
+       0
+       0
+excellent_administration
+       1
+       0
+       0
+corrupt_viceroys
+       1
+       0
+       0
+production_improvements
+       1
+       0
+       0
+production_stifled
+       1
+       0
+       0
+successful_bureaucracy
+       1
+       0
+       0
+hidden_agents
+       1
+       0
+       0
+better_rebel_support
+       1
+       0
+       0
+extra_heir
+       1
+       0
+       0
+focus_on_covert_actions
+       1
+       0
+       0
+corrupt_bureaucracy
+       1
+       0
+       0
+trade_policy_working
+       1
+       0
+       0
+trade_policy_failing
+       1
+       0
+       0
+enhanced_spies
+       1
+       0
+       0
+spy_defections
+       1
+       0
+       0
+cabinet_dynamism
+       1
+       0
+       0
+government_corruption
+       1
+       0
+       0
+minority_prospers
+       1
+       0
+       0
+missionary_zeal
+       1
+       0
+       0
+mil_boost
+       1
+       0
+       0
+dip_boost
+       1
+       0
+       0
+adm_boost
+       1
+       0
+       0
+revolution_suffers
+       1
+       0
+       0
+serf_exploitation
+       1
+       0
+       0
+happy_people
+       1
+       0
+       0
+land_focus
+       1
+       0
+       0
+naval_focus
+       1
+       0
+       0
+lack_of_protection
+       1
+       0
+       0
+innovation_wave
+       1
+       0
+       0
+centralised_state
+       1
+       0
+       0
+unhappy_merchants
+       1
+       0
+       0
+excellent_vintage
+       1
+       0
+       0
+poor_uniforms
+       1
+       0
+       0
+salt_crisis
+       1
+       0
+       0
+good_supplies
+       1
+       0
+       0
+poor_copper
+       1
+       0
+       0
+poor_iron
+       1
+       0
+       0
+storms
+       1
+       0
+       0
+harvest_fails
+       1
+       0
+       0
+tribal_succession_crisis
+       1
+       0
+       0
+the_statue_in_restraint_of_appeals
+       0
+       1
+       0
+the_abolish_slavery_act
+       1
+       1
+       0
+condemn_western_influences
+       0
+       1
+       0
+revocation_of_restraint_of_appeals
+       0
+       1
+       0
+hire_privateers
+       0
+       1
+       0
+counter_reformation
+       0
+       1
+       0
+russian_patriarchate
+       0
+       1
+       0
+edict_de_nantes
+       0
+       1
+       0
+the_state_is_me
+       0
+       1
+       0
+the_devshirme_system
+       0
+       1
+       0
+the_provincial_system
+       0
+       1
+       0
+the_societas_jesu
+       0
+       1
+       0
+great_wall_reparations
+       0
+       1
+       0
+british_merchant_navy
+       0
+       1
+       0
+britanna_rules_the_waves
+       0
+       1
+       0
+more_merchants
+       1
+       0
+       0
+efficienct_merchants
+       1
+       0
+       0
+local_trade_focus
+       1
+       0
+       0
+global_trade_focus
+       1
+       0
+       0
+military_focus
+       1
+       0
+       0
+trade_focus
+       1
+       0
+       0
+trade_and_production_cutbacks
+       1
+       0
+       0
+military_cutbacks
+       1
+       0
+       0
+short_term_boost
+       1
+       0
+       0
+long_term_boost
+       1
+       0
+       0
+decreased_military_funding
+       1
+       0
+       0
+even_spread_of_investments
+       1
+       0
+       0
+financial_arguments
+       1
+       0
+       0
+emergency_plan
+       1
+       0
+       0
+bothersome_parliament
+       1
+       0
+       0
+infiltrator_in_the_cardinal_office
+       1
+       0
+       0
+religious_restriction
+       1
+       0
+       0
+india_trade_co
+       0
+       1
+       0
+dutch_india_trade_co
+       0
+       1
+       0
+portuguese_india_trade_co
+       2
+       0
+       0
+the_staple_port
+       0
+       1
+       0
+the_theme_system
+       0
+       1
+       0
+severe_trade_crisis
+       1
+       0
+       0
+minor_trade_crisis
+       1
+       0
+       0
+evangelical_system
+       1
+       0
+       0
+missionary_falls_ill
+       1
+       0
+       0
+missionary_failure
+       1
+       0
+       0
+religious_tensions
+       1
+       0
+       0
+founding_father
+       1
+       0
+       0
+loyalist_stronghold
+       1
+       0
+       0
+the_advancement_of_true_religion_act
+       0
+       1
+       0
+the_blasphemy_act
+       0
+       1
+       0
+the_act_of_uniformity
+       0
+       1
+       0
+the_suffragan_bishop_act
+       0
+       1
+       0
+the_conventicle_act
+       0
+       1
+       0
+the_declaration_of_indulgence
+       0
+       1
+       0
+de_heretico_comburendo
+       0
+       1
+       0
+the_test_act
+       0
+       1
+       0
+the_dissolution_of_the_monasteries
+       0
+       1
+       0
+the_popery_act
+       0
+       1
+       0
+the_sheikh_ul_islam
+       0
+       1
+       0
+khalifah
+       0
+       1
+       0
+sect_practices
+       0
+       1
+       0
+islamic_scholarly_centre
+       0
+       1
+       0
+superintendent_office
+       0
+       1
+       0
+monastic_education_system
+       0
+       1
+       0
+the_anti_christian_edict
+       0
+       1
+       0
+more_tariffs
+       2
+       0
+       0
+master_of_mint_boost
+       2
+       0
+       0
+navigator_boost
+       2
+       0
+       0
+grand_captain_boost
+       2
+       0
+       0
+army_organiser_boost
+       2
+       0
+       0
+commandant_boost
+       2
+       0
+       0
+quartermaster_boost
+       2
+       0
+       0
+recruitmaster_boost
+       2
+       0
+       0
+fortification_expert_boost
+       2
+       0
+       0
+inquisitor_boost
+       2
+       0
+       0
+religious_migration
+       6
+       0
+       0
+improved_fortifications
+       4
+       0
+       0
+per_capita_tax
+       0
+       1
+       0
+house_of_worship
+       0
+       1
+       0
+divine_faith
+       0
+       1
+       0
+muslim_resistance
+       0
+       1
+       0
+religious_sect_tolerance
+       0
+       1
+       0
+the_haridasa_movement
+       0
+       1
+       0
+the_advaita_movement
+       0
+       1
+       0
+godly_inspiration
+       0
+       1
+       0
+religious_sacrifices
+       0
+       1
+       0
+rite_of_passage
+       0
+       1
+       0
+church_taxes
+       0
+       1
+       0
+neo_confucianism
+       1
+       0
+       0
+denounce_taoism
+       1
+       0
+       0
+enforcing_heritage
+       0
+       1
+       0
+sunday_schools
+       0
+       1
+       0
+bad_discipline
+       2
+       0
+       0
+good_discipline
+       1
+       0
+       0
+local_fortress
+       4
+       0
+       0
+improved_fort_defense
+       0
+       1
+       0
+compromised_spy_defence
+       1
+       0
+       0
+smugglers_dominating
+       1
+       0
+       0
+kingdom_of_god
+       0
+       1
+       0
+power_to_nobles
+       1
+       0
+       0
+power_to_provinces
+       1
+       0
+       0
+free_shipping_through_the_sound
+       0
+       0
+       1
+illegitimate_ruler
+       1
+       0
+       0
+thalassocracy
+       0
+       1
+       0
+boom_economy
+       0
+       0
+       1
+separation_of_powers
+       0
+       1
+       0
+cult_of_reason
+       0
+       1
+       0
+relief_from
+       2
+       0
+       0
+sought_after_bachelor
+       1
+       0
+       0
+a_woman_scorned
+       1
+       0
+       0
+blooming_renaissance
+       1
+       0
+       0
+the_sound_of_music
+       1
+       0
+       0
+way_of_tea
+       1
+       0
+       0
+controls_tea_trade
+       1
+       0
+       0
+diwani_script
+       1
+       0
+       0
+dutch_masters
+       1
+       0
+       0
+guild_of_st_luke
+       1
+       0
+       0
+the_last_joust
+       1
+       0
+       0
+florentine_school
+       1
+       0
+       0
+byzantine_influx
+       1
+       0
+       0
+epic_to_monarch
+       1
+       0
+       0
+commedia_dellarte
+       1
+       0
+       0
+enlightenment_movement
+       1
+       0
+       0
+krantor_crane
+       0
+       1
+       0
+adler_von_lubeck
+       0
+       1
+       0
+south_german_organ_tradition
+       1
+       0
+       0
+rome_reborn
+       1
+       0
+       0
+rebel_sentiment
+       2
+       0
+       0
+religious_zeal_at_conv
+       6
+       0
+       0
+powerful_noble
+       2
+       0
+       0
+sword_hunter
+       0
+       1
+       0
+ninjas
+       0
+       1
+       0
+western_embassy_mission
+       0
+       1
+       0
+local_christian_mission
+       1
+       0
+       0
+a_batch_of_western_muskets
+       1
+       0
+       0
+karesansui_garden
+       1
+       0
+       0
+sakoku_law
+       0
+       2
+       0
+sankin_kotai
+       1
+       0
+       0
+western_trade
+       1
+       0
+       0
+state_council
+       1
+       0
+       0
+hall_of_worthies
+       0
+       1
+       0
+sinmun_office
+       2
+       0
+       0
+sinmun_office_rejected
+       1
+       0
+       0
+the_forbidden_city
+       0
+       1
+       0
+primas_germaniae
+       2
+       0
+       0
+legatus_natus
+       2
+       0
+       0
+fort_in_disrepair
+       1
+       0
+       0
+centralization_modifier
+      11
+      41
+       0
+decentralization_modifier
+       7
+       1
+       0
+aristocracy_modifier
+       8
+       0
+       0
+plutocracy_modifier
+       2
+       0
+       0
+serfdom_modifier
+       6
+       0
+       0
+freesubjects_modifier
+       1
+       0
+       0
+innovative_modifier
+       5
+       1
+       1
+narrowminded_modifier
+      11
+       1
+       0
+mercantilism_modifier
+       3
+       0
+       0
+freetrade_modifier
+       4
+       0
+       0
+offensive_modifier
+       3
+       0
+       0
+defensive_modifier
+       3
+       0
+       0
+land_modifier
+       2
+       0
+       0
+naval_modifier
+       2
+       0
+       0
+quality_modifier
+       1
+       0
+       0
+religious_center
+       1
+       0
+       0
+lollards
+       1
+       0
+       0
+justices_of_peace
+       1
+       0
+       0
+the_admirality
+       2
+       0
+       0
+the_royal_army
+       2
+       0
+       0
+the_heresy_act
+       1
+       0
+       0
+religious_freedom_act
+       1
+       0
+       0
+the_petition_of_rights
+       2
+       0
+       0
+refusal_of_petition_of_rights
+       1
+       0
+       0
+the_decree_of_indulgence
+       1
+       0
+       0
+bill_of_test
+       1
+       0
+       0
+the_muskovy_trade_company
+       1
+       0
+       0
+low_fertility
+       1
+       0
+       0
+importing_food
+       1
+       0
+       0
+plundering_soldiers
+       1
+       0
+       0
+legitimacy_questioned
+       1
+       0
+       0
+benign_ruler
+       1
+       0
+       0
+rebel_leaders_executed
+       1
+       0
+       0
+wotr_local_support
+      10
+       0
+       0
+wotr_local_support_for_lancaster
+       4
+       0
+       0
+wotr_local_support_for_york
+       4
+       0
+       0
+disgruntled_nobles
+       1
+       0
+       0
+rebel_refugees
+       1
+       0
+       0
+rebel_stronghold
+       2
+       0
+       0
+new_model_army
+       2
+       0
+       0
+vasa_centralization_reforms
+       1
+       0
+       0
+church_reduction
+       1
+       0
+       0
+wallon_immigrants
+       1
+       0
+       0
+swedish_military_reforms
+       1
+       0
+       0
+swedish_mercenary_core
+       1
+       0
+       0
+swedish_naval_reforms
+       1
+       0
+       0
+swedish_mercantile_reforms
+       1
+       0
+       0
+swedish_free_trade_policy
+       1
+       0
+       0
+swedish_colonial_reforms
+       1
+       0
+       0
+the_absolutism
+       1
+       0
+       0
+swedish_court_of_appeals
+       1
+       0
+       0
+aristocratic_privileges
+       3
+       0
+       0
+reduction_of_charles_xi
+       1
+       0
+       0
+aligned_with_aristocracy
+       1
+       0
+       0
+reduction_compromise
+       1
+       0
+       0
+the_great_army_reorganization
+       1
+       0
+       0
+the_product_act
+       1
+       0
+       0
+the_conventicle_edict
+       3
+       0
+       0
+pietism
+       3
+       0
+       0
+traitorous_officers
+       1
+       0
+       0
+the_act_of_union_and_security
+       1
+       0
+       0
+the_great_agricultural_reform
+       1
+       0
+       0
+age_of_fredom
+       1
+       0
+       0
+dacke_feud_trade_embargo
+       1
+       0
+       0
+local_free_trade
+       1
+       0
+       0
+pomjestija_reform
+       1
+       0
+       0
+novgorodian_reform
+       1
+       0
+       0
+opposition_crushed
+       1
+       0
+       0
+kormlenije_abolished
+       2
+       0
+       0
+chamber_of_finance
+       2
+       0
+       0
+enserfed_peasants
+       1
+       0
+       0
+legal_serfdom
+       1
+       0
+       0
+deteriorating_economy
+       1
+       0
+       0
+autonomous_provinces
+       1
+       0
+       0
+governmental_reforms
+       2
+       0
+       0
+russian_absolutism
+       2
+       0
+       0
+state_controlled_church
+       1
+       0
+       0
+mercantilist_reforms
+       1
+       0
+       0
+free_trade_reforms
+       1
+       0
+       0
+complete_serfdom
+       1
+       0
+       0
+increased_freedom
+       1
+       0
+       0
+restricted_serfdom
+       2
+       0
+       0
+western_reforms
+       1
+       0
+       0
+reversed_reforms
+       1
+       0
+       0
+western_governmental_influence
+       1
+       0
+       0
+western_military_influence
+       1
+       0
+       0
+western_naval_influence
+       1
+       0
+       0
+insane_ruler
+       1
+       0
+       0
+famine
+       3
+       0
+       0
+fighting_famine
+       2
+       0
+       0
+severe_famine
+       2
+       0
+       0
+severe_plague
+       6
+       0
+       0
+contained_plague
+       4
+       0
+       0
+armed_brigands
+       1
+       0
+       0
+usurper_on_the_throne
+       1
+       0
+       0
+bad_free_trade_merchants
+       1
+       0
+       0
+public_works_of_cairo
+       1
+       0
+       0
+mam_large_festitives
+       1
+       0
+       0
+mam_recover_from_plague
+       1
+       0
+       0
+mlo_cheap_mercs
+       1
+       0
+       0
+laws_of_the_burgos
+       1
+       0
+       0
+casa_de_contratacion
+       1
+       0
+       0
+port_to_the_new_world
+       1
+       0
+       0
+the_fuggers
+       1
+       0
+       0
+concessions_to_the_peasantry
+       1
+       0
+       0
+liberal_constitution
+       1
+       0
+       0
+religious_fanatics
+       1
+       0
+       0
+religious_violence
+       3
+       0
+       0
+religious_massacre
+      10
+       0
+       0
+support_heretics
+       2
+       0
+       0
+french_catholics
+       1
+       0
+       0
+french_protestants
+       1
+       0
+       0
+permanent_tax_system
+       2
+       0
+       0
+concessions_to_the_nobility
+       3
+       0
+       0
+academie_francaise
+       1
+       0
+       0
+colbert_economic_reforms
+       1
+       0
+       0
+colbert_trade_reforms
+       1
+       0
+       0
+colbert_naval_reforms
+       1
+       0
+       0
+versailles
+       1
+       0
+       0
+five_percent_tax
+       2
+       0
+       0
+five_percent_tax_with_exceptions
+       1
+       0
+       0
+turgots_economic_reforms
+       1
+       0
+       0
+necker_reforms
+       1
+       0
+       0
+the_reign_of_terror
+       1
+       0
+       0
+counter_espionage
+       1
+       0
+       0
+spies_investigate
+       1
+       0
+       0
+investigating_spies
+       1
+       0
+       0
+shady_people
+       1
+       0
+       0
+reduceed_war_expenditures
+       1
+       0
+       0
+mehmeds_economic_reforms
+       1
+       0
+       0
+tur_army_reform
+       1
+       0
+       0
+tur_army_and_navy_reform
+       1
+       0
+       0
+tur_navy_reform
+       1
+       0
+       0
+tur_janissaries_timer
+       1
+       0
+       0
+tur_janissaries_salary
+       1
+       0
+       0
+enderun_academy
+       1
+       0
+       0
+expanded_timariot_system
+       1
+       0
+       0
+expanded_royal_bureaucracy
+       1
+       0
+       0
+imperial_halic_shipyard
+       1
+       0
+       0
+kosem_sultana
+       1
+       0
+       0
+koprulu_family
+       1
+       0
+       0
+reformes_of_kemankes
+       1
+       0
+       0
+janissaries_denied_reward
+       1
+       0
+       0
+janissary_landholders
+       1
+       0
+       0
+janissaries_upset
+       1
+       0
+       0
+tur_janissary
+       1
+       0
+       0
+hun_power_to_magnates
+       1
+       0
+       0
+nap_renaissance_culture
+       1
+       0
+       0
+nap_renaissance_glory
+       1
+       0
+       0
+nap_recover_from_plague
+       1
+       0
+       0
+ven_recover_from_plague
+       1
+       0
+       0
+boh_strong_nobles
+       1
+       0
+       0
+merchant_investement
+       1
+       0
+       0
+rush_of_merchants
+       1
+       0
+       0
+business_booming
+       1
+       0
+       0
+competent_diplomacy
+       1
+       0
+       0
+incompetent_diplomacy
+       1
+       0
+       0
+benign_neglect_trade
+       1
+       0
+       0
+benign_neglect_tax
+       1
+       0
+       0
+benign_neglect_manpower
+       1
+       0
+       0
+gen_lost_trade_support
+       1
+       0
+       0
+bavarian_jesuits
+       1
+       0
+       0
+colonial_policy
+       1
+       0
+       0
+less_colonial_corruption
+       1
+       0
+       0
+duke_of_coimbra
+       1
+       0
+       0
+governor_de_sousa
+       1
+       0
+       0
+earthquake
+       1
+       0
+       0
+reactionary_policies
+       1
+       0
+       0
+african_slaves
+       1
+       0
+       0
+portuguese_missionaries
+       1
+       0
+       0
+the_tower_or_belem
+       1
+       0
+       0
+ven_monte_nuovo
+       1
+       0
+       0
+ven_venetian_first
+       1
+       0
+       0
+ven_christian_first
+       1
+       0
+       0
+venice_galley_conscription
+       1
+       0
+       0
+ven_ministers_of_waterways
+       1
+       0
+       0
+reichshofrat
+       1
+       0
+       0
+venice_ghetto
+       1
+       0
+       0
+fortezza_di_sant_andrea
+       1
+       0
+       0
+reform_of_the_bureaucracy
+       1
+       0
+       0
+the_triumphal_procession
+       1
+       0
+       0
+burgundian_succession_crisis
+       2
+       0
+       0
+spurn_habsburgs
+       1
+       0
+       0
+budgetary_disagreements_timer
+       2
+       0
+       0
+disagreements_in_the_parliament_timer
+       2
+       0
+       0
+parliamentary_problems_timer
+       2
+       0
+       0
+heated_debates_timer
+       2
+       0
+       0
+conflicting_opinions_timer
+       2
+       0
+       0
+traitor_in_parliament_timer
+       2
+       0
+       0
+bad_relations_timer
+       2
+       0
+       0
+political_chaos_timer
+       2
+       0
+       0
+influenced_decisions_timer
+       2
+       0
+       0
+financial_disagreements_timer
+       2
+       0
+       0
+foreign_control_timer
+       2
+       0
+       0
+too_many_liberties_timer
+       2
+       0
+       0
+military_maintenance_timer
+       1
+       0
+       0
+sympathisers_of_old_government_timer
+       2
+       0
+       0
+a_new_constitution_timer
+       2
+       0
+       0
+areas_of_research_timer
+       1
+       0
+       0
+premature_election_timer
+       1
+       0
+       0
+anxious_parliament_timer
+       1
+       0
+       0
+over_budget_timer
+       2
+       0
+       0
+embezzlement_timer
+       2
+       0
+       0
+planned_coup_timer
+       1
+       0
+       0
+possible_traitors_timer
+       1
+       0
+       0
+choosing_a_tomb_timer
+       1
+       0
+       0
+prussian_african_trade_company
+       1
+       0
+       0
+pru_enlightenment_reforms
+       1
+       0
+       0
+pru_prutenic_tables
+       1
+       0
+       0
+pru_reaction_reforms
+       1
+       0
+       0
+bra_berliner_unwille
+       1
+       0
+       0
+bra_sell_indulgences
+       1
+       0
+       0
+bra_grain_tax
+       1
+       0
+       0
+pol_nieszawa_privileges
+       2
+       0
+       0
+pol_statute_piotrkow
+       1
+       0
+       0
+pol_religious_freedom
+       1
+       0
+       0
+pol_jesuit_king
+       1
+       0
+       0
+pol_pact_conventa
+       1
+       0
+       0
+pol_sejm_veto
+       1
+       0
+       0
+pol_sejm_comply_policies
+       1
+       0
+       0
+pol_sejm_refuse_troops
+       1
+       0
+       0
+pol_sigismunds_column
+       1
+       0
+       0
+pol_merkuriusz_polski_ordynaryjny
+       1
+       0
+       0
+pol_konfederacja
+       1
+       0
+       0
+pol_zebrzydowski_rebellion_flag
+       1
+       0
+       0
+economic_development_of_mazovia
+       1
+       0
+       0
+pol_sejm_refuse_timer
+       3
+       0
+       0
+pol_tur_tension_timer
+       1
+       0
+       0
+mng_closed_china
+       1
+       0
+       0
+mng_open_china
+       1
+       0
+       0
+hol_expand_loan_market
+       1
+       0
+       0
+hol_strict_control
+       1
+       0
+       0
+hol_gomarism
+       1
+       0
+       0
+hol_arminianism
+       1
+       0
+       0
+hol_de_witt
+       1
+       0
+       0
+hol_anthony_heinsius
+       1
+       0
+       0
+hol_statenbijbel
+       1
+       0
+       0
+hol_wilhelmus
+       1
+       0
+       0
+hol_tulip_crisis
+       1
+       0
+       0
+holland_polders
+       0
+       1
+       0
+per_abbas_advisors
+       1
+       0
+       0
+per_political_turmoil_timer
+       2
+       0
+       0
+per_political_fragmentation_timer
+       2
+       0
+       0
+vij_dodda_ganeshana_gudi_temple
+       1
+       0
+       0
+vij_veerabhadra_temple
+       1
+       0
+       0
+vij_astadiggajas
+       1
+       0
+       0
+ayu_wat_chaiwatthanaram_temple
+       1
+       0
+       0
+ayu_buddha_footprint_temple
+       1
+       0
+       0
+ayu_wat_ratchaburan_temple
+       1
+       0
+       0
+sco_religious_strife
+       1
+       0
+       0
+sco_free_trade
+       1
+       0
+       0
+sco_witchcraft_act
+       1
+       0
+       0
+jap_sengoku_jidai
+       1
+       0
+       0
+jap_wokou
+       1
+       0
+       0
+jap_follow_sakoku
+       1
+       0
+       0
+jap_question_sakoku
+       1
+       0
+       0
+jap_rangaku
+       2
+       0
+       0
+jap_closed
+       1
+       0
+       0
+jap_western_wrecked_ship
+       1
+       0
+       0
+jap_culture
+       1
+       0
+       0
+jap_military_developments
+       1
+       0
+       0
+jap_za
+       1
+       0
+       0
+jap_higashiyama_culture
+       1
+       0
+       0
+jap_sekisho
+       1
+       0
+       0
+jap_buke_shohatto
+       2
+       0
+       0
+jap_gokaido
+       1
+       0
+       0
+jap_terakoya
+       1
+       0
+       0
+jap_genroku
+       1
+       0
+       0
+jap_kokugaku
+       1
+       0
+       0
+jap_sankin_kotai
+       1
+       0
+       0
+jap_trade_reform
+       1
+       0
+       0
+jap_military_reform
+       1
+       0
+       0
+jap_economic_reform
+       1
+       0
+       0
+jap_first_sake
+       1
+       0
+       0
+jap_recruits
+       1
+       0
+       0
+jap_jade
+       1
+       0
+       0
+jap_gossip
+       1
+       0
+       0
+jap_kabuki_timer
+       1
+       0
+       0
+jap_ronin_timer
+       1
+       0
+       0
+jap_nogaku_timer
+       1
+       0
+       0
+jap_loyal_samurai_timer
+       1
+       0
+       0
+jap_monk_timer
+       1
+       0
+       0
+jap_shrine_timer
+       1
+       0
+       0
+jap_hanami_timer
+       1
+       0
+       0
+jap_koku_tax_timer
+       1
+       0
+       0
+jap_geisha_timer
+       1
+       0
+       0
+jap_unruly_daimyo_timer
+       1
+       0
+       0
+jap_koku_reform_timer
+       1
+       0
+       0
+jap_rangaku_timer
+       1
+       0
+       0
+jap_rice_fail_timer
+       1
+       0
+       0
+jap_red_ship_timer
+       1
+       0
+       0
+jap_kirishitan_harrassed_timer
+       1
+       0
+       0
+jap_tempura_timer
+       1
+       0
+       0
+ikko_ikkis_timer
+       1
+       0
+       0
+hsa_stop_shipbuilding_technology
+       1
+       0
+       0
+hsa_spread_shipbuilding_technology
+       1
+       0
+       0
+hsa_trade_reform
+       1
+       0
+       0
+hsa_economic_reform
+       1
+       0
+       0
+hsa_military_reform
+       1
+       0
+       0
+ara_consulate_sea
+       1
+       0
+       0
+ara_book_consulate_sea
+       1
+       0
+       0
+ara_monastery_maria
+       1
+       0
+       0
+ara_monastery_painter
+       1
+       0
+       0
+ara_sindicat_remenca
+       1
+       0
+       0
+nor_bohus_fortress
+       1
+       0
+       0
+pap_saint_peters_basilica
+       1
+       0
+       0
+pap_spanish_inquisition
+       1
+       0
+       0
+pap_moderate_inquisition
+       1
+       0
+       0
+pap_burned_heretic
+       1
+       0
+       0
+mch_jesuits
+       1
+       0
+       0
+kni_accepted_cultures
+       1
+       0
+       0
+kni_martinengo
+       1
+       0
+       0
+kni_valetta
+       1
+       0
+       0
+football_modifier
+       1
+       0
+       0
+watching_ancestors
+       1
+       0
+       0
+lowered_defense
+       1
+       0
+       0
+inside_man
+       1
+       0
+       0
+mecca_timer
+       1
+       0
+       0
+pious_ruler
+       1
+       0
+       0
+archery_muskets
+       1
+       0
+       0
+gaps_blockade
+       1
+       0
+       0
+merchants_gaps_blockade
+       1
+       0
+       0
+jesuit_mission
+       1
+       0
+       0
+roman_fever_timer
+       1
+       0
+       0
+organised_colony
+       1
+       0
+       0
+quarantine_colony
+       1
+       0
+       0
+roman_fever_colony
+       2
+       0
+       0
+fra_musketeers_timer
+       1
+       0
+       0
+mousquetaires_du_roi
+       1
+       0
+       0
+diplomatic_moves
+       1
+       0
+       0
+ship_building_boom
+       1
+       0
+       0
+enhanced_reputation
+       1
+       0
+       0
+trade_success
+       1
+       0
+       0
+trade_failure
+       1
+       0
+       0
+ship_building_problems
+       1
+       0
+       0
+diplo_fuax_pas
+       1
+       0
+       0
+mercenaries_to_the_standard
+       1
+       0
+       0
+for_freedom
+       1
+       0
+       0
+our_rights
+       1
+       0
+       0
+agricultural_boom
+       1
+       0
+       0
+tolerance_for_all
+       1
+       0
+       0
+to_the_colours
+       1
+       0
+       0
+horse_population_boom
+       1
+       0
+       0
+surplus_equipment
+       1
+       0
+       0
+cheap_iron
+       1
+       0
+       0
+timber_surplus
+       1
+       0
+       0
+timber_shortage
+       1
+       0
+       0
+admin_problems
+       1
+       0
+       0
+iron_ships
+       1
+       0
+       0
+protected_commerce
+       1
+       0
+       0
+power_of_the_fleet
+       1
+       0
+       0
+back_to_the_front
+       1
+       0
+       0
+love_of_devoted
+       1
+       0
+       0
+full_elan
+       1
+       0
+       0
+finest_infantry
+       1
+       0
+       0
+cavalry_companions
+       1
+       0
+       0
+trust_from_mercs
+       1
+       0
+       0
+glut_of_mercs
+       1
+       0
+       0
+generous_terms
+       1
+       0
+       0
+good_advise
+       1
+       0
+       0
+payment_demands
+       1
+       0
+       0
+relentless_drill
+       1
+       0
+       0
+regimental_pride
+       1
+       0
+       0
+prepared_defence
+       1
+       0
+       0
+to_the_last_man
+       1
+       0
+       0
+regimental_spirit
+       1
+       0
+       0
+peasants_westernization
+       1
+       0
+       0
+adopted_heir
+       1
+       0
+       0
+golden_age_of_timbuktu
+       1
+       0
+       0
+perfected_porcelain
+       1
+       0
+       0
+tamil_traders_content
+       1
+       0
+       0
+tamil_traders_angered
+       1
+       0
+       0
+vadugan_settlement
+       1
+       0
+       0
+rural_tamil_autonomy
+       1
+       0
+       0
+tamil_grandee
+       1
+       0
+       0
+pulicat_booming
+       1
+       0
+       0
+tirupati_tirumala_temple_complex
+       1
+       0
+       0
+eth_zara_yakob_centralisation
+       1
+       0
+       0
+eth_itinerant_capital
+       1
+       0
+       0
+eth_independent_church
+       1
+       0
+       0
+eth_oromo_migration
+       3
+       0
+       0
+eth_mount_geshen
+       1
+       0
+       0
+bah_bidriware_boom
+       1
+       0
+       0
+bah_deccanis
+       2
+       0
+       0
+bah_gharbians
+       1
+       0
+       0
+bah_deccanis_gharbians
+       1
+       0
+       0
+bah_habhsis
+       1
+       0
+       0
+bah_attracting_the_right_people
+       1
+       0
+       0
+bah_bidar_fort
+       1
+       0
+       0
+mor_crisis
+       3
+       0
+       0
+mor_andalucian_moors
+       1
+       0
+       0
+mor_idrisid_cult_soaring
+       1
+       0
+       0
+guj_walls_of_ahmedabad
+       1
+       0
+       0
+guj_champaner_project
+       1
+       0
+       0
+guj_champaner
+       2
+       0
+       0
+guj_merchants_doing_well
+       1
+       0
+       0
+guj_hardline_rel_policy
+       1
+       0
+       0
+per_miniature_school
+       1
+       0
+       0
+per_mushashaiya
+       1
+       0
+       0
+per_safawiya
+       1
+       0
+       0
+per_shia_conversion_policy
+       1
+       0
+       0
+per_pragmatic_ulema
+       1
+       0
+       0
+per_conversion_of_the_clergy
+       1
+       0
+       0
+per_shiite_immigration
+       1
+       0
+       0
+per_najaf
+       2
+       0
+       0
+per_building_isfahan
+       1
+       0
+       0
+per_isfahan_maidan
+       1
+       0
+       0
+mer_vijaya_sthambha
+       1
+       0
+       0
+mer_kumbalgarh
+       1
+       0
+       0
+mer_fortification_effort
+       1
+       0
+       0
+granada_influx
+       1
+       0
+       0
+jnp_jaunpur_qila
+       1
+       0
+       0
+jnp_kabir
+       1
+       0
+       0
+jnp_rajput_recruitment
+       1
+       0
+       0
+jnp_decline_of_delhi
+       1
+       0
+       0
+jnp_pilgrim_tax
+       1
+       0
+       0
+jnp_sadak_e_azam
+       2
+       0
+       0
+mlc_economic_boom
+       1
+       0
+       0
+mlc_islamic_laws_enforced
+       1
+       0
+       0
+mlc_piracy_controlled
+       2
+       0
+       0
+mlc_tun_perak
+       1
+       0
+       0
+ori_jagannath_cult
+       1
+       0
+       0
+ori_no_salt_tax
+       1
+       0
+       0
+ori_popular_unrest
+       1
+       0
+       0
+ori_support_for_pretender
+       2
+       0
+       0
+zan_religious_unrest
+       4
+       0
+       0
+zan_sacked_by_the_zimba
+       2
+       0
+       0
+zan_kilwa_chronicle
+       1
+       0
+       0
+ful_marabout_wars
+       1
+       0
+       0
+ful_fulani_wars
+       1
+       0
+       0
+kbo_gazargamu
+       1
+       0
+       0
+kbo_religious_orthodoxy
+       1
+       0
+       0
+kbo_death_to_kingmakers
+       1
+       0
+       0
+ven_black_gondolas
+       1
+       0
+       0
+ven_venetian_school
+       1
+       0
+       0
+ven_murano_glass_industry
+       2
+       0
+       0
+ven_nobility_bought
+       1
+       0
+       0
+ven_accademia_della_guidecca
+       1
+       0
+       0
+ven_barnabotti
+       1
+       0
+       0
+ven_expanded_council
+       1
+       0
+       0
+ven_ten_restrained
+       1
+       0
+       0
+ven_council_of_ten_strong
+       1
+       0
+       0
+ned_house_of_elzevir
+       1
+       0
+       0
+ned_shipbuilding_industry
+       1
+       0
+       0
+ned_bank_crisis
+       1
+       0
+       0
+ned_pruikentijd
+       1
+       0
+       0
+pol_collegium_hosianum
+       1
+       0
+       0
+hab_ostende_company
+       1
+       0
+       0
+hab_geheime_kabinettskanzlei
+       1
+       0
+       0
+hab_melchior_klesl
+       1
+       0
+       0
+hab_plague_of_vienna
+       1
+       0
+       0
+hab_schwaz_mine
+       1
+       0
+       0
+hab_centralization_of_austria
+       1
+       0
+       0
+mng_st_pauls_college
+       1
+       0
+       0
+mng_ricci_at_court
+       1
+       0
+       0
+mng_christian_minister
+       1
+       0
+       0
+inc_cusco_construction
+       1
+       0
+       0
+inc_cusco_reconstructed
+       1
+       0
+       0
+inc_machu_pichu
+       1
+       0
+       0
+inc_hostage_huacas
+       1
+       0
+       0
+inc_chimu_integration
+       1
+       0
+       0
+inc_no_chimu_soldiers
+       1
+       0
+       0
+inc_smallpox_outbreak
+       4
+       0
+       0
+inc_pacific_expedition
+       1
+       0
+       0
+azt_contribution_to_great_temple
+       1
+       0
+       0
+azt_templo_mayor
+       4
+       0
+       0
+azt_sumptuary_laws
+       1
+       0
+       0
+azt_one_rabit
+       2
+       0
+       0
+azt_recovery
+       1
+       0
+       0
+azt_texcoco_rising
+       1
+       0
+       0
+nezahualcoyotls_laws
+       1
+       0
+       0
+azt_cocoliztli
+       1
+       0
+       0
+ignored_ramadan_timer
+       1
+       0
+       0
+ramadan_timer
+       1
+       0
+       0
+tahtawi_timer
+       1
+       0
+       0
+ignored_hajj_timer
+       1
+       0
+       0
+chisti_timer
+       1
+       0
+       0
+qadiriyya_timer
+       1
+       0
+       0
+mahdi_timer
+       1
+       0
+       0
+ghulam_timer
+       1
+       0
+       0
+suhrawardiyya_timer
+       1
+       0
+       0
+muslim_hajj
+       1
+       0
+       0
+repaired_masjid_al_haram
+       2
+       0
+       0
+mimar_sinan
+       1
+       0
+       0
+banned_alcohol_tobacco_coffee
+       2
+       0
+       0
+tax_alcohol_tobacco_coffee
+       2
+       0
+       0
+celestial_globe
+       1
+       0
+       0
+mian_mir
+       1
+       0
+       0
+reza_abbasi
+       1
+       0
+       0
+baha_al_din_al_amili
+       1
+       0
+       0
+muslim_madrassa
+       1
+       0
+       0
+province_madrassa
+       3
+       0
+       0
+darb_zubaidah
+       1
+       0
+       0
+serafeddin_sabuncuoglu
+       1
+       0
+       0
+al_birjandi
+       1
+       0
+       0
+dhimmi_residence
+       1
+       0
+       0
+true_mahdi
+       1
+       0
+       0
+unified_islam
+       0
+       1
+       0
+hardened_oak
+       1
+       0
+       0
+patriotic_curriculum
+       1
+       0
+       0
+maintenance_curriculum
+       1
+       0
+       0
+galley_veterans
+       1
+       0
+       0
+heavy_ship_veterans
+       1
+       0
+       0
+grieving_sailors
+       1
+       0
+       0
+repairing_decayed_ships
+       1
+       0
+       0
+rotting_wood
+       1
+       0
+       0
+shipyard_fire
+       1
+       0
+       0
+skilled_diplomat
+       1
+       0
+       0
+just_causes
+       1
+       0
+       0
+popular_noble
+       1
+       0
+       0
+vassals_feel_safe
+       1
+       0
+       0
+firm_hand
+       1
+       0
+       0
+emissary_authority
+       1
+       0
+       0
+suspected_diplomats
+       1
+       0
+       0
+slow_negotiations
+       1
+       0
+       0
+hostile_rhetoric
+       1
+       0
+       0
+free_freethinkers
+       1
+       0
+       0
+fair_laws
+       1
+       0
+       0
+ineffective_missionary
+       1
+       0
+       0
+religious_deviants
+       1
+       0
+       0
+gbr_weapons
+       2
+       0
+       0
+cultural_assimilation
+       1
+       0
+       0
+american_academy_of_arts_and_sciences
+       1
+       0
+       0
+indian_trade_and_intercourse_act
+       1
+       0
+       0
+indian_trade
+       2
+       0
+       0
+north_american_fur_trade
+       1
+       0
+       0
+dunlap_broadside
+       1
+       0
+       0
+american_philosophical_society
+       1
+       0
+       0
+massachusetts_humane_society
+       1
+       0
+       0
+committee_of_safety
+       1
+       0
+       0
+great_fire
+       1
+       0
+       0
+first_bank_usa
+       1
+       0
+       0
+us_mint
+       1
+       0
+       0
+cotton_gin
+       3
+       0
+       0
+articles_of_confederation
+       1
+       0
+       0
+new_articles_of_confederation
+       1
+       0
+       0
+protest_manumission_society
+       1
+       0
+       0
+manumission_society
+       8
+       0
+       0
+northwest_ordinance_slavery_prohibited
+       1
+       0
+       0
+usa_slavery
+       1
+       0
+       0
+abolish_slavery
+       1
+       0
+       0
+harsh_laws_usa
+       1
+       0
+       0
+medium_laws_usa
+       1
+       0
+       0
+mild_laws_usa
+       1
+       0
+       0
+easy_laws_usa
+       1
+       0
+       0
+smuggling_of_grain
+       1
+       0
+       0
+smuggling_of_wine
+       1
+       0
+       0
+smuggling_of_wool
+       1
+       0
+       0
+smuggling_of_cloth
+       1
+       0
+       0
+smuggling_of_fish
+       1
+       0
+       0
+smuggling_of_fur
+       1
+       0
+       0
+smuggling_of_salt
+       1
+       0
+       0
+smuggling_of_naval_supplies
+       1
+       0
+       0
+smuggling_of_copper
+       1
+       0
+       0
+smuggling_of_iron
+       1
+       0
+       0
+smuggling_of_ivory
+       1
+       0
+       0
+smuggling_of_tea
+       1
+       0
+       0
+smuggling_of_chinaware
+       1
+       0
+       0
+smuggling_of_spices
+       1
+       0
+       0
+smuggling_of_coffee
+       1
+       0
+       0
+smuggling_of_cotton
+       1
+       0
+       0
+smuggling_of_sugar
+       1
+       0
+       0
+smuggling_of_tobacco
+       1
+       0
+       0
+smuggling_of_cocoa
+       1
+       0
+       0
+the_proclamation_of_year_timer
+       1
+       0
+       0
+restricted_colonial_expansion
+       2
+       0
+       0
+revolutionary_spirit
+       1
+       0
+       0
+penal_colony
+       1
+       0
+       0
+quarantined_influenza
+       2
+       0
+       0
+influenza
+       2
+       0
+       0
+iconoclastic_fury
+       1
+       0
+       0
+ban_fur_trade
+       1
+       0
+       0
+construction_wages
+       1
+       0
+       0
+tax_break_ore
+       1
+       0
+       0
+tax_break_wharf
+       1
+       0
+       0
+banned_tobacco_planting
+       1
+       0
+       0
+foreign_settlers
+       2
+       0
+       0
+militia_raid
+       2
+       0
+       0
+colonial_assembly
+       0
+       1
+       0
+enhanced_colonial_militia
+       1
+       0
+       0
+last_of_the_mahican
+       1
+       0
+       0
+religious_persecution
+       2
+       0
+       0
+foreign_reformed_ministers
+       2
+       0
+       0
+reformed_work_ethic
+       1
+       0
+       0
+banned_musical_instruments_in_church
+       1
+       0
+       0
+learning_from_the_land
+       2
+       0
+       0
+counting_coup
+       1
+       0
+       0
+intercultural_exchange
+       2
+       0
+       0
+restricted_tobacco
+       1
+       0
+       0
+encouraged_tobacco
+       1
+       0
+       0
+great_hunters
+       1
+       0
+       0
+land_shaped_by_fire
+       1
+       0
+       0
+trade_company_annoyed
+       1
+       0
+       0
+trade_company_upset
+       4
+       0
+       0
+trade_company_greatly_upset
+       3
+       0
+       0
+trade_company_boom
+       1
+       0
+       0
+trade_company_trouble
+       1
+       0
+       0
+guru_angad
+       1
+       0
+       0
+guru_amar_das
+       1
+       0
+       0
+guru_ram_das
+       1
+       0
+       0
+guru_arjan
+       1
+       0
+       0
+guru_hargobind
+       1
+       0
+       0
+guru_har_rai
+       1
+       0
+       0
+guru_har_krishan
+       1
+       0
+       0
+guru_tegh_bahadur
+       1
+       0
+       0
+guru_gobind_singh
+       1
+       0
+       0
+saving_the_burning_world
+       0
+       1
+       0
+refused_aid_traders
+       1
+       0
+       0
+reckless_privateer
+       1
+       0
+       0
+curtailed_privateer
+       1
+       0
+       0
+rogue_privateer
+       1
+       0
+       0
+employed_pirates
+       2
+       0
+       0
+supported_republic_feud
+       1
+       0
+       0
+denied_knowledge_privateer
+       1
+       0
+       0
+merchants_prepare_war
+       1
+       0
+       0
+merchants_ignored
+       1
+       0
+       0
+refused_food_import
+       1
+       0
+       0
+buying_american
+       1
+       0
+       0
+importing_cocoa
+       1
+       0
+       0
+importing_coffee
+       1
+       0
+       0
+importing_tea
+       1
+       0
+       0
+shiva_srishti
+       1
+       0
+       0
+shiva_tirodhana
+       1
+       0
+       0
+shiva_anugraha
+       1
+       0
+       0
+shakti_parvati
+       1
+       0
+       0
+shakti_prakrti
+       1
+       0
+       0
+shakti_kali
+       1
+       0
+       0
+shakti_tara
+       1
+       0
+       0
+vishnu_lakshmi
+       1
+       0
+       0
+vishnu_brahma
+       1
+       0
+       0
+vishnu_celibacy
+       2
+       0
+       0
+hindu_withdrawn_contemplation
+      19
+       0
+       0
+hindu_withdrawn_meditation
+       4
+       0
+       0
+hindu_ganges_pilgrimage
+       1
+       0
+       0
+jnana
+      18
+       0
+       0
+hindu_shaiva_
+       5
+       0
+       0
+hindu_shaiva_
+       5
+       0
+       0
+hindu_shaiva_
+       5
+       0
+       0
+hindu_shaiva_
+       5
+       0
+       0
+hindu_shaiva_
+       5
+       0
+       0
+hindu_shakta_
+       9
+       0
+       0
+hindu_shakta_
+       9
+       0
+       0
+hindu_shakta_
+       9
+       0
+       0
+hindu_shakta_
+       9
+       0
+       0
+hindu_shakta_
+       9
+       0
+       0
+hindu_shakta_
+       9
+       0
+       0
+hindu_shakta_
+       9
+       0
+       0
+hindu_vaishnava_
+       8
+       0
+       0
+hindu_vaishnava_
+       8
+       0
+       0
+hindu_vaishnava_
+       8
+       0
+       0
+hindu_vaishnava_
+       8
+       0
+       0
+hindu_vaishnava_
+       8
+       0
+       0
+hindu_vaishnava_
+       8
+       0
+       0
+hindu_vaishnava_
+       8
+       0
+       0
+hindu_vaishnava_
+       8
+       0
+       0
+hindu_ganesha
+       1
+       0
+       0
+hindu_ganga
+       1
+       0
+       0
+hindu_surya
+       1
+       0
+       0
+sermons_for_princes
+       1
+       0
+       0
+no_sermons_for_princes
+       1
+       0
+       0
+angered_traders
+       1
+       0
+       0
+no_taxes_for_tyrants
+       1
+       0
+       0
+act_of_seclusion
+       1
+       0
+       0
+distrust_among_nobles
+       1
+       0
+       0
+orangists_rally_against_rival
+       1
+       0
+       0
+supported_orangists_in_war
+       2
+       0
+       0
+local_regenten_upset
+       3
+       0
+       0
+local_nobles_upset
+       3
+       0
+       0
+strong_guild
+       2
+       0
+       0
+free_trade_of_goods
+       1
+       0
+       0
+influential_guild_members
+       1
+       0
+       0
+influential_nobles
+       1
+       0
+       0
+foreign_guild_infiltrated
+       1
+       0
+       0
+guilds_compromised
+       1
+       0
+       0
+suspended_diplomat
+       1
+       0
+       0
+paranoid_recruitment
+       1
+       0
+       0
+trade_with_neighbor
+       1
+       0
+       0
+guilds_cooperating
+       1
+       0
+       0
+traders_look_abroad
+       1
+       0
+       0
+aristocracy_united
+       1
+       0
+       0
+guilds_obstruct_trade
+       1
+       0
+       0
+converted_monarch
+       1
+       0
+       0
+local_popularity
+       1
+       0
+       0
+golden_liberty
+       1
+       0
+       0
+famine_refused_aid
+       1
+       0
+       0
+plundered_in_war
+       4
+       0
+       0
+plague_at_siege
+       1
+       0
+       0
+defender_evacuated_siege
+       1
+       0
+       0
+attacker_evacuated_siege
+       1
+       0
+       0
+lingering_plague
+       2
+       0
+       0
+terrorized_by_mercenaries
+       1
+       0
+       0
+curtailed_mercenaries
+       1
+       0
+       0
+post_war_tax_relief
+       1
+       0
+       0
+decreased_drafting
+       1
+       0
+       0
+suffering_bereaved
+       1
+       0
+       0
+local_witch_hunts
+       1
+       0
+       0
+nationwide_witch_hunts
+       1
+       0
+       0
+forbade_witch_hunts
+       1
+       0
+       0
+loyal_unbelievers
+       1
+       0
+       0
+disloyal_unbelievers
+       1
+       0
+       0
+abadoned_religious_rebels
+       1
+       0
+       0
+animist_syncretism
+       5
+       0
+       0
+dogmatic_preacher
+       2
+       0
+       0
+buying_firearms_from_neighbor
+       1
+       0
+       0
+refused_slave_trade_with_europeans
+       1
+       0
+       0
+slave_trade_with_europeans
+       1
+       0
+       0
+raided_by_cavalry
+       1
+       0
+       0
+new_dyeing_methods
+       1
+       0
+       0
+used_to_tropical
+       1
+       0
+       0
+mal_portuguese_traders
+       1
+       0
+       0
+mal_portuguese_meddling
+       1
+       0
+       0
+mal_wangaras_upset
+       1
+       0
+       0
+mal_islamisation_of_the_aristocracy
+       1
+       0
+       0
+mal_fulani_migration
+       1
+       0
+       0
+mal_unsafe_roads
+       3
+       0
+       0
+bng_nabibangsha
+       1
+       0
+       0
+bng_mosque_city_of_bagerhat
+       1
+       0
+       0
+bng_delta_reclaimed
+       1
+       0
+       0
+bng_delhian_refugees
+       1
+       0
+       0
+bng_port_of_calcutta
+       1
+       0
+       0
+mca_zaque_capital
+       1
+       0
+       0
+mca_zipa_capital
+       1
+       0
+       0
+mca_iraca_intervention
+       1
+       0
+       0
+mca_salt_mines_of_zipaquira
+       2
+       0
+       0
+tupi_hostility
+       2
+       0
+       0
+tupi_caramuru_trade
+       2
+       0
+       0
+garifuna_migration
+       1
+       0
+       0
+hub_of_orinoco_trade
+       1
+       0
+       0
+arw_preparing_defences
+       1
+       0
+       0
+unaided_during_blockade
+       1
+       0
+       0
+scottish_mercenaries
+       3
+       0
+       0
+huguenot_stronghold
+       1
+       0
+       0
+jesuit_ruler
+       1
+       0
+       0
+nobles_fled
+       1
+       0
+       0
+golden_age_transylvania
+       1
+       0
+       0
+god_is_spanish
+       1
+       0
+       0
+god_wants_peace
+       1
+       0
+       0
+in_league_for_land
+       1
+       0
+       0
+in_league_for_faith
+       1
+       0
+       0
+distrusts_heathens
+       1
+       0
+       0
+cardinal_in_administration
+       1
+       0
+       0
+blackmailing_cardinal
+       1
+       0
+       0
+may_popol_vuh
+       1
+       0
+       0
+tar_tzintzuntzan
+       1
+       0
+       0
+tar_princess_erendira
+       1
+       0
+       0
+gua_bandeirantes
+       1
+       0
+       0
+gua_yerba_mate
+       2
+       0
+       0
+gua_yerba_mate_production
+       1
+       0
+       0
+chm_great_artisans
+       1
+       0
+       0
+ignored_unrest
+       1
+       0
+       0
+lower_taxes_unrest
+       1
+       0
+       0
+drunken_explorer
+       1
+       0
+       0
+sce_search_eldorado
+       1
+       0
+       0
+sce_search_fountainofyouth
+       1
+       0
+       0
+sce_search_cibola
+       1
+       0
+       0
+sce_search_cityofcaesars
+       1
+       0
+       0
+sce_search_sierradelaplata
+       1
+       0
+       0
+sce_search_norumbega
+       1
+       0
+       0
+sce_search_saguenay
+       1
+       0
+       0
+sce_search_quivira
+       1
+       0
+       0
+sce_lake_guatavita
+       1
+       0
+       0
+sce_life_water
+       1
+       0
+       0
+sce_cibola_silver
+       1
+       0
+       0
+sce_sierradelaplata_quartz
+       1
+       0
+       0
+sce_citycaesars_quartz
+       1
+       0
+       0
+sce_golden_cups
+       1
+       0
+       0
+sce_norumbega_abandoned
+       1
+       0
+       0
+sce_saguenay_abandoned
+       1
+       0
+       0
+sce_el_dorado
+       1
+       0
+       0
+sce_fountain_youth
+       1
+       0
+       0
+sce_cibola_gold
+       1
+       0
+       0
+sce_city_of_caesars
+       1
+       0
+       0
+sce_sierra_dela_plata
+       1
+       0
+       0
+sce_norumbega
+       2
+       0
+       0
+sce_saguenay
+       2
+       0
+       0
+sce_quivira
+       1
+       0
+       0
+sce_sacagawea
+       1
+       0
+       0
+sce_lost_woods
+       3
+       0
+       0
+sce_lost_woods_tooltip
+       1
+       0
+       0
+sce_shortcut
+       3
+       0
+       0
+sce_shortcut_tooltip
+       1
+       0
+       0
+sce_jeanne_baret
+       1
+       0
+       0
+sce_poison_rock
+       3
+       0
+       0
+sce_poison_rock_tooltip
+       1
+       0
+       0
+sce_cart_peddler_stopped
+       1
+       0
+       0
+sce_cart_peddler_killed
+       1
+       0
+       0
+sce_new_domains
+       1
+       0
+       0
+sce_mounds
+       2
+       0
+       0
+sce_monster_lake
+       2
+       0
+       0
+sce_mutiny_timer
+       1
+       0
+       0
+sce_estevanico_timer
+       1
+       0
+       0
+sce_poison_rock_timer
+       1
+       0
+       0
+sce_lost_woods_timer
+       1
+       0
+       0
+sce_shortcut_timer
+       1
+       0
+       0
+sce_mounds_timer
+       1
+       0
+       0
+sce_monster_lake_timer
+       1
+       0
+       0
+maya_blodletting
+       1
+       0
+       0
+maya_chaos_creation
+       1
+       0
+       0
+maya_pilgrimages
+       1
+       0
+       0
+maya_embers
+       2
+       0
+       0
+maya_ek_chuaj
+       1
+       0
+       0
+maya_creation_cycle_timer
+       1
+       0
+       0
+maya_hero_twins_timer
+       1
+       0
+       0
+nahuatl_sorcerer
+       4
+       0
+       0
+nahuatl_angered_pochtecas
+       2
+       0
+       0
+nahuatl_allowed_spying_pochtecas
+       1
+       0
+       0
+nahuatl_grace_of_xipe_totec
+       1
+       0
+       0
+nahuatl_grace_of_huitzilopochtli
+       1
+       0
+       0
+nahuatl_grace_of_quetzalcoatl
+       1
+       0
+       0
+nahuatl_grace_of_tezcatlipoca
+       1
+       0
+       0
+nahuatl_earth_quake_devestation
+       4
+       0
+       0
+inti_yana_lord
+       1
+       0
+       0
+inti_major_huaca_temple
+       1
+       0
+       0
+inti_arranged_marriages
+       1
+       0
+       0
+inti_low_fertility
+       1
+       0
+       0
+inti_shrine_of_virocacha
+       1
+       0
+       0
+inti_royal_guard
+       1
+       0
+       0
+inti_alarmed_nobles
+       1
+       0
+       0
+great_inti_festivals
+       0
+       1
+       0
+nahuatl_sacrificial_stones
+       0
+       1
+       0
+codification_of_mayan_faith
+       0
+       1
+       0
+reunification_with_parsees
+       0
+       1
+       0
+royal_fires_modifier
+       0
+       1
+       0
+rites_of_admission_modifier
+       0
+       1
+       0
+black_shamanism_modifier
+       0
+       1
+       0
+yellow_shamanism_modifier
+       0
+       1
+       0
+ritual_education_modifier
+       0
+       1
+       0
+wandering_shamans_modifier
+       0
+       1
+       0
+purification_movement_modifier
+       0
+       1
+       0
+spreading_norse_rituals
+       0
+       1
+       0
+restricted_offices
+       0
+       1
+       0
+only_noble_officers
+       1
+       0
+       0
+overzealous_qazi
+       1
+       0
+       0
+repression_of_influential_dhimmi
+       1
+       0
+       0
+heathen_taxes_abolished
+       1
+       0
+       0
+dhimmi_administrators
+       1
+       0
+       0
+elaborate_court_ceremonies
+       1
+       0
+       0
+disloyal_noble_officers
+       1
+       0
+       0
+noble_minister
+       1
+       0
+       0
+burgher_minister
+       1
+       0
+       0
+church_minister
+       1
+       0
+       0
+dhimmi_minister
+       1
+       0
+       0
+nobility_sumptuary_restrictions
+       1
+       0
+       0
+burgher_favorable_trade_laws
+       1
+       0
+       0
+burgher_unfavorable_trade_laws
+       1
+       0
+       0
+unsanitary_suburbs
+       1
+       0
+       0
+new_men
+       1
+       0
+       0
+conflict_within_city
+       1
+       0
+       0
+thankful_guilds
+       1
+       0
+       0
+held_back_commoners
+       1
+       0
+       0
+religious_court_life
+       1
+       0
+       0
+missionary_syncretism
+       1
+       0
+       0
+campaign_against_syncretism
+       1
+       0
+       0
+cossack_settlers
+       1
+       0
+       0
+no_tribal_leaders
+       1
+       0
+       0
+wih_aphra_behn
+       1
+       0
+       0
+wih_eliza_lucas
+       1
+       0
+       0
+wih_juanainesdelacruz
+       1
+       0
+       0
+wih_jane_austen
+       1
+       0
+       0
+wih_louise_pru
+       1
+       0
+       0
+wih_abigail_adams
+       1
+       0
+       0
+wih_meera_bai
+       1
+       0
+       0
+wih_hoxuanhuong
+       1
+       0
+       0
+wih_kateritekakwitha
+       1
+       0
+       0
+wih_mariasibyllamerian
+       1
+       0
+       0
+wih_kenausimonsdochterhasselaer
+       1
+       0
+       0
+wih_elenacornaropiscopia
+       1
+       0
+       0
+wih_yekaterinaromanovnavorontsovadashkova
+       1
+       0
+       0
+wih_mariecrous
+       1
+       0
+       0
+wih_ohatsu
+       1
+       0
+       0
+wih_wangzhenyi
+       1
+       0
+       0
+wih_suriyothai
+       1
+       0
+       0
+wih_olympedegouges
+       1
+       0
+       0
+wih_izumonookuni
+       1
+       0
+       0
+wih_marthawashington
+       1
+       0
+       0
+wih_elizabethwilbraham
+       1
+       0
+       0
+wih_annabunina
+       1
+       0
+       0
+wih_nanyehi
+       1
+       0
+       0
+wih_vendelaskytte
+       1
+       0
+       0
+wih_mumtazmahal
+       1
+       0
+       0
+wih_pokou
+       1
+       0
+       0
+wih_mariamuzzamani
+       1
+       0
+       0
+wih_heonanseolheon
+       1
+       0
+       0
+pap_swiss_guard
+       2
+       0
+       0
+mil_vatican_library
+       1
+       0
+       0
+dip_vatican_library
+       1
+       0
+       0
+adm_vatican_library
+       1
+       0
+       0
+pap_sistine_chapel
+       1
+       0
+       0
+pap_sistinechapel_botticelli
+       1
+       0
+       0
+pap_sistinechapel_ghirlandaio
+       1
+       0
+       0
+pap_sistinechapel_perugino
+       1
+       0
+       0
+pap_sistinechapel_michelangelo
+       1
+       0
+       0
+pap_sistinechapel_decorated
+       1
+       0
+       0
+pap_indulgences
+       1
+       0
+       0
+pap_simony
+       1
+       0
+       0
+pap_veneration_relics
+       1
+       0
+       0
+pap_condemn_slavery
+       1
+       0
+       0
+pap_swiss_guard_timer
+       1
+       0
+       0
+pap_passetto_di_borgo_timer
+       1
+       0
+       0
+pap_rome_loot_timer
+       1
+       0
+       0
+dev_general_hospital
+       1
+       0
+       0
+dev_fort_maintenance
+       1
+       0
+       0
+dev_modern_forts
+       1
+       0
+       0
+dev_heretical_expulsion
+       1
+       0
+       0
+dev_jubilee
+       1
+       0
+       0
+dev_confiscated_reformed_church
+       1
+       0
+       0
+dev_educated_women
+       1
+       0
+       0
+dev_religious_cleansing
+       1
+       0
+       0
+dev_rafida
+       1
+       0
+       0
+dev_nasibi
+       1
+       0
+       0
+dev_idolatry_abolished
+       1
+       0
+       0
+dev_focus_taxes
+       1
+       0
+       0
+dev_focus_agriculture
+       1
+       0
+       0
+dev_balance_tax_agriculture
+       1
+       0
+       0
+dev_hadith_madrasa
+       1
+       0
+       0
+dev_fiqah_madrasa
+       1
+       0
+       0
+dev_hadith_fiqah_madrasa
+       1
+       0
+       0
+dev_mutaween
+       1
+       0
+       0
+dev_bonfire_vanities_timer
+       1
+       0
+       0
+add_unrest_
+      51
+       0
+       0
+add_unrest_
+      51
+       0
+       0
+remove_unrest_
+       5
+       0
+       0
+indian_religious_tensions
+       1
+       0
+       0
+valladolid_sepulveda
+       2
+       0
+       0
+valladolid_sepulveda_motherland
+       1
+       0
+       0
+valladolid_las_casas
+       1
+       0
+       0
+alhambra_decree
+       1
+       0
+       0
+unification_of_spain
+       1
+       0
+       0
+cortes_defended
+       1
+       0
+       0
+promote_regional_languages
+       1
+       0
+       0
+castilian_grammar
+       1
+       0
+       0
+solo_madrid_es_corte
+       1
+       0
+       0
+supressing_spanish_protestantism
+       1
+       0
+       0
+spanish_bible_translation
+       1
+       0
+       0
+spa_new_colonial_reforms
+       2
+       0
+       0
+spa_new_colonial_reforms_subject
+       1
+       0
+       0
+jesuits_expelled
+       1
+       0
+       0
+harbouring_reformer
+       1
+       0
+       0
+catholics_in_hiding
+       1
+       0
+       0
+rumored_crypto_catholics
+       1
+       0
+       0
+millenarianism
+       2
+       0
+       0
+fear_of_god
+       1
+       0
+       0
+prot_economic_downturn
+       1
+       0
+       0
+stricter_usury_regulations
+       1
+       0
+       0
+prot_peace
+       1
+       0
+       0
+prot_wars
+       1
+       0
+       0
+prot_purity_of_faith
+       1
+       0
+       0
+prot_christian_unity
+       1
+       0
+       0
+catholic_zealot
+       1
+       0
+       0
+tolerant_monarch
+       1
+       0
+       0
+catholic_stronghold
+       1
+       0
+       0
+plagued_concience
+       1
+       0
+       0
+phillipists
+       1
+       0
+       0
+protestant_influx
+       2
+       0
+       0
+protestant_refugees
+       5
+       0
+       0
+protestant_refugees_to_the_colonies
+       1
+       0
+       0
+controversy_over_official_bible
+       1
+       0
+       0
+new_bible_translation
+       1
+       0
+       0
+protestant_bigamy
+       2
+       0
+       0
+mosaic_law_accusations
+       4
+       0
+       0
+stern_theologian_education
+       1
+       0
+       0
+stern_theologian_mission
+       1
+       0
+       0
+stern_theologian_leader
+       1
+       0
+       0
+spread_of_pietism
+       1
+       0
+       0
+iconoclast_riot
+       1
+       0
+       0
+colonial_religious_tensions
+       3
+       0
+       0
+loyalist_preacher
+       1
+       0
+       0
+patriot_preacher
+       1
+       0
+       0
+prot_stopped_witch_trials
+       1
+       0
+       0
+prot_witch_trials
+       2
+       0
+       0
+escalated_witch_trials
+       1
+       0
+       0
+dyn_newborn_daughter
+       1
+       0
+       0
+withdrawn_parliamentary_seat
+       2
+       0
+       0
+rotten_borough
+       2
+       0
+       0
+parliamentary_scandal
+       1
+       0
+       0
+demands_representation
+       4
+       0
+       0
+yearning_for_representation
+       1
+       0
+       0
+si_state_smuggling
+       1
+       0
+       0
+si_scutage_unwilling_vassals
+       1
+       0
+       0
+si_enchanced_production
+       1
+       0
+       0
+si_better_exports
+       1
+       0
+       0
+loyal_subjects
+       1
+       0
+       0
+disloyal_subjects
+       1
+       0
+       0
+si_incompetent_ruler_timer
+       1
+       0
+       0
+si_competent_ruler_timer
+       1
+       0
+       0
+si_squandering_loyalists_timer
+       1
+       0
+       0
+si_liberty_desire_timer
+       1
+       0
+       0
+si_bankrupt_timer
+       1
+       0
+       0
+strict_punishment_of_monks
+       1
+       0
+       0
+cleansing_of_monasteries
+       1
+       0
+       0
+lacking_monastic_discipline
+       1
+       0
+       0
+monastaries_blooming
+       1
+       0
+       0
+wedge_throw
+       1
+       0
+       0
+poor_rice_harvests
+       1
+       0
+       0
+forced_labor
+       1
+       0
+       0
+human_sacrifice
+       1
+       0
+       0
+grain_for_the_poor
+       1
+       0
+       0
+grain_reserves
+       1
+       0
+       0
+political_rival_crushed
+       1
+       0
+       0
+hostile_monastery
+       1
+       0
+       0
+social_bandit
+       3
+       0
+       0
+social_bandit_local_search
+       1
+       0
+       0
+social_bandit_myth
+       1
+       0
+       0
+bandit_leader_returned
+       1
+       0
+       0
+upset_theravada_monks
+       1
+       0
+       0
+upset_theravada_nobles
+       1
+       0
+       0
+pleased_theravada_nobles
+       1
+       0
+       0
+pleased_theravada_monks
+       1
+       0
+       0
+regulated_monasteries
+       0
+       1
+       0
+vajrayana_lama
+       2
+       0
+       0
+influx_of_tibetan_monks
+       1
+       0
+       0
+vajrayana_great_monastery
+       1
+       0
+       0
+destruction_of_idols
+       1
+       0
+       0
+powerful_hostile_monastery
+       1
+       0
+       0
+powerful_benevolent_monastery
+       1
+       0
+       0
+improvement_program
+       1
+       0
+       0
+hampered_growth
+       1
+       0
+       0
+supporting_local_monastic_traditions
+       1
+       0
+       0
+buddhist_nepotism
+       1
+       0
+       0
+governor_replaced
+       1
+       0
+       0
+monks_from_ceylon
+       1
+       0
+       0
+fc_hre_privileges
+       2
+       0
+       0
+fc_city_league
+       2
+       0
+       0
+fc_league_reforms
+       1
+       0
+       0
+fc_treatyconference_timer
+       1
+       0
+       0
+fc_league_timer
+       1
+       0
+       0
+fc_league_reforms_timer
+       1
+       0
+       0
+tengri_insincere_leadership
+       1
+       0
+       0
+tengri_abandoning_the_old_ways
+       1
+       0
+       0
+tengri_clergy_conflicts
+       1
+       0
+       0
+tengri_settled_warriors
+       1
+       0
+       0
+tengri_local_plight
+       1
+       0
+       0
+tengri_shamans_spurned
+       1
+       0
+       0
+tengri_religious_influx
+       1
+       0
+       0
+tengri_ibadi_scholars
+       1
+       0
+       0
+tengri_sufi_teacher
+       1
+       0
+       0
+tengri_qadi
+       1
+       0
+       0
+tengri_stood_up_for_yassa
+       1
+       0
+       0
+tengri_devout_muslim
+       1
+       0
+       0
+tengri_ruler_questioned
+       1
+       0
+       0
+tengri_jihad
+       1
+       0
+       0
+tengri_strengthened_local_clans
+       1
+       0
+       0
+tengri_growing_cities
+       1
+       0
+       0
+tengri_influx_of_monks
+       1
+       0
+       0
+tengri_monks_in_capital
+       1
+       0
+       0
+tengri_religious_pilgrimages
+       1
+       0
+       0
+tengri_confucian_administrators
+       1
+       0
+       0
+tengri_confucian_nobles
+       1
+       0
+       0
+tengri_traditionalists_strengthened
+       1
+       0
+       0
+tengri_confucian_titles
+       1
+       0
+       0
+tengri_traditional_elites_alienated
+       1
+       0
+       0
+tengri_confucian_elites_alienated
+       1
+       0
+       0
+tengri_christian_mission
+       2
+       0
+       0
+tengri_personal_confessor
+       1
+       0
+       0
+tengri_devout_christian_ruler
+       1
+       0
+       0
+tengri_unchristian_values
+       1
+       0
+       0
+tengri_hindu_syncretism
+       1
+       0
+       0
+hindufication
+       1
+       0
+       0
+tengri_hindu_conflict
+       1
+       0
+       0
+tengri_support_of_shamans
+       1
+       0
+       0
+tengri_support_of_brahmins
+       1
+       0
+       0
+tengri_bow_and_arrow_defended
+       1
+       0
+       0
+tengri_japanese_swordsmithing
+       1
+       0
+       0
+tengri_tea_ceremony
+       1
+       0
+       0
+spread_of_tengri_tea_ceremony
+       1
+       0
+       0
+tengri_monastic_order
+       1
+       0
+       0
+tengri_pali_legal_traditions
+       1
+       0
+       0
+tengri_shiite_immigration
+       1
+       0
+       0
+tengri_shiite_settled_in_capital
+       1
+       0
+       0
+support_of_the_khojas
+       2
+       0
+       0
+zoroastrian_traders
+       1
+       0
+       0
+tengri_animist_pantheon
+       1
+       0
+       0
+controlled_the_pope_mission
+       0
+       0
+       1
+achieved_religious_unity_mission
+       0
+       0
+       2
+restored_holy_see_mission
+       0
+       0
+       1
+solidified_papal_relations_modifier
+       0
+       0
+       1
+force_converted_province_mission
+       0
+       0
+       3
+force_converted_country_mission
+       0
+       0
+       1
+naval_enthusiasm_mission
+       0
+       0
+       3
+thriving_ship_building_sector
+       0
+       0
+       1
+thriving_arms_industry
+       0
+       0
+       2
+liberator_of_mecca
+       0
+       0
+       1
+liberator_of_jerusalem
+       0
+       0
+       1
+east_india_trade_rush
+       0
+       0
+      21
+faster_integration
+       0
+       0
+      22
+military_victory
+       0
+       0
+      26
+military_vassalization
+       0
+       0
+      14
+protected_italian_interests
+       0
+       0
+       1
+italian_ambition_modifier
+       0
+       0
+       3
+expansion_of_the_shipbuilding_industry
+       0
+       0
+       2
+growing_chinaware_trade
+       0
+       0
+       1
+growing_spice_trade
+       0
+       0
+       1
+merchant_society
+       0
+       0
+       1
+impressed_financial_sector
+       0
+       0
+       1
+national_recovery
+       0
+       0
+       1
+recovering_economy
+       0
+       0
+       1
+foreign_contacts
+       0
+       0
+       7
+converting_the_pagans
+       0
+       0
+       1
+local_colonial_expansion
+       0
+       0
+       1
+legitimacy_defended
+       0
+       0
+       1
+succesful_bid_for_imperial_crown
+       0
+       0
+       2
+baltic_ambition
+       0
+       0
+      12
+mediterranean_ambition
+       0
+       0
+      16
+indian_ocean_ambition
+       0
+       0
+       4
+black_sea_ambition
+       0
+       0
+       4
+indian_ambition
+       0
+       0
+       7
+british_ambition
+       0
+       0
+       2
+completing_the_reconquista
+       0
+       0
+       2
+polish_partitions
+       0
+       0
+       3
+emperor_friendly_with_elector
+       0
+       0
+       1
+bavarian_ambition
+       0
+       0
+       4
+byzantium_resurgent
+       0
+       0
+       7
+prussian_ambition
+       0
+       0
+       6
+defended_the_lowlands
+       0
+       0
+       1
+defeated_byzantine_empire
+       0
+       0
+       2
+austria_reunited
+       0
+       0
+       1
+drove_back_the_turk
+       0
+       0
+       7
+protected_austrian_low_countries
+       0
+       0
+       1
+fought_back_the_hungarians
+       0
+       0
+       1
+uniter_of_the_manchus
+       0
+       0
+       1
+english_out_of_france
+       0
+       0
+       1
+french_ambition
+       0
+       0
+       3
+defended_denmark
+       0
+       0
+       1
+korean_frontier
+       0
+       0
+       2
+catholic_italy_modifier
+       0
+       0
+       1
+venetian_terra_firma
+       0
+       0
+       3
+defended_against_shybanids
+       0
+       0
+       1
+afghanistan_secured_mug
+       0
+       0
+       1
+conquest_of_persia
+       0
+       0
+       1
+controlling_the_steppes
+       0
+       0
+       6
+lithuanian_russian_ambition
+       0
+       0
+       2
+polish_ambition
+       0
+       0
+       9
+kapilendras_ambition
+       0
+       0
+       3
+the_proper_old_ways
+       1
+       0
+       0
+eth_mil_aid_from_portugal
+       1
+       0
+       0
+incompetent_fabrication
+       1
+       0
+       0
+brilliant_diplomat
+       1
+       0
+       0
+eng_tolerates_lollards
+       1
+       0
+       0
+eng_opposes_lollards
+       1
+       0
+       0
+the_proper_old_ways
+       1
+       0
+       0
+eth_mil_aid_from_portugal
+       1
+       0
+       0
+incompetent_fabrication
+       1
+       0
+       0
+brilliant_diplomat
+       1
+       0
+       0
+eng_tolerates_lollards
+       1
+       0
+       0
+eng_opposes_lollards
+       1
+       0
+       0
+eng_court_star_chamber
+       1
+       0
+       0
+annexers_legacy
+       1
+       0
+       0
+improved_dip_reputation
+       1
+       0
+       0
+reduced_dip_reputation
+       1
+       0
+       0
+dip_jusitified_demands
+       1
+       0
+       0
+tolerant_society
+       1
+       0
+       0
+intolerant_society
+       1
+       0
+       0
+religious_intolerance
+       3
+       0
+       0
+religious_tolerance
+       4
+       0
+       0
+forced_conversion
+       2
+       0
+       0
+decreased_morale
+       2
+       0
+       0
+domestic_improvements
+       1
+       0
+       0
+enforce_serfdom
+       3
+       0
+       0
+restrict_serfdom
+       3
+       0
+       0
+disarmament
+       1
+       0
+       0
+support_monarch
+       2
+       0
+       0
+oppose_monarch
+       2
+       0
+       0
+alleviate_population
+       1
+       0
+       0
+starvation
+       1
+       0
+       0
+suppress_free_thinkers
+       1
+       0
+       0
+bureaucratic_expansion
+       1
+       0
+       0
+bureaucratic_reduction
+       1
+       0
+       0
+fight_inflation
+       1
+       0
+       0
+mint_money
+       1
+       0
+       0
+financial_disaster
+       1
+       0
+       0
+encomienda_system
+       1
+       0
+       0
+support_troops
+       1
+       0
+       0
+obsolete_forces
+       1
+       0
+       0
+isolate_rebels
+       1
+       0
+       0
+suppress_minority
+       1
+       0
+       0
+army_reform
+       1
+       0
+       0
+naval_reform
+       1
+       0
+       0
+military_reform
+       1
+       0
+       0
+competitive_advantage
+       1
+       0
+       0
+cooperation_with_merchant_class
+       1
+       0
+       0
+trade_collapse
+       1
+       0
+       0
+diplomatic_negotiation
+       1
+       0
+       0
+disregard_natives
+       1
+       0
+       0
+aid_natives
+       1
+       0
+       0
+expand_colonial_territory
+       1
+       0
+       0
+restrict_colonial_expansion
+       1
+       0
+       0
+export_restrictions
+       1
+       0
+       0
+military_reinforcement
+       1
+       0
+       0
+heresy
+       3
+       0
+       0
+military_funding
+       1
+       0
+       0
+military_funding
+       1
+       0
+       0
+disorder
+       1
+       0
+       0
+cut_military_investments
+       1
+       0
+       0
+cut_trade_investments
+       1
+       0
+       0
+cut_government_investments
+       1
+       0
+       0
+debt_funding_plan
+       1
+       0
+       0
+tax_reform
+       1
+       0
+       0
+naval_improvements
+       1
+       0
+       0
+naval_disarmament
+       1
+       0
+       0
+church_functions
+       1
+       0
+       0
+reduced_taxes_off
+       1
+       0
+       0
+obscurantism
+       1
+       0
+       0
+exceptional_year
+       1
+       0
+       0
+monetary_benefits
+       1
+       0
+       0
+plague
+       3
+       0
+       0
+severe_plague_local
+       1
+       0
+       0
+contained_plague_local
+       1
+       0
+       0
+trade_disaster
+       1
+       0
+       0
+medical_evolution
+       1
+       0
+       0
+trade_income_increase
+       1
+       0
+       0
+tax_income_loss
+       1
+       0
+       0
+tax_income_boost
+       1
+       0
+       0
+scientific_evolution
+       1
+       0
+       0
+land_investment
+       1
+       0
+       0
+naval_investment
+       1
+       0
+       0
+trading_investment
+       1
+       0
+       0
+government_investment
+       1
+       0
+       0
+reduced_stability_cost
+       1
+       0
+       0
+colonial_tensions
+       1
+       0
+       0
+morale_boost
+       1
+       0
+       0
+deserters
+       1
+       0
+       0
+theology
+       1
+       0
+       0
+colonial_enthusiasm
+       2
+       0
+      10
+colonial
+       8
+       1
+      10
+spy
+       2
+       0
+       0
+faster_ships
+       1
+       0
+       0
+slower_ships
+       1
+       0
+       0
+naval_developments
+       1
+       0
+       0
+naval_hubris
+       1
+       0
+       0
+blockade_tactics
+       1
+       0
+       0
+slipping_standards
+       1
+       0
+       0
+naval_technical_developments
+       1
+       0
+       0
+concerned_shipwrights
+       1
+       0
+       0
+recruits_flock
+       1
+       0
+       0
+resist_conscription
+       1
+       0
+       0
+grander_army
+       1
+       0
+       0
+less_grand_army
+       1
+       0
+       0
+military_improvements
+       1
+       0
+       0
+military_complacency
+       1
+       0
+       0
+adventuring_merchants
+       1
+       0
+       0
+poor_merchants
+       1
+       0
+       0
+out_of_date_commerce
+       1
+       0
+       0
+excellent_administration
+       1
+       0
+       0
+corrupt_viceroys
+       1
+       0
+       0
+production_improvements
+       1
+       0
+       0
+production_stifled
+       1
+       0
+       0
+successful_bureaucracy
+       1
+       0
+       0
+hidden_agents
+       1
+       0
+       0
+better_rebel_support
+       1
+       0
+       0
+extra_heir
+       1
+       0
+       0
+focus_on_covert_actions
+       1
+       0
+       0
+corrupt_bureaucracy
+       1
+       0
+       0
+trade_policy_working
+       1
+       0
+       0
+trade_policy_failing
+       1
+       0
+       0
+enhanced_spies
+       1
+       0
+       0
+spy_defections
+       1
+       0
+       0
+cabinet_dynamism
+       1
+       0
+       0
+government_corruption
+       1
+       0
+       0
+minority_prospers
+       1
+       0
+       0
+missionary_zeal
+       1
+       0
+       0
+mil_boost
+       1
+       0
+       0
+dip_boost
+       1
+       0
+       0
+adm_boost
+       1
+       0
+       0
+revolution_suffers
+       1
+       0
+       0
+serf_exploitation
+       1
+       0
+       0
+happy_people
+       1
+       0
+       0
+land_focus
+       1
+       0
+       0
+naval_focus
+       1
+       0
+       0
+lack_of_protection
+       1
+       0
+       0
+innovation_wave
+       1
+       0
+       0
+centralised_state
+       1
+       0
+       0
+unhappy_merchants
+       1
+       0
+       0
+excellent_vintage
+       1
+       0
+       0
+poor_uniforms
+       1
+       0
+       0
+salt_crisis
+       1
+       0
+       0
+good_supplies
+       1
+       0
+       0
+poor_copper
+       1
+       0
+       0
+poor_iron
+       1
+       0
+       0
+storms
+       1
+       0
+       0
+harvest_fails
+       1
+       0
+       0
+tribal_succession_crisis
+       1
+       0
+       0
+the_statue_in_restraint_of_appeals
+       0
+       1
+       0
+the_abolish_slavery_act
+       1
+       1
+       0
+condemn_western_influences
+       0
+       1
+       0
+revocation_of_restraint_of_appeals
+       0
+       1
+       0
+hire_privateers
+       0
+       1
+       0
+counter_reformation
+       0
+       1
+       0
+russian_patriarchate
+       0
+       1
+       0
+edict_de_nantes
+       0
+       1
+       0
+the_state_is_me
+       0
+       1
+       0
+the_devshirme_system
+       0
+       1
+       0
+the_provincial_system
+       0
+       1
+       0
+the_societas_jesu
+       0
+       1
+       0
+great_wall_reparations
+       0
+       1
+       0
+british_merchant_navy
+       0
+       1
+       0
+britanna_rules_the_waves
+       0
+       1
+       0
+more_merchants
+       1
+       0
+       0
+efficienct_merchants
+       1
+       0
+       0
+local_trade_focus
+       1
+       0
+       0
+global_trade_focus
+       1
+       0
+       0
+military_focus
+       1
+       0
+       0
+trade_focus
+       1
+       0
+       0
+trade_and_production_cutbacks
+       1
+       0
+       0
+military_cutbacks
+       1
+       0
+       0
+short_term_boost
+       1
+       0
+       0
+long_term_boost
+       1
+       0
+       0
+decreased_military_funding
+       1
+       0
+       0
+even_spread_of_investments
+       1
+       0
+       0
+financial_arguments
+       1
+       0
+       0
+emergency_plan
+       1
+       0
+       0
+bothersome_parliament
+       1
+       0
+       0
+infiltrator_in_the_cardinal_office
+       1
+       0
+       0
+religious_restriction
+       1
+       0
+       0
+india_trade_co
+       0
+       1
+       0
+dutch_india_trade_co
+       0
+       1
+       0
+portuguese_india_trade_co
+       2
+       0
+       0
+the_staple_port
+       0
+       1
+       0
+the_theme_system
+       0
+       1
+       0
+severe_trade_crisis
+       1
+       0
+       0
+minor_trade_crisis
+       1
+       0
+       0
+evangelical_system
+       1
+       0
+       0
+missionary_falls_ill
+       1
+       0
+       0
+missionary_failure
+       1
+       0
+       0
+religious_tensions
+       1
+       0
+       0
+founding_father
+       1
+       0
+       0
+loyalist_stronghold
+       1
+       0
+       0
+the_advancement_of_true_religion_act
+       0
+       1
+       0
+the_blasphemy_act
+       0
+       1
+       0
+the_act_of_uniformity
+       0
+       1
+       0
+the_suffragan_bishop_act
+       0
+       1
+       0
+the_conventicle_act
+       0
+       1
+       0
+the_declaration_of_indulgence
+       0
+       1
+       0
+de_heretico_comburendo
+       0
+       1
+       0
+the_test_act
+       0
+       1
+       0
+the_dissolution_of_the_monasteries
+       0
+       1
+       0
+the_popery_act
+       0
+       1
+       0
+the_sheikh_ul_islam
+       0
+       1
+       0
+khalifah
+       0
+       1
+       0
+sect_practices
+       0
+       1
+       0
+islamic_scholarly_centre
+       0
+       1
+       0
+superintendent_office
+       0
+       1
+       0
+monastic_education_system
+       0
+       1
+       0
+the_anti_christian_edict
+       0
+       1
+       0
+more_tariffs
+       1
+       0
+       0
+master_of_mint_boost
+       1
+       0
+       0
+navigator_boost
+       1
+       0
+       0
+grand_captain_boost
+       1
+       0
+       0
+army_organiser_boost
+       1
+       0
+       0
+commandant_boost
+       1
+       0
+       0
+quartermaster_boost
+       1
+       0
+       0
+recruitmaster_boost
+       1
+       0
+       0
+fortification_expert_boost
+       1
+       0
+       0
+inquisitor_boost
+       1
+       0
+       0
+religious_migration
+       1
+       0
+       0
+improved_fortifications
+       3
+       0
+       0
+per_capita_tax
+       0
+       1
+       0
+house_of_worship
+       0
+       1
+       0
+divine_faith
+       0
+       1
+       0
+muslim_resistance
+       0
+       1
+       0
+religious_sect_tolerance
+       0
+       1
+       0
+the_haridasa_movement
+       0
+       1
+       0
+the_advaita_movement
+       0
+       1
+       0
+godly_inspiration
+       0
+       1
+       0
+religious_sacrifices
+       0
+       1
+       0
+rite_of_passage
+       0
+       1
+       0
+church_taxes
+       0
+       1
+       0
+neo_confucianism
+       1
+       0
+       0
+denounce_taoism
+       1
+       0
+       0
+enforcing_heritage
+       0
+       1
+       0
+sunday_schools
+       0
+       1
+       0
+bad_discipline
+       2
+       0
+       0
+good_discipline
+       1
+       0
+       0
+local_fortress
+       4
+       0
+       0
+improved_fort_defense
+       0
+       1
+       0
+compromised_spy_defence
+       1
+       0
+       0
+smugglers_dominating
+       1
+       0
+       0
+kingdom_of_god
+       0
+       1
+       0
+power_to_nobles
+       1
+       0
+       0
+power_to_provinces
+       1
+       0
+       0
+free_shipping_through_the_sound
+       0
+       0
+       1
+illegitimate_ruler
+       1
+       0
+       0
+thalassocracy
+       0
+       1
+       0
+boom_economy
+       0
+       0
+       1
+separation_of_powers
+       0
+       1
+       0
+cult_of_reason
+       0
+       1
+       0
+relief_from
+       1
+       0
+       0
+sought_after_bachelor
+       1
+       0
+       0
+a_woman_scorned
+       1
+       0
+       0
+blooming_renaissance
+       1
+       0
+       0
+the_sound_of_music
+       1
+       0
+       0
+way_of_tea
+       1
+       0
+       0
+controls_tea_trade
+       1
+       0
+       0
+diwani_script
+       1
+       0
+       0
+dutch_masters
+       1
+       0
+       0
+guild_of_st_luke
+       1
+       0
+       0
+the_last_joust
+       1
+       0
+       0
+florentine_school
+       1
+       0
+       0
+byzantine_influx
+       1
+       0
+       0
+epic_to_monarch
+       1
+       0
+       0
+commedia_dellarte
+       1
+       0
+       0
+enlightenment_movement
+       1
+       0
+       0
+krantor_crane
+       0
+       1
+       0
+adler_von_lubeck
+       0
+       1
+       0
+south_german_organ_tradition
+       1
+       0
+       0
+rome_reborn
+       1
+       0
+       0
+rebel_sentiment
+       1
+       0
+       0
+religious_zeal_at_conv
+       5
+       0
+       0
+powerful_noble
+       1
+       0
+       0
+sword_hunter
+       0
+       1
+       0
+ninjas
+       0
+       1
+       0
+western_embassy_mission
+       0
+       1
+       0
+local_christian_mission
+       1
+       0
+       0
+a_batch_of_western_muskets
+       1
+       0
+       0
+karesansui_garden
+       1
+       0
+       0
+sakoku_law
+       0
+       1
+       0
+sankin_kotai
+       1
+       0
+       0
+western_trade
+       1
+       0
+       0
+state_council
+       1
+       0
+       0
+hall_of_worthies
+       0
+       1
+       0
+sinmun_office
+       1
+       0
+       0
+sinmun_office_rejected
+       1
+       0
+       0
+the_forbidden_city
+       0
+       1
+       0
+primas_germaniae
+       1
+       0
+       0
+legatus_natus
+       1
+       0
+       0
+fort_in_disrepair
+       1
+       0
+       0
+centralization_modifier
+       9
+      37
+       0
+decentralization_modifier
+       6
+       1
+       0
+aristocracy_modifier
+       5
+       0
+       0
+plutocracy_modifier
+       2
+       0
+       0
+serfdom_modifier
+       4
+       0
+       0
+freesubjects_modifier
+       1
+       0
+       0
+innovative_modifier
+       4
+       1
+       1
+narrowminded_modifier
+       7
+       1
+       0
+mercantilism_modifier
+       3
+       0
+       0
+freetrade_modifier
+       3
+       0
+       0
+offensive_modifier
+       2
+       0
+       0
+defensive_modifier
+       2
+       0
+       0
+land_modifier
+       2
+       0
+       0
+naval_modifier
+       2
+       0
+       0
+quality_modifier
+       1
+       0
+       0
+religious_center
+       1
+       0
+       0
+lollards
+       1
+       0
+       0
+justices_of_peace
+       1
+       0
+       0
+the_admirality
+       1
+       0
+       0
+the_royal_army
+       1
+       0
+       0
+the_heresy_act
+       1
+       0
+       0
+religious_freedom_act
+       1
+       0
+       0
+the_petition_of_rights
+       1
+       0
+       0
+refusal_of_petition_of_rights
+       1
+       0
+       0
+the_decree_of_indulgence
+       1
+       0
+       0
+bill_of_test
+       1
+       0
+       0
+the_muskovy_trade_company
+       1
+       0
+       0
+low_fertility
+       1
+       0
+       0
+importing_food
+       1
+       0
+       0
+plundering_soldiers
+       1
+       0
+       0
+legitimacy_questioned
+       1
+       0
+       0
+benign_ruler
+       1
+       0
+       0
+rebel_leaders_executed
+       1
+       0
+       0
+wotr_local_support
+       1
+       0
+       0
+wotr_local_support_for_lancaster
+       1
+       0
+       0
+wotr_local_support_for_york
+       1
+       0
+       0
+disgruntled_nobles
+       1
+       0
+       0
+rebel_refugees
+       1
+       0
+       0
+rebel_stronghold
+       1
+       0
+       0
+new_model_army
+       1
+       0
+       0
+vasa_centralization_reforms
+       1
+       0
+       0
+church_reduction
+       1
+       0
+       0
+wallon_immigrants
+       1
+       0
+       0
+swedish_military_reforms
+       1
+       0
+       0
+swedish_mercenary_core
+       1
+       0
+       0
+swedish_naval_reforms
+       1
+       0
+       0
+swedish_mercantile_reforms
+       1
+       0
+       0
+swedish_free_trade_policy
+       1
+       0
+       0
+swedish_colonial_reforms
+       1
+       0
+       0
+the_absolutism
+       1
+       0
+       0
+swedish_court_of_appeals
+       1
+       0
+       0
+aristocratic_privileges
+       2
+       0
+       0
+reduction_of_charles_xi
+       1
+       0
+       0
+aligned_with_aristocracy
+       1
+       0
+       0
+reduction_compromise
+       1
+       0
+       0
+the_great_army_reorganization
+       1
+       0
+       0
+the_product_act
+       1
+       0
+       0
+the_conventicle_edict
+       3
+       0
+       0
+pietism
+       3
+       0
+       0
+traitorous_officers
+       1
+       0
+       0
+the_act_of_union_and_security
+       1
+       0
+       0
+the_great_agricultural_reform
+       1
+       0
+       0
+age_of_fredom
+       1
+       0
+       0
+dacke_feud_trade_embargo
+       1
+       0
+       0
+local_free_trade
+       1
+       0
+       0
+pomjestija_reform
+       1
+       0
+       0
+novgorodian_reform
+       1
+       0
+       0
+opposition_crushed
+       1
+       0
+       0
+kormlenije_abolished
+       1
+       0
+       0
+chamber_of_finance
+       1
+       0
+       0
+enserfed_peasants
+       1
+       0
+       0
+legal_serfdom
+       1
+       0
+       0
+deteriorating_economy
+       1
+       0
+       0
+autonomous_provinces
+       1
+       0
+       0
+governmental_reforms
+       1
+       0
+       0
+russian_absolutism
+       1
+       0
+       0
+state_controlled_church
+       1
+       0
+       0
+mercantilist_reforms
+       1
+       0
+       0
+free_trade_reforms
+       1
+       0
+       0
+complete_serfdom
+       1
+       0
+       0
+increased_freedom
+       1
+       0
+       0
+restricted_serfdom
+       1
+       0
+       0
+western_reforms
+       1
+       0
+       0
+reversed_reforms
+       1
+       0
+       0
+western_governmental_influence
+       1
+       0
+       0
+western_military_influence
+       1
+       0
+       0
+western_naval_influence
+       1
+       0
+       0
+insane_ruler
+       1
+       0
+       0
+famine
+       3
+       0
+       0
+fighting_famine
+       2
+       0
+       0
+severe_famine
+       2
+       0
+       0
+severe_plague
+       6
+       0
+       0
+contained_plague
+       4
+       0
+       0
+armed_brigands
+       1
+       0
+       0
+usurper_on_the_throne
+       1
+       0
+       0
+bad_free_trade_merchants
+       1
+       0
+       0
+public_works_of_cairo
+       1
+       0
+       0
+mam_large_festitives
+       1
+       0
+       0
+mam_recover_from_plague
+       1
+       0
+       0
+mlo_cheap_mercs
+       1
+       0
+       0
+laws_of_the_burgos
+       1
+       0
+       0
+casa_de_contratacion
+       1
+       0
+       0
+port_to_the_new_world
+       1
+       0
+       0
+the_fuggers
+       1
+       0
+       0
+concessions_to_the_peasantry
+       1
+       0
+       0
+liberal_constitution
+       1
+       0
+       0
+religious_fanatics
+       1
+       0
+       0
+religious_violence
+       2
+       0
+       0
+religious_massacre
+       1
+       0
+       0
+support_heretics
+       1
+       0
+       0
+french_catholics
+       1
+       0
+       0
+french_protestants
+       1
+       0
+       0
+permanent_tax_system
+       1
+       0
+       0
+concessions_to_the_nobility
+       2
+       0
+       0
+academie_francaise
+       1
+       0
+       0
+colbert_economic_reforms
+       1
+       0
+       0
+colbert_trade_reforms
+       1
+       0
+       0
+colbert_naval_reforms
+       1
+       0
+       0
+versailles
+       1
+       0
+       0
+five_percent_tax
+       1
+       0
+       0
+five_percent_tax_with_exceptions
+       1
+       0
+       0
+turgots_economic_reforms
+       1
+       0
+       0
+necker_reforms
+       1
+       0
+       0
+the_reign_of_terror
+       1
+       0
+       0
+counter_espionage
+       1
+       0
+       0
+spies_investigate
+       1
+       0
+       0
+investigating_spies
+       1
+       0
+       0
+shady_people
+       1
+       0
+       0
+reduceed_war_expenditures
+       1
+       0
+       0
+mehmeds_economic_reforms
+       1
+       0
+       0
+tur_army_reform
+       1
+       0
+       0
+tur_army_and_navy_reform
+       1
+       0
+       0
+tur_navy_reform
+       1
+       0
+       0
+tur_janissaries_timer
+       1
+       0
+       0
+tur_janissaries_salary
+       1
+       0
+       0
+enderun_academy
+       1
+       0
+       0
+expanded_timariot_system
+       1
+       0
+       0
+expanded_royal_bureaucracy
+       1
+       0
+       0
+imperial_halic_shipyard
+       1
+       0
+       0
+kosem_sultana
+       1
+       0
+       0
+koprulu_family
+       1
+       0
+       0
+reformes_of_kemankes
+       1
+       0
+       0
+janissaries_denied_reward
+       1
+       0
+       0
+janissary_landholders
+       1
+       0
+       0
+janissaries_upset
+       1
+       0
+       0
+tur_janissary
+       1
+       0
+       0
+hun_power_to_magnates
+       1
+       0
+       0
+nap_renaissance_culture
+       1
+       0
+       0
+nap_renaissance_glory
+       1
+       0
+       0
+nap_recover_from_plague
+       1
+       0
+       0
+ven_recover_from_plague
+       1
+       0
+       0
+boh_strong_nobles
+       1
+       0
+       0
+merchant_investement
+       1
+       0
+       0
+rush_of_merchants
+       1
+       0
+       0
+business_booming
+       1
+       0
+       0
+competent_diplomacy
+       1
+       0
+       0
+incompetent_diplomacy
+       1
+       0
+       0
+benign_neglect_trade
+       1
+       0
+       0
+benign_neglect_tax
+       1
+       0
+       0
+benign_neglect_manpower
+       1
+       0
+       0
+gen_lost_trade_support
+       1
+       0
+       0
+bavarian_jesuits
+       1
+       0
+       0
+colonial_policy
+       1
+       0
+       0
+less_colonial_corruption
+       1
+       0
+       0
+duke_of_coimbra
+       1
+       0
+       0
+governor_de_sousa
+       1
+       0
+       0
+earthquake
+       1
+       0
+       0
+reactionary_policies
+       1
+       0
+       0
+african_slaves
+       1
+       0
+       0
+portuguese_missionaries
+       1
+       0
+       0
+the_tower_or_belem
+       1
+       0
+       0
+ven_monte_nuovo
+       1
+       0
+       0
+ven_venetian_first
+       1
+       0
+       0
+ven_christian_first
+       1
+       0
+       0
+venice_galley_conscription
+       1
+       0
+       0
+ven_ministers_of_waterways
+       1
+       0
+       0
+reichshofrat
+       1
+       0
+       0
+venice_ghetto
+       1
+       0
+       0
+fortezza_di_sant_andrea
+       1
+       0
+       0
+reform_of_the_bureaucracy
+       1
+       0
+       0
+the_triumphal_procession
+       1
+       0
+       0
+burgundian_succession_crisis
+       1
+       0
+       0
+spurn_habsburgs
+       1
+       0
+       0
+budgetary_disagreements_timer
+       1
+       0
+       0
+disagreements_in_the_parliament_timer
+       1
+       0
+       0
+parliamentary_problems_timer
+       1
+       0
+       0
+heated_debates_timer
+       1
+       0
+       0
+conflicting_opinions_timer
+       1
+       0
+       0
+traitor_in_parliament_timer
+       1
+       0
+       0
+bad_relations_timer
+       1
+       0
+       0
+political_chaos_timer
+       1
+       0
+       0
+influenced_decisions_timer
+       1
+       0
+       0
+financial_disagreements_timer
+       1
+       0
+       0
+foreign_control_timer
+       1
+       0
+       0
+too_many_liberties_timer
+       1
+       0
+       0
+military_maintenance_timer
+       1
+       0
+       0
+sympathisers_of_old_government_timer
+       1
+       0
+       0
+a_new_constitution_timer
+       1
+       0
+       0
+areas_of_research_timer
+       1
+       0
+       0
+premature_election_timer
+       1
+       0
+       0
+anxious_parliament_timer
+       1
+       0
+       0
+over_budget_timer
+       1
+       0
+       0
+embezzlement_timer
+       1
+       0
+       0
+planned_coup_timer
+       1
+       0
+       0
+possible_traitors_timer
+       1
+       0
+       0
+choosing_a_tomb_timer
+       1
+       0
+       0
+prussian_african_trade_company
+       1
+       0
+       0
+pru_enlightenment_reforms
+       1
+       0
+       0
+pru_prutenic_tables
+       1
+       0
+       0
+pru_reaction_reforms
+       1
+       0
+       0
+bra_berliner_unwille
+       1
+       0
+       0
+bra_sell_indulgences
+       1
+       0
+       0
+bra_grain_tax
+       1
+       0
+       0
+pol_nieszawa_privileges
+       2
+       0
+       0
+pol_statute_piotrkow
+       1
+       0
+       0
+pol_religious_freedom
+       1
+       0
+       0
+pol_jesuit_king
+       1
+       0
+       0
+pol_pact_conventa
+       1
+       0
+       0
+pol_sejm_veto
+       1
+       0
+       0
+pol_sejm_comply_policies
+       1
+       0
+       0
+pol_sejm_refuse_troops
+       1
+       0
+       0
+pol_sigismunds_column
+       1
+       0
+       0
+pol_merkuriusz_polski_ordynaryjny
+       1
+       0
+       0
+pol_konfederacja
+       1
+       0
+       0
+pol_zebrzydowski_rebellion_flag
+       1
+       0
+       0
+economic_development_of_mazovia
+       1
+       0
+       0
+pol_sejm_refuse_timer
+       1
+       0
+       0
+pol_tur_tension_timer
+       1
+       0
+       0
+mng_closed_china
+       1
+       0
+       0
+mng_open_china
+       1
+       0
+       0
+hol_expand_loan_market
+       1
+       0
+       0
+hol_strict_control
+       1
+       0
+       0
+hol_gomarism
+       1
+       0
+       0
+hol_arminianism
+       1
+       0
+       0
+hol_de_witt
+       1
+       0
+       0
+hol_anthony_heinsius
+       1
+       0
+       0
+hol_statenbijbel
+       1
+       0
+       0
+hol_wilhelmus
+       1
+       0
+       0
+hol_tulip_crisis
+       1
+       0
+       0
+holland_polders
+       0
+       1
+       0
+per_abbas_advisors
+       1
+       0
+       0
+per_political_turmoil_timer
+       1
+       0
+       0
+per_political_fragmentation_timer
+       1
+       0
+       0
+vij_dodda_ganeshana_gudi_temple
+       1
+       0
+       0
+vij_veerabhadra_temple
+       1
+       0
+       0
+vij_astadiggajas
+       1
+       0
+       0
+ayu_wat_chaiwatthanaram_temple
+       1
+       0
+       0
+ayu_buddha_footprint_temple
+       1
+       0
+       0
+ayu_wat_ratchaburan_temple
+       1
+       0
+       0
+sco_religious_strife
+       1
+       0
+       0
+sco_free_trade
+       1
+       0
+       0
+sco_witchcraft_act
+       1
+       0
+       0
+jap_sengoku_jidai
+       1
+       0
+       0
+jap_wokou
+       1
+       0
+       0
+jap_follow_sakoku
+       1
+       0
+       0
+jap_question_sakoku
+       1
+       0
+       0
+jap_rangaku
+       2
+       0
+       0
+jap_closed
+       1
+       0
+       0
+jap_western_wrecked_ship
+       1
+       0
+       0
+jap_culture
+       1
+       0
+       0
+jap_military_developments
+       1
+       0
+       0
+jap_za
+       1
+       0
+       0
+jap_higashiyama_culture
+       1
+       0
+       0
+jap_sekisho
+       1
+       0
+       0
+jap_buke_shohatto
+       1
+       0
+       0
+jap_gokaido
+       1
+       0
+       0
+jap_terakoya
+       1
+       0
+       0
+jap_genroku
+       1
+       0
+       0
+jap_kokugaku
+       1
+       0
+       0
+jap_sankin_kotai
+       1
+       0
+       0
+jap_trade_reform
+       1
+       0
+       0
+jap_military_reform
+       1
+       0
+       0
+jap_economic_reform
+       1
+       0
+       0
+jap_first_sake
+       1
+       0
+       0
+jap_recruits
+       1
+       0
+       0
+jap_jade
+       1
+       0
+       0
+jap_gossip
+       1
+       0
+       0
+jap_kabuki_timer
+       1
+       0
+       0
+jap_ronin_timer
+       1
+       0
+       0
+jap_nogaku_timer
+       1
+       0
+       0
+jap_loyal_samurai_timer
+       1
+       0
+       0
+jap_monk_timer
+       1
+       0
+       0
+jap_shrine_timer
+       1
+       0
+       0
+jap_hanami_timer
+       1
+       0
+       0
+jap_koku_tax_timer
+       1
+       0
+       0
+jap_geisha_timer
+       1
+       0
+       0
+jap_unruly_daimyo_timer
+       1
+       0
+       0
+jap_koku_reform_timer
+       1
+       0
+       0
+jap_rangaku_timer
+       1
+       0
+       0
+jap_rice_fail_timer
+       1
+       0
+       0
+jap_red_ship_timer
+       1
+       0
+       0
+jap_kirishitan_harrassed_timer
+       1
+       0
+       0
+jap_tempura_timer
+       1
+       0
+       0
+ikko_ikkis_timer
+       1
+       0
+       0
+hsa_stop_shipbuilding_technology
+       1
+       0
+       0
+hsa_spread_shipbuilding_technology
+       1
+       0
+       0
+hsa_trade_reform
+       1
+       0
+       0
+hsa_economic_reform
+       1
+       0
+       0
+hsa_military_reform
+       1
+       0
+       0
+ara_consulate_sea
+       1
+       0
+       0
+ara_book_consulate_sea
+       1
+       0
+       0
+ara_monastery_maria
+       1
+       0
+       0
+ara_monastery_painter
+       1
+       0
+       0
+ara_sindicat_remenca
+       1
+       0
+       0
+nor_bohus_fortress
+       1
+       0
+       0
+pap_saint_peters_basilica
+       1
+       0
+       0
+pap_spanish_inquisition
+       1
+       0
+       0
+pap_moderate_inquisition
+       1
+       0
+       0
+pap_burned_heretic
+       1
+       0
+       0
+mch_jesuits
+       1
+       0
+       0
+kni_accepted_cultures
+       1
+       0
+       0
+kni_martinengo
+       1
+       0
+       0
+kni_valetta
+       1
+       0
+       0
+football_modifier
+       1
+       0
+       0
+watching_ancestors
+       1
+       0
+       0
+lowered_defense
+       1
+       0
+       0
+inside_man
+       1
+       0
+       0
+mecca_timer
+       1
+       0
+       0
+pious_ruler
+       1
+       0
+       0
+archery_muskets
+       1
+       0
+       0
+gaps_blockade
+       1
+       0
+       0
+merchants_gaps_blockade
+       1
+       0
+       0
+jesuit_mission
+       1
+       0
+       0
+roman_fever_timer
+       1
+       0
+       0
+organised_colony
+       1
+       0
+       0
+quarantine_colony
+       1
+       0
+       0
+roman_fever_colony
+       1
+       0
+       0
+fra_musketeers_timer
+       1
+       0
+       0
+mousquetaires_du_roi
+       1
+       0
+       0
+diplomatic_moves
+       1
+       0
+       0
+ship_building_boom
+       1
+       0
+       0
+enhanced_reputation
+       1
+       0
+       0
+trade_success
+       1
+       0
+       0
+trade_failure
+       1
+       0
+       0
+ship_building_problems
+       1
+       0
+       0
+diplo_fuax_pas
+       1
+       0
+       0
+mercenaries_to_the_standard
+       1
+       0
+       0
+for_freedom
+       1
+       0
+       0
+our_rights
+       1
+       0
+       0
+agricultural_boom
+       1
+       0
+       0
+tolerance_for_all
+       1
+       0
+       0
+to_the_colours
+       1
+       0
+       0
+horse_population_boom
+       1
+       0
+       0
+surplus_equipment
+       1
+       0
+       0
+cheap_iron
+       1
+       0
+       0
+timber_surplus
+       1
+       0
+       0
+timber_shortage
+       1
+       0
+       0
+admin_problems
+       1
+       0
+       0
+iron_ships
+       1
+       0
+       0
+protected_commerce
+       1
+       0
+       0
+power_of_the_fleet
+       1
+       0
+       0
+back_to_the_front
+       1
+       0
+       0
+love_of_devoted
+       1
+       0
+       0
+full_elan
+       1
+       0
+       0
+finest_infantry
+       1
+       0
+       0
+cavalry_companions
+       1
+       0
+       0
+trust_from_mercs
+       1
+       0
+       0
+glut_of_mercs
+       1
+       0
+       0
+generous_terms
+       1
+       0
+       0
+good_advise
+       1
+       0
+       0
+payment_demands
+       1
+       0
+       0
+relentless_drill
+       1
+       0
+       0
+regimental_pride
+       1
+       0
+       0
+prepared_defence
+       1
+       0
+       0
+to_the_last_man
+       1
+       0
+       0
+regimental_spirit
+       1
+       0
+       0
+peasants_westernization
+       1
+       0
+       0
+adopted_heir
+       1
+       0
+       0
+golden_age_of_timbuktu
+       1
+       0
+       0
+perfected_porcelain
+       1
+       0
+       0
+tamil_traders_content
+       1
+       0
+       0
+tamil_traders_angered
+       1
+       0
+       0
+vadugan_settlement
+       1
+       0
+       0
+rural_tamil_autonomy
+       1
+       0
+       0
+tamil_grandee
+       1
+       0
+       0
+pulicat_booming
+       1
+       0
+       0
+tirupati_tirumala_temple_complex
+       1
+       0
+       0
+eth_zara_yakob_centralisation
+       1
+       0
+       0
+eth_itinerant_capital
+       1
+       0
+       0
+eth_independent_church
+       1
+       0
+       0
+eth_oromo_migration
+       1
+       0
+       0
+eth_mount_geshen
+       1
+       0
+       0
+bah_bidriware_boom
+       1
+       0
+       0
+bah_deccanis
+       1
+       0
+       0
+bah_gharbians
+       1
+       0
+       0
+bah_deccanis_gharbians
+       1
+       0
+       0
+bah_habhsis
+       1
+       0
+       0
+bah_attracting_the_right_people
+       1
+       0
+       0
+bah_bidar_fort
+       1
+       0
+       0
+mor_crisis
+       1
+       0
+       0
+mor_andalucian_moors
+       1
+       0
+       0
+mor_idrisid_cult_soaring
+       1
+       0
+       0
+guj_walls_of_ahmedabad
+       1
+       0
+       0
+guj_champaner_project
+       1
+       0
+       0
+guj_champaner
+       1
+       0
+       0
+guj_merchants_doing_well
+       1
+       0
+       0
+guj_hardline_rel_policy
+       1
+       0
+       0
+per_miniature_school
+       1
+       0
+       0
+per_mushashaiya
+       1
+       0
+       0
+per_safawiya
+       1
+       0
+       0
+per_shia_conversion_policy
+       1
+       0
+       0
+per_pragmatic_ulema
+       1
+       0
+       0
+per_conversion_of_the_clergy
+       1
+       0
+       0
+per_shiite_immigration
+       1
+       0
+       0
+per_najaf
+       1
+       0
+       0
+per_building_isfahan
+       1
+       0
+       0
+per_isfahan_maidan
+       1
+       0
+       0
+mer_vijaya_sthambha
+       1
+       0
+       0
+mer_kumbalgarh
+       1
+       0
+       0
+mer_fortification_effort
+       1
+       0
+       0
+granada_influx
+       1
+       0
+       0
+jnp_jaunpur_qila
+       1
+       0
+       0
+jnp_kabir
+       1
+       0
+       0
+jnp_rajput_recruitment
+       1
+       0
+       0
+jnp_decline_of_delhi
+       1
+       0
+       0
+jnp_pilgrim_tax
+       1
+       0
+       0
+jnp_sadak_e_azam
+       1
+       0
+       0
+mlc_economic_boom
+       1
+       0
+       0
+mlc_islamic_laws_enforced
+       1
+       0
+       0
+mlc_piracy_controlled
+       1
+       0
+       0
+mlc_tun_perak
+       1
+       0
+       0
+ori_jagannath_cult
+       1
+       0
+       0
+ori_no_salt_tax
+       1
+       0
+       0
+ori_popular_unrest
+       1
+       0
+       0
+ori_support_for_pretender
+       1
+       0
+       0
+zan_religious_unrest
+       1
+       0
+       0
+zan_sacked_by_the_zimba
+       1
+       0
+       0
+zan_kilwa_chronicle
+       1
+       0
+       0
+ful_marabout_wars
+       1
+       0
+       0
+ful_fulani_wars
+       1
+       0
+       0
+kbo_gazargamu
+       1
+       0
+       0
+kbo_religious_orthodoxy
+       1
+       0
+       0
+kbo_death_to_kingmakers
+       1
+       0
+       0
+ven_black_gondolas
+       1
+       0
+       0
+ven_venetian_school
+       1
+       0
+       0
+ven_murano_glass_industry
+       1
+       0
+       0
+ven_nobility_bought
+       1
+       0
+       0
+ven_accademia_della_guidecca
+       1
+       0
+       0
+ven_barnabotti
+       1
+       0
+       0
+ven_expanded_council
+       1
+       0
+       0
+ven_ten_restrained
+       1
+       0
+       0
+ven_council_of_ten_strong
+       1
+       0
+       0
+ned_house_of_elzevir
+       1
+       0
+       0
+ned_shipbuilding_industry
+       1
+       0
+       0
+ned_bank_crisis
+       1
+       0
+       0
+ned_pruikentijd
+       1
+       0
+       0
+pol_collegium_hosianum
+       1
+       0
+       0
+hab_ostende_company
+       1
+       0
+       0
+hab_geheime_kabinettskanzlei
+       1
+       0
+       0
+hab_melchior_klesl
+       1
+       0
+       0
+hab_plague_of_vienna
+       1
+       0
+       0
+hab_schwaz_mine
+       1
+       0
+       0
+hab_centralization_of_austria
+       1
+       0
+       0
+mng_st_pauls_college
+       1
+       0
+       0
+mng_ricci_at_court
+       1
+       0
+       0
+mng_christian_minister
+       1
+       0
+       0
+inc_cusco_construction
+       1
+       0
+       0
+inc_cusco_reconstructed
+       1
+       0
+       0
+inc_machu_pichu
+       1
+       0
+       0
+inc_hostage_huacas
+       1
+       0
+       0
+inc_chimu_integration
+       1
+       0
+       0
+inc_no_chimu_soldiers
+       1
+       0
+       0
+inc_smallpox_outbreak
+       2
+       0
+       0
+inc_pacific_expedition
+       1
+       0
+       0
+azt_contribution_to_great_temple
+       1
+       0
+       0
+azt_templo_mayor
+       1
+       0
+       0
+azt_sumptuary_laws
+       1
+       0
+       0
+azt_one_rabit
+       1
+       0
+       0
+azt_recovery
+       1
+       0
+       0
+azt_texcoco_rising
+       1
+       0
+       0
+nezahualcoyotls_laws
+       1
+       0
+       0
+azt_cocoliztli
+       1
+       0
+       0
+ignored_ramadan_timer
+       1
+       0
+       0
+ramadan_timer
+       1
+       0
+       0
+tahtawi_timer
+       1
+       0
+       0
+ignored_hajj_timer
+       1
+       0
+       0
+chisti_timer
+       1
+       0
+       0
+qadiriyya_timer
+       1
+       0
+       0
+mahdi_timer
+       1
+       0
+       0
+ghulam_timer
+       1
+       0
+       0
+suhrawardiyya_timer
+       1
+       0
+       0
+muslim_hajj
+       1
+       0
+       0
+repaired_masjid_al_haram
+       1
+       0
+       0
+mimar_sinan
+       1
+       0
+       0
+banned_alcohol_tobacco_coffee
+       1
+       0
+       0
+tax_alcohol_tobacco_coffee
+       1
+       0
+       0
+celestial_globe
+       1
+       0
+       0
+mian_mir
+       1
+       0
+       0
+reza_abbasi
+       1
+       0
+       0
+baha_al_din_al_amili
+       1
+       0
+       0
+muslim_madrassa
+       1
+       0
+       0
+province_madrassa
+       1
+       0
+       0
+darb_zubaidah
+       1
+       0
+       0
+serafeddin_sabuncuoglu
+       1
+       0
+       0
+al_birjandi
+       1
+       0
+       0
+dhimmi_residence
+       1
+       0
+       0
+true_mahdi
+       1
+       0
+       0
+unified_islam
+       0
+       1
+       0
+hardened_oak
+       1
+       0
+       0
+patriotic_curriculum
+       1
+       0
+       0
+maintenance_curriculum
+       1
+       0
+       0
+galley_veterans
+       1
+       0
+       0
+heavy_ship_veterans
+       1
+       0
+       0
+grieving_sailors
+       1
+       0
+       0
+repairing_decayed_ships
+       1
+       0
+       0
+rotting_wood
+       1
+       0
+       0
+shipyard_fire
+       1
+       0
+       0
+skilled_diplomat
+       1
+       0
+       0
+just_causes
+       1
+       0
+       0
+popular_noble
+       1
+       0
+       0
+vassals_feel_safe
+       1
+       0
+       0
+firm_hand
+       1
+       0
+       0
+emissary_authority
+       1
+       0
+       0
+suspected_diplomats
+       1
+       0
+       0
+slow_negotiations
+       1
+       0
+       0
+hostile_rhetoric
+       1
+       0
+       0
+free_freethinkers
+       1
+       0
+       0
+fair_laws
+       1
+       0
+       0
+ineffective_missionary
+       1
+       0
+       0
+religious_deviants
+       1
+       0
+       0
+gbr_weapons
+       1
+       0
+       0
+cultural_assimilation
+       1
+       0
+       0
+american_academy_of_arts_and_sciences
+       1
+       0
+       0
+indian_trade_and_intercourse_act
+       1
+       0
+       0
+indian_trade
+       1
+       0
+       0
+north_american_fur_trade
+       1
+       0
+       0
+dunlap_broadside
+       1
+       0
+       0
+american_philosophical_society
+       1
+       0
+       0
+massachusetts_humane_society
+       1
+       0
+       0
+committee_of_safety
+       1
+       0
+       0
+great_fire
+       1
+       0
+       0
+first_bank_usa
+       1
+       0
+       0
+us_mint
+       1
+       0
+       0
+cotton_gin
+       1
+       0
+       0
+articles_of_confederation
+       1
+       0
+       0
+new_articles_of_confederation
+       1
+       0
+       0
+protest_manumission_society
+       1
+       0
+       0
+manumission_society
+       1
+       0
+       0
+northwest_ordinance_slavery_prohibited
+       1
+       0
+       0
+usa_slavery
+       1
+       0
+       0
+abolish_slavery
+       1
+       0
+       0
+harsh_laws_usa
+       1
+       0
+       0
+medium_laws_usa
+       1
+       0
+       0
+mild_laws_usa
+       1
+       0
+       0
+easy_laws_usa
+       1
+       0
+       0
+smuggling_of_grain
+       1
+       0
+       0
+smuggling_of_wine
+       1
+       0
+       0
+smuggling_of_wool
+       1
+       0
+       0
+smuggling_of_cloth
+       1
+       0
+       0
+smuggling_of_fish
+       1
+       0
+       0
+smuggling_of_fur
+       1
+       0
+       0
+smuggling_of_salt
+       1
+       0
+       0
+smuggling_of_naval_supplies
+       1
+       0
+       0
+smuggling_of_copper
+       1
+       0
+       0
+smuggling_of_iron
+       1
+       0
+       0
+smuggling_of_ivory
+       1
+       0
+       0
+smuggling_of_tea
+       1
+       0
+       0
+smuggling_of_chinaware
+       1
+       0
+       0
+smuggling_of_spices
+       1
+       0
+       0
+smuggling_of_coffee
+       1
+       0
+       0
+smuggling_of_cotton
+       1
+       0
+       0
+smuggling_of_sugar
+       1
+       0
+       0
+smuggling_of_tobacco
+       1
+       0
+       0
+smuggling_of_cocoa
+       1
+       0
+       0
+the_proclamation_of_year_timer
+       1
+       0
+       0
+restricted_colonial_expansion
+       1
+       0
+       0
+revolutionary_spirit
+       1
+       0
+       0
+penal_colony
+       1
+       0
+       0
+quarantined_influenza
+       1
+       0
+       0
+influenza
+       1
+       0
+       0
+iconoclastic_fury
+       1
+       0
+       0
+ban_fur_trade
+       1
+       0
+       0
+construction_wages
+       1
+       0
+       0
+tax_break_ore
+       1
+       0
+       0
+tax_break_wharf
+       1
+       0
+       0
+banned_tobacco_planting
+       1
+       0
+       0
+foreign_settlers
+       1
+       0
+       0
+militia_raid
+       1
+       0
+       0
+colonial_assembly
+       0
+       1
+       0
+enhanced_colonial_militia
+       1
+       0
+       0
+last_of_the_mahican
+       1
+       0
+       0
+religious_persecution
+       1
+       0
+       0
+foreign_reformed_ministers
+       1
+       0
+       0
+reformed_work_ethic
+       1
+       0
+       0
+banned_musical_instruments_in_church
+       1
+       0
+       0
+learning_from_the_land
+       1
+       0
+       0
+counting_coup
+       1
+       0
+       0
+intercultural_exchange
+       1
+       0
+       0
+restricted_tobacco
+       1
+       0
+       0
+encouraged_tobacco
+       1
+       0
+       0
+great_hunters
+       1
+       0
+       0
+land_shaped_by_fire
+       1
+       0
+       0
+trade_company_annoyed
+       1
+       0
+       0
+trade_company_upset
+       1
+       0
+       0
+trade_company_greatly_upset
+       1
+       0
+       0
+trade_company_boom
+       1
+       0
+       0
+trade_company_trouble
+       1
+       0
+       0
+guru_angad
+       1
+       0
+       0
+guru_amar_das
+       1
+       0
+       0
+guru_ram_das
+       1
+       0
+       0
+guru_arjan
+       1
+       0
+       0
+guru_hargobind
+       1
+       0
+       0
+guru_har_rai
+       1
+       0
+       0
+guru_har_krishan
+       1
+       0
+       0
+guru_tegh_bahadur
+       1
+       0
+       0
+guru_gobind_singh
+       1
+       0
+       0
+saving_the_burning_world
+       0
+       1
+       0
+refused_aid_traders
+       1
+       0
+       0
+reckless_privateer
+       1
+       0
+       0
+curtailed_privateer
+       1
+       0
+       0
+rogue_privateer
+       1
+       0
+       0
+employed_pirates
+       1
+       0
+       0
+supported_republic_feud
+       1
+       0
+       0
+denied_knowledge_privateer
+       1
+       0
+       0
+merchants_prepare_war
+       1
+       0
+       0
+merchants_ignored
+       1
+       0
+       0
+refused_food_import
+       1
+       0
+       0
+buying_american
+       1
+       0
+       0
+importing_cocoa
+       1
+       0
+       0
+importing_coffee
+       1
+       0
+       0
+importing_tea
+       1
+       0
+       0
+shiva_srishti
+       1
+       0
+       0
+shiva_tirodhana
+       1
+       0
+       0
+shiva_anugraha
+       1
+       0
+       0
+shakti_parvati
+       1
+       0
+       0
+shakti_prakrti
+       1
+       0
+       0
+shakti_kali
+       1
+       0
+       0
+shakti_tara
+       1
+       0
+       0
+vishnu_lakshmi
+       1
+       0
+       0
+vishnu_brahma
+       1
+       0
+       0
+vishnu_celibacy
+       1
+       0
+       0
+hindu_withdrawn_contemplation
+       1
+       0
+       0
+hindu_withdrawn_meditation
+       1
+       0
+       0
+hindu_ganges_pilgrimage
+       1
+       0
+       0
+jnana
+       1
+       0
+       0
+hindu_shaiva_
+       1
+       0
+       0
+hindu_shaiva_
+       1
+       0
+       0
+hindu_shaiva_
+       1
+       0
+       0
+hindu_shaiva_
+       1
+       0
+       0
+hindu_shaiva_
+       1
+       0
+       0
+hindu_shakta_
+       1
+       0
+       0
+hindu_shakta_
+       1
+       0
+       0
+hindu_shakta_
+       1
+       0
+       0
+hindu_shakta_
+       1
+       0
+       0
+hindu_shakta_
+       1
+       0
+       0
+hindu_shakta_
+       1
+       0
+       0
+hindu_shakta_
+       1
+       0
+       0
+hindu_vaishnava_
+       1
+       0
+       0
+hindu_vaishnava_
+       1
+       0
+       0
+hindu_vaishnava_
+       1
+       0
+       0
+hindu_vaishnava_
+       1
+       0
+       0
+hindu_vaishnava_
+       1
+       0
+       0
+hindu_vaishnava_
+       1
+       0
+       0
+hindu_vaishnava_
+       1
+       0
+       0
+hindu_vaishnava_
+       1
+       0
+       0
+hindu_ganesha
+       1
+       0
+       0
+hindu_ganga
+       1
+       0
+       0
+hindu_surya
+       1
+       0
+       0
+sermons_for_princes
+       1
+       0
+       0
+no_sermons_for_princes
+       1
+       0
+       0
+angered_traders
+       1
+       0
+       0
+no_taxes_for_tyrants
+       1
+       0
+       0
+act_of_seclusion
+       1
+       0
+       0
+distrust_among_nobles
+       1
+       0
+       0
+orangists_rally_against_rival
+       1
+       0
+       0
+supported_orangists_in_war
+       1
+       0
+       0
+local_regenten_upset
+       1
+       0
+       0
+local_nobles_upset
+       1
+       0
+       0
+strong_guild
+       1
+       0
+       0
+free_trade_of_goods
+       1
+       0
+       0
+influential_guild_members
+       1
+       0
+       0
+influential_nobles
+       1
+       0
+       0
+foreign_guild_infiltrated
+       1
+       0
+       0
+guilds_compromised
+       1
+       0
+       0
+suspended_diplomat
+       1
+       0
+       0
+paranoid_recruitment
+       1
+       0
+       0
+trade_with_neighbor
+       1
+       0
+       0
+guilds_cooperating
+       1
+       0
+       0
+traders_look_abroad
+       1
+       0
+       0
+aristocracy_united
+       1
+       0
+       0
+guilds_obstruct_trade
+       1
+       0
+       0
+converted_monarch
+       1
+       0
+       0
+local_popularity
+       1
+       0
+       0
+golden_liberty
+       1
+       0
+       0
+famine_refused_aid
+       1
+       0
+       0
+plundered_in_war
+       2
+       0
+       0
+plague_at_siege
+       1
+       0
+       0
+defender_evacuated_siege
+       1
+       0
+       0
+attacker_evacuated_siege
+       1
+       0
+       0
+lingering_plague
+       1
+       0
+       0
+terrorized_by_mercenaries
+       1
+       0
+       0
+curtailed_mercenaries
+       1
+       0
+       0
+post_war_tax_relief
+       1
+       0
+       0
+decreased_drafting
+       1
+       0
+       0
+suffering_bereaved
+       1
+       0
+       0
+local_witch_hunts
+       1
+       0
+       0
+nationwide_witch_hunts
+       1
+       0
+       0
+forbade_witch_hunts
+       1
+       0
+       0
+loyal_unbelievers
+       1
+       0
+       0
+disloyal_unbelievers
+       1
+       0
+       0
+abadoned_religious_rebels
+       1
+       0
+       0
+animist_syncretism
+       1
+       0
+       0
+dogmatic_preacher
+       1
+       0
+       0
+buying_firearms_from_neighbor
+       1
+       0
+       0
+refused_slave_trade_with_europeans
+       1
+       0
+       0
+slave_trade_with_europeans
+       1
+       0
+       0
+raided_by_cavalry
+       1
+       0
+       0
+new_dyeing_methods
+       1
+       0
+       0
+used_to_tropical
+       1
+       0
+       0
+mal_portuguese_traders
+       1
+       0
+       0
+mal_portuguese_meddling
+       1
+       0
+       0
+mal_wangaras_upset
+       1
+       0
+       0
+mal_islamisation_of_the_aristocracy
+       1
+       0
+       0
+mal_fulani_migration
+       1
+       0
+       0
+mal_unsafe_roads
+       1
+       0
+       0
+bng_nabibangsha
+       1
+       0
+       0
+bng_mosque_city_of_bagerhat
+       1
+       0
+       0
+bng_delta_reclaimed
+       1
+       0
+       0
+bng_delhian_refugees
+       1
+       0
+       0
+bng_port_of_calcutta
+       1
+       0
+       0
+mca_zaque_capital
+       1
+       0
+       0
+mca_zipa_capital
+       1
+       0
+       0
+mca_iraca_intervention
+       1
+       0
+       0
+mca_salt_mines_of_zipaquira
+       1
+       0
+       0
+tupi_hostility
+       1
+       0
+       0
+tupi_caramuru_trade
+       1
+       0
+       0
+garifuna_migration
+       1
+       0
+       0
+hub_of_orinoco_trade
+       1
+       0
+       0
+arw_preparing_defences
+       1
+       0
+       0
+unaided_during_blockade
+       1
+       0
+       0
+scottish_mercenaries
+       1
+       0
+       0
+huguenot_stronghold
+       1
+       0
+       0
+jesuit_ruler
+       1
+       0
+       0
+nobles_fled
+       1
+       0
+       0
+golden_age_transylvania
+       1
+       0
+       0
+god_is_spanish
+       1
+       0
+       0
+god_wants_peace
+       1
+       0
+       0
+in_league_for_land
+       1
+       0
+       0
+in_league_for_faith
+       1
+       0
+       0
+distrusts_heathens
+       1
+       0
+       0
+cardinal_in_administration
+       1
+       0
+       0
+blackmailing_cardinal
+       1
+       0
+       0
+may_popol_vuh
+       1
+       0
+       0
+tar_tzintzuntzan
+       1
+       0
+       0
+tar_princess_erendira
+       1
+       0
+       0
+gua_bandeirantes
+       1
+       0
+       0
+gua_yerba_mate
+       1
+       0
+       0
+gua_yerba_mate_production
+       1
+       0
+       0
+chm_great_artisans
+       1
+       0
+       0
+ignored_unrest
+       1
+       0
+       0
+lower_taxes_unrest
+       1
+       0
+       0
+drunken_explorer
+       1
+       0
+       0
+sce_search_eldorado
+       1
+       0
+       0
+sce_search_fountainofyouth
+       1
+       0
+       0
+sce_search_cibola
+       1
+       0
+       0
+sce_search_cityofcaesars
+       1
+       0
+       0
+sce_search_sierradelaplata
+       1
+       0
+       0
+sce_search_norumbega
+       1
+       0
+       0
+sce_search_saguenay
+       1
+       0
+       0
+sce_search_quivira
+       1
+       0
+       0
+sce_lake_guatavita
+       1
+       0
+       0
+sce_life_water
+       1
+       0
+       0
+sce_cibola_silver
+       1
+       0
+       0
+sce_sierradelaplata_quartz
+       1
+       0
+       0
+sce_citycaesars_quartz
+       1
+       0
+       0
+sce_golden_cups
+       1
+       0
+       0
+sce_norumbega_abandoned
+       1
+       0
+       0
+sce_saguenay_abandoned
+       1
+       0
+       0
+sce_el_dorado
+       1
+       0
+       0
+sce_fountain_youth
+       1
+       0
+       0
+sce_cibola_gold
+       1
+       0
+       0
+sce_city_of_caesars
+       1
+       0
+       0
+sce_sierra_dela_plata
+       1
+       0
+       0
+sce_norumbega
+       1
+       0
+       0
+sce_saguenay
+       1
+       0
+       0
+sce_quivira
+       1
+       0
+       0
+sce_sacagawea
+       1
+       0
+       0
+sce_lost_woods
+       1
+       0
+       0
+sce_lost_woods_tooltip
+       1
+       0
+       0
+sce_shortcut
+       1
+       0
+       0
+sce_shortcut_tooltip
+       1
+       0
+       0
+sce_jeanne_baret
+       1
+       0
+       0
+sce_poison_rock
+       1
+       0
+       0
+sce_poison_rock_tooltip
+       1
+       0
+       0
+sce_cart_peddler_stopped
+       1
+       0
+       0
+sce_cart_peddler_killed
+       1
+       0
+       0
+sce_new_domains
+       1
+       0
+       0
+sce_mounds
+       1
+       0
+       0
+sce_monster_lake
+       1
+       0
+       0
+sce_mutiny_timer
+       1
+       0
+       0
+sce_estevanico_timer
+       1
+       0
+       0
+sce_poison_rock_timer
+       1
+       0
+       0
+sce_lost_woods_timer
+       1
+       0
+       0
+sce_shortcut_timer
+       1
+       0
+       0
+sce_mounds_timer
+       1
+       0
+       0
+sce_monster_lake_timer
+       1
+       0
+       0
+maya_blodletting
+       1
+       0
+       0
+maya_chaos_creation
+       1
+       0
+       0
+maya_pilgrimages
+       1
+       0
+       0
+maya_embers
+       1
+       0
+       0
+maya_ek_chuaj
+       1
+       0
+       0
+maya_creation_cycle_timer
+       1
+       0
+       0
+maya_hero_twins_timer
+       1
+       0
+       0
+nahuatl_sorcerer
+       1
+       0
+       0
+nahuatl_angered_pochtecas
+       1
+       0
+       0
+nahuatl_allowed_spying_pochtecas
+       1
+       0
+       0
+nahuatl_grace_of_xipe_totec
+       1
+       0
+       0
+nahuatl_grace_of_huitzilopochtli
+       1
+       0
+       0
+nahuatl_grace_of_quetzalcoatl
+       1
+       0
+       0
+nahuatl_grace_of_tezcatlipoca
+       1
+       0
+       0
+nahuatl_earth_quake_devestation
+       1
+       0
+       0
+inti_yana_lord
+       1
+       0
+       0
+inti_major_huaca_temple
+       1
+       0
+       0
+inti_arranged_marriages
+       1
+       0
+       0
+inti_low_fertility
+       1
+       0
+       0
+inti_shrine_of_virocacha
+       1
+       0
+       0
+inti_royal_guard
+       1
+       0
+       0
+inti_alarmed_nobles
+       1
+       0
+       0
+great_inti_festivals
+       0
+       1
+       0
+nahuatl_sacrificial_stones
+       0
+       1
+       0
+codification_of_mayan_faith
+       0
+       1
+       0
+reunification_with_parsees
+       0
+       1
+       0
+royal_fires_modifier
+       0
+       1
+       0
+rites_of_admission_modifier
+       0
+       1
+       0
+black_shamanism_modifier
+       0
+       1
+       0
+yellow_shamanism_modifier
+       0
+       1
+       0
+ritual_education_modifier
+       0
+       1
+       0
+wandering_shamans_modifier
+       0
+       1
+       0
+purification_movement_modifier
+       0
+       1
+       0
+spreading_norse_rituals
+       0
+       1
+       0
+restricted_offices
+       0
+       1
+       0
+only_noble_officers
+       1
+       0
+       0
+overzealous_qazi
+       1
+       0
+       0
+repression_of_influential_dhimmi
+       1
+       0
+       0
+heathen_taxes_abolished
+       1
+       0
+       0
+dhimmi_administrators
+       1
+       0
+       0
+elaborate_court_ceremonies
+       1
+       0
+       0
+disloyal_noble_officers
+       1
+       0
+       0
+noble_minister
+       1
+       0
+       0
+burgher_minister
+       1
+       0
+       0
+church_minister
+       1
+       0
+       0
+dhimmi_minister
+       1
+       0
+       0
+nobility_sumptuary_restrictions
+       1
+       0
+       0
+burgher_favorable_trade_laws
+       1
+       0
+       0
+burgher_unfavorable_trade_laws
+       1
+       0
+       0
+unsanitary_suburbs
+       1
+       0
+       0
+new_men
+       1
+       0
+       0
+conflict_within_city
+       1
+       0
+       0
+thankful_guilds
+       1
+       0
+       0
+held_back_commoners
+       1
+       0
+       0
+religious_court_life
+       1
+       0
+       0
+missionary_syncretism
+       1
+       0
+       0
+campaign_against_syncretism
+       1
+       0
+       0
+cossack_settlers
+       1
+       0
+       0
+no_tribal_leaders
+       1
+       0
+       0
+wih_aphra_behn
+       1
+       0
+       0
+wih_eliza_lucas
+       1
+       0
+       0
+wih_juanainesdelacruz
+       1
+       0
+       0
+wih_jane_austen
+       1
+       0
+       0
+wih_louise_pru
+       1
+       0
+       0
+wih_abigail_adams
+       1
+       0
+       0
+wih_meera_bai
+       1
+       0
+       0
+wih_hoxuanhuong
+       1
+       0
+       0
+wih_kateritekakwitha
+       1
+       0
+       0
+wih_mariasibyllamerian
+       1
+       0
+       0
+wih_kenausimonsdochterhasselaer
+       1
+       0
+       0
+wih_elenacornaropiscopia
+       1
+       0
+       0
+wih_yekaterinaromanovnavorontsovadashkova
+       1
+       0
+       0
+wih_mariecrous
+       1
+       0
+       0
+wih_ohatsu
+       1
+       0
+       0
+wih_wangzhenyi
+       1
+       0
+       0
+wih_suriyothai
+       1
+       0
+       0
+wih_olympedegouges
+       1
+       0
+       0
+wih_izumonookuni
+       1
+       0
+       0
+wih_marthawashington
+       1
+       0
+       0
+wih_elizabethwilbraham
+       1
+       0
+       0
+wih_annabunina
+       1
+       0
+       0
+wih_nanyehi
+       1
+       0
+       0
+wih_vendelaskytte
+       1
+       0
+       0
+wih_mumtazmahal
+       1
+       0
+       0
+wih_pokou
+       1
+       0
+       0
+wih_mariamuzzamani
+       1
+       0
+       0
+wih_heonanseolheon
+       1
+       0
+       0
+pap_swiss_guard
+       1
+       0
+       0
+mil_vatican_library
+       1
+       0
+       0
+dip_vatican_library
+       1
+       0
+       0
+adm_vatican_library
+       1
+       0
+       0
+pap_sistine_chapel
+       1
+       0
+       0
+pap_sistinechapel_botticelli
+       1
+       0
+       0
+pap_sistinechapel_ghirlandaio
+       1
+       0
+       0
+pap_sistinechapel_perugino
+       1
+       0
+       0
+pap_sistinechapel_michelangelo
+       1
+       0
+       0
+pap_sistinechapel_decorated
+       1
+       0
+       0
+pap_indulgences
+       1
+       0
+       0
+pap_simony
+       1
+       0
+       0
+pap_veneration_relics
+       1
+       0
+       0
+pap_condemn_slavery
+       1
+       0
+       0
+pap_swiss_guard_timer
+       1
+       0
+       0
+pap_passetto_di_borgo_timer
+       1
+       0
+       0
+pap_rome_loot_timer
+       1
+       0
+       0
+dev_general_hospital
+       1
+       0
+       0
+dev_fort_maintenance
+       1
+       0
+       0
+dev_modern_forts
+       1
+       0
+       0
+dev_heretical_expulsion
+       1
+       0
+       0
+dev_jubilee
+       1
+       0
+       0
+dev_confiscated_reformed_church
+       1
+       0
+       0
+dev_educated_women
+       1
+       0
+       0
+dev_religious_cleansing
+       1
+       0
+       0
+dev_rafida
+       1
+       0
+       0
+dev_nasibi
+       1
+       0
+       0
+dev_idolatry_abolished
+       1
+       0
+       0
+dev_focus_taxes
+       1
+       0
+       0
+dev_focus_agriculture
+       1
+       0
+       0
+dev_balance_tax_agriculture
+       1
+       0
+       0
+dev_hadith_madrasa
+       1
+       0
+       0
+dev_fiqah_madrasa
+       1
+       0
+       0
+dev_hadith_fiqah_madrasa
+       1
+       0
+       0
+dev_mutaween
+       1
+       0
+       0
+dev_bonfire_vanities_timer
+       1
+       0
+       0
+add_unrest_
+      17
+       0
+       0
+add_unrest_
+      17
+       0
+       0
+remove_unrest_
+       4
+       0
+       0
+indian_religious_tensions
+       1
+       0
+       0
+valladolid_sepulveda
+       1
+       0
+       0
+valladolid_sepulveda_motherland
+       1
+       0
+       0
+valladolid_las_casas
+       1
+       0
+       0
+alhambra_decree
+       1
+       0
+       0
+unification_of_spain
+       1
+       0
+       0
+cortes_defended
+       1
+       0
+       0
+promote_regional_languages
+       1
+       0
+       0
+castilian_grammar
+       1
+       0
+       0
+solo_madrid_es_corte
+       1
+       0
+       0
+supressing_spanish_protestantism
+       1
+       0
+       0
+spanish_bible_translation
+       1
+       0
+       0
+spa_new_colonial_reforms
+       1
+       0
+       0
+spa_new_colonial_reforms_subject
+       1
+       0
+       0
+jesuits_expelled
+       1
+       0
+       0
+harbouring_reformer
+       1
+       0
+       0
+catholics_in_hiding
+       1
+       0
+       0
+rumored_crypto_catholics
+       1
+       0
+       0
+millenarianism
+       1
+       0
+       0
+fear_of_god
+       1
+       0
+       0
+prot_economic_downturn
+       1
+       0
+       0
+stricter_usury_regulations
+       1
+       0
+       0
+prot_peace
+       1
+       0
+       0
+prot_wars
+       1
+       0
+       0
+prot_purity_of_faith
+       1
+       0
+       0
+prot_christian_unity
+       1
+       0
+       0
+catholic_zealot
+       1
+       0
+       0
+tolerant_monarch
+       1
+       0
+       0
+catholic_stronghold
+       1
+       0
+       0
+plagued_concience
+       1
+       0
+       0
+phillipists
+       1
+       0
+       0
+protestant_influx
+       1
+       0
+       0
+protestant_refugees
+       1
+       0
+       0
+protestant_refugees_to_the_colonies
+       1
+       0
+       0
+controversy_over_official_bible
+       1
+       0
+       0
+new_bible_translation
+       1
+       0
+       0
+protestant_bigamy
+       1
+       0
+       0
+mosaic_law_accusations
+       1
+       0
+       0
+stern_theologian_education
+       1
+       0
+       0
+stern_theologian_mission
+       1
+       0
+       0
+stern_theologian_leader
+       1
+       0
+       0
+spread_of_pietism
+       1
+       0
+       0
+iconoclast_riot
+       1
+       0
+       0
+colonial_religious_tensions
+       1
+       0
+       0
+loyalist_preacher
+       1
+       0
+       0
+patriot_preacher
+       1
+       0
+       0
+prot_stopped_witch_trials
+       1
+       0
+       0
+prot_witch_trials
+       1
+       0
+       0
+escalated_witch_trials
+       1
+       0
+       0
+dyn_newborn_daughter
+       1
+       0
+       0
+withdrawn_parliamentary_seat
+       1
+       0
+       0
+rotten_borough
+       1
+       0
+       0
+parliamentary_scandal
+       1
+       0
+       0
+demands_representation
+       1
+       0
+       0
+yearning_for_representation
+       1
+       0
+       0
+si_state_smuggling
+       1
+       0
+       0
+si_scutage_unwilling_vassals
+       1
+       0
+       0
+si_enchanced_production
+       1
+       0
+       0
+si_better_exports
+       1
+       0
+       0
+loyal_subjects
+       1
+       0
+       0
+disloyal_subjects
+       1
+       0
+       0
+si_incompetent_ruler_timer
+       1
+       0
+       0
+si_competent_ruler_timer
+       1
+       0
+       0
+si_squandering_loyalists_timer
+       1
+       0
+       0
+si_liberty_desire_timer
+       1
+       0
+       0
+si_bankrupt_timer
+       1
+       0
+       0
+strict_punishment_of_monks
+       1
+       0
+       0
+cleansing_of_monasteries
+       1
+       0
+       0
+lacking_monastic_discipline
+       1
+       0
+       0
+monastaries_blooming
+       1
+       0
+       0
+wedge_throw
+       1
+       0
+       0
+poor_rice_harvests
+       1
+       0
+       0
+forced_labor
+       1
+       0
+       0
+human_sacrifice
+       1
+       0
+       0
+grain_for_the_poor
+       1
+       0
+       0
+grain_reserves
+       1
+       0
+       0
+political_rival_crushed
+       1
+       0
+       0
+hostile_monastery
+       1
+       0
+       0
+social_bandit
+       1
+       0
+       0
+social_bandit_local_search
+       1
+       0
+       0
+social_bandit_myth
+       1
+       0
+       0
+bandit_leader_returned
+       1
+       0
+       0
+upset_theravada_monks
+       1
+       0
+       0
+upset_theravada_nobles
+       1
+       0
+       0
+pleased_theravada_nobles
+       1
+       0
+       0
+pleased_theravada_monks
+       1
+       0
+       0
+regulated_monasteries
+       0
+       1
+       0
+vajrayana_lama
+       1
+       0
+       0
+influx_of_tibetan_monks
+       1
+       0
+       0
+vajrayana_great_monastery
+       1
+       0
+       0
+destruction_of_idols
+       1
+       0
+       0
+powerful_hostile_monastery
+       1
+       0
+       0
+powerful_benevolent_monastery
+       1
+       0
+       0
+improvement_program
+       1
+       0
+       0
+hampered_growth
+       1
+       0
+       0
+supporting_local_monastic_traditions
+       1
+       0
+       0
+buddhist_nepotism
+       1
+       0
+       0
+governor_replaced
+       1
+       0
+       0
+monks_from_ceylon
+       1
+       0
+       0
+fc_hre_privileges
+       1
+       0
+       0
+fc_city_league
+       1
+       0
+       0
+fc_league_reforms
+       1
+       0
+       0
+fc_treatyconference_timer
+       1
+       0
+       0
+fc_league_timer
+       1
+       0
+       0
+fc_league_reforms_timer
+       1
+       0
+       0
+tengri_insincere_leadership
+       1
+       0
+       0
+tengri_abandoning_the_old_ways
+       1
+       0
+       0
+tengri_clergy_conflicts
+       1
+       0
+       0
+tengri_settled_warriors
+       1
+       0
+       0
+tengri_local_plight
+       1
+       0
+       0
+tengri_shamans_spurned
+       1
+       0
+       0
+tengri_religious_influx
+       1
+       0
+       0
+tengri_ibadi_scholars
+       1
+       0
+       0
+tengri_sufi_teacher
+       1
+       0
+       0
+tengri_qadi
+       1
+       0
+       0
+tengri_stood_up_for_yassa
+       1
+       0
+       0
+tengri_devout_muslim
+       1
+       0
+       0
+tengri_ruler_questioned
+       1
+       0
+       0
+tengri_jihad
+       1
+       0
+       0
+tengri_strengthened_local_clans
+       1
+       0
+       0
+tengri_growing_cities
+       1
+       0
+       0
+tengri_influx_of_monks
+       1
+       0
+       0
+tengri_monks_in_capital
+       1
+       0
+       0
+tengri_religious_pilgrimages
+       1
+       0
+       0
+tengri_confucian_administrators
+       1
+       0
+       0
+tengri_confucian_nobles
+       1
+       0
+       0
+tengri_traditionalists_strengthened
+       1
+       0
+       0
+tengri_confucian_titles
+       1
+       0
+       0
+tengri_traditional_elites_alienated
+       1
+       0
+       0
+tengri_confucian_elites_alienated
+       1
+       0
+       0
+tengri_christian_mission
+       1
+       0
+       0
+tengri_personal_confessor
+       1
+       0
+       0
+tengri_devout_christian_ruler
+       1
+       0
+       0
+tengri_unchristian_values
+       1
+       0
+       0
+tengri_hindu_syncretism
+       1
+       0
+       0
+hindufication
+       1
+       0
+       0
+tengri_hindu_conflict
+       1
+       0
+       0
+tengri_support_of_shamans
+       1
+       0
+       0
+tengri_support_of_brahmins
+       1
+       0
+       0
+tengri_bow_and_arrow_defended
+       1
+       0
+       0
+tengri_japanese_swordsmithing
+       1
+       0
+       0
+tengri_tea_ceremony
+       1
+       0
+       0
+spread_of_tengri_tea_ceremony
+       1
+       0
+       0
+tengri_monastic_order
+       1
+       0
+       0
+tengri_pali_legal_traditions
+       1
+       0
+       0
+tengri_shiite_immigration
+       1
+       0
+       0
+tengri_shiite_settled_in_capital
+       1
+       0
+       0
+support_of_the_khojas
+       1
+       0
+       0
+zoroastrian_traders
+       1
+       0
+       0
+tengri_animist_pantheon
+       1
+       0
+       0
+controlled_the_pope_mission
+       0
+       0
+       1
+achieved_religious_unity_mission
+       0
+       0
+       2
+restored_holy_see_mission
+       0
+       0
+       1
+solidified_papal_relations_modifier
+       0
+       0
+       1
+force_converted_province_mission
+       0
+       0
+       3
+force_converted_country_mission
+       0
+       0
+       1
+naval_enthusiasm_mission
+       0
+       0
+       1
+thriving_ship_building_sector
+       0
+       0
+       1
+thriving_arms_industry
+       0
+       0
+       1
+liberator_of_mecca
+       0
+       0
+       1
+liberator_of_jerusalem
+       0
+       0
+       1
+east_india_trade_rush
+       0
+       0
+       4
+faster_integration
+       0
+       0
+      10
+military_victory
+       0
+       0
+      14
+military_vassalization
+       0
+       0
+       8
+protected_italian_interests
+       0
+       0
+       1
+italian_ambition_modifier
+       0
+       0
+       2
+expansion_of_the_shipbuilding_industry
+       0
+       0
+       1
+growing_chinaware_trade
+       0
+       0
+       1
+growing_spice_trade
+       0
+       0
+       1
+merchant_society
+       0
+       0
+       1
+impressed_financial_sector
+       0
+       0
+       1
+national_recovery
+       0
+       0
+       1
+recovering_economy
+       0
+       0
+       1
+foreign_contacts
+       0
+       0
+       2
+converting_the_pagans
+       0
+       0
+       1
+local_colonial_expansion
+       0
+       0
+       1
+legitimacy_defended
+       0
+       0
+       1
+succesful_bid_for_imperial_crown
+       0
+       0
+       2
+baltic_ambition
+       0
+       0
+       4
+mediterranean_ambition
+       0
+       0
+       5
+indian_ocean_ambition
+       0
+       0
+       1
+black_sea_ambition
+       0
+       0
+       2
+indian_ambition
+       0
+       0
+       2
+british_ambition
+       0
+       0
+       1
+completing_the_reconquista
+       0
+       0
+       1
+polish_partitions
+       0
+       0
+       3
+emperor_friendly_with_elector
+       0
+       0
+       1
+bavarian_ambition
+       0
+       0
+       1
+byzantium_resurgent
+       0
+       0
+       1
+prussian_ambition
+       0
+       0
+       1
+defended_the_lowlands
+       0
+       0
+       1
+defeated_byzantine_empire
+       0
+       0
+       1
+austria_reunited
+       0
+       0
+       1
+drove_back_the_turk
+       0
+       0
+       2
+protected_austrian_low_countries
+       0
+       0
+       1
+fought_back_the_hungarians
+       0
+       0
+       1
+uniter_of_the_manchus
+       0
+       0
+       1
+english_out_of_france
+       0
+       0
+       1
+french_ambition
+       0
+       0
+       1
+defended_denmark
+       0
+       0
+       1
+korean_frontier
+       0
+       0
+       1
+catholic_italy_modifier
+       0
+       0
+       1
+venetian_terra_firma
+       0
+       0
+       1
+defended_against_shybanids
+       0
+       0
+       1
+afghanistan_secured_mug
+       0
+       0
+       1
+conquest_of_persia
+       0
+       0
+       1
+controlling_the_steppes
+       0
+       0
+       1
+lithuanian_russian_ambition
+       0
+       0
+       1
+polish_ambition
+       0
+       0
+       1
+kapilendras_ambition
+       0
+       0
+       1

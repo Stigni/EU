@@ -10,6 +10,7 @@ nationalist_rebels = {
 	defect_delay = 60				# Can spontaneously declare independence after 60 months (earliest)
 	unit_transfer = yes				# Units switch allegiance after enforcing demands.
 	gfx_type = culture_province	
+	will_relocate = yes	
 	
 	resilient = no
 	reinforcing = yes
@@ -50,7 +51,7 @@ nationalist_rebels = {
 	 	}
 		modifier = {
 			factor = 0.01
-			region = french_region
+			region = france_region
 			has_owner_religion = no
 			owner = { has_disaster = french_wars_of_religion }			
 	 	}
@@ -133,7 +134,19 @@ nationalist_rebels = {
 		modifier = {
 			factor = 2
 			NOT = { tolerance_to_this = -2 }
-		}		
+		}
+		modifier = {
+			factor = 1.3
+			owner = {
+				NOT = { legitimacy_or_horde_unity = 66 }
+			}
+		}
+		modifier = {
+			factor = 1.3
+			owner = {
+				NOT = { legitimacy_or_horde_unity = 75 }
+			}
+		}
 	}
  
  	# This is checked for EACH province in the Area of Operations

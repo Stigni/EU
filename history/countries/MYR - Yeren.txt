@@ -1,7 +1,7 @@
 government = steppe_horde
 technology_group = nomad_group
 primary_culture = manchu
-religion = shamanism
+religion = tengri_pagan_reformed
 capital = 1048	# Hinggan
 
 1444.1.1 = {

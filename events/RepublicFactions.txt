@@ -28,6 +28,7 @@ province_event = {
 		}
 		NOT = { has_province_modifier = free_trade_of_goods }
 		NOT = { has_province_modifier = strong_guild }
+		NOT = { trade_goods = unknown }
 	}
 
 	mean_time_to_happen = {

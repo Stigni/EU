@@ -1473,7 +1473,7 @@ country_event = {
 		ai_chance = { factor = 25 }
 		every_owned_province = {
 			limit = {
-				region = anatolia
+				region = anatolia_region
 				is_capital = no
 			}
 			add_province_modifier = {
@@ -1488,7 +1488,7 @@ country_event = {
 		add_years_of_income = -0.25
 		every_owned_province = {
 			limit = {
-				region = anatolia
+				region = anatolia_region
 				is_capital = no
 			}
 			add_province_modifier = {
@@ -1751,6 +1751,8 @@ country_event = {
 			name = tur_janissary
 			duration = -1
 		}
+		custom_tooltip = janissary_disaster_notifier
+		set_country_flag = janissary_timer
 	}
 	option = {		# Disband them
 		name = "flavor_tur.EVTOPTB100"
@@ -1917,7 +1919,7 @@ country_event = {
 		}
 		random_owned_province = {
 			limit = {
-				region = anatolia
+				region = anatolia_region
 				is_capital = no
 			}
 			spawn_rebels = {

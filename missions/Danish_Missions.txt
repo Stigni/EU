@@ -230,14 +230,14 @@ defend_denmark = {
 		tag = DAN
 		NOT = { has_country_flag = defended_denmark_flag }
 		is_subject = no
-		danish_region = { owned_by = SWE }
+		denmark_area = { owned_by = SWE }
 	}
 	abort = {
 		is_subject = yes
 	}
 	success = {
 		NOT = { war_with = SWE }
-		NOT = { danish_region = { owned_by = SWE } }
+		NOT = { denmark_area = { owned_by = SWE } }
 	}
 	chance = {
 		factor = 3000

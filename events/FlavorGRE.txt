@@ -23,7 +23,11 @@ country_event = {
 		adm_tech = 20
 		any_owned_province = {
 			culture = greek
-			region = greece_region
+			OR = {
+				area = morea_area
+				area = northern_greece_area
+				area = macedonia_area
+			}
 		}
    	}
 	
@@ -36,7 +40,13 @@ country_event = {
 		trigger = { NOT = { has_country_flag = greek_information } }
 		set_global_flag = greek_cores
 		every_province = {
-			limit = { region = greece_region }
+			limit = {
+				OR = {
+					area = macedonia_area
+					area = morea_area
+					area = northern_greece_area
+				}
+			}
 			add_core = GRE
 		}
 		if = {
@@ -59,7 +69,7 @@ country_event = {
 				}
 			}
 			1853 = {
-				add_unrest = 2
+				add_unrest = 4
 			}
 		}
 		every_province = {
@@ -72,7 +82,11 @@ country_event = {
 			every_known_country = {
 				limit = {
 					any_owned_province = {
-						region = greece_region
+						OR = {
+							area = northern_greece_area
+							area = morea_area
+							area = macedonia_area
+						}
 					}
 				}
 				set_country_flag = greek_information
@@ -89,7 +103,13 @@ country_event = {
 		}
 		tooltip = {
 			every_province = {
-				limit = { region = greece_region }
+				limit = {
+					OR = {
+						area = macedonia_area
+						area = northern_greece_area
+						area = morea_area
+					}
+				}
 				add_core = GRE
 			}
 		}
@@ -97,7 +117,7 @@ country_event = {
 			limit = { owns = 1853 }
 			tooltip = {
 				1853 = {
-					add_unrest = 2
+					add_unrest = 4
 				}
 			}
 		}
@@ -124,7 +144,13 @@ country_event = {
 		}
 		tooltip = {
 			every_province = {
-				limit = { region = greece_region }
+				limit = {
+					OR = {
+						area = morea_area
+						area = macedonia_area
+						area = northern_greece_area
+					}
+				}
 				add_core = GRE
 			}
 		}

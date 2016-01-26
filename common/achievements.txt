@@ -6,7 +6,6 @@ achievement_for_the_glory = {
 	id = 1
 	
 	possible = {
-		NOT = { num_of_custom_nations = 1 }
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
@@ -22,7 +21,6 @@ achievement_grand_army = {
 	id = 2
 	
 	possible = {
-		NOT = { num_of_custom_nations = 1 }
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
@@ -39,7 +37,6 @@ achievement_grand_navy = {
 	id = 3
 	
 	possible = {
-		NOT = { num_of_custom_nations = 1 }
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
@@ -56,7 +53,6 @@ achievement_defender_of_the_faith = {
 	id = 4
 	
 	possible = {
-		NOT = { num_of_custom_nations = 1 }
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
@@ -73,7 +69,6 @@ achievement_until_death_do_us_apart = {
 	id = 5
 	
 	possible = {
-		NOT = { num_of_custom_nations = 1 }
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
@@ -90,7 +85,6 @@ achievement_that_is_mine = {
 	id = 6
 	
 	possible = {
-		NOT = { num_of_custom_nations = 1 }
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
@@ -106,7 +100,6 @@ achievement_victorious = {
 	id = 7
 	
 	possible = {
-		NOT = { num_of_custom_nations = 1 }
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
@@ -152,7 +145,7 @@ achievement_down_under = {
 	}
 
 	happened = {
-		australian_coast = {
+		australia_region = {
 			owned_by = ROOT
 			is_colony = yes
 		}
@@ -168,6 +161,7 @@ achievement_isnt_this_the_way_to_india = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
+		is_random_new_world = no
 		tag = CAS
 		NOT = {
 			north_america = { has_discovered = ROOT }
@@ -210,6 +204,7 @@ achievement_not_so_sad_a_state = {
 		ironman = yes
 		start_date = 1444.11.11
 		tag = POR
+		is_random_new_world = no
 	}
 	
 	happened = {
@@ -228,7 +223,6 @@ achievement_seriously = {
 	id = 13
 	
 	possible = {
-		NOT = { num_of_custom_nations = 1 }
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
@@ -244,7 +238,6 @@ achievement_its_all_about_the_money = {
 	id = 14
 	
 	possible = {
-		NOT = { num_of_custom_nations = 1 }
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
@@ -260,7 +253,6 @@ achievement_respected = {
 	id = 15
 	
 	possible = {
-		NOT = { num_of_custom_nations = 1 }
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
@@ -278,13 +270,16 @@ achievement_true_catholic = {
 	id = 16
 	
 	possible = {
-		NOT = { num_of_custom_nations = 1 }
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
 		NOT = { num_of_cardinals = 2 }
 	}
+	
+	visible = {
+		religion = catholic
+	}	
 	
 	happened = {
 		num_of_cardinals = 3
@@ -320,7 +315,6 @@ achievement_grand_coalition = {
 	id = 51
 	
 	possible = {
-		NOT = { num_of_custom_nations = 1 }
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
@@ -347,6 +341,10 @@ achievement_italian_ambition = {
 		ironman = yes
 		start_date = 1444.11.11
 	}	
+	
+	visible = {
+		culture_group = latin
+	}
 	
 	happened = {
 		tag = ITA
@@ -426,10 +424,11 @@ achievement_no_pirates_in_my_carribean = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
+		is_random_new_world = no
 	}
 	
 	happened = {
-		the_carribean = {
+		carribeans_region = {
 			type = all
 			country_or_vassal_holds = ROOT
 		}
@@ -451,7 +450,32 @@ achievement_master_of_india = {
 	}
 	
 	happened = {
-		indian_region = {
+		deccan_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		coromandel_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		bengal_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		hindusthan_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		rajputana_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		west_india_region = {
 			type = all
 			owned_by = ROOT
 			is_core = ROOT
@@ -551,6 +575,10 @@ achievement_winged_hussars = {
 		start_date = 1444.11.11
 	}
 	
+	visible = {
+		unit_type = eastern
+	}
+	
 	happened = {
 		has_unit_type = polish_winged_hussar
 		has_global_modifier_value = {
@@ -642,6 +670,7 @@ achievement_at_every_continent = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
+		is_random_new_world = no #No South America in Random New World.
 	}
 	
 	happened = {
@@ -678,6 +707,13 @@ achievement_spain_is_the_emperor = {
 		NOT = { is_emperor = yes }
 	}
 	
+	visible = {
+		OR = {
+			culture_group = iberian
+			tag = SPA
+		}
+	}	
+	
 	happened = {
 		tag = SPA
 		is_emperor = yes
@@ -694,6 +730,10 @@ achievement_an_early_reich = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		culture_group = germanic
+	}	
 	
 	happened = {
 		tag = GER
@@ -751,7 +791,7 @@ achievement_the_chrysanthemum_throne = {
 	
 	happened = {
 		tag = JAP
-		japanese_region = {
+		japan_region = {
 			type = all
 			OR = {
 				is_empty = yes
@@ -871,6 +911,10 @@ achievement_kaiser_not_just_in_name = {
 		start_date = 1444.11.11
 	}
 	
+	visible = {
+		capital_scope = { is_part_of_hre = yes }
+	}	
+	
 	happened = {
 		tag = HLR
 	}
@@ -936,15 +980,69 @@ achievement_no_trail_of_tears = {
 		ironman = yes
 		start_date = 1444.11.11
 		tag = CHE
+		is_random_new_world = no
 	}
 	
 	happened = {
 		technology_group = western
-		the_thirteen_colonies = {
+		susquehanna_area = {
 			type = all
 			owned_by = CHE
 			is_core = CHE
 		}
+		delaware_valley_area = {
+			type = all
+			owned_by = CHE
+			is_core = CHE
+		}
+		hudson_valley_area = {
+			type = all
+			owned_by = CHE
+			is_core = CHE
+		}
+		massachusetts_bay_area = {
+			type = all
+			owned_by = CHE
+			is_core = CHE
+		}
+		connecticut_valley_area = {
+			type = all
+			owned_by = CHE
+			is_core = CHE
+		}
+		chesapeake_area = {
+			type = all
+			owned_by = CHE
+			is_core = CHE
+		}
+		great_valley_area = {
+			type = all
+			owned_by = CHE
+			is_core = CHE
+		}
+		piedmont_north_america_area = {
+			type = all
+			owned_by = CHE
+			is_core = CHE
+		}
+		carolinas_area = {
+			type = all
+			owned_by = CHE
+			is_core = CHE
+		}
+		appalachia_area = {
+			type = all
+			owned_by = CHE
+			is_core = CHE
+		}
+		owns_core_province = 929
+		owns_core_province = 971
+		owns_core_province = 2526
+		owns_core_province = 2539
+		owns_core_province = 2540
+		owns_core_province = 2564
+		owns_core_province = 2565
+		owns_core_province = 2566
 	}
 }
 
@@ -1039,7 +1137,7 @@ achievement_luck_of_the_irish = {
 	}
 	
 	happened = {
-		british_isles = {
+		british_isles_region = {
 			type = all
 			owned_by = ROOT
 			is_core = ROOT
@@ -1061,6 +1159,7 @@ achievement_world_conqueror = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
+		is_random_new_world = no
 	}
 	
 	happened = {
@@ -1088,6 +1187,7 @@ achievement_the_three_mountains = {
 		ironman = yes
 		start_date = 1444.11.11
 		tag = RYU
+		is_random_new_world = no
 	}
 	
 	happened = {
@@ -1220,6 +1320,7 @@ achievement_liberty_or_death = {
 		ironman = yes
 		start_date = 1776.7.4
 		tag = USA
+		is_random_new_world = no
 	}
 	
 	happened = {
@@ -1265,6 +1366,10 @@ achievement_in_the_name_of_the_father = {
 		start_date = 1444.11.11
 	}
 	
+	visible = {
+		religion = orthodox
+	}
+	
 	happened = {
 		patriarch_authority = 1.0
 	}
@@ -1286,7 +1391,7 @@ achievement_the_rising_sun = {
 	}
 	
 	happened = {
-		japanese_region = {
+		japan_region = {
 			type = all
 			owned_by = ROOT
 			is_core = ROOT
@@ -1304,6 +1409,18 @@ achievement_the_five_colonies = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
+	}
+	
+	visible = {
+		NOT = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+					continent = new_world
+				}
+			}
+		}
 	}
 	
 	happened = {
@@ -1326,7 +1443,7 @@ achievement_the_re_reconquista = {
 	
 	happened = {
 		tag = ADU
-		iberian_peninsula = {
+		iberia_region = {
 			type = all
 			owned_by = ADU
 			is_core = ADU
@@ -1345,6 +1462,10 @@ achievement_turn_the_table = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		has_dlc = "Conquest of Paradise"
+	}		
 	
 	happened = {
 		is_former_colonial_nation = yes
@@ -1376,15 +1497,37 @@ achievement_the_great_khan = {
 	}
 
 	happened = {
-		russian_region = {
+		russia_region = {
 			type = all
 			country_or_vassal_holds = ROOT
 		}
-		chinese_region = {
+		crimea_region = {
 			type = all
 			country_or_vassal_holds = ROOT
 		}
-		persian_region = {
+		#China Super Region:
+		south_china_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}
+		xinan_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}
+		north_china_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}
+		#Persia Super Region:
+		persia_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}
+		khorasan_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}
+		baluchistan_region = {
 			type = all
 			country_or_vassal_holds = ROOT
 		}
@@ -1402,6 +1545,10 @@ achievement_four_for_trade = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		has_dlc = "Wealth of Nations"
+	}	
 
 	happened = {
 		num_of_strong_trade_companies = 4
@@ -1569,6 +1716,10 @@ achievement_electable = {
 		start_date = 1444.11.11
 		is_elector = no
 	}
+	
+	visible = {
+		capital_scope = { is_part_of_hre = yes }
+	}	
 
 	happened = {
 		has_switched_nation = no
@@ -1593,6 +1744,14 @@ achievement_vasa_or_wettin = {
 		start_date = 1444.11.11
 		NOT = { tag = POL }
 	}
+	
+	visible = {
+		has_dlc = "Res Publica"
+		OR = {
+			POL = { religion_group = ROOT }
+			PLC = { religion_group = ROOT }
+		}
+	}		
 
 	happened = {
 		has_switched_nation = no
@@ -1620,16 +1779,36 @@ achievement_sinaasappel = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		has_dlc = "Res Publica"
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+		}
+	}	
 
 	happened = {
 		has_switched_nation = no
 		is_orangists_in_power = yes
 		republican_tradition = 0.99
 		
-		chinese_region = {
-			type = any
-			owned_by = ROOT
-			is_core = ROOT
+		OR = {
+			south_china_region = {
+				type = any
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			xinan_region = {
+				type = any
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			north_china_region = {
+				type = any
+				owned_by = ROOT
+				is_core = ROOT
+			}
 		}
 	}
 }
@@ -1699,8 +1878,22 @@ achievement_iron_price = {
 	}
 
 	happened = {
-		danelaw = {
-			type = all
+		245 = {
+			owned_by = ROOT
+			is_core = ROOT
+			culture = danish
+		}
+		246 = {
+			owned_by = ROOT
+			is_core = ROOT
+			culture = danish
+		}
+		243 = {
+			owned_by = ROOT
+			is_core = ROOT
+			culture = danish
+		}
+		1860 = {
 			owned_by = ROOT
 			is_core = ROOT
 			culture = danish
@@ -1748,7 +1941,7 @@ achievement_center_of_attention = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
-
+	
 	happened = {
 		has_switched_nation = no
 		any_owned_province = {
@@ -1773,7 +1966,7 @@ achievement_this_revolution_was_crushed = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
-
+	
 	happened = {
 		any_known_country = {
 			is_revolution_target = yes
@@ -1823,7 +2016,16 @@ achievement_land_of_eastern_jade = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
+		is_random_new_world = no
 	}
+	
+	visible = {
+		OR = {
+			religion = buddhism #Theravada
+			religion = mahayana
+			religion = vajrayana
+		}
+	}	
 
 	happened = {
 		OR = {
@@ -1831,7 +2033,7 @@ achievement_land_of_eastern_jade = {
 			religion = mahayana
 			religion = vajrayana
 		}
-		central_america = {
+		mexico_region = {
 			owned_by = ROOT
 			is_core = ROOT
 		}
@@ -1960,6 +2162,10 @@ achievement_holy_trinity = {
 		start_date = 1444.11.11
 		tag = PAP
 	}
+	
+	visible = {
+		has_dlc = "Art of War"
+	}
 
 	happened = {
 		tag = PAP
@@ -2033,6 +2239,10 @@ achievement_krabater = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		primary_culture = croatian
+	}	
 
 	happened = {
 		has_switched_nation = no
@@ -2052,6 +2262,10 @@ achievement_lion_of_the_north = {
 		ironman = yes
 		start_date = 1444.11.11
 		tag = SWE
+	}
+	
+	visible = {
+		has_dlc = "Art of War"
 	}
 
 	happened = {
@@ -2188,6 +2402,7 @@ achievement_gothic_invasion = {
 
 	happened = {
 		has_switched_nation = no
+		primary_culture = goths
 		NOT = {
 			any_province = {
 				culture_group = germanic
@@ -2260,6 +2475,7 @@ achievement_georgia_on_my_mind = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
+		is_random_new_world = no
 	}
 
 	happened = {
@@ -2301,11 +2517,11 @@ achievement_albania_or_iberia = {
 
 	happened = {
 		has_switched_nation = no
-		iberian_peninsula = {
+		iberia_region = {
 			type = all
 			country_or_vassal_holds = ROOT
 		}
-		caucasus = {
+		caucasia_region = {
 			type = all
 			country_or_vassal_holds = ROOT
 		}
@@ -2323,6 +2539,10 @@ achievement_spice_must_flow = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		culture_group = malay
+	}	
 
 	happened = {
 		has_switched_nation = no
@@ -2345,7 +2565,7 @@ achievement_raja_of_the_rajput_reich = {
 
 	happened = {
 		has_switched_nation = no
-		german_region = {
+		germany_region = {
 			type = all
 			country_or_vassal_holds = ROOT
 		}	
@@ -2362,7 +2582,20 @@ achievement_sun_never_sets_on_the_indian_empire = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
+		is_random_new_world = no
 	}
+	
+	visible = {
+		OR = {
+			culture_group = dravidian
+			culture_group = western_aryan
+			culture_group = hindusthani
+			culture_group = eastern_aryan
+			culture_group = central_indic
+			tag = HIN
+			tag = BHA
+		}
+	}	
 
 	happened = {
 		has_switched_nation = no
@@ -2411,15 +2644,10 @@ achievement_draculas_revenge = {
 	happened = {
 		tag = RMN
 		
-		western_balkans = {
+		balkan_region = {
 			type = all
 			country_or_vassal_holds = ROOT
-		}
-		
-		eastern_balkans = {
-			type = all
-			country_or_vassal_holds = ROOT
-		}				
+		}			
 	}
 }
 
@@ -2439,6 +2667,13 @@ achievement_arabian_coffee = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		OR = {
+			culture_group = turko_semitic
+			tag = ARB
+		}
+	}
 
 	happened = {
 		has_switched_nation = no
@@ -2457,6 +2692,13 @@ achievement_even_better_than_piet_heyn = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		OR = {
+			has_dlc = "Wealth of Nations"
+			has_dlc = "El Dorado"
+		}
+	}	
 
 	happened = {
 		has_country_flag = treasure_fleet_looted
@@ -2472,6 +2714,7 @@ achievement_a_sun_god = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
+		is_random_new_world = no
 	}
 
 	happened = {
@@ -2490,7 +2733,7 @@ achievement_a_sun_god = {
 					is_core = INC
 				}
 			}
-		}		
+		}
 
 
 	}
@@ -2506,7 +2749,12 @@ achievement_on_the_edge_of_madness = {
 		ironman = yes
 		start_date = 1444.11.11
 		tag = AZT
+		is_random_new_world = no
 	}
+	
+	visible = {
+		has_dlc = "El Dorado"
+	}		
 
 	happened = {
 		has_switched_nation = no
@@ -2528,6 +2776,10 @@ achievement_magellans_voyage = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		has_dlc = "El Dorado"
+	}		
 
 	happened = {	
 		has_switched_nation = no
@@ -2544,6 +2796,7 @@ achievement_imperio_espanol = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
+		is_random_new_world = no
 	}
 
 	happened = {
@@ -2551,19 +2804,19 @@ achievement_imperio_espanol = {
 		tag = SPA
 		852 = { #Mexico
 			country_or_vassal_holds = ROOT
-			owner = { is_colonial_nation = yes }
+			owner_is_colonial_nation = yes
 		}
 		835 = { #Panama
 			country_or_vassal_holds = ROOT
-			owner = { is_colonial_nation = yes }
+			owner_is_colonial_nation = yes
 		}
 		484 = { #Havana
 			country_or_vassal_holds = ROOT
-			owner = { is_colonial_nation = yes }
+			owner_is_colonial_nation = yes
 		}
 		808 = {	#Cuzco
 			country_or_vassal_holds = ROOT
-			owner = { is_colonial_nation = yes }
+			owner_is_colonial_nation = yes
 		}				
 	}
 }
@@ -2594,16 +2847,39 @@ achievement_this_is_persia = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		OR = {
+			culture_group = iranian
+			primary_culture = azerbaijani
+			tag = PER
+		}
+	}
 
 	happened = {
 		tag = PER
 		has_switched_nation = no
-		anatolia = {
+		anatolia_region = {
 			type = all
 			owned_by = PER
 			is_core = PER
 		}
-		greece_region = {
+		morea_area = {
+			type = all
+			owned_by = PER
+			is_core = PER
+		}
+		northern_greece_area = {
+			type = all
+			owned_by = PER
+			is_core = PER
+		}
+		macedonia_area = {
+			type = all
+			owned_by = PER
+			is_core = PER
+		}
+		western_aegean_area = {
 			type = all
 			owned_by = PER
 			is_core = PER
@@ -2632,7 +2908,7 @@ achievement_kirishitan_japan = {
 	happened = {
 		has_switched_nation = no
 		religion_group = christian
-		japanese_region = {
+		japan_region = {
 			type = all
 			religion_group = christian
 		}
@@ -2650,6 +2926,7 @@ achievement_hessian_mercenaries = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
+		tag = HES
 	}
 
 	happened = {
@@ -2688,19 +2965,18 @@ achievement_baltic_crusader = {
 			tag = TEU
 			tag = LIV
 		}
-		
-		russian_region = {
-			type = all
-			religion = catholic
-		}
-
-		russian_region = {
+		russia_region = {
 			type = all
 			owned_by = ROOT
 			is_core = ROOT
+			religion = catholic
 		}
-
-
+		crimea_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			religion = catholic
+		}
 	}
 }
 
@@ -2714,6 +2990,14 @@ achievement_neither_holy_nor_german = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		has_dlc = "Common Sense"
+		OR = {
+			capital_scope = { is_part_of_hre = yes }
+			is_emperor = yes
+		}
+	}		
 
 	happened = {
 		is_emperor = yes
@@ -2738,6 +3022,19 @@ achievement_colonial_management = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		has_dlc = "Common Sense"
+		NOT = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+					continent = new_world
+				}
+			}
+		}
+	}	
 
 	happened = {
 		calc_true_if = {
@@ -2761,6 +3058,10 @@ achievement_voting_streak = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		has_dlc = "Common Sense"
+	}
 
 	happened = {
 		check_variable = { which = voting_streak value = 11 }
@@ -2775,32 +3076,44 @@ achievement_industrial_evolution = {
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
-		start_date = 1444.11.11
-		
+		start_date = 1444.11.11	
 	}
+	
+	visible = {
+		has_dlc = "Common Sense"
+		OR = {
+			culture_group = british
+			tag = GBR
+		}
+	}	
 
 	happened = {
 		has_switched_nation = no	
 		tag = GBR
-		northumbria = {
+		northern_england_area = {
 			type = all
 			development = 25
 			owned_by = ROOT
 			is_core = ROOT			
 		}
-		mercia = {
+		mercia_area = {
 			type = all
 			development = 25
 			owned_by = ROOT
 			is_core = ROOT			
 		}
-		essex = {
+		east_anglia_area = {
 			type = all
 			development = 25
 			owned_by = ROOT
 			is_core = ROOT			
 		}
-		
+		wessex_area = {
+			type = all
+			development = 25
+			owned_by = ROOT
+			is_core = ROOT			
+		}
 	}
 }
 
@@ -2813,6 +3126,10 @@ achievement_city_of_cities = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
+	}
+	
+	visible = {
+		has_dlc = "Common Sense"
 	}
 
 	happened = {
@@ -2833,6 +3150,10 @@ achievement_one_family_to_rule_them_all = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		government = monarchy
+	}
 
 	happened = {
 		has_regency = no
@@ -2841,6 +3162,7 @@ achievement_one_family_to_rule_them_all = {
 		calc_true_if = {
 			all_country = {
 				dynasty = root
+				is_client_nation = no
 			}
 			amount = 8
 		}
@@ -2856,6 +3178,10 @@ achievement_this_is_my_faith = {
 		normal_province_values = yes
 		ironman = yes
 		start_date = 1444.11.11
+	}
+	
+	visible = {
+		has_dlc = "Common Sense"
 	}
 
 	happened = {
@@ -2918,7 +3244,22 @@ achievement_take_that_habsburgs = {
 	happened = {
 		has_switched_nation = no
 		tag = HUN
-		austrian_region = {
+		inner_austria_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		austria_proper_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		carinthia_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		tirol_area = {
 			type = all
 			owned_by = ROOT
 			is_core = ROOT
@@ -2941,7 +3282,12 @@ achievement_white_elephant = {
 	happened = {
 		has_switched_nation = no
 		tag = AYU
-		indochinan_region = {
+		indo_china_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		burma_region = {
 			type = all
 			owned_by = ROOT
 			is_core = ROOT
@@ -2965,16 +3311,42 @@ achievement_buddhists_strike_back = {
 		has_switched_nation = no
 		tag = CEY
 
-		indian_region = {
-			type = all
-			religion = buddhism
-		}
-
-		indian_region = {
+		deccan_region = {
 			type = all
 			owned_by = ROOT
 			is_core = ROOT
-		}		
+			religion = buddhism
+		}
+		coromandel_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			religion = buddhism
+		}
+		bengal_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			religion = buddhism
+		}
+		hindusthan_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			religion = buddhism
+		}
+		rajputana_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			religion = buddhism
+		}
+		west_india_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			religion = buddhism
+		}	
 	}
 }
 
@@ -3168,6 +3540,13 @@ achievement_fine_goosestep = {
 		ironman = yes
 		start_date = 1444.11.11
 	}
+	
+	visible = {
+		OR = {
+			culture_group = germanic
+			tag = PRU
+		}
+	}	
 
 	happened = {
 		has_switched_nation = no
@@ -3193,6 +3572,7 @@ achievement_meissner_porcelain = {
 	}
 
 	happened = {
+		tag = SAX
 		has_switched_nation = no
 		NOT = {
 			any_province = {
@@ -3200,7 +3580,6 @@ achievement_meissner_porcelain = {
 				NOT = { country_or_vassal_holds = SAX }
 			}
 		}
-
 	}
 }
 
@@ -3229,5 +3608,605 @@ achievement_all_your_trade_are_belong_to_us = {
 		1308 = { # Venice
 			is_strongest_trade_power = ROOT
 		}
+	}
+}
+
+achievement_grand_duchy = {
+	id = 146
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		NOT = { government_rank = 2 }
+	}
+
+	happened = {
+		NOT = { government_rank = 2 }
+		total_development = 1000
+	}
+}
+
+achievement_rags_and_riches = {
+	id = 147
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+
+	happened = {
+		NOT = {
+			any_owned_province = {
+				development = 11
+			}
+		}
+		NOT = {
+			any_country = {
+				NOT = { tag = ROOT }
+				monthly_income = ROOT
+			}
+		}
+	}
+}
+
+achievement_strait_talk = {
+	id = 148
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = ORM
+	}
+
+	happened = {
+		has_switched_nation = no
+		tag = ORM
+		diplomatic_reputation = 10
+	}
+}
+
+achievement_academical = {
+	id = 149
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = ATH
+	}
+
+	happened = {
+		has_switched_nation = no
+		tag = ATH
+		calc_true_if = {
+			all_owned_province = {
+				has_building = university
+			}
+			amount = 50
+		}		
+	}
+}
+
+achievement_one_faith = {
+	id = 150
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+
+	happened = {
+		NOT = {
+			any_province = {
+				is_empty = no
+				is_wasteland = no
+				NOT = { religion = ROOT }
+			}
+		}		
+	}
+}
+
+achievement_dar_al_islam = {
+	id = 151
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+	
+	visible = {
+		has_dlc = "Star and Crescent"
+		religion_group = muslim
+	}	
+
+	happened = {
+		religion_group = muslim
+		has_country_modifier = unified_islam
+	}
+}
+
+achievement_the_uncommonwealth = {
+	id = 152
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = LIT
+	}
+
+	happened = {
+		has_switched_nation = no
+		tag = PLC
+	}
+}
+
+achievement_the_burgundian_inheritance = {
+	id = 153
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11t
+		tag = BUR
+	}
+
+	happened = {
+		has_switched_nation = no
+		tag = BUR
+		FRA = { is_subject_of = ROOT }
+		HAB = { is_subject_of = ROOT }
+		low_countries_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}		
+	}
+}
+
+achievement_the_third_way = {
+	id = 154
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		religion = ibadi
+	}
+
+	happened = {
+		has_switched_nation = no
+		religion = ibadi
+		NOT = {
+			any_province = {
+				OR = {
+					religion = sunni
+					religion = shiite
+				}
+			}
+		}	
+	}
+}
+
+achievement_back_to_the_piast = {
+	id = 155
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		OR = {
+			tag = MAZ
+			tag = SIL
+		}
+	}
+
+	happened = {
+		has_switched_nation = no
+		tag = POL
+	}
+}
+
+achievement_great_perm = {
+	id = 156
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = PRM
+	}
+
+	happened = {
+		has_switched_nation = no
+		tag = PRM
+		russia_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}		
+		scandinavia_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}
+		siberia_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}		
+		cascadia_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}			
+		hudson_bay_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}	
+		canada_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}			
+	}
+}
+
+achievement_lazarus = {
+	id = 157
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = SER
+	}
+
+	happened = {
+		has_switched_nation = no
+		tag = SER
+		balkan_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}	
+	}
+}
+
+achievement_frozen_assets = {
+	id = 158
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = NOV
+	}
+
+	happened = {
+		1652 = {		# White Sea
+			trade_share = {
+				country = ROOT
+				share = 90
+			}
+			highest_value_trade_node = yes 
+		}
+		
+	}
+}
+
+achievement_tatarstan = {
+	id = 159
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		OR = {
+			tag = KAZ
+			tag = NOG
+		}
+	}
+
+	happened = {
+		has_switched_nation = no
+		OR = {
+			tag = KAZ
+			tag = NOG
+		}	
+		NOT = {
+			any_province = {
+				culture_group = tartar
+				NOT = { owned_by = ROOT }
+			}
+		}		
+	}
+}
+
+achievement_terra_mariana = {
+	id = 160
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = RIG
+	}
+
+	happened = {
+		has_switched_nation = no
+		tag = RIG
+		baltic_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}		
+	}
+}
+
+achievement_blood_for_the_sky_god = {
+	id = 161
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+	
+	visible = {
+		religion = tengri_pagan_reformed
+	}	
+
+	happened = {
+		religion = tengri_pagan_reformed
+		secondary_religion = nahuatl
+	}
+}
+
+achievement_pyramid_of_skulls = {
+	id = 162
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		is_nomad = yes
+	}
+	
+	visible = {
+		is_nomad = yes
+		has_dlc = "The Cossacks"
+	}		
+
+	happened = {
+		is_nomad = yes
+		has_country_flag = have_razed_wealthy_province
+	}
+}
+
+achievement_trustworthy = {
+	id = 163
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+
+	happened = {
+		num_of_trusted_allies = 5
+	}
+}
+
+achievement_the_continuation_of_diplomacy = {
+	id = 164
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+	
+	visible = {
+		has_dlc = "The Cossacks"
+	}		
+
+	happened = {
+		has_country_flag = have_threatened_war
+	}
+}
+
+achievement_factionalism = {
+	id = 165
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+	
+	visible = {
+		has_dlc = "The Cossacks"
+	}	
+
+	happened = {
+		num_of_powerful_estates = 3
+	}
+}
+
+achievement_from_humble_origins = {
+	id = 166
+
+	possible = {
+		is_playing_custom_nation = yes
+		NOT = { num_of_custom_nations = 2 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		NOT = { nation_designer_points = 52 }
+	}	
+
+	happened = {
+		has_switched_nation = no
+		total_development = 2000
+	}
+}
+
+achievement_ideas_guy = {
+	id = 167
+
+	possible = {
+		is_playing_custom_nation = yes
+		NOT = { num_of_custom_nations = 2 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		NOT = { nation_designer_points = 802 }
+		NOT = { total_development = 4 }
+	}
+
+	happened = {
+		has_switched_nation = no
+		monthly_income = 500
+	}
+}
+
+achievement_for_odin = {
+	id = 168
+
+	possible = {
+		is_playing_custom_nation = yes
+		NOT = { num_of_custom_nations = 2 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		NOT = { nation_designer_points = 202 }
+		NOT = { num_of_cities = 6 }
+		religion = norse_pagan_reformed
+	}
+
+	happened = {
+		has_switched_nation = no
+		religion = norse_pagan_reformed
+		british_isles_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			religion = norse_pagan_reformed
+		}
+		scandinavia_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			religion = norse_pagan_reformed
+		}			
+	}
+}
+
+achievement_rekindling_the_flames = {
+	id = 169
+
+	possible = {
+		is_playing_custom_nation = yes
+		NOT = { num_of_custom_nations = 2 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		NOT = { nation_designer_points = 202 }
+		NOT = { num_of_cities = 6 }
+		religion = zoroastrian
+	}
+
+	happened = {
+		has_switched_nation = no
+		religion = zoroastrian
+		has_country_modifier = royal_fires_modifier
+	}
+}
+
+achievement_first_come_first_serve = {
+	id = 170
+
+	possible = {
+		is_playing_custom_nation = yes
+		NOT = { num_of_custom_nations = 2 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		is_random_new_world = no
+		NOT = { nation_designer_points = 202 }
+		capital_scope = {
+			OR = {
+				continent = north_america
+				continent = south_america
+			}
+		}
+	}
+
+	happened = {
+		has_switched_nation = no
+		north_america = {
+			type = all
+			OR = {
+				owned_by = ROOT
+				is_core = ROOT
+				is_wasteland = yes
+				is_sea = yes
+			}
+		}
+		south_america = {
+			type = all
+			OR = {
+				owned_by = ROOT
+				is_core = ROOT
+				is_wasteland = yes
+				is_sea = yes
+			}
+		}			
 	}
 }

@@ -6,7 +6,7 @@ finish_reconquista = {
 	ai_mission = yes
 	
 	target_provinces = {
-		region = iberian_peninsula
+		region = iberia_region
 		owner = { religion_group = muslim }
 	}
 	allow = {
@@ -21,21 +21,21 @@ finish_reconquista = {
 		is_subject = no
 		is_at_war = no
 		religion = catholic
-		iberian_peninsula = {
+		iberia_region = {
 			owned_by = ROOT
 		}
-		iberian_peninsula = {
+		iberia_region = {
 			owner = { religion_group = muslim }
 		}
 	}
 	abort = {
 		OR = {
 			NOT = { religion = catholic }
-			NOT = { iberian_peninsula = { owned_by = ROOT } }
+			NOT = { iberia_region = { owned_by = ROOT } }
 		}
 	}
 	success = {
-		iberian_peninsula = {
+		iberia_region = {
 			type = all
 			owner = { NOT = { religion_group = muslim } }
 		}
@@ -58,7 +58,7 @@ finish_reconquista = {
 		modifier = {
 			factor = 10
 			exists = GRA
-			iberian_peninsula = {
+			iberia_region = {
 				owned_by = GRA
 			}
 		}
@@ -87,7 +87,7 @@ spain_must_be_christian = {
 		religion = catholic
 		is_at_war = no
 		NOT = {	exists = GRA }
-		iberian_peninsula = {
+		iberia_region = {
 			owned_by =  ROOT
 			NOT = { religion_group = christian }
 		}
@@ -99,7 +99,7 @@ spain_must_be_christian = {
 	success = {
 		NOT = {
 			any_owned_province = {
-				region = iberian_peninsula
+				region = iberia_region
 				NOT = { religion_group = christian }
 			}
 		}
@@ -119,7 +119,7 @@ spain_must_be_christian = {
 		if = {
 			limit = {
 				any_owned_province = {
-					region = iberian_peninsula
+					region = iberia_region
 					any_core_country = {
 						NOT = { religion_group = christian }
 					}
@@ -127,7 +127,7 @@ spain_must_be_christian = {
 			}
 			every_owned_province = {
 				limit = {
-					region = iberian_peninsula
+					region = iberia_region
 					any_core_country = {
 						NOT = { religion_group = christian }
 					}
@@ -161,18 +161,20 @@ continue_reconquista = {
 		owner = {
 			NOT = { religion_group = christian }
 			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
 		}
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		NOT = { has_country_modifier = completing_the_reconquista }
+		NOT = { has_country_flag = continued_the_reconquista }
 		OR = {
 			tag = CAS
 			tag = SPA
 		}		
 		religion = catholic
 		NOT = {
-			iberian_peninsula = {
+			iberia_region = {
 				owner = { religion_group = muslim }
 			}
 		}
@@ -182,24 +184,28 @@ continue_reconquista = {
 				owner = {
 					NOT = { religion_group = christian }
 					NOT = { alliance_with = ROOT }
+					NOT = { is_subject_of = ROOT }
 				}
 			}
 			335 = {
 				owner = {
 					NOT = { religion_group = christian }
 					NOT = { alliance_with = ROOT }
+					NOT = { is_subject_of = ROOT }
 				}
 			}
 			337 = {
 				owner = {
 					NOT = { religion_group = christian }
 					NOT = { alliance_with = ROOT }
+					NOT = { is_subject_of = ROOT }
 				}
 			}
 			1751 = {
 				owner = {
 					NOT = { religion_group = christian }
 					NOT = { alliance_with = ROOT }
+					NOT = { is_subject_of = ROOT }
 				}
 			}
 		}
@@ -248,6 +254,7 @@ continue_reconquista = {
 		}
 	}
 	effect = {
+		set_country_flag = continued_the_reconquista
 		add_country_modifier = {
 			name = "completing_the_reconquista"
 			duration = 3650
@@ -273,11 +280,11 @@ spain_discover_america = {
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		num_of_ports = 1
 		NOT = {
-			the_carribean = {
+			carribeans_region = {
 				has_discovered = ROOT
 			}
 		}
-		the_carribean = { range = ROOT }
+		carribeans_region = { range = ROOT }
 	}
 	abort = {
 		OR = {
@@ -287,7 +294,7 @@ spain_discover_america = {
 		}
 	}
 	success = {
-		the_carribean = {
+		carribeans_region = {
 			has_discovered = ROOT
 		}
 	}
@@ -332,18 +339,18 @@ establish_spanish_carribean = {
 		num_of_ports = 1
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		NOT = {
-			the_carribean = {
+			carribeans_region = {
 				owned_by =  ROOT
 			}
 		}
 		NOT = {
-			the_carribean = {
+			carribeans_region = {
 				owner = {
 					is_subject_of = ROOT
 				}
 			}
 		}
-		the_carribean = {
+		carribeans_region = {
 			has_discovered = ROOT
 			is_empty = yes
 		}
@@ -354,13 +361,13 @@ establish_spanish_carribean = {
 			NOT = {	has_idea = quest_for_the_new_world  }
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { the_carribean = { owned_by = ROOT } }
-				NOT = { the_carribean = { is_empty = yes } }
+				NOT = { carribeans_region = { owned_by = ROOT } }
+				NOT = { carribeans_region = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		the_carribean = {
+		carribeans_region = {
 			owned_by = ROOT
 		}
 	}
@@ -399,15 +406,15 @@ discover_spanish_main = {
 		is_subject = no
 		has_idea = quest_for_the_new_world
 		num_of_ports = 1
-		the_carribean = {
+		carribeans_region = {
 			has_discovered = ROOT
 		}	
 		NOT = {
-			the_spanish_main = {
+			colombia_region = {
 				has_discovered = ROOT
 			}
 		}
-		the_spanish_main = { range = ROOT }
+		colombia_region = { range = ROOT }
 	}
 	abort = {
 		OR = {
@@ -417,7 +424,7 @@ discover_spanish_main = {
 		}
 	}
 	success = {
-		the_spanish_main = {
+		colombia_region = {
 			has_discovered = ROOT
 		}
 	}
@@ -462,18 +469,18 @@ establish_spanish_main = {
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		num_of_ports = 1
 		NOT = {
-			the_spanish_main = {
+			colombia_region = {
 				owned_by =  ROOT
 			}
 		}
 		NOT = {
-			the_spanish_main = {
+			colombia_region = {
 				owner = {
 					is_subject_of = ROOT
 				}
 			}
 		}
-		the_spanish_main = {
+		colombia_region = {
 			has_discovered = ROOT
 			is_empty = yes
 		}
@@ -484,13 +491,13 @@ establish_spanish_main = {
 			NOT = {	has_idea = quest_for_the_new_world  }
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { the_spanish_main = { owned_by = ROOT } }
-				NOT = { the_spanish_main = { is_empty = yes } }
+				NOT = { colombia_region = { owned_by = ROOT } }
+				NOT = { colombia_region = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		the_spanish_main = {
+		colombia_region = {
 			owned_by = ROOT
 		}
 	}
@@ -839,6 +846,7 @@ no_surrender_to_the_dutch = {
 		normal_or_historical_nations = yes
 		NOT = { is_year = 1648 }
 		tag = SPA
+		NOT = { has_country_flag = freed_low_countries }
 		is_subject = no
 		is_neighbor_of = NED
 		NOT = { alliance_with = NED }
@@ -846,10 +854,10 @@ no_surrender_to_the_dutch = {
 		NED = {
 			is_subject = no
 		}
-		spanish_netherlands = {
+		low_countries_region = {
 			owned_by = ROOT
 		}
-		spanish_netherlands = {
+		low_countries_region = {
 			owned_by = NED
 		}
 	}
@@ -861,15 +869,15 @@ no_surrender_to_the_dutch = {
 				is_subject = yes
 			}
 			AND = {
-				NOT = { spanish_netherlands = { owned_by = NED } }
-				NOT = { spanish_netherlands = { owned_by = SPA } }
+				NOT = { low_countries_region = { owned_by = NED } }
+				NOT = { low_countries_region = { owned_by = SPA } }
 			}
 		}
 	}
 	success = {
 		NOT = { war_with = NED }
 		NOT = {
-			spanish_netherlands = {
+			low_countries_region = {
 				owned_by = NED
 			}
 		}
@@ -889,6 +897,7 @@ no_surrender_to_the_dutch = {
 		add_war_exhaustion = -5
 		add_adm_power = 100
 		add_prestige = 10
+		set_country_flag = freed_low_countries
 	}
 }
 
@@ -911,7 +920,7 @@ bring_the_dutch_back_to_catholisism = {
 			religion_group = ROOT
 			NOT = { religion = ROOT }
 		}
-		spanish_netherlands = {
+		low_countries_region = {
 			owned_by = ROOT
 		}
 	}
@@ -920,7 +929,7 @@ bring_the_dutch_back_to_catholisism = {
 			is_subject = yes
 			NOT = { religion = catholic }
 			NOT = {
-				spanish_netherlands = {
+				low_countries_region = {
 					owned_by = ROOT
 				}
 			}
@@ -950,7 +959,7 @@ spanish_netherlands_should_be_catholic = {
 		tag = SPA
 		is_at_war = no
 		religion = catholic
-		spanish_netherlands = {
+		low_countries_region = {
 			owned_by = ROOT
 			religion_group = christian
 			NOT = { religion = catholic }
@@ -960,7 +969,7 @@ spanish_netherlands_should_be_catholic = {
 		OR = {
 			NOT = { religion = catholic }
 			NOT = {
-				spanish_netherlands = {
+				low_countries_region = {
 					owned_by = ROOT
 				}
 			}
@@ -968,7 +977,7 @@ spanish_netherlands_should_be_catholic = {
 	}
 	success = {
 		NOT = {
-			spanish_netherlands = {
+			low_countries_region = {
 				owned_by = ROOT
 				NOT = { religion = catholic }
 			}
@@ -1038,7 +1047,7 @@ no_territory_to_france = {
 	allow = {
 		normal_or_historical_nations = yes
 		tag = SPA
-		iberian_peninsula = { owned_by = FRA }
+		iberia_region = { owned_by = FRA }
 		NOT = { alliance_with = FRA }
 		FRA = {
 			is_neighbor_of = ROOT
@@ -1047,11 +1056,11 @@ no_territory_to_france = {
 		}
 	}
 	abort = {
-		NOT = { iberian_peninsula = { owned_by = FRA } }
+		NOT = { iberia_region = { owned_by = FRA } }
 	}
 	success = {
 		NOT = { war_with = FRA }
-		NOT = { iberian_peninsula = { owned_by = FRA } }
+		NOT = { iberia_region = { owned_by = FRA } }
 	}
 	chance = {
 		factor = 3000

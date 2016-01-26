@@ -295,7 +295,12 @@ country_event = {
 	trigger = {
 		tag = HAB
 		any_owned_province = {
-			region = hungarian_region
+			OR = {
+				area = transdanubia_area
+				area = transylvania_area
+				area = alfold_area
+				area = slovakia_area
+			}
 		}
 		NOT = { stability = 1 }
 	}
@@ -309,7 +314,12 @@ country_event = {
 		hidden_effect = {
  			random_owned_province = {
 				limit = {
-					region = hungarian_region
+					OR = {
+						area = transdanubia_area
+						area = transylvania_area
+						area = alfold_area
+						area = slovakia_area
+					}
 					development = 10
 				}
 				set_province_flag = hungarian_revolt
@@ -335,16 +345,26 @@ country_event = {
 		
 		every_owned_province = {
 			limit = {
-				region = hungarian_region
+				OR = {
+					area = transdanubia_area
+					area = transylvania_area
+					area = alfold_area
+					area = slovakia_area
+				}
 			}	
 			add_unrest = 5
-		}		
+		}
 	}
 	option = {		# Give more concessions
 		name = "flavor_hab.EVTOPTB3201"
 		every_owned_province = {
 			limit = {
-				region = hungarian_region
+				OR = {
+					area = transdanubia_area
+					area = transylvania_area
+					area = alfold_area
+					area = slovakia_area
+				}
 				is_capital = no
 			}	
 			add_local_autonomy = 50
@@ -470,7 +490,9 @@ country_event = {
 		NOT = { exists = HUN }
 		NOT = { religion = protestant }
 		any_owned_province = {
-			region = hungarian_region
+			region = carpathia_region
+			NOT = { area = wallachia_area }
+			NOT = { area = moldavia_area }
 			religion = protestant
 		}
 	}
@@ -487,14 +509,18 @@ country_event = {
 			set_country_flag = HAB_had_event_3099
 			random_owned_province = {
 				limit = {
-					region = hungarian_region
+					region = carpathia_region
+					NOT = { area = wallachia_area }
+					NOT = { area = moldavia_area }
 					religion = protestant
 				}
 				set_province_flag = hungarian_revolt
 			}
 			random_owned_province = {
 				limit = {
-					region = hungarian_region
+					region = carpathia_region
+					NOT = { area = wallachia_area }
+					NOT = { area = moldavia_area }
 					religion = protestant
 					NOT = { has_province_flag = second_hungarian_revolt }
 				}
@@ -624,11 +650,17 @@ country_event = {
 		tag = HAB
 		NOT = { exists = HUN }
 		any_owned_province = {
-			region = hungarian_region
+			OR = {
+				area = transdanubia_area
+				area = alfold_area
+			}
 		}
 		TUR = {
 			any_owned_province = {
-				region = hungarian_region
+				OR = {
+					area = transdanubia_area
+					area = alfold_area
+				}
 			}
 		}
 		NOT = { stability = 3 }
@@ -643,7 +675,10 @@ country_event = {
 			set_country_flag = HAB_had_event_3332
 			random_owned_province = {
 				limit = {
-					region = hungarian_region
+					OR = {
+						area = transdanubia_area
+						area = alfold_area
+					}
 				}
 				set_province_flag = hungarian_revolt
 			}
@@ -656,7 +691,10 @@ country_event = {
 		add_stability = -1
 		every_owned_province = {
 			limit = {
-				region = hungarian_region
+				OR = {
+					area = transdanubia_area
+					area = alfold_area
+				}
 			}
 			add_unrest = 10
 		}		
@@ -680,7 +718,10 @@ country_event = {
 		add_stability = 1
 		every_owned_province = {
 			limit = {
-				region = hungarian_region
+				OR = {
+					area = transdanubia_area
+					area = alfold_area
+				}
 			}
 			change_culture = hungarian
 			add_core = HUN
@@ -706,12 +747,14 @@ country_event = {
 		
 		NOT = { exists = HUN }
 		any_owned_province = {
-			region = hungarian_region
+			region = carpathia_region
+			NOT = { area = wallachia_area }
+			NOT = { area = moldavia_area }
 		}
 		NOT = { accepted_culture = hungarian }
 		NOT = {
 			any_owned_province = {
-				region = hungarian_region
+				region = carpathia_region
 				local_autonomy = 75
 			}
 		}
@@ -726,7 +769,9 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					region = hungarian_region
+					region = carpathia_region
+					NOT = { area = wallachia_area }
+					NOT = { area = moldavia_area }
 				}
 				set_province_flag = hungarian_revolt
 			}
@@ -736,10 +781,19 @@ country_event = {
 	option = {		# Stop the Movement for Independence!
 		name = "flavor_hab.EVTOPTA3333"
 		add_stability = -1
-		hungarian_region = {
+		carpathia_region = {
+			limit = {
+				NOT = { area = wallachia_area }
+				NOT = { area = moldavia_area }
+			}
 			add_core = HUN
 		}
-		hungarian_region = {
+		carpathia_region = {
+			limit = {
+				NOT = { area = wallachia_area }
+				NOT = { area = moldavia_area }
+				NOT = { area = transylvania_area }
+			}
 			change_culture = hungarian
 		}
 		random_owned_province = {
@@ -758,13 +812,17 @@ country_event = {
 		if = {
 			limit = {
 				any_owned_province = {
-					region = hungarian_region
+					region = carpathia_region
+					NOT = { area = wallachia_area }
+					NOT = { area = moldavia_area }
 					NOT = { has_province_flag = hungarian_revolt }
 				}
 			}
 			every_owned_province = {
 				limit = {
-					region = hungarian_region
+					region = carpathia_region
+					NOT = { area = wallachia_area }
+					NOT = { area = moldavia_area }
 					NOT = { has_province_flag = hungarian_revolt }
 				}
 				spawn_rebels = {
@@ -1298,10 +1356,10 @@ country_event = {
 		NOT = { alliance_with = FRA }
 		NOT = { is_subject_of = FRA }
 		NOT = { war_with = FRA }
-		italian_region = {
+		italy_region = {
 			is_part_of_hre = yes
 		}
-		italian_region = {
+		italy_region = {
 			owned_by = FRA
 		}
 	}
@@ -1321,7 +1379,7 @@ country_event = {
 			}
 			every_owned_province = {
 				limit = {
-					region = italian_region
+					region = italy_region
 				}
 				add_claim = ROOT
 			}
@@ -1350,7 +1408,7 @@ country_event = {
 	option = {		# Then counter-claim all ADJECTIVE provinces!
 		name = "flavor_spa.EVTOPTA1008"
 		trigger = {
-			italian_region = {
+			italy_region = {
 				owned_by = FROM
 			}				
 		}
@@ -1358,7 +1416,7 @@ country_event = {
 		FROM = {
 			every_owned_province = {
 				limit = {
-					region = italian_region
+					region = italy_region
 				}
 				add_claim = ROOT
 			}
@@ -1376,7 +1434,7 @@ country_event = {
 		name = "flavor_hab.EVTOPTC1008"
 		trigger = {
 			NOT = {
-				italian_region = {
+				italy_region = {
 					owned_by = FROM
 				}				
 			}
@@ -1423,9 +1481,18 @@ country_event = {
 		tag = HAB
 		NOT = { exists = HUN }
 		is_year = 1700
-	
 		NOT = {
-			hungarian_region = {
+			slovakia_area = {
+ 				owned_by = TUR
+			}
+		}
+		NOT = {
+			alfold_area = {
+ 				owned_by = TUR
+			}
+		}
+		NOT = {
+			transdanubia_area = {
  				owned_by = TUR
 			}
 		}

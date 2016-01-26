@@ -448,7 +448,6 @@ country_event = {
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 1
-				win = yes
 			}
 		}
 		random_owned_province = {
@@ -498,7 +497,7 @@ country_event = {
 		add_casus_belli = {
 			target = TOT
 			type = cb_trade_war_triggered
-			months = 1825
+			months = 60
 		}
 	}
 }
@@ -852,6 +851,10 @@ country_event = {
 			NOT = { religion = mesoamerican_religion }
 		}
 		change_religion = nahuatl
+		if = {
+			limit = { government = native_council }
+			change_government = tribal_despotism
+		}
 	}
 	option = { #Let them continue worship there.
 		name = flavor_azt.18.c

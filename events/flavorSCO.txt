@@ -21,7 +21,7 @@ province_event = {
 			controls = 252
 		}
 		controlled_by = owner
-		region = highlands
+		area = highlands_area
 	}
 
 	mean_time_to_happen = {
@@ -264,18 +264,30 @@ country_event = {
 		OR = {
 			any_active_trade_node = {
 				OR = {
-					region = indian_coast
-					region = indonesian_region
-					region = pacific_ocean_islands
+					region = west_india_region
+					region = coromandel_region
+					region = deccan_region
+					region = bengal_region
+					region = indonesia_region
+					region = oceanea_region
 				}
 			}
-			indian_coast = {
+			bengal_region = {
 				owned_by = SCO
 			}
-			indonesian_region = {
+			west_india_region = {
 				owned_by = SCO
 			}
-			pacific_ocean_islands = {
+			deccan_region = {
+				owned_by = SCO
+			}
+			coromandel_region = {
+				owned_by = SCO
+			}
+			indonesia_region = {
+				owned_by = SCO
+			}
+			oceanea_region = {
 				owned_by = SCO
 			}
 		}
@@ -351,11 +363,11 @@ country_event = {
 	
 	option = {
 		name = "flavor_sco.EVTOPTA8" #Tradereform
-		add_mercantilism = 0.20
+		add_mercantilism = 0.05
 	}
 	option = {
 		name = "flavor_sco.EVTOPTB8" #Free trade
-		add_mercantilism = -0.20
+		add_mercantilism = -0.05
 		add_years_of_income = 2
 		add_country_modifier = {
 			name = sco_free_trade

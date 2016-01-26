@@ -9,6 +9,7 @@ particularist_rebels = {
 	defection = none				# Will not defect
 	independence = none				# Does not strive for independence
 	gfx_type = culture_province
+	will_relocate = yes	
 
 	resilient = no					# Can retreat
 	reinforcing = yes				# Can reinforce
@@ -109,6 +110,10 @@ particularist_rebels = {
 				}
 			}
 		}
+		modifier = {
+			factor = 10
+			has_estate = estate_burghers
+		}
 	}
  
  	# This is checked for EACH province in the Area of Operations
@@ -170,5 +175,24 @@ particularist_rebels = {
 			add_local_autonomy = 30
 		}	
 		add_prestige = -20
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+				NOT = {
+					has_estate_influence_modifier = {
+						estate = estate_burghers
+						modifier = EST_VAL_SUCCESFUL_PARTICULARISTS
+					}
+				}
+			}
+			add_estate_influence_modifier = {
+				estate = estate_burghers
+				duration = 5475
+				influence = 15
+				desc = EST_VAL_SUCCESFUL_PARTICULARISTS
+			}
+		}
+		
 	}
 }

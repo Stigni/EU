@@ -12,7 +12,7 @@ country_event = {
 	trigger = {
 		government = steppe_horde
 		OR = {
-			NOT = { legitimacy = 50 }
+			NOT = { legitimacy_or_horde_unity = 50 }
 			has_regency = yes
 		}
 	}
@@ -20,7 +20,7 @@ country_event = {
 	option = {
 		name = tribal_succession.1.a
 		trigger = {
-			NOT = { legitimacy = 50 }
+			NOT = { legitimacy_or_horde_unity = 50 }
 		}
 		random_owned_province = {
 			pretender_rebels = 2
@@ -44,10 +44,8 @@ country_event = {
 		}
 		kill_heir = yes
 		define_ruler = {
-			dip = 3
-			mil = 3
-			adm = 3
 		}
+		add_horde_unity = -25
 	}
 }
 
@@ -75,7 +73,7 @@ country_event = {
 		name = tribal_succession.1.a
 		remove_country_modifier = tribal_succession_crisis
 		add_stability = 1
-		add_legitimacy = 25
+		add_horde_unity = 25
 	}
 }
 	

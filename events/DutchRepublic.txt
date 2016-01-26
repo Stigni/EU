@@ -1223,7 +1223,7 @@ province_event = {
 		owner = {
 			government = dutch_republic
 			capital_scope = {
-				region = the_low_countries
+				region = low_countries_region
 			}
 		}
 		OR = {

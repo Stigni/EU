@@ -2,7 +2,7 @@ government = despotic_monarchy
 primary_culture = vietnamese
 religion = buddhism
 technology_group = chinese
-capital = 610 # Hue
+capital = 2373 # Hue
 
 # Nguyen Lords
 

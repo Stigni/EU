@@ -32,41 +32,41 @@ country_event = {
 			set_global_flag = lollard_heresy
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 				}
 				set_province_flag = lollards
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					NOT = { has_province_flag = lollards }
 				}
 				set_province_flag = lollards
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					NOT = { has_province_flag = lollards }
 				}
 				set_province_flag = lollards
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					NOT = { has_province_flag = lollards }
 				}
 				set_province_flag = lollards
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					NOT = { has_province_flag = lollards }
 				}
 				set_province_flag = lollards
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					NOT = { has_province_flag = lollards }
 				}
 				set_province_flag = lollards
@@ -181,7 +181,7 @@ country_event = {
 		}
 		primary_culture = english
 		NOT = {
-			french_region = {
+			france_region = {
 				owned_by = ROOT
 			}
 		}
@@ -216,7 +216,7 @@ country_event = {
 		add_stability = 1
 		every_core_province = {
 			limit = {
-				region = french_region
+				region = france_region
 				NOT = { owned_by = ROOT }
 			}
 			remove_core = ROOT
@@ -1127,7 +1127,7 @@ country_event = {
 			tag = GBR
 		}
 		religion = protestant
-		irish_region = {
+		ireland_area = {
 			owned_by = ROOT
 		}
 	}
@@ -1143,7 +1143,7 @@ country_event = {
 	option = {			# We are not amused!
 		name = "flavor_eng.EVTOPTA9122"
 		random_owned_province = {
-			limit = { region = irish_region }
+			limit = { area = ireland_area }
 			spawn_rebels = {
 				type = noble_rebels
 				size = 2
@@ -1183,7 +1183,7 @@ country_event = {
 			set_country_flag = ENG_had_event_9123
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					is_capital = no
 					NOT = { has_province_modifier = refusal_of_petition_of_rights }
 				}
@@ -1191,7 +1191,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					is_capital = no
 					NOT = { has_province_modifier = refusal_of_petition_of_rights }
 				}
@@ -1199,7 +1199,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					is_capital = no
 					NOT = { has_province_modifier = refusal_of_petition_of_rights }
 				}
@@ -1207,7 +1207,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					is_capital = no
 					NOT = { has_province_modifier = refusal_of_petition_of_rights }
 				}
@@ -1215,7 +1215,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					is_capital = no
 					NOT = { has_province_modifier = refusal_of_petition_of_rights }
 				}
@@ -1282,22 +1282,14 @@ country_event = {
 			set_country_flag = ENG_had_event_9124
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					is_capital = no
 				}
 				set_province_flag = refusal_of_petition_of_rights
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
-					is_capital = no
-					NOT = { has_province_flag = refusal_of_petition_of_rights }
-				}
-				set_province_flag = refusal_of_petition_of_rights
-			}
-			random_owned_province = {
-				limit = {
-					region = british_isles
+					region = british_isles_region
 					is_capital = no
 					NOT = { has_province_flag = refusal_of_petition_of_rights }
 				}
@@ -1305,7 +1297,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 					is_capital = no
 					NOT = { has_province_flag = refusal_of_petition_of_rights }
 				}
@@ -1313,7 +1305,15 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
+					is_capital = no
+					NOT = { has_province_flag = refusal_of_petition_of_rights }
+				}
+				set_province_flag = refusal_of_petition_of_rights
+			}
+			random_owned_province = {
+				limit = {
+					region = british_isles_region
 					is_capital = no
 					NOT = { has_province_flag = refusal_of_petition_of_rights }
 				}
@@ -1520,11 +1520,11 @@ country_event = {
 		name = "flavor_eng.EVTOPTA9139"
 		if = {
 			limit = {
-				highlands = { owned_by = ROOT }
+				highlands_area = { owned_by = ROOT }
 			}
 			random_owned_province = {
 				limit = {
-					region = highlands
+					area = highlands_area
 				}
 				spawn_rebels = {
 					type = pretender_rebels
@@ -1535,12 +1535,12 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { highlands = { owned_by = ROOT } }
-				lowlands = { owned_by = ROOT }
+				NOT = { highlands_area = { owned_by = ROOT } }
+				lowlands_area = { owned_by = ROOT }
 			}
 			random_owned_province = {
 				limit = {
-					region = lowlands
+					area = lowlands_area
 				}
 				spawn_rebels = {
 					type = pretender_rebels
@@ -1551,13 +1551,13 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { highlands = { owned_by = ROOT } }
-				NOT = { lowlands = { owned_by = ROOT } }
-				british_isles = { owned_by = ROOT }
+				NOT = { highlands_area = { owned_by = ROOT } }
+				NOT = { lowlands_area = { owned_by = ROOT } }
+				british_isles_region = { owned_by = ROOT }
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 				}
 				spawn_rebels = {
 					type = pretender_rebels
@@ -1717,11 +1717,11 @@ country_event = {
 		name = "flavor_eng.EVTOPTA9143"
 		if = {
 			limit = {
-				highlands = { owned_by = ROOT }
+				highlands_area = { owned_by = ROOT }
 			}
 			random_owned_province = {
 				limit = {
-					region = highlands
+					area = highlands_area
 				}
 				spawn_rebels = {
 					type = pretender_rebels
@@ -1732,12 +1732,12 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { highlands = { owned_by = ROOT } }
-				lowlands = { owned_by = ROOT }
+				NOT = { highlands_area = { owned_by = ROOT } }
+				lowlands_area = { owned_by = ROOT }
 			}
 			random_owned_province = {
 				limit = {
-					region = lowlands
+					area = lowlands_area
 				}
 				spawn_rebels = {
 					type = pretender_rebels
@@ -1748,13 +1748,13 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { highlands = { owned_by = ROOT } }
-				NOT = { lowlands = { owned_by = ROOT } }
-				british_isles = { owned_by = ROOT }
+				NOT = { highlands_area = { owned_by = ROOT } }
+				NOT = { lowlands_area = { owned_by = ROOT } }
+				british_isles_region = { owned_by = ROOT }
 			}
 			random_owned_province = {
 				limit = {
-					region = british_isles
+					region = british_isles_region
 				}
 				spawn_rebels = {
 					type = pretender_rebels
@@ -1912,14 +1912,14 @@ country_event = {
 		OR = {
 			AND = {
 				tag = ENG
-				british_isles = {
+				british_isles_region = {
 					owned_by = ENG
 					has_port = yes
 				}
 			}
 			AND = {
 				tag = GBR
-				british_isles = {
+				british_isles_region = {
 					owned_by = GBR
 					has_port = yes
 				}
@@ -1947,7 +1947,7 @@ country_event = {
 		}
 		random_owned_province = {
 			limit = {
-				region = british_isles
+				region = british_isles_region
 				has_port = yes
 			}
 			add_base_tax = 1

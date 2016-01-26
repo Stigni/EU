@@ -21,7 +21,7 @@ province_event = {
 		province_id = 1232
 		NOT = { exists = NUB }
 		is_year = 1500
-		funj_spawning_region = {
+		kurdufan_area = {
 			is_empty = yes
 		}
 	}
@@ -30,19 +30,52 @@ province_event = {
 		months = 180
 	}
 	
+	immediate = {
+		hidden_effect = {
+			every_province = {
+				limit = {
+					NOT = { tag = ROOT }
+					OR = {
+						area = kurdufan_area
+						area = upper_nubia_area
+						province_id = 1219
+						province_id = 2801
+						province_id = 2802
+					}
+				}
+				owner = {
+					set_country_flag = funj_information
+				}
+			}
+		}
+	}
 	
 	option = { 
 		name = flavor_nub.1.a
-		funj_spawning_region = {
+		every_country = {
+			limit = { has_country_flag = funj_information }
+			country_event = { id = flavor_nub.3 }
+			clr_country_flag = funj_information
+		}
+		kurdufan_area = {
 			add_core = NUB
-			owner = {
-				country_event = { id = flavor_nub.3 }
-			}
 		}		
-		
-		funj_spawning_region = {
+		upper_nubia_area = {
+			add_core = NUB
+		}
+		1219 = {
+			add_core = NUB
+		}
+		2801 = {
+			add_core = NUB
+		}
+		2802 = {
+			add_core = NUB
+		}
+		every_province = {
 			limit = {
 				is_empty = yes
+				is_core = NUB
 			}
 			cede_province = NUB
 		}
@@ -110,10 +143,22 @@ country_event = {
 		NOT = { owns = 1232 }
 	}
 
-	option = { 
+	option = {
 		name = flavor_nub.1.a
 		tooltip = {
-			funj_spawning_region = {
+			kurdufan_area = {
+				add_core = NUB
+			}		
+			upper_nubia_area = {
+				add_core = NUB
+			}
+			1219 = {
+				add_core = NUB
+			}
+			2801 = {
+				add_core = NUB
+			}
+			2802 = {
 				add_core = NUB
 			}
 		}

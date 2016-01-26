@@ -22,14 +22,10 @@ country_event = {
 		had_recent_war = 2
 		capital_scope = {
 			OR = {
-				region = mongolia
-				region = western_siberia
-				region = eastern_siberia
-				region = manchuria
-				AND = {
-					region = central_asia
-					NOT = { region = transoxiana_region }
-				}
+				region = siberia_region
+				region = mongolia_region
+				region = manchuria_region
+				region = central_asia_region
 			}
 		}
 	}
@@ -79,14 +75,10 @@ country_event = {
 		war_exhaustion = 2
 		capital_scope = {
 			OR = {
-				region = mongolia
-				region = western_siberia
-				region = eastern_siberia
-				region = manchuria
-				AND = {
-					region = central_asia
-					NOT = { region = transoxiana_region }
-				}
+				region = siberia_region
+				region = mongolia_region
+				region = manchuria_region
+				region = central_asia_region
 			}
 		}
 	}
@@ -128,14 +120,10 @@ country_event = {
 		NOT = { manpower_percentage = 0.9 }
 		capital_scope = {
 			OR = {
-				region = mongolia
-				region = western_siberia
-				region = eastern_siberia
-				region = manchuria
-				AND = {
-					region = central_asia
-					NOT = { region = transoxiana_region }
-				}
+				region = siberia_region
+				region = mongolia_region
+				region = manchuria_region
+				region = central_asia_region
 			}
 		}
 	}
@@ -175,14 +163,10 @@ country_event = {
 		government = steppe_horde
 		capital_scope = {
 			OR = {
-				region = mongolia
-				region = western_siberia
-				region = eastern_siberia
-				region = manchuria
-				AND = {
-					region = central_asia
-					NOT = { region = transoxiana_region }
-				}
+				region = siberia_region
+				region = mongolia_region
+				region = manchuria_region
+				region = central_asia_region
 			}
 		}
 	}
@@ -195,6 +179,16 @@ country_event = {
 	option = {
 		name = "randomeventsstapehordes.4.EVTOPTA"
 		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 5
+			}
+		}
 		add_yearly_manpower = 0.5
 	}
 }
@@ -219,11 +213,10 @@ country_event = {
 		}
 		capital_scope = {
 			OR = {
-				region = mongolia
-				region = western_siberia
-				region = eastern_siberia
-				region = central_asia
-				region = manchuria
+				region = siberia_region
+				region = mongolia_region
+				region = manchuria_region
+				region = central_asia_region
 			}
 		}
 	}
@@ -236,6 +229,16 @@ country_event = {
 	option = {
 		name = "randomeventsstapehordes.5.EVTOPTA"
 		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = -5
+			}
+		}
 		add_stability = -1
 	}
 }
@@ -256,11 +259,10 @@ country_event = {
 		government = steppe_horde
 		capital_scope = {
 			OR = {
-				region = mongolia
-				region = western_siberia
-				region = eastern_siberia
-				region = central_asia
-				region = manchuria
+				region = siberia_region
+				region = mongolia_region
+				region = manchuria_region
+				region = central_asia_region
 			}
 		}
 		any_neighbor_country = {  
@@ -283,6 +285,16 @@ country_event = {
 	option = {
 		name = "randomeventsstapehordes.6.EVTOPTA"
 		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 5
+			}
+		}
 		random_owned_province = {
 			limit = {
 				trade_goods = fur
@@ -329,6 +341,16 @@ country_event = {
 	option = {
 		name = "randomeventsstapehordes.7.EVTOPTA"
 		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 5
+			}
+		}
 		random_owned_province = {
 			limit = {
 				trade_goods = wool
@@ -410,11 +432,31 @@ country_event = {
 	option = {
 		name = "randomeventsstapehordes.9.EVTOPTA"
 		ai_chance = { factor = 33 }
-		add_legitimacy = 33
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 5
+			}
+		}
+		add_horde_unity = 33
 	}
 	option = {
 		name = "randomeventsstapehordes.9.EVTOPTB"
 		ai_chance = { factor = 33 }
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 5
+			}
+		}
 		add_prestige = 25
 	}	
 }
@@ -439,6 +481,16 @@ country_event = {
 	option = {
 		name = "randomeventsstapehordes.10.EVTOPTA"
 		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 5
+			}
+		}
 		add_stability = 1
 		add_army_tradition = 5		
 	}
@@ -464,6 +516,16 @@ country_event = {
 	option = {
 		name = "randomeventsstapehordes.11.EVTOPTA"
 		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = -5
+			}
+		}
 		add_stability = -1
 		add_army_tradition = -5		
 	}
@@ -489,6 +551,16 @@ country_event = {
 	option = {
 		name = "randomeventsstapehordes.12.EVTOPTA"
 		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 5
+			}
+		}
 		add_prestige = 15
 		add_yearly_manpower = 0.1
 	}
@@ -519,6 +591,16 @@ country_event = {
 	option = {
 		name = "randomeventsstapehordes.13.EVTOPTA"
 		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 5
+			}
+		}
 		add_yearly_manpower = 0.1
 	}
 }
@@ -538,15 +620,13 @@ country_event = {
 	trigger = {
 		government = steppe_horde
 		NOT = { manpower_percentage = 0.5 }
+		is_at_war = no
 		capital_scope = {
 			OR = {
-				region = mongolia
-				region = western_siberia
-				region = eastern_siberia
-				AND = {
-					region = central_asia
-					NOT = { region = transoxiana_region }
-				}
+				region = siberia_region
+				region = mongolia_region
+				region = manchuria_region
+				region = central_asia_region
 			}
 		}
 	}
@@ -559,6 +639,16 @@ country_event = {
 	option = {
 		name = "randomeventsstapehordes.14.EVTOPTA"
 		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = -5
+			}
+		}
 		add_yearly_manpower = -0.75
 		add_prestige = -5
 	}
@@ -579,14 +669,50 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-
+	}
+	
+	trigger = {
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_nomadic_tribes
+				modifier = EST_VAL_RANDOMSTEPPE_LEADER
+			}
+		}
 	}
 
 	option = {
 		name = "randomeventsstapehordes.15.EVTOPTA"
 		ai_chance = { factor = 100 }
 		add_prestige = 2
-		create_general = 50	
+		create_general = 50
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 10
+			}
+			add_estate_influence_modifier = {
+				desc = EST_VAL_RANDOMSTEPPE_LEADER
+				estate = estate_nomadic_tribes
+				influence = 10
+				duration = 3650
+			}
+		}
+	}
+	option = {
+		name = "randomeventsstapehordes.15.EVTOPTB"
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_dlc = "The Cossacks"
+			has_estate = estate_nomadic_tribes
+		}
+		add_estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = -10
+		}
 	}
 }
 
@@ -606,12 +732,49 @@ country_event = {
 		days = 1
 
 	}
+	
+	trigger = {
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_nomadic_tribes
+				modifier = EST_VAL_RANDOMSTEPPE_LEADER
+			}
+		}
+	}
 
 	option = {
 		name = "randomeventsstapehordes.16.EVTOPTA"
 		ai_chance = { factor = 100 }
 		add_prestige = 5
 		create_general = 75	
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 10
+			}
+			add_estate_influence_modifier = {
+				desc = EST_VAL_RANDOMSTEPPE_LEADER
+				estate = estate_nomadic_tribes
+				influence = 10
+				duration = 3650
+			}
+		}
+	}
+	option = {
+		name = "randomeventsstapehordes.15.EVTOPTB"
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_dlc = "The Cossacks"
+			has_estate = estate_nomadic_tribes
+		}
+		add_estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = -10
+		}
 	}
 }
 
@@ -647,6 +810,10 @@ country_event = {
 		ai_chance = { factor = 100 }
 		add_prestige = -2		
 		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = -5
+		}
 	}
 }
 
@@ -683,9 +850,13 @@ country_event = {
 	option = {
 		name = "randomeventsstapehordes.18.EVTOPTA"
 		ai_chance = { factor = 100 }
-		add_legitimacy = -10		
+		add_horde_unity = -10		
 		add_stability = -1
 		kill_heir = yes
+		add_estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = -5
+		}
 	}
 }
 
@@ -766,7 +937,11 @@ country_event = {
 		random = {
 			chance = 15
 			add_stability = -1
-		}		
+		}
+		add_estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = -5
+		}
 	}
 }
 
@@ -800,7 +975,11 @@ country_event = {
 	option = {
 		name = "randomeventsstapehordes.21.EVTOPTA"
 		ai_chance = { factor = 100 }
-		add_legitimacy = -5
+		add_horde_unity = -5
+		add_estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = -5
+		}
 		random = {
 			chance = 25
 			add_stability = -1
@@ -834,10 +1013,14 @@ country_event = {
 		name = "randomeventsstapehordes.22.EVTOPTA"
 		ai_chance = { factor = 100 }
 		add_army_tradition = -5
+		add_estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = -5
+		}
 		random = {
 			chance = 15
 			add_stability = -1
-		}		
+		}
 	}
 }
 
@@ -868,6 +1051,10 @@ country_event = {
 		ai_chance = { factor = 100 }
 		add_prestige = -2		
 		add_yearly_manpower = -0.2
+		add_estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = -5
+		}
 		random = {
 			chance = 15
 			add_stability = -1
@@ -894,14 +1081,10 @@ country_event = {
 		is_at_war = yes	
 		capital_scope = {
 			OR = {
-				region = mongolia
-				region = western_siberia
-				region = eastern_siberia
-				region = manchuria
-				AND = {
-					region = central_asia
-					NOT = { region = transoxiana_region }
-				}
+				region = siberia_region
+				region = mongolia_region
+				region = manchuria_region
+				region = central_asia_region
 			}
 		}
 	}
@@ -913,8 +1096,30 @@ country_event = {
 
 	option = {
 		name = "randomeventsstapehordes.24.EVTOPTA"
-		ai_chance = { factor = 100 }
 		add_prestige = 2
 		add_stability = 1
+	}
+}
+
+#No tag should be in the nomad tech group without the corresponding government.
+country_event = {
+	id = randomeventsstapehordes.25
+	title = "randomeventsstapehordes.25.t"
+	desc = "randomeventsstapehordes.25.d"
+	picture = HORDE_ON_HORSEBACK_eventPicture	
+
+	trigger = {
+		technology_group = nomad_group
+		NOT = { government = steppe_horde }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+
+	}
+
+	option = {
+		name = "randomeventsstapehordes.25.a" #Ok.
+		change_government = steppe_horde
 	}
 }

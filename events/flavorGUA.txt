@@ -19,14 +19,22 @@ country_event = {
 	trigger = {
 		tag = GUA
 		any_neighbor_country = {
-			capital_scope = { continent = europe }
+			OR = {
+				capital_scope = {
+					continent = europe
+				}
+				colonial_parent = {
+					capital_scope = {
+						continent = europe
+					}
+				}
+			}
 			knows_country = ROOT
 			ROOT = {
 				knows_country = PREV
 			}
 		}
 	}
-	
 	mean_time_to_happen = {
 		months = 32
 	}
@@ -194,7 +202,16 @@ country_event = {
 			religion = catholic
 		}
 		any_neighbor_country = {
-			capital_scope = { continent = europe }
+			OR = {
+				capital_scope = {
+					continent = europe
+				}
+				colonial_parent = {
+					capital_scope = {
+						continent = europe
+					}
+				}
+			}
 			religion = catholic
 		}
 	}
@@ -208,7 +225,16 @@ country_event = {
 		add_stability = 1
 		random_neighbor_country = {
 			limit = {
-				capital_scope = { continent = europe }
+				OR = {
+					capital_scope = {
+						continent = europe
+					}
+					colonial_parent = {
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
 				religion = catholic
 			}
 			add_opinion = { who = ROOT modifier = gua_killed_jesuits }
@@ -218,7 +244,16 @@ country_event = {
 		name = flavor_gua.5.b
 		random_neighbor_country = {
 			limit = {
-				capital_scope = { continent = europe }
+				OR = {
+					capital_scope = {
+						continent = europe
+					}
+					colonial_parent = {
+						capital_scope = {
+							continent = europe
+						}
+					}
+				}
 				religion = catholic
 			}
 			add_opinion = { who = ROOT modifier = gua_saved_jesuits }
@@ -255,7 +290,16 @@ country_event = {
 			religion = catholic
 		}
 		any_neighbor_country = {
-			capital_scope = { continent = europe }
+			OR = {
+				capital_scope = {
+					continent = europe
+				}
+				colonial_parent = {
+					capital_scope = {
+						continent = europe
+					}
+				}
+			}
 			religion = catholic
 			knows_country = ROOT
 			ROOT = {
@@ -296,7 +340,16 @@ country_event = {
 		tag = GUA
 		is_at_war = no
 		any_neighbor_country = {
-			capital_scope = { continent = europe }
+			OR = {
+				capital_scope = {
+					continent = europe
+				}
+				colonial_parent = {
+					capital_scope = {
+						continent = europe
+					}
+				}
+			}
 			religion = catholic
 			knows_country = ROOT
 		}

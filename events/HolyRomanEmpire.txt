@@ -381,10 +381,37 @@ country_event = {
 		is_year = 1490
 		NOT = { is_year = 1550 }
 		capital_scope = {
-			region = italian_region
+			region = italy_region
 		}
-		kingdom_of_italy_HRE_region = {	#Adding back this region entirely into the Empire prevents this event.
-			is_part_of_hre = no
+		#Adding these areas entirely into the Empire prevents this event.
+		OR = {
+			tuscany_area = {	
+				is_part_of_hre = no
+			}
+			emilia_romagna_area = {	
+				is_part_of_hre = no
+			}
+			liguria_area = {	
+				is_part_of_hre = no
+			}
+			piedmont_area = {	
+				is_part_of_hre = no
+			}
+			lombardy_area = {	
+				is_part_of_hre = no
+			}
+			central_italy_area = {	
+				is_part_of_hre = no
+			}
+			108 = {	
+				is_part_of_hre = no
+			}
+			1774 = {	
+				is_part_of_hre = no
+			}
+			111 = {	
+				is_part_of_hre = no
+			}
 		}
 		is_part_of_hre = yes
 		NOT = {	#Won't happen unless atleast one Italian HRE state isn't a vassal of a German HRE state.
@@ -410,7 +437,7 @@ country_event = {
 					OR = {
 						culture_group = latin
 						capital_scope = {
-							region = italian_region
+							region = italy_region
 						}
 					}
 					NOT = { has_country_flag = shadow_kingdom }
@@ -423,7 +450,7 @@ country_event = {
 					OR = {
 						culture_group = latin
 						capital_scope = {
-							region = italian_region
+							region = italy_region
 						}
 					}
 					is_part_of_hre = no
@@ -606,7 +633,7 @@ country_event = {
 			OR = {
 				culture_group = latin
 				capital_scope = {
-					region = italian_region
+					region = italy_region
 				}
 			}
 			is_part_of_hre = no
@@ -614,7 +641,7 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				is_part_of_hre = yes
-				region = italian_region
+				region = italy_region
 			}
 			set_in_empire = no
 		}
@@ -625,7 +652,7 @@ country_event = {
 			NOT = {
 				culture_group = latin
 				capital_scope = {
-					region = italian_region
+					region = italy_region
 				}
 			}
 			is_part_of_hre = no
@@ -637,7 +664,7 @@ country_event = {
 			NOT = {
 				culture_group = latin
 				capital_scope = {
-					region = italian_region
+					region = italy_region
 				}
 			}
 			is_part_of_hre = yes
@@ -671,9 +698,10 @@ country_event = {
 					is_part_of_hre = yes
 					NOT = { has_country_flag = italian_warning }
 				}
-			country_event = { id = hre_event.4 }
-			set_country_flag = italian_warning
+				country_event = { id = hre_event.4 }
+				set_country_flag = italian_warning
 			}
+			set_global_flag = enable_stop_shadow_kingdom
 		}
 	}
 	

@@ -76,11 +76,12 @@ country_event = {
 		NOT = { has_country_flag = fulani_jihad_happened }
 		capital_scope = {
 			OR = {
-				region = senegambia
-				region = fulo_spawning_region
-				region = manding
-				region = kodugu
-				region = niger_delta
+				area = cap_verde_area
+				area = tekrur_area
+				area = manding_area
+				area = baghena_area
+				area = niger_bend_area
+				area = massina_area
 			}
 		}
 		OR = {

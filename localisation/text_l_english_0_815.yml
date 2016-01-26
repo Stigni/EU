@@ -19,7 +19,7 @@
  SIEGE_CHANCE_EXPLANATION: "Each time a siege phase happens a die (§Y$MIN$§! to §Y$MAX$§!) is rolled. That roll is then added together with the siege modifiers ($MODIFIERS$). On a natural roll of 1, the attackers will suffer a Disease Outbreak that reduces their numbers by §R$VAL$%§! of their maximum strength.\n\nThe results of the roll are as follows:"
  SIEGE_CHANCE_LINE: "$NAME$: $RANGE$ (Chance: $CHANCE$)"
  SIEGE_DATES: "This siege has been going on for §Y$TOTAL$§! days. The next siege phase is in §Y$LEFT$§! days."
- SIEGE_PAUSING_CONSTRUCTION: "§RProgress is halted while the province is besieged.\nIf the siege is lost the progress will be lost too.§!"
+ SIEGE_PAUSING_CONSTRUCTION: "§RProgress is halted while the province is besieged.§!"
  PEACE_OFFER_GOLD_LIMIT: "Limited to §G$MAX$§!¤ because of §Y$TAG$§! treasury §Y$TRE$§!¤ and up to one loan of §Y$LOA$§!¤."
  ANNUL_TREATIES_CANT_GUARANTEE: "Unable to guarantee, as we have annul treaties until §Y$DATE$§!"
  ANNUL_TREATIES_CANT_ALLIANCE: "Unable to create alliance, as we have annul treaties until §Y$DATE$§!"

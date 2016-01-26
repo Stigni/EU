@@ -155,21 +155,21 @@ country_event = {
 		name = "sikhism_flavor.5.a"
 		if = {
 			limit = {
-				owns = 507 # Punjab
-				507 = {
+				owns = 2075 # Punjab
+				2075 = {
 					NOT = { has_building = temple }
 					num_free_building_slots = 1
 				}
 			}
-			507 = {
+			2075 = {
 				add_building = temple
 			}
 		}
 		if = {
 			limit = {
 				OR = {
-					NOT = { owns = 507 }
-					507 = {
+					NOT = { owns = 2075 }
+					2075 = {
 						has_building = temple
 						num_free_building_slots = 1
 					}
@@ -439,25 +439,48 @@ province_event = {
 		OR = {
 			AND = {
 				NOT = { is_year = 1513 }
-				region = indian_region
+				region = hindusthan_region
+			}
+			AND = {
+				NOT = { is_year = 1513 }
+				region = bengal_region
+			}
+			AND = {
+				NOT = { is_year = 1513 }
+				region = rajputana_region
+			}
+			AND = {
+				NOT = { is_year = 1513 }
+				region = west_india_region
 			}
 			AND = {
 				is_year = 1514
 				NOT = { is_year = 1518 }
 				OR = {
-					region = kashmir_region
-					region = himalayas_region
-					region = tibet
+					area = kashmir_area
+					area = himalayan_hills_area
+					region = tibet_region
 				}
 			}
 			AND = {
 				is_year = 1519
 				NOT = { is_year = 1521 }
-				region = arab_region
+				OR = {
+					region = mashriq_region
+					region = arabia_region
+				}
 			}
 			AND = {
 				is_year = 1523
-				region = punjab_region
+				area = lahore_area
+			}
+			AND = {
+				is_year = 1523
+				area = multan_area
+			}
+			AND = {
+				is_year = 1523
+				area = sirhind_area
 			}
 		}
 	}

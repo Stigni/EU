@@ -90,9 +90,12 @@ country_event = {
 		}
 		any_active_trade_node = {
 			OR = {
-				region = west_african_coast
-				region = south_africa
-				region = central_africa
+				region = kongo_region
+				region = south_africa_region
+				region = west_africa_region
+				region = central_africa_region
+				region = east_africa_region
+				region = horn_of_africa_region
 			}
 		}	
 	}
