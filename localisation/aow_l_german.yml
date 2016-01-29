@@ -2268,3 +2268,8 @@
  PEACEOFFER_DOES_NOT_WANT: "Kann nicht ausgewählt werden, da $WHO|Y$ das nicht wünscht."
  incan_nation_rnw_title: "Tawantinsuyu, das Reich der Inka"
  incan_nation_rnw_desc: "Einst eines der vielen kleinen regionalen Königreiche, umfasst unser Staat nun Länder in allen vier Regionen der Anden. Unser Königreich hat sich zu etwas Größerem gewandelt – zu einem mächtigen Königreich vieler Völker, die unter einer starken Herrscherklasse vereint sind. Für unsere Untertanen sind wir einfach ihre Oberherren, die Inkas."
+ COURTVIEW_CULTURE_GAIN: "Wenn die Entwicklungsstufe einer Kultur mindestens $THRESHOLD$ der Gesamtentwicklung unserer Kernprovinzen beträgt, wird sie nicht mehr als akzeptierte Kultur angesehen."
+ COURTVIEW_CULTURE_LOSE: "Wenn die Entwicklungsstufe einer Kultur unter $THRESHOLD$ der Gesamtentwicklung unserer Kernprovinzen fällt, wird sie nicht mehr als akzeptierte Kultur angesehen."
+ MODIFIER_FEMALE_ADVISOR_CHANCE: "Chance auf weiblichen Berater"
+ LIBERTY_DESIRE_FROM_RELATIVE_POWER_ALL_2: "Relative Stärke aller Protektorate im Vergleich zu §Y$OVERLORD$§! (§Y$AMT$%§!): $VAL$"
+ LIBERTY_DESIRE_NEGATIVE_PRESTIGE: "§Y$OVERLORD$§! hat negativen Prestige: $VAL$"

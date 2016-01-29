@@ -633,3 +633,5 @@
  emperor_friendly_with_elector: "Unterstützender Kurfürst"
  desc_emperor_friendly_with_elector: "Indem wir die Unterstützung der Kurfürsten sichergestellt haben, konnten wir unseren Einfluss im Kaiserreich stärken."
  rejected_support_independence: "Abgelehntes Unabhängigkeitsunterstützungsangebot "
+ old_rights_granted_to_nobility: "Rechte des Adels verteidigt"
+ desc_old_rights_granted_to_nobility: "Wir haben die Rechte des Adels bestätigt, unabhängig vom Monarchen in ihren eigenen Herrschaftsgebieten zu agieren. Während viele Adelige dies sehr begrüßen, bedeutete es einen landesweiten Verlust der Staatsautorität."

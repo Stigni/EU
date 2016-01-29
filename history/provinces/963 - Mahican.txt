@@ -11,9 +11,7 @@ base_manpower = 2
 native_size = 5
 native_ferocity = 1
 native_hostileness = 4
-discovered_by = north_american
 
-1609.1.1 = { discovered_by = NED } # Henry Hudson
 1624.1.1 = {
 	owner = NED 
 	controller = NED
@@ -22,7 +20,7 @@ discovered_by = north_american
 	religion = reformed
 	trade_goods = fur
 } # Dutch settlers
-1629.1.1 = { discovered_by = ENG }
+
 1650.1.1 = { is_city = yes }
 1665.6.1 = { controller = ENG } # English seize New Netherlands at outset of Second Anglo-Dutch war
 1667.7.31 = {
@@ -41,7 +39,7 @@ discovered_by = north_american
 	add_core = ENG
 }
 1707.5.12 = {
-	discovered_by = GBR
+	
 	owner = GBR
 	controller = GBR
 	add_core = GBR

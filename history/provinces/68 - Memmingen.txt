@@ -12,10 +12,6 @@ trade_goods = cloth
 base_manpower = 3
 capital = "Memmingen" 
 is_city = yes
-discovered_by = eastern
-discovered_by = western
-discovered_by = muslim
-discovered_by = ottoman
 
 1525.1.1 = { religion = protestant }
 1702.1.1 = { owner = BAV controller = BAV add_core = BAV }

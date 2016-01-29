@@ -399,3 +399,4 @@
  indian_religious_tensions: "Religiöse Spannungen"
  desc_indian_religious_tensions: "Wir haben mit den muslimischen Führungsschichten gebrochen und die Religion unserer Vorfahren wieder eingeführt. Nie mehr soll unser Land von Heiden beherrscht werden. Da jedoch die muslimische Minderheit in unserem Land recht groß bleibt, ist es zu einigen Spannungen gekommen."
  trade_company_events.EVTOPTB4: "Besser die Einwohner nicht verärgern."
+ OVERLORD_CAPITAL_NOT_IN_EMPIRE: "Es ist ein Untertan von $COUNTRY$, dessen Hauptstadt $CAPITAL$ nicht Teil des Reichs ist."

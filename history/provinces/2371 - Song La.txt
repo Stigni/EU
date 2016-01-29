@@ -12,8 +12,6 @@ base_production = 2
 base_manpower = 2
 is_city = yes
 add_core = DAI
-discovered_by = chinese
-discovered_by = indian
 
 1413.1.1 = {
 	owner = MNG
@@ -34,7 +32,6 @@ discovered_by = indian
 	controller = TOK
 	add_core = TOK
 } # The kingdom is divided between the Nguyens & the Trinh line
-1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
 1730.1.1 = { unrest = 5 } # Peasant revolt
 1731.1.1 = { unrest = 0 }
 1786.6.1 = {

@@ -66,3 +66,4 @@
  emilia_in_hre_tooltip: "Emilia-Romagna gehört dem Kaiserreich an oder ist ein Vasall des Kaisers."
  tuscany_in_hre_tooltip: "Die Toskana gehört dem Kaiserreich an oder ist ein Vasall des Kaisers."
  disable_shadow_kingdom_tooltip: "Alle Provinzen Italiens, die direkt oder indirekt unter unserer Kontrolle stehen, werden dem Kaiserreich hinzugefügt.\nKein Staat wird das Kaiserreich aufgrund des Schattenkönigreich-Events verlassen."
+ global_flag_western_focus_not_set_tooltip: "Kein anderes Land hat sich für den §YWestlichen Schwerpunkt§! entschieden."

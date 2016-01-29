@@ -1,8 +1,7 @@
 #792 - Copiapo
 
 culture = mapuche
-discovered_by = south_american
-discovered_by = andean
+
 religion = animism
 capital = "Copiapo"
 trade_goods = unknown
@@ -23,7 +22,7 @@ native_hostileness = 2
 	is_city = yes
 }
 1537.1.1 = {
-	discovered_by = SPA
+	
 	owner = SPA
 	controller = SPA
 	culture = castillian

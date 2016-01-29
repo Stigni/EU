@@ -12,10 +12,6 @@ trade_goods = iron
 base_manpower = 2
 capital = "Karlstad"
 is_city = yes
-discovered_by = eastern
-discovered_by = western
-discovered_by = muslim
-discovered_by = ottoman
 
 1497.3.13 = { controller = DAN } #Danish loyalists at Danish DoW
 1497.10.6 = { controller = SWE } #Hans I become King and Sweden a Danish Vassal

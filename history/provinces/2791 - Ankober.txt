@@ -13,24 +13,11 @@ trade_goods = grain
 hre = no
 base_tax = 1 
 base_production = 1
-discovered_by = ETH
-discovered_by = ADA
-discovered_by = NUB
-discovered_by = ZAN
-discovered_by = ZIM
-discovered_by = AJU
-discovered_by = MBA
-discovered_by = MDI
-discovered_by = MLI
-discovered_by = SFA
-discovered_by = muslim
-discovered_by = ottoman
-discovered_by = indian
 
 1486.1.1 = { capital = "Badeqe" } # Debre Birhan abandoned
 1533.1.1 = { unrest = 7 } # Raids by Ahmad Gran
 1534.1.1 = {
-	discovered_by = ADA
+	
 	owner = ADA
 	controller = ADA
 	unrest = 6

@@ -632,3 +632,5 @@
  emperor_friendly_with_elector: "Elector servicial"
  desc_emperor_friendly_with_elector: "Al asegurarnos de mantener el apoyo de nuestros electores, hemos fortalecido nuestra influencia en el Imperio."
  rejected_support_independence: "Rechazada oferta de Apoyar Independencia"
+ old_rights_granted_to_nobility: "Defendidos los derechos de la Nobleza"
+ desc_old_rights_granted_to_nobility: "Hemos afirmado los derechos de la nobleza a actuar independientemente del monarca en sus propios dominios. Si bien esto ha satisfecho grandemente a muchos nobles, ha significado una pérdida de la autoridad del estado a nivel nacional."

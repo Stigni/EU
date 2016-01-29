@@ -13,7 +13,7 @@ native_ferocity = 2
 native_hostileness = 6
 
 1494.1.1 = {
-	discovered_by = CAS
+	
 	owner = CAS
 	controller = CAS
 	culture = castillian
@@ -23,7 +23,7 @@ native_hostileness = 6
 	trade_goods = sugar
 } # Christopher Columbus
 1516.1.23 = {
-	discovered_by = SPA
+	
 	owner = SPA
 	controller = SPA
 	add_core = SPA
@@ -40,7 +40,7 @@ native_hostileness = 6
 1693.1.1 = { capital = "Kingston" }
  # African slave labor
 1707.5.12 = {
-	discovered_by = GBR
+	
 	owner = GBR
 	controller = GBR
 	add_core = GBR

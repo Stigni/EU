@@ -147,7 +147,7 @@
  IS_NOT_IN_THE_COLONIAL_REGION: "Is NOT in the colonial region "
  IS_IN_COLONIAL_REGION: "Is in the colonial region "
  AT_LEAST_ONE_PROVINCE_IN_COLONIAL_REGION: "At least one province in $REGION$"
- NOT_ONE_PROVINCE_IN_COLONIAL_REGION: "Not one province in $REGION$"
+ NOT_ONE_PROVINCE_IN_COLONIAL_REGION: "No provinces in $REGION$"
  ALL_PROVINCES_IN_COLONIAL_REGION: "All provinces in colonial region $REGION$"
  NOT_ALL_PROVINCES_IN_COLONIAL_REGION: "Not all provinces in colonial region $REGION$"
  LIBERTY_EFFECT: "$DIRECTION$ $PERC$ Liberty Desire.\n"

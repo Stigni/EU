@@ -12,10 +12,6 @@ base_manpower = 2
 capital = "Carrickfergus"
 is_city = yes
 add_core = TYR
-discovered_by = western
-discovered_by = muslim
-discovered_by = ottoman
-discovered_by = eastern
 
 1607.9.4 = {
 	owner = ENG

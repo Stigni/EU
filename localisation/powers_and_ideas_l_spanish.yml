@@ -4113,3 +4113,4 @@
  trt_indigo: "índigo & cultivos comerciales"
  trt_indigo_desc: "Una multitud de lagos en nuestras tierras, así como la calidad de que nuestro suelo y clima hacen de Tirhut ideal para cultivar muchos de los cultivos comerciales que tan buscados son en Occidente. Ampliemos el cultivo de añil y azúcar para enriquecernos con sus caprichos caros."
  BUILDING_MAINTENANCE_COST: "Mantenimiento una vez terminado: §Y$AMOUNT$§Wñ/mes"
+ MAY_RECRUIT_FEMALE_GENERALS: "- Puedes reclutar generales femeninos\n"

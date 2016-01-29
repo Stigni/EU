@@ -12,8 +12,6 @@ base_manpower = 2
 capital = "Ostrov"
 is_city = yes
 add_core = PSK
-discovered_by = western
-discovered_by = eastern
 
 1510.1.13 = {	owner = RUS controller = RUS add_core = RUS remove_core = PSK } # Pskov annexed by Russia
 1581.9.1 = { controller = PLC } # Ostrov conquered by Stefan Bathory

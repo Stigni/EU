@@ -17,7 +17,6 @@ add_local_autonomy = 50
 native_size = 5
 native_ferocity = 1
 native_hostileness = 2
-discovered_by = mesoamerican
 
 1485.1.1 = {
  	owner = AZT
@@ -29,7 +28,7 @@ discovered_by = mesoamerican
 	controller = KIC 
 }
 1524.1.1 = {
-	discovered_by = SPA 
+	 
 	owner = SPA 
 	controller = SPA 
 }

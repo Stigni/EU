@@ -12,9 +12,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 is_city = yes
-discovered_by = chinese
-discovered_by = indian
-discovered_by = nomad_group
 
 1472.1.1 = {
 	owner = CHG
@@ -30,7 +27,6 @@ discovered_by = nomad_group
 	owner = KSD
 	add_core = KSD 
 }
-1682.1.1 = { discovered_by = SPA } #Ferdinand Verbiest
 1717.1.1 = {
 	owner = ZUN
 	controller = ZUN

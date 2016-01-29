@@ -14,8 +14,6 @@ fort_15th = yes
 is_city = yes
 add_core = MYA
 add_core = CDL
-discovered_by = chinese
-discovered_by = indian
 
 1502.1.1 = {
 	controller = SST
@@ -34,7 +32,6 @@ discovered_by = indian
 	controller = TAU
 	add_core = TAU
 }
-1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
 1752.1.1 = {
 	owner = SST
 	controller = SST

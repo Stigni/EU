@@ -13,10 +13,6 @@ base_manpower = 3
 capital = "Teruel"
 estate = estate_church 
 is_city = yes
-discovered_by = western
-discovered_by = eastern
-discovered_by = muslim
-discovered_by = ottoman
 
 1516.1.23 = {
 	controller = SPA

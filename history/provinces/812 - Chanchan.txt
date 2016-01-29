@@ -12,9 +12,7 @@ base_production = 4
 base_manpower = 2
 is_city = yes
 add_core = CHM
-discovered_by = CHM
-discovered_by = south_american
-discovered_by = andean
+
 fort_15th = yes
 
 1470.1.1 = {
@@ -23,7 +21,7 @@ fort_15th = yes
 	add_core = INC
 }
 1533.8.29 = {
-	discovered_by = SPA
+	
 	owner = SPA
 	controller = SPA
 	add_core = SPA

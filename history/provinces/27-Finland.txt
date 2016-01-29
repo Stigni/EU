@@ -13,8 +13,6 @@ base_manpower = 2
 capital = "Åbo"
 estate = estate_church
 is_city = yes
-discovered_by = western
-discovered_by = eastern
 
 1468.3.15 = { owner = DAN controller = DAN } # Bishop Bitz
 1468.6.15 = { owner = SWE controller = SWE } # Recaptured by Karl Knutsson Bonde

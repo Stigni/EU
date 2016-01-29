@@ -13,8 +13,6 @@ trade_goods = naval_supplies
 base_manpower = 2
 capital = "Borgå"
 is_city = yes
-discovered_by = western
-discovered_by = eastern
 
 1487.1.1 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # The Axelsson Tott Family
 1487.5.24 = { revolt = {} controller = SWE } # The Demise of the Axelsson Tott Family

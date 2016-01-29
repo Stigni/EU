@@ -16,10 +16,6 @@ estate = estate_nobles
 add_core = GUY
 add_core = TOU
 add_core = FRA
-discovered_by = eastern
-discovered_by = western
-discovered_by = muslim
-discovered_by = ottoman
 
 1588.12.1 = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
 1589.1.5 = { owner = NAV controller = NAV add_core = NAV }

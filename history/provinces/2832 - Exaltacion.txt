@@ -1,8 +1,7 @@
 # - Exaltacion
 
 culture = maipurean
-discovered_by = south_american
-discovered_by = andean
+
 religion = animism
 capital = "Exaltacion"
 trade_goods = unknown

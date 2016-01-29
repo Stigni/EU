@@ -1,8 +1,7 @@
 # - Coquimbo
 
 culture = mapuche
-discovered_by = south_american
-discovered_by = andean
+
 religion = animism
 capital = "Coquimbo"
 trade_goods = unknown
@@ -22,7 +21,6 @@ native_hostileness = 9
 	religion = inti
 	trade_goods = grain
 }
-1520.1.1 = { discovered_by = SPA } # Ferdinand Magellan
 1541.2.12 = {	owner = SPA
 	controller = SPA
 	culture = castillian

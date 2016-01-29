@@ -14,8 +14,6 @@ base_manpower = 2
 capital = "Viborg"
 is_city = yes
 fort_15th = yes
-discovered_by = western
-discovered_by = eastern
 
 1497.3.13 = { controller = DAN } #Danish loyalists at Danish DoW
 1497.10.6 = { controller = SWE } #Hans I become King and Sweden a Danish Vassal

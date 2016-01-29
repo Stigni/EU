@@ -11,11 +11,9 @@ base_manpower = 1
 native_size = 15
 native_ferocity = 1 
 native_hostileness = 1
-discovered_by = south_american
-discovered_by = andean
 
 1561.1.1 = {
-	discovered_by = SPA
+	
 	owner = SPA
 	controller = SPA
 	add_core = SPA

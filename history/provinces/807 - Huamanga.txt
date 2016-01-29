@@ -12,8 +12,6 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-discovered_by = south_american
-discovered_by = andean
 
 1467.1.1 = {
 	owner = INC
@@ -21,7 +19,7 @@ discovered_by = andean
 	add_core = INC
 }
 1533.8.29 = {
-	discovered_by = SPA
+	
 	owner = SPA
 	controller = SPA
 	add_core = SPA

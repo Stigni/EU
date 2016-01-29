@@ -13,10 +13,6 @@ base_manpower = 2
 is_city = yes
 add_core = HUN
 add_core = TRA
-discovered_by = western
-discovered_by = eastern
-discovered_by = muslim
-discovered_by = ottoman
 
 1526.8.30 = {
 	owner = HAB

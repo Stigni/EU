@@ -13,10 +13,6 @@ base_manpower = 3
 is_city = yes
 estate = estate_nobles
 add_core = POR
-discovered_by = western
-discovered_by = muslim
-discovered_by = ottoman
-discovered_by = eastern
 
 1580.8.25 = { controller = SPA }
 1580.8.26 = { controller = POR }

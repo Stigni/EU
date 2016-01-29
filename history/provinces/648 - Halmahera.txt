@@ -11,9 +11,7 @@ base_manpower = 1
 native_size = 5
 native_ferocity = 1
 native_hostileness = 1
-discovered_by = chinese
 
-1512.1.1 = { discovered_by = POR } # Francisco Serrão
 1650.1.1 = {
 	owner = NED
 	controller = NED

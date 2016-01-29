@@ -14,11 +14,6 @@ is_city = yes
 add_core = DLH
 add_core = PUN
 estate = estate_nobles
-discovered_by = indian
-discovered_by = nomad_group
-discovered_by = muslim
-discovered_by = ottoman
-discovered_by = chinese
 
 1443.1.1 = {
 	revolt = { type = pretender_rebels leader = "Bahlul Lodi" }
@@ -65,12 +60,12 @@ discovered_by = chinese
 	owner = MUG
 } #Battle of Sirhind
 1574.1.1 = { capital = "Amritsar" }
-1690.1.1 = { discovered_by = ENG }
+
 1700.1.1 = {
 	controller = REB
 	revolt = { type = sikhism_rebels size = 1 }
 }
-1707.5.12 = { discovered_by = GBR }
+
 1715.1.1 = {
 	controller = MUG
 	revolt = { }

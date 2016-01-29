@@ -15,7 +15,6 @@ base_manpower = 1
 native_size = 5
 native_ferocity = 2
 native_hostileness = 6
-discovered_by = north_american
 
 1710.1.1 = {
 	owner = SIO
@@ -24,7 +23,6 @@ discovered_by = north_american
 	remove_core = ASI
 	culture = dakota 
 } 
-1732.1.1 = { discovered_by = FRA } # La Vérendrye
 1808.1.1 = {
 	owner = GBR
 	controller = GBR

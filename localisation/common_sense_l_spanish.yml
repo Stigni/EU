@@ -1661,3 +1661,5 @@
  SCUTAGE_EFFECT2_OL: "Sin embargo, no serán llamados a nuestras guerras."
  horde_development: "Desarrollo total"
  RETURN_PROVINCE_TOOLTIP_HORDE: "Haz clic para devolver a esta provincia a §Y$COUNTRY$§!. Su opinión sobre ti aumentará."
+ CLIENT_MARCH: "Marca de cliente"
+ integrating_minorities_parliament_tooltip: "Un escaño del Parlamento se asignará a una provincia de una cultura diferente elegible"

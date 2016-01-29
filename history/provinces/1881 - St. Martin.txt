@@ -12,8 +12,6 @@ native_size = 5
 native_ferocity = 2
 native_hostileness = 4 
 
-1493.1.1 = { discovered_by = CAS } # Christopher Columbus, claimed the island for Spain, but never showed much interest
-1516.1.23 = { discovered_by = SPA }
 1631.1.1 = {
 	owner = NED
 	controller = NED

@@ -293,3 +293,7 @@
  DIPLO_NOT_WANT_PROVINCES: "Möchte keinerlei $WHO$-Land, das $CALLER$ nicht beansprucht hat: "
  DIPLO_WANTS_PROVINCES: "Versprochenes $WHO$-Land: "
  DIPLO_PREPARED_FOR_WAR: "Für den Krieg vorbereitet: "
+ DIPLO_ALLIANCE_IS_BREAKING: "Wünscht sich $WHO$ nicht länger als Verbündeten: "
+ DIPLO_CRUSADE: "$WHO$ ist Ziel eines Kreuzzugs: "
+ DIPLO_WAR_BATTLE_RELUCTANCE: "Laufende Schlachten: "
+ DIPLO_BETRAYED_ALLY: "$WHO$ brach jüngst sein Versprechen, Land zu gewähren: "

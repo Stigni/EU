@@ -11,9 +11,7 @@ base_manpower = 1
 native_size = 35
 native_ferocity = 2
 native_hostileness = 9
-discovered_by = north_american
 
-1732.1.1 = { discovered_by = FRA } # La Vérendrye
 1810.1.1 = {
 	owner = SIO
 	controller = SIO

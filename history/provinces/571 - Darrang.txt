@@ -12,11 +12,7 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 add_core = ASS
-discovered_by = indian
-discovered_by = chinese
-discovered_by = nomad_group
 
-1627.1.1 = { discovered_by = POR }
 1662.3.1 = { controller = MUG } # Mirjumla entered Gargaon
 1663.1.1 = { owner = MUG }
 1667.1.1 = { controller = ASS } # The Mughals are defeated

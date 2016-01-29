@@ -12,8 +12,6 @@ base_production = 4
 base_manpower = 3
 is_city = yes
 add_core = LIV
-discovered_by = western
-discovered_by = eastern
 
 1542.1.1 = { religion = protestant} # Unknown date
 1561.1.1 = {

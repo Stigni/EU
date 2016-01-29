@@ -11,7 +11,6 @@ base_manpower = 1
 native_size = 5
 native_ferocity = 1
 native_hostileness = 2
-discovered_by = north_american
 
 1650.1.1 = {
 	owner = SUS
@@ -20,14 +19,13 @@ discovered_by = north_american
 	is_city = yes
 	trade_goods = fur
 } #Full extent of the Susquehannock at start of the Beaver Wars
-1671.1.1 = { discovered_by = ENG } # Abraham Wood
 1677.1.1 = {
  	owner = LEN
 	controller = LEN
 	add_core = LEN
 	culture = delaware 
 } #Lenape vassals of Iroquois resettle
-1707.5.12 = { discovered_by = GBR }
+
 1756.1.1 = {
 	owner = GBR
 	controller = GBR

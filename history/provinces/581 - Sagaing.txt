@@ -12,8 +12,6 @@ base_production = 5
 base_manpower = 4
 is_city = yes
 add_core = AVA
-discovered_by = chinese
-discovered_by = indian
 
 1527.1.1 = {
 	owner = SST
@@ -27,4 +25,4 @@ discovered_by = indian
 	owner = TAU
 	remove_core = SST
 }
-1760.1.1 = { discovered_by = GBR }
+

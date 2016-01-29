@@ -1181,7 +1181,7 @@ l_english:
  flavor_rus.EVTOPTA1110: "A stronger [Root.GetName] will emerge!"
  flavor_rus.EVTOPTB1110: "[Root.GetName] needs a new dynasty!"
  flavor_spa.EVTNAME1: "Christopher Columbus"
- flavor_spa.EVTDESC1: "Explorer Christopher Columbus made two attempts in 1485 and 1488 to convince the King of Portugal, John III, to finance an expedition to try and find a western route to the Orient. After being rejected the second time, Columbus turned his efforts towards the Spanish Crown. Backed up by Italian investors, Columbus finally managed to convince King Ferdinand to agree to the expedition. In August 1492, after having been made 'Admiral of the Seas' and promised a share of the profits, Columbus finally set sail."
+ flavor_spa.EVTDESC1: "Explorer Christopher Columbus made two attempts to convince the King of Portugal, [From.Monarch.GetName], to finance an expedition to try and find a western route to the Orient. After being rejected the second time, Columbus turned his efforts towards the [Root.GetAdjective] Crown. Backed up by Italian investors, Columbus hopes to convince King [Root.Monarch.GetName] to agree to the expedition."
  flavor_spa.EVTOPTA1: "Reject his proposal"
  flavor_spa.EVTOPTB1: "Hire Columbus"
  flavor_spa.EVTNAME3716: "The Iberian Wedding"

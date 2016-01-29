@@ -13,7 +13,6 @@ add_local_autonomy = 25
 capital = "Reykjavik"
 is_city = yes 	
 add_core = NOR
-discovered_by = western
 
 1536.1.1 = {
 	religion = protestant

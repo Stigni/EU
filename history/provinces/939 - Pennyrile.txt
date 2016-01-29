@@ -11,7 +11,6 @@ base_manpower = 1
 native_size = 5
 native_ferocity = 1
 native_hostileness = 6
-discovered_by = north_american
 
 1650.1.1 = {
 	owner = CHI
@@ -19,8 +18,6 @@ discovered_by = north_american
 	add_core = CHI
 	is_city = yes 
 } #Natives disruptiosn of the Beaver wars
-1682.1.1 = { discovered_by = FRA } # Estimated
-1750.1.1 = { discovered_by = GBR } # Thomas Walker
 1786.1.10 = {
  owner = USA
 	controller = USA

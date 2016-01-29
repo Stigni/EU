@@ -88,3 +88,8 @@
  LOADING_TIP_17: "Tener demasiados lideres te costará poder militar cada mes."
  LOADING_TIP_74: "El agotamiento de guerra solo desaparece lentamente mientras estamos en paz y en absoluto mientras estamos en guerra."
  LOADING_TIP_0: "Las repúblicas tienen elecciones cada 4-8 años."
+ LOADING_TIP_89: "Puede borrar partidas guardadas haciendo clic en el botón Borrar sobre en partidas guardadas."
+ LOADING_TIP_90: "Las teclas Z y C se pueden usar para cancelar y confirmar las decisiones de eventos y de diplomacia."
+ LOADING_TIP_91: "La tecla B abre la interfaz de reequilibrio de ejército."
+ LOADING_TIP_92: "Con la interfaz de reequilibrio de ejército abierta, las teclas Z y B se puede utilizar para enviar unidades de un lado a otro."
+ LOADING_TIP_93: "La tecla B se puede utilizar para anular la selección el ejército o la armada superior cuando se seleccionan múltiples ejércitos/armadas."

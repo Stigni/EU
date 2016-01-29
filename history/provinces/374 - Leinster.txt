@@ -12,10 +12,6 @@ base_manpower = 2
 capital = "Waterford"
 is_city = yes
 add_core = LEI
-discovered_by = western
-discovered_by = muslim
-discovered_by = ottoman
-discovered_by = eastern
 
 1632.1.1 = {
 	owner = ENG

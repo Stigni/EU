@@ -65,3 +65,4 @@
  emilia_in_hre_tooltip: "Emilia-Romaña está en el Imperio o es vasallo del Emperador."
  tuscany_in_hre_tooltip: "Toscana está en el Imperio o es vasallo del Emperador."
  disable_shadow_kingdom_tooltip: "Todas las provincias en Italia bajo nuestro control directo o indirecto serán añadidas al Imperio.\nNingún estado dejará el Imperio a través del acontecimiento Reino en la sombra."
+ global_flag_western_focus_not_set_tooltip: "Ningún otro país ha tomado a decisión §Enfoque Occidental§!."

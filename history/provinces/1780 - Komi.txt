@@ -11,10 +11,9 @@ capital = "Yarensk"
 native_size = 10
 native_ferocity = 1
 native_hostileness = 3
-discovered_by = nomad_group
 
 1593.1.1 = {
-	discovered_by = RUS
+	
 	owner = RUS
 	controller = RUS
 	add_core = RUS

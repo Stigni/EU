@@ -16,7 +16,6 @@ base_manpower = 1
 native_size = 5
 native_ferocity = 1
 native_hostileness = 2
-discovered_by = mesoamerican
 
 1470.1.1 = { 
 	unrest = 0 
@@ -27,7 +26,7 @@ discovered_by = mesoamerican
 	controller = REB 
 }
 1525.1.1 = {
-	discovered_by = SPA 
+	 
 	owner = SPA 
 	controller = SPA 
 	add_core = SPA

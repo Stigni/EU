@@ -12,12 +12,9 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = KAC
-discovered_by = indian
-discovered_by = nomad_group
-discovered_by = chinese
 
 1757.1.1 = { capital = "Khaspur" }
-1760.1.1 = { discovered_by = GBR }
+
 1824.1.1 = {
 	owner = GBR
 	controller = GBR

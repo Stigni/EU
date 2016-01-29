@@ -13,8 +13,6 @@ base_manpower = 4
 fort_15th = yes
 is_city = yes
 add_core = AVA
-discovered_by = chinese
-discovered_by = indian
 
 1527.1.1 = {
 	owner = SST
@@ -22,7 +20,7 @@ discovered_by = indian
 	add_core = SST
 	remove_core = AVA
 }
-1535.1.1 = { discovered_by = POR }
+
 1554.1.1 = { add_core = TAU }
 1555.1.22 = { controller = TAU }
 1563.4.1 = {	

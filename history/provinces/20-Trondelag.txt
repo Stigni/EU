@@ -13,8 +13,7 @@ base_manpower = 2
 capital = "Trondheim"
 estate = estate_church
 is_city = yes
-discovered_by = eastern
-discovered_by = western
+
 fort_15th = yes
 
 1531.11.10 = { unrest = 10 } # The Return of Christian II

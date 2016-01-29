@@ -12,15 +12,12 @@ base_production = 4
 base_manpower = 3
 is_city = yes
 add_core = ASS
-discovered_by = indian
-discovered_by = nomad_group
-discovered_by = chinese
 
 1540.1.1 = {
 	capital = "Garhgaon"
 	fort_15th = yes
 }
-1627.1.1 = { discovered_by = POR }
+
 1707.1.1 = { capital = Rangpur }
 1769.9.15 = {
 	revolt = {

@@ -12,19 +12,6 @@ trade_goods = grain
 hre = no
 base_tax = 1 
 base_production = 1
-discovered_by = ETH
-discovered_by = ADA
-discovered_by = NUB
-discovered_by = ZAN
-discovered_by = ZIM
-discovered_by = AJU
-discovered_by = MBA
-discovered_by = MDI
-discovered_by = MLI
-discovered_by = SFA
-discovered_by = muslim
-discovered_by = ottoman
-discovered_by = indian
 
 1493.1.1 = { unrest = 6 } # Uprising among the Arho against crown overlordship
 1494.1.1 = { unrest = 0 }
@@ -38,7 +25,7 @@ discovered_by = indian
 	owner = ETH
 	controller = ETH
 } # Adal collapse in highlands in wake of Ahmad Gran's death
-1550.1.1 = { discovered_by = TUR }
+
 1584.1.1 = { unrest = 7 } # Oromo Raids
 1589.1.1 = { unrest = 7 } # Oromo Raids
 1590.1.1 = { unrest = 0 }

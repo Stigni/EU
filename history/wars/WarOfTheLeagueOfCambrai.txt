@@ -9,7 +9,6 @@ war_goal = {
 1508.12.10 = {
 	add_attacker = FRA
 	add_attacker = HAB
-	add_attacker = ARA
 	add_attacker = MOD
 	add_defender = VEN
 }
@@ -70,8 +69,6 @@ war_goal = {
 
 # Holy league
 1511.10.4 = {
-	rem_attacker = ARA
-	add_defender = ARA
 	add_defender = CAS
 	rem_attacker = HAB
 	add_defender = HAB

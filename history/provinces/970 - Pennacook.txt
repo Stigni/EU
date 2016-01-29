@@ -11,10 +11,7 @@ base_manpower = 1
 native_size = 15
 native_ferocity = 3
 native_hostileness = 8
-discovered_by = north_american
 
-1605.1.1 = { discovered_by = ENG } # George Waymouth
-1606.1.1 = { discovered_by = FRA } # Samuel de Champlain
 1623.1.1 = {
 	owner = ENG
 	controller = ENG
@@ -28,7 +25,7 @@ discovered_by = north_american
  # Fort William & Mary
 1653.1.1 = { capital = "Portsmouth" }
 1707.5.12 = {
-	discovered_by = GBR
+	
 	owner = GBR
 	controller = GBR
 	add_core = GBR

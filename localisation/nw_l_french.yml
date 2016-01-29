@@ -41,7 +41,7 @@
  PROTECTORATE_LEAD: "Compte $LIST$ comme protectorats"
  PROTECTORATE_WEAK: "Protectorat de $LIST$"
  HEADER_SUBJECTS: "Dépendances"
- HEADER_ESTATES: "États"
+ HEADER_ESTATES: "Ordres"
  HEADER_NATIVES: "Indigènes"
  HEADER_RELIGIOUS_REFORMS: "Réformes religieuses"
  NO_CURR_SUBJECTS_TT: "Nous n'avons actuellement aucune dépendance."

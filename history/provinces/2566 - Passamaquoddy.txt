@@ -11,10 +11,7 @@ base_manpower = 1
 native_size = 5
 native_ferocity = 1
 native_hostileness = 2
-discovered_by = north_american
 
-1604.1.1 = { discovered_by = FRA } # Samuel de Champlain
-1605.1.1 = { discovered_by = ENG } # George Waymouth
 1613.1.1 = {
 	owner = FRA
 	controller = FRA
@@ -80,7 +77,7 @@ discovered_by = north_american
 	remove_core = FRA
 	culture = abenaki 
 } #Abandoned after another English raid
-1707.5.12 = { discovered_by = GBR } 
+ 
 1727.1.1 = {
 	owner = XXX
 	controller = XXX

@@ -13,8 +13,6 @@ trade_goods = grain
 base_manpower = 1
 capital = "Arensburg"
 is_city = yes
-discovered_by = western
-discovered_by = eastern
 
 1542.1.1 = { religion = protestant} # Unknown date
 1559.1.1 = {
@@ -38,5 +36,4 @@ discovered_by = eastern
 	add_core = RUS 
 	remove_core = SWE
 } # The Peace of Nystad
-
 

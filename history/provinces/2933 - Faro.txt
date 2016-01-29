@@ -1,7 +1,7 @@
 # - Barcelos
 
 culture = carib
-discovered_by = south_american
+
 religion = animism
 capital = "Barcelos"
 trade_goods = unknown
@@ -17,7 +17,7 @@ native_hostileness = 6
 	is_city = yes
 	owner = POR
 	controller = POR
-	discovered_by = POR
+	
 	add_core = POR
 	culture = portugese
 	religion = catholic

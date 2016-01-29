@@ -13,8 +13,6 @@ base_manpower = 2
 capital = "Dorpat"
 is_city = yes
 estate = estate_nobles
-discovered_by = western
-discovered_by = eastern
 
 1542.1.1 = { religion = protestant} # Unknown date
 1558.7.18 = { controller = RUS } # Russian conquest

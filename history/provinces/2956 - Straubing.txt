@@ -12,10 +12,6 @@ base_manpower = 1
 capital	= "Straubing" 
 is_city = yes
 hre = yes
-discovered_by = eastern
-discovered_by = western
-discovered_by = muslim
-discovered_by = ottoman
 
 1704.8.13 = {
 	owner = HAB

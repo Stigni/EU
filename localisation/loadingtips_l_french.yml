@@ -88,3 +88,8 @@
  LOADING_TIP_86: "Vous trouverez vos captures d'écran dans le dossier\n…\\Documents\\Paradox Interactive\\Europa Universalis IV\\Screenshots."
  LOADING_TIP_87: "Appuyez sur F11\npour sauvegarder une capture d'écran du jeu."
  LOADING_TIP_88: "Maintenir la touche Shift enfoncée lorsque vous donnez\ndes ordres à une unité permet de détailler le chemin qu'elle empruntera."
+ LOADING_TIP_89: "Vous pouvez supprimer des sauvegardes en cliquant\nsur le bouton «Supprimer» d'une sauvegarde."
+ LOADING_TIP_90: "Les touches Z et C permettent d'annuler et confirmer\nles décisions relatives aux événements et à la diplomatie."
+ LOADING_TIP_91: "La touche B ouvre l'interface d'échanges d'unités entre les armées."
+ LOADING_TIP_92: "Dans l'interface d'échange d'unités des armées, les touches Z et B\npermettent de passer des unités d'une armée à une autre."
+ LOADING_TIP_93: "Lorsque plusieurs armées ou flottes sont sélectionnées, la touche B\npermet de désélectionner celle se trouvant en haut de la liste."

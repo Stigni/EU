@@ -1,8 +1,7 @@
 # - La Rioja
 
 culture = huarpe
-discovered_by = south_american
-discovered_by = andean
+
 religion = animism
 capital = "La Rioja"
 trade_goods = unknown
@@ -23,7 +22,7 @@ native_hostileness = 9
 	trade_goods = wine
 }
 1533.8.29 = {
-	discovered_by = SPA
+	
 	owner = SPA
 	controller = SPA
 	add_core = SPA

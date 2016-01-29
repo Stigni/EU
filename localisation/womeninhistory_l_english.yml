@@ -40,7 +40,7 @@ l_english:
  women_history_events.10.a: "Her knowledge would be useful for us, we should consider her as an advisor."
  women_history_events.10.b: "She is a great example to us all."
  women_history_events.11.t: "Isabella of Castile"
- women_history_events.11.d: "Wife to the king of Aragon and sister to the king of Castile, Isabella has a claim to the throne that few contest. She has proven herself to be a political power to be reckoned with, having managed to suppress a rebellion by negotiating with the rebels and brought crime rate in her husband's kingdom to the lowest it's ever been. Now she has set her sights on the throne that is rightfully hers, and who are we to deny her it?"
+ women_history_events.11.d: "While not the primary candidate for the throne few can deny the talents and virtues of the young princess Isabella. As a daughter of the powerful Trastamara family she has managed to secure powerful allies through marriage who support her claim to our throne. Few can tell what the future has in store for our country but even for those who are unhappy with the rule of [Root.Monarch.GetName] Isabella is held to be a given candidate to be [Root.Monarch.GetHerHis] successor."
  women_history_events.11.a: "The throne is hers."
  women_history_events.11.b: "Her political power can be used elsewhere."
  women_history_events.12.t: "Sophie Germain"

@@ -4113,3 +4113,4 @@
  trt_indigo: "Indigo und Cash Crops"
  trt_indigo_desc: "Eine Vielzahl von Seen in unserem Land sowie die Qualität unserer Erde und unseres Klimas sorgen dafür, dass Tirhut ideal für die Kultivierung vieler Cash Crops ist, die im Westen so begehrt sind. Lasst uns die Kultivierung von Indigo und Zucker ausbauen, so dass wir durch ihre kostspieligen Phantasien reich werden."
  BUILDING_MAINTENANCE_COST: "Unterhalt nach Fertigstellung: §Y$AMOUNT$§W¤/Monat"
+ MAY_RECRUIT_FEMALE_GENERALS: "#NAME?"

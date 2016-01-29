@@ -12,9 +12,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-discovered_by = chinese
-discovered_by = nomad_group
-discovered_by = indian
 
 1635.1.1 = {
 	owner = LDK
@@ -34,7 +31,7 @@ discovered_by = indian
 	controller = UTS
 	add_core = UTS
 }
-1721.1.1 = { discovered_by = SPA }
+
 1792.11.1 = {
 	owner = QNG
 	controller = QNG

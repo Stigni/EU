@@ -12,8 +12,7 @@ trade_goods = copper
 base_manpower = 2
 capital = "Mora"
 is_city = yes
-discovered_by = eastern
-discovered_by = western
+
 add_local_autonomy = 25
 extra_cost = 10
 
