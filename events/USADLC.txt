@@ -1145,11 +1145,12 @@ country_event = {
 			has_country_flag = usa_declaration_independence_flag
 		}
 		owns = 965 # Manhattan
-		owns = 966 # Nipmuc
-		owns = 967 # Narraganset
+		owns = 966 # Berkshires
+		owns = 967 # Rhode Island
 		owns = 968 # Massachusetts
-  		owns = 2561 # Quinnipiac
+  		owns = 2560 # New Haven
 		owns = 2010 # Connecticut
+		owns = 2561 # Plymouth
 	}
 	
 	mean_time_to_happen = { months = 200 }
@@ -2644,8 +2645,11 @@ country_event = {
 		FRA = {
 			ai = yes
 		}
-		893 = { # Chitimacha/Louisiana
-			owned_by = FRA
+		colonial_louisiana = {
+			OR = {
+				owned_by = FRA
+				is_colonial_nation_of = FRA
+			}
 			any_neighbor_province = {
 				owner = {
 					OR = {
@@ -2667,7 +2671,20 @@ country_event = {
 			modifier = opinion_louisiana
 			years = 50
 		}
-		893 = { # Chitimacha/Louisiana
+		every_province = {
+			limit = {
+				colonial_region = colonial_louisiana
+				OR = {
+					owned_by = FRA
+					owner = {
+						is_colonial_nation_of = FRA
+					}
+				}
+			}
+			owner = {
+				remove_core = PREV
+			}
+			add_core = ROOT
 			cede_province = ROOT
 		}
 	}
@@ -2985,52 +3002,13 @@ country_event = {
 			ai = yes
 		}
 		OR = {
-			926 = { # Ais
-				owned_by = SPA
-				any_neighbor_province = {
-					owned_by = USA
-				}
-			}
-			927 = { # Timucua
-				owned_by = SPA
-				any_neighbor_province = {
-					owned_by = USA
-				}
-			}
-			928 = { # Apalachee
-				owned_by = SPA
-				any_neighbor_province = {
-					owned_by = USA
-				}
-			}
-			923 = { # Pensacola
-				owned_by = SPA
-				any_neighbor_province = {
-					owned_by = USA
-				}
-			}
-			2533 = { # Chatot
-				owned_by = SPA
-				any_neighbor_province = {
-					owned_by = USA
-				}
-			}
-			2534 = { # Yustaga
-				owned_by = SPA
-				any_neighbor_province = {
-					owned_by = USA
-				}
-			}
-			2535 = { # Calusa
-				owned_by = SPA
-				any_neighbor_province = {
-					owned_by = USA
-				}
-			}
-			2536 = { # Mayaimi
-				owned_by = SPA
-				any_neighbor_province = {
-					owned_by = USA
+			any_province = {
+				colonial_region = colonial_eastern_america
+				OR = {
+					owned_by = SPA
+					owner = {
+						is_colonial_nation_of = SPA
+					}
 				}
 			}
 		}
@@ -3045,93 +3023,21 @@ country_event = {
 			modifier = opinion_florida
 			years = 50
 		}
-		if = {
+		every_province = {
 			limit = {
-				926 = { # Ais
+				colonial_region = colonial_eastern_america
+				OR = {
 					owned_by = SPA
+					owner = {
+						is_colonial_nation_of = SPA
+					}
 				}
 			}
-			926 = { # Ais
-				cede_province = ROOT
+			owner = {
+				remove_core = PREV
 			}
-			add_years_of_income = -0.1
-		}
-		if = {
-			limit = {
-				927 = { # Timucua
-					owned_by = SPA
-				}
-			}
-			927 = { # Timucua
-				cede_province = ROOT
-			}
-			add_years_of_income = -0.1
-		}
-		if = {
-			limit = {
-				928 = { # Apalachee
-					owned_by = SPA
-				}
-			}
-			928 = { # Apalachee
-				cede_province = ROOT
-			}
-			add_years_of_income = -0.1
-		}
-		if = {
-			limit = {
-				923 = { # Pensacola
-					owned_by = SPA
-				}
-			}
-			923 = { # Pensacola
-				cede_province = ROOT
-			}
-			add_years_of_income = -0.1
-		}
-		if = {
-			limit = {
-				2533 = { # Chatot
-					owned_by = SPA
-				}
-			}
-			2533 = { # Chatot
-				cede_province = ROOT
-			}
-			add_years_of_income = -0.1
-		}
-		if = {
-			limit = {
-				2534 = { # Yustaga
-					owned_by = SPA
-				}
-			}
-			2534 = { # Yustaga
-				cede_province = ROOT
-			}
-			add_years_of_income = -0.1
-		}
-		if = {
-			limit = {
-				2535 = { # Calusa
-					owned_by = SPA
-				}
-			}
-			2535 = { # Calusa
-				cede_province = ROOT
-			}
-			add_years_of_income = -0.1
-		}
-		if = {
-			limit = {
-				2536 = { # Mayaimi
-					owned_by = SPA
-				}
-			}
-			2536 = { # Mayaimi
-				cede_province = ROOT
-			}
-			add_years_of_income = -0.1
+			add_core = ROOT
+			cede_province = ROOT
 		}
 	}
 

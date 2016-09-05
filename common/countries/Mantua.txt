@@ -84,7 +84,7 @@ leader_names = {
 	d'Absburgo Alberti Amelia Barone Barzagli Belmonte Bibiena Boninsegna Bosio "di Busca"
 	"de Canal" Casabianca Castagnaro Cocconi Colombo Conti Fancelli Freddi
 	Gatti Germano Gonzaga Grazioli Grosso Idoni Innocenti Juvarra Lori
-	Manfredi Mantegna Manfredi "di Medici" Montanari Neri Oddo Panzavecchia Pesci Piccoli Pico "del Piero" Poggio Poma
+	Manfredi Mantegna Manfredi "de' Medici" Montanari Neri Oddo Panzavecchia Pesci Piccoli Pico "del Piero" Poggio Poma
 	Romano "de Rossi" Speri Tassoni Tazolli Tedesco Toselli Zaccardo Zappa
 }
 

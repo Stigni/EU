@@ -13,6 +13,12 @@ base_manpower = 1
 is_city = yes
 add_core = COC
 
+
+
+discovered_by = mesoamerican
+
+1517.1.1 = { discovered_by = SPA } # Francisco Hernandez de Cordoba
+
 1547.1.1 = {
 	owner = SPA 
 	controller = SPA

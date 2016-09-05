@@ -2,7 +2,7 @@
 
 owner = SMZ
 controller = SMZ
-culture = japanese
+culture = kyushuan
 religion = shinto
 capital = "Kagoshima"
 trade_goods = fish
@@ -12,6 +12,9 @@ base_manpower = 3
 base_production = 3
 is_city = yes
 add_core = SMZ
+
+
+
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA
@@ -19,4 +22,5 @@ discovered_by = OIR
 discovered_by = QNG
 
 1542.1.1 = { discovered_by = POR }
+
 1550.1.1 = { fort_15th = yes } # Uchi Castle, the capital of the Shimazu clan

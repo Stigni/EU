@@ -4,7 +4,7 @@ owner = OYO
 controller = OYO
 add_core = OYO
 culture = yorumba 
-religion = animism
+religion = shamanism #Fetishism
 capital = "Oyo"
 is_city = yes
 base_manpower = 1
@@ -12,7 +12,11 @@ trade_goods = grain
 hre = no
 base_tax = 3 
 base_production = 3
+
+
+
 discovered_by = sub_saharan
+
 
 1525.1.1 = { unrest = 8 capital = "Kusu" } # Nupe Invasions force Oyo to abandon capital
 1560.1.1 = { capital = "Igboho" } # Oyo Alafin Egunoju relocates capital

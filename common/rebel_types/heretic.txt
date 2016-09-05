@@ -3,6 +3,8 @@
 ######################################################################
 heretic_rebels = {
 
+	color = { 235 210 210 }
+
 	area = nation_religion 				# Sticks to provinces of their religion
 	government = theocracy 			# Desires Theocracy
 	defection = none					# Will defect to the "best" alternative.

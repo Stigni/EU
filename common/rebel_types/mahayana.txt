@@ -4,6 +4,8 @@
 ######################################################################
 mahayana_rebels = {
 
+	color = { 230 175 175 }
+
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
 	religion = mahayana
@@ -102,6 +104,11 @@ mahayana_rebels = {
 	 	}
 		modifier = {
 			factor = 1.5
+			has_missionary = yes
+			religion = mahayana
+		}
+		modifier = {
+			factor = 1.5
 			unrest = 2
 		}
 		modifier = {
@@ -124,29 +131,32 @@ mahayana_rebels = {
 		}
  	}
 	siege_won_effect = {
-		if = {
-			limit = {
-				OR = {
-					religion = mahayana
-					is_reformation_center = yes
-					owner = { religion = mahayana }
+		custom_tooltip = religious_rebels_seige_effect_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						religion = mahayana
+						is_reformation_center = yes
+						owner = { religion = mahayana }
+					}
+				}
+				add_province_modifier = {
+					name = "religious_violence"
+					duration = 730
 				}
 			}
-			add_province_modifier = {
-				name = "religious_violence"
-				duration = 730
-			}
-		}
-		if = {
-			limit = {
-				NOT = { religion = mahayana }
-				is_reformation_center = no
-				NOT = { owner = { religion = mahayana } }
-			}
-			change_religion = mahayana
-			add_province_modifier = {
-				name = "forced_conversion"
-				duration = 730
+			if = {
+				limit = {
+					NOT = { religion = mahayana }
+					is_reformation_center = no
+					NOT = { owner = { religion = mahayana } }
+				}
+				change_religion = mahayana
+				add_province_modifier = {
+					name = "forced_conversion"
+					duration = 730
+				}
 			}
 		}
 	}

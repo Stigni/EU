@@ -12,6 +12,11 @@ native_size = 5
 native_ferocity = 1
 native_hostileness = 4
 
+
+
+discovered_by = north_american
+
+
 1638.1.1 = {
 	owner = LEN
 	controller = LEN
@@ -20,10 +25,17 @@ native_hostileness = 4
 	trade_goods = fur 
 } #Extent of the Lenape c. the Beaver Wars
 
+
+
+1643.1.1 = { discovered_by = SWE }
+1655.1.1 = { discovered_by = NED }
+1667.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }
+
 1754.1.1 = { 
 	owner = GBR
 	controller = GBR
-	 
+	discovered_by = GBR 
 	add_core = GBR
 	culture = english
 	religion = protestant

@@ -235,6 +235,12 @@ country_event = {
 		name = "flavor_pap.EVTOPTA7"
 		add_prestige = 10
 		add_years_of_income = -0.5
+		if = {
+			limit = {
+				corruption = 0.01
+			}
+			add_corruption = -1
+		}
 		custom_tooltip = flavor_pap.7.tt
 		hidden_effect = {
 			every_known_country = {

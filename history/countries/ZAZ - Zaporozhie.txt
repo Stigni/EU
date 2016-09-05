@@ -1,5 +1,5 @@
-government = tribal_democracy
-technology_group = eastern
+government = steppe_horde
+technology_group = nomad_group
 religion = orthodox
 primary_culture = ruthenian
 capital = 283	# Zaporozhia

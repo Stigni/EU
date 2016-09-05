@@ -15,6 +15,32 @@ issue_letters_of_marque = {
 		light_ship_cost = -0.1
 	}
 
+	chance = {
+		factor = 1
+		
+		modifier = {
+			factor = 2
+			navy_size_percentage = 1.0
+			num_of_ports = 5
+		}
+		modifier = {
+			factor = 2
+			has_idea_group = spy_ideas
+		}
+		modifier = {
+			factor = 2
+			has_idea_group = maritime_ideas
+		}
+		modifier = {
+			factor = 1.5
+			has_idea_group = naval_ideas
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 5 }
+		}
+	}
+
 	ai_will_do = {
 		factor = 1
 		modifier = {

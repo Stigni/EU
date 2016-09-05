@@ -369,7 +369,6 @@
  HRE_VOTE_ELECTOR_YOU: "Tu no eres el agresor y no puedes mezclar ninguna unidad"
  HRE_CAST_VOTE_DESC: "¡Puedes seleccionar quien quieres votar como Emperador!"
  SUPPORT_EFFICIENCY: "Eficiencia de Apoyo"
- REBEL_SUPPORT_EFFICIENCY_DESC: "La Eficiencia de Apoyo a los Rebeldes modifica cuánto dinero destinas, el cual pueden usar los rebeldes."
  SLIDER_VALUE: "Valor de deslizamiento"
  GAME_BOOT_IN: "El juego arrancará en $MIN$ minutos."
  GAME_START_IN: "El juego empezará en $MIN$ minutos."

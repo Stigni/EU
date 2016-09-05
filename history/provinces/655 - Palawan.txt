@@ -12,6 +12,11 @@ native_size = 30
 native_ferocity = 2
 native_hostileness = 9
 
+
+
+discovered_by = chinese
+
+
 1450.1.1 = { religion = sunni }
 1473.1.1 = {	
 	owner = BEI
@@ -21,6 +26,7 @@ native_hostileness = 9
 	trade_goods = fish
 	
 } # Brunei kingdom, Bolkiah
+1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan 
 1749.1.1 = {
 	owner = SPA
 	controller = SPA

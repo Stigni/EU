@@ -150,6 +150,7 @@
  LEDGER_NATION_STATISTICS_SHILEDS_S: "Left clicking here will close the ledger and the map will be centered on the capital of this country"
  LEDGER_NATION_STATISTICS_SHILEDS_L: "This is a handy way to quickly do diplomatic deals with countries"
  LEDGER_PROVINCE_OVERVIEW: "Province Overview"
+ LEDGER_GLOBAL_PROVINCE_OVERVIEW: "Province Development"
  LEDGER_POSSIBLE_COLONIES: "Possible Colonies"
  LEDGER_TRADE_RANGE: "Trade Range"
  LEDGER_TRADE_NODES: "Trade Nodes"

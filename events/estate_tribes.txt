@@ -11,7 +11,7 @@ country_event = {
 	id = tribal_estate_events.1
 	title = tribal_estate_events.1.t
 	desc = tribal_estate_events.1.d
-	picture = RELIGION_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -70,7 +70,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_nomadic_tribes
@@ -137,7 +137,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = 10
+			loyalty = 15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_nomadic_tribes
@@ -154,7 +154,7 @@ country_event = {
 	id = tribal_estate_events.2
 	title = tribal_estate_events.2.t
 	desc = tribal_estate_events.2.d
-	picture = ADVISOR_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -181,16 +181,6 @@ country_event = {
 		}
 	}
 
-	
-	immediate = {
-		hidden_effect = {
-			random_list = {
-				80 = { set_country_flag = growing_influence_tribes_10 }
-				20 = { set_country_flag = growing_influence_tribes_20 }
-			}
-		}
-	}
-	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -198,26 +188,11 @@ country_event = {
 
 	option = {
 		name = tribal_estate_events.2.a #Ok
-		trigger_switch = {
-			on_trigger = has_country_flag
-			growing_influence_tribes_10 = {
-				add_estate_influence_modifier = {
-				estate = estate_nomadic_tribes
-				desc = EST_VAL_TRIBES_ADVANCES
-				influence = 10
-				duration = 5475
-				}
-				clr_country_flag = growing_influence_tribes_10
-			}
-			growing_influence_tribes_20 = {
-				add_estate_influence_modifier = {
-					estate = estate_nomadic_tribes
-					desc = EST_VAL_TRIBES_ADVANCES_20
-					influence = 20
-					duration = 5475
-				}
-				clr_country_flag = growing_influence_tribes_20
-			}
+		add_estate_influence_modifier = {
+			estate = estate_nomadic_tribes
+			desc = EST_VAL_TRIBES_ADVANCES
+			influence = 10
+			duration = 5475
 		}
 	}
 }
@@ -228,7 +203,7 @@ country_event = {
 	id = tribal_estate_events.3
 	title = tribal_estate_events.3.t
 	desc = tribal_estate_events.3.d
-	picture = ADVISOR_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -281,7 +256,7 @@ country_event = {
 	id = tribal_estate_events.4
 	title = tribal_estate_events.4.t
 	desc = tribal_estate_events.4.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -311,7 +286,7 @@ country_event = {
 		add_army_tradition = -10
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = 10
+			loyalty = 15
 		}
 
 	}
@@ -332,7 +307,7 @@ country_event = {
 		add_army_tradition = 10
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = -10
+			loyalty = -15
 		}
 	}
 }
@@ -343,7 +318,7 @@ country_event = {
 	id = tribal_estate_events.5
 	title = tribal_estate_events.5.t
 	desc = tribal_estate_events.5.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -373,7 +348,7 @@ country_event = {
 		add_prestige = -10
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = 10
+			loyalty = 15
 		}
 
 	}
@@ -394,7 +369,7 @@ country_event = {
 		add_years_of_income = 0.25
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = -10
+			loyalty = -15
 		}		
 	}
 }
@@ -406,7 +381,7 @@ country_event = {
 	id = tribal_estate_events.6
 	title = tribal_estate_events.6.t
 	desc = tribal_estate_events.6.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -468,7 +443,7 @@ country_event = {
 		set_country_flag = refused_tribal_stability_aid
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = -5
+			loyalty = -10
 		}		
 	}
 }
@@ -479,7 +454,7 @@ country_event = {
 	id = tribal_estate_events.7
 	title = tribal_estate_events.7.t
 	desc = tribal_estate_events.7.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -541,7 +516,7 @@ country_event = {
 		set_country_flag = refused_tribal_armies
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = -5
+			loyalty = -10
 		}		
 	}
 }
@@ -552,7 +527,7 @@ country_event = {
 	id = tribal_estate_events.8
 	title = tribal_estate_events.8.t
 	desc = tribal_estate_events.8.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -613,7 +588,7 @@ country_event = {
 		set_country_flag = refused_tribal_unity_aid
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = -5
+			loyalty = -10
 		}		
 	}
 }
@@ -630,7 +605,7 @@ country_event = {
 	id = tribal_estate_events.9
 	title = tribal_estate_events.9.t
 	desc = tribal_estate_events.9.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -675,7 +650,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = -10
+			loyalty = -15
 		}		
 	}
 }
@@ -685,7 +660,7 @@ province_event = {
 	id = tribal_estate_events.10
 	title = tribal_estate_events.10.t
 	desc = tribal_estate_events.10.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -700,7 +675,7 @@ country_event = {
 	id = tribal_estate_events.11
 	title = tribal_estate_events.11.t
 	desc = tribal_estate_events.11.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -767,7 +742,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = -15
+			loyalty = -20
 		}
 		add_estate_influence_modifier = {
 			desc = EST_VAL_REFUSED_TO_ALTER_SUCCESSION
@@ -784,7 +759,7 @@ country_event = {
 	id = tribal_estate_events.12
 	title = tribal_estate_events.12.t
 	desc = tribal_estate_events.12.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -848,7 +823,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = -15
+			loyalty = -20
 		}
 	}
 }
@@ -859,7 +834,7 @@ country_event = {
 	id = tribal_estate_events.13
 	title = tribal_estate_events.13.t
 	desc = tribal_estate_events.13.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -931,7 +906,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = -15
+			loyalty = -20
 		}
 	}
 }
@@ -942,7 +917,7 @@ country_event = {
 	id = tribal_estate_events.14
 	title = tribal_estate_events.14.t
 	desc = tribal_estate_events.14.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1009,58 +984,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = -15
-		}
-	}
-}
-
-#Random loyalty hit at over 50 loyalty.
-country_event = {
-	id = tribal_estate_events.15
-	title = tribal_estate_events.15.t
-	desc = tribal_estate_events.15.d
-	picture = ADVISOR_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_dlc = "The Cossacks"
-		has_estate = estate_nomadic_tribes
-		estate_loyalty = {
-			estate = estate_nomadic_tribes
-			loyalty = 50
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		modifier = {
-			factor = 1.5
-			total_development = 250
-			NOT = { total_development = 500 }
-		}
-		modifier = {
-			factor = 2.0
-			total_development = 500
-			NOT = { total_development = 750 }
-		}
-		modifier = {
-			factor = 2.5
-			total_development = 750
-			NOT = { total_development = 1000 }
-		}
-		modifier = {
-			factor = 3.0
-			total_development = 1000
-		}
-	}
-	
-
-	option = {
-		name = tribal_estate_events.15.a #Ok
-		add_estate_loyalty = {
-			estate = estate_nomadic_tribes
-			loyalty = -10
+			loyalty = -20
 		}
 	}
 }

@@ -291,7 +291,7 @@ country_event = {
 		add_ruler_modifier = { name = repaired_masjid_al_haram }
 		add_estate_loyalty = {
 			estate = estate_church
-			loyalty = 10
+			loyalty = 15
 		}
 	}
 	option = {
@@ -299,7 +299,7 @@ country_event = {
 		add_years_of_income = -0.2
 		add_estate_loyalty = {
 			estate = estate_church
-			loyalty = 10
+			loyalty = 15
 		}
 		add_ruler_modifier = { name = repaired_masjid_al_haram }
 	}
@@ -410,8 +410,20 @@ country_event = {
 	
 	option = {
 		name = "muslim_dlc.EVTOPTA9"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				estate_influence = {
+					estate = estate_church
+					influence = 60
+				}
+			}
+		}
 		add_ruler_modifier = { name = banned_alcohol_tobacco_coffee }
-		add_adm_power = 25
+		add_adm_power = 15
 		random_owned_province = {
 			limit = {
 				has_province_flag = tobacco_flag1
@@ -442,15 +454,39 @@ country_event = {
 				size = 2
 			}
 		}
-		add_estate_influence_modifier = {
-			estate = estate_church
-			desc = EST_VAL_BANNED_ACOHOL_TOBACCO_COFFEE
-			influence = 10
-			duration = 3650
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = EST_VAL_BANNED_ACOHOL_TOBACCO_COFFEE
+				influence = 10
+				duration = 3650
+			}
+		}
+		if = {
+			limit = {
+				corruption = 0.01
+			}
+			add_corruption = -0.5
 		}
 	}
 	option = {
 		name = "muslim_dlc.EVTOPTB9"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				estate_influence = {
+					estate = estate_church
+					influence = 60
+				}
+			}
+		}
 		add_ruler_modifier = { name = tax_alcohol_tobacco_coffee }
 		random_owned_province = {
 			limit = {
@@ -480,16 +516,26 @@ country_event = {
 				clr_province_flag = tobacco_flag3
 			}
 		}
-		add_estate_influence_modifier = {
-			estate = estate_church
-			desc = EST_VAL_TAXED_ACOHOL_TOBACCO_COFFEE
-			influence = 5
-			duration = 3650
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = EST_VAL_TAXED_ACOHOL_TOBACCO_COFFEE
+				influence = 5
+				duration = 3650
+			}
 		}
 	}
 	option = {
 		name = "muslim_dlc.EVTOPTC9"
+		ai_chance = {
+			factor = 33
+		}
 		add_adm_power = 25
+		add_corruption = 0.5
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
@@ -573,19 +619,43 @@ country_event = {
 	
 	option = {
 		name = "muslim_dlc.EVTOPTA10"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				estate_influence = {
+					estate = estate_church
+					influence = 60
+				}
+			}
+		}
 		add_ruler_modifier = { name = banned_alcohol_tobacco_coffee }
 		add_adm_power = 25
-		add_estate_influence_modifier = {
-			estate = estate_church
-			desc = EST_VAL_BANNED_ACOHOL_TOBACCO_COFFEE
-			influence = 10
-			duration = 3650
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = EST_VAL_BANNED_ACOHOL_TOBACCO_COFFEE
+				influence = 10
+				duration = 3650
+			}
 		}
-		add_estate_influence_modifier = {
-			estate = estate_dhimmi
-			desc = EST_VAL_BANNED_ACOHOL_TOBACCO_COFFEE
-			influence = -10
-			duration = 3650
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_dhimmi
+			}
+			add_estate_influence_modifier = {
+				estate = estate_dhimmi
+				desc = EST_VAL_BANNED_ACOHOL_TOBACCO_COFFEE
+				influence = -10
+				duration = 3650
+			}
 		}
 		random_owned_province = {
 			limit = {
@@ -620,18 +690,42 @@ country_event = {
 	}
 	option = {
 		name = "muslim_dlc.EVTOPTB10"
-		add_ruler_modifier = { name = tax_alcohol_tobacco_coffee }
-		add_estate_influence_modifier = {
-			estate = estate_church
-			desc = EST_VAL_TAXED_ACOHOL_TOBACCO_COFFEE
-			influence = 5
-			duration = 3650
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				estate_influence = {
+					estate = estate_church
+					influence = 60
+				}
+			}
 		}
-		add_estate_influence_modifier = {
-			estate = estate_dhimmi
-			desc = EST_VAL_TAXED_ACOHOL_TOBACCO_COFFEE
-			influence = -5
-			duration = 3650
+		add_ruler_modifier = { name = tax_alcohol_tobacco_coffee }
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = EST_VAL_TAXED_ACOHOL_TOBACCO_COFFEE
+				influence = 5
+				duration = 3650
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_dhimmi
+			}
+			add_estate_influence_modifier = {
+				estate = estate_dhimmi
+				desc = EST_VAL_TAXED_ACOHOL_TOBACCO_COFFEE
+				influence = -5
+				duration = 3650
+			}
 		}
 		random_owned_province = {
 			limit = {
@@ -664,6 +758,9 @@ country_event = {
 	}
 	option = {
 		name = "muslim_dlc.EVTOPTC10"
+		ai_chance = {
+			factor = 33
+		}
 		add_adm_power = 25
 		hidden_effect = {
 			random_owned_province = {
@@ -810,6 +907,7 @@ country_event = {
 	option = {
 		name = "muslim_dlc.EVTOPTA13"
 		add_treasury = 100
+		add_corruption = 0.5
 		add_piety = -0.1
 	}
 	option = {
@@ -963,14 +1061,32 @@ country_event = {
 	
 	option = {
 		name = "muslim_dlc.EVTOPTA16"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				estate_influence = {
+					estate = estate_church
+					influence = 60
+				}
+			}
+		}
 		add_dip_power = 20
 		add_mil_power = 20
 		add_adm_power = 20
-		add_estate_influence_modifier = {
-			estate = estate_church
-			influence = 10
-			desc = EST_VAL_SHARIA
-			duration = 3650
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				influence = 10
+				desc = EST_VAL_SHARIA
+				duration = 3650
+			}
 		}
 		random_owned_province = {
 			limit = {
@@ -995,6 +1111,9 @@ country_event = {
 	}
 	option = {
 		name = "muslim_dlc.EVTOPTB16"
+		ai_chance = {
+			factor = 50
+		}
 		add_dip_power = 10
 		add_mil_power = 10
 		add_adm_power = 10
@@ -1524,6 +1643,7 @@ province_event = {
 			religion = jewish
 		}
 		development = 30
+		is_territory = no
 		OR = {
 			NOT = { has_dlc = "The Cossacks" }
 			AND = {

@@ -1124,6 +1124,13 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	trigger = {
+		OR = {
+			has_global_flag = pap_condemn_witchtrials_good_flag
+			has_global_flag = pap_condemn_witchtrials_bad_flag
+		}
+	}
+	
 	option = {
 		name = papacy_events.24.a
 		trigger = {
@@ -1378,11 +1385,11 @@ country_event = {
 					is_previous_papal_controller = yes
 				}
 			}
+			set_country_flag = pap_erased_rival_pope_flag
 			country_event = {
 				id = papacy_events.30
 				tooltip = papacy_events.30.t
 			}
-			set_country_flag = pap_erased_rival_pope_flag
 			add_opinion = {
 				who = ROOT
 				modifier = opinion_erased_rival_pope

@@ -14,6 +14,14 @@ capital = "Cadiz"
 estate = estate_nobles
 is_city = yes
 
+
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
 1516.1.23 = {
 	controller = SPA
 	owner = SPA

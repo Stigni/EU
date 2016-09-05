@@ -17,6 +17,28 @@ propagation_of_state_religion = {
 		global_missionary_strength = 0.01
 		missionaries = 1
 	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.5 }
+		}
+		modifier = {
+			factor = 2
+			num_of_owned_provinces_with = {
+				value = 10
+				has_owner_religion = no
+			}
+		}
+		modifier = {
+			factor = 2
+			num_of_owned_provinces_with = {
+				value = 20
+				has_owner_religion = no
+			}
+		}
+	}
 
 	ai_will_do = {
 		factor = 1

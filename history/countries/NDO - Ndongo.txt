@@ -1,8 +1,9 @@
 government = tribal_kingdom
 government_rank = 1
-primary_culture = kongolese
+primary_culture = mbundu
 religion = shamanism
-technology_group = sub_saharan
+technology_group = central_african
+unit_type = sub_saharan
 capital = 1171
 
 #Ruled earlier, date changed as we don't now who ruled then.

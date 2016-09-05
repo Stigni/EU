@@ -13,6 +13,14 @@ base_manpower = 2
 capital = "Bilbao" 
 is_city = yes
 
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+
 1516.1.23 = {	controller = SPA
 	owner = SPA
 	add_core = SPA

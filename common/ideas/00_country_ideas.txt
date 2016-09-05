@@ -45,7 +45,7 @@ ENG_ideas = {
 		discipline = 0.05
 	}
 	sick_and_hurt_board = {
-		ship_durability = 0.05
+		sailors_recovery_speed = 0.10
 	}
 }
 
@@ -172,6 +172,7 @@ SPA_ideas = {
 
 	spanish_armada = {
 		heavy_ship_power = 0.10
+		global_sailors_modifier = 0.1
 	}
 
 	siglo_de_oro = {
@@ -182,7 +183,7 @@ SPA_ideas = {
 
 NED_ideas = {
 	start = {
-		global_ship_recruit_speed = -0.1
+		global_sailors_modifier = 0.25
 		naval_forcelimit_modifier = 0.50
 	}
 	
@@ -279,8 +280,7 @@ FRA_ideas = {
 	free = yes		#will be added at load.
 	
 	french_language_in_all_courts = {
-		vassal_income = 0.15
-		diplomatic_annexation_cost = -0.10
+		diplomatic_upkeep = 1
 	}
 	elan = {
 		land_morale = 0.20
@@ -347,7 +347,7 @@ TUR_ideas = {
 
 VEN_ideas = {
 	start = {
-		global_foreign_trade_power = 0.10
+		global_sailors_modifier = 0.20
 		global_trade_power = 0.1
 	}
 	
@@ -378,7 +378,7 @@ VEN_ideas = {
 	}
 	defend_the_law = {
 		stability_cost_modifier = -0.1
-		justify_trade_conflict_time = -0.1
+		justify_trade_conflict_cost = -0.1
 	}
 	provveditori_ai_beni_inculti = {
 		land_attrition = -0.10
@@ -448,6 +448,7 @@ POR_ideas = {
 	
 	legacy_of_the_navigator = {
 		range = 0.25
+		global_sailors_modifier = 0.10
 	}
 	afonsine_ordinances = {
 		global_trade_goods_size_modifier = 0.1
@@ -687,7 +688,7 @@ PER_ideas = {
 
 BUR_Ideas = {
 	start = {
-		merc_maintenance_modifier = -0.25
+		land_morale = 0.1
 		diplomatic_upkeep = 1
 	}
 	
@@ -704,7 +705,7 @@ BUR_Ideas = {
 		prestige = 1
 	}
 	compagnies_ordonnance = {
-		mercenary_cost = -0.20
+		merc_maintenance_modifier = -0.25
 	}
 	bur_estates_general = {
 		possible_mercenaries = 0.5
@@ -741,13 +742,14 @@ GEN_Ideas = {
 	
 	reunited_genoa = {
 		stability_cost_modifier = -0.10
-		justify_trade_conflict_time = -0.10
+		justify_trade_conflict_cost = -0.10
 	}
 	lessons_of_chiogga = {
 		naval_morale = 0.20
 	}	
 	genoese_trade = {
 		global_foreign_trade_power = 0.10
+		global_sailors_modifier = 0.10
 	}
 	the_genoese_arsenal = {
 		galley_cost = -0.33
@@ -977,10 +979,11 @@ ARA_ideas = {
 	free = yes
 	
 	mercenary_princes = {
-		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.25
 	}
 	protection_of_coastlines = {
 		naval_forcelimit_modifier = 0.25
+		global_sailors_modifier = 0.10
 	}
 	ara_mediterranean_trade = {
 		trade_steering = 0.20
@@ -1064,6 +1067,7 @@ TIM_ideas = {
 	}
 	chagatai_literature = {
 		legitimacy = 1
+		horde_unity = 1
 	}
 	timurid_renaissance = {
 		technology_cost = -0.05
@@ -1099,10 +1103,11 @@ HSA_ideas = {
 	}
 	hsa_shipbuilding = {
 		light_ship_cost = -0.20
+		global_sailors_modifier = 0.10
 	}
 	reformed_hanstag = {
 		stability_cost_modifier = -0.1
-		justify_trade_conflict_time = -0.1
+		justify_trade_conflict_cost = -0.1
 	}
 	hanseatic_levy_system = {
 		manpower_recovery_speed = 0.15
@@ -1141,7 +1146,7 @@ MLO_ideas = {
 		development_cost = -0.1
 	}
 	age_of_condottieri = {
-		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.25
 	}
 	encouragement_of_philosophers = {
 		technology_cost = -0.05
@@ -1162,7 +1167,7 @@ BYZ_ideas = {
 	}
 	
 	bonus = {
-		prestige = 2
+		prestige = 1
 	}
 	
 	trigger = {
@@ -1171,7 +1176,7 @@ BYZ_ideas = {
 	free = yes
 	
 	regulations_for_mercenaries = {
-		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.25
 	}
 	repopulation_of_countryside = {
 		global_trade_goods_size_modifier = 0.05
@@ -1198,7 +1203,7 @@ BYZ_ideas = {
 VIJ_ideas = {
 	start = {
 		advisor_pool = 1
-		religious_unity = 0.20
+		infantry_power = 0.1
 	}
 	
 	bonus = {
@@ -1257,7 +1262,7 @@ AYU_ideas = {
 		global_manpower_modifier = 0.10
 	}
 	ayu_foreign_mercenaries = {
-		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.25
 	}
 	ayu_embassies = {
 		diplomats = 1
@@ -1276,8 +1281,8 @@ AYU_ideas = {
 
 NOR_ideas = {
 	start = {
-		light_ship_cost = -0.20
-		light_ship_power = 0.20
+		global_sailors_modifier = 0.25
+		ship_durability = 0.10
 	}
 	
 	bonus = {
@@ -1291,6 +1296,7 @@ NOR_ideas = {
 	
 	natural_seamanship = {
 		naval_morale = 0.20
+		
 	}
 	call_of_our_forefathers = {
 		range = 0.33
@@ -1338,6 +1344,7 @@ OMA_ideas = {
 	}
 	association_with_unbelievers = {
 		tolerance_heathen = 2
+		global_sailors_modifier = 0.10
 	}
 	port_security_improvement = {
 		trade_efficiency = 0.1
@@ -1560,7 +1567,7 @@ PAL_ideas = {
 
 NOV_ideas = {
 	start = {
-		mercenary_cost = -0.20
+		merc_maintenance_modifier = -0.25
 		diplomatic_reputation = 1
 	}
 	
@@ -1708,7 +1715,7 @@ SAV_ideas = {
 		prestige = 0.5
 	}
 	sav_mercenary_tradition = {
-		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.25
 	}
 	crush_the_vaudois = {
 		global_missionary_strength = 0.02
@@ -1957,7 +1964,7 @@ PAP_ideas = {
 		prestige = 1
 	}
 	donation_of_constantine = {
-		fabricate_claims_time = -0.2
+		fabricate_claims_cost = -0.25
 	}
 	centralize_the_states = {
 		production_efficiency = 0.1
@@ -2002,7 +2009,7 @@ SER_ideas = {
 		production_efficiency = 0.1
 	}
 	mercenary_armies = {
-		mercenary_cost = -0.20
+		merc_maintenance_modifier = -0.25
 	}	
 	balkan_hajduks = {
 		land_morale = 0.10
@@ -2231,7 +2238,7 @@ TUS_ideas = {
 		technology_cost = -0.05
 	}
 	tuscan_condottieri = {
-		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.25
 	}
 	tuscan_banking = {
 		interest = -1
@@ -2309,7 +2316,7 @@ SWI_ideas = {
 		stability_cost_modifier = -0.1
 	}
 	swiss_mercenaries = {
-		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.25
 	}
 	alpine_defensiveness = {
 		fort_maintenance_modifier = -0.2
@@ -2332,7 +2339,7 @@ SWI_ideas = {
 SON_ideas = {
 	start = {
 		infantry_power = 0.1
-		army_tradition = 1.0
+		army_tradition = 0.5
 	}
 	
 	bonus = {
@@ -2560,7 +2567,7 @@ KNI_ideas = {
 		naval_forcelimit_modifier = 0.5
 	}
 	crusader_tradition = {
-		army_tradition = 1
+		army_tradition = 0.5
 	}
 }
 
@@ -2668,7 +2675,7 @@ HUR_ideas = {
 		merchants = 1
 	}
 	hire_allied_warriors = {
-		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.25
 	}
 	birchback_canoes = {
 		trade_steering = 0.20
@@ -2985,7 +2992,7 @@ PRO_ideas = {
 	free = yes		#will be added at load
 
 	memory_of_angevin_claims = {
-		fabricate_claims_time = -0.2
+		fabricate_claims_cost = -0.25
 	}
 	revive_house_of_anjou = {
 		legitimacy = 1
@@ -3300,7 +3307,7 @@ CYP_ideas = {
 
 	king_of_jerusalem = {
 		legitimacy = 0.5
-		fabricate_claims_time = -0.2
+		fabricate_claims_cost = -0.25
 	}
 	frankish_crusaders = {
 		army_tradition = 1.0
@@ -3340,7 +3347,7 @@ NAV_ideas = {
 		defensiveness = 0.1
 	}
 	navarrese_company = {
-		mercenary_cost = -0.15
+		merc_maintenance_modifier = -0.25
 	}
 	intrepid_pioneers = {
 		global_colonial_growth = 20
@@ -3496,7 +3503,7 @@ FEO_ideas = {
 	free = yes		#will be added at load.
 
 	principate_guard = {
-		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.25
 	}
 	komnin_paleolog_gavras = {
 		heir_chance = 0.5		
@@ -3583,7 +3590,7 @@ DNZ_ideas = {
 		global_manpower_modifier = 0.1
 	}
 	hanseatic_league_member = {
-		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.25
 	}
 	danziger_shipyard = {
 		light_ship_cost = -0.15
@@ -3679,7 +3686,7 @@ AJU_ideas = {
 RYA_ideas = {
 	start = {
 		global_unrest = -1
-		recover_army_morale_speed = 0.025
+		recover_army_morale_speed = 0.05
 	}
 	
 	bonus = {
@@ -3770,7 +3777,7 @@ YAR_ideas = {
 	free = yes
 	
 	between_hammer_and_avil = {
-		fabricate_claims_time = -0.2
+		fabricate_claims_cost = -0.25
 	}
 	third_option = {
 		diplomatic_reputation = 1
@@ -3780,10 +3787,10 @@ YAR_ideas = {
 		cavalry_cost = -0.10		
 	}
 	siberian_mercenaries = {
-		mercenary_cost = -0.20
+		merc_maintenance_modifier = -0.25
 	}
 	cult_of_generals = {
-		army_tradition = 1
+		army_tradition = 0.5
 	}
 	yar_two_towers = {
 		defensiveness = 0.15
@@ -3812,7 +3819,7 @@ PSK_ideas = {
 		advisor_pool = 1
 	}
 	legacy_of_daumantas = {
-		recover_army_morale_speed = 0.1
+		recover_army_morale_speed = 0.05
 	}
 	balt_mercenaries = {
 		merc_maintenance_modifier = -0.2
@@ -4135,7 +4142,7 @@ TAR_ideas = {
 
 KAR_ideas = {
 	start = {
-		army_tradition = 1.0
+		army_tradition = 0.5
 		core_creation = -0.2
 	}
 
@@ -4211,7 +4218,7 @@ MON_ideas = {
 	}
 }
 
-ROM_ideas = {
+RMN_ideas = {
 	start = {
 		discipline = 0.05
 		tolerance_own = 2
@@ -4420,7 +4427,7 @@ PLT_ideas = {
 	free = yes
 	
 	legacy_of_the_werewolf_prince = {
-		fabricate_claims_time = -0.2
+		fabricate_claims_cost = -0.25
 	}	
 	heritage_of_the_rus = {
 		legitimacy = 1	
@@ -4503,7 +4510,7 @@ ASH_ideas = {
 		technology_cost = -0.05
 	}
 	ash_idea_3 = {
-		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.25
 	}
 	ash_idea_4 = {
 		legitimacy = 1
@@ -4832,7 +4839,7 @@ KIE_ideas = {
 NAX_ideas = {
 	start = {
 		tolerance_heretic = 4
-		fabricate_claims_time = -0.2
+		fabricate_claims_cost = -0.25
 	}
 	
 	bonus = {
@@ -4856,7 +4863,7 @@ NAX_ideas = {
 		privateer_efficiency = 0.25
 	}
 	legacy_of_crusaders = {
-		army_tradition = 1
+		army_tradition = 0.5
 	}
 	archipelago_feudalism = {
 		global_unrest = -1		
@@ -4909,8 +4916,8 @@ TUA_ideas = {
 
 POM_ideas = {
 	start = {
-		light_ship_cost = -0.1
-		trade_range_modifier = 0.25
+		light_ship_cost = -0.2
+		land_morale = 0.1
 	}
 	
 	bonus = {
@@ -4933,19 +4940,19 @@ POM_ideas = {
 		merchants = 1
 	}
 	pom_idea_3 = {
-		trade_steering = 0.15
+		trade_steering = 0.25
 	}
 	pom_idea_4 = {
 		tolerance_heretic = 2		
 	}
 	pom_idea_5 = {
-		mercenary_cost = -0.1
+		merc_maintenance_modifier = -0.25
 	}
 	pom_idea_6 = {
 		trade_efficiency = 0.1
 	}
 	pom_idea_7 = {
-		heavy_ship_power = 0.1
+		naval_forcelimit_modifier = 0.25
 	}
 }
 
@@ -6087,7 +6094,7 @@ HES_ideas = {
 		diplomatic_reputation = 1
 	}
 	bonus = {
-		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.25
 	}
 	trigger = {
 		tag = HES
@@ -6174,7 +6181,7 @@ NOL_ideas = {
 		legitimacy = 1
 	}
 	nol_memory_of_hegemony = {
-		fabricate_claims_time = -0.2
+		fabricate_claims_cost = -0.25
 	}
 	nol_cradle_of_british_christianity = {
 		tolerance_own = 1
@@ -7036,7 +7043,7 @@ LUX_ideas = {
 YOR_ideas = {
 	start = {
 		defensiveness = 0.2
-		mercenary_cost = -0.15
+		merc_maintenance_modifier = -0.25
 	}
 
 	bonus = {
@@ -7155,7 +7162,7 @@ NZH_ideas = {
 	}
 
 	bonus = {
-		fabricate_claims_time = -0.2
+		fabricate_claims_cost = -0.25
 	}
 	
 	trigger = {
@@ -7226,8 +7233,8 @@ SMI_ideas = {
 
 MAZ_ideas = {
     start = {
-        global_own_trade_power = 0.1
-        cavalry_power = 0.1
+		land_forcelimit_modifier = 0.2
+		cavalry_power = 0.1
     }
 
     bonus = {
@@ -7259,7 +7266,7 @@ MAZ_ideas = {
 		legitimacy = 1
     }
     maz_emporium = {
-		global_prov_trade_power_modifier = 0.10
+		global_prov_trade_power_modifier = 0.25
     }
 }
 
@@ -7491,5 +7498,507 @@ TRT_ideas = {
 	}
 	trt_indigo = {
 		global_trade_goods_size_modifier = 0.1
+	}
+}
+
+MRA_ideas = {
+	start = {
+		caravan_power = 0.2
+		infantry_cost = -0.1
+	}
+	
+	bonus = {
+		legitimacy = 1
+	}
+	
+	trigger = {
+		tag = MRA
+	}
+	free = yes
+	
+	mra_fresh_perspectives = {
+		idea_cost = -0.1
+	}
+	mra_mlira_cult = {
+		diplomatic_reputation = 1
+	}
+	mra_fertile_land = {
+		global_manpower_modifier = 0.1
+	}
+	mra_ivory_trade = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	mra_serving_abroad = {
+		infantry_power = 0.1
+	}
+	mra_chimanga_ndi_moyo = {
+		global_tax_modifier = 0.1
+	}
+	mra_control_of_the_slave_trade = {
+		global_unrest = -1
+	}
+}
+
+ROM_ideas = {
+	start = {
+		discipline = 0.05
+		legitimacy = 1
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.33
+	}
+	
+	trigger = {
+		tag = ROM
+	}
+	free = yes
+	
+	pax_romana = {
+		global_unrest = -1
+	}
+	legacy_of_rome = {
+		diplomatic_reputation = 2
+	}
+	spqr = {
+		stability_cost_modifier = -0.2
+	}
+	roman_legions = {
+		infantry_power = 0.10
+		land_forcelimit_modifier = 0.15
+	}
+	roman_architecture = {
+		production_efficiency = 0.2
+	}
+	imperial_bureaucracy = {
+		global_tax_modifier = 0.1
+	}
+	imperium_sine_fine = {
+		core_creation = -0.20
+	}
+}
+
+MNS_ideas = {
+	start = {  
+		core_creation = -0.1
+		tolerance_own = 1
+	}
+  
+	bonus = {
+		fabricate_claims_cost = -0.25	  
+	}
+  
+	trigger = {
+		tag = MNS
+	}
+	free = yes
+  
+	mns_fierce_rivalry = {
+		diplomatic_reputation = 1  
+	}
+	mns_subdue_the_clans = {
+		land_forcelimit_modifier = 0.2
+	}
+	mns_cios_dubh = {
+		global_tax_modifier = 0.15	  
+	}
+	mns_foreign_contracts = {
+		merc_maintenance_modifier = -0.25
+	}
+	mns_pasture_of_ireland = {
+		production_efficiency = 0.1	  
+	}
+	mns_thmond_army_reform = {
+		army_tradition = 0.5
+	}
+	mns_overseas_ambition = {
+		global_colonial_growth = 15
+	}
+}
+
+SLN_ideas = {
+	start = {  
+		build_cost = -0.10	  
+		diplomats = 1
+	}
+  
+	bonus = {
+		fort_maintenance_modifier = -0.2
+	}
+  
+	trigger = {
+		tag = SLN
+	}
+	free = yes
+  
+	sln_promote_the_trade = {
+		trade_efficiency = 0.1
+	}
+	sln_rebuild_the_castle_of_sligo = {
+		enemy_core_creation = 0.25
+	}
+	sln_galic_meets_norman = {
+		accepted_culture_threshold = -0.1	  
+	}
+	sln_a_different_way = {
+		spy_offence = 0.10
+		global_spy_defence = 0.10	  
+	}
+	sln_study_the_norman_traditions = {
+		mil_tech_cost_modifier = -0.1	  
+	}
+	sln_sligo_rules_the_waves = {
+		naval_forcelimit_modifier = 0.2
+	}
+	sln_pragmatism = {
+		tolerance_heretic = 1
+		tolerance_heathen = 1		  
+	}
+}
+
+ANT_ideas = {
+	start = {  
+		diplomatic_upkeep = 1
+		relations_decay_of_me = 0.3
+	}
+  
+	bonus = {
+		diplomats = 1
+	}
+  
+	trigger = {
+		tag = ANT
+	}
+	free = yes
+  
+	ant_tampon_tany = {
+		global_unrest = -1
+	}
+	ant_sorabe = {
+		idea_cost = -0.1
+	}
+	ant_andrianoni = {
+		 prestige = 1
+	}
+	ant_ombiasa = {
+		diplomatic_reputation = 1
+	}
+	ant_religious_control = {
+		tolerance_own = 2
+	}
+	ant_slave_trade = {
+		global_trade_power = 0.1
+	}
+	ant_unify_political_and_religious_power = {
+		stability_cost_modifier = -0.1
+	}
+}
+
+BTS_ideas = {
+	start = {  
+		global_sailors_modifier = 0.2
+		defensiveness = 0.2
+	}
+  
+	bonus = {
+		naval_maintenance_modifier = -0.15
+	}
+  
+	trigger = {
+		tag = BTS
+	}
+	free = yes
+  
+	bts_people_of_the_coast = {
+		garrison_size = 0.2
+	}
+	malagasy_pirate_ports = {
+		#Also used in Malagasy Ideas.
+		embargo_efficiency = 0.1
+		privateer_efficiency = 0.15
+	}
+	bts_indivisable_many = {
+		global_unrest = -1
+	}
+	bts_gifts_and_hostages = {
+		global_autonomy = -0.05
+	}
+	bts_european_pirate_settlements = {
+		light_ship_power = 0.15
+	}
+	bts_royal_justice = {
+		legitimacy = 1
+	}
+	bts_european_diplomacy = {
+		diplomatic_reputation = 1
+	}
+}
+
+MIR_ideas = {
+	start = {  
+		global_unrest = -1
+		manpower_recovery_speed = 0.1
+	}
+  
+	bonus = {
+		infantry_power = 0.10
+	}
+  
+	trigger = {
+		tag = MIR
+	}
+	free = yes
+	
+	mir_unify_inlands = {
+		global_autonomy = -0.05
+	}
+	mir_twelve_sampys = {
+		land_morale = 0.1
+	}
+	mir_intensive_rice_cultivation = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	mir_fortify_highlands = {
+		defensiveness = 0.15
+	}
+	mir_reform_the_nobility = {
+		global_tax_modifier = 0.1
+	}
+	mir_unified_legal_system = {
+		stability_cost_modifier = -0.1
+	}
+	mir_foloalinday = {
+		infantry_cost = -0.2
+	}
+}
+
+TBK_ideas = {
+	start = {  
+		hostile_attrition = 1.0
+		accepted_culture_threshold = -0.1
+	}
+  
+	bonus = {
+		trade_efficiency = 0.1
+	}
+  
+	trigger = {
+		tag = TBK
+	}
+	free = yes
+	
+	zambezi_maravi_influences = {
+		stability_cost_modifier = -0.1
+	}
+	tbk_central_melting_pot = {
+		global_manpower_modifier = 0.15
+	}
+	tbk_healthy_priest_kings = {
+		legitimacy = 1
+	}
+	tbk_office_of_the_mulwa = {
+		tolerance_own = 2
+	}
+	tbk_inter_african_trade = {
+		caravan_power = 0.2
+	}
+	tbk_break_the_power_of_the_makambala = {
+		global_unrest = -1
+	}
+	tbk_welcome_the_swahili_merchants = {
+		merchants = 1
+	}
+}
+
+LUB_ideas = {
+	start = {  
+		hostile_attrition = 1
+		relations_decay_of_me = 0.3
+	}
+  
+	bonus = {
+		prestige = 1
+	}
+  
+	trigger = {
+		tag = LUB
+	}
+	free = yes
+  
+	lub_bamfumus = {
+		global_unrest = -1
+	}
+	lub_royal_village_shrines = {
+		legitimacy = 1
+	}
+	lub_bambudye = {
+		stability_cost_modifier = -0.1
+	}
+	lub_kasala_tradition = {
+		land_morale = 0.1
+	}
+	lub_lukasa_boards = {
+		development_cost = -0.1
+	}
+	lub_mbidi_kiluwe = {
+		production_efficiency = 0.1
+	}
+	lub_mulopwe_prestige = {
+		diplomatic_reputation = 1
+	}
+}
+
+KUB_ideas = {
+	start = {  
+		advisor_pool = 1
+		production_efficiency = 0.1
+	}
+  
+	bonus = {
+		diplomatic_upkeep = 1
+	}
+  
+	trigger = {
+		tag = KUB
+	}
+	free = yes
+	
+	kub_journey_of_enlightenment = {
+		dip_tech_cost_modifier = -0.1
+	}
+	kub_children_of_woot = {
+		development_cost = -0.1
+	}
+	kub_people_of_ornaments = {
+		prestige = 1
+	}
+	kub_usurpation_of_the_chiefs = {
+		spy_offence = 0.2
+	}
+	kub_ngesh_dancers = {
+		hostile_attrition = 1
+	}
+	kub_ndop_statue = {
+		legitimacy = 1
+	}
+	kub_courtly_competition = {
+		global_unrest = -1
+	}
+}
+
+LND_ideas = {
+	start = {  
+		global_manpower_modifier = 0.15
+		hostile_attrition = 1
+	}
+  
+	bonus = {
+		vassal_income = 0.20
+	}
+  
+	trigger = {
+		tag = LND
+	}
+	free = yes
+  
+	lnd_great_family = {
+		core_creation = -0.1
+	}
+	lnd_perpetual_kingship = {
+		legitimacy = 1
+	}
+	lnd_tukwata = {
+		global_tax_modifier = 0.1
+	}
+	lnd_overnight_army = {
+		manpower_recovery_speed = 0.1
+		global_regiment_recruit_speed = -0.05
+	}
+	lnd_warrior_migrations = {
+		culture_conversion_cost = -0.1
+	}
+	lnd_rukonkesh = {
+		stability_cost_modifier = -0.1
+	}
+	lnd_lord_of_vipers = {
+		spy_offence = 0.2
+	}
+}
+
+RZW_ideas = {
+	start = {  
+		land_morale = 0.1
+		infantry_cost = -0.1
+	}
+  
+	bonus = {
+		prestige = 1
+	}
+  
+	trigger = {
+		tag = RZW
+	}
+	free = yes
+  
+	rzw_legacy_of_zimbabwe = {
+		build_cost = -0.1
+	}
+	rzw_strict_gold_regulations = {
+		inflation_reduction = 0.1
+	}
+	rzw_empowering_the_rozwi = {
+		infantry_power = 0.1
+	}
+	rzw_hierarchical_tax_organization = {
+		global_tax_modifier = 0.1
+	}
+	rzw_discipline_and_traning = {
+		discipline = 0.05
+	}
+	rzw_mwari_cult = {
+		global_unrest = -1
+	}
+	rzw_vashambadzi = {
+		trade_efficiency = 0.1
+	}
+}
+
+DMS_ideas = {
+	start = {  
+		garrison_size = 0.25  
+		global_manpower_modifier = 0.25
+	}
+  
+	bonus = {
+		defensiveness = 0.15
+	}
+  
+	trigger = {
+		tag = DMS
+	}
+	free = yes
+  
+	dms_the_land_of_castles = {
+		build_cost = -0.1  
+	}
+	dms_cadet_lines = {
+		stability_cost_modifier = -0.1
+	}
+	dms_gaelic_bastion = {
+		land_morale = 0.1	  
+	}
+	dms_the_munster_ambition = {
+		province_warscore_cost = -0.1
+		core_creation = -0.1
+	}
+	dms_fierce_independence = {
+		diplomatic_upkeep = 1  
+	}
+	dms_promote_the_clture_of_service = {
+		war_exhaustion = -0.02
+		prestige_from_land = 0.25  
+	}
+	dms_inner_perfection = {
+		adm_tech_cost_modifier = -0.1
 	}
 }

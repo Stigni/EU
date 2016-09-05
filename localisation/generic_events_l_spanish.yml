@@ -2744,7 +2744,7 @@
  incompetent_fabrication: "Limitada Producción de Reivindicaciones"
  desc_incompetent_fabrication: "Nuestros diplomáticos han sido tan incompetentes últimamente,que sencillamente no pueden ser creídos cuando intentan producir reclamaciones."
  ideagroups.604.t: "Diplomático Brillante"
- ideagroups.604.d: "Un joven hombre en nuestros cuerpos diplomáticos se ha destacado significativamente. Es un individuo verdaderamente dotado y absolutamente leal a $COUNTRYNAME$. Nuestra nación se beneficiará de su trabajo durante mucho tiempo."
+ ideagroups.604.d: "Un joven hombre en nuestros cuerpos diplomáticos se ha destacado significativamente. Es un individuo verdaderamente dotado y absolutamente leal a $COUNTRY$. Nuestra nación se beneficiará de su trabajo durante mucho tiempo."
  ideagroups.604.a: "¡Son buenas noticias!"
  ideagroups.604.b: "¡Puede servir a Dios!"
  ideagroups.604.c: "¡Será un sirviente del Imperio!"

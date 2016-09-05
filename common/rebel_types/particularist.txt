@@ -4,6 +4,8 @@
 ######################################################################
 particularist_rebels = {
 	
+	color = { 120 195 120 }
+	
 	area = nation 					# Stays within the nation
 	government = any				# Don't care about gov type				
 	defection = none				# Will not defect

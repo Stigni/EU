@@ -18,14 +18,6 @@ GER = {
 	always = no
 }
 
-# France
-FRA = {
-	NOT = { exists = RFR }
-}
-RFR = {
-	NOT = { exists = FRA }
-}
-
 # Italy
 ITA = {
 	always = no

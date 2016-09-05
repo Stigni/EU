@@ -13,9 +13,16 @@ base_manpower = 1
 is_city = yes
 add_core = MIX
 
+
+
+discovered_by = MAY
+discovered_by = ZAP
+discovered_by = AZT
+
+
 1498.1.1 = { capital = "Huasyacac" } 
 1524.1.1 = {
-	 
+	discovered_by = SPA 
 	owner = SPA 
 	controller = SPA 
 	add_core = SPA

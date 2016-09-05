@@ -14,6 +14,12 @@ hre = no
 base_tax = 1 
 base_production = 1
 
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+
+
 1475.1.1 = { unrest = 5 } #Repression against the Falasha by Baeda Maryam
 1476.1.1 = { unrest = 0 }
 1535.1.1 = { unrest = 7 } #Raids by Ahmad Gran
@@ -22,7 +28,7 @@ base_production = 1
 1539.1.1 = { unrest = 0 }
 1540.1.1 = { unrest = 7 } #Raids by Ahmad Gran
 1543.2.15 = { unrest = 0 } #Ahmad Gran defeated at Wayna Daga, killed
-
+1550.1.1 = { discovered_by = TUR }
 1580.1.1 = { unrest = 5 } #Repression against the Falasha by Sarsa Dengel
 1603.1.1 = { unrest = 9 } #Revolt against Za Dengel after his conversion to Catholicism
 1604.10.25 = { unrest = 0 } #Za Dengel overthrown, revolt ends

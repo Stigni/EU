@@ -3,6 +3,8 @@
 # Tribal rebels. Very stronk.
 ######################################################################
 tribal_rebels = {
+
+	color = { 210 195 35 }
 	
 	area = nation 					# Stays within the nation
 	government = steppe_horde		# Don't care about gov type				
@@ -11,7 +13,7 @@ tribal_rebels = {
 	gfx_type = culture_province
 	will_relocate = yes	
 
-	resilient = yes					# Can retreat
+	resilient = no					# Can retreat
 	reinforcing = yes				# Can reinforce
 	general = yes					# Does use generals
 	smart = yes						# Do assault forts, tactically withdraw from battle, etc.

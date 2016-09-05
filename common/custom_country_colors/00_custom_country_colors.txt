@@ -1,4 +1,4 @@
-num_symbols = 32
+num_symbols = 120
 
 color = { 235 235 235 }	# White
 color = { 40 40 40 }	# Dark Grey

@@ -14,19 +14,12 @@ base_tax = 1
 base_production = 1
 add_local_autonomy = 25
 estate = estate_nobles
-discovered_by = ETH
-discovered_by = ADA
-discovered_by = NUB
-discovered_by = ZAN
-discovered_by = ZIM
-discovered_by = AJU
-discovered_by = MBA
-discovered_by = MDI
-discovered_by = MLI
-discovered_by = SFA
+
+discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = indian
+
 
 1486.1.1 = { unrest = 5 add_core = ADA } #Raids by Mahfuz Of Zayla
 1495.1.1 = { unrest = 5 } #Raids by Mahfuz Of Zayla

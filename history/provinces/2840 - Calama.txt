@@ -2,6 +2,11 @@
 
 culture = diaguita
 
+
+
+discovered_by = south_american
+discovered_by = andean
+
 religion = animism
 capital = "Calama"
 trade_goods = unknown
@@ -22,7 +27,7 @@ native_hostileness = 1
 	is_city = yes
 }
 1537.1.1 = {
-	
+	discovered_by = SPA
 	owner = SPA
 	controller = SPA
 	add_core = SPA

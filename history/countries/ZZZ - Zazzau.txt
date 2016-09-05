@@ -2,7 +2,7 @@
 
 government = tribal_kingdom
 primary_culture = hausa
-religion = animism
+religion = shamanism #Fetishism
 technology_group = sub_saharan
 capital = 1154	# Niani
 

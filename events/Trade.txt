@@ -126,7 +126,10 @@ country_event = {
 	trigger = {
 		num_of_merchants = 3
 		any_active_trade_node = {
-			NOT = { most_province_trade_power = { tag = ROOT } }
+			most_province_trade_power = {
+				NOT = { tag = ROOT }
+				exists = yes
+			}
 		}
 	}
 

@@ -1,8 +1,8 @@
 government = tribal_kingdom
 government_rank = 1
-primary_culture = swahili
+primary_culture = nyasa
 religion = sunni
-technology_group = indian
+technology_group = east_african
 unit_type = sub_saharan
 capital = 1186	# Sofala
 fixed_capital = 1186 # Cannot move capital away from this province & no power cost to move to it

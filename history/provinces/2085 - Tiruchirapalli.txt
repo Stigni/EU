@@ -13,6 +13,14 @@ base_manpower = 2
 is_city = yes
 add_core = MAD
 
+
+
+discovered_by = indian
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = chinese
+
 add_local_autonomy = 25
 estate = estate_nobles
 
@@ -21,7 +29,7 @@ estate = estate_nobles
 	controller = VIJ
 }
 1428.1.1 = { add_core = VIJ }
-
+1498.1.1 = { discovered_by = POR }
 1543.1.1 = { controller = REB revolt = { size = 0 type = nationalist_rebels } }
 1550.1.1 = { controller = VIJ revolt = { } }
 1565.7.1 = {

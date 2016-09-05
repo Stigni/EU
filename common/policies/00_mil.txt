@@ -404,7 +404,6 @@ military_zeal_act = {
 		full_idea_group = religious_ideas
 	}
 	
-	discipline = 0.025
 	land_morale = 0.1
 
 	ai_will_do = {

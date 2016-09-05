@@ -2,7 +2,7 @@
 
 owner = HUN
 controller = HUN  
-culture = hungarian
+culture = slovak
 religion = catholic
 capital = "Spiš"
 trade_goods = gold #Schemnitz / Banská Štiavnica
@@ -12,6 +12,18 @@ base_production = 4
 base_manpower = 2
 is_city = yes
 add_core = HUN
+
+add_core = SLO
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
 
 1432.1.1  = { unrest = 10 } # The city is attacked by Hussites
 1434.1.1  = { unrest = 0 }

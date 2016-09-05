@@ -64,9 +64,11 @@ conquer_bombay = {
 			is_subject = yes
 			529 = {
 				owner = {
-					alliance_with = ROOT
-					technology_group = western
-					is_subject_of = ROOT
+					OR = {
+						alliance_with = ROOT
+						technology_group = western
+						is_subject_of = ROOT
+					}
 				}
 			}
 		}
@@ -200,9 +202,11 @@ conquer_goa = {
 			is_subject = yes
 			2030 = {
 				owner = {
-					alliance_with = ROOT
-					technology_group = western
-					is_subject_of = ROOT
+					OR = {
+						alliance_with = ROOT
+						technology_group = western
+						is_subject_of = ROOT
+					}
 				}
 			}
 		}
@@ -332,9 +336,11 @@ conquer_madras = {
 			is_subject = yes
 			539 = {
 				owner = {
-					alliance_with = ROOT
-					technology_group = western
-					is_subject_of = ROOT
+					OR = {
+						alliance_with = ROOT
+						technology_group = western
+						is_subject_of = ROOT
+					}
 				}
 			}
 		}
@@ -468,9 +474,11 @@ conquer_pondicherry = {
 			is_subject = yes
 			540 = {
 				owner = {
-					alliance_with = ROOT
-					technology_group = western
-					is_subject_of = ROOT
+					OR = {
+						alliance_with = ROOT
+						technology_group = western
+						is_subject_of = ROOT
+					}
 				}
 			}
 		}
@@ -606,9 +614,11 @@ conquer_diu = {
 			is_subject = yes
 			515 = {
 				owner = {
-					alliance_with = ROOT
-					technology_group = western
-					is_subject_of = ROOT
+					OR = {
+						alliance_with = ROOT
+						technology_group = western
+						is_subject_of = ROOT
+					}
 				}
 			}
 		}
@@ -738,9 +748,11 @@ conquer_calcutta = {
 			is_subject = yes
 			561 = {
 				owner = {
-					alliance_with = ROOT
-					technology_group = western
-					is_subject_of = ROOT
+					OR = {
+						alliance_with = ROOT
+						technology_group = western
+						is_subject_of = ROOT
+					}
 				}
 			}
 		}
@@ -873,9 +885,11 @@ conquer_kotte = {
 			is_subject = yes
 			572 = {
 				owner = {
-					alliance_with = ROOT
-					technology_group = western
-					is_subject_of = ROOT
+					OR = {
+						alliance_with = ROOT
+						technology_group = western
+						is_subject_of = ROOT
+					}
 				}
 			}
 		}
@@ -1010,9 +1024,11 @@ conquer_kochin = {
 			is_subject = yes
 			535 = {
 				owner = {
-					alliance_with = ROOT
-					technology_group = western
-					is_subject_of = ROOT
+					OR = {
+						alliance_with = ROOT
+						technology_group = western
+						is_subject_of = ROOT
+					}
 				}
 			}
 		}
@@ -1106,12 +1122,13 @@ make_base_on_spice_islands_jakarta = {
 		NOT = { has_country_flag = spice_islands_completed }
 		NOT = { has_country_modifier = east_india_trade_rush }
 		NOT = { tag = POR }
-		indonesia_region = {
+		malaya_region = {
 			has_discovered = ROOT
 			NOT = { owned_by = ROOT }
 		}
 		630 = {
 			has_discovered = ROOT
+			range = ROOT
 			owner = {
 				NOT = { is_subject_of = ROOT }
 				NOT = { truce_with = ROOT }
@@ -1209,12 +1226,13 @@ make_base_on_spice_islands_pasai = {
 		NOT = { has_country_flag = spice_islands_completed }
 		NOT = { has_country_modifier = east_india_trade_rush }
 		NOT = { tag = POR }
-		indonesia_region = {
+		malaya_region = {
 			has_discovered = ROOT
 			NOT = { owned_by = ROOT }
 		}
 		2673 = {
 			has_discovered = ROOT
+			range = ROOT
 			owner = {
 				NOT = { is_subject_of = ROOT }
 				NOT = { truce_with = ROOT }
@@ -1312,12 +1330,13 @@ make_base_on_spice_islands_makassar = {
 		NOT = { has_country_flag = spice_islands_completed }
 		NOT = { has_country_modifier = east_india_trade_rush }
 		NOT = { tag = POR }
-		indonesia_region = {
+		malaya_region = {
 			has_discovered = ROOT
 			NOT = { owned_by = ROOT }
 		}
 		641 = {
 			has_discovered = ROOT
+			range = ROOT
 			owner = {
 				NOT = { is_subject_of = ROOT }
 				NOT = { truce_with = ROOT }

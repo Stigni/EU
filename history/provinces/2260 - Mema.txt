@@ -16,8 +16,13 @@ native_ferocity = 4
 native_hostileness = 9
 base_manpower = 1
 
+
+
+discovered_by = sub_saharan
+
+
 1471.1.1 = { owner = SON controller = SON add_core = SON } # Conquered by Sunni Ali Ber of Songhai
-1593.1.1 = { 	owner = MOR controller = MOR remove_core = SON } #Moroccan conquest
+1593.1.1 = { discovered_by = MOR	owner = MOR controller = MOR remove_core = SON } #Moroccan conquest
 1618.1.1 = {
 	owner = ZAF
 	controller = ZAF

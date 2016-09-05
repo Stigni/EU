@@ -397,10 +397,7 @@ country_event = {
 
 	trigger = {
 		tag = SWE
-		OR = {
-			exists = FRA
-			exists = RFR
-		}
+		exists = FRA
 		is_year = 1766
 		NOT = {
 			has_global_flag = wih_germainedestael_flag
@@ -617,11 +614,14 @@ country_event = {
 		}
 		has_regency = no
 		is_female = no
-		has_female_heir = no
+		has_heir = no
 		is_lesser_in_union = no
 		government = monarchy
 		NOT = {
 			has_global_flag = wih_isabella_castile_flag
+		}
+		NOT = {
+			has_disaster = castilian_civil_war
 		}
 	}
 	
@@ -637,14 +637,14 @@ country_event = {
 	
 	option = {
 		name = women_history_events.11.a
-		define_ruler = {
+		define_heir = {
 			name = "Isabel"
 			dynasty = "de Trastámara"
-			fixed = yes
-			#claim = 95
+			claim = 95
 			adm = 5
 			dip = 6
 			mil = 3
+			age = 23
 			female = yes
 		}
 	}
@@ -671,10 +671,7 @@ country_event = {
 	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
 
 	trigger = {
-		OR = {
-			tag = FRA
-			tag = RFR
-		}
+		tag = FRA
 		is_year = 1770
 		NOT = {
 			has_global_flag = wih_sophiegermain_flag
@@ -899,16 +896,24 @@ country_event = {
 		}
 		OR = {
 			AND = {
-				south_america = {
-					has_discovered = ROOT
+				tag = SPA
+				OR = {
+					central_america_region = {
+						has_discovered = ROOT
+					}
+					mexico_region = {
+						has_discovered = ROOT
+					}
 				}
 				capital_scope = {
 					continent = europe
 				}
 			}
-			tag = SPA
 			any_owned_province = {
-				continent = south_america
+				OR = {
+					region = central_america_region
+					region = mexico_region
+				}
 				ROOT = {
 					capital_scope = {
 						continent = europe
@@ -1755,6 +1760,7 @@ country_event = {
 			mil = 4
 			female = yes
 		}
+		add_corruption = 1
 	}
 	option = {
 		name = women_history_events.30.b
@@ -1768,6 +1774,7 @@ country_event = {
 			discount = yes
 			name = "Roshanara Begum"
 		}
+		add_corruption = 0.5
 	}
 }
 
@@ -2038,8 +2045,9 @@ country_event = {
 
 	trigger = {
 		religion = hinduism
+		primary_culture = rajput
 		capital_scope = {
-			region = rajputana_region
+			region = west_india_region
 		}
 		NOT = {
 			is_year = 1500
@@ -4516,7 +4524,6 @@ country_event = {
 			tag = ENG
 			tag = GBR
 			tag = FRA
-			tag = RFR
 		}
 		is_year = 1761
 		NOT = {

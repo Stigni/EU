@@ -5,7 +5,7 @@ controller = MAL
 culture = fulani
 is_city = yes
 base_manpower = 3
-religion = animism
+religion = shamanism #Fetishism
 capital = "Timbo"
 trade_goods = ivory
 hre = no
@@ -14,7 +14,11 @@ base_tax = 3
 base_production = 3
 add_core = MAL
 add_core = KBU #Subject province within the empire
+
+
+
 discovered_by = sub_saharan
+
 
 1490.1.1 = { unrest = 3 } #Fulani uprisings under Koly Tengella wreak havoc before moving down Senegal River
 1504.1.1 = { unrest = 8 } #Koly Tengella launches new wave of Fulani incursions from base in Toro

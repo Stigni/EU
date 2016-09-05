@@ -14,6 +14,12 @@ base_manpower = 1
 capital = "Tavastehus"
 is_city = yes
 
+
+
+discovered_by = western
+discovered_by = eastern
+
+
 1527.6.1 = { religion = protestant}
 1598.8.1 = { controller = PLC } # Sigismund tries to reconquer his crown
 1599.7.15 = { controller = SWE } # Duke Karl get it back

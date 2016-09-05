@@ -79,7 +79,7 @@ tor =
 
 tyr =
 {
-	global_unrest = -1
+	global_sailors_modifier = 0.10
 	discipline = 0.05
 	
 	allow = { religion = norse_pagan_reformed }

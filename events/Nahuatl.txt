@@ -313,6 +313,20 @@ country_event = {
 	
 	option = {
 		name = nahuatl_events.9.a #The Artisan must die.
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
@@ -320,7 +334,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_burghers
-				loyalty = -5
+				loyalty = -10
 			}
 		}
 		add_doom = -10
@@ -328,6 +342,9 @@ country_event = {
 	}
 	option = {
 		name = nahuatl_events.9.b #His work is too important for him to die.
+		ai_chance = {
+			factor = 50
+		}
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
@@ -335,7 +352,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_burghers
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		add_doom = 10
@@ -844,7 +861,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_church
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		add_doom = -5
@@ -861,7 +878,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_church
-				loyalty = 10
+				loyalty = 15
 			}
 		}
 		if = {
@@ -1088,7 +1105,20 @@ country_event = {
 	
 	option = {
 		name = nahuatl_events.26.a #Confiscate their goods.
-		ai_chance = { factor = 5 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+				NOT = {
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 40
+					}
+				}
+			}
+		}
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
@@ -1096,7 +1126,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_burghers
-				loyalty = -5
+				loyalty = -10
 			}
 		}
 		add_years_of_income = 0.1
@@ -1107,7 +1137,20 @@ country_event = {
 	}
 	option = {
 		name = nahuatl_events.26.b #Imprison the Pochtecas.
-		ai_chance = { factor = 5 }
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+				NOT = {
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_years_of_income = 0.1
 		if = {
 			limit = {
@@ -1116,7 +1159,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_burghers
-				loyalty = -10
+				loyalty = -15
 			}
 		}
 		add_country_modifier = {
@@ -1140,7 +1183,9 @@ country_event = {
 	}
 	option = {
 		name = nahuatl_events.26.c #We don't dare to do anything.
-		ai_chance = { factor = 0 }
+		ai_chance = {
+			factor = 10
+		}
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
@@ -1148,7 +1193,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_burghers
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		add_country_modifier = {
@@ -1240,7 +1285,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_church
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		set_ruler_flag = temple_expansion
@@ -1272,7 +1317,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_church
-				loyalty = -5
+				loyalty = -10
 			}
 		}
 		set_ruler_flag = temple_expansion

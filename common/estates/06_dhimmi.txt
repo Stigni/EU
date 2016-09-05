@@ -33,6 +33,9 @@ estate_dhimmi = {
 	
 	# Min autonomy in estate provinces
 	min_autonomy = 25
+	
+	# Estate cancels out the following multiplicative local autonomy effects:
+	autonomy_does_not_affect = local_tax_modifier
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
@@ -49,7 +52,7 @@ estate_dhimmi = {
 	
 	# These do not scale, but only applied in provinces owned by the estate
 	province_modifier_happy = {
-		local_tax_modifier = 0.5
+		local_tax_modifier = 0.33
 		local_unrest = -2
 		local_missionary_strength = -1		
 	}
@@ -58,7 +61,7 @@ estate_dhimmi = {
 		local_missionary_strength = -1		
 	}		
 	province_modifier_angry = {
-		local_unrest = 10
+		local_unrest = 5
 		local_missionary_strength = -1		
 	}	
 	
@@ -116,7 +119,7 @@ estate_dhimmi = {
 			piety = 0.5
 			NOT = { piety = 0.75 }
 		}
-		loyalty = -10
+		loyalty = -5
 	}
 	loyalty_modifier = {
 		desc = EST_VAL_VERY_PIOUS
@@ -124,7 +127,7 @@ estate_dhimmi = {
 			religion_group = muslim
 			piety = 0.75
 		}
-		loyalty = -15
+		loyalty = -8
 	}
 	loyalty_modifier = {
 		desc = EST_VAL_NOT_PIOUS
@@ -132,7 +135,7 @@ estate_dhimmi = {
 			religion_group = muslim
 			NOT = { piety = -0.5 }
 		}
-		loyalty = 10
+		loyalty = 5
 	}
 	loyalty_modifier = {
 		desc = EST_VAL_VERY_UNPIOUS
@@ -140,7 +143,14 @@ estate_dhimmi = {
 			religion_group = muslim
 			NOT = { piety = -0.75 }
 		}
-		loyalty = 15
+		loyalty = 8
+	}
+	loyalty_modifier = {
+		desc = EST_VAL_FULL_HUMANIST
+		trigger = {
+			full_idea_group = humanist_ideas
+		}
+		loyalty = 10
 	}
 	
 	# Does the AI want to give any extra territory beyond the minimum?
@@ -173,10 +183,16 @@ estate_dhimmi = {
 		
 		years_between_use = 30
 		
+		potential = {
+			NOT = { has_disaster = estate_burghers_disaster }
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+		}
+		
 		trigger = {
 			estate_influence = {
 				estate = estate_dhimmi
-				influence = 50
+				influence = 40
 			}
 		}
 		
@@ -205,11 +221,9 @@ estate_dhimmi = {
 				influence = 15
 				duration = 10950
 			}
-			add_estate_loyalty_modifier = {
-				duration = 10950
-				desc = EST_VAL_DHIMMI_MINISTER_CLERGY
+			add_estate_loyalty = {
 				estate = estate_church
-				loyalty = -10
+				loyalty = -15
 			}
 		}
 		
@@ -226,7 +240,7 @@ estate_dhimmi = {
 		trigger = {
 			estate_influence = {
 				estate = estate_dhimmi
-				influence = 50
+				influence = 40
 			}
 			any_owned_province = {
 				has_estate = estate_dhimmi
@@ -241,11 +255,9 @@ estate_dhimmi = {
 					add_local_autonomy = 15
 				}
 			}
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_dhimmi
-				desc = EST_VAL_LOWERED_TAX_BURDEN
-				duration = 3650
-				loyalty = 20
+				loyalty = 25
 			}
 			add_estate_influence_modifier = {
 				estate = estate_dhimmi
@@ -272,10 +284,16 @@ estate_dhimmi = {
 		
 		years_between_use = 30
 		
+		potential = {
+			NOT = { has_disaster = estate_burghers_disaster }
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+		}
+		
 		trigger = {
 			estate_influence = {
 				estate = estate_dhimmi
-				influence = 50
+				influence = 40
 			}
 			estate_loyalty = {
 				estate = estate_dhimmi
@@ -284,27 +302,21 @@ estate_dhimmi = {
 		}
 		
 		effect = {
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_dhimmi
-				desc = EST_VAL_DHIMMI_NOBLES_LOYALTY_DHIMMI
-				duration = 10950
-				loyalty = 15
+				loyalty = 20
 			}
 			add_country_modifier = {
 				name = "dhimmi_nobles"
 				duration = 10950
 			}
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_church
-				desc = EST_VAL_DHIMMI_NOBLES_LOYALTY
-				loyalty = -10
-				duration = 10950
+				loyalty = -15
 			}
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_nobles
-				desc = EST_VAL_DHIMMI_NOBLES_LOYALTY
-				loyalty = -10
-				duration = 10950
+				loyalty = -15
 			}
 			add_estate_influence_modifier = {
 				estate = estate_dhimmi
@@ -324,10 +336,16 @@ estate_dhimmi = {
 		
 		years_between_use = 10
 		
+		potential = {
+			NOT = { has_disaster = estate_burghers_disaster }
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+		}
+		
 		trigger = {
 			estate_influence = {
 				estate = estate_dhimmi
-				influence = 50
+				influence = 40
 			}
 			estate_loyalty = {
 				estate = estate_dhimmi
@@ -386,17 +404,9 @@ estate_dhimmi = {
 				}
 				add_manpower = 0.25
 			}
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_dhimmi
-				desc = EST_VAL_DHIMMI_SOLDIERS_ACCEPTED
-				duration = 3650
-				loyalty = 10
-			}
-			add_estate_loyalty_modifier = {
-				estate = estate_church
-				loyalty = -10
-				duration = 3650
-				desc = EST_VAL_DHIMMI_SOLDIERS
+				loyalty = -15
 			}
 			add_estate_influence_modifier = {
 				estate = estate_dhimmi
@@ -412,7 +422,7 @@ estate_dhimmi = {
 				factor = 0
 				NOT = {
 					estate_loyalty = {
-						estate = estate_church
+						estate = estate_dhimmi
 						loyalty = 50
 					}	
 				}
@@ -435,6 +445,12 @@ estate_dhimmi = {
 		icon = 9
 		
 		years_between_use = 10
+		
+		potential = {
+			NOT = { has_disaster = estate_burghers_disaster }
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+		}
 		
 		trigger = {
 			estate_loyalty = {
@@ -494,11 +510,9 @@ estate_dhimmi = {
 				}
 				add_years_of_income = 1
 			}		
-			add_estate_loyalty_modifier = {
-				duration = 3650
-				desc = EST_VAL_CONTRIBUTED_DHIMMI_MONEY
+			add_estate_loyalty = {
 				estate = estate_dhimmi
-				loyalty = -10 #Take more offense than the Burghers do due to their supposedly protected status.
+				loyalty = -15 #Take more offense than the Burghers do due to their supposedly protected status.
 			}
 		}
 		

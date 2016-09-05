@@ -49,6 +49,7 @@ country_decisions = {
 			OR = {
 				tag = MCH
 				tag = MNG
+				tag = QNG
 			}
 			normal_or_historical_nations = yes
 			OR = {

@@ -458,7 +458,7 @@ country_event = {
 		any_owned_province = {
 			is_core = KBU
 			culture = senegambian
-			religion = animism
+			religion = shamanism
 			is_capital = no
 		}
 	}
@@ -492,7 +492,7 @@ country_event = {
 				limit = {
 					is_core = KBU
 					culture = senegambian
-					religion = animism
+					religion = shamanism
 					is_capital = no
 				}
 			set_province_flag = centre_of_kaabu_rebelion

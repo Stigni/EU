@@ -12,6 +12,12 @@ native_size = 5
 native_ferocity = 1
 native_hostileness = 6
 
+
+
+discovered_by = north_american
+
+1519.1.1 = { discovered_by = SPA } # Alvarez de Piñeda explored the Gulf Coast
+
 1633.1.1 = {
 	owner = SPA
 	controller = SPA
@@ -20,6 +26,7 @@ native_hostileness = 6
 	culture = castillian
 	religion = catholic 
 } #San Luis de Apalachee mission
+1663.1.1 = { discovered_by = ENG } # The British claimed the region north of the Gulf of Mexico
 1704.1.1 = {
 	owner = CRE
 	controller = CRE
@@ -29,7 +36,7 @@ native_hostileness = 6
 	religion = totemism
 } #Spanish colony largely abandoned under Creek raids
 1763.2.10 = {
-	
+	discovered_by = GBR
 	owner = GBR
 	controller = GBR
 	add_core = GBR

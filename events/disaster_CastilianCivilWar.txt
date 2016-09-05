@@ -68,7 +68,7 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = noble_rebels
-					size = 2
+					size = 1
 					win = yes
 				}
 			}
@@ -96,7 +96,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				friend = ARA
-				size = 3
+				size = 1
 				win = yes
 			}
 			clr_province_flag = cas_civil_war_start
@@ -111,7 +111,7 @@ country_event = {
 			spawn_rebels = {
 				friend = ARA
 				type = pretender_rebels
-				size = 2
+				size = 1
 				win = yes
 			}
 			clr_province_flag = cas_civil_war_2
@@ -147,7 +147,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				friend = POR
-				size = 3
+				size = 1
 				win = yes
 			}
 			clr_province_flag = cas_civil_war_start
@@ -162,7 +162,7 @@ country_event = {
 			spawn_rebels = {
 				friend = POR
 				type = pretender_rebels
-				size = 2
+				size = 1
 				win = yes
 			}
 			clr_province_flag = cas_civil_war_2
@@ -178,7 +178,7 @@ country_event = {
 }
 
 # The Civil War Spreads to PROVINCE
-province_event = {
+country_event = {
 	id = castilian_civil_war.2
 	title = "castilian_civil_war.2.t"
 	desc = "castilian_civil_war.2.d"
@@ -187,10 +187,12 @@ province_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		continent = europe
-		is_capital = no
-		controlled_by = owner
-		NOT = { has_province_flag = civil_war_spreads }
+		any_owned_province = {
+			continent = europe
+			is_capital = no
+			controlled_by = owner
+			NOT = { has_province_flag = civil_war_spreads }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -199,47 +201,38 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_province_flag = civil_war_spreads
-			random_list = {
-				5 = { set_province_flag = revolt_3 }
-				65 = { set_province_flag = revolt_2 }
-				30 = { set_province_flag = revolt_1 }
+			random_owned_province = {
+				limit = {
+					continent = europe
+					is_capital = no
+					controlled_by = owner
+					NOT = { has_province_flag = civil_war_spreads }
+				}
+				random_list = {
+					85 = { set_province_flag = revolt_1 }
+					15 = { set_province_flag = revolt_2 }
+				}
+				area = { set_province_flag = civil_war_spreads }
 			}
 		}
 	}
 	
 	option = {		# Where is the loyalty...
 		name = "flavor_spa.EVTOPTA3560"
-		if = {
-			limit = {
-				has_province_flag = revolt_3
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 3
-			}
-		}
-		if = {
-			limit = {
-				has_province_flag = revolt_2
-			}
+		random_owned_province = {
+			limit = { has_province_flag = revolt_2 }
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 2
 			}
+			clr_province_flag = revolt_2
 		}
-		if = {
-			limit = {
-				has_province_flag = revolt_1
-			}
+		random_owned_province = {
+			limit = { has_province_flag = revolt_1 }
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 1
 			}
-		}
-		hidden_effect = {
-			clr_province_flag = revolt_3
-			clr_province_flag = revolt_2
 			clr_province_flag = revolt_1
 		}
 	}
@@ -345,7 +338,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 2
+				size = 1
 				friend = POR
 			}
 		}
@@ -467,7 +460,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 2
+				size = 1
 				friend = ARA
 			}
 		}
@@ -547,7 +540,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 2
+				size = 1
 				friend = POR
 			}
 		}

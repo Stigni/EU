@@ -1,7 +1,7 @@
 government = tribal_despotism
 primary_culture = shona
-religion = animism
-technology_group = indian
+religion = shamanism
+technology_group = central_african
 unit_type = sub_saharan
 capital = 1184	# Khami
 
@@ -344,31 +344,31 @@ capital = 1184	# Khami
 
 1690.1.1 = {
 	monarch = {
-		name = "Dombo Chinkura"
+		name = "Kamharapasu Mukombwe"
 		dynasty = "Mwenemutapa"
-		adm = 4
+		adm = 3
 		dip = 3
-		mil = 6
+		mil = 3
 	}
 }
 
 1690.1.1 = {
 	heir = {
-		name = "Nechisake"
-		monarch_name = "Nechisake"
+		name = "Nyakambira"
+		monarch_name = "Nyakambira"
 		dynasty = "Mwenemutapa"
-		birth_date = 1690.1.1
-		death_date = 1720.1.1
+		birth_date = 1680.1.1
+		death_date = 1692.1.1
 		claim = 95
 		adm = 2
 		dip = 3
-		mil = 4
+		mil = 3
 	}
 }
 
-1696.1.1 = {
+1692.1.1 = {
 	monarch = {
-		name = "Nechisake"
+		name = "Nyakambira"
 		dynasty = "Mwenemutapa"
 		adm = 2
 		dip = 3
@@ -376,12 +376,12 @@ capital = 1184	# Khami
 	}
 }
 
-1696.1.1 = {
+1694.1.1 = {
 	heir = {
-		name = "Nechagadzike"
-		monarch_name = "Nechagadzike"
+		name = "Nyamaende Mhande"
+		monarch_name = "Nyamaende Mhande"
 		dynasty = "Mwenemutapa"
-		birth_date = 1696.1.1
+		birth_date = 1694.1.1
 		death_date = 1768.1.1
 		claim = 95
 		adm = 2
@@ -391,9 +391,9 @@ capital = 1184	# Khami
 }
 		
 
-1720.1.1 = {
+1707.1.1 = {
 	monarch = {
-		name = "Nechagadzike"
+		name = "Nyamaende Mhande"
 		dynasty = "Mwenemutapa"
 		adm = 2
 		dip = 2
@@ -401,13 +401,13 @@ capital = 1184	# Khami
 	}
 }
 
-1720.1.1 = {
+1707.1.1 = {
 	heir = {
-		name = "Mambo Rupanadamananga"
-		monarch_name = "Mambo Rupanadamananga"
+		name = "Nyenyedzi Zenda"
+		monarch_name = "Nyenyedzi Zenda"
 		dynasty = "Mwenemutapa"
-		birth_date = 1720.1.1
-		death_Date = 1779.1.1
+		birth_date = 1700.1.1
+		death_Date = 1711.1.1
 		claim = 95
 		adm = 2
 		dip = 2
@@ -415,9 +415,9 @@ capital = 1184	# Khami
 	}
 }
 
-1768.1.1 = {
+1711.1.1 = {
 	monarch = {
-		name = "Mambo Rupanadamananga"
+		name = "Baroma Dangwarangwa"
 		dynasty = "Mwenemutapa"
 		adm = 2
 		dip = 2
@@ -425,23 +425,9 @@ capital = 1184	# Khami
 	}
 }
 
-1768.1.1 = {
-	heir = {
-		name = "Gumboremvura"
-		monarch_name = "Gumboremvura"
-		dynasty = "Mwenemutapa"
-		birth_date = 1768.1.1
-		death_date = 1802.1.1
-		claim = 95
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
-
-1779.1.1 = {
+1712.1.1 = {
 	monarch = {
-		name = "Gumboremvura"
+		name = "Samatambira Nyamhandu I"
 		dynasty = "Mwenemutapa"
 		adm = 2
 		dip = 2
@@ -449,26 +435,36 @@ capital = 1184	# Khami
 	}
 }
 
-1779.1.1 = {
-	heir = {
-		name = "Chirisamhuru"
-		monarch_name = "Chirisamhuru I"
-		dynasty = "Mwenemutapa"
-		birth_date = 1779.1.1
-		death_Date = 1836.1.1
-		claim = 95
-		adm = 2
-		dip = 2
-		mil = 2
-	}
+1723.1.1 = {
+	capital = 1190
 }
 
-1802.1.1 = {
+1723.1.1 = {
 	monarch = {
-		name = "Chirisamhuru I"
+		name = "Samatambira Nyamhandu I"
 		dynasty = "Mwenemutapa"
 		adm = 2
 		dip = 2
 		mil = 2
+	}
+}
+
+1735.1.1 = {
+	monarch = {
+		name = "Nyatsusu"
+		dynasty = "Mwenemutapa"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1740.1.1 = {
+	monarch = {
+		name = "Dehwe Mapunzagutu"
+		dynasty = "Mwenemutapa"
+		adm = 1
+		dip = 1
+		mil = 1
 	}
 }

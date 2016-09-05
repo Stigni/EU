@@ -1,7 +1,7 @@
 #1182 - Delagoa Bay
 
-culture = bantu #Tsonga
-religion = animism
+culture = nguni
+religion = shamanism #Fetishism
 capital = "Xefina"
 trade_goods = unknown
 hre = no

@@ -4,6 +4,8 @@
 ######################################################################
 coptic_rebels = {
 
+	color = { 230 175 175 }
+
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
 	religion = coptic
@@ -102,6 +104,11 @@ coptic_rebels = {
 	 	}
 		modifier = {
 			factor = 1.5
+			has_missionary = yes
+			religion = coptic
+		}
+		modifier = {
+			factor = 1.5
 			unrest = 2
 		}
 		modifier = {
@@ -124,29 +131,32 @@ coptic_rebels = {
 		}
  	}
 	siege_won_effect = {
-		if = {
-			limit = {
-				OR = {
-					religion = coptic
-					is_reformation_center = yes
-					owner = { religion = coptic }
+		custom_tooltip = religious_rebels_seige_effect_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						religion = coptic
+						is_reformation_center = yes
+						owner = { religion = coptic }
+					}
+				}
+				add_province_modifier = {
+					name = "religious_violence"
+					duration = 730
 				}
 			}
-			add_province_modifier = {
-				name = "religious_violence"
-				duration = 730
-			}
-		}
-		if = {
-			limit = {
-				NOT = { religion = coptic }
-				is_reformation_center = no
-				NOT = { owner = { religion = coptic } }
-			}
-			change_religion = coptic
-			add_province_modifier = {
-				name = "forced_conversion"
-				duration = 730
+			if = {
+				limit = {
+					NOT = { religion = coptic }
+					is_reformation_center = no
+					NOT = { owner = { religion = coptic } }
+				}
+				change_religion = coptic
+				add_province_modifier = {
+					name = "forced_conversion"
+					duration = 730
+				}
 			}
 		}
 	}

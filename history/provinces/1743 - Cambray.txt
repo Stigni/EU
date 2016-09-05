@@ -15,6 +15,14 @@ trade_goods = grain
 base_manpower = 2
 add_core = HAI
 
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = BUR } # Charles the Bold dies and Louis XII takes Artois
 1543.1.1 = { owner = SPA controller = SPA add_core = SPA remove_core = FRA } # Conquered by Charles V
 1665.9.17  = { add_claim = FRA } # Louis XIV's father-in-law, Philip IV of Spain, dies

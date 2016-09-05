@@ -37,6 +37,30 @@ country_event = {
 		
 	option = {
 		name = devotion_events.1.a
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 		add_country_modifier = {
 			name = dev_general_hospital
 			duration = 3650
@@ -45,6 +69,19 @@ country_event = {
 	
 	option = {
 		name = devotion_events.1.b
+		ai_chance = {
+			factor = 45
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 		add_piety = 0.15
 		add_devotion = 10
 	}
@@ -113,6 +150,30 @@ country_event = {
 	
 	option = {
 		name = devotion_events.3.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+				NOT = {
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 40
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
+		}
 		add_country_modifier = {
 			name = dev_modern_forts
 			duration = 3650
@@ -120,7 +181,31 @@ country_event = {
 	}
 	option = {
 		name = devotion_events.3.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_devotion = -10
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 	}
 }
 
@@ -260,8 +345,32 @@ country_event = {
 		
 	option = {
 		name = devotion_events.6.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+				NOT = {
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_devotion = 10
 		add_prestige = 25
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
+		}
 		every_owned_province = {
 			limit = { has_province_flag = prov_wants_rel_free }
 			add_base_production = -1
@@ -270,7 +379,20 @@ country_event = {
 	}
 	option = {
 		name = devotion_events.6.b
+		ai_chance = {
+			factor = 50
+		}
 		add_devotion = -25
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+		}
 		every_owned_province = {
 			limit = { has_province_flag = prov_wants_rel_free }
 			change_religion = protestant
@@ -291,7 +413,8 @@ country_event = {
 		has_dlc = "Common Sense"
 		government = monastic_order_government
 		any_owned_province = {
-			base_production = 1
+			base_production = 2
+			is_in_capital_area = yes
 			NOT = {
 				religion_group = ROOT
 			}
@@ -306,10 +429,24 @@ country_event = {
 		
 	option = {
 		name = devotion_events.7.a
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 		add_devotion = 10
 		random_owned_province = {
 			limit = {
-				base_production = 1
+				base_production = 2
+				is_in_capital_area = yes
 				NOT = {
 					religion_group = ROOT
 				}
@@ -324,6 +461,30 @@ country_event = {
 	
 	option = {
 		name = devotion_events.7.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 		add_devotion = -5
 		add_prestige = -5
 	}
@@ -355,6 +516,7 @@ country_event = {
 		name = devotion_events.8.a
 		add_adm_power = 50
 		set_country_flag = dev_forged_documents_flag
+		add_corruption = 0.5
 		custom_tooltip = devotion_events.8.ct
 	}
 	
@@ -626,11 +788,69 @@ country_event = {
 		
 	option = {
 		name = devotion_events.16.a
-		add_prestige = -10
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
+		add_devotion = -10
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 	}
 	option = {
 		name = devotion_events.16.b
-		add_devotion = -10		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+				NOT = {
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 40
+					}
+				}
+			}
+		}
+		add_prestige = -10
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
+		}
 	}
 }
 
@@ -665,6 +885,34 @@ province_event = {
 		
 	option = {
 		name = devotion_events.17.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				has_dlc = "The Cossacks"
+				owner = {
+					has_estate = estate_burghers
+					NOT = {
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 40
+						}
+					}
+				}
+			}
+		}
+		owner = {
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+					has_estate = estate_burghers
+				}
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = -10
+				}
+			}
+		}
 		add_province_modifier = {
 			name = add_unrest_5_modifier
 			duration = 3650
@@ -672,8 +920,36 @@ province_event = {
 	}
 	option = {
 		name = devotion_events.17.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				has_dlc = "The Cossacks"
+				owner = {
+					has_estate = estate_church
+					NOT = {
+						estate_loyalty = {
+							estate = estate_church
+							loyalty = 40
+						}
+					}
+				}
+			}
+		}
 		add_local_autonomy = 10			
 		owner = { add_devotion = -10 }
+		owner = {
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+					has_estate = estate_burghers
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = -10
+				}
+			}
+		}
 	}
 }
 
@@ -701,11 +977,48 @@ country_event = {
 		
 	option = {
 		name = devotion_events.18.a
+		ai_chance = {
+			factor = 50
+		}
 		add_adm_power = -50
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 	}
 	option = {
 		name = devotion_events.18.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_devotion = -10
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 	}
 }
 
@@ -723,7 +1036,7 @@ country_event = {
 			government = monastic_order_government
 		}
 		NOT = {
-			has_advisor = theologian
+			advisor = theologian
 		}
 	}
 	
@@ -735,7 +1048,11 @@ country_event = {
 		
 	option = {
 		name = devotion_events.19.a
-		create_advisor = theologian
+		define_advisor = {
+			type = theologian
+			discount = yes
+			skill = 1
+		}
 	}
 	option = {
 		name = devotion_events.19.b
@@ -769,7 +1086,35 @@ province_event = {
 		
 	option = {
 		name = devotion_events.20.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				owner = {
+					has_estate = estate_burghers
+					NOT = {
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 40
+						}
+					}
+				}
+			}
+		}
 		add_local_autonomy = -25
+		owner = {
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+					has_estate = estate_burghers
+				}
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = -10
+				}
+			}
+		}
 		add_province_modifier = {
 			name = add_unrest_5_modifier
 			duration = 3650
@@ -777,6 +1122,21 @@ province_event = {
 	}
 	option = {
 		name = devotion_events.20.b
+		ai_chance = {
+			factor = 50
+		}
+		owner = {
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+					has_estate = estate_burghers
+				}
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 10
+				}
+			}
+		}
 		owner = { add_devotion = 10 }
 	}
 }
@@ -807,6 +1167,30 @@ country_event = {
 		
 	option = {
 		name = devotion_events.21.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -15
+			}
+		}
 		if = {
 			limit = {
 				religion_group = muslim
@@ -837,7 +1221,20 @@ country_event = {
 	}
 	option = {
 		name = devotion_events.21.b
+		ai_chance = {
+			factor = 50
+		}
 		set_ruler_flag = denied_secularists
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 		add_devotion = 10
 		add_prestige = -25
 	}
@@ -872,6 +1269,16 @@ country_event = {
 		name = devotion_events.22.a
 		add_yearly_manpower = -1.0
 		add_years_of_income = -0.5
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 	}
 }
 
@@ -902,12 +1309,38 @@ country_event = {
 		
 	option = {
 		name = devotion_events.23.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_stability = -1
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 	}
 	option = {
 		name = devotion_events.23.b
-		add_adm_power = -100
-		add_prestige = -10
+		ai_chance = {
+			factor = 50
+		}
+		add_corruption = 4
 	}
 }
 
@@ -978,12 +1411,80 @@ country_event = {
 		
 	option = {
 		name = devotion_events.100.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_adm_power = 50
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+		}
 	}
 	
 	option = {
 		name = devotion_events.100.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+				NOT = {
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_devotion = 10
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 		random_owned_province = {
 			limit = {
 				local_autonomy = 25
@@ -1058,6 +1559,10 @@ country_event = {
 			OR = {
 				unrest = 1
 				local_autonomy = 50
+				AND = {
+					has_estate = estate_burghers
+					has_dlc = "The Cossacks"
+				}
 			}
 		}
 	}
@@ -1099,6 +1604,10 @@ country_event = {
 				OR = {
 					unrest = 1
 					local_autonomy = 50
+					AND = {
+						has_estate = estate_burghers
+						has_dlc = "The Cossacks"
+					}
 				}
 			}
 			if = {
@@ -1116,6 +1625,13 @@ country_event = {
 				}
 				add_local_autonomy = -10
 			}
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+					has_estate = estate_burghers
+				}
+				remove_estate = estate_burghers
+			}
 		}
 	}
 	
@@ -1124,6 +1640,16 @@ country_event = {
 		add_adm_power = 20
 		add_dip_power = 20
 		add_mil_power = 20
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+		}
 	}
 }
 
@@ -1201,8 +1727,36 @@ province_event = {
 		
 	option = {
 		name = devotion_events.105.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				owner = {
+					has_estate = estate_burghers
+					NOT = {
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 40
+						}
+					}
+				}
+			}
+		}
 		owner = {
 			add_devotion = 10
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+					owner = {
+						has_estate = estate_burghers
+					}
+				}
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = -10
+				}
+			}
 		}
 		add_local_autonomy = -10
 		add_province_modifier = {
@@ -1213,8 +1767,21 @@ province_event = {
 	
 	option = {
 		name = devotion_events.105.b
+		ai_chance = {
+			factor = 50
+		}
 		owner = {
 			add_adm_power = 50
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+					has_estate = estate_burghers
+				}
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 10
+				}
+			}
 		}
 		add_local_autonomy = 10
 	}
@@ -1511,7 +2078,7 @@ country_event = {
 	}
 	option = {
 		name = devotion_events.119.b
-		add_stability = -1
+		add_prestige = -10
 	}
 }
 
@@ -1710,11 +2277,48 @@ country_event = {
 		
 	option = {
 		name = devotion_events.205.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_mercantilism = 0.01
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 	}
 	option = {
 		name = devotion_events.205.b
+		ai_chance = {
+			factor = 50
+		}
 		add_devotion = 10
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 	}
 }
 
@@ -1747,6 +2351,23 @@ province_event = {
 		
 	option = {
 		name = devotion_events.206.a
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+			limit = {
+				owner = {
+					has_dlc = "The Cossacks"
+					has_estate = estate_church
+				}
+			}
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 10
+				}
+			}
+		}
 		add_province_modifier = {
 			name = dev_religious_cleansing
 			duration = 3650
@@ -1754,9 +2375,39 @@ province_event = {
 	}
 	option = {
 		name = devotion_events.206.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				owner = {
+					has_estate = estate_church
+					NOT = {
+						estate_loyalty = {
+							estate = estate_church
+							loyalty = 40
+						}
+					}
+				}
+			}
+		}
 		owner = {
 			add_piety = -0.10
 			add_devotion = 10
+		}
+		if = {
+			limit = {
+				owner = {
+					has_dlc = "The Cossacks"
+					has_estate = estate_church
+				}
+			}
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = -10
+				}
+			}
 		}
 	}
 }
@@ -1840,14 +2491,55 @@ country_event = {
 		
 	option = {
 		name = devotion_events.208.a
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_devotion = -10
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 	}
 	option = {
 		name = devotion_events.208.b
+		ai_chance = {
+			factor = 33
+		}
 		add_dip_power = -50
 	}
 	option = {
 		name = devotion_events.208.c
+		ai_chance = {
+			factor = 33
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
+		add_adm_power = -35
 		remove_advisor = theologian
 		remove_advisor = philosopher
 		remove_advisor = natural_scientist
@@ -1930,6 +2622,9 @@ country_event = {
 		
 	option = {
 		name = devotion_events.210.a
+		ai_chance = {
+			factor = 50
+		}
 		add_adm_power = -50
 		random_owned_province = {
 			limit = {
@@ -1940,10 +2635,44 @@ country_event = {
 				duration = 3650
 			}
 		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 	}
 	option = {
 		name = devotion_events.210.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_devotion = -10
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 	}
 }
 
@@ -1971,6 +2700,9 @@ country_event = {
 		
 	option = {
 		name = devotion_events.211.a
+		ai_chance = {
+			factor = 50
+		}
 		random_owned_province = {
 			limit = {
 				religion = sunni
@@ -1980,10 +2712,44 @@ country_event = {
 				duration = 3650
 			}
 		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 	}
 	option = {
 		name = devotion_events.211.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_devotion = -10
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 	}
 }
 
@@ -2034,10 +2800,10 @@ country_event = {
 		religion_group = muslim
 		government = theocratic_government
 		OR = {
-			has_advisor = statesman
-			has_advisor = trader
-			has_advisor = colonial_governor
-			has_advisor = diplomat
+			advisor = statesman
+			advisor = trader
+			advisor = colonial_governor
+			advisor = diplomat
 		}
 	}
 	
@@ -2049,6 +2815,7 @@ country_event = {
 		
 	option = {
 		name = devotion_events.213.a
+		add_dip_power = -35
 		remove_advisor = statesman
 		remove_advisor = trader
 		remove_advisor = colonial_governor
@@ -2223,7 +2990,31 @@ country_event = {
 		
 	option = {
 		name = devotion_events.217.a
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1.5
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_years_of_income = -0.25
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 		add_country_modifier = {
 			name = dev_hadith_madrasa
 			duration = 3650
@@ -2231,7 +3022,31 @@ country_event = {
 	}
 	option = {
 		name = devotion_events.217.b
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1.5
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_years_of_income = -0.25
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 		add_country_modifier = {
 			name = dev_fiqah_madrasa
 			duration = 3650
@@ -2239,6 +3054,9 @@ country_event = {
 	}
 	option = {
 		name = devotion_events.217.c
+		ai_chance = {
+			factor = 25
+		}
 		add_years_of_income = -0.5
 		add_country_modifier = {
 			name = dev_hadith_fiqah_madrasa
@@ -2247,6 +3065,9 @@ country_event = {
 	}
 	option = {
 		name = devotion_events.217.e
+		ai_chance = {
+			factor = 25
+		}
 		add_devotion = -5
 	}
 }

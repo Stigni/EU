@@ -57,6 +57,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -79,7 +80,7 @@ country_decisions = {
 				}
 				add_permanent_claim = HIN
 			}
-			rajputana_region = {
+			west_india_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -92,12 +93,6 @@ country_decisions = {
 				add_permanent_claim = HIN
 			}
 			coromandel_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = HIN
-			}
-			west_india_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -175,6 +170,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -196,7 +192,7 @@ country_decisions = {
 				}
 				add_permanent_claim = HIN
 			}
-			rajputana_region = {
+			west_india_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -209,12 +205,6 @@ country_decisions = {
 				add_permanent_claim = HIN
 			}
 			coromandel_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = HIN
-			}
-			west_india_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -286,6 +276,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -307,7 +298,7 @@ country_decisions = {
 				}
 				add_permanent_claim = HIN
 			}
-			rajputana_region = {
+			west_india_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -320,12 +311,6 @@ country_decisions = {
 				add_permanent_claim = HIN
 			}
 			coromandel_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = HIN
-			}
-			west_india_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -392,6 +377,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -413,7 +399,7 @@ country_decisions = {
 				}
 				add_permanent_claim = HIN
 			}
-			rajputana_region = {
+			west_india_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -426,12 +412,6 @@ country_decisions = {
 				add_permanent_claim = HIN
 			}
 			coromandel_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = HIN
-			}
-			west_india_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -500,6 +480,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -521,7 +502,7 @@ country_decisions = {
 				}
 				add_permanent_claim = HIN
 			}
-			rajputana_region = {
+			west_india_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -534,12 +515,6 @@ country_decisions = {
 				add_permanent_claim = HIN
 			}
 			coromandel_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = HIN
-			}
-			west_india_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

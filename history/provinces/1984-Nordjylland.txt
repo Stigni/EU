@@ -13,6 +13,14 @@ base_manpower = 2
 capital = "Aalborg"
 is_city = yes
 
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+
 1534.8.15 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # 'Grevefejden'(Christofer of Oldenburg)
 1534.11.2 = { revolt = {} controller = DAN } # Liberated by Christian III
 1536.1.1 = { religion = protestant }

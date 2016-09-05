@@ -212,6 +212,16 @@ country_event = {
 	option = {
 		name = "reformed_events.EVTOPTA3" # For the glory of God!
 		ai_chance = { factor = 50 }
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 		random_province = {
 			limit = {
 				has_province_flag = prospective_foreign_reformed_ministers
@@ -236,8 +246,31 @@ country_event = {
 	}
 	option = {
 		name = "reformed_events.EVTOPTB3" # Keep it within our borders
-		ai_chance = { factor = 50 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_fervor = -10
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 		hidden_effect = {
 			random_province = {
 				limit = {
@@ -326,6 +359,16 @@ country_event = {
 	option = {
 		name = "reformed_events.EVTOPTA6" # Issue a ban
 		ai_chance = { factor = 75 }
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 		set_country_flag = banned_musical_instruments_in_church 
 		add_country_modifier = {
 			name = banned_musical_instruments_in_church
@@ -334,8 +377,31 @@ country_event = {
 	}
 	option = {
 		name = "reformed_events.EVTOPTB6" # Ignore their opinions
-		ai_chance = { factor = 25 }
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		set_country_flag = banned_musical_instruments_in_church 
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 		add_fervor = -10
 	}
 }

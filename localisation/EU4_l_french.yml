@@ -1,4 +1,5 @@
 ﻿l_french:
+ CANT_DETACH_IN_COMBAT: "§RIl est impossible de détacher les navires endommagés tandis que la flotte est en combat.§!"
  HAS_NO_FRIENDLY_REFORMATION_CENTER: "N'a PAS de foyer de la Réforme $NAME$"
  HAS_FRIENDLY_REFORMATION_CENTER: "A un foyer de la Réforme $NAME$"
  HAS_NO_HOSTILE_REFORMATION_CENTER: "N'a PAS de foyer de la Réforme hostile"
@@ -774,7 +775,6 @@
  dutch_republic_ruler: "Stathouder"
  dutch_republic_ruler_female: "Stathouder"
  imperial_government_desc: "Gouvernement suprême, ou le « roi des rois» gouverne seul un grand nombre d'États."
- CORING_IS_INSTANT: "Ceci est une action instantanée, car il s'agit d'une colonie."
  hre_province_left: "A soustrait des provinces de l'Empire"
  hre_country_left: "A quitté l'Empire"
  IDEA_ALLOWED: "§GAutorisées§!"

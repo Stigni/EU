@@ -13,6 +13,15 @@ base_manpower = 1
 is_city = yes
 add_core = NGA
 
+
+
+discovered_by = nomad_group
+discovered_by = indian
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = chinese
+
+
 1456.1.1 = {
 	owner = MER
 	controller = MER
@@ -47,11 +56,11 @@ add_core = NGA
 	controller = MUG
 	add_core = MUG
 }
-
+1690.1.1 = { discovered_by = ENG }
 1707.3.15 = { controller = MER } # Independent
 1707.4.1 = {
 	owner = MAW
 	controller = MAW
 	remove_core = MUG
 } # Independent
-
+1707.5.12 = { discovered_by = GBR }

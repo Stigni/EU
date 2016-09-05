@@ -27,6 +27,22 @@ harmonization_of_laws = {
 		diplomatic_annexation_cost = -0.15
 		vassal_income = 0.05
 	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			num_of_vassals = 3
+		}
+		modifier = {
+			factor = 3
+			num_of_vassals = 4
+		}
+		modifier = {
+			factor = 4
+			num_of_vassals = 5
+		}
+	}
 
 	ai_will_do = {
 		factor = 1

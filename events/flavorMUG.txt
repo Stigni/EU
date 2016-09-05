@@ -18,15 +18,15 @@ country_event = {
 	
 	trigger = {
 		tag = MUG
-		is_year = 1660
-		NOT = { is_year = 1680 }
+		religion_group = muslim
+		is_year = 1650
 		NOT = { exists = MAR } # Marathas
-		OR = {
-			owns = 1946 # Desh
-			owns = 569 # Bijapur
-			owns = 544 # Ahmadnagar
-			owns = 545 # Marathwada
-			owns = 530 # Malvana
+		any_owned_province = {
+			OR = {
+					area = maharashtra_area
+					area = desh_area
+					culture = marathi
+				}
 		}
 	}
 	
@@ -39,13 +39,11 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				OR = {
-					province_id = 1946
-					province_id = 569
-					province_id = 544
-					province_id = 545
-					province_id = 530
+					area = maharashtra_area
+					area = desh_area
 					culture = marathi
 				}
+				is_capital = no
 			}
 			add_core = MAR
 			add_province_modifier = {
@@ -100,10 +98,10 @@ country_event = {
 	
 	trigger = {
 		tag = MUG
-		any_owned_province = { is_core = PUN }
-		NOT = { exists = PUN }
-		is_year = 1675
-		NOT = { is_year = 1675 }
+		NOT = { religion = sikhism }
+		any_owned_province = {
+			religion = sikhism
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -112,8 +110,11 @@ country_event = {
 	
 	option = {
 		name = "flavor_mug.EVTOPTA3" #Execute the Guru as a heretic!
-		every_owned_province = {
-			limit = { is_core = PUN }
+		random_owned_province = {
+			limit = {
+				religion = sikhism
+				NOT = { has_province_modifier = add_unrest_10_modifier }
+			}
 			add_province_modifier = {
 				name = add_unrest_10_modifier
 				duration = 1825

@@ -1,4 +1,5 @@
 #236 - London
+#Middlesex+Hertfordshire+Surrey+parts of Kent and Essex
 
 owner = ENG
 controller = ENG
@@ -14,6 +15,13 @@ is_city = yes
 add_core = ENG
 seat_in_parliament = yes
 fort_15th = yes
+
+
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
 
 extra_cost = 25
 

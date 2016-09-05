@@ -571,7 +571,10 @@ swedish_colony_in_north_america = {
 		NOT = { northeast_america_region = { owned_by = ROOT } }
 	}
 	success = {
-		northeast_america_region = { owned_by = ROOT }
+		northeast_america_region = {
+			owned_by = ROOT
+			colonysize = 400
+		}
 	}
 	chance = {
 		factor = 2000

@@ -2,7 +2,7 @@
 
 owner = JAP
 controller = JAP
-culture = japanese
+culture = togoku
 religion = shinto
 capital = "Kawagoe"
 trade_goods = fish
@@ -13,12 +13,16 @@ base_manpower = 3
 is_city = yes
 add_core = JAP
 add_core = UES
+
+
+
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA
 discovered_by = OIR
 discovered_by = QNG
 discovered_by = ANU
+
 
 1417.1.1 = { fort_15th = yes } # Odawara Castle
 1524.1.1 = { add_core = HJO }

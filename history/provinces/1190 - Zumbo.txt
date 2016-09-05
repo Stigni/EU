@@ -3,8 +3,8 @@
 owner = ZIM
 controller = ZIM
 add_core = ZIM
-culture = bantu # tonga
-religion = animism
+culture = shona
+religion = shamanism
 is_city = yes
 capital = "Chikova"
 trade_goods = ivory
@@ -12,16 +12,8 @@ hre = no
 base_tax = 2 
 base_production = 2
 base_manpower = 1
-discovered_by = ETH
-discovered_by = ADA
-discovered_by = NUB
-discovered_by = ZAN
-discovered_by = ZIM
-discovered_by = AJU
-discovered_by = MBA
-discovered_by = MDI
-discovered_by = MLI
-discovered_by = SFA
+discovered_by = east_african
+discovered_by = central_african
 
 1513.1.1 = { discovered_by = POR } #Travels of Antonio Fernandes in hinterland of Sofala
 1575.1.1 = { unrest = 8 } # Portuguese invasion of Mutapa via this region, fail to secure it & withdraw
@@ -33,8 +25,6 @@ discovered_by = SFA
 1609.1.1 = { revolt = {} controller = ZIM } # Mutapa restore control with Portuguese help
 1631.1.1 = { unrest = 8 } # Kapararidze launches revolt to overthrow Mavura and end POR domination
 1632.1.1 = { unrest = 0 } # Kapararidze revolt defeated
-1703.1.1 = { unrest = 7 } # Rozvi invasion against Mutapa opposed to Changamire dominance
 1715.1.1 = { capital = "Zumbo" trade_goods = gold } # Portuguese Trade Fair becomes new center in region
 1760.1.1 = { unrest = 7 } # Civil war between the Boroma and Nyamhandu clans for Mutapa crown
 1768.1.1 = { unrest = 0 }
-1780.1.1 = { trade_goods = ivory } # Decline of Rozvi state changes trade routes, ivory replaces gold

@@ -14,6 +14,12 @@ is_city = yes
 add_core = HSE
 add_core = CDL
 
+
+
+discovered_by = chinese
+discovered_by = indian
+
+
 1502.1.1 = {
 	controller = SST
 	owner = SST
@@ -31,6 +37,7 @@ add_core = CDL
 	owner = TAU
 	controller = TAU
 }
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
 1732.1.1 = {
 	owner = QNG
 	controller = QNG

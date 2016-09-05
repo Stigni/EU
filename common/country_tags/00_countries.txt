@@ -15,6 +15,7 @@ EST = "countries/Estonia.txt"
 LVA = "countries/Livonia.txt"
 SMI = "countries/Sami.txt"
 KRL = "countries/Karelia.txt"
+ICE = "countries/Iceland.txt"
 
 #Balkans
 ACH	= "countries/PrincipalityOfAchaia.txt"
@@ -40,6 +41,7 @@ SER	= "countries/Serbia.txt"
 TRA	= "countries/Transylvania.txt"
 WAL	= "countries/Wallachia.txt"
 HUN	= "countries/Hungary.txt"
+SLO = "countries/Slovakia.txt"
 TUR	= "countries/Ottomans.txt"
 
 #British Isles 
@@ -55,6 +57,11 @@ WLS	= "countries/Wales.txt"
 NOL = "countries/Northumberland.txt"
 GBR	= "countries/GreatBritain.txt"
 MTH = "countries/Meath.txt"
+ULS = "countries/Ulster.txt"
+DMS = "countries/Desmond.txt"
+SLN = "countries/Sligo.txt"
+KID = "countries/Kildare.txt"
+HSC = "countries/Highlands.txt"
 
 #Colonies
 BRZ	= "countries/Brazil.txt"
@@ -88,6 +95,7 @@ PLC = "countries/TheCommonwealth.txt"
 VOL	= "countries/Volyn.txt"
 KIE	= "countries/Kiev.txt"
 CHR	= "countries/Chernigov.txt"
+OKA = "countries/Oka.txt"
 
 #France 
 ALE = "countries/Alencon.txt"
@@ -103,13 +111,12 @@ COR	= "countries/Corsica.txt"
 DAU	= "countries/Dauphine.txt"
 FOI	= "countries/Foix.txt"
 FRA	= "countries/France.txt"
-GUY	= "countries/Guyenne.txt"
+GUY	= "countries/Gascony.txt"
 NEV	= "countries/Nevers.txt"
 NRM	= "countries/Normandy.txt"
 ORL	= "countries/Orleans.txt"
 PIC	= "countries/Picardy.txt"
 PRO	= "countries/Provence.txt"
-RFR	= "countries/RevolutionaryFrance.txt"
 SPI	= "countries/SardiniaPiedmont.txt"
 TOU	= "countries/Toulouse.txt"
 BER	= "countries/Berry.txt"
@@ -341,6 +348,40 @@ PTE = "countries/Pate.txt"
 WAR = "countries/Warsangali.txt"
 BTI = "countries/Semien.txt"
 
+#Kongo, Great Lakes & Central Africa
+TYO = "countries/Tyo.txt"
+SYO = "countries/Soyo.txt"
+KSJ = "countries/Kasanje.txt"
+LUB = "countries/Luba.txt"
+LND = "countries/Lunda.txt"
+CKW = "countries/Chokwe.txt"
+KIK = "countries/Kikondja.txt"
+KZB = "countries/Kazembe.txt"
+YAK = "countries/Yaka.txt"
+KLD = "countries/Kalundwe.txt"
+KUB = "countries/Kuba.txt"
+RWA = "countries/Rwanda.txt"
+BUU = "countries/Burundi.txt"
+BUG = "countries/Buganda.txt"
+NKO = "countries/Nkore.txt"
+KRW = "countries/Karagwe.txt"
+BNY = "countries/Bunyoro.txt"
+BSG = "countries/Basoga.txt"
+UBH = "countries/Buha.txt"
+
+MRA = "countries/Maravi.txt"
+LDU = "countries/Lundu.txt"
+TBK = "countries/Tumbuka.txt"
+MKU = "countries/Makua.txt"
+RZW = "countries/Butua.txt"
+
+#Madagascar
+MIR = "countries/Merina.txt" #And Betsileo
+SKA = "countries/Sakalava.txt" #All Sakalava Kingdoms
+BTS = "countries/Betsimisaraka.txt" #And their predecessors
+MFY = "countries/Mahafaly.txt"
+ANT = "countries/Antemoro.txt"
+
 #Far East
 ANN	= "countries/Annam.txt"
 ARK	= "countries/Arakan.txt"
@@ -376,6 +417,7 @@ TKD = "countries/Takeda.txt"
 TKG = "countries/Tokugawa.txt"
 UES = "countries/Uesugi.txt"
 YMN = "countries/Yamana.txt"
+RFR	= "countries/Nanbu.txt"
 
 ANU = "countries/Ainu.txt"
 
@@ -675,3 +717,4 @@ ICM = "countries/Ichma.txt"
 
 # ???
 JMN = "countries/Jan Mayen.txt"
+ROM = "countries/RomanEmpire.txt"

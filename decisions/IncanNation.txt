@@ -11,6 +11,7 @@ country_decisions = {
 			}
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
+			NOT = { tag = ROM }
 			NOT = { tag = INC }
 			religion_group = pagan
 			OR = {
@@ -81,7 +82,25 @@ country_decisions = {
 				}
 				add_permanent_claim = INC
 			}
-			chile_region = {
+			upper_peru = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = INC
+			}			
+			southern_chile_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = INC
+			}
+			central_chile_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = INC
+			}
+			northern_chile_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -106,7 +125,10 @@ country_decisions = {
 				}
 				change_government = despotic_monarchy
 			}
-			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1

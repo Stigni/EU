@@ -85,7 +85,7 @@ castilian_civil_war = {
 
 	
 	can_end = {
-		stability = 2
+		stability = 1
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = {
 			has_spawned_rebels = pretender_rebels

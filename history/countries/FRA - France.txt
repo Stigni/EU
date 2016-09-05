@@ -1,5 +1,7 @@
 government = feudal_monarchy
 primary_culture = cosmopolitan_french
+add_accepted_culture = gascon
+add_accepted_culture = occitain
 religion = catholic
 technology_group = western
 capital = 183 # Paris
@@ -739,6 +741,7 @@ national_focus = DIP
 		dip = 3
 		mil = 6
 		dynasty = "Bonaparte" 
+		birth_date = 1769.8.15
 		leader = { name = "Napoléon"	type = general	rank = 0	fire = 6	shock = 6	manuever = 6	siege = 2 }
 	}
 }

@@ -18,6 +18,18 @@ administrative_reform = {
 	
 	chance = {
 		factor = 1
+		modifier = {
+			factor = 2
+			average_home_autonomy = 25
+		}
+		modifier = {
+			factor = 3
+			average_home_autonomy = 35
+		}
+		modifier = {
+			factor = 3
+			average_home_autonomy = 50
+		}
 	}
 
 	ai_will_do = {

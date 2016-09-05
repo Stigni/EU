@@ -11,6 +11,9 @@ base_manpower = 1
 native_size = 5
 native_ferocity = 1
 native_hostileness = 3
+
+
+
 discovered_by = ANU
 discovered_by = HOD
 discovered_by = CHU
@@ -18,6 +21,7 @@ discovered_by = CHV
 discovered_by = KMC
 
 1647.1.1 = { discovered_by = RUS } # V. Atlasov
+
 1732.1.1 = {
 	owner = RUS
 	controller = RUS

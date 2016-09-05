@@ -459,6 +459,7 @@ country_event = {
 					}
 				}
 				country_event = { id = hre_event.3 } #Clears Italian provinces for countries not in the HRE
+				# Keep an eye on this, triggering country events instantly in immediate can cause loops
 			}
 		}
 	}
@@ -680,12 +681,18 @@ country_event = {
 	picture = HRE_eventPicture
 
 	trigger = {
-		ai = no
+		OR = {
+			is_emperor = yes
+			ai = no
+		} # Fire for AI emperor to set the global flag for possible future player emperor
 		NOT = { has_global_flag = italy_out_of_HRE }
 		normal_or_historical_nations = yes
 		is_year = 1440
-		NOT = { is_year = 1450 }
-		is_part_of_hre = yes
+		NOT = { is_year = 1550 }
+		OR = {
+			is_part_of_hre = yes
+			is_emperor = yes
+		}
 		NOT = { has_country_flag = italian_warning }
 	}
 	

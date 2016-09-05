@@ -30,9 +30,8 @@ conquer_punjab_MUG = {
 		NOT = { has_country_flag = conquered_punjab }
 		is_subject = no
 		NOT = { capital_scope = { region = hindusthan_region } }
-		NOT = { capital_scope = { region = rajputana_region } }
-		NOT = { capital_scope = { region = bengal_region } }
 		NOT = { capital_scope = { region = west_india_region } }
+		NOT = { capital_scope = { region = bengal_region } }
 		NOT = { capital_scope = { region = deccan_region } }
 		NOT = { capital_scope = { region = coromandel_region } }
 		OR = {
@@ -761,10 +760,9 @@ defeat_england = {
 		OR = {
 			region = bengal_region
 			region = hindusthan_region
-			region = rajputana_region
+			region = west_india_region
 			region = deccan_region
 			region = coromandel_region
-			region = west_india_region
 		}
 		owned_by = ENG
 	}
@@ -781,10 +779,9 @@ defeat_england = {
 				OR = {
 					region = bengal_region
 					region = hindusthan_region
-					region = rajputana_region
+					region = west_india_region
 					region = deccan_region
 					region = coromandel_region
-					region = west_india_region
 				}
 			}
 		}
@@ -800,10 +797,9 @@ defeat_england = {
 		NOT = { war_with = ENG }
 		NOT = { bengal_region = { owned_by = ENG } }
 		NOT = { hindusthan_region = { owned_by = ENG } }
-		NOT = { rajputana_region = { owned_by = ENG } }
+		NOT = { west_india_region = { owned_by = ENG } }
 		NOT = { deccan_region = { owned_by = ENG } }
 		NOT = { coromandel_region = { owned_by = ENG } }
-		NOT = { west_india_region = { owned_by = ENG } }
 	}
 	chance = {
 		factor = 3000

@@ -13,7 +13,7 @@ native_ferocity = 1
 native_hostileness = 4 
 
 1493.1.1 = {
-	
+	discovered_by = CAS
 	owner = CAS
 	controller = CAS
 	culture = castillian
@@ -24,14 +24,14 @@ native_hostileness = 4
 } # Christopher Columbus
 
 1516.1.23 = {
-	
+	discovered_by = SPA
 	owner = SPA
 	controller = SPA
 	remove_core = CAS
 	add_core = SPA
 }
 1672.1.1 = {
-	
+	discovered_by = DAN
 	owner = DAN
 	controller = DAN
 	add_core = DAN

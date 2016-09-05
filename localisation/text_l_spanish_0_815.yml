@@ -8,7 +8,7 @@
  MESSAGE_BUTTON_CLEAR: "Borrar"
  MESSAGE_SEARCH_TOOLTIP: "Introduce las palabras clave separadas por §Yespacios§! para filtrar la lista."
  TRADEPATROL_REPAIRING: "§REsta unidad se está retirando. Pronto continuará con la misión.§!"
- PEACE_VIEW_GOLD_ADD_REMOVE: "Haz clic en §G+§! y §G-§! para §Gañadir§! o §Geliminar§! ¤ en tu oferta o demanda.\n$GOLD|+$¤ vale alrededor de §Y$WS|+1$§! en puntos de guerra."
+ PEACE_VIEW_GOLD_ADD_REMOVE: "Haz clic en §G+§! y §G-§! para §Gañadir§! o §Geliminar§!¤ en tu oferta o demanda.\n$GOLD|+$¤ vale alrededor de §Y$WS|+1$§! en puntos de guerra."
  PEACE_VIEW_GOLD_ADD_REMOVE_KEYS: "§YRMB§! para añadir o eliminar §Gmás§!.\n§YShift + LMB§! para añadir o eliminar §Gmáx§"
  SIEGE_ARTILLERY_EXPLANATION: "La Artillería da una bonificación durante la tirada de asedio. Este bono depende de la cantidad de artillería frente al Nivel de Fortaleza."
  SIEGE_ARTILLERY_LINE: "§Y$AMOUNT$§! Artillería (§Y+$BONUS$§! Bonus)"

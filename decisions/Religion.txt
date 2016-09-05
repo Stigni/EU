@@ -537,6 +537,11 @@ religion_decisions = {
 				NOT = { is_year = 1550 }
 				NOT = { dominant_religion = vajrayana }
 			}
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				religion = tengri_pagan_reformed
+			}
 		}
 	}
 	
@@ -655,12 +660,12 @@ religion_decisions = {
 			OR = {
 				AND = {
 					tag = MUG
-					religion = sunni
+					religion_group = muslim
 					any_owned_province = { religion = hinduism }
 				}
 				AND = {
 					religion = hinduism
-					any_owned_province = { religion = sunni }			
+					any_owned_province = { religion_group = muslim }			
 				}
 			}
 		}
@@ -1299,7 +1304,18 @@ religion_decisions = {
 			}
 		}
 		allow = {
-			is_religion_reformed = yes
+			OR = {
+				AND = {	
+					has_dlc = "El Dorado"
+					is_religion_reformed = yes
+				}
+				AND = {
+					NOT = {
+						has_dlc = "El Dorado"
+					}
+					technology_group = western
+				}
+			}
 			stability = 2
 			adm_power = 50
 		}
@@ -1328,7 +1344,18 @@ religion_decisions = {
 			}
 		}
 		allow = {
-			is_religion_reformed = yes
+			OR = {
+				AND = {	
+					has_dlc = "El Dorado"
+					is_religion_reformed = yes
+				}
+				AND = {
+					NOT = {
+						has_dlc = "El Dorado"
+					}
+					technology_group = western
+				}
+			}
 			stability = 2
 			adm_power = 50
 		}
@@ -1357,7 +1384,18 @@ religion_decisions = {
 			}
 		}
 		allow = {
-			is_religion_reformed = yes
+			OR = {
+				AND = {	
+					has_dlc = "El Dorado"
+					is_religion_reformed = yes
+				}
+				AND = {
+					NOT = {
+						has_dlc = "El Dorado"
+					}
+					technology_group = western
+				}
+			}
 			stability = 2
 			adm_power = 50
 		}

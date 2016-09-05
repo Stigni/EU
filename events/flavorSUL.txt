@@ -36,7 +36,7 @@ province_event = {
 			add_core = SUL
 			cede_province = SUL
 		}
-		indonesia_region = {
+		moluccas_region = {
 			limit = { is_empty = no }
 			owner = { country_event = { id = flavor_sul.2 } }
 		}

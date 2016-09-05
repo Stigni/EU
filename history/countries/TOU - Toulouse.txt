@@ -1,8 +1,7 @@
 government = feudal_monarchy
 government_rank = 1
-primary_culture = aquitaine
+primary_culture = occitain
 add_accepted_culture = occitain
-add_accepted_culture = cosmopolitan_french
 religion = catholic
 technology_group = western
 capital = 196	# Toulouse

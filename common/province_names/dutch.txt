@@ -28,7 +28,7 @@
 1743 = "Kamerijk"
 1744 = "Antwerpen"
 1761 = "Palts"
-1865 = "Ghent"
+1865 = "Gent"
 1876 = "Frankfort"
 1878 = "Aken"
 1880 = "Sundgouw"

@@ -124,6 +124,7 @@ country_event = {
 		add_army_tradition = -0.5
 		add_navy_tradition = -0.5
 		add_manpower = -0.25
+		add_sailors = -0.25
 		add_country_modifier = {
 			name = the_reign_of_terror
 			duration = 3650

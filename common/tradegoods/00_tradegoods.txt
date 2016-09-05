@@ -213,6 +213,10 @@ wool = {
 			factor = 1.5
 			region = tibet_region
 		}
+		modifier = {
+			factor = 0.5
+			region = central_africa_region
+		}
 	}
 }
 
@@ -249,6 +253,8 @@ fish = {
 			factor = 0.65
 			OR = {
 				region = carribeans_region
+				region = malaya_region
+				region = moluccas_region
 				region = indonesia_region
 			}
 		}
@@ -300,7 +306,7 @@ fur = {
 				region = carribeans_region
 				region = south_africa_region
 				region = australia_region
-				region = new_zealand_region
+				region = central_africa_region
 			}
 		}
 		modifier = {
@@ -349,6 +355,9 @@ salt = {
 			NOT = { has_terrain = marsh }
 			NOT = { has_terrain = mountain }
 			NOT = { has_terrain = highlands }
+			NOT = { any_neighbor_province = { province_id = 1649 } } #Lake Victoria
+			NOT = { any_neighbor_province = { province_id = 1650 } } #Lake Tangyanika
+			NOT = { any_neighbor_province = { province_id = 1651 } } #Lake Malawi
 		}
 		modifier = {
 			factor = 2
@@ -362,10 +371,7 @@ salt = {
 		}
 		modifier = {
 			factor = 2.0
-			OR = {
-				region = chile_region
-				region = peru_region
-			}
+			region = peru_region
 		}
 		modifier = {
 			factor = 5.0
@@ -404,6 +410,13 @@ naval_supplies = {
 			OR = {
 				has_terrain = mountain
 				has_terrain = grasslands
+				region = central_africa_region
+			}
+		}
+		modifier = {
+			factor = 0.5
+			FROM = {
+				NOT = { num_of_ports = 1 }
 			}
 		}
 		modifier = {
@@ -447,7 +460,6 @@ copper = {
 				has_terrain = glacier
 				has_terrain = jungle
 				has_terrain = farmlands
-				has_terrain = forest
 				has_terrain = woods
 			}
 		}
@@ -456,13 +468,20 @@ copper = {
 			is_random_new_world = no
 			NOT = { area = minas_gerais_area }
 			NOT = { area = mato_grosso_area }
-			NOT = { region = siberia_region }
+			NOT = { region = west_siberia_region }
+			NOT = { region = east_siberia_region }
+			NOT = { region = central_africa_region }
 		}
 		modifier = {
 			factor = 0
 			is_random_new_world = yes
-			NOT = { region = siberia_region }
+			NOT = { region = west_siberia_region }
+			NOT = { region = east_siberia_region }
 			NOT = { continent = new_world }
+		}
+		modifier = {
+			factor = 0.7
+			region = central_africa_region
 		}
 		modifier = {
 			factor = 1.1
@@ -477,7 +496,8 @@ copper = {
 			OR = {
 				area = minas_gerais_area
 				area = mato_grosso_area
-				region = siberia_region
+				region = west_siberia_region
+				region = east_siberia_region
 			}
 		}
 	}
@@ -490,13 +510,15 @@ gold = {
 		modifier = {
 			factor = 0
 			is_random_new_world = no
-			NOT = { region = siberia_region }
+			NOT = { region = west_siberia_region }
+			NOT = { region = east_siberia_region }
 			NOT = { region = cascadia_region }
 			NOT = { region = australia_region }
 			NOT = { region = california_region }
 			NOT = { region = south_africa_region }
-			NOT = { region = chile_region }
+			NOT = { region = central_africa_region }
 			NOT = { region = peru_region }
+			NOT = { region = upper_peru_region }
 			NOT = { region = mexico_region }
 			NOT = { region = central_america_region }
 			NOT = { area = goias_area }
@@ -511,7 +533,8 @@ gold = {
 			factor = 0
 			is_random_new_world = yes
 			NOT = { continent = new_world }
-			NOT = { region = siberia_region }
+			NOT = { region = west_siberia_region }
+			NOT = { region = east_siberia_region }
 			NOT = { region = australia_region }
 			NOT = { region = south_africa_region }
 		}
@@ -545,7 +568,6 @@ gold = {
 		modifier = {
 			factor = 3.5
 			region = peru_region
-			NOT = { area = beni_area }
 		}
 		modifier = {
 			factor = 4.0
@@ -572,7 +594,7 @@ gold = {
 }
 
 iron = {
-	color = { 0.6 0.62 0.65 }
+	color = { 0.2 0.2 0.2 }
 	modifier = {
 		global_regiment_cost = -0.05
 	}
@@ -581,7 +603,9 @@ iron = {
 		modifier = {
 			factor = 0
 			normal_or_historical_nations = yes
-			NOT = { region = siberia_region }
+			NOT = { region = west_siberia_region }
+			NOT = { region = east_siberia_region }
+			NOT = { region = central_africa_region }
 			NOT = { province_id = 18 }
 		}
 		modifier = {
@@ -620,6 +644,10 @@ slaves = {
 			}
 		}
 		modifier = {
+			factor = 0
+			island = yes
+		}		
+		modifier = {
 			factor = 2.0
 			OR = {
 				region = horn_of_africa_region
@@ -630,10 +658,7 @@ slaves = {
 		}
 		modifier = {
 			factor = 0.5
-			OR = {
-				region = central_africa_region
-				region = south_africa_region
-			}
+			region = south_africa_region
 		}
 	}
 }
@@ -660,7 +685,8 @@ ivory = {
 		modifier = {
 			factor = 0
 			OR = {
-				region = siberia_region
+				region = west_siberia_region
+				region = east_siberia_region
 				region = manchuria_region
 				region = central_asia_region
 				region = south_africa_region
@@ -668,6 +694,8 @@ ivory = {
 		}
 		modifier = {
 			factor = 0.5
+			region = malaya_region
+			region = moluccas_region
 			region = indonesia_region
 		}
 		modifier = {
@@ -692,7 +720,9 @@ tea = {
 		modifier = {
 			factor = 0
 			is_random_new_world = no
-			NOT = { region = indonesia_region }
+			NOT = {	region = malaya_region }
+			NOT = {	region = moluccas_region }
+			NOT = {	region = indonesia_region }
 			NOT = { region = indo_china_region }
 			NOT = { region = south_china_region }
 			NOT = { region = xinan_region }
@@ -771,7 +801,9 @@ chinaware = {
 		factor = 15
 		modifier = {
 			factor = 0
-			NOT = { region = indonesia_region }
+			NOT = {	region = malaya_region }
+			NOT = {	region = moluccas_region }
+			NOT = {	region = indonesia_region }
 			NOT = { region = south_china_region }
 			NOT = { region = japan_region }
 		}
@@ -785,13 +817,15 @@ chinaware = {
 spices = {
 	color = { 0.4 0.65 0.38 }
 	modifier = {
-		spy_offence = 0.10
+		spy_offence = 0.2
 	}
 	chance = {
 		factor = 25
 		modifier = {
 			factor = 0
-			NOT = { region = indonesia_region }
+			NOT = {	region = malaya_region }
+			NOT = {	region = moluccas_region }
+			NOT = {	region = indonesia_region }
 			NOT = { region = deccan_region }
 			NOT = { region = bengal_region }
 			NOT = { region = coromandel_region }
@@ -808,7 +842,9 @@ spices = {
 		}
 		modifier = {
 			factor = 1.25
+			region = malaya_region
 			region = indonesia_region
+			region = moluccas_region
 		}
 	}
 }
@@ -826,7 +862,9 @@ coffee = {
 			factor = 0
 			is_random_new_world = no
 			NOT = { area = southern_ethiopia_area }
+			NOT = {	region = malaya_region }
 			NOT = { region = indonesia_region }
+			NOT = { region = moluccas_region }
 			NOT = { region = la_plata_region }
 			NOT = { region = peru_region }
 			NOT = { region = brazil_region }
@@ -1119,7 +1157,8 @@ dyes = {
 		modifier = {
 			factor = 0
 			is_random_new_world =  no
-			NOT = { region = west_africa_region }
+			NOT = { region = niger_region }
+			NOT = { region = guinea_region }
 			NOT = { region = kongo_region }
 			NOT = { region = central_america_region }
 			NOT = { region = mexico_region }
@@ -1148,6 +1187,8 @@ tropical_wood = {
 		}
 		modifier = {
 			factor = 0.5
+			region = malaya_region
+			region = moluccas_region
 			region = indonesia_region
 		}
 	}

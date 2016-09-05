@@ -4,7 +4,7 @@ owner = YAO
 controller = YAO
 add_core = YAO
 culture = bilala #bagirmi
-religion = animism
+religion = shamanism #Fetishism
 capital = "Massenya"
 is_city = yes
 base_manpower = 1
@@ -12,7 +12,11 @@ trade_goods = ivory
 hre = no
 base_tax = 3 
 base_production = 3
+
+
+
 discovered_by = sub_saharan
+
 
 1573.1.1 = { owner = KBO controller = KBO add_core = KBO } #Mai Katakarmabe restores Borno authority over Baguirmi
 1580.1.1 = { religion = sunni } #rulers of Baguirmi declare Islam state religion

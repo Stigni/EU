@@ -1,6 +1,7 @@
 government = tribal_kingdom
 government_rank = 1
-technology_group = sub_saharan
+technology_group = central_african
+unit_type = sub_saharan
 religion = shamanism
 primary_culture = kongolese
 capital = 1166	# Loango

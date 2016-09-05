@@ -116,7 +116,6 @@ country_event = {
 				duration = 9000
 			}
 		}
-		capital_scope = { change_religion = protestant }
 		set_country_flag = "protestant_reformation" 
 	}
 }

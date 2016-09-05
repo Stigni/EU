@@ -3,7 +3,7 @@
 owner = KON
 controller = KON 
 culture = kongolese
-religion = shamanism
+religion = shamanism #Fetishism
 capital = "Lovata"
 trade_goods = slaves
 hre = no
@@ -13,10 +13,15 @@ base_manpower = 1
 estate = estate_nobles
 is_city = yes
 add_core = KON
+
+discovered_by = central_african
+discovered_by = sub_saharan
+
 discovered_by = KON
 discovered_by = NDO
 discovered_by = LOA
 discovered_by = sub_saharan
+
 
 1483.1.1 = { discovered_by = POR } # Diogo Cão
 1665.10.29 = {

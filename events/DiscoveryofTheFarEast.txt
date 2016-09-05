@@ -210,7 +210,7 @@ province_event = {
 	
 	trigger = {
 		religion = catholic
-		culture = japanese
+		culture_group = japanese_g
 		can_spawn_rebels = catholic_rebels
 		owner = {
 			religion = shinto

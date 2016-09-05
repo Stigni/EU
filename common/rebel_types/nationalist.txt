@@ -3,6 +3,8 @@
 ######################################################################
 nationalist_rebels = {
 
+	color = { 25 180 25 }
+
 	area = nation_rebel_tag 			# Stays within provinces of their rebel tag
 	government = any				# No special preference
 	defection = nation_rebel_tag			# If the country seeks independence, defection specifies what type of provinces it wants.

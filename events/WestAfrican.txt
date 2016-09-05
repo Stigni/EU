@@ -136,33 +136,37 @@ country_event = {
 		#}
 		if = {
 			limit = {
+				religious_unity = 0.75
 				NOT = { religious_unity = 1.0 }
 			}
 			add_stability = -1
 		}
 		if = {
 			limit = {
+				religious_unity = 0.5
 				NOT = { religious_unity = 0.75 }
 			}
-			add_stability = -1
+			add_stability = -2
 		}
 		if = {
 			limit = {
+				religious_unity = 0.25
 				NOT = { religious_unity = 0.5 }
 			}
-			add_stability = -1
+			add_stability = -3
 		}
 		if = {
 			limit = {
+				religious_unity = 0.1
 				NOT = { religious_unity = 0.25 }
 			}
-			add_stability = -1
+			add_stability = -4
 		}
 		if = {
 			limit = {
 				NOT = { religious_unity = 0.1 }
 			}
-			add_stability = -1
+			add_stability = -5
 		}
 	}
 }
@@ -407,7 +411,7 @@ province_event = {
 	trigger = {
 		has_dlc = "Art of War"
 		has_missionary = yes
-		religion = animism
+		religion = shamanism
 		owner = { religion_group = christian }
 	}
 
@@ -445,7 +449,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Art of War"
-		religion = animism
+		religion = shamanism
 		any_neighbor_country = {
 			religion = catholic
 		}
@@ -480,7 +484,7 @@ country_event = {
 				any_neighbor_province = {
 					owner = { religion = catholic }
 				}
-				religion = animism
+				religion = shamanism
 				NOT = { has_province_modifier = religious_center }
 			}
 			change_religion = catholic
@@ -498,7 +502,7 @@ province_event = {
 	trigger = {
 		has_dlc = "Art of War"
 		has_missionary = yes
-		religion = animism
+		religion = shamanism
 		owner = { religion_group = muslim }
 	}
 
@@ -536,7 +540,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Art of War"
-		religion = animism
+		religion = shamanism
 		any_neighbor_country = {
 			religion = sunni
 		}
@@ -571,7 +575,7 @@ country_event = {
 				any_neighbor_province = {
 					owner = { religion = sunni }
 				}
-				religion = animism
+				religion = shamanism
 				NOT = { has_province_modifier = religious_center }
 			}
 			change_religion = sunni
@@ -591,7 +595,7 @@ country_event = {
 		religion_group = muslim
 		NOT = { has_country_modifier = animist_syncretism }
 		num_of_religion = {
-			religion = animism
+			religion = shamanism
 			value = 0.3
 		}
 		any_owned_province = { religion = ROOT }
@@ -606,7 +610,7 @@ country_event = {
 	option = {
 		name = "west_african.13.a"
 		random_owned_province = {
-			limit = { religion = animism }
+			limit = { religion = shamanism }
 			spawn_rebels = {
 				type = religious_rebels
 				size = 2
@@ -685,7 +689,8 @@ country_event = {
 		has_dlc = "Art of War"
 		capital_scope = {
 			OR = {
-				region = west_africa_region
+				region = guinea_region
+				region = niger_region
 				region = south_africa_region
 				region = central_africa_region
 				region = kongo_region
@@ -810,7 +815,7 @@ country_event = {
 	# Accept slave trade agreement
 	option = {
 		name = "west_african.17.b"
-		add_prestige = -20
+		add_prestige = -10
 		every_owned_province = {
 			limit = { trade_goods = slaves }
 			add_province_modifier = {
@@ -1037,7 +1042,8 @@ province_event = {
 			NOT = { accepted_culture = ROOT }
 			capital_scope = {
 				OR = {
-					region = west_africa_region
+					region = guinea_region
+					region = niger_region
 					region = south_africa_region
 					region = central_africa_region
 					region = kongo_region
@@ -1223,7 +1229,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Art of War"
-		religion = animism
+		religion = shamanism
 		is_year = 1650
 		any_owned_province = {
 			NOT = { religion_group = pagan }

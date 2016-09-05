@@ -15,6 +15,10 @@ province_event = {
 		development = 25
 		is_overseas = no
 		is_core = owner
+		OR = {
+			NOT = { has_dlc = "The Cossacks" }
+			NOT = { has_estate = yes }
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -69,10 +73,8 @@ province_event = {
 		}
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
-		months = 400
+		months = 200
 		modifier = {
 			factor = 0.8
 			NOT = { development = 6 }
@@ -88,6 +90,7 @@ province_event = {
 		ai_chance = {
 			factor = 50
 		}
+		add_corruption = 0.5
 		custom_tooltip = "parlaments.2.a.tt"
 		add_province_modifier = {
 			name = "rotten_borough"
@@ -158,10 +161,8 @@ province_event = {
 		}
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
-		months = 400
+		months = 200
 		modifier = {
 			factor = 0.8
 			NOT = { development = 6 }
@@ -177,6 +178,7 @@ province_event = {
 		ai_chance = {
 			factor = 50
 		}
+		add_corruption = 0.5
 		add_province_modifier = {
 			name = "rotten_borough"
 			duration = -1
@@ -231,8 +233,6 @@ province_event = {
 		is_backing_current_issue = yes
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
 		months = 120
 		modifier = {
@@ -247,7 +247,7 @@ province_event = {
 	}
 	option = {
 		name = parlaments.4.b #Bribe the Landowner
-		owner = { add_years_of_income = -0.1 }
+		add_corruption = 0.5
 	}
 }
 
@@ -272,10 +272,8 @@ province_event = {
 		owner = { current_debate = charter_university }
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
-		months = 120
+		months = 80
 		modifier = {
 			factor = 0.5
 			owner = { NOT = { percentage_backing_issue = 0.1 } }
@@ -336,10 +334,8 @@ province_event = {
 		}
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
-		months = 120
+		months = 80
 		modifier = {
 			factor = 0.5
 			owner = { NOT = { percentage_backing_issue = 0.1 } }
@@ -407,10 +403,8 @@ province_event = {
 		}
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
-		months = 160
+		months = 80
 		modifier = {
 			factor = 0.5
 			owner = { NOT = { percentage_backing_issue = 0.1 } }
@@ -468,10 +462,8 @@ province_event = {
 		owner = { current_debate = imports_exports }
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
-		months = 160
+		months = 80
 		modifier = {
 			factor = 0.5
 			owner = { NOT = { percentage_backing_issue = 0.1 } }
@@ -526,10 +518,8 @@ province_event = {
 		}
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
-		months = 160
+		months = 80
 		modifier = {
 			factor = 0.5
 			owner = { NOT = { percentage_backing_issue = 0.1 } }
@@ -581,10 +571,8 @@ province_event = {
 		is_backing_current_issue = no
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
-		months = 180
+		months = 80
 		modifier = {
 			factor = 0.5
 			owner = { NOT = { percentage_backing_issue = 0.1 } }
@@ -639,10 +627,8 @@ province_event = {
 		is_backing_current_issue = no
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
-		months = 180
+		months = 80
 		modifier = {
 			factor = 0.5
 			owner = { NOT = { percentage_backing_issue = 0.1 } }
@@ -693,8 +679,6 @@ province_event = {
 		owner = { has_active_debate = yes }
 		is_backing_current_issue = yes
 	}
-	
-	is_mtth_scaled_to_size = 1
 	
 	mean_time_to_happen = {
 		months = 160
@@ -747,8 +731,6 @@ province_event = {
 		}
 		is_backing_current_issue = yes
 	}
-	
-	is_mtth_scaled_to_size = 1
 	
 	mean_time_to_happen = {
 		months = 180
@@ -858,7 +840,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 90
+		months = 45
 	}
 
 	option = {
@@ -888,10 +870,8 @@ province_event = {
 		}
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
-		months = 160
+		months = 140
 		modifier = {
 			factor = 1.5
 			owner = { NOT = { percentage_backing_issue = 0.1 } }
@@ -947,8 +927,6 @@ province_event = {
 		is_backing_current_issue = yes
 		owner = { current_debate = reduce_trade_regulations }
 	}
-	
-	is_mtth_scaled_to_size = 1
 	
 	mean_time_to_happen = {
 		months = 160
@@ -1017,8 +995,6 @@ province_event = {
 		}
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
 		months = 160
 		modifier = {
@@ -1083,8 +1059,6 @@ province_event = {
 		}
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
 		months = 160
 		modifier = {
@@ -1145,8 +1119,6 @@ province_event = {
 		}
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
 		months = 160
 		modifier = {
@@ -1202,10 +1174,8 @@ province_event = {
 		has_building = university
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
-		months = 160
+		months = 80
 		modifier = {
 			factor = 0.8
 			owner = {
@@ -1260,10 +1230,8 @@ province_event = {
 		owner = { current_debate = increase_taxes }
 	}
 	
-	is_mtth_scaled_to_size = 1
-	
 	mean_time_to_happen = {
-		months = 160
+		months = 140
 		modifier = {
 			factor = 0.5
 			is_looted = yes
@@ -1426,6 +1394,26 @@ country_event = {
 		}
 	}
 	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+					is_backing_current_issue = yes
+				}
+				set_province_flag = absentee_pm
+			}
+			random_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+					is_backing_current_issue = yes
+					NOT = { has_province_flag = absentee_pm }
+				}
+				set_province_flag = absentee_pm
+			}
+		}
+	}
+	
 	mean_time_to_happen = {
 		months = 400
 		modifier = {
@@ -1440,21 +1428,13 @@ country_event = {
 
 	option = {
 		name = parlaments.22.a #Fine the worst excesses
-		random_owned_province = {
+		every_owned_province = {
 			limit = {
-				has_seat_in_parliament = yes
-				is_backing_current_issue = yes
+				has_province_flag = absentee_pm
 			} #The Punished MP will not support the state.
 			back_current_issue = no
 			add_unrest = 4
-		}
-		random_owned_province = {
-			limit = {
-				has_seat_in_parliament = yes
-				is_backing_current_issue = yes
-			} #The Punished MP will not support the state.
-			back_current_issue = no
-			add_unrest = 4
+			clr_province_flag = absentee_pm
 		}
 		add_years_of_income = 0.05
 	}
@@ -1462,6 +1442,14 @@ country_event = {
 	option = {
 		name = parlaments.22.b #
 		add_prestige = -10
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_flag = absentee_pm
+				} #The Punished MP will not support the state.
+				clr_province_flag = absentee_pm
+			}
+		}
 	}
 }
 
@@ -1582,7 +1570,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 500
 		modifier = {
 			factor = 0.6
 			NOT = { government = english_monarchy }
@@ -1685,8 +1673,6 @@ province_event = {
 	title = parlaments.25.t
 	desc = parlaments.25.d
 	picture = PARLIAMENT_eventPicture
-
-	is_mtth_scaled_to_size = 1
 	
 	trigger = {
 		has_dlc = "Common Sense"
@@ -1720,7 +1706,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 460
+		months = 300
 	}
 
 	option = {
@@ -1766,8 +1752,6 @@ province_event = {
 	desc = parlaments.26.d
 	picture = PARLIAMENT_eventPicture
 	
-	is_mtth_scaled_to_size = 1
-	
 	trigger = {
 		has_dlc = "Common Sense"
 		has_seat_in_parliament = yes
@@ -1777,7 +1761,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 300
 	}
 
 	option = {
@@ -1794,8 +1778,6 @@ province_event = {
 	title = parlaments.27.t
 	desc = parlaments.27.d
 	picture = PARLIAMENT_eventPicture
-
-	is_mtth_scaled_to_size = 1
 	
 	trigger = {
 		has_dlc = "Common Sense"
@@ -1806,7 +1788,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 300
 	}
 
 	option = {
@@ -1824,8 +1806,6 @@ province_event = {
 	title = parlaments.28.t
 	desc = parlaments.28.d
 	picture = PARLIAMENT_eventPicture
-
-	is_mtth_scaled_to_size = 1
 	
 	trigger = {
 		has_dlc = "Common Sense"
@@ -1836,7 +1816,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 300
 	}
 
 	option = {

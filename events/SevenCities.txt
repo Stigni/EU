@@ -391,7 +391,6 @@ province_event = {
 		}
 		OR = {
 			region = peru_region
-			region = chile_region
 			region = la_plata_region
 			any_neighbor_province = {
 				region = peru_region
@@ -1869,9 +1868,11 @@ province_event = {
 		is_empty = yes
 		OR = {
 			region = peru_region
-			region = chile_region
 			area = tucuman_area
 			area = cuyo_area
+			area = southern_chile_area
+			area = northern_chile_area
+			area = central_chile_area
 		}
 		FROM = {
 			has_country_modifier = sce_search_sierradelaplata
@@ -1938,9 +1939,11 @@ province_event = {
 		is_empty = yes
 		OR = {
 			region = peru_region
-			region = chile_region
 			area = tucuman_area
 			area = cuyo_area
+			area = southern_chile_area
+			area = northern_chile_area
+			area = central_chile_area
 		}
 		FROM = {
 			has_country_modifier = sce_search_sierradelaplata
@@ -2015,7 +2018,9 @@ province_event = {
 		is_empty = yes
 		OR = {
 			region = peru_region
-			region = chile_region
+			area = southern_chile_area
+			area = northern_chile_area
+			area = central_chile_area
 			area = tucuman_area
 			area = cuyo_area
 		}
@@ -2840,7 +2845,8 @@ province_event = {
 	option = {
 		name = seven_cities_events.301.a
 		FROM = {
-			add_years_of_income = -0.25
+			add_years_of_income = -0.10
+			add_dip_power = 50
 			reverse_add_opinion = {
 				who = ROOT
 				modifier = respected_tribe
@@ -2869,20 +2875,7 @@ province_event = {
 	
 	trigger = {
 		has_dlc = "El Dorado"
-		is_empty = no
-		owner = {
-			OR = {
-				technology_group = sub_saharan
-				technology_group = north_american
-				technology_group = mesoamerican
-				technology_group = south_american
-				technology_group = andean
-			}
-			NOT = {
-				capital_scope = { continent = europe }
-			}
-			has_opinion = { who = FROM value = -50 }
-		}
+		is_empty = yes
 		OR = {
 			continent = new_world
 			continent = south_america
@@ -4335,5 +4328,292 @@ country_event = {
 				modifier = sce_interfering_intruder
 			}
 		}
+	}
+}
+
+country_event = {
+	id = seven_cities_events.1000
+	title = seven_cities_events.1000.t
+	desc = seven_cities_events.1000.d
+	picture = NOTHING_FOUND_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "El Dorado"
+		has_idea_group = exploration_ideas
+		#El Dorado:
+		OR = {
+			AND = {
+				south_america = {
+					type = all
+					has_discovered = ROOT
+				}
+				has_country_modifier = sce_search_eldorado
+				NOT = {
+					has_country_flag = sce_end_eldorado_flag
+				}
+			}
+			#Fountain of Youth
+			AND = {
+				south_america = {
+					type = all
+					has_discovered = ROOT
+				}
+				has_country_modifier = sce_search_fountainofyouth
+				NOT = {
+					has_country_flag = sce_end_fountainofyouth_flag
+				}
+			}
+			#Cibola
+			AND = {
+				new_world = {
+					type = all
+					has_discovered = ROOT
+				}
+				south_america = {
+					type = all
+					has_discovered = ROOT
+				}
+				mexico_region = {
+					type = all
+					has_discovered = ROOT
+				}
+				central_america_region = {
+					type = all
+					has_discovered = ROOT
+				}
+				has_country_modifier = sce_search_cibola
+				NOT = {
+					has_country_flag = sce_end_cibola_flag
+				}
+			}
+			#City of Caesars
+			AND = {
+				patagonia_area = {
+					type = all
+					has_discovered = ROOT
+				}
+				southern_pampas_area = {
+					type = all
+					has_discovered = ROOT
+				}
+				has_country_modifier = sce_search_cityofcaesars
+				NOT = {
+					has_country_flag = sce_end_cityofcaesars_flag
+				}
+			}
+			#Sierra de La Plata
+			AND = {
+				peru_region = {
+					type = all
+					has_discovered = ROOT
+				}
+
+				tucuman_area = {
+					type = all
+					has_discovered = ROOT
+				}
+				southern_chile_area = {
+					type = all
+					has_discovered = ROOT
+				}
+				northern_chile_area = {
+					type = all
+					has_discovered = ROOT
+				}
+				central_chile_area = {
+					type = all
+					has_discovered = ROOT
+				}
+				cuyo_area = {
+					type = all
+					has_discovered = ROOT
+				}
+				has_country_modifier = sce_search_sierradelaplata
+				NOT = {
+					has_country_flag = sce_end_sierradelaplata_flag
+				}
+			}
+			#Norumbega
+			AND = {
+				canada_region = {
+					type = all
+					has_discovered = ROOT
+				}
+				james_bay_area = {
+					type = all
+					has_discovered = ROOT
+				}
+				hudson_bay_area = {
+					type = all
+					has_discovered = ROOT
+				}
+				northeast_america_region = {
+					type = all
+					has_discovered = ROOT
+				}
+				southeast_america_region = {
+					type = all
+					has_discovered = ROOT
+				}
+				has_country_modifier = sce_search_norumbega
+				NOT = {
+					has_country_flag = sce_end_norumbega_flag
+				}
+			}
+			#Saguenay
+			AND = {
+				canada_region = {
+					type = all
+					has_discovered = ROOT
+				}
+				james_bay_area = {
+					type = all
+					has_discovered = ROOT
+				}
+				hudson_bay_area = {
+					type = all
+					has_discovered = ROOT
+				}
+				northeast_america_region = {
+					type = all
+					has_discovered = ROOT
+				}
+				southeast_america_region = {
+					type = all
+					has_discovered = ROOT
+				}
+				has_country_modifier = sce_search_saguenay
+				NOT = {
+					has_country_flag = sce_end_saguenay_flag
+				}
+			}
+			#Quivira
+			AND = {
+				canada_region = {
+					type = all
+					has_discovered = ROOT
+				}
+				james_bay_area = {
+					type = all
+					has_discovered = ROOT
+				}
+				hudson_bay_area = {
+					type = all
+					has_discovered = ROOT
+				}
+				northeast_america_region = {
+					type = all
+					has_discovered = ROOT
+				}
+				southeast_america_region = {
+					type = all
+					has_discovered = ROOT
+				}
+				has_country_modifier = sce_search_quivira
+				NOT = {
+					has_country_flag = sce_end_quivira_flag
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			#El Dorado
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+				clr_country_flag = sce_eventchain_flag
+				
+				set_country_flag = sce_end_eldorado_flag
+				remove_country_modifier = sce_search_eldorado
+			#Fountain of Youth
+				set_country_flag = sce_end_fountainofyouth_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_fountainofyouth
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			#Cibola
+				set_country_flag = sce_end_cibola_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_cibola
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			#City of Caesars
+				set_country_flag = sce_end_cityofcaesars_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_cityofcaesars
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			#Sierra de la Plata
+				set_country_flag = sce_end_sierradelaplata_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_sierradelaplata
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			#Norumbega
+				set_country_flag = sce_end_norumbega_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_norumbega
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			#Saguenay
+				set_country_flag = sce_end_saguenay_flag
+				clr_country_flag = sce_eventchain_flag
+				remove_country_modifier = sce_search_saguenay
+				
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+			#Quivira
+				clr_country_flag = sce_action01_flag
+				clr_country_flag = sce_action02_flag
+				clr_country_flag = sce_action03_flag
+				clr_country_flag = sce_action04_flag
+				clr_country_flag = sce_action05_flag
+				clr_country_flag = sce_action06_flag
+				clr_country_flag = sce_eventchain_flag
+				
+				set_country_flag = sce_end_quivira_flag
+				remove_country_modifier = sce_search_quivira
+		}
+	}
+	
+	option = {
+		name = seven_cities_events.1000.a
+		add_prestige = -10
 	}
 }

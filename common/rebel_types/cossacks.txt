@@ -4,6 +4,8 @@
 ######################################################################
 cossack_rebels = {
 	
+	color = { 190 55 55 }
+	
 	area = nation 					# Stays within the nation
 	government = republic		# Don't care about gov type				
 	defection = none				# Will not defect

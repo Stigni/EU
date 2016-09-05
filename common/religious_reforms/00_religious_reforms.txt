@@ -30,6 +30,7 @@ nahuatl_reforms = {
 	}
 	nahuatl_reform_4 = {
 		colonists = 1
+		auto_explore_adjacent_to_colony = yes
 	}
 	nahuatl_reform_5 = {
 		stability_cost_modifier = -0.2
@@ -58,9 +59,11 @@ inti_reforms = {
 	}
 	inti_reform_2 = {
 		colonists = 1
+		auto_explore_adjacent_to_colony = yes
 	}
 	inti_reform_3 = {
 		legitimacy = 0.5
+		devotion = 0.5
 	}
 	inti_reform_4 = {
 		land_morale = 0.1
@@ -98,6 +101,7 @@ mesoamerican_reforms = {
 	}
 	mesoamerican_reform_4 = {
 		colonists = 1
+		auto_explore_adjacent_to_colony = yes
 	}
 	mesoamerican_reform_5 = {
 		core_creation = -0.2

@@ -26,6 +26,10 @@ estate_burghers_disaster = {
 		}
 	}
 	
+	down_progress = {
+		factor = 1
+	}
+	
 	progress = {
 		modifier = {
 			factor = 1

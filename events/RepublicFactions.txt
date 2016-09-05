@@ -49,6 +49,7 @@ province_event = {
 			every_owned_province = {
 				limit = {
 					trade_goods = ROOT
+					area = ROOT
 				}
 				add_province_modifier = {
 					name = "free_trade_of_goods"
@@ -72,6 +73,7 @@ province_event = {
 			every_owned_province = {
 				limit = {
 					trade_goods = ROOT
+					area = ROOT
 				}
 				add_province_modifier = {
 					name = "strong_guild"
@@ -655,11 +657,18 @@ country_event = {
 			faction = mr_guilds
 			influence = -15
 		}
+		if = {
+			limit = {
+				corruption = 0.01
+			}
+			add_corruption = -0.5
+		}
 	}
 
 	option = {
 		name = "republic_factions.12.b"
-		add_years_of_income = 0.3
+		add_years_of_income = 0.5
+		add_corruption = 0.5
 		add_republican_tradition = -0.05
 	}
 }
@@ -691,12 +700,15 @@ country_event = {
 			faction = mr_traders
 			influence = -15
 		}
+		add_corruption = -0.5
+
 	}
 
 	option = {
 		name = "republic_factions.13.b"
-		add_years_of_income = 0.3
-		add_republican_tradition = -0.05
+		add_years_of_income = 0.5
+		add_republican_tradition = -0.03
+		add_corruption = 0.5
 	}
 }
 
@@ -727,11 +739,18 @@ country_event = {
 			faction = mr_aristocrats
 			influence = -15
 		}
+		if = {
+			limit = {
+				corruption = 1
+			}
+			add_corruption = -2
+		}
 	}
 
 	option = {
 		name = "republic_factions.14.b"
 		add_years_of_income = 0.6
+		add_corruption = 2
 		add_republican_tradition = -0.1
 	}
 }

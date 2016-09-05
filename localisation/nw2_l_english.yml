@@ -1,5 +1,5 @@
 ﻿l_english:
- ALLOW_ATTACH: "Attach to\nthis unit?"
+ ALLOW_ATTACH: "Friendlies\ncan attach"
  DIPLO_ALLY_IN_WAR: "Ally in war: "
  DIPLO_COALITION_WAR: "Coalition War: "
  DIPLO_ALLIANCE_WINNING_WAR: "Alliance war score: "
@@ -306,7 +306,7 @@
  trade_company_events.EVTTOOLTIP8: "[Root.TradeCompany.GetName] will expect the province to be conquered by [Root.Owner.GetName] within a few years."
  trade_company_events.EVTOPTB8: "Ignore their demand"
  trade_company_events.EVTNAME9: "Trade Company Unhappy"
- trade_company_events.EVTDESC9: "[Root.TradeCompany.GetName] is extremely unhappy with the lack of support from [Root.Owner.GetName]. Several years ago they asked us to help expand their territory into neighboring provinces. We even claimed one of them. But so far there has been no progress in this matter."
+ trade_company_events.EVTDESC9: "[Root.TradeCompany.GetName] is extremely unhappy with the lack of support from [Root.Owner.GetName]. Several years ago they asked us to help expand their borders into neighboring provinces. We even claimed one of them. But so far there has been no progress in this matter."
  trade_company_events.EVTOPTA9: "Renew the promise"
  trade_company_events.EVTOPTB9: "Support them in other ways"
  trade_company_events.EVTOPTC9: "Ignore their concerns"

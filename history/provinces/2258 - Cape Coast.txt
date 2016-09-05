@@ -2,7 +2,7 @@
 #Represents forts in western Ghana, from Axim to Elmina, mostly Elmina
 
 culture = aka
-religion = animism
+religion = shamanism #Fetishism
 capital = "Axim"
 trade_goods = unknown
 hre = no
@@ -12,6 +12,12 @@ native_size = 40
 native_ferocity = 4
 native_hostileness = 9
 base_manpower = 1
+
+
+
+discovered_by = sub_saharan
+
+1471.1.1 = { discovered_by = POR } # Frenão do Pó
 
 1482.1.19 = {
 	owner = POR

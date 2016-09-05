@@ -12,6 +12,12 @@ native_size = 20
 native_ferocity = 2
 native_hostileness = 5
 
+
+
+
+1493.11.14 = { discovered_by = CAS } # Christopher Columbus, never showed much interest for the island
+1516.1.23 = { discovered_by = SPA }
+
 1635.1.1 = {
 	owner = FRA
 	controller = FRA

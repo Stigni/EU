@@ -369,6 +369,7 @@ establish_spanish_carribean = {
 	success = {
 		carribeans_region = {
 			owned_by = ROOT
+			colonysize = 400
 		}
 	}
 	chance = {
@@ -499,6 +500,7 @@ establish_spanish_main = {
 	success = {
 		colombia_region = {
 			owned_by = ROOT
+			colonysize = 400
 		}
 	}
 	chance = {
@@ -626,6 +628,7 @@ establish_spanish_la_plata = {
 	success = {
 		la_plata_region = {
 			owned_by = ROOT
+			colonysize = 400
 		}
 	}
 	chance = {

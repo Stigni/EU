@@ -1,7 +1,7 @@
 #1181 - Natal
 
-culture = bantu #Nguni
-religion = animism
+culture = nguni
+religion = shamanism #Fetishism
 capital = "Magulu"
 native_size = 50
 trade_goods = unknown

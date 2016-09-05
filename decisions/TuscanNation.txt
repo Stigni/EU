@@ -10,6 +10,7 @@ country_decisions = {
 			}
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
+			NOT = { tag = ROM }
 			NOT = { tag = ITA }
 			NOT = { tag = TUS }
 			OR = {
@@ -58,7 +59,10 @@ country_decisions = {
 				duration = 7300
 			}
 			if = {
-				limit = { NOT = { has_idea_group = TUS_ideas } }
+				limit = {
+					NOT = { has_idea_group = TUS_ideas }
+					is_playing_custom_nation = no
+				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			if = {
@@ -68,6 +72,9 @@ country_decisions = {
 				change_government = feudal_monarchy
 			}
 			add_prestige = 25
+			hidden_effect = {
+				country_event = { id = flavor_tus.2 days = 50 random = 20 }
+			}
 		}
 		ai_will_do = {
 			factor = 1

@@ -1,7 +1,7 @@
 #1163 - Calabar
 
-culture = bantu
-religion = animism
+culture = sawabantu
+religion = shamanism #Fetishism
 capital = "Calabar"
 trade_goods = slaves
 hre = no
@@ -11,6 +11,9 @@ base_manpower = 1
 native_size = 50
 native_ferocity = 4
 native_hostileness = 9 
+
+
+
 discovered_by = sub_saharan
 discovered_by = KON
 discovered_by = NDO
@@ -18,3 +21,4 @@ discovered_by = LOA
 
 1472.1.1 = { discovered_by = POR } # Frenão do Pó
 1804.1.1 = { discovered_by = SOK }
+

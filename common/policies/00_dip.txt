@@ -43,8 +43,7 @@ the_recruiting_act = {
 		full_idea_group = economic_ideas
 	}
 	
-	naval_maintenance_modifier = -0.1
-	global_ship_recruit_speed = -0.05
+	global_sailors_modifier = 0.1
 	
 	ai_will_do = {
 		factor = 1
@@ -467,7 +466,7 @@ trade_connection_policy = {
 	}
 
 	global_foreign_trade_power = 0.15
-	justify_trade_conflict_time = -0.20
+	justify_trade_conflict_cost = -0.20
 
 	ai_will_do = {
 		factor = 1

@@ -3,6 +3,8 @@
 ######################################################################
 ronin_rebels = {
 
+	color = { 240 120 5 }
+	
 	area = nation 					# Stays within the nation
 	government = feudal_monarchy			
 	defection = none				# Does not defect
@@ -34,7 +36,7 @@ ronin_rebels = {
 		modifier = {
 			factor = 0
 			owner = {
-				NOT = { primary_culture = japanese  }
+				NOT = { culture_group = japanese_g  }
 			}
 		}
 		modifier = {

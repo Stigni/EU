@@ -3,6 +3,8 @@
 ######################################################################
 revolutionary_rebels = {
 
+	color = { 50 85 210 }
+
 	area = nation 					# Stays within the nation
 	government = republic			
 	defection = none				# Does not defect

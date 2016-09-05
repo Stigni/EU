@@ -966,7 +966,7 @@ province_event = {
 				shinto = 2
 			}
 		}
-		culture = japanese
+		culture_group = japanese_g
 		NOT = { has_province_modifier = religious_zeal_at_conv }
 	}
 
@@ -1073,7 +1073,7 @@ province_event = {
 	trigger = {
 		is_capital = no
 		religion = confucianism
-		culture = japanese
+		culture_group = japanese_g
 		owner = {
 			religion = confucianism
 			shinto = 2
@@ -2467,6 +2467,16 @@ country_event = {
 			}
 		}
 		add_stability = 2 #One is for placating the aristocrats and clergy the other to counteract the -1 stab on monarch death
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+		}
 		swap_free_idea_group = yes		#keep progress
 		hidden_effect = {
 			every_neighbor_country = {
@@ -2482,11 +2492,42 @@ country_event = {
 				factor = 0
 				NOT = { num_of_cities = 2 }
 			}
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_nobles
+				NOT = {
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 40
+					}
+				}
+			}
 		}
 		add_stability = -1
 		add_country_modifier = {
 			name = "indian_religious_tensions" 
 			duration = 1825
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church #These will be Hindu clerics if not switching.
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
 		}
 		if = {
 			limit = {

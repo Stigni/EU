@@ -13,6 +13,14 @@ capital = "Krems"
 is_city = yes
 hre = yes
 
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+
 1545.1.1 = { base_manpower = 3 }
 1650.1.1 = { base_manpower = 4 }
 1700.1.1 = { base_manpower = 6 }

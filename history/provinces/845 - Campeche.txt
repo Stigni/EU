@@ -13,6 +13,12 @@ base_manpower = 1
 is_city = yes
 add_core = XIU
 
+
+
+discovered_by = mesoamerican
+
+1517.1.1 = { discovered_by = SPA }
+
 1542.1.23 = {
 	owner = SPA
 	controller = SPA

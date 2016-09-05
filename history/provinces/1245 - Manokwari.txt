@@ -11,6 +11,9 @@ base_manpower = 1
 native_size = 50
 native_ferocity = 4
 native_hostileness = 9
+
+
+
 discovered_by = MKS
 discovered_by = TER
 discovered_by = TID

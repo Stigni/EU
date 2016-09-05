@@ -13,11 +13,15 @@ base_production = 3
 is_city = yes
 add_core = YMN
 add_core = HSK
+
+
+
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA
 discovered_by = OIR
 discovered_by = QNG
+
 
 1468.1.1 = { owner = HSK controller = HSK }
 1488.1.1 = { remove_core = YMN}

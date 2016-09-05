@@ -4,6 +4,8 @@
 ######################################################################
 reactionary_rebels = {
 	
+	color = { 179 100 100 }
+	
 	area = nation 					# Stays within the nation
 	government = any				# Don't care about gov type				
 	defection = none				# Will not defect

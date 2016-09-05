@@ -1,17 +1,21 @@
 #1162 - Wukari
 
-culture = bantu #Jukun 
-religion = animism
+culture = jukun
+religion = shamanism #Fetishism
 capital = "Wukari"
 trade_goods = unknown
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
+
+
+
 native_size = 60
 native_ferocity = 4
 native_hostileness = 9
 discovered_by = sub_saharan
+
 
 1685.1.1 = { unrest = 3 } #Displaced Jukun fleeing invasion from Borno disturb region
 1690.1.1 = { unrest = 0 }

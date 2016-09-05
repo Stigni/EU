@@ -1,7 +1,7 @@
 #1167 - Luanda
 
-culture = kongolese
-religion = shamanism
+culture = mbundu
+religion = shamanism #Fetishism
 capital = "Luanda"
 trade_goods = unknown
 hre = no
@@ -11,10 +11,15 @@ base_manpower = 1
 native_size = 50
 native_ferocity = 1
 native_hostileness = 3
+
+discovered_by = central_african
+discovered_by = sub_saharan
+
 discovered_by = KON
 discovered_by = NDO
 discovered_by = LOA
 discovered_by = sub_saharan
+
 
 1481.1.1 = { discovered_by = POR } # Bartolomeu Dias
 1575.1.1 = {
@@ -24,8 +29,12 @@ discovered_by = sub_saharan
 	is_city = yes
 	trade_goods = slaves
 } # Portuguese capture Luanda, aided by mercenaries from Ndongo and Kongo
+
+1627.1.1 = { capital = "São Paulo de Luanda" } # Became the administrative center
+
 1580.1.1 = { discovered_by = ENG } # Francis Drake
 1627.1.1 = { capital = "São Paulo de Luanda" } # Became the administrative center
+
 1640.1.1 = {
 	owner = NED
 	controller = NED

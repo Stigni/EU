@@ -80,7 +80,7 @@ leader_names = {
 	Botta-Adorno Buontalenti Buti Butteri "di Campofregoso"
 	Cercignani Chiastavelli Chigi Corsini Cybo-Malaspina
 	"di Farnese" Gori Grimaldi "Grimaldi di Busca" Lanzi Lessi
-	Ludovisi Malaspina Mancinetti "di Medici" "del Moro" Nasini
+	Ludovisi Malaspina Mancinetti "de' Medici" "del Moro" Nasini
 	Orsini Piccolomini Pico Pierallini Pieroni Piombante Pontelli
 	Rivani Rospigliosi "del Rosso" Savaranola Soderini Tempesta
 	Terreni Tonelli Traballesi Ulivelli Vasari Zucchi

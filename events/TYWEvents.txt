@@ -149,6 +149,7 @@ province_event = {
 		has_dlc = "Art of War"
 		has_port = yes
 		is_blockaded = yes
+		controlled_by = owner
 	}
 
 	mean_time_to_happen = {
@@ -211,7 +212,44 @@ country_event = {
 	trigger = {
 		has_dlc = "Art of War"
 		has_regency = yes
-		has_advisor = yes
+		OR = {
+			AND = {
+				OR = {
+					advisor = philosopher
+					advisor = natural_scientist
+					advisor = artist
+					advisor = treasurer
+					advisor = theologian
+					advisor = master_of_mint
+					advisor = inquisitor
+				}
+				NOT = { heir_adm = 6 }
+			}
+			AND = {
+				OR = {
+					advisor = statesman
+					advisor = naval_reformer
+					advisor = trader
+					advisor = spymaster
+					advisor = colonial_governor
+					advisor = diplomat
+					advisor = navigator
+				}
+				NOT = { heir_dip = 6 }
+			}
+			AND = {
+				OR = {
+				advisor = army_reformer
+				advisor = army_organiser
+				advisor = commandant
+				advisor = quartermaster
+				advisor = recruitmaster
+				advisor = fortification_expert
+				advisor = grand_captain
+				}
+				NOT = { heir_mil = 6 }
+			}
+		}
 		has_heir = yes
 		NOT = { 
 			OR = {
@@ -759,6 +797,7 @@ country_event = {
 			war_with = ROOT
 			any_owned_province = {
 				sieged_by = ROOT
+				fort_level = 1
 				OR = {
 					has_winter = normal_winter
 					has_winter = severe_winter

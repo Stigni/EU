@@ -48,6 +48,7 @@ country_decisions = {
 						is_part_of_hre = yes
 					}
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -154,7 +155,10 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			add_prestige = 25
-			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1

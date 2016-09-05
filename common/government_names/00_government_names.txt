@@ -16,6 +16,30 @@ ottoman_marches = {
 	
 	trigger = {
 		is_march = yes
+		religion_group = muslim
+		overlord = {
+			primary_culture = turkish
+		}
+	}
+}
+
+ottoman_vassals = {
+	rank = {
+		1 = BEYLIK
+	}
+
+	ruler_male = {
+		1 = BEY
+	}
+
+	ruler_female = {
+		1 = HATUN
+	}
+
+	trigger = {
+		government = monarchy
+		religion_group = muslim
+		NOT = { is_march = yes }
 		overlord = {
 			primary_culture = turkish
 		}
@@ -44,6 +68,31 @@ march_christian_monarchy = {
 	trigger = {
 		government = monarchy
 		religion_group = christian
+		NOT = { religion = orthodox }
+		NOT = { religion = coptic }
+		is_march = yes
+	}
+}
+
+march_eastern_christian_monarchy = {
+	rank = {
+		1 = PRINCIPALITY
+	}
+	
+	ruler_male = {
+		1 = PRINCE
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+	}
+
+	trigger = {
+		government = monarchy
+		OR = {
+			religion = coptic
+			religion = orthodox
+		}
 		is_march = yes
 	}
 }
@@ -454,7 +503,7 @@ finnish_monarchy = {
 	}
 
 	ruler_female = {
-		1 = GRAND_DUCHY
+		1 = GRAND_DUCHESS
 		2 = QUEEN
 		3 = EMPRESS
 	}
@@ -668,7 +717,7 @@ arakanese_monarchy = { #Buddhist state that used Muslim titles.
 	}
 
 	ruler_female = {
-		1 = EMIR
+		1 = EMIRA
 		2 = SULTANA
 		3 = GREAT_SULTANA
 	}
@@ -776,8 +825,13 @@ pagan_egyptian_monarchy = {
 
 	trigger = {
 		government = monarchy
-		primary_culture = al_misr_arabic #Egyptian
-		religion = animism
+		OR = {
+			AND = {
+				primary_culture = al_misr_arabic #Egyptian
+				religion = animism
+			}
+			primary_culture = old_egyptian
+		}
 	}
 }
 
@@ -802,8 +856,15 @@ pagan_greek_monarchy = {
 
 	trigger = {
 		government = monarchy
-		primary_culture = greek
-		religion = animism
+		OR = {
+			AND = {
+				primary_culture = greek
+				religion = animism
+			}
+			primary_culture = athenian
+			primary_culture = spartan
+			primary_culture = atlantean
+		}
 	}
 }
 
@@ -828,8 +889,13 @@ pagan_roman_monarchy = {
 
 	trigger = {
 		government = monarchy
-		primary_culture = umbrian
-		religion = animism
+		OR = {
+			AND = {
+				primary_culture = umbrian
+				religion = animism
+			}
+			primary_culture = roman
+		}
 	}
 }
 
@@ -849,7 +915,7 @@ jurchen_monarchy = {
 	ruler_female = {
 		1 = GEGE
 		2 = KHATUN
-		3 = KHATUN
+		3 = GREAT_KHATUN
 	}
 
 	trigger = {
@@ -1069,6 +1135,234 @@ ethiopian_monarchies = {
 			primary_culture = sidamo
 			primary_culture = tigray
 		}
+	}
+}
+
+nkore_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = PRINCE
+		2 = MUGABE
+		3 = GREAT_MUGABE
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = MUGO
+		3 = GREAT_MUGO
+	}
+
+	trigger = {
+		government = monarchy
+		tag = NKO
+	}
+}
+
+bunyoro_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = PRINCE
+		2 = OMUKAMA
+		3 = GREAT_OMUKAMA
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = MUGO
+		3 = GREAT_MUGO
+	}
+
+	trigger = {
+		government = monarchy
+		tag = BNY
+	}
+}
+
+lunda_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = BALOPWE
+		2 = MULOPWE
+		3 = GREAT_MULOPWE
+	}
+
+	ruler_female = {
+		1 = BALOPWE_fem
+		2 = MULOPWE_fem
+		3 = GREAT_MULOPWE_fem
+	}
+
+	trigger = {
+		government = monarchy
+		OR = {
+			primary_culture = lunda
+			primary_culture = luba
+		}
+	}
+}
+
+mutapa_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = PRINCE
+		2 = MWENEMUTAPA
+		3 = GREAT_MWENEMUTAPA
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = MWENEMUTAPA_fem
+		3 = GREAT_MWENEMUTAPA_fem
+	}
+
+	trigger = {
+		government = monarchy
+		tag = ZIM
+	}
+}
+
+torwa_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = MAMBO
+		2 = GRAND_MAMBO
+		3 = GREAT_MAMBO
+	}
+
+	ruler_female = {
+		1 = MAMBO
+		2 = GRAND_MAMBO
+		3 = GREAT_MAMBO
+	}
+
+	trigger = {
+		government = monarchy
+		tag = RZW
+	}
+}
+
+rwanda_burundi_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = BAKUNGU
+		2 = MWAMI
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = UMUGABEKAZI
+		3 = EMPRESS
+	}
+
+	trigger = {
+		government = monarchy
+		primary_culture = rwandan
+	}
+}
+
+ganda_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = BAKUNGU
+		2 = KABAKA
+		3 = GREAT_KABAKA
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = NNABAGEREKA 
+		3 = GREAT_NNABAGEREKA
+	}
+
+	trigger = {
+		government = monarchy
+		primary_culture = ganda
+	}
+}
+
+antemoro_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = ANDRIANONI
+		2 = GRAND_ANDRIANONI
+		3 = GREAT_ANDRIANONI
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = QUEEN 
+		3 = EMPRESS
+	}
+
+	trigger = {
+		government = monarchy
+		tag = ANT
+	}
+}
+
+betsimisaraka_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = FILOHANY
+		2 = MPANJAKE_BE
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = QUEEN 
+		3 = EMPRESS
+	}
+
+	trigger = {
+		government = monarchy
+		tag = BTS
 	}
 }
 
@@ -1726,7 +2020,7 @@ muslim_republic = {
 	ruler_female = {
 		1 = EMIRA
 		2 = VIZIER
-		3 = GRANDVIZIER
+		3 = GRANDVIZIER_fem
 	}
 
 	trigger = {
@@ -1817,6 +2111,31 @@ jewish_theocracy = {
 
 	trigger = {
 		religion = jewish
+		government = theocracy
+	}
+}
+
+zoroastrian_theocracy = {
+	rank = {
+		1 = HOLY_PRINCIPALITY
+		2 = HOLY_STATE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = HERBAD
+		2 = MOBED
+		3 = MOABADAN_MOABAD
+	}
+
+	ruler_female = {
+		1 = HERBAD
+		2 = MOBEDYAR
+		3 = MOABADAN_MOABAD
+	}
+
+	trigger = {
+		religion = zoroastrian
 		government = theocracy
 	}
 }
@@ -1939,8 +2258,8 @@ confucian_theocracy = {
 	}
 
 	ruler_female = {
-		1 = ELDER
-		2 = HIGH_ELDER
+		1 = ELDER_fem
+		2 = HIGH_ELDER_fem
 		3 = DAUGHTER_OF_HEAVEN
 	}
 
@@ -2043,7 +2362,7 @@ sunni_theocracy = {
 	}
 
 	ruler_female = {
-		1 = SHEIKH
+		1 = SHEIKHA
 		2 = IMAM
 		3 = HIGH_IMAM
 	}

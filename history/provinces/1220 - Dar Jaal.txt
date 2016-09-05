@@ -1,7 +1,7 @@
 #1220 - Dar Ja'al
 
 culture = nubian 
-religion = animism
+religion = shamanism #Fetishism
 capital = "Bayuda"
 native_size = 50
 native_ferocity = 4
@@ -11,18 +11,11 @@ trade_goods = unknown
 hre = no
 base_tax = 1 
 base_production = 1
-discovered_by = ETH
-discovered_by = ADA
-discovered_by = NUB
-discovered_by = ZAN
-discovered_by = ZIM
-discovered_by = AJU
-discovered_by = MBA
-discovered_by = MDI
-discovered_by = MLI
-discovered_by = SFA
+
+discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman
+
 
 1444.1.1 = {
 	owner = MAK

@@ -1,7 +1,7 @@
 government = tribal_kingdom
 primary_culture = swahili
 religion = ibadi #Dominated by ibadi factions since 1408, province religion remains Sunni.
-technology_group = indian
+technology_group = east_african
 unit_type = sub_saharan
 capital = 2796	# Pate
 historical_rival = MBA

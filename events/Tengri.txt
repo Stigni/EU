@@ -15,7 +15,7 @@ country_event = {
 	id = tengri_events.1
 	title = tengri_events.1.t
 	desc = tengri_events.1.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	trigger = {
 		religion = tengri_pagan_reformed
@@ -147,7 +147,7 @@ country_event = {
 	id = tengri_events.2
 	title = tengri_events.2.t
 	desc = tengri_events.2.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	trigger = {
 		religion = tengri_pagan_reformed
@@ -190,7 +190,7 @@ country_event = {
 	id = tengri_events.3
 	title = tengri_events.3.t
 	desc = tengri_events.3.d
-	picture = RELIGION_eventPicture
+	picture = FAT_WARRIORS_eventPicture
 	
 	trigger = {
 		religion = tengri_pagan_reformed
@@ -224,7 +224,7 @@ country_event = {
 	id = tengri_events.4
 	title = tengri_events.4.t
 	desc = tengri_events.4.d
-	picture = RELIGION_eventPicture
+	picture = RELIGIOUS_MIGRANTS_eventPicture
 	
 	trigger = {
 		religion = tengri_pagan_reformed
@@ -270,7 +270,7 @@ country_event = {
 	id = tengri_events.5
 	title = tengri_events.5.t
 	desc = tengri_events.5.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -322,7 +322,7 @@ country_event = {
 	id = tengri_events.6
 	title = tengri_events.6.t
 	desc = tengri_events.6.d
-	picture = RELIGION_eventPicture
+	picture = RELIGIOUS_MIGRANTS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -373,7 +373,7 @@ province_event = {
 	id = tengri_events.7
 	title = tengri_events.7.t
 	desc = tengri_events.7.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	is_mtth_scaled_to_size = 1
 	
@@ -414,7 +414,7 @@ country_event = {
 	id = tengri_events.8
 	title = tengri_events.8.t
 	desc = tengri_events.8.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -436,15 +436,15 @@ country_event = {
 		modifier = {
 			factor = 0.7
 			num_of_religion = {
-			religion = secondary
-			value = 0.75
+				secondary = yes
+				value = 0.75
 			}
 		}
 		modifier = {
 			factor = 0.6
 			num_of_religion = {
-			religion = secondary
-			value = 0.9
+				secondary = yes
+				value = 0.9
 			}
 		}
 	}
@@ -477,7 +477,7 @@ country_event = {
 	id = tengri_events.9
 	title = tengri_events.9.t
 	desc = tengri_events.9.d
-	picture = RELIGION_eventPicture
+	picture = MIRACLE_MONK_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -510,7 +510,7 @@ country_event = {
 	id = tengri_events.10
 	title = tengri_events.10.t
 	desc = tengri_events.10.d
-	picture = RELIGION_eventPicture
+	picture = MIRACLE_MONK_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -560,7 +560,7 @@ country_event = {
 	id = tengri_events.11
 	title = tengri_events.11.t
 	desc = tengri_events.11.d
-	picture = RELIGION_eventPicture
+	picture = MIRACLE_MONK_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -620,7 +620,7 @@ country_event = {
 	id = tengri_events.12
 	title = tengri_events.12.t
 	desc = tengri_events.12.d
-	picture = RELIGION_eventPicture
+	picture = CHURCH_ESTATE_2_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -695,7 +695,7 @@ country_event = {
 	id = tengri_events.13
 	title = tengri_events.13.t
 	desc = tengri_events.13.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -727,7 +727,7 @@ country_event = {
 	id = tengri_events.14
 	title = tengri_events.14.t
 	desc = tengri_events.14.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -764,7 +764,7 @@ country_event = {
 	id = tengri_events.15
 	title = tengri_events.15.t
 	desc = tengri_events.15.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -845,7 +845,7 @@ country_event = {
 	id = tengri_events.16
 	title = tengri_events.16.t
 	desc = tengri_events.16.d
-	picture = RELIGION_eventPicture
+	picture = MIRACLE_MONK_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -915,7 +915,7 @@ country_event = {
 	id = tengri_events.17
 	title = tengri_events.17.t
 	desc = tengri_events.17.d
-	picture = RELIGION_eventPicture
+	picture = MIRACLE_MONK_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -955,7 +955,7 @@ country_event = {
 	id = tengri_events.18
 	title = tengri_events.18.t
 	desc = tengri_events.18.d
-	picture = RELIGION_eventPicture
+	picture = MIRACLE_MONK_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1052,7 +1052,7 @@ country_event = {
 	id = tengri_events.19
 	title = tengri_events.19.t
 	desc = tengri_events.19.d
-	picture = RELIGION_eventPicture
+	picture = RELIGIOUS_MIGRANTS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1148,7 +1148,7 @@ country_event = {
 	id = tengri_events.20
 	title = tengri_events.20.t
 	desc = tengri_events.20.d
-	picture = RELIGION_eventPicture
+	picture = MIRACLE_MONK_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1212,7 +1212,7 @@ country_event = {
 	id = tengri_events.21
 	title = tengri_events.21.t
 	desc = tengri_events.21.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1258,7 +1258,7 @@ province_event = {
 	id = tengri_events.22
 	title = tengri_events.22.t
 	desc = tengri_events.22.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1299,7 +1299,7 @@ province_event = {
 	id = tengri_events.23
 	title = tengri_events.23.t
 	desc = tengri_events.23.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	is_mtth_scaled_to_size = 1
 	
@@ -1332,7 +1332,7 @@ country_event = {
 	id = tengri_events.24
 	title = tengri_events.24.t
 	desc = tengri_events.24.d
-	picture = RELIGION_eventPicture
+	picture = RELIGIOUS_MIGRANTS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1361,7 +1361,7 @@ country_event = {
 	id = tengri_events.25
 	title = tengri_events.25.t
 	desc = tengri_events.25.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1427,7 +1427,7 @@ country_event = {
 	id = tengri_events.26
 	title = tengri_events.26.t
 	desc = tengri_events.26.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1466,7 +1466,7 @@ country_event = {
 	id = tengri_events.27
 	title = tengri_events.27.t
 	desc = tengri_events.27.d
-	picture = RELIGION_eventPicture
+	picture = RELIGIOUS_MIGRANTS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1520,7 +1520,7 @@ country_event = {
 	id = tengri_events.30
 	title = tengri_events.30.t
 	desc = tengri_events.30.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1563,7 +1563,7 @@ country_event = {
 	id = tengri_events.31
 	title = tengri_events.31.t
 	desc = tengri_events.31.d
-	picture = RELIGION_eventPicture
+	picture = FAT_WARRIORS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1604,7 +1604,7 @@ country_event = {
 	id = tengri_events.32
 	title = tengri_events.32.t
 	desc = tengri_events.32.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1640,7 +1640,7 @@ country_event = {
 	id = tengri_events.33
 	title = tengri_events.33.t
 	desc = tengri_events.33.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1681,7 +1681,7 @@ country_event = {
 	id = tengri_events.34
 	title = tengri_events.34.t
 	desc = tengri_events.34.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1727,7 +1727,7 @@ country_event = {
 	id = tengri_events.35
 	title = tengri_events.35.t
 	desc = tengri_events.35.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1773,7 +1773,7 @@ country_event = {
 	id = tengri_events.36
 	title = tengri_events.36.t
 	desc = tengri_events.36.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1804,7 +1804,7 @@ country_event = {
 	id = tengri_events.37
 	title = tengri_events.37.t
 	desc = tengri_events.37.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1844,7 +1844,7 @@ country_event = {
 	id = tengri_events.38
 	title = tengri_events.38.t
 	desc = tengri_events.38.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1889,7 +1889,7 @@ country_event = {
 	id = tengri_events.39
 	title = tengri_events.39.t
 	desc = tengri_events.39.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1938,7 +1938,7 @@ country_event = {
 	id = tengri_events.40
 	title = tengri_events.40.t
 	desc = tengri_events.40.d
-	picture = RELIGION_eventPicture
+	picture = RELIGIOUS_MIGRANTS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -2028,7 +2028,7 @@ province_event = {
 	id = tengri_events.41
 	title = tengri_events.41.t
 	desc = tengri_events.41.d
-	picture = RELIGION_eventPicture
+	picture = RELIGIOUS_MIGRANTS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -2063,7 +2063,7 @@ province_event = {
 	id = tengri_events.42
 	title = tengri_events.42.t
 	desc = tengri_events.42.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -2093,7 +2093,7 @@ country_event = {
 	id = tengri_events.43
 	title = tengri_events.43.t
 	desc = tengri_events.43.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -2137,7 +2137,7 @@ country_event = {
 	id = tengri_events.44
 	title = tengri_events.44.t
 	desc = tengri_events.44.d
-	picture = RELIGION_eventPicture
+	picture = MIRACLE_MONK_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -2187,7 +2187,7 @@ country_event = {
 	id = tengri_events.45
 	title = tengri_events.45.t
 	desc = tengri_events.45.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -2247,7 +2247,7 @@ country_event = {
 	id = tengri_events.46
 	title = tengri_events.46.t
 	desc = tengri_events.46.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -2290,7 +2290,7 @@ country_event = {
 	id = tengri_events.47
 	title = tengri_events.47.t
 	desc = tengri_events.47.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -2317,7 +2317,7 @@ province_event = {
 	id = tengri_events.48
 	title = tengri_events.48.t
 	desc = tengri_events.48.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	is_mtth_scaled_to_size = 1
 	
@@ -2351,7 +2351,7 @@ country_event = {
 	id = tengri_events.49
 	title = tengri_events.49.t
 	desc = tengri_events.49.d
-	picture = RELIGION_eventPicture
+	picture = RELIGIOUS_MIGRANTS_eventPicture
 	
 	
 	trigger = {
@@ -2390,7 +2390,7 @@ country_event = {
 	id = tengri_events.50
 	title = tengri_events.50.t
 	desc = tengri_events.50.d
-	picture = RELIGION_eventPicture
+	picture = RELIGIOUS_MIGRANTS_eventPicture
 	
 	
 	trigger = {
@@ -2431,7 +2431,7 @@ country_event = {
 	id = tengri_events.51
 	title = tengri_events.51.t
 	desc = tengri_events.51.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	
 	trigger = {
@@ -2460,7 +2460,7 @@ country_event = {
 	id = tengri_events.52
 	title = tengri_events.52.t
 	desc = tengri_events.52.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	
 	trigger = {
@@ -2505,7 +2505,7 @@ country_event = {
 	id = tengri_events.53
 	title = tengri_events.53.t
 	desc = tengri_events.53.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	
 	trigger = {
@@ -2555,7 +2555,7 @@ country_event = {
 	id = tengri_events.54
 	title = tengri_events.54.t
 	desc = tengri_events.54.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	
 	trigger = {
@@ -2586,7 +2586,7 @@ province_event = {
 	id = tengri_events.55
 	title = tengri_events.55.t
 	desc = tengri_events.55.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	
 	trigger = {
@@ -2621,7 +2621,7 @@ country_event = {
 	id = tengri_events.56
 	title = tengri_events.56.t
 	desc = tengri_events.56.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	
 	trigger = {
@@ -2652,7 +2652,7 @@ country_event = {
 	id = tengri_events.57
 	title = tengri_events.57.t
 	desc = tengri_events.57.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	
 	trigger = {
@@ -2679,7 +2679,7 @@ country_event = {
 	id = tengri_events.58
 	title = tengri_events.58.t
 	desc = tengri_events.58.d
-	picture = RELIGION_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	
 	trigger = {
@@ -2710,7 +2710,7 @@ province_event = {
 	id = tengri_events.59
 	title = tengri_events.59.t
 	desc = tengri_events.59.d
-	picture = RELIGION_eventPicture
+	picture = RELIGIOUS_MIGRANTS_eventPicture
 	
 	
 	trigger = {
@@ -2748,7 +2748,7 @@ country_event = {
 	id = tengri_events.60
 	title = tengri_events.60.t
 	desc = tengri_events.60.d
-	picture = RELIGION_eventPicture
+	picture = RELIGIOUS_MIGRANTS_eventPicture
 	
 	
 	trigger = {
@@ -2778,7 +2778,7 @@ country_event = {
 	id = tengri_events.61
 	title = tengri_events.61.t
 	desc = tengri_events.61.d
-	picture = RELIGION_eventPicture
+	picture = MIRACLE_MONK_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -2814,7 +2814,7 @@ country_event = {
 	id = tengri_events.62
 	title = tengri_events.62.t
 	desc = tengri_events.62.d
-	picture = RELIGION_eventPicture
+	picture = RELIGIOUS_MIGRANTS_eventPicture
 	
 	
 	trigger = {
@@ -2843,7 +2843,7 @@ country_event = {
 	id = tengri_events.63
 	title = tengri_events.63.t
 	desc = tengri_events.63.d
-	picture = RELIGION_eventPicture
+	picture = ANGRY_SHAMANS_eventPicture
 	
 	
 	trigger = {

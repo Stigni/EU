@@ -12,6 +12,11 @@ native_size = 5
 native_ferocity = 1
 native_hostileness = 4
 
+
+
+discovered_by = north_american
+
+
 1650.1.1 = {
 	owner = HUR
 	controller = HUR
@@ -25,6 +30,11 @@ native_hostileness = 4
 	add_core = IRO
 	culture = iroquois 
 } #Taken by Iroquois in Beaver Wars.
+
+
+
+1679.1.1 = { discovered_by = FRA }
+1707.5.12 = { discovered_by = GBR }
 
 1710.1.1 = {
 	owner = IRO

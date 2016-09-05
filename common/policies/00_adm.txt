@@ -363,8 +363,8 @@ the_mercenary_registration_act = {
 		full_idea_group = quantity_ideas
 	}
 
-	possible_mercenaries = 0.125
-	mercenary_cost = -0.15
+	possible_mercenaries = 0.25
+	merc_maintenance_modifier = -0.25
 	
 	ai_will_do = {
 		factor = 1

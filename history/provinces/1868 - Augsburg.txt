@@ -12,6 +12,14 @@ capital = "Augsburg"
 is_city = yes
 hre = yes
 
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+
 1803.1.1 = {
 	add_core = BAV
 	owner = BAV

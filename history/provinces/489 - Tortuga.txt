@@ -12,6 +12,7 @@ native_size = 10
 native_ferocity = 1
 native_hostileness = 2
 
+1492.12.5 = { discovered_by = CAS } # Christopher Columbus's arrival
 1504.1.1 = { #First settlements on the island
 	owner = CAS
 	controller = CAS
@@ -21,13 +22,13 @@ native_hostileness = 2
 }
 1510.1.1 = { trade_goods = sugar }
 1516.1.23 = {
-	
+	discovered_by = SPA
 	owner = SPA
 	add_core = SPA
 	controller = SPA
 	remove_core = CAS
 } 
-
+1529.1.1 = {  }
 1697.1.1 = { # Spain tried to retake the area, ended in dissaster. Treaty of Ryswick
 	owner = FRA
 	controller = FRA

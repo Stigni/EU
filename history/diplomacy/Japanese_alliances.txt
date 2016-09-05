@@ -79,6 +79,13 @@ vassal = {
 
 vassal = {
 	first = JAP
+	second = RFR
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+
+vassal = {
+	first = JAP
 	second = HJO
 	start_date = 1444.11.11
 	end_date = 1821.1.1

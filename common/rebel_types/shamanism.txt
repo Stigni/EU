@@ -1,8 +1,10 @@
 
 ######################################################################
-# Shamanism rebels. Disgruntled fanatics.
+# Fetishist rebels. Disgruntled fanatics.
 ######################################################################
 shamanism_rebels = {
+	
+	color = { 230 175 175 }
 
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
@@ -102,6 +104,11 @@ shamanism_rebels = {
 	 	}
 		modifier = {
 			factor = 1.5
+			has_missionary = yes
+			religion = shamanism
+		}
+		modifier = {
+			factor = 1.5
 			unrest = 2
 		}
 		modifier = {
@@ -124,29 +131,32 @@ shamanism_rebels = {
 		}
  	}
 	siege_won_effect = {
-		if = {
-			limit = {
-				OR = {
-					religion = shamanism
-					is_reformation_center = yes
-					owner = { religion = shamanism }
+		custom_tooltip = religious_rebels_seige_effect_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						religion = shamanism
+						is_reformation_center = yes
+						owner = { religion = shamanism }
+					}
+				}
+				add_province_modifier = {
+					name = "religious_violence"
+					duration = 730
 				}
 			}
-			add_province_modifier = {
-				name = "religious_violence"
-				duration = 730
-			}
-		}
-		if = {
-			limit = {
-				NOT = { religion = shamanism }
-				is_reformation_center = no
-				NOT = { owner = { religion = shamanism } }
-			}
-			change_religion = shamanism
-			add_province_modifier = {
-				name = "forced_conversion"
-				duration = 730
+			if = {
+				limit = {
+					NOT = { religion = shamanism }
+					is_reformation_center = no
+					NOT = { owner = { religion = shamanism } }
+				}
+				change_religion = shamanism
+				add_province_modifier = {
+					name = "forced_conversion"
+					duration = 730
+				}
 			}
 		}
 	}

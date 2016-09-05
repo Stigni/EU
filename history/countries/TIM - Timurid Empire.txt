@@ -8,6 +8,8 @@ government = steppe_horde
 capital = 454 # Samarkand
 historical_rival = MAM
 historical_rival = TUR
+historical_rival = DLH
+historical_rival = MUL
 
 1370.1.1 = {
 	monarch = {

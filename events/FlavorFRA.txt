@@ -95,14 +95,14 @@ country_event = {
 					NOT = { exists = GBR }
 					NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
 				}
-				ENG = { country_event = { id = flavor_eng.9104 } }
+				ENG = { country_event = { id = flavor_eng.9104 days = 1 } }
 			}
 			if = {
 				limit = {
 					exists = GBR
 					NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
 				}
-				GBR = { country_event = { id = flavor_eng.9104 } }
+				GBR = { country_event = { id = flavor_eng.9104 days = 1 } }
 			}
 		}
 	}

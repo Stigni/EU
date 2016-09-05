@@ -1,4 +1,5 @@
 ﻿l_english:
+ in_same_trade_league: "In Same Trade League"
  rejected_alliance: "Rejected Alliance"
  selfish_ally: "Was not given occupied cores and claims in the peace"
  opinion_enforced_religious_unity: "Enforced Religious Unity"
@@ -150,3 +151,9 @@
  share_advanced_neighbor: "Share Advanced Neighbor"
  razed_province: "Razed our provinces"
  pirated_us: "Pirated us"
+ opinion_emperor_tus_refused: "Refused to Yield to the Emperor"
+ opinion_papal_tus_refused: "Refused to Yield to the Emperor"
+ opinion_emperor_tus_yielded: "Yielded to the Emperor"
+ opinion_papal_tus_yielded: "Yielded to the Emperor"
+ opinion_welcomed_fernandes: "Welcomed Fernandes"
+ opinion_killed_fernandes: "Killed Fernandes"

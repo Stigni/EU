@@ -13,12 +13,19 @@ base_production = 3
 base_manpower = 1
 add_core = QTO
 
+
+
+discovered_by = south_american
+discovered_by = andean
+
+
 1487.1.1 = {
 	owner = INC
 	controller = INC
 	add_core = INC
 	religion = inti
 }
+1533.1.1 = { discovered_by = SPA } # Sebastián de Benalcázar
 1535.1.1 = {
 	owner = SPA
 	controller = SPA

@@ -18,7 +18,7 @@ l_english:
  merchants_ignored: "Merchants' Concerns Ignored"
  desc_merchants_ignored: "Merchants are angered about the refusal to declare a Trade Protection war over the privateers attacking them."
  privateers.1.t: "Local Traders Demand Aid"
- privateers.1.d: "Merchants and captains of trade vessels in [Root.GetName] have sent a representative to the government, describing their home as increasingly lawless territory, where piracy runs rampant and ships and ports are routinely raided by privateers. They argue that the government has neglected them and request funding to build defenses against the growing threats. If this request is not granted, many feel like they have already lost too much and will take their business elsewhere."
+ privateers.1.d: "Merchants and captains of trade vessels in [Root.GetName] have sent a representative to the government, describing their home as increasingly lawless land, where piracy runs rampant and ships and ports are routinely raided by privateers. They argue that the government has neglected them and request funding to build defenses against the growing threats. If this request is not granted, many feel like they have already lost too much and will take their business elsewhere."
  privateers.1.a: "Send them whatever they need."
  privateers.1.b: "They have enough money to fund those defenses themselves."
  privateers.2.t: "Invalid Letter of Marque?"

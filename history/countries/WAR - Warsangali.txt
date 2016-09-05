@@ -1,6 +1,6 @@
 government = iqta
 government_rank = 1
-technology_group = muslim
+technology_group = east_african
 unit_type = sub_saharan
 religion = sunni
 primary_culture = somali

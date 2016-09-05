@@ -4,7 +4,15 @@ fortification_tax = {
 	category = 1
 	
 	allow = {
-		always = yes
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				has_building = fort_15th
+				has_building = fort_16th
+				has_building = fort_17th
+				has_building = fort_18th
+			}
+		}
 	}
 	
 	effect = {

@@ -16,6 +16,14 @@ is_city = yes
 estate = estate_church
  # Santiago de Compostela pilgrimage
 
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+
 1467.1.1 = { unrest = 4 } # Second war of the "irmandiños"
 1470.1.1 = { unrest = 0 } # End of the Second war of the "irmandiños"
 1475.6.2 = { controller = POR }

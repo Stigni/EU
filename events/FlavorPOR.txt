@@ -27,6 +27,7 @@ country_event = {
 	option = {		# Every man make his own fortune
 		name = "flavor_por.EVTOPTA3266"
 		ai_chance = { factor = 75 }
+		add_corruption = 1
 		add_country_modifier = {
 			name = colonial_policy
 			duration = -1
@@ -35,9 +36,22 @@ country_event = {
 	option = {		# Demand less corruption
 		name = "flavor_por.EVTOPTB3266"
 		ai_chance = { factor = 25 }
-		add_country_modifier = {
-			name = less_colonial_corruption
-			duration = -1
+		if = {
+			limit = {
+				corruption = 0.01
+			}
+			add_corruption = -1
+		}
+		if = {
+			limit = {
+				NOT = {
+					corruption = 1
+				}
+			}
+			add_country_modifier = {
+				name = less_colonial_corruption
+				duration = -1
+			}
 		}
 	}
 }
@@ -613,6 +627,7 @@ country_event = {
 	trigger = {
 		tag = POR
 		exploration_ideas = 2
+		NOT = { has_global_flag = columbus_happened }
 		is_year = 1470
 		OR = {
 			NOT = {
@@ -636,27 +651,57 @@ country_event = {
 	option = {		# Reject his proposal
 		name = "flavor_por.EVTOPTA1"
 		ai_chance = { factor = 75 }
-		hidden_effect = {
-			if = {
-				limit = { exists = SPA }
-				SPA = {
-					country_event = { id = flavor_spa.1 days = 10 }
+		set_country_flag = turned_down_columbus
+		if = {
+			limit = {
+				exists = SPA
+				SPA = { has_idea = quest_for_the_new_world }
+			}
+			SPA = {
+				country_event = { id = flavor_spa.1 days = 10 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { exists = SPA }
+				exists = CAS
+				CAS = { has_idea = quest_for_the_new_world }
+			}
+			CAS = {
+				country_event = { id = flavor_spa.1 days = 10 }
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						NOT = { exists = SPA }
+						NOT = { exists = CAS }
+					}
+					AND = {
+						CAS = { NOT = { has_idea = quest_for_the_new_world } }
+						SPA = { NOT = { has_idea = quest_for_the_new_world } }
+					}
+				}
+				any_known_country = {
+					has_idea = quest_for_the_new_world
+					religion = catholic
 				}
 			}
-			if = {
+			random_known_country = {
 				limit = {
-					NOT = { exists = SPA }
-					exists = CAS
+					NOT = { has_country_flag = turned_down_columbus }
+					religion = catholic
+					has_idea = quest_for_the_new_world
 				}
-				CAS = {
-					country_event = { id = flavor_spa.1 days = 10 }
-				}
+				country_event = { id = flavor_spa.1 }
 			}
 		}
 	}
 	option = {		# Hire Columbus
 		name = "flavor_por.EVTOPTB1"
 		ai_chance = { factor = 25 }
+		set_global_flag = columbus_happened
 		add_years_of_income = -0.10
 		define_explorer = {
 			name = "Cristóbal Colón"
@@ -685,7 +730,7 @@ country_event = {
 			country_or_vassal_holds = ROOT
 		}
 		OR = {
-			west_africa_region = {
+			guinea_region = {
 				owned_by = ROOT
 			}
 			south_africa_region = {
@@ -802,6 +847,8 @@ country_event = {
 				region = deccan_region
 				region = coromandel_region
 				region = west_india_region
+				region = malaya_region
+				region = moluccas_region
 				region = indonesia_region
 				region = oceanea_region
 			}
@@ -813,6 +860,8 @@ country_event = {
 					region = deccan_region
 					region = coromandel_region
 					region = west_india_region
+					region = malaya_region
+					region = moluccas_region
 					region = indonesia_region
 					region = oceanea_region
 				}

@@ -134,6 +134,9 @@ colonize_the_northern_islands = {
 	}
 	success = {
 		owns = 1032
+		1032 = {
+			colonysize = 400
+		}
 	}
 	chance = {
 		factor = 1000
@@ -332,6 +335,7 @@ jap_colonize_taiwan = {
 	success = {
 		taiwan_area = {
 			owned_by = ROOT
+			colonysize = 400
 		}
 	}
 	chance = {

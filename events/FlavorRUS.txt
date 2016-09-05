@@ -1235,7 +1235,10 @@ country_event = {
 			exists = QNG
 		}
 		any_owned_province = {
-			region = siberia_region
+			OR = {
+				region = west_siberia_region
+				region = east_siberia_region
+			}
 		}
 		OR = {
 			MNG = {
@@ -1327,7 +1330,10 @@ country_event = {
 		}
 		every_province = {
 			limit = {
-				region = siberia_region
+				OR = {
+					region = west_siberia_region
+					region = east_siberia_region
+				}
 				NOT = { owned_by = ROOT }
 			}
 			add_claim = ROOT
@@ -1335,7 +1341,10 @@ country_event = {
 		every_country = {
 			limit = {
 				any_owned_province = {
-					region = siberia_region
+					OR = {
+						region = west_siberia_region
+						region = east_siberia_region
+					}
 				}
 			}
 			add_opinion = {
@@ -1359,7 +1368,10 @@ country_event = {
 		}
 		every_province = {
 			limit = {
-				region = siberia_region
+				OR = {
+					region = west_siberia_region
+					region = east_siberia_region
+				}
 				NOT = { owned_by = ROOT }
 			}
 			add_claim = ROOT
@@ -1367,7 +1379,10 @@ country_event = {
 		every_country = {
 			limit = {
 				any_owned_province = {
-					region = siberia_region
+					OR = {
+						region = west_siberia_region
+						region = east_siberia_region
+					}
 				}
 			}
 			add_opinion = {

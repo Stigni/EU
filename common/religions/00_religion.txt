@@ -12,7 +12,7 @@ christian = {
 	# Emblem texture: game/gfx/interface/client_state_symbols_large.dds
 	# Can be overridden per religion.
 	flags_with_emblem_percentage = 33 # default == 0
-	flag_emblem_index_range = { 1 18 }
+	flag_emblem_index_range = { 1 57 }
 
 	catholic = {
 		color = { 0.8 0.8 0 }
@@ -272,9 +272,30 @@ christian = {
 				not = { province_id = 118 }
 				is_in_capital_area = yes
 				is_reformation_center = no
-				development = 10
+				is_island = no
+				OR = {
+					has_province_flag = start_of_protestant_reformation
+					development = 10
+				}
+				NOT = {
+					any_neighbor_province = {
+						is_reformation_center = yes
+					}
+				}
+				NOT = {
+					any_province = {
+						area = PREV
+						is_reformation_center = yes
+						religion = protestant
+					}
+				}
 				NOT = { has_climate = arctic }
 				NOT = { has_climate = arid }
+				NOT = { has_terrain = coastline }
+				NOT = { has_terrain = coastal_desert }
+				NOT = { has_terrain = steppe }
+				NOT = { has_terrain = desert }
+				NOT = { has_terrain = glacier }
 				NOT = { has_climate = tropical }
 			}
 		}
@@ -293,6 +314,15 @@ christian = {
 			if = {
 				limit = {
 					has_country_flag = reformation_money
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = protestant
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
 				}
 				hidden_effect = {
 					random_owned_province = {
@@ -305,9 +335,27 @@ christian = {
 							is_in_capital_area = yes
 							is_reformation_center = no
 							development = 10
+							is_island = no
+							NOT = {
+								any_neighbor_province = {
+									is_reformation_center = yes
+								}
+							}
+							NOT = {
+								any_province = {
+									area = PREV
+									is_reformation_center = yes
+									religion = protestant
+								}
+							}
 							not = { province_id = 118 }
 							NOT = { has_climate = arctic }
 							NOT = { has_climate = arid }
+							NOT = { has_terrain = coastline }
+							NOT = { has_terrain = coastal_desert }
+							NOT = { has_terrain = steppe }
+							NOT = { has_terrain = desert }
+							NOT = { has_terrain = glacier }
 							NOT = { has_climate = tropical }
 						}
 						change_religion = protestant
@@ -315,10 +363,19 @@ christian = {
 					}
 				}
 				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
-			}	
+			}
 			if = {
 				limit = {
 					NOT = { has_country_flag = reformation_money }
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = protestant
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
 				}
 				add_years_of_income = 1.0
 				hidden_effect = {
@@ -333,8 +390,26 @@ christian = {
 							is_reformation_center = no
 							not = { province_id = 118 }
 							development = 10
+							is_island = no
+							NOT = {
+								any_neighbor_province = {
+									is_reformation_center = yes
+								}
+							}
+							NOT = {
+								any_province = {
+									area = PREV
+									religion = protestant
+									is_reformation_center = yes
+								}
+							}
 							NOT = { has_climate = arctic }
 							NOT = { has_climate = arid }
+							NOT = { has_terrain = coastline }
+							NOT = { has_terrain = coastal_desert }
+							NOT = { has_terrain = steppe }
+							NOT = { has_terrain = desert }
+							NOT = { has_terrain = glacier }
 							NOT = { has_climate = tropical }
 						}
 						change_religion = protestant
@@ -398,9 +473,30 @@ christian = {
 				not = { province_id = 118 }
 				is_in_capital_area = yes
 				is_reformation_center = no
-				development = 10
+				OR = {
+					has_province_flag = start_of_reformed_reformation
+					development = 10
+				}
+				is_island = no
+				NOT = {
+					any_neighbor_province = {
+						is_reformation_center = yes
+					}
+				}
+				NOT = {
+					any_province = {
+						area = PREV
+						religion = reformed
+						is_reformation_center = yes
+					}
+				}
 				NOT = { has_climate = arctic }
 				NOT = { has_climate = arid }
+				NOT = { has_terrain = coastline }
+				NOT = { has_terrain = coastal_desert }
+				NOT = { has_terrain = steppe }
+				NOT = { has_terrain = desert }
+				NOT = { has_terrain = glacier }
 				NOT = { has_climate = tropical }
 			}
 		}
@@ -419,6 +515,15 @@ christian = {
 			if = {
 				limit = {
 					has_country_flag = reformation_money
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = reformed
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
 				}
 				hidden_effect = {
 					random_owned_province = {
@@ -431,9 +536,27 @@ christian = {
 							not = { province_id = 118 }
 							is_in_capital_area = yes
 							is_reformation_center = no
+							is_island = no
 							development = 10
+							NOT = {
+								any_neighbor_province = {
+									is_reformation_center = yes
+								}
+							}
+							NOT = {
+								any_province = {
+									area = PREV
+									religion = reformed
+									is_reformation_center = yes
+								}
+							}
 							NOT = { has_climate = arctic }
 							NOT = { has_climate = arid }
+							NOT = { has_terrain = coastline }
+							NOT = { has_terrain = coastal_desert }
+							NOT = { has_terrain = steppe }
+							NOT = { has_terrain = desert }
+							NOT = { has_terrain = glacier }
 							NOT = { has_climate = tropical }
 						}
 						change_religion = reformed
@@ -441,10 +564,19 @@ christian = {
 					}
 				}
 				custom_tooltip = CENTER_OF_REFORMATION_POSSIBLE
-			}	
+			}
 			if = {
 				limit = {
 					NOT = { has_country_flag = reformation_money }
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = reformed
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
 				}
 				add_years_of_income = 1.0
 				hidden_effect = {
@@ -457,10 +589,28 @@ christian = {
 							}
 							is_in_capital_area = yes
 							is_reformation_center = no
+							is_island = no
 							not = { province_id = 118 }
 							development = 10
+							NOT = {
+								any_neighbor_province = {
+									is_reformation_center = yes
+								}
+							}
+							NOT = {
+								any_province = {
+									area = PREV
+									religion = reformed
+									is_reformation_center = yes
+								}
+							}
 							NOT = { has_climate = arctic }
 							NOT = { has_climate = arid }
+							NOT = { has_terrain = coastline }
+							NOT = { has_terrain = coastal_desert }
+							NOT = { has_terrain = steppe }
+							NOT = { has_terrain = desert }
+							NOT = { has_terrain = glacier }
 							NOT = { has_climate = tropical }
 						}
 						change_religion = reformed
@@ -551,7 +701,7 @@ muslim = {
 	center_of_religion = 385 # Mecca
 
 	flags_with_emblem_percentage = 33
-	flag_emblem_index_range = { 19 24 }
+	flag_emblem_index_range = { 97 106 } #Including Star of David / Seal of Suleyman
 	
 	sunni = {
 		color = { 0 0.6 0 }
@@ -619,7 +769,7 @@ muslim = {
 eastern = {
 
 	flags_with_emblem_percentage = 33
-	flag_emblem_index_range = { 25 31 }
+	flag_emblem_index_range = { 58 80 }
 
 	buddhism = { #Theravada
 		color = { 0.8 0.3 0 }
@@ -688,7 +838,7 @@ eastern = {
 		}
 		country = {
 			tolerance_heretic = 2
-			tolerance_heathen = 1
+			idea_cost = -0.05
 		}
 		country_as_secondary = {
 			global_tax_modifier = 0.1
@@ -713,7 +863,7 @@ eastern = {
 		icon = 9
 		country = {
 			tolerance_heretic = 2
-			tolerance_heathen = 1
+			adm_tech_cost_modifier = -0.1
 		}
 		country_as_secondary = {
 			adm_tech_cost_modifier = -0.1
@@ -744,7 +894,7 @@ eastern = {
 dharmic = {
 
 	flags_with_emblem_percentage = 33
-	flag_emblem_index_range = { 25 31 }
+	flag_emblem_index_range = { 61 82 } #Many shared with Eastern
 
 	hinduism = {
 		color = { 0 0.8 0.8 }
@@ -815,7 +965,7 @@ dharmic = {
 pagan = {
 
 	flags_with_emblem_percentage = 10
-	flag_emblem_index_range = { 17 18 }
+	flag_emblem_index_range = { 83 96 }
 
 	animism = {
 		color = { 0.5 0.0 0.0 }
@@ -834,13 +984,12 @@ pagan = {
 		
 		heretic = { SNAKE_CLAN }
 	}
-	
-	shamanism = {
+	shamanism = { #Fetishism, tag kept to avoid breaking saves.
 		color = { 0.5 0.3 0.3 }
 		icon = 12
 		country = {
-			tolerance_own = 1
-			global_unrest = -1
+			tolerance_heathen = 2
+			diplomatic_reputation = 1
 		}
 		province = {
 			local_missionary_strength = 0.02
@@ -849,10 +998,8 @@ pagan = {
 			tolerance_own = 2
 			loot_amount = 0.25
 		}
-		
-		heretic = { GOAT_SKULL }	
+		heretic = { GOAT_SKULL }
 	}
-	
 	totemism = {
 		color = { 0.5 0.45 0.45 }
 		icon = 13
@@ -977,7 +1124,7 @@ pagan = {
 jewish_group = {
 
 	flags_with_emblem_percentage = 33
-	flag_emblem_index_range = { 28 28 }
+	flag_emblem_index_range = { 106 107 }
 
 	jewish = {
 		icon = 20
@@ -1003,6 +1150,7 @@ jewish_group = {
 
 
 zoroastrian_group = {
+	flag_emblem_index_range = { 110 110 }
 	zoroastrian = {
 		icon = 26
 		color = { 0.5 0.7 0.2 }

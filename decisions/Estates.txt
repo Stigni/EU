@@ -22,9 +22,19 @@ country_decisions = {
 			add_stability = -3
 			add_prestige = -25
 			if = {
-				limit = { government = noble_republic }
+				limit = { 
+					government = noble_republic 
+					NOT = { has_country_modifier = noble_power_elective_monarchy }
+				}
 				change_government = despotic_monarchy
 			}
+			if = {
+				limit = {
+					has_country_modifier = noble_power_elective_monarchy
+				}
+				remove_country_modifier = noble_power_elective_monarchy
+			}
+			
 			clr_country_flag = noble_estate_in_power
 		}
 		ai_will_do = {
@@ -52,7 +62,7 @@ country_decisions = {
 			add_stability = -3
 			add_piety = -0.5
 			add_karma = -25
-			add_patriarch_authority = -25
+			add_patriarch_authority = -0.25
 			add_fervor = -25
 			add_church_power = -100
 			clr_country_flag = church_estate_in_power

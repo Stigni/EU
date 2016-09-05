@@ -1,7 +1,7 @@
 # - Senqu
 
-culture = bantu
-religion = animism
+culture = khoisan
+religion = shamanism #Fetishism
 capital = "Senqu"
 trade_goods = unknown
 hre = no
@@ -11,4 +11,9 @@ base_manpower = 1
 native_size = 40
 native_ferocity = 2
 native_hostileness = 6
+
+
+
+
+1750.1.1 = { discovered_by = NED }
 

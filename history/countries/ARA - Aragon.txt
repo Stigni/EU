@@ -4,7 +4,7 @@ add_accepted_culture = catalan
 add_accepted_culture = sicilian
 religion = catholic
 technology_group = western
-historical_friend = POR
+historical_neutral = POR
 capital = 220 # Valencia
 
 1396.5.19 = {

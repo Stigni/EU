@@ -3,8 +3,8 @@
 owner = ZIM
 controller = ZIM
 add_core = ZIM
-culture = bantu #tonga
-religion = animism
+culture = shona
+religion = shamanism
 capital = "Madanda"
 is_city = yes
 base_manpower = 1
@@ -12,4 +12,16 @@ trade_goods = ivory
 hre = no
 base_tax = 1 
 base_production = 1
+discovered_by = east_african
+discovered_by = central_african
+
+
+
+1513.1.1 = { discovered_by = POR } #Travels of Antonio Fernandes in hinterland of Sofala
+1690.1.1 = {
+	owner = RZW
+	controller = RZW
+	add_core = RZW
+}
+1513.1.1 = { discovered_by = POR } #Travels of Antonio Fernandes in hinterland of Sofala
 

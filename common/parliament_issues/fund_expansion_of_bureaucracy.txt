@@ -12,6 +12,14 @@ fund_expansion_of_bureaucracy = {
 	modifier = {
 		advisor_cost = -0.1
 	}
+	
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			num_of_cities = 25
+		}
+	}
 
 	ai_will_do = {
 		factor = 1	

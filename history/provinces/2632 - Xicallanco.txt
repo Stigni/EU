@@ -18,6 +18,12 @@ native_size = 5
 native_ferocity = 1
 native_hostileness = 2
 
+
+
+discovered_by = mesoamerican
+
+1517.1.1 = { discovered_by = SPA }
+
 1529.1.1 = {
 	owner = SPA
 	controller = SPA

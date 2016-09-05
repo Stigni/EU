@@ -29,6 +29,7 @@ country_decisions = {
 				}
 			}
 			NOT = { tag = PAP }
+			NOT = { tag = ROM }
 			NOT = { tag = ITA }
 			OR = {
 				NOT = { tag = SPA }
@@ -51,6 +52,7 @@ country_decisions = {
 			NOT = { tag = MCH }
 			NOT = { tag = MNG }
 			NOT = { tag = PRU }
+			NOT = { tag = ROM }
 		}
 		allow =  {
 			dominant_culture = capital

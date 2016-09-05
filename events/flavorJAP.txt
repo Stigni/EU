@@ -19,7 +19,7 @@ country_event = {
 			AND = {
 				tag = JAP
 				any_known_country = {
-					primary_culture = japanese
+					culture_group = japanese_g
 					war_with = JAP
 				}
 			}
@@ -27,10 +27,10 @@ country_event = {
 				NOT = {
 					tag = JAP
 				}
-				primary_culture = japanese
+				culture_group = japanese_g
 				government = daimyo
 				any_known_country = {
-					primary_culture = japanese
+					culture_group = japanese_g
 					government = daimyo
 					war_with = ROOT
 				}
@@ -65,7 +65,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { stability = 0 }
-		primary_culture = japanese
+		culture_group = japanese_g
 		NOT = { tag = JAP }
 		NOT = {
 			has_country_modifier = ikko_ikkis_timer
@@ -90,7 +90,7 @@ country_event = {
 		name = "flavor_jap.EVTOPTA2"
 		random_owned_province = {
 			limit = {
-				culture = japanese
+				culture_group = japanese_g
 			}
 			spawn_rebels = {
 				type = ikko_ikki_rebels
@@ -121,7 +121,7 @@ country_event = {
 	trigger = {
 		stability = -3
 		NOT = { stability = 0 }
-		primary_culture = japanese
+		culture_group = japanese_g
 		any_neighbor_country = {
 			has_spawned_rebels = ikko_ikki_rebels
 		}
@@ -135,7 +135,7 @@ country_event = {
 		name = "flavor_jap.EVTOPTA3"
 		random_owned_province = {
 			limit = {
-				culture = japanese
+				culture_group = japanese_g
 			}
 			spawn_rebels = {
 				type = ikko_ikki_rebels
@@ -163,7 +163,7 @@ country_event = {
 	picture = NAVAL_MILITARY_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		is_year = 1523
 		NOT = { is_year = 1588 }
 		OR = {
@@ -274,7 +274,7 @@ country_event = {
 	picture = MERCHANTS_TALKING_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		has_country_modifier = sakoku_law
 		has_country_flag = sakoku_law
 		NOT = {
@@ -311,7 +311,7 @@ country_event = {
 	picture = MERCHANTS_TALKING_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		government = daimyo
 		has_country_modifier = sakoku_law
 		has_country_flag = sakoku_law
@@ -350,7 +350,7 @@ country_event = {
 	picture = MERCHANTS_TALKING_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		NOT = { tag = RYU }
 		has_global_flag = japan_has_encountered_the_west
 		NOT = { technology_group = western }
@@ -381,7 +381,7 @@ country_event = {
 	picture = ADVISOR_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		has_country_modifier = western_trade
 		had_country_flag = { flag = western_trade_flag days = 90 }
 		has_regency = no
@@ -428,11 +428,11 @@ country_event = {
 	picture = RELIGION_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		NOT = { religion = catholic }
 		is_year = 1543
 		any_owned_province = {
-			culture = japanese
+			culture_group = japanese_g
 			religion = catholic
 			can_spawn_rebels = catholic_rebels
 		}
@@ -448,7 +448,7 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					culture = japanese
+					culture_group = japanese_g
 					religion = catholic
 					can_spawn_rebels = catholic_rebels
 				}
@@ -456,7 +456,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					culture = japanese
+					culture_group = japanese_g
 					religion = catholic
 					can_spawn_rebels = catholic_rebels
 					NOT = { has_province_flag = jap_kirishitan_flag }
@@ -465,7 +465,7 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					culture = japanese
+					culture_group = japanese_g
 					religion = catholic
 					can_spawn_rebels = catholic_rebels
 					NOT = { has_province_flag = jap_kirishitan_flag }
@@ -512,14 +512,14 @@ country_event = {
 	picture = ASSASSINATION_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		OR = {
 			AND = {
 				tag = JAP
 				num_of_cities = 5
 				num_of_owned_provinces_with = {
 					value = 5
-					culture = japanese
+					culture_group = japanese_g
 				}
 			}
 			AND = {
@@ -530,7 +530,7 @@ country_event = {
 				num_of_cities = 5
 				num_of_owned_provinces_with = {
 					value = 5
-					culture = japanese
+					culture_group = japanese_g
 				}
 			}
 		}
@@ -556,7 +556,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_country_flag = jap_jokamachi_flag }
-		primary_culture = japanese
+		culture_group = japanese_g
 		MIL = 4
 		any_owned_province = {
 			fort_level = 1
@@ -599,7 +599,7 @@ country_event = {
 	picture = THEATRE_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		dip = 4
 		has_regency = no
 		NOT = {
@@ -632,7 +632,7 @@ country_event = {
 	picture = UNIVERSITY_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		is_year = 1600
 		has_regency = no
 		OR = {
@@ -652,7 +652,7 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					culture = japanese
+					culture_group = japanese_g
 				}
 				set_province_flag = jap_terakoya_flag1
 			}
@@ -721,7 +721,7 @@ country_event = {
 	picture = LAND_MILITARY_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		adm = 4
 		has_regency = no
 		NOT = {
@@ -759,7 +759,7 @@ country_event = {
 
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		OR = {
 			mercantilism = 0.3
 			trade_efficiency = 0.4
@@ -795,7 +795,7 @@ country_event = {
 	picture = MERCHANTS_TALKING_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		has_country_modifier = jap_za
 		had_country_flag = { flag = jap_za_flag days = 365 }
 	}
@@ -822,7 +822,7 @@ country_event = {
 	picture = THEATRE_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		OR = {
 			adm = 4
 			dip = 4
@@ -884,7 +884,7 @@ country_event = {
 	picture = IMPORTANT_STATUE_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		is_year = 1482
 		NOT = { is_year = 1505 }
 		any_owned_province = {
@@ -920,7 +920,7 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		is_year = 1600
 		OR = {
 			adm = 4
@@ -959,11 +959,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		tag = JAP
 		any_known_country = {
 			vassal_of = JAP
-			primary_culture = japanese
+			culture_group = japanese_g
 			NOT = {
 				has_country_modifier = jap_buke_shohatto
 			}
@@ -986,7 +986,7 @@ country_event = {
 		every_known_country = {
 			limit = {
 				vassal_of = JAP
-				primary_culture = japanese
+				culture_group = japanese_g
 			}
 			country_event = {
 				id = flavor_jap.21
@@ -1035,7 +1035,7 @@ country_event = {
 	picture = REFORM_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		tag = JAP
 		is_year = 1603
 		NOT = {
@@ -1069,11 +1069,11 @@ country_event = {
 	picture = REFORM_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		is_year = 1736
 		has_regency = no
 		any_province = {
-			culture = japanese
+			culture_group = japanese_g
 			religion = confucianism
 			owner = {
 				OR = {
@@ -1134,7 +1134,7 @@ country_event = {
 	picture = THEATRE_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		is_year = 1688
 		NOT = { is_year = 1708 }
 		NOT = {
@@ -1177,7 +1177,7 @@ country_event = {
 			government = daimyo
 		}
 		is_year = 1560
-		primary_culture = japanese
+		culture_group = japanese_g
 		NOT = { religion = confucianism }
 	}
 	
@@ -1190,7 +1190,7 @@ country_event = {
 		enable_religion = confucianism
 		random_owned_province = {
 			limit = {
-				culture = japanese
+				culture_group = japanese_g
 			}
 			change_religion = confucianism
 		}
@@ -1235,7 +1235,7 @@ country_event = {
 	picture = DEBATE_REPUBLICAN_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		is_year = 1600
 		NOT = {
 			has_country_modifier = jap_kokugaku
@@ -1264,7 +1264,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { tag = JAP }
-		primary_culture = japanese
+		culture_group = japanese_g
 		is_lesser_in_union = no
 		OR = {
 			vassal_of = JAP
@@ -1295,7 +1295,7 @@ country_event = {
 		add_legitimacy = -10
 		random_owned_province = {
 			limit = {
-				culture = japanese
+				culture_group = japanese_g
 			}
 			spawn_rebels = {
 				type = noble_rebels
@@ -1313,11 +1313,11 @@ country_event = {
 	picture = REFORM_eventPicture
 	
 	trigger = {
-		primary_culture = japanese
+		culture_group = japanese_g
 		tag = JAP
 		any_known_country = {
 			vassal_of = JAP
-			primary_culture = japanese
+			culture_group = japanese_g
 			NOT = {
 				has_country_modifier = jap_sankin_kotai
 			}
@@ -1334,7 +1334,7 @@ country_event = {
 		every_known_country = {
 			limit = {
 				vassal_of = JAP
-				primary_culture = japanese
+				culture_group = japanese_g
 			}
 			country_event = {
 				id = flavor_jap.30
@@ -1360,7 +1360,7 @@ country_event = {
 		every_known_country = {
 			limit = {
 				vassal_of = JAP
-				primary_culture = japanese
+				culture_group = japanese_g
 			}
 			add_opinion = {
 				who = ROOT
@@ -1402,7 +1402,7 @@ country_event = {
 			government = daimyo
 			tag = JAP
 		}
-		primary_culture = japanese
+		culture_group = japanese_g
 		OR = {
 			legitimacy = 75
 			prestige = 75
@@ -1451,7 +1451,7 @@ country_event = {
 	
 	trigger = {
 		government = daimyo
-		primary_culture = japanese
+		culture_group = japanese_g
 		has_country_modifier = sword_hunter
 		NOT = { has_country_flag = sword_hunter_flag }
 		OR = {
@@ -1471,7 +1471,7 @@ country_event = {
 		name = "flavor_jap.EVTOPTA32"
 		random_owned_province = {
 			limit = {
-				culture = japanese
+				culture_group = japanese_g
 			}
 			spawn_rebels = {
 				type = anti_tax_rebels
@@ -1490,7 +1490,7 @@ country_event = {
 	
 	trigger = {
 		government = daimyo
-		primary_culture = japanese
+		culture_group = japanese_g
 		has_country_modifier = sword_hunter
 		NOT = { has_country_flag = sword_hunter_flag }
 		OR = {
@@ -1520,7 +1520,7 @@ country_event = {
 	
 	trigger = {
 		government = daimyo
-		primary_culture = japanese
+		culture_group = japanese_g
 		OR = {
 			OR = {
 				legitimacy = 75
@@ -1560,7 +1560,7 @@ province_event = {
 	trigger = {
 		owner = {
 			is_religion_enabled = catholic
-			primary_culture = japanese
+			culture_group = japanese_g
 			OR = {
 				government = daimyo
 				tag = JAP
@@ -1601,7 +1601,7 @@ country_event = {
 	trigger = {
 		government = daimyo
 		has_country_modifier = ninjas
-		primary_culture = japanese
+		culture_group = japanese_g
 		any_neighbor_country = {
 			has_country_modifier = ninjas
 		}
@@ -1700,7 +1700,7 @@ country_event = {
 			government = daimyo
 			tag = JAP
 		}
-		primary_culture = japanese
+		culture_group = japanese_g
 		has_country_modifier = "way_of_tea" 
 		NOT = { has_country_flag = new_tea_province }
 	}
@@ -1738,7 +1738,7 @@ country_event = {
 	
 	trigger = {
 		has_country_modifier = way_of_tea
-		primary_culture = japanese
+		culture_group = japanese_g
 		government = daimyo
 		OR = {
 			NOT = {
@@ -1793,7 +1793,7 @@ country_event = {
 				government = monarchy
 			}
 		}
-		primary_culture = japanese
+		culture_group = japanese_g
 		has_heir = no
 	}
 	
@@ -1840,7 +1840,7 @@ country_event = {
 			government = daimyo
 			tag = JAP
 		}
-		primary_culture = japanese
+		culture_group = japanese_g
 		adm = 2
 		NOT = {
 			stability = 1
@@ -1890,7 +1890,7 @@ country_event = {
 			government = daimyo
 			tag = JAP
 		}
-		primary_culture = japanese
+		culture_group = japanese_g
 		stability = 0
 		NOT = {
 			war_exhaustion = 1
@@ -1936,7 +1936,7 @@ country_event = {
 		overextension_percentage = 0.04
 		stability = 1
 		government = daimyo
-		primary_culture = japanese
+		culture_group = japanese_g
 	}
 	
 	mean_time_to_happen = {
@@ -1966,7 +1966,7 @@ country_event = {
 		every_known_country = {
 			limit = {
 				government = daimyo
-				primary_culture = japanese
+				culture_group = japanese_g
 			}
 			add_opinion = { 
 				modifier = opinion_angry
@@ -1991,7 +1991,7 @@ country_event = {
 	
 	trigger = {
 		government = daimyo
-		primary_culture = japanese
+		culture_group = japanese_g
 		stability = 2
 		years_of_income = 0.3
 		NOT = {
@@ -2048,7 +2048,7 @@ country_event = {
 	
 	trigger = {
 		government = daimyo
-		primary_culture = japanese
+		culture_group = japanese_g
 		prestige = 20
 		NOT = {
 			tag = JAP
@@ -2119,7 +2119,7 @@ country_event = {
 			government = daimyo
 			tag = JAP
 		}
-		primary_culture = japanese
+		culture_group = japanese_g
 		OR = {
 			legitimacy = 75
 			prestige = 75
@@ -2175,7 +2175,7 @@ country_event = {
 	
 	trigger = {
 		government = daimyo
-		primary_culture = japanese
+		culture_group = japanese_g
 		stability = 2
 		legitimacy = 50
 	}
@@ -2220,7 +2220,7 @@ country_event = {
 	
 	trigger = {
 		government = daimyo
-		primary_culture = japanese
+		culture_group = japanese_g
 		stability = 2
 		NOT = {
 			has_ruler_modifier = jap_gossip
@@ -2253,7 +2253,7 @@ country_event = {
 		every_known_country = {
 			limit = {
 				government = daimyo
-				primary_culture = japanese
+				culture_group = japanese_g
 			}
 			add_opinion = { 
 				modifier = opinion_mildly_displeased
@@ -2279,7 +2279,7 @@ country_event = {
 	
 	trigger = {
 		government = daimyo
-		primary_culture = japanese
+		culture_group = japanese_g
 		has_heir = yes
 		heir_age = 15
 	}
@@ -2327,7 +2327,7 @@ country_event = {
 	
 	trigger = {
 		government = daimyo
-		primary_culture = japanese
+		culture_group = japanese_g
 		stability = 1
 	}
 	
@@ -2369,7 +2369,7 @@ country_event = {
 	
 	trigger = {
 		government = daimyo
-		primary_culture = japanese
+		culture_group = japanese_g
 		OR = {
 			legitimacy = 75
 			prestige = 75
@@ -2403,14 +2403,14 @@ country_event = {
 		hidden_effect = {
 			random_province = {
 				limit = {
-					culture = japanese
+					culture_group = japanese_g
 					is_core = owner
 				}
 				set_province_flag = shogunate_destabilized_flag1
 			}
 			random_province = {
 				limit = {
-					culture = japanese
+					culture_group = japanese_g
 					is_core = owner
 					NOT = {
 						has_province_flag = shogunate_destabilized_flag1
@@ -2420,7 +2420,7 @@ country_event = {
 			}
 			random_province = {
 				limit = {
-					culture = japanese
+					culture_group = japanese_g
 					is_core = owner
 					NOT = {
 						has_province_flag = shogunate_destabilized_flag1
@@ -2486,7 +2486,7 @@ country_event = {
 			government = daimyo
 			tag = JAP
 		}
-		primary_culture = japanese
+		culture_group = japanese_g
 		NOT = {
 			war_exhaustion = 1
 		}
@@ -2523,7 +2523,7 @@ country_event = {
 	
 	trigger = {
 		government = daimyo
-		primary_culture = japanese
+		culture_group = japanese_g
 		OR = {
 			legitimacy = 75
 			prestige = 75
@@ -2569,7 +2569,7 @@ country_event = {
 	
 	trigger = {
 		government = daimyo
-		primary_culture = japanese
+		culture_group = japanese_g
 		OR = {
 			legitimacy = 75
 			prestige = 75
@@ -2599,11 +2599,23 @@ country_event = {
 	option = {
 		name = "flavor_jap.EVTOPTA55"
 		add_prestige = 10
+		add_corruption = 0.5
 	}
 	
 	option = {
 		name = "flavor_jap.EVTOPTB55"
-		add_prestige = -1
-		add_dip_power = 20
+		add_prestige = -10
+		if = {
+			limit = {
+				corruption = 0.01
+			}
+			add_corruption = -0.5
+		}
+		if = {
+			limit = {
+				NOT = { corruption = 1 }
+			}
+			add_dip_power = 50
+		}
 	}
 }

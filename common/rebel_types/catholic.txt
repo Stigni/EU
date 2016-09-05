@@ -5,6 +5,8 @@
 ######################################################################
 catholic_rebels = {
 
+	color = { 230 175 175 }
+
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
 	religion = catholic
@@ -103,6 +105,11 @@ catholic_rebels = {
 	 	}
 		modifier = {
 			factor = 1.5
+			has_missionary = yes
+			religion = catholic
+		}
+		modifier = {
+			factor = 1.5
 			unrest = 2
 		}
 		modifier = {
@@ -125,29 +132,32 @@ catholic_rebels = {
 		}
  	}
 	siege_won_effect = {
-		if = {
-			limit = {
-				OR = {
-					religion = catholic
-					is_reformation_center = yes
-					owner = { religion = catholic }
+		custom_tooltip = religious_rebels_seige_effect_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						religion = catholic
+						is_reformation_center = yes
+						owner = { religion = catholic }
+					}
+				}
+				add_province_modifier = {
+					name = "religious_violence"
+					duration = 730
 				}
 			}
-			add_province_modifier = {
-				name = "religious_violence"
-				duration = 730
-			}
-		}
-		if = {
-			limit = {
-				NOT = { religion = catholic }
-				is_reformation_center = no
-				NOT = { owner = { religion = catholic } }
-			}
-			change_religion = catholic
-			add_province_modifier = {
-				name = "forced_conversion"
-				duration = 730
+			if = {
+				limit = {
+					NOT = { religion = catholic }
+					is_reformation_center = no
+					NOT = { owner = { religion = catholic } }
+				}
+				change_religion = catholic
+				add_province_modifier = {
+					name = "forced_conversion"
+					duration = 730
+				}
 			}
 		}
 	}

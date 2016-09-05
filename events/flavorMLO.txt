@@ -41,7 +41,6 @@ country_event = {
 				government = monarchy
 				religion = catholic
 			}
-			
 			add_opinion = {
 				who = ROOT
 				modifier = mlo_against_ambrosian
@@ -57,6 +56,14 @@ country_event = {
 					type = cb_change_government
 					months = 120
 				}		
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_regency = yes
+				}
+				country_event = { id = 700 }
 			}
 		}
 	}

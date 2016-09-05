@@ -268,6 +268,8 @@ country_event = {
 					region = coromandel_region
 					region = deccan_region
 					region = bengal_region
+					region = malaya_region
+					region = moluccas_region
 					region = indonesia_region
 					region = oceanea_region
 				}
@@ -284,9 +286,15 @@ country_event = {
 			coromandel_region = {
 				owned_by = SCO
 			}
-			indonesia_region = {
+			malaya_region = {
 				owned_by = SCO
 			}
+			moluccas_region = {
+				owned_by = SCO
+			}			
+			indonesia_region = {
+				owned_by = SCO
+			}			
 			oceanea_region = {
 				owned_by = SCO
 			}

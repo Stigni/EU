@@ -1,7 +1,7 @@
 government = tribal_despotism
 primary_culture = nubian
 religion = shiite
-technology_group = muslim
+technology_group = east_african
 unit_type = sub_saharan
 capital = 1219	# Darfur
 

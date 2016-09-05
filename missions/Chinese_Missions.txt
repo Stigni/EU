@@ -95,7 +95,9 @@ defend_korea = {
 	}
 	success = {
 		NOT = { war_with = JAP }
-		NOT = { korea_region = { owned_by = JAP } }
+		NOT = { north_korea_area = { owned_by = JAP } }
+		NOT = { central_korea_area = { owned_by = JAP } }
+		NOT = { south_korea_area = { owned_by = JAP } }
 	}
 	chance = {
 		factor = 3000
@@ -105,7 +107,9 @@ defend_korea = {
 		}	
 	}
 	effect = {
-		korea_region = { add_claim = ROOT }
+		north_korea_area = { add_claim = ROOT }
+		central_korea_area = { add_claim = ROOT }
+		south_korea_area = { add_claim = ROOT }
 	}
 }
 
@@ -143,6 +147,7 @@ colonize_taiwan = {
 				has_factions = yes
 			}
 			taiwan_area = {
+				type = all
 				is_empty = no
 				NOT = { owned_by = ROOT }
 			}
@@ -152,6 +157,7 @@ colonize_taiwan = {
 	success = {
 		taiwan_area = {
 			owned_by = ROOT
+			colonysize = 400
 		}
 		OR = {
 			has_factions = no
@@ -216,6 +222,9 @@ colonize_deren = {
 	}
 	success = {
 		owns = 1050
+		1050 = {
+			colonysize = 400
+		}
 		OR = {
 			has_factions = no
 			faction_in_power = enuchs

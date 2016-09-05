@@ -3,6 +3,8 @@
 ######################################################################
 orthodox_rebels = {
 
+	color = { 230 175 175 }
+
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
 	religion = orthodox
@@ -101,6 +103,11 @@ orthodox_rebels = {
 	 	}
 		modifier = {
 			factor = 1.5
+			has_missionary = yes
+			religion = orthodox
+		}
+		modifier = {
+			factor = 1.5
 			unrest = 2
 		}
 		modifier = {
@@ -123,29 +130,32 @@ orthodox_rebels = {
 		}
  	}
 	siege_won_effect = {
-		if = {
-			limit = {
-				OR = {
-					religion = orthodox
-					is_reformation_center = yes
-					owner = { religion = orthodox }
+		custom_tooltip = religious_rebels_seige_effect_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						religion = orthodox
+						is_reformation_center = yes
+						owner = { religion = orthodox }
+					}
+				}
+				add_province_modifier = {
+					name = "religious_violence"
+					duration = 730
 				}
 			}
-			add_province_modifier = {
-				name = "religious_violence"
-				duration = 730
-			}
-		}
-		if = {
-			limit = {
-				NOT = { religion = orthodox }
-				is_reformation_center = no
-				NOT = { owner = { religion = orthodox } }
-			}
-			change_religion = orthodox
-			add_province_modifier = {
-				name = "forced_conversion"
-				duration = 730
+			if = {
+				limit = {
+					NOT = { religion = orthodox }
+					is_reformation_center = no
+					NOT = { owner = { religion = orthodox } }
+				}
+				change_religion = orthodox
+				add_province_modifier = {
+					name = "forced_conversion"
+					duration = 730
+				}
 			}
 		}
 	}

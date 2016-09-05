@@ -3,6 +3,7 @@
 owner = LIV
 controller = LIV
 add_core = LIV
+add_core = LVA
 culture = latvian
 religion = catholic
 capital = "Dünaburg"
@@ -14,6 +15,12 @@ base_production = 2
 base_manpower = 2
 is_city = yes
 estate = estate_church #Kokenhusen
+
+
+
+discovered_by = western
+discovered_by = eastern
+
 
 1561.1.1 = {
 	owner = LIT

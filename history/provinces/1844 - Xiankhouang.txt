@@ -14,6 +14,12 @@ is_city = yes
 add_core = LXA
 add_core = MPH
 
+
+
+discovered_by = chinese
+discovered_by = indian
+
+
 1483.1.1 = { add_core = DAI } # Vietnamese Invasion
 1579.1.1 = { unrest = 5 } # Revolt against vassalization
 1580.1.1 = { unrest = 0 }
@@ -21,6 +27,7 @@ add_core = MPH
 1603.1.1 = { unrest = 0 }
 1627.1.1 = { unrest = 6 }
 1633.1.1 = { unrest = 0 }
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
 1694.1.1 = { add_core = TOK } # Vietnamese Intervention
 1707.1.1 = {
 	owner = MPH

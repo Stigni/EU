@@ -160,18 +160,25 @@ country_event = {
 	
 	option = {
 		name = republics.4.a
+		add_republican_tradition = 0.05
 		add_adm_power = -40
 		add_dip_power = -40
 		add_mil_power = -40
-		add_republican_tradition = 0.05
+		if = {
+			limit = {
+				corruption = 0.01
+			}
+			add_corruption = -0.5
+		}
 	}
 
 	option = {
 		name = republics.4.b
 		add_republican_tradition = -0.05
-		add_adm_power = 10
-		add_dip_power = 10
-		add_mil_power = 10
+		add_adm_power = 20
+		add_dip_power = 20
+		add_mil_power = 20
+		add_corruption = 0.5
 	}
 }
 
@@ -1629,7 +1636,7 @@ country_event = {
 				hidden = yes
 			}
 		}
-		add_prestige = -5
+		add_corruption = 0.5
 	}
 }
 
@@ -2101,11 +2108,11 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			treasurer = 5
+			treasurer = 2
 		}
 		modifier = {
 			factor = 0.9
-			treasurer = 6
+			treasurer = 3
 		}
 		modifier = {
 			factor = 0.9

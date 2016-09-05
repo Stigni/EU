@@ -4,6 +4,11 @@ owner = MCA
 controller = MCA
 culture = muisca
 
+
+
+discovered_by = south_american
+discovered_by = andean
+
 religion = inti
 capital = "Neiva"
 is_city = yes
@@ -16,7 +21,7 @@ add_core = MCA
 add_local_autonomy = 50
 
 1525.1.1 = {
-	
+	discovered_by = SPA
 	owner = SPA
 	controller = SPA
 	add_core = SPA

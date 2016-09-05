@@ -13,6 +13,12 @@ base_manpower = 1
 is_city = yes
 capital = "Sogndal"
 
+
+
+discovered_by = western
+discovered_by = eastern
+
+
 1531.11.5 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # The Return of Christian II
 1532.7.15 = { revolt = {} controller = NOR } # The Capture of Christian II
 1536.1.1 = { religion = protestant} # Unknown date

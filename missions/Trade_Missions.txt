@@ -90,7 +90,7 @@ increase_spices_trade = {
 				has_discovered = ROOT
 				range = ROOT
 			}
-			indonesia_region = {
+			malaya_region = {
 				has_discovered = ROOT
 				range = ROOT
 			}

@@ -7,19 +7,19 @@ improved_relations_with_electors = {
 	allow = {
 		FROM = {
 			is_emperor = yes
+			OR = {
+				NOT = { has_country_flag = improved_relations_with_electors_flag }
+				had_country_flag = { flag = improved_relations_with_electors_flag days = 7300 }
+			}
+			NOT = {
+				has_country_modifier = emperor_friendly_with_elector
+			}
 		}
 		is_elector = yes
 		is_emperor = no
 		has_opinion = { who = FROM value = 0 }
 		NOT = { has_opinion = { who = FROM value = 50 } }
 		NOT = { hre_reform_level = 6 }
-		OR = {
-			NOT = { has_country_flag = improved_relations_with_electors_flag }
-			had_country_flag = { flag = improved_relations_with_electors_flag days = 7300 }
-		}
-		NOT = {
-			has_country_modifier = emperor_friendly_with_elector
-		}
 	}
 	abort = {
 		FROM = { is_emperor = no }

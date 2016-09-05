@@ -81,7 +81,38 @@ adm_idea_modifiers = {
 			factor = 1
 			modifier = {
 				factor = 0
-				NOT = { government = monarchy }
+				OR = {
+					NOT = { government = monarchy }
+					government = steppe_horde
+				}
+			}
+		}		
+	}
+	custom_idea_horde_unity = {
+		horde_unity = 0.5
+		level_cost_2 = 15
+		max_level = 2
+		
+		# Used for random generation
+		chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { government = steppe_horde }
+			}
+		}		
+	}
+	custom_idea_devotion = {
+		devotion = 0.5
+		level_cost_2 = 15
+		max_level = 2
+		
+		# Used for random generation
+		chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { government = theocracy }
 			}
 		}		
 	}

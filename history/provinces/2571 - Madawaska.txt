@@ -12,6 +12,13 @@ native_size = 5
 native_ferocity = 1
 native_hostileness = 2
 
+
+
+discovered_by = north_american
+
+1609.1.1 = { discovered_by = FRA } # Samuel de Champlain
+1629.1.1 = { discovered_by = ENG }
+
 1650.1.1 = {
 	owner = ABE
 	controller = ABE
@@ -20,3 +27,4 @@ native_hostileness = 2
 	trade_goods = fur 
 } #Extent of the Abenaki/Wabanaki c. the Beaver Wars
 ##Still disputed between USA and Britain at game end. In reality was held by Brayons, Acadian settlers, but here represented by Abenaki tag)
+1707.5.12 = { discovered_by = GBR }

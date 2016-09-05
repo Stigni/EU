@@ -2,7 +2,9 @@
 # Japanese Rebels - Ikko-Ikkis (peasants)
 ######################################################################
 ikko_ikki_rebels = {
-
+	
+	color = { 200 150 80 }
+	
 	area = nation 					# Stays within the nation
 	government = any			
 	defection = none				# Does not defect
@@ -34,7 +36,7 @@ ikko_ikki_rebels = {
 		modifier = {
 			factor = 0
 			owner = {
-				NOT = { primary_culture = japanese }
+				NOT = { culture_group = japanese_g }
 			}
 		}		
 		modifier = {

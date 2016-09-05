@@ -1,7 +1,7 @@
 government = despotic_monarchy
 primary_culture = tigray
 religion = coptic
-technology_group = muslim
+technology_group = east_african
 unit_type = sub_saharan
 capital = 2766		# Mendefera
 

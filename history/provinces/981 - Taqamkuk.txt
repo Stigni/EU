@@ -12,6 +12,14 @@ native_size = 5
 native_ferocity = 1
 native_hostileness = 0
 
+
+
+discovered_by = north_american
+
+1497.6.24 = { discovered_by = ENG } # John Cabot
+1502.1.1 = { discovered_by = POR } # Gaspar, Miguel Corte-Real
+1534.1.1 = { discovered_by = FRA } # Jacques Cartier	
+
 1620.1.1 = {
 	owner = FRA
 	controller = FRA

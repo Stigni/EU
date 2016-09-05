@@ -11,7 +11,7 @@ country_event = {
 	id = nobles_estate_events.1
 	title = nobles_estate_events.1.t
 	desc = nobles_estate_events.1.d
-	picture = ADVISOR_eventPicture
+	picture = NOBLE_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -78,11 +78,11 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = 10
+			loyalty = 15
 		}
 		add_estate_loyalty = {
 			estate = estate_burghers
-			loyalty = -15
+			loyalty = -20
 		}
 		add_country_modifier = {
 			name = "only_noble_officers"
@@ -120,11 +120,11 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -15
+			loyalty = -20
 		}
 		add_estate_loyalty = {
 			estate = estate_burghers
-			loyalty = 10
+			loyalty = 15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_nobles
@@ -140,7 +140,7 @@ country_event = {
 	id = nobles_estate_events.2
 	title = nobles_estate_events.2.t
 	desc = nobles_estate_events.2.d
-	picture = ADVISOR_eventPicture
+	picture = NOBLE_ESTATE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -166,16 +166,6 @@ country_event = {
 			}
 		}
 	}
-
-	
-	immediate = {
-		hidden_effect = {
-			random_list = {
-				80 = { set_country_flag = growing_influence_nobles_10 }
-				20 = { set_country_flag = growing_influence_nobles_20 }
-			}
-		}
-	}
 	
 	mean_time_to_happen = {
 		days = 1
@@ -184,26 +174,11 @@ country_event = {
 
 	option = {
 		name = nobles_estate_events.2.a #Ok
-		trigger_switch = {
-			on_trigger = has_country_flag
-			growing_influence_nobles_10 = {
-				add_estate_influence_modifier = {
-				estate = estate_nobles
-				desc = EST_VAL_NOBILITY_ADVANCES
-				influence = 10
-				duration = 5475
-				}
-				clr_country_flag = growing_influence_nobles_10
-			}
-			growing_influence_nobles_20 = {
-				add_estate_influence_modifier = {
-					estate = estate_nobles
-					desc = EST_VAL_NOBILITY_ADVANCES_20
-					influence = 20
-					duration = 5475
-				}
-				clr_country_flag = growing_influence_nobles_20
-			}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = EST_VAL_NOBILITY_ADVANCES
+			influence = 10
+			duration = 5475
 		}
 	}
 }
@@ -213,7 +188,7 @@ country_event = {
 	id = nobles_estate_events.3
 	title = nobles_estate_events.3.t
 	desc = nobles_estate_events.3.d
-	picture = ADVISOR_eventPicture
+	picture = NOBLE_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -223,7 +198,9 @@ country_event = {
 			NOT = { has_estate = yes }
 			is_overseas = no
 			is_capital = no
+			is_colony = no
 			has_seat_in_parliament = no
+			is_territory = no
 		}
 	}
 	
@@ -236,7 +213,9 @@ country_event = {
 					NOT = { has_estate = yes }
 					is_capital = no
 					is_overseas = no
+					is_colony = no
 					has_seat_in_parliament = no
+					is_territory = no
 				}
 				set_province_flag = noble_encroachment
 			}
@@ -336,7 +315,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -10
+			loyalty = -15
 		}
 	}
 }
@@ -346,7 +325,7 @@ country_event = {
 	id = nobles_estate_events.4
 	title = nobles_estate_events.4.t
 	desc = nobles_estate_events.4.d
-	picture = ADVISOR_eventPicture
+	picture = NOBLE_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -393,7 +372,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = 10
+			loyalty = 15
 		}
 	}
 	option = {
@@ -419,7 +398,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -10
+			loyalty = -15
 		}
 	}
 }
@@ -429,7 +408,7 @@ country_event = {
 	id = nobles_estate_events.5
 	title = nobles_estate_events.5.t
 	desc = nobles_estate_events.5.d
-	picture = ADVISOR_eventPicture
+	picture = NOBLE_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -480,7 +459,7 @@ country_event = {
 	id = nobles_estate_events.6
 	title = nobles_estate_events.6.t
 	desc = nobles_estate_events.6.d
-	picture = ADVISOR_eventPicture
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -549,7 +528,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_burghers
-			loyalty = -15
+			loyalty = -20
 		}
 	}
 	option = {
@@ -575,7 +554,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -15
+			loyalty = -20
 		}
 		add_estate_influence_modifier = {
 			estate = estate_nobles
@@ -599,7 +578,7 @@ country_event = {
 	id = nobles_estate_events.7
 	title = nobles_estate_events.7.t
 	desc = nobles_estate_events.7.d
-	picture = ADVISOR_eventPicture
+	picture = NOBLE_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -651,7 +630,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -5
+			loyalty = -10
 		}
 		set_country_flag = normal_court_life
 	}
@@ -680,7 +659,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = 15
+			loyalty = 20
 		}
 		add_estate_influence_modifier = {
 			estate = estate_nobles
@@ -706,7 +685,7 @@ country_event = {
 		add_prestige = -5
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_nobles
@@ -722,7 +701,7 @@ country_event = {
 	id = nobles_estate_events.8
 	title = nobles_estate_events.8.t
 	desc = nobles_estate_events.8.d
-	picture = ADVISOR_eventPicture
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -857,7 +836,7 @@ country_event = {
 	id = nobles_estate_events.9
 	title = nobles_estate_events.9.t
 	desc = nobles_estate_events.9.d
-	picture = ADVISOR_eventPicture
+	picture = NOBLE_ESTATE_TAKE_OVER_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -935,7 +914,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_nobles
@@ -973,7 +952,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_nobles
@@ -1012,7 +991,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_nobles
@@ -1028,7 +1007,7 @@ country_event = {
 	id = nobles_estate_events.10
 	title = nobles_estate_events.10.t
 	desc = nobles_estate_events.10.d
-	picture = ADVISOR_eventPicture
+	picture = NOBLE_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1113,11 +1092,11 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = 10
+			loyalty = 15
 		}
 		add_estate_loyalty = {
 			estate = estate_burghers
-			loyalty = -15
+			loyalty = -20
 		}
 		add_estate_influence_modifier = {
 			estate = estate_nobles
@@ -1174,11 +1153,11 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -15
+			loyalty = -20
 		}
 		add_estate_loyalty = {
 			estate = estate_burghers
-			loyalty = 10
+			loyalty = 15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_burghers
@@ -1236,11 +1215,11 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -15
+			loyalty = -20
 		}
 		add_estate_loyalty = {
 			estate = estate_church
-			loyalty = 10
+			loyalty = 15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_church
@@ -1313,15 +1292,15 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -15
+			loyalty = -20
 		}
 		add_estate_loyalty = {
 			estate = estate_church
-			loyalty = -15
+			loyalty = -20
 		}
 		add_estate_loyalty = {
 			estate = estate_dhimmi
-			loyalty = 10
+			loyalty = 15
 		}
 	}
 }
@@ -1332,7 +1311,7 @@ country_event = {
 	id = nobles_estate_events.11
 	title = nobles_estate_events.11.t
 	desc = nobles_estate_events.11.d
-	picture = ADVISOR_eventPicture
+	picture = NOBLE_ESTATE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -1439,62 +1418,11 @@ province_event = {
 	id = nobles_estate_events.12
 	title = nobles_estate_events.12.t
 	desc = nobles_estate_events.12.d
-	picture = ADVISOR_eventPicture
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = nobles_estate_events.12.a #Yes
-	}
-}
-
-#Random loyalty hit at over 50 loyalty.
-country_event = {
-	id = nobles_estate_events.13
-	title = nobles_estate_events.13.t
-	desc = nobles_estate_events.13.d
-	picture = ADVISOR_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_dlc = "The Cossacks"
-		has_estate = estate_nobles
-		estate_loyalty = {
-			estate = estate_nobles
-			loyalty = 50
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		modifier = {
-			factor = 1.5
-			total_development = 250
-			NOT = { total_development = 500 }
-		}
-		modifier = {
-			factor = 2.0
-			total_development = 500
-			NOT = { total_development = 750 }
-		}
-		modifier = {
-			factor = 2.5
-			total_development = 750
-			NOT = { total_development = 1000 }
-		}
-		modifier = {
-			factor = 3.0
-			total_development = 1000
-		}
-	}
-	
-
-	option = {
-		name = nobles_estate_events.13.a #Ok
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -10
-		}
 	}
 }

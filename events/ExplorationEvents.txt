@@ -450,11 +450,11 @@ province_event = {
 		is_empty = yes
 		OR = {
 			region = peru_region
-			region = chile_region
+			region = upper_peru_region
 			region = la_plata_region
 			region = south_africa_region
 			region = australia_region
-			region = new_zealand_region
+			region = oceanea_region
 		}
 		has_climate = arctic
 	}

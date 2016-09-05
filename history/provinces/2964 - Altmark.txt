@@ -14,6 +14,15 @@ capital = "Stendal"
 estate = estate_burghers #Altmärkische Städtebund
 is_city = yes
 
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+1520.1.1 = { } # Magdeburger Dom, the most important Gothic cathedral in eastern Germany
+
 1524.1.1 = { religion = protestant }
 1650.1.1 = { culture = prussian }
 1701.1.18 = {

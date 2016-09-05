@@ -150,15 +150,6 @@ alliance = {
 	end_date = 1457.11.24
 }
 
-
-# Austria and Aragon (League of Cambrai)
-alliance = {
-	first = HAB
-	second = ARA
-	start_date = 1508.12.10
-	end_date = 1516.8.13
-}
-
 # Habsburg, Spain and Bavaria
 alliance = {
 	first = HAB

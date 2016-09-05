@@ -1,5 +1,7 @@
 # If you add advisortypes, and use those tags, do not change them without changing everywhere they are used.
-
+#
+# Additional arguments: allow_only_male/allow_only_female
+#
 # Uses all 'modifiers' possible that are exported as a Modifier.
 
 
@@ -143,7 +145,7 @@ spymaster = {
 	monarch_power = DIP
 	
 	# Bonus
-	spy_offence = 0.10
+	spy_offence = 0.25
 	
 	chance = {
 		factor = 1

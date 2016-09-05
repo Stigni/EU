@@ -447,10 +447,6 @@ province_event = {
 			}
 			AND = {
 				NOT = { is_year = 1513 }
-				region = rajputana_region
-			}
-			AND = {
-				NOT = { is_year = 1513 }
 				region = west_india_region
 			}
 			AND = {

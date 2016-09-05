@@ -13,5 +13,5 @@ native_ferocity = 1
 native_hostileness = 1
 
 1798.11.8 = {
-		# John Fearn
+	discovered_by = GBR	# John Fearn
 }

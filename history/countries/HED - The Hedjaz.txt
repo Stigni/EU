@@ -1,4 +1,4 @@
-government = tribal_despotism
+government = tribal_kingdom
 government_rank = 1
 technology_group = muslim
 religion = sunni

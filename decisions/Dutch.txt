@@ -11,9 +11,6 @@ country_decisions = {
 			NOT = { has_country_modifier = dutch_india_trade_co }
 			NOT = { has_country_flag = trade_company }
 			OR = {
-				korea_region = {
-					has_discovered = ROOT
-				}
 				japan_region = {
 					has_discovered = ROOT
 				}
@@ -49,13 +46,14 @@ country_decisions = {
 					region = coromandel_region
 					region = deccan_region
 					region = bengal_region
+					region = malaya_region
+					region = moluccas_region
 					region = indonesia_region
 					region = indo_china_region
 					region = burma_region
 					region = japan_region
 					region = south_china_region
 					region = north_china_region
-					region = korea_region
 				}
 				has_port = yes
 			}			

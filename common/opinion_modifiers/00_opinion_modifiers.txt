@@ -167,6 +167,10 @@ getting_trade_power = {
 	opinion = 20
 }
 
+in_same_trade_league = {
+	opinion = 20
+}
+
 
 
 ##################################
@@ -218,6 +222,12 @@ opinion_fleet_access = {
 ##############
 # TIMED
 ##############
+
+pirated_us = {
+	opinion = -5
+	min = -100
+	yearly_decay = 5
+}
 
 converted_our_culture = {
 	opinion = -30
@@ -350,7 +360,7 @@ vassal_abandoned = {
 	min = -200
 }
 
-they_force_vassalized_us = [
+they_force_vassalized_us = {
 	opinion = -100
 	yearly_decay = 2
 }
@@ -515,6 +525,12 @@ fought_to_the_end = {
 	months = 120
 	yearly_decay = 1
 	max = 20
+}
+
+razed_province = {
+	opinion = -25
+	min = -200
+	yearly_decay = 2
 }
 
 conquered_province_no_claim = {
@@ -1629,6 +1645,7 @@ opinion_upset_pope = {
 
 opinion_gold_privateers = {
 	opinion = -40
+	min = -100
 	years = 10
 	yearly_decay = 2
 }
@@ -2062,6 +2079,16 @@ opinion_sword_hunt = {
 border_friction_from_event = {
 	opinion = -50
 	yearly_decay = 2	
+}
+
+broke_free_from_us = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+previous_oppressor = {
+	opinion = -50
+	yearly_decay = 2
 }
 
 missionaries_rebuffed = {
@@ -3198,6 +3225,30 @@ cossack_raids_opinion = {
 
 #End Estates
 
+#Tuscan flavor opinion
+
+opinion_emperor_tus_refused = {
+	opinion = -25
+	yearly_decay = 1
+}
+
+opinion_papal_tus_refused = {
+	opinion = 30
+	yearly_decay = 1
+}
+
+opinion_emperor_tus_yielded = {
+	opinion = 30
+	yearly_decay = 1
+}
+
+opinion_papal_tus_yielded = {
+	opinion = -30
+	yearly_decay = 1
+}
+
+#End Tuscan flavor opinion
+
 threatened_war = {
 	opinion = -75
 	yearly_decay = 3
@@ -3207,4 +3258,77 @@ share_advanced_neighbor = {
 	opinion = 50
 	months = 1 #Updated every month.
 	max = 50
+}
+
+
+#Mare Nostrum
+slaves_raided = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}
+
+corrupt_ambassador = {
+	opinion = -30
+	yearly_decay = 1
+}
+
+punished_soldiers = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+shared_trade_secrets = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+demanded_compensation = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+sided_with_us = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+sided_against_us = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+refused_to_take_sides = {
+	opinion = -20
+	yearly_decay = 2
+}
+
+allowed_papal_league_advisor = {
+	opinion = -25
+	yearly_decay = 1
+}
+
+counterintelligence_operation = {
+	opinion = -30
+	yearly_decay = 3
+}
+
+imprisoned_ambassador = {
+	opinion = -20
+	yearly_decay = 2
+}
+
+opinion_welcomed_fernandes = {
+	opinion = 20
+	yearly_decay = 1
+}
+
+opinion_killed_fernandes = {
+	opinion = -35
+	yearly_decay = 1
+}
+
+opinion_international_law = {
+	opinion = 50
+	yearly_decay = 1
 }

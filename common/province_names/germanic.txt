@@ -74,6 +74,7 @@
 273 = "Lettgallen"
 279 = "Wolhynien"
 281 = "Podolien"
+1318 = "Spisz"
 1381 = "Zips"
 1743 = "Kamerich"
 1744 = "Antorf"

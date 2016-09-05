@@ -370,7 +370,6 @@
  HRE_VOTE_ELECTOR_YOU: "Ihr"
  HRE_CAST_VOTE_DESC: "Ihr könnt wählen, wem Ihr bei der Kaiserwahl Eure Stimme geben möchtet!"
  SUPPORT_EFFICIENCY: "Effizienz der Hilfszahlungen"
- REBEL_SUPPORT_EFFICIENCY_DESC: "Die Effizienz der Hilfszahlungen an die Rebellen gibt an, wie viel des bereitgestellten Geldes die Rebellen tatsächlich nutzen können."
  SLIDER_VALUE: "Schiebereglereinstellung"
  GAME_BOOT_IN: "Das Spiel wird in $MIN$ Minuten hochgefahren."
  GAME_START_IN: "Das Spiel wird in $MIN$ Minuten beginnen."

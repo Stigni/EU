@@ -14,6 +14,12 @@ base_manpower = 3
 is_city = yes
 estate = estate_nomadic_tribes
 
+
+
+discovered_by = chinese
+discovered_by = nomad_group
+
+
 1613.2.1 = {
 	owner = MJZ
 	controller = MJZ
@@ -31,3 +37,4 @@ estate = estate_nomadic_tribes
 	add_core = QNG
 	remove_core = MCH
 } # The Qing Dynasty
+1709.1.1 = { discovered_by = SPA }

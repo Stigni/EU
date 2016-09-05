@@ -461,7 +461,6 @@ country_event = {
 	trigger = {
 		tag = MAM
 		is_year = 1490
-
 		has_regency = no
 		
 		NOT = { months_of_ruling = 12 }
@@ -486,7 +485,7 @@ country_event = {
 		random_owned_province = {
 			anti_tax_rebels = 1
 		}
-		361 = {
+		capital_scope = {
 			anti_tax_rebels = 2
 		}
 	}	
@@ -785,11 +784,6 @@ country_event = {
 	
 	option = {	
 		name = flavor_mam.22.a
-		add_casus_belli = {	
-			target = MAM
-			type = cb_annex
-			months = 1200
-		}		
 		MAM = {
 			every_owned_province = {
 				add_claim = TUR

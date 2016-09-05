@@ -11,7 +11,19 @@ expand_navy = {
 	
 	modifier = {
 		global_ship_cost = -0.1
-		global_ship_recruit_speed = -0.10
+		sailors_recovery_speed = 0.1
+	}
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 3
+			NOT  ={ navy_size_percentage = 0.2 }
+		}
+		modifier = {
+			factor = 2
+			NOT  ={ navy_size_percentage = 0.5 }
+		}
 	}
 
 	ai_will_do = {

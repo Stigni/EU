@@ -11,6 +11,7 @@ country_decisions = {
 			NOT = { exists = GER }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
+			NOT = { tag = ROM }
 			OR = {
 				ai = no
 				AND = {
@@ -82,12 +83,18 @@ country_decisions = {
 				country_event = { id = hre_event.5 }
 			}
 			set_government_rank = 3
-			germany_region = {
+			north_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = GER
 			}
+			south_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GER
+			}			
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

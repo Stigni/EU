@@ -442,7 +442,6 @@ country_event = {
 	# Rein them in
 	option = {
 		name = "aow_events.12.a"
-		add_prestige = -5
 		add_country_modifier = {
 			name = "curtailed_mercenaries"
 			duration = 1825
@@ -453,14 +452,20 @@ country_event = {
 	option = {
 		name = "aow_events.12.b"
 		add_prestige = -10
-		every_province = {
+		random_province = {
 			limit = {
 				controlled_by = ROOT
 				NOT = { owned_by = ROOT }
 			}
-			add_province_modifier = {
-				name = "terrorized_by_mercenaries"
-				duration = 1095
+			area = {
+				limit = {
+					controlled_by = ROOT
+					NOT = { owned_by = ROOT }
+				}
+				add_province_modifier = {
+					name = "terrorized_by_mercenaries"
+					duration = 1095
+				}
 			}
 		}
 	}
@@ -536,6 +541,7 @@ country_event = {
 	trigger = {
 		NOT = { manpower_percentage = 0.1 }
 		had_recent_war = 3
+		is_at_war = no
 		NOT = { has_country_modifier = post_war_tax_relief }
 		NOT = { has_country_modifier = decreased_drafting }
 		NOT = { has_country_modifier = suffering_bereaved }
@@ -1717,7 +1723,8 @@ country_event = {
 	# 
 	option = {
 		name = "aow_events.43.a"
-		add_years_of_income = -0.1
+		add_years_of_income = -0.05
+		add_corruption = 0.5
 		random_owned_province = {
 			limit = {
 				has_cardinal = no
@@ -1785,6 +1792,7 @@ province_event = {
 				type = cb_insult
 				months = 32
 			}
+			add_corruption = 1
 			add_opinion = {
 				who = FROM
 				modifier = bribed_cardinal
@@ -2071,6 +2079,7 @@ country_event = {
 	#
 	option = {
 		name = "aow_events.51.b"
+		add_corruption = 0.5
 		add_country_modifier = {
 			name = "blackmailing_cardinal"
 			duration = 1825

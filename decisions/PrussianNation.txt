@@ -40,6 +40,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -67,6 +68,15 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650
+			}
+			if = {
+				limit = {
+					OR = {
+						government = theocratic_government
+						government = monastic_order_government
+					}
+				}
+				change_government = feudal_monarchy
 			}
 			add_prestige = 5
 			change_primary_culture = prussian
@@ -170,7 +180,10 @@ country_decisions = {
 				add_opinion = { who = ROOT modifier = secularized_monastic_order }
 			}
 			set_capital = 41		# Ostpreussen
-			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650
@@ -232,6 +245,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -274,7 +288,10 @@ country_decisions = {
 				} 
 				change_culture = prussian
 			}
-			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650

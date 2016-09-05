@@ -3,6 +3,8 @@
 ######################################################################
 lollard_rebels = {
 
+	color = { 235 115 115 }
+
 	area = nation_religion 				# Sticks to provinces of their religion
 	government = theocracy 			# Desires Theocracy
 	defection = none					# Will defect to the "best" alternative.

@@ -5,7 +5,7 @@ controller = KBO
 add_core = KBO
 is_city = yes
 culture = kanuri 
-religion = animism
+religion = shamanism #Fetishism
 capital = "Marghi"
 trade_goods = grain
 hre = no
@@ -15,6 +15,11 @@ native_size = 40
 native_ferocity = 4
 native_hostileness = 9
 base_manpower = 1
+
+
+
+discovered_by = sub_saharan
+
 
 1806.1.1 = {	
 	owner = SOK

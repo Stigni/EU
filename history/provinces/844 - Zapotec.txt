@@ -13,8 +13,13 @@ base_manpower = 1
 is_city = yes
 add_core = ZAP
 
+
+
+discovered_by = mesoamerican
+
+
 1524.1.1 = {
-	 
+	discovered_by = SPA 
 	owner = SPA 
 	controller = SPA
 	add_core = SPA

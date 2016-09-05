@@ -16,6 +16,13 @@ native_size = 25
 native_ferocity = 3
 native_hostileness = 9
 
+
+
+discovered_by = north_american
+
+1654.1.1 = { discovered_by = FRA } # Médard Chouart Des Groseilliers
+1664.1.1 = { discovered_by = ENG }
+
 1710.1.1 = { 
 	owner = XXX
 	controller = XXX
@@ -31,7 +38,7 @@ native_hostileness = 9
 	is_city = yes
 } # Construction of Fort St. Pierce
 1763.2.10 = {
-	
+	discovered_by = GBR
 	owner = GBR
 	controller = GBR
 	remove_core = FRA

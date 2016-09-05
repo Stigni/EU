@@ -16,7 +16,12 @@ country_decisions = {
 			add_prestige = 10
 			add_reform_desire  = 0.01
 			every_neighbor_country = {
-				limit = { religion = catholic }
+				limit = { 
+					religion = catholic 
+					NOT = {
+						tag = PAP
+					}
+				}
 				add_opinion = { who = ROOT modifier = opinion_demote_pope }
 			}
 			PAP = { add_opinion = { who = ROOT modifier = opinion_pope_realise_demotion } }
@@ -92,7 +97,11 @@ country_decisions = {
 			add_country_modifier = {
 				name = "revocation_of_restraint_of_appeals"
 				duration = -1
-			}			
+			}
+			if = {
+				limit = { has_dlc = "The Cossacks" }
+				custom_tooltip = will_decrease_clergy_loyalty_by_5
+			}
 		}
 		ai_will_do = {
 			factor = 1

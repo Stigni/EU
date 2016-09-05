@@ -2,6 +2,11 @@
 
 culture = maipurean
 
+
+
+discovered_by = south_american
+discovered_by = andean
+
 religion = animism
 capital = "Madre de Dios"
 trade_goods = unknown

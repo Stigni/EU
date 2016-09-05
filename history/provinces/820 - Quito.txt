@@ -4,6 +4,11 @@ owner = QTO
 controller = QTO
 culture = cara
 
+
+
+discovered_by = south_american
+discovered_by = andean
+
 religion = inti
 capital = "Quito"
 is_city = yes
@@ -20,9 +25,9 @@ add_core = QTO
 	add_core = INC
 	religion = inti
 }
-
+1533.1.1 = { discovered_by = SPA }
 1533.8.29 = {
-	
+	discovered_by = SPA
 	owner = SPA
 	controller = SPA
 	add_core = SPA

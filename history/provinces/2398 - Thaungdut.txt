@@ -13,6 +13,12 @@ base_manpower = 1
 is_city = yes
 add_core = MYA
 
+
+
+discovered_by = chinese
+discovered_by = indian
+
+
 1502.1.1 = {
 	owner = SST
 	controller = SST
@@ -38,4 +44,4 @@ add_core = MYA
 	owner = TAU
 	controller = TAU
 }
-
+1760.1.1 = { discovered_by = GBR }

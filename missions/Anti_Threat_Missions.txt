@@ -14,7 +14,16 @@ befriend_threat_rival = {
 			is_subject = no
 			knows_country = ROOT
 		}
-		NOT = { has_country_flag = befriended_threat_rival }
+		OR = { 
+			NOT = {
+				FROM = {
+					has_country_flag = befriended_threat_rival_mission
+				}
+			}
+			FROM = {
+				had_country_flag = { flag = befriended_threat_rival_mission days = 3650 }
+			}
+		}
 	}
 	abort = {
 		FROM = { is_subject = yes }
@@ -42,7 +51,7 @@ befriend_threat_rival = {
 		FROM = { 
 			add_prestige = 5 
 			add_dip_power = 25
-			set_country_flag = befriend_threat_rival
+			set_country_flag = befriended_threat_rival_mission
 		}
 	}
 }
@@ -59,7 +68,16 @@ improve_relations_threat = {
 			has_opinion = { who = FROM value = 75 } 
 		}
 		has_opinion = { who = FROM value = 25 }
-		NOT = { has_country_flag = befriended_threat_rival }
+		OR = { 
+			NOT = {
+				FROM = {
+					has_country_flag = improved_relations_threat_mission
+				}
+			}
+			FROM = {
+				had_country_flag = { flag = improved_relations_threat_mission days = 3650 }
+			}
+		}
 		NOT = { government = daimyo }
 		NOT = { government = shogunate }
 	}
@@ -95,7 +113,7 @@ improve_relations_threat = {
 		FROM = { 
 			add_prestige = 5 
 			add_dip_power = 25
-			set_country_flag = improved_relations_threat
+			set_country_flag = improved_relations_threat_mission
 		}
 	}	
 }

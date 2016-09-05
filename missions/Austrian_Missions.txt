@@ -227,9 +227,11 @@ subjugate_bohemia = {
 		is_year = 1500
 		is_subject = no
 		BOH = {
+			ai = yes
 			is_subject = no
 			is_emperor = no
 			is_neighbor_of = ROOT
+			NOT = { total_development = 140 }
 			NOT = { num_of_cities = ROOT }
 		}
 	}
@@ -289,9 +291,11 @@ subjugate_hungary = {
 		is_year = 1500
 		is_subject = no
 		HUN = {
+			ai = yes
 			is_subject = no
 			is_emperor = no
 			is_neighbor_of = ROOT
+			NOT = { total_development = 200 }
 			NOT = { num_of_cities = ROOT }
 		}
 		OR = {

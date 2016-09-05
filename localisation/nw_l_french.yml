@@ -18,7 +18,7 @@
  COLONIAL_OVERLORD: "Est une colonie de $LIST$"
  COLONIAL_SUBJECTS: "Possède comme colonie: $LIST$"
  COLONIAL_SUBJECT_OF: "Colonie de $LORD$"
- SUBJECT_COLONY_TARIFF_EFFICIENCY: "L'efficacité des droits de douane est de §Y$VAL$§!%."
+ SUBJECT_COLONY_TARIFF_EFFICIENCY: "L'efficacité des droits de douane est de §Y$VAL$%§!$VAL2$."
  SUBJECT_COLONY_TARIFF: "§Y$NAME$§! nous verse §Y$VAL$§!¤ chaque mois."
  SUBJECT_COLONY_TARIFF_DESC: "Les colonies versent une part de leurs impôts sous la forme de droits de douane, en fonction de l'efficacité de ces droits de douane. Elle peut être augmentée, mais au risque que la colonie se révolte."
  SUBJECT_COLONY_NAME: "§Y$NAME$§! est l'une de nos colonies."

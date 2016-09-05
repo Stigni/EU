@@ -247,6 +247,7 @@ country_event = {
 				desc = "END_OF_REVOLUTION"
 			}
 		}
+		add_corruption = 0.5
 	}
 }
 

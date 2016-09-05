@@ -12,7 +12,7 @@ country_event = {
 	id = cossack_estate_events.1
 	title = cossack_estate_events.1.t
 	desc = cossack_estate_events.1.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -113,7 +113,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_cossacks
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_cossacks
@@ -173,7 +173,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_cossacks
@@ -211,7 +211,7 @@ country_event = {
 	id = cossack_estate_events.2
 	title = cossack_estate_events.2.t
 	desc = cossack_estate_events.2.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_RAIDERS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -221,6 +221,7 @@ country_event = {
 			any_neighbor_province = {
 				NOT = { owned_by = ROOT }
 				owner = {
+					NOT = { war_with = ROOT }
 					estate_influence = {
 						estate = estate_cossacks
 						influence = 15
@@ -255,6 +256,7 @@ country_event = {
 					any_neighbor_province = {
 						NOT = { owned_by = ROOT }
 						owner = {
+							NOT = { war_with = ROOT }
 							estate_influence = {
 								estate = estate_cossacks
 								influence = 15
@@ -278,6 +280,7 @@ country_event = {
 					limit = {
 						NOT = { owned_by = ROOT }
 						owner = {
+							NOT = { war_with = ROOT }
 							estate_influence = {
 								estate = estate_cossacks
 								influence = 15
@@ -307,7 +310,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		random_country = {
+		random_neighbor_country = {
 			limit = { has_country_flag = cossack_raids_started_here }
 			country_event  = { id = cossack_estate_events.3 }
 		}
@@ -317,13 +320,26 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -5
+		if = {
+			limit = { has_estate = estate_burghers }
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
 		}
-		add_estate_loyalty = {
-			estate = estate_burghers
-			loyalty = -5
+		if = {
+			limit = { has_estate = estate_nobles }
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+		}
+		if = {
+			limit = { has_estate = estate_nomadic_tribes }
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = -10
+			}
 		}
 		random_owned_province = {
 			limit = {
@@ -347,7 +363,7 @@ country_event = {
 	id = cossack_estate_events.3
 	title = cossack_estate_events.3.t
 	desc = cossack_estate_events.3.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_RAIDERS_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -374,7 +390,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_cossacks
-			loyalty = 10
+			loyalty = 15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_cossacks
@@ -419,7 +435,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_cossacks
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_cossacks
@@ -438,7 +454,7 @@ country_event = {
 	id = cossack_estate_events.4
 	title = cossack_estate_events.4.t
 	desc = cossack_estate_events.4.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_RAIDERS_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -458,7 +474,9 @@ country_event = {
 		   type = cb_border_war
 		   months = 3650
 		}
-		clr_country_flag = cossack_raids_started_here
+		FROM = {
+			clr_country_flag = cossack_raids_started_here
+		}
 	}
 }
 
@@ -467,14 +485,16 @@ country_event = {
 	id = cossack_estate_events.5
 	title = cossack_estate_events.5.t
 	desc = cossack_estate_events.5.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_RAIDERS_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = cossack_estate_events.5.a #If we could only believe that.
 		add_prestige = 5
-		clr_country_flag = cossack_raids_started_here
+		FROM = {
+			clr_country_flag = cossack_raids_started_here
+		}
 	}
 }
 
@@ -483,7 +503,7 @@ country_event = {
 	id = cossack_estate_events.6
 	title = cossack_estate_events.6.t
 	desc = cossack_estate_events.6.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -512,16 +532,6 @@ country_event = {
 			}
 		}
 	}
-
-	
-	immediate = {
-		hidden_effect = {
-			random_list = {
-				80 = { set_country_flag = growing_influence_cossacks_10 }
-				20 = { set_country_flag = growing_influence_cossacks_20 }
-			}
-		}
-	}
 	
 	mean_time_to_happen = {
 		days = 1
@@ -530,26 +540,11 @@ country_event = {
 
 	option = {
 		name = cossack_estate_events.6.a #Ok
-		trigger_switch = {
-			on_trigger = has_country_flag
-			growing_influence_cossacks_10 = {
-				add_estate_influence_modifier = {
-				estate = estate_cossacks
-				desc = EST_VAL_COSSACKS_ADVANCES
-				influence = 10
-				duration = 5475
-				}
-				clr_country_flag = growing_influence_cossacks_10
-			}
-			growing_influence_cossacks_20 = {
-				add_estate_influence_modifier = {
-					estate = estate_cossacks
-					desc = EST_VAL_COSSACKS_ADVANCES_20
-					influence = 20
-					duration = 5475
-				}
-				clr_country_flag = growing_influence_cossacks_20
-			}
+		add_estate_influence_modifier = {
+			estate = estate_cossacks
+			desc = EST_VAL_COSSACKS_ADVANCES
+			influence = 10
+			duration = 5475
 		}
 	}
 }
@@ -559,7 +554,7 @@ country_event = {
 	id = cossack_estate_events.7
 	title = cossack_estate_events.7.t
 	desc = cossack_estate_events.7.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -610,7 +605,7 @@ country_event = {
 	id = cossack_estate_events.8
 	title = cossack_estate_events.8.t
 	desc = cossack_estate_events.8.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -666,7 +661,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_cossacks
-			loyalty = 10
+			loyalty = 15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_cossacks
@@ -698,7 +693,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_cossacks
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_cossacks
@@ -714,7 +709,7 @@ country_event = {
 	id = cossack_estate_events.9
 	title = cossack_estate_events.9.t
 	desc = cossack_estate_events.9.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -766,7 +761,7 @@ country_event = {
 		add_years_of_income = -0.25
 		add_estate_loyalty = {
 			estate = estate_cossacks
-			loyalty = 10
+			loyalty = 15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_cossacks
@@ -798,7 +793,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_cossacks
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_cossacks
@@ -814,7 +809,7 @@ country_event = {
 	id = cossack_estate_events.10
 	title = cossack_estate_events.10.t
 	desc = cossack_estate_events.10.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_RAIDERS_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -866,11 +861,11 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_cossacks
-			loyalty = 10
+			loyalty = 15
 		}
 		add_estate_loyalty = {
 			estate = estate_burghers
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_cossacks
@@ -908,11 +903,11 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_cossacks
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_loyalty = {
 			estate = estate_burghers
-			loyalty = 10
+			loyalty = 15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_cossacks
@@ -934,7 +929,7 @@ country_event = {
 	id = cossack_estate_events.11
 	title = cossack_estate_events.11.t
 	desc = cossack_estate_events.11.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -946,7 +941,8 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				region = central_asia_region
-				region = siberia_region
+				region = west_siberia_region
+				region = east_siberia_region
 			}
 			NOT = { has_estate = yes }
 			has_terrain = steppe
@@ -1001,15 +997,17 @@ country_event = {
 				has_terrain = steppe
 				NOT = { has_estate = yes }
 				OR = {
-					region = siberia_region
+					region = west_siberia_region
+					region = east_siberia_region
 					region = central_asia_region
 				}
+				is_territory = no
 			}
 			set_estate = estate_cossacks
 		}
 		add_estate_loyalty = {
 			estate = estate_cossacks
-			loyalty = 10
+			loyalty = 15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_cossacks
@@ -1041,7 +1039,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_cossacks
-			loyalty = -10
+			loyalty = -15
 		}
 		add_estate_influence_modifier = {
 			estate = estate_cossacks
@@ -1057,7 +1055,7 @@ country_event = {
 	id = cossack_estate_events.12
 	title = cossack_estate_events.12.t
 	desc = cossack_estate_events.12.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_UPSET_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1164,7 +1162,7 @@ country_event = {
 	id = cossack_estate_events.13
 	title = cossack_estate_events.13.t
 	desc = cossack_estate_events.13.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1174,6 +1172,7 @@ country_event = {
 			is_capital = no
 			is_overseas = no
 			NOT = { has_estate = yes }
+			is_territory = no
 		}
 	}
 	
@@ -1191,6 +1190,7 @@ country_event = {
 					is_capital = no
 					is_overseas = no
 					NOT = { has_estate = yes }
+					is_territory = no
 				}
 				set_province_flag = growing_cossack_communities
 			}
@@ -1212,7 +1212,7 @@ country_event = {
 		name = cossack_estate_events.13.b #
 		add_estate_loyalty = {
 			estate = estate_cossacks
-			loyalty = -10
+			loyalty = -15
 		}
 		random_owned_province = {
 			limit = {
@@ -1238,7 +1238,7 @@ country_event = {
 	id = cossack_estate_events.14
 	title = cossack_estate_events.14.t
 	desc = cossack_estate_events.14.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_UPSET_eventPicture
 	
 	trigger = {
 		has_dlc = "The Cossacks"
@@ -1277,7 +1277,7 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_cossacks
-			loyalty = -15
+			loyalty = -20
 		}
 		add_estate_influence_modifier = {
 			estate = estate_cossacks
@@ -1299,15 +1299,15 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_burghers
-			loyalty = -20
+			loyalty = -25
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
-			loyalty = -20
+			loyalty = -25
 		}
 		add_estate_loyalty = {
 			estate = estate_church
-			loyalty = -20
+			loyalty = -25
 		}
 	}
 }
@@ -1317,66 +1317,12 @@ province_event = {
 	id = cossack_estate_events.15
 	title = cossack_estate_events.15.t
 	desc = cossack_estate_events.15.d
-	picture = BORDER_TENSION_eventPicture
+	picture = COSSACK_ESTATE_UPSET_eventPicture
 	
 	is_triggered_only = yes
 
 	option = {
 		name = cossack_estate_events.15.a #Ok.
 		
-	}
-}
-
-#Random loyalty hit at over 50 loyalty.
-country_event = {
-	id = cossack_estate_events.16
-	title = cossack_estate_events.16.t
-	desc = cossack_estate_events.16.d
-	picture = ADVISOR_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_dlc = "The Cossacks"
-		has_estate = estate_cossacks
-		any_owned_province = {
-			has_terrain = steppe
-		}
-		estate_loyalty = {
-			estate = estate_cossacks
-			loyalty = 50
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		modifier = {
-			factor = 1.5
-			total_development = 250
-			NOT = { total_development = 500 }
-		}
-		modifier = {
-			factor = 2.0
-			total_development = 500
-			NOT = { total_development = 750 }
-		}
-		modifier = {
-			factor = 2.5
-			total_development = 750
-			NOT = { total_development = 1000 }
-		}
-		modifier = {
-			factor = 3.0
-			total_development = 1000
-		}
-	}
-	
-
-	option = {
-		name = cossack_estate_events.16.a #Ok
-		add_estate_loyalty = {
-			estate = estate_cossacks
-			loyalty = -10
-		}
 	}
 }

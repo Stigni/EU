@@ -10,6 +10,7 @@ country_decisions = {
 			}
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
+			NOT = { tag = ROM }
 			NOT = { tag = SPA }
 			NOT = { tag = ADU }
 			is_colonial_nation = no
@@ -71,6 +72,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -86,6 +88,10 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			add_prestige = 25
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 3650
+			}
 			set_capital = 225 # Cordoba
 			if = {
 				limit = {
@@ -116,6 +122,20 @@ country_decisions = {
 				}
 				add_permanent_claim = ADU
 			}
+			toledo_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ADU
+			}
+			add_permanent_claim = 230
+			add_permanent_claim = 229
+			add_permanent_claim = 218
+			add_permanent_claim = 220
+			add_permanent_claim = 1750
+			add_permanent_claim = 1747
 		}
 		ai_will_do = {
 			factor = 400

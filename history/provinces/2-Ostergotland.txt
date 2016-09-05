@@ -14,6 +14,14 @@ capital = "Linköping"
 estate = estate_nobles
 is_city = yes # Estimated
 
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+
 1487.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # The Axelsson Tott Family
 1487.5.24 = { revolt = {} controller = SWE } # The Demise of the Axelsson Tott Family
 1497.3.13 = { controller = DAN } # Danish loyalists at Danish DoW

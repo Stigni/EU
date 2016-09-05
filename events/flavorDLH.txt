@@ -19,7 +19,7 @@ country_event = {
 	trigger = {
 		religion_group = muslim
 		is_year = 1650
-		NOT = { is_year = 1700 }
+		NOT = { tag = MUG }
 		NOT = { exists = MAR } # Marathas
 		any_owned_province = {
 			OR = {

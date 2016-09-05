@@ -253,6 +253,7 @@ country_event = {
 	}
 	option = {
 		name = "flavor_mch.EVTOPTB5"
+		add_corruption = 1.5
 		every_owned_province = {
 			limit = {
 				has_province_flag = mch_revolt_feudatories_flag
@@ -331,13 +332,13 @@ country_event = {
 	
 	option = {
 		name = "flavor_mch.EVTOPTA7"
-		add_years_of_income = -0.25
 		define_advisor = {
 			type = statesman
 			discount = yes
 			skill = 2
 			name = "Heshen"
 		}
+		add_corruption = 0.5
 	}
 	option = {
 		name = "flavor_mch.EVTOPTB7"

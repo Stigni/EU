@@ -663,7 +663,7 @@ province_event = {
 				}
 			}
 		}
-		has_empty_adjacent_province = no
+		NOT = { has_empty_adjacent_province = yes }
 		NOT = {
 			any_neighbor_province = {
 				owner = {
@@ -883,6 +883,7 @@ province_event = {
 			any_owned_province = {
 				is_colony = yes
 				colonysize = 500
+				NOT = { province_id = ROOT }
 			}
 		}
 	}
@@ -896,10 +897,14 @@ province_event = {
 		add_colonysize = -200
 		owner = {
 			random_owned_province = {
-				limit = { is_colony = yes colonysize = 500 }
+				limit = {
+					is_colony = yes
+					colonysize = 500
+					NOT = { province_id = ROOT }
+				}
 				add_colonysize = 200
 			}
-		}	
+		}
 	}
 }
 
@@ -938,7 +943,7 @@ province_event = {
 			trade_goods = salt
 			trade_goods = fur
 		}
-		has_empty_adjacent_province = no
+		NOT = { has_empty_adjacent_province = yes }
 	}
 	
 	mean_time_to_happen = {

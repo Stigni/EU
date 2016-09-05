@@ -22,10 +22,10 @@ native_hostileness = 2
 	trade_goods = sugar
 } # Founded by Diego Velázquez
 1516.1.23 = {
-	
+	discovered_by = SPA
 	owner = SPA
 	controller = SPA
 	add_core = SPA
 	remove_core = CAS
 }
-#
+#1517.1.1 = { } # The Taíno ( Arawak ) culture was nearly destroyed

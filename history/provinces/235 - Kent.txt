@@ -1,4 +1,5 @@
 #235 - Kent
+#Sussex+Kent
 
 owner = ENG
 controller = ENG
@@ -13,6 +14,14 @@ capital = "Canterbury"
 is_city = yes
 add_core = ENG
 seat_in_parliament = yes
+
+
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
 
 1450.5.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Jack Cade's rebellion
 1450.7.12 = { revolt = {} controller = ENG }

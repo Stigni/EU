@@ -22,14 +22,57 @@ estate_nomadic_tribes = {
 	}	
 	
 	# They want to control at least this % of the country's non-overseas development, if # of home provinecs is above set amount
-	min_territory = 33
+	min_territory = 25
 	min_provinces_to_want_territory = 4
+	wanted_territory_modifier = {
+		desc = EST_TOTAL_DEVELOPMENT
+		trigger = {
+			total_development = 200
+			NOT = { total_development = 400 }
+		}
+		value = 5		
+	}
+	wanted_territory_modifier = {
+		desc = EST_TOTAL_DEVELOPMENT
+		trigger = {
+			total_development = 400
+			NOT = { total_development = 600 }
+		}
+		value = 10			
+	}
+	wanted_territory_modifier = {
+		desc = EST_TOTAL_DEVELOPMENT
+		trigger = {
+			total_development = 600
+			NOT = { total_development = 800 }
+		}
+		value = 15			
+	}	
+	wanted_territory_modifier = {
+		desc = EST_TOTAL_DEVELOPMENT
+		trigger = {
+			total_development = 800
+			NOT = { total_development = 1000 }
+		}
+		value = 20	
+	}		
+	wanted_territory_modifier = {
+		desc = EST_TOTAL_DEVELOPMENT
+		trigger = {
+			total_development = 1000
+		}
+		value = 25		
+	}	
 	
 	# Giving territory affects power this much compared to base
-	territory_power_modifier = 0.33
+	territory_power_modifier = 0.4
 	
 	# Min autonomy in estate provinces
 	min_autonomy = 50
+	
+	# Estate cancels out the following multiplicative local autonomy effects:
+	autonomy_does_not_affect = local_manpower_modifier
+	autonomy_does_not_affect = land_forcelimit
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
@@ -40,54 +83,25 @@ estate_nomadic_tribes = {
 		manpower_recovery_speed = 0.2
 	}	
 	country_modifier_angry = {
-		horde_unity = -2
+		horde_unity = -10
+		manpower_recovery_speed = -0.4
+		raze_power_gain = -1
 	}
 	
 	# These do not scale, but only applied in provinces owned by the estate
 	province_modifier_happy = {
-		local_manpower_modifier = 1
+		local_manpower_modifier = 0.33
 		local_unrest = -2
 	}
 	province_modifier_neutral = {
-		local_manpower_modifier = 1
+		local_manpower_modifier = 0.33
 	}	
 	province_modifier_angry = {
-		local_unrest = 10
+		local_unrest = 5
 	}		
 	
 	# Influence modifiers
-	base_influence = 10
-	influence_modifier = {
-		desc = EST_NUM_CITIES
-		trigger = {
-			num_of_cities = 10
-			NOT = { num_of_cities = 20 }
-		}
-		influence = 10		
-	}	
-	influence_modifier = {
-		desc = EST_NUM_CITIES
-		trigger = {
-			num_of_cities = 20
-			NOT = { num_of_cities = 30 }
-		}
-		influence = 20		
-	}	
-	influence_modifier = {
-		desc = EST_NUM_CITIES
-		trigger = {
-			num_of_cities = 30
-			NOT = { num_of_cities = 40 }
-		}
-		influence = 30		
-	}
-	influence_modifier = {
-		desc = EST_NUM_CITIES
-		trigger = {
-			num_of_cities = 40
-		}
-		influence = 40		
-	}
+	base_influence = 25
 	
 	# For province assignment
 	ai_grant_province = {
@@ -115,11 +129,9 @@ estate_nomadic_tribes = {
 		
 		effect = {
 			add_years_of_income = -0.25
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				desc = EST_VAL_SUPPORT_TRIBES
-				duration = 3650
-				loyalty = 10
+				loyalty = 15
 			}
 		}
 		
@@ -151,18 +163,16 @@ estate_nomadic_tribes = {
 			}
 			estate_influence = {
 				estate = estate_nomadic_tribes
-				influence = 50
+				influence = 40
 			}
 			NOT = { manpower_percentage = 0.99 }
 		}
 		
 		effect = {
 			add_manpower = 0.25
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				desc = EST_VAL_CONTRIBUTED_WARRIORS
-				duration = 3650
-				loyalty = -10
+				loyalty = -15
 			}
 		}
 		
@@ -203,7 +213,7 @@ estate_nomadic_tribes = {
 			}
 			estate_influence = {
 				estate = estate_nomadic_tribes
-				influence = 50
+				influence = 40
 			}
 		}
 		
@@ -254,7 +264,7 @@ estate_nomadic_tribes = {
 		trigger = {
 			estate_influence = {
 				estate = estate_nomadic_tribes
-				influence = 50
+				influence = 40
 			}
 		}
 		

@@ -3,8 +3,8 @@
 owner = ZAN
 controller = ZAN
 add_core = ZAN
-culture = bantu
-religion = animism
+culture = swahili
+religion = shamanism #Fetishism
 capital = "Bagamayo"
 is_city = yes
 base_manpower = 1
@@ -12,6 +12,13 @@ trade_goods = ivory
 hre = no
 base_tax = 1 
 base_production = 1
+
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = central_african
+
 discovered_by = ETH
 discovered_by = ADA
 discovered_by = NUB
@@ -25,6 +32,7 @@ discovered_by = ZIM
 discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
+
 
 1498.3.16 = { discovered_by = POR } #Vasco Da Gama
 1600.1.1 = { discovered_by = TUR }

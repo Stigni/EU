@@ -39,6 +39,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -66,7 +67,10 @@ country_decisions = {
 			RMN = {
 				set_capital = 161
 			}
-			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1

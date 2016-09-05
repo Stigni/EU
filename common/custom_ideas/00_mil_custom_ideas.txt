@@ -13,14 +13,8 @@ mil_idea_modifiers = {
 		land_maintenance_modifier = -0.05
 		default = 10
 	}
-	custom_idea_mercenary_cost = {
-		mercenary_cost = -0.05
-		level_cost_2 = 3
-		level_cost_3 = 9
-		level_cost_4 = 18			
-	}
 	custom_idea_merc_maintenance_modifier = {
-		merc_maintenance_modifier = -0.05
+		merc_maintenance_modifier = -0.1
 		level_cost_2 = 3
 		level_cost_3 = 9
 		level_cost_4 = 18		

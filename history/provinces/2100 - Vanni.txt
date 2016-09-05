@@ -13,6 +13,18 @@ base_manpower = 1
 is_city = yes
 add_core = JFN
 
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = chinese
+discovered_by = east_african
+
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = chinese
+
+
 1411.1.1 = {
 	owner = CEY
 	controller = CEY
@@ -21,6 +33,7 @@ add_core = JFN
 	owner = JFN
 	controller = JFN
 }	#Reconquest by Vijayanagar
+1505.1.1 = { discovered_by = POR } # Francisco de Almeida
 1619.1.1 = {
 	owner = POR
 	controller = POR

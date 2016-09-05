@@ -14,6 +14,12 @@ capital = "Reykjavik"
 is_city = yes 	
 add_core = NOR
 
+add_core = ICE
+discovered_by = western
+
+discovered_by = western
+
+
 1536.1.1 = {
 	religion = protestant
 	owner = DAN

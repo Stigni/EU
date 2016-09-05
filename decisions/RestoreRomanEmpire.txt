@@ -1,0 +1,99 @@
+country_decisions = {
+
+	restore_roman_empire = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			owns = 118
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			NOT = { tag = PAP }
+			NOT = { exists = ROM }
+			OR = {
+				religion_group = christian
+				religion_group = pagan
+			}
+		}
+		allow = {
+			italy_region = {
+				type = all
+				owned_by = ROOT
+			}
+			france_region = {
+				type = all
+				owned_by = ROOT
+			}
+			iberia_region = {
+				type = all
+				owned_by = ROOT
+			}
+			balkan_region = {
+				type = all
+				owned_by = ROOT
+			}
+			anatolia_region = {
+				type = all
+				owned_by = ROOT
+			}
+			mashriq_region = {
+				type = all
+				owned_by = ROOT
+			}
+			owns = 343 # Fez
+			owns = 341 # Tunis
+			owns = 361 # Cairo
+			owns = 236 # London
+			owns = 245 # Yorkshire
+			owns = 96 # Zeeland
+			owns = 134 # Vienna
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+		}
+		effect = {
+			change_tag = ROM
+			change_primary_culture = roman
+			custom_tooltip = restore_roman_empire_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			set_government_rank = 3
+			add_prestige = 50
+			set_capital = 118 # Rome
+			add_core = 118 # Rome
+			#if = {
+			#	limit = {
+			#		is_part_of_hre = yes
+			#		is_elector = no
+			#	}
+			#	every_owned_province = {
+			#		limit = {
+			#			is_part_of_hre = yes
+			#		}
+			#		set_in_empire = no
+			#	}
+			#}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

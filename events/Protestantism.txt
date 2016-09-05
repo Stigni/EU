@@ -17,6 +17,7 @@ country_event = {
 		religion = protestant
 		has_dlc = "Common Sense"
 		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		capital_scope = {
 			continent = europe
 		}
@@ -207,6 +208,7 @@ country_event = {
 		religion = protestant
 		has_dlc = "Common Sense"
 		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		NOT = { has_country_modifier = rumored_crypto_catholics }
 		NOT = { has_country_modifier = catholics_in_hiding }
 	}
@@ -259,6 +261,7 @@ province_event = {
 		NOT = { has_province_modifier = millenarianism }
 		owner = {
 			NOT = { num_of_aspects = 3 }
+			NOT = { church_power = 200 }
 			NOT = { has_country_modifier = fear_of_god }
 		}
 	}
@@ -343,6 +346,7 @@ country_event = {
 		religion = protestant
 		has_dlc = "Common Sense"
 		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		has_church_aspect = allow_usury_aspect
 		is_religion_enabled = protestant
 		any_owned_province = {
@@ -364,7 +368,20 @@ country_event = {
 	
 	option = {
 		name = protestantism_events.8.a #Ignore the naysayers
+		ai_chance = {
+			factor = 50
+		}
 		add_church_power = 25
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+		}
 		random_owned_province = {
 			limit = {
 				NOT = { has_province_modifier = prot_economic_downturn }
@@ -377,6 +394,30 @@ country_event = {
 	}
 	option = {
 		name = protestantism_events.8.b #Let us decrease Limit for a while.
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+				NOT = {
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 40
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
+		}
 		add_country_modifier = {
 			name = "stricter_usury_regulations"
 			duration = 1825
@@ -469,6 +510,16 @@ country_event = {
 	}
 	option = {
 		name = protestantism_events.9.e #Avoid Meddling on the local level.
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -491,14 +542,18 @@ province_event = {
 		has_dlc = "Common Sense"
 		owner = {
 			NOT = { num_of_aspects = 3 }
+			NOT = { church_power = 200 }
 			religion = protestant
 			num_of_cities = 2
 		}
 		is_capital = no
 		is_reformation_center = no
 		OR = {
-			owner = {
-				NOT = { catholic = 1 }
+			AND = {
+				owner = {
+					NOT = { catholic = 1 }
+				}
+				religion = protestant
 			}
 			religion = catholic
 		}
@@ -526,6 +581,18 @@ province_event = {
 				}
 			}
 		}
+		owner = {
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+					has_estate = estate_church
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = 10
+				}
+			}
+		}
 		spawn_rebels = {
 			type = catholic_rebels
 			size = 2
@@ -536,9 +603,32 @@ province_event = {
 		name = protestantism_events.10.b #We will deal with them later.
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 0.1
+				has_dlc = "The Cossacks"
+				owner = {
+					has_estate = estate_church
+					NOT = {
+						estate_loyalty = {
+							estate = estate_church
+							loyalty = 40
+						}
+					}
+				}
+			}
 		}
 		owner = {
 			add_church_power = -25
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+					has_estate = estate_church
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = -10
+				}
+			}
 		}
 		add_province_modifier = {
 			name = "catholic_stronghold"
@@ -562,6 +652,7 @@ country_event = {
 		religion = protestant
 		has_dlc = "Common Sense"
 		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		is_religion_enabled = protestant
 		NOT = { religion_years = { protestant = 80 } }
 		NOT = { had_country_flag = { flag = converted_to_protestantism days = 7300 } }
@@ -577,6 +668,16 @@ country_event = {
 		name = protestantism_events.11.a #Banish him.
 		ai_chance = {
 			factor = 1
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
 		}
 		add_prestige = -10
 		remove_advisor = theologian
@@ -596,6 +697,27 @@ country_event = {
 		name = protestantism_events.11.c #Ignore him.
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
 		}
 		add_prestige = 10
 		add_church_power = -25
@@ -613,6 +735,7 @@ country_event = {
 		religion = protestant
 		has_dlc = "Common Sense"
 		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		is_religion_enabled = protestant
 		OR = {
 			employed_advisor = {
@@ -704,6 +827,7 @@ country_event = {
 		religion = protestant
 		has_dlc = "Common Sense"
 		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		is_religion_enabled = protestant
 		OR = {
 			employed_advisor = {
@@ -790,10 +914,10 @@ country_event = {
 		}
 	}
 	
-	option = {
-		name = protestantism_events.13.c #Change some of the Laws being put to question.
-		add_stability = -1
-	}
+	#option = {
+	#	name = protestantism_events.13.c #Change some of the Laws being put to question.
+	#	add_stability = -1
+	#}
 }
 
 #Catholic Leaning Heir
@@ -807,6 +931,7 @@ country_event = {
 		religion = protestant
 		has_dlc = "Common Sense"
 		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		has_regency = no
 		is_religion_enabled = protestant
 		NOT = { has_country_flag = catholic_leaning_heir }
@@ -920,6 +1045,16 @@ country_event = {
 		add_stability = -1
 		if = {
 			limit = {
+				has_estate = estate_church
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_church 
+				loyalty = 15
+			}
+		}
+		if = {
+			limit = {
 				has_heir = no
 			}
 			define_ruler = {
@@ -962,6 +1097,8 @@ country_event = {
 		has_ruler_flag = heir_catholic
 		is_lesser_in_union = no
 		heir_age = 26
+		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 	}
 	
 	mean_time_to_happen = {
@@ -1071,6 +1208,7 @@ country_event = {
 		religion = protestant
 		has_dlc = "Common Sense"
 		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		is_religion_enabled = protestant
 		OR = {
 			religion_years = { protestant = 80 }
@@ -1096,14 +1234,45 @@ country_event = {
 		}
 		add_prestige = -10
 		remove_advisor = theologian
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 	}
 	
 	option = {
 		name = protestantism_events.21.b #Ignore him.
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
 		}
 		add_church_power = -25
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 	}
 }
 
@@ -1118,6 +1287,7 @@ country_event = {
 		religion = protestant
 		has_dlc = "Common Sense"
 		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		is_religion_enabled = protestant
 		religion_years = { protestant = 70 }
 		NOT = { religion_years = { protestant = 150 } }
@@ -1130,16 +1300,53 @@ country_event = {
 	
 	option = {
 		name = protestantism_events.22.a #"Reprimand them."
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_country_modifier = {
 			name = "phillipists"
 			duration = 1825
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
 		}
 	}
 	
 	option = {
 		name = protestantism_events.22.b #"Round up the prominent ones and try them for treason."
+		ai_chance = {
+			factor = 1
+		}
 		add_church_power = 25
 		add_stability = -1
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 	}
 }
 
@@ -1154,6 +1361,7 @@ country_event = {
 		religion = protestant
 		has_dlc = "Common Sense"
 		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		is_religion_enabled = protestant
 		any_known_country = {
 			religion = catholic
@@ -1342,7 +1550,8 @@ country_event = {
 	trigger = {
 		religion = protestant
 		has_dlc = "Common Sense"
-		
+		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		is_religion_enabled = protestant
 		has_church_aspect = translated_bibles_aspect
 		NOT = {
@@ -1385,6 +1594,7 @@ country_event = {
 		religion = protestant
 		has_dlc = "Common Sense"
 		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		is_religion_enabled = protestant
 		ruler_age = 18
 		government = monarchy
@@ -1406,16 +1616,43 @@ country_event = {
 	
 	option = {
 		name = protestantism_events.25.a #Steer clear of this blasphemy.
+		ai_chance = {
+			factor = 90
+		}
 		add_stability = 1
 	}
 	
 	option = {
 		name = protestantism_events.25.b #If it was good enough for the Patriarchs, it's good enough for me.
 		trigger = { NOT = { has_country_flag = allowed_bigamy } }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_church_power = -100
 		add_prestige = -20
 		add_ruler_modifier = {
 			name = "protestant_bigamy"
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -15
+			}
 		}
 		set_country_flag = allowed_bigamy
 	}
@@ -1423,10 +1660,34 @@ country_event = {
 	option = {
 		name = protestantism_events.25.c #If it was good enough for my predecessors it's good enough for me.
 		trigger = { has_country_flag = allowed_bigamy }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
 		add_church_power = -100
 		add_prestige = -20
 		add_ruler_modifier = {
 			name = "protestant_bigamy"
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -15
+			}
 		}
 		every_known_country = {
 			limit = {
@@ -1454,7 +1715,7 @@ country_event = {
 	trigger = {
 		religion = protestant
 		has_dlc = "Common Sense"
-		always = no #Will be added in once mosaic law is implemented
+		always = no #Removed
 		is_religion_enabled = protestant
 		#has_church_aspect = mosaic_law_aspect
 		num_of_cities = 4
@@ -1526,7 +1787,8 @@ country_event = {
 	trigger = {
 		religion = protestant
 		has_dlc = "Common Sense"
-		
+		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		NOT = { has_country_modifier = stern_theologian_education }
 		NOT = { has_country_modifier = stern_theologian_mission }
 		NOT = { has_country_modifier = stern_theologian_leader }
@@ -1572,6 +1834,16 @@ country_event = {
 			name = "stern_theologian_leader"
 			duration = 3650
 		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 	}
 }
 
@@ -1585,7 +1857,8 @@ country_event = {
 	trigger = {
 		religion = protestant
 		has_dlc = "Common Sense"
-		
+		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		has_church_aspect = holy_sacraments_aspect
 	}
 	
@@ -1621,7 +1894,8 @@ country_event = {
 	trigger = {
 		religion = protestant
 		has_dlc = "Common Sense"
-		
+		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		NOT = { religion_years = { protestant = 100 } }
 	}
 	
@@ -1701,6 +1975,7 @@ province_event = {
 		NOT = { has_province_modifier = prot_stopped_witch_trials }
 		owner = {
 			NOT = { num_of_aspects = 3 }
+			NOT = { church_power = 200 }
 			religion = protestant
 			NOT = { has_country_modifier = nationwide_witch_hunts }
 			NOT = { has_country_modifier = forbade_witch_hunts }
@@ -1770,7 +2045,8 @@ country_event = {
 	trigger = {
 		religion = protestant
 		has_dlc = "Common Sense"
-		
+		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		OR = {
 			has_church_aspect = legalised_divorces_aspect
 			has_church_aspect = heretics_deported_aspect
@@ -1805,7 +2081,8 @@ country_event = {
 	trigger = {
 		religion = protestant
 		has_dlc = "Common Sense"
-		
+		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 		has_church_aspect = parish_registers_aspect
 		any_owned_province = {
 			NOT = { months_since_defection = 60 }
@@ -1858,6 +2135,8 @@ country_event = {
 		has_dlc = "Common Sense"
 		NOT = { num_of_aspects = 3 }
 		religion_years = { protestant = 220 }
+		NOT = { num_of_aspects = 3 }
+		NOT = { church_power = 200 }
 	}
 	
 	
@@ -1877,10 +2156,47 @@ country_event = {
 	
 	option = {
 		name = protestantism_events.33.a #Attempt to limit its influence
+		ai_chance = {
+			factor = 90
+		}
 		add_church_power = -75
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
 	}
 	option = {
 		name = protestantism_events.33.b #Embrace the Pietists
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
 		add_country_modifier = {
 			name = "spread_of_pietism"
 			duration = 1825
@@ -1900,7 +2216,10 @@ province_event = {
 		owner = { religion = protestant }
 		is_capital = no
 		has_dlc = "Common Sense"
-		
+		owner = {
+			NOT = { num_of_aspects = 3 }
+			NOT = { church_power = 200 }
+		}
 		owner = { has_church_aspect = icons_images_aspect }
 	}
 	
@@ -2086,6 +2405,8 @@ province_event = {
 			colonial_parent = {
 				religion = protestant
 				has_church_aspect = heretics_deported_aspect
+				NOT = { num_of_aspects = 3 }
+				NOT = { church_power = 200 }
 			}
 		}
 		is_capital = no
@@ -2178,6 +2499,8 @@ country_event = {
 		}
 		colonial_parent = {
 			religion = protestant
+			NOT = { num_of_aspects = 3 }
+			NOT = { church_power = 200 }
 		}
 	}
 	

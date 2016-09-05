@@ -204,7 +204,6 @@ recover_from_warexhaustion = {
 
 	allow = {
 		war_exhaustion = 5
-		NOT = { war_exhaustion = 3 }
 		is_at_war = no
 		OR = {
 			NOT = { has_country_flag = recovered_from_warexhaustion }

@@ -1,7 +1,7 @@
 government = tribal_kingdom
 primary_culture = swahili
 religion = sunni
-technology_group = indian
+technology_group = east_african
 unit_type = sub_saharan
 capital = 1203	# Malindi
 historical_rival = MBA

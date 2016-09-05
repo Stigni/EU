@@ -17,6 +17,15 @@ charter_colonies = {
 		colonists = 1
 		global_colonial_growth = 20
 	}
+	
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			NOT = { num_of_colonies = 10 }
+		}
+	}
+
 
 	ai_will_do = {
 		factor = 1

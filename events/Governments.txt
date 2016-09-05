@@ -1,3 +1,5 @@
+namespace = government_events
+
 # Constitutional Restoration
 country_event = {
 	id = 9479
@@ -80,5 +82,27 @@ country_event = {
 	option = {
 		name = free_cities.2.a
 		change_government = oligarchic_republic
+	}
+}
+
+# Iqta no longer Muslim
+country_event = {
+	id = government_events.1
+	title = government_events.1.t
+	desc = government_events.1.d
+	picture = COURT_eventPicture
+	
+	trigger = {
+		NOT = { religion_group = muslim }
+		government = iqta
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = government_events.1.a
+		change_government = despotic_monarchy
 	}
 }

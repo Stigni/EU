@@ -187,9 +187,7 @@ on_enforce_rebel_demands = {
 
 # country
 on_colonial_liberation = {
-	events = {
-		colonial_nation.90
-	}
+	country_event = { id = colonial_nation.90 days = 1 }
 }
 
 # country
@@ -325,6 +323,7 @@ on_new_monarch = {
 		flavor_kol.1	# Bavarian Archbishop
 		war_of_the_roses.101	# WotR - House of Lancaster wins
 		war_of_the_roses.102	# WotR - House of York wins
+		war_of_the_roses.106	# WotR - Another dynasty has seized the throne
 		flavor_tur.102	# Janissary Reward
 		flavor_ori.7	# Hamvira Victorious
 		flavor_kbo.1	# The two branches of the Sayfawa dynasty
@@ -334,6 +333,7 @@ on_new_monarch = {
 		flavor_pol.3480 #The Pacta Conventa
 		protestantism_events.15 #Catholic Leaning Monarch
 		tengri_events.17 #Keep the Khojas in Power?
+		flavor_tus.15 #Savonarola Dies
 	}
 	random_events = { 
 		1000 = 0
@@ -344,6 +344,10 @@ on_new_monarch = {
 		50 = dynastic_events.4
 		50 = dynastic_events.5
 	}
+}
+
+# country
+on_monarch_death = {
 }
 
 # country 
@@ -387,6 +391,14 @@ on_diplomatic_annex = {
 	events = {
 		610
 	}
+}
+
+# country
+on_heir_death = {
+}
+
+# country
+on_new_heir = {
 }
 
 # country 
@@ -519,6 +531,18 @@ on_hre_religion_white_peace = {
 	events = {
 		religious_leagues.4
 	}
+}
+
+# province
+on_adm_development = {
+}
+
+# province
+on_dip_development = {
+}
+
+# province
+on_mil_development = {
 }
 
 on_overextension_pulse = {
@@ -820,12 +844,59 @@ on_bi_yearly_pulse = {
 		100 = randomeventsstapehordes.22
 		100 = randomeventsstapehordes.23
 		100 = randomeventsstapehordes.24
+
+		# Sailor events
+		100 = sailor_event.1
+		100 = sailor_event.2
+		100 = sailor_event.3
+		100 = sailor_event.4
+		100 = sailor_event.5
+
+		# Corruption Events
+		100 = corruption_event.16
+		100 = corruption_event.17
+		100 = corruption_event.18
+		100 = corruption_event.19
+		100 = corruption_event.20
+
+		# Trade League Events
+		100 = trade_league.1
+		100 = trade_league.2
+		100 = trade_league.3
+		100 = trade_league.4
+		100 = trade_league.7
+		100 = trade_league.8
+		100 = trade_league.9
+		100 = trade_league.10
+		100 = trade_league.11
+		100 = trade_league.12
+		100 = trade_league.13
+		100 = trade_league.14
 		
 		1000 = 0
 	}
 }
 
 on_bi_yearly_pulse_2 = {
+	random_events = {
+		100 = corruption_event.1
+		100 = corruption_event.2
+		100 = corruption_event.3
+		100 = corruption_event.4
+		100 = corruption_event.5
+		100 = corruption_event.6
+		100 = corruption_event.7
+		100 = corruption_event.8
+		100 = corruption_event.9
+		100 = corruption_event.10
+		200 = corruption_event.11
+		200 = corruption_event.12
+		200 = corruption_event.13
+		200 = corruption_event.14
+		200 = corruption_event.15
+
+		4000 = 0
+	}
 }
 
 on_bi_yearly_pulse_3 = {
@@ -1102,6 +1173,7 @@ on_four_year_pulse = {
 		150 = elective_monarchy.12
 		150 = elective_monarchy.14
 		150 = elective_monarchy.17
+		25 = elective_monarchy.18
 
 		# Free Cities
 		25 = free_cities.3
@@ -1416,6 +1488,10 @@ on_five_year_pulse = {
 		
 		1000 = 0
 	}
+	
+	events = {
+		seven_cities_events.1000 #Clearing of Seven Cities Hunt when goal is no longer possible
+	}
 }
 
 
@@ -1438,7 +1514,6 @@ on_five_year_pulse_2 = {
 		100 = burghers_estate_events.13
 		400 = burghers_estate_events.14 #Demands
 		100 = burghers_estate_events.15 #Disloyal
-		100 = burghers_estate_events.17 #Loyalty Hit
 		# Nobles
 		100 = nobles_estate_events.1 #Demands
 		100 = nobles_estate_events.2
@@ -1451,7 +1526,6 @@ on_five_year_pulse_2 = {
 		400 = nobles_estate_events.9 #Disloyal
 		50 = nobles_estate_events.10
 		100 = nobles_estate_events.11 #Bonus
-		100 = nobles_estate_events.13 #Loyalty Hit
 		# Clergy
 		100 = church_estate_events.1
 			#Regional Variations:
@@ -1469,7 +1543,6 @@ on_five_year_pulse_2 = {
 		100 = church_estate_events.8
 		100 = church_estate_events.9
 		100 = church_estate_events.10
-		100 = church_estate_events.12 #Loyalty Hit
 		# Dhimmi
 		100 = dhimmi_estate_events.1
 		400 = dhimmi_estate_events.2 #Demands
@@ -1479,7 +1552,6 @@ on_five_year_pulse_2 = {
 		100 = dhimmi_estate_events.6
 		400 = dhimmi_estate_events.7 #Disloyal
 		100 = dhimmi_estate_events.8
-		100 = dhimmi_estate_events.10 #Loyalty Hit
 		# Cossacks
 		100 = cossack_estate_events.1
 		#100 = cossack_estate_events.2 (triggers in neighbor country)
@@ -1490,7 +1562,6 @@ on_five_year_pulse_2 = {
 		400 = cossack_estate_events.12 #Disloyal
 		100 = cossack_estate_events.13
 		400 = cossack_estate_events.14 #Demands
-		100 = cossack_estate_events.16 #Loyalty Hit
 		# Tribes
 		100 = tribal_estate_events.1
 		100 = tribal_estate_events.2
@@ -1505,7 +1576,6 @@ on_five_year_pulse_2 = {
 		150 = tribal_estate_events.12 #Demands
 		150 = tribal_estate_events.13 #Demands
 		150 = tribal_estate_events.14 #Demands
-		100 = tribal_estate_events.15 #Loyalty Hit
 		
 		1000 = 0              
 	}
@@ -1580,6 +1650,7 @@ on_conquistador_empty = {
 		50 = seven_cities_events.222
 		50 = seven_cities_events.223
 		
+		10 = seven_cities_events.302
 		10 = seven_cities_events.303
 		10 = seven_cities_events.308
 		10 = seven_cities_events.309
@@ -1604,7 +1675,6 @@ on_conquistador_native = {
 	random_events = {
 		10 = seven_cities_events.300
 		10 = seven_cities_events.301
-		10 = seven_cities_events.302
 		10 = seven_cities_events.303
 		10 = seven_cities_events.304
 		10 = seven_cities_events.305
@@ -1629,7 +1699,11 @@ on_buy_religious_reform = {
 on_circumnavigation = {
 	events = {
 		exploration_events.17
-		exploration_events.16
+		exploration_events.16 #First Circumnavigation Europe
+		exploration_events.18 #First Circumnavigation Asia
+		exploration_events.19 #First Circumnavigation Africa
+		exploration_events.20 #First Circumnavigation Americas
+		exploration_events.21 #First Circumnavigation Chinese
 	}
 }
 
@@ -1645,6 +1719,9 @@ on_remove_free_city = {
 	}
 }
 
+on_revoke_estate_land_ai = { #AI can't handle the rebels atm or perform a gradual revoke, sorry
+}
+
 on_revoke_estate_land = {
 	if = {
 		limit = {
@@ -1653,7 +1730,7 @@ on_revoke_estate_land = {
 				NOT = {
 					estate_loyalty = {
 						estate = estate_cossacks
-						loyalty = 30
+						loyalty = 40
 					}
 				}
 			}
@@ -1671,7 +1748,7 @@ on_revoke_estate_land = {
 				NOT = {
 					estate_loyalty = {
 						estate = estate_dhimmi
-						loyalty = 30
+						loyalty = 40
 					}
 				}
 			}
@@ -1690,7 +1767,7 @@ on_revoke_estate_land = {
 				NOT = {
 					estate_loyalty = {
 						estate = estate_church
-						loyalty = 30
+						loyalty = 40
 					}
 				}
 			}
@@ -1709,7 +1786,7 @@ on_revoke_estate_land = {
 				NOT = {
 					estate_loyalty = {
 						estate = estate_church
-						loyalty = 30
+						loyalty = 40
 					}
 				}
 			}
@@ -1727,7 +1804,7 @@ on_revoke_estate_land = {
 				NOT = {
 					estate_loyalty = {
 						estate = estate_nobles
-						loyalty = 30
+						loyalty = 40
 					}
 				}
 			}
@@ -1745,7 +1822,7 @@ on_revoke_estate_land = {
 				NOT = {
 					estate_loyalty = {
 						estate = estate_burghers
-						loyalty = 30
+						loyalty = 40
 					}
 				}
 			}
@@ -1763,7 +1840,7 @@ on_revoke_estate_land = {
 				NOT = {
 					estate_loyalty = {
 						estate = estate_nomadic_tribes
-						loyalty = 30
+						loyalty = 40
 					}
 				}
 			}

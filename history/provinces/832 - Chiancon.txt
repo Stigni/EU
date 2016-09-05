@@ -13,8 +13,14 @@ base_production = 5
 base_manpower = 2
 add_core = MCA
 
+
+
+discovered_by = south_american
+discovered_by = MCA
+
+
 1539.1.1 = {
-	
+	discovered_by = SPA
 	owner = SPA
 	controller = SPA
 	add_core = SPA

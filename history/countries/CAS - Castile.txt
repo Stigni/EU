@@ -4,8 +4,8 @@ add_accepted_culture = andalucian
 add_accepted_culture = leonese
 religion = catholic
 technology_group = western
-historical_friend = POR
 historical_rival = GRA
+historical_friend = POR
 capital = 219 # Toledo
 
 national_focus = MIL

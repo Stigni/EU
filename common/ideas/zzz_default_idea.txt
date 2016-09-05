@@ -20,7 +20,7 @@ default_ideas = {
 		global_tax_modifier = 0.05
 	}	
 	cheaper_mercenaries = {
-		mercenary_cost = -0.10
+		merc_maintenance_modifier = -0.10
 	}
 	increased_trade_power = {
 		global_trade_power = 0.05

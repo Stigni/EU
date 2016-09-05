@@ -12,6 +12,13 @@ trade_goods = gold
 hre = no
 base_tax = 4
 base_production = 4
+
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = central_african
+
 discovered_by = ETH
 discovered_by = ADA
 discovered_by = NUB
@@ -25,6 +32,7 @@ discovered_by = ZIM
 discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
+
 
 1498.3.2 = { discovered_by = POR } # Vasco Da Gama
 1501.1.1 = { unrest = 3 } # Portuguese visit, brief skirmish with sultans

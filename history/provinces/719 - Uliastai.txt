@@ -13,12 +13,18 @@ base_production = 3
 base_manpower = 3
 is_city = yes
 
+
+
+discovered_by = chinese
+discovered_by = nomad_group
+
+
 1552.1.1 = {
 	owner = KHA
 	controller = KHA
 	add_core = KHA
 } # The Oirads are defeated & Altan Khan reunites the the area.
-
+1633.1.1 = { discovered_by = RUS }
 1635.4.1 = {
 	owner = KLK
 	controller = KLK
@@ -33,4 +39,4 @@ is_city = yes
 	controller = QNG
 	add_core = QNG
 } # Outer Mongolia intergrated into Qing
-
+1709.1.1 = { discovered_by = SPA }

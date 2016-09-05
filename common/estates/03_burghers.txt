@@ -5,7 +5,7 @@ estate_burghers =
 	color = { 35 35 150 }
 	
 	# Is estate kept in control of province on conquest?
-	keep_on_conquest = yes	
+	keep_on_conquest = no	
 	
 	min_provinces_to_want_territory = 5
 	wanted_territory_modifier = {
@@ -30,6 +30,7 @@ estate_burghers =
 	# If true, province can be granted to estate
 	province_trigger = {
 		OR = {
+			owner = { government = republic }
 			development = 10
 			province_trade_power = 5
 			owner = { government = republic }
@@ -38,6 +39,12 @@ estate_burghers =
 	
 	# Min autonomy in estate provinces
 	min_autonomy = 25
+	
+	# Estate cancels out the following multiplicative local autonomy effects:
+	autonomy_does_not_affect = local_production_efficiency
+	autonomy_does_not_affect = province_trade_power_modifier
+	autonomy_does_not_affect = naval_forcelimit
+	autonomy_does_not_affect = local_sailors_modifier
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
@@ -61,7 +68,7 @@ estate_burghers =
 		province_trade_power_modifier = 0.5
 	}		
 	province_modifier_angry = {
-		local_unrest = 10
+		local_unrest = 5
 	}	
 	
 	# Influence modifiers
@@ -202,6 +209,13 @@ estate_burghers =
 		}
 		loyalty = -20
 	}
+	loyalty_modifier = {
+		desc = EST_VAL_FULL_PLUTOCRATIC
+		trigger = {
+			full_idea_group = plutocracy_ideas
+		}
+		loyalty = 10
+	}
 	
 	#Custom Names
 	custom_name = {
@@ -266,6 +280,11 @@ estate_burghers =
 		
 		years_between_use = 10
 		
+		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+		}
+		
 		trigger = {
 			estate_loyalty = {
 				estate = estate_burghers
@@ -324,11 +343,9 @@ estate_burghers =
 				}
 				add_years_of_income = 1
 			}				
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_burghers
-				desc = EST_VAL_ASKED_FOR_CONTRIBUTION
-				loyalty = -5
-				duration = 3650
+				loyalty = -10
 			}
 		}
 		
@@ -354,6 +371,11 @@ estate_burghers =
 		icon = 3
 		
 		years_between_use = 20
+		
+		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+		}
 		
 		trigger = {		
 			estate_loyalty = {
@@ -417,11 +439,9 @@ estate_burghers =
 				}
 				add_dip_power = 200
 			}				
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_burghers
-				desc = EST_VAL_DEMANDED_BURGHER_SUPPORT
-				duration = 7300
-				loyalty = -15
+				loyalty = -20
 			}
 		}
 		
@@ -447,11 +467,9 @@ estate_burghers =
 				influence = 10
 				duration = 7300
 			}
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_burghers
-				desc = EST_VAL_GRANTED_MONOPOLIES_LOYALTY
-				loyalty = 10
-				duration = 7300
+				loyalty = 15
 			}
 		}
 		
@@ -479,10 +497,15 @@ estate_burghers =
 		
 		years_between_use = 30
 		
+		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+		}
+		
 		trigger = {
 			estate_influence = {
 				estate = estate_burghers
-				influence = 50
+				influence = 40
 			}
 		}
 		
@@ -524,6 +547,8 @@ estate_burghers =
 		years_between_use = 10
 		
 		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
 			num_of_ports = 1
 		}
 		
@@ -534,7 +559,7 @@ estate_burghers =
 			}	
 			estate_influence = {
 				estate = estate_burghers
-				influence = 50
+				influence = 40
 			}			
 		}
 		
@@ -560,6 +585,8 @@ estate_burghers =
 		years_between_use = 10
 		
 		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
 			has_idea_group = exploration_ideas
 		}
 		
@@ -570,7 +597,7 @@ estate_burghers =
 			}	
 			estate_influence = {
 				estate = estate_burghers
-				influence = 50
+				influence = 40
 			}			
 		}
 		
@@ -599,7 +626,10 @@ estate_burghers =
 		years_between_use = 30
 		
 		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
 			num_of_ports = 1
+			primitives = no
 		}
 		
 		trigger = {
@@ -609,7 +639,7 @@ estate_burghers =
 			}	
 			estate_influence = {
 				estate = estate_burghers
-				influence = 50
+				influence = 40
 			}
 			num_of_ports = 10
 			any_owned_province = {
@@ -619,11 +649,9 @@ estate_burghers =
 		}
 		
 		effect = {
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_burghers
-				desc = EST_VAL_MERCHANT_SHIPS_STOLEN
-				loyalty = -10
-				duration = 10950
+				loyalty = -15
 			}
 			random_owned_province = {
 				limit = {

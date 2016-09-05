@@ -19,10 +19,12 @@ country_event = {
 	
 	trigger = {
 		government = steppe_horde
-		had_recent_war = 2
+		is_at_war = no
+		NOT = { had_recent_war = 2 }
 		capital_scope = {
 			OR = {
-				region = siberia_region
+				region = west_siberia_region
+				region = east_siberia_region
 				region = mongolia_region
 				region = manchuria_region
 				region = central_asia_region
@@ -75,7 +77,8 @@ country_event = {
 		war_exhaustion = 2
 		capital_scope = {
 			OR = {
-				region = siberia_region
+				region = west_siberia_region
+				region = east_siberia_region
 				region = mongolia_region
 				region = manchuria_region
 				region = central_asia_region
@@ -120,7 +123,8 @@ country_event = {
 		NOT = { manpower_percentage = 0.9 }
 		capital_scope = {
 			OR = {
-				region = siberia_region
+				region = west_siberia_region
+				region = east_siberia_region
 				region = mongolia_region
 				region = manchuria_region
 				region = central_asia_region
@@ -163,7 +167,8 @@ country_event = {
 		government = steppe_horde
 		capital_scope = {
 			OR = {
-				region = siberia_region
+				region = west_siberia_region
+				region = east_siberia_region
 				region = mongolia_region
 				region = manchuria_region
 				region = central_asia_region
@@ -186,7 +191,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		add_yearly_manpower = 0.5
@@ -213,7 +218,8 @@ country_event = {
 		}
 		capital_scope = {
 			OR = {
-				region = siberia_region
+				region = west_siberia_region
+				region = east_siberia_region
 				region = mongolia_region
 				region = manchuria_region
 				region = central_asia_region
@@ -236,7 +242,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				loyalty = -5
+				loyalty = -10
 			}
 		}
 		add_stability = -1
@@ -259,7 +265,8 @@ country_event = {
 		government = steppe_horde
 		capital_scope = {
 			OR = {
-				region = siberia_region
+				region = west_siberia_region
+				region = east_siberia_region
 				region = mongolia_region
 				region = manchuria_region
 				region = central_asia_region
@@ -292,7 +299,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		random_owned_province = {
@@ -348,7 +355,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		random_owned_province = {
@@ -439,7 +446,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		add_horde_unity = 33
@@ -454,7 +461,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		add_prestige = 25
@@ -488,7 +495,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		add_stability = 1
@@ -523,7 +530,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				loyalty = -5
+				loyalty = -10
 			}
 		}
 		add_stability = -1
@@ -558,7 +565,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		add_prestige = 15
@@ -598,7 +605,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		add_yearly_manpower = 0.1
@@ -623,7 +630,8 @@ country_event = {
 		is_at_war = no
 		capital_scope = {
 			OR = {
-				region = siberia_region
+				region = west_siberia_region
+				region = east_siberia_region
 				region = mongolia_region
 				region = manchuria_region
 				region = central_asia_region
@@ -646,7 +654,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				loyalty = -5
+				loyalty = -10
 			}
 		}
 		add_yearly_manpower = -0.75
@@ -682,7 +690,7 @@ country_event = {
 
 	option = {
 		name = "randomeventsstapehordes.15.EVTOPTA"
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 50 }
 		add_prestige = 2
 		create_general = 50
 		if = {
@@ -692,7 +700,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				loyalty = 10
+				loyalty = 15
 			}
 			add_estate_influence_modifier = {
 				desc = EST_VAL_RANDOMSTEPPE_LEADER
@@ -704,14 +712,27 @@ country_event = {
 	}
 	option = {
 		name = "randomeventsstapehordes.15.EVTOPTB"
-		ai_chance = { factor = 100 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_nomadic_tribes
+				NOT = {
+					estate_loyalty = {
+						estate = estate_nomadic_tribes
+						loyalty = 40
+					}
+				}
+			}
+		}
 		trigger = {
 			has_dlc = "The Cossacks"
 			has_estate = estate_nomadic_tribes
 		}
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = -10
+			loyalty = -15
 		}
 	}
 }
@@ -744,7 +765,16 @@ country_event = {
 
 	option = {
 		name = "randomeventsstapehordes.16.EVTOPTA"
-		ai_chance = { factor = 100 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.25
+				estate_influence = {
+					estate = estate_nomadic_tribes
+					influence = 60
+				}
+			}
+		}
 		add_prestige = 5
 		create_general = 75	
 		if = {
@@ -754,7 +784,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
-				loyalty = 10
+				loyalty = 15
 			}
 			add_estate_influence_modifier = {
 				desc = EST_VAL_RANDOMSTEPPE_LEADER
@@ -766,14 +796,27 @@ country_event = {
 	}
 	option = {
 		name = "randomeventsstapehordes.15.EVTOPTB"
-		ai_chance = { factor = 100 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_nomadic_tribes
+				NOT = {
+					estate_loyalty = {
+						estate = estate_nomadic_tribes
+						loyalty = 40
+					}
+				}
+			}
+		}
 		trigger = {
 			has_dlc = "The Cossacks"
 			has_estate = estate_nomadic_tribes
 		}
 		add_estate_loyalty = {
 			estate = estate_nomadic_tribes
-			loyalty = -10
+			loyalty = -15
 		}
 	}
 }
@@ -810,9 +853,12 @@ country_event = {
 		ai_chance = { factor = 100 }
 		add_prestige = -2		
 		add_stability = -1
-		add_estate_loyalty = {
-			estate = estate_nomadic_tribes
-			loyalty = -5
+		if = {
+			limit = { has_estate = estate_nomadic_tribes }
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = -10
+			}
 		}
 	}
 }
@@ -853,9 +899,12 @@ country_event = {
 		add_horde_unity = -10		
 		add_stability = -1
 		kill_heir = yes
-		add_estate_loyalty = {
-			estate = estate_nomadic_tribes
-			loyalty = -5
+		if = {
+			limit = { has_estate = estate_nomadic_tribes }
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = -10
+			}
 		}
 	}
 }
@@ -938,9 +987,12 @@ country_event = {
 			chance = 15
 			add_stability = -1
 		}
-		add_estate_loyalty = {
-			estate = estate_nomadic_tribes
-			loyalty = -5
+		if = {
+			limit = { has_estate = estate_nomadic_tribes }
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = -10
+			}
 		}
 	}
 }
@@ -976,9 +1028,12 @@ country_event = {
 		name = "randomeventsstapehordes.21.EVTOPTA"
 		ai_chance = { factor = 100 }
 		add_horde_unity = -5
-		add_estate_loyalty = {
-			estate = estate_nomadic_tribes
-			loyalty = -5
+		if = {
+			limit = { has_estate = estate_nomadic_tribes }
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = -10
+			}
 		}
 		random = {
 			chance = 25
@@ -1013,9 +1068,12 @@ country_event = {
 		name = "randomeventsstapehordes.22.EVTOPTA"
 		ai_chance = { factor = 100 }
 		add_army_tradition = -5
-		add_estate_loyalty = {
-			estate = estate_nomadic_tribes
-			loyalty = -5
+		if = {
+			limit = { has_estate = estate_nomadic_tribes }
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = -10
+			}
 		}
 		random = {
 			chance = 15
@@ -1051,9 +1109,12 @@ country_event = {
 		ai_chance = { factor = 100 }
 		add_prestige = -2		
 		add_yearly_manpower = -0.2
-		add_estate_loyalty = {
-			estate = estate_nomadic_tribes
-			loyalty = -5
+		if = {
+			limit = { has_estate = estate_nomadic_tribes }
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = -10
+			}
 		}
 		random = {
 			chance = 15
@@ -1081,7 +1142,8 @@ country_event = {
 		is_at_war = yes	
 		capital_scope = {
 			OR = {
-				region = siberia_region
+				region = west_siberia_region
+				region = east_siberia_region
 				region = mongolia_region
 				region = manchuria_region
 				region = central_asia_region

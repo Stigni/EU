@@ -256,6 +256,7 @@ take_province_hre = {
 	
 	allowed_provinces = {
 		is_part_of_hre = yes
+		has_province_modifier = unlawful_territory
 	}
 	
 	po_release_vassals = yes
@@ -468,7 +469,7 @@ take_core = {
 take_capital_claim = {
 	type = take_capital
 	
-	badboy_factor = 0.75
+	badboy_factor = 1.0
 	prestige_factor = 1
 	peace_cost_factor = 1.0
 
@@ -486,7 +487,7 @@ take_capital_claim = {
 take_claim = {
 	type = take_province
 	
-	badboy_factor = 0.75
+	badboy_factor = 1.0
 	prestige_factor = 1
 	peace_cost_factor = 1.0	
 	
@@ -970,6 +971,8 @@ superiority_overseas = {
 			OR = {
 				technology_group = indian
 				technology_group = sub_saharan
+				technology_group = east_african
+				technology_group = central_african
 				technology_group = chinese
 				technology_group = nomad_group
 			}
@@ -1028,7 +1031,7 @@ superiority_horde = {
 	type = superiority
 	
 	attacker = {
-		badboy_factor = 0.5
+		badboy_factor = 0.75
 		prestige_factor = 1
 		peace_cost_factor = 1	
 		
@@ -1045,7 +1048,7 @@ superiority_horde = {
 	}
 	
 	defender = {
-		badboy_factor = 0.5
+		badboy_factor = 0.75
 		prestige_factor = 1
 		peace_cost_factor = 1	
 		
@@ -1069,7 +1072,7 @@ take_province_tribal_feud = {
 	type = take_province
 	
 	attacker = {
-		badboy_factor = 0.5
+		badboy_factor = 0.75
 		prestige_factor = 1
 		peace_cost_factor = 1	
 		
@@ -1086,7 +1089,7 @@ take_province_tribal_feud = {
 	}
 	
 	defender = {
-		badboy_factor = 0.5
+		badboy_factor = 0.75
 		prestige_factor = 1
 		peace_cost_factor = 1	
 		
@@ -1225,6 +1228,44 @@ humiliate = {
 	country_desc = ALL_NATIVES
 	prov_desc = ALL_PROVS
 	war_name = HUMILIATE_WAR_NAME	
+}
+
+humiliate_rotw = {
+	type = take_capital
+	
+	badboy_factor = 1
+	prestige_factor = 1.25
+	peace_cost_factor = 1
+	
+	allowed_provinces = {
+		always = no
+	}
+	
+	allowed_provinces_are_eligible = yes
+	
+	po_annex = no
+	po_demand_provinces = no
+	po_revoke_cores = yes
+	po_release_vassals = yes
+	po_release_annexed = yes
+	po_return_cores = yes
+	po_change_religion = no
+	po_form_personal_union = no
+	po_gold = yes
+	po_become_vassal = no
+	po_concede_defeat = no
+	po_annul_treaties = yes
+	po_change_government = no
+	po_revoke_elector = no
+	po_trade_power = yes
+	po_humiliate = yes
+	po_humiliate_rival = yes
+	
+	deny_annex = yes
+	
+	country_desc = ALL_COUNTRIES
+	prov_desc = NO_PROVS
+	war_name = HUMILIATE_ROTW_WAR_NAME	
 }
 
 blockade_ports = {

@@ -13,7 +13,10 @@ achievement_for_the_glory = {
 	}
 	
 	happened = {
-		has_country_flag = have_diploannexed
+		custom_trigger_tooltip = {
+			tooltip = achievement_for_the_glory_tooltip
+			has_country_flag = have_diploannexed
+		}
 	}
 }
 
@@ -92,7 +95,10 @@ achievement_that_is_mine = {
 	}
 	
 	happened = {
-		has_country_flag = conquered_province
+		custom_trigger_tooltip = {
+			tooltip = achievement_for_the_glory_tooltip
+			has_country_flag = conquered_province
+		}
 	}
 }
 
@@ -107,7 +113,10 @@ achievement_victorious = {
 	}
 	
 	happened = {
-		has_country_flag = has_won_war
+		custom_trigger_tooltip = {
+			tooltip = achievement_for_the_glory_tooltip
+			has_country_flag = has_won_war
+		}
 	}
 }
 
@@ -230,7 +239,10 @@ achievement_seriously = {
 	}
 	
 	happened = {
-		has_country_flag = killed_tenkey
+		custom_trigger_tooltip = {
+			tooltip = achievement_seriously_tooltip
+			has_country_flag = killed_tenkey
+		}
 	}
 }
 
@@ -363,7 +375,10 @@ achievement_cold_war = {
 	}
 	
 	happened = {
-		has_country_flag = cold_war
+		custom_trigger_tooltip = {
+			tooltip = achievement_cold_war_tooltip
+			has_country_flag = cold_war
+		}
 	}
 }
 
@@ -379,7 +394,10 @@ achievement_royal_authority = {
 	}
 	
 	happened = {
-		has_country_flag = installed_union
+		custom_trigger_tooltip = {
+			tooltip = achievement_royal_authority_tooltip
+			has_country_flag = installed_union
+		}
 	}
 }
 
@@ -395,7 +413,10 @@ achievement_viva_la_revolucion = {
 	}
 	
 	happened = {
-		has_country_flag = supported_rebels
+		custom_trigger_tooltip = {
+			tooltip = achievement_viva_la_revolucion_tooltip
+			has_country_flag = supported_rebels
+		}
 	}
 }
 
@@ -411,7 +432,10 @@ achievement_brothers_in_arms = {
 	}
 	
 	happened = {
-		has_country_flag = brothers_in_arms
+		custom_trigger_tooltip = {
+			tooltip = achievement_brothers_in_arms_tooltip
+			has_country_flag = brothers_in_arms
+		}
 	}
 }
 
@@ -470,11 +494,6 @@ achievement_master_of_india = {
 			owned_by = ROOT
 			is_core = ROOT
 		}
-		rajputana_region = {
-			type = all
-			owned_by = ROOT
-			is_core = ROOT
-		}
 		west_india_region = {
 			type = all
 			owned_by = ROOT
@@ -529,6 +548,9 @@ achievement_sweden_is_not_overpowered = {
 		owns_core_province = 1935
 		owns_core_province = 1981
 		owns_core_province = 1982
+		owns_core_province = 2994
+		owns_core_province = 2995
+		owns_core_province = 2996
 	}
 }
 
@@ -640,7 +662,10 @@ achievement_its_all_about_luck = {
 	}
 	
 	happened = {
-		has_country_flag = beat_big_leader
+		custom_trigger_tooltip = {
+			tooltip = achievement_its_all_about_luck_tooltip
+			has_country_flag = beat_big_leader
+		}
 	}
 }
 
@@ -880,6 +905,16 @@ achievement_basileus = {
 			owns_core_province = 1846
 			owns_core_province = 1848
 			owns_core_province = 1853
+			owns_core_province = 2750
+			owns_core_province = 2296
+			owns_core_province = 2297
+			owns_core_province = 2299
+			owns_core_province = 2300
+			owns_core_province = 2304
+			owns_core_province = 2348
+			owns_core_province = 2410
+			owns_core_province = 3001
+			owns_core_province = 3003
 		}
 	}
 }
@@ -1133,6 +1168,10 @@ achievement_luck_of_the_irish = {
 			tag = CNN
 			tag = MNS
 			tag = LEI
+			tag = DMS
+			tag = KID
+			tag = SLN
+			tag = ULS
 		}
 	}
 	
@@ -1501,6 +1540,10 @@ achievement_the_great_khan = {
 			type = all
 			country_or_vassal_holds = ROOT
 		}
+		ural_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}
 		crimea_region = {
 			type = all
 			country_or_vassal_holds = ROOT
@@ -1524,10 +1567,6 @@ achievement_the_great_khan = {
 			country_or_vassal_holds = ROOT
 		}
 		khorasan_region = {
-			type = all
-			country_or_vassal_holds = ROOT
-		}
-		baluchistan_region = {
 			type = all
 			country_or_vassal_holds = ROOT
 		}
@@ -2053,10 +2092,13 @@ achievement_thats_a_silk_road = {
 	}
 
 	happened = {
-		NOT = {
-			any_province = {
-				trade_goods = silk
-				NOT = { country_or_vassal_holds = ROOT }
+		custom_trigger_tooltip = {
+			tooltip = achievement_thats_a_silk_road_tooltip
+			NOT = {
+				any_province = {
+					trade_goods = silk
+					NOT = { country_or_vassal_holds = ROOT }
+				}
 			}
 		}
 	}
@@ -2075,7 +2117,10 @@ achievement_my_true_friend = {
 	}
 
 	happened = {
-		has_country_flag = helped_rebels_win_war
+		custom_trigger_tooltip = {
+			tooltip = achievement_my_true_friend_tooltip
+			has_country_flag = helped_rebels_win_war
+		}
 	}
 }
 
@@ -2270,7 +2315,10 @@ achievement_lion_of_the_north = {
 
 	happened = {
 		religion = protestant
-		has_country_flag = won_religious_league_war
+		custom_trigger_tooltip = {
+			tooltip = achievement_lion_of_the_north_tooltip
+			has_country_flag = won_religious_league_war
+		}
 	}
 }
 
@@ -2565,7 +2613,11 @@ achievement_raja_of_the_rajput_reich = {
 
 	happened = {
 		has_switched_nation = no
-		germany_region = {
+		north_german_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}	
+		south_german_region = {
 			type = all
 			country_or_vassal_holds = ROOT
 		}	
@@ -2701,7 +2753,10 @@ achievement_even_better_than_piet_heyn = {
 	}	
 
 	happened = {
-		has_country_flag = treasure_fleet_looted
+		custom_trigger_tooltip = {
+			tooltip = achievement_even_better_than_piet_heyn_tooltip
+			has_country_flag = treasure_fleet_looted
+		}
 	}
 }
 
@@ -2758,11 +2813,14 @@ achievement_on_the_edge_of_madness = {
 
 	happened = {
 		has_switched_nation = no
-		had_country_flag = {
+		custom_trigger_tooltip = {
+			tooltip = achievement_on_the_edge_of_madness_tooltip_95_doom
+			had_country_flag = {
 			flag = doom_reached_95
 			days = 7300
+			}
+			NOT = { has_country_flag = doom_reached_100 }
 		}
-		NOT = { has_country_flag = doom_reached_100 }
 	}
 }
 
@@ -2784,6 +2842,10 @@ achievement_magellans_voyage = {
 	happened = {	
 		has_switched_nation = no
 		has_country_flag = circumnavigation_first
+		custom_trigger_tooltip = {
+			tooltip = achievement_magellans_voyage_tooltip
+			has_country_flag = circumnavigation_first
+		}
 	}
 }
 
@@ -2797,6 +2859,13 @@ achievement_imperio_espanol = {
 		ironman = yes
 		start_date = 1444.11.11
 		is_random_new_world = no
+	}
+	
+	visible = {
+		OR = {
+			culture_group = iberian
+			tag = SPA
+		}
 	}
 
 	happened = {
@@ -2971,6 +3040,12 @@ achievement_baltic_crusader = {
 			is_core = ROOT
 			religion = catholic
 		}
+		ural_region = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+			religion = catholic
+		}
 		crimea_region = {
 			type = all
 			owned_by = ROOT
@@ -3037,12 +3112,15 @@ achievement_colonial_management = {
 	}	
 
 	happened = {
-		calc_true_if = {
-			all_subject_country = {
-				is_colonial_nation = yes
-				has_ruler_flag = appointed_by_overlord
+		custom_trigger_tooltip = {
+			tooltip = achievement_tooltip_colonial_management
+			calc_true_if = {
+				all_subject_country = {
+					is_colonial_nation = yes
+					has_ruler_flag = appointed_by_overlord
+				}
+				amount = 3
 			}
-			amount = 3
 		}
 		
 	}
@@ -3335,18 +3413,12 @@ achievement_buddhists_strike_back = {
 			is_core = ROOT
 			religion = buddhism
 		}
-		rajputana_region = {
-			type = all
-			owned_by = ROOT
-			is_core = ROOT
-			religion = buddhism
-		}
 		west_india_region = {
 			type = all
 			owned_by = ROOT
 			is_core = ROOT
 			religion = buddhism
-		}	
+		}
 	}
 }
 
@@ -3390,6 +3462,7 @@ achievement_big_blue_blob = {
 		calc_true_if = {
 			all_core_province = {
 				continent = europe
+				owned_by = FRA
 			}
 			amount = 100
 		}
@@ -3768,7 +3841,7 @@ achievement_the_burgundian_inheritance = {
 		normal_or_historical_nations = yes	
 		normal_province_values = yes
 		ironman = yes
-		start_date = 1444.11.11t
+		start_date = 1444.11.11
 		tag = BUR
 	}
 
@@ -3851,14 +3924,22 @@ achievement_great_perm = {
 			type = all
 			country_or_vassal_holds = ROOT
 		}		
+		ural_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}		
 		scandinavia_region = {
 			type = all
 			country_or_vassal_holds = ROOT
 		}
-		siberia_region = {
+		west_siberia_region = {
 			type = all
 			country_or_vassal_holds = ROOT
-		}		
+		}
+		east_siberia_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}
 		cascadia_region = {
 			type = all
 			country_or_vassal_holds = ROOT
@@ -4014,7 +4095,10 @@ achievement_pyramid_of_skulls = {
 
 	happened = {
 		is_nomad = yes
-		has_country_flag = have_razed_wealthy_province
+		custom_trigger_tooltip = {
+			tooltip = achievement_pyramid_of_skulls_tooltip
+			has_country_flag = have_razed_wealthy_province
+		}
 	}
 }
 
@@ -4050,7 +4134,10 @@ achievement_the_continuation_of_diplomacy = {
 	}		
 
 	happened = {
-		has_country_flag = have_threatened_war
+		custom_trigger_tooltip = {
+			tooltip = achievement_the_continuation_of_diplomacy_tooltip
+			has_country_flag = have_threatened_war
+		}
 	}
 }
 
@@ -4180,6 +4267,7 @@ achievement_first_come_first_serve = {
 		start_date = 1444.11.11
 		is_random_new_world = no
 		NOT = { nation_designer_points = 202 }
+		technology_group = western
 		capital_scope = {
 			OR = {
 				continent = north_america
@@ -4208,5 +4296,476 @@ achievement_first_come_first_serve = {
 				is_sea = yes
 			}
 		}			
+	}
+}
+
+achievement_mare_nostrum = {
+	id = 171
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		NOT = { tag = PAP }
+	}
+
+	happened = {
+		tag = ROM
+		owns = 1751
+		owns = 335
+		owns = 2465
+		owns = 336
+		owns = 337
+		owns = 2461
+		owns = 338
+		owns = 339
+		owns = 1882
+		owns = 2455
+		owns = 341
+		owns = 341
+		owns = 2473
+		owns = 2453
+		owns = 353
+		owns = 2452
+		owns = 354
+		owns = 2451
+		owns = 355
+		owns = 356
+		owns = 357
+		owns = 2326
+		owns = 2325
+		owns = 358
+		owns = 362
+		owns = 363
+		owns = 364
+		owns = 1854
+		owns = 1855
+		owns = 378
+		owns = 2313
+		owns = 327
+		owns = 2302
+		owns = 2298
+		owns = 319
+		owns = 318
+		owns = 2296
+		owns = 317
+		owns = 316
+		owns = 2299
+		owns = 325
+		owns = 328
+		owns = 2304
+		owns = 330
+		owns = 2196
+		owns = 462
+		owns = 1856
+		owns = 2195
+		owns = 2447
+		owns = 287
+		owns = 286
+		owns = 2412
+		owns = 1974
+		owns = 284
+		owns = 285
+		owns = 2410
+		owns = 2406
+		owns = 282
+		owns = 1756
+		owns = 159
+		owns = 1764
+		owns = 151
+		owns = 149
+		owns = 148
+		owns = 147
+		owns = 146
+		owns = 1773
+		owns = 145
+		owns = 144
+		owns = 143
+		owns = 138
+		owns = 137
+		owns = 136
+		owns = 1826
+		owns = 130
+		owns = 1769
+		owns = 111
+		owns = 1774
+		owns = 108
+		owns = 113
+		owns = 114
+		owns = 2977
+		owns = 119
+		owns = 120
+		owns = 2985
+		owns = 1933
+		owns = 122
+		owns = 1934
+		owns = 2984
+		owns = 2984
+		owns = 123
+
+		# Sicily
+		owns = 124
+		owns = 125
+		owns = 2982
+
+		owns = 2983
+		owns = 121
+		owns = 118
+		owns = 117
+		owns = 115
+		owns = 2980
+		owns = 101
+		owns = 2992
+		owns = 102
+		owns = 2991
+		owns = 201
+		owns = 200
+		owns = 2753
+		owns = 197
+		owns = 212
+		owns = 213
+		owns = 2988
+		owns = 220
+		owns = 1750
+		owns = 221
+		owns = 222
+		owns = 222
+		owns = 223
+		owns = 226
+
+		# Islands
+		owns = 333
+		owns = 1247
+		owns = 127
+		owns = 2986
+		owns = 126
+		owns = 2954
+		owns = 112
+		owns = 142
+		owns = 163
+		owns = 321
+		owns = 320
+		owns = 164
+		owns = 3003
+		owns = 2348
+	}
+}
+
+achievement_kuban_cigars = {
+	id = 172
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = KUB
+	}
+
+	happened = {
+		owns_or_vassal_of = 484 # Havana
+		OR = {
+			production_leader = { trade_goods = tobacco }
+			any_subject_country = {
+				production_leader = { trade_goods = tobacco }
+			}
+		}
+	}
+}
+
+achievement_kushite_restoration = {
+	id = 173
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		primary_culture = nubian
+	}
+
+	happened = {
+		egypt_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}
+	}
+}
+
+achievement_fezzan_corridors = {
+	id = 174
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = FZA
+	}
+
+	happened = {
+		341 = {		# Tunis
+			trade_share = {
+				country = ROOT
+				share = 90
+			}
+		}
+		1110 = {	# Agadir / Safi
+			trade_share = {
+				country = ROOT
+				share = 90
+			}
+		}
+		1132 = {	# Timbuktu
+			trade_share = {
+				country = ROOT
+				share = 90
+			}
+		}
+		1149 = {	# Katsina
+			trade_share = {
+				country = ROOT
+				share = 90
+			}
+		}
+	}
+}
+
+achievement_victorian_three = {
+	id = 175
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		OR = {
+			tag = BSG
+			tag = BUG
+			tag = KRW
+		}
+	}
+
+	happened = {
+		adm_tech = 32
+		dip_tech = 32
+		mil_tech = 32
+	}
+}
+
+achievement_animal_kingdom = {
+	id = 176
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = MLB
+	}
+
+	happened = {
+		bengal_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+			religion = animism
+		}
+	}
+}
+
+achievement_golden_horn = {
+	id = 177
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		primary_culture = somali
+	}
+
+	happened = {
+		horn_of_africa_region = {
+			type = all
+			country_or_vassal_holds = ROOT
+		}
+		gold_income = 10
+	}
+}
+
+achievement_kinslayer = {
+	id = 178
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		OR = {
+			tag = TVE
+			tag = YAR
+			tag = OKA
+			tag = RYA
+		}
+	}
+
+	happened = {
+		dynasty = Rurikovich
+		NOT = {
+			any_country = {
+				dynasty = ROOT
+			}
+		}
+	}
+}
+
+achievement_choson_one = {
+	id = 179
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = KOR
+	}
+
+	happened = {
+		NOT = {
+			any_province = {
+				religion_group = eastern
+				NOT = { country_or_vassal_holds = KOR }
+			}
+		}
+	}
+}
+
+achievement_sailor_mon = {
+	id = 180
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = PEG
+	}
+
+	happened = {
+		sailors = 100000
+	}
+}
+
+achievement_networking = {
+	id = 181
+
+	possible = {
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+
+	happened = {
+		calc_true_if = {
+			all_rival_country = {
+				has_spy_network_from = {
+					who = ROOT
+					value = 100
+				}
+			}
+			amount = 3
+		}
+	}
+}
+
+achievement_the_white_company = {
+	id = 182
+
+	possible = {
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = achievement_tooltip_white_company_tooltip
+			has_country_flag = white_company
+		}
+		
+	}
+}
+
+achievement_time_bandit = {
+	id = 183
+
+	possible = {
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = achievement_time_bandit_tooltip
+			has_country_flag = has_stolen_map
+		}
+	}
+}
+
+
+achievement_with_a_little_help = {
+	id = 184
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = RAG
+	}
+
+	happened = {
+		is_trade_league_leader = yes
+		has_guaranteed = TUR
+		calc_true_if = {
+			all_known_country = {
+				is_in_trade_league_with = ROOT
+			}
+			amount = 5
+		}
+	}
+}
+
+achievement_just_resting_in_my_account = {
+	id = 185
+
+	possible = {
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = achievement_just_resting_in_my_account_tooltip
+			has_country_flag = has_corrupted_officials
+		}
 	}
 }

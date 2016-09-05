@@ -1,7 +1,7 @@
 government = despotic_monarchy
 technology_group = chinese
 religion = animism
-primary_culture = japanese
+primary_culture = kyushuan
 capital = 1015	# Shuri
 
 

@@ -9,7 +9,7 @@
  COLONIAL_OVERLORD: "Ist die Kolonie von $LIST$"
  COLONIAL_SUBJECTS: "Hat die Kolonien $LIST$"
  COLONIAL_SUBJECT_OF: "Kolonie von $LORD$"
- SUBJECT_COLONY_TARIFF_EFFICIENCY: "Zolleffizienz beträgt §Y$VAL$§!%."
+ SUBJECT_COLONY_TARIFF_EFFICIENCY: "Zolleffizienz beträgt §Y$VAL$%§!$VAL2$."
  SUBJECT_COLONY_TARIFF: "§Y$NAME$§! zahlt uns monatlich §Y$VAL$§!¤."
  SUBJECT_COLONY_TARIFF_DESC: "Kolonien zahlen einen Teil ihrer Steuern als Zoll (basierend auf Zolleffizienz). Diese Abgaben können erhöht werden, die Kolonie dadurch aber zur Rebellion veranlassen."
  SUBJECT_COLONY_NAME: "§Y$NAME$§! ist unsere Kolonie."

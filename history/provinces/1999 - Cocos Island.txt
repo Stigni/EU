@@ -13,8 +13,8 @@ native_ferocity = 1
 native_hostileness = 1
 
 1609.1.1 = {
-		# William Keeling
+	discovered_by = NED	# William Keeling
 }
 1814.1.1 = {
-		# John Clunies-Ross
+	discovered_by = GBR	# John Clunies-Ross
 }

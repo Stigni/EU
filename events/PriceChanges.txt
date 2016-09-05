@@ -195,7 +195,7 @@ country_event = {
 		NOT = { has_global_flag = coffee_boom_happened }
 		OR = {
 			any_owned_province = {
-				region = indonesia_region
+				region = malaya_region
 				trade_goods = coffee
 			}
 			any_subject_country = {

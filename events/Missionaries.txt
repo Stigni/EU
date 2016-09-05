@@ -31,7 +31,7 @@ province_event = {
 
 	option = {
 		name = "EVTOPTA2060"		# Send someone to assist him
-		ai_chance = { factor = 55 }
+		ai_chance = { factor = 65 }
 		owner = {
 			add_adm_power = -25
 			add_piety = 0.05
@@ -39,10 +39,10 @@ province_event = {
 	}
 	option = {
 		name = "EVTOPTB2060"		# Direct your efforts elsewhere
-		ai_chance = { factor = 45 }
+		ai_chance = { factor = 35 }
 		add_province_modifier = {
 			name = "missionary_falls_ill"
-			duration = 365
+			duration = 1825
 		}
 		owner = { add_piety = -0.05 }
 	}
@@ -86,16 +86,20 @@ province_event = {
 		name = "EVTOPTA2061"		# Increase your efforts
 		ai_chance = { factor = 55 }
 		heretic_rebels = 1
-		owner = { add_piety = 0.05 }
+		owner = {
+			add_piety = 0.05
+		}
 	}
 	option = {
 		name = "EVTOPTB2061"		# It's a waste of time
 		ai_chance = { factor = 45 }
 		add_province_modifier = {
 			name = "missionary_failure"
-			duration = 365
+			duration = 1825
 		}
-		owner = { add_piety = -0.05 }
+		owner = {
+			add_piety = -0.05
+		}
 	}
 }
 

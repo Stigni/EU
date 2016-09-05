@@ -14,6 +14,12 @@ base_manpower = 1
 capital = "Narva"
 is_city = yes
 
+
+
+discovered_by = western
+discovered_by = eastern
+
+
 1542.1.1 = { religion = protestant} # Unknown date
 1558.5.11 = {
 	owner = RUS

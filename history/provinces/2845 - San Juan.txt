@@ -2,6 +2,11 @@
 
 culture = huarpe
 
+
+
+discovered_by = south_american
+discovered_by = andean
+
 religion = animism
 capital = "San Juan"
 trade_goods = unknown
@@ -14,7 +19,7 @@ native_ferocity = 2
 native_hostileness = 9	
 
 1561.3.2 = {
-	
+	discovered_by = SPA
 	owner = SPA
 	controller = SPA
 	add_core = SPA

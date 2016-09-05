@@ -41,7 +41,7 @@ discover_mission = {
 			OR = {
 				region = brazil_region
 				AND = {
-					region = west_africa_region
+					region = guinea_region
 					has_port = yes
 				}
 			}
@@ -58,7 +58,7 @@ discover_mission = {
 				continent = north_america
 				region = brazil_region
 				AND = {
-					region = west_africa_region
+					region = guinea_region
 					has_port = yes
 				}
 			}
@@ -254,6 +254,7 @@ establish_carribean_colony = {
 	success = {
 		carribeans_region = {
 			owned_by =  ROOT
+			colonysize = 400
 		}
 	}
 	chance = {
@@ -328,15 +329,25 @@ establish_usa_colony = {
 	abort = {
 		OR = {
 			AND = {
-				northeast_america_region = {
-					is_empty = no
-					has_port = no
-					has_discovered = ROOT
+				NOT = {
+					northeast_america_region = {
+						OR = {
+							owned_by = ROOT
+							is_empty = yes
+						}
+						has_port = yes
+						has_discovered = ROOT
+					}
 				}
-				southeast_america_region = {
-					is_empty = no
-					has_port = no
-					has_discovered = ROOT
+				NOT = {
+					southeast_america_region = {
+						OR = {
+							owned_by = ROOT
+							is_empty = yes
+						}
+						has_port = yes
+						has_discovered = ROOT
+					}
 				}
 			}
 			NOT = { num_of_ports = 1 }
@@ -347,9 +358,11 @@ establish_usa_colony = {
 		OR = {
 			northeast_america_region = {
 				owned_by =  ROOT
+				colonysize = 400
 			}
 			southeast_america_region = {
 				owned_by =  ROOT
+				colonysize = 400
 			}
 		}
 	}
@@ -432,6 +445,7 @@ establish_canada_colony = {
 	success = {
 		canada_region = {
 			owned_by =  ROOT
+			colonysize = 400
 		}
 	}
 	chance = {
@@ -491,12 +505,16 @@ establish_colony_mission = {
 	}
 	abort = {
 		OR = {
-			is_empty = no
+			AND = {
+				is_empty = no
+				NOT = { owned_by = FROM }
+			}
 			FROM = { NOT = { num_of_ports = 1 } }
 		}
 	}
 	success = {
 		owned_by = FROM
+		colonysize = 400
 	}
 	chance = {
 		factor = 1000
@@ -512,7 +530,7 @@ establish_colony_mission = {
 			OR = {
 				region = brazil_region
 				AND = {
-					region = west_africa_region
+					region = guinea_region
 					has_port = yes
 				}
 			}
@@ -528,7 +546,7 @@ establish_colony_mission = {
 			OR = {
 				continent = north_america
 				region = brazil_region
-				region = west_africa_region
+				region = guinea_region
 			}
 		}
 		modifier = {
@@ -561,11 +579,28 @@ establish_colony_mission = {
 		modifier = {
 			factor = 1.05
 			development = 3
-		}		
+		}
 		modifier = {
 			factor = 1.05
 			development = 5
-		}		
+		}
+		modifier = {
+			factor = 1.15
+			any_neighbor_province = { owned_by = FROM }
+		}
+		modifier = {
+			factor = 0.9
+			any_neighbor_province = {
+				is_empty = no
+				NOT = { owned_by = FROM }
+			}
+		}
+		modifier = {
+			factor = 1.05
+			FROM = {
+				any_owned_province = { area = ROOT }
+			}
+		}
 	}
 	effect = {
 		FROM = {

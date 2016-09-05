@@ -14,6 +14,12 @@ base_manpower = 3
 is_city = yes
 add_core = CXI
 
+
+
+discovered_by = chinese
+discovered_by = nomad_group
+
+
 1643.5.1 = {
 	owner = CXI
 	controller = CXI
@@ -23,4 +29,4 @@ add_core = CXI
 	controller = QNG
 	add_core = QNG
 }
-#Novus Atlas Sinensis
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis

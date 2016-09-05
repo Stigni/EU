@@ -12,6 +12,9 @@ owner = ANU
 controller = ANU
 add_core = ANU
 is_city = yes
+
+
+
 discovered_by = JAP
 discovered_by = AMA
 discovered_by = ASA
@@ -40,10 +43,11 @@ discovered_by = CHV
 discovered_by = KMC
 
 1640.1.1 = { discovered_by = RUS } # Ivan Moskvitin
+
 1679.1.1 = {	
 	owner = JAP
 	controller = JAP
-	culture = japanese
+	culture = togoku
 	religion = shinto
 	trade_goods = fish
 } # Russian & Japanese attemps at colonization

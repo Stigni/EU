@@ -109,7 +109,7 @@
  incompetent_fabrication: "Compétences diplomatiques limitées"
  desc_incompetent_fabrication: "Nos diplomates, ces derniers temps, se sont révélés d'une incompétence telle qu'il est tout simplement impossible de les croire lorsqu'ils présentent de fausses revendications."
  ideagroups.604.t: "Un diplomate brillant"
- ideagroups.604.d: "Un jeune homme de notre corps diplomatique s'est brillamment distingué. Il se montre aussi talentueux que loyal à $COUNTRYNAME$, et pourrait nous être utile pendant des années encore."
+ ideagroups.604.d: "Un jeune homme de notre corps diplomatique s'est brillamment distingué. Il se montre aussi talentueux que loyal à $COUNTRY$, et pourrait nous être utile pendant des années encore."
  ideagroups.604.a: "Bonne nouvelle"
  ideagroups.604.b: "Il pourrait servir Dieu"
  ideagroups.604.c: "Il pourrait servir l'Empire"

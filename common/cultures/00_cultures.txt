@@ -405,7 +405,7 @@ germanic = {
 	}
 }
 
-scandinavian = {
+scandinavian = { #Nordic
 	graphical_culture = westerngfx
 
 	swedish = {
@@ -527,6 +527,57 @@ scandinavian = {
 			"Vedel" "Bjelke" "Galle" "Griis"
 		}
 	}
+	finnish = {
+		primary = FIN
+		dynasty_names = {
+			Bielke Horn Tott Fleming Paijkull Bonde Wrede Soop
+			Mannerheim Furuhjelm Aminoff Armfelt Carpelan Rehbinder Schulman
+		}
+		male_names = {
+			Eerikki Niklas Väinämöinen Aato Fredrik Jani Aleksanteri Edvard Jaakko Juha Aapeli Alpertti Antero 
+			Eino Erno Heikki Jooseppi Jyri Kaarle Kristian Lauri Mainio Mikael Onni Otso Paavo Petteri Ransu 
+			Samuli Taavi Tauno Tuomas Valto Veli Vieno Vilhelmi Voitto Reino
+			Aatos Ahma Aimo Armas Arvo Asikko Ensio Haapa Hannu Havu Hintsa Ihanti Into Jalo Jurva 
+			Kalevi Kettu Kolli Lalli Lauri Laurence Lemetti Kaleva
+			Mielitty Miemo Mikko Michael Oiva Onni Otso Pyry Päiviö Pentti Reko Sampo Satajalka 
+			Seppo Susi Tapani Terho Toivo Ukko Uoti Urho Väinö Satatieto
+			Valta Valto Veli Vesa Voitto Erkki Erik Kaarle Charles Johannes John Risto Christopher 
+			Olaf Petri Peter Henri Henry Yrjö George Olavi
+			Valteri Walter Riku Richard Matti Matthew Jaakoppi Jacob Taisto Paavo Paul Aatso Adam Ahvo 
+			Artur Asko Tuokko David Rieti Frederick Aarto
+			Kauro Gabriel Kuuti Knut Pekko Soini Sven Tuure Turo Tommo Tohmas Thomas
+		}
+		female_names = {
+			Tarja Aina Jaana
+			Aamu Aino Hellä Helmi Ilta Kaarina Catherine Käpy Kielo Kukka Lauha Lempi Mahla Maija 
+			Metta Päivä Päivi Pihla Pilvi Rauha Sisko Suoma Marja Mesi 
+			Taimi Terhi Titti Tuija Tuovi Tuuli Tuulikki Tyyne Tyyni Vanamo Venla Mielikki Hertta 
+			Inkeri Ilmatar Irene Irene Ilona Helen Kristiina Christina Loviisa
+			Elisabet Elisabeth Sohvi Sofia Auni Agnes Liekko Helen Kivutar Lemmikki Lyylikki Salme 
+			Tuulitar Talvikki
+		}
+	}
+	sapmi = {
+		primary = SMI
+		male_names = {
+			Baeivvet Biejan Bijás Bilzi Dávgon Duttá Gáivvas Elmar Hain Haljas Igapäiv Ihalemb Kahar Eeri Heameel Heatõiv 
+			Hoovatõiv Hurmas Hurmetõiv Hõimulemb Hüvalemb Hüvameel Hüvatõiv Tõnn Uku Vootele Väino Värvo Õigemeel Ülo Küllelemb 
+			Leetõiv Lembit Leppetõiv Lible Vambola Vandemeel Varjelemb Veli Vello Venno Vesse Vihavald Vililemb Vilimeel Andyamo 
+			Nuyaksha Nuyanza Nuyat Nydog Nylog Odeg Onika Osh Oshmar Oshypel Ovtay Ozheg Ozhmeg Arnaz Arti Artis Arvo Aymort 
+			Azeg Biur Biyar Burmort Chichayka Chuga Dergun Deryab Pakstyan Paksyay Paksyut Parush Pivtsay Pokshayka Putyayka 
+			Pyera Rateg Rayda Sarin Sektev Dobrinya Erziya Inzhay Kezhapa Kezhay Kezhedey Kezhevat Kichay Kubrat Malyaka Malyy 
+			Koshel Murunza Naruchad Nishkepaz Orunza Puresh Purysho Saksa Shkay Surt Tul Tunya Tutyra 
+		}
+		female_names = {
+			Máidna Násti Naná Njáves Oajá Sáráhkká Sealggá Seará Soabá Sojá Suoinná Suonjar Uksáhkká Maija Mari Marja Meeli 
+			Niine Ninni Oie Pilve Päivi Põim Salme Sirje Säde Taimi Talvi Heli Helina Helmi Helve Hiie Hämarik Hüüp Ida Ilme 
+			Ilmi Ilo Kai Kaili Kaja Kalli Kare Tundava Tundya Unzhutka Upurga Utyayka Valdava Vergava Vezhav Vidyava Virtyava 
+			Yalgava Liyava Mazava Megurka Mel'shay Nezayka Nulzyava Nyal'ka Nyayka Nyumina Nyv Olota Ordava Oshama Öshkamöshka 
+			Parava Pekshayka Pemka Pokshava Poshayka Potekay Potyava Putyayka Ravzhava Rayda Ruzava Sanal'ka Sangasa Sernyava 
+			Serzhay Setyamka Seyamka Shochynava Shonzhava Shukshtoroyka Sinyava Siyamka Slyugan'ka Sochava Styaka Syryava Tatka 
+			Tekay 
+		}
+	}
 }
 
 british	= {
@@ -564,7 +615,7 @@ british	= {
 		primary = USA
 		male_names = {
 			Abraham Aaron Alexander Atticus August Andrew Anthony Angus Allen Asa Alvin Albert Ambrose Arthur
-			Buford Benjamin Benedict Bartholomew Brigham Braxton Barnabas
+			Buford Benjamin Benedict Bernard Bartholomew Brigham Braxton Barnabas
 			Cyrus Charles Cyril Christopher Casey Clarence Clark Calvin Chester
 			David Donald Daniel Duncan
 			Elihu Elias Eric Ebenezer Elbridge Eugene Eustace Ernest Edmund Ephraim Earl Ezra Emory
@@ -638,49 +689,6 @@ british	= {
 			Young Yelverton
 		}
 	}
-	scottish = {
-		primary = SCO
-		dynasty_names = { 
-			Stuart Stewart Campbell Lennox Murray Graham Gordon Erskine Leslie
-			Scott Douglas Hamilton Lindsay Ker Hay Sinclair Dunbar Kennedy
-			Fraser "Aois-dàna" Dishington Burnett "Bowes-Lyon" "Lockhart" "Corbet"
-			Mackintosh Dingwall Melville Corrie Aberach Cunningham Donald
-			Buchanan Menzies Moffat Malcolm 
-			#CK2
-			"Cameron" "Forbes" "Arbuthnot" "Cockburn" "Adam" Wallace "Abernethy"
-		}
-		male_names = {
-			James Robert Henry Alexander Arthur Walter John Charles Malcolm Donald David Duncan Andrea 
-			Alan Ailpein Archibald Barclay Beathan Bruce Cameron Cináed Conall Douglas Duff Edan Evander 
-			Fraser Garry Glen Ian Keir Kennedy Lennox Logan Micheil Mungo Munroe Scott Wallace Adam 
-			Alpin Alwin Alastair Andrew Angus Arran Aulay Olaf Brian Brice Cailean Calum Carbrey Colban 
-			Kolbein Colin Nicholas Conan Constantine Dermid Dugald Edgar Edward Edwin Eric Ivar Ewan 
-			Eugene Farquhar Fergus Fingal Finn Findlay Frang Francis Gavin Gilbride Gilbert Gilchrist 
-			Gillespie Gilpatrick Gilroy Giric Glenn Godfrey Gregor Gregory Hamish Hector Hugh Iain 
-			Indulf Jacob Kenneth Kentigern Lachlan Roland Laurence Lennon Lulach Macbeth Magnus Maldoven 
-			Maldred Malise Malmure Maoilios Marcas Marcus Matad Matthew Michael Morgan Muir Mungo 
-			Murdoch Murray Neil Nigel Ninian Oscar Patrick Paul Peter Philip Radulf Ralph Ranald 
-			Reginald Richard Ronald Ragnvald Rory Roderick Ross Roy Shaw Simon Somerled Stephan Stephen 
-			Sweeny Tadhg Tadg Talore Thomas Torquil Torkel Uhtred Uisdean Eysteinn Walan Valentin 
-			Waldeve Waltheof William
-		}
-		female_names = {
-			Mary Ada Affraic Agnes Aileen Alice Anna Annabella Aufrica Euphemia Barabal Barbara Beileag 
-			Beitris Beathoc Beatrice Bride Brigit Catriona Catherine Cecilia Deirdre Derilla Dervorgilla 
-			Donada Donella Edith Edna Effie Eilionoir Eimhir Emer Eithne Ela Eleanor Elspeth Euna Eva 
-			Fenella Fingola Flora Forflissa Galiena Glenna Gormelia Gormflaith Gruoch Helen Innes Iona 
-			Isabel Isla Isobel Jean Julia Juliana Kenna Kentigerna Kirstin Christina Lillias Elisabeth 
-			Lorna Malmure Maisie Malina Mariota Martha Marthoc Marjory Mary Maud Matilda Maura Maria 
-			Mirren Morag Mor Morna Moyna Mona Muriel Murron Nuala Finnguala Orabilia Peigi Margaret 
-			Rhonda Rodina Ronalda Ragnhild Ros Saundra Alexandra Sheena Shona Joan Sholto Slaine Sorcha 
-			Una
-		}
-	}
-}
-
-gaelic	= {
-	graphical_culture = westerngfx
-
 	welsh = {
 		primary = WLS
 		dynasty_names = { 
@@ -747,6 +755,49 @@ gaelic	= {
 			Tancostyla Tegla Thecla Ysbail Ystradwel
 		}
 	}
+	scottish = {
+		primary = SCO
+		dynasty_names = { 
+			Stuart Stewart Campbell Lennox Murray Graham Gordon Erskine Leslie
+			Scott Douglas Hamilton Lindsay Ker Hay Sinclair Dunbar Kennedy
+			Fraser "Aois-dàna" Dishington Burnett "Bowes-Lyon" "Lockhart" "Corbet"
+			Mackintosh Dingwall Melville Corrie Aberach Cunningham Donald
+			Buchanan Menzies Moffat Malcolm 
+			#CK2
+			"Cameron" "Forbes" "Arbuthnot" "Cockburn" "Adam" Wallace "Abernethy"
+		}
+		male_names = {
+			James Robert Henry Alexander Arthur Walter John Charles Malcolm Donald David Duncan Andrea 
+			Alan Ailpein Archibald Barclay Beathan Bruce Cameron Cináed Conall Douglas Duff Edan Evander 
+			Fraser Garry Glen Ian Keir Kennedy Lennox Logan Micheil Mungo Munroe Scott Wallace Adam 
+			Alpin Alwin Alastair Andrew Angus Arran Aulay Olaf Brian Brice Cailean Calum Carbrey Colban 
+			Kolbein Colin Nicholas Conan Constantine Dermid Dugald Edgar Edward Edwin Eric Ivar Ewan 
+			Eugene Farquhar Fergus Fingal Finn Findlay Frang Francis Gavin Gilbride Gilbert Gilchrist 
+			Gillespie Gilpatrick Gilroy Giric Glenn Godfrey Gregor Gregory Hamish Hector Hugh Iain 
+			Indulf Jacob Kenneth Kentigern Lachlan Roland Laurence Lennon Lulach Macbeth Magnus Maldoven 
+			Maldred Malise Malmure Maoilios Marcas Marcus Matad Matthew Michael Morgan Muir Mungo 
+			Murdoch Murray Neil Nigel Ninian Oscar Patrick Paul Peter Philip Radulf Ralph Ranald 
+			Reginald Richard Ronald Ragnvald Rory Roderick Ross Roy Shaw Simon Somerled Stephan Stephen 
+			Sweeny Tadhg Tadg Talore Thomas Torquil Torkel Uhtred Uisdean Eysteinn Walan Valentin 
+			Waldeve Waltheof William
+		}
+		female_names = {
+			Mary Ada Affraic Agnes Aileen Alice Anna Annabella Aufrica Euphemia Barabal Barbara Beileag 
+			Beitris Beathoc Beatrice Bride Brigit Catriona Catherine Cecilia Deirdre Derilla Dervorgilla 
+			Donada Donella Edith Edna Effie Eilionoir Eimhir Emer Eithne Ela Eleanor Elspeth Euna Eva 
+			Fenella Fingola Flora Forflissa Galiena Glenna Gormelia Gormflaith Gruoch Helen Innes Iona 
+			Isabel Isla Isobel Jean Julia Juliana Kenna Kentigerna Kirstin Christina Lillias Elisabeth 
+			Lorna Malmure Maisie Malina Mariota Martha Marthoc Marjory Mary Maud Matilda Maura Maria 
+			Mirren Morag Mor Morna Moyna Mona Muriel Murron Nuala Finnguala Orabilia Peigi Margaret 
+			Rhonda Rodina Ronalda Ragnhild Ros Saundra Alexandra Sheena Shona Joan Sholto Slaine Sorcha 
+			Una
+		}
+	}
+}
+
+gaelic	= {
+	graphical_culture = westerngfx
+	
 	irish = {
 		primary = IRE
 		dynasty_names = { 
@@ -837,6 +888,62 @@ gaelic	= {
 			Samthann Scáthach Sébdann Selblaith Seonaid Joan Sinech Siobán Joan Sisuile Sláíne Slaine 
 			Sorcha Suaibsech Sáerlaith Sétach Síthmaith Tailefhlaith Tailltiu Temair Tuathflaith Tómnat 
 			Uallach Uasal Úna Una Mona Éua
+		}
+	}
+	highland_scottish = {
+		primary = HSC
+
+		male_names = {
+			Aonghas Alasdair Ailbeart Adhamh Ailean Anndra Arailt Artair Aaron Amhlaidh Ailpein
+			Bhaltair Boisil Brian Benneit Beathan Boisil Brus Bruadar Breacan Bearnard Bhaltair
+			Cresdean Calum Conan Conal Cormac Cailean
+			Domhnall Donnchadh Dughall Daibhidh Diarmid Dolan Daniel Deorsa Dughlas
+			Eoghan Eobhann Eideard Eachann Eoin Eosaph Eanruig Ellair
+			Fearchar Faolan Fearghas Fionn Filib Frangan Friseal Fionnlagh
+			Gillebríghde Gillechreosd Gillecallum Gilleasp Gilleandrais Garbhan Goiridh Griogair
+			Hamish Harailt Horas
+			Iain Iacob Iosag Iomhar Iosaph Iona
+			Lucais Labhrainn
+			Maoilios Murchadh Martain Mascual Marcus Mata Mecheil Morgan Mungan Murchadh
+			Neacal Niall Niallghas
+			Oilbhreis Oisean
+			Padraig Pol Peadar
+			Raibeart Ruadh Ruaraidh Raghnall Ruiseart
+			Seumas Seoras Somhairle Seleas Samuel Sachairi Steaphan
+			Thomais Tadhg Toibaid
+			Uilleam Uisdean 
+		}
+		female_names = {
+			Anna
+			Beathag Baraball Bearnas Beitiris Bhioctoria Brighde
+			Catreona Ceit Coinneach Claimha
+			Deirdre Deoiridh Diorbhail
+			Ealasaid Cibhlin Eubh
+			Floraidh Floireans Fionnaghal Frangag Fionnghuala
+			Gormal Gormlaith Giorsal
+			Iseabail 
+			Liusaidh Leagsaidh Leitis Lucrais Leosa
+			Mairead Marsail Marta Milread Moibeal Moire Mor Mairi
+			Nansaidh
+			Olibhia Oighrig
+			Peanaidh
+			Rut Raonaid Rebeca
+			Seonag Sorcha Sene Siusan Seleas
+			Tearlag Teasag
+			Una
+		}
+		dynasty_names = {
+			Arasgain
+			Bochanan Beitean Brus
+			Caimbeul Cinneide Caimbeulach Comyn Cochran
+			Donohoe Dernly
+			Gordan Grannd Guinne
+			Haig
+			Lamont
+			MacCongáil MacDhiarmaid Moireach MacPharlain MacLeoid MacDhomhnaill MacDhonnachaidh Munro MacNab
+			Ncill
+			Rothach Ros
+			Stiubhart Singlear Sutherlarach
 		}
 	}
 }
@@ -1317,85 +1424,9 @@ french	= {
 	}
 }
 
-finno_ugric = {
+finno_ugric = { #Ugric
 	graphical_culture = westerngfx
-
-	finnish = {
-		primary = FIN
-		dynasty_names = {
-			Bielke Horn Tott Fleming Paijkull Bonde Wrede Soop
-			Mannerheim Furuhjelm Aminoff Armfelt Carpelan Rehbinder Schulman
-		}
-		male_names = {
-			Eerikki Niklas Väinämöinen Aato Fredrik Jani Aleksanteri Edvard Jaakko Juha Aapeli Alpertti Antero 
-			Eino Erno Heikki Jooseppi Jyri Kaarle Kristian Lauri Mainio Mikael Onni Otso Paavo Petteri Ransu 
-			Samuli Taavi Tauno Tuomas Valto Veli Vieno Vilhelmi Voitto Reino
-			Aatos Ahma Aimo Armas Arvo Asikko Ensio Haapa Hannu Havu Hintsa Ihanti Into Jalo Jurva 
-			Kalevi Kettu Kolli Lalli Lauri Laurence Lemetti Kaleva
-			Mielitty Miemo Mikko Michael Oiva Onni Otso Pyry Päiviö Pentti Reko Sampo Satajalka 
-			Seppo Susi Tapani Terho Toivo Ukko Uoti Urho Väinö Satatieto
-			Valta Valto Veli Vesa Voitto Erkki Erik Kaarle Charles Johannes John Risto Christopher 
-			Olaf Petri Peter Henri Henry Yrjö George Olavi
-			Valteri Walter Riku Richard Matti Matthew Jaakoppi Jacob Taisto Paavo Paul Aatso Adam Ahvo 
-			Artur Asko Tuokko David Rieti Frederick Aarto
-			Kauro Gabriel Kuuti Knut Pekko Soini Sven Tuure Turo Tommo Tohmas Thomas
-		}
-		female_names = {
-			Tarja Aina Jaana
-			Aamu Aino Hellä Helmi Ilta Kaarina Catherine Käpy Kielo Kukka Lauha Lempi Mahla Maija 
-			Metta Päivä Päivi Pihla Pilvi Rauha Sisko Suoma Marja Mesi 
-			Taimi Terhi Titti Tuija Tuovi Tuuli Tuulikki Tyyne Tyyni Vanamo Venla Mielikki Hertta 
-			Inkeri Ilmatar Irene Irene Ilona Helen Kristiina Christina Loviisa
-			Elisabet Elisabeth Sohvi Sofia Auni Agnes Liekko Helen Kivutar Lemmikki Lyylikki Salme 
-			Tuulitar Talvikki
-		}
-	}
-	estonian = {
-		primary = EST
-		dynasty_names = {
-			Bielke Horn Tott Fleming Paijkull Bonde Wrede Soop
-			Mannerheim Furuhjelm Aminoff Armfelt Carpelan Rehbinder Schulman
-		}
-		male_names = {
-			Aabel Aabraham Aadu Aare Aarne Aaron Ago Agu Ahti Ahto Aigar Ain Aivar Aivo Aksel Alar Alari Albert Aleks 
-			Aleksander Allan Allar Alo Alvar Ando Andre Andreas Andres Andrus Anti Anton Ants Ardi Ardo Arno Arnold Arti 
-			Artur Arved Arvi Arvo Asko August Edgar Eduard Eedo Eedu Eerik Eero Egert Egon Einar Eino Elias Elmar Elmo 
-			Endel Endrik Enn Enno Ergo Erik Erki Erko Erlend Ermo Evald Evert Feliks Georg Gert Gunnar Gustav Hannes Hans 
-			Hardi Harri Heigo Heiki Heino Heiti Hendrik Henn Henri Hillar Iisak Illar Illimar Ilmar Ilmo Imre Indrek Innar 
-			Ivar Ivari Ivo Jaagup Jaak Jaakob Jaan Jaanus Jakob Janar Janek Janno Jass Joel Johannes Joona Joonas Joonatan 
-			Joosep Juhan Juho Jukk Juss Jürgen Jüri Jürjo Kaarel Kaido Kajar Kalev Kaljo Kalju Kalle Kardo Karl Kaspar 
-			Kaupo Kaur Kauri Ken Kermo Kert Kevin Koit Kristen Kristian Kristjan Kristo Kristofer Kuldar Kunnar Kusta 
-			Kustas Kustav Küllo Laur Lauri Leevi Leho Lembit Lennart Luukas Maanus Maarjo Madi Madis Magnus Maido Mairo 
-			Mait Marek Margo Margus Mario Mark Marko Markus Marten Marti Martin Mati Matteus Mattias Meelis Meeme Mehis 
-			Mihkel Miikael Mikk Märt Neeme Nigul Nigulas Niilo Nuut Olari Olavi Olev Oliver Oskar Ott Otto Paavo Paul 
-			Paulus Peep Peeter Peetrus Priidu Priit Ragnar Raido Raigo Raiko Raimo Raimond Rain Rainer Rait Raivo Rando 
-			Ranno Rasmus Raul Rauno Reedik Reigo Rein Reio Rene Richard Rihard Riho Riivo Risto Robert Robi Robin Roland 
-			Roman Romet Roomet Rudolf Ruuben Ruudi Ruut Rünno Saamuel Sander Siim Siimeon Siimon Silver Sten Sulev Sven 
-			Taaniel Taavet Taavi Taavo Taivo Tambet Tanel Tarmo Tarvi Tarvo Tauno Tauri Teet Tiidrik Tiit Tiitus Timmo 
-			Timmu Timo Toivo Toomas Tormi Tuudor Tõnis Tõnu Udo Uku Uno Urmas Urmet Urmo Uudo Vahur Vaiko Vaino Valdeko 
-			Valdo Valdur Valentin Vallo Valter Vambola Veiko Veljo Vello Verner Vidrik Viktor Viljar Viljo Ville Villem 
-			Villu Voldemar Vootele Väino Ülari Üllar Üllo Ülo Ürjo
-		}
-		female_names = {
-			Aada Aasa Aet Age Agnes Aile Aili Aino Ainu Aire Airi Aita Aive Aleksandra Alina Andra Anete Angela Angelika 
-			Ann Anna Anne Anneli Anni Annika Anu Asta Astrid Auli Aune Aurelia Ave Berit Birgit Brita Dagmar Diana Ebe Eda 
-			Eeva Eevi Egle Eha Eili Eliisa Eliisabet Eliise Elina Elis Elle Ellen Elo Elvi Emma Endla Ene Eneli Epp Ere 
-			Erika Esta Ester Eva Eve Evelin Gerli Greete Grete Hanna Hedi Heidi Heili Helbe Hele Helen Helena Heleri Helga 
-			Helgi Heli Helina Helju Helle Helmi Helve Hiie Hilda Hilja Hille Iiris Ille Ilme Ilona Imbi Ines Inga Inge 
-			Ingel Ingrid Inna Irene Iris Irja Irma Ivi Ivika Jaana Jaanika Jana Jane Janne Johanna Juta Kaarin Kadi Kadri 
-			Kai Kaia Kaidi Kaie Kaili Kairi Kaisa Kaja Karin Karina Karmen Karoliina Karoliine Karolin Katariina Kati Katre 
-			Katri  Katriin Katrin Keiu Kelli Kerli Kersti Kerstin Kertu Kirke Koidu Krista Kristel Kristen Kristi Kristiina 
-			Kristin Kristina Kärt Kätlin Külli Küllike Lagle Laine Laura Lea Leelo Lehte Leida Leili Lembi Lemme Lii Liia 
-			Liidia Liilia Liina Liis Liisa Liisbet Liisi Liivi Lilian Lilli Linda Luule Lüüdia Maarika Maarja Made Madli 
-			Mai Maia Maie Maila Maimu Maire Malle Mare Maret Margareeta Margaret Marge Margit Margot Mari Mari-Liis Maria 
-			Marika Mariliis Marina Maris Marit Marje Marju Marleen Marta Marve Meeli Meelika Meelike Merike Merili Merilin 
-			Merit Merje Merle Miia Miina Minna Mirjam Monika Moonika Nele Olli Paula Piia Pille Pilvi Piret Raahel Rahel 
-			Raili Rebeka Reeli Reelika Reet Regina Reili Renate Riin Riina Riinu Rita Ruth Rutt Ruut Saara Saima Salme 
-			Sandra Sigrid Siiri Silja Silvi Silvia Siret Sirje Sirli Susanna Taimi Talvi Tea Teele Terje Tiia Tiina Tiiu 
-			Triin Triinu Tuule Tuuli Ursula Urve Vaike Valli Veronika Viia Viiu Viive Viivi Vilja Virge Virve Õie Õnne 
-			Õnnela Ülle
-		}
-	}
+	
 	uralic = {
 		primary = PRM
 		male_names = {
@@ -1442,27 +1473,6 @@ finno_ugric = {
 			Kunava Kunyavka Litava 
 		}
 	}
-	sapmi = {
-		primary = SMI
-		male_names = {
-			Baeivvet Biejan Bijás Bilzi Dávgon Duttá Gáivvas Elmar Hain Haljas Igapäiv Ihalemb Kahar Eeri Heameel Heatõiv 
-			Hoovatõiv Hurmas Hurmetõiv Hõimulemb Hüvalemb Hüvameel Hüvatõiv Tõnn Uku Vootele Väino Värvo Õigemeel Ülo Küllelemb 
-			Leetõiv Lembit Leppetõiv Lible Vambola Vandemeel Varjelemb Veli Vello Venno Vesse Vihavald Vililemb Vilimeel Andyamo 
-			Nuyaksha Nuyanza Nuyat Nydog Nylog Odeg Onika Osh Oshmar Oshypel Ovtay Ozheg Ozhmeg Arnaz Arti Artis Arvo Aymort 
-			Azeg Biur Biyar Burmort Chichayka Chuga Dergun Deryab Pakstyan Paksyay Paksyut Parush Pivtsay Pokshayka Putyayka 
-			Pyera Rateg Rayda Sarin Sektev Dobrinya Erziya Inzhay Kezhapa Kezhay Kezhedey Kezhevat Kichay Kubrat Malyaka Malyy 
-			Koshel Murunza Naruchad Nishkepaz Orunza Puresh Purysho Saksa Shkay Surt Tul Tunya Tutyra 
-		}
-		female_names = {
-			Máidna Násti Naná Njáves Oajá Sáráhkká Sealggá Seará Soabá Sojá Suoinná Suonjar Uksáhkká Maija Mari Marja Meeli 
-			Niine Ninni Oie Pilve Päivi Põim Salme Sirje Säde Taimi Talvi Heli Helina Helmi Helve Hiie Hämarik Hüüp Ida Ilme 
-			Ilmi Ilo Kai Kaili Kaja Kalli Kare Tundava Tundya Unzhutka Upurga Utyayka Valdava Vergava Vezhav Vidyava Virtyava 
-			Yalgava Liyava Mazava Megurka Mel'shay Nezayka Nulzyava Nyal'ka Nyayka Nyumina Nyv Olota Ordava Oshama Öshkamöshka 
-			Parava Pekshayka Pemka Pokshava Poshayka Potekay Potyava Putyayka Ravzhava Rayda Ruzava Sanal'ka Sangasa Sernyava 
-			Serzhay Setyamka Seyamka Shochynava Shonzhava Shukshtoroyka Sinyava Siyamka Slyugan'ka Sochava Styaka Syryava Tatka 
-			Tekay 
-		}
-	}
 	ingrian = {
 		male_names = {
 			Kahru Kahrulemb Gáktu Henes Járre Jeansa Juvven John Lágon Lávrrohas Leammá Mellet Mihka Igalemb Ihameel Ihar 
@@ -1481,24 +1491,6 @@ finno_ugric = {
 			Yugörka Anava Ashava Asrava Azra-Va Chechama Chenksa Cherava Chichayka Chindyapa Chindyayka Chinzhay Chitska Elyuva 
 			Inyava Kanyava Kanyuva Kirdyava Kunava Kunyavka Litava Liyava Mazava Megurka Mel'shay Nezayka Nulzyava Nuyanza 
 			Nyal'ka 
-		}
-	}
-	karelian = {
-		primary = KRL
-		male_names = {
-			Mohkku Mokci Náhkol Náinnas Njulgu Oaván Orddot Rástos Riibma Ruigi Sárra Speaidna Viggu Kaarel Kaaren Kahus Kaido 
-			Kalev Kalju Kaljuvald Kalle Kaomeel Karuvald Kaugemeel Kaupo Pihl Piho Pikne Päevalemb Pärt Raak Raho Rahuleid Sulev 
-			Sutepelg Tambet Tarva Tarvet Dobrinya Dokya Dondy Gazheg Hulyen Inzhay Irter Lyneg Lysko Kezhapa Kezhay Kezhedey 
-			Setyamka Shindyay Shypicha Shyrpuzh Spira Syrka Tikshayka Tuhan Tyueykezhut Tyutyuk Tugan Kezhevat Kichay Koksha 
-			Kuaz Kudym-Osh Kya Kyldysin Malyaka Malyy Meltsayka Mosheg Nalka Turush Uchva Varaka Vechkas Velmayka Virdyan Viryas 
-			Viryay Vokan Yirkap Ylvan Zarny Tugan Parush Pivtsay Pokshayka Putyayka Setyamka Shindyay Shoksha Syrka Tikshayka 
-			Tyueykezhut Tylmache Tylze Tyushten Tyushtya Uzhara Varmanpaz
-		}
-		female_names = {
-			Nyayka Olota Ordava Oshama Parava Pekshayka Pemka Pokshava Poshayka Potekay Potyava Putyayka Ravzhava Ruzava 
-			Sanal'ka Sangasa Sernyava Serzhay Setyamka Seyamka Shonzhava Shukshtoroyka Sinyava Siyamka Slyugan'ka Sochava Styaka 
-			Syryava Tatka Tekay Tetyava Tikshayka Toyaksha Tundava Tundya Unzhutka Upurga Utyayka Valdava Vergava Vezhav Vidyava 
-			Virtyava Yalgava Litova Mastorava Noroava
 		}
 	}
 	dynasty_names = {
@@ -1597,41 +1589,6 @@ south_slavic = {
 		}
 		dynasty_names = {
 			"Krum" "Dulo" "Cometopuli" "Asen" "Terter" "Shishman" "Teleki"
-		}
-	}
-	romanian = {
-		primary = WAL
-		dynasty_names = {
-			"Basarab" "Danesti" "Draculesti"
-			Callimachi Ghica Cantacuzino Cantemiresti Racovita Caradja Sturdza 
-			Conachi Soutzos Golescu Vacarescu Mavrocordatos Craiovesti Hâjdau
-			Kogalniceanu Movilesti
-		}
-		male_names = {
-			Alexandru Radu Vlad Constantin Mihail Mircea George Grigore Mihnea Nicolae Besarab Vladislav Mattia 
-			Radu Ilias Scarlat Stefan Dan Alexandru Ilias Gabriel Ioan George Leon Moise Neagoie Besarab 
-			Leon Radu Mihnea Serban Simeon Teodosiu Vintila Vladut Milos Corneliu Flaviu Iuliu Octavian Sergiu 
-			Valeriu Petru Petrascu Radu 
-			Adrian Alexandru Alexander Anghel Angel Aron Bajan Balc Barbat Basarab Bogdan Bogdan Carol 
-			Ciprian Ciubar Claudiu
-			Corneliu Cornelius Costin Damjan Dan Dragos Dumitru Emerik Florin Franjo Francis Gavril 
-			Gheorghe George Grigore Gregory Iacob Gabriel
-			Iancu Ieremia Ilie Ioan John Iorghu Iosif Iuga Janos John Ladislau Latcu Laurentiu Laurence 
-			Litovoi Lucian Lucius Marin Marius
-			Mihai Milos Milosz Mircea Moise Nicolaie Petre Pirvu Radovan Radu Roman Sas Seneslav 
-			Sergiu Simion Simon
-			Stefan Stephen Stelian Teodor Theodore Tepes Tibor Tihomir Timotei Tudor Thierry Valentin 
-			Valentin Valeriu Vasile Basil Veaceslav
-			Victor Vilhelm William Vintila Vlad
-		}
-		female_names = {
-			Adelina Adriana Afina Alexandra Alexia Ana Anna Anastasia Anastasia Angela Arina Christina 
-			Christina Clara Clara Dana Ecatarina Catherine
-			Elena Helen Elisabeta Elisabeth Emilia Emily Eufroysina Euphrosyne Felicia Floarea Flora 
-			Ioana Ionela Irina Iulia Juliana Maria Maria Monica Iacoba
-			Natalia Olimpia Paraschiva Petra Roxana Ruxandra Smaranda Sophia Sophia Stana Stefana 
-			Stefania Stephania Teodora Rahela Flavia Cosmina
-			Tereza Teresa Vasilica Violeta Yolanda Voica Zina
 		}
 	}
 	albanian = {
@@ -1768,8 +1725,124 @@ west_slavic = {
 	}
 }
 
-magyar = {	
+carpathian = {	
 	graphical_culture = easterngfx
+	slovak = {
+		primary = SLO
+		male_names = {
+			Matej Jan Lukas Stefan Pavol Peter Juraj Jozef Marek Daniel Moric Samuel Martin Ondrej Anton Karol
+			Hugolín Tomas Ludovít Viliam Mikulas Ignac Jaroslav Jaromir Miroslav Drahoslav Svatopluk Mojmir
+			Dobroslav Radoslav Radomír Kazimír Vlastimil Vitazoslav Blahoslav Svetozar Bonifac Vratislav
+			Vladislav Vladimir Cyril Konstantin Metod Bohuslav Drahomir Prokop Jergus Tichomir Bartolomej
+			Luboslav Lubomir Levoslav Stanislav
+		}
+		female_names = {
+			Maria Anna Alzbeta Ludmila Eva Jaroslava Jarmila Amalia Margareta Hana			 
+		}
+		dynasty_names = {
+			Stibor Bel Kollar Podmanický Hatnanský Pongrac Bosniak Veseléni Zichy Turzo Andráši
+			Zapolský Palfi Cáki Balaša Báthory
+		}
+	}
+	transylvanian = {
+		primary = TRA
+		male_names = {
+			Ulászló László Lajos Albert János Mátyás Zsigmond András Károly István Béla Anasztáz Barnabás 
+			Boldizsár Dávid Dömötör Edvárd Ernö Ferenc Gábor György Izsák Jenö József Kálmán Kázmér Lörinc 
+			Miklós Oszkár Ottó Patrik Péter Simon Tamás Vencel
+			Ábel Ádárn Ágoston Álmos Árpád Õdön Otto Alajos Ambrus András Andrew Antal Attila Bálint 
+			Albert Balázs Benedek Benedict Bernát Bernard Bertók Bertalan Boldizsár Bonuslo
+			Borisz Boris Csák Csaba Csongor Dénes Dömötör Dezsõ Domoszló Donát Elek Elemér Endre Ernõ 
+			Philip Ferenc Francis Frigyes Gábor Gábriel Gabriel Gáspár Caspar Géza Gazsi
+			Gellért Gergely György George Gyula Imre István Stephen Izsák Jákob Jacob János John József 
+			Joseph Jenõ Kálmán Károly Charles Konrád Konrad Kornél Kristóf László Lázár Lõrinc Lajos 
+			Lampert Levente Lukács Márk Marcus Márton Martin Máté Mátyás Matthew Móric Mózes Mihály 
+			Michael Louis Fulöp Béla
+			Miklós Nándor Orbán Oszkár Pál Paul Péter Peter Sámuel Samuel Sándor Alexander Salamon 
+			Szilveszter Silvester Tádor Tacsony Tamás Thomas Tibor Tivadar Vazul Vencel Vaclav Vilmos 
+			Zoltán Zsigmond Sigmund Zsolt Saul Soma
+			Alexandru Radu Vlad Constantin Mihail Mircea George Grigore Mihnea Nicolae Besarab Vladislav Mattia 
+			Radu Ilias Scarlat Stefan Dan Alexandru Ilias Gabriel Ioan George Leon Moise Neagoie Besarab 
+			Leon Radu Mihnea Serban Simeon Teodosiu Vintila Vladut Milos Corneliu Flaviu Iuliu Octavian Sergiu 
+			Valeriu Petru Petrascu Radu 
+			Adrian Alexandru Alexander Anghel Angel Aron Bajan Balc Barbat Basarab Bogdan Bogdan Carol 
+			Ciprian Ciubar Claudiu
+			Corneliu Cornelius Costin Damjan Dan Dragos Dumitru Emerik Florin Franjo Francis Gavril 
+			Gheorghe George Grigore Gregory Iacob Gabriel
+			Iancu Ieremia Ilie Ioan John Iorghu Iosif Iuga Janos John Ladislau Latcu Laurentiu Laurence 
+			Litovoi Lucian Lucius Marin Marius
+			Mihai Milos Milosz Mircea Moise Nicolaie Petre Pirvu Radovan Radu Roman Sas Seneslav 
+			Sergiu Simion Simon
+			Stefan Stephen Stelian Teodor Theodore Tepes Tibor Tihomir Timotei Tudor Thierry Valentin 
+			Valentin Valeriu Vasile Basil Veaceslav
+			Victor Vilhelm William Vintila Vlad
+		}
+		female_names = {
+			Ágnes Agnes Éva Eva Adelaida Adelaide Agáta Agatha Amália Amelia Angyalka Anikó Aranka 
+			Bertha Borbála Csilla Csillag Czenzi Dorottya Dorothy Edit Edith Emõke Emese Erika Erzsébet 
+			Elisabeth Eszter Berta Anna
+			Etel Euphemia Euphemia Gizella Gisela Györgyi Georgia Hajnal Hedwig Hedwig Ibolya Ildikó 
+			Irén Irene Jácinta Józsa Júlia Juliana Jolán Judith Judith Kamilla Camilla Katalin 
+			Kinga Klára Catherine Illona
+			Konstancia Constance Krisztina Christina Kunigunda Kunigunde Luca Mária Maria Márta Martha 
+			Magdolna Magdalena Margaréta Margaret Margit Matild Matilda Natália Natalia Odola Orsolya 
+			Panni Piroska Rózsa Rosa Sára Sarah Sarolt Zsuzsa Zsanett
+			Skolasztika Sophia Tundér Terezia Viola Virág Zoltána Zsófia Adelina Adriana Afina Alexandra Alexia Ana Anna Anastasia Anastasia Angela Arina Christina 
+			Christina Dana Ecatarina
+			Elena Helen Elisabeta Elisabeth Emilia Emily Eufroysina Euphrosyne Felicia Floarea Flora 
+			Ioana Ionela Irina Iulia Juliana Maria Maria Monica Iacoba
+			Natalia Olimpia Paraschiva Petra Roxana Ruxandra Smaranda Stana Stefana 
+			Stefania Stephania Teodora Rahela Flavia Cosmina
+			Tereza Teresa Vasilica Violeta Yolanda Voica Zina 			 
+		}
+		dynasty_names = {
+			Báthory Hunyadi Szapolyai Rákóczy Bocskai Bethlen Almásy Andrássy Batthyány Csáky Dessewffy
+			Erdody Eszterházy Festetics Hajdú Károlyi Kun Magyary Perényi Rónai Széchenyi Szepessy 
+			Thököly Tisza Zrínyi Teleki
+			Majláth Dóczy Dobó Koháry Orczy Frankopan Garay Mikes Szécsi Imreffy Nádasdy Rhédey
+			Zrinski Hadik Both "Rákóczi" Forgách Cseszneky Derencsényi Décsey Révay Esterházy
+			Kállay Kemény Thurzó Zichy
+			"Basarab" "Danesti" "Draculesti"
+			Callimachi Ghica Cantacuzino Cantemiresti Racovita Caradja Sturdza 
+			Conachi Soutzos Golescu Vacarescu Mavrocordatos Craiovesti Hâjdau
+			Kogalniceanu Movilesti
+		}
+	}
+	romanian = {
+		primary = WAL
+		dynasty_names = {
+			"Basarab" "Danesti" "Draculesti"
+			Callimachi Ghica Cantacuzino Cantemiresti Racovita Caradja Sturdza 
+			Conachi Soutzos Golescu Vacarescu Mavrocordatos Craiovesti Hâjdau
+			Kogalniceanu Movilesti
+		}
+		male_names = {
+			Alexandru Radu Vlad Constantin Mihail Mircea George Grigore Mihnea Nicolae Besarab Vladislav Mattia 
+			Radu Ilias Scarlat Stefan Dan Alexandru Ilias Gabriel Ioan George Leon Moise Neagoie Besarab 
+			Leon Radu Mihnea Serban Simeon Teodosiu Vintila Vladut Milos Corneliu Flaviu Iuliu Octavian Sergiu 
+			Valeriu Petru Petrascu Radu 
+			Adrian Alexandru Alexander Anghel Angel Aron Bajan Balc Barbat Basarab Bogdan Bogdan Carol 
+			Ciprian Ciubar Claudiu
+			Corneliu Cornelius Costin Damjan Dan Dragos Dumitru Emerik Florin Franjo Francis Gavril 
+			Gheorghe George Grigore Gregory Iacob Gabriel
+			Iancu Ieremia Ilie Ioan John Iorghu Iosif Iuga Janos John Ladislau Latcu Laurentiu Laurence 
+			Litovoi Lucian Lucius Marin Marius
+			Mihai Milos Milosz Mircea Moise Nicolaie Petre Pirvu Radovan Radu Roman Sas Seneslav 
+			Sergiu Simion Simon
+			Stefan Stephen Stelian Teodor Theodore Tepes Tibor Tihomir Timotei Tudor Thierry Valentin 
+			Valentin Valeriu Vasile Basil Veaceslav
+			Victor Vilhelm William Vintila Vlad
+		}
+		female_names = {
+			Adelina Adriana Afina Alexandra Alexia Ana Anna Anastasia Anastasia Angela Arina Christina 
+			Christina Clara Clara Dana Ecatarina Catherine
+			Elena Helen Elisabeta Elisabeth Emilia Emily Eufroysina Euphrosyne Felicia Floarea Flora 
+			Ioana Ionela Irina Iulia Juliana Maria Maria Monica Iacoba
+			Natalia Olimpia Paraschiva Petra Roxana Ruxandra Smaranda Sophia Sophia Stana Stefana 
+			Stefania Stephania Teodora Rahela Flavia Cosmina
+			Tereza Teresa Vasilica Violeta Yolanda Voica Zina
+		}
+	}
 	hungarian = {
 		primary = HUN
 		dynasty_names = {
@@ -1808,15 +1881,95 @@ magyar = {
 			Konstancia Constance Krisztina Christina Kunigunda Kunigunde Luca Mária Maria Márta Martha 
 			Magdolna Magdalena Margaréta Margaret Margit Matild Matilda Natália Natalia Odola Orsolya 
 			Panni Piroska Rózsa Rosa Sára Sarah Sarolt Zsuzsa Zsanett
-			Skolasztika Sophia Sophia Tundér Terezia Teresa Viola Viola Virág Zoltána Zsófia Sophia 			 
+			Skolasztika Sophia Sophia Tundér Terezia Teresa Viola Viola Virág Zoltána Zsófia Sophia
 		}
 	}
 }
 	
 east_slavic = {
 	graphical_culture = easterngfx
-	russian = {
+	russian = { #Muscovite - Vladimir-Suzdal dialects
 		primary = MOS
+		male_names = {
+			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
+			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
+			Onisim Pavel Prokopiy Pyotr Radomir Saveliy Sergei Terentiy Valeriy Yakim Yevgeniy
+			Afanasiy Athanasius Alexandr Alexander Alexei Alexis Andrei Andrew Boris Briachislav 
+			Bretislaus Nikifor
+			Daniil Daniel Davyd David Demid Dmitriy Demetrius Dobrynia Fedot Theodat Feodor Theodore 
+			Gavriil Gabriel Gleb
+			Grigoriy Gregory Iakov Jacob Igor Iliya Ingvar Ingvar Ivan John Iziaslav Kirill Cyril 
+			Konstantin Constantine Koz'ma Cosma Lev Leo Matfei Matthew Mikhail Michael Mitrofan 
+			Mstislav Nikita Oleg Helge Pavel Paul Putiata Radoslav Rodislav Rogvolod Roman 
+			Rostislav Rurik 
+			Rurik Ruslan Simeon Simon Stanislav Stanislav Stepan Stephen Sudislav
+			Svetozar Sviatopolk Svatopluk Sviatoslav Sviatoslav Terentiy Trifon Vasiliy Basil Vasilko 
+			Viacheslav Vladimir Vladimir Vladislav Vladislav Voislav Volodar Vseslav
+			Vsevolod Vyshata Vysheslav Yaropolk Yaroslav Jaroslav Yefimiy Yelisey Yemelyan Emil Yeremey 
+			Yevstafiy Yuriy George
+		}
+		female_names = {
+			Agafya Agatha Agrafena Alexandra Anastasia Anastasia Anna Anna Boleslava Darya Dobrava 
+			Dobronega Dobroslava Yefimia Euphemia Yefrosinia Euphrosyne Yekaterina Catherine
+			Yelizaveta Elisabeth Yevdokia Eudocia Yevpraxia Feodora Theodora Feodosia Theodosia 
+			Fevronia Gorislava Gradislava Gremislava Irina Irene Xenia Liubava
+			Liudmila Malfrida Malusha Maria Maria Marina Olena Helen Olga Pereyaslava Praskovya Praxida 
+			Prebrana Predslava Premyslava Svetlana Yuliya
+			Pribislava Rogneda Rostislava Sbyslava Sofia Sophia Sviatoslava Tatyana Ulita Ulyana
+			Varvara Vasilisa Veleslava Verkhoslava Vseslava Viacheslava Yaroslava Zabava Zvenislava
+		}
+		dynasty_names = {
+			Rurikovich Godunov Shuisky Romanov Sheremetev Golitsyn Naryshkin Khilkov Gorchakov
+			Belosselsky Chelyadnin Potyomkin Poloch Izbor Tversky Lukisky Pleskov Toropetsky Dukhovsky
+			Koroviev Woland Tyvertsky Buzhansky Slutsky Pinesky Zhytomyrsky Vynnytsky Polan Ulich Drevl 
+			Lyubech Roslavsky Turov
+			Dolgorukov Gagarin Galitzine Massalski Shuysky Gantimurov Sibirsky
+			# CKII
+			Demidov Lopukhin Tolstoy "Lobanov-Rostovsky" Menshikov Obolensky
+		}
+	}
+	novgorodian = { #Novgorodian and most North Russian dialects.
+		primary = NOV
+		male_names = {
+			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
+			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
+			Onisim Pavel Prokopiy Pyotr Radomir Saveliy Sergei Terentiy Valeriy Yakim Yevgeniy
+			Afanasiy Athanasius Alexandr Alexander Alexei Alexis Andrei Andrew Boris Briachislav 
+			Bretislaus Nikifor
+			Daniil Daniel Davyd David Demid Dmitriy Demetrius Dobrynia Fedot Theodat Feodor Theodore 
+			Gavriil Gabriel Gleb
+			Grigoriy Gregory Iakov Jacob Igor Iliya Ingvar Ingvar Ivan John Iziaslav Kirill Cyril 
+			Konstantin Constantine Koz'ma Cosma Lev Leo Matfei Matthew Mikhail Michael Mitrofan 
+			Mstislav Nikita Oleg Helge Pavel Paul Putiata Radoslav Rodislav Rogvolod Roman 
+			Rostislav Rurik 
+			Rurik Ruslan Simeon Simon Stanislav Stanislav Stepan Stephen Sudislav
+			Svetozar Sviatopolk Svatopluk Sviatoslav Sviatoslav Terentiy Trifon Vasiliy Basil Vasilko 
+			Viacheslav Vladimir Vladimir Vladislav Vladislav Voislav Volodar Vseslav
+			Vsevolod Vyshata Vysheslav Yaropolk Yaroslav Jaroslav Yefimiy Yelisey Yemelyan Emil Yeremey 
+			Yevstafiy Yuriy George
+		}
+		female_names = {
+			Agafya Agatha Agrafena Alexandra Anastasia Anastasia Anna Anna Boleslava Darya Dobrava 
+			Dobronega Dobroslava Yefimia Euphemia Yefrosinia Euphrosyne Yekaterina Catherine
+			Yelizaveta Elisabeth Yevdokia Eudocia Yevpraxia Feodora Theodora Feodosia Theodosia 
+			Fevronia Gorislava Gradislava Gremislava Irina Irene Xenia Liubava
+			Liudmila Malfrida Malusha Maria Maria Marina Olena Helen Olga Pereyaslava Praskovya Praxida 
+			Prebrana Predslava Premyslava Svetlana Yuliya
+			Pribislava Rogneda Rostislava Sbyslava Sofia Sophia Sviatoslava Tatyana Ulita Ulyana
+			Varvara Vasilisa Veleslava Verkhoslava Vseslava Viacheslava Yaroslava Zabava Zvenislava
+		}
+		dynasty_names = {
+			Rurikovich Godunov Shuisky Romanov Sheremetev Golitsyn Naryshkin Khilkov Gorchakov
+			Belosselsky Chelyadnin Potyomkin Poloch Izbor Tversky Lukisky Pleskov Toropetsky Dukhovsky
+			Koroviev Woland Tyvertsky Buzhansky Slutsky Pinesky Zhytomyrsky Vynnytsky Polan Ulich Drevl 
+			Lyubech Roslavsky Turov
+			Dolgorukov Gagarin Galitzine Massalski Shuysky Gantimurov Sibirsky
+			# CKII
+			Demidov Lopukhin Tolstoy "Lobanov-Rostovsky" Menshikov Obolensky
+		}
+	}
+	ryazanian = { #Southern Russian Dialects
+		primary = RYA
 		male_names = {
 			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
 			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
@@ -1880,6 +2033,24 @@ east_slavic = {
 			Gavriila Larisa Aleksandra Alla Bronislava Svetlana Yuliya Yaroslava Vladislava Lyudmila Nadejda Rostislava
 		}
 	}
+	karelian = {
+		primary = KRL
+		male_names = {
+			Mohkku Mokci Náhkol Náinnas Njulgu Oaván Orddot Rástos Riibma Ruigi Sárra Speaidna Viggu Kaarel Kaaren Kahus Kaido 
+			Kalev Kalju Kaljuvald Kalle Kaomeel Karuvald Kaugemeel Kaupo Pihl Piho Pikne Päevalemb Pärt Raak Raho Rahuleid Sulev 
+			Sutepelg Tambet Tarva Tarvet Dobrinya Dokya Dondy Gazheg Hulyen Inzhay Irter Lyneg Lysko Kezhapa Kezhay Kezhedey 
+			Setyamka Shindyay Shypicha Shyrpuzh Spira Syrka Tikshayka Tuhan Tyueykezhut Tyutyuk Tugan Kezhevat Kichay Koksha 
+			Kuaz Kudym-Osh Kya Kyldysin Malyaka Malyy Meltsayka Mosheg Nalka Turush Uchva Varaka Vechkas Velmayka Virdyan Viryas 
+			Viryay Vokan Yirkap Ylvan Zarny Tugan Parush Pivtsay Pokshayka Putyayka Setyamka Shindyay Shoksha Syrka Tikshayka 
+			Tyueykezhut Tylmache Tylze Tyushten Tyushtya Uzhara Varmanpaz
+		}
+		female_names = {
+			Nyayka Olota Ordava Oshama Parava Pekshayka Pemka Pokshava Poshayka Potekay Potyava Putyayka Ravzhava Ruzava 
+			Sanal'ka Sangasa Sernyava Serzhay Setyamka Seyamka Shonzhava Shukshtoroyka Sinyava Siyamka Slyugan'ka Sochava Styaka 
+			Syryava Tatka Tekay Tetyava Tikshayka Toyaksha Tundava Tundya Unzhutka Upurga Utyayka Valdava Vergava Vezhav Vidyava 
+			Virtyava Yalgava Litova Mastorava Noroava
+		}
+	}
 	
 	dynasty_names = {
 		Rurikovich Godunov Shuisky Romanov Sheremetev Golitsyn Naryshkin Khilkov Gorchakov
@@ -1911,6 +2082,52 @@ east_slavic = {
 baltic	= {
 	graphical_culture = easterngfx
 	
+	estonian = {
+		primary = EST
+		dynasty_names = {
+			Bielke Horn Tott Fleming Paijkull Bonde Wrede Soop
+			Mannerheim Furuhjelm Aminoff Armfelt Carpelan Rehbinder Schulman
+		}
+		male_names = {
+			Aabel Aabraham Aadu Aare Aarne Aaron Ago Agu Ahti Ahto Aigar Ain Aivar Aivo Aksel Alar Alari Albert Aleks 
+			Aleksander Allan Allar Alo Alvar Ando Andre Andreas Andres Andrus Anti Anton Ants Ardi Ardo Arno Arnold Arti 
+			Artur Arved Arvi Arvo Asko August Edgar Eduard Eedo Eedu Eerik Eero Egert Egon Einar Eino Elias Elmar Elmo 
+			Endel Endrik Enn Enno Ergo Erik Erki Erko Erlend Ermo Evald Evert Feliks Georg Gert Gunnar Gustav Hannes Hans 
+			Hardi Harri Heigo Heiki Heino Heiti Hendrik Henn Henri Hillar Iisak Illar Illimar Ilmar Ilmo Imre Indrek Innar 
+			Ivar Ivari Ivo Jaagup Jaak Jaakob Jaan Jaanus Jakob Janar Janek Janno Jass Joel Johannes Joona Joonas Joonatan 
+			Joosep Juhan Juho Jukk Juss Jürgen Jüri Jürjo Kaarel Kaido Kajar Kalev Kaljo Kalju Kalle Kardo Karl Kaspar 
+			Kaupo Kaur Kauri Ken Kermo Kert Kevin Koit Kristen Kristian Kristjan Kristo Kristofer Kuldar Kunnar Kusta 
+			Kustas Kustav Küllo Laur Lauri Leevi Leho Lembit Lennart Luukas Maanus Maarjo Madi Madis Magnus Maido Mairo 
+			Mait Marek Margo Margus Mario Mark Marko Markus Marten Marti Martin Mati Matteus Mattias Meelis Meeme Mehis 
+			Mihkel Miikael Mikk Märt Neeme Nigul Nigulas Niilo Nuut Olari Olavi Olev Oliver Oskar Ott Otto Paavo Paul 
+			Paulus Peep Peeter Peetrus Priidu Priit Ragnar Raido Raigo Raiko Raimo Raimond Rain Rainer Rait Raivo Rando 
+			Ranno Rasmus Raul Rauno Reedik Reigo Rein Reio Rene Richard Rihard Riho Riivo Risto Robert Robi Robin Roland 
+			Roman Romet Roomet Rudolf Ruuben Ruudi Ruut Rünno Saamuel Sander Siim Siimeon Siimon Silver Sten Sulev Sven 
+			Taaniel Taavet Taavi Taavo Taivo Tambet Tanel Tarmo Tarvi Tarvo Tauno Tauri Teet Tiidrik Tiit Tiitus Timmo 
+			Timmu Timo Toivo Toomas Tormi Tuudor Tõnis Tõnu Udo Uku Uno Urmas Urmet Urmo Uudo Vahur Vaiko Vaino Valdeko 
+			Valdo Valdur Valentin Vallo Valter Vambola Veiko Veljo Vello Verner Vidrik Viktor Viljar Viljo Ville Villem 
+			Villu Voldemar Vootele Väino Ülari Üllar Üllo Ülo Ürjo
+		}
+		female_names = {
+			Aada Aasa Aet Age Agnes Aile Aili Aino Ainu Aire Airi Aita Aive Aleksandra Alina Andra Anete Angela Angelika 
+			Ann Anna Anne Anneli Anni Annika Anu Asta Astrid Auli Aune Aurelia Ave Berit Birgit Brita Dagmar Diana Ebe Eda 
+			Eeva Eevi Egle Eha Eili Eliisa Eliisabet Eliise Elina Elis Elle Ellen Elo Elvi Emma Endla Ene Eneli Epp Ere 
+			Erika Esta Ester Eva Eve Evelin Gerli Greete Grete Hanna Hedi Heidi Heili Helbe Hele Helen Helena Heleri Helga 
+			Helgi Heli Helina Helju Helle Helmi Helve Hiie Hilda Hilja Hille Iiris Ille Ilme Ilona Imbi Ines Inga Inge 
+			Ingel Ingrid Inna Irene Iris Irja Irma Ivi Ivika Jaana Jaanika Jana Jane Janne Johanna Juta Kaarin Kadi Kadri 
+			Kai Kaia Kaidi Kaie Kaili Kairi Kaisa Kaja Karin Karina Karmen Karoliina Karoliine Karolin Katariina Kati Katre 
+			Katri  Katriin Katrin Keiu Kelli Kerli Kersti Kerstin Kertu Kirke Koidu Krista Kristel Kristen Kristi Kristiina 
+			Kristin Kristina Kärt Kätlin Külli Küllike Lagle Laine Laura Lea Leelo Lehte Leida Leili Lembi Lemme Lii Liia 
+			Liidia Liilia Liina Liis Liisa Liisbet Liisi Liivi Lilian Lilli Linda Luule Lüüdia Maarika Maarja Made Madli 
+			Mai Maia Maie Maila Maimu Maire Malle Mare Maret Margareeta Margaret Marge Margit Margot Mari Mari-Liis Maria 
+			Marika Mariliis Marina Maris Marit Marje Marju Marleen Marta Marve Meeli Meelika Meelike Merike Merili Merilin 
+			Merit Merje Merle Miia Miina Minna Mirjam Monika Moonika Nele Olli Paula Piia Pille Pilvi Piret Raahel Rahel 
+			Raili Rebeka Reeli Reelika Reet Regina Reili Renate Riin Riina Riinu Rita Ruth Rutt Ruut Saara Saima Salme 
+			Sandra Sigrid Siiri Silja Silvi Silvia Siret Sirje Sirli Susanna Taimi Talvi Tea Teele Terje Tiia Tiina Tiiu 
+			Triin Triinu Tuule Tuuli Ursula Urve Vaike Valli Veronika Viia Viiu Viive Viivi Vilja Virge Virve Õie Õnne 
+			Õnnela Ülle
+		}
+	}
 	lithuanian = {
 		primary = LIT
 		male_names = {
@@ -2372,9 +2589,44 @@ caucasian = {
 	}
 }
 
-turko_semitic = {
+turko_semitic = { #Levantine
 	graphical_culture = muslimgfx
 	
+	turkish = {
+		primary = TUR
+		dynasty_names = {
+			"Osmanoglu" "Karamanoglu" "Menteseoglu" "Ramazanoglu" "Saruhanoglu"
+			"Dulkadiroglu" "Candaroglu" "Germiyanoglu" "Aydinoglu" "Eretnaoglu"
+			"Artukoglu" "Mutahhartenoglu" "Tekeoglu" "Hamidoglu" "Tacettinoglu"
+			"Oguzoglu" "Haciemiroglu" "Kubatoglu" "Bafraoglu" "Alaiyeoglu"
+		}
+		male_names = {
+			Mehmet Mustafa Murat Ahmet Selim Osman Mahmut Süleyman Bayezid Orhan Abdulaziz Abdülhamit Ibrahim 
+			Abdülmecit Abdullah Cem Cihangir Alaattin Isa Musa Ömer Seyfettin Yakup Yusuf Giyasettin Numan 
+			Ali Davut Hasan Hüseyin Ishak Kamer Kasim Korkut Emin Iskender Halil Sait Hamit Ertugrul Izzettin 
+			Nizamettin Sinan Ferhat Salih Ismail Cüneyt Bahadir Hizir Harun Cemal Inal Celalettin Ilyas 
+			Dursun Ramazan Recep Abdulrahman Hayrettin
+			Çagri Çaka Afsin Ahmet Aksonqor Alaeddin Ali Alkan "Alp Arslan" "Alp Yurek" Alptigin Artuk Ayaz 
+			Aydin Aydogan Aydogdu Aytekin Böru Bulend Bahadir Balaban Basbuga Batuhan Baturay Baybars 
+			Bayezid Baytas Belek Berkan Berkiyaruk Bozan Bugra Burak Cuneyd Dundar Danismend Davud David 
+			Demir Dogan Dogukan Dukak Erdem Ertan Ertekin Ertugrul Gunduz Hasan Hasan Hizir Ibrahim Ilgazi 
+			Inal Iskender Alexander Kurboga Kaikaus Kaikhusraw Kaiqobad Kara Karatay Kasim Kaya Kaytun 
+			Kemal Kiliç Korkut Kutalmis Kutay Kutlug Mursel Mahmud Mehmed Meliksah Mengucek Mesud Murad 
+			Mustafa Orhan Osman Porsuk Rustem Ramazan Ridvan Söbuk Sökmen Sönmez Suleyman Saim Saltuk 
+			Saruca Savtekin Savur Sehinsah Selçuk Selim Sencer Sinan Tanrivermis Tekin Timurtas Togay 
+			Togtekin Toktamis Tolun Toruntay Tugrul Tunga Turgut Turhan Tutus Uluç Umur Yakut Yaman Yinal 
+			Yunus
+		}
+		female_names = {
+			Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu 
+			Bozçin Canan Ceylan Dunya Dilber Dilek Emine Esin Fatma Firuze Gulçiçek Gulay Gulbahar Gulfem 
+			Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge Karacik Lale 
+			Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica 
+			Sati Sehnaz Serap Serife Sevilay Sevindik Sibel Sibylla Sirin Sirma Songul Sumru Tekçe Tura 
+			Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal Hatice Safiye Zeynep Hürrem Mihrimah Nurbanu 
+			Handan Alime Kösem Hüma 
+		}
+	}
 	al_misr_arabic = { #Egyptian Arab
 		primary = MAM
 		dynasty_names = {
@@ -2657,6 +2909,21 @@ iranian	= {
 			Shirin Soraya Touran Tourandokht Yasaman Yekta Zarrindokht Zeynab Zohreh Atiya
 		}
 	}
+	azerbaijani = {
+		primary = SRV
+		dynasty_names = {
+			"Qara Qoyunlu" "Aq Qoyunlu" "Safavid" "Shirvanshah" Javanshir Chupanid Ziyadoghlu Chalabi
+			Talysh "Haji Chalabi"
+		}
+		male_names = {
+			Ibrahim Muhammad Ibrahim Farrukhsiyar Khalil Bahram Farrukhsiyar Ghazi Farrukhsiyar Mahmud Ghazi Eldar
+		}
+		female_names = {
+			Malahat Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand 
+			Aaliyah Aamina Aamira Aaqila Aarifa Aazzi Adelah Adela Adiba Adilah Adilia Adiva Adjan Aeesha 
+			Adila Ikram            
+		}
+	}
 	khorasani = {
 		primary = KHO
 		male_names = {
@@ -2859,81 +3126,6 @@ iranian	= {
 	}
 }
 
-oghuz = {
-	graphical_culture = muslimgfx
-
-	turkish = {
-		primary = TUR
-		dynasty_names = {
-			"Osmanoglu" "Karamanoglu" "Menteseoglu" "Ramazanoglu" "Saruhanoglu"
-			"Dulkadiroglu" "Candaroglu" "Germiyanoglu" "Aydinoglu" "Eretnaoglu"
-			"Artukoglu" "Mutahhartenoglu" "Tekeoglu" "Hamidoglu" "Tacettinoglu"
-			"Oguzoglu" "Haciemiroglu" "Kubatoglu" "Bafraoglu" "Alaiyeoglu"
-		}
-		male_names = {
-			Mehmet Mustafa Murat Ahmet Selim Osman Mahmut Süleyman Bayezid Orhan Abdulaziz Abdülhamit Ibrahim 
-			Abdülmecit Abdullah Cem Cihangir Alaattin Isa Musa Ömer Seyfettin Yakup Yusuf Giyasettin Numan 
-			Ali Davut Hasan Hüseyin Ishak Kamer Kasim Korkut Emin Iskender Halil Sait Hamit Ertugrul Izzettin 
-			Nizamettin Sinan Ferhat Salih Ismail Cüneyt Bahadir Hizir Harun Cemal Inal Celalettin Ilyas 
-			Dursun Ramazan Recep Abdulrahman Hayrettin
-			Çagri Çaka Afsin Ahmet Aksonqor Alaeddin Ali Alkan "Alp Arslan" "Alp Yurek" Alptigin Artuk Ayaz 
-			Aydin Aydogan Aydogdu Aytekin Böru Bulend Bahadir Balaban Basbuga Batuhan Baturay Baybars 
-			Bayezid Baytas Belek Berkan Berkiyaruk Bozan Bugra Burak Cuneyd Dundar Danismend Davud David 
-			Demir Dogan Dogukan Dukak Erdem Ertan Ertekin Ertugrul Gunduz Hasan Hasan Hizir Ibrahim Ilgazi 
-			Inal Iskender Alexander Kurboga Kaikaus Kaikhusraw Kaiqobad Kara Karatay Kasim Kaya Kaytun 
-			Kemal Kiliç Korkut Kutalmis Kutay Kutlug Mursel Mahmud Mehmed Meliksah Mengucek Mesud Murad 
-			Mustafa Orhan Osman Porsuk Rustem Ramazan Ridvan Söbuk Sökmen Sönmez Suleyman Saim Saltuk 
-			Saruca Savtekin Savur Sehinsah Selçuk Selim Sencer Sinan Tanrivermis Tekin Timurtas Togay 
-			Togtekin Toktamis Tolun Toruntay Tugrul Tunga Turgut Turhan Tutus Uluç Umur Yakut Yaman Yinal 
-			Yunus
-		}
-		female_names = {
-			Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu 
-			Bozçin Canan Ceylan Dunya Dilber Dilek Emine Esin Fatma Firuze Gulçiçek Gulay Gulbahar Gulfem 
-			Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge Karacik Lale 
-			Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica 
-			Sati Sehnaz Serap Serife Sevilay Sevindik Sibel Sibylla Sirin Sirma Songul Sumru Tekçe Tura 
-			Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal Hatice Safiye Zeynep Hürrem Mihrimah Nurbanu 
-			Handan Alime Kösem Hüma 
-		}
-	}
-	azerbaijani = {
-		primary = SRV
-		dynasty_names = {
-			"Qara Qoyunlu" "Aq Qoyunlu" "Safavid" "Shirvanshah" Javanshir Chupanid Ziyadoghlu Chalabi
-			Talysh "Haji Chalabi"
-		}
-		male_names = {
-			Ibrahim Muhammad Ibrahim Farrukhsiyar Khalil Bahram Farrukhsiyar Ghazi Farrukhsiyar Mahmud Ghazi Eldar
-		}
-		female_names = {
-			Malahat Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand 
-			Aaliyah Aamina Aamira Aaqila Aarifa Aazzi Adelah Adela Adiba Adilah Adilia Adiva Adjan Aeesha 
-			Adila Ikram            
-		}
-	}
-	turkmeni = {
-		primary = KHI
-		dynasty_names = {
-			"Arabshahid" "Qungrat" "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
-			"Bora Tolui" Qadancher Batulun Batutai Bokejin Arighqan Burilgiteni
-			Bayarnai Subegene Tegusdai Yekedei
-		}
-		male_names = {
-			Abdul-Aziz Abdul-Karim Abdul-Mumin Abdul-Rahim Abdulla Abu Said Abu'l-Feiz Abu'l-Ghazi Abu'l-Khayr 
-			Abu'l-Mansur Agatay Alim Anusha Arab Muhammad Avanesh Bahadur Bakht Baqi Muhammad Budjuga Bureke 
-			Djuchi Dost Habash Hadji Hadji Muhammad Hassan Quli Haydar Imam Quli Ilbars Irdana Isfandiyar Isim 
-			Janibek Kal Khudayar Khudaydad Kochkunju Muhammad Muhammad Amin Muhammad Hakim Muhammad Rahim Nadir 
-			Muhammad Narbuta Navruz Ahmad Niyaz Pir Muhammad Sanjar Sevinch Shadi Shahmurad Shahrukh Shaykh 
-			Subhan Quli Sufyan Suleyman Tahir Timur Ubaydulla Umar Vali Vali Muhammad Yadgar Daniyal Haidar 
-			Iskandar
-		}
-		female_names = {
-			Hooda Malaika Munira Rabiya Rafiqa Ksyusha Sabina Zarina Hatyra Gulnaza Selbi Aziza Jeren Zeynab Myahri
-		}
-	}
-}
-
 altaic = {
 	graphical_culture = muslimgfx
 
@@ -3008,6 +3200,26 @@ altaic = {
 		}
 		female_names = {
 			Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene 
+		}
+	}
+	turkmeni = {
+		primary = KHI
+		dynasty_names = {
+			"Arabshahid" "Qungrat" "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
+			"Bora Tolui" Qadancher Batulun Batutai Bokejin Arighqan Burilgiteni
+			Bayarnai Subegene Tegusdai Yekedei
+		}
+		male_names = {
+			Abdul-Aziz Abdul-Karim Abdul-Mumin Abdul-Rahim Abdulla Abu Said Abu'l-Feiz Abu'l-Ghazi Abu'l-Khayr 
+			Abu'l-Mansur Agatay Alim Anusha Arab Muhammad Avanesh Bahadur Bakht Baqi Muhammad Budjuga Bureke 
+			Djuchi Dost Habash Hadji Hadji Muhammad Hassan Quli Haydar Imam Quli Ilbars Irdana Isfandiyar Isim 
+			Janibek Kal Khudayar Khudaydad Kochkunju Muhammad Muhammad Amin Muhammad Hakim Muhammad Rahim Nadir 
+			Muhammad Narbuta Navruz Ahmad Niyaz Pir Muhammad Sanjar Sevinch Shadi Shahmurad Shahrukh Shaykh 
+			Subhan Quli Sufyan Suleyman Tahir Timur Ubaydulla Umar Vali Vali Muhammad Yadgar Daniyal Haidar 
+			Iskandar
+		}
+		female_names = {
+			Hooda Malaika Munira Rabiya Rafiqa Ksyusha Sabina Zarina Hatyra Gulnaza Selbi Aziza Jeren Zeynab Myahri
 		}
 	}
 	uyghur = {
@@ -3803,7 +4015,7 @@ plains_algonquian = {
 		dynasty_names = {
 			Mohe Diwali Waya Tsiyi Onacona Atagulkalu Degataga Cheasequah Adahy Atagulkalu
 		}
-		male_names = { #TODO
+		male_names = {
 			Wechegalla Tatoncapa Japu Takchesca Chahpacpahha Tatoncahooohcalehpaha Matewashena Shonggemoneto 
 			Shongemonetoeahca Nahpatonca Ohkeecheta Tahhiota Wahhanissatta Voisttitoevetz Nahkkomeien 
 			Motavato Vokivokamast Avonaco Oneahaket Nakohaistah Aamanaco Kohkahywhcumest
@@ -4557,6 +4769,22 @@ east_asian = {	# Chinese Group
 			Xiao'e Xiaoying Xiaoyuan Xiaoji Xiaolou
 		}
 	}
+	miao = {
+		primary = CMI
+		dynasty_names = {
+			"Fang" "Hang" "Hue" "Khang" "Kong" "Soung" "Kue" "Lo" "Lor" "Li" "Moua" "Pha" "Tang" "Thao" "Chang" "Cheng" 
+			"Chu" "Vang" "Vue" "Xiong" "Yang"
+		}
+		male_names = {
+			Qizhen Qiyu Jianjun Youcheng Houzhao Houcong Zaihou Yijun Changluo Youjian Yousong Yujian Youlang Chenggong 
+			Kehshuan Biao Shuang Gang Su Zhen Fu Zi Qi Tan Chun Bai Gui Zhi Quan Pian Hui Song Mo Ying Jing Dang Nan 
+			Gaoxu Caosui Gauxi Youyuan Youlun Youbin Houwei Youxiao Youji Youxue Youyi Youshan Cixuan Cijiang Cizhao 
+			Cihuan Cican He Ji Da Yuchun
+		}
+		female_names = {
+			Heying Chunmei Tianhui Kon Mao
+		}
+	}
 	cantonese = {
 		primary = YUE
 		male_names = {
@@ -4937,9 +5165,61 @@ korean_g = {
 
 japanese_g = {
 	graphical_culture = asiangfx
-
-	japanese = {
+	
+	togoku = { #Togoku / Eastern Japanese
 		primary = JAP
+		dynasty_names = { 
+			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa 
+			Kuni Nashimoto Takeda Yamashina
+		}
+		male_names = {
+			Motohito Mihito Hikohito Fusahito Katsuhito Tomohito Michihito Kazuhito Kotohito Okiko Tsuguhito Nagahito 
+			Satohito Asahito Toshiko Yasuhito Teruhito Hidehito Morohito Ayahito Takauji Yoshiakira Yoshimitsu 
+			Yoshimochi Yoshikazu Yoshinori Yoshikatsu Yoshimasa Yoshihisa Yoshitane Yoshizumi Yoshiharu Yoshiteru 
+			Yoshihide Yoshiaki Nobutada Hidenobu Hideyoshi Hideyori Ieyasu Hidetada Iemitsu Ietsuna Tsunayoshi Ienobu 
+			Ietsugu Yoshimune Ieshige Ieharu Ienari Ieyoshi Iesada Iemochi Yoshinobu
+		}
+		female_names = {
+			Toku Sen Tama Aya Ina Kumiko Ai Aiko Aimi Aina Airi Akane Akemi Aki Akiko Akira Ami Aoi Asuka Atsuko Aya Ayaka 
+			Ayako Ayame Ayane Ayano Chika Chikako Chinatsu Chiyo Chiyoko Cho Chou Chouko Emi Etsuko Hana Hanae Hanako Haru 
+			Haruka Haruko Haruna Hikari Hikaru Hina Hinata Hiroko Hitomi Honoka Hoshi Hoshiko Hotaru Izumi Junko Kaede 
+			Kanon Kaori Kaoru Kasumi Kazue Kazuko Keiko Kiku Kiyoko Kohaku Koharu Kokoro Kotone Kumiko Kyo Kyou Mai Makoto 
+			Mami Manami Mao Mariko Masami Masuyo Mayu Megumi Mei Michi Michiko Midori Mika Miki Miku Minako Minato Mio 
+			Misaki Mitsuko Miu Miyako Miyu Mizuki Moe Momoka Momoko Moriko Nana Nanami Naoko Naomi Natsuki Natsuko Natsumi 
+			Noa Noriko Ran Rei Ren Riko Rin Rina Rio Sachiko Saki Sakura Sakurako Satomi Sayuri Setsuko Shinju Shinobu 
+			Shiori Shizuka Shun Sora Sumiko Suzu Suzume Takako Takara Tamiko Tomiko Tomoko Tomomi Tsubaki Tsubame Tsubasa 
+			Tsukiko Ume Umeko Wakana Yasu Yoko Yoshi Yoshiko Youko Yua Yui Yuina Yuki Yukiko Yuko Yumi Yumiko Yuri Yuu 
+			Yuuka Yuuki Yuuko Yuuna Yuzuki
+		}
+	}
+	japanese = { #Saigoku / Western Japanese
+		primary = MRI
+		dynasty_names = { 
+			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa 
+			Kuni Nashimoto Takeda Yamashina
+		}
+		male_names = {
+			Motohito Mihito Hikohito Fusahito Katsuhito Tomohito Michihito Kazuhito Kotohito Okiko Tsuguhito Nagahito 
+			Satohito Asahito Toshiko Yasuhito Teruhito Hidehito Morohito Ayahito Takauji Yoshiakira Yoshimitsu 
+			Yoshimochi Yoshikazu Yoshinori Yoshikatsu Yoshimasa Yoshihisa Yoshitane Yoshizumi Yoshiharu Yoshiteru 
+			Yoshihide Yoshiaki Nobutada Hidenobu Hideyoshi Hideyori Ieyasu Hidetada Iemitsu Ietsuna Tsunayoshi Ienobu 
+			Ietsugu Yoshimune Ieshige Ieharu Ienari Ieyoshi Iesada Iemochi Yoshinobu
+		}
+		female_names = {
+			Toku Sen Tama Aya Ina Kumiko Ai Aiko Aimi Aina Airi Akane Akemi Aki Akiko Akira Ami Aoi Asuka Atsuko Aya Ayaka 
+			Ayako Ayame Ayane Ayano Chika Chikako Chinatsu Chiyo Chiyoko Cho Chou Chouko Emi Etsuko Hana Hanae Hanako Haru 
+			Haruka Haruko Haruna Hikari Hikaru Hina Hinata Hiroko Hitomi Honoka Hoshi Hoshiko Hotaru Izumi Junko Kaede 
+			Kanon Kaori Kaoru Kasumi Kazue Kazuko Keiko Kiku Kiyoko Kohaku Koharu Kokoro Kotone Kumiko Kyo Kyou Mai Makoto 
+			Mami Manami Mao Mariko Masami Masuyo Mayu Megumi Mei Michi Michiko Midori Mika Miki Miku Minako Minato Mio 
+			Misaki Mitsuko Miu Miyako Miyu Mizuki Moe Momoka Momoko Moriko Nana Nanami Naoko Naomi Natsuki Natsuko Natsumi 
+			Noa Noriko Ran Rei Ren Riko Rin Rina Rio Sachiko Saki Sakura Sakurako Satomi Sayuri Setsuko Shinju Shinobu 
+			Shiori Shizuka Shun Sora Sumiko Suzu Suzume Takako Takara Tamiko Tomiko Tomoko Tomomi Tsubaki Tsubame Tsubasa 
+			Tsukiko Ume Umeko Wakana Yasu Yoko Yoshi Yoshiko Youko Yua Yui Yuina Yuki Yukiko Yuko Yumi Yumiko Yuri Yuu 
+			Yuuka Yuuki Yuuko Yuuna Yuzuki
+		}
+	}
+	kyushuan = { #Kyushu culture
+		primary = OTM
 		dynasty_names = { 
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa 
 			Kuni Nashimoto Takeda Yamashina
@@ -5385,27 +5665,6 @@ burman = {
 		}
 		female_names = {
 			"Saw Sit" "Saw Pu Nyo" "Saw Pyauk" "Saw Pyinsa" "Saw Yin Mi"
-		}
-	}
-}
-
-hmong–mien = {
-	graphical_culture = asiangfx
-	
-	miao = {
-		primary = CMI
-		dynasty_names = {
-			"Fang" "Hang" "Hue" "Khang" "Kong" "Soung" "Kue" "Lo" "Lor" "Li" "Moua" "Pha" "Tang" "Thao" "Chang" "Cheng" 
-			"Chu" "Vang" "Vue" "Xiong" "Yang"
-		}
-		male_names = {
-			Qizhen Qiyu Jianjun Youcheng Houzhao Houcong Zaihou Yijun Changluo Youjian Yousong Yujian Youlang Chenggong 
-			Kehshuan Biao Shuang Gang Su Zhen Fu Zi Qi Tan Chun Bai Gui Zhi Quan Pian Hui Song Mo Ying Jing Dang Nan 
-			Gaoxu Caosui Gauxi Youyuan Youlun Youbin Houwei Youxiao Youji Youxue Youyi Youshan Cixuan Cijiang Cizhao 
-			Cihuan Cican He Ji Da Yuchun
-		}
-		female_names = {
-			Heying Chunmei Tianhui Kon Mao
 		}
 	}
 }
@@ -6691,9 +6950,188 @@ west_african = {
 	}
 }	
 
-african = {	#Bantu
+southern_african = {
 	graphical_culture = africangfx
+	makua = {
+		primary = MKU
+		dynasty_names = { Angoni Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa Mtika Nyanjagha Chiluba }
+		male_names = {
+			Gallo Bano Maurusa Tondo Mcepera Mcocoma Sosola Muzura Chunzo Bakili Capampo Chicanda 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru Nyalak
+		}
+	}
+	nguni = {
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+	bemba = {
+		
+	}
+	khoisan = { #Unlike other members of this group these do not speak a Bantu Language. No tag, only exists in uncolonized provinces
+		dynasty_names = { Herero Namaqua }
+		male_names = { Sekgoma Munjuku Tjamuaha Maharero  }
+		female_names = { Behati }
+	}
+	shona = {
+		primary = ZIM
+		dynasty_names = { 
+			Mwenemutapa Rozwi Mutopa
+		}
+		male_names = {
+			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+	nyasa = {
+		primary = MRA
+		dynasty_names = {
+			Mwale Phiri Mbewe Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa
+			Mtika Nyanjagha Chiluba
+		}
+		male_names = {
+			Mcepera Mcocoma Kampini Sosola Muzura Chunzo Bakili Capampo Chicanda Tondo
+			Quizura Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+	}
+	dynasty_names = {
+			Mwale Phiri Mbewe Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa
+			Mtika Nyanjagha Chiluba
+		}
+		male_names = {
+			Mcepera Mcocoma Kampini Sosola Muzura Chunzo Bakili Capampo Chicanda Tondo
+			Quizura Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
+			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
+			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
+			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+		}
+		female_names = {
+			Achieng Nuru
+		}
+}
 
+kongo_group = {
+	graphical_culture = africangfx
+	lunda = {
+		primary = LND
+	}
+	luba = {
+		primary = LUB
+	}
+	kongolese = {
+		primary = KON
+	}
+	yaka = {
+		primary = YAK
+	}
+	kuba = {
+		primary = KUB
+	}
+	mbundu = {
+		primary = NDO
+	}
+	chokwe = {
+		primary = CKW
+	}
+	mbangala = {
+		primary = KSJ
+	}
+	jukun = {
+	
+	}
+	sawabantu = {
+	
+	}
+	dynasty_names = { 
+		Lukeni Loanga
+	}
+	male_names = {
+		Garcia Álvaro Pedro Afonso Ntinu Nkuwu Henrique António Bernardo José Ambrósio Aleixo André Daniel Diogo 
+		Nicolau Nzinga Nkuwa Sebastião Ilunga Sanza Kumwimba Kasongo Kekenya Kaumbo Miketo Nday Mwine Maloba 
+		Kitamba Cibind Nawej Munying Kateng Cakasekene Cikombe Kalong Mutand Mbala Mukaz Mpemba
+	}
+	female_names = {
+		Jetta Vandana Zody 
+	}
+}
+
+great_lakes_group = {
+	graphical_culture = africangfx
+	rwandan = {
+		primary = RWA
+		dynasty_names = { 
+			Songoro Ha Huma Iru Hima Kama Chwa Mpazi Bairu Waha Hinda Bajiji Bashubi Abacyaba
+			Abasinga Abashambo Abahinda Abazigaba Abungura Abarihira Abahondogo Abongera
+		}
+		male_names = {
+			Ruhaga Bunyonya Kiteite Kahiyoza Rutahigwa Rwakyendera Rugacwa Lweikiza Kihira Rwasa
+			Kanyoni Kivunangoma Masimba Maziga Buhinda Kmenyi Ntare Karemera Rushatsi Rufuku Baridamunka
+			Mutaga Mwambutsa Cambarantama Birori Maconco Kigeli Mutara Cyilima Ruganzu Ndahiro Nsoro Rubanda
+			Nyarume Rumeza Kanyarwanda
+		}
+		female_names = {
+			Baramparaye Ngenzahago Nyiramavugo Kanjogera Nyirarukangaga
+		}
+	}
+	ganda = {
+		primary = BUG
+		dynasty_names = { 
+			
+		}
+		male_names = {
+			Ruhinda Nkuba Nyaika Ntare Rushango Kasasira Kitra Rumongye Mirindi Macwa Rwabirere
+			Kahaya Rwebishengye Gasyonga Mutambuka Muteesa Suuna Kamaanya Semakookiro Jjunju Kyabaggu
+			Namuggala Mwanga Mawanda Kikulwe Kagulu Ndawula Tebandeke Juuko Kayemba Mutebi Kateregga
+			Kimbugwe Sekamaanya Jemba Mulondo Nakibinge Kayima Ttembo Kimera "Kato Kintu"
+		}
+		female_names = {
+			Nyiramavugo Kanjogera Nyirarukangaga Balambi Bawedde Sikyayinza Nakamu
+		}
+	}
+	masaba = {
+		dynasty_names = { 
+			Ngonge Nkima Kkobe Ffumbe Mamba Ndiga Ngeye Lugave Ngabi Mbogo Nsenene Mpindi Basoga
+		}
+		male_names = {
+			Ruhinda Nkuba Nyaika Ntare Rushango Kasasira Kitra Rumongye Mirindi Macwa Rwabirere
+			Kahaya Rwebishengye Gasyonga Mutambuka Muteesa Suuna Kamaanya Semakookiro Jjunju Kyabaggu
+			Namuggala Mwanga Mawanda Kikulwe Kagulu Ndawula Tebandeke Juuko Kayemba Mutebi Kateregga
+			Kimbugwe Sekamaanya Jemba Mulondo Nakibinge Kayima Ttembo Kimera "Kato Kintu"
+		}
+		female_names = {
+			Nyiramavugo Kanjogera Nyirarukangaga Balambi Bawedde Sikyayinza Nakamu
+		}
+	}
+}
+
+african = {	#Eastern Bantu Groups
+	graphical_culture = africangfx
+	
 	madagasque = {
 		dynasty_names = {
 			Mwenemutapa Rozwi Mutopa Lukeni Loanga
@@ -6721,34 +7159,15 @@ african = {	#Bantu
 			Uduak Ufuoma Unathi Uzoma Werknesh Worknesh Yaa Yamikani Yejide Yewande Zola Zuri
 		}
 	}
-	bantu = {
-		dynasty_names = {
-			Nabahani al-Mawahib Zanzibari Mvita al-Malindi
-		}
-		male_names = {
-			Kobina Vabena Kofi Kojo Vadwo Kondwani Kumbukani Kwabena Kwadwo Kwaku Kwame Kwasi Kweku Kwesi Lanre Lekan Limbani 
-			Limbikani Madalitso Makena Mamadou Masamba Masozi Mavuto Mayamiko Mayeso Melisizwe Mosi Mphatso Mtendere Mudiwa 
-			Munashe Mwenye Ndidi Neo Ngozi Nkemdilim Nkosana Nkruma Nnamdi Nsia Nsonowa Nthanda Obi Ochieng Odhiambo Oghenekaro 
-			Oghenekevwe Oghenero Okoro Olabode Olamilekan Olanrewaju Oluchi Olufemi Olufunke Olufunmilayo Olufunmilola Olujimi 
-			Olukayode Olumide Oluwafemi Oluwafunmilayo Oluwakanyinsola Oluwasegun Oluwaseun Oluwaseyi Oluwatoyin Oluwayemisi 
-			Omobolanle Onyekachi Onyekachukwu Opeyemi i Otieno Oyibo Paki Pemphero Pilirani Refilwe Rudo Rutendo Sefu Simba 
-			Sipho Sithembile Sizwe Tadala Tafadzwa Tafari Takondwa Tamandani Tamrat Taonga Tatenda Tau Temitope Tendai Tendaji 
-			Tewodros Thabo Themba Thoko Thokozani Thulani Tichaona Tinashe Tiyamike Tumelo Udo Uduak Ufuoma Umukoro Unathi 
-			Uzochi Uzoma Wasswa Wekesa Xolani Yamikani Yared Yaw Zephania Zuberi 
-		}
-		female_names = {
-			Abena Abeni Aberash Abimbola Abiodun Achieng Adaeze Adanna Adannaya Ade Adebola Adebowale Adedayo Adetokunbo 
-			Adhiambo Adjoa Adwoa Afia Afua Akachi Akinyi Akosua Akpofure Akua Akuchi Alaba Alemayehu Alinafe Ama Amaka Amara 
-			Amarachi Anan Añuli Asha Aisha Atieno Awiti Awotwi Ayo Ayodele Ayomide Ayotunde Baako Babirye Boipelo Boitumelo 
-			Bolanle Bosede  Chausiku Chi Chiamaka Chibueze Chibuike Chibuzo Chichi Chidi Chidiebere Chidiebube Chidiegwu 
-			Chidimma Chifundo Chifuniro Chijindum Chika Chike Chikelu Chikere Chikondi Chikumbutso Chimwemwe Chinasa Chinedu 
-			Chinonso Chinwe Chinweike Chinwendu Chinweuba Chinyelu Chinyere Chioma Chipo Chisomo Chiyembekezo Chizoba Dada 
-			Dalitso Dayo Desta Dikeledi Dubaku Dumisani Ebele Efe Efemena Efua Ejiro Ejiroghene Ekene Ekenedilichukwu Ekua 
-			Ekundayo Emem Eniola Enitan Enu Eseoghene Eshe Esi Farai Fatsani Folami Fumnanya Funanya Fungai Furaha Ganizani 
-			Gbemisola Hiwot Hlengiwe Idowu Ife Ige Imani Ime Itumeleng Kagiso Kahina Kamaria Katlego Kayin Kefilwe Kirabo 
-			Kondwani Kumbukani Kunto Lerato Lesedi Limbani Limbikani Lindiwe Lumusi Lungile Madalitso Makena Manyara Marjani 
-			Masego Masozi 
-		}
+	#Tagless Bantu Cultures:
+	takama = {
+		
+	}
+	bena = {
+		
+	}
+	bantu = { #Thagiicu, old tag kept to not break older saves.
+		
 	}
 	swahili = {
 		primary = ZAN
@@ -6763,35 +7182,6 @@ african = {	#Bantu
 		}
 		female_names = {
 			"Mwana Mwema" Fatima
-		}
-	}
-	kongolese = {
-		primary = KON
-		dynasty_names = { 
-			Lukeni Loanga
-		}
-		male_names = {
-			Garcia Álvaro Pedro Afonso Ntinu Nkuwu Henrique António Bernardo José Ambrósio Aleixo André Daniel Diogo 
-			Nicolau Nzinga Nkuwa Sebastião Ilunga Sanza Kumwimba Kasongo Kekenya Kaumbo Miketo Nday Mwine Maloba 
-			Kitamba Cibind Nawej Munying Kateng Cakasekene Cikombe Kalong Mutand Mbala Mukaz Mpemba
-		}
-		female_names = {
-			Jetta Vandana Zody 
-		}
-	}
-	shona = {
-		primary = ZIM
-		dynasty_names = { 
-			Mwenemutapa Rozwi Mutopa
-		}
-		male_names = {
-			Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti 
-			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye 
-			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa 
-			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
-		}
-		female_names = {
-			Achieng Nuru
 		}
 	}
 	
@@ -6937,48 +7327,51 @@ cushitic = {
 sudanese = {
 	graphical_culture = africangfx
 	
+	acholi = {
+		
+	}
 	nubian = {
 		primary = NUB
-		dynasty_names = {
-			Senar
-			# CKII
-			"Bigawi" "Qamhat" "Hadendiwa" "Hadareb" "Beni-Amer" "Hadendoa"
-			"Hedareb" "Jarin" "Bisharin"
-		}
-		male_names = {
-			"'Amâra" "'Abd al-Qâdir" "Nâ'l" "Dakîn al-'Adil" "Dûra" "Taiyîb" "Unsa" "Adlân" "Bâdî" "Rubât" "Nûl" 
-			"Nâsir" "Ranfi" "Eltecit" "Joel" "Koudlaniel" "Isawi" "Hashim" "Maqdum" "Awkal" "Hassan" "Agban" 
-			"Abu Likayik" "Rajab" "Ahmad" "Rifaya" "Ibrahim" "Idris" "Tindhim" "'Abd al-Rahman" "Sulayman" "Yusuf" 
-			"Ya'qub" "Ismâ'îl" "Musa" "Muhammad" "Ishaq" "Halim" "Mustafa" "Abu Bakr" 
-			Aarôn Aaron Aberikos Abraam Abraham Añgelos Angelus Andreas Andrew Athanasios Balô 
-			Bartholomaios Bartholomew Birêl Chael Christophoros Dauid David Dimetheos Timothy
-			Dioskoros Diônisios Dionysus Eliezer Eionkouda Emmanouel Emmanuel Enôch Enoch Ephannê Epimachos 
-			Epiphanios Gabriel Gabriel Gabrielkouda Gabrielophorou Gennatios Gennadius
-			Geôrgios George Hêlias Elias Hoase Jesse Hoassi Jesse Hoasse Jesse Iacob Jacob Ieremias 
-			Jeremiah Iêsous Jesus Iêsousinkouda Iôannou Jonah Iôannês John Iordanes Jordanes Ioseph Joseph 
-			Kalinikos Kallinikios Kollouthos
-			Krisanthos Chrystanthos Kuriakos Kyriakos Kurillos Cyril Lazaros Lazarus Leon Leo Leontios 
-			Leontius Makarios Makarius Mariana Mariankouda Marianos Marianus Marios Marius Markos Marcus 
-			Marturophoros
-			Mašanñal Maththias Matthew Mêlênkouda Mena Menankouda Merkourios Mercurius Michaêl Michael 
-			Michaêlkouda Mouses Moses Orna Panigiros Papasinen Papasinkouda Patrikios Patrick
-			Paulos Paul Petros Peter Petrou Philotheos Philemon Prochoros Raphael Raphaelkouda Samson 
-			Senouthios Sentiko Sergios Sergius Simeoni Simon Soizuros Solomôn Solomon Sotinkouda Stephanos 
-			Stephen
-			Stephanou Thadeosi Thaddeus Theodôros Theodore Theodosios Theodosius Theodote Theodat Thoma 
-			Thomas Tophêna Tirsakouni Zacharias Zachary Zosima Zosimus
-		}
-		female_names = {
-			Agathe Alethia Anthelia Athanasia Chaelsoñoja Chrissa Christina Douriko Egaloskoura Eikkir 
-			Eionmnne Eionñoka Eitou Elisabeth Elizabeth Eirena Eirene Eirota Eirotatouññlki
-			Entaeiri Eôneille Ephannê Epimachosi Eudosia Eudoxia Eulabia Eusebia Eustephanou Fatima 
-			Genseoua Hellene Helen Hemene Iannia Joan Iêsousyko Ioustina Justina Kel Kerike Kersiami Kettoudi
-			Keudonia Kurake Kyriake Maraña Maria Maria Mariam Maria Mariane Marianou Michaêliko Michaela 
-			Ñašša Ñeššadena Ñejin Ñilesa Ñojjl Ñoltou Ñonne Ñonnen Ñouddl Ñssitkitol Ouarenô Patrikia 
-			Patricia Pelagia Gulzar Maram
-			Penatti Pesanthia Petronia Prisisilla Priscilla Rahimah Sophia Sousanna Staurophania Theobronia 
-			Theodorake Theodosia Theognosta Theophania Theophilia Theipisthe Theozia Zerebekka
-		}
+	}
+	dynasty_names = {
+		Senar
+		# CKII
+		"Bigawi" "Qamhat" "Hadendiwa" "Hadareb" "Beni-Amer" "Hadendoa"
+		"Hedareb" "Jarin" "Bisharin"
+	}
+	male_names = {
+		"'Amâra" "'Abd al-Qâdir" "Nâ'l" "Dakîn al-'Adil" "Dûra" "Taiyîb" "Unsa" "Adlân" "Bâdî" "Rubât" "Nûl" 
+		"Nâsir" "Ranfi" "Eltecit" "Joel" "Koudlaniel" "Isawi" "Hashim" "Maqdum" "Awkal" "Hassan" "Agban" 
+		"Abu Likayik" "Rajab" "Ahmad" "Rifaya" "Ibrahim" "Idris" "Tindhim" "'Abd al-Rahman" "Sulayman" "Yusuf" 
+		"Ya'qub" "Ismâ'îl" "Musa" "Muhammad" "Ishaq" "Halim" "Mustafa" "Abu Bakr" 
+		Aarôn Aaron Aberikos Abraam Abraham Añgelos Angelus Andreas Andrew Athanasios Balô 
+		Bartholomaios Bartholomew Birêl Chael Christophoros Dauid David Dimetheos Timothy
+		Dioskoros Diônisios Dionysus Eliezer Eionkouda Emmanouel Emmanuel Enôch Enoch Ephannê Epimachos 
+		Epiphanios Gabriel Gabriel Gabrielkouda Gabrielophorou Gennatios Gennadius
+		Geôrgios George Hêlias Elias Hoase Jesse Hoassi Jesse Hoasse Jesse Iacob Jacob Ieremias 
+		Jeremiah Iêsous Jesus Iêsousinkouda Iôannou Jonah Iôannês John Iordanes Jordanes Ioseph Joseph 
+		Kalinikos Kallinikios Kollouthos
+		Krisanthos Chrystanthos Kuriakos Kyriakos Kurillos Cyril Lazaros Lazarus Leon Leo Leontios 
+		Leontius Makarios Makarius Mariana Mariankouda Marianos Marianus Marios Marius Markos Marcus 
+		Marturophoros
+		Mašanñal Maththias Matthew Mêlênkouda Mena Menankouda Merkourios Mercurius Michaêl Michael 
+		Michaêlkouda Mouses Moses Orna Panigiros Papasinen Papasinkouda Patrikios Patrick
+		Paulos Paul Petros Peter Petrou Philotheos Philemon Prochoros Raphael Raphaelkouda Samson 
+		Senouthios Sentiko Sergios Sergius Simeoni Simon Soizuros Solomôn Solomon Sotinkouda Stephanos 
+		Stephen
+		Stephanou Thadeosi Thaddeus Theodôros Theodore Theodosios Theodosius Theodote Theodat Thoma 
+		Thomas Tophêna Tirsakouni Zacharias Zachary Zosima Zosimus
+	}
+	female_names = {
+		Agathe Alethia Anthelia Athanasia Chaelsoñoja Chrissa Christina Douriko Egaloskoura Eikkir 
+		Eionmnne Eionñoka Eitou Elisabeth Elizabeth Eirena Eirene Eirota Eirotatouññlki
+		Entaeiri Eôneille Ephannê Epimachosi Eudosia Eudoxia Eulabia Eusebia Eustephanou Fatima 
+		Genseoua Hellene Helen Hemene Iannia Joan Iêsousyko Ioustina Justina Kel Kerike Kersiami Kettoudi
+		Keudonia Kurake Kyriake Maraña Maria Maria Mariam Maria Mariane Marianou Michaêliko Michaela 
+		Ñašša Ñeššadena Ñejin Ñilesa Ñojjl Ñoltou Ñonne Ñonnen Ñouddl Ñssitkitol Ouarenô Patrikia 
+		Patricia Pelagia Gulzar Maram
+		Penatti Pesanthia Petronia Prisisilla Priscilla Rahimah Sophia Sousanna Staurophania Theobronia 
+		Theodorake Theodosia Theognosta Theophania Theophilia Theipisthe Theozia Zerebekka
 	}
 }
 
@@ -7193,28 +7586,6 @@ tartar	= {
 			Andali Asanet Asenath Asenet Azenet Badiat Cena Fatima Halima
 		}
 	}
-	qasim = {
-		primary = QAS
-		dynasty_names = {
-			"Al Tolui" "Mongke Bayar" "Qara Erdene" "Koke Qadan" Qacha-jin
-			Oyugungene Burilginai Qadanteni Qutughqai "Altan Chinua" "Yeke Sube"
-			"Arigh Qorchi" "Boke Unegen"
-		}
-		male_names = {
-			"Abdul-Karim" "Abdul-Latif" "Abdul-Rahman" "Abdullah" "Agalak" "Ahmad" "Ak Köbek" "Ali Beg" "Arab Shah" 
-			"Arslan" "Baraq" "Bek Bulat" "Bolaq" "Cherkes" "Chokra" "Daniyal" "Darwish" "Darwish Ali" "Devlet Berdi" 
-			"Edigu" "Hajji Muhammad" "Husayn" "Ibak" "Ibrahim" "Ilham" "Ishim" "Jabbar Berdi" "Jalal al-Din" "Jan Ali" 
-			"Janay" "Jani Beg" "Jumaduq" "Karim Berdi" "Kebek" "Khalil" "Khaqan Beg" "Küchük Muhammad" "Kuchum" 
-			"Mahmud" "Mahmudak" "Mamai" "Mamuk" "Mansur" "Muhammad" "Murtaza" "Mustafa Ali" "Nogai" "Pulad" 
-			"Pulad Timur" "Qadir Berdi" "Qasim" "Sain Bulat" "Satilghan" "Sayid Ahmad" "Sayid Burhan" "Sayid Mahmud" 
-			"Shadi Beg" "Shah Ali" "Shaikh Ahmad" "Shaikh Awliar" "Shaikh Haidar" "Shiban" "Taibugha"
-			"Timur Qutlugh" "Toqtamish" "Ulugh Muhammad" "Urus" "Urus Muhammad" "Yadigar Muhammad" "Yamghurchi"
-		}
-		female_names = {
-			"Fatima" "Ibtisam" "Jalila" "Janan" "Layla" "Sakina" "Sharifa" Ibtisam Jalila Janan Layla Sakina Sharifa Acenith 
-			Alia Amunet Andali Asanet Asenath Asenet Azenet Badiat Cena Fatima Halima
-		}
-	}
 	siberian = {
 		primary = SIB
 		dynasty_names = {
@@ -7237,5 +7608,322 @@ tartar	= {
 	}
 	dynasty_names = {
 		"Chagatay" "Edigüid" "Giray" "Borjigin" "Shaybanid" "Janid" "Mangit"
+	}
+}
+
+#Cultures for use with the nation designer:
+lost_cultures_group = {
+	atlantean = { #EU Rome
+		dynasty_names = {
+			Alcetid Apollonid Aratid Helladid Omirid Peithid Peneid Philonid Proctid Pytheid Sosiclid Therid Theronid Timolid Xenonid
+			Zagreid Zosimid Zoticid
+		}
+		male_names = {
+			Acnonios Aeacides Aenias Aesillas Agathocles Agelaos Alcetas Aleos Alexander Ameinias Amynandros Amyntus Apollonides Aratos Archelaus Argaeus 
+			Arganos Aristomides Ariston Aristonous Aristophanes Aristotle Asklepiodorus Athineos Damasias Demetrius Dioedas Diophantus Echemos 
+			Ehnon Ephron Euclid Eudicus Eudoridas Euripides Eurycrates Helladius Hero Hippocrates Ikesios Isocrates Kleandros Kleitos Leonidas
+			Leonippus Lycurgus Lydiadas Lysander Lysimachus Machares Meleager Menon Metrophanes Midas Mitrodoros Neominios Neoptolemus Nicias Nicocrates 
+			Nicodemus Nikandros Nikomedes Nikon Olympos Omirus Orestes Pausanias Peithon Pelopidas Peneus Perdiccas Pericles Perseus Pheneos 
+			Phidias Philocrates Philon Philotheos Philip Phocas Phyleus Pitholaos Polydoros Polyperchon Polyphron Polysperchon Polyxenos 
+			Posidaeios Proctus Pythagoras Pytheos Selagus Skopas Sosicles Sophocles Sophronius Sthenelaus Teleclus Telesphoros Themistocles 
+			Theocritus Theodoros Therapon Theron Thymotes Timoleon Tisiphon Xanthos Xenocrates Xenon Xenophon Xenotimos Zagreus Zenodoros 
+			Zosimus Zoticus
+		}
+		female_names = {
+			Adelpha Agape Airlea Akantha Alexis Alkyone Antigone Apollonia Aristomache Artemisia Aspacia Athenais Berenice Charis Cleopatra Cynna Demetria Diantha Dionysia 
+			Elpis Eirene Eudocia Eunice Euphemia Eurydice Euthalia Evgenia Helen Hypatia Kandake Kassandra Megaira Melaina Narkissa Nysa Olympia Phila Phile 
+			Ptolema Sofia Sostrate Stratonice Thais Theophila Thetima Thessaloniki Thorakis Timo Xanthe Xene Xenia Zoe Zona
+		}
+	}
+	spartan = { #EU Rome
+		dynasty_names = {
+			Alcetid Apollonid Aratid Helladid Omirid Peithid Peneid Philonid Proctid Pytheid Sosiclid Therid Theronid Timolid Xenonid
+			Zagreid Zosimid Zoticid
+		}
+		male_names = {
+			Acnonios Aeacides Aenias Aesillas Agathocles Agelaos Alcetas Aleos Alexander Ameinias Amynandros Amyntus Apollonides Aratos Archelaus Argaeus 
+			Arganos Aristomides Ariston Aristonous Aristophanes Aristotle Asklepiodorus Athineos Damasias Demetrius Dioedas Diophantus Echemos 
+			Ehnon Ephron Euclid Eudicus Eudoridas Euripides Eurycrates Helladius Hero Hippocrates Ikesios Isocrates Kleandros Kleitos Leonidas
+			Leonippus Lycurgus Lydiadas Lysander Lysimachus Machares Meleager Menon Metrophanes Midas Mitrodoros Neominios Neoptolemus Nicias Nicocrates 
+			Nicodemus Nikandros Nikomedes Nikon Olympos Omirus Orestes Pausanias Peithon Pelopidas Peneus Perdiccas Pericles Perseus Pheneos 
+			Phidias Philocrates Philon Philotheos Philip Phocas Phyleus Pitholaos Polydoros Polyperchon Polyphron Polysperchon Polyxenos 
+			Posidaeios Proctus Pythagoras Pytheos Selagus Skopas Sosicles Sophocles Sophronius Sthenelaus Teleclus Telesphoros Themistocles 
+			Theocritus Theodoros Therapon Theron Thymotes Timoleon Tisiphon Xanthos Xenocrates Xenon Xenophon Xenotimos Zagreus Zenodoros 
+			Zosimus Zoticus
+		}
+		female_names = {
+			Adelpha Agape Airlea Akantha Alexis Alkyone Antigone Apollonia Aristomache Artemisia Aspacia Athenais Berenice Charis Cleopatra Cynna Demetria Diantha Dionysia 
+			Elpis Eirene Eudocia Eunice Euphemia Eurydice Euthalia Evgenia Helen Hypatia Kandake Kassandra Megaira Melaina Narkissa Nysa Olympia Phila Phile 
+			Ptolema Sofia Sostrate Stratonice Thais Theophila Thetima Thessaloniki Thorakis Timo Xanthe Xene Xenia Zoe Zona
+		}
+	}
+	athenian = { #EU Rome
+		dynasty_names = {
+			Alcetid Apollonid Aratid Helladid Omirid Peithid Peneid Philonid Proctid Pytheid Sosiclid Therid Theronid Timolid Xenonid
+			Zagreid Zosimid Zoticid
+		}
+		male_names = {
+			Acnonios Aeacides Aenias Aesillas Agathocles Agelaos Alcetas Aleos Alexander Ameinias Amynandros Amyntus Apollonides Aratos Archelaus Argaeus 
+			Arganos Aristomides Ariston Aristonous Aristophanes Aristotle Asklepiodorus Athineos Damasias Demetrius Dioedas Diophantus Echemos 
+			Ehnon Ephron Euclid Eudicus Eudoridas Euripides Eurycrates Helladius Hero Hippocrates Ikesios Isocrates Kleandros Kleitos Leonidas
+			Leonippus Lycurgus Lydiadas Lysander Lysimachus Machares Meleager Menon Metrophanes Midas Mitrodoros Neominios Neoptolemus Nicias Nicocrates 
+			Nicodemus Nikandros Nikomedes Nikon Olympos Omirus Orestes Pausanias Peithon Pelopidas Peneus Perdiccas Pericles Perseus Pheneos 
+			Phidias Philocrates Philon Philotheos Philip Phocas Phyleus Pitholaos Polydoros Polyperchon Polyphron Polysperchon Polyxenos 
+			Posidaeios Proctus Pythagoras Pytheos Selagus Skopas Sosicles Sophocles Sophronius Sthenelaus Teleclus Telesphoros Themistocles 
+			Theocritus Theodoros Therapon Theron Thymotes Timoleon Tisiphon Xanthos Xenocrates Xenon Xenophon Xenotimos Zagreus Zenodoros 
+			Zosimus Zoticus
+		}
+		female_names = {
+			Adelpha Agape Airlea Akantha Alexis Alkyone Antigone Apollonia Aristomache Artemisia Aspacia Athenais Berenice Charis Cleopatra Cynna Demetria Diantha Dionysia 
+			Elpis Eirene Eudocia Eunice Euphemia Eurydice Euthalia Evgenia Helen Hypatia Kandake Kassandra Megaira Melaina Narkissa Nysa Olympia Phila Phile 
+			Ptolema Sofia Sostrate Stratonice Thais Theophila Thetima Thessaloniki Thorakis Timo Xanthe Xene Xenia Zoe Zona
+		}
+	}
+	old_egyptian = {
+		dynasty_names = {
+			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais
+		}
+		male_names = {
+			Seka Khayu Tiu Thesh Neheb Wazner Mekh "Iry-Hor" Sekhen Serqer Narmer "Hor-Aha" Djer Djet Den Semerkhet "Qa'a" Sneferka Raneb Nynetjer Senedj Neferkara Hudjefa Djoser Sekhemkhet Sanakht Khaba Huni Sneferu Khufu Khafre Djdefre Menkaure Thamphtis Userkaf Sahure Neferefre Shepseskare Nyuserre Unas Teti "Dejkadre Shemai" Neferkare Merenhor Nikare Intef "Sankhkare Mentuhotep" Menkare Segerseni Senusret Nerikare Sonbef Sebkay Sobekhotep Dedumose Sheeshi Nehesy Sheneh Semenre Rahotep "Nebpehtire Ahmose" Amenhotep Thutmose  "Awybre Hor" Akhenaten Tutankhamun Ramesses Herihor Piankh Pinedjem Masaharta Menkheperre Smendes Pinedjem
+		}
+		female_names = {
+			"Sobekkare Sobekneferu" Hatshepsut Tentamun Nitocris Neit Cleopatra Neferneferuaten Nefertiti 
+		}
+	}
+	roman = { #EU Rome
+		dynasty_names = {
+			Aemilia Antonia Atilia Atia Aufidia Aurelia Caecilia Calpurnia Cassia Claudia
+			Clodia Cornelia Domitia Fabia Flavia Fulvia Furia Gabinia Galeria Horatia Julia
+			Junia Licinia Livia Lucia Mamilia Manlia Maria Memmia Nigidia Octavia Papiria Plinia 
+			Postumia Pompeia Rabiria Quinctia Salvia Scribonia Sempronia Sertoria Silia Titia
+			Tullia Ulpia Valeria Vesuvia Vinicia Viridia Vitellia
+		}
+		male_names = {
+			Appius Aulus Caelus Decimus Decius Drusus Faustus Gaius Gnaeus Lucius Mamercus Manius Marcus Mettius Numerius Publius Quintus Secundus Septimus Servius Sextus Spurius Tertius Titus Tiberius Titus
+			Albinus Albus Agricola Agrippa Aratus Asina Auspex Balbus Barbatus Bibulus Brutus Bubo Buteo 
+			Caesar Calvus Calvinus Cato Catulus Cethegus Cicero Cinna Cotta Crispian Curio Dama Damasus Dentatus Dives Dolabella Donatus Draco
+			Emeritus Eugenius Euphemius Falco Falx Felix Fimbria Flaccus Florus Fronto 
+			Gala Galerus Gemellus Gorgonius Gracchus Gracilis Habitus Herma Hilarius Horatius
+			Ignatius Iuba Labeo Laenas Lepidus Leptis Lentulus Libo Longinus Longus Lucan Lucullus Lupius
+			Macro Martialis Marullus Maximus Memmius Mercator Messalla Montanus Murena Mus Nasica Oceanus Octavianus Opis
+			Optatus Otho Paenula Pantera Pavo Peregrinus Pertinax Petronax Pictor Pilatus Polus Prisca Primus Procyon Pulcher 
+			Quarto Quiricus Regillus Remus Romanus Romulus Rufus Ruso Sabinus Salinator Scaevola Scipio Scrofa Seneca Senna 
+			Severus Sorex Statius Strabo Super Superbus Tacitus Tertulus Trebonius Tibullus Tullius Ursinus Ursus Valens Varro Varus 
+			Vergilius Viator Victor Vindex Virilis Vitalis Vitus Zeno Zoilus Zosimus
+		}
+		female_names = {
+			Prima Secunda Tertia Quarta Quinta Septa Septima Octava Nona Decima Undecima Duodecima
+		}
+	}
+	jan_mayenese = {
+		dynasty_names = {
+			Beliy Medved Bjorn Rawrrorr Rrrrr Grrr Gyp Qoi Styrbjorn Blomstfjellet
+		}
+		male_names = {
+			Björn Bamse Brum Grawr Nanuk Ursus Isbjorn Grrrowr Grrgrrr Rawr
+		}
+		female_names = {
+			Brummelisa Ursa Brumma
+		}
+	}
+	pruthenian = {
+		male_names = {
+		Algirdas Antanas Antavas Aras Arunas Azuolas Budrys Bukantas Butavas Butigeidis Butvydas 
+		Daugvilas Daumantas Dausprungas Dravenis Erdenis Erdvilas Gedigaudas
+		Gediminas Gedivilas Gintaras Gintautas Girdenis Irmantas Jaunutis Jogaila Jovirdas Kantibutas 
+		Karijotas Kesgaila Kestutis Korigaila Korybutas
+		Lasukas Lingvenis Liudas Lubartas Lutuveras Merkelis Mindaugas Minigaila Mantvydas Movkoldas 
+		Narimantas Povilas Pukuveras Rimantas 
+		Rimgaila Rimvydas Ringaudas Sarunas Skirgaila Songaila Svarnas Svitrigaila Tarvydas Tovtivilas 
+		Traidenis Treniotas Vainius Vaisvilkas Valimantas Zygimantas
+		Vidmantas Vingoldas Virmantas Visvaldis Vizgirdas Vykintas Vytautas Vytenis Zivinbudas 
+		}
+		female_names = {
+			Aldona Anele Audra Ausra Birute Dannila Danute Evalda Gaudimante Giedre Gintare Jevna Kenna 
+			Mikova Roze Saule Svajone Vida Laima
+		}
+		dynasty_names = {
+			Ugandi Gediminai Radziwill Gostautas Astikas Kesgaila Chodkiewicz Olshanski Chartoryski Giedraiciai Pac Plater Tyzenhaus Sapieha Ostrogski Oginski
+			# CKII
+			"Wilks" "Klakis" "Luks" "Kuilis" "Kalabijjan"
+			"Jankowskie" "Konopacki" "Penikis" "Tontegode" "Vidins" "Draguns" "Sirkants"
+			# Ugric Baltic
+			"Karasi" "Ingrija" "Revala" "Virumaa" "Läänemaa" "Ingeri" "Livo" "Harjumaa"
+			"Ridala" "Saaremaa" "Vaiga" "Turaida"
+		}
+	}
+	phoenician = { #EU Rome
+		dynasty_names = {
+			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid 
+		Milkiramid Philosirid
+		}
+		male_names = {
+			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes 
+			Eshbaal Eugoras Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram 
+			Paltibaal Philosir
+		}
+		female_names = {
+			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
+		}
+	}
+	scanian = {
+		male_names = {
+			Anders Anund Asger Benedikt Bjørn Bo Christopher Daniel Edvard 
+			Einar Fredrik Gorm Grim Hårik 
+			Halfdan Halvor Harold Helge Hemming Hjalmar Ingolf Jørn Jacob Jens Joakim Johann
+			John Knut Kristian Lennart Ludvig Louis Malthe Mads Mikkel Michael 
+			Mogens Nicholas Odd Olav Peder Pridbjørn Ragnar Ragnvald Rolf Rune Rørik Rurik Severin 
+			Sigfred Sigtryg Sigurd Sivard Steen Sven Sämund Thorolf Thorvald Torben Torbjørn Glitterhov
+			Torbjörn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar
+			Christian Frederik Erik Christoffer Adolf Niels Karl Magnus Maximilian Ulrik Abel Vilhelm 
+			Knud Valdemar Harald Oluf Alfred Anton Bent Emanuel Esben Fritjof Frode Gunnar Hans Henrik 
+			Holger Jørgen Kasper Peter Poul Rudolf Stefan Tobias Torbald Viktor Vilfred Joachim Ernst
+			Frans Gnupa
+		}
+		female_names = {
+			Sophie Dorothe Margrete Sigrun
+			Agnethe Anna Asta Benedikte Benedicta Birgitta Brigid Bodil Cecilie Cecilia Christina Dagmar 
+			Dorothea Dorothy Elisabeth Ellinor Eleanor Emilie Emily Erika Ester Estrid Astrid Frederikke 
+			Frederique Freja Grethe Gudrun Gunhild Gyda Gytha Helena Helen Ida Ingeborg Ingegerd Ingrid 
+			Johanne Jutta Karin Karoline Katarina Katrine Catherine Kirsten Klara Lise Luitgard Lykke
+			Magdalene Magdalena Maren Margrethe Margaret Maria Martha Ragnfrid Ragnhild Rikissa Runa 
+			Sanna Signe Sigrid Silje Sofie Sophia Svanhild Thyra Tora Thora Thordis Åse Åsa
+		}
+		dynasty_names = {
+			"Hvide" "Galen" "Due" "Saltensee" "Urup" "Neb" "Brahe" "Gøye" "Trolle" "Rantzau"
+			"Friis" "Gyllenstierna" "Bille" "Adeler" "Arenstorff" "Brockenhuus"
+			"Beck" "Brock" "Grubbe" "Holck" "Huitfeldt" "Juel" "Kaas" "Krabbe"
+			"Lindenov" "Lykke" "Marsvin" "Mule" "Munk" "Oxe" "Reedtz" "Rodsteen"
+			"Rosenkrantz" "Skeel" "Skram" "Urne" "Vind" "Ahlefeldt" 
+			# CKII
+			"Porse" "Glysing" "Banner" "Thott" "Ulfstand" "Grøn" "Daa"
+			"Reventlow" "Juul" "Ulfeldt" "Bang" 
+			Alfredsson Andersson Assarsson Batra Billgren Broman Ekberg Glans Gjedde Glenmark Hansson Jansson Ibrahimovic Järegård Kulle Larsson Lohmander Lundberg Malmkvist Malmsjö Melander Möller Nordqvist Nordström Ohlmarks Persson Poppe Ranelid Sundström Troell Wester Olsson
+		}
+	}
+	anglosaxon = { #CK2
+		dynasty_names = {
+			Godhelming Beorming Eorling Æbbing Hæsting Ælling Eadricing Eadwulfing Leodwalding
+			Æthelfrithing Yffing Ingving Offing Oswalding Cerdicing Wiglafing Coenwalhing
+			Beorning Iceling Wuffing Wihtgilsing Ross Ciesla Rowe Borthwick
+		}
+		male_names = {
+			Arncytel Balthere Beorhtfrith Beorhthelm Beorhtmær Beorhtnoth Beorhtric Beorhtsige Beorhtwine_Beorhtwine Beorn_Beorn Beornræd Beornwulf
+			Burgheard Byrhtnoth Cearl Cenfus Cenræd Cenwulf Ceolwulf Cerdic Copsige
+			Cuthberht Cuthræd Cynehelm Cynewulf Cytelbearn Eadberht Eadfrith Eadgar Eadmund Eadmær Eadric
+			Eadræd Eadsige Eadulf Eadweald Eadweard Eadwig Eadwine Eadwulf Ealdhun Ealdmund Ealdræd Ealdwine
+			Ealdwulf Eanberht Eanfrith Eanhere Eardwulf Eastmund Ecgberht Ecgfrith Gamall Godwine Gospatric Guthfrith Guthmund
+			Gyrth Hacon Harold Heahberht Hereberht Hereweald Hereweard Hlothere Hrodberht Inwær Leofheah Leofhelm
+			Leofric Leofweald Leofwine Maccus Morcar Mærleswegn Offa Onlaf Ordgar
+			Oscytel Oshere Osmund Osric Osræd Osulf Osweald Oswine Oswulf Peter Rædwulf_Ralph Rægenweald Scule
+			Sigeberht Sigehelm Sigeric Sigeræd Sighere Siweard Stigand Swegn Swithelm Swithræd Swæfræd Sæbert Sælræd Sæweald
+			Sæxbald Sæxræd Thoræd Thurcytel Thurfrith Tostig Uhtræd Ulfcytel Waltheof Werestan Wiglaf Wihtræd
+			Wistan Wulf Wulfgar Wulfgeat Wulfhelm Wulfhere Wulfmær Wulfnoth Wulfstan Ælfgar Ælfmær Ælfnoth Ælfric Ælfræd_Alfred Ælfsige
+			Ælfstan Ælfwald Ælfweard Ælfwig Ælfwine Ælle Æthelbald Æthelberht Æthelfrith Æthelhere Æthelmær
+			Æthelric Æthelræd_Ailred Æthelsige Æthelstan Æthelweald Æthelweard Æthelwine Æthelwold Æthelwulf
+			Eormenred Eorcenberht Eormenric Eadbald Rædwald
+		}
+		female_names = {
+			Agatha Balthild Beorhtflæd Beorhtgifu Beorhtgyth Beorhtwaru Beorhtwynn Beornflæd Beorngyth Blæja Burgflæd Ceolflæd Cristina
+			Cuthburg Cwenburg Cyneburg Cynegyth Cynehild Cyneswith Cynethryth Eadburg Eadflæd Eadgifu Eadgyth Eadhburh Eadhild Ealdgyth
+			Ealhflæd Ealhswith Eanswith Ecgfrida Ecgwyn Godgifu Gunhilda Gytha Helga Heregyth Hereswith Hextilda Hungifu Judith
+			Leofflæd Leofgifu Leofrun Leofwaru Leofwynn Margaret_Margaret Maud Matilda Mildrith Octreda Sifflæd Sigrid Sæthryth Wulfflæd Wulfgifu
+			Wulfgyth Wulfhild Wulfrun Wulfthryth Wulfwaru Wulfwynn Wynnflæd Wærburg Æbba Ælfflæd Ælfgifu Ælfgyth Ælflæda_Ælflæda Ælfrida
+			Ælfswith Ælfthryth Ælfwynn Æthelburg Æthelflæd Æthelgifu Æthelhild Æthelræda_Æthelreda Æthelswith Æthelthryth
+			Æthelburh Seaxburh Wihtburh
+		}
+	}
+	babylonian = {
+		dynasty_names = {
+			Amorite Sealand Larsa Kassite 
+		}
+		male_names = {
+			Naplanum Emisum Samium Zabaia Gungunum Abisare Sumuel "Nur-Adad" "Sin-Iddinam" "Sin-Eribam" "Sin-Iqisham" "Silli-Adad" "Warad-Sin" "Rim-Sin" Hammurabi "Samsu-iluna" "Su-abu" "Sumu-la-El" "Sabum" "Apil-Sin" "Sin-muballit" Abieshu "Ammi-ditana" "Samsu-Ditana" Ammisaduqa Gandas Agum Kastiliasu "Abi-Rattas" Hurbazum Ulamburiash Karaindash "Enlil-nadin-ahi" Gulkishar
+		}
+		female_names = {
+			Nana Allatu Belit Zirrabanit Tiamat
+		}
+	}
+	etrurian = { #EU Rome
+		dynasty_names = {
+			Aemilia Antonia Atilia Atia Aufidia Aurelia Caecilia Calpurnia Cassia Claudia
+			Clodia Cornelia Domitia Fabia Flavia Fulvia Furia Gabinia Galeria Horatia Julia
+			Junia Licinia Livia Lucia Mamilia Manlia Maria Memmia Nigidia Octavia Papiria Plinia 
+			Postumia Pompeia Rabiria Quinctia Salvia Scribonia Sempronia Sertoria Silia Titia
+			Tullia Ulpia Valeria Vesuvia Vinicia Viridia Vitellia
+		}
+		male_names = {
+			Appius Aulus Caelus Decimus Decius Drusus Faustus Gaius Gnaeus Lucius Mamercus Manius Marcus Mettius Numerius Publius Quintus Secundus Septimus Servius Sextus Spurius Tertius Titus Tiberius Titus
+			Albinus Albus Agricola Agrippa Aratus Asina Auspex Balbus Barbatus Bibulus Brutus Bubo Buteo 
+			Caesar Calvus Calvinus Cato Catulus Cethegus Cicero Cinna Cotta Crispian Curio Dama Damasus Dentatus Dives Dolabella Donatus Draco
+			Emeritus Eugenius Euphemius Falco Falx Felix Fimbria Flaccus Florus Fronto 
+			Gala Galerus Gemellus Gorgonius Gracchus Gracilis Habitus Herma Hilarius Horatius
+			Ignatius Iuba Labeo Laenas Lepidus Leptis Lentulus Libo Longinus Longus Lucan Lucullus Lupius
+			Macro Martialis Marullus Maximus Memmius Mercator Messalla Montanus Murena Mus Nasica Oceanus Octavianus Opis
+			Optatus Otho Paenula Pantera Pavo Peregrinus Pertinax Petronax Pictor Pilatus Polus Prisca Primus Procyon Pulcher 
+			Quarto Quiricus Regillus Remus Romanus Romulus Rufus Ruso Sabinus Salinator Scaevola Scipio Scrofa Seneca Senna 
+			Severus Sorex Statius Strabo Super Superbus Tacitus Tertulus Trebonius Tibullus Tullius Ursinus Ursus Valens Varro Varus 
+			Vergilius Viator Victor Vindex Virilis Vitalis Vitus Zeno Zoilus Zosimus
+		}
+		female_names = {
+			Prima Secunda Tertia Quarta Quinta Septa Septima Octava Nona Decima Undecima Duodecima
+		}
+	}
+	parthian = { #EU Rome
+		dynasty_names = {
+			Aramid Arid Arkhid Asinid Arsacid Deiocid Menid Pacorid Savacid Vardanid
+		}
+		male_names = {
+			Abdagas Ara Aram Aramu Arbaces Ardashir Argishti Ariovast Arkha Armin Arsaces Arsames Artabanus Artabazus Artasyras Artavazd 
+			Artaxias Aryanes Asheri Asina Ashina Astashpa Astyages Atamaita Aturpat Bagayash Bayad Chosroes Cyaxares Cyrus Darius Deioces 
+			Evagoras Fravarti Gaumata Gobryas Gotarzes Haldita Hidarnes Hydarnes Manchihr Mardonius Martiya Mazaces Megabyzus Menua Nambed 
+			Napad Orodes Orxines Osroes Oxydates Pacorus Peucestas Phraates Phraortes Rusa 	Sames Sarduri Sarsamas Savaces Shapur Sinatruces 
+			Tigraios Tigranes Tiridates Umamaita Upadarma Vahbarz Vardanes Vologases Vonones Xerxes
+		}
+		female_names = {
+			Amestris Amytis Anzaza Artazostre Artystone Atossa Barsine Damaspia Mandane Parmys Parysatis Phaedymia Rinu Stateira Vashti
+		}
+	}
+	aramaic = { #EU Rome
+		dynasty_names = {
+			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid 
+			Milkiramid Philosirid
+		}
+		male_names = {
+			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes 
+			Eshbaal Eugoras Germelqart Hamilcar Hannibal Hanno Hasdrubal Himilco Hiram Mago Maharbal Mattan Metallo Milkherem Milkiram 
+			Paltibaal Philosir
+		}
+		female_names = {
+			Abdosir Arishat Astarte Batnoam Dido Shayna Sophonisba Tamar
+		}
+	}
+	hebrew = { #EU Rome
+		dynasty_names = {
+			Abiatarid Akabonid Amitid Amramid Boazid Dorid Dovid Eiranid Eleazid Heroid Honioid Hillelid Joazid Kahanid Nahumid Nirid Nogahid 
+			Oferid Omrid Pinchasid Raananid Shemidid Shemidid Yairid
+		}
+		male_names = {
+			Abiatar Ahijah Akabon Alon Amit Amram Ananelus Ananias Aretas Aristobulus Azrikam Barak Baruch Belshazar Costobarus Deror Dori 
+			Eiran Eleazar Erotimus Ezra Hadasa Herod Hillel Hyrkanus Jannaeus Joazar Yosef Josiada Kahana Hillel Hodaviah Honio Meir Nahum 
+			Nathan Nehemiah Nikanor Nir Obadiah  Ofer Omri Pinchas Phannias Phasael Raanan Malichus Manasseh Nahum Nogah Shamgar Shammai 
+			Shaul Shemaiah Shemida Silas Simeon Sosa Talmon Tarfon Tovia Yair Yochanan Zadok
+		}
+		female_names = {
+			Adena Adi Adva Ahuva Alexandra Aliza Alte Arieh Asher Basia Boaz Chanah Cypros Danya Dara Dina Doris Dov Dvora Elisheva Esther 
+			Galia Galit Leah Liat Liora Machla Mariamne Marni Maya Meital Menahem Milka Naamah Nahal Nava Nissa Orah Orit Osher Rachel Raisa 
+			Rivka Salampsio Sarah Shayna Tamar Tirtza Yael Yocheved
+		}
+	}
+	scythian = { #EU Rome
+		dynasty_names = {
+			Abeacid Galatid Madyid Palacid Partatid
+		}
+		male_names = {
+			Abeacus Apsyrtos Arpharnes Askhkadar Atheas Galat Kuluk Madyes Oltak Palacus Partatua Skilurus Skunxa Spadines Tasius Zanticus Respendial
+		}
+		female_names = {
+			Amage Ghadani Opoin Polemakratia
+		}
 	}
 }

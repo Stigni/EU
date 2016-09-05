@@ -87,7 +87,7 @@ country_event = {
 
 	trigger = {
 		tag = BOH
-		has_ruler = "Jiri"
+		has_ruler = "Jirí"
 		is_year = 1455
 		exists = PAP
 	}

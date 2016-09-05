@@ -5,6 +5,11 @@ controller = PCJ
 add_core = PCJ
 culture = aimara
 
+
+
+discovered_by = south_american
+discovered_by = andean
+
 religion = inti
 capital = "Caracara"
 is_city = yes
@@ -20,7 +25,7 @@ base_manpower = 2
 	add_core = INC
 }
 1533.8.29 = {
-	
+	discovered_by = SPA
 	owner = SPA
 	controller = SPA
 	add_core = SPA

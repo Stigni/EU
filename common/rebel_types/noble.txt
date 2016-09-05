@@ -3,6 +3,8 @@
 ######################################################################
 noble_rebels = {
 
+	color = { 179 75 75 }
+
 	area = nation 					# Stays within the nation
 	government = monarchy			# Likes monarchy
 	defection = none				# Does not defect

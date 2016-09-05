@@ -780,11 +780,11 @@ country_event = {
 	option = {
 		name = "flavor_mng.EVTOPTA14" #Appoint him despite his faults
 		add_adm_power = 100
-		add_prestige = -20
 	}
 	option = {
 		name = "flavor_mng.EVTOPTB14" #No, such corruption could ruin the state!
 		add_legitimacy = 10
+		add_corruption = -1
 	}
 }
 

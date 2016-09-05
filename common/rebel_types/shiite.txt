@@ -4,6 +4,8 @@
 ######################################################################
 shiite_rebels = {
 
+	color = { 230 175 175 }
+
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
 	religion = shiite
@@ -102,6 +104,11 @@ shiite_rebels = {
 	 	}
 		modifier = {
 			factor = 1.5
+			has_missionary = yes
+			religion = shiite
+		}
+		modifier = {
+			factor = 1.5
 			unrest = 2
 		}
 		modifier = {
@@ -124,29 +131,32 @@ shiite_rebels = {
 		}
  	}
 	siege_won_effect = {
-		if = {
-			limit = {
-				OR = {
-					religion = shiite
-					is_reformation_center = yes
-					owner = { religion = shiite }
+		custom_tooltip = religious_rebels_seige_effect_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						religion = shiite
+						is_reformation_center = yes
+						owner = { religion = shiite }
+					}
+				}
+				add_province_modifier = {
+					name = "religious_violence"
+					duration = 730
 				}
 			}
-			add_province_modifier = {
-				name = "religious_violence"
-				duration = 730
-			}
-		}
-		if = {
-			limit = {
-				NOT = { religion = shiite }
-				is_reformation_center = no
-				NOT = { owner = { religion = shiite } }
-			}
-			change_religion = shiite
-			add_province_modifier = {
-				name = "forced_conversion"
-				duration = 730
+			if = {
+				limit = {
+					NOT = { religion = shiite }
+					is_reformation_center = no
+					NOT = { owner = { religion = shiite } }
+				}
+				change_religion = shiite
+				add_province_modifier = {
+					name = "forced_conversion"
+					duration = 730
+				}
 			}
 		}
 	}

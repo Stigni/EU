@@ -368,10 +368,10 @@ country_event = {
 	
 	option = {		
 		name = flavor_ven.12.a
-		add_casus_belli = {
-			target = VEN
-			type = cb_annex
-			months = 120
+		VEN = {
+			every_owned_province = {
+				add_claim = ROOT
+			}
 		}
 	}
 }	
@@ -1011,6 +1011,12 @@ country_event = {
 		add_republican_tradition = 0.3
 		add_stability = -2
 		kill_ruler = yes
+		if = {
+			limit = {
+				corruption = 0.01
+			}
+			add_corruption = -2
+		}
 		add_faction_influence = {
 			faction = mr_traders
 			influence = 40
@@ -1025,6 +1031,7 @@ country_event = {
 		add_stability = -1
 		add_adm_power = -50
 		add_dip_power = -50
+		add_corruption = 0.5
 		if = {
 			limit = { has_country_modifier = ven_council_of_ten_strong }
 			remove_country_modifier = ven_council_of_ten_strong
@@ -1035,7 +1042,8 @@ country_event = {
 		add_stability = -2
 		add_adm_power = 50
 		add_dip_power = 50
-		add_republican_tradition = -0.3
+		add_republican_tradition = -0.25
+		add_corruption = 1
 		add_faction_influence = {
 			faction = mr_aristocrats
 			influence = 40

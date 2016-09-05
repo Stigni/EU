@@ -116,7 +116,7 @@ country_decisions = {
 					senior_union_with = SAV
 					SAV = {
 						owns_core_province = 103		# Piedmont
-						NOT = { num_of_cities = 16 } #Original 6+10
+						NOT = { num_of_cities = 11 } #Original 6+5
 					}
 				}
 				AND = {
@@ -125,7 +125,7 @@ country_decisions = {
 					senior_union_with = SAR
 					SAR = {
 						owns_core_province = 127		# Sardinia
-						NOT = { num_of_cities = 12 } #Original 2 + 10
+						NOT = { num_of_cities = 7 } #Original 2 + 5
 					}
 				}
 			}

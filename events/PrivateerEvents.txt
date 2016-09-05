@@ -8,6 +8,7 @@ province_event = {
 	picture = HARBOUR_eventPicture
 
 	trigger = {
+		has_port = yes
 		privateer_power = {
 			share = 20
 		}

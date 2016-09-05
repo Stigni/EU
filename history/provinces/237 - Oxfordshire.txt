@@ -1,4 +1,5 @@
 #237 - Oxfordshire
+#Includes Bukinghamshire, Berkshire, Bedfordshire, Huntingdonshire, part of Cambridgeshire.
 
 owner = ENG
 controller = ENG
@@ -13,6 +14,14 @@ capital = "Oxford"
 is_city = yes # Includes Reading
 add_core = ENG
 seat_in_parliament = yes
+
+
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
 
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1461.6.1 = { unrest = 2 } # Coronation of Edward IV

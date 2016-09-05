@@ -18,30 +18,51 @@ country_event = {
 	
 	
 	trigger = {
-		tag = CAS
 		NOT = { exists = SPA }
+		OR = {
+			AND = {
+				tag = CAS
+				NOT = { war_with = ARA }
+				ARA = {
+					exists = yes
+					ai = yes
+					was_player = no
+					is_subject = no
+					is_neighbor_of = ROOT
+				}
+			}
+			AND = {
+				tag = ARA
+				NOT = { war_with = CAS }
+				ai = no
+				CAS = {
+					exists = yes
+					ai = yes
+					was_player = no
+					is_subject = no
+					is_neighbor_of = ROOT
+				}
+			}
+		}
 		is_year = 1450
 		NOT = { is_year = 1530 }
 		is_subject = no
 		num_of_cities = 10
-		ARA = {
-			exists = yes
-			ai = yes
-			was_player = no
-			is_subject = no
-			is_neighbor_of = ROOT
-		}
-		NOT = { war_with = ARA }
 		OR = {
 			AND = {
-				is_female = yes
+				CAS = { is_female = yes }
 				ARA = { is_female = no }
 			}
 			AND = {
-				is_female = no
+				CAS = { is_female = no }
 				ARA = { is_female = yes }
 			}
 			ARA = {
+				ai = yes
+				has_regency = yes
+			}
+			CAS = {
+				ai = yes
 				has_regency = yes
 			}
 		}
@@ -51,7 +72,20 @@ country_event = {
 		months = 120
 		modifier = {
 			factor = 0.1
-			ARA = { has_regency = no }
+			OR = {
+				AND = {
+					tag = CAS
+					ARA = {
+						has_regency = no 
+					}
+				}
+				AND = {
+					tag = ARA
+					CAS = { 
+						has_regency = no 
+					}
+				}
+			}
 		}
 	}
 	
@@ -59,15 +93,50 @@ country_event = {
 	option = {		# Let us bind their Dynasty to ours
 		name = "flavor_spa.EVTOPTA3716"
 		ai_chance = { factor = 90 }
-		create_union = ARA
-		add_opinion = {
-			who = ARA
-			modifier = spa_iberian_wedding
-		}
-		ARA = {
+		if = {
+			limit = { tag = CAS }
+			create_union = ARA
 			add_opinion = {
-				who = ROOT
+				who = ARA
 				modifier = spa_iberian_wedding
+			}
+			ARA = {
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding
+				}
+			}
+			every_known_country = {
+				limit = {
+					marriage_with = ARA
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding_negative
+				}
+			}
+		}
+		if = {
+			limit = { tag = ARA }
+			create_union = CAS
+			add_opinion = {
+				who = CAS
+				modifier = spa_iberian_wedding
+			}
+			CAS = {
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding
+				}
+			}
+			every_known_country = {
+				limit = {
+					marriage_with = CAS
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding_negative
+				}
 			}
 		}
 		random_owned_province = {
@@ -79,24 +148,27 @@ country_event = {
 				size = 3
 			}
 		}
-		every_known_country = {
-			limit = {
-				marriage_with = ARA
-			}
-			add_opinion = {
-				who = ROOT
-				modifier = spa_iberian_wedding_negative
-			}
-		}
 	}
 	option = {		# No let us marry a local talent instead
 		name = "flavor_spa.EVTOPTB3716"
 		ai_chance = { factor = 10 }
 		add_stability = 1
-		ARA = {
-			add_opinion = {
-				who = ROOT
-				modifier = spa_declined_iberian_wedding
+		if = {
+			limit = { tag = CAS }
+			ARA = {
+				add_opinion = {
+					who = ROOT
+					modifier = spa_declined_iberian_wedding
+				}
+			}
+		}
+		if = {
+			limit = { tag = ARA }
+			CAS = {
+				add_opinion = {
+					who = ROOT
+					modifier = spa_declined_iberian_wedding
+				}
 			}
 		}
 	}
@@ -217,6 +289,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_global_flag = columbus_happened }
+		has_idea = quest_for_the_new_world
 		OR = {
 			NOT = {
 				north_america = {
@@ -248,11 +321,21 @@ country_event = {
 	option = {		# Reject his proposal
 		name = "flavor_spa.EVTOPTA1"
 		ai_chance = { factor = 10 }
+		set_country_flag = turned_down_columbus
+		random_known_country = {
+			limit = {
+				NOT = { has_country_flag = turned_down_columbus }
+				religion = catholic
+				has_idea = quest_for_the_new_world
+			}
+			country_event = { id = flavor_spa.1 }
+		}
 	}
 	option = {		# Hire Columbus
 		name = "flavor_spa.EVTOPTB1"
 		ai_chance = { factor = 90 }
 		add_years_of_income = -0.25
+		set_global_flag = columbus_happened
 		define_explorer = {
 			name = "Cristóbal Colón"
 			fire = 2
@@ -2230,6 +2313,211 @@ country_event = {
 		add_prestige = 25
 		ai_chance = {
 			factor = 0
+		}
+	}
+}
+
+
+#A Habsburg Heir in Spain
+country_event = {
+	id = flavor_spa.13
+	title = flavor_spa.13.t
+	desc = flavor_spa.13.d
+	picture = NEW_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = SPA
+			AND = {
+				tag = CAS
+				NOT = {
+					exists = SPA
+				}
+			}
+		}
+		has_heir = no
+		marriage_with = HAB
+		HAB = {
+			dynasty = "von Habsburg"
+			OR = {
+				NOT = {
+					has_country_flag = bur_marriage_successor
+				}
+				ai = no
+			}
+		}
+		NOT = {
+			dynasty = HAB
+		}
+		FRA = {
+			is_rival = HAB
+			is_rival = ROOT
+		}
+		NOT = {
+			OR = {
+				is_rival = HAB
+				war_with = HAB
+				HAB = {
+					is_rival = SPA
+				}
+				AND = {
+					HAB = {
+						is_rival = CAS
+					}
+					NOT = {
+						exists = SPA
+					}
+				}
+			}
+		}
+		NOT = {
+			dynasty = FRA
+		}
+		ruler_age = 20
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = flavor_spa.13.a
+		define_heir = {
+			claim = 100
+			dynasty = "von Habsburg"
+		}
+		hidden_effect = {
+			HAB = {
+				country_event = { id = flavor_spa.14 }
+			}
+		}
+	}
+}
+
+#Habsburg in Spain notification for Austria
+country_event = {
+	id = flavor_spa.14
+	title = flavor_spa.14.t
+	desc = flavor_spa.14.d
+	picture = NEW_HEIR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_spa.14.a
+		add_prestige = 5
+	}
+}
+
+#The Low Countries Pass to Spain
+country_event = {
+	id = flavor_spa.15
+	title = flavor_spa.15.t
+	desc = flavor_spa.15.d
+	picture = NEW_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = SPA
+			AND = {
+				tag = CAS
+				NOT = {
+					exists = SPA
+				}
+			}
+		}
+		has_heir = no
+		marriage_with = HAB
+		HAB = {
+			dynasty = "von Habsburg"
+			ai = yes
+			has_country_flag = bur_marriage_successor
+		}
+		NOT = {
+			dynasty = HAB
+		}
+		FRA = {
+			is_rival = HAB
+			is_rival = ROOT
+		}
+		NOT = {
+			OR = {
+				is_rival = HAB
+				war_with = HAB
+				HAB = {
+					is_rival = SPA
+				}
+				AND = {
+					HAB = {
+						is_rival = CAS
+					}
+					NOT = {
+						exists = SPA
+					}
+				}
+			}
+		}
+		NOT = {
+			dynasty = FRA
+		}
+		ruler_age = 20
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = flavor_spa.15.a
+		ai_chance = {
+			factor = 85
+		}
+		define_heir = {
+			claim = 100
+			dynasty = "von Habsburg"
+			age = 15
+		}
+		custom_tooltip = flavor_spa.16.tt
+		hidden_effect = {
+			HAB = {
+				country_event = { id = flavor_spa.14 }
+				every_owned_province = {
+					limit = {
+						has_province_flag = bur_succession_province
+						OR = {
+							region = low_countries_region
+							area = picardy_area
+						}
+						NOT = {
+							culture = austrian
+						}
+					}
+					add_core = ROOT
+					remove_core = HAB
+					cede_province = ROOT
+				}
+			}
+		}
+	}
+
+	option = {
+		name = flavor_spa.15.a
+		ai_chance = {
+			factor = 15
+		}
+		define_heir = {
+			claim = 100
+			dynasty = "von Habsburg"
+			age = 15
+		}
+		hidden_effect = {
+			HAB = {
+				country_event = { id = flavor_spa.14 }
+			}
 		}
 	}
 }

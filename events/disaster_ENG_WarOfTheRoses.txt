@@ -29,6 +29,7 @@ country_event = {
 
 		define_ruler = {
 			dynasty = Lancaster
+			age = 31
 		}
 		add_manpower = -0.25
 
@@ -85,6 +86,7 @@ country_event = {
 		set_country_flag = supports_house_of_york
 		define_ruler = {
 			dynasty = York
+			age = 31
 		}
 		add_manpower = -0.25
 		if = {

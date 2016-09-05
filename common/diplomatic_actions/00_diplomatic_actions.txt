@@ -29,6 +29,7 @@
 # vassalaction
 # guaranteeaction
 # warningaction
+# threaten_war
 # milaccess
 # fleet_access
 # offer_fleet_access
@@ -42,7 +43,10 @@
 # sellprov
 # imperial_relations_action
 # religious_unity_action
-# grant_electorate_action
+# grant_electorate
+# remove_electorate
+# grant_freecity
+# remove_freecity
 # demand_unlawful_territory_action
 # call_crusade_action
 # excommunicate_action
@@ -55,12 +59,19 @@
 # sabotage_reputation
 # support_rebels
 # sow_discontent
+# study_technology
+# agitate_for_liberty
 # form_coalition
 # request_to_join_federation
 # invite_to_federation
 # protectorateaction
 # ask_for_protection_action
 # support_heir
+# break_marriage
+# designate_march
+# ask_for_march
+# sell_ships_action
+# counterespionage
 
 royal_marriage = {
 	condition = {

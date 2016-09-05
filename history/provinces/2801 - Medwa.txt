@@ -1,7 +1,7 @@
 #2801 - Medwa
 
 culture = nubian 
-religion = animism
+religion = shamanism #Fetishism
 capital = "Medowa"
 add_core = DAR
 native_size = 50
@@ -16,9 +16,9 @@ base_manpower = 1
 1596.1.1 = {
 	owner = DAR
 	controller = DAR
-	
+	discovered_by = NUB
 	is_city = yes
-	
+	discovered_by = ETH
 	trade_goods = slaves
 }
 1682.1.1 = { religion = sunni }

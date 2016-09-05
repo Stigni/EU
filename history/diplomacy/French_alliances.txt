@@ -339,14 +339,6 @@ alliance = {
 	start_date = 1508.12.10
 	end_date = 1511.10.4
 }
- 
-# France and Aragon (League of Cambrai)
-alliance = {
-	first = FRA
-	second = ARA
-	start_date = 1508.12.10
-	end_date = 1511.10.4
-}
 
 # France and Modena (League of Cambrai)
 alliance = {

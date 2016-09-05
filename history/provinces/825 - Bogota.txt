@@ -4,6 +4,11 @@ owner = MCA
 controller = MCA
 culture = muisca
 
+
+
+discovered_by = south_american
+discovered_by = andean
+
 religion = inti
 capital = "Bogotá"
 is_city = yes
@@ -15,7 +20,7 @@ base_manpower = 2
 add_core = MCA
 
 1538.9.6 = {
-	
+	discovered_by = SPA
 	owner = SPA
 	controller = SPA
 	add_core = SPA

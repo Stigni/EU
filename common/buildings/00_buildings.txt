@@ -29,13 +29,19 @@ marketplace = {
 	ai_will_do = {
 		factor = 100
 		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
+		modifier = {
 			factor = 0.1
 			NOT = { province_trade_power = 5 }
 		}		
 		modifier = {
 			factor = 20
 			province_trade_power = 10
-		}	
+		}
 	}
 }
 
@@ -50,6 +56,12 @@ workshop = {
 
 	ai_will_do = {
 		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { base_production = 3 }
@@ -69,7 +81,7 @@ workshop = {
 		modifier = {
 			factor = 0.1
 			is_overseas = yes
-		}		
+		}
 	}
 }
 
@@ -82,6 +94,12 @@ temple = {
 	
 	ai_will_do = {
 		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { base_tax = 3 }
@@ -101,7 +119,7 @@ temple = {
 		modifier = {
 			factor = 0.1
 			is_overseas = yes
-		}		
+		}
 	}
 }
 
@@ -144,13 +162,19 @@ shipyard = {
 		has_port = yes
 	}
 	modifier = {
-		local_ship_cost = -0.10
+		naval_forcelimit = 2
+		ship_recruit_speed = -0.25
 		local_ship_repair = 0.25
-		ship_recruit_speed = -0.50
 	}
 	
 	ai_will_do = {
 		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { development = 10 }
@@ -221,10 +245,17 @@ courthouse = {
 	time = 12
 	modifier = {
 		local_unrest = -3
+		local_autonomy = -0.1
 	}
 	
 	ai_will_do = {
 		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
 		modifier = {
 			factor = 0
 			nationalism = 1
@@ -236,7 +267,7 @@ courthouse = {
 		modifier = {
 			factor = 0.1
 			is_overseas = yes
-		}		
+		}
 	}
 }
 
@@ -247,11 +278,17 @@ dock = {
 		has_port = yes
 	}
 	modifier = {
-		naval_forcelimit = 2
+		local_sailors_modifier = 0.5
 	}
 	
 	ai_will_do = {
 		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
 		modifier = {
 			factor = 0.1
 			is_overseas = yes
@@ -260,6 +297,10 @@ dock = {
 			factor = 0.1
 			NOT = { development = 10 }
 		}		
+		modifier = {
+			factor = 2.0
+			development = 20
+		}
 	}
 }
 
@@ -348,6 +389,12 @@ cathedral = {
 		factor = 100
 		modifier = {
 			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
+		modifier = {
+			factor = 0
 			NOT = { base_tax = 3 }
 		}		
 		modifier = {
@@ -365,7 +412,7 @@ cathedral = {
 		modifier = {
 			factor = 0.1
 			is_overseas = yes
-		}	
+		}
 	}
 }
 
@@ -380,6 +427,12 @@ university = {
 	
 	ai_will_do = {
 		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { development = 10 }
@@ -399,7 +452,7 @@ university = {
 		modifier = {
 			factor = 1.5
 			development = 30
-		}		
+		}
 	}	
 }
 
@@ -418,13 +471,19 @@ trade_depot = {
 	ai_will_do = {
 		factor = 100
 		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
+		modifier = {
 			factor = 0.1
 			NOT = { province_trade_power = 5 }
 		}		
 		modifier = {
 			factor = 20
 			province_trade_power = 10
-		}		
+		}
 	}
 }
 
@@ -438,13 +497,19 @@ grand_shipyard = {
 		has_port = yes
 	}
 	modifier = {
-		local_ship_cost = -0.2
-		local_ship_repair = 0.5
-		ship_recruit_speed = -0.5
+		naval_forcelimit = 4
+		ship_recruit_speed = -0.50
+		local_ship_repair = 0.50
 	}
 	
 	ai_will_do = {
 		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { development = 10 }
@@ -561,13 +626,19 @@ stock_exchange = {
 	ai_will_do = {
 		factor = 100
 		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}	
+		modifier = {
 			factor = 0.1
 			NOT = { province_trade_power = 5 }
 		}		
 		modifier = {
 			factor = 20
 			province_trade_power = 10
-		}				
+		}	
 	}
 }
 
@@ -584,6 +655,12 @@ counting_house = {
 	
 	ai_will_do = {
 		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { base_production = 3 }
@@ -603,7 +680,7 @@ counting_house = {
 		modifier = {
 			factor = 0.1
 			is_overseas = yes
-		}		
+		}
 	}
 }
 
@@ -618,10 +695,17 @@ town_hall = {
 	
 	modifier = {
 		local_unrest = -5
+		local_autonomy = -0.2
 	}
 	
 	ai_will_do = {
 		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
 		modifier = {
 			factor = 0
 			nationalism = 1
@@ -637,7 +721,7 @@ town_hall = {
 		modifier = {
 			factor = 0.1
 			NOT = { development = 10 }
-		}	
+		}
 	}
 }
 
@@ -652,11 +736,17 @@ drydock = {
 	}
 	
 	modifier = {
-		naval_forcelimit = 4		
+		local_sailors_modifier = 1.0
 	}	
 	
 	ai_will_do = {
 		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
 		modifier = {
 			factor = 0.1
 			is_overseas = yes
@@ -664,7 +754,11 @@ drydock = {
 		modifier = {
 			factor = 0.1
 			NOT = { development = 10 }
-		}			
+		}		
+		modifier = {
+			factor = 2.0
+			development = 20
+		}
 	}
 }
 
@@ -756,7 +850,6 @@ wharf = {
 		naval_supplies
 		fish
 		salt
-		tropical_wood
 	}
 	modifier = {
 		trade_goods_size = 1.0
@@ -765,6 +858,12 @@ wharf = {
 	
 	ai_will_do = {
 		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
 		modifier = {
 			factor = 0
 			NOT = { development = 10 }
@@ -784,7 +883,7 @@ wharf = {
 		modifier = {
 			factor = 1.5
 			development = 30
-		}	
+		}
 	}
 }
 
@@ -804,6 +903,12 @@ weapons = {
 		factor = 100
 		modifier = {
 			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
+		modifier = {
+			factor = 0
 			NOT = { development = 10 }
 		}		
 		modifier = {
@@ -821,7 +926,7 @@ weapons = {
 		modifier = {
 			factor = 1.5
 			development = 30
-		}		
+		}
 	}
 }
 
@@ -843,6 +948,12 @@ textile = {
 		factor = 100
 		modifier = {
 			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
+		modifier = {
+			factor = 0
 			NOT = { development = 10 }
 		}		
 		modifier = {
@@ -860,7 +971,7 @@ textile = {
 		modifier = {
 			factor = 1.5
 			development = 30
-		}		
+		}
 	}
 }
 
@@ -886,46 +997,10 @@ plantations = {
 		factor = 100
 		modifier = {
 			factor = 0
-			NOT = { development = 10 }
-		}		
-		modifier = {
-			factor = 0.1
-			NOT = { development = 15 }
+			owner = {
+				is_at_war = yes
+			}
 		}
-		modifier = {
-			factor = 1.5
-			development = 20
-		}		
-		modifier = {
-			factor = 1.5
-			development = 25
-		}
-		modifier = {
-			factor = 1.5
-			development = 30
-		}		
-	}
-}
-
-tradecompany = {
-	cost = 500
-	time = 60
-	manufactory = {
-		ivory
-		tea
-		chinaware
-		slaves
-		spices
-		fur
-		wine
-	}
-	modifier = {
-		trade_goods_size = 1.0	
-	}
-	onmap = yes
-
-	ai_will_do = {
-		factor = 100
 		modifier = {
 			factor = 0
 			NOT = { development = 10 }
@@ -945,7 +1020,56 @@ tradecompany = {
 		modifier = {
 			factor = 1.5
 			development = 30
+		}
+	}
+}
+
+tradecompany = {
+	cost = 500
+	time = 60
+	manufactory = {
+		ivory
+		tea
+		chinaware
+		slaves
+		spices
+		fur
+		wine
+		tropical_wood
+	}
+	modifier = {
+		trade_goods_size = 1.0	
+	}
+	onmap = yes
+
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			owner = {
+				is_at_war = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { development = 10 }
 		}		
+		modifier = {
+			factor = 0.1
+			NOT = { development = 15 }
+		}
+		modifier = {
+			factor = 1.5
+			development = 20
+		}		
+		modifier = {
+			factor = 1.5
+			development = 25
+		}
+		modifier = {
+			factor = 1.5
+			development = 30
+		}
 	}
 }
 

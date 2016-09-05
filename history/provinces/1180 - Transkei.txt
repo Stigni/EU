@@ -1,7 +1,7 @@
 #1180 - Transkei
 
-culture = bantu #Thembu
-religion = animism
+culture = nguni
+religion = shamanism #Fetishism
 capital = "Thembu"
 native_size = 70
 trade_goods = unknown

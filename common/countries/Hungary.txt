@@ -36,16 +36,16 @@ historical_units = {
 }
 
 monarch_names = {
-	"Ulászló #0" = 40
-	"László #4" = 20
+	"István #5" = 40
+	"László #4" = 40
 	"Lajos #1" = 20
-	"Albert #0" = 20
+	"Albert #1" = 20
 	"János #0" = 20
-	"Mátyás #0" = 20
-	"Zsigmond #0" = 20
+	"Ulászló #1" = 20
+	"Mátyás #1" = 20
 	"András #3" = 15
 	"Károly #2" = 15
-	"István #5" = 10
+	"Zsigmond #1" = 10
 	"Anna #0" = -10
 	"Béla #4" = 5
 	"Anasztáz #0" = 0

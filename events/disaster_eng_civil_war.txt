@@ -48,7 +48,8 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				region = british_isles_region
-				NOT = { area = ireland_area }
+				NOT = { area = eastern_ireland_area }
+				NOT = { area = western_ireland_area }
 				NOT = { units_in_province = 1 }
 				is_capital = no
 			}
@@ -66,7 +67,8 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				region = british_isles_region
-				NOT = { area = ireland_area }
+				NOT = { area = eastern_ireland_area }
+				NOT = { area = western_ireland_area }
 				NOT = { units_in_province = 1 }
 				is_capital = no
 			}
@@ -435,7 +437,10 @@ country_event = {
 		NOT = { has_country_flag = ENG_had_event_9232 }
 		has_country_flag = supports_parliamentarians
 		any_owned_province = {
-			area = ireland_area
+			OR = {
+				area = eastern_ireland_area
+				area = western_ireland_area
+			}
 			unrest = 1
 		}
 	}
@@ -446,6 +451,20 @@ country_event = {
 
 	immediate = {
 		set_country_flag = ENG_had_event_9232
+		random_owned_province = {
+			limit = {
+				area = eastern_ireland_area
+				unrest = 1
+			}
+			set_province_flag = irish_rebellion
+		}
+		random_owned_province = {
+			limit = {
+				area = western_ireland_area
+				unrest = 1
+			}
+			set_province_flag = irish_rebellion
+		}
 	}
 	
 	option = {			# Pay them
@@ -458,13 +477,13 @@ country_event = {
 		ai_chance = { factor = 50 }
 		every_owned_province = {
 			limit = {
-				area = ireland_area
-				unrest = 1
+				has_province_flag = irish_rebellion
 			}
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 2
+				size = 1
 			}
+			clr_province_flag = irish_rebellion
 		}
 	}
 }
@@ -482,7 +501,10 @@ country_event = {
 		NOT = { has_country_flag = ENG_had_event_9233 }
 		has_country_flag = supports_royalists
 		any_owned_province = {
-			area = ireland_area
+			OR = {
+				area = eastern_ireland_area
+				area = western_ireland_area
+			}
 			unrest = 1
 		}
 	}
@@ -490,9 +512,23 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-
+	
 	immediate = {
 		set_country_flag = ENG_had_event_9233
+		random_owned_province = {
+			limit = {
+				area = eastern_ireland_area
+				unrest = 1
+			}
+			set_province_flag = irish_rebellion
+		}
+		random_owned_province = {
+			limit = {
+				area = western_ireland_area
+				unrest = 1
+			}
+			set_province_flag = irish_rebellion
+		}
 	}
 	
 	option = {			# Pay them
@@ -505,13 +541,13 @@ country_event = {
 		ai_chance = { factor = 50 }
 		every_owned_province = {
 			limit = {
-				area = ireland_area
-				unrest = 1
+				has_province_flag = irish_rebellion
 			}
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 2
+				size = 1
 			}
+			clr_province_flag = irish_rebellion
 		}
 	}
 }
@@ -543,7 +579,8 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				region = british_isles_region
-				NOT = { area = ireland_area }
+				NOT = { area = eastern_ireland_area }
+				NOT = { area = western_ireland_area }
 				is_capital = no
 			}
 			spawn_rebels = {
@@ -560,7 +597,8 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				region = british_isles_region
-				NOT = { area = ireland_area }
+				NOT = { area = eastern_ireland_area }
+				NOT = { area = western_ireland_area }
 				is_capital = no
 			}
 			spawn_rebels = {

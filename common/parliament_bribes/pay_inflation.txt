@@ -4,14 +4,14 @@ pay_inflation = {
 	}
 	
 	effect = {
-		add_inflation = 0.5
+		add_corruption = 0.2
 	}
 	
 	ai_will_do = {
 		factor = 1
 		modifier = {
 			factor = 0.1
-			inflation = 10
+			corruption = 10
 		}
 	}
 }

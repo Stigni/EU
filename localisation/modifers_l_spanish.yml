@@ -21,7 +21,7 @@
  MODIFIER_CORE_CREATION: "Coste de la Creación de un Centro"
  MODIFIER_FREE_LEADER_POOL: "Líder(es) sin Mantenimiento"
  MODIFIER_ENEMY_CORE_CREATION: "Coste de la Creación de un Centro Hostil para nosotros"
- MODIFIER_HEIR_CHANCE: "Aumento de las Oportunidades de un Nuevo Heredero"
+ MODIFIER_HEIR_CHANCE: "Probabilidad de nuevo heredero"
  MODIFIER_IMPERIAL_AUTHORITY: "Autoridad Imperial"
  MODIFIER_EMBARGO_EFFICIENCY: "Eficiencia del Embargo"
  MODIFIER_ADVISOR_POOL: "Posibles Consejeros"

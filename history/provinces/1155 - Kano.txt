@@ -12,7 +12,10 @@ trade_goods = dyes
 hre = no
 base_tax = 5 
 base_production = 5
+
+
 discovered_by = sub_saharan
+
 
 1486.1.1 = { unrest = 4 } # Invasion by Katsina
 1488.1.1 = { unrest = 0 } # Katsina forces ejected from area

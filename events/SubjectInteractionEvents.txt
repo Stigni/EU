@@ -169,6 +169,7 @@ country_event = {
 		has_dlc = "Common Sense"
 		has_regency = no
 		any_subject_country = {
+			is_lesser_in_union = no
 			government = monarchy
 			has_regency = no
 			has_new_dynasty = yes
@@ -347,25 +348,25 @@ country_event = {
 			define_ruler = {
 				dynasty = ROOT
 			}
-			clr_country_flag = si_subject_state
-			ROOT = {
-				random_owned_province = {
-					limit = {
-						NOT = {
-							is_capital = yes
-						}
-					}
-					spawn_rebels = {
-						type = pretender_rebels
-						friend = PREV
-						size = 1
+			random_province = {
+				limit = {
+					owned_by = ROOT
+					NOT = {
+						is_capital = yes
 					}
 				}
+				spawn_rebels = {
+					type = pretender_rebels
+					friend = PREV
+					size = 1
+				}
 			}
+			clr_country_flag = si_subject_state
 		}
 	}
 	option = {
 		name = subject_interaction_events.6.b
+		add_corruption = 0.5
 		add_treasury = -100
 		random_subject_country = {
 			limit = {
@@ -1876,18 +1877,20 @@ country_event = {
 	}
 	option = {
 		name = subject_interaction_events.31.c
-		add_prestige = 10
-		random_known_country = {
-			limit = {
-				has_country_flag = si_core_flag
+		add_prestige = -10
+		hidden_effect = {
+			random_known_country = {
+				limit = {
+					has_country_flag = si_core_flag
+				}
+				clr_country_flag = si_core_flag
 			}
-			clr_country_flag = si_core_flag
-		}
-		random_owned_province = {
-			limit = {
-				has_province_flag = si_provincecore_flag
+			random_owned_province = {
+				limit = {
+					has_province_flag = si_provincecore_flag
+				}
+				clr_province_flag = si_provincecore_flag
 			}
-			clr_province_flag = si_provincecore_flag
 		}
 	}
 }

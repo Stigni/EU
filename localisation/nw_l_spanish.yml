@@ -9,7 +9,7 @@
  COLONIAL_OVERLORD: "Es colonia de $LIST$"
  COLONIAL_SUBJECTS: "Tiene las colonias de $LIST$"
  COLONIAL_SUBJECT_OF: "Colonia de $LORD$"
- SUBJECT_COLONY_TARIFF_EFFICIENCY: "La tarifa de eficacia es del §Y$VAL$§!%."
+ SUBJECT_COLONY_TARIFF_EFFICIENCY: "La tarifa de eficacia es del §Y$VAL$%§!$VAL2$."
  SUBJECT_COLONY_TARIFF: "§Y$NAME$§! nos está pagando §Y$VAL$§!¤ cada mes."
  SUBJECT_COLONY_TARIFF_DESC: "Las colonias pagan una parte de sus impuestos como tarifa (basada en su eficiencia) . Ésta puede ser aumentada, pero con el riesgo que la colonia se rebele."
  SUBJECT_COLONY_NAME: "§Y$NAME$§! es nuestra colonia."

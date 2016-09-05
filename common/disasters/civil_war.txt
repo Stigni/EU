@@ -17,7 +17,7 @@ civil_war = {
 		has_any_disaster = no
 		has_regency = no
 		NOT = { legitimacy_or_horde_unity = 50 }
-		average_home_autonomy = 20
+		average_home_autonomy = 30
 	}
 	
 	

@@ -5,11 +5,11 @@ controller = SON
 add_core = SON
 is_city = yes
 culture = songhai 
-religion = animism
+religion = shamanism #Fetishism
 capital = "Say"
 trade_goods = grain
 hre = no
 base_tax = 2 
 base_production = 2
 base_manpower = 1
-
+discovered_by = sub_saharan

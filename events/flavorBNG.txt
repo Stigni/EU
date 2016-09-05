@@ -146,7 +146,7 @@ country_event = {
 
 	option = {
 		name = flavor_bng.4.a
-		east_bengal_area = {
+		every_owned_province = {
 			limit = {
 				OR = {
 					province_id = 2039 #Sunderbans

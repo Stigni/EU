@@ -13,6 +13,10 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
+
+	immediate = {
+		hidden_effect = { set_country_flag = active_religious_turmoil }
+	}
 	
 	option = {
 		name = "EVTOPTA2031"				# Eradicate the heretics to bring peace
@@ -63,6 +67,10 @@ country_event = {
 	major = yes
 	
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = { clr_country_flag = active_religious_turmoil }
+	}
 
 
 	mean_time_to_happen = {

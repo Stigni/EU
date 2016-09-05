@@ -1,6 +1,6 @@
 government = shogunate
 government_rank = 2
-primary_culture = japanese
+primary_culture = togoku
 religion = shinto
 technology_group = chinese
 capital = 1020	# Kyoto

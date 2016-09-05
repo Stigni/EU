@@ -60,7 +60,9 @@ country_event = {
 			any_subject_country = { is_colonial_nation = yes }
 		}
 		any_neighbor_country = {
+			NOT = { war_with = ROOT }
 			any_subject_country = {
+				NOT = { war_with = ROOT }
 				is_colonial_nation = yes
 				capital_scope = {
 					OR = {
@@ -79,6 +81,7 @@ country_event = {
 	immediate = {
 		random_neighbor_country = {
 			limit = {
+				NOT = { war_with = ROOT }
 				any_subject_country = {
 					is_colonial_nation = yes
 					capital_scope = {
@@ -92,6 +95,7 @@ country_event = {
 			set_country_flag = buy_american_overlord
 			random_subject_country = {
 				limit = {
+					NOT = { war_with = ROOT }
 					is_colonial_nation = yes
 					capital_scope = {
 						OR = {
@@ -166,8 +170,15 @@ country_event = {
 			}
 		}
 		any_neighbor_country = {
+			NOT = { war_with = ROOT }
 			any_owned_province = {
 				trade_goods = iron
+			}
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = opinion_pleased
+				}
 			}
 		}
 	}
@@ -181,8 +192,15 @@ country_event = {
 		add_mil_power = 60
 		random_neighbor_country = {
 			limit = {
+				NOT = { war_with = ROOT }
 				any_owned_province = {
 					trade_goods = iron
+				}
+				NOT = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = opinion_pleased
+					}
 				}
 			}
 			add_opinion = {
@@ -215,8 +233,15 @@ country_event = {
 			}
 		}
 		any_neighbor_country = {
+			NOT = { war_with = ROOT }
 			any_owned_province = {
 				trade_goods = naval_supplies
+			}
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = opinion_pleased
+				}
 			}
 		}
 	}
@@ -230,8 +255,15 @@ country_event = {
 		add_dip_power = 60
 		random_neighbor_country = {
 			limit = {
+				NOT = { war_with = ROOT }
 				any_owned_province = {
 					trade_goods = naval_supplies
+				}
+				NOT = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = opinion_pleased
+					}
 				}
 			}
 			add_opinion = {
@@ -338,6 +370,7 @@ country_event = {
 			is_colonial_nation = yes
 			any_neighbor_country = {
 				is_colonial_nation = yes
+				NOT = { war_with = PREV }
 				colonial_parent = {
 					NOT = { tag = ROOT }
 				}
@@ -356,6 +389,7 @@ country_event = {
 				is_colonial_nation = yes
 				any_neighbor_country = {
 					is_colonial_nation = yes
+					NOT = { war_with = PREV }
 					colonial_parent = {
 						NOT = { tag = ROOT }
 					}
@@ -386,6 +420,7 @@ country_event = {
 				trade_goods = cocoa
 				value = yes
 			}
+			NOT = { war_with = ROOT }
 		}
 	}
 
@@ -434,6 +469,7 @@ country_event = {
 				trade_goods = coffee
 				value = yes
 			}
+			NOT = { war_with = ROOT }
 		}
 	}
 
@@ -481,6 +517,7 @@ country_event = {
 				trade_goods = tea
 				value = yes
 			}
+			NOT = { war_with = ROOT }
 		}
 	}
 

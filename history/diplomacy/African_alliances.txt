@@ -1,3 +1,62 @@
+#Maravi State System
+vassal = {
+	first = MRA
+	second = LDU
+	start_date = 1444.1.1
+	end_date = 1572.1.1
+}
+
+vassal = {
+	first = MRA
+	second = LDU
+	start_date = 1630.1.1
+	end_date = 1820.1.1
+}
+
+vassal = {
+	first = MRA
+	second = TBK
+	start_date = 1550.1.1
+	end_date = 1690.1.1
+}
+
+#Zimbabwe
+vassal = {
+	first = ZIM
+	second = RZW
+	start_date = 1440.1.1
+	end_date = 1650.1.1
+}
+
+protectorate = {
+	first = POR
+	second = ZIM
+	start_date = 1629.1.1
+	end_date = 1663.1.1
+}
+
+vassal = {
+	first = RZW
+	second = ZIM
+	start_date = 1663.1.1
+	end_date = 1692.1.1
+}
+
+protectorate = {
+	first = POR
+	second = ZIM
+	start_date = 1694.1.1
+	end_date = 1712.1.1
+}
+
+vassal = {
+	first = RZW
+	second = ZIM
+	start_date = 1712.1.1
+	end_date = 1720.1.1
+}
+
+#Hafsids - Fezzan
 guarantee = {
 	first = TUN
 	second = FZA
@@ -124,6 +183,13 @@ vassal = {
 }
 
 #Kongo
+
+vassal = {
+	first = KON
+	second = SYO
+	start_date = 1590.1.1
+	end_date = 1641.1.1
+}
 
 vassal = {
 	first = KON

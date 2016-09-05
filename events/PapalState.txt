@@ -11,6 +11,7 @@ country_event = {
 		normal_or_historical_nations = yes
 		religion = catholic
 		NOT = { tag = PAP }
+		NOT = { tag = ROM }
 		NOT = { exists = ITA }
 		NOT = { has_country_flag = no_support }
 	}

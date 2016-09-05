@@ -36,6 +36,7 @@ native_dip_ideas = {
 
 	travois = {
 		migration_cooldown = -0.25
+		auto_explore_adjacent_to_colony = yes
 	}
 	smoke_ceremonies = { 
 		diplomatic_reputation = 1

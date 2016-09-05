@@ -4,6 +4,8 @@
 ######################################################################
 totemism_rebels = {
 
+	color = { 230 175 175 }
+
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
 	religion = totemism
@@ -102,6 +104,11 @@ totemism_rebels = {
 	 	}
 		modifier = {
 			factor = 1.5
+			has_missionary = yes
+			religion = totemism
+		}
+		modifier = {
+			factor = 1.5
 			unrest = 2
 		}
 		modifier = {
@@ -124,29 +131,32 @@ totemism_rebels = {
 		}
  	}
 	siege_won_effect = {
-		if = {
-			limit = {
-				OR = {
-					religion = totemism
-					is_reformation_center = yes
-					owner = { religion = totemism }
+		custom_tooltip = religious_rebels_seige_effect_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						religion = totemism
+						is_reformation_center = yes
+						owner = { religion = totemism }
+					}
+				}
+				add_province_modifier = {
+					name = "religious_violence"
+					duration = 730
 				}
 			}
-			add_province_modifier = {
-				name = "religious_violence"
-				duration = 730
-			}
-		}
-		if = {
-			limit = {
-				NOT = { religion = totemism }
-				is_reformation_center = no
-				NOT = { owner = { religion = totemism } }
-			}
-			change_religion = totemism
-			add_province_modifier = {
-				name = "forced_conversion"
-				duration = 730
+			if = {
+				limit = {
+					NOT = { religion = totemism }
+					is_reformation_center = no
+					NOT = { owner = { religion = totemism } }
+				}
+				change_religion = totemism
+				add_province_modifier = {
+					name = "forced_conversion"
+					duration = 730
+				}
 			}
 		}
 	}

@@ -1,7 +1,8 @@
 government = tribal_kingdom
 primary_culture = kongolese
 religion = shamanism
-technology_group = sub_saharan
+technology_group = central_african
+unit_type = sub_saharan
 capital = 1170	# M'banza Kongo
 
 

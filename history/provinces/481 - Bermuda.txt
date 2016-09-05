@@ -10,8 +10,14 @@ native_size = 0
 native_ferocity = 0
 native_hostileness = 0
 
+
+
+
+1503.1.1 = { discovered_by = CAS } # Possibly later, Juan de Bermudez
+1516.1.23 = { discovered_by = SPA }
+
 1612.1.1 = {
-	
+	discovered_by = ENG
 	owner = ENG
 	controller = ENG
 	add_core = ENG

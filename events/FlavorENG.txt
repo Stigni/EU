@@ -201,7 +201,7 @@ country_event = {
 				limit = {
 					FRA = { NOT = { has_country_flag = had_end_of_HYW_france } }
 				}
-				FRA = { country_event = { id = flavor_fra.9104 } }
+				FRA = { country_event = { id = flavor_fra.9104 days = 1 } }
 			}
 		}
 	}
@@ -248,8 +248,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9105"
 	picture = REFORM_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9105 }
 		is_year = 1485
 		NOT = { is_year = 1509 }
 		OR = {
@@ -265,11 +266,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9105
+		months = 180
 	}
 
 	option = {			# Yes we need them
@@ -303,10 +300,11 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9106"
 	picture = COURT_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9106 }
 		is_year = 1485
-		NOT = { is_year = 1509 }
+		NOT = { is_year = 1550 }
 		OR = {
 			AND = {
 				tag = ENG
@@ -321,10 +319,6 @@ country_event = {
 		months = 600
 	}
 	
-	immediate = {
-		set_country_flag = ENG_had_event_9106
-	}
-
 	option = { # Give them our support
 		name = "flavor_eng.EVTOPTA9106"
 		ai_chance = { factor = 75 }
@@ -350,8 +344,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9107"
 	picture = LIBERUM_VETO_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9107 }
 		is_year = 1470
 		NOT = { is_year = 1600 }
 		OR = {
@@ -366,10 +361,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 390
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9107
 	}
 	
 	option = {				# Yes we need one
@@ -394,8 +385,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9108"
 	picture = REFORM_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9108 }
 		is_year = 1509
 		NOT = { is_year = 1521 }
 		OR = {
@@ -409,21 +401,13 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 120
 	}
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = ENG_had_event_9108
 			random_owned_province = {
 				limit = { is_capital = no }
-				set_province_flag = enclosure_movement
-			}
-			random_owned_province = {
-				limit = {
-					is_capital = no
-					NOT = { has_province_flag = enclosure_movement }
-				}
 				set_province_flag = enclosure_movement
 			}
 		}
@@ -433,7 +417,7 @@ country_event = {
 		name = "flavor_eng.EVTOPTA9108"
 		ai_chance = { factor = 75 }
 		capital_scope = {
-			add_base_tax = 1
+			add_base_tax = 2
 		}
 		add_stability = -1
 		every_owned_province = {
@@ -461,10 +445,11 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9109"
 	picture = POPE_PREACHING_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9109 }
 		is_year = 1530
-		NOT = { is_year = 1540 }
+		NOT = { is_year = 1560 }
 		OR = {
 			AND = {
 				tag = ENG
@@ -486,18 +471,14 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 300
+		months = 72
 	}
 
-	immediate = {
-		set_country_flag = ENG_had_event_9109
-	}
-	
 	option = {		# Take Command of the Church of England
 		name = "flavor_eng.EVTOPTA9109"
 		ai_chance = { factor = 75 }
 		change_religion = protestant
-		add_treasury = 250
+		add_years_of_income = 2
 		add_stability = -2
 	}
 	option = {		# Accept Rome's Supremacy, but ignore it on a personal level
@@ -521,9 +502,9 @@ country_event = {
 	picture = NAVAL_MILITARY_eventPicture
 
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9111 }
-		NOT = { has_country_flag = ENG_had_event_9112 }
-		is_year = 1530
+		NOT = { has_country_modifier = the_admirality }
+		NOT = { has_country_modifier = the_royal_army }
+		is_year = 1500
 		OR = {
 			AND = {
 				tag = ENG
@@ -534,7 +515,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2000
+		months = 1200
 	}
 
 	immediate = {
@@ -567,9 +548,9 @@ country_event = {
 	picture = MILITARY_CAMP_eventPicture
 
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9112 }
-		NOT = { has_country_flag = ENG_had_event_9111 }
-		is_year = 1530
+		NOT = { has_country_modifier = the_admirality }
+		NOT = { has_country_modifier = the_royal_army }
+		is_year = 1500
 		OR = {
 			AND = {
 				tag = ENG
@@ -580,7 +561,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2000
+		months = 1200
 	}
 
 	immediate = {
@@ -614,7 +595,10 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_country_flag = ENG_had_event_9113 }
-		is_year = 1500
+		is_year = 1530
+		NOT = {
+			is_year = 1560
+		}
 		has_regency = yes
 		OR = {
 			AND = {
@@ -627,7 +611,13 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2000
+		months = 360
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 80
+			}
+		}
 	}
 
 	immediate = {
@@ -655,9 +645,13 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9114"
 	picture = COURT_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9114 }
 		is_year = 1500
+		NOT = {
+			is_year = 1600
+		}
 		OR = {
 			AND = {
 				tag = ENG
@@ -666,7 +660,10 @@ country_event = {
 			tag = GBR
 		}
 		religion = protestant
-		marriage_with = SPA
+		OR = {
+			marriage_with = SPA
+			junior_union_with = SPA
+		}
 		SPA = {
 			religion = catholic
 		}
@@ -674,15 +671,21 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 600
-	}
-	
-	immediate = {
-		set_country_flag = ENG_had_event_9114
+		modifier = {
+			factor = 0.1
+			junior_union_with = SPA
+		}
 	}
 	
 	option = {			# Reinstate Papal power over Church of England
 		name = "flavor_eng.EVTOPTA9114"
-		ai_chance = { factor = 25 }
+		ai_chance = { 
+			factor = 15
+			modifier = {
+				factor = 20
+				junior_union_with = SPA
+			}
+		}
 		change_religion = catholic
 		SPA = {
 			add_opinion = {
@@ -704,7 +707,7 @@ country_event = {
 	}
 	option = {			# Confirm religious freedom for all
 		name = "flavor_eng.EVTOPTB9114"
-		ai_chance = { factor = 75 }
+		ai_chance = { factor = 85 }
 		SPA = {
 			add_opinion = {
 				who = ROOT
@@ -733,14 +736,19 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9115"
 	picture = MERCHANTS_TALKING_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9115 }
 		OR = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
 			}
 			tag = GBR
+		}
+		is_year = 1540
+		NOT = {
+			is_year = 1640
 		}
 		has_discovered = 1652	# White Sea
 		has_discovered = 313	# Archangelsk
@@ -758,10 +766,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 300
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9115
 	}
 	
 	option = {			# We will exploit this!
@@ -788,8 +792,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9116"
 	picture = ADVISOR_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9116 }
 		is_year = 1550
 		NOT = { is_year = 1590 }
 		OR = {
@@ -810,10 +815,6 @@ country_event = {
 		months = 300
 	}
 
-	immediate = {
-		set_country_flag = ENG_had_event_9116
-	}
-	
 	option = {			# An Excellent Minister!
 		name = "EXCELLENTMINISTER"
 		add_adm_power = 25
@@ -850,8 +851,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9117"
 	picture = ADVISOR_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9117 }
 		is_year = 1537
 		NOT = { is_year = 1579 }
 		OR = {
@@ -866,10 +868,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 300
-	}
-	
-	immediate = {
-		set_country_flag = ENG_had_event_9117
 	}
 	
 	option = {				# Reform
@@ -895,8 +893,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9118"
 	picture = ANGRY_MOB_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9118 }
 		is_year = 1500
 		NOT = { is_year = 1600 }
 		religion = protestant
@@ -914,11 +913,17 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2000
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9118
+		months = 1600
+		modifier = {
+			factor = 0.8
+			NOT = {
+				legitimacy = 90
+			}
+		}
+		modifier = {
+			factor = 0.8
+			has_regency = yes
+		}
 	}
 
 	option = {		# Keep Norfolk in the Tower and smash the rebels
@@ -1024,7 +1029,6 @@ country_event = {
 	picture = ECONOMY_eventPicture
 
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9119 }
 		is_year = 1500
 		NOT = { is_year = 1600 }
 		OR = {
@@ -1038,11 +1042,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2000
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9119
+		months = 800
 	}
 
 	option = {			# Expand Loan Market
@@ -1050,12 +1050,13 @@ country_event = {
 		ai_chance = { factor = 50 }
 		add_stability = 1
 		loan_size = 24
-		add_inflation = 3		
+		add_years_of_income = 0.5
+		add_inflation = 3
 	}
 	option = {			# Issue Strict Control
 		name = "flavor_eng.EVTOPTB9119"
 		ai_chance = { factor = 50 }
-		add_stability = 2
+		add_stability = 1
 		add_inflation = -3
 	}
 }
@@ -1066,9 +1067,10 @@ country_event = {
 	title = "flavor_eng.EVTNAME9121"
 	desc = "flavor_eng.EVTDESC9121"
 	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
 
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9121 }
 		is_year = 1500
 		NOT = { is_year = 1650 }
 		OR = {
@@ -1084,10 +1086,6 @@ country_event = {
 		months = 1000
 	}
 
-	immediate = {
-		set_country_flag = ENG_had_event_9121
-	}
-
 	option = {			# Cancel them!
 		name = "flavor_eng.EVTOPTA9121"
 		ai_chance = { factor = 75 }
@@ -1101,6 +1099,7 @@ country_event = {
 		name = "flavor_eng.EVTOPTB9121"
 		ai_chance = { factor = 25 }
 		add_treasury = 100
+		add_corruption = 0.5
 		add_country_modifier = {
 			name = mercantilism_modifier
 			duration = 1825
@@ -1115,8 +1114,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9122"
 	picture = ANGRY_MOB_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9122 }
 		is_year = 1570
 		NOT = { is_year = 1616 }
 		OR = {
@@ -1127,8 +1127,13 @@ country_event = {
 			tag = GBR
 		}
 		religion = protestant
-		ireland_area = {
-			owned_by = ROOT
+		OR = {
+			eastern_ireland_area = {
+				owned_by = ROOT
+			}
+			western_ireland_area = {
+				owned_by = ROOT
+			}
 		}
 	}
 
@@ -1136,14 +1141,15 @@ country_event = {
 		months = 300
 	}
 
-	immediate = {
-		set_country_flag = ENG_had_event_9122
-	}
-
 	option = {			# We are not amused!
 		name = "flavor_eng.EVTOPTA9122"
 		random_owned_province = {
-			limit = { area = ireland_area }
+			limit = {
+				OR = {
+					area = eastern_ireland_area
+					area = western_ireland_area
+				}
+			}
 			spawn_rebels = {
 				type = noble_rebels
 				size = 2
@@ -1160,8 +1166,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9123"
 	picture = REFORM_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9123 }
 		is_year = 1600
 		NOT = { is_year = 1700 }
 		OR = {
@@ -1175,12 +1182,21 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2000
+		months = 1800
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			num_of_loans = 6
+		}
 	}
 
 	immediate = {
 		hidden_effect = {
-			set_country_flag = ENG_had_event_9123
 			random_owned_province = {
 				limit = {
 					region = british_isles_region
@@ -1258,8 +1274,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9124"
 	picture = LIBERUM_VETO_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9124 }
 		is_year = 1600
 		NOT = { is_year = 1700 }
 		OR = {
@@ -1275,11 +1292,14 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 300
+		modifier = {
+			factor = 0.7
+			is_year = 1670
+		}
 	}
 
 	immediate = {
 		hidden_effect = {
-			set_country_flag = ENG_had_event_9124
 			random_owned_province = {
 				limit = {
 					region = british_isles_region
@@ -1357,8 +1377,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9127"
 	picture = SHIP_SAILING_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9127 }
 		is_year = 1600
 		NOT = { is_year = 1700 }
 		OR = {
@@ -1374,10 +1395,6 @@ country_event = {
 		months = 2000
 	}
 
-	immediate = {
-		set_country_flag = ENG_had_event_9127
-	}
-	
 	option = {			# Enact
 		name = "flavor_eng.EVTOPTA9127"
 		ai_chance = { factor = 75 }
@@ -1398,7 +1415,6 @@ country_event = {
 	picture = REFORM_eventPicture
 
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9129 }
 		is_year = 1600
 		NOT = { is_year = 1700 }
 		OR = {
@@ -1415,16 +1431,12 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2000
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9129
+		months = 1200
 	}
 
 	option = {			# Religious Freedom for All
 		name = "flavor_eng.EVTOPTA9129"
-		ai_chance = { factor = 45 }
+		ai_chance = { factor = 50 }
 		add_stability = -1
 		add_country_modifier = {
 			name = the_decree_of_indulgence
@@ -1433,7 +1445,7 @@ country_event = {
 	}
 	option = {			# Protestant Supremacy
 		name = "flavor_eng.EVTOPTB9129"
-		ai_chance = { factor = 45 }
+		ai_chance = { factor = 50 }
 		add_stability = -1
 		add_country_modifier = {
 			name = bill_of_test
@@ -1442,7 +1454,7 @@ country_event = {
 	}
 	option = {			# Catholic Supremacy
 		name = "flavor_eng.EVTOPTC9129"
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 0 }
 		change_religion = catholic
 		add_stability = -3
 	}
@@ -1455,8 +1467,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9134"
 	picture = ECONOMY_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9134 }
 		is_year = 1650
 		OR = {
 			AND = {
@@ -1468,16 +1481,12 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2000
+		months = 1200
 		
 		modifier = {
 			factor = 0.75
 			economic_ideas = 4		# National Bank
 		}
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9134
 	}
 
 	option = {			# National Loans at 500 ducats
@@ -1509,7 +1518,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2000
+		months = 1400
 	}
 
 	immediate = {
@@ -1638,8 +1647,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9141"
 	picture = NAVAL_MILITARY_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9141 }
 		is_year = 1700
 		NOT = { is_year = 1800 }
 		OR = {
@@ -1654,13 +1664,9 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2000
+		months = 1500
 	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9141
-	}
-
+	
 	option = {			# Use it as an excuse for War
 		name = "flavor_eng.EVTOPTA9141"
 		ai_chance = { factor = 75 }
@@ -1668,7 +1674,7 @@ country_event = {
 		add_casus_belli = {	
 			target = SPA
 			type = cb_insult
-			months = 12
+			months = 24
 		}
 		SPA = {
 			add_opinion = {
@@ -1706,7 +1712,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2000
+		months = 1400
 	}
 
 	immediate = {
@@ -1773,8 +1779,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9144"
 	picture = ADVISOR_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9144 }
 		is_year = 1735
 		NOT = { is_year = 1778 }
 		OR = {
@@ -1790,10 +1797,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 300
-	}
-
-	immediate = {
-		set_country_flag = ENG_had_event_9144
 	}
 	
 	option = {		# An Excellent Minister!
@@ -1896,8 +1899,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9193"
 	picture = DIPLOMACY_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9193 }
 		is_year = 1650
 		NOT = { is_year = 1700 }
 		OR = {
@@ -1928,13 +1932,9 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 600
+		months = 500
 	}
 
-	immediate = {
-		set_country_flag = ENG_had_event_9193
-	}
-	
 	option = {			# Accept the Agreement
 		name = "flavor_eng.EVTOPTA9193"
 		ai_chance = { factor = 75 }
@@ -1973,8 +1973,9 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9182"
 	picture = ASSASSINATION_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9182 }
 		is_year = 1600
 		NOT = { is_year = 1650 }
 		OR = {
@@ -2001,7 +2002,6 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_country_flag = ENG_had_event_9182
 			random_owned_province = {
 				limit = {
 					is_capital = no
@@ -2099,9 +2099,10 @@ country_event = {
 	title = "flavor_eng.EVTNAME9200"
 	desc = "flavor_eng.EVTDESC9200"
 	picture = ECONOMY_eventPicture
+
+	fire_only_once = yes
 	
 	trigger = {
-		NOT = { has_country_flag = ENG_had_event_9200 }
 		is_year = 1651
 		NOT = { is_year = 1670 }
 		OR = {
@@ -2115,10 +2116,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 300
-	}
-	
-	immediate = {
-		set_country_flag = ENG_had_event_9200
 	}
 
 	option = {				# Ok
@@ -2279,6 +2276,7 @@ country_event = {
 		NOT = { has_country_flag = ENG_had_event_9205 }
 		is_year = 1593
 		NOT = { is_year = 1616 }
+		NOT = { advisor_exists = 245 }
 		OR = {
 			AND = {
 				tag = ENG
@@ -2298,7 +2296,13 @@ country_event = {
 
 	option = {				# Ok
 		name = "GLORYTOOURNATION"
-		add_prestige = 2
+		define_advisor = {
+			name = "William Shakespeare" #The greatest writer of all   
+			location = 236 #London
+			skill = 2
+			type = artist
+			discount = yes
+		}
 	}
 }
 
@@ -2395,12 +2399,12 @@ country_event = {
 		add_stability = 1
 		define_heir = {
 			claim = 100
-			name = "Henry"
+			name = "Henry #0"
 			dynasty = "Tudor"
 			adm = 3
 			dip = 4
 			mil = 2
-			age = 28
+			age = 24
 		}
 	}
 }

@@ -1,5 +1,5 @@
 government = despotic_monarchy
-primary_culture = norwegian
+primary_culture = jan_mayenese
 religion = animism
 technology_group = western
 capital = 17 #Akershus

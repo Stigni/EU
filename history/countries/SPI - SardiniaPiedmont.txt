@@ -2,7 +2,7 @@ government = despotic_monarchy
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = lombard
+primary_culture = piedmontese
 capital = 103 # Piedomont
 
 

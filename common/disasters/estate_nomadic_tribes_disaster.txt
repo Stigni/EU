@@ -26,6 +26,10 @@ estate_nomadic_tribes_disaster = {
 		}
 	}
 	
+	down_progress = {
+		factor = 1
+	}
+	
 	progress = {
 		modifier = {
 			factor = 1

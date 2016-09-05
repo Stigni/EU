@@ -4,6 +4,8 @@ portugal_discovers_the_west_african_coast = {
 	
 	category = DIP
 	
+	ai_mission = yes
+	
 	allow = {
 		normal_or_historical_nations = yes
 		tag = POR
@@ -12,8 +14,8 @@ portugal_discovers_the_west_african_coast = {
 			num_of_explorers = 1
 		}
 		num_of_ports = 1
-		NOT = { west_africa_region = { has_discovered =  ROOT } }
-		west_africa_region = { range = ROOT }
+		NOT = { west_africa_coast_area = { has_discovered =  ROOT } }
+		west_africa_coast_area = { range = ROOT }
 	}
 	abort = {
 		OR = {
@@ -25,7 +27,7 @@ portugal_discovers_the_west_african_coast = {
 		}
 	}
 	success = {
-		west_africa_region = {
+		west_africa_coast_area = {
 			has_discovered = ROOT
 		}
 	}
@@ -57,11 +59,11 @@ portuguese_colony_in_west_africa = {
 		}
 		num_of_ports = 1
 		num_of_colonists = 1
-		west_africa_region = {
+		guinea_region = {
 			has_discovered = ROOT
 			is_empty = yes
 		}
-		NOT = { west_africa_region = { owned_by = ROOT } }
+		NOT = { guinea_region = { owned_by = ROOT } }
 		NOT = { has_country_modifier = colonial_enthusiasm }
 	}
 	abort = {
@@ -72,13 +74,16 @@ portuguese_colony_in_west_africa = {
 			}
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { west_africa_region = { owned_by = ROOT } }
-				NOT = { west_africa_region = { is_empty = yes } }
+				NOT = { guinea_region = { owned_by = ROOT } }
+				NOT = { guinea_region = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		west_africa_region = { owned_by = ROOT }
+		guinea_region = {
+			owned_by = ROOT
+			colonysize = 400
+		}
 	}
 	chance = {
 		factor = 3000
@@ -381,7 +386,10 @@ portuguese_brazil = {
 		}
 	}
 	success = {
-		brazil_region = { owned_by = ROOT }
+		brazil_region = {
+			owned_by = ROOT
+			colonysize = 400
+		}
 	}
 	chance = {
 		factor = 3000
@@ -530,7 +538,7 @@ portugal_discovers_india = {
 			num_of_explorers = 1
 		}
 		num_of_ports = 1
-		west_africa_region = { has_discovered = ROOT }
+		niger_region = { has_discovered = ROOT }
 		NOT = { bengal_region = { has_discovered = ROOT } }
 		NOT = { west_india_region = { has_discovered = ROOT } }
 		NOT = { coromandel_region = { has_discovered = ROOT } }
@@ -595,9 +603,9 @@ portugal_discovers_indonesia = {
 			num_of_explorers = 1
 		}
 		num_of_ports = 1
-		west_africa_region = { has_discovered = ROOT }
-		NOT = { indonesia_region = { has_discovered = ROOT } }
-		indonesia_region = { range = ROOT }
+		niger_region = { has_discovered = ROOT }
+		NOT = { malaya_region = { has_discovered = ROOT } }
+		malaya_region = { range = ROOT }
 	}
 	abort = {
 		OR = {
@@ -609,7 +617,7 @@ portugal_discovers_indonesia = {
 		}
 	}
 	success = {
-		indonesia_region = {
+		malaya_region = {
 			has_discovered = ROOT
 		}
 	}
@@ -641,7 +649,7 @@ portuguese_colony_in_indonesia = {
 	category = MIL
 	
 	target_provinces = {
-		region = indonesia_region
+		region = malaya_region
 		has_discovered = ROOT
 		range = ROOT
 		has_port = yes
@@ -651,18 +659,22 @@ portuguese_colony_in_indonesia = {
 		normal_or_historical_nations = yes
 		always = no #replaced by general mission to do the same thing.
 		tag = POR
+		OR = {
+			ai = no
+			is_year = 1600
+		}
 		is_subject = no
 		has_idea = quest_for_the_new_world
 		num_of_ports = 1
 		num_of_colonists = 1
-		indonesia_region = {
+		malaya_region = {
 			has_discovered = ROOT
 			range = ROOT
 			has_port = yes
 			owner = { NOT = { alliance_with = ROOT } }
 		}
 		NOT = {
-			indonesia_region = { 
+			malaya_region = { 
 				owned_by = ROOT 
 			}
 		}
@@ -676,13 +688,13 @@ portuguese_colony_in_indonesia = {
 			}
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { indonesia_region = { is_empty = yes } }
-				NOT = { indonesia_region = { owned_by = ROOT } }
+				NOT = { malaya_region = { is_empty = yes } }
+				NOT = { malaya_region = { owned_by = ROOT } }
 			}
 		}
 	}
 	success = {
-		indonesia_region = { owned_by = ROOT }
+		malaya_region = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 1000
@@ -731,7 +743,11 @@ establish_trade_in_indonesian_cot_por = {
 	allow = {
 		normal_or_historical_nations = yes
 		tag = POR
-		indonesia_region = {
+		OR = {
+			ai = no
+			is_year = 1600
+		}
+		malaya_region = {
 			has_discovered = ROOT
 		}
 		NOT = {
@@ -784,7 +800,7 @@ portugal_discovers_the_far_east = {
 			num_of_explorers = 1
 		}
 		num_of_ports = 1
-		west_africa_region = { has_discovered = ROOT }
+		niger_region = { has_discovered = ROOT }
 		bengal_region = { has_discovered = ROOT }
 		NOT = { japan_region = { has_discovered = ROOT } }
 		NOT = { south_china_region = { has_discovered = ROOT } }
@@ -818,5 +834,607 @@ portugal_discovers_the_far_east = {
 	effect = {
 		add_prestige = 10
 		add_dip_power = 50
+	}
+}
+
+
+portugal_discovers_central_africa = {
+	type = country
+	
+	category = DIP
+	
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = POR
+		OR = {
+			has_idea = quest_for_the_new_world
+			num_of_explorers = 1
+		}
+		num_of_ports = 1
+		NOT = {
+			central_africa_region = { 
+				has_discovered =  ROOT 
+			}
+		}
+		central_africa_region = { 
+			range = ROOT
+		}
+	}
+	
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { has_idea = quest_for_the_new_world }
+				NOT = { num_of_explorers = 1 }
+			}
+		}
+	}
+	
+	success = {
+		central_africa_region = {
+			has_discovered = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			num_of_explorers = 1
+		}
+	}
+	
+	effect = {
+		add_dip_power = 25
+	}
+}
+
+portugal_colonizes_central_africa = {
+	
+	type = country
+	
+	category = DIP
+	
+	target_provinces = {
+		region = central_africa_region
+		has_port = yes
+		is_empty = yes
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = POR
+		OR = {
+			num_of_colonists = 1
+		}
+		OR = {
+			ai = no
+			is_year = 1550
+		}
+		num_of_ports = 1
+		central_africa_region = {
+			has_discovered = ROOT
+			is_empty = yes
+		}
+		NOT = {
+			any_owned_province = {
+				region = central_africa_region
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			NOT = { num_of_colonists = 1 }
+		}
+	}
+	success = {
+		central_africa_region = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 0.5
+			south_africa_region = {
+				range = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "sea_route_to_india"
+			duration = 3650
+		}
+	}
+}
+
+
+portugal_rounds_cape_of_good_hope = {
+	type = country
+	
+	category = DIP
+	
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = POR
+		OR = {
+			has_idea = quest_for_the_new_world
+			num_of_explorers = 1
+		}
+		num_of_ports = 1
+		NOT = { 
+			south_africa_region = { 
+				has_discovered =  ROOT 
+			}
+		}
+		south_africa_region = { 
+			range = ROOT
+		}
+	}
+	
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { has_idea = quest_for_the_new_world }
+				NOT = { num_of_explorers = 1 }
+			}
+		}
+	}
+	
+	success = {
+		south_africa_region = {
+			has_discovered = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			num_of_explorers = 1
+		}
+	}
+	
+	effect = {
+		add_dip_power = 25
+	}
+}
+
+
+portugal_trading_post_in_south_africa = {
+	type = country
+	
+	category = MIL
+	
+	target_provinces = {
+		region = south_africa_region
+		has_port = yes
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = POR
+		OR = {
+			num_of_colonists = 1
+		}
+		OR = {
+			ai = no
+			is_year = 1550
+		}
+		num_of_ports = 1
+		south_africa_region = {
+			has_discovered = ROOT
+			is_empty = yes
+		}
+		NOT = {
+			any_owned_province = {
+				region = south_africa_region
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			NOT = { num_of_colonists = 1 }
+		}
+	}
+	success = {
+		south_africa_region = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 0.5
+			east_africa_region =  {
+				range = ROOT
+			}
+		}
+	}
+	
+	effect = {
+		add_country_modifier = {
+			name = sea_route_to_india
+			duration = 3650
+		}
+	}
+}
+
+
+portugal_explore_east_africa = {
+	type = country
+	
+	category = DIP
+	
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = POR
+		OR = {
+			has_idea = quest_for_the_new_world
+			num_of_explorers = 1
+		}
+		num_of_ports = 1
+		NOT = { 
+			east_africa_region = { 
+				has_discovered =  ROOT 
+			}
+		}
+		east_africa_region = { 
+			range = ROOT
+		}
+	}
+	
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { has_idea = quest_for_the_new_world }
+				NOT = { num_of_explorers = 1 }
+			}
+		}
+	}
+	
+	success = {
+		east_africa_region = {
+			has_discovered = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			num_of_explorers = 1
+		}
+	}
+	
+	effect = {
+		add_dip_power = 25
+	}
+}
+
+portugal_establish_naval_base_mozambique = {
+	
+	type = country
+	
+	category = MIL
+	
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			area = mozambique_area
+			area = quelimane_area
+		}
+		has_port = yes
+		is_empty = no
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = POR
+		num_of_ports = 1
+		OR = {
+			ai = no
+			is_year = 1575
+		}
+		central_africa_region = {
+			has_discovered = ROOT
+		}
+		NOT = {
+			any_owned_province = {
+				OR = {
+					area = mozambique_area
+					area = quelimane_area
+				}
+			}
+		}
+	}
+	
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			NOT = { 
+				num_of_colonists = 1
+			}
+		}
+	}
+	
+	immediate = {
+		random_target_province = {
+			add_claim = ROOT
+		}
+	}
+	
+	success = {
+		any_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			NOT = {
+				west_india_region = {
+					range = ROOT
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			horn_of_africa_region = {
+				owned_by = ROOT
+			}
+		}
+	}
+	
+	effect = {
+		add_country_modifier = {
+			name = sea_route_to_india
+			duration = 3650
+		}
+	}
+}
+
+
+portugal_establish_naval_base_zanzibar = {
+	
+	type = country
+	
+	category = MIL
+	
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			area = central_swahili_coast_area
+			area = northern_swahili_coast_area
+		}
+		has_port = yes
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = POR
+		num_of_ports = 1
+		OR = {
+			ai = no
+			is_year = 1575
+		}
+		central_africa_region = {
+			has_discovered = ROOT
+		}
+		NOT = {
+			any_owned_province = {
+				OR = {
+					area = central_swahili_coast_area
+					area = northern_swahili_coast_area
+				}
+			}
+		}
+	}
+	
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			NOT = { 
+				num_of_colonists = 1
+			}
+		}
+	}
+	
+	immediate = {
+		random_target_province = {
+			add_claim = ROOT
+		}
+	}
+	
+	success = {
+		any_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+			factor = 2000
+			modifier = {
+				factor = 2
+				NOT = {
+					west_india_region = {
+						range = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				horn_of_africa_region = {
+					owned_by = ROOT
+				}
+			}
+	}
+	
+	effect = {
+		add_country_modifier = {
+			name = sea_route_to_india
+			duration = 3650
+		}
+	}
+}
+
+
+
+portugal_explore_horn_of_africa = {
+	type = country
+	
+	category = DIP
+	
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = POR
+		OR = {
+			has_idea = quest_for_the_new_world
+			num_of_explorers = 1
+		}
+		num_of_ports = 1
+		NOT = { mogadishu_area = { has_discovered = ROOT } }
+		NOT = { majarteen_area = { has_discovered = ROOT } }
+		NOT = { somaliland_area = { has_discovered = ROOT } }
+		OR = {
+			mogadishu_area = { range = ROOT }
+			majarteen_area = { range = ROOT }
+			somaliland_area = { range = ROOT }
+		}
+	}
+	
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { has_idea = quest_for_the_new_world }
+				NOT = { num_of_explorers = 1 }
+			}
+		}
+	}
+	
+	success = {
+		OR = {
+			mogadishu_area = { has_discovered = ROOT }
+			majarteen_area = { has_discovered = ROOT }
+			somaliland_area = { has_discovered = ROOT }
+		}
+	}
+	
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			num_of_explorers = 1
+		}
+	}
+	
+	effect = {
+		add_dip_power = 25
+	}
+}
+
+
+portugal_establish_naval_base_horn_of_africa = {
+	
+	type = country
+	
+	category = MIL
+	
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			area = mogadishu_area
+			area = majarteen_area
+			area = somaliland_area
+		}
+		has_port = yes
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = POR
+		num_of_ports = 1
+		OR = {
+			ai = no
+			is_year = 1575
+		}
+		OR = {
+			mogadishu_area = { has_discovered = ROOT }
+			majarteen_area = { has_discovered = ROOT }
+			somaliland_area = { has_discovered = ROOT }
+		}
+		NOT = {
+			any_owned_province = {
+				OR = {
+					area = mogadishu_area
+					area = majarteen_area
+					area = somaliland_area
+				}
+			}
+		}
+	}
+	
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			NOT = { 
+				num_of_colonists = 1
+			}
+		}
+	}
+	
+	immediate = {
+		random_target_province = {
+			add_claim = ROOT
+		}
+	}
+	
+	success = {
+		any_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+			factor = 2000
+			modifier = {
+				factor = 2
+				NOT = {
+					west_india_region = {
+						range = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				any_owned_province = {
+					region = east_africa_region
+				}
+			}
+	}
+	
+	effect = {
+		add_country_modifier = {
+			name = sea_route_to_india
+			duration = 3650
+		}
 	}
 }

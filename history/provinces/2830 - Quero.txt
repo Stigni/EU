@@ -13,12 +13,18 @@ base_manpower = 1
 is_city = yes
 add_core = CSU
 
+
+
+discovered_by = south_american
+discovered_by = andean
+
+
 1467.1.1 = {
 	owner = INC
 	controller = INC
 	add_core = INC
 }
-1533.8.29 = {	
+1533.8.29 = {	discovered_by = SPA
 	owner = SPA
 	controller = SPA
 	add_core = SPA

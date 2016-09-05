@@ -16,11 +16,13 @@ migrate_to_neighboring = {
 		}
 	}
 	abort = {
-		is_empty = no
-		FROM = {
-			NOT = { government = native_council }
-			num_of_cities = 2
-			num_of_colonies = 1
+		OR = {
+			is_empty = no
+			FROM = {
+				NOT = { government = native_council }
+				num_of_cities = 2
+				num_of_colonies = 1
+			}
 		}
 	}
 	success = {

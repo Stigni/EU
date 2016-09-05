@@ -641,3 +641,71 @@ country_event = {
 		add_legitimacy = -20
 	}
 }
+
+# Foreign country gains claim on throne
+country_event = {
+	id = elective_monarchy.18
+	title = elective_monarchy.18.t
+	desc = elective_monarchy.18.d
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_dlc = "Res Publica"
+		government = elective_monarchy
+		ruler_is_foreigner = yes
+		any_known_country = {
+			dynasty = ROOT
+			government = monarchy
+			is_subject = no
+			is_at_war = no
+			has_regency = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
+
+	option = {
+		name = elective_monarchy.18.a
+		random_known_country = {
+			limit = {
+				dynasty = ROOT
+				government = monarchy
+				is_subject = no
+				is_at_war = no
+				has_regency = no
+			}
+			tooltip = {
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 120
+					target = ROOT
+				}
+			}
+			hidden_effect = {
+				country_event = { id = elective_monarchy.19 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = elective_monarchy.19
+	title = elective_monarchy.19.t
+	desc = elective_monarchy.19.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = elective_monarchy.19.a
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 120
+			target = FROM
+		}
+	}
+}

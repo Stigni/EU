@@ -806,7 +806,7 @@ country_event = {
 				name = "eth_oromo_migration"
 				duration = 3650
 			}
-			change_religion = animism
+			change_religion = shamanism
 			set_province_flag = eth_starting_oromo_provinces
 		}
 		every_country = {
@@ -849,7 +849,7 @@ country_event = {
 					name = "eth_oromo_migration"
 					duration = 3650
 				}
-				change_religion = animism
+				change_religion = shamanism
 			}
 		}
 		every_owned_province = {
@@ -889,7 +889,7 @@ province_event = {
 			name = "eth_oromo_migration"
 			duration = 3650
 		}
-		change_religion = animism
+		change_religion = shamanism
 	}
 }
 
@@ -922,7 +922,7 @@ country_event = {
 					not = { has_country_flag = eth_end_oromo }
 					any_owned_province = { has_province_modifier = eth_oromo_migration }
 				}
-				country_event = { id = flavor_eth.25 }	#Info Event
+				country_event = { id = flavor_eth.25 days = 1 }	#Info Event
 			}
 		}
 	}

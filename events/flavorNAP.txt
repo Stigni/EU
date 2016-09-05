@@ -216,7 +216,8 @@ country_event = {
 		name = flavor_nap.5.b
 		ai_chance = { factor = 90 }
 		add_legitimacy = -25
-		add_republican_tradition = -0.33
+		add_republican_tradition = -0.25
+		add_corruption = 1
 		121 = { particularist_rebels = 1 }
 
 	}

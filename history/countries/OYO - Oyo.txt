@@ -1,7 +1,7 @@
 government = tribal_despotism
 technology_group = sub_saharan
 primary_culture = yorumba
-religion = animism
+religion = shamanism #Fetishism
 capital = 1146	# Ife Ile
 
 

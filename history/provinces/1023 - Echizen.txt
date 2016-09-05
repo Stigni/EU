@@ -12,12 +12,16 @@ base_production = 4
 base_manpower = 2
 is_city = yes
 add_core = SBA
+
+
+
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA
 discovered_by = OIR
 discovered_by = QNG
 discovered_by = ANU
+
 
 1460.1.1 = { add_core = ASA }
 1471.7.1 = { owner = ASA controller = ASA }

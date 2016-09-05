@@ -1,6 +1,7 @@
 counts_feud = {
 	potential = {
 		tag = DAN
+		government = monarchy
 		normal_or_historical_nations = yes
 		is_subject = no
 		uses_doom = no

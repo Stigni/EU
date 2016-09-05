@@ -14,20 +14,26 @@ conquer_ireland = {
 		is_subject = no
 		is_year = 1536
 		owns = 373
-		NOT = { owns = 372 }	# Ulster
-		NOT = { owns = 374 }	# Leinster
-		NOT = { owns = 375 }	# Munster
-		NOT = { owns = 376 }	# Connaught
+		eastern_ireland_area = {
+			NOT = { owned_by = ROOT }
+		}
+		western_ireland_area = {
+			NOT = { owned_by = ROOT }
+		}
 		NOT = { has_country_modifier = british_ambition }
 	}
 	abort = {
 		is_subject = yes
 	}
 	success = {
-		owns = 372
-		owns = 374
-		owns = 375
-		owns = 376
+		eastern_ireland_area = {
+			type = all
+			owned_by = ROOT
+		}
+		western_ireland_area = {
+			type = all
+			owned_by = ROOT
+		}
 	}
 	chance = {
 		factor = 3000
@@ -41,16 +47,20 @@ conquer_ireland = {
 		}
 	}
 	immediate = {
-		add_claim = 372
-		add_claim = 374
-		add_claim = 375
-		add_claim = 376
+		eastern_ireland_area = {
+			add_claim = ROOT
+		}
+		western_ireland_area = {
+			add_claim = ROOT
+		}
 	}
 	abort_effect = {
-		remove_claim = 372
-		remove_claim = 374
-		remove_claim = 375
-		remove_claim = 376
+		eastern_ireland_area = {
+			remove_claim = ROOT
+		}
+		western_ireland_area = {
+			remove_claim = ROOT
+		}
 	}
 	effect = {
 		add_country_modifier = {
@@ -158,7 +168,7 @@ vassalize_scotland = {
 		SCO = {
 			is_subject = no
 			NOT = { num_of_cities = ROOT }
-			NOT = { total_development = 50 }
+			NOT = { total_development = 71 }
 			NOT = { government = imperial_city }
 		}
 	}
@@ -309,7 +319,10 @@ english_colony_in_north_america = {
 		}
 	}
 	success = {
-		northeast_america_region = { owned_by = ROOT }
+		northeast_america_region = {
+			owned_by = ROOT
+			colonysize = 400
+		}
 	}
 	chance = {
 		factor = 2000
@@ -426,7 +439,10 @@ english_colony_in_the_carribean = {
 		}
 	}
 	success = {
-		carribeans_region = { owned_by = ROOT }
+		carribeans_region = {
+			owned_by = ROOT
+			colonysize = 400
+		}
 	}
 	chance = {
 		factor = 2000
@@ -611,7 +627,10 @@ english_colony_in_australia = {
 		}
 	}
 	success = {
-		australia_region = { owned_by = ROOT }
+		australia_region = {
+			owned_by = ROOT
+			colonysize = 400
+		}
 	}
 	chance = {
 		factor = 2000

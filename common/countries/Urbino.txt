@@ -81,7 +81,7 @@ leader_names = {
 	Borghese Borgia Braschi "di Campofregoso" Carafa Castagna
 	Cervini Chiaramonti Chigi Colonna Condulmeri Conti Corsini Cybo
 	Doria-Landi Doria-Pamphili "di Farnese" "Gaetani dell'Aquila"
-	Gangagnelli Ghislieri Gonzaga Lambertini Lante Ludovisi "di Medici"
+	Gangagnelli Ghislieri Gonzaga Lambertini Lante Ludovisi "de' Medici"
 	Melzi "Melzi de Rimini" "del Monte" "di Montefeltro" Odescalchi Orsini
 	Ottoboni Pallavicino Pamphili Parentucelli Peretti Piccolomini Pignatelli
 	Prignano Rezzonico Rospigliosi "della Rovere" Sfondrati "da Varano"

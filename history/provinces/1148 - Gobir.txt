@@ -12,7 +12,11 @@ trade_goods = iron
 hre = no
 base_tax = 3 
 base_production = 3
+
+
+
 discovered_by = sub_saharan
+
 
 1514.1.1 = { owner = SON controller = SON add_core = SON } #Askiya Muhammad of Songhai seizes control 
 1515.1.1 = { owner = HAU controller = HAU add_core = HAU} #Rise Of Kebbi to replace Songhai rule in the region

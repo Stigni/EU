@@ -458,6 +458,7 @@ country_event = {
 		has_heir = yes
 		heir_age = 15
 		is_lesser_in_union = no
+		government = monarchy
 		NOT = { government = elective_monarchy }
 	}
 	
@@ -679,6 +680,7 @@ country_event = {
 		any_country = {
 			government = monarchy
 			marriage_with = ROOT
+			NOT = { dynasty = ROOT }
 			has_heir = no
 			is_lesser_in_union = no
 		}
@@ -701,6 +703,7 @@ country_event = {
 			limit = {
 				government = monarchy
 				marriage_with = ROOT
+				NOT = { dynasty = ROOT }
 				has_heir = no
 				is_lesser_in_union = no
 			}
@@ -718,6 +721,7 @@ country_event = {
 			limit = {
 				government = monarchy
 				marriage_with = ROOT
+				NOT = { dynasty = ROOT }
 				has_heir = no
 				is_lesser_in_union = no
 			}

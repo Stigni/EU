@@ -13,7 +13,16 @@ base_manpower = 2
 is_city = yes
 add_core = ARK
 
+
 1500.1.1 = { religion = sunni  }
+
+discovered_by = indian
+discovered_by = chinese
+discovered_by = muslim
+discovered_by = ottoman
+
+1500.1.1 = { religion = sunni discovered_by = POR }
+
 1785.1.2 = {
 	owner = TAU
 	controller = TAU

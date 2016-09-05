@@ -534,7 +534,6 @@
  HRE_VOTE_ELECTOR_YOU: "Nous"
  HRE_CAST_VOTE_DESC: "Sélectionnez la personne que vous souhaitez soutenir au titre d'empereur!"
  SUPPORT_EFFICIENCY: "Efficacité du soutien"
- REBEL_SUPPORT_EFFICIENCY_DESC: "L'efficacité du soutien aux rebelles détermine la somme mise à leur disposition pour les soutenir."
  SLIDER_VALUE: "Valeur du curseur"
  GAME_BOOT_IN: "La partie se lancera dans $MIN$ minutes."
  GAME_START_IN: "La partie commencera dans $MIN$ minutes."

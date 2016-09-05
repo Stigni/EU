@@ -15,6 +15,28 @@ treason_act = {
 		global_unrest = -2
 	}
 
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_idea_group = spy_ideas
+			}
+		}
+		modifier = {
+			factor = 2
+			average_unrest = 4
+		}
+		modifier = {
+			factor = 2
+			average_unrest = 6
+		}
+		modifier = {
+			factor = 2
+			average_unrest = 8
+		}
+	}
+	
 	ai_will_do = {
 		factor = 1
 	}

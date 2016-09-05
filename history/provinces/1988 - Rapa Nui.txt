@@ -13,11 +13,11 @@ native_ferocity = 1
 native_hostileness = 1
 
 1722.4.5 = {
-		# Jacob Roggeveen
+	discovered_by = NED	# Jacob Roggeveen
 }
 1770.11.15 = {
-		# The ships San Lorenzo and Santa Rosalia
+	discovered_by = SPA	# The ships San Lorenzo and Santa Rosalia
 }
 1774.1.1 = {
-		# James Cook, date unknown
+	discovered_by = GBR	# James Cook, date unknown
 }

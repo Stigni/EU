@@ -26,13 +26,13 @@ country_event = {
 		has_dlc = "Common Sense"
 		has_regency = no
 		OR = {
-			has_advisor = philosopher
-			has_advisor = natural_scientist
-			has_advisor = artist
-			has_advisor = treasurer
-			has_advisor = theologian
-			has_advisor = master_of_mint
-			has_advisor = inquisitor
+			advisor = philosopher
+			advisor = natural_scientist
+			advisor = artist
+			advisor = treasurer
+			advisor = theologian
+			advisor = master_of_mint
+			advisor = inquisitor
 		}
 		NOT = { karma = -50 }
 	}
@@ -54,43 +54,43 @@ country_event = {
 		add_karma = -15
 		if = {
 			limit = {
-				has_advisor = philosopher
+				advisor = philosopher
 			}
 			kill_advisor = philosopher
 		}
 		if = {
 			limit = {
-				has_advisor = natural_scientist
+				advisor = natural_scientist
 			}
 			kill_advisor = natural_scientist
 		}
 		if = {
 			limit = {
-				has_advisor = artist
+				advisor = artist
 			}
 			kill_advisor = artist
 		}
 		if = {
 			limit = {
-				has_advisor = treasurer
+				advisor = treasurer
 			}
 			kill_advisor = treasurer
 		}
 		if = {
 			limit = {
-				has_advisor = theologian
+				advisor = theologian
 			}
 			kill_advisor = theologian
 		}
 		if = {
 			limit = {
-				has_advisor = master_of_mint
+				advisor = master_of_mint
 			}
 			kill_advisor = master_of_mint
 		}
 		if = {
 			limit = {
-				has_advisor = inquisitor
+				advisor = inquisitor
 			}
 			kill_advisor = inquisitor
 		}
@@ -139,7 +139,7 @@ province_event = {
 	option = {
 		name = buddhism_events.2.a #We must do all we can!
 		ai_chance = {
-			factor = 9
+			factor = 90
 			modifier = {
 				factor = 0
 				NOT = { owner = { years_of_income = 0.1 } }
@@ -157,7 +157,7 @@ province_event = {
 			owner = {
 				add_estate_loyalty = {
 					estate = estate_church
-					loyalty = 5
+					loyalty = 10
 				}
 			}
 		}
@@ -165,7 +165,20 @@ province_event = {
 	option = {
 		name = buddhism_events.2.b #Perhaps now the land will come to better use.
 		ai_chance = {
-			factor = 1
+			factor = 10
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				owner = { has_estate = estate_church }
+				owner = {
+					NOT = {
+						estate_loyalty = {
+							estate = estate_church
+							loyalty = 40
+						}
+					}
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -175,7 +188,7 @@ province_event = {
 			owner = {
 				add_estate_loyalty = {
 					estate = estate_church
-					loyalty = -5
+					loyalty = -10
 				}
 			}
 		}
@@ -557,7 +570,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_church
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		add_karma = 10
@@ -571,6 +584,17 @@ country_event = {
 				factor = 2
 				karma = 50
 			}
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -579,7 +603,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_church
-				loyalty = -5
+				loyalty = -10
 			}
 		}
 		add_karma = -10
@@ -1326,7 +1350,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_church
-				loyalty = 5
+				loyalty = 10
 			}
 		}
 		add_karma = -10
@@ -1342,6 +1366,17 @@ country_event = {
 				factor = 2
 				karma = 75
 			}
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -1350,7 +1385,7 @@ country_event = {
 			}
 			add_estate_loyalty = {
 				estate = estate_church
-				loyalty = -5
+				loyalty = -10
 			}
 		}
 		add_karma = -15
@@ -1416,6 +1451,17 @@ province_event = {
 				factor = 2
 				owner = { NOT = { karma = -50 } }
 			}
+			modifier = {
+				factor = 0
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
 		}
 		owner = { add_karma = 10 }
 		if = {
@@ -1428,7 +1474,7 @@ province_event = {
 			owner = {
 				add_estate_loyalty = {
 					estate = estate_church
-					loyalty = -5
+					loyalty = -10
 				}
 			}
 		}
@@ -1458,7 +1504,7 @@ province_event = {
 			owner = {
 				add_estate_loyalty = {
 					estate = estate_church
-					loyalty = 5
+					loyalty = 10
 				}
 			}
 		}
@@ -1981,6 +2027,17 @@ country_event = {
 				factor = 2
 				karma = 50
 			}
+			modifier = {
+				factor = 0.25
+				has_dlc = "The Cossacks"
+				has_estate = estate_nobles
+				NOT = {
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 40
+					}
+				}
+			}
 		}
 		add_karma = -10
 		if = {
@@ -1993,7 +2050,7 @@ country_event = {
 			owner = {
 				add_estate_loyalty = {
 					estate = estate_church
-					loyalty = 5
+					loyalty = 10
 				}
 			}
 		}
@@ -2007,7 +2064,7 @@ country_event = {
 			owner = {
 				add_estate_loyalty = {
 					estate = estate_nobles
-					loyalty = -5
+					loyalty = -10
 				}
 			}
 		}
@@ -2040,6 +2097,17 @@ country_event = {
 				factor = 2
 				karma = 50
 			}
+			modifier = {
+				factor = 0.25
+				has_dlc = "The Cossacks"
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
 		}
 		add_karma = -10
 		if = {
@@ -2052,7 +2120,7 @@ country_event = {
 			owner = {
 				add_estate_loyalty = {
 					estate = estate_nobles
-					loyalty = 5
+					loyalty = 10
 				}
 			}
 		}
@@ -2066,7 +2134,7 @@ country_event = {
 			owner = {
 				add_estate_loyalty = {
 					estate = estate_church
-					loyalty = -5
+					loyalty = -10
 				}
 			}
 		}
@@ -2104,6 +2172,7 @@ country_event = {
 		has_dlc = "Common Sense"
 		religion = tengri_pagan_reformed
 		has_regency = no
+		NOT = { has_dlc = "The Cossacks" } #Meaningless for countries with Syncretic Faith.
 		NOT = { has_country_flag = met_lama }
 		OR = {
 			tibet_region = {
@@ -2349,6 +2418,10 @@ country_event = {
 	trigger = {
 		has_dlc = "Common Sense"
 		religion_group = pagan
+		OR = {
+			NOT = { has_dlc = "The Cossacks" }
+			NOT = { religion = tengri_pagan_reformed } #This event is meaningless with Syncretic Faith.
+		}
 		lanka_area = {
 			owned_by = ROOT
 			religion = buddhism #Theravada

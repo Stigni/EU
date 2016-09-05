@@ -15,9 +15,10 @@ estate_cossacks =
 	}
 	
 	# Is estate kept in control of province on conquest?
-	keep_on_conquest = yes	
+	keep_on_conquest = no
 	
 	# If true, country will get estate
+	
 	trigger = {	
 		NOT = { government = merchant_republic }
 		NOT = { government = native_council }
@@ -36,6 +37,10 @@ estate_cossacks =
 	
 	# Min autonomy in estate provinces
 	min_autonomy = 25
+	
+	# Estate cancels out the following multiplicative local autonomy effects:
+	autonomy_does_not_affect = local_manpower_modifier
+	autonomy_does_not_affect = land_forcelimit
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
@@ -53,13 +58,13 @@ estate_cossacks =
 	# These do not scale, but only applied in provinces owned by the estate
 	province_modifier_happy = {	
 		local_hostile_attrition = 1
-		local_manpower_modifier = 0.5
+		local_manpower_modifier = 0.2
 	}
 	province_modifier_neutral = {
 		local_hostile_attrition = 1
 	}	
 	province_modifier_angry = {
-		local_unrest = 10
+		local_unrest = 5
 	}
 	
 	# Influence modifiers
@@ -126,11 +131,9 @@ estate_cossacks =
 		
 		effect = {
 			add_prestige = -5
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_cossacks
-				desc = EST_VAL_COSSACK_REGISTER_EXPANDED_LOYALTY
-				loyalty = 10
-				duration = 7300
+				loyalty = 15
 			}
 			add_estate_influence_modifier = {
 				estate = estate_cossacks
@@ -165,6 +168,12 @@ estate_cossacks =
 		
 		years_between_use = 30
 		
+		potential = {
+			NOT = { has_disaster = estate_burghers_disaster }
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+		}
+		
 		trigger = {
 			estate_loyalty = {
 				estate = estate_cossacks
@@ -172,7 +181,7 @@ estate_cossacks =
 			}
 			estate_influence = {
 				estate = estate_cossacks
-				influence = 50
+				influence = 40
 			}
 			num_of_owned_provinces_with = {
 				value = 4
@@ -322,6 +331,12 @@ estate_cossacks =
 		years_between_use = 30
 		
 		potential = {
+			NOT = { has_disaster = estate_burghers_disaster }
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+		}
+		
+		potential = {
 			OR = {
 				has_idea_group = exploration_ideas
 				has_idea = siberian_frontier
@@ -335,7 +350,7 @@ estate_cossacks =
 			}
 			estate_influence = {
 				estate = estate_cossacks
-				influence = 50
+				influence = 40
 			}
 		}
 		effect = {
@@ -358,10 +373,16 @@ estate_cossacks =
 		
 		years_between_use = 30
 		
+		potential = {
+			NOT = { has_disaster = estate_burghers_disaster }
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_nobility_disaster }
+		}
+		
 		trigger = {
 			estate_influence = {
 				estate = estate_cossacks
-				influence = 50
+				influence = 40
 			}
 		}
 		
@@ -390,11 +411,9 @@ estate_cossacks =
 				influence = 15
 				duration = 10950
 			}
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_nobles
-				desc = EST_VAL_COSSACK_MINISTER_NOBLES
-				duration = 10950
-				loyalty = -10 #Taking offense to a cossack being used in government
+				loyalty = -15 #Taking offense to a cossack being used in government
 			}
 		}
 		

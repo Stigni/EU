@@ -2,6 +2,8 @@
 # Maya rebels. Disgruntled fanatics.
 ######################################################################
 maya_rebels = {
+	
+	color = { 230 175 175 }
 
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
@@ -101,6 +103,11 @@ maya_rebels = {
 	 	}
 		modifier = {
 			factor = 1.5
+			has_missionary = yes
+			religion = mesoamerican_religion
+		}
+		modifier = {
+			factor = 1.5
 			unrest = 2
 		}
 		modifier = {
@@ -123,29 +130,32 @@ maya_rebels = {
 		}
  	}
 	siege_won_effect = {
-		if = {
-			limit = {
-				OR = {
-					religion = mesoamerican_religion
-					is_reformation_center = yes
-					owner = { religion = mesoamerican_religion }
+		custom_tooltip = religious_rebels_seige_effect_tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						religion = mesoamerican_religion
+						is_reformation_center = yes
+						owner = { religion = mesoamerican_religion }
+					}
+				}
+				add_province_modifier = {
+					name = "religious_violence"
+					duration = 730
 				}
 			}
-			add_province_modifier = {
-				name = "religious_violence"
-				duration = 730
-			}
-		}
-		if = {
-			limit = {
-				NOT = { religion = mesoamerican_religion }
-				is_reformation_center = no
-				NOT = { owner = { religion = mesoamerican_religion } }
-			}
-			change_religion = mesoamerican_religion
-			add_province_modifier = {
-				name = "forced_conversion"
-				duration = 730
+			if = {
+				limit = {
+					NOT = { religion = mesoamerican_religion }
+					is_reformation_center = no
+					NOT = { owner = { religion = mesoamerican_religion } }
+				}
+				change_religion = mesoamerican_religion
+				add_province_modifier = {
+					name = "forced_conversion"
+					duration = 730
+				}
 			}
 		}
 	}

@@ -12,6 +12,11 @@ native_size = 5
 native_ferocity = 1
 native_hostileness = 4
 
+
+
+discovered_by = north_american
+
+
 1650.1.1 = {
  	owner = HUR
 	controller = HUR
@@ -25,7 +30,7 @@ native_hostileness = 4
 	add_core = IRO
 	culture = iroquois 
 } #Driven off by Iroquois raids
-
+1679.1.1 = { discovered_by = FRA discovered_by = ENG }
 1701.8.14 = {
 	owner = HUR
 	controller = HUR
@@ -33,7 +38,7 @@ native_hostileness = 4
 	is_city = no
 	culture = huron 
 } #Vast areas left deserted after the Beaver Wars and the Iroquois withdrawal
-
+1707.5.12 = { discovered_by = GBR }
 1753.8.3 = {
 	owner = FRA
 	controller = FRA

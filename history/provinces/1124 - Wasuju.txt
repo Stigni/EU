@@ -12,7 +12,11 @@ hre = no
 base_tax = 4 
 base_production = 4
 add_core = MAL
+
+
+
 discovered_by = sub_saharan
+
 
 1469.1.1 = { unrest = 6 } # Sunni Ali of Songhai launches Massive raids
 1481.1.1 = { discovered_by = POR } # Portuguese Mission arrives at the court of the Mali Mansa

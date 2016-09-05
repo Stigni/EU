@@ -556,10 +556,8 @@ province_event = {
 			}
 			owner = {
 				add_opinion = { who = ROOT modifier = border_friction_from_event }
-				reverse_add_casus_belli = {
-					target = ROOT
-					type = cb_annex
-					months = 24
+				every_owned_province = {
+					add_claim = ROOT
 				}
 			}
 		}

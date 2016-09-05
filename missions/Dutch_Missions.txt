@@ -199,6 +199,13 @@ dutch_colony_in_the_carribean = {
 			}
 		}
 		NOT = {
+			carribeans_region = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		NOT = {
 			has_country_modifier = "colonial_enthusiasm"
 		}
 	}
@@ -212,7 +219,10 @@ dutch_colony_in_the_carribean = {
 		}
 	}
 	success = {
-		carribeans_region = { owned_by = ROOT }
+		carribeans_region = {
+			owned_by = ROOT
+			colonysize = 400
+		}
 	}
 	chance = {
 		factor = 2000
@@ -396,9 +406,9 @@ dutch_colony_in_south_africa = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { owns = 833 }
-				NOT = { owns = 1177 }
-				NOT = { owns = 1179 }
+				NOT = { owns_or_vassal_of = 833 }
+				NOT = { owns_or_vassal_of = 1177 }
+				NOT = { owns_or_vassal_of = 1179 }
 				833 = { is_empty = no }
 				1177 = { is_empty = no }
 				1179 = { is_empty = no }
@@ -407,9 +417,18 @@ dutch_colony_in_south_africa = {
 	}
 	success = {
 		OR = {
-			owns = 833
-			owns = 1177
-			owns = 1179
+			AND = {
+				owns_or_vassal_of = 833
+				833 = { colonysize = 400 }
+			}
+			AND = {
+				owns_or_vassal_of = 1177
+				1177 = { colonysize = 400 }
+			}
+			AND = {
+				owns_or_vassal_of = 1179
+				1179 = { colonysize = 400 }
+			}
 		}
 	}
 	chance = {
@@ -452,28 +471,39 @@ dutch_colony_in_indonesia = {
 		tag = NED
 		num_of_colonists = 1
 		num_of_ports = 1
-		indonesia_region = {
+		malaya_region = {
 			has_discovered = ROOT
 			is_empty = yes
 			range = ROOT
 		}
 		NOT = {
-			indonesia_region = {
+			malaya_region = {
 				owned_by = ROOT
 			}
 		}
+		NOT = {
+			malaya_region = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		
 	}
 	abort = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { indonesia_region = { owned_by = ROOT } }	
-				NOT = { indonesia_region = { is_empty = yes } }
+				NOT = { malaya_region = { owned_by = ROOT } }	
+				NOT = { malaya_region = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		indonesia_region = { owned_by = ROOT }
+		malaya_region = {
+			owned_by = ROOT
+			colonysize = 400
+		}
 	}
 	chance = {
 		factor = 1000
@@ -575,11 +605,26 @@ dutch_colony_in_brazil = {
 	}
 	success = {
 		OR = {
-			owns_or_vassal_of = 743
-			owns_or_vassal_of = 744
-			owns_or_vassal_of = 745	
-			owns_or_vassal_of = 746	
-			owns_or_vassal_of = 2938	
+			AND = {
+				owns_or_vassal_of = 743
+				743 = { colonysize = 400 }
+			}
+			AND = {
+				owns_or_vassal_of = 744
+				744 = { colonysize = 400 }
+			}
+			AND = {
+				owns_or_vassal_of = 745
+				745 = { colonysize = 400 }
+			}
+			AND = {
+				owns_or_vassal_of = 746
+				746 = { colonysize = 400 }
+			}
+			AND = {
+				owns_or_vassal_of = 2938
+				2938 = { colonysize = 400 }
+			}	
 		}
 	}
 	chance = {
@@ -629,7 +674,7 @@ the_netherlands_discover_australia = {
 			has_discovered = ROOT
 			owned_by = ROOT
 		}
-		indonesia_region = {
+		malaya_region = {
 			has_discovered = ROOT
 			owned_by = ROOT
 		}
@@ -675,11 +720,16 @@ dutch_control_of_taiwan = {
 		normal_or_historical_nations = yes
 		tag = NED
 		is_subject = no
-		indonesia_region = { owned_by = ROOT }
+		malaya_region = { owned_by = ROOT }
 		taiwan_area = {
 			NOT = { owned_by = ROOT }
 			has_discovered = ROOT
 			range = ROOT
+			NOT = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
 		}
 		NOT = { has_country_modifier = east_india_trade_rush }
 		NOT = { has_country_flag = took_taiwan }
@@ -690,6 +740,7 @@ dutch_control_of_taiwan = {
 	success = {
 		taiwan_area = {
 			owned_by = ROOT
+			colonysize = 400
 		}
 	}
 	chance = {
@@ -775,7 +826,7 @@ take_malacca_from_portugal = {
 		exists = POR
 		is_subject = no
 		NOT = { alliance_with = POR }
-		indonesia_region = { has_discovered = ROOT }
+		malaya_region = { has_discovered = ROOT }
 		NOT = { has_country_modifier = east_india_trade_rush }
 		NOT = { has_country_flag = took_malacca_from_por }
 		POR = { owns = 596 }
@@ -791,7 +842,7 @@ take_malacca_from_portugal = {
 		factor = 3000
 		modifier = {
 			factor = 2
-			indonesia_region = { owned_by = ROOT }
+			malaya_region = { owned_by = ROOT }
 		}
 	}
 	immediate = {
@@ -878,7 +929,7 @@ establish_trade_in_indonesian_cot = {
 	allow = {
 		normal_or_historical_nations = yes
 		tag = NED
-		indonesia_region = {
+		malaya_region = {
 			owned_by = ROOT
 		}
 		NOT = {

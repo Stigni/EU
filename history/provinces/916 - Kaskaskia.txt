@@ -12,6 +12,11 @@ native_size = 10
 native_ferocity = 1
 native_hostileness = 0
 
+
+
+discovered_by = north_american
+
+
 1650.1.1 = {
 	owner = ILL
 	controller = ILL
@@ -19,7 +24,8 @@ native_hostileness = 0
 	is_city = yes
 	trade_goods = fur
 }
-
+1670.1.1 = { discovered_by = FRA } # Robert Cavelier de La Salle
+1679.1.1 = { discovered_by = ENG }
 1680.1.1 = { 
 	owner = IRO
 	controller = IRO
@@ -42,9 +48,9 @@ native_hostileness = 0
 	religion = catholic
 	trade_goods = fur
 } #Kaskaskia
-
+1707.5.12 = { discovered_by = GBR }
 1763.2.10 = {
-	
+	discovered_by = GBR
 	owner = GBR
 	controller = GBR
 	add_core = GBR
@@ -61,4 +67,4 @@ native_hostileness = 0
 	remove_core = GBR
 	culture = american
 } # Americans capture Kaskaskia; Illinois country french join the revolt.
-#
+#1803.7.4 = { } #The death of Tecumseh mark the end of organized native resistance 

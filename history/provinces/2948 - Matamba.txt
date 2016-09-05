@@ -2,8 +2,8 @@
 
 owner = NDO
 controller = NDO
-culture = kongolese
-religion = shamanism
+culture = mbundu
+religion = shamanism #Fetishism
 capital = "Matamba"
 trade_goods = slaves
 hre = no
@@ -13,3 +13,13 @@ base_manpower = 2
 is_city = yes
 add_core = NDO
 
+discovered_by = central_african
+discovered_by = sub_saharan
+
+discovered_by = KON
+discovered_by = LOA
+discovered_by = NDO
+discovered_by = sub_saharan
+
+
+1483.1.1 = { discovered_by = POR } # Diogo Cão

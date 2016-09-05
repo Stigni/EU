@@ -81,7 +81,7 @@ leader_names = {
 	d'Agnesi "di Aragona" Asmondo "d'Austria" "Barbiano Belgioioso" "di Borbone"
 	Carafa Castagna Cattaneo Ciaja Cialdini Colonna Coppola Corleone
 	Damiani d'Este Farini Felice Filangieri "Gaetani dell'Aquila" "de Gattinara" "di Gesualdo" Gonzaga
-	"La Masa" Lamoral "di Marzano" Mazzini "di Medici" Orsini
+	"La Masa" Lamoral "di Marzano" Mazzini "de' Medici" Orsini
 	Paruta Pignatelli Pilo Platamonte "de Podio" Riso Rizzi Ruffo Ruggiero
 	Sanseverino Santapace Serra Settimo Sfondrati Speciale Spinola
 	Tanucci Tassoni Trivulcio Ventimiglia Zannoni

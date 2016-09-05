@@ -4,7 +4,7 @@ owner = KBO
 controller = KBO
 add_core = KBO
 culture = kanuri
-religion = animism
+religion = shamanism #Fetishism
 capital = "Wandala"
 is_city = yes
 base_manpower = 1
@@ -12,7 +12,11 @@ trade_goods = tropical_wood
 hre = no
 base_tax = 1 
 base_production = 1
+
+
+
 discovered_by = sub_saharan
+
 
 1503.1.1 = { controller = KBO } #Mai Katakarmabe restores Borno authority
 1521.1.1 = { unrest = 7 } #Rebellions after death of Katakarmabe

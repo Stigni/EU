@@ -2,7 +2,7 @@
 
 owner = SBA
 controller = SBA
-culture = japanese
+culture = togoku
 religion = shinto
 capital = "Kiyosu"
 trade_goods = dyes
@@ -12,12 +12,16 @@ base_production = 5
 base_manpower = 2
 is_city = yes
 add_core = SBA
+
+
+
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA
 discovered_by = OIR
 discovered_by = QNG
 discovered_by = ANU
+
 
 1479.1.1 = { add_core = ODA }
 1532.1.1 = { capital = "Nagoya" }
