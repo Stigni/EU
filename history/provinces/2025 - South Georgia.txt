@@ -1,7 +1,6 @@
 #2025 - South Georgia
 
 capital = "South Georgia"
-culture = patagonian
 trade_goods = unknown
 hre = no
 base_tax = 1 

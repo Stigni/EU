@@ -3,7 +3,6 @@ primary_culture = portugese
 religion = catholic
 technology_group = western
 historical_friend = SPA
-historical_neutral = ARA
 historical_friend = CAS
 capital = 227 # Lisboa
 

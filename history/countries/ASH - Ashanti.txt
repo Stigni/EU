@@ -1,6 +1,6 @@
 government = tribal_despotism
 primary_culture = aka
-religion = animism
+religion = shamanism #Fetishism
 technology_group = sub_saharan
 capital = 1138	# Kumasi
 

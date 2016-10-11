@@ -38,6 +38,21 @@ province_event = {
 		name = "canal_events.EVTOPTB1"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 	}
 }
 
@@ -75,6 +90,21 @@ province_event = {
 		name = "canal_events.EVTOPTB2"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 	}
 }
 
@@ -112,6 +142,21 @@ province_event = {
 		name = "canal_events.EVTOPTB3"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 	}
 }
 
@@ -149,6 +194,21 @@ province_event = {
 		name = "canal_events.EVTOPTB4"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 	}
 }
 
@@ -186,6 +246,21 @@ province_event = {
 		name = "canal_events.EVTOPTB5"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 	}
 }
 
@@ -223,6 +298,21 @@ province_event = {
 		name = "canal_events.EVTOPTB6"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 	}
 }
 
@@ -260,6 +350,21 @@ province_event = {
 		name = "canal_events.EVTOPTB7"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 	}
 }
 
@@ -303,6 +408,21 @@ province_event = {
 		name = "canal_events.EVTOPTB8"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 	}
 }
 
@@ -337,6 +457,21 @@ province_event = {
 		name = "canal_events.EVTOPTA11"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 		owner = {
 			capital_scope = {
 				add_unrest = 10
@@ -352,6 +487,21 @@ province_event = {
 		name = "canal_events.EVTOPTB11"
 		ai_chance = { factor = 25 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 		owner = {
 			add_years_of_income = -1.0
 			set_country_flag = canal_company_scheme
@@ -394,6 +544,21 @@ province_event = {
 		name = "canal_events.EVTOPTA9"
 		ai_chance = { factor = 25 }
 		add_construction_progress = 0.025
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.29 }
+				}
+			}
+		}
 		owner = {
 			add_years_of_income = -0.5
 			set_country_flag = canal_construction_alcohol_rations
@@ -403,6 +568,21 @@ province_event = {
 		name = "canal_events.EVTOPTB9"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 	}
 }
 
@@ -435,6 +615,21 @@ province_event = {
 	option = {	# Excellent!
 		name = "canal_events.EVTOPTA10"
 		add_construction_progress = 0.025
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.29 }
+				}
+			}
+		}
 		hidden_effect = {
 			owner = {
 				set_country_flag = canal_company_formed
@@ -469,6 +664,21 @@ province_event = {
 	option = {	# Could this be true?
 		name = "canal_events.EVTOPTA12"
 		add_construction_progress = 0.025
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.29 }
+				}
+			}
+		}
 	}
 }
 
@@ -498,6 +708,21 @@ province_event = {
 	option = {	# Finally some good news
 		name = "canal_events.EVTOPTA13"
 		add_construction_progress = 0.025
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.29 }
+				}
+			}
+		}
 	}
 }
 
@@ -547,6 +772,21 @@ province_event = {
 		name = "canal_events.EVTOPTB20"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 	}
 }
 
@@ -591,6 +831,21 @@ province_event = {
 		name = "canal_events.EVTOPTB21"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 	}
 }
 
@@ -629,6 +884,21 @@ province_event = {
 		name = "canal_events.EVTOPTB22"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 	}
 }
 
@@ -713,6 +983,21 @@ province_event = {
 		name = "canal_events.EVTOPTB24"
 		ai_chance = { factor = 75 }
 		add_construction_progress = -0.05
+		if = {
+			limit = {
+				owner = {
+					is_subject = yes
+				}
+			}
+			owner = {
+				random_known_country = {
+					limit = {
+						overlord_of = ROOT
+					}
+					country_event = { id = canal_events.28 }
+				}
+			}
+		}
 	}
 }
 
@@ -782,5 +1067,33 @@ province_event = {
 	option = {
 		name = "canal_events.25.a"
 		owner = { add_prestige = 50 }
+	}
+}
+
+# Canal Project Delayed - Overlord Notification
+province_event = {
+	id = canal_events.28
+	title = "canal_events.28.t"
+	desc = "canal_events.28.d"
+	picture = HARBOUR_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "canal_events.28.a"
+	}
+}
+
+# Canal Project Ahead of Time - Overlord Notification
+province_event = {
+	id = canal_events.29
+	title = "canal_events.29.t"
+	desc = "canal_events.29.d"
+	picture = HARBOUR_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "canal_events.29.a"
 	}
 }

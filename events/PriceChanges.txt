@@ -1,8 +1,8 @@
-########################################
+####################################################
 # Price Change Events
 #
-# written by Johan Andersson
-########################################
+# written by Johan Andersson & Henrik Lohmander
+####################################################
 
 namespace = prices
 
@@ -268,6 +268,7 @@ country_event = {
 			}
 		}
 		NOT = { has_country_flag = cotton_imports }
+		NOT = { has_global_flag = cotton_imports_global }
 	}
 	
 	mean_time_to_happen = {
@@ -275,7 +276,7 @@ country_event = {
 	}
 
 	immediate = {
-		set_country_flag = cotton_imports
+		set_global_flag = cotton_imports_global
 	}
 	
 	option = {
@@ -296,6 +297,7 @@ country_event = {
 	}
 	option = {
 		name = prices.6.b
+		set_country_flag = cotton_imports
 		504 = { #Indus
 			add_trade_modifier = {
 				who = root

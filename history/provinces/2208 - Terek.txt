@@ -3,7 +3,7 @@
 owner = GOL
 controller = GOL
 culture = dagestani
-religion = shiite
+religion = sunni
 capital = "Mozdok"
 trade_goods = grain
 hre = no

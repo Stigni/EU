@@ -5,6 +5,7 @@ country_decisions = {
 		potential = {
 			government = colonial_government
 			NOT = { has_country_flag = colonial_assembly }
+			is_year = 1600
 		}
 		allow = {
 			adm_power = 100

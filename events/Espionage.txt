@@ -293,6 +293,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Mare Nostrum"
+		always = no #Removed due to balance concerns
 		any_known_country = {
 			has_spy_network_from = {
 				who = ROOT
@@ -348,7 +349,7 @@ country_event = {
 	# 
 	option = {
 		name = "espionage_events.7.a"
-		kill_ruler = yes
+		#kill_ruler = yes
 		add_casus_belli = {
 			target = FROM
 			type = cb_insult

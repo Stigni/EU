@@ -24,6 +24,7 @@ discovered_by = ottoman
 
 1515.1.5 = { add_core = HAB } # Charles V ascends to the throne
 1528.6.21 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V annexes Utrecht
+1549.11.4 = { owner = NED controller = NED add_core = NED remove_core = SPA }
 1559.5.12 = { unrest = 3 } # New bishoprics in the Lowlands create an outrage
 1565.1.1 = { unrest = 5 } # Letters of Segovia, Philip I orders the harsh persecution of Calvinists
 1566.4.5 = { unrest = 3 } # 'Eedverbond der Edelen', Margaretha of Parma promises leniency

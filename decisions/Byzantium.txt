@@ -38,32 +38,35 @@ country_decisions = {
 			owns = 2750 # Plovdiv
 		}
 		effect = {
-			149 = { change_province_name = Adrianople rename_capital = Adrianople }
-			316 = { change_province_name = Optimatoi rename_capital = Nikomedeia }
-			317 = { change_province_name = Opsikion rename_capital = Prussa }
-			318 = { change_province_name = Smyrna rename_capital = Smyrna }
-			319 = { change_province_name = Mylasa rename_capital = Mougla }
-			322 = { change_province_name = Kotyaion rename_capital = Kotyaion }
-			323 = { change_province_name = Ikonion rename_capital = Iconion }
-			324 = { change_province_name = Laranda rename_capital = Laranda }
-			325 = { change_province_name = Paphlagonia rename_capital = Timonio }
-			326 = { change_province_name = Galatia rename_capital = Ancyra }
-			328 = { change_province_name = Sinope rename_capital = Sinop }
-			329 = { change_province_name = Sebasteia rename_capital = Sebasteia }
-			330 = { change_province_name = Trebizond rename_capital = Trapezous }
-			327 = { change_province_name = Cilicia rename_capital = Atana }
-			1846 = { change_province_name = Armeniakon rename_capital = Amasea }
-			1848 = { change_province_name = Anatolikon rename_capital = Polydorion }
-			151 = { change_province_name = Constantinople rename_capital = Constantinople }
-			2296 = { change_province_name = Abydos rename_capital = Pigai }
-			2297 = { change_province_name = Thrakesion rename_capital = Magnesia }
-			2298 = { change_province_name = Attalia rename_capital = Attalia }
-			2299 = { change_province_name = Boukellarion rename_capital = Klaudiopol}
-			2300 = { change_province_name = Cappadocia rename_capital = Tavium }
-			2301 = { change_province_name = Charsianon rename_capital = Cesarea }
-			2302 = { change_province_name = Seleucia rename_capital = Kermarage }
-			2304 = { change_province_name = Chaldia rename_capital = Amissos}
-			2750 = { change_province_name = Philippopolis rename_capital = Philippopolis}
+			hidden_effect = {
+				149 = { change_province_name = Adrianople rename_capital = Adrianople }
+				316 = { change_province_name = Optimatoi rename_capital = Nikomedeia }
+				317 = { change_province_name = Opsikion rename_capital = Prussa }
+				318 = { change_province_name = Smyrna rename_capital = Smyrna }
+				319 = { change_province_name = Mylasa rename_capital = Mougla }
+				322 = { change_province_name = Kotyaion rename_capital = Kotyaion }
+				323 = { change_province_name = Ikonion rename_capital = Iconion }
+				324 = { change_province_name = Laranda rename_capital = Laranda }
+				325 = { change_province_name = Paphlagonia rename_capital = Timonio }
+				326 = { change_province_name = Galatia rename_capital = Ancyra }
+				328 = { change_province_name = Sinope rename_capital = Sinop }
+				329 = { change_province_name = Sebasteia rename_capital = Sebasteia }
+				330 = { change_province_name = Trebizond rename_capital = Trapezous }
+				327 = { change_province_name = Cilicia rename_capital = Atana }
+				1846 = { change_province_name = Armeniakon rename_capital = Amasea }
+				1848 = { change_province_name = Anatolikon rename_capital = Polydorion }
+				151 = { change_province_name = Constantinople rename_capital = Constantinople }
+				2296 = { change_province_name = Abydos rename_capital = Pigai }
+				2297 = { change_province_name = Thrakesion rename_capital = Magnesia }
+				2298 = { change_province_name = Attalia rename_capital = Attalia }
+				2299 = { change_province_name = Boukellarion rename_capital = Klaudiopol}
+				2300 = { change_province_name = Cappadocia rename_capital = Tavium }
+				2301 = { change_province_name = Charsianon rename_capital = Cesarea }
+				2302 = { change_province_name = Seleucia rename_capital = Kermarage }
+				2304 = { change_province_name = Chaldia rename_capital = Amissos}
+				2750 = { change_province_name = Philippopolis rename_capital = Philippopolis}
+			}
+			custom_tooltip = reestablishing_themes_names_tooltip
 			if = {
 				limit = {
 					NOT = { has_global_flag = constantinople_restored }

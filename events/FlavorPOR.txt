@@ -104,7 +104,6 @@ country_event = {
 
 	trigger = {
 		tag = POR
-
 		any_active_trade_node = {
 			province_id = 1331	# Gulf of Aden
 		}
@@ -134,14 +133,17 @@ country_event = {
 	option = {		# Seek better relations in the region
 		name = "flavor_por.EVTOPTB3268"
 		ai_chance = { factor = 0 }
-		random_active_trade_node = {
-			limit = {
-				province_id = 1331	# Gulf of Aden
-			}
-			every_trade_node_member_country = {
-				add_opinion = {
-					who = ROOT
-					modifier = careful_trade_expansion
+		custom_tooltip = flavor_por.3268.b.tt
+		hidden_effect = {
+			random_active_trade_node = {
+				limit = {
+					province_id = 1331	# Gulf of Aden
+				}
+				every_trade_node_member_country = {
+					add_opinion = {
+						who = ROOT
+						modifier = careful_trade_expansion
+					}
 				}
 			}
 		}

@@ -84,6 +84,12 @@ improve_relations_mission = {
 		religion_group = FROM
 		NOT = { has_opinion = { who = FROM value = 50 } }
 		has_opinion = { who = FROM value = 0 }
+		NOT = {
+			ai_attitude = {
+				who = FROM
+				attitude = attitude_hostile
+			}
+		}
 		NOT = { government = daimyo }
 		NOT = { government = shogunate }
 		NOT = {
@@ -102,6 +108,12 @@ improve_relations_mission = {
 		OR = {
 			war_with = FROM
 			exists = no
+			FROM = {
+				ai_attitude = {
+					who = ROOT
+					attitude = attitude_hostile
+				}
+			}
 		}
 	}
 

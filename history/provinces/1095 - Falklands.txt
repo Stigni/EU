@@ -1,7 +1,6 @@
 #1095 - Falklands
 
 capital = "Falklands"
-culture = patagonian
 trade_goods = unknown
 hre = no
 base_tax = 1 

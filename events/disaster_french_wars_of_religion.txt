@@ -1144,7 +1144,7 @@ country_event  = {
 					who = ROOT
 					modifier = supported_french_rebels_military
 				}
-				set_country_flag = foreign_support_for_french_rebels_5
+				set_country_flag = foreign_support_for_french_rebels_3
 				country_event = { id = french_wars_of_religion.12 days = 10 tooltip = "flavor_fra.EVTTOOLTIP3002" }
 			}
 		}
@@ -1158,7 +1158,7 @@ country_event  = {
 					who = ROOT
 					modifier = supported_french_rebels_military
 				}
-				set_country_flag = foreign_support_for_french_rebels_3
+				set_country_flag = foreign_support_for_french_rebels_5
 				country_event = { id = french_wars_of_religion.12 days = 10 tooltip = "flavor_fra.EVTTOOLTIP3002" }
 			}
 		}
@@ -1226,13 +1226,8 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = {
-		name = "flavor_fra.EVTOPTA3004"
-		# Large support
-		if = {
-			limit = {
-				has_country_flag = foreign_support_for_french_rebels_5
-			}
+	immediate = {
+		hidden_effect = {
 			# Neighbor
 			if = {
 				limit = {
@@ -1244,49 +1239,12 @@ country_event = {
 						}
 					}
 				}
-				random_owned_province = {
-					limit = {
-						continent = europe
-						has_owner_religion = yes
-						any_neighbor_province = {
-							owned_by = FROM
-						}
-					}
-					if = {
-						limit = {
-							religion = catholic
-						}
-						spawn_rebels = {
-							type = protestant_rebels
-							size = 3
-							friend = FROM
-						}
-					}
-					if = {
-						limit = {
-							religion = protestant
-						}
-						spawn_rebels = {
-							type = catholic_rebels
-							size = 3
-							friend = FROM
-						}
-					}
-					if = {
-						limit = {
-							religion = reformed
-						}
-						spawn_rebels = {
-							type = catholic_rebels
-							size = 3
-							friend = FROM
-						}
-					}
-				}
+				set_country_flag = wars_of_religion_neighbor_case
 			}
-			# Not neighbor with port
+			#Neighbor with port
 			if = {
 				limit = {
+					NOT = { has_country_flag = wars_of_religion_neighbor_case }
 					FROM = {
 						any_owned_province = {
 							continent = europe
@@ -1299,47 +1257,13 @@ country_event = {
 						has_port = yes
 					}
 				}
-				random_owned_province = {
-					limit = {
-						continent = europe
-						has_owner_religion = yes
-						has_port = yes
-					}
-					if = {
-						limit = {
-							religion = catholic
-						}
-						spawn_rebels = {
-							type = protestant_rebels
-							size = 3
-							friend = FROM
-						}
-					}
-					if = {
-						limit = {
-							religion = protestant
-						}
-						spawn_rebels = {
-							type = catholic_rebels
-							size = 3
-							friend = FROM
-						}
-					}
-					if = {
-						limit = {
-							religion = reformed
-						}
-						spawn_rebels = {
-							type = catholic_rebels
-							size = 3
-							friend = FROM
-						}
-					}
-				}
+				set_country_flag = wars_of_religion_neighbor_port_case
 			}
-			# Not neighbor without port
+			#Not neighbor without port
 			if = {
 				limit = {
+					NOT = { has_country_flag = wars_of_religion_neighbor_port_case }
+					NOT = { has_country_flag = wars_of_religion_neighbor_case }
 					any_owned_province = {
 						continent = europe
 						has_owner_religion = yes
@@ -1348,208 +1272,301 @@ country_event = {
 						}
 					}
 				}
-				random_owned_province = {
+				set_country_flag = wars_of_religion_not_neighbor_port_case
+			}
+		}
+	}
+	
+	option = {
+		name = "flavor_fra.EVTOPTA3004"
+		# Large support
+		if = {
+			limit = {	#Neighbor
+				has_country_flag = foreign_support_for_french_rebels_5
+				has_country_flag = wars_of_religion_neighbor_case
+				NOT = { has_country_flag = wars_of_religion_not_neighbor_port_case }
+				NOT = { has_country_flag = wars_of_religion_neighbor_port_case }
+			}
+			clr_country_flag = wars_of_religion_neighbor_case
+			random_owned_province = {
+				limit = {
+					continent = europe
+					has_owner_religion = yes
+					any_neighbor_province = {
+						owned_by = FROM
+					}
+				}
+				if = {
 					limit = {
-						continent = europe
-						has_owner_religion = yes
-						any_neighbor_province = {
-							NOT = { owned_by = ROOT }
-						}
+						religion = catholic
 					}
-					if = {
-						limit = {
-							religion = catholic
-						}
-						spawn_rebels = {
-							type = protestant_rebels
-							size = 3
-							friend = FROM
-						}
+					spawn_rebels = {
+						type = protestant_rebels
+						size = 2
+						friend = FROM
 					}
-					if = {
-						limit = {
-							religion = protestant
-						}
-						spawn_rebels = {
-							type = catholic_rebels
-							size = 3
-							friend = FROM
-						}
+				}
+				if = {
+					limit = {
+						religion = protestant
 					}
-					if = {
-						limit = {
-							religion = reformed
-						}
-						spawn_rebels = {
-							type = catholic_rebels
-							size = 3
-							friend = FROM
-						}
+					spawn_rebels = {
+						type = catholic_rebels
+						size = 2
+						friend = FROM
+					}
+				}
+				if = {
+					limit = {
+						religion = reformed
+					}
+					spawn_rebels = {
+						type = catholic_rebels
+						size = 2
+						friend = FROM
+					}
+				}
+			}
+		}
+		if = {
+			limit = {	#Not neighbor with port
+				has_country_flag = foreign_support_for_french_rebels_5
+				has_country_flag = wars_of_religion_neighbor_port_case
+				NOT = { has_country_flag = wars_of_religion_neighbor_case }
+				NOT = { has_country_flag = wars_of_religion_not_neighbor_port_case }
+			}
+			clr_country_flag = wars_of_religion_neighbor_port_case
+			random_owned_province = {
+				limit = {
+					continent = europe
+					has_owner_religion = yes
+					has_port = yes
+				}
+				if = {
+					limit = {
+						religion = catholic
+					}
+					spawn_rebels = {
+						type = protestant_rebels
+						size = 2
+						friend = FROM
+					}
+				}
+				if = {
+					limit = {
+						religion = protestant
+					}
+					spawn_rebels = {
+						type = catholic_rebels
+						size = 2
+						friend = FROM
+					}
+				}
+				if = {
+					limit = {
+						religion = reformed
+					}
+					spawn_rebels = {
+						type = catholic_rebels
+						size = 2
+						friend = FROM
+					}
+				}
+			}
+		}
+		if = {
+			limit = {	# Not neighbor without port
+				has_country_flag = foreign_support_for_french_rebels_5
+				has_country_flag = wars_of_religion_not_neighbor_port_case
+				NOT = { has_country_flag = wars_of_religion_neighbor_port_case }
+				NOT = { has_country_flag = wars_of_religion_neighbor_case }
+			}
+			clr_country_flag = wars_of_religion_not_neighbor_port_case
+			random_owned_province = {
+				limit = {
+					continent = europe
+					has_owner_religion = yes
+					any_neighbor_province = {
+						NOT = { owned_by = ROOT }
+					}
+				}
+				if = {
+					limit = {
+						religion = catholic
+					}
+					spawn_rebels = {
+						type = protestant_rebels
+						size = 2
+						friend = FROM
+					}
+				}
+				if = {
+					limit = {
+						religion = protestant
+					}
+					spawn_rebels = {
+						type = catholic_rebels
+						size = 2
+						friend = FROM
+					}
+				}
+				if = {
+					limit = {
+						religion = reformed
+					}
+					spawn_rebels = {
+						type = catholic_rebels
+						size = 2
+						friend = FROM
 					}
 				}
 			}
 		}
 		# Small support
 		if = {
-			limit = {
+			limit = {	#Neighbor
 				has_country_flag = foreign_support_for_french_rebels_3
+				has_country_flag = wars_of_religion_neighbor_case
+				NOT = { has_country_flag = wars_of_religion_not_neighbor_port_case }
+				NOT = { has_country_flag = wars_of_religion_neighbor_port_case }
 			}
-			# Neighbor
-			if = {
+			clr_country_flag = wars_of_religion_neighbor_case
+			random_owned_province = {
 				limit = {
-					any_owned_province = {
-						continent = europe
-						has_owner_religion = yes
-						any_neighbor_province = {
-							owned_by = FROM
-						}
+					continent = europe
+					has_owner_religion = yes
+					any_neighbor_province = {
+						owned_by = FROM
 					}
 				}
-				random_owned_province = {
+				if = {
 					limit = {
-						continent = europe
-						has_owner_religion = yes
-						any_neighbor_province = {
-							owned_by = FROM
-						}
+						religion = catholic
 					}
-					if = {
-						limit = {
-							religion = catholic
-						}
-						spawn_rebels = {
-							type = protestant_rebels
-							size = 1
-							friend = FROM
-						}
-					}
-					if = {
-						limit = {
-							religion = protestant
-						}
-						spawn_rebels = {
-							type = catholic_rebels
-							size = 1
-							friend = FROM
-						}
-					}
-					if = {
-						limit = {
-							religion = reformed
-						}
-						spawn_rebels = {
-							type = catholic_rebels
-							size = 1
-							friend = FROM
-						}
+					spawn_rebels = {
+						type = protestant_rebels
+						size = 1
+						friend = FROM
 					}
 				}
-			}
-			# Not neighbor with port
-			if = {
-				limit = {
-					FROM = {
-						any_owned_province = {
-							continent = europe
-							has_port = yes
-						}
-					}
-					any_owned_province = {
-						continent = europe
-						has_owner_religion = yes
-						has_port = yes
-					}
-				}
-				random_owned_province = {
+				if = {
 					limit = {
-						continent = europe
-						has_owner_religion = yes
-						has_port = yes
+						religion = protestant
 					}
-					if = {
-						limit = {
-							religion = catholic
-						}
-						spawn_rebels = {
-							type = protestant_rebels
-							size = 1
-							friend = FROM
-						}
-					}
-					if = {
-						limit = {
-							religion = protestant
-						}
-						spawn_rebels = {
-							type = catholic_rebels
-							size = 1
-							friend = FROM
-						}
-					}
-					if = {
-						limit = {
-							religion = reformed
-						}
-						spawn_rebels = {
-							type = catholic_rebels
-							size = 1
-							friend = FROM
-						}
+					spawn_rebels = {
+						type = catholic_rebels
+						size = 1
+						friend = FROM
 					}
 				}
-			}
-			# Not neighbor without port
-			if = {
-				limit = {
-					any_owned_province = {
-						continent = europe
-						has_owner_religion = yes
-						any_neighbor_province = {
-							NOT = { owned_by = ROOT }
-						}
-					}
-				}
-				random_owned_province = {
+				if = {
 					limit = {
-						continent = europe
-						has_owner_religion = yes
-						any_neighbor_province = {
-							NOT = { owned_by = ROOT }
-						}
+						religion = reformed
 					}
-					if = {
-						limit = {
-							religion = catholic
-						}
-						spawn_rebels = {
-							type = protestant_rebels
-							size = 1
-							friend = FROM
-						}
-					}
-					if = {
-						limit = {
-							religion = protestant
-						}
-						spawn_rebels = {
-							type = catholic_rebels
-							size = 1
-							friend = FROM
-						}
-					}
-					if = {
-						limit = {
-							religion = reformed
-						}
-						spawn_rebels = {
-							type = catholic_rebels
-							size = 1
-							friend = FROM
-						}
+					spawn_rebels = {
+						type = catholic_rebels
+						size = 1
+						friend = FROM
 					}
 				}
 			}
 		}
+		if = {
+			limit = {	#Not neighbor with port
+				has_country_flag = foreign_support_for_french_rebels_3
+				has_country_flag = wars_of_religion_neighbor_port_case
+				NOT = { has_country_flag = wars_of_religion_neighbor_case }
+				NOT = { has_country_flag = wars_of_religion_not_neighbor_port_case }
+			}
+			clr_country_flag = wars_of_religion_neighbor_port_case
+			random_owned_province = {
+				limit = {
+					continent = europe
+					has_owner_religion = yes
+					has_port = yes
+				}
+				if = {
+					limit = {
+						religion = catholic
+					}
+					spawn_rebels = {
+						type = protestant_rebels
+						size = 1
+						friend = FROM
+					}
+				}
+				if = {
+					limit = {
+						religion = protestant
+					}
+					spawn_rebels = {
+						type = catholic_rebels
+						size = 1
+						friend = FROM
+					}
+				}
+				if = {
+					limit = {
+						religion = reformed
+					}
+					spawn_rebels = {
+						type = catholic_rebels
+						size = 1
+						friend = FROM
+					}
+				}
+			}
+		}
+		if = {
+			limit = {	# Not neighbor without port
+				has_country_flag = foreign_support_for_french_rebels_3
+				has_country_flag = wars_of_religion_not_neighbor_port_case
+				NOT = { has_country_flag = wars_of_religion_neighbor_port_case }
+				NOT = { has_country_flag = wars_of_religion_neighbor_case }
+			}
+			clr_country_flag = wars_of_religion_not_neighbor_port_case
+			random_owned_province = {
+				limit = {
+					continent = europe
+					has_owner_religion = yes
+					any_neighbor_province = {
+						NOT = { owned_by = ROOT }
+					}
+				}
+				if = {
+					limit = {
+						religion = catholic
+					}
+					spawn_rebels = {
+						type = protestant_rebels
+						size = 1
+						friend = FROM
+					}
+				}
+				if = {
+					limit = {
+						religion = protestant
+					}
+					spawn_rebels = {
+						type = catholic_rebels
+						size = 1
+						friend = FROM
+					}
+				}
+				if = {
+					limit = {
+						religion = reformed
+					}
+					spawn_rebels = {
+						type = catholic_rebels
+						size = 1
+						friend = FROM
+					}
+				}
+			}
+		}
+		clr_country_flag = foreign_support_for_french_rebels_3
+		clr_country_flag = foreign_support_for_french_rebels_5
 	}
 }
 

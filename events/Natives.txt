@@ -671,7 +671,6 @@ province_event = {
 	trigger = {
 		is_colony = yes
 		native_size = 3
-		units_in_province = 1
 	}
 	mean_time_to_happen = {
 		years = 20

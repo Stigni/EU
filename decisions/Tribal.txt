@@ -145,7 +145,17 @@ country_decisions = {
 			if = {
 				limit = {
 					technology_group = nomad_group
+					religion_group = christian
+				}
+				change_government = feudal_monarchy
+				change_technology_group = eastern
+				change_unit_type = eastern
+			}
+			if = {
+				limit = {
+					technology_group = nomad_group
 					NOT = { religion_group = muslim }
+					NOT = { religion_group = christian }
 					NOT = { secondary_religion = sunni }
 					NOT = { secondary_religion = shiite }
 					NOT = { secondary_religion = ibadi }

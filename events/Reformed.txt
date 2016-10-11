@@ -24,6 +24,14 @@ country_event = {
 		
 	}
 	
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				set_province_flag = start_of_reformed_reformation
+			}
+		}
+	}
+	
 	mean_time_to_happen = {
 		months = 80
 		
@@ -95,7 +103,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA2011"
 		enable_religion = reformed
-		capital_scope = { 
+		capital_scope = {
 			change_religion = reformed
 			add_reform_center = reformed
 			add_permanent_province_modifier = {

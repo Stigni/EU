@@ -2860,7 +2860,7 @@ country_event = {
 				}
 			}
 		}
-		add_dip_power = -50
+		add_adm_power = -50
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
@@ -2918,7 +2918,7 @@ country_event = {
 				loyalty = 10
 			}
 		}
-		add_adm_power = -50
+		add_dip_power = -50
 	}
 }
 
@@ -4250,7 +4250,7 @@ country_event = {
 		
 		modifier = {
 			factor = 2.0
-			has_idea = espionage
+			has_idea_group = spy_ideas
 		}
 		modifier = {
 			factor = 2.0
@@ -5202,6 +5202,7 @@ country_event = {
 		num_of_cities = 30
 		any_owned_province = {
 			has_owner_culture = no
+			NOT = { local_autonomy = 0.5 }
 		}
 	}
 
@@ -5236,6 +5237,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				has_owner_culture = no
+				NOT = { local_autonomy = 0.5 }
 			}
 			noble_rebels = 2
 		}
@@ -5268,11 +5270,13 @@ country_event = {
 		random_owned_province = {
 			limit = { 
 				has_owner_culture = no
+				NOT = { local_autonomy = 0.5 }
 			}
 			add_province_modifier = {
 				name = "powerful_noble"
 				duration = 7300
 			}
+			add_local_autonomy = 20
 		}		
 	}	
 	option = {
@@ -7783,6 +7787,10 @@ country_event = {
 		capital_scope = { continent = europe }
 		NOT = { adm = 3 }
 		num_of_cities = 2
+		any_owned_province = {
+			NOT = { has_province_modifier = powerful_noble }
+			NOT = { local_autonomy = 0.5 }
+		}
 		OR = {
 			government = feudal_monarchy
 			government = despotic_monarchy
@@ -7803,7 +7811,8 @@ country_event = {
 			limit = { 
 				is_capital = no
 				continent = europe 
-				NOT = { has_province_modifier = "powerful_noble" } 
+				NOT = { has_province_modifier = "powerful_noble" }
+				NOT = { local_autonomy = 0.5 }
 			}
 			add_province_modifier = {
 				name = "powerful_noble"
@@ -7873,7 +7882,8 @@ country_event = {
 		random_owned_province = {
 			limit = { 
 				continent = europe 
-				NOT = { has_province_modifier = "powerful_noble" } 
+				NOT = { has_province_modifier = "powerful_noble" }
+				NOT = { local_autonomy = 0.5 }
 			}
 			noble_rebels = 2
 		}

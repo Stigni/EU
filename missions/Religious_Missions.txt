@@ -72,6 +72,8 @@ convert_province_mission = {
 		NOT =  { religion = FROM }
 		NOT = { religion = secondary }
 		NOT = { has_province_modifier = religious_migration }
+		NOT = { has_province_modifier = religious_zeal_at_conv }
+		NOT = { has_province_modifier = religious_center }
 		NOT = { has_estate = estate_dhimmi }
 	}
 	abort = {
@@ -124,6 +126,9 @@ restore_holy_see = {
 		monthly_income = 30
 		NOT = { owns = 118 }
 		NOT = { 118 = { owned_by = PAP } }
+		118 = {
+			range = ROOT
+		}
 		is_excommunicated = no
 		capital_scope = {
 			continent = europe

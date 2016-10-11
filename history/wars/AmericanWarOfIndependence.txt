@@ -5,7 +5,6 @@ war_goal = {
 	tag = USA
 }
 
-# Declaration of independence
 1776.7.4 = {
 	add_attacker = USA
 	add_defender = GBR

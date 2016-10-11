@@ -43,7 +43,6 @@ country_decisions = {
 			owns_core_province = 119	# Ancona
 		}
 		effect = {
-			change_tag = ITA
 			if = {
 				limit = {
 					is_part_of_hre = yes
@@ -73,6 +72,7 @@ country_decisions = {
 			#	}
 			#	change_government = despotic_monarchy
 			#}
+			change_tag = ITA
 			italy_region = {
 				limit = {
 					NOT = { owned_by = ROOT }

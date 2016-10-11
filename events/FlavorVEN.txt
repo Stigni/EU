@@ -1189,7 +1189,7 @@ country_event = {
 	option = {	#Support our own glass blower families instead
 		name = flavor_ven.33.b
 		add_faction_influence = { faction = mr_guilds influence = 30 }
-		add_mercantilism = 0.05
+		add_mercantilism = 0.02
 		112 = {
 			add_province_modifier = {
 				name = ven_murano_glass_industry

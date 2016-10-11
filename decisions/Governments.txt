@@ -115,7 +115,6 @@ country_decisions = {
 	oligarchic_administration = {
 		major = yes
 		potential = {
-			NOT = { government = merchant_republic }
 			NOT = { government = steppe_horde }
 			NOT = { government = iqta }
 			NOT = { government = tribal_despotism }
@@ -129,7 +128,10 @@ country_decisions = {
 			NOT = { government = daimyo }
 			NOT = { government = shogunate }
 			NOT = { government = revolutionary_empire }
-			government = monarchy
+			OR = {
+				government = monarchy
+				government = merchant_republic
+			}
 		}
 		allow =  {
 			stability = 1		
@@ -168,6 +170,10 @@ country_decisions = {
 					technology_group = south_american
 					technology_group = andean
 				}
+			}
+			modifier = {
+				factor = 0
+				government = merchant_republic
 			}
 		}
 	}

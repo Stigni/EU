@@ -317,10 +317,12 @@ country_event = {
 		}
 		every_province = {
 			limit = {
-				province_id = 1128
-				province_id = 1129
-				province_id = 1132
-				province_id = 2247
+				OR = {
+					province_id = 1128
+					province_id = 1129
+					province_id = 1132
+					province_id = 2247
+				}
 			}
 			add_claim = MOR
 		}
@@ -355,10 +357,12 @@ country_event = {
 		tooltip = {
 			every_province = {
 				limit = {
-					province_id = 1128
-					province_id = 1129
-					province_id = 1132
-					province_id = 2247
+					OR = {
+						province_id = 1128
+						province_id = 1129
+						province_id = 1132
+						province_id = 2247
+					}
 				}
 				add_claim = MOR
 			}

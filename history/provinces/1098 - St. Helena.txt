@@ -1,5 +1,4 @@
 #1098 - St. Helena
-culture = patagonian
 hre = no
 base_tax = 1 
 base_production = 1

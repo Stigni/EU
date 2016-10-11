@@ -105,6 +105,7 @@ country_event = {
 					who = ROOT
 					modifier = spa_iberian_wedding
 				}
+				add_liberty_desire = -50
 			}
 			every_known_country = {
 				limit = {
@@ -128,6 +129,7 @@ country_event = {
 					who = ROOT
 					modifier = spa_iberian_wedding
 				}
+				add_liberty_desire = -50
 			}
 			every_known_country = {
 				limit = {

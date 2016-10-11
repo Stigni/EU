@@ -369,6 +369,7 @@ country_event = {
 			}
 			tag = PLC
 		}
+		religion_group = christian
 		exists = TUR
 		NOT = { alliance_with = TUR }
 		NOT = { is_subject_of = TUR }
@@ -1225,11 +1226,10 @@ country_event = {
 		add_prestige = -100
 		change_government = noble_republic
 		define_ruler = {
-			name = "(The Sejm)"
+			regency = yes
 			adm = 0
 			dip = 0
 			mil = 0
-			age = 18
 		}
 	}
 	option = {

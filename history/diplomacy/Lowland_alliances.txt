@@ -17,16 +17,16 @@ union = {
 	start_date = 1444.1.1
 	end_date = 1477.1.5
 }
-vassal = {
-	first = HAB
-	second = NED
-	start_date = 1477.1.5
-	end_date = 1519.1.12
-}
+#vassal = {
+#	first = HAB
+#	second = NED
+#	start_date = 1477.1.5
+#	end_date = 1519.1.12
+#}
 vassal = {
 	first = SPA
 	second = NED
-	start_date = 1519.1.12
+	start_date = 1549.11.4
 	end_date = 1579.1.23
 }
 

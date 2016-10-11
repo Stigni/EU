@@ -2648,7 +2648,9 @@ country_event = {
 		colonial_louisiana = {
 			OR = {
 				owned_by = FRA
-				is_colonial_nation_of = FRA
+				owner = {
+					is_colonial_nation_of = FRA
+				}
 			}
 			any_neighbor_province = {
 				owner = {

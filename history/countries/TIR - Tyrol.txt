@@ -118,7 +118,7 @@ capital = 73	# Innsbruck
 
 1632.9.14 = {
 	monarch = {
-		name = "Claudia de Medici"
+		name = "Claudia de' Medici"
 		regent = yes
 		adm = 3
 		dip = 1

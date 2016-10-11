@@ -1,5 +1,5 @@
 government = theocratic_government
-primary_culture = franconian
+primary_culture = hessian
 religion = catholic
 elector = yes
 technology_group = western

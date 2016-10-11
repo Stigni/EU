@@ -56,6 +56,15 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = ROM
+			custom_tooltip = roman_culture_provinces_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_owner_culture = yes
+					}
+					change_culture = roman
+				}
+			}
 			change_primary_culture = roman
 			custom_tooltip = restore_roman_empire_tt
 			hidden_effect = {

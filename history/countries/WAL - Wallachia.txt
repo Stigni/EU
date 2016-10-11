@@ -102,6 +102,16 @@ capital = 161 # Tîrgoviste
 
 1442.1.1 = {
 	monarch = {
+		name = "Mircea II"
+		dynasty = "Danesti"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1442.8.1 = {
+	monarch = {
 		name = "Basarab II"
 		dynasty = "Danesti"
 		adm = 4
@@ -118,6 +128,20 @@ capital = 161 # Tîrgoviste
 		adm = 2
 		dip = 1
 		mil = 1
+	}
+}
+
+1443.1.1 = {
+	heir = {
+		name = "Mircea"
+		monarch_name = "Mircea II"
+		dynasty = "Basarab"
+		birth_date = 1428.1.1
+		death_date = 1447.1.1 #Buried Alive
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
 	}
 }
 

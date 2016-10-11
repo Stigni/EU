@@ -291,7 +291,7 @@ country_event = {
 
 
 	option = {		# No one seem to acknowledge our claims
-		name = "flavor_fra.EVTOPTA3106"
+		name = "flavor_fra.EVTOPTA3108"
 		every_known_country = {
 			limit = {
 				italy_region = {

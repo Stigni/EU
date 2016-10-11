@@ -53,8 +53,13 @@ country_decisions = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
-			tibet_region = {
+			every_province = {
 				limit = {
+					OR = {
+						region = tibet_region
+						province_id = 2074
+					}
+					NOT = { area = tarim_basin_area }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = TIB

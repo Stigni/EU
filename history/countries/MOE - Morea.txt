@@ -45,9 +45,9 @@ fixed_capital = 145 # Cannot move capital away from this province & no power cos
 	monarch = {
 		name = "Demetrios II"
 		dynasty = "Palaiologos"
-		dip = 0
+		dip = 2
 		adm = 1
-		mil = 0
+		mil = 1
 	}
 }
 

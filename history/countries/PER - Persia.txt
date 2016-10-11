@@ -189,7 +189,7 @@ capital = 416 # Tabriz
 		dynasty = "Afsharid"
 		adm = 2
 		dip = 4
-		mil = 5
+		mil = 6
 		leader = {	name = "Nadir Shah"            	type = general	rank = 0	fire = 3	shock = 5	manuever = 5	siege = 1}
 	}
 }

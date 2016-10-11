@@ -36,15 +36,28 @@ country_event = {
 	option = { 
 		name = flavor_eth.1.a
 		ai_chance = { factor = 90 }
-
 		add_prestige = 5
 		custom_tooltip = flavor_eth.1.a.desc
 		set_country_flag = portuguese_embassy
+		hidden_effect = {
+			capital_scope = {
+				POR = {
+					discover_province = PREV
+				}
+			}
+		}
 	}
 	option = {
 		name = flavor_eth.1.b	
 		ai_chance = { factor = 5 }
 		add_legitimacy = 5
+		hidden_effect = {
+			capital_scope = {
+				POR = {
+					discover_province = PREV
+				}
+			}
+		}
 	}
 	option = {
 		name = flavor_eth.1.c
@@ -53,6 +66,13 @@ country_event = {
 			target = POR
 			type = cb_insult
 			months = 60
+		}
+		hidden_effect = {
+			capital_scope = {
+				POR = {
+					discover_province = PREV
+				}
+			}
 		}
 	}	
 	
@@ -409,7 +429,10 @@ country_event = {
 			alliance_with = MAM
 			war_with = MAM
 		}
-		MAM = { religion_group = muslim }
+		MAM = {
+			religion_group = muslim
+			owns = 358
+		}
 	}
 
 	mean_time_to_happen = {

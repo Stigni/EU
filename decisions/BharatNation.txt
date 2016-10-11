@@ -12,7 +12,12 @@ country_decisions = {
 			#NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = dravidian
-			religion_group = dharmic
+			OR = {
+				religion_group = dharmic
+				religion = buddhism #Theravada
+				religion = vajrayana
+				religion = mahayana
+			}
 			NOT = { technology_group = nomad_group }
 			OR = {
 				ai = no
@@ -118,7 +123,12 @@ country_decisions = {
 			#NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = western_aryan
-			religion_group = dharmic
+			OR = {
+				religion_group = dharmic
+				religion = buddhism #Theravada
+				religion = vajrayana
+				religion = mahayana
+			}
 			NOT = { technology_group = nomad_group }
 			OR = {
 				ai = no
@@ -230,7 +240,12 @@ country_decisions = {
 			NOT = { exists = BHA }
 			NOT = { tag = MUG }
 			culture_group = hindusthani
-			religion_group = dharmic
+			OR = {
+				religion_group = dharmic
+				religion = buddhism #Theravada
+				religion = vajrayana
+				religion = mahayana
+			}
 			NOT = { technology_group = nomad_group }
 			OR = {
 				ai = no
@@ -336,7 +351,12 @@ country_decisions = {
 			#NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = eastern_aryan
-			religion_group = dharmic
+			OR = {
+				religion_group = dharmic
+				religion = buddhism #Theravada
+				religion = vajrayana
+				religion = mahayana
+			}
 			NOT = { technology_group = nomad_group }
 			OR = {
 				ai = no
@@ -437,7 +457,12 @@ country_decisions = {
 			#NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = central_indic
-			religion_group = dharmic
+			OR = {
+				religion_group = dharmic
+				religion = buddhism #Theravada
+				religion = vajrayana
+				religion = mahayana
+			}
 			NOT = { technology_group = nomad_group }
 			OR = {
 				ai = no

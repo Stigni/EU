@@ -97,6 +97,7 @@ country_event = {
 		CYP = { 
 			owns = 321
 			is_subject = no 
+			is_at_war = no
 			government = monarchy
 			OR = {
 				is_female = yes

@@ -27,6 +27,7 @@ country_event = {
 				region = egypt_region
 				region = maghreb_region
 				region = anatolia_region
+				region = balkan_region
 				area = syria_area
 				area = palestine_area
 				area = aleppo_area

@@ -19,6 +19,14 @@ country_event = {
 		}
 		
 	}
+
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				set_province_flag = start_of_protestant_reformation
+			}
+		}
+	}
 	
 	mean_time_to_happen = {
 		months = 2500

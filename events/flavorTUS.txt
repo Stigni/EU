@@ -251,7 +251,7 @@ country_event = {
 			tag = LAN
 		}
 		government = monarchy
-		dynasty = "de Medici"
+		dynasty = "de' Medici"
 	}
 
 	mean_time_to_happen = {
@@ -778,7 +778,7 @@ country_event = {
 					change_government = oligarchic_republic
 				}
 				define_ruler = {
-					dynasty = "de Medici"
+					dynasty = "de' Medici"
 				}
 			}
 			2 = {
@@ -822,7 +822,7 @@ country_event = {
 	}
 
 	option = {
-		name = flavor_tus.16.a
+		name = flavor_tus.16.b
 		trigger = {
 			government = monarchy
 		}

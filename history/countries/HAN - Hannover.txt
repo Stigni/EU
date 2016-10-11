@@ -131,7 +131,7 @@ capital = 57	# Hannover
 	}
 }
 
-1692.1.1 = { elector = yes }	
+#1692.1.1 = { elector = yes }	
 
 1698.1.23 = {
 	monarch = {
@@ -143,4 +143,4 @@ capital = 57	# Hannover
 	}
 }
 
-1806.7.12 = { elector = no } # The HRE is formally abolished
+#1806.7.12 = { elector = no } # The HRE is formally abolished

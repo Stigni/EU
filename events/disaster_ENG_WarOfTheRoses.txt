@@ -1116,3 +1116,66 @@ country_event = {
 	}
 }
 
+# An unrelated dynasty triumphs in the war of the roses.
+country_event = {
+	id = war_of_the_roses.106
+	title = war_of_the_roses.106.t
+	desc = war_of_the_roses.106.d
+	picture = WAR_OF_THE_ROSES_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		has_disaster = war_of_the_roses
+		NOT = { dynasty = York }
+		NOT = { dynasty = Lancaster }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			
+			# Clear Flags
+			clr_country_flag = supports_house_of_lancaster
+			clr_country_flag = supports_house_of_york
+
+			# Clear Country Modifiers
+			remove_country_modifier = importing_food
+			remove_country_modifier = plundering_soldiers
+			remove_country_modifier = legitimacy_questioned
+			remove_country_modifier = low_fertility
+
+			# Clear Province Modifiers
+			remove_province_modifier = wotr_local_support
+			remove_province_modifier = wotr_local_support_for_lancaster
+			remove_province_modifier = wotr_local_support_for_york
+			remove_province_modifier = rebel_refugees
+			remove_province_modifier = rebel_stronghold
+			
+			
+			# Set Flag
+			set_country_flag = had_war_of_the_roses
+		}
+		end_disaster = war_of_the_roses
+	}
+	
+	option = {		# Long Live the X dynasty
+		name = war_of_the_roses.102.a
+		add_stability = -1
+		add_prestige = -50
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 245
+					province_id = 244
+				}
+			}
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 3650
+			}
+		}
+	}
+}

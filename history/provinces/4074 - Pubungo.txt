@@ -1,11 +1,11 @@
-#Pubongo
+#Pubungo
 
 owner = BNY
 controller = BNY
 add_core = BNY
 culture = acholi
 religion = shamanism #Fetishism
-capital = "Pubongo"
+capital = "Pubungo"
 trade_goods = wool
 hre = no
 base_tax = 1

@@ -8,6 +8,7 @@ haixi_expedition = {
 	allow = {
 		normal_or_historical_nations = yes
 		tag = KOR
+		NOT = { owns = 2111 }
 		2111 = {
 			owner = { 
 				primary_culture = manchu
@@ -54,6 +55,7 @@ ninguta_expedition = {
 	allow = {
 		normal_or_historical_nations = yes
 		tag = KOR
+		NOT = { owns = 2108 }
 		2108 = {
 			owner = { 
 				primary_culture = manchu

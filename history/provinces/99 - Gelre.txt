@@ -33,6 +33,7 @@ discovered_by = ottoman
 	controller = GEL
 } # Karel van Gelre is released from prison and assumes control of Gelre by right of the Egmond family.
 1543.9.7 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V annexes Gelre
+1549.11.4 = { owner = NED controller = NED add_core = NED remove_core = SPA }
 1559.5.12 = { unrest = 3 } # New bishoprics in the Lowlands create an outrage
 1565.1.1 = { unrest = 5 } # Letters of Segovia, Philip I orders the harsh persecution of Calvinists
 1566.4.5 = { unrest = 3 } # 'Eedverbond der Edelen', Margaretha of Parma promises leniency

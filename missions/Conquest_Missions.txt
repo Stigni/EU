@@ -415,6 +415,7 @@ protect_religious_minority = {
 		NOT = { culture = FROM }
 		NOT = { is_core = FROM }
 		NOT = { is_claim = FROM }
+		is_colony = no
 		owner = { NOT = { alliance_with = FROM } }
 		owner = { NOT = { is_subject_of = FROM } }
 		owner = { num_of_cities = 2 }
@@ -492,6 +493,7 @@ protect_cultural_minority = {
 		has_discovered = FROM
 		NOT = { is_core = FROM }
 		NOT = { is_claim = FROM }
+		is_colony = no
 		OR = {
 			owner = { is_part_of_hre = no }
 			FROM = { is_part_of_hre = no }

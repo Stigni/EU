@@ -592,6 +592,7 @@ province_event = {
 			has_province_modifier = plundered_in_war
 			has_province_modifier = famine_refused_aid
 		}
+		NOT = { has_province_modifier = local_witch_hunts }
 		owner = {
 			is_at_war = no
 			religion_group = christian

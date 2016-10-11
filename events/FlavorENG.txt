@@ -1028,6 +1028,8 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9119"
 	picture = ECONOMY_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
 		is_year = 1500
 		NOT = { is_year = 1600 }
@@ -1414,6 +1416,8 @@ country_event = {
 	desc = "flavor_eng.EVTDESC9129"
 	picture = REFORM_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
 		is_year = 1600
 		NOT = { is_year = 1700 }
@@ -2379,6 +2383,12 @@ country_event = {
 
 	trigger = {
 		has_country_flag = had_war_of_the_roses
+		OR = {
+			dynasty = York
+			dynasty = Lancaster
+		}
+		is_lesser_in_union = no
+		NOT = { had_country_flag = { flag = had_war_of_the_roses days = 1095 } } #If you're under a union and get out of it quickly enough you'll still get this but otherwise you won't.
 	}
 
 	option = {

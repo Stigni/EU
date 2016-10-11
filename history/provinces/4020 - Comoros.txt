@@ -2,8 +2,8 @@
 
 culture = madagasque #Malagasy
 religion = sunni
-capital = "Ndzwani"
-native_size = 90
+capital = "Ndzuwani"
+native_size = 40
 trade_goods = unknown
 hre = no
 base_tax = 1 

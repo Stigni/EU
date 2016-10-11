@@ -16,8 +16,10 @@ province_event = {
 		base_tax = 2
 	}
 	
+	is_mtth_scaled_to_size = 1
+	
 	mean_time_to_happen = {
-		months = 2000
+		months = 300
 		modifier = {
 			factor = 0.9
 			trade_company_size = 10
@@ -63,8 +65,10 @@ province_event = {
 		NOT = { culture_group = owner }
 	}
 	
+	is_mtth_scaled_to_size = 1
+	
 	mean_time_to_happen = {
-		months = 2000
+		months = 300
 		modifier = {
 			factor = 1.05
 			trade_company_size = 10
@@ -115,8 +119,10 @@ province_event = {
 		NOT = { culture_group = owner }
 	}
 	
+	is_mtth_scaled_to_size = 1
+	
 	mean_time_to_happen = {
-		months = 2000
+		months = 300
 		modifier = {
 			factor = 0.95
 			trade_company_size = 10
@@ -157,8 +163,10 @@ province_event = {
 		}
 	}
 	
+	is_mtth_scaled_to_size = 1
+	
 	mean_time_to_happen = {
-		months = 2000
+		months = 300
 		modifier = {
 			factor = 0.95
 			trade_company_size = 10
@@ -323,8 +331,10 @@ province_event = {
 		}
 	}
 	
+	is_mtth_scaled_to_size = 1
+	
 	mean_time_to_happen = {
-		months = 2000
+		months = 300
 		modifier = {
 			factor = 1.1
 			trade_company_size = 10
@@ -470,8 +480,10 @@ province_event = {
 		}
 	}
 	
+	is_mtth_scaled_to_size = 1
+	
 	mean_time_to_happen = {
-		months = 2000
+		months = 300
 		modifier = {
 			factor = 0.95
 			trade_company_size = 10
@@ -521,8 +533,10 @@ province_event = {
 		}
 	}
 	
+	is_mtth_scaled_to_size = 1
+	
 	mean_time_to_happen = {
-		months = 3000
+		months = 400
 		modifier = {
 			factor = 0.95
 			trade_company_size = 10

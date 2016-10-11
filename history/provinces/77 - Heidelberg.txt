@@ -1,4 +1,4 @@
-#77 - Pfalz
+#77 - Heidelberg
 
 capital = "Heidelberg"
 culture = hessian

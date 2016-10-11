@@ -2,7 +2,6 @@
 
 owner = HAB
 controller = HAB
-add_core = STY
 add_core = HAB
 add_core = TIR
 culture = austrian

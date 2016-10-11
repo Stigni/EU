@@ -21,7 +21,6 @@ discovered_by = eastern
 	owner = ENG
 	controller = ENG
 	add_core = ENG
-	capital = Belfast
 } # Flight of the Earls
 1609.1.1 = { culture = english religion = protestant } # Jacobean Plantations
 1641.10.22 = { unrest = 15 }

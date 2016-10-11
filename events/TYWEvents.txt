@@ -598,7 +598,7 @@ country_event = {
 			spawn_rebels = {
 				type = religious_rebels
 				size = 2
-				friend = ROOT
+				friend = FROM
 			}
 		}
 		add_casus_belli = {

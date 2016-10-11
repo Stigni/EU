@@ -35,7 +35,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA3091"			# Crush them!
-		add_prestige = -1
+		add_prestige = -10
 	}
 }
 

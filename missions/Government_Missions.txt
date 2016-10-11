@@ -18,8 +18,9 @@ go_legitimate = {
 		}
 	}
 	success = {
-		legitimacy = 100
+		legitimacy = 75
 	}
+	
 	chance = {
 		factor = 1000
 		modifier = {

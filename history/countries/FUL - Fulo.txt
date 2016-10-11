@@ -1,6 +1,6 @@
 government = tribal_despotism
 primary_culture = fulani
-religion = animism
+religion = shamanism #Fetishism
 technology_group = sub_saharan
 capital = 2237
 

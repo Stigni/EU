@@ -6,7 +6,7 @@ technology_group = western
 capital = 134 # Wien
 historical_friend = HUN
 historical_rival = TUR
-
+historical_rival = FRA
 national_focus = ADM
 
 
@@ -203,6 +203,19 @@ national_focus = ADM
 1540.1.1 = {
 	set_global_flag = new_draperies_happened
 	set_global_flag = japanese_tea_happened
+	set_global_flag = cotton_imports_global
+	change_price = {
+			trade_goods = wool
+			key = COTTON_IMPORTS
+			value = -0.10
+			duration = -1
+		}
+		change_price = {
+			trade_goods = cotton
+			key = COTTON_IMPORTS
+			value = 0.20
+			duration = -1
+		}
 	change_price = {
 			trade_goods = cloth
 			key = NEW_DRAPERIES

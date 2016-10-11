@@ -1,6 +1,5 @@
 #1103 - Bourbon
 
-culture = madagascan
 capital = "Bourbon"
 trade_goods = unknown
 hre = no

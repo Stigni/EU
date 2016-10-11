@@ -635,7 +635,7 @@ conquer_milan = {
 		}
 	}
 	effect = {
-		add_province_modifier = {
+		add_country_modifier = {
 			name = "italian_ambition_modifier"
 			duration = 3650
 		}

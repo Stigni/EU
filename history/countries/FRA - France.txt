@@ -6,6 +6,7 @@ religion = catholic
 technology_group = western
 capital = 183 # Paris
 national_focus = DIP
+historical_rival = HAB
 
 1380.9.16 = {
 	monarch = {

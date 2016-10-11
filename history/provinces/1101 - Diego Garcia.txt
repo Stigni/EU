@@ -1,6 +1,5 @@
 #1101 - Diego Garcia
 
-culture = madagascan
 capital = "Diego Garcia"
 trade_goods = unknown
 hre = no

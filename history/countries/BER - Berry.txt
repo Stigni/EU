@@ -1,7 +1,7 @@
 government = feudal_monarchy
 government_rank = 1
 technology_group = western
-primary_culture = occitain
+primary_culture = cosmopolitan_french
 religion = catholic
 capital = 179	# Bourges
 

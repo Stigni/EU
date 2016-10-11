@@ -399,6 +399,7 @@ country_event = {
 	
 	trigger = {
 		corruption = 50
+		NOT = { has_country_modifier = distrusted_merchants }
 	}
 	
 	option = {
