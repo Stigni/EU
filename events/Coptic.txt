@@ -304,6 +304,13 @@ country_event = {
 				}
 				set_province_flag = copts_liberated
 			}
+			dongola_area = {
+				limit = { 
+					NOT = { religion = coptic } 
+					owned_by = ROOT
+				}
+				set_province_flag = copts_liberated
+			}
 		}
 	}
 
@@ -354,6 +361,13 @@ country_event = {
 					name = the_faithful_liberated
 					duration = 3650
 				}
+			}
+			dongola_area = {
+				limit = { 
+					NOT = { religion = coptic } 
+					owned_by = ROOT
+				}
+				set_province_flag = copts_liberated
 			}
 		}
 	}
@@ -626,6 +640,7 @@ country_event = {
 	trigger = {
 		has_dlc = "Rights of Man"
 		religion = coptic
+		NOT = { has_country_modifier = administration_monastery_school }
 		NOT = { has_country_modifier = diplomacy_monastery_school }
 	}
 
@@ -659,7 +674,8 @@ country_event = {
 
 	option = {
 		name = coptic_flavor.20.c
-		custom_tooltip = coptic_flavor.20.c.tt
+		#custom_tooltip = coptic_flavor.20.c.tt
+		add_years_of_income = 0.05
 	}
 }
 
@@ -812,23 +828,34 @@ country_event = {
 		any_owned_province = {
 			province_id = 360
 			religion = coptic
-			NOT = { has_province_modifier = "songs_of_the_pious" }
-			NOT = { has_province_modifier = "scripture_studies" }
-			NOT = { has_province_modifier = "monastery_repaired" }
+		}
+		NOT = {
+			any_owned_province = {
+				OR = {
+					has_province_modifier = "songs_of_the_pious"
+					has_province_modifier = "scripture_studies"
+					has_province_modifier = "monastery_repaired"
+				}
+			}
+		}
+		OR = {
+			NOT = { has_country_flag = a_new_era_happened }
+			had_country_flag = { flag = a_new_era_happened days = 10950 }
 		}
 	}
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					province_id = 360
+					is_capital = no
 					religion = coptic
 					NOT = { has_province_modifier = "songs_of_the_pious" }
 					NOT = { has_province_modifier = "scripture_studies" }
 					NOT = { has_province_modifier = "monastery_repaired" }
 				}
-				save_event_target_as = scholarly_province
+				save_event_target_as = pious_province
 			}
+			set_country_flag = a_new_era_happened
 		}
 	}
 
@@ -882,31 +909,42 @@ country_event = {
   desc = coptic_flavor.32.d
   picture = CITY_DEVELOPMENT_eventPicture
   
-  trigger = {
-	has_dlc = "Rights of Man"
-  	religion = coptic
-  	any_owned_province = {
-  		is_capital = no
+	trigger = {
+		has_dlc = "Rights of Man"
 		religion = coptic
-		NOT = { has_province_modifier = "songs_of_the_pious" }
-		NOT = { has_province_modifier = "scripture_studies" }
-		NOT = { has_province_modifier = "monastery_repaired" }
-  	}
-  }
-  immediate = {
-  	hidden_effect = {
-		random_owned_province = {
-			limit = {
-				is_capital = no
-				religion = coptic
-				NOT = { has_province_modifier = "songs_of_the_pious" }
-				NOT = { has_province_modifier = "scripture_studies" }
-				NOT = { has_province_modifier = "monastery_repaired" }
-			}
-			save_event_target_as = pious_province
+		any_owned_province = {
+			is_capital = no
+			religion = coptic
 		}
-  	}
-  }
+		NOT = {
+			any_owned_province = {
+				OR = {
+					has_province_modifier = "songs_of_the_pious"
+					has_province_modifier = "scripture_studies"
+					has_province_modifier = "monastery_repaired"
+				}
+			}
+		}
+		OR = {
+			NOT = { has_country_flag = a_new_era_happened }
+			had_country_flag = { flag = a_new_era_happened days = 10950 }
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					religion = coptic
+					NOT = { has_province_modifier = "songs_of_the_pious" }
+					NOT = { has_province_modifier = "scripture_studies" }
+					NOT = { has_province_modifier = "monastery_repaired" }
+				}
+				save_event_target_as = pious_province
+			}
+			set_country_flag = a_new_era_happened
+		}
+	}
 
 	mean_time_to_happen = {
 		months = 600
@@ -1592,7 +1630,7 @@ country_event = {
 			religion = coptic
 		}
 		NOT = {
-	  		any_owned_province = {
+			any_owned_province = {
 				OR = {
 					has_province_modifier = "songs_of_the_pious"
 					has_province_modifier = "scripture_studies"
@@ -1600,15 +1638,24 @@ country_event = {
 				}
 			}
 		}
+		OR = {
+			NOT = { has_country_flag = a_new_era_happened }
+			had_country_flag = { flag = a_new_era_happened days = 10950 }
+		}
 	}
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
+					is_capital = no
 					religion = coptic
+					NOT = { has_province_modifier = "songs_of_the_pious" }
+					NOT = { has_province_modifier = "scripture_studies" }
+					NOT = { has_province_modifier = "monastery_repaired" }
 				}
-				save_event_target_as = scholarly_province
+				save_event_target_as = pious_province
 			}
+			set_country_flag = a_new_era_happened
 		}
 	}
 

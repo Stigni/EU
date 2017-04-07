@@ -17,7 +17,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = NED
+		OR = {
+			tag = NED
+			tag = HOL
+		}
 		is_year = 1495
 		NOT = {
 			is_year = 1536
@@ -372,13 +375,13 @@ country_event = {
 	
 	option = {
 		name = "flavor_hol.EVTOPTA3513" #Yes, we need Order!
-		add_republican_tradition = -0.2
+		add_republican_tradition = -20
 		add_stability_or_adm_power = yes
 		set_country_flag = ned_hereditary_stadtholder
 	}
 	option = {
 		name = "flavor_hol.EVTOPTB3513" #No, we need Freedom!
-		add_republican_tradition = 0.1
+		add_republican_tradition = 10
 	}
 }
 

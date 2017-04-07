@@ -117,7 +117,7 @@ adm_idea_modifiers = {
 		}	
 	}
 	custom_idea_republican_tradition = {
-		republican_tradition = 0.005
+		republican_tradition = 0.5
 		max_level = 2
 		level_cost_1 = 30
 		level_cost_2 = 140	

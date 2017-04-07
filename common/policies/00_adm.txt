@@ -124,7 +124,7 @@ formalized_measures = {
 	}	
 
 	global_tax_modifier = 0.10
-	republican_tradition = 0.002
+	republican_tradition = 0.2
 
 	ai_will_do = {
 		factor = 1

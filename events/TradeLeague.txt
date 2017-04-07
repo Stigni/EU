@@ -499,7 +499,7 @@ country_event = {
 				modifier = sided_against_us
 			}
 		}
-		add_republican_tradition = -0.03
+		add_republican_tradition = -3
 	}
 
 	option = {
@@ -516,7 +516,7 @@ country_event = {
 				modifier = sided_with_us
 			}
 		}
-		add_republican_tradition = -0.03
+		add_republican_tradition = -3
 	}
 
 	option = {

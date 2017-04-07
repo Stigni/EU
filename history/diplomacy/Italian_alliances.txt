@@ -165,12 +165,12 @@ vassal = {
 }
 
 # Lodovico III "il Turco" ~ Barbara , dt. Johann "der Alchemist" Hohenzollern (Brandenburg)
-royal_marriage = {
-	first = MAN 
-	second = BRA 
-	start_date = 1433.11.12
-	end_date = 1478.6.12
-}
+#royal_marriage = {
+#	first = MAN 
+#	second = BRA 
+#	start_date = 1433.11.12
+#	end_date = 1478.6.12
+#}
 
 # Federico I "il Gobbo" ~ Margerita, dt. Albrecht III "der Fromme" of Bavaria 
 royal_marriage = {

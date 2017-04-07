@@ -432,9 +432,9 @@ country_event = {
 			OR = {
 				province_id = 1361 # Straits of Johor
 				province_id = 1343 # Ganges Delta
-				province_id = 504 # Sind
+				province_id = 504 # Thatta
 				province_id = 1340 # Comorin Cape
-				province_id = 530 # Goa
+				province_id = 2030 # Goa
 			}
 		}
 		NOT = { has_global_flag = spice_trade_happened }

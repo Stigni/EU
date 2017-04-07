@@ -473,13 +473,15 @@ scandinavian = { #Nordic
 		}
 		dynasty_names = {
 			"Hvide" "Galen" "Due" "Saltensee" "Urup" "Neb" "Brahe" "Gøye" "Trolle" "Rantzau"
-			"Friis" "Gyllenstierna" "Bille" "Adeler" "Arenstorff" "Brockenhuus"
+			"Friis" "Gyllenstierna" #Gyldenstierne
+			"Bille" "Adeler" "Arenstorff" "Brockenhuus"
 			"Beck" "Brock" "Grubbe" "Holck" "Huitfeldt" "Juel" "Kaas" "Krabbe"
 			"Lindenov" "Lykke" "Marsvin" "Mule" "Munk" "Oxe" "Reedtz" "Rodsteen"
-			"Rosenkrantz" "Skeel" "Skram" "Urne" "Vind" "Ahlefeldt" 
+			"Rosenkrantz" "Skeel" "Skram" "Urne" "Vind" "Ahlefeldt"
+			"Frille" "Rønnow"
 			# CKII
 			"Porse" "Glysing" "Banner" "Thott" "Ulfstand" "Grøn" "Daa"
-			"Reventlow" "Juul" "Ulfeldt" "Bang" 
+			"Reventlow" "Juul" "Ulfeldt" "Bang"
 		}
 	}
 	norwegian = {
@@ -7255,6 +7257,63 @@ cushitic = {
 			Mulki Nasteexo Sagal Sahra Sufia Ubah Ubax Waris Xalwo
 		}
 	}
+	harari = {
+		primary = HAR
+		male_names = {
+			Abadir Abdale Abdirahman Abdulah Abdullah Abram Abu-Bakr Adan Adeer Ahmed Ali Amlale Aul Awe
+			Aydahis Balad Baraka Barakat Ciise Dagale Dhidhin Hamalmal Hamar Hamid Hantale Haqq Harire
+			Ibrahim Irir Isman Jamal Kadhafo Kedafu Khalaf Liban Mahammad Muhammad Mahamed Muhammed
+			Mahamud Mahmud Mansur Nahwi Naleye Nassir Nur Omer Sa'ad Sa'adaddin Sabir Sabr Sabraddin
+			Sadiq Salah Siciid Talha Umar Umardin Yayyo Yusuf Zuber Zubeyr
+		}
+		female_names = {
+			Aasha Adey Alaso Ambro Amburo Asha Asli Astur Awa Awrala Ayaan Barni Basr Beydaan
+			Billan Canab Cawo Deeqa Delombira Dobira Faadumo Fathia Fawzia Geesi Haweeya Hibaaq
+			Hodan Hoodo Iftiin Jiinow Khadra Ladan Leyla Laila Libin Luula Magol Maka Mariam
+			Mulki Nasteexo Sagal Sahra Sufia Ubah Ubax Waris Xalwo
+		}
+		dynasty_names = {
+			Walashma Muzaffar Gareen Gobroon Karanle Jaladi Harti Darod Gerad
+			# CKII
+			"Abrone" "Dir" "Hawiye" "Isaaq" "Digil" "Mirifle" "Gadabuursi" "Akishe" "Biyomaal" "Surre"  "Issa" "Marehan" "Bartire" "Rahanweyn" "Warsangali" "Samaale"
+		}
+	}
+	afar = {
+		primary = AFA
+		dynasty_names = {
+			Walashma Muzaffar Gareen Gobroon Karanle Jaladi Harti Darod Gerad
+			# CKII
+			"Abrone" "Dir" "Hawiye" "Isaaq" "Digil" "Mirifle" "Gadabuursi" "Akishe" "Biyomaal" "Surre"  "Issa" "Marehan" "Bartire" "Rahanweyn" "Warsangali" "Samaale"
+		}
+		male_names = {
+			Abadir Abdale Abdirahman Abdulah Abdullah Abram Abu-Bakr Adan Adeer Ahmed Ali Amlale Aul Awe
+			Aydahis Balad Baraka Barakat Ciise Dagale Dhidhin Hamalmal Hamar Hamid Hantale Haqq Harire
+			Ibrahim Irir Isman Jamal Kadhafo Kedafu Khalaf Liban Mahammad Muhammad Mahamed Muhammed
+			Mahamud Mahmud Mansur Nahwi Naleye Nassir Nur Omer Sa'ad Sa'adaddin Sabir Sabr Sabraddin
+			Sadiq Salah Siciid Talha Umar Umardin Yayyo Yusuf Zuber Zubeyr
+		}
+		female_names = {
+			Aasha Adey Alaso Ambro Amburo Asha Asli Astur Awa Awrala Ayaan Barni Basr Beydaan
+			Billan Canab Cawo Deeqa Delombira Dobira Faadumo Fathia Fawzia Geesi Haweeya Hibaaq
+			Hodan Hoodo Iftiin Jiinow Khadra Ladan Leyla Laila Libin Luula Magol Maka Mariam
+			Mulki Nasteexo Sagal Sahra Sufia Ubah Ubax Waris Xalwo
+		}
+	}
+	oromo = {
+		primary = JIM
+		male_names = {
+			"Taqla Hâymânôt" "'Amsa Gîyôrgîs" "Tuqla Gîyôrgîs" "Zar'a Yâqob" "Ba'eda Mâryâm" "'Amda Seyôn" "Lebna" 
+			"Saga Krestos" "Malta Krestos" "Dengel" "Welde Giyorgis" "Mika'el Sehul" "Wolda Gabrael" "Wand Bewossen" 
+			"Amda Seyon" "Sarsa Dengel" Iyâsû Quastantînôs Salômôn Yôhannes Hezqeyâs Nâ'ôd Galâwdêwôs Mînâs Yâ'qob 
+			Sûsenyôs Fâsîladas Têwôflôs Yôstôs Yônas Dâwît Demetros Gîyôrgîs Fiqtor Menas Marqos Hamalmal Fâsîl 
+			'Endreyâs Yeshaq Mika'el Antenatewos Gusho Haile
+		}
+		female_names = {
+			Abeba Hagos Tenagne Habesha Abeba Abrihet Adanech Adina Alaworld Alitash Amhara Ayana Bathsheba Bekele 
+			Belkis Berhane Berta Desta Dilla Falasha Falashina Fana Fannah Genat Hagos Jahzara Jazarah Kayla Kelile 
+			Kelyle Keren Kess Kifle
+		}
+	}
 	tigray = {
 		primary = MED
 		male_names = {
@@ -7331,6 +7390,9 @@ sudanese = {
 	}
 	nubian = {
 		primary = NUB
+	}
+	beja = {
+		primary = BEJ
 	}
 	dynasty_names = {
 		Senar

@@ -71,36 +71,38 @@ country_event = {
 }
 
 # Rhodians and other Greeks accepted into the Order
-country_event = {
-	id = flavor_kni.2
-	title = "flavor_kni.EVTNAME2"
-	desc = "flavor_kni.EVTDESC2"
-	picture = BATTLE_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = KNI
-		is_year = 1500
-		NOT = { is_year = 1550 }
-		owns = 320 # Rhodes
-		is_at_war = no
-	}
-	
-	mean_time_to_happen = {
-		months = 200
-	}
-	
-	option = {
-		name = "flavor_kni.EVTOPTA2"
-		320 = {
-			add_province_modifier = { 
-				name = kni_accepted_cultures 
-				duration = -1 
-			}
-		}
-	}
-}
+#Changed to decision
+#country_event = {
+#	id = flavor_kni.2
+#	title = "flavor_kni.EVTNAME2"
+#	desc = "flavor_kni.EVTDESC2"
+#	picture = BATTLE_eventPicture
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = KNI
+#		is_year = 1500
+#		NOT = { is_year = 1550 }
+#		owns = 320 # Rhodes
+#		is_at_war = no
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 200
+#	}
+#	
+#	option = {
+#		name = "flavor_kni.EVTOPTA2"
+#		add_accepted_culture = greek
+#		320 = {
+#			add_province_modifier = { 
+#				name = kni_accepted_cultures 
+#				duration = -1 
+#			}
+#		}
+#	}
+#}
 
 # The Great Carrack of Alexandria
 country_event = {

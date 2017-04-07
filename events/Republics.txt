@@ -13,7 +13,7 @@ country_event = {
 			NOT = { has_dlc = "Res Publica" }
 			NOT = { government = dutch_republic }
 		}
-		NOT = { republican_tradition = 0.5 }
+		NOT = { republican_tradition = 50 }
 	}
 	
 	mean_time_to_happen = {
@@ -22,12 +22,12 @@ country_event = {
 	
 	option = {
 		name = republics.1.a
-		add_republican_tradition = -0.25
+		add_republican_tradition = -25
 		add_prestige = 10
 	}
 	option = {
 		name = republics.1.b
-		add_republican_tradition = 0.2
+		add_republican_tradition = 20
 		add_stability = -1
 	}
 }
@@ -45,7 +45,7 @@ country_event = {
 			NOT = { has_dlc = "Res Publica" }
 			NOT = { government = dutch_republic }
 		}
-		NOT = { republican_tradition = 0.5 }
+		NOT = { republican_tradition = 50 }
 	}
 	
 	mean_time_to_happen = {
@@ -54,12 +54,12 @@ country_event = {
 	
 	option = {
 		name = republics.2.a
-		add_republican_tradition = 0.02
+		add_republican_tradition = 2
 		add_mercantilism = -3
 	}
 	option = {
 		name = republics.2.b
-		add_republican_tradition = -0.02
+		add_republican_tradition = -2
 		add_mercantilism = 3
 	}
 }
@@ -80,10 +80,10 @@ country_event = {
 		is_colonial_nation = no
 		OR = {
 			AND = {
-				NOT = { republican_tradition = 0.4 }
+				NOT = { republican_tradition = 40 }
 				has_dlc = "Res Publica"
 			}
-			NOT = { republican_tradition = 0.01 }
+			NOT = { republican_tradition = 1 }
 		}
 		NOT = { 
 			government = revolutionary_republic
@@ -94,19 +94,19 @@ country_event = {
 		months = 240
 		modifier = {
 			factor = 0.5
-			NOT = { republican_tradition = 0.3 }
+			NOT = { republican_tradition = 30 }
 		}
 		modifier = {
 			factor = 0.5
-			NOT = { republican_tradition = 0.2 }
+			NOT = { republican_tradition = 20 }
 		}
 		modifier = {
 			factor = 0.5
-			NOT = { republican_tradition = 0.1 }
+			NOT = { republican_tradition = 10 }
 		}		
 		modifier = {
 			factor = 0.01
-			NOT = { republican_tradition = 0.01 }
+			NOT = { republican_tradition = 1 }
 		}			
 	}
 	
@@ -160,7 +160,7 @@ country_event = {
 	
 	option = {
 		name = republics.4.a
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 		add_adm_power = -40
 		add_dip_power = -40
 		add_mil_power = -40
@@ -174,7 +174,7 @@ country_event = {
 
 	option = {
 		name = republics.4.b
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 		add_adm_power = 20
 		add_dip_power = 20
 		add_mil_power = 20
@@ -210,7 +210,7 @@ country_event = {
 
 	option = {
 		name = republics.5.b
-		add_republican_tradition = -0.10
+		add_republican_tradition = -10
 	}
 }
 
@@ -243,7 +243,7 @@ country_event = {
 	option = {
 		name = republics.6.a
 		add_years_of_income = 0.5
-		add_republican_tradition = -0.10
+		add_republican_tradition = -10
 	}
 
 	option = {
@@ -268,7 +268,7 @@ country_event = {
 			NOT = { government = dutch_republic }
 		}
 		NOT = { stability = 3 }
-		NOT = { republican_tradition = 0.8 }
+		NOT = { republican_tradition = 80 }
 	}
 	
 	mean_time_to_happen = {
@@ -283,12 +283,12 @@ country_event = {
 	option = {
 		name = republics.7.a
 		add_stability_or_adm_power = yes
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 	}
 
 	option = {
 		name = republics.7.b
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 	}
 }
  
@@ -319,7 +319,7 @@ country_event = {
 	option = {
 		name = republics.8.a
 		add_war_exhaustion = -10
-		add_republican_tradition = -0.10
+		add_republican_tradition = -10
 	}
 
 	option = {
@@ -343,26 +343,26 @@ country_event = {
 			NOT = { has_dlc = "Res Publica" }
 			NOT = { government = dutch_republic }
 		}
-		NOT = { republican_tradition = 0.80 }
+		NOT = { republican_tradition = 80 }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
 		modifier = {
 			factor = 1.5
-			NOT = { republican_tradition = 0.70 }
+			NOT = { republican_tradition = 70 }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { republican_tradition = 0.50 }
+			NOT = { republican_tradition = 50 }
 		}
 		modifier = {
 			factor = 3.0
-			NOT = { republican_tradition = 0.30 }
+			NOT = { republican_tradition = 30 }
 		}
 		modifier = {
 			factor = 5.0
-			NOT = { republican_tradition = 0.10 }
+			NOT = { republican_tradition = 10 }
 		}
 	}
 	
@@ -387,26 +387,26 @@ country_event = {
 			NOT = { has_dlc = "Res Publica" }
 			NOT = { government = dutch_republic }
 		}
-		NOT = { republican_tradition = 0.80 }
+		NOT = { republican_tradition = 80 }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
 		modifier = {
 			factor = 1.5
-			NOT = { republican_tradition = 0.70 }
+			NOT = { republican_tradition = 70 }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { republican_tradition = 0.50 }
+			NOT = { republican_tradition = 50 }
 		}
 		modifier = {
 			factor = 3.0
-			NOT = { republican_tradition = 0.30 }
+			NOT = { republican_tradition = 30 }
 		}
 		modifier = {
 			factor = 5.0
-			NOT = { republican_tradition = 0.10 }
+			NOT = { republican_tradition = 10 }
 		}
 	}
 	
@@ -431,26 +431,26 @@ country_event = {
 			NOT = { has_dlc = "Res Publica" }
 			NOT = { government = dutch_republic }
 		}
-		NOT = { republican_tradition = 0.80 }
+		NOT = { republican_tradition = 80 }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
 		modifier = {
 			factor = 1.5
-			NOT = { republican_tradition = 0.70 }
+			NOT = { republican_tradition = 70 }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { republican_tradition = 0.50 }
+			NOT = { republican_tradition = 50 }
 		}
 		modifier = {
 			factor = 3.0
-			NOT = { republican_tradition = 0.30 }
+			NOT = { republican_tradition = 30 }
 		}
 		modifier = {
 			factor = 5.0
-			NOT = { republican_tradition = 0.10 }
+			NOT = { republican_tradition = 10 }
 		}
 	}
 	
@@ -475,26 +475,26 @@ country_event = {
 			NOT = { has_dlc = "Res Publica" }
 			NOT = { government = dutch_republic }
 		}
-		NOT = { republican_tradition = 0.80 }
+		NOT = { republican_tradition = 80 }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
 		modifier = {
 			factor = 1.5
-			NOT = { republican_tradition = 0.70 }
+			NOT = { republican_tradition = 70 }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { republican_tradition = 0.50 }
+			NOT = { republican_tradition = 50 }
 		}
 		modifier = {
 			factor = 3.0
-			NOT = { republican_tradition = 0.30 }
+			NOT = { republican_tradition = 30 }
 		}
 		modifier = {
 			factor = 5.0
-			NOT = { republican_tradition = 0.10 }
+			NOT = { republican_tradition = 10 }
 		}
 	}
 	
@@ -519,26 +519,26 @@ country_event = {
 			NOT = { has_dlc = "Res Publica" }
 			NOT = { government = dutch_republic }
 		}
-		NOT = { republican_tradition = 0.80 }
+		NOT = { republican_tradition = 80 }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
 		modifier = {
 			factor = 1.5
-			NOT = { republican_tradition = 0.70 }
+			NOT = { republican_tradition = 70 }
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { republican_tradition = 0.50 }
+			NOT = { republican_tradition = 50 }
 		}
 		modifier = {
 			factor = 3.0
-			NOT = { republican_tradition = 0.30 }
+			NOT = { republican_tradition = 30 }
 		}
 		modifier = {
 			factor = 5.0
-			NOT = { republican_tradition = 0.10 }
+			NOT = { republican_tradition = 10 }
 		}
 	}
 	
@@ -860,7 +860,7 @@ country_event = {
 				hidden = yes
 			}
 		}
-		add_republican_tradition = 0.01
+		add_republican_tradition = 1
 		add_dip_power = -25
 		add_mil_power = -25
 	}
@@ -959,7 +959,7 @@ country_event = {
 			name = "military_focus"
 			duration = 730
 		}		
-		add_republican_tradition = -0.03
+		add_republican_tradition = -3
 	}
 	option = {
 		name = "EVTOPTB9554"		# Perhaps our focus has been a bit misdirected
@@ -1042,7 +1042,7 @@ country_event = {
 			type = statesman
 			skill = 1
 		}
-		add_republican_tradition = -0.01
+		add_republican_tradition = -10
 	}
 	option = {
 		name = "EVTOPTB9555" # Give him another chance
@@ -1055,7 +1055,7 @@ country_event = {
 			}
 		}
 		add_stability = -1
-		add_republican_tradition = 0.01
+		add_republican_tradition = 10
 	}
 }
 
@@ -1973,7 +1973,7 @@ country_event = {
 			}
 		}
 		add_prestige = -5	
-		add_republican_tradition = -0.02
+		add_republican_tradition = -2
 	}
 	option = {
 		name = "EVTOPTB9566"		# It's not of any interest anymore
@@ -1986,7 +1986,7 @@ country_event = {
 			}
 		}
 		add_stability = -1
-		add_republican_tradition = 0.01
+		add_republican_tradition = 1
 	}
 }
 
@@ -2043,7 +2043,7 @@ country_event = {
 			}
 		}
 		add_prestige = -2
-		add_republican_tradition = 0.01
+		add_republican_tradition = 1
 	}
 	option = {
 		name = "EVTOPTB9567" # Take appropriate measurements
@@ -2059,7 +2059,7 @@ country_event = {
 			limit = { is_capital = yes }
 			add_unrest = 2
 		}
-		add_republican_tradition = -0.01
+		add_republican_tradition = -1
 	}
 }
 
@@ -2135,7 +2135,7 @@ country_event = {
 			name = "long_term_boost"
 			duration = 730
 		}
-		add_republican_tradition = 0.01
+		add_republican_tradition = 1
 	}
 }
 
@@ -2228,7 +2228,7 @@ country_event = {
 			name = "decreased_military_funding"
 			duration = 730
 		}
-		add_republican_tradition = 0.01
+		add_republican_tradition = 1
 	}
 }
 
@@ -2308,7 +2308,7 @@ country_event = {
 			limit = { is_capital = yes }
 			add_unrest = 5
 		}
-		add_republican_tradition = 0.01
+		add_republican_tradition = 1
 	}
 	option = {
 		name = "EVTOPTB9570"		# Get to it
@@ -2321,7 +2321,7 @@ country_event = {
 			}
 		}
 		add_years_of_income = -0.20
-		add_republican_tradition = -0.01
+		add_republican_tradition = -1
 	}
 }
 
@@ -2401,7 +2401,7 @@ country_event = {
 			chance = 40
 			add_stability = -1
 		}
-		add_republican_tradition = 0.02
+		add_republican_tradition = 2
 	}
 	option = {
 		name = "EVTOPTB9571"		# Request some help
@@ -2418,7 +2418,7 @@ country_event = {
 			type = statesman
 			skill = 3
 		}
-		add_republican_tradition = 0.01
+		add_republican_tradition = 1
 	}
 }
 
@@ -2497,7 +2497,7 @@ country_event = {
 			name = "even_spread_of_investments"
 			duration = 730
 		}
-		add_republican_tradition = 0.01
+		add_republican_tradition = 1
 	}
 	option = {
 		name = "EVTOPTB9572" # There's no need for any extra investments
@@ -2587,7 +2587,7 @@ country_event = {
 			name = "financial_arguments"
 			duration = 730
 		}
-		add_republican_tradition = -0.01
+		add_republican_tradition = -1
 	}
 	option = {
 		name = "EVTOPTB9573"		# Hear them out once more
@@ -2600,7 +2600,7 @@ country_event = {
 			}
 		}
 		add_years_of_income = -0.20
-		add_republican_tradition = 0.01
+		add_republican_tradition = 1
 	}
 }
 
@@ -2774,7 +2774,7 @@ country_event = {
 			limit = { is_capital = yes }
 			add_unrest = 3
 		}
-		add_republican_tradition = -0.01
+		add_republican_tradition = -1
 	}
 	option = {
 		name = "EVTOPTB9575"		# Let them think they have a say in things
@@ -2783,7 +2783,7 @@ country_event = {
 			name = "bothersome_parliament"
 			duration = 730
 		}
-		add_republican_tradition = 0.02		
+		add_republican_tradition = 2
 	}
 }
 
@@ -2955,7 +2955,7 @@ country_event = {
 			}
 		}
 		add_prestige = -5
-		add_republican_tradition = -0.01
+		add_republican_tradition = -1
 	}	
 	option = {
 		name = "EVTOPTB9577" # Get rid of him
@@ -2974,7 +2974,7 @@ country_event = {
 				add_unrest = 5
 			}
 		}	
-		add_republican_tradition = 0.01	
+		add_republican_tradition = 1
 	}
 }
 
@@ -3197,7 +3197,7 @@ country_event = {
 	picture = COURT_eventPicture
 	
 	trigger = {
-		NOT = { republican_tradition = 0.01 }
+		NOT = { republican_tradition = 1 }
 		government = revolutionary_republic
 	}
 	
@@ -3221,7 +3221,7 @@ country_event = {
 	trigger = {
 		has_dlc = "Rights of Man"
 		faction_in_power = rr_royalists
-		NOT = { republican_tradition = 0.41 }
+		NOT = { republican_tradition = 41 }
 		government = revolutionary_republic
 	}
 	

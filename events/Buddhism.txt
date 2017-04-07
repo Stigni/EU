@@ -1321,7 +1321,7 @@ country_event = {
 		add_karma = -10
 		add_legitimacy = 5
 		add_horde_unity = 5
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 	}
 	option = {
 		name = buddhism_events.23.c #Support the lay family of the monk.

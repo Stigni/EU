@@ -181,7 +181,7 @@ national_focus = ADM
 	add_ruler_personality = charismatic_negotiator_personality
 }
 
-1495.2.15 = {
+1512.2.8 = {
 	queen = {
 		country_of_origin = TRA
 		name = "Barbara"

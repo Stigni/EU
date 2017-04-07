@@ -1,4 +1,4 @@
-government = constitutional_monarchy
+government = english_monarchy
 technology_group = western
 primary_culture = english
 add_accepted_culture = scottish

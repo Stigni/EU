@@ -1,4 +1,4 @@
-#Akershus, incl. Oslo (Christiania), Sarpsborg, Tönsberg
+#Akershus, incl. Oslo (Christiania), Tönsberg
  
 owner = NOR
 controller = NOR
@@ -6,16 +6,12 @@ add_core = NOR
 culture = norwegian
 religion = catholic
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 3
+base_production = 3
 trade_goods = fish
-base_manpower = 3
+base_manpower = 2
 capital = "Oslo"
 is_city = yes
-fort_15th = yes
-
-
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
@@ -27,10 +23,7 @@ discovered_by = ottoman
 1536.1.1 = { religion = protestant } # Unknown date
 1536.1.1 = { owner = DAN controller = DAN add_core = DAN } # 'Handfästningen'(Unknown date)
 1630.1.1 = { trade_goods = naval_supplies } # Approximate date
-1646.1.1 = {
-	fort_15th = no
-	fort_16th = yes
-}
+
 1814.1.14 = {
 	owner = SWE
 	revolt = { type = nationalist_rebels size = 1.5 }

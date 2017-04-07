@@ -143,6 +143,7 @@
 
 488 = "La Sabana"
 490 = "Santo Domingo"
+492 = "Puerto Rico"
 836 = "Cartago"
 839 = "San Salvador"
 840 = "Trujillo"

@@ -1,18 +1,26 @@
-government = tribal_despotism
+government = tribal_kingdom
 primary_culture = nubian
-religion = shiite
+religion = coptic
 technology_group = east_african
 unit_type = sub_saharan
-capital = 1228	# Dongola
+capital = 1234	# Daw
 
-#Awlad Kenz
-
-1412.1.1 = {
+1440.1.1 = {
 	monarch = {
-		name = "Banu"
-		dynasty = "Kanz"
+		name = "Siti"
+		dynasty = "Dotawo"
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+1484.1.1 = {
+	monarch = {
+		name = "Ioel"
+		dynasty = "Dotawo"
 		adm = 3
-		dip = 4
-		mil = 5		
+		dip = 3
+		mil = 3
 	}
 }

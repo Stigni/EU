@@ -1070,7 +1070,17 @@ achievement_no_trail_of_tears = {
 			owned_by = CHE
 			is_core = CHE
 		}
+		south_carolina_area = {
+			type = all
+			owned_by = CHE
+			is_core = CHE
+		}
 		appalachia_area = {
+			type = all
+			owned_by = CHE
+			is_core = CHE
+		}
+		south_appalachia_area = {
 			type = all
 			owned_by = CHE
 			is_core = CHE
@@ -1841,7 +1851,7 @@ achievement_sinaasappel = {
 	happened = {
 		has_switched_nation = no
 		is_orangists_in_power = yes
-		republican_tradition = 0.99
+		republican_tradition = 99
 		
 		OR = {
 			south_china_region = {
@@ -4873,15 +4883,17 @@ achievement_fanatic_collectivist = {
 		is_institution_enabled = enlightenment
 		custom_trigger_tooltip = {
 			tooltip = achievement_fanatic_collectivist_tooltip
-			any_owned_province = { has_province_modifier = birthplace_of_the_renaissance }
-			any_owned_province = { has_province_modifier = birthplace_of_the_new_world }
-			any_owned_province = { has_province_modifier = birthplace_of_printing_press }
-			any_owned_province = { has_province_modifier = birthplace_of_global_trade }
-			any_owned_province = { has_province_modifier = birthplace_of_manufactories }
-			any_owned_province = { has_province_modifier = birthplace_of_enlightenment }
+			any_owned_province = { is_institution_origin = renaissance }
+			any_owned_province = { is_institution_origin  = new_world_i }
+			any_owned_province = { is_institution_origin  = printing_press }
+			any_owned_province = { is_institution_origin  = global_trade }
+			any_owned_province = { is_institution_origin  = manufactories }
+			any_owned_province = { is_institution_origin  = enlightenment }
 		}
 	}
 }
+
+
 
 achievement_core_fu = {
 	id = 190
@@ -4917,6 +4929,10 @@ achievement_rozwi_empire = {
 
 	happened = {
 		zimbabwe_area = {
+			type = all
+			owned_by = ROOT
+		}
+		butua_area = {
 			type = all
 			owned_by = ROOT
 		}

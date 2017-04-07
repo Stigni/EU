@@ -651,6 +651,7 @@ country_event = {
 		is_year = 1600
 		is_subject = no
 		government = monarchy
+		NOT = { government = absolute_monarchy }
 	}
 
 	mean_time_to_happen = {

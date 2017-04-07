@@ -14,9 +14,6 @@ base_manpower = 7
 estate = estate_church #
 add_core = PRO
 fort_15th = yes
-
-
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

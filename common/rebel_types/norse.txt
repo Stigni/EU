@@ -102,7 +102,7 @@ norse_pagan_reformed_rebels = {
 	 		}
 	 	}
 		modifier = {
-			factor = 1.5
+			factor = 5
 			has_missionary = yes
 			religion = norse_pagan_reformed
 		}

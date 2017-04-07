@@ -17,3 +17,4 @@
 2960 = "Újszandec"
 2998 = "Bodzavásár"
 4127 = "Torda"
+4173 = "Szerém"

@@ -86,15 +86,12 @@ country_decisions = {
 				}
 				add_permanent_claim = RUS
 			}
-			saratov_area = {
+			ural_region = {
 				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = RUS
-			}
-			bashkiria_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
+					NOT = {
+						owned_by = ROOT
+						is_empty = no
+					}
 				}
 				add_permanent_claim = RUS
 			}

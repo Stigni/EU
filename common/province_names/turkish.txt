@@ -2,11 +2,11 @@
 112 = "Venedik"
 122 = "Otranto"
 134 = "Beç" #Modern Turkish Name: Viyana
-138 = "Iskodra"
+138 = "Kotor"
 139 = "Hersek"
 140 = "Bosna"
 141 = "Semendire"
-143 = "Ilbasan" #Modern Turkish Name: Elbasan
+143 = "Avlonya"
 144 = "Yanya"
 145 = "Anabolu"
 146 = "Atina"
@@ -132,3 +132,6 @@
 
 4125 = "Eger"
 4126 = "Segedin"
+4173 = "Sirem"
+4174 = "Ilbasan" #Modern Turkish Name: Elbasan
+4175 = "Iskodra"

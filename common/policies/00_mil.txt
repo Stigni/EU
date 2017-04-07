@@ -30,7 +30,7 @@ privy_council_establishment_act = {
 }
 
 the_mercenary_registration_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 
 	potential = {
@@ -792,7 +792,7 @@ the_licensing_of_the_press_act = {
 		full_idea_group = aristocracy_ideas
 	}
 
-	relations_decay_of_me = 0.2
+	improve_relation_modifier = 0.2
 	ae_impact = -0.1
 	
 	ai_will_do = {
@@ -821,7 +821,7 @@ the_tenures_abolition_act = {
 	}
 
 	legitimacy = 1
-	republican_tradition = 0.004
+	republican_tradition = 0.4
 	devotion = 1
 	horde_unity = 1
 		

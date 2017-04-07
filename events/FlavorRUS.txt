@@ -251,6 +251,11 @@ country_event = {
 			owned_by = RUS
 			is_core = RUS
 		}
+		samara_area = {
+			type = all
+			owned_by = RUS
+			is_core = RUS
+		}
 		tambov_area = {
 			type = all
 			owned_by = RUS
@@ -279,6 +284,12 @@ country_event = {
 			add_permanent_claim = RUS
 		}
 		nogai_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = RUS
+		}
+		lower_yik_area = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}

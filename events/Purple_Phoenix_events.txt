@@ -226,6 +226,7 @@ country_event = {
 			owns = 148
 		}
 		serbia_area = { type = all NOT = { owned_by = TUR }}
+		rascia_area = { type = all NOT = { owned_by = TUR }}
 		bosnia_area = { type = all NOT = { owned_by = TUR }}
 		croatia_area = { type = all NOT = { owned_by = TUR }}
 		east_adriatic_coast_area = { type = all NOT = { owned_by = TUR }}
@@ -262,6 +263,7 @@ country_event = {
 		bulgaria_area = { type = all NOT = { owned_by = TUR }}
 		wallachia_area = { type = all NOT = { owned_by = TUR }}
 		macedonia_area = { type = all NOT = { owned_by = TUR }}
+		albania_area = { type = all NOT = { owned_by = TUR }}
 	}
 	
 	mean_time_to_happen = {

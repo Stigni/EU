@@ -37,6 +37,18 @@ country_decisions = {
 				}
 				add_permanent_claim = SOK
 			}
+			katsina_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SOK
+			}
+			zazzau_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SOK
+			}
 			niger_region = {
 				limit = {
 					NOT = { owned_by = ROOT }

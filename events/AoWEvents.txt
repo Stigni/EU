@@ -1236,10 +1236,11 @@ country_event = {
 				religion = ROOT
 			}
 		}
+		NOT = { religion_years = { protestant = 50 } }
 	}
 
 	mean_time_to_happen = {
-		months = 240
+		months = 300
 	}
 
 	# Together we will spread God's true message!

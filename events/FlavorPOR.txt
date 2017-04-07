@@ -562,7 +562,7 @@ country_event = {
 		name = "flavor_por.EVTOPTB3280"
 		ai_chance = { factor = 25 }
 		add_legitimacy = -25
-		add_republican_tradition = -0.25
+		add_republican_tradition = -25
 	}
 }
 
@@ -776,7 +776,7 @@ country_event = {
 		tag = POR
 		is_year = 1500
 		has_discovered = 646	# Ambon
-		molluca_area = {
+		moluccas_region = {
 			owned_by = POR
 			NOT = { religion = ROOT }
 		}

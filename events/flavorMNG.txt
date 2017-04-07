@@ -1266,6 +1266,7 @@ country_event = {
 		any_owned_province = {
 			OR = {
 				area = guangxi_area
+				area = west_guangdong_area
 				area = guangdong_area
 				stability = -1
 			}
@@ -1321,6 +1322,7 @@ country_event = {
 					OR = {
 						area = guangxi_area
 						area = guangdong_area
+						area = west_guangdong_area
 						AND = {
 							NOT = { owner = { stability = -1 } }
 							region = north_china_region

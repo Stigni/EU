@@ -181,7 +181,7 @@ country_decisions = {
 			num_of_cities = 15
 			OR = {
 				legitimacy = 75
-				republican_tradition = 0.75
+				republican_tradition = 75
 			}
 			adm_power = 200
 			mil_power = 200

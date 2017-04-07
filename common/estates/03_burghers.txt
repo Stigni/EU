@@ -153,6 +153,7 @@ estate_burghers =
 			capital_scope = {
 				OR = {
 					area = central_swahili_coast_area
+					area = mombasa_area
 					area = mozambique_area
 					area = northern_swahili_coast_area
 					area = mogadishu_area

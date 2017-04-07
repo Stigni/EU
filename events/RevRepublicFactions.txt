@@ -31,7 +31,7 @@ country_event = {
 
 	option = {
 		name = "revolutionary_republic_factions.0.a"
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 		add_faction_influence = {
 			faction = rr_jacobins
 			influence = 10

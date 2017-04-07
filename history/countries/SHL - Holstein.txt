@@ -70,6 +70,21 @@ capital = 1775	# Kiel
 	add_ruler_personality = fierce_negotiator_personality
 }
 
+1440.1.1 = {
+	heir = {
+		name = "Christian I"
+		dynasty = "von Oldenburg"
+		birth_date = 1426.2.1
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1459.12.1 = {
+	set_global_flag = death_of_adolf_of_slesvig
+}
+
 # Danish Province
 
 1544.1.1 = {

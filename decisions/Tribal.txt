@@ -128,7 +128,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_power = 200
-			republican_tradition = 0.99
+			republican_tradition = 99
 			stability = 3
 			custom_trigger_tooltip = {
 				tooltip = dlc_or_feudalism_tooltip

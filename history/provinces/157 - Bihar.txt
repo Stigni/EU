@@ -13,8 +13,6 @@ base_manpower = 1
 is_city = yes
 add_core = HUN
 add_core = TRA
-
-
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
@@ -46,10 +44,18 @@ discovered_by = ottoman
 1562.1.1 = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Szekely rebellion
 1563.1.1 = { revolt = {} controller = TRA }
 1567.1.1 = { religion = reformed } # Synod of Debrecen
+1569.1.1 = {
+	fort_15th = no
+	fort_16th = yes
+}
 1570.1.1 = { remove_core = HAB } # Treaty of Speyer, Habsburgs drop claims
 1604.1.1 = { owner = HAB controller = HAB }
 1604.10.1 = { revolt = { type = nationalist_rebels size = 2 } controller = REB }
 1606.6.23 = { revolt = {} owner = TRA controller = TRA } # Stephen becomes prince of Transylvania
+1650.1.1 = {
+	fort_16th = no
+	fort_17th = yes
+}
 1660.1.1 = {
 	owner = TUR
 	controller = TUR

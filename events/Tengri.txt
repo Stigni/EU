@@ -330,8 +330,11 @@ country_event = {
 		has_secondary_religion = yes
 		any_owned_province = {
 			NOT = { has_province_modifier = tengri_religious_influx }
-			any_neighbor_province = {
+			OR = {
 				religion = secondary
+				any_neighbor_province = {
+					religion = secondary
+				}
 			}
 		}
 	}
@@ -342,6 +345,12 @@ country_event = {
 	
 	option = {
 		name = tengri_events.6.a #Encourage them to settle among their peers.
+		trigger = {
+			any_owned_province = {
+				religion = secondary
+				NOT = { has_province_modifier = tengri_religious_influx }
+			}
+		}
 		random_owned_province = {
 			limit = {
 				religion = secondary
@@ -352,6 +361,15 @@ country_event = {
 	}
 	option = {
 		name = tengri_events.6.b #Send them out into the provinces.
+		trigger = {
+			any_owned_province = {
+				NOT = { religion = secondary }
+				NOT = { has_province_modifier = tengri_religious_influx }
+				any_neighbor_province = {
+					religion = secondary
+				}
+			}
+		}
 		random_owned_province = {
 			limit = {
 				NOT = { religion = secondary }
@@ -611,7 +629,7 @@ country_event = {
 		add_legitimacy = 10
 		add_horde_unity = 10
 		add_devotion = 5
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 	}
 }
 
@@ -674,7 +692,7 @@ country_event = {
 		add_legitimacy = 10
 		add_horde_unity = 10
 		add_devotion = 5
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 		custom_tooltip = tengri_events.12.b.tt
 		hidden_effect = {
 			every_owned_province = {
@@ -1249,7 +1267,7 @@ country_event = {
 		add_legitimacy = 5
 		add_horde_unity = 5
 		add_devotion = 3
-		add_republican_tradition = 0.03
+		add_republican_tradition = 3
 	}
 }
 
@@ -1417,7 +1435,7 @@ country_event = {
 		add_legitimacy = 5
 		add_horde_unity = 5
 		add_devotion = 3
-		add_republican_tradition = 0.03
+		add_republican_tradition = 3
 	}
 }
 
@@ -1445,7 +1463,7 @@ country_event = {
 		add_legitimacy = -5
 		add_horde_unity = -5
 		add_devotion = -5
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 		add_country_modifier = {
 			name = "tengri_pali_legal_traditions"
 			duration = 3650
@@ -1456,7 +1474,7 @@ country_event = {
 		add_legitimacy = 5
 		add_horde_unity = 5
 		add_devotion = 3
-		add_republican_tradition = 0.03
+		add_republican_tradition = 3
 	}
 }
 
@@ -1794,7 +1812,7 @@ country_event = {
 		add_horde_unity = -10
 		add_legitimacy = -10
 		add_devotion = -5
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 	}
 }
 
@@ -1864,7 +1882,7 @@ country_event = {
 		add_horde_unity = -10
 		add_legitimacy = -10
 		add_devotion = -5
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 		random_owned_province = {
 			limit = {
 				NOT = { is_core = owner }
@@ -1879,7 +1897,7 @@ country_event = {
 		add_legitimacy = 5
 		add_horde_unity = 5
 		add_devotion = 3
-		add_republican_tradition = 0.03
+		add_republican_tradition = 3
 	}
 }
 
@@ -2174,7 +2192,7 @@ country_event = {
 		add_horde_unity = -10
 		add_legitimacy = -10
 		add_devotion = -5
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 		add_ruler_modifier = {
 			name = "tengri_personal_confessor"
 		}
@@ -2572,7 +2590,7 @@ country_event = {
 		add_horde_unity = -10
 		add_legitimacy = -10
 		add_devotion = -5
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 	}
 	option = {
 		name = tengri_events.54.b #Side with the Warriors.
@@ -2644,7 +2662,7 @@ country_event = {
 		add_legitimacy = 5
 		add_horde_unity = 5
 		add_devotion = 3
-		add_republican_tradition = 0.03
+		add_republican_tradition = 3
 	}
 }
 
@@ -2671,7 +2689,7 @@ country_event = {
 		add_horde_unity = 10
 		add_legitimacy = 10
 		add_devotion = 10
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 	}
 }
 
@@ -2702,7 +2720,7 @@ country_event = {
 		add_horde_unity = 10
 		add_legitimacy = 10
 		add_devotion = 10
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 	}
 }
 
@@ -2863,7 +2881,7 @@ country_event = {
 		add_horde_unity = -5
 		add_legitimacy = -5
 		add_devotion = -3
-		add_republican_tradition = -0.03
+		add_republican_tradition = -3
 	}
 	option = {
 		name = tengri_events.63.b #

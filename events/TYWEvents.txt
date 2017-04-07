@@ -158,6 +158,7 @@ province_event = {
 
 	option = {
 		name = "tyw_events.5.a"
+		trigger = { is_island = no } #Overland help cannot really arrive in this case.
 		owner = { add_adm_power = -25 }
 	}
 

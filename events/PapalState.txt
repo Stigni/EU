@@ -57,6 +57,7 @@ country_event = {
 		every_country = {
 			limit = {
 				religion = catholic
+				NOT = { tag = ROOT }
 			}
 			add_opinion = { who = ROOT modifier = opinion_declined_independent_state_support }
 		}

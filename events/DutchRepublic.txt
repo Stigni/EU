@@ -243,7 +243,7 @@ country_event = {
 		clr_country_flag = supported_orangists
 		add_adm_power = 25
 		add_prestige = 10
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 	}
 
 	# Retain modesty
@@ -315,7 +315,7 @@ country_event = {
 		name = "dutch_republic.7.a"
 		clr_country_flag = supported_statists
 		change_statists_vs_orangists = -0.1
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 	}
 }
 
@@ -375,7 +375,7 @@ country_event = {
 		ai_chance = { factor = 20 }
 		change_statists_vs_orangists = -0.75
 		kill_ruler = yes
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 	}
 
 	# High treason must be punished
@@ -384,7 +384,7 @@ country_event = {
 		ai_chance = { factor = 80 }
 		custom_tooltip = "dutch_republic.9.b.tt"
 		kill_advisor = spymaster
-		add_republican_tradition = 0.03
+		add_republican_tradition = 3
 	}
 }
 
@@ -409,7 +409,7 @@ country_event = {
 
 	option = {
 		name = "dutch_republic.10.a"
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 	}
 }
 
@@ -677,7 +677,7 @@ country_event = {
 	# Let it goooo
 	option = {
 		name = "dutch_republic.16.b"
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 		add_adm_power = -50
 		add_dip_power = -50
 		clr_country_flag = supported_statists
@@ -816,7 +816,7 @@ country_event = {
 		ai_chance = { factor = 20 }
 		change_statists_vs_orangists = 1.0
 		kill_ruler = yes
-		add_republican_tradition = -0.15
+		add_republican_tradition = -15
 	}
 
 	# For the Republic!
@@ -849,7 +849,7 @@ country_event = {
 				size = 2
 			}
 		}
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 	}
 }
 
@@ -922,7 +922,7 @@ country_event = {
 		name = "dutch_republic.22.b"
 		change_statists_vs_orangists = -0.1
 		add_war_exhaustion = -2.5
-		add_republican_tradition = 0.02
+		add_republican_tradition = 2
 	}
 }
 
@@ -1001,7 +1001,7 @@ country_event = {
 	# They faught our war, let them keep their power
 	option = {
 		name = "dutch_republic.24.b"
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 	}
 }
 

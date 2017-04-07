@@ -316,7 +316,7 @@ country_event = {
 		add_legitimacy = 15
 		add_devotion = 7
 		add_horde_unity = 15
-		add_republican_tradition = 0.07
+		add_republican_tradition = 7
 	}
 	
 	option = {
@@ -1036,7 +1036,6 @@ country_event = {
 	}
 	option = {
 		name = "personality_events.15.b" #We cannot allow him to make a mockery of our faith!
-		trigger = { NOT = { ruler_has_personality = zealot_personality } }
 		add_prestige = 10
 		if = {
 			limit = {
@@ -1391,7 +1390,7 @@ country_event = {
 
 	option = {
 		name = "personality_events.20.a"
-		add_years_of_income = -0.08
+		add_years_of_income = -0.15
 		random_known_country = {
 			limit = {
 				has_spy_network_from = {
@@ -1405,7 +1404,7 @@ country_event = {
 			}
 		}
 		if = {
-			#limit = { monthly_income = 40 }
+			limit = { monthly_income = 40 }
 			random_known_country = {
 				limit = {
 					has_spy_network_from = {
@@ -1420,7 +1419,7 @@ country_event = {
 			}
 		}
 		if = {
-			#limit = { monthly_income = 60 }
+			limit = { monthly_income = 60 }
 			random_known_country = {
 				limit = {
 					has_spy_network_from = {

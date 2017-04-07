@@ -91,6 +91,12 @@ country_decisions = {
 					change_culture = prussian
 				}
 			}
+			pomerelia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = PRU
+			}
 			west_prussia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -152,6 +158,12 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PRU
+			pomerelia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = PRU
+			}
 			east_prussia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -263,6 +275,12 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			east_prussia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = PRU
+			}
+			pomerelia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

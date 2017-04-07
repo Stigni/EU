@@ -48,6 +48,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
+		do_not_core = 151 # Constantinople
 	}
 
 	provincial_system = {

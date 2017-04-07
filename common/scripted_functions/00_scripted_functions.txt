@@ -48,42 +48,12 @@ can_increase_stability = {
 
 # ROOT = province, FROM = country
 can_add_province_to_hre = {
-	condition = {
-		tooltip = "APH_NOT_OWNED_CONTROLLED"
-		potential = {
-		}
-		allow = {
-			owned_by = FROM
-			controlled_by = FROM
-		}
-	}
+	
 }
 
 can_remove_province_from_hre = {
-	condition = {
-		tooltip = "RPH_AT_WAR"
-		potential = {
-		}
-		allow = {
-			owner = { is_at_war = no }
-		}
-	}
-	condition = {
-		tooltip = "RPH_SUBJECT"
-		potential = {
-		}
-		allow = {
-			owner = { is_subject = no }
-		}
-	}
-	condition = {
-		tooltip = "RPH_TRUCE_EMP"
-		potential = {
-		}
-		allow = {
-			owner = { NOT = { truce_with = emperor } }
-		}
-	}
+	
+
 }
 
 can_increase_autonomy = {

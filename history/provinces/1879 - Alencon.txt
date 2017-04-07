@@ -1,7 +1,7 @@
 # 1879 - Alençon
 
-owner = FRA
-controller = FRA
+owner = ENG
+controller = ENG
 capital = "Alençon"
 is_city = yes
 culture = cosmopolitan_french
@@ -11,18 +11,21 @@ base_tax = 6
 base_production = 6
 trade_goods = cloth
 base_manpower = 4
-estate = estate_nobles
 add_core = ALE
+add_core = ENG
 add_core = FRA
-
-
-
+add_local_autonomy = 80
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-
+1449.3.24 = { #Fall of Routier
+	owner = FRA 
+	controller = FRA
+	estate = estate_nobles
+	add_local_autonomy = -80
+}
 1549.1.1 = { remove_core = ALE }
 1650.1.14 = { unrest = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
 1651.4.1 = { unrest = 4 } # An unstable peace is concluded

@@ -31,6 +31,13 @@ union = {
 }
 
 alliance = {
+	first = FRA
+	second = PRO
+	start_date = 1431.1.25
+	end_date = 1453.7.18
+}
+
+alliance = {
 	first = LOR
 	second = BAR
 	start_date = 1480.7.10

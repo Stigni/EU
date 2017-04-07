@@ -1,4 +1,4 @@
-#Jylland, incl. Aarhus, Aalborg, Viborg and Kolding
+#15 - Western Jutland, incl. Ribe and Ringkøbing
 
 owner = DAN
 controller = DAN
@@ -6,17 +6,13 @@ add_core = DAN
 culture = danish
 religion = catholic
 hre = no
-base_tax = 5
-base_production = 5
+base_tax = 2
+base_production = 2
 trade_goods = grain
-base_manpower = 3
-capital = "Aarhus"
+base_manpower = 1
+capital = "Ribe"
 is_city = yes
 estate = estate_nobles
-fort_15th = yes
-
-
-
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -2,7 +2,7 @@ government = feudal_monarchy
 primary_culture = serbian
 religion = orthodox
 technology_group = eastern
-capital = 141	# Beograd
+capital = 4176	# Krusevac
 historical_friend = BOS
 
 1389.1.1 = {
@@ -179,6 +179,7 @@ historical_friend = BOS
 		mil = 1
 	}
 	government = administrative_monarchy
+	capital = 141
 }
 
 1806.10.11 = {

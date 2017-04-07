@@ -17,12 +17,14 @@ country_decisions = {
 			NOT = { religion_group = muslim }
 			OR = {
 				ai = no
-				ARA = { ai = no }
 				AND = {
-					NOT = { tag = ARA }
-					NOT = { tag = CAS }
+					ARA = { ai = yes }
+					tag = CAS
 				}
-				is_year = 1500
+				AND = {
+					CAS = { ai = yes }
+					tag = ARA
+				}
 			}
 			OR = {
 				ai = no
@@ -135,21 +137,49 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			is_tutorial_active = no
-			tag = CAS
-			owns = 219
+			OR = {
+				tag = CAS
+				tag = ARA
+			}
+			capital_scope = {
+				region = iberia_region
+			}
 			OR = {
 				ai = no
 				AND = {
 					ai = yes
 					OR = {
-						ARA = {	junior_union_with = CAS	}
-						ARA = {	vassal_of = CAS	}
+						AND = {
+							tag = CAS
+							ARA = {	junior_union_with = CAS	}
+						}
+						AND = {
+							tag = CAS
+							ARA = {	vassal_of = CAS	}
+						}
+						AND = {
+							tag = ARA
+							CAS = {	junior_union_with = ARA	}
+						}
+						AND = {
+							tag = ARA
+							CAS = {	vassal_of = ARA	}
+						}
 					}
 				}
 			}
-			NOT = { #This overlaps with allow for AI, is meant to negate do_not_integrate
-				ai = yes
-				ARA = { num_of_cities = 32 } #Keep this number the same as below
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					tag = CAS
+					ARA = { NOT = { num_of_cities = 32 } } #Keep this number the same as below
+				}
+				AND = {
+					ai = yes
+					tag = ARA
+					CAS = { NOT = { num_of_cities = 37 } } #Keep this number the same as below
+				}
 			}
 		}
 		allow = {
@@ -158,24 +188,47 @@ country_decisions = {
 			is_nomad = no
 			is_at_war = no
 			legitimacy = 100
-			OR = {
-				tag = GRA
-				NOT = {
-					iberia_region = {
-						owned_by = GRA
+			iberia_region = {
+				type = all
+				NOT = { owner = { religion_group = muslim } }
+			}
+			custom_trigger_tooltip = {
+				tooltip = forming_spain_diplomatically_tooltip
+				OR = {
+					AND = {
+						tag = CAS
+						ARA = {	junior_union_with = CAS	}
+					}
+					AND = {
+						tag = CAS
+						ARA = {	vassal_of = CAS	}
+					}
+					AND = {
+						tag = ARA
+						CAS = {	junior_union_with = ARA	}
+					}
+					AND = {
+						tag = ARA
+						CAS = {	vassal_of = ARA	}
 					}
 				}
 			}
 			OR = {
-				ARA = {	junior_union_with = CAS	}
-				ARA = {	vassal_of = CAS	}
-			}
-			ARA = {
-				NOT = { num_of_cities = 32 } #Keep this number the same as above. Original 17 +15
+				AND = {
+					tag = CAS
+					ARA = {
+						NOT = { num_of_cities = 32 } #Keep this number the same as above. Original 17 +15
+					}
+				}
+				AND = {
+					tag = ARA
+					CAS = {
+						NOT = { num_of_cities = 37 } #Keep this number the same as above. Original 17 +15
+					}
+				}
 			}
 		}
 		effect = {
-			change_tag = SPA
 			if = {
 				limit = {
 					is_part_of_hre = yes
@@ -194,12 +247,36 @@ country_decisions = {
 			}
 			if = {
 				limit = {
+					tag = CAS
 					ARA = {
 						ai = yes
 					}
 				}
 				inherit = ARA
-			}	
+			}
+			if = {
+				limit = {
+					tag = ARA
+					CAS = {
+						ai = yes
+					}
+				}
+				inherit = CAS
+			}
+			change_tag = SPA
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			custom_tooltip = spanish_unification_effect.tooltip
 			hidden_effect = {
 				iberia_region = {
@@ -217,6 +294,7 @@ country_decisions = {
 		}
 		ai_importance = 200
 		do_not_integrate = ARA
+		do_not_integrate = CAS
 	}	
 	
 }

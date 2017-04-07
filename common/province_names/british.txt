@@ -12,6 +12,7 @@
 388 = "Aden"
 410 = "Baghdad"
 411 = "Mosul"
+492 = "Porto Rico"
 1854 = "Nablus"
 2313 = "Antioch"
 2315 = "Suez"

@@ -300,6 +300,10 @@ alerts = {
 	alert_no_fetishist_cult = {
 		category = MEDIUM
 	}
+
+	alert_high_naval_attrition = {
+		category = HIGH
+	}
 	
 	alert_can_embrace = {
 		category = MEDIUM

@@ -81,7 +81,9 @@ country_event = {
 				area = manding_area
 				area = baghena_area
 				area = niger_bend_area
+				area = dendi_area
 				area = massina_area
+				area = jenne_area
 			}
 		}
 		OR = {

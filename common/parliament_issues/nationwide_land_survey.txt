@@ -22,8 +22,8 @@ nationwide_land_survey = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = { has_province_flag = nationwide_land_survey_flag }
-				add_base_tax = 1
-				add_base_production = nationwide_land_survey_flag
+				add_base_production = 1
+				set_province_flag = nationwide_land_survey_flag
 			}
 		}
 		if = {

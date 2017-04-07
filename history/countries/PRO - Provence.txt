@@ -5,7 +5,6 @@ add_accepted_culture = cosmopolitan_french
 religion = catholic
 technology_group = western
 capital = 201 # Aix-en-Provence
-fixed_capital = 201 # Cannot move capital away from this province & no power cost to move to it
 
 
 1399.8.1 = {
@@ -97,6 +96,10 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 
 1442.6.2 = { remove_accepted_culture = sicilian }
 
+1444.1.1 = {
+	capital = 178 #Anjou
+}
+
 1454.9.10 = {
 	queen = {
 		country_of_origin = BRI #Count of Laval
@@ -109,6 +112,10 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 		dip = 3
 		mil = 1
 	}
+}
+
+1470.1.1 = {
+	capital = 201 # Aix-en-Provence
 }
 
 1480.7.10 = {
@@ -133,7 +140,9 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1515.1.1 = { government = despotic_monarchy }
+1515.1.1 = {
+	government = despotic_monarchy
+}
 
 1560.1.1 = { religion = reformed }
 

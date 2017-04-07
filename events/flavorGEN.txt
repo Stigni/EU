@@ -264,7 +264,7 @@ country_event = {
 	
 	option = {
 		name = flavor_gen.8.b
-		add_republican_tradition = -0.10
+		add_republican_tradition = -10
 	}	
 }
 
@@ -292,7 +292,7 @@ country_event = {
 	
 	option = {
 		name = flavor_gen.9.a
-		add_republican_tradition = 0.01
+		add_republican_tradition = 1
 		FRA = {
 			add_opinion = {
 				who = root
@@ -309,7 +309,7 @@ country_event = {
 	
 	option = {
 		name = flavor_gen.9.b
-		add_republican_tradition = 0.01
+		add_republican_tradition = 1
 		emperor = {
 			add_opinion = {
 				who = root
@@ -325,7 +325,7 @@ country_event = {
 	}	
 	option = {
 		name = flavor_gen.9.c
-		add_republican_tradition = -0.02
+		add_republican_tradition = -2
 	}	
 }
 
@@ -363,7 +363,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_gen.10.b
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 	}
 }
 
@@ -392,7 +392,7 @@ country_event = {
 	option = {
 		name = flavor_gen.11.a
 		ai_chance = { factor = 30 }
-		add_republican_tradition = -0.2
+		add_republican_tradition = -20
 		define_ruler = {
 			name = "Andrea Doria"
 			dynasty = "Doria"

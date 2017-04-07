@@ -66,6 +66,12 @@ country_decisions = {
 				}
 				add_permanent_claim = MAY
 			}
+			east_yucatan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MAY
+			}
 			add_prestige = 25
 			change_government = despotic_monarchy
 		}

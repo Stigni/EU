@@ -40,6 +40,10 @@ country_decisions = {
 							type = all
 							owned_by = ROOT
 						}
+						malacca_area = {
+							type = all
+							owned_by = ROOT
+						}
 						kalimantan_area = {
 							type = all
 							owned_by = ROOT
@@ -61,11 +65,23 @@ country_decisions = {
 							type = all
 							owned_by = ROOT
 						}
+						malacca_area = {
+							type = all
+							owned_by = ROOT
+						}
 						north_sumatra_area = {
 							type = all
 							owned_by = ROOT
 						}
+						batak_area = {
+							type = all
+							owned_by = ROOT
+						}
 						central_sumatra_area = {
+							type = all
+							owned_by = ROOT
+						}
+						minangkabau_area = {
 							type = all
 							owned_by = ROOT
 						}
@@ -135,8 +151,11 @@ country_decisions = {
 						area = kalimantan_area
 						area = north_sumatra_area
 						area = central_sumatra_area
+						area = batak_area
+						area = minangkabau_area
 						area = south_sumatra_area
 						area = malaya_area
+						area = malacca_area
 					}
 				}
 				add_permanent_claim = MSA

@@ -219,6 +219,7 @@ country_event = {
 		tag = TUR
 		is_year = 1450
 		NOT = { is_year = 1500 }
+		religion_group = muslim
 	}
 	
 	mean_time_to_happen = {

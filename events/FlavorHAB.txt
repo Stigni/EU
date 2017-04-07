@@ -298,6 +298,7 @@ country_event = {
 			OR = {
 				area = transdanubia_area
 				area = transylvania_area
+				area = southern_transylvania_area
 				area = alfold_area
 				area = slovakia_area
 			}
@@ -317,6 +318,7 @@ country_event = {
 					OR = {
 						area = transdanubia_area
 						area = transylvania_area
+						area = southern_transylvania_area
 						area = alfold_area
 						area = slovakia_area
 					}
@@ -350,6 +352,7 @@ country_event = {
 					area = transylvania_area
 					area = alfold_area
 					area = slovakia_area
+					area = southern_transylvania_area
 				}
 			}	
 			add_unrest = 5
@@ -362,6 +365,7 @@ country_event = {
 				OR = {
 					area = transdanubia_area
 					area = transylvania_area
+					area = southern_transylvania_area
 					area = alfold_area
 					area = slovakia_area
 				}
@@ -793,6 +797,7 @@ country_event = {
 				NOT = { area = wallachia_area }
 				NOT = { area = moldavia_area }
 				NOT = { area = transylvania_area }
+				NOT = { area = southern_transylvania_area }
 			}
 			change_culture = hungarian
 		}
@@ -818,7 +823,7 @@ country_event = {
 					NOT = { has_province_flag = hungarian_revolt }
 				}
 			}
-			every_owned_province = {
+			random_owned_province = {
 				limit = {
 					region = carpathia_region
 					NOT = { area = wallachia_area }
@@ -901,7 +906,56 @@ country_event = {
 	mean_time_to_happen = {
 		months = 150
 	}
-
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_owner_accepted_culture = no
+					NOT = { culture = root }
+					is_overseas = no
+				}
+				set_province_flag = nationalists_comes_here
+			}
+			random_owned_province = {
+				limit = {
+					has_owner_accepted_culture = no
+					NOT = { culture = root }
+					is_overseas = no
+					NOT = { has_province_flag = nationalists_comes_here }
+				}
+				set_province_flag = nationalists_comes_here
+			}
+			random_owned_province = {
+				limit = {
+					has_owner_accepted_culture = no
+					NOT = { culture = root }
+					is_overseas = no
+					NOT = { has_province_flag = nationalists_comes_here }
+				}
+				set_province_flag = nationalists_comes_here
+			}
+			random_owned_province = {
+				limit = {
+					has_owner_accepted_culture = no
+					NOT = { culture = root }
+					is_overseas = no
+					NOT = { has_province_flag = nationalists_comes_here }
+				}
+				set_province_flag = nationalists_comes_here
+			}
+			random_owned_province = {
+				limit = {
+					has_owner_accepted_culture = no
+					NOT = { culture = root }
+					is_overseas = no
+					NOT = { has_province_flag = nationalists_comes_here }
+				}
+				set_province_flag = nationalists_comes_here
+			}
+		}
+	}
+	
 	option = {		# React against Revolutionary Tendencies!
 		name = "flavor_hab.EVTOPTA3340"
 		ai_chance = {
@@ -909,7 +963,7 @@ country_event = {
 			modifier = {
 				factor = 0
 				num_of_owned_provinces_with = {
-					value = 15
+					value = 3
 					has_owner_accepted_culture = no
 					NOT = { culture = root }
 					is_overseas = no
@@ -919,10 +973,9 @@ country_event = {
 		add_adm_power = 200
 		every_owned_province = {
 			limit = {
-				has_owner_accepted_culture = no
-				NOT = { culture = root }
-				is_overseas = no
+				has_province_flag = nationalists_comes_here
 			}
+			clr_province_flag nationalists_comes_here
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 1
@@ -942,6 +995,12 @@ country_event = {
 					is_overseas = no
 				}
 			}
+		}
+		every_owned_province = {
+			limit = {
+				has_province_flag = nationalists_comes_here
+			}
+			clr_province_flag nationalists_comes_here
 		}
 		add_adm_power = -200
 		add_dip_power = -200

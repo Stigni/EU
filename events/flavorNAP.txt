@@ -57,8 +57,8 @@ country_event = {
 		FRA = {
 			country_event = {
 				id = flavor_nap.2
-				tooltip = flavor_nap.1.2
 			}
+			create_union = NAP
 		}
 		
 	}
@@ -216,7 +216,7 @@ country_event = {
 		name = flavor_nap.5.b
 		ai_chance = { factor = 90 }
 		add_legitimacy = -25
-		add_republican_tradition = -0.25
+		add_republican_tradition = -25
 		add_corruption = 1
 		121 = { particularist_rebels = 1 }
 

@@ -2,7 +2,7 @@ government = iqta
 technology_group = east_african
 unit_type = sub_saharan
 religion = sunni
-primary_culture = somali
+primary_culture = harari
 capital = 1211	# Deker, Harer
 
 

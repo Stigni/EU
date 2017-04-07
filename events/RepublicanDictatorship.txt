@@ -23,7 +23,7 @@ country_event = {
 	option = {
 		name = republican_dictatorship.1.a
 		add_adm_power = 100
-		add_republican_tradition = -0.2
+		add_republican_tradition = -20
 	}
 
 	option = {
@@ -49,7 +49,7 @@ country_event = {
 	option = {
 		name = republican_dictatorship.2.a
 		add_dip_power = 100
-		add_republican_tradition = -0.2
+		add_republican_tradition = -20
 	}
 
 	option = {
@@ -75,7 +75,7 @@ country_event = {
 	option = {
 		name = republican_dictatorship.3.a
 		add_mil_power = 100
-		add_republican_tradition = -0.2
+		add_republican_tradition = -20
 	}
 
 	option = {
@@ -101,12 +101,12 @@ country_event = {
 	option = {
 		name = republican_dictatorship.4.a
 		create_general = 100
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 	}
 
 	option = {
 		name = republican_dictatorship.4.b
-		add_republican_tradition = 0.1
+		add_republican_tradition = 10
 	}
 }
 
@@ -126,7 +126,7 @@ country_event = {
 
 	option = {
 		name = republican_dictatorship.5.a
-		add_republican_tradition = 0.2
+		add_republican_tradition = 20
 		add_adm_power = -40
 		add_dip_power = -40
 		add_mil_power = -40
@@ -134,7 +134,7 @@ country_event = {
 
 	option = {
 		name = republican_dictatorship.5.b
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		random_owned_province = {
 			spawn_rebels = {
 				type = revolutionary_rebels
@@ -170,13 +170,13 @@ country_event = {
 
 	option = {
 		name = republican_dictatorship.6.a
-		add_republican_tradition = 0.2
+		add_republican_tradition = 20
 		add_adm_power = -100
 	}
 
 	option = {
 		name = republican_dictatorship.6.b
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		if = {
 			limit = { advisor = philosopher }
 			remove_advisor = philosopher
@@ -234,13 +234,13 @@ country_event = {
 
 	option = {
 		name = republican_dictatorship.7.a
-		add_republican_tradition = 0.2
+		add_republican_tradition = 20
 		add_dip_power = -100
 	}
 
 	option = {
 		name = republican_dictatorship.7.b
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		if = {
 			limit = { advisor = statesman }
 			remove_advisor = statesman
@@ -298,13 +298,13 @@ country_event = {
 
 	option = {
 		name = republican_dictatorship.8.a
-		add_republican_tradition = 0.2
+		add_republican_tradition = 20
 		add_mil_power = -100
 	}
 
 	option = {
 		name = republican_dictatorship.8.b
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		if = {
 			limit = { advisor = army_reformer }
 			remove_advisor = army_reformer
@@ -355,14 +355,14 @@ province_event = {
 		owner = {
 			num_of_cities = 2
 			government = republican_dictatorship
-			NOT = { republican_tradition = 0.5 }
+			NOT = { republican_tradition = 50 }
 		}
 	}
 
 	option = {
 		name = republican_dictatorship.9.a
 		owner = {
-			add_republican_tradition = 0.2
+			add_republican_tradition = 20
 			add_adm_power = -50
 		}
 		add_local_autonomy = 40
@@ -370,7 +370,7 @@ province_event = {
 
 	option = {
 		name = republican_dictatorship.9.b
-		owner = { add_republican_tradition = -0.1 }
+		owner = { add_republican_tradition = -10 }
 		add_unrest = 10
 	}
 }
@@ -392,21 +392,21 @@ province_event = {
 		has_dlc = "Res Publica"
 		owner = {
 			government = republican_dictatorship
-			republican_tradition = 0.5
+			republican_tradition = 50
 		}
 	}
 
 	option = {
 		name = republican_dictatorship.10.a
 		owner = {
-			add_republican_tradition = -0.2
+			add_republican_tradition = -20
 			add_mil_power = 50
 		}
 	}
 
 	option = {
 		name = republican_dictatorship.10.b
-		owner = { add_republican_tradition = 0.1 }
+		owner = { add_republican_tradition = 10 }
 		spawn_rebels = {
 			type = pretender_rebels
 			size = 2

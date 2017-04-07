@@ -32,19 +32,19 @@ country_event = {
 			factor = 60
 			modifier = {
 				factor = 0
-				NOT = { republican_tradition = 0.25 }
+				NOT = { republican_tradition = 25 }
 			}	
 			modifier = {
 				factor = 0.5
-				NOT = { republican_tradition = 0.5 }
+				NOT = { republican_tradition = 50 }
 			}				
 			modifier = {
 				factor = 0.5
-				NOT = { republican_tradition = 0.75 }
+				NOT = { republican_tradition = 75 }
 			}	
 			modifier = {
 				factor = 2.0
-				republican_tradition = 0.9
+				republican_tradition = 90
 			}		
 		}
 		custom_tooltip = remains_ruler
@@ -55,7 +55,7 @@ country_event = {
 			limit = { 
 				is_tribal = yes
 				government = republic
-				NOT = { republican_tradition = 0.20 }	
+				NOT = { republican_tradition = 20 }	
 			}	
 			change_government = tribal_despotism
 		}
@@ -63,7 +63,7 @@ country_event = {
 			limit = {
 				is_tribal = no 
 				government = republic
-				NOT = { republican_tradition = 0.20 }				
+				NOT = { republican_tradition = 20 }				
 				has_dlc = "Res Publica"
 			}
 			change_government = republican_dictatorship	
@@ -72,12 +72,12 @@ country_event = {
 			limit = {
 				is_tribal = no  
 				government = republic
-				NOT = { republican_tradition = 0.20 }
+				NOT = { republican_tradition = 20 }
 				NOT = { has_dlc = "Res Publica" }
 			}
 			change_government = despotic_monarchy
 		}	
-		add_scaled_republican_tradition = -0.10
+		add_scaled_republican_tradition = -10
 		random_list = {
 			10 = {
 				add_adm_power = 50

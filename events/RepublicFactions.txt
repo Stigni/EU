@@ -669,7 +669,7 @@ country_event = {
 		name = "republic_factions.12.b"
 		add_years_of_income = 0.5
 		add_corruption = 0.5
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 	}
 }
 
@@ -707,7 +707,7 @@ country_event = {
 	option = {
 		name = "republic_factions.13.b"
 		add_years_of_income = 0.5
-		add_republican_tradition = -0.03
+		add_republican_tradition = -3
 		add_corruption = 0.5
 	}
 }
@@ -751,7 +751,7 @@ country_event = {
 		name = "republic_factions.14.b"
 		add_years_of_income = 0.6
 		add_corruption = 2
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 	}
 }
 
@@ -781,7 +781,7 @@ country_event = {
 
 	option = {
 		name = "republic_factions.15.b"
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 		add_faction_influence = {
 			faction = mr_guilds
 			influence = 15
@@ -815,7 +815,7 @@ country_event = {
 
 	option = {
 		name = "republic_factions.16.b"
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 		add_faction_influence = {
 			faction = mr_traders
 			influence = 15
@@ -849,7 +849,7 @@ country_event = {
 
 	option = {
 		name = "republic_factions.17.b"
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 		add_faction_influence = {
 			faction = mr_aristocrats
 			influence = 15
@@ -1166,15 +1166,15 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { republican_tradition = 0.8 }
+			NOT = { republican_tradition = 80 }
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { republican_tradition = 0.6 }
+			NOT = { republican_tradition = 60 }
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { republican_tradition = 0.4 }
+			NOT = { republican_tradition = 40 }
 		}
 	}
 
@@ -1186,7 +1186,7 @@ country_event = {
 		name = "republic_factions.101.a" # We cannot allow the Republic to engulf in anarchy of the masses.
 		add_stability = -1
 		add_prestige = -15
-		add_republican_tradition = -0.20
+		add_republican_tradition = -20
 		if = {
 			limit = {
 				num_of_cities = 2
@@ -1199,9 +1199,21 @@ country_event = {
 				limit = {
 					is_capital = no
 					is_in_capital_area = yes
+					owner = { adm_tech = 22 }
 				}
 				spawn_rebels = {
 					type = revolutionary_rebels
+					size = 2
+				}
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_in_capital_area = yes
+					owner = { NOT = { adm_tech = 22 } }
+				}
+				spawn_rebels = {
+					type = noble_rebels
 					size = 2
 				}
 			}
@@ -1235,7 +1247,7 @@ country_event = {
 		custom_tooltip = republic_factions.103.b.tt
 		add_stability = -1
 		add_years_of_income = -0.25
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 		add_faction_influence = {
 			faction = mr_guilds
 			influence = -60
@@ -1322,15 +1334,15 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { republican_tradition = 0.8 }
+			NOT = { republican_tradition = 80 }
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { republican_tradition = 0.6 }
+			NOT = { republican_tradition = 60 }
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { republican_tradition = 0.4 }
+			NOT = { republican_tradition = 40 }
 		}
 	}
 
@@ -1342,7 +1354,7 @@ country_event = {
 		name = "republic_factions.102.a" # Let us not be intimidated by a bunch of scoundrels!
 		add_stability = -1
 		add_prestige = -15
-		add_republican_tradition = -0.20
+		add_republican_tradition = -20
 		if = {
 			limit = {
 				num_of_cities = 2
@@ -1355,9 +1367,21 @@ country_event = {
 				limit = {
 					is_capital = no
 					is_in_capital_area = yes
+					owner = { adm_tech = 22 }
 				}
 				spawn_rebels = {
 					type = revolutionary_rebels
+					size = 2
+				}
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_in_capital_area = yes
+					owner = { NOT = { adm_tech = 22 } }
+				}
+				spawn_rebels = {
+					type = noble_rebels
 					size = 2
 				}
 			}
@@ -1391,7 +1415,7 @@ country_event = {
 		custom_tooltip = republic_factions.103.b.tt
 		add_stability = -1
 		add_years_of_income = -0.25
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 		add_faction_influence = {
 			faction = mr_traders
 			influence = -60
@@ -1481,15 +1505,15 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { republican_tradition = 0.8 }
+			NOT = { republican_tradition = 80 }
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { republican_tradition = 0.6 }
+			NOT = { republican_tradition = 60 }
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { republican_tradition = 0.4 }
+			NOT = { republican_tradition = 40 }
 		}
 	}
 
@@ -1501,7 +1525,7 @@ country_event = {
 		name = "republic_factions.103.a" # We cannot possibly surrender to grocers!
 		add_stability = -1
 		add_prestige = -15
-		add_republican_tradition = -0.20
+		add_republican_tradition = -20
 		if = {
 			limit = {
 				num_of_cities = 2
@@ -1514,9 +1538,21 @@ country_event = {
 				limit = {
 					is_capital = no
 					is_in_capital_area = yes
+					owner = { adm_tech = 22 }
 				}
 				spawn_rebels = {
 					type = revolutionary_rebels
+					size = 2
+				}
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_in_capital_area = yes
+					owner = { NOT = { adm_tech = 22 } }
+				}
+				spawn_rebels = {
+					type = anti_tax_rebels
 					size = 2
 				}
 			}
@@ -1550,7 +1586,7 @@ country_event = {
 		custom_tooltip = republic_factions.103.b.tt
 		add_stability = -1
 		add_years_of_income = -0.25
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 		add_faction_influence = {
 			faction = mr_aristocrats
 			influence = -60

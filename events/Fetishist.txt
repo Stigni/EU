@@ -114,22 +114,18 @@ country_event = {
 		name = fetishist_flavor.4.a
 		custom_tooltip = fetishist_flavor.4.a.tt
 		kill_heir = yes
-		capital_scope = {
-			add_province_modifier = {
-				name = decisive_ruler
-				duration = 1825
-			}
+		add_ruler_modifier = {
+			name = decisive_ruler
+			duration = 1825
 		}
 		trigger = { NOT = { heir_age = 15 } }
 	}
 	option = {
 		name = fetishist_flavor.4.b
 		custom_tooltip = fetishist_flavor.4.b.tt
-		capital_scope = {
-			add_province_modifier = {
-				name = nonchalant_ruler
-				duration = 1825
-			}
+		add_ruler_modifier = {
+			name = nonchalant_ruler
+			duration = 1825
 		}
 		trigger = { NOT = { heir_age = 15 } }
 	}
@@ -137,22 +133,18 @@ country_event = {
 		name = fetishist_flavor.4.c
 		custom_tooltip = fetishist_flavor.4.a.tt
 		kill_heir = yes
-		capital_scope = {
-			add_province_modifier = {
-				name = decisive_ruler
-				duration = 1825
-			}
+		add_ruler_modifier = {
+			name = decisive_ruler
+			duration = 1825
 		}
 		trigger = { heir_age = 15 }
 	}
 	option = {
 		name = fetishist_flavor.4.d
 		custom_tooltip = fetishist_flavor.4.b.tt
-		capital_scope = {
-			add_province_modifier = {
-				name = nonchalant_ruler
-				duration = 1825
-			}
+		add_ruler_modifier = {
+			name = nonchalant_ruler
+			duration = 1825
 		}
 		trigger = { heir_age = 15 }
 	}
@@ -610,7 +602,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = south_central_american_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.404 }
+					country_event = { id = fetishist_flavor.404 }
 				}
 			}
 			if = {
@@ -619,7 +611,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = christianity_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.400 }
+					country_event = { id = fetishist_flavor.400 }
 				}
 			}
 			if = {
@@ -628,7 +620,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = islam_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.401 }
+					country_event = { id = fetishist_flavor.401 }
 				}
 			}
 			if = {
@@ -637,7 +629,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = buddhism_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.402 }
+					country_event = { id = fetishist_flavor.402 }
 				}
 			}
 			if = {
@@ -646,7 +638,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = dharmic_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.403 }
+					country_event = { id = fetishist_flavor.403 }
 				}
 			}
 			if = {
@@ -655,7 +647,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = norse_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.405 }
+					country_event = { id = fetishist_flavor.405 }
 				}
 			}
 			if = {
@@ -664,7 +656,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = jewish_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.406 }
+					country_event = { id = fetishist_flavor.406 }
 				}
 			}
 			if = {
@@ -673,7 +665,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = zoroastrian_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.407 }
+					country_event = { id = fetishist_flavor.407 }
 				}
 			}
 		}
@@ -1039,7 +1031,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = south_central_american_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.404 }
+					country_event = { id = fetishist_flavor.404 }
 				}
 			}
 			if = {
@@ -1048,7 +1040,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = christianity_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.400 }
+					country_event = { id = fetishist_flavor.400 }
 				}
 			}
 			if = {
@@ -1057,7 +1049,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = islam_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.401 }
+					country_event = { id = fetishist_flavor.401 }
 				}
 			}
 			if = {
@@ -1066,7 +1058,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = buddhism_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.402 }
+					country_event = { id = fetishist_flavor.402 }
 				}
 			}
 			if = {
@@ -1075,7 +1067,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = dharmic_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.403 }
+					country_event = { id = fetishist_flavor.403 }
 				}
 			}
 			if = {
@@ -1084,7 +1076,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = norse_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.405 }
+					country_event = { id = fetishist_flavor.405 }
 				}
 			}
 			if = {
@@ -1093,7 +1085,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = jewish_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.406 }
+					country_event = { id = fetishist_flavor.406 }
 				}
 			}
 			if = {
@@ -1102,7 +1094,7 @@ country_event = {
 					ROOT = {  NOT = { has_unlocked_cult = zoroastrian_cult } }
 				}
 				ROOT = {
-					country_event { id = fetishist_flavor.407 }
+					country_event = { id = fetishist_flavor.407 }
 				}
 			}
 		}
@@ -1261,7 +1253,7 @@ country_event = {
 	option = {
 		name = fetishist_flavor.130.b #
 		add_legitimacy = 10
-		add_republican_tradition = 0.025
+		add_republican_tradition = 2.5
 		add_horde_unity = 5
 		add_devotion = 5
 	}
@@ -1495,7 +1487,7 @@ province_event = {
 				}
 				AND = {
 					government = republic
-					NOT = { republican_tradition = 0.75 }
+					NOT = { republican_tradition = 75 }
 				}
 				AND = {
 					government = steppe_horde
@@ -1604,7 +1596,7 @@ province_event = {
 		custom_tooltip = fetishist_flavor.170.b.tt
 		owner = {
 			add_legitimacy = -5
-			add_republican_tradition = -0.025
+			add_republican_tradition = -2.5
 			add_horde_unity = -5
 			add_devotion = -5
 		}
@@ -1631,7 +1623,7 @@ province_event = {
 		owner = {
 			kill_consort = yes
 			add_legitimacy = 10
-			add_republican_tradition = 0.05
+			add_republican_tradition = 5
 			add_horde_unity = 10
 			add_devotion = 10
 			add_prestige = 10
@@ -1790,7 +1782,7 @@ country_event = {
 		name = fetishist_flavor.174.b #
 		add_adm_power = -25
 		add_legitimacy = -10
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 		add_horde_unity = -10
 		add_devotion = -10
 		add_prestige = -10
@@ -2475,7 +2467,7 @@ country_event = {
 
 		add_legitimacy = -10
 		add_horde_unity = -10
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		add_devotion = -5
 
 		add_prestige = -15
@@ -2556,7 +2548,7 @@ country_event = {
 
 		add_legitimacy = -5
 		add_horde_unity = -5
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 		add_devotion = -3
 
 		add_prestige = -10

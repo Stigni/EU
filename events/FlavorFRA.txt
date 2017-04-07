@@ -1586,3 +1586,147 @@ country_event = {
 		name = "flavor_fra.EVTOPTB5"
 	}
 }
+
+# The Surrender of Maine
+country_event = {
+	id = flavor_fra.6
+	title = "flavor_fra.6.t"
+	desc = "flavor_fra.6.d"
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		NOT = { war_with = FRA }
+		NOT = { is_year = 1450 }
+		NOT = { truce_with = FRA }
+		177 = {
+			owned_by = ENG
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "flavor_fra.6.a"
+		ai_chance = {
+			factor = 25
+		}
+		tooltip = {
+			177 = {
+				cede_province = FRA
+			}
+			add_truce_with = FRA
+		}
+		FRA = { country_event = { id = flavor_fra.8 } }
+		add_prestige = -10
+		add_stability = -1
+	}
+	option = {
+		name = "flavor_fra.6.b"
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0
+				has_any_disaster = yes
+			}
+		}
+		custom_tooltip = flavor_fra.6.a.tt
+		FRA = { country_event = { id = flavor_fra.7 } }
+	}
+}
+
+# The Surrender of Maine
+country_event = {
+	id = flavor_fra.7
+	title = "flavor_fra.7.t"
+	desc = "flavor_fra.7.d"
+	picture = SIEGE_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name = "flavor_fra.7.a" #'teach them how to war' /Reversed Henry V
+		ai_chance = {
+			factor = 100 #Shouldn't take this from them really.
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0
+				has_any_disaster = yes
+			}
+		}
+		ENG = {
+			declare_war_with_cb = {
+				who = FRA
+				casus_belli = cb_restore_personal_union
+			}
+		}
+		177 = {
+			change_controller = FRA
+		}
+	}
+	option = {
+		name = "flavor_fra.7.b" #Unpopular but preserves the peace?
+		ai_chance = {
+			factor = 1
+		}
+		add_prestige = -10
+		FROM = {
+			add_truce_with = ROOT
+		}
+		add_truce_with = FROM
+		if = {
+			limit = { exists = PRO }
+			PRO = {
+				add_opinion = {
+					who = ROOT
+					modifier = fra_gave_up_on_maine
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+		}
+	}
+}
+
+# The Surrender of Maine
+country_event = {
+	id = flavor_fra.8
+	title = "flavor_fra.8.t"
+	desc = "flavor_fra.8.d"
+	picture = SIEGE_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+
+	option = {
+		name = "flavor_fra.8.a" #
+		add_prestige = 10
+		177 = {
+			cede_province = FRA
+			hidden_effect = { add_local_autonomy = -50 }
+		}
+	}
+}
+

@@ -106,7 +106,7 @@ ship_names = {
         "le Jaligny"
         "le Lapalisse" "le Le Montet"
         "le Marcillat" "le Meaulne" "le Monestier" "le Montaigut" "le Montcombroux" "le Montluçon" "le Montmarault" "le Montord" "le Moulins"
-        "le Néris "le Neuilly-le-Réal"
+        "le Néris" "le Neuilly-le-Réal"
         "le Pionsat"
         "le Saint-Aubin-le-Monial" "le Saint-Éloy" "le Saint-Étienne-de-Vicq" "le Saint-Germain" "le Saint-Hilaire" "le Saint-Léon" "le Saint-Pierre-Laval" "le Saint-Pourçain" "le Saint-Rémy" "le Saint-Yorre" "le Souvigny"
         "le Varennes" "le Vichy"

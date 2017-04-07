@@ -724,7 +724,7 @@ country_event = {
 		}
 		add_legitimacy = -15
 		add_horde_unity = -15
-		add_republican_tradition = -0.07
+		add_republican_tradition = -7
 		add_devotion = -7
 		random_owned_province = {
 			limit = { has_estate = estate_dhimmi }

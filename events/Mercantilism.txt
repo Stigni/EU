@@ -8,7 +8,7 @@ country_event = {
 	picture = FAMINE_eventPicture
 
 	trigger = {
-		NOT = { mercantilism = 1 }
+		NOT = { mercantilism = 100 }
 		OR = {
 			has_country_modifier = famine
 			has_country_modifier = severe_famine
@@ -50,7 +50,7 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 
 	trigger = {
-		NOT = { mercantilism = 1 }
+		NOT = { mercantilism = 100 }
 		NOT = {
 			capital_scope = {
 				OR = {
@@ -166,7 +166,7 @@ country_event = {
 	picture = MILITARY_CAMP_eventPicture
 
 	trigger = {
-		NOT = { mercantilism = 1 }
+		NOT = { mercantilism = 100 }
 		NOT = {
 			any_owned_province = {
 				trade_goods = iron
@@ -227,7 +227,7 @@ country_event = {
 	picture = MILITARY_CAMP_eventPicture
 
 	trigger = {
-		NOT = { mercantilism = 1 }
+		NOT = { mercantilism = 100 }
 		any_owned_province = {
 			has_port = yes
 		}
@@ -291,7 +291,7 @@ country_event = {
 	picture = DEBATE_REPUBLICAN_eventPicture
 
 	trigger = {
-		NOT = { mercantilism = 1 }
+		NOT = { mercantilism = 100 }
 		advisor = trader
 		is_lesser_in_union = no
 	}
@@ -303,7 +303,7 @@ country_event = {
 	option = {
 		name = "mercantilism_events.5.a"
 		add_mercantilism = 2
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 		add_legitimacy = -10
 		add_horde_unity = -10
 		add_devotion = -10
@@ -323,7 +323,7 @@ country_event = {
 	picture = MERCHANTS_TALKING_eventPicture
 
 	trigger = {
-		NOT = { mercantilism = 1 }
+		NOT = { mercantilism = 100 }
 		advisor = trader
 		advisor = master_of_mint
 		NOT = { has_country_flag = radical_mercantilist_reforms }
@@ -372,7 +372,7 @@ country_event = {
 	picture = COLONIZATION_eventPicture
 
 	trigger = {
-		NOT = { mercantilism = 1 }
+		NOT = { mercantilism = 100 }
 		any_subject_country = {
 			is_colonial_nation = yes
 			any_neighbor_country = {
@@ -421,7 +421,7 @@ country_event = {
 	picture = FEAST_eventPicture
 
 	trigger = {
-		NOT = { mercantilism = 1 }
+		NOT = { mercantilism = 100 }
 		NOT = { has_country_modifier = importing_cocoa }
 		any_neighbor_country = {
 			trading_bonus = {
@@ -471,7 +471,7 @@ country_event = {
 	picture = FEAST_eventPicture
 
 	trigger = {
-		NOT = { mercantilism = 1 }
+		NOT = { mercantilism = 100 }
 		NOT = { has_country_modifier = importing_coffee }
 		any_neighbor_country = {
 			trading_bonus = {
@@ -520,7 +520,7 @@ country_event = {
 	picture = FEAST_eventPicture
 
 	trigger = {
-		NOT = { mercantilism = 1 }
+		NOT = { mercantilism = 100 }
 		NOT = { has_country_modifier = importing_tea }
 		any_neighbor_country = {
 			trading_bonus = {

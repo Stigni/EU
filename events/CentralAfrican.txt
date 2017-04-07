@@ -336,6 +336,7 @@ country_event = {
 			OR = {
 				area = zimbabwe_area
 				area = lower_zambezi_area
+				area = butua_area
 			}
 		}
 		east_africa_region = {
@@ -699,6 +700,7 @@ country_event = {
 					area = buzinza_area
 					area = uganda_area
 					area = kenya_area
+					area = bunyoro_area
 				}
 			}
 		}
@@ -726,6 +728,7 @@ country_event = {
 								area = buzinza_area
 								area = uganda_area
 								area = kenya_area
+								area = bunyoro_area
 							}
 							NOT = { is_core = ROOT }
 							NOT = { is_claim = ROOT }
@@ -745,6 +748,7 @@ country_event = {
 								area = buzinza_area
 								area = uganda_area
 								area = kenya_area
+								area = bunyoro_area
 							}
 							NOT = { is_core = ROOT }
 							NOT = { is_claim = ROOT }
@@ -760,6 +764,7 @@ country_event = {
 								area = buzinza_area
 								area = uganda_area
 								area = kenya_area
+								area = bunyoro_area
 							}
 							NOT = { is_core = ROOT }
 							NOT = { is_claim = ROOT }

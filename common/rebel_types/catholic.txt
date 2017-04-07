@@ -104,7 +104,7 @@ catholic_rebels = {
 	 		}
 	 	}
 		modifier = {
-			factor = 1.5
+			factor = 5
 			has_missionary = yes
 			religion = catholic
 		}

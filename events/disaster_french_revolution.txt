@@ -266,7 +266,7 @@ country_event = {
 	
 	option = {		# Royalists and Religious Rebels are on the move
 		name = "flavor_fra.EVTOPTA3147"
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		random_owned_province = {
 			limit = {
 				has_province_flag = choun_revolt_pretender
@@ -370,11 +370,11 @@ country_event = {
 	
 	option = {		# Let us pray for his survival...
 		name = "flavor_fra.EVTOPTA100"
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 		random = {
 			chance = 25
 			kill_ruler = yes
-			add_republican_tradition = -0.05
+			add_republican_tradition = -5
 		}
 	}
 }
@@ -437,8 +437,8 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { republican_tradition = 0.50 }
-					republican_tradition = 0.25
+					NOT = { republican_tradition = 50 }
+					republican_tradition = 25
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -457,7 +457,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = noble_rebels_rise }
-					NOT = { republican_tradition = 0.25 }
+					NOT = { republican_tradition = 25 }
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -476,7 +476,7 @@ country_event = {
 	
 	option = {		# The republic will survive!
 		name = "flavor_fra.EVTOPTA110"
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		if = {
 			limit = {
 				has_country_flag = noble_rebels_rise
@@ -527,8 +527,8 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { republican_tradition = 0.50 }
-					republican_tradition = 0.25
+					NOT = { republican_tradition = 50 }
+					republican_tradition = 25
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -547,7 +547,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = noble_rebels_rise }
-					NOT = { republican_tradition = 0.25 }
+					NOT = { republican_tradition = 25 }
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -566,7 +566,7 @@ country_event = {
 	
 	option = {		# The republic will survive!
 		name = "flavor_fra.EVTOPTA110"
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		if = {
 			limit = {
 				has_country_flag = noble_rebels_rise
@@ -617,8 +617,8 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { republican_tradition = 0.50 }
-					republican_tradition = 0.25
+					NOT = { republican_tradition = 50 }
+					republican_tradition = 25
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -637,7 +637,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = noble_rebels_rise }
-					NOT = { republican_tradition = 0.25 }
+					NOT = { republican_tradition = 25 }
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -656,7 +656,7 @@ country_event = {
 	
 	option = {		# The republic will survive!
 		name = "flavor_fra.EVTOPTA110"
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		if = {
 			limit = {
 				has_country_flag = noble_rebels_rise
@@ -706,8 +706,8 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { republican_tradition = 0.50 }
-					republican_tradition = 0.25
+					NOT = { republican_tradition = 50 }
+					republican_tradition = 25
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -726,7 +726,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = noble_rebels_rise }
-					NOT = { republican_tradition = 0.25 }
+					NOT = { republican_tradition = 25 }
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -745,7 +745,7 @@ country_event = {
 	
 	option = {		# The republic will survive!
 		name = "flavor_fra.EVTOPTA110"
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		if = {
 			limit = {
 				has_country_flag = noble_rebels_rise
@@ -797,8 +797,8 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { republican_tradition = 0.50 }
-					republican_tradition = 0.25
+					NOT = { republican_tradition = 50 }
+					republican_tradition = 25
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -817,7 +817,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = noble_rebels_rise }
-					NOT = { republican_tradition = 0.25 }
+					NOT = { republican_tradition = 25 }
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -836,7 +836,7 @@ country_event = {
 	
 	option = {		# The republic will survive!
 		name = "flavor_fra.EVTOPTA110"
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		if = {
 			limit = {
 				has_country_flag = noble_rebels_rise
@@ -887,8 +887,8 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { republican_tradition = 0.0 }
-					republican_tradition = 0.25
+					NOT = { republican_tradition = 10 }
+					republican_tradition = 25
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -907,7 +907,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = noble_rebels_rise }
-					NOT = { republican_tradition = 0.25 }
+					NOT = { republican_tradition = 25 }
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -926,7 +926,7 @@ country_event = {
 	
 	option = {		# The republic will survive!
 		name = "flavor_fra.EVTOPTA110"
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		if = {
 			limit = {
 				has_country_flag = noble_rebels_rise
@@ -975,8 +975,8 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { republican_tradition = 0.50 }
-					republican_tradition = 0.25
+					NOT = { republican_tradition = 50 }
+					republican_tradition = 25
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -995,7 +995,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = noble_rebels_rise }
-					NOT = { republican_tradition = 0.25 }
+					NOT = { republican_tradition = 25 }
 					any_owned_province = {
 						continent = europe
 						is_core = ROOT
@@ -1014,7 +1014,7 @@ country_event = {
 	
 	option = {		# Who dares question the republic!
 		name = "flavor_fra.EVTOPTA116"
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		if = {
 			limit = {
 				has_country_flag = noble_rebels_rise

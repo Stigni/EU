@@ -33,7 +33,8 @@ country_event = {
 	immediate = { set_global_flag = death_of_haji_giray }
 	
 	option = {
-		name = "flavor_cri.1.a"
+		name = "flavor_cri.1.a" #We must seek Ottoman Protection!
+		trigger = { NOT = { war_with = TUR } } #Will never be an option if you're at war with TUR.
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -47,6 +48,26 @@ country_event = {
 				}
 			}
 			modifier = {
+				factor = 0.8
+				num_of_cities = 12 #5 extra
+			}
+			modifier = {
+				factor = 0.8
+				num_of_cities = 15 #7 extra
+			}
+			modifier = {
+				factor = 0.25
+				num_of_cities = 22
+			}
+			modifier = {
+				factor = 0.1
+				num_of_cities = 30
+			}
+			modifier = {
+				factor = 0
+				num_of_cities = TUR
+			}
+			modifier = {
 				factor = 1.5
 				crimea_region = { owned_by = TUR }
 			}
@@ -57,15 +78,17 @@ country_event = {
 				}
 			}
 			modifier = {
+				factor = 0.15
+				TUR = {
+					is_at_war = yes
+				}
+			}
+			modifier = {
 				factor = 0
 				NOT = {
 					anatolia_region = { owned_by = TUR }
 				}
 			}
-		}
-		if = {
-			limit = { war_with = TUR }
-			white_peace = TUR
 		}
 		if = {
 			limit = {
@@ -104,7 +127,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "flavor_cri.1.b"
+		name = "flavor_cri.1.b" #We will be better of without Ottoman involvement.
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -473,14 +496,6 @@ country_event = {
 		add_opinion = {
 			who = TUR
 			modifier = installed_ruler_crimean_succession
-		}
-		hidden_effect = {
-			every_country = {
-				limit = { is_subject_of = CRI }
-				TUR = {
-					vassalize = PREV
-				}
-			}
 		}
 		TUR = {
 			create_march = CRI

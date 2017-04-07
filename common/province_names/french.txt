@@ -1,5 +1,6 @@
 484 = "La Havane"
 489 = "Ile de la Tortue"
+492 = "Porto Rico"
 888 = "Arkokisa"
 893 = "Nouvelle Orléans"
 894 = "Ecore Fabre"

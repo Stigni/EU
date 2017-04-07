@@ -78,16 +78,18 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { area = ucayali_area }
-					NOT = { area = beni_area }
 				}
 				add_permanent_claim = INC
 			}
-			upper_peru = {
+			upper_peru_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
+					NOT = { area = moxos_area }
+					NOT = { area = beni_area }
+					NOT = { area = chaco_area }
 				}
 				add_permanent_claim = INC
-			}			
+			}
 			southern_chile_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -107,6 +109,12 @@ country_decisions = {
 				add_permanent_claim = INC
 			}
 			tucuman_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = INC
+			}
+			nehuenken_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

@@ -49,3 +49,4 @@
 205 = "Savoia"
 1247 = "Korsika"
 1934 = "Lukania"
+492 = "Puerto Rico"

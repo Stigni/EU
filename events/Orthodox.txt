@@ -81,7 +81,7 @@ country_event = {
 	option = {
 		name = orthodox_flavor.3.b
 		add_patriarch_authority = -0.05
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 		add_legitimacy = 10
 		add_horde_unity = 10
 	}

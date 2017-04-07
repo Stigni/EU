@@ -1,4 +1,4 @@
-#Nordjylland
+#Nordjylland incl. Aalborg, Hjorring, Thisted, and Viborg
 
 owner = DAN
 controller = DAN
@@ -8,8 +8,8 @@ religion = catholic
 hre = no
 base_tax = 3 
 base_production = 3
-trade_goods = grain
-base_manpower = 2
+trade_goods = fish
+base_manpower = 1
 capital = "Aalborg"
 is_city = yes
 

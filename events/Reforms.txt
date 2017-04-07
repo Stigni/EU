@@ -28,7 +28,7 @@ country_event = {
 		add_inflation = -1
 		add_legitimacy = -5
 		add_horde_unity = -5
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 	}
 	option = {
 		name = reforms.1.b		# No, such restructuring would be too harsh.
@@ -68,7 +68,7 @@ country_event = {
 		}
 		add_legitimacy = -5
 		add_horde_unity = -5
-		add_republican_tradition = -0.05	
+		add_republican_tradition = -5
 		
 	}
 	option = {

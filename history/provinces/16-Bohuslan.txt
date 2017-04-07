@@ -12,8 +12,6 @@ trade_goods = fish
 base_manpower = 2
 capital = "Marstrand"
 is_city = yes
-
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

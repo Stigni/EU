@@ -252,7 +252,7 @@ patriarch_authority_global = {
 }
 
 colony_level = {
-	local_colonist_placement_chance = 0.01	#1% chance for each level.  (up to 10% bonus)
+	local_colonist_placement_chance = -0.01	
 	local_tax_modifier = 0.02
 }
 
@@ -449,7 +449,7 @@ base_values = {
 	advisor_pool = 3
 	colonist_placement_chance = 0.05
 	free_leader_pool = 1
-	republican_tradition = 0.01
+	republican_tradition = 1
 	monthly_fervor_increase = 1
 	vassal_income = 0.10
 	horde_unity = -2
@@ -549,7 +549,6 @@ war = {
 
 peace = {
 	war_exhaustion = -0.1
-	improve_relation_modifier = 0.10
 	monthly_fervor_increase = 1
 	global_autonomy = -0.1
 	global_institution_spread = 0.1
@@ -729,7 +728,7 @@ corruption = {
 	spy_offence = -0.50	
 	all_power_cost = 1.0
 	min_autonomy = 50
-
+	global_unrest = -20
 }
 
 root_out_corruption = {
@@ -779,7 +778,7 @@ luck = {
 	
 	#government
 	global_unrest = -1
-	republican_tradition = 0.005
+	republican_tradition = 0.5
 	legitimacy = 1
 	ae_impact = -0.25
 
@@ -790,7 +789,7 @@ over_extension = {
 	stability_cost_modifier = 0.5			
 	mercenary_cost = 0.5
 	diplomatic_reputation = -2
-	relations_decay_of_me = -0.25
+	improve_relation_modifier = -0.5
 	global_unrest = 5
 	bureaucrats_influence = 0.5
 	mr_guilds_influence = 0.5
@@ -804,8 +803,7 @@ prestige = {
 	global_spy_defence = 0.1				#+10/-10 
 	mercenary_cost = -0.33					#-33 to +33%
 	legitimacy = 1.0
-	relations_decay_of_me = 0.5
-	improve_relation_modifier = 0.10
+	improve_relation_modifier = 0.5
 	monthly_fervor_increase = 1
 	ae_impact = -0.10
 	embracement_cost = -0.1
@@ -879,7 +877,7 @@ bonus_from_merchant_republics_for_trade_league_member = {
 
 # For each province over limit
 merchant_republic_size = {
-	republican_tradition = -0.001
+	republican_tradition = -0.1
 }
 
 
@@ -894,7 +892,7 @@ in_protectorate = {
 
 
 liberty_desire = {
-}                       
+}
 
 is_great_power = {						#Only works with Rights of Man DLC enabled 
 	prestige_decay = -0.01
@@ -910,7 +908,7 @@ power_projection = {
 	legitimacy = 0.5
 	devotion = 0.5
 	horde_unity = 0.5
-	republican_tradition = 0.002
+	republican_tradition = 0.2
 }
 
 power_projection_25 = {
@@ -1029,6 +1027,10 @@ revolution_target = {
 	papal_influence = -100
 }
 
+dishonoured_alliance =  {
+	diplomatic_reputation = -1
+}
+
 ##################################################################################################
 # Scripted and used from Diplomatic System
 ##################################################################################################
@@ -1044,7 +1046,7 @@ merchants_slandered = {
 discontent_sowed = {
 	global_unrest = 2
 	legitimacy = -1
-	republican_tradition = -0.002
+	republican_tradition = -0.2
 	devotion = -1
 	horde_unity = -1
 }
@@ -1086,14 +1088,14 @@ tutorial_colonial_range = {
 statists = {
 	naval_forcelimit_modifier = 0.10	
 	global_trade_power = 0.05
-	republican_tradition = 0.01
+	republican_tradition = 1
 
 }
 
 orangists = {
 	land_forcelimit_modifier = 0.25
 	stability_cost_modifier = -0.10
-	republican_tradition = -0.01
+	republican_tradition = -1
 }
 
 ########################################

@@ -212,7 +212,7 @@ country_event = {
 			add_mil_power = 100
 		}
 		if = {
-			limit = { has_dlc = "Rights of Man" }
+			limit = { NOT = { has_dlc = "Rights of Man" } }
 			add_mil_power = 150
 		}
 	}
@@ -783,6 +783,7 @@ country_event = {
 		has_ruler = "Albrecht III Achilles"
 		has_country_flag = albrecht_achilles_flag #Bra Starts with this (set in country history) and it is used to determine that Albrecht Achilles is indeed the original Albrecht Achilles. Cleared here or in on_actions.
 		ANS = {
+			exists = yes
 			has_ruler = "Albrecht II Achilles"
 		}
 	}
@@ -1079,13 +1080,13 @@ country_event = {
 			add_base_production = 1
 			if = {
 				limit = {
-					owner { religion = protestant }		
+					owner = { religion = protestant }		
 				}
 				change_religion = reformed
 			}
 			if = {
 				limit = {
-					owner { religion = reformed }
+					owner = { religion = reformed }
 				}
 				change_religion = protestant
 			}
@@ -1250,6 +1251,7 @@ country_event = {
 				OR = {
 					area = west_prussia_area
 					area = east_prussia_area
+					area = pomerelia_area
 				}
 			}
 			add_local_autonomy = 25

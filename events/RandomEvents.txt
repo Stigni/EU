@@ -1935,7 +1935,7 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				government = republic
-				NOT = { republican_tradition = 0.8 }
+				NOT = { republican_tradition = 80 }
 			}
 			modifier = {
 				factor = 0.5
@@ -1943,7 +1943,7 @@ country_event = {
 				NOT = { legitimacy_or_horde_unity = 80 }
 			}
 		}
-		add_republican_tradition = -0.10
+		add_republican_tradition = -10
 		add_horde_unity = -25
 		add_legitimacy = -25
 	}
@@ -1953,7 +1953,7 @@ country_event = {
 		trigger = { ruler_has_personality = righteous_personality }
 		required_personality = righteous_personality
 		add_legitimacy = -10
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 		add_horde_unity = -10
 	}
 	option = {
@@ -1966,7 +1966,7 @@ country_event = {
 				add_prestige = 5
 			}
 			50 = {
-				add_republican_tradition = -0.10
+				add_republican_tradition = -10
 				add_horde_unity = -25
 				add_legitimacy = -25
 			}
@@ -3241,7 +3241,7 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				government = republic
-				NOT = { republican_tradition = 0.6 }
+				NOT = { republican_tradition = 60 }
 			}
 			modifier = {
 				factor = 0.25
@@ -3261,7 +3261,7 @@ country_event = {
 		}
 		add_legitimacy = -10
 		add_horde_unity = -10
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 		add_devotion = -5
 		add_country_modifier = {
 			name = "tax_income_boost"
@@ -3332,7 +3332,7 @@ country_event = {
 		add_legitimacy = 10
 		add_devotion = 5
 		add_horde_unity = 5
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 		
 		random_country = {
 			limit = { is_neighbor_of = ROOT }
@@ -3573,12 +3573,12 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				government = monarchy
-				NOT = { legitimacy_or_horde_unity = 0.7 }
+				NOT = { legitimacy_or_horde_unity = 70 }
 			}
 			modifier = {
 				factor = 0.5
 				government = republic
-				NOT = { republican_tradition = 0.7 }
+				NOT = { republican_tradition = 70 }
 			}
 			modifier = {
 				factor = 0.5
@@ -3598,7 +3598,7 @@ country_event = {
 		}
 		add_legitimacy = -20
 		add_horde_unity = -20
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 		add_devotion = -10
 	}
 	option = {
@@ -3606,7 +3606,7 @@ country_event = {
 		highlight = yes
 		trigger = { ruler_has_personality = lawgiver_personality }
 		required_personality = lawgiver_personality
-		add_adm_power = -75
+		add_adm_power = -25
 	}
 }
 
@@ -3749,6 +3749,7 @@ country_event = {
 				}
 			}
 		}
+		add_dip_power = -50
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
@@ -3769,7 +3770,6 @@ country_event = {
 				loyalty = 10
 			}
 		}
-		add_dip_power = -50
 	}
 	option = {
 		name = "personality_options.5082.a"		#
@@ -6872,6 +6872,7 @@ country_event = {
 		any_rival_country = {
 			any_owned_province = {
 				NOT = { is_claim = ROOT }
+				NOT = { is_core = ROOT }
 				OR = {
 					is_capital = no
 					owner = {
@@ -6935,6 +6936,7 @@ country_event = {
 			limit = {
 				any_owned_province = {
 					NOT = { is_claim = ROOT }
+					NOT = { is_core = ROOT }
 					OR = {
 						is_capital = no
 						owner = {
@@ -6949,6 +6951,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					NOT = { is_claim = ROOT }
+					NOT = { is_core = ROOT }
 					OR = {
 						is_capital = no
 						owner = {
@@ -7985,7 +7988,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 	}
 }
 
@@ -12011,6 +12014,18 @@ country_event = {
 			unrest = 1
 		}
 	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					unrest = 1
+				}
+				save_event_target_as = revolt_5005_province
+			}
+		}
+	}
 
 	mean_time_to_happen = {
 		days = 1
@@ -12018,11 +12033,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA5005" # Ignore them
-		random_owned_province = {
-			limit = {
-				is_capital = no
-				unrest = 1
-			}
+		event_target:revolt_5005_province = {
 			add_province_modifier = {
 				name = ignored_unrest
 				duration = 1825
@@ -12032,11 +12043,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5005" # Lower taxes
-		random_owned_province = {
-			limit = {
-				is_capital = no
-				unrest = 1
-			}
+		event_target:revolt_5005_province = {
 			add_province_modifier = {
 				name = lower_taxes_unrest
 				duration = 1825

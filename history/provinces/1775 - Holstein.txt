@@ -6,15 +6,12 @@ add_core = SHL
 culture = hannoverian
 religion = catholic
 hre = yes
-base_tax = 3
-base_production = 3
+base_tax = 4
+base_production = 4
 trade_goods = fish
-base_manpower = 5
+base_manpower = 2
 capital = "Kiel"
 is_city = yes
-
-
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

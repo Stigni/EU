@@ -578,6 +578,44 @@ take_capital_imperial = {
 	war_name = IMPERIAL_WAR_NAME
 }
 
+take_capital_mayan = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.75
+		prestige_factor = 1
+		peace_cost_factor = 0.75	
+		
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		po_demand_provinces = yes
+		
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 0.75
+		prestige_factor = 1
+		peace_cost_factor = 0.75	
+		
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		po_demand_provinces = yes
+		
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}	
+	
+	war_name = MAYAN_WAR_NAME
+}
+
 take_province_revolutionary = {
 	type = take_province
 	

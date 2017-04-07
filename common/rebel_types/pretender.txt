@@ -100,7 +100,7 @@ pretender_rebels = {
 			factor = 5.0
 			owner = {
 				government = republic
-				NOT = { republican_tradition = 0.40 }
+				NOT = { republican_tradition = 40 }
 			}
 		}	
 		modifier = {

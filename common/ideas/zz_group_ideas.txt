@@ -42,7 +42,7 @@ client_ideas = {
 colonial_ideas = {
 	start = {
 		development_cost = -0.1
-		republican_tradition = 0.005
+		republican_tradition = 0.5
 	}
 	
 	bonus = {
@@ -364,7 +364,7 @@ horde_ideas = {
 		core_creation = -0.25
 	}
 	logistics_of_khan = {
-		manpower_recovery_speed = 0.2
+		#manpower_recovery_speed = 0.2 (effect taken in GLH idea)
 	}
 	glory_of_conquest = {
 		global_manpower_modifier = 0.25
@@ -680,7 +680,7 @@ latin_ideas = {
 	
 	bonus = {
 		legitimacy = 1
-		republican_tradition = 0.005
+		republican_tradition = 0.5
 	}
 	
 	trigger = {
@@ -1554,7 +1554,11 @@ somali_ideas = {
 	}
 	
 	trigger = {
-		primary_culture = somali
+		OR = {
+			primary_culture = somali
+			primary_culture = harari
+			primary_culture = afar
+		}
 	}
 	free = yes
 	
@@ -1752,7 +1756,10 @@ nubian_ideas = {
 	}
 	
 	trigger = {
-		primary_culture = nubian
+		OR = {
+			primary_culture = nubian
+			primary_culture = beja
+		}
 	}
 	free = yes
 	

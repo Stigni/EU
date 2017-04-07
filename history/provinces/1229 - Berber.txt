@@ -1,27 +1,25 @@
 #1229 - Berber
 
-culture = nubian 
-religion = coptic
+culture = beja 
+religion = sunni
 capital = "Berber"
 native_size = 50
 native_ferocity = 4
 native_hostileness = 9 
-base_manpower = 1
+base_manpower = 2
 trade_goods = unknown
 hre = no
 base_tax = 1 
 base_production = 1
-
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman
 
 
 1444.1.1 = {
-	owner = MAK
-	controller = MAK
-	add_core = MAK
-	discovered_by = MAK
+	owner = BEJ
+	controller = BEJ
+	add_core = BEJ
 	is_city = yes
 	discovered_by = ETH
 	trade_goods = wool
@@ -30,9 +28,7 @@ discovered_by = ottoman
 	owner = NUB
 	controller = NUB
 	add_core = NUB
-	discovered_by = NUB
 }
-1530.1.1 = { religion = sunni } #Spread of Islam leads to shift in religion affiliation of region
 1550.1.1 = { discovered_by = TUR }
 1583.1.1 = { unrest = 6 } #Shaykh Ajib expelled from Sennar, Abdallabi discontent grows
 1584.1.1 = { unrest = 0 } #Dakin and Ajib reach agreement to end conflict

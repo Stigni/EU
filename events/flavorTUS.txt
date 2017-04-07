@@ -436,7 +436,7 @@ country_event = {
 		capital = 116
 		OR = {
 			NOT = {
-				republican_tradition = 0.85
+				republican_tradition = 85
 			}
 			government = monarchy
 		}
@@ -457,7 +457,7 @@ country_event = {
 				AND = {
 					government = republic
 					NOT = {
-						republican_tradition = 0.5
+						republican_tradition = 50
 					}
 				}
 				government = monarchy
@@ -506,7 +506,7 @@ country_event = {
 			DIP = 2
 			MIL = 2
 		}
-		add_republican_tradition = 0.20
+		add_republican_tradition = 20
 		set_country_flag = tus_savonarola_seized_power
 	}
 
@@ -523,7 +523,7 @@ country_event = {
 				size = 3
 			}
 		}
-		add_republican_tradition = -0.2
+		add_republican_tradition = -20
 	}
 }
 
@@ -564,7 +564,7 @@ country_event = {
 	#Seize Their Vanities!
 	option = {
 		name = flavor_tus.10.b
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 	}
 }
 
@@ -606,7 +606,7 @@ country_event = {
 	#Expel anyone who might have loyalties to the Medicis!
 	option = {
 		name = flavor_tus.11.b
-		add_republican_tradition = -0.05
+		add_republican_tradition = -5
 	}
 }
 
@@ -648,7 +648,7 @@ country_event = {
 	#Invent something a little calmer
 	option = {
 		name = flavor_tus.12.b
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 	}
 }
 
@@ -723,14 +723,14 @@ country_event = {
 	option = {
 		name = flavor_tus.14.a
 		add_adm_power = -25
-		add_republican_tradition = 0.1
+		add_republican_tradition = 10
 	}
 
 	#The people need strict guidance
 	option = {
 		name = flavor_tus.14.b
 		add_adm_power = 25
-		add_republican_tradition = -0.1
+		add_republican_tradition = -10
 	}
 }
 
@@ -788,7 +788,7 @@ country_event = {
 	option = {
 		name = flavor_tus.15.b
 		add_stability = -1
-		add_republican_tradition = -0.5
+		add_republican_tradition = -5
 	}
 }
 
@@ -815,7 +815,7 @@ country_event = {
 		trigger = {
 			government = republic
 		}
-		add_republican_tradition = 0.1
+		add_republican_tradition = 10
 	}
 
 	option = {

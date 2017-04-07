@@ -22,7 +22,11 @@ country_decisions = {
 				}
 				AND = {
 					primary_culture = berber
-					capital_scope = { area = fez_area }
+					capital_scope = { area = western_morocco_area }
+				}
+				AND = {
+					primary_culture = berber
+					capital_scope = { area = southern_morocco_area }
 				}
 				AND = {
 					primary_culture = berber
@@ -104,7 +108,13 @@ country_decisions = {
 				}
 				add_permanent_claim = MOR
 			}
-			fez_area = {
+			western_morocco_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MOR
+			}
+			southern_morocco_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -150,6 +160,14 @@ country_decisions = {
 				AND = {
 					primary_culture = berber
 					capital_scope = { area = algiers_area }
+				}
+				AND = {
+					primary_culture = berber
+					capital_scope = { area = hautes_plaines_area }
+				}
+				AND = {
+					primary_culture = berber
+					capital_scope = { area = ouled_nail_area }
 				}
 				AND = {
 					primary_culture = berber
@@ -223,6 +241,18 @@ country_decisions = {
 				}
 				add_permanent_claim = ALG
 			}
+			hautes_plaines_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ALG
+			}
+			ouled_nail_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ALG
+			}
 			kabylia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -275,6 +305,10 @@ country_decisions = {
 				AND = {
 					primary_culture = berber
 					capital_scope = { area = tripolitania_area }
+				}
+				AND = {
+					primary_culture = berber
+					capital_scope = { area = djerba_area }
 				}
 			}
 			OR = {

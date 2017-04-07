@@ -129,3 +129,4 @@
 1139 = "Fort Dorothea"
 2258 = "Groﬂ Friedrichsburg"
 2808 = "Neu-Augsburg"
+4173 = "Syrmien"

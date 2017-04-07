@@ -44,30 +44,18 @@ country_decisions = {
 			# to prevent overfeeding of provinces into conquer
 			OR = {
 				ai = no
-				japan_region = {
-					owned_by = ROOT
+				AND = {
+					has_institution = global_trade
+					any_owned_province = {
+						OR = {
+							superregion = india_superregion
+							superregion = china_superregion
+							superregion = east_indies_superregion
+							region = japan_region
+						}
+						has_port = yes
+					}
 				}
-				burma_region = {
-					owned_by = ROOT
-				}
-				west_india_region = {
-					owned_by = ROOT
-				}
-				coromandel_region = {
-					owned_by = ROOT
-				}
-				deccan_region = {
-					owned_by = ROOT
-				}
-				bengal_region = {
-					owned_by = ROOT
-				}
-				south_china_region = {
-					owned_by = ROOT
-				}
-				north_china_region = {
-					owned_by = ROOT
-				}				
 			}
 			num_of_ports = 2
 			NOT = {

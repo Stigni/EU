@@ -521,6 +521,7 @@ province_event = {
 			NOT = { is_core = ROOT }
 			NOT = { is_claim = ROOT }
 			NOT = { owned_by = PAP }
+			has_discovered = ROOT
 			is_capital = no
 			owner = {
 				NOT = { is_subject_of = ROOT }
@@ -572,6 +573,7 @@ province_event = {
 				NOT = { is_core = ROOT }
 				NOT = { is_claim = ROOT }
 				NOT = { owned_by = PAP }
+				has_discovered = ROOT
 				is_capital = no
 				NOT = { owner = { is_subject_of = ROOT } }
 			}

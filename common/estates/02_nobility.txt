@@ -33,6 +33,7 @@ estate_nobles =
 		NOT = { government = siberian_native_council }
 		NOT = { government = revolutionary_republic }
 		NOT = { government = revolutionary_empire }
+		NOT = { government = peasants_republic }
 		is_nomad = no
 		is_colonial_nation = no
 		NOT = { government = celestial_empire }

@@ -48,7 +48,7 @@ country_event = {
 	
 	option = {
 		name = "corruption_event.2.a"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 

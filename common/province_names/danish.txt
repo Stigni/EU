@@ -1,9 +1,6 @@
 1 = "Stokholm"
 2 = "Øster-Gøtland"
-3 = "Smaaland"
 5 = "Værmeland"
-6 = "Skaane"
-7 = "Vester-Gøtland"
 9 = "Hælsingleland"
 10 = "Jæmtland"
 11 = "Vesterboten"
@@ -11,6 +8,7 @@
 17 = "Aggershuus"
 19 = "Østerbotn"
 21 = "Nordlandene"
+22 = "Oplandene"
 27 = "Aabo"
 24 = "Christiansand"
 35 = "Øsel"
@@ -71,3 +69,4 @@
 
 4123 = "Birkeland"
 4124 = "Karelen"
+4165 = "Gønge"

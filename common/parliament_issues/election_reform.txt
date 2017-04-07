@@ -7,26 +7,26 @@ election_reform = {
 	}
 	
 	effect = {
-		add_republican_tradition = 0.1
+		add_republican_tradition = 10
 	}
 	
 	modifier = {
-		republican_tradition = 0.005
+		republican_tradition = 0.5
 	}
 
 	chance = {
 		factor = 1
 		modifier = {
 			factor = 2
-			NOT = { republican_tradition = 0.6 }
+			NOT = { republican_tradition = 60 }
 		}
 		modifier = {
 			factor = 2
-			NOT = { republican_tradition = 0.4 }
+			NOT = { republican_tradition = 40 }
 		}
 		modifier = {
 			factor = 5
-			NOT = { republican_tradition = 0.2 }
+			NOT = { republican_tradition = 20 }
 		}
 	}
 	
@@ -34,7 +34,7 @@ election_reform = {
 		factor = 1
 		modifier = {
 			factor = 2
-			NOT = { republican_tradition = 0.6 }
+			NOT = { republican_tradition = 60 }
 		}		
 	}	
 }

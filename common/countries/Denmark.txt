@@ -91,13 +91,13 @@ monarch_names = {
 
 leader_names = {
 	Adeler Ahlefeldt Akeleye Arenstorff 
-	Bille Bielke Brahe Brockenhuus
+	Bille Bielke Brahe Bernstorff Brockenhuus
 	Christiansen
 	Daa
 	Ebbesen Eberstein Ellbrecht 
 	Falkenskjold Fischer
 	Galt Gersdorff Gjedde Gyldenløve Gyldenstjerne Gøye
-	Harboe Hardenberg Holstein Huitfeldt Høegh
+	Harboe Hardenberg Holstein Huitfeldt Høegh Høegh-Guldberg
 	Jensen Juel
 	Krabbe Krag Krumpen Knudtzon Kvistgaard Kaas
 	Lillienskjold Lingby Lunge Lützow Løvenørn
@@ -105,7 +105,7 @@ leader_names = {
 	Norby
 	Pedersen Povlsen Pallesen Pil
 	Rantzau Reventlow Rosenkrantz Rosenørn
-	Schlentz Schack Scholten Sehested Skram
+	Schlentz Schack Schimmelmann Scholten Sehested Skram
 	Thomsen "von Trampe" Trolle
 	Ulfeldt
 }

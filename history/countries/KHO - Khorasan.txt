@@ -1,5 +1,5 @@
 government = iqta
-primary_culture = afghani
+primary_culture = khorasani
 add_accepted_culture = persian
 religion = shiite
 technology_group = muslim

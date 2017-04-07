@@ -1305,66 +1305,37 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Star and Crescent"
-		is_year = 1453
 		religion_group = muslim
+		NOT = { has_global_flag = hagia_sophia_now_mosque }
 		owns = 151 # Thrace/Constantinople/Istanbul
 		151 = {
-			is_reformation_center = no
-			NOT = { religion_group = muslim }
+			religion_group = muslim
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 1000
+		months = 150
 	}
 	
 	option = {
 		name = "muslim_dlc.EVTOPTA20"
+		ai_chance = { 
+			factor = 100
+		}
+		show_ambient_object = hagia_sophia_minarets
+		hide_ambient_object = hagia_sophia
 		add_piety = 0.2
 		add_prestige = 20
 		add_years_of_income = -0.1
-		151 = {
-			random_neighbor_province = {
-				limit = {
-					owned_by = ROOT
-					religion_group = christian
-				}
-				spawn_rebels = {
-					type = religious_rebels
-					size = 2
-				}
+		set_global_flag = hagia_sophia_now_mosque
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
 			}
-			if = {
-				limit = { religion_group = christian }
-				spawn_rebels = {
-					type = religious_rebels
-					size = 2
-				}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
 			}
-			if = {
-				limit = {
-					owner = {
-						religion = sunni
-					}
-				}
-				change_religion = sunni
-			}	
-			if = {
-				limit = {
-					owner = {
-						religion = shiite
-					}
-				}
-				change_religion = shiite
-			}				
-			if = {
-				limit = {
-					owner = {
-						religion = ibadi
-					}
-				}
-				change_religion = ibadi
-			}				
 		}
 	}
 	option = {
@@ -1373,16 +1344,13 @@ country_event = {
 			factor = 0
 		}
 		add_piety = -0.2
-		151 = {
-			random_neighbor_province = {
-				limit = {
-					owned_by = ROOT
-					religion_group = muslim
-				}
-				spawn_rebels = {
-					type = religious_rebels
-					size = 2
-				}
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_dhimmi
+				loyalty = 15
 			}
 		}
 	}

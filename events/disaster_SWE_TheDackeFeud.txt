@@ -44,6 +44,8 @@ country_event = {
 						OR = {
 							area = norrland_area
 							area = svealand_area
+							area = ostra_svealand_area
+							area = vastra_gotaland_area
 							area = gotaland_area
 							area = skaneland_area
 						}
@@ -86,7 +88,9 @@ country_event = {
 			OR = {
 				area = norrland_area
 				area = svealand_area
+				area = ostra_svealand_area
 				area = gotaland_area
+				area = vastra_gotaland_area
 				area = skaneland_area
 			}
 			controlled_by = SWE
@@ -111,7 +115,9 @@ country_event = {
 					OR = {
 						area = norrland_area
 						area = svealand_area
+						area = ostra_svealand_area
 						area = gotaland_area
+						area = vastra_gotaland_area
 						area = skaneland_area
 					}
 				}
@@ -176,7 +182,9 @@ country_event = {
 			OR = {
 				area = norrland_area
 				area = svealand_area
+				area = ostra_svealand_area
 				area = gotaland_area
+				area = vastra_gotaland_area
 				area = skaneland_area
 			}
 			controlled_by = SWE
@@ -201,7 +209,9 @@ country_event = {
 					OR = {
 						area = norrland_area
 						area = svealand_area
+						area = ostra_svealand_area
 						area = gotaland_area
+						area = vastra_gotaland_area
 						area = skaneland_area
 					}
 				}

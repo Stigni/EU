@@ -61,6 +61,12 @@ country_event = {
 			mil = 5
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = inspiring_leader_personality }
+		}
 	}
 	option = {
 		name = women_history_events.1.b
@@ -130,6 +136,12 @@ country_event = {
 			dip = 6
 			mil = 5
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = expansionist_personality }
 		}
 	}
 	option = {
@@ -211,8 +223,10 @@ country_event = {
 				mil = 5
 				female = yes
 			}
+			hidden_effect = {
+				add_queen_personality = incorruptible_personality
+			}
 		}
-		
 	}
 	option = {
 		name = women_history_events.3.b
@@ -278,6 +292,12 @@ country_event = {
 			dip = 5
 			mil = 4
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = well_advised_personality }
 		}
 	}
 	option = {
@@ -391,6 +411,12 @@ country_event = {
 			adm = 2
 			dip = 3
 			mil = 3
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = free_thinker_personality }
 		}
 	}
 	option = {
@@ -831,6 +857,12 @@ country_event = {
 			mil = 3
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = careful_personality }
+		}
 	}
 	option = {
 		name = women_history_events.14.b
@@ -889,6 +921,12 @@ country_event = {
 			dip = 3
 			mil = 2
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = zealot_personality }
 		}
 	}
 	option = {
@@ -1098,6 +1136,12 @@ country_event = {
 			mil = 1
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = entrepreneur_personality }
+		}
 	}
 	option = {
 		name = women_history_events.18.b
@@ -1164,6 +1208,12 @@ country_event = {
 			ADM = 2
 			MIL = 3
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = tactical_genius_personality }
+		}
 	}
 	option = {
 		name = women_history_events.19.b
@@ -1229,6 +1279,12 @@ country_event = {
 			DIP = 4
 			ADM = 3
 			MIL = 3
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = inspiring_leader_personality }
 		}
 	}
 	option = {
@@ -1612,6 +1668,12 @@ country_event = {
 			mil = 3
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = righteous_personality }
+		}
 	}
 	option = {
 		name = women_history_events.27.b
@@ -1725,6 +1787,12 @@ country_event = {
 			mil = 3
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = silver_tongue_personality }
+		}
 	}
 	option = {
 		name = women_history_events.29.b
@@ -1791,6 +1859,15 @@ country_event = {
 			female = yes
 		}
 		add_corruption = 1
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { 
+				add_ruler_personality = intricate_web_weaver_personality 
+				add_ruler_personality = embezzler_personality 
+			}
+		}
 	}
 	option = {
 		name = women_history_events.30.b
@@ -1930,6 +2007,12 @@ country_event = {
 			mil = 4
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = bold_fighter_personality }
+		}
 	}
 	option = {
 		name = women_history_events.32.c
@@ -2049,6 +2132,12 @@ country_event = {
 			dip = 3
 			mil = 4
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = well_connected_personality }
 		}
 	}
 	option = {
@@ -2171,6 +2260,12 @@ country_event = {
 			mil = 6
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = martial_educator_personality }
+		}
 	}
 	option = {
 		name = women_history_events.36.b
@@ -2256,6 +2351,12 @@ country_event = {
 			adm = 5
 			mil = 6
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = intricate_web_weaver_personality }
 		}
 	}
 	option = {
@@ -2367,6 +2468,12 @@ country_event = {
 			mil = 4
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = well_connected_personality }
+		}
 	}
 	option = {
 		name = women_history_events.39.b
@@ -2424,6 +2531,12 @@ country_event = {
 			DIP = 4
 			MIL = 5
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = scholar_personality }
 		}
 	}
 	option = {
@@ -2851,6 +2964,12 @@ country_event = {
 			mil = 4
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = benevolent_personality }
+		}
 	}
 }
 
@@ -3160,6 +3279,12 @@ country_event = {
 			dip = 4
 			mil = 3
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = inspiring_leader_personality }
 		}
 	}
 	option = {
@@ -3715,6 +3840,12 @@ country_event = {
 			mil = 3
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = silver_tongue_personality }
+		}
 	}
 }
 
@@ -3773,6 +3904,12 @@ country_event = {
 			dip = 3
 			mil = 3
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = charismatic_negotiator_personality }
 		}
 	}
 }
@@ -3839,6 +3976,12 @@ country_event = {
 			dip = 3
 			mil = 3
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = midas_touched_personality }
 		}
 	}
 }
@@ -3910,6 +4053,12 @@ country_event = {
 			mil = 2
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = pious_personality }
+		}
 	} 
 }
 
@@ -3978,6 +4127,12 @@ country_event = {
 			dip = 4
 			mil = 2
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = incorruptible_personality }
 		}
 	}
 }
@@ -4056,6 +4211,12 @@ country_event = {
 			mil = 2
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = industrious_personality }
+		}
 	}
 }
 
@@ -4120,6 +4281,12 @@ country_event = {
 			dip = 4
 			mil = 3
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = expansionist_personality }
 		}
 	}
 }
@@ -4337,13 +4504,35 @@ country_event = {
 	}
 	option = {
 		name = women_history_events.74.b
-		define_consort = {
-			name = "Eleni"
-			dynasty = "Hadiya"
-			adm = 4
-			dip = 4
-			mil = 3
-			female = yes
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+			}
+			define_consort = {
+				name = "Eleni"
+				dynasty = "Hadiya"
+				adm = 4
+				dip = 4
+				mil = 3
+				female = yes
+			}
+			hidden_effect = {
+				add_queen_personality = righteous_personality
+				add_queen_personality = intricate_web_weaver_personality
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Rights of Man" }
+			}
+			define_ruler = {
+				name = "Eleni"
+				dynasty = "Hadiya"
+				adm = 4
+				dip = 4
+				mil = 3
+				female = yes
+			}
 		}
 	}
 }
@@ -4420,6 +4609,12 @@ country_event = {
 			mil = 3
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = careful_personality }
+		}
 	}
 }
 
@@ -4481,6 +4676,15 @@ country_event = {
 			mil = 2
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { 
+				add_ruler_personality = secretive_personality 
+				add_ruler_personality = well_connected_personality 
+			}
+		}
 	}
 }
 
@@ -4538,6 +4742,12 @@ country_event = {
 			dip = 4
 			mil = 3
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = fierce_negotiator_personality }
 		}
 	}
 }
@@ -4717,6 +4927,12 @@ country_event = {
 			mil = 3
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = industrious_personality }
+		}
 	}
 	option = {
 		name = women_history_events.80.c
@@ -4742,6 +4958,12 @@ country_event = {
 			mil = 3
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = entrepreneur_personality }
+		}
 	}
 	option = {
 		name = women_history_events.80.f
@@ -4766,6 +4988,12 @@ country_event = {
 			dip = 3
 			mil = 4
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = scholar_personality }
 		}
 	}
 }
@@ -4831,6 +5059,12 @@ country_event = {
 			dip = 3
 			mil = 2
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = tolerant_personality }
 		}
 	}
 }
@@ -5015,6 +5249,15 @@ country_event = {
 			dip = 4
 			mil = 4
 			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { 
+				add_ruler_personality = scholar_personality
+				add_ruler_personality = well_connected_personality 
+			}
 		}
 	}
 }
@@ -5310,6 +5553,15 @@ country_event = {
 			MIL = 2
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { 
+				add_ruler_personality = tactical_genius_personality
+				add_ruler_personality = entrepreneur_personality 
+			}
+		}
 	}
 }
 
@@ -5480,6 +5732,15 @@ country_event = {
 			mil = 3
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { 
+				add_ruler_personality = inspiring_leader_personality
+				add_ruler_personality = architectural_visionary_personality
+			}
+		}
 	}
 }
 
@@ -5646,6 +5907,15 @@ country_event = {
 			mil = 3
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { 
+				add_ruler_personality = silver_tongue_personality
+				add_ruler_personality = scholar_personality 
+			}
+		}
 	}
 }
 
@@ -5720,6 +5990,12 @@ country_event = {
 			mil = 2
 			female = yes
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = incorruptible_personality }
+		}
 	}
 }
 
@@ -5774,6 +6050,12 @@ country_event = {
 	}
 	option = {
 		name = women_history_events.97.b
+		trigger = {
+			OR = {
+				has_consort = no
+				NOT = { has_dlc = "Rights of Man" }
+			}
+		}
 		if = {
 			limit = {
 				NOT = { has_dlc = "Rights of Man" }
@@ -5798,6 +6080,10 @@ country_event = {
 				dip = 4
 				mil = 3
 				female = yes
+			}
+			hidden_effect = { 
+				add_queen_personality = secretive_personality
+				add_queen_personality = silver_tongue_personality
 			}
 		}
 	}

@@ -123,7 +123,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 386
-	name = "Michault le Caron aka Taillevent" # poet, precursor for Jean Villon
+	name = "Michault Taillevent" # poet, precursor for Jean Villon
 	location = 88 # Aire-sur-la-Lys, Artois
 	discount = yes
 	skill = 1
@@ -138,7 +138,7 @@ advisor = {
 	location = 88 #Artois (close to Cambrai)
 	discount = yes
 	skill = 3
-	type = artist 
+	type = theologian 
 	date = 1427.8.5 #30 years old
 	death_date = 1474.11.27 #dies
 }
@@ -157,7 +157,7 @@ advisor = {
 advisor = {
 	advisor_id = 389
 	name = "Gilles Binchois" #famous Franco-Flemish composer   
-	location = 88 #Artois (close to Cambrai) <- not sure
+	location = 91 #Mons
 	discount = yes
 	skill = 2
 	type = artist 

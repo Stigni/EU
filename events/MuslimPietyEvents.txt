@@ -493,11 +493,70 @@ country_event = {
 			}
 			kill_heir = yes
 		}
-		define_ruler = {
-			name = "random"
-		}
-		add_piety =-0.25
+		define_ruler = { }
+		add_piety = -0.25
 		add_legitimacy = -25
 		add_stability = -1
+	}
+}
+
+# Convert Hagia Sophia into a Mosque
+country_event = {
+	id = muslim_piety.21
+	title = "muslim_dlc.EVTNAME20"
+	desc = "muslim_dlc.EVTDESC20"
+	picture = MOSQUE_HAGA_SOPHIA_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		religion_group = muslim
+		owns = 151 # Thrace/Constantinople/Istanbul
+		NOT = { has_global_flag = hagia_sophia_now_mosque }
+		151 = {
+			religion_group = muslim
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+	}
+	
+	option = {
+		name = "muslim_dlc.EVTOPTA20"
+		ai_chance = { 
+			factor = 100
+		}
+		set_global_flag = hagia_sophia_now_mosque
+		show_ambient_object = hagia_sophia_minarets
+		hide_ambient_object = hagia_sophia
+		add_piety = 0.2
+		add_prestige = 20
+		add_years_of_income = -0.1
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
+	}
+	option = {
+		name = "muslim_dlc.EVTOPTB20"
+		ai_chance = { 
+			factor = 0
+		}
+		add_piety = -0.2
+		if = {
+			limit = {
+				has_dlc = "The Cossacks"
+			}
+			add_estate_loyalty = {
+				estate = estate_dhimmi
+				loyalty = 15
+			}
+		}
 	}
 }

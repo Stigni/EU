@@ -19,7 +19,7 @@ parliamentary_reform = {
 	
 	modifier = {
 		legitimacy = 1
-		republican_tradition = 0.005
+		republican_tradition = 0.5
 	}
 
 	chance = {

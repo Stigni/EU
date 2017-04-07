@@ -772,6 +772,14 @@ expansion_ideas = {
 			}
 		}
 		modifier = {
+			factor = 5
+			OR = {
+				tag = CAS
+				tag = POR
+				tag = SPA
+			}
+		}
+		modifier = {
 			factor = 10
 			tag = RUS
 			num_of_cities = 20
@@ -785,6 +793,13 @@ expansion_ideas = {
 			factor = 0
 			NOT = { has_idea_group = exploration_ideas }
 			NOT = { is_colonial_nation = yes }
+			NOT = {
+				any_owned_province = {
+					any_neighbor_province = {
+						is_empty = yes
+					}
+				}
+			}
 		}
 		modifier = {
 			factor = 0.1
@@ -859,7 +874,7 @@ humanist_ideas = {
 		num_accepted_cultures = 2
 	}
 	benevolence = {
-		relations_decay_of_me = 0.3
+		improve_relation_modifier = 0.3
 	}
 	humanist_tolerance = {
 		tolerance_heathen = 3

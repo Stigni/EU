@@ -4,3 +4,4 @@
 
 1978 = "Hjaltland"
 1979 = "Færøyene"
+4143 = "Borgarsysla"

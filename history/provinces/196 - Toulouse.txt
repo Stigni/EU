@@ -13,9 +13,6 @@ trade_goods = wine
 base_manpower = 6
 add_core = FRA
 add_core = TOU
-
-
-
 add_core = GUY
 discovered_by = eastern
 discovered_by = western

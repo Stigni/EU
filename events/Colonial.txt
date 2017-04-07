@@ -930,11 +930,13 @@ province_event = {
 			region = central_america_region
 			region = mexico_region
 			region = colombia_region
+			area = amapa_area
 			area = amazon_area
 			area = grao_para_area
 			area = sao_francisco_area
 			area = bahia_area
 			area = pernambuco_area
+			area = ceara_area
 		}
 		OR = {
 			trade_goods = grain
@@ -984,7 +986,7 @@ province_event = {
 	is_mtth_scaled_to_size = 1
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 300
 		
 		modifier = {
 			factor = 0.9
@@ -1003,7 +1005,7 @@ province_event = {
 			development = 20
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.7
 			has_building = trade_depot
 		}
 		modifier = {

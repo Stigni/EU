@@ -34,7 +34,7 @@ country_event = {
 		name = flavor_mlo.1.a
 		ai_chance = { factor = 90 }
 		change_government = ambrosian_republic
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 		every_neighbor_country  = {
 			limit = {
 				is_subject = no
@@ -86,19 +86,19 @@ country_event = {
 	trigger = {
 		tag = MLO
 		government = ambrosian_republic
-		NOT = { republican_tradition = 0.5 }
+		NOT = { republican_tradition = 50 }
 	}
 	mean_time_to_happen = {
 		months = 64
 	}
 	option = {
 		name = flavor_mlo.2.a
-		add_republican_tradition = -0.2
+		add_republican_tradition = -20
 		add_prestige = 10
 	}
 	option = {
 		name = flavor_mlo.2.b
-		add_republican_tradition = 0.2
+		add_republican_tradition = 20
 		add_stability = -1
 	}
 }
@@ -125,7 +125,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_mlo.3.a
-		add_republican_tradition = 0.10
+		add_republican_tradition = 10
 		add_stability_or_adm_power = yes
 		add_legitimacy = 10
 		104 = { add_base_tax = 1 add_base_manpower = 1 }
@@ -322,7 +322,7 @@ country_event = {
 	}		
 	option = {
 		name = flavor_mlo.7.a
-		add_republican_tradition = 0.1
+		add_republican_tradition = 10
 		add_stability_or_adm_power = yes
 		add_prestige = 10
 		add_legitimacy = 10

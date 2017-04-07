@@ -13,9 +13,6 @@ trade_goods = grain
 base_manpower = 2
 add_core = FRA
 add_core = GUY
-
-
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

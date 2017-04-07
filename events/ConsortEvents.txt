@@ -19,6 +19,7 @@ country_event = {
 	desc = {
 		trigger = {
 			religion_group = christian
+			NOT = { has_ruler_flag = widow_widower }
 		}
 		desc = consort_events.1.da #Monarch seems oblivious to offers so far.
 	}
@@ -41,7 +42,6 @@ country_event = {
 		}
 		desc = consort_events.1.dd #Base text for regions where multiple spouses are the norm.
 	}
-	#Add more for variation and local flavor?
 	
 	trigger = {
 		has_dlc = "Rights of Man"
@@ -704,7 +704,7 @@ country_event = {
 		is_lesser_in_union = no
 		has_consort = no
 		has_regency = no
-		any_owned_province = { is_capital = no }
+		num_of_cities = 2
 		government = monarchy
 		NOT = { government = iqta }
 		NOT = { government = elective_monarchy }
@@ -743,7 +743,7 @@ country_event = {
 			factor = 0.9
 			OR = {
 				ruler_has_personality = sinner_personality
-				ruler_has_personality = indulgent_personality
+				ruler_has_personality = drunkard_personality
 			}
 		}
 	}
@@ -761,8 +761,7 @@ country_event = {
 	option = {
 		name = consort_events.6.a 
 		set_ruler_flag = has_lowborn_consort #Before creating the consort!
-		define_consort = {
-		}
+		define_consort = { }
 		add_ruler_modifier = { 
 			name = consort_of_the_people
 		}
@@ -2776,7 +2775,7 @@ country_event = {
 			consort_adm = 5 
 			NOT = { consort_mil = 5 } 
 		} 
-		desc = consort_events.104.da
+		desc = consort_events.104.db
 	}
 	desc = {
 		trigger = { 
@@ -2784,7 +2783,7 @@ country_event = {
 			NOT = { consort_adm = 5 } 
 			NOT = { consort_mil = 5 } 
 		} 
-		desc = consort_events.104.da
+		desc = consort_events.104.dc
 	}
 
 	trigger = {
@@ -2999,13 +2998,15 @@ country_event = {
 	option = {
 		name = consort_events.202.a
 
-		hidden_effect = { FROM = { country_event = { id = consort_events.203 } } } #This is where she is actually removed
-
-		clr_ruler_flag = divorce_25
-		clr_ruler_flag = divorce_50
-		clr_ruler_flag = divorce_75
-		clr_ruler_flag = divorce_100
-
+		hidden_effect = {
+			FROM = {
+				country_event = { id = consort_events.203 }
+				clr_ruler_flag = divorce_25
+				clr_ruler_flag = divorce_50
+				clr_ruler_flag = divorce_75
+				clr_ruler_flag = divorce_100
+			}
+		} #This is where she is actually removed
 		ai_chance = {
 			factor = 1
 
@@ -3027,8 +3028,8 @@ country_event = {
 	#Different kinds of no
 	option = {
 		trigger = { FROM = { has_ruler_flag = divorce_25 } }
-		name = consort_events.202.a
-		custom_tooltip = consort_events.202.a.tt
+		name = consort_events.202.b
+		custom_tooltip = consort_events.202.b.tt
 
 		hidden_effect = { add_devotion = -13 }
 		hidden_effect = { FROM = { country_event = { id = consort_events.204 days = 30 } } } 
@@ -3040,7 +3041,7 @@ country_event = {
 	option = {
 		trigger = { FROM = { has_ruler_flag = divorce_50 } }
 		name = consort_events.202.b
-		custom_tooltip = consort_events.202.b.tt
+		custom_tooltip = consort_events.202.c.tt
 
 		hidden_effect = { add_devotion = -25 }
 		hidden_effect = { FROM = { country_event = { id = consort_events.204 days = 30 } } } 
@@ -3052,7 +3053,7 @@ country_event = {
 	option = {
 		trigger = { FROM = { has_ruler_flag = divorce_75 } }
 		name = consort_events.202.b
-		custom_tooltip = consort_events.202.c.tt
+		custom_tooltip = consort_events.202.d.tt
 
 		hidden_effect = { add_devotion = -38 }
 		hidden_effect = { FROM = { country_event = { id = consort_events.204 days = 30 } } } 
@@ -3063,7 +3064,7 @@ country_event = {
 
 	option = {
 		trigger = { FROM = { has_ruler_flag = divorce_100 } }
-		name = consort_events.202.d
+		name = consort_events.202.b
 		custom_tooltip = consort_events.202.e.tt
 
 		hidden_effect = { add_devotion = -50 }
@@ -4614,7 +4615,7 @@ country_event = {
 			factor = 0.75
 			OR = {
 				consort_has_personality = sinner_personality
-				consort_has_personality = indulgent_personality
+				consort_has_personality = drunkard_personality
 				consort_has_personality = fertile_personality
 			}
 		} 
@@ -4779,7 +4780,7 @@ country_event = {
 			factor = 0.75
 			OR = {
 				consort_has_personality = sinner_personality
-				consort_has_personality = indulgent_personality
+				consort_has_personality = drunkard_personality
 			}
 		}
 	}

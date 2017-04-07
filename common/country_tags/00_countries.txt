@@ -170,6 +170,7 @@ MEM = "countries/Memmingen.txt"
 VER = "countries/Verden.txt"
 NSA = "countries/Nassau.txt"
 RVA = "countries/Ravensburg.txt"
+DTT = "countries/Dithmarschen.txt"
 	
 #Spain
 ARA	= "countries/Aragon.txt"
@@ -225,7 +226,6 @@ ARM	= "countries/Armenia.txt"
 AST	= "countries/Astrakhan.txt"
 CRI	= "countries/Crimea.txt"
 GEO	= "countries/Georgia.txt"
-GOL	= "countries/GoldenHorde.txt"
 KAZ	= "countries/Kazan.txt"
 MOS	= "countries/Muscowy.txt"
 NOV	= "countries/Novgorod.txt"
@@ -243,6 +243,9 @@ PLT	= "countries/Polotsk.txt"
 PRM = "countries/Perm.txt"
 FEO	= "countries/Theodoro.txt"
 BSH	= "countries/Bashkiria.txt"
+
+GOL	= "countries/GreatHorde.txt"
+GLH = "countries/GoldenHorde.txt"
 
 #Arabia	
 ADE	= "countries/Yemen.txt"
@@ -331,6 +334,7 @@ MBA = "countries/Mombasa.txt"
 MLI = "countries/Malindi.txt"
 AJU = "countries/Ajuuraan.txt"
 MDI = "countries/Mogadishu.txt"
+ENA = "countries/Eneara.txt"
 
 #East African Additions
 
@@ -347,6 +351,14 @@ MRE = "countries/Marehan.txt"
 PTE = "countries/Pate.txt"
 WAR = "countries/Warsangali.txt"
 BTI = "countries/Semien.txt"
+BEJ = "countries/Beja.txt"
+JIM = "countries/Jima.txt"
+WLY = "countries/Welayta.txt"
+DAM = "countries/Damot.txt"
+HDY = "countries/Hadiya.txt"
+SOA = "countries/Shewa.txt"
+JJI = "countries/Janjero.txt"
+ABB = "countries/Dongola.txt"
 
 #Kongo, Great Lakes & Central Africa
 TYO = "countries/Tyo.txt"

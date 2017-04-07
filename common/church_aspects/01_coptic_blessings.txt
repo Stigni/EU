@@ -4,7 +4,7 @@ legitimize_government = {
 	effect = {
 		legitimacy = 0.5
 		horde_unity = 0.5
-		republican_tradition = 0.002
+		republican_tradition = 0.2
 		devotion = 0.5
 	}
 	ai_will_do = {
@@ -13,9 +13,9 @@ legitimize_government = {
 			factor = 3
 			NOT = {
 				OR = {
-					legitimacy = 0.7
-					republican_tradition = 0.7
-					devotion = 0.7
+					legitimacy = 70
+					republican_tradition = 70
+					devotion = 70
 				}
 			}
 		}

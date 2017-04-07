@@ -5253,14 +5253,24 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6143"
-		add_country_modifier = {
-			name = "corrupt_viceroys"
-			duration = 3650
+		ai_chance = {
+			factor = 50
 		}
+		add_inflation = 2
 	}
 	option = {
 		name = "EVTOPTB6143"
-		add_inflation = 2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				yearly_corruption_increase = 0.001
+			}
+		}
+		add_country_modifier = {
+			name = "corrupt_viceroys"
+			duration = 1825
+		}
 	}		
 }
 

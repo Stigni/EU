@@ -3536,3 +3536,38 @@ agricolas_reputation = {
 	opinion = -50
 	yearly_decay = 2
 }
+
+nor_strategic_marriage = {
+	opinion = 75
+	yearly_decay = 2
+}
+
+nor_taxation_conflict_over_hebrides = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+nor_gave_away_orkney = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+overlord_takes_stance_vs_hansa = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+hanseatic_kalmar_conflict = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+danish_dutch_burgundian_inspiration = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+fra_gave_up_on_maine = {
+	opinion = -75
+	yearly_decay = 3
+}

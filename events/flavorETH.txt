@@ -831,6 +831,7 @@ country_event = {
 				name = "eth_oromo_migration"
 				duration = 3650
 			}
+			change_culture = oromo
 			change_religion = shamanism
 			set_province_flag = eth_starting_oromo_provinces
 		}
@@ -874,6 +875,7 @@ country_event = {
 					name = "eth_oromo_migration"
 					duration = 3650
 				}
+				change_culture = oromo
 				change_religion = shamanism
 			}
 		}
@@ -902,6 +904,7 @@ province_event = {
 		NOT = { has_global_flag = end_of_oromo_migrations }
 		region = horn_of_africa_region
 		NOT = { area = red_sea_coast_area }
+		NOT = { area = dongola_area }
 		NOT = { area = upper_nubia_area }
 		any_neighbor_province = {
 			has_province_modifier = eth_oromo_migration
@@ -914,6 +917,7 @@ province_event = {
 			name = "eth_oromo_migration"
 			duration = 3650
 		}
+		change_culture = oromo
 		change_religion = shamanism
 	}
 }
@@ -985,6 +989,13 @@ country_event = {
 				has_province_modifier = eth_oromo_migration
 			}
 			remove_province_modifier = eth_oromo_migration
+		}
+		random_province = {
+			limit = {
+				culture = oromo
+				NOT = { is_core = JIM }
+			}
+			add_core = JIM
 		}
 	}
 }
@@ -1092,6 +1103,7 @@ country_event = {
 			}
 			define_consort = {
 				name = "Eleni"
+				country_of_origin = HDY
 				dynasty = "Hadiya"
 				adm = 4
 				dip = 4

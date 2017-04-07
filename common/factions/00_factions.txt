@@ -125,7 +125,7 @@ rr_royalists =
 		diplomatic_reputation = 1
 		state_maintenance_modifier = -0.25
 		reduced_liberty_desire = 20
-		republican_tradition = -0.005
+		republican_tradition = -0.5
 		
 	}
 }

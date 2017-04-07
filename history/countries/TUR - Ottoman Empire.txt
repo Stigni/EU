@@ -101,6 +101,9 @@ national_focus = MIL
 		decision = make_constantinople_capital
 		government_rank = 3
 		capital = 151
+		set_global_flag = hagia_sophia_now_mosque
+		show_ambient_object = hagia_sophia_minarets
+		hide_ambient_object = hagia_sophia
 } # Thrace
 
 1460.1.1 = { leader = {	name = "Gedik Ahmed"           	type = general	rank = 0	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1482.1.1 } }

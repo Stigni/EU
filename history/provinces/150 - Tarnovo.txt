@@ -14,9 +14,6 @@ estate = estate_nobles
 is_city = yes
 add_core = TUR
 add_core = BUL
-
-
-
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -5,8 +5,7 @@ religion = catholic
 technology_group = western
 historical_friend = LIV
 historical_rival = POL
-capital = 41 #Königsberg
-#capital = 1841	# Marienburg
+capital = 1841	# Marienburg
 
 
 1393.1.1 = {

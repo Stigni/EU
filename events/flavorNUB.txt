@@ -38,6 +38,7 @@ province_event = {
 					OR = {
 						area = kurdufan_area
 						area = upper_nubia_area
+						area = sennar_area
 						province_id = 1219
 						province_id = 2801
 						province_id = 2802
@@ -58,6 +59,9 @@ province_event = {
 			clr_country_flag = funj_information
 		}
 		kurdufan_area = {
+			add_core = NUB
+		}
+		sennar_area = {
 			add_core = NUB
 		}		
 		upper_nubia_area = {
@@ -150,6 +154,9 @@ country_event = {
 				add_core = NUB
 			}		
 			upper_nubia_area = {
+				add_core = NUB
+			}
+			sennar_area = {
 				add_core = NUB
 			}
 			1219 = {

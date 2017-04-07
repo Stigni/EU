@@ -122,11 +122,10 @@ country_event = {
 country_event = {
 	id = institution_events.3
 	title = institution_events.3.t
-	desc = institution_events.3.d
 	picture = EXPLORERS_eventPicture
+	desc = institution_events.3.d
 
 	is_triggered_only = yes
-	
 
 	trigger = {
 		always = yes			#
@@ -291,36 +290,44 @@ country_event = {
 			limit = {
 				owns_core_province = 112 #Aldine Press/Venetian Printing Industry
 			}
-			add_institution_embracement = {
-				which = "printing_press"
-				value = 100
+			112 = {
+				add_institution_embracement = {
+					which = "printing_press"
+					value = 100
+				}
 			}
 		}
 		if = {
 			limit = {
 				owns_core_province = 183 #Parisian Printing Industry
 			}
-			add_institution_embracement = {
-				which = "printing_press"
-				value = 100
+			183 = {
+				add_institution_embracement = {
+					which = "printing_press"
+					value = 100
+				}
 			}
 		}
 		if = {
 			limit = {
 				owns_core_province = 1868 #Augsburg Printers
 			}
-			add_institution_embracement = {
-				which = "printing_press"
-				value = 100
+			1868 = {
+				add_institution_embracement = {
+					which = "printing_press"
+					value = 100
+				}
 			}
 		}
 		if = {
 			limit = {
 				owns_core_province = 118 #Roman Printers
 			}
-			add_institution_embracement = {
-				which = "printing_press"
-				value = 100
+			118 = {
+				add_institution_embracement = {
+					which = "printing_press"
+					value = 100
+				}
 			}
 		}
 	}
@@ -357,36 +364,44 @@ country_event = {
 			limit = {
 				owns_core_province = 112 #Aldine Press/Venetian Printing Industry
 			}
-			add_institution_embracement = {
-				which = "printing_press"
-				value = 100
+			112 = {
+				add_institution_embracement = {
+					which = "printing_press"
+					value = 100
+				}
 			}
 		}
 		if = {
 			limit = {
 				owns_core_province = 183 #Parisian Printing Industry
 			}
-			add_institution_embracement = {
-				which = "printing_press"
-				value = 100
+			183 = {
+				add_institution_embracement = {
+					which = "printing_press"
+					value = 100
+				}
 			}
 		}
 		if = {
 			limit = {
 				owns_core_province = 1868 #Augsburg Printers
 			}
-			add_institution_embracement = {
-				which = "printing_press"
-				value = 100
+			1868 = {
+				add_institution_embracement = {
+					which = "printing_press"
+					value = 100
+				}
 			}
 		}
 		if = {
 			limit = {
 				owns_core_province = 118 #Roman Printers
 			}
-			add_institution_embracement = {
-				which = "printing_press"
-				value = 100
+			118 = {
+				add_institution_embracement = {
+					which = "printing_press"
+					value = 100
+				}
 			}
 		}
 	}
@@ -784,6 +799,7 @@ country_event = {
 		}
 		any_owned_province = {
 			NOT = { feudalism = 50 }
+			feudalism = 25
 		}
 	}
 
@@ -819,9 +835,10 @@ country_event = {
 		}
 	}
 	option = {
-		name = institution_events.8.a
+		name = institution_events.8.b
 		random_owned_province = {
 			limit = {
+				NOT = { feudalism = 100 }
 				feudalism = 25
 			}
 			add_institution_embracement = {
@@ -913,7 +930,7 @@ country_event = {
 		name = institution_events.9.a
 		add_horde_unity = 5
 		add_legitimacy = 5
-		add_republican_tradition = 0.0025
+		add_republican_tradition = 2.5
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
@@ -984,7 +1001,7 @@ country_event = {
 		name = institution_events.10.a
 		add_horde_unity = -10
 		add_legitimacy = -10
-		add_republican_tradition = -0.005
+		add_republican_tradition = -5
 		add_devotion = -5
 		add_country_modifier = {
 			name = "government_reform_feudalism"

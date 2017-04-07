@@ -211,3 +211,35 @@ protectorate = {
 	start_date = 1506.6.2
 	end_date = 1622.5.5	#War with Portugal, followed by long worsening of relations.
 }
+
+#Ethiopian Vassals
+vassal = {
+	first = ETH
+	second = DAM
+	start_date = 1444.1.1
+	end_date = 1670.1.1
+}
+
+#Hadiya
+vassal = {
+	first = ETH
+	second = HDY
+	start_date = 1444.1.1
+	end_date = 1534.1.1
+}
+
+#Malikate of Dongola
+
+vassal = {
+	first = NUB
+	second = ABB
+	start_date = 1503.1.1
+	end_date = 1540.1.1
+}
+
+protectorate = {
+	first = TUR
+	second = ABB
+	start_date = 1540.1.1
+	end_date = 1811.1.1
+}

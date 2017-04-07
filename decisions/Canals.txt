@@ -8,10 +8,17 @@ country_decisions = {
 				AND = {
 					treasury = 20000
 					owns_or_vassal_of = 1775
+					owns_or_vassal_of = 4141
 				}
 			}
 			has_discovered = 1775
+			has_discovered = 4141
 			1775 = {
+				range = ROOT
+				NOT = { has_great_project = kiel_canal }
+				NOT = { has_construction = canal }
+			}
+			4141 = {
 				range = ROOT
 				NOT = { has_great_project = kiel_canal }
 				NOT = { has_construction = canal }
@@ -20,6 +27,7 @@ country_decisions = {
 		}
 		allow = {
 			owns_or_vassal_of = 1775
+			owns_or_vassal_of = 4141
 			is_subject = no			
 			adm_tech = 26
 			treasury = 10000

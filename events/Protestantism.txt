@@ -2649,6 +2649,7 @@ country_event = {
 				has_province_modifier = prot_witch_trials
 			}
 			add_base_tax = -1
+			remove_province_modifier = prot_witch_trials
 			add_province_modifier = {
 				name = "escalated_witch_trials"
 				duration = 1825

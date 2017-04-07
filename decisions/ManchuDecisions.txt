@@ -30,6 +30,12 @@ country_decisions = {
 				}
 				add_core = MCH
 			}
+			central_jilin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_core = MCH
+			}
 			jilin_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -43,6 +49,12 @@ country_decisions = {
 				add_core = MCH
 			}
 			heilongjiang_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = MCH
+			}
+			east_heilongjiang_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 				}
