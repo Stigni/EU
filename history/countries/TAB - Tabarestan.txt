@@ -1,5 +1,5 @@
 government = iqta
-mercantilism = 0.25
+mercantilism = 25
 primary_culture = mazandarani
 religion = shiite
 technology_group = muslim
@@ -34,6 +34,9 @@ capital = 426 # Mazandaran
 		dip = 1
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = righteous_personality
 }
 
 1448.1.1 = {

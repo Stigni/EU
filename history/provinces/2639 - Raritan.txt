@@ -30,7 +30,6 @@ discovered_by = north_american
 1667.7.31 = {
 	owner = ENG
 	culture = english
-	remove_core = NED
 	add_core = ENG
 	remove_core = NED
 } # Treaty of Breda

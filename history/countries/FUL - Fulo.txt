@@ -2,6 +2,9 @@ government = tribal_despotism
 primary_culture = fulani
 religion = shamanism #Fetishism
 technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
 capital = 2237
 
 #Denyanke Kings

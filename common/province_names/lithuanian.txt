@@ -1,10 +1,6 @@
 269 = "Palenké"
-270 = "Trakai"
 271 = "Zemaitija"
-272 = "Vilnius"
 277 = "Brasta"
-1936 = "Kaunas"
-1937 = "Gardinas"
 
 40 = "Klaipéda"
 41 = "Karaliaucius"

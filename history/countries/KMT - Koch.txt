@@ -4,6 +4,7 @@ primary_culture = assamese
 religion = hinduism
 technology_group = indian
 capital = 562	# Koch
+add_accepted_culture = bengali
 
 #Khen Dynasty
 

@@ -55,6 +55,8 @@ monarch_names = {
 	"Budak #0" = 10
 	
 	"Atiya #0" = -1
+	"Mir Xanzad #0" = -1
+	"Mir Suliman #0" = -1
 }
 
 leader_names = {

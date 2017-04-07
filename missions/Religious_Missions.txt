@@ -144,7 +144,16 @@ restore_holy_see = {
 		}
 	}
 	abort_effect = {
-		remove_claim = 118
+		118 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	success = {
 		owns = 118

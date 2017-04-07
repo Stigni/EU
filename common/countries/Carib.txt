@@ -51,6 +51,7 @@ monarch_names = {
 	
 	"Hayá  #0" = -1
 	"Isani  #0" = -1
+	"Woryi  #0" = -1
 }
 
 ship_names = {

@@ -67,7 +67,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_dan.EVTOPTA3287"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_adm_power = 100
 		add_dip_power = 100
 		add_mil_power = 100
@@ -190,14 +190,14 @@ country_event = {
 	
 	option = {
 		name = "flavor_dan.EVTOPTA3296" # Mercantilist Reforms
-		add_mercantilism = 0.075
+		add_mercantilism = 7
 		add_dip_power = 50
 		add_navy_tradition = 20
 	}
 	option = {
 		name = "flavor_dan.EVTOPTB3296" # Free Trade Reforms
 		add_stability = -1
-		add_mercantilism = 0.025
+		add_mercantilism = 3
 		add_years_of_income = 1.5
 	}
 }
@@ -397,7 +397,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_dan.EVTOPTA3305" # Mercantilist Reforms
-		add_mercantilism = 0.075
+		add_mercantilism = 7.5
 		add_dip_power = 50
 		
 		add_navy_tradition = 20
@@ -421,7 +421,7 @@ country_event = {
 	option = {
 		name = "flavor_dan.EVTOPTB3305" # Free Trade Reforms
 		add_stability = -1
-		add_mercantilism = 0.025
+		add_mercantilism = 3
 		add_years_of_income = 1.5
 	}
 }
@@ -480,6 +480,7 @@ country_event = {
 		is_year = 1700
 		NOT = { is_year = 1725 }
 		has_regency = yes
+		has_consort_regency = no
 	}
 	
 	mean_time_to_happen = {
@@ -508,6 +509,7 @@ country_event = {
 		is_year = 1700
 		NOT = { is_year = 1725 }
 		has_regency = yes
+		has_consort_regency = no
 	}
 	
 	mean_time_to_happen = {
@@ -535,6 +537,7 @@ country_event = {
 		is_year = 1700
 		NOT = { is_year = 1725 }
 		has_regency = yes
+		has_consort_regency = no
 		tag = DAN
 	}
 	
@@ -563,6 +566,7 @@ country_event = {
 		is_year = 1700
 		NOT = { is_year = 1725 }
 		has_regency = yes
+		has_consort_regency = no
 		tag = DAN
 	}
 	

@@ -38,11 +38,31 @@ national_focus = MIL
 
 1406.12.26 = {
 	monarch = {
+		name = "(Regency)"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1418.6.2 = {
+	monarch = {
 		name = "Juan II"
 		dynasty = "de Trastámara"
 		birth_date = 1405.3.6
 		adm = 1
 		dip = 1
+		mil = 2
+	}
+	queen = {
+		country_of_origin = ARA
+		name = "Maria"
+		dynasty = "de Trastámara"
+		birth_date = 1396.1.1
+		death_date = 1445.2.18
+		female = yes
+		adm = 2
+		dip = 2
 		mil = 2
 	}
 }
@@ -62,6 +82,25 @@ national_focus = MIL
 		dip = 0
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = infertile_personality
+	add_ruler_personality = naive_personality
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = well_advised_personality
+}
+
+1447.8.17 = {
+	queen = {
+		country_of_origin = POR
+		name = "Isabella"
+		dynasty = "de Avis"
+		birth_date = 1396.1.1
+		death_date = 1445.2.18
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
 }
 
 1450.1.1 = { decision = act_of_uniformity decision = blasphemy_act }
@@ -75,6 +114,19 @@ national_focus = MIL
 		dip = 0
 		mil = 0
 	}
+	queen = {
+		country_of_origin = POR
+		name = "Joana"
+		dynasty = "de Avis"
+		birth_date = 1439.3.20
+		death_date = 1475.12.12
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = infertile_personality
 }
 
 1454.7.20 = {
@@ -104,6 +156,21 @@ national_focus = MIL
 		mil = 3
 		female = yes
 	}
+	queen = {
+		country_of_origin = ARA
+		name = "Ferran"
+		dynasty = "de Trastámara"
+		birth_date = 1439.3.20
+		death_date = 1516.1.23
+		female = no
+		adm = 4
+		dip = 6
+		mil = 5
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = well_advised_personality
 }
 
 1479.11.6 = {
@@ -156,6 +223,19 @@ national_focus = MIL
 		mil = 0
 		female = yes
 	}
+	queen = {
+		country_of_origin = HAB
+		name = "Felipe I"
+		dynasty = "de Trastámara"
+		birth_date = 1478.7.22
+		death_date = 1506.9.25
+		female = no
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = babbling_buffoon_personality
 }
 
 1504.12.1 = {
@@ -167,6 +247,19 @@ national_focus = MIL
 		dip = 0
 		mil = 0
 	}
+	queen = {
+		country_of_origin = CAS
+		name = "Juana I"
+		dynasty = "de Trastámara"
+		birth_date = 1479.11.6
+		death_date = 1555.4.12
+		female = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = loose_lips_personality
 }
 
 #1506.1.1 = { leader = {	name = "Juan Díaz de Solís"    	type = explorer		rank = 9	fire = 3	shock = 2	manuever = 5	siege = 0	death_date = 1516.1.23 } } # Removed /SWÖ
@@ -182,6 +275,10 @@ national_focus = MIL
 		dip = 6
 		mil = 5
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = martial_educator_personality
 }
 
 1509.1.1 = { leader = {	name = "Pánfilo de Narváez"    	type = conquistador	rank = 6	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1516.1.23 } }

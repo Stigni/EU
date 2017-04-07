@@ -235,9 +235,11 @@ country_decisions = {
 				has_country_modifier = western_embassy_mission
 			}
 			government = daimyo
+			NOT = { has_institution = global_trade }
 			has_global_flag = japan_has_encountered_the_west
 			any_known_country = {
 				technology_group = western
+				has_institution = global_trade
 			}
 		}
 	

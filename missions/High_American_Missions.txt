@@ -1,0 +1,257 @@
+gain_foothold_in_ireland = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			area = eastern_ireland_area
+			area = western_ireland_area
+		}
+		NOT = {
+			owner = { alliance_with = ROOT }
+			owner = { vassal_of = ROOT }
+		}
+	}
+	
+	allow = {
+		num_of_ports = 1
+		is_subject = no
+		num_of_cities = 20
+		technology_group = high_american
+		NOT = {
+			any_owned_province = {
+				continent = europe
+			}
+		}
+		eastern_ireland_area = {
+			has_discovered = ROOT
+		}
+		western_ireland_area = {
+			has_discovered = ROOT
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		any_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+gain_foothold_in_spain = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		region = iberia_region
+		NOT = {
+			owner = { alliance_with = ROOT }
+			owner = { vassal_of = ROOT }
+		}
+	}
+	
+	allow = {
+		num_of_ports = 1
+		is_subject = no
+		num_of_cities = 20
+		technology_group = high_american
+		NOT = {
+			any_owned_province = {
+				continent = europe
+			}
+		}
+		iberia_region = {
+			has_discovered = ROOT
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		any_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+gain_foothold_in_france = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		region = france_region
+		NOT = {
+			owner = { alliance_with = ROOT }
+			owner = { vassal_of = ROOT }
+		}
+	}
+	
+	allow = {
+		num_of_ports = 1
+		is_subject = no
+		num_of_cities = 20
+		technology_group = high_american
+		NOT = {
+			any_owned_province = {
+				continent = europe
+			}
+		}
+		france_region = {
+			has_discovered = ROOT
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		any_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+conquer_the_whiteskin = {
+	
+	type = neighbor_provinces
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		FROM = {
+			is_subject = no
+			technology_group = high_american
+		}
+		owner = { religion_group = christian }
+	}
+	abort = {
+		FROM = {
+			is_subject = yes
+		}
+	}
+	success = {
+		owned_by = FROM
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+	immediate = {
+			add_claim = FROM
+	}
+	abort_effect = {
+		remove_claim = FROM
+	}
+	effect = {
+		FROM = { add_prestige = 5 }
+		add_province_modifier = {
+			name = "redmans_burden"
+			duration = 3650
+		}
+	}
+}
+

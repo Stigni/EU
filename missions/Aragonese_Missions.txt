@@ -119,8 +119,26 @@ conquer_sardinia = {
 		add_claim = 2986
 	}
 	abort_effect = {
-		remove_claim = 127
-		remove_claim = 2986
+		127 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+		2986 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = conquest_of_sardinia_ara
@@ -183,7 +201,14 @@ conquer_sicily = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -242,7 +267,14 @@ conquer_naples = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -291,7 +323,16 @@ become_king_of_gonder = {
 		add_claim = 1224
 	}
 	abort_effect = {
-		remove_claim = 1224
+		1224 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		add_country_modifier = {
@@ -352,7 +393,14 @@ defeat_saruhan = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {

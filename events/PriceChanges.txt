@@ -25,6 +25,7 @@ country_event = {
 			OR = {
 				capital_scope = { continent = north_america }
 				capital_scope = { continent = south_america }
+				capital_scope = { continent = new_world }
 			}
 			OR = {
 				tobacco = 4
@@ -293,7 +294,7 @@ country_event = {
 			value = 0.20
 			duration = -1
 		}
-		add_mercantilism = -0.02
+		add_mercantilism = -2
 	}
 	option = {
 		name = prices.6.b
@@ -427,6 +428,7 @@ country_event = {
 		has_discovered = 1460 # Cape of Good Hope
 		technology_group = western
 		any_active_trade_node = {
+			has_merchant = PREV
 			OR = {
 				province_id = 1361 # Straits of Johor
 				province_id = 1343 # Ganges Delta
@@ -715,9 +717,14 @@ country_event = {
 			owns_core_province = 980
 			owns_core_province = 2573
 			owns_core_province = 981
+			any_owned_province = {
+				continent = new_world
+				trade_goods = fish
+			}
 		}
 		NOT = { has_global_flag = great_fisheries_happened }
 		capital_scope = { NOT = { continent = north_america } }
+		capital_scope = { NOT = { continent = new_world } }
 	}
 	mean_time_to_happen = {
 		months = 1
@@ -850,9 +857,15 @@ country_event = {
 			capital_scope = { continent = europe }
 			is_colonial_nation = yes
 		}
-		any_owned_province = {
-			trade_goods = fur
-			continent = north_america
+		OR = {
+			any_owned_province = {
+				trade_goods = fur
+				continent = north_america
+			}
+			any_owned_province = {
+				trade_goods = fur
+				continent = new_world
+			}
 		}
 		NOT = { has_global_flag = felt_hats_happened }
 	}
@@ -1336,6 +1349,7 @@ country_event = {
 			OR = {
 				capital_scope = { continent = north_america }
 				capital_scope = { continent = south_america }
+				capital_scope = { continent = new_world }
 			}
 			cocoa = 7
 			sugar = 1
@@ -1378,6 +1392,7 @@ country_event = {
 			OR = {
 				capital_scope = { continent = north_america }
 				capital_scope = { continent = south_america }
+				capital_scope = { continent = new_world }
 			}
 			tobacco = 4
 		}

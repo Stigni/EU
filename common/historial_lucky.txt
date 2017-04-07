@@ -61,12 +61,6 @@ POR = {
 		is_year = 1700
 	}
 }
-POL = {
-	NOT = {
-		exists = PLC
-	}
-}
-
 BRA = {
 	always = yes
 }
@@ -75,6 +69,14 @@ SWE = {
 		is_year = 1700
 	}
 }
+
+POL = {
+	NOT = {
+		exists = PLC
+	}
+}
+
+
 
 PLC = {
 	NOT = { 

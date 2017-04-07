@@ -7,17 +7,15 @@ religion = sunni
 capital = "Halab"
 trade_goods = silk
 hre = no
-base_tax = 7 
-base_production = 7
+base_tax = 9
+base_production = 9
 base_manpower = 4
 is_city = yes
 estate = estate_burghers
 add_core = SYR
 add_core = MAM
 fort_15th = yes
-
-
-
+discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western

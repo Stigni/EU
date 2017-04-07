@@ -5,6 +5,9 @@ religion = shamanism #Fetishism
 technology_group = east_african
 unit_type = sub_saharan
 capital = 1193	# Menabe
+unlock_cult = enkai_cult
+unlock_cult = waaq_cult
+unlock_cult = zanahary_cult
 
 1444.1.1 = {
 	monarch = {

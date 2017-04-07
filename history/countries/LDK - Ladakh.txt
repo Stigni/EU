@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = tribal_kingdom
 primary_culture = kashmiri
 religion = vajrayana
 technology_group = indian

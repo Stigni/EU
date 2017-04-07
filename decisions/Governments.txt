@@ -12,11 +12,11 @@ country_decisions = {
 			NOT = { government = dutch_republic }
 			NOT = { government = colonial_government }
 			government = republic
-			NOT = { num_of_cities = 20 }
+			NOT = { num_of_provinces_in_states = 21 }
 		}
 		allow =  {
 			stability = 1	
-			NOT = { num_of_cities = 20 }
+			NOT = { num_of_provinces_in_states = 21 }
 			trade_income_percentage = 0.3
 			full_idea_group = trade_ideas
 			full_idea_group = economic_ideas
@@ -67,11 +67,11 @@ country_decisions = {
 			NOT = { government = shogunate }
 			NOT = { government = revolutionary_empire }
 			government = monarchy
-			NOT = { num_of_cities = 20 }
+			NOT = { num_of_provinces_in_states = 21 }
 		}
 		allow =  {
 			stability = 1	
-			NOT = { num_of_cities = 20 }		
+			NOT = { num_of_provinces_in_states = 21 }		
 			trade_income_percentage = 0.4
 			full_idea_group = trade_ideas
 			full_idea_group = economic_ideas
@@ -134,8 +134,11 @@ country_decisions = {
 			}
 		}
 		allow =  {
-			stability = 1		
-			full_idea_group = aristocracy_ideas
+			stability = 1
+			OR = {
+				full_idea_group = aristocracy_ideas
+				full_idea_group = plutocracy_ideas
+			}
 			full_idea_group = influence_ideas
 			is_at_war = no 
 			is_subject = false
@@ -277,6 +280,7 @@ country_decisions = {
 			adm_tech = 12
 			legitimacy = 90
 			adm_power = 100
+			has_institution = feudalism
 		}
 		effect = {
 			change_government = administrative_monarchy
@@ -284,10 +288,6 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { technology_group = western }
-			}
 		}
 	}
 	

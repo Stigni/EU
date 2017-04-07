@@ -59,7 +59,14 @@ conquer_franken = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -121,7 +128,16 @@ conquer_pfalz = { #Oberpfalz
 		add_claim = 1757
 	}
 	abort_effect = {
-		remove_claim = 1757
+		1757 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = conquered_oberpfalz
@@ -190,8 +206,26 @@ conquer_alzey = { #Conquer Palatinate
 		add_claim = 77
 	}
 	abort_effect = {
-		remove_claim = 1761
-		remove_claim = 77
+		1761 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+		77 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		1761 = {
@@ -261,7 +295,16 @@ conquer_ansbach = {
 		add_claim = 71
 	}
 	abort_effect = {
-		remove_claim = 71
+		71 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = ansbach_conquered_by_bav

@@ -35,6 +35,12 @@ monarch_names = {
 	"Fath Muhammad #0" = 20
 	
 	"Arij #0" = -1
+	"Rim #0" = -1
+	"Bintang #0" = -1
+	"Bulan #0" = -1
+	"Saleha #0" = -1
+	"Sari Banun #0" = -1
+	"Sari Banun #0" = -1
 }
 
 leader_names = {

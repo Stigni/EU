@@ -19,6 +19,7 @@ country_event = {
 	trigger = {
 		tag = HUN
 		has_regency = yes
+		has_consort_regency = no
 		has_leader = "János Hunyadi"
 		is_year = 1445
 		NOT = { is_year = 1470 }
@@ -66,7 +67,7 @@ country_event = {
 	option = {
 		name = flavor_hun.1.b
 		ai_chance = { factor = 50 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		define_heir = {
 			name = "Ladislaus Postumus"
 			dynasty = "von Habsburg"
@@ -150,7 +151,7 @@ country_event = {
 	option = {
 		name = flavor_hun.2.b	
 		ai_chance = { factor = 25 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_country = {
 			limit = {
 				is_subject = no
@@ -234,7 +235,7 @@ country_event = {
 	option = {
 		ai_chance = { factor = 50 }
 		name = flavor_hun.4.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_owned_province = {
 			add_base_manpower = 1
 		}

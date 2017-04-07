@@ -58,6 +58,7 @@ monarch_names = {
 	
 	"Randa #0" = -1
 	"Tabassum #0" = -1
+	"Daïkra #0" = -1
 }
 
 leader_names = {

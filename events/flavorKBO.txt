@@ -153,7 +153,7 @@ country_event = {
 	option = {
 		name = flavor_kbo.2.b	#Our current capital is fine.
 		ai_chance = { factor = 0 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -203,7 +203,7 @@ country_event = {
 	option = {
 		name = flavor_kbo.3.b	#Let us not go overboard with this.
 		ai_chance = { factor = 0 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -256,7 +256,7 @@ country_event = {
 	option = {
 		name = flavor_kbo.4.b	#We cannot infringe upon their rights.
 		ai_chance = { factor = 1 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -349,6 +349,10 @@ country_event = {
 		tag = KBO
 		has_heir = yes
 		has_regency = yes
+		OR = {
+			has_consort_regency = yes
+			NOT = { has_dlc = "Rights of Man" }
+		}
 	}
 	
 	mean_time_to_happen = {

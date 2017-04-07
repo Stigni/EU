@@ -31,7 +31,16 @@ retake_corsica = {
 		add_claim = 1247
 	}
 	abort_effect = {
-		remove_claim = 1247
+		1247 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = retook_corsica
@@ -96,7 +105,14 @@ retake_kaffa = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -225,10 +241,19 @@ tradenode_tunis = {
 		add_claim = 341
 	}
 	abort_effect = {
-		remove_claim = 341
+		341 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
-		add_mercantilism = 0.02
+		add_mercantilism = 2
 	}
 }
 
@@ -279,10 +304,19 @@ tradenode_alexandria = {
 		add_claim = 358
 	}
 	abort_effect = {
-		remove_claim = 358
+		358 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
-		add_mercantilism = 0.02
+		add_mercantilism = 2
 	}
 }
 
@@ -333,10 +367,19 @@ tradenode_thrace = {
 		add_claim = 151
 	}
 	abort_effect = {
-		remove_claim = 151
+		151 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
-		add_mercantilism = 0.02
+		add_mercantilism = 2
 	}
 }
 
@@ -387,10 +430,19 @@ tradenode_ragusa = {
 		add_claim = 137
 	}
 	abort_effect = {
-		remove_claim = 137
+		137 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
-		add_mercantilism = 0.02
+		add_mercantilism = 2
 	}
 }
 
@@ -441,10 +493,19 @@ tradenode_ferrara = {
 		add_claim = 113
 	}
 	abort_effect = {
-		remove_claim = 113
+		113 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
-		add_mercantilism = 0.02
+		add_mercantilism = 2
 	}
 }
 
@@ -495,10 +556,19 @@ tradenode_tangiers = {
 		add_claim = 334
 	}
 	abort_effect = {
-		remove_claim = 334
+		334 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
-		add_mercantilism = 0.02
+		add_mercantilism = 2
 	}
 }
 
@@ -549,9 +619,18 @@ tradenode_gibraltar = {
 		add_claim = 226
 	}
 	abort_effect = {
-		remove_claim = 226
+		226 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
-		add_mercantilism = 0.02
+		add_mercantilism = 2
 	}
 }

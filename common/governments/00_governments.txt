@@ -264,17 +264,17 @@ enlightened_despotism = {
 
 	rank = {
 		1 = {
-			accepted_culture_threshold = -0.10
+			num_accepted_cultures = 1
 			global_manpower_modifier = 0.1
 			global_autonomy = -0.05
 		}
 		2 = {
-			accepted_culture_threshold = -0.10
+			num_accepted_cultures = 2
 			global_manpower_modifier = 0.1
 			global_autonomy = -0.075
 		}
 		3 = {	
-			accepted_culture_threshold = -0.10
+			num_accepted_cultures = 3
 			global_manpower_modifier = 0.1
 			global_autonomy = -0.10
 		}
@@ -650,7 +650,10 @@ revolutionary_republic = {
 	}
 	
 	max_states = 5
-
+	
+	faction = rr_jacobins
+	faction = rr_royalists
+	faction = rr_girondists
 	
 	rank = {
 		3 = {
@@ -661,6 +664,7 @@ revolutionary_republic = {
 	}
 	fixed_rank = 3
 }
+
 
 
 ####################################
@@ -679,6 +683,8 @@ theocratic_government = {
 	nation_designer_cost = 0
 	
 	royal_marriage = no
+	different_religion_acceptance = -20
+	different_religion_group_acceptance = -50
 	
 	ai_will_do = {
 		factor = 0
@@ -717,6 +723,8 @@ monastic_order_government = {
 	nation_designer_cost = 10
 	
 	royal_marriage = no
+	different_religion_acceptance = -20
+	different_religion_group_acceptance = -50
 	
 	ai_will_do = {
 		factor = 0
@@ -746,6 +754,8 @@ papal_government = {
 	allow_convert = no
 
 	royal_marriage = no
+	different_religion_acceptance = -20
+	different_religion_group_acceptance = -50
 	
 	rulers_can_be_generals = no
 	has_devotion = yes
@@ -799,16 +809,19 @@ steppe_horde = {
 			global_manpower_modifier = 0.1
 			land_forcelimit_modifier = 0.1
 			loot_amount = 0.50
+			global_institution_spread = -0.15
 		}
 		2 = {
 			global_manpower_modifier = 0.2
 			land_forcelimit_modifier = 0.2	
 			loot_amount = 0.50
+			global_institution_spread = -0.15
 		}
 		3 = {
 			global_manpower_modifier = 0.3
 			land_forcelimit_modifier = 0.3
 			loot_amount = 0.50
+			global_institution_spread = -0.15
 		}
 	}
 }
@@ -835,16 +848,19 @@ tribal_despotism = {
 		1 = {
 			core_creation = -0.05
 			global_unrest = -1
-			diplomatic_upkeep = -2	
+			diplomatic_upkeep = -2
+			global_institution_spread = -0.05
 		}
 		2 = {
 			core_creation = -0.1
 			global_unrest = -1
-			diplomatic_upkeep = -1	
+			diplomatic_upkeep = -1
+			global_institution_spread = -0.05
 		}
 		3 = {
 			core_creation = -0.15
 			global_unrest = -1
+			global_institution_spread = -0.05
 		}
 	}
 }
@@ -874,15 +890,18 @@ tribal_kingdom = {
 			vassal_income = 0.10
 			stability_cost_modifier = -0.1
 			diplomatic_upkeep = -2
+			global_institution_spread = -0.025
 		}
 		2 = {
 			vassal_income = 0.20
 			stability_cost_modifier = -0.1
-			diplomatic_upkeep = -1	
+			diplomatic_upkeep = -1
+			global_institution_spread = -0.025
 		}
 		3 = {
 			vassal_income = 0.30
 			stability_cost_modifier = -0.1
+			global_institution_spread = -0.025
 		}
 	}
 }
@@ -909,15 +928,18 @@ tribal_federation = {
 			land_forcelimit_modifier = 0.1
 			global_manpower_modifier = 0.1
 			diplomatic_upkeep = -2	
+			global_institution_spread = -0.05
 		}
 		2 = {
 			land_forcelimit_modifier = 0.1
 			global_manpower_modifier = 0.15
-			diplomatic_upkeep = -1	
+			diplomatic_upkeep = -1
+			global_institution_spread = -0.05
 		}
 		3 = {
 			land_forcelimit_modifier = 0.1
 			global_manpower_modifier = 0.2
+			global_institution_spread = -0.05
 		}
 	}
 }
@@ -947,15 +969,18 @@ tribal_democracy = {
 			global_unrest = -1
 			stability_cost_modifier = -0.1
 			diplomatic_upkeep = -2
+			global_institution_spread = -0.05
 		}
 		2 = {
 			global_unrest = -1
 			stability_cost_modifier = -0.15
 			diplomatic_upkeep = -1
+			global_institution_spread = -0.05
 		}
 		3 = {
 			global_unrest = -1
 			stability_cost_modifier = -0.2
+			global_institution_spread = -0.05
 		}
 	}
 }
@@ -963,8 +988,7 @@ tribal_democracy = {
 native_council = {
 	native_mechanic = yes
 	allow_migration = yes
-	allow_westernize = no
-	
+
 	color = { 220 210 160 }
 	
 	valid_for_new_country = no
@@ -998,6 +1022,7 @@ native_council = {
 			stability_cost_modifier = -0.33
 			land_maintenance_modifier = -0.5	
 			diplomatic_upkeep = -1
+			global_institution_spread = -0.025
 		}
 	}
 	fixed_rank = 1
@@ -1006,7 +1031,6 @@ native_council = {
 siberian_native_council = {
 	native_mechanic = no
 	allow_migration = yes
-	allow_westernize = no
 	
 	color = { 220 210 195 }
 	
@@ -1023,7 +1047,7 @@ siberian_native_council = {
 	rank = {
 		1 = {
 			stability_cost_modifier = -0.33
-			technology_cost = 0.15
+			global_institution_spread = -0.2
 		}
 	}
 	fixed_rank = 1
@@ -1151,6 +1175,45 @@ imperial_city = {
 	fixed_rank = 1
 }
 
+# Special City States
+trading_city = {
+	republic = yes
+
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	
+	color = { 30 110 240 }
+	
+	duration = 4
+
+	republican_name = yes
+	royal_marriage = no
+
+
+	can_use_trade_post = yes
+	can_form_trade_league = no
+	is_trading_city = yes
+	
+	faction = mr_aristocrats
+	faction = mr_traders
+	faction = mr_guilds		
+
+	ai_will_do = {
+		factor = 0	
+	}
+	
+	max_states = 1
+	
+	fixed_rank = 1
+	
+	rank = {
+		1 = {
+			trade_efficiency = 0.1
+			caravan_power = 0.33	
+		}
+	}
+}
+
 #Special for Milan
 ambrosian_republic = {
 	republic = yes
@@ -1265,16 +1328,92 @@ celestial_empire = {
 	
 	rank = {
 		3 = {
-			technology_cost = -0.1
 			prestige = 0.5
+			embracement_cost = 0.1
 		}
 	}
 	fixed_rank = 3
 }
 
+# Ottoman Empire
+ottoman_government = {
+	monarchy = yes
+	
+	color = { 126  203  120 }
+	
+	maintain_dynasty = yes
+	unique_government = yes
+	has_harem = yes
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	nation_designer_trigger = {
+		religion_group = muslim
+	}	
+	
+	max_states = 8
+	
+	rank = {
+		1 = {
+			unjustified_demands = -0.1
+			legitimacy = 0.25
+		}
+		2 = {
+			unjustified_demands = -0.1
+			legitimacy = 0.5
+		}
+		3 = {	
+			unjustified_demands = -0.1
+			legitimacy = 0.5
+			global_autonomy = -0.05
+		}
+	}
+}
+
+
+prussian_monarchy = {
+	monarchy = yes
+	
+	color = { 179 100 100 }
+	
+	unique_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+
+	militarised_society = yes	
+	
+	#bonus
+	max_states = 5
+
+	
+	rank = {
+		1 = {
+			war_exhaustion = -0.02
+			global_unrest = -2
+			global_autonomy = -0.05
+		}
+		2 = {
+			war_exhaustion = -0.02
+			global_unrest = -2
+			global_autonomy = -0.075	
+		}
+		3 = {	
+			war_exhaustion = -0.02
+			global_unrest = -2
+			global_autonomy = -0.10	
+		}
+	}
+}
+
+
 # Arab Countries, Earlygame
 iqta = {
 	monarchy = yes
+	queen = no
 	
 	color = { 65 160 60 }
 	
@@ -1318,6 +1457,8 @@ daimyo = {
 
 	valid_for_new_country = no
 	allow_convert = no
+	
+	maintain_dynasty = yes
 	
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -1393,7 +1534,8 @@ colonial_government = {
 	rank = {
 		1 = {
 			global_autonomy = -0.05
-			recover_army_morale_speed = 0.02	
+			recover_army_morale_speed = 0.02
+			embracement_cost = -0.1
 		}
 	}
 	fixed_rank = 1

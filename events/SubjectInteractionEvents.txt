@@ -1045,7 +1045,6 @@ country_event = {
 		any_subject_country = {
 			has_subsidize_armies = yes
 			any_owned_province = {
-				# TODO: Autonomy? Unrest?
 				any_neighbor_province = {
 					owned_by = ROOT
 				}
@@ -1176,7 +1175,7 @@ country_event = {
 	
 	option = {
 		name = subject_interaction_events.20.a
-		add_adm_power = -50 # TODO HOW TO SUPPORT LOYALISTS?
+		add_adm_power = -50 #
 	}
 	option = {
 		name = subject_interaction_events.20.b
@@ -1318,7 +1317,6 @@ country_event = {
 	option = {
 		name = subject_interaction_events.23.a
 		add_prestige = -5
-		# TODO -ADM/DIP/MIL?
 		random_known_country = {
 			limit = {
 				has_country_flag = si_loyalist_rebellion_flag

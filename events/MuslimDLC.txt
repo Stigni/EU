@@ -137,13 +137,21 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Star and Crescent"
-		religion_group = muslim	
+		OR = {
+			AND = {
+				religion_group = muslim
+				NOT = {
+					piety = 0.75
+				}
+			}
+			AND = {
+				has_dlc = "Rights of Man"
+				has_adopted_cult = islam_cult
+			}
+		}
 		treasury = 200
 		has_regency = no
 		is_at_war = no
-		NOT = {
-			piety = 0.75
-		}
 		NOT = {
 			has_ruler_modifier = muslim_hajj
 		}
@@ -183,6 +191,12 @@ country_event = {
 			}
 		}
 		add_piety = -0.05
+		if = {
+			limit = {
+				has_adopted_cult = islam_cult
+			}
+			add_prestige = -5
+		}
 	}
 }
 
@@ -211,6 +225,12 @@ country_event = {
 		name = "muslim_dlc.EVTOPTA5"
 		add_piety = 0.05
 		set_country_flag = hajj_almost_completed
+		if = {
+			limit = {
+				has_adopted_cult = islam_cult
+			}
+			add_prestige = 5
+		}
 	}
 }
 

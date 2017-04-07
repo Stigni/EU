@@ -10,7 +10,7 @@ country_decisions = {
 			}
 			NOT = { exists = MSA }
 			culture_group = malay
-			NOT = { technology_group = nomad_group }
+			NOT = { government = steppe_horde }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no

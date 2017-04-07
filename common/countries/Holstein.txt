@@ -86,14 +86,14 @@ leader_names = {
 	Oldenburg
 	Philip	
 	Rantzau
-	Von Barner
-	Von Dellwigh
+	"von Barner"
+	"von Dellwigh"
 }
 
 ship_names = {
 	Dahme
 	Grömtz Grossenbrode
-	Keil Kellenhusen
+	Kiel Kellenhusen
 	Neustadt
 	Ostsee 
 	Scharbeutz Sierksdorf

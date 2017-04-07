@@ -4,6 +4,9 @@ government = tribal_kingdom
 primary_culture = hausa
 religion = shamanism #Fetishism
 technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
 capital = 1154	# Niani
 
 #Extremely speculative attempt to reconcile some very conflicting sources on the dating. (Basically by assuminng there were two Bakwa Turunku)
@@ -23,7 +26,9 @@ capital = 1154	# Niani
 			fire = 4
 			shock = 4
 			manuever = 5
-			siege = 1}
+			siege = 1
+			female = yes
+		}
 	}
 }
 

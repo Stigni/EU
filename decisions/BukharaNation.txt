@@ -21,7 +21,7 @@ country_decisions = {
 		}
 
 		allow = {
-			is_year = 1500
+			has_institution = feudalism
 			is_subject = no
 			is_at_war = no
 			owns_core_province = 442 #Bukhara

@@ -254,6 +254,7 @@ country_event = {
 		tag = NED
 		is_year = 1610
 		any_active_trade_node = {
+			has_merchant = prev
 			province_id = 1516	#Carribean tradenode
 		}
 	}
@@ -372,7 +373,7 @@ country_event = {
 	option = {
 		name = "flavor_hol.EVTOPTA3513" #Yes, we need Order!
 		add_republican_tradition = -0.2
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		set_country_flag = ned_hereditary_stadtholder
 	}
 	option = {
@@ -541,7 +542,7 @@ country_event = {
 	}
 	option = {
 		name = "flavor_hol.EVTOPTC2" #Ignore it
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		
 	}
 }
@@ -695,7 +696,8 @@ country_event = {
 	
 	trigger = {
 		tag = NED
-		is_year = 1580
+		#is_year = 1580
+		has_institution = printing_press
 		NOT = { is_year = 1595 }
 		owns = 97
 	}

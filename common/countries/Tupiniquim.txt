@@ -45,6 +45,7 @@ monarch_names = {
 	"Toruí #0" = 10
 	"Mbicy #0" = 10
 	
+	"Azelene #0" = -1
 	"Bartira #0" = -1
 	"Potira #0" = -1
 }

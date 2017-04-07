@@ -51,6 +51,8 @@ monarch_names = {
 	"Dughlas #0" = 10	# Douglas
 
 	"Mairi #0" = -5		# Mary
+	"Beitiris #0" = -1
+	"Diorbhail #0" = -1		# 
 
 	"Absolon #0" = 0
 	"Ailpein #0" = 0

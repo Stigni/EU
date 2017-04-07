@@ -55,6 +55,9 @@ national_focus = ADM
 		dip = 5
 		mil = 1
 	}
+	
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
 }
 
 #1450.1.1 = { decision = court_of_wards_and_liveries }
@@ -79,6 +82,17 @@ national_focus = ADM
 		birth_date = 1415.9.21
 		adm = 2
 		dip = 5
+		mil = 1
+	}
+	queen = {
+		country_of_origin = POR
+		name = "Eleanor"
+		dynasty = "de Avis"
+		birth_date = 1434.9.18
+		death_date = 1467.9.3
+		female = yes
+		adm = 2
+		dip = 2
 		mil = 1
 	}
 }
@@ -119,6 +133,20 @@ national_focus = ADM
 		adm = 2
 		dip = 2
 		mil = 2
+	}
+}
+
+1494.3.16 = {
+	queen = {
+		country_of_origin = MLO
+		name = "Bianca Maria"
+		dynasty = "Sforza"
+		birth_date = 1472.4.5
+		death_date = 1510.12.31
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
 	}
 }
 
@@ -184,6 +212,24 @@ national_focus = ADM
 	}
 }
 
+1521.5.26 = {
+	queen = {
+		country_of_origin = HUN #or BOH
+		name = "Anna"
+		dynasty = "Jagiellon"
+		birth_date = 1503.7.23
+		death_date = 1547.1.27
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1526.8.30 = {
+	add_accepted_culture = hungarian
+	add_accepted_culture = slovak
+}
 
 1527.7.31 = {
 	heir = {
@@ -247,6 +293,8 @@ national_focus = ADM
 		}
 }
 
+1551.7.19 = { add_accepted_culture = transylvanian }
+
 1556.10.2 = { government = absolute_monarchy }
 
 1560.1.1 = { leader = {	name = "Franz-Josef"           	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1580.1.1 } }
@@ -259,6 +307,17 @@ national_focus = ADM
 		adm = 2
 		dip = 4
 		mil = 2
+	}
+	queen = {
+		country_of_origin = HAB
+		name = "Maria"
+		dynasty = "von Habsburg"
+		birth_date = 1528.6.21
+		death_date = 1603.2.26
+		female = yes
+		adm = 4
+		dip = 2
+		mil = 1
 	}
 }
 
@@ -314,6 +373,7 @@ national_focus = ADM
 		dip = 3
 		mil = 2
 	}
+	#Never Married
 }
 
 1576.10.14 = {
@@ -378,6 +438,17 @@ national_focus = ADM
 		dip = 2
 		mil = 0
 	}
+	queen = {
+		country_of_origin = HAB
+		name = "Anna"
+		dynasty = "von Habsburg"
+		birth_date = 1585.10.4
+		death_date = 1618.12.14
+		female = yes
+		adm = 2
+		dip = 1
+		mil = 1
+	}
 }
 
 1612.1.22 = {
@@ -433,6 +504,20 @@ national_focus = ADM
 
 1620.1.1 = { decision = act_of_uniformity }
 
+1622.2.2 = {
+	queen = {
+		country_of_origin = MAN
+		name = "Eleonora"
+		dynasty = "Gonzaga"
+		birth_date = 1598.9.23
+		death_date = 1655.6.27
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
 1624.1.1 = { leader = {	name = "von Hatzfeldt"         	type = general	rank = 2	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1647.1.1 } }
 
 1625.1.1 = { leader = {	name = "Matthias Gallas"	type = general	rank = 1	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1647.1.1 } }
@@ -474,6 +559,17 @@ national_focus = ADM
 		dip = 1
 		mil = 5
 	}
+	queen = {
+		country_of_origin = SPA
+		name = "Eleonora"
+		dynasty = "von Habsburg"
+		birth_date = 1606.8.18
+		death_date = 1646.5.13
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 2
+	}
 }
 
 1640.6.9 = {
@@ -487,6 +583,20 @@ national_focus = ADM
 		adm = 4
 		dip = 4
 		mil = 5
+	}
+}
+
+1648.7.2 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Maria Leopoldine"
+		dynasty = "von Habsburg"
+		birth_date = 1632.4.6
+		death_date = 1649.8.7
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
 	}
 }
 
@@ -519,6 +629,20 @@ national_focus = ADM
 		}
 }
 
+1651.4.30 = {
+	queen = {
+		country_of_origin = MAN
+		name = "Eleonora"
+		dynasty = "Gonzaga"
+		birth_date = 1630.11.18
+		death_date = 1686.12.6
+		female = yes
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
 1658.7.1 = {
 	monarch = {
 		name = "Leopold I"
@@ -528,6 +652,7 @@ national_focus = ADM
 		dip = 4
 		mil = 5
 	}
+	
 }
 
 #Trade Good Events
@@ -546,6 +671,20 @@ national_focus = ADM
 			value = 0.5
 			duration = -1
 		}
+}
+
+1666.12.12 = {
+	queen = {
+		country_of_origin = SPA
+		name = "Margaret Theresa"
+		dynasty = "von Habsburg"
+		birth_date = 1651.7.12
+		death_date = 1673.3.12
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 1
+	}
 }
 
 #Trade Good Events
@@ -576,7 +715,38 @@ national_focus = ADM
 
 1670.1.1 = { leader = {	name = "Georg Waldeck"		type = general	rank = 3	fire = 3	shock = 2	manuever = 3	siege = 1	death_date = 1692.11.19 } }
 
+
+
+1673.10.15 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Claudia Felicitas"
+		dynasty = "von Habsburg"
+		birth_date = 1653.5.30
+		death_date = 1676.4.8
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
 1675.1.1 = { leader = {	name = "Charles V de Lorraine" 	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1690.1.1 } }
+
+1676.12.14 = {
+	queen = {
+		country_of_origin = PAL
+		name = "Eleonor Magdalene"
+		dynasty = "von Wittelsbach"
+		birth_date = 1655.1.6
+		death_date = 1720.1.19
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
 
 1678.7.26 = {
 	heir = {
@@ -620,6 +790,10 @@ national_focus = ADM
 
 1697.1.1 = { leader = {	name = "von Traun"             	type = general	rank = 1	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1748.1.1 } }
 
+1699.1.1 = {
+	add_accepted_culture = croatian
+}
+
 #Trade Good Events
 1700.1.1 = {
 	set_global_flag = hot_chocolate_happened
@@ -639,6 +813,17 @@ national_focus = ADM
 		adm = 3
 		dip = 1
 		mil = 3
+	}
+	queen = {
+		country_of_origin = LUN
+		name = "Wilhelmine Amalia"
+		dynasty = "von Welf"
+		birth_date = 1673.4.21
+		death_date = 1742.4.42
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
 	}
 }
 
@@ -675,6 +860,17 @@ national_focus = ADM
 		adm = 4
 		dip = 3
 		mil = 3
+	}
+	queen = {
+		country_of_origin = BRU
+		name = "Elisabeth Christine"
+		dynasty = "von Welf"
+		birth_date = 1691.8.28
+		death_date = 1750.12.21
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
 	}
 }
 
@@ -720,6 +916,17 @@ national_focus = ADM
 		dip = 5
 		mil = 4
 		female = yes
+	}
+	queen = {
+		country_of_origin = LOR
+		name = "Francis"
+		dynasty = "de Vaudémont"
+		birth_date = 1708.12.8
+		death_date = 1765.8.12
+		female = no
+		adm = 5
+		dip = 2
+		mil = 1
 	}
 }
 
@@ -809,6 +1016,17 @@ national_focus = ADM
 		dip = 2
 		mil = 2
 	}
+	queen = {
+		country_of_origin = SPA
+		name = "Maria Luisa"
+		dynasty = "de Bourbon"
+		birth_date = 1745.9.24
+		death_date = 1792.5.15
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
 }
 
 1790.2.20 = {
@@ -836,6 +1054,17 @@ national_focus = ADM
 		dip = 4
 		mil = 2
 	}
+	queen = {
+		country_of_origin = NAP
+		name = "Maria Theresa"
+		dynasty = "de Bourbon"
+		birth_date = 1772.6.6
+		death_date = 1807.3.2
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 1
+	}
 }
 
 1793.4.19 = {
@@ -857,3 +1086,31 @@ national_focus = ADM
 1800.1.1 = { leader = {	name = "Erzherzog Johann"      	type = general	rank = 1	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1859.1.1 } }
 
 1805.1.1 = { leader = {	name = "Schwarzenberg"         	type = general	rank = 1	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1817.1.1 } }
+
+1808.1.6 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Maria Theresa"
+		dynasty = "von Habsburg"
+		birth_date = 1787.12.14
+		death_date = 1816.4.7
+		female = yes
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+1816.10.29 = {
+	queen = {
+		country_of_origin = BAV
+		name = "Caroline Augusta"
+		dynasty = "von Wittelsbach"
+		birth_date = 1792.2.8
+		death_date = 1835.3.2
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}

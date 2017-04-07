@@ -40,7 +40,7 @@ country_event = {
 	
 	option ={ # Support the Turkish Shiites
 		name = "flavor_per.EVTOPTA3560"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_years_of_income = -0.2
 		TUR = {
 			add_opinion = {
@@ -75,7 +75,7 @@ country_event = {
 
 	option = { # Teach the Turks a lesson!
 		name = "flavor_per.EVTOPTA3562"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		TUR = {
 			random_owned_province = {
 				limit = {
@@ -307,7 +307,7 @@ country_event = {
 	}
 	option = { # Rely on ones
 		name = "flavor_per.EVTOPTB3"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -394,7 +394,7 @@ country_event = {
 				hidden = yes
 			}
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	option = { # Tighten state control
 		name = "flavor_per.EVTOPTB5"
@@ -765,7 +765,7 @@ country_event = {
 	option = { #
 		name = flavor_per.13.b
 		ai_chance = { factor = 0 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -852,7 +852,7 @@ country_event = {
 	#	name = flavor_per.15.b
 	#	ai_chance = { factor = 0 }
 	#	add_piety = -0.25
-	#	add_stability = 1
+	#	add_stability_or_adm_power = yes
 	#}
 }
 
@@ -900,7 +900,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 

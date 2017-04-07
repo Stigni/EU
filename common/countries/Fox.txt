@@ -75,6 +75,9 @@ monarch_names = {
 	"Nanochaatasa #0" = 10
 	
 	"Dohumme #0" = -1
+	"Nokomesa #0" = -1
+	"Kimiwan #0" = -1
+
 }
 
 leader_names = {

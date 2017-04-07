@@ -176,14 +176,6 @@ country_event = {
 			factor = 0.9
 			num_of_vassals = 2
 		}
-		modifier = {
-			factor = 0.7
-			OR = {
-				technology_group = muslim
-				technology_group = indian
-				technology_group = chinese
-			}
-		}
 	}
 
 	option = {

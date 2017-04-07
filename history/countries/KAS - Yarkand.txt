@@ -1,4 +1,4 @@
-government = iqta
+government = tribal_federation
 primary_culture = uyghur
 religion = sunni
 technology_group = chinese
@@ -399,7 +399,7 @@ capital = 739	# kashgar
 		dip = 2
 		mil = 1
 	}
-	government = despotic_monarchy
+	government = iqta
 }
 
 1695.8.1 = {

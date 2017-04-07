@@ -47,10 +47,6 @@ janissary_decadence = {
 
 		modifier = {
 			factor = 1
-			is_westernising = yes
-		}
-		modifier = {
-			factor = 1
 			has_ruler_modifier = janissaries_denied_reward
 		}
 		modifier = {

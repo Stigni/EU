@@ -192,3 +192,6 @@
  TRADE_OUR_CURRENT_POWER_SORT:0 "Nach unserer aktuellen Handelsmacht sortieren."
  TRADE_TOTAL_POWER_SORT:0 "Nach gesamter Handelsmacht sortieren."
  TRADE_TOTAL_POWER_SORT_DELAYED:0 "Dies ist die Summe der Handelsmacht aller im Umschlagplatz vertretenen Länder."
+ NO_TRADE_COMPANY_ON_OWN_CONTINENT:0 "Kann kein Handelshaus auf Eurem Heimatkontinent gründen."
+ TRADE_SHIPS_IN_NODE:0 "Ihr habt $COUNT|Y$ leichte Schiffe, die den Handel an diesem Umschlagsplatz sichern.\nSie generieren $TRADEPOWER|Y$ Handelsmacht."
+ PRIVATEERS_IN_NODE:0 "Ihr habt $PRIVATEERCOUNT|Y$ Schiffe auf einer Freibeuter-Mission an diesem Umschlagsplatz.\nSie haben insgesamt $PRIVATEERTRADEPOWER|Y$ Handelsmacht."

@@ -47,8 +47,9 @@ monarch_names = {
 	"Toruí #0" = 10
 	"Mbicy #0" = 10
 	
-	"Takuiba  #0" = -1
-	"Twengga  #0" = -1
+	"Takuiba #0" = -1
+	"Twengga #0" = -1
+	"Neyawa #0" = -1
 }
 
 ship_names = {

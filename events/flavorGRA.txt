@@ -18,10 +18,6 @@ country_event = {
 		223 = {
 			owned_by = CAS
 		}
-		OR = {
-			technology_group = ottoman
-			technology_group = muslim
-		}
 		capital_scope = {
 			OR = {
 				region = egypt_region

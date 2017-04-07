@@ -47,6 +47,8 @@ monarch_names = {
 	
 	"Bartira #0" = -1
 	"Guaibimpará #0" = -1
+	"Azelene #0" = -1
+	"Potira #0" = -1
 }
 
 ship_names = {

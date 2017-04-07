@@ -47,7 +47,6 @@ monarch_names = {
 	"Antoine #0" = 10
 	"Henri-Jules #0" = 10
 	"Joseph #0" = 10
-	"Marie #0" = -10
 	"François #0" = 5
 	"Hughes #5" = 1
 	"Eudes #4" = 1
@@ -62,7 +61,7 @@ monarch_names = {
 	"Eugène #0" = 0
 	"Eustache #0" = 0
 	"Georges #0" = 0
-	"Gui #0" = 0
+	"Guy #0" = 0
 	"Guillaume #0" = 0
 	"Isidore #0" = 0
 	"Jean-Baptiste #0" = 0
@@ -77,6 +76,13 @@ monarch_names = {
 	"René #0" = 0
 	"Sébastien #0" = 0
 	"Simon #0" = 0
+	
+	"Marie #0" = -10
+	"Isabelle #0" = -1
+	"Catherine #0" = -1
+	"Marguerite #0" = -1 # La Pléiade
+	"Jeanne #0" = -1 # La Pléiade
+	"Agnès #0" = -1 # La Pléiade
 }
 
 leader_names = {
@@ -97,24 +103,24 @@ leader_names = {
 }
 
 ship_names = {
-	Armançon Arroux
-	Bourgogne Brugge
-	Cambrai "Castrum Divionense" Childebert "Childebert II" Chilperic Citeaux Chlothar Cluny Comtesse "Côte-d'Or" 
-	Dijon "Duc de Bourgogne" Duchesse 
-	Gebicca Giselher Godegisel Godomar Gunderic Gundobad Gundomar "Gundomar II" Gunther Guntram
-	"Jean sans Peur"
-	"Marie de Bourgogne"
-	"Philippe le Bon" "Philippe le Hardi"
-	"Richard de Bourgogne"
-	Saône Sigismund
-	Theudebert "Theuderic II"
-	Vézelay
+	"l'Armançon" "l'Arroux"
+	"le Bourgogne" "le Bruges"
+	"le Cambrai" "le Castrum Divionense" "le Childebert" "le Childebert II" "le Chilpéric" "le Cîteaux" "le Clotaire" "le Cluny" "la Comtesse" "le Côte-d'Or" 
+	"le Dijon" "le Duc-de-Bourgogne" "la Duchesse"
+	"le Gibica" "le Giselher" "le Godégisel" "le Gondéric" "le Gondebaud" "le Gondemar" "le Gondemar II" "le Gunther" "le Gontran"
+	"le Jean-sans-Peur"
+	"la Marie-de-Bourgogne"
+	"le Philippe-le-Bon" "le Philippe-le-Hardi"
+	"le Richard-de-Bourgogne"
+	"la Saône" "le Sigismond"
+	"le Théodebert" "le Theudéric II"
+	"le Vézelay"
 }
 
 army_names = {
          "Armée du Charolais"     "Armée de Chalon"    "Armée du Comté" 
          "Armée de l'Autunois"    "Armée du Mâconnais" "Armée de l'Auxerrois"
          "Armée de l'Avallonnais" "Armée de Tonnerre"  "Armée de l'Auxonnois"
-         "Armée de la Saone"      
+         "Armée de la Saône"      
 	 "Armée de $PROVINCE$" 
 }

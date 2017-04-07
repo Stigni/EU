@@ -353,7 +353,7 @@ country_event = {
 		culture_group = japanese_g
 		NOT = { tag = RYU }
 		has_global_flag = japan_has_encountered_the_west
-		NOT = { technology_group = western }
+		NOT = { has_institution = global_trade }
 		NOT = { has_country_modifier = sakoku_law }
 		NOT = { has_country_flag = sakoku_law }
 		NOT = { has_country_flag = western_trade_flag }
@@ -406,7 +406,7 @@ country_event = {
 	}
 	option = {
 		name = "flavor_jap.EVTOPTB8" # Do nothing
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	option = {
 		name = "flavor_jap.EVTOPTC8" # Bring the foreigner to me
@@ -761,7 +761,7 @@ country_event = {
 	trigger = {
 		culture_group = japanese_g
 		OR = {
-			mercantilism = 0.3
+			mercantilism = 30
 			trade_efficiency = 0.4
 		}
 		NOT = {
@@ -783,7 +783,7 @@ country_event = {
 	}
 	option = {
 		name = "flavor_jap.EVTOPTB15" # Disallow it
-		add_mercantilism = 0.1
+		add_mercantilism = 10
 	}
 }
 
@@ -807,7 +807,7 @@ country_event = {
 	option = {
 		name = "flavor_jap.EVTOPTA16" # Declare Free Trade
 		remove_country_modifier = jap_za
-		add_mercantilism = 0.05
+		add_mercantilism = 5
 	}
 	option = {
 		name = "flavor_jap.EVTOPTB16" # Keep it as it is
@@ -1099,7 +1099,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_jap.EVTOPTA23" # Reform the Trade
-		add_mercantilism = 0.05
+		add_mercantilism = 5
 		add_ruler_modifier = { 
 			name = jap_trade_reform
 		}

@@ -147,7 +147,6 @@ country_event = {
 	
 	trigger = {
 		tag = MNG
-		NOT = { technology_group = western }
 		num_of_ports = 1
 		any_country = {
 			capital_scope = { 
@@ -167,7 +166,7 @@ country_event = {
 	}
 	option = {
 		name = "flavor_mng.EVTOPTB5" #Close China to the outside world
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = mng_closed_china
 			duration = -1
@@ -208,7 +207,7 @@ country_event = {
 	}
 	option = {
 		name = "flavor_mng.EVTOPTB6" #No, such reforms would be too costly
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -251,6 +250,13 @@ country_event = {
 				name = religious_zeal_at_conv
 				duration = 7300
 			}
+			if = {
+				limit = { NOT = { renaissance = 100 } }
+				add_institution_embracement = {
+					which = renaissance
+					value = 50
+				}
+			}
 		}
 		add_dip_power = 100
 		add_mil_power = 100
@@ -268,7 +274,7 @@ country_event = {
 	}
 	option = {
 		name = "flavor_mng.EVTOPTB7"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -820,7 +826,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_mng.EVTOPTA15" #Reject the overtures of these rude western barbarians!
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	option = {
 		name = "flavor_mng.EVTOPTB15" #We are interested in their ideas
@@ -1025,8 +1031,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		tag = MNG
-		technology_group = western
+		always = no #Retired
 	}
 	
 	option = {
@@ -1070,7 +1075,7 @@ country_event = {
 	}
 	option = {
 		name = "flavor_mng.18.b" #Go back to Macau!
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = 15
 	}
 }
@@ -1127,12 +1132,16 @@ country_event = {
 				name = mng_st_pauls_college
 			}
 			change_religion = catholic
+			add_institution_embracement = {
+				which = renaissance
+				value = 100
+			}
 		}
 	}
 	
 	option = {
 		name = "flavor_mng.20.b" #Don't allow it
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = 15
 	}
 }
@@ -1238,7 +1247,7 @@ country_event = {
 		name = "flavor_mng.23.b" #Allow them to stay.
 		ai_chance = { factor = 25 }
 		add_dip_power = 25
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -1380,7 +1389,7 @@ country_event = {
 	}
 	option = {
 		name = "flavor_mng.25.b" #No.
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -1404,7 +1413,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_mng.26.a" #
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	option = {
 		name = "flavor_mng.26.b" #

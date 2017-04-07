@@ -69,8 +69,10 @@ monarch_names = {
 	"Viktor #0" = 2
 	"Stefan #0" = 5
 	"Björn #0" = 5
-	"Nina #0" = -1
+	"Nina #0" = -5
 	"Anna #0" = -5
+	"Mathilda #0" = -5
+	"Milla #0" = -5
 }
 
 leader_names = {
@@ -79,6 +81,7 @@ leader_names = {
     Backlund
 	Ballantyne 
     Bergqwist
+	Bjarnehed
 	Björk
 	Drevendal
 	Edström
@@ -89,8 +92,7 @@ leader_names = {
 	Gladh
 	Hansson
 	Hesselborn
-	Lagerbäck
-	Lohmander
+	Isaksson
 	Jakobsson
 	Johansson
 	Johannesson
@@ -99,6 +101,7 @@ leader_names = {
 	Korhonen
 	Kowalcyzk
 	Lagerbäck
+	Lohmander
 	Lerström
 	Lind
 	Mannetje

@@ -44,6 +44,8 @@ fixed_capital = 79 # Cannot move capital away from this province & no power cost
 		dip = 2
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = midas_touched_personality
 }
 
 1444.11.3 = {

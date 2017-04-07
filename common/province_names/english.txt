@@ -95,6 +95,7 @@
 1009 = "Berens River"
 1010 = "Dauphin"
 1011 = "The Pas"
+1174 = "Walvis Bay"
 
 2003 = "Kootenai"
 2007 = "Les Cedres"

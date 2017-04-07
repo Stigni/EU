@@ -51,14 +51,13 @@ monarch_names = {
 	"Karl #7 Filip" = 10
 	"Magnus #3" = 10
 	"Adolf Johan #0" = 10
-	"Christina #0" = -10
+	
 	"Oskar #0" = 10
-	"Ulrika Eleonora #0" = -10
 	"Fredrik #0" = 5
 	"Fredrik Adolf #0" = 5
 	"Fredrik August #0" = 5
 	"Göran Love #0" = 5
-	"Hedwig #0" = -5
+	
 	"Sigismund #0" = 5
 	"Björn #3" = 1
 	"Knut #2" = 1
@@ -83,10 +82,21 @@ monarch_names = {
 	"Rettil #0" = 0
 	"Sigvard #0" = 0
 	"Simon #0" = 0
-	"Sten Sture #0" = 0
+	"Sten #0" = 0
 	"Svante #0" = 0
 	"Tomas #0" = 0
 	"Ulrik #0" = 0
+	
+	"Christina #0" = -10
+	"Hedwig #0" = -5
+	"Katarina #0" = -1
+	"Margareta #0" = -1
+	"Hedwig #0" = -1
+	"Anna #0" = -1
+	"Cecilia #0" = -1
+	"Elisabet #0" = -1
+	"Birgitta #0" = -1
+	"Ulrika Eleonora #0" = -10
 }
 
 leader_names = {
@@ -101,11 +111,11 @@ leader_names = {
 	Jägerhorn
 	Königsmarck Klingspor
 	Lewenhaupt Leijonhufvud Liljencrantz Lindschöld
-	Oxenstierna
+	Oxenstierna Lilliehöök
 	Palmstruch Piper Prinz
 	Rehnskiöld Ribbing
 	Stenbock Sandels Skytte Sture
-	"Tre Rosor" Torstensson "af Trolle" Toll
+	"Tre Rosor" Torstensson Trolle Toll Tott
 	Wrangel Wachtmeister Wallenberg
 	Åkerhielm
 }
@@ -116,7 +126,7 @@ ship_names = {
 	Enighet Euridice Falk Fenix Finland "Flygande Wargen" Fortuna Fredrika "Fredrika Amalia" 
 	Fröija Galathe "Gamla Fortuna" "Gamla Rikssvärdet" "Gotha Lejon" Grip Gustavus "Gyllende Lejon" 
 	Göta Göteborg Halland Havsfru Hektor Herkules Hieronymus Hjalmar Hök Illerim Ingeborg Jomfru 
-	Jupiter Jägare "Kalmar Nyckel" Kalmarkastell Karlskrona Kronan Laxen Leopard Lejon Lodbrok 
+	Jupiter Jägare "Kalmare Nyckel" Kalmarkastell Karlskrona Kronan Laxen Leopard Lejon Lodbrok 
 	Mars Mercurius Morgonstjärna Norden Nordstjärna Nyckeln Nyland Oden Pelikanen Postillion 
 	"Prins Carl" Prinsessan Regina Rosa Skåne Småland Solen "St. Erik" "St. Göran" "St. Johannes" 
 	"St. Thomas" Starkoster Stenbock Stockholm "Stora Cronan" Svan "Svenska Falk" "Svenska Lejonet" 

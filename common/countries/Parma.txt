@@ -43,8 +43,6 @@ monarch_names = {
 	"Ottavio #0" = 20
 	"Pier Luigi #0" = 20
 	"Lodovico #0" = 15
-	"Maria Luigia #0" = -15
-	"Isabella #0" = -10
 	"Orazio #0" = 10
 	"Pietro #0" = 10
 	"Achille #0" = 0
@@ -72,6 +70,17 @@ monarch_names = {
 	"Sesto #0" = 0
 	"Valerio #0" = 0
 	"Vincenzo #0" = 0
+	
+	"Maria Luigia #0" = -15
+	"Isabella #0" = -5
+	"Margherita #0" = -5
+	"Costanza #0" = -1
+	"Maria #0" = -5
+	"Francesco Maria #0" = -1
+	"Caterina #0" = -5
+	"Teresa #0" = -1
+	"Elisabetta #0" = -1
+	"Vittoria #0" = -1
 }
 
 leader_names = {

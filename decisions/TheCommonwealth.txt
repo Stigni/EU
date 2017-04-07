@@ -17,14 +17,19 @@ country_decisions = {
 				was_player = no
 			}
 			OR = {
-				ai = no
-				senior_union_with = LIT
+			ai = no
+				AND = {
+					senior_union_with = LIT
+					LIT = { #This overlaps with allow for AI, is meant to negate do_not_integrate
+						NOT = { num_of_cities = 41 } #Keep this number the same as in allow. Original 31 +10
+					}
+				}
 			}
 		}
 		allow = {
 			LIT = { was_player = no }
 			LIT = {
-				NOT = { num_of_cities = 41 } #Original 31 +10
+				NOT = { num_of_cities = 41 } #Keep this number the same as in potential. Original 31 +10
 			}
 			adm_tech = 10
 			is_subject = no
@@ -42,6 +47,10 @@ country_decisions = {
 		effect = {
 			change_tag = PLC
 			inherit = LIT
+			if = {
+				limit = { NOT = { accepted_culture = lithuanian } }
+				add_accepted_culture = lithuanian
+			}
 			if = {
 				limit = {
 					is_part_of_hre = yes
@@ -117,6 +126,7 @@ country_decisions = {
 			factor = 1
 		}
 		ai_importance = 400
+		do_not_integrate = LIT
 	}
 
 	lit_commonwealth = {
@@ -136,12 +146,17 @@ country_decisions = {
 				was_player = no
 			}
 			OR = {
-				ai = no
-				senior_union_with = POL
-			}			
+			ai = no
+				AND = {
+					senior_union_with = POL
+					POL = { #This overlaps with allow for AI, is meant to negate do_not_integrate
+						NOT = { num_of_cities = 24 } #Keep this number the same as in allow. Original 14 +10
+					}
+				}
+			}	
 		}
 		allow = {
-			POL = { NOT = { num_of_cities = 24 } } #Original 14+10
+			POL = { NOT = { num_of_cities = 24 } } #Keep this number the same as in potential. Original 14+10
 			adm_tech = 10
 			is_subject = no
 			is_nomad = no
@@ -158,6 +173,10 @@ country_decisions = {
 		effect = {
 			change_tag = PLC
 			inherit = POL
+			if = {
+				limit = { NOT = { accepted_culture = polish } }
+				add_accepted_culture = polish
+			}
 			if = {
 				limit = {
 					is_part_of_hre = yes
@@ -233,6 +252,7 @@ country_decisions = {
 			factor = 1
 		}
 		ai_importance = 200
+		do_not_integrate = POL
 	}
 	
 	commonwealth_enforced = {
@@ -296,6 +316,20 @@ country_decisions = {
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					NOT = { primary_culture = polish }
+					NOT = { accepted_culture = polish }
+				}
+				add_accepted_culture = polish
+			}
+			if = {
+				limit = {
+					NOT = { primary_culture = lithuanian }
+					NOT = { accepted_culture = lithuanian }
+				}
+				add_accepted_culture = lithuanian
 			}
 			if = {
 				limit = {

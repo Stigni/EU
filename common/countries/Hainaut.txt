@@ -35,7 +35,6 @@ monarch_names = {
 	"Guillaume #2" = 40
 	"Albert #0" = 20
 	"Jean #2" = 15
-	"Jacqueline #0" = -15
 	"Lodewijk #2" = 15
 	"Odo #0" = 15
 	"Baudouin #6" = 5
@@ -58,7 +57,7 @@ monarch_names = {
 	"Hughes #0" = 0
 	"Humbert #0" = 0
 	"Ignace #0" = 0
-	"Jéróme #0" = 0
+	"Jérôme #0" = 0
 	"Joachim #0" = 0
 	"Marc #0" = 0
 	"Onesime #0" = 0
@@ -71,15 +70,26 @@ monarch_names = {
 	"Vincent #0" = 0
 	"Xavier #0" = 0
 	"Zacharie #0" = 0
-	"Roeland #0" = 0
+	"Roland #0" = 0
+	
+	"Jacqueline #0" = -15
+	"Marguerite #2" = -5
+	"Anne #0" = -1
+	"Agnès #0" = -1
+	"Beatrix #0" = -1
+	"Élisabeth #0" = -1
+	"Filippa #0" = -1
+	"Isabelle #0" = -1
+	"Blanche #0" = -1
+	"Marie #0" = -1
 }
 
 leader_names = {
 	"de Cuire" "du Trieux" "de Freest"
-	Waerseggers Brouckaert "de Avesnes"
+	Waerseggers Brouckaert "d'Avesnes"
 	"de Roucy" "de Namur" Galindez Liderie 
 	"van Bylandt" "van Dinther" "van Heerdt"
-	"van heiden" "van hogendorp" "van Lynden"
+	"van Heiden" "van Hogendorp" "van Lynden"
 	"van Oberndorff" "von Ranzow"
 	"von Rechteren" "von Quadt"
 }

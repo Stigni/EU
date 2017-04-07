@@ -33,7 +33,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB9479"
 		change_government = constitutional_monarchy
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -57,7 +57,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA9480"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		remove_country_modifier = cult_of_reason
 	}
 }

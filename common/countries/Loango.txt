@@ -74,6 +74,9 @@ monarch_names = {
 	
 	"Millaray #0" = -1
 	"Aylen #0" = -1
+	"Jetta #0" = -1
+	"Vandana #0" = -1
+	"Zody #0" = -1
 }
 
 leader_names = {

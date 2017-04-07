@@ -396,10 +396,7 @@ province_event = {
 			has_building = regimental_camp
 			has_building = training_fields
 			has_building = conscription_center
-			has_building = fort_15th
-			has_building = fort_16th
-			has_building = fort_17th
-			has_building = fort_18th
+			fort_level = 1
 			base_manpower = 6
 		}
 		owner = { has_active_debate = yes }
@@ -888,7 +885,6 @@ province_event = {
 		is_backing_current_issue = yes
 		is_capital = yes
 		OR = {
-			owner = { current_debate = integration_of_minorities }
 			owner = { current_debate = offices_to_vassals }
 			owner = { current_debate = harmonization_of_laws }
 		}
@@ -1007,10 +1003,7 @@ province_event = {
 			has_building = regimental_camp
 			has_building = training_fields
 			has_building = conscription_center
-			has_building = fort_15th
-			has_building = fort_16th
-			has_building = fort_17th
-			has_building = fort_18th
+			fort_level = 1
 			base_manpower = 6
 		}
 		owner = { has_active_debate = yes }

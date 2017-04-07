@@ -49,7 +49,16 @@ reclaim_jerusalem = {
 		add_claim = 379
 	}
 	abort_effect = {
-		remove_claim = 379
+		379 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = reclaimed_jerusalem
@@ -102,7 +111,16 @@ reclaim_mecca = {
 		add_claim = 385
 	}
 	abort_effect = {
-		remove_claim = 385
+		385 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = reclaimed_mecca

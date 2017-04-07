@@ -39,7 +39,16 @@ conquer_samogitia = {
 		add_claim = 271
 	}
 	abort_effect = {
-		remove_claim = 271
+		271 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		add_country_modifier = {
@@ -102,7 +111,16 @@ retake_chernigov = {
 		add_claim = 289
 	}
 	abort_effect = {
-		remove_claim = 289
+		289 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = retake_chernigov
@@ -169,7 +187,16 @@ retake_smolensk = {
 		add_claim = 293
 	}
 	abort_effect = {
-		remove_claim = 293
+		293 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = retaken_smolensk
@@ -230,7 +257,14 @@ defeat_the_livonian_order = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {

@@ -197,7 +197,7 @@ country_event = {
 
 	option = {
 		name = "tyw_events.6.a"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		set_country_flag = had_great_comet
 	}
 }
@@ -212,6 +212,7 @@ country_event = {
 	trigger = {
 		has_dlc = "Art of War"
 		has_regency = yes
+		has_consort_regency = no
 		OR = {
 			AND = {
 				OR = {
@@ -712,7 +713,9 @@ country_event = {
 
 	option = {
 		name = "tyw_events.16.a"
-		kill_leader = "Wallenstein"
+		kill_leader = {
+			type = "Wallenstein"
+		}
 	}
 
 	option = {
@@ -746,7 +749,9 @@ country_event = {
 	option = {
 		name = "tyw_events.17.a"
 		hidden_effect = {
-			kill_leader = "Wallenstein"
+			kill_leader = {
+				type = "Wallenstein"
+			}
 		}
 		random_known_country = {
 			limit = {
@@ -1099,6 +1104,7 @@ country_event = {
 		has_dlc = "Art of War"
 		religion = catholic
 		has_regency = yes
+		has_consort_regency = no
 		is_year = 1540
 		is_lesser_in_union = no
 	}
@@ -1862,6 +1868,7 @@ country_event = {
 		NOT = { alliance_with = SPA }
 		SPA = {
 			any_active_trade_node = {
+				has_merchant = PREV
 				is_overseas = yes
 				any_privateering_country = { tag = ROOT }
 			}

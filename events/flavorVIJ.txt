@@ -614,7 +614,9 @@ country_event = {
 				leader = "Narasimha Saluva"
 			}
 		}
-		kill_leader = "Chellappa Nayaka"
+		kill_leader = {
+			type = "Chellappa Nayaka"
+		}
 		add_stability = -1
 		clr_country_flag = chellappas_ambition
 	}
@@ -707,7 +709,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_vij.16.a" #Ok
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		clr_country_flag = chellappa_local
 		remove_province_modifier = tamil_grandee
 	}

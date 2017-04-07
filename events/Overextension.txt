@@ -126,6 +126,7 @@ country_event = {
 	trigger = {
 		num_of_merchants = 1
 		any_active_trade_node = {
+			has_merchant = PREV
 			NOT = { 
 				has_trade_modifier = {
 					who = ROOT
@@ -149,6 +150,7 @@ country_event = {
 						name = merchant_recalled
 					}
 				}				
+				has_merchant = PREV
 			}
 			if = {
 				limit = {
@@ -181,6 +183,7 @@ country_event = {
 	trigger = {
 		num_of_merchants = 1
 		any_active_trade_node = {
+			has_merchant = PREV
 			NOT = { 
 				has_trade_modifier = {
 					who = ROOT
@@ -198,6 +201,7 @@ country_event = {
 		name = "EVTOPTA773"
 		random_active_trade_node = {
 			limit = {
+				has_merchant = PREV
 				NOT = { 
 					has_trade_modifier = {
 						who = ROOT

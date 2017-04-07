@@ -70,12 +70,11 @@ country_decisions = {
 				duration = 3650
 			}
 			if = {
-				limit = {
-					OR = {
-						government = theocratic_government
-						government = monastic_order_government
-					}
-				}
+				limit = { has_dlc = "Rights of Man" }
+				change_government = prussian_monarchy
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Rights of Man" } }
 				change_government = feudal_monarchy
 			}
 			add_prestige = 5
@@ -167,13 +166,12 @@ country_decisions = {
 			}
 			add_prestige = 25
 			if = {
-				limit = {
-					OR = {
-						government = theocratic_government
-						government = monastic_order_government
-					}
-				}
-				change_government = feudal_monarchy
+				limit = { has_dlc = "Rights of Man" }
+				change_government = prussian_monarchy
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Rights of Man" } }
+				change_government = absolute_monarchy
 			}
 			every_neighbor_country = {
 				limit = { government = monarchy }
@@ -275,6 +273,14 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = PRU
+			}
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				change_government = prussian_monarchy
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Rights of Man" } }
+				change_government = absolute_monarchy
 			}
 			add_prestige = 25
 			change_primary_culture = prussian

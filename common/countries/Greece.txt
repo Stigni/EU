@@ -40,8 +40,21 @@ monarch_names = {
 	"Konstantinos #0" = 20
 	"Pavlos #0" = 15
 	"Andreas #0" = 10
-	"Alexandra #0" = -10
 	"Nikolaos #0" = 10
+
+	"Alexandra #0" = -10
+	"Antonia #0" = -5
+	"Anna #0" = -5
+	"Artemisia #0" = -1
+	"Eirene #0" = -1
+	"Euphrosyne #0" = -1
+	"Laskarina #0" = -1
+	"Manto #0" = -1
+	"Thalia #0" = -1
+	"Sevasti #0" = -1
+	"Sophia #0" = -1
+	
+
 	"Aineias #0" = 0
 	"Alexeios #0" = 0
 	"Ambrosios #0" = 0
@@ -49,7 +62,7 @@ monarch_names = {
 	"Basileios #0" = 0
 	"Chrysanthos #0" = 0
 	"David #0" = 0
-	"Demetrios #0" = 0
+	"Dimitrios #0" = 0
 	"Diogenes #0" = 0
 	"Dionysos #0" = 0
 	"Eirenaios #0" = 0
@@ -60,6 +73,7 @@ monarch_names = {
 	"Iason #0" = 0
 	"Ioannes #0" = 0
 	"Kastor #0" = 0
+	"Lambros #0" = 0
 	"Manuel #0" = 0
 	"Matthaios #0" = 0
 	"Nestor #0" = 0
@@ -73,27 +87,48 @@ monarch_names = {
 	"Prokopios #0" = 0
 	"Skantarios #0" = 0
 	"Stefanos #0" = 0
+	"Tasos #0" = 0
 	"Theodoros #0" = 0
 	"Thomas #0" = 0
 }
 
 leader_names = {
-	Argyrus Artavasdus
-	Basileus
-	Diogenes Ducas
-	Monomachus
-	Romanus
-	Stauracius Stratioticus
-	Vataces
-	Zimisces
+	Anina Angelopoulos Androutsos Aulakos
+	Botsaris Bouboulis
+	Chatzeris Christianopoulos Chatzimoschos
+	Dalianis Doumpiotis Diakos Danglis Dagres Deligiannis Damodos
+	Flessas Farmakidis
+	Gotzias Gonemis Gouras Giatrakos Gazalis
+	Hatzipetros
+	Kapodistrias Kolokotronis Karaiskakis Kanaris Katsonis Karykes Kontares Karatzas Kriezotis Kirezis Kountouriotis Korais
+	Kairis Kyriazis Kontostavlos
+	Loukaris Livinis
+	Mavrokordatos Mavrikios Makris Mavromichalis Meletopoulos Metaxas Milios Meintanis Mavrogenes
+	Notaras
+	Pegas Patelaros Pelekasis Petrovas Panourgias Pappas Papatsonis Papazafiropoulos Psalidas Papanikolis Pinotsis
+	Ratzikotsikas
+	Serpetzoglou Skoufas Sachtouris Skourtis Stamatelopoulos Soumalis
+	Triantaphyllos Tsakalov Tsokris Tombazis
+	Vokos Verousis Vasileiou Voulgaris
+	Xanthos Xiros
+	Ypsilantis Yiannouzas
+	Zalykis Zeras
 }
 
 ship_names = {
-	Hydra
-	Lesbos Limnos
-	Mikonios
-	Pezopoulos
-	Salamis Samos Simitzopoulos
-	Themistoklis
-	Votsis
+	Attiki Aris Armatolos Ambrakikos Afroessa Aigion Agamemnon Atreus Aspis Aetos Apostolis Arethousa
+	Diamantina Doxa Doris Dafni
+	Gerontas
+	Hydra Hellas Harmatia
+	Ierax Ionia Ipiros
+	Karteria Klepht Kapetanissa Karteria Kios Kydonia
+	Lesbos Limnos Loudovikos Lemnos Lonchi Leon
+	Mikonios "Megas Orkos" Messolongion Makedonia
+	Niki
+	Olympia Orestes Othrys
+	Pezopoulos Panorea Patrokosmas Poros Psara Panopi Pliksavra Peloponnesos Penelope Psara Panthir Pindos Pergamos
+	Rhetoras
+	Salamis Samos Simitzopoulos Spetsai Sphagia Sfendoni Skevo Sfendoni Skorpios
+	Themistoklis Tourkofagos Thyella Themistoklis Thraki Thetis Typhon Tilemachos
+	Votsis Velos
 }

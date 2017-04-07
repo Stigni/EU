@@ -52,8 +52,6 @@ monarch_names = {
 	"Rostom-Mirza #0" = 20
 	"Levan #0" = 15
 	"Demetre #2" = 10
-	"Thamar #1" = -10
-	"Anna #0" = -10
 	"Stefanoz #0" = 10
 	"Anzori #0" = 0
 	"Bebur #0" = 0
@@ -75,6 +73,15 @@ monarch_names = {
 	"Tsotne #0" = 0
 	"Xareba #0" = 0
 	"Zviadi #0" = 0
+
+	"Thamar #1" = -10
+	"Anna #0" = -10
+	"Tinatin #0" = -1
+	"Tamar #0" = -1
+	"Darejan #0" = -1
+	"Mariam  #0" = -1
+	"Khvaramze #0" = -1
+	"Banjanum #0" = -1
 }
 
 leader_names = { 

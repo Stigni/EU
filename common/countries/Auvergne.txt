@@ -41,7 +41,7 @@ monarch_names = {
 	"Guy #2" = 10
 	"Anne #0" = -10
 	"Catherine #0" = -10
-        "Joanna #1" = -10
+        "Jeanne #1" = -10
         "Marguerite #0" = -10
 	"Marie #0" = -10
         "Guillaume #13" = 1
@@ -50,7 +50,7 @@ monarch_names = {
 	"Aimeric #0" = 0
         "Andriu #0" = 0
 	"Arnaud #0" = 0
-	"Beránger #0" = 0
+	"Béranger #0" = 0
 	"Bernat #0" = 0
 	"Borel #0" = 0
         "Domenc #0" = 0
@@ -84,28 +84,28 @@ leader_names = {
 	"de Grandsaigne"
 	"d'Humières"
 	"de Lavie"
-	"de Magnac" "de Massebeau" "de Mercoeur" "de Montboissier" "de Montgascon" "de Montpensier" "de Montvert"
+	"de Magnac" "de Massebeau" "de Mercœur" "de Montboissier" "de Montgascon" "de Montpensier" "de Montvert"
 	"de Nérestang"
 	"d'Oliergues"
 	"de Pennautier" "de Pascal" "de Polignac"
-	"de la Queuille"
+	"de La Queuille"
 	"de Rochefort-d'Ailly" "de Rogier-Beaufort"
-	"de Saint Nectaire" "de Scorailles"
+	"de Saint-Nectaire" "de Scorailles"
 	"de Terreveire" "de Thiers"
 	"d'Ussel"
 }
 
 ship_names = {
-        Aiguiller Artense "Banne d'Ordanche" Cézailler Chaudefour
-        Cliergue Cliersoux "Dent de la Rancune" "Gour de Tazenat" "Lac Chauvet"
-        "Lac de Guéry" "Lac du Joland" "Lac Pavin" "Lac de Servières" Mandailles
-        "Mont Dore" "Narse d'Espinasse" "Orgues de Bort" "Peyre Arse" "Plomb du Cantal"
-        "Puy Chavaroche" "Puy de l'Angle" "Puy de Bort" "Puy de Côme" "Puy de Dôme"
-        "Puy des Goules" "Puy de la Grousse" "Puy de Lassolas" "Puy de Monne" "Puy de Montchal"
-        "Puy de Montcineyre" "Puy de Monténard" "Puy de Paillaret" "Puy de la Perdrix" "Puy de Sancy"
-        "Puy de Seycheuse" "Puy de la Tache" "Puy de Tartaret" "Puy de la Vache" "Puy en Velay" 
-        "Puy Ferrand" "Puy Griou" "Puy Gros" "Puy Mary" "Puy Violent"
-        "Rochefort Montagne" "Roches Tuilière" Sanadoire Sarcouy "Signal du Luguet"
+        "l'Aiguiller" "l'Artense" "la Banne d'Ordanche" "le Cézailler" "le Chaudefour"
+        "le Cliergue" "le Cliersoux" "la Dent de la Rancune" "le Gour de Tazenat" "le Lac Chauvet"
+        "le Lac de Guéry" "le Lac du Joland" "le Lac Pavin" "le Lac de Servières" "le Mandailles"
+        "le Mont Dore" "le Narse d'Espinasse" "l'Orgues de Bort" "le Peyre Arse" "le Plomb du Cantal"
+        "le Puy Chavaroche" "le Puy de l'Angle" "le Puy de Bort" "le Puy de Côme" "le Puy de Dôme"
+        "le Puy des Goules" "le Puy de la Grousse" "le Puy de Lassolas" "le Puy de Monne" "le Puy de Montchal"
+        "le Puy de Montcineyre" "le Puy de Monténard" "le Puy de Paillaret" "le Puy de la Perdrix" "le Puy de Sancy"
+        "le Puy de Seycheuse" "le Puy de la Tache" "le Puy de Tartaret" "le Puy de la Vache" "le Puy-en-Velay" 
+        "le Puy Ferrand" "le Puy Griou" "le Puy Gros" "le Puy Mary" "le Puy Violent"
+        "le Rochefort-Montagne" "le Roches Tuilière" "le Sanadoire" "le Sarcouy" "le Signal du Luguet"
 }
 
 army_names = {

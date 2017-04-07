@@ -42,15 +42,13 @@ monarch_names = {
 	"Engelbert #0" = 20
 	"Jacques #0" = 20
 	"Jean #0" = 20
-	"Julius #0" = 20
-	"Louis Julius #0" = 20
-	"Philippe Julian #0" = 20
-	"Philippe Julius #0" = 20
+	"Jules #0" = 20
+	"Louis Jules #0" = 20
+	"Philippe Julien #0" = 20
+	"Philippe Jules #0" = 20
 	"Adolphe #0" = 10
 	"Fernand #0" = 10
 	"Frédéric #0" = 10
-	"Henriette #0" = -10
-	"Marie #0" = -10
 	"Guillaume #5" = 5
 	"Henri #0" = 5
 	"Thierry #0" = 5
@@ -60,7 +58,7 @@ monarch_names = {
 	"Hervé #1" = 1
 	"Alexandre #0" = 0
 	"Armand #0" = 0
-	"Barthélémy #0" = 0
+	"Barthélemy #0" = 0
 	"Bernard #0" = 0
 	"Claude #0" = 0
 	"Denis #0" = 0
@@ -74,30 +72,35 @@ monarch_names = {
 	"Michel #0" = 0
 	"Nicolas #0" = 0
 	"Pierre #0" = 0
+	
+	"Henriette #0" = -10
+	"Marie #0" = -10
+	"Mathilde #2" = -10 # La Pléiade
+	"Yolande #2" = -10
 }
 
 ship_names = {
-	Brinon
-	"Cercy la Tour" Charité "Châtillon en Bazois" Chevenon Clamecy Corbigny Cossaye
-	Decize Dompierre Donzy Dornes
-	Fourchambault Fours Frasnay-Reugny
-	Garchy Goulanges Guérigny
-	Imphy
-	"La Machine" "Luthenay Uxeloup" Luzy
-	Magny-Cours Marzy Menou Montambert Moulins-Engilbert
-	Nevers
-	Pouilly Pouques Prémery
-	"Saint Aubin" "Saint Benin d'Azy" "Saint Eloi" "Saint Franchy" "Saint Germain" "St Gratien Savigny" "Saint Honoré" "Saint Imbert" "Sainte Marie" "St Malo en Donziers" "Saint Ouen" "Saint Parize en Viry" "St Pierre le Moutier" "Saint Révérien" "Saint Saulge"
-	Tannay
-	Vandenesse "Varennes-Vauzelle" "Varzy"
+	"le Brinon"
+	"le Cercy-la-Tour" "la Charité" "le Châtillon-en-Bazois" "le Chevenon" "le Clamecy" "le Corbigny" "le Cossaye"
+	"le Decize" "le Dompierre" "le Donzy" "le Dornes"
+	"le Fourchambault" "le Fours" "le Frasnay-Reugny"
+	"le Garchy" "le Coulanges" "le Guérigny"
+	"l'Imphy"
+	"la Machine" "le Luthenay-Uxeloup" "le Luzy"
+	"le Magny-Cours" "le Marzy" "le Menou" "le Montambert" "le Moulins-Engilbert"
+	"le Nevers"
+	"le Pouilly" "le Pougues" "le Prémery"
+	"le Saint-Aubin" "le Saint-Benin-d'Azy" "le Saint-Éloi" "le Saint-Franchy" "le Saint-Germain" "le Saint-Gratien-Savigny" "le Saint-Honoré" "le Saint-Imbert" "le Sainte-Marie" "le Saint-Malo-en-Donziers" "le Saint-Ouen" "le Saint-Parize-en-Viry" "le Saint-Pierre-le-Moûtier" "le Saint-Révérien" "le Saint-Saulge"
+	"le Tannay"
+	"le Vandenesse" "le Varennes-Vauzelle" "le Varzy"
 }
 
 leader_names = {
-	d'Ailly d'Alixand "Andrault de Langeron" "Angrand d'Alleray" d'Anlazy d'Armes
+	d'Ailly d'Alixand "Andrault de Langeron" "Angrand d'Alleray" d'Anlezy d'Armes
 	"de Bélanger" "de Berthier" "de Bèze" "de Bonnay" "de Borniol" "de Bourgoing" "du Broc" 
 	"de Chabannes" "de Chassy" "de Chevenon"
 	"de Damas" "Des Prez"
-	"Eon de Beaumont" d'Estutt
+	"Éon de Beaumont" d'Estutt
 	"de la Ferté-Meun"
 	Gascoing "de Gonzague"
 	"de Husson"
@@ -106,8 +109,8 @@ leader_names = {
 	"de Maulnoury" "de Maumigny" "de Mesgriny"
 	"de Norry"
 	"de Paris" Perreau
-	"de Remigny" "de Rouffignac" "Rousseau de Chamoy"
-	"de Saincy" "de Sainte Maure" "de Saint Verrain" "de Sandras" "de Serent"
+	"de Rémigny" "de Rouffignac" "Rousseau de Chamoy"
+	"de Saincy" "de Sainte-Maure" "de Saint-Verrain" "de Sandras" "de Sérent"
 	Tenaille "de Toucy" "de Troussebois"
 	"Vaillant de Guélis" "de Vaux" "du Verne" "de Viau" "de Villars"
 }

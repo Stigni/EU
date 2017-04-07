@@ -138,7 +138,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA1064"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		clr_country_flag = liberalism
 		remove_country_modifier = reduceed_war_expenditures
 		remove_country_modifier = decreased_morale

@@ -80,7 +80,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA2038"				# One Faith
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		set_country_flag = had_religious_turmoil
 		remove_country_modifier = "intolerant_society"
 		remove_country_modifier = "tolerant_society"

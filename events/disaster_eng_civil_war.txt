@@ -114,7 +114,7 @@ country_event = {
 	option = {			# It is not needed
 		name = "flavor_eng.EVTOPTB9226"
 		ai_chance = { factor = 10 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_manpower = 2
 	}
 }
@@ -152,7 +152,7 @@ country_event = {
 	option = {			# It is not needed
 		name = "flavor_eng.EVTOPTB9227"
 		ai_chance = { factor = 10 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_manpower = 2
 	}
 }

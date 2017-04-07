@@ -1,10 +1,10 @@
 lose_mercantilism = {
 	trigger = {
-		mercantilism = 0.20
+		mercantilism = 20
 	}
 	
 	effect = {
-		add_mercantilism = -0.01
+		add_mercantilism = -1
 	}
 	
 	ai_will_do = {

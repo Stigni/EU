@@ -45,7 +45,16 @@ conquer_ferrara = {
 		add_claim = 113
 	}
 	abort_effect = {
-		remove_claim = 113
+		113 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		113 = {
@@ -105,7 +114,16 @@ conquer_ancona = {
 		add_claim = 119
 	}
 	abort_effect = {
-		remove_claim = 119
+		119 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		119 = {
@@ -164,7 +182,16 @@ annex_avignon = {
 		add_claim = 202
 	}
 	abort_effect = {
-		remove_claim = 202
+		202 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		202 = {

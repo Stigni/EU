@@ -56,8 +56,6 @@ monarch_names = {
 	"Ramachandra #1" = 1
 	"Vira Vijaya Bukka #0" = 1
 	"Mallikarjuna #0" = 1
-	"Tirumala Devi #0" = -1
-	"China Devi #0" = -1
 	"Adarsh #0" = 0
 	"Budhil #0" = 0
 	"Chaitanya #0" = 0
@@ -95,6 +93,19 @@ monarch_names = {
 	"Dandanayaka #0" = 0
 	"Kanaka #0" = 0
 	"Kumara #0" = 0
+	
+	"Padmavati Devi #0" = -1
+	"Tirumala Devi #0" = -1
+	"China Devi #0" = -1
+	"Mangammal #0" = -10
+	"Meenakshi #0" = -10
+	"Velunatchiyar #0" = -1
+	"Lakshmi #0" = -1
+	"Jaganmohini #0" = -1
+	"Annapurna Devi #0" = -1
+	"Rudramba #0" = -1
+	"Anitalli #0" = -1
+	"Rudramadevi #0" = -1
 }
 
 leader_names = {

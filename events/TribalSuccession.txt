@@ -15,6 +15,10 @@ country_event = {
 			NOT = { legitimacy_or_horde_unity = 50 }
 			has_regency = yes
 		}
+		OR = {
+			NOT = { tag = CRI }
+			has_global_flag = death_of_haji_giray
+		}
 	}
 	
 	immediate = {
@@ -92,7 +96,7 @@ country_event = {
 	option = {
 		name = tribal_succession.1.a
 		remove_country_modifier = tribal_succession_crisis
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_horde_unity = 25
 	}
 }

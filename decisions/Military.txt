@@ -3,12 +3,6 @@ country_decisions = {
 	enlist_privateers = {
 		potential = {
 			NOT = { has_country_modifier = hire_privateers }
-			OR = {
-				technology_group = western
-				technology_group = eastern
-				technology_group = ottoman
-				technology_group = muslim
-			}
 
 			num_of_ports = 1
 			dip_tech = 8

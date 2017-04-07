@@ -143,7 +143,7 @@ country_event = {
 		name = "EVTOPTB3013"			# Keep the masses in chains
 		ai_chance = { factor = 70 }
 		random_owned_province = { revolutionary_rebels = 1 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		if = {
 			limit = {
 				has_disaster = revolution
@@ -481,9 +481,9 @@ country_event = {
 		name = "EVTOPTA6601"
 		set_revolution_target = ROOT
 		disband_rebels = revolutionary_rebels
-		add_mercantilism = 0.05
+		add_mercantilism = 5
 		country_event = { id = revolution.20 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		change_government = revolutionary_republic
 		kill_ruler = yes
 	}
@@ -571,9 +571,9 @@ country_event = {
 	option = {
 		name = "EVTOPTA6606"
 		disband_rebels = revolutionary_rebels
-		add_mercantilism = 0.05
+		add_mercantilism = 5
 		country_event = { id = revolution.20 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		change_government = revolutionary_republic
 		set_revolution_target = ROOT
 		hidden_effect = {
@@ -676,7 +676,7 @@ country_event = {
 		name = "EVTOPTA6610"
 		change_government = revolutionary_republic
 		kill_ruler = yes
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 

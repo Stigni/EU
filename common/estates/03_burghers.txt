@@ -20,6 +20,8 @@ estate_burghers =
 	# If true, country will get estate
 	trigger = {	
 		NOT = { government = merchant_republic }
+		NOT = { government = trading_city }
+		NOT = { government = revolutionary_republic }
 		NOT = { government = native_council }
 		NOT = { government = siberian_native_council }
 		is_nomad = no

@@ -38,6 +38,8 @@ monarch_names = {
 	"Mengtsekya #0" = 20
 	
 	"Amritpal #0" = -1
+	"Sharat #0" = -1
+	"Kamala #0" = -1
 }
 
 leader_names = {

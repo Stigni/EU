@@ -24,6 +24,10 @@ fixed_capital = 85 # Cannot move capital away from this province & no power cost
 		dip = 1
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = greedy_personality
+	add_ruler_personality = obsessive_perfectionist_personality
 }
 
 1463.2.14 = {

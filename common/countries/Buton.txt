@@ -76,8 +76,20 @@ monarch_names = {
 	"'Abd al-Khaliq #0" = 10
 	"Limbangparang #0" = 10
 	
+	"Suhita #0" = -10
 	"Cinta #0" = -1
 	"Wangi #0" = -1
+	"Prajnaparamitha #0" = -1
+	"Tribhuawana #0" = -10
+	"Gayatri #0" = -10
+	"Narendra Duhita #0" = -1
+	"Indreswari #0" = -1
+	"Kawunganten #0" = -1
+	"Tepasari #0" = -1
+	"Semboja #0" = -1
+	"Tingkir #0" = -1
+
+
 }
 
 ship_names = {

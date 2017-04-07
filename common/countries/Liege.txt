@@ -90,8 +90,8 @@ leader_names = {
 }
 
 ship_names = {
-	"St. Lambert" "St. Hubert" "St. Martin"
-	Meuse "Notger of Liege" "Place du Queer"
-	"Saint Jaques" "Saint Bartholomew" Seraing
-	"Sart-Tilman" Luik "Saint-Nicolas" Ans
+	"le Saint-Lambert" "le Saint-Hubert" "le Saint-Martin"
+	"la Meuse" "le Notger de Liège" "la Place-du-Queer"
+	"le Saint-Jacques" "le Saint-Barthélemy" "le Seraing"
+	"le Sart-Tilman" "le Luik" "le Saint-Nicolas" "l'Ans"
 }

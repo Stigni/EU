@@ -143,7 +143,13 @@ monarch_names = {
 	"Wawapenishik #0" = 20
 	"Omikou #0" = 20
 
-	"Aazhawiggizhigokwe #0" = -1
+	"Aazhawiggizhigokwe #0" = -10
+	"Ozaawindib #0" = -5
+	"Keiagisgis #0" = -1
+	"Bamewawagezhikaquay #0" = -1
+	"Tshusick #0" = -1
+	"Naawakamigookwe #0" = -1
+	"Keewaydinoquay #0" = -1
 }
 
 leader_names = {

@@ -28,7 +28,7 @@
  dutch_republic.1.b:0 "Wir können von ausländischen Tyrannen nichts lernen!"
  dutch_republic.2.t:0 "Politische Maximen der Republik"
  dutch_republic.2.d:0 "Einer von [Root.GetName]s angesehensten Beratern, $STATESMAN$$DIPLOMAT$$TRADER$$COLONIALGOVERNOR$, veröffentlichte kürzlich ein Werk, das die politischen Prinzipien bespricht, auf denen die republikanische Regierungsform basiert. Obwohl es in der Tat gut geschrieben ist und überzeugend argumentiert, so übt es doch strenge Kritik an der Macht, die der Prinz von Oranien in letzter Zeit in der Regierung von [Root.Monarch.GetTitle] innehatte. Seine Loyalität gegenüber [Root.Monarch.GetName] könnte geringer sein, als wir dachten."
- dutch_republic.2.a:0 "Schade, aber wir müssen ihn aus dem Arbeitsverhältnis entlassen."
+ dutch_republic.2.a:0 "Schade, aber wir werden $STATESMAN$$DIPLOMAT$$TRADER$$COLONIALGOVERNOR$ Beschäftigung beenden müssen."
  dutch_republic.2.b:0 "Kontrapunkte gegen den Status Quo sind lebenswichtig für unsere Republik."
  dutch_republic.3.t:0 "Predigten für Prinzen"
  dutch_republic.3.d:0 "Die Unterstützung des Volkes für das Haus Oranien wird von der Kanzel der [Root.Religion.GetName]-Kirche aus gestärkt, wo das gemeine Volk oft an die Wichtigkeit eines starken Herrschers für die Staatskirche und der Tradition der Erbmonarchie erinnert wird.\n\n[Root.GetName] bietet aber Platz für mehr als eine Religion. Anhänger anderer Glaubensrichtungen stellen den Prinz von Oranien nicht immer ins beste Licht. Einige nutzen unsere republikanischen Ideale als Ausrede, um sich offen gegen [Root.Monarch.GetTitle] und die Staatskirche auszusprechen."

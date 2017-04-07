@@ -217,19 +217,24 @@ establish_carribean_colony = {
 		num_of_ports = 1
 		has_idea = quest_for_the_new_world 
 		religion_group = christian
-		is_colonial_nation = no
-		carribeans_region = {
+		is_colonial_nation = no	
+		colonial_the_carribean = {
 			is_empty = yes
 			range = ROOT
 			has_discovered = ROOT
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
 		}
 		NOT = {
-			carribeans_region = {
+			colonial_the_carribean = {
 				owned_by =  ROOT
 			}
 		}
 		NOT = {
-			carribeans_region = {
+			colonial_the_carribean = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -242,7 +247,7 @@ establish_carribean_colony = {
 	abort = {
 		OR = {
 			NOT = {
-				carribeans_region = {
+				colonial_the_carribean = {
 					is_empty = yes
 					has_discovered = ROOT
 				}
@@ -252,7 +257,7 @@ establish_carribean_colony = {
 		}
 	}
 	success = {
-		carribeans_region = {
+		colonial_the_carribean = {
 			owned_by =  ROOT
 			colonysize = 400
 		}
@@ -286,37 +291,24 @@ establish_usa_colony = {
 		has_idea = quest_for_the_new_world 
 		religion_group = christian
 		is_colonial_nation = no
-		northeast_america_region = {
+		colonial_eastern_america = {
 			is_empty = yes
 			has_port = yes
 			range = ROOT
 			has_discovered = ROOT
-		}
-		southeast_america_region = {
-			is_empty = yes
-			has_port = yes
-			range = ROOT
-			has_discovered = ROOT
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
 		}
 		NOT = {
-			northeast_america_region = {
+			colonial_eastern_america = {
 				owned_by =  ROOT
 			}
 		}
 		NOT = {
-			southeast_america_region = {
-				owned_by =  ROOT
-			}
-		}
-		NOT = {
-			northeast_america_region = {
-				owner = {
-					is_subject_of = ROOT
-				}
-			}
-		}
-		NOT = {
-			southeast_america_region = {
+			colonial_eastern_america = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -328,26 +320,14 @@ establish_usa_colony = {
 	}
 	abort = {
 		OR = {
-			AND = {
-				NOT = {
-					northeast_america_region = {
-						OR = {
-							owned_by = ROOT
-							is_empty = yes
-						}
-						has_port = yes
-						has_discovered = ROOT
+			NOT = {
+				colonial_eastern_america = {
+					OR = {
+						owned_by = ROOT
+						is_empty = yes
 					}
-				}
-				NOT = {
-					southeast_america_region = {
-						OR = {
-							owned_by = ROOT
-							is_empty = yes
-						}
-						has_port = yes
-						has_discovered = ROOT
-					}
+					has_port = yes
+					has_discovered = ROOT
 				}
 			}
 			NOT = { num_of_ports = 1 }
@@ -355,15 +335,9 @@ establish_usa_colony = {
 		}
 	}
 	success = {
-		OR = {
-			northeast_america_region = {
-				owned_by =  ROOT
-				colonysize = 400
-			}
-			southeast_america_region = {
-				owned_by =  ROOT
-				colonysize = 400
-			}
+		colonial_eastern_america = {
+			owned_by =  ROOT
+			colonysize = 400
 		}
 	}
 	chance = {
@@ -407,19 +381,24 @@ establish_canada_colony = {
 		religion_group = christian
 		is_colonial_nation = no
 		has_idea = quest_for_the_new_world 
-		canada_region = {
+		colonial_canada = {
 			is_empty = yes
 			has_port = yes
 			range = ROOT
 			has_discovered = ROOT
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
 		}
 		NOT = {
-			canada_region = {
+			colonial_canada = {
 				owned_by =  ROOT
 			}
 		}
 		NOT = {
-			canada_region = {
+			colonial_canada = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -432,7 +411,7 @@ establish_canada_colony = {
 	abort = {
 		OR = {
 			NOT = {
-				canada_region = {
+				colonial_canada = {
 					is_empty = yes
 					has_port = yes
 					has_discovered = ROOT
@@ -443,7 +422,7 @@ establish_canada_colony = {
 		}
 	}
 	success = {
-		canada_region = {
+		colonial_canada = {
 			owned_by =  ROOT
 			colonysize = 400
 		}
@@ -492,6 +471,11 @@ establish_colony_mission = {
 		range = FROM
 		has_port = yes
 		has_discovered = FROM
+		OR = {
+			FROM = { NOT = { religion = catholic } }
+			is_religion_grant_colonial_claim = no
+			is_religion_grant_colonial_claim = FROM
+		}
 		OR = {
 			FROM = { is_colonial_nation = no }
 			any_neighbor_province = { owned_by = FROM }

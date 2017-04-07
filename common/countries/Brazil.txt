@@ -37,9 +37,7 @@ historical_units = {
 monarch_names = {
 	"Afonso #0" = 20
 	"Pedro #0" = 20
-	"Isabel #0" = -15
 	"João #0" = 15
-	"Maria #0" = -10
 	"Miguel #0" = 10
 	"Abílio #0" = 0
 	"António #0" = 0
@@ -74,6 +72,10 @@ monarch_names = {
 	"Prudente #0" = 0
 	"Venceslau #0" = 0
 	"Zeferino #0" = 0
+	
+	"Isabel #0" = -15
+	"Maria #0" = -10
+	"Silvia #0" = -1
 }
 
 leader_names = {

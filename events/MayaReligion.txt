@@ -91,7 +91,7 @@ country_event = {
 				add_adm_power = 50
 			}
 			29 = {
-				add_stability = 1
+				add_stability_or_adm_power = yes
 			}
 			1 = {
 				kill_ruler = yes
@@ -139,7 +139,7 @@ country_event = {
 	}
 	option = {
 		name = "maya_religion_events.3.b"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -321,18 +321,15 @@ country_event = {
 		name = "maya_religion_events.8.a"
 		add_years_of_income = -0.05
 		add_mil_power = 20
-		# TODO FOLLOW UP EVENT +prestige
 	}
 	option = {
 		name = "maya_religion_events.8.b"
 		add_years_of_income = -0.1
 		add_dip_power = 20
-		# TODO FOLLOW UP EVENT +prestige
 	}
 	option = {
 		name = "maya_religion_events.8.c"
 		add_adm_power = 10
-		# TODO FOLLOW UP EVENT +unrest
 	}
 }
 
@@ -371,7 +368,7 @@ country_event = {
 	
 	option = {
 		name = "maya_religion_events.9.a"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -478,7 +475,7 @@ country_event = {
 	
 	option = {
 		name = "maya_religion_events.12.a"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_owned_province = {
 			add_province_modifier = {
 				name = add_unrest_5_modifier
@@ -488,7 +485,7 @@ country_event = {
 	}
 	option = {
 		name = "maya_religion_events.12.b"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_owned_province = {
 			add_province_modifier = {
 				name = add_unrest_5_modifier
@@ -498,7 +495,7 @@ country_event = {
 	}
 	option = {
 		name = "maya_religion_events.12.c"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_owned_province = {
 			add_province_modifier = {
 				name = add_unrest_5_modifier
@@ -508,7 +505,7 @@ country_event = {
 	}
 	option = {
 		name = "maya_religion_events.12.e"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_owned_province = {
 			add_province_modifier = {
 				name = add_unrest_5_modifier
@@ -518,7 +515,7 @@ country_event = {
 	}
 	option = {
 		name = "maya_religion_events.12.f"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_owned_province = {
 			add_province_modifier = {
 				name = add_unrest_5_modifier
@@ -562,7 +559,7 @@ country_event = {
 			has_heir = yes
 		}
 		kill_heir = yes
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_adm_power = 50
 		add_dip_power = 50
 		add_mil_power = 50
@@ -570,7 +567,7 @@ country_event = {
 	option = {
 		name = "maya_religion_events.13.b"
 		kill_ruler = yes
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_adm_power = 50
 		add_dip_power = 50
 		add_mil_power = 50

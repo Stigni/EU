@@ -72,7 +72,7 @@ french_revolution = {
 				government = revolutionary_republic
 				is_revolution_target = yes
 				NOT = { num_of_rebel_controlled_provinces = 1 }
-				dynasty = "Bonaparte"
+				has_ruler_flag = bonaparte_flag
 			}
 		}
 	}

@@ -17,6 +17,7 @@
 37 = "Lifland"
 44 = "Hamborg"
 45 = "Lybek"
+94 = "Lützelburg"
 225 = "Gnesen"
 233 = "Kaarnwæll"
 236 = "Middlsex"

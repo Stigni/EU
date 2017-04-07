@@ -18,7 +18,8 @@ country_decisions = {
 				religion = vajrayana
 				religion = mahayana
 			}
-			NOT = { technology_group = nomad_group }
+			has_institution = feudalism
+			NOT = { government = steppe_horde }
 			OR = {
 				ai = no
 				AND = {
@@ -129,7 +130,8 @@ country_decisions = {
 				religion = vajrayana
 				religion = mahayana
 			}
-			NOT = { technology_group = nomad_group }
+			has_institution = feudalism
+			NOT = { government = steppe_horde }
 			OR = {
 				ai = no
 				AND = {
@@ -246,7 +248,8 @@ country_decisions = {
 				religion = vajrayana
 				religion = mahayana
 			}
-			NOT = { technology_group = nomad_group }
+			has_institution = feudalism
+			NOT = { government = steppe_horde }
 			OR = {
 				ai = no
 				AND = {
@@ -357,7 +360,8 @@ country_decisions = {
 				religion = vajrayana
 				religion = mahayana
 			}
-			NOT = { technology_group = nomad_group }
+			has_institution = feudalism
+			NOT = { government = steppe_horde }
 			OR = {
 				ai = no
 				AND = {
@@ -463,7 +467,8 @@ country_decisions = {
 				religion = vajrayana
 				religion = mahayana
 			}
-			NOT = { technology_group = nomad_group }
+			has_institution = feudalism
+			NOT = { government = steppe_horde }
 			OR = {
 				ai = no
 				AND = {

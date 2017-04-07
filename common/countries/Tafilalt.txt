@@ -71,6 +71,12 @@ monarch_names = {
 	
 	"Thamina #0" = -1
 	"Widad #0" = -1
+	"Aisha #0" = -1
+	"Zaidana #0" = -5
+	"Khnata #0" = -5
+	"Bilqis #0" = -1
+	"Halima #0" = -1
+	"Alwa #0" = -1
 }
 
 leader_names = {

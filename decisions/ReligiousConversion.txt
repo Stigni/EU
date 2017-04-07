@@ -1,4 +1,4 @@
-religion_decisions = {
+country_decisions = {
 
 	join_the_counter_reformation = {
 		major = yes

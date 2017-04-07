@@ -126,6 +126,7 @@ country_decisions = {
 		}
 		effect = {
 			remove_country_modifier = edict_de_nantes
+			set_country_flag = revoked_the_edict_of_nantes
 			add_prestige = 10
 		}
 		ai_will_do = {

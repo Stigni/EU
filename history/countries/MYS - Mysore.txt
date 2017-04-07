@@ -18,6 +18,9 @@ fixed_capital = 533 # Cannot move capital away from this province & no power cos
 		DIP = 1
 		MIL = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = intricate_web_weaver_personality
 }
 
 #Wodeyar dynasty before gaining control of Mysore:

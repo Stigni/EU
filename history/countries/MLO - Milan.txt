@@ -6,14 +6,25 @@ technology_group = western
 capital = 104 # Milano
 fixed_capital = 104 # Cannot move capital away from this province & no power cost to move to it
 
-1395.1.1 = {
+1395.5.11 = {
 	monarch = {
 		name = "Gian Galeazzo I"
 		dynasty = "Visconti"
-		birth_date = 1347.10.15
+		birth_date = 1351.10.16
 		adm = 2
 		dip = 2
 		mil = 2
+	}
+	queen = { #Marriage on 1380.11.15
+		country_of_origin = MLO
+		name = "Caterina"
+		dynasty = "Visconti"
+		birth_date = 1362.7.12
+		death_date = 1404.10.17
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
 	}
 }
 
@@ -22,7 +33,7 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 		name = "Giovanni Maria"
 		monarch_name = "Giovanni Maria I"
 		dynasty = "Visconti"
-		birth_date = 1388.9.7
+		birth_date = 1392.9.3
 		death_date = 1412.5.16
 		claim = 95
 		adm = 2
@@ -56,18 +67,59 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 	}
 }
 
+1408.7.1 = {
+	queen = {
+		country_of_origin = PAP #Rimini, Romagna province
+		name = "Antonia"
+		dynasty = "Malatesta" #di Cesena
+		birth_date = 1390.1.1
+		death_date = 1450.1.1
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
 1412.5.16 = {
 	monarch = {
 		name = "Filippo Maria I"
 		dynasty = "Visconti"
-		birth_date = 1392.9.23
+		birth_date = 1392.9.3
 		adm = 1
 		dip = 2
 		mil = 2
 	}
 }
+1412.7.24 = {
+	queen = {
+		country_of_origin = SAV #Ventimiglia, Albenga/Nizza province
+		name = "Beatrice"
+		dynasty = "Lascaris"
+		birth_date = 1372.1.1
+		death_date = 1418.9.13
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
 
 1418.1.1 = { leader = {	 name = "Carmagnola"     	type = general	rank = 1	fire = 4	shock = 5	manuever = 5	siege = 1	death_date = 1432.5.5 } }
+
+1427.12.2 = {
+	queen = {
+		country_of_origin = SAV 
+		name = "Maria"
+		dynasty = "di Savoia"
+		birth_date = 1411.1.1
+		death_date = 1469.2.22
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
 
 1447.8.13 = { government = ambrosian_republic } # The Ambrosian Republic
 

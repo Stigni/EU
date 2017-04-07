@@ -1011,13 +1011,13 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = plutocracy_ideas
-		NOT = { mercantilism = 0.95 }
+		NOT = { mercantilism = 95 }
 
 	}
 
 	option = {
 		name = ideagroups.215.a
-		add_mercantilism = 0.02
+		add_mercantilism = 2
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
@@ -1606,6 +1606,7 @@ country_event = {
 			limit = {
 				religion_group = muslim
 			}
+			add_piety = -0.15
 			random_owned_province = {
 				limit = {
 					has_owner_religion = yes
@@ -1657,7 +1658,7 @@ country_event = {
 	}
 }
 
-# A holy man has arrived
+# A holy person has arrived
 country_event = {
 	id = ideagroups.402
 	title = "EVTNAME823"
@@ -1676,7 +1677,12 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTB823A"
-		create_advisor = theologian
+		add_piety = 0.05
+		define_advisor = {
+			type = theologian
+			skill = 2
+			discount = yes
+		}
 	}
 }
 
@@ -1700,6 +1706,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6195"
+		add_piety = 0.05
 		add_war_exhaustion = -2
 		if = {
 			limit = {
@@ -1727,18 +1734,32 @@ country_event = {
 		has_idea_group = religious_ideas
 		is_at_war = no
 		has_border_with_religious_enemy = yes
+		NOT = { had_recent_war = 5 }
 	}	
 
 	mean_time_to_happen = {
 		days = 1
 	}
 
+	immediate = {
+		hidden_effect = {
+			random_neighbor_country = {
+				limit = {
+					NOT = { religion = ROOT }
+				}
+				save_event_target_as = infidel_neighbor
+			}
+		}
+	}
+
 	option = {
 		name = "EVTOPTA6196"
+		add_piety = -0.15
 		add_stability = -1
 	}
 	option = {
 		name = "EVTOPTB6196"
+		add_piety = -0.15
 		random_owned_province = {
 			limit = {
 				religion = ROOT 
@@ -1751,7 +1772,7 @@ country_event = {
 	}
 }
 
-# Church Mobilises Population
+# Church Mobilizes Population
 country_event = {
 	id = ideagroups.405
 	title = "EVTNAME6158"
@@ -1762,7 +1783,6 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = religious_ideas
-		NOT = { stability = 3 }
 	}
 	
 	mean_time_to_happen = {
@@ -1771,7 +1791,9 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6158"
-		add_stability = 1
+		add_piety = 0.05
+		add_stability_or_adm_power = yes
+
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
@@ -1819,6 +1841,7 @@ country_event = {
 				}
 			}
 		}
+		add_piety = -0.15
 		add_corruption = 0.5
 		add_country_modifier = {
 			name = "religious_deviants"
@@ -1841,6 +1864,7 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
+		add_piety = 0.15
 		add_stability = -1
 		if = {
 			limit = {
@@ -1877,6 +1901,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6160"
+		add_piety = 0.15
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
@@ -1918,6 +1943,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTB6161"
+		add_piety = 0.2
 		random_owned_province = {
 			limit = {
 				religion = ROOT
@@ -1935,13 +1961,12 @@ country_event = {
 	id = ideagroups.409
 	title = "EVTNAME6332"
 	desc = "EVTDESC6332"
-	picture = ELECTION_REPUBLICAN_eventPicture
+	picture = RELIGION_eventPicture
 	
 	is_triggered_only = yes
 	
 	trigger = {
 		has_idea_group = religious_ideas
-		NOT = { stability = 3 }
 	}
 
 	mean_time_to_happen = {
@@ -1950,7 +1975,8 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6332"
-		add_stability = 1
+		add_piety = 0.05
+		add_stability_or_adm_power = yes
 	}
 }	
 
@@ -1981,6 +2007,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTB6333"
+		add_piety = -0.2
 		add_stability = -1
 	}
 }
@@ -1997,7 +2024,6 @@ country_event = {
 	trigger = {
 		has_idea_group = religious_ideas
 		NOT = { religious_unity = 1.0 }
-		NOT = { stability = 3 }
 	}
 
 	mean_time_to_happen = {
@@ -2006,7 +2032,8 @@ country_event = {
 
 	option = {
 		name = ideagroups.411.a
-		add_stability = 1
+		add_piety = 0.15
+		add_stability_or_adm_power = yes
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
@@ -2041,6 +2068,7 @@ country_event = {
 	
 	option = {
 		name = ideagroups.412.a
+		add_piety = 0.05
 		add_war_exhaustion = -2
 		if = {
 			limit = {
@@ -2080,6 +2108,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.413.a
+		add_piety = 0.05
 		random_owned_province = {
 			limit = {
 				has_owner_religion = no
@@ -2118,6 +2147,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.414.a
+		add_piety = 0.1
 		random_owned_province = {
 			limit = {
 				has_owner_religion = no
@@ -2150,7 +2180,8 @@ country_event = {
 	
 	option = {
 		name = ideagroups.415.a
-		add_stability = 1
+		add_piety = 0.05
+		add_stability_or_adm_power = yes
 		if = {
 			limit = {
 				corruption = 0.01
@@ -2190,6 +2221,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.416.a
+		add_piety = 0.05
 		add_prestige = 10
 		if = {
 			limit = {
@@ -2225,6 +2257,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.417.a
+		add_piety = 0.05
 		add_country_modifier = {
 			name = "love_of_devoted"
 			duration = 3650
@@ -4024,7 +4057,7 @@ country_event = {
 
 	trigger = {
 		has_idea_group = trade_ideas
-		NOT = { mercantilism = 0.95 }
+		NOT = { mercantilism = 95 }
 	}
 	
 	mean_time_to_happen = {
@@ -4033,7 +4066,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.909.a
-		add_mercantilism = 0.01
+		add_mercantilism = 1
 	}
 }
 
@@ -4671,7 +4704,7 @@ country_event = {
 	
 	option = {
 		name = ideagroups.1018.a
-		add_yearly_sailors = 0.10
+		add_yearly_sailors = 1
 	}
 }
 
@@ -4745,7 +4778,7 @@ country_event = {
 	option = {
 		name = ideagroups.1021.a
 		add_dip_power = 50
-		add_yearly_sailors = 0.05
+		add_yearly_sailors = 0.75
 	}
 }
 
@@ -5051,7 +5084,6 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = economic_ideas	
-		NOT = { stability = 3 }
 	}	
 
 	mean_time_to_happen = {
@@ -5060,7 +5092,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTB811A"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -6667,7 +6699,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.1607.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -6842,7 +6874,7 @@ country_event = {
 			name = "patriotic_curriculum"
 			duration = 3650
 		}
-		add_yearly_sailors = 0.05
+		add_yearly_sailors = 0.75
 	}
 
 	option = {
@@ -6851,7 +6883,7 @@ country_event = {
 			name = "maintenance_curriculum"
 			duration = 3650
 		}
-		add_yearly_sailors = 0.05
+		add_yearly_sailors = 0.75
 	}
 }
 
@@ -7459,6 +7491,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.1900.a
+		add_piety = -0.05
 		add_country_modifier = {
 			name = "free_freethinkers"
 			duration = 3650
@@ -7486,6 +7519,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.1901.a
+		add_piety = -0.05
 		add_country_modifier = {
 			name = "fair_laws"
 			duration = 3650
@@ -7578,6 +7612,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.1904.a
+		add_piety = -0.05
 		random_owned_province = {
 			limit = { has_owner_accepted_culture = yes }
 			add_base_tax = 1
@@ -7647,6 +7682,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.1906.a
+		add_piety = 0.05
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
@@ -7946,6 +7982,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.1909.a
+		add_piety = -0.05
 		random_owned_province = {
 			limit = {
 				has_owner_religion = no
@@ -7981,6 +8018,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.1910.a
+		add_piety = -0.05
 		every_neighbor_country = {
 			limit = {
 				NOT = { has_idea_group = humanist_ideas }

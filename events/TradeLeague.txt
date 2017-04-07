@@ -55,6 +55,7 @@ country_event = {
 		is_trade_league_leader = yes
 		NOT = { has_country_modifier = merchants_angered }
 		any_active_trade_node = {
+			has_merchant = PREV
 			NOT = { 
 				has_trade_modifier = {
 					who = ROOT
@@ -75,6 +76,7 @@ country_event = {
 			50 = {
 				random_active_trade_node = {
 					limit = {
+						has_merchant = PREV
 						NOT = { 
 							has_trade_modifier = {
 								who = ROOT
@@ -122,7 +124,9 @@ country_event = {
 	option = {
 		name = "trade_league.3.b"
 		every_known_country = {
-			limit = { is_in_trade_league_with = ROOT }
+			limit = {
+				is_in_trade_league_with = ROOT
+			}
 			add_opinion = {
 				who = ROOT
 				modifier = shared_trade_secrets
@@ -293,6 +297,7 @@ country_event = {
 			any_rival_country = {
 				is_enemy = ROOT
 				any_active_trade_node = {
+					has_merchant = PREV
 					any_trade_node_member_country = { tag = ROOT }
 				}
 			}
@@ -308,6 +313,7 @@ country_event = {
 					is_in_trade_league_with = ROOT
 				}
 				any_active_trade_node = {
+					has_merchant = PREV
 					any_trade_node_member_country = { tag = ROOT }
 				}
 			}
@@ -328,11 +334,13 @@ country_event = {
 					is_in_trade_league_with = ROOT
 				}
 				any_active_trade_node = {
+					has_merchant = PREV
 					any_trade_node_member_country = { tag = ROOT }
 				}
 			}
 			random_active_trade_node = {
 				limit = {
+					has_merchant = PREV
 					any_trade_node_member_country = { tag = ROOT }
 					NOT = {
 						has_trade_modifier = {
@@ -372,6 +380,7 @@ country_event = {
 		any_known_country = {
 			NOT = { is_in_trade_league_with = ROOT }
 			any_active_trade_node = {
+				has_merchant = PREV
 				any_trade_node_member_country = { tag = ROOT }
 			}
 		}
@@ -383,6 +392,7 @@ country_event = {
 				limit = {
 					NOT = { is_in_trade_league_with = ROOT }
 					any_active_trade_node = {
+						has_merchant = PREV
 						any_trade_node_member_country = { tag = ROOT }
 					}
 				}
@@ -407,6 +417,7 @@ country_event = {
 		name = "trade_league.9.b"
 		random_trade_node = {
 			limit = {
+				has_merchant = PREV
 				any_trade_node_member_country = {
 					tag = event_target:envious_country
 				}

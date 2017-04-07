@@ -1,4 +1,4 @@
-government = despotic_monarchy
+government = ottoman_government
 primary_culture = turkish
 add_accepted_culture = bulgarian
 add_accepted_culture = greek
@@ -23,6 +23,7 @@ national_focus = MIL
 		manuever = 3
 		siege = 1
 		death_date = 1453.9.9
+		trait = inspirational_leader_general_personality
 	}
 }
 	
@@ -35,6 +36,9 @@ national_focus = MIL
 		dip = 5
 		mil = 6
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	#add_ruler_personality = lawgiver_personality
 }
 
 1446.1.1 = {
@@ -77,9 +81,9 @@ national_focus = MIL
 		mil = 6
 		leader = { name = "Mehmet II"            type = general	rank = 0	fire = 6	shock = 4	manuever = 5	siege = 2}
 	}
-}
-
-1451.2.3 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_heir_personality = lawgiver_personality
 	heir = {
 		name = "Bayezid"
 		monarch_name = "Bayezid II"
@@ -111,6 +115,8 @@ national_focus = MIL
 		mil = 5
 		leader = { name = "Bayezid II"            type = general	rank = 0	fire = 3	shock = 2	manuever = 2	siege = 0}
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
 }
 
 1481.5.4 = {
@@ -147,6 +153,8 @@ national_focus = MIL
 		mil = 5
 		leader = { name = "Selîm I Yavuz"         type = general	rank = 0	fire = 5	shock = 4	manuever = 5	siege = 1}
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
 }
 
 1512.5.2 = {
@@ -181,6 +189,9 @@ national_focus = MIL
 		mil = 6
 		leader = { name = "Süleyman I Kanuni"     type = general	rank = 0	fire = 5	shock = 3	manuever = 4	siege = 2}
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = just_personality
 }
 
 
@@ -228,6 +239,9 @@ national_focus = MIL
 		dip = 4
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = well_connected_personality
 }
 
 1566.9.8 = {
@@ -253,6 +267,8 @@ national_focus = MIL
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = fertile_personality
 }
 
 1574.12.16 = {
@@ -280,6 +296,8 @@ national_focus = MIL
 		dip = 0
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = craven_personality
 }
 
 1595.1.16 = {
@@ -305,6 +323,8 @@ national_focus = MIL
 		dip = 4
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = architectural_visionary_personality
 }
 
 1603.12.22 = {
@@ -330,6 +350,8 @@ national_focus = MIL
 		dip = 0
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = embezzler_personality
 }
 
 1618.2.25 = {
@@ -341,6 +363,8 @@ national_focus = MIL
 		dip = 3
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality
 }
 
 1618.2.25 = {
@@ -368,6 +392,8 @@ national_focus = MIL
 		dip = 0
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = embezzler_personality
 }
 
 1622.5.20 = {
@@ -394,6 +420,9 @@ national_focus = MIL
 		mil = 4
 		leader = { name = "Murat IV"              type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1}
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = incorruptible_personality
 }
 
 1623.9.11 = {
@@ -419,9 +448,11 @@ national_focus = MIL
 		dip = 0
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = embezzler_personality
 }
 
-1640.2.8 = { government = absolute_monarchy }
+#1640.2.8 = { government = absolute_monarchy }
 
 1642.1.2 = {
 	heir = {
@@ -446,6 +477,9 @@ national_focus = MIL
 		dip = 2
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = well_connected_personality
 }
 
 1648.8.19 = {

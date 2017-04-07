@@ -553,12 +553,15 @@ country_event = {
 	# 
 	option = {
 		name = "espionage_events.9.c"
-		event_target:spying_ambassador = {
-			random = {
-				chance = 50
-				add_spy_network_in = {
-					who = ROOT
-					value = 10
+		custom_tooltip = espionage_events.9.c.tt
+		hidden_effect = {
+			event_target:spying_ambassador = {
+				random = {
+					chance = 50
+					add_spy_network_in = {
+						who = ROOT
+						value = 10
+					}
 				}
 			}
 		}

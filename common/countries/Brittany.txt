@@ -38,10 +38,9 @@ historical_units = {
 monarch_names = {
 	"François #0" = 60
 	"Jean #4" = 40
-	"Artur #2" = 20
+	"Arthur #2" = 20
 	"Pierre #2" = 20
 	"Anne #0" = -10
-	"Claudine #0" = -10
 	"Henri #0" = 10
 	"Charles #1" = 5
 	"Gilles #0" = 5
@@ -69,56 +68,64 @@ monarch_names = {
 	"Similien #0" = 0
 	"Sklaer #0" = 0
 	"Sulio #0" = 0
-	"Uuinmael #0" = 0
+	"Ronan #0" = 0
 	"Venec #0" = 0
 	"Visant #0" = 0
 	"Vonig #0" = 0
 	"Vougay #0" = 0
-	"Winifrid #0" = 0
+	"Gwenvred #0" = -10
 	"Yann #0" = 0
+	
+	"Claudine #0" = -10
+	"Isabelle #0" = -1
+	"Catherine #0" = -1
+	"Marguerite #0" = -1
+	"Anne #0" = -10
+	"Gwenola #0" = -1
+	"Maëlle #0" = -1
 }
 
 leader_names = {
 	d'Ancenis d'Angennes d'Argentré
 	"de Bain" "de Beaudiez" "de Beaumetz" "de Boisguéhenneuc" "de Bouëtiez"
-	"de Chateaubriand" "de Châtillon" "de Coatgoureden" "de Coëtivy" "de Coëtmen" "Couasnon de la Barillière" "de Craon" 
+	"de Châteaubriand" "de Châtillon" "de Coatgoureden" "de Coëtivy" "de Coëtmen" "Couasnon de la Barillière" "de Craon" 
 	"de Dol"
 	d'Elbène
 	"de Francheville"
 	"de Goulaine" "de Gourcuff"
-	"de Halgoet" "de la Haye Saint Hilaire" 
+	"de Halgoët" "de La Haye-Saint-Hilaire" 
 	"Kalbean de Cardelan" "de Kerdrel" "de Kerellec" "de Kergoulay" "de Kerguenech" "de Kerguerron" "de Kersauzon" "de Kersulguen" 
 	"de Lamballe" "de Locmaria" 
-	"de Machecoule" Madec "de Malestroit" "de Mercoeur" "de Monfort"
+	"de Machecoul" Madec "de Malestroit" "de Mercœur" "de Monfort"
 	"de la Nouë-Bogat"
 	"de Penguem" "de Penhoadic" "de Penthièvre" "de Pontbriand" 
 	"de Rieux" "de Rodellec" "de Rohan" "de Roscoat" "de Rostrenen"
-	"de Saint Hoularn" "de Saint Meleuc" "de Sévigné"
-	"de Talhouët" "de Tasher de la Pagerie" "de Tintériac" "de Tonquedec" "de Tournemine" "de Trémereuc" "de la Trémoille" "de Trogoff" "de Tromelin"
+	"de Saint-Hoularn" "de Saint-Meleuc" "de Sévigné"
+	"de Talhouët" "de Tasher de la Pagerie" "de Tintériac" "de Tonquedec" "de Tournemine" "de Tréméreuc" "de la Trémoille" "de Trogoff" "de Tromelin"
 	"de Vitré"
 }
 
 ship_names = {
-	Achille Actif Active Admirable Aglaé
-	Aimable Alcide Algésiras Alose Amazone
-	Ambition Amphion Anémone Annibal Apollon
-	Argonaute Artésien Audacieux Auguste Avenant
-	Badine Barbue Beaumont Bécasse Belliqueux
-	Bergère Berryer "Bien Aimé" Bienfaisant Bon
-	Bretagne Bretonne Brillant Brutus Caché
-	Célèbre Centaure Chameau Comte Courageux
-	Défenseur Diadème Diamant Dictateur Diligent
-	Dragon Duc Elephant Elisabeth Emerillon
-	Entreprenant Eole Fleuron Formidable Fortuné
-	Foudroyant Fougueux Fourgon Furieux Glorieux
-	"Grande Hermine" Impétueux Indien Indomptable Jupiter
-	Léopard Loire Massiac Neptune Nestor
-	Orion Pégase "Petite Hermine" Portefaix Profond
-	Protée Rolland "Saint Guillaume" Sarcelle Sévère
-	Six-Corps Solide Solitaire Souverain Sphère
-	Sphinx Superbe Tardif Téméraire Terrible
-	Thésée Tonnant Triomphant Triton Union
-	Vaillant Vengeur Victoire Vigilant Volante
+	"l'Achille" "l'Actif" "l'Active" "l'Admirable" "l'Aglaé"
+	"l'Aimable" "l'Alcide" "l'Algésiras" "l'Alose" "l'Amazone"
+	"l'Ambition" "l'Amphion" "l'Anémone" "l'Annibal" "l'Apollon"
+	"l'Argonaute" "l'Artésien" "l'Audacieux" "l'Auguste" "l'Avenant"
+	"la Badine" "la Barbue" "le Beaumont" "la Bécasse" "le Belliqueux"
+	"la Bergère" "la Berryer" "le Bien-Aimé" "le Bienfaisant" "le Bon"
+	"la Bretagne" "la Bretonne" "le Brillant" "le Brutus" "le Caché"
+	"le Célèbre" "le Centaure" "le Chameau" "le Comte" "le Courageux"
+	"le Défenseur" "le Diadème" "le Diamant" "le Dictateur" "le Diligent"
+	"le Dragon" "le Duc" "l'Élephant" "l'Élisabeth" "l'Émérillon"
+	"l'Entreprenant" "l'Éole" "le Fleuron" "le Formidable" "le Fortuné"
+	"le Foudroyant" "le Fougueux" "le Fourgon" "le Furieux" "le Glorieux"
+	"la Grande Hermine" "l'Impétueux" "l'Indien" "l'Indomptable" "le Jupiter"
+	"le Léopard" "la Loire" "le Massiac" "le Neptune" "le Nestor"
+	"l'Orion" "le Pégase" "la Petite Hermine" "le Portefaix" "le Profond"
+	"la Protée" "le Rolland" "le Saint-Guillaume" "la Sarcelle" "le Sévère"
+	"le Six-Corps" "le Solide" "le Solitaire" "le Souverain" "la Sphère"
+	"le Sphinx" "le Superbe" "le Tardif" "le Téméraire" "le Terrible"
+	"le Thésée" "le Tonnant" "le Triomphant" "le Triton" "l'Union"
+	"le Vaillant" "le Vengeur" "la Victoire" "le Vigilant" "la Volante"
 }
 
 army_names = {

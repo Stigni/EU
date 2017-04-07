@@ -121,7 +121,14 @@ conquer_bombay = {
 	}
 	abort_effect = {
 		529 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -255,7 +262,14 @@ conquer_goa = {
 	}
 	abort_effect = {
 		2030 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -393,7 +407,14 @@ conquer_madras = {
 	}
 	abort_effect = {
 		539 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -533,7 +554,14 @@ conquer_pondicherry = {
 	}
 	abort_effect = {
 		540 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -667,7 +695,14 @@ conquer_diu = {
 	}
 	abort_effect = {
 		515 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -804,7 +839,14 @@ conquer_calcutta = {
 	}
 	abort_effect = {
 		561 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -943,7 +985,14 @@ conquer_kotte = {
 	}
 	abort_effect = {
 		572 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1077,7 +1126,14 @@ conquer_kochin = {
 	}
 	abort_effect = {
 		535 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1156,7 +1212,14 @@ make_base_on_spice_islands_jakarta = {
 	}
 	abort_effect = {
 		630 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	chance = {
@@ -1260,7 +1323,14 @@ make_base_on_spice_islands_pasai = {
 	}
 	abort_effect = {
 		2673 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	chance = {
@@ -1364,7 +1434,14 @@ make_base_on_spice_islands_makassar = {
 	}
 	abort_effect = {
 		641 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	chance = {
@@ -1518,7 +1595,14 @@ conquer_macau = {
 	}
 	abort_effect = {
 		668 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1645,7 +1729,14 @@ conquer_ningbo = {
 	}
 	abort_effect = {
 		2149 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1772,7 +1863,14 @@ conquer_canton = {
 	}
 	abort_effect = {
 		667 = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {

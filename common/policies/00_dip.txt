@@ -22,6 +22,47 @@ the_statute_of_monopolies = {
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0.6
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
+		
+		modifier = {
+			factor = 0.6
+			NOT = { production_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.5
+		}
 	}
 }
 
@@ -43,10 +84,11 @@ the_recruiting_act = {
 		full_idea_group = economic_ideas
 	}
 	
-	global_sailors_modifier = 0.1
+	global_sailors_modifier = 0.25
+	naval_maintenance_modifier = -0.1
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.6
 		modifier = {
 			factor = 0
 			NOT = { navy_size = 20 }
@@ -95,6 +137,26 @@ convoy_system = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
 	}
 }
 
@@ -121,6 +183,47 @@ the_dissolution_act = {
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0.6
+			NOT = { tax_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.5
+		}
+		
+		modifier = {
+			factor = 0.6
+			NOT = { average_autonomy_above_min = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			average_autonomy_above_min = 20
+		}
+		modifier = {
+			factor = 1.5
+			average_autonomy_above_min = 40
+		}			
+		modifier = {
+			factor = 1.5
+			average_autonomy_above_min = 60
+		}
+		modifier = {
+			factor = 1.5
+			average_autonomy_above_min = 80
+		}	
 	}
 }
 
@@ -146,11 +249,10 @@ the_wooden_wall = {
 		full_idea_group = maritime_ideas
 		full_idea_group = defensive_ideas
 	}
-	global_ship_recruit_speed = -0.05
-	recover_navy_morale_speed = 0.05
+	global_ship_cost = -0.10
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.6
 		modifier = {
 			factor = 0
 			NOT = { navy_size = 20 }
@@ -185,7 +287,27 @@ the_importation_act = {
 	trade_efficiency = 0.20
 	
 	ai_will_do = {
-		factor = 1
+		factor = 1.2
+		modifier = {
+			factor = 0
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
 	}
 }
 
@@ -211,6 +333,14 @@ colonial_expansions = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { num_of_colonists = 1 }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { num_of_colonies = 1 }
+		}
 	}
 }
 
@@ -239,7 +369,36 @@ beneficial_neglect = {
 
 
 	ai_will_do = {
-		factor = 1	
+		factor = 1
+		modifier = {
+			factor = 0.6
+			NOT = { num_of_colonists = 1 }
+		}
+		modifier = {
+			factor = 0.6
+			NOT = { num_of_colonies = 1 }
+		}
+		
+		modifier = {
+			factor = 0
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
 	}
 }
 
@@ -415,7 +574,24 @@ the_banking_system = {
 
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.5
+				
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
 	}
 }
 
@@ -466,10 +642,26 @@ trade_connection_policy = {
 	}
 
 	global_foreign_trade_power = 0.15
-	justify_trade_conflict_cost = -0.20
+	merchants = 1
 
 	ai_will_do = {
-		factor = 1
+		factor = 0.8		
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
 	}
 }
 
@@ -493,7 +685,7 @@ nobility_embassy_act = {
 	diplomatic_reputation = 1
 
 	ai_will_do = {
-		factor = 1
+		factor = 0.8
 	}
 }
 
@@ -516,7 +708,7 @@ nobles_in_navy_act = {
 	navy_tradition_decay = -0.01
 
 	ai_will_do = {
-		factor = 1
+		factor = 0.6
 		modifier = {
 			factor = 0
 			NOT = { navy_size = 20 }
@@ -546,7 +738,11 @@ naval_secrecy_act = {
 	naval_morale = 0.1
 
 	ai_will_do = {
-		factor = 1
+		factor = 0.8
+		modifier = {
+			factor = 0
+			NOT = { navy_size = 20 }
+		}	
 	}
 }
 
@@ -599,7 +795,27 @@ cloth_quality_edict = {
 	trade_efficiency = 0.2
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.2
+		modifier = {
+			factor = 0
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
 	}
 }
 
@@ -624,7 +840,7 @@ production_quota_act = {
  
 
 	ai_will_do = {
-		factor = 1
+		factor = 0.7
 	}
 }
 
@@ -653,6 +869,22 @@ encouragement_of_merchant_navy = {
 		modifier = {
 			factor = 0
 			NOT = { navy_size = 20 }
+		}		
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
 		}
 	}
 }
@@ -679,7 +911,23 @@ commercial_embassies = {
 	diplomatic_reputation = 1
 
 	ai_will_do = {
-		factor = 1
+		factor = 0.8		
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
 	}
 }
 
@@ -704,7 +952,27 @@ trade_kontor_network = {
 	global_foreign_trade_power = 0.30
 
 	ai_will_do = {
-		factor = 1
+		factor = 0.6
+		modifier = {
+			factor = 0
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
 	}
 }
 
@@ -731,7 +999,7 @@ policy_of_neutrality = {
 	
 
 	ai_will_do = {
-		factor = 1
+		factor = 0.8
 	}
 }
 
@@ -756,7 +1024,7 @@ professional_diplomatic_corps = {
 	envoy_travel_time = -0.25
 
 	ai_will_do = {
-		factor = 1
+		factor = 0.7
 	}
 
 }
@@ -784,6 +1052,14 @@ colonial_companies_act = {
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { num_of_colonists = 1 }
+		}
+		modifier = {
+			factor = 0.6
+			NOT = { num_of_colonies = 1 }
+		}
 	}
 }
 
@@ -886,6 +1162,10 @@ chaplains_of_the_fleet = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { navy_size = 20 }
+		}
 	}
 }
 
@@ -952,7 +1232,7 @@ multilingual_diplomats = {
 		full_idea_group = diplomatic_ideas
 	}	
 	
-	accepted_culture_threshold = -0.1
+	num_accepted_cultures = 1
 	relations_decay_of_me = 0.2
 	
 	ai_will_do = {
@@ -982,6 +1262,14 @@ native_assimilation_act = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { num_of_colonists = 1 }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { num_of_colonies = 1 }
+		}
 	}
 }
 
@@ -1007,6 +1295,26 @@ cultural_understanding = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { average_effective_unrest = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 4
+		}			
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 8
+		}
 	}
 }
 
@@ -1031,7 +1339,7 @@ the_foreign_aid_act = {
 	diplomatic_reputation = 1
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.9
 	}
 }
 
@@ -1055,7 +1363,7 @@ cultural_unity = {
 	culture_conversion_cost = -0.2
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.6
 	}
 }
 
@@ -1102,10 +1410,11 @@ overseas_embassies = {
 	}	
 	
 	improve_relation_modifier = 0.2
-	envoy_travel_time = -0.25
+	ae_impact = -0.1
+
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.6
 	}
 }
 
@@ -1131,6 +1440,14 @@ skilled_cartographers = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0.6
+			NOT = { num_of_colonists = 1 }
+		}
+		modifier = {
+			factor = 0.6
+			NOT = { num_of_colonies = 1 }
+		}
 	}
 }
 
@@ -1155,7 +1472,27 @@ fortified_trading_posts = {
 	trade_efficiency = 0.1
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.9
+		modifier = {
+			factor = 0.6
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
 	}
 }
 
@@ -1177,7 +1514,7 @@ the_integrated_administration_act = {
 	}	
 	
 	vassal_income = 0.25
-	stability_cost_modifier = -0.1
+	global_institution_spread = 0.1
 	
 	ai_will_do = {
 		factor = 1
@@ -1221,10 +1558,19 @@ the_cooperation_act = {
 		full_idea_group = influence_ideas
 	}	
 	
-	caravan_power = 0.2
+	caravan_power = 0.33
+	merchants = 1
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.7
+		modifier = {
+			factor = 0.6
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 0.6
+			NOT = { trade_income_percentage = 0.2 }
+		}
 	}
 }
 
@@ -1249,6 +1595,29 @@ full_sovereignty_act = {
 	global_unrest = -1
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.9
+		modifier = {
+			factor = 0
+			AND = {
+				NOT = { average_effective_unrest = 1 }
+				NOT = { num_of_vassals = 1 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 4
+		}			
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 8
+		}
 	}
 }

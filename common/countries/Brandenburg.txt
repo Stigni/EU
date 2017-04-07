@@ -82,6 +82,16 @@ monarch_names = {
 	"Miriam #0" = -1
 	"Paula #0" = -1
 	"Ulrike #0" = -1
+	"Sabina #0" = -1
+	"Anna Maria #0" = -1
+	"Sophie #0" = -1
+	"Hedwig #0" = -1
+	"Magdalena #0" = -1
+	"Margarete #0" = -1
+	"Agnes #0" = -1
+	"Barbara #0" = -1
+	"Amalie #0" = -1
+	"Frederike #0" = -1
 }
 
 leader_names = {	

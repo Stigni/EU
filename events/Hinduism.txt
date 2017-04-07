@@ -1373,7 +1373,7 @@ country_event = {
 
 	option = {
 		name = "hindu_events.39.a"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -1679,7 +1679,7 @@ country_event = {
 	# Praise the Sun! \[T]/
 	option = {
 		name = "hindu_events.47.a"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 

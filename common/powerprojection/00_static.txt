@@ -7,6 +7,41 @@
 # FIXED STATE, RECALCULATED EVERY UPDATE
 ############################################
 
+# NOTE! Extra great_power_x modifiers can be added here as long as x <= NUM_OF_GREAT_POWERS in NDefines::NDiplomacy
+# The one for which x = NUM_OF_GREAT_POWERS will also be applied to all Great Powers that have recently left the top.
+
+great_power_1 = {
+	power = 25
+}
+
+great_power_2 = {
+	power = 22
+}
+
+great_power_3 = {
+	power = 20
+}
+
+great_power_4 = {
+	power = 18
+}
+
+great_power_5 = {
+	power = 16
+}
+
+great_power_6 = {
+	power = 14
+}
+
+great_power_7 = {
+	power = 12
+}
+
+great_power_8 = {
+	power = 10
+}
+
 subsidies_to_enemy_of_rival = {
 	power = 50		# multiplied with percentage of income given.
 	max = 50
@@ -118,4 +153,3 @@ has_rival = {
 	power = 1
 	max = 15
 }
-

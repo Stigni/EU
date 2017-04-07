@@ -79,7 +79,14 @@ annex_minor_mission = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = FROM
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = FROM
+					}
+				}
+				remove_claim = FROM
+			}
 		}
 	}
 	effect = {
@@ -153,7 +160,16 @@ conquer_a_port = {
 		add_claim = FROM
 	}
 	abort_effect = {
-		remove_claim = FROM
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = FROM
+					}
+				}
+				remove_claim = FROM
+			}
+		}
 	}
 	effect = {
 		FROM = {
@@ -246,7 +262,16 @@ conquer_neighbour = {
 		add_claim = FROM
 	}
 	abort_effect = {
-		remove_claim = FROM
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = FROM
+					}
+				}
+				remove_claim = FROM
+			}
+		}
 	}
 	effect = {
 		FROM = {
@@ -463,7 +488,16 @@ protect_religious_minority = {
 		add_claim = FROM
 	}
 	abort_effect = {
-		remove_claim = FROM
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = FROM
+					}
+				}
+				remove_claim = FROM
+			}
+		}
 	}
 	effect = {
 		add_province_modifier = {
@@ -545,7 +579,14 @@ protect_cultural_minority = {
 		add_claim = FROM
 	}
 	abort_effect = {
-		remove_claim = FROM
+		if = {
+			limit = {
+				NOT = {
+					is_permanent_claim = FROM
+				}
+			}
+			remove_claim = FROM
+		}
 	}
 	effect = {
 		add_province_modifier = {

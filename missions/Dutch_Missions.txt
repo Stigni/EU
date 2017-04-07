@@ -70,7 +70,14 @@ defend_the_lowlands = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -126,7 +133,16 @@ reconquer_breda = {
 		add_claim = 95
 	}
 	abort_effect = {
-		remove_claim = 95
+		95 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		95 = { add_base_manpower = 1 }
@@ -189,17 +205,22 @@ dutch_colony_in_the_carribean = {
 		tag = NED
 		num_of_ports = 1
 		num_of_colonists = 1
-		carribeans_region = {
+		colonial_the_carribean = {
 			has_discovered = ROOT
 			is_empty = yes
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
 		}
 		NOT = {
-			carribeans_region = {
+			colonial_the_carribean = {
 				owned_by = ROOT
 			}
 		}
 		NOT = {
-			carribeans_region = {
+			colonial_the_carribean = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -213,13 +234,13 @@ dutch_colony_in_the_carribean = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { carribeans_region = { owned_by = ROOT } }	
-				NOT = { carribeans_region = { is_empty = yes } }
+				NOT = { colonial_the_carribean = { owned_by = ROOT } }	
+				NOT = { colonial_the_carribean = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		carribeans_region = {
+		colonial_the_carribean = {
 			owned_by = ROOT
 			colonysize = 400
 		}
@@ -761,7 +782,14 @@ dutch_control_of_taiwan = {
 	}
 	abort_effect = {
 		taiwan_area = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -849,7 +877,16 @@ take_malacca_from_portugal = {
 		add_claim = 596
 	}
 	abort_effect = {
-		remove_claim = 596
+		596 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		add_country_modifier = {
@@ -907,7 +944,14 @@ take_ceylon_from_portugal = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {

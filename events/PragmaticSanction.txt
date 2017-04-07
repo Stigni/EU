@@ -3,7 +3,6 @@
 ########################################
 
 namespace = pragmatic_sanction
-normal_or_historical_nations = yes
 
 # The Pragmatic Sanction
 country_event = {

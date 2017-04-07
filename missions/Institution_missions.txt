@@ -1,0 +1,688 @@
+build_wharf = {
+
+	type = our_provinces
+	
+	ai_mission = yes
+	
+	category = ADM
+	
+	allow = {
+		owner = {
+			monthly_income = 40
+			is_institution_enabled = manufactories
+			NOT = { has_institution = manufactories }
+			NOT = { wharf = 3 }
+			NOT = { has_ruler_flag = had_wharf_manufactory_mission }
+		}
+		can_build = wharf
+		num_free_building_slots = 1
+		NOT = { manufactories = 100 }
+		OR = {
+			trade_goods = naval_supplies
+			trade_goods = fish
+			trade_goods = salt
+		}
+		is_core = owner
+		is_state = yes
+	}
+	abort = {
+		OR = {
+			NOT = {	owned_by = FROM }
+			NOT = { num_free_building_slots = 1 }
+		}
+	}
+	success = {
+		has_building = wharf
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.25
+			has_building = workshop
+		}
+		modifier = {
+			factor = 1.5
+			has_building = counting_house
+		}
+		modifier = {
+			factor = 1.5
+			trade_goods = salt
+		}
+		modifier = {
+			factor = 0.75
+			trade_goods = fish
+		}
+		modifier = {
+			factor = 1.25
+			trade_goods = naval_supplies
+		}
+	}
+	effect = {
+		add_institution_embracement = {
+			which = "manufactories"
+			value = 50
+		}
+		add_base_production = 2
+		hidden_effect = {
+			owner = {
+				set_ruler_flag = had_wharf_manufactory_mission
+			}
+		}
+	}
+}
+
+build_weapons = {
+
+	type = our_provinces
+	
+	ai_mission = yes
+	
+	category = ADM
+	
+	allow = {
+		owner = {
+			monthly_income = 40
+			is_institution_enabled = manufactories
+			NOT = { has_institution = manufactories }
+			NOT = { weapons = 3 }
+			NOT = { has_ruler_flag = had_weapons_manufactory_mission }
+		}
+		can_build = weapons
+		num_free_building_slots = 1
+		NOT = { manufactories = 100 }
+		OR = {
+			trade_goods = copper
+			trade_goods = iron
+		}
+		is_core = owner
+		is_state = yes
+	}
+	abort = {
+		OR = {
+			NOT = {	owned_by = FROM }
+			NOT = { num_free_building_slots = 1 }
+		}
+	}
+	success = {
+		has_building = weapons
+	}
+	chance = {
+		factor = 1250
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.25
+			has_building = workshop
+		}
+		modifier = {
+			factor = 1.5
+			has_building = counting_house
+		}
+		modifier = {
+			factor = 1.5
+			trade_goods = iron
+		}
+		modifier = {
+			factor = 5.0
+			has_province_modifier = stora_kopparberget_modifier
+		}
+	}
+	effect = {
+		add_institution_embracement = {
+			which = "manufactories"
+			value = 50
+		}
+		add_base_production = 2
+		hidden_effect = {
+			owner = {
+				set_ruler_flag = had_weapons_manufactory_mission
+			}
+		}
+	}
+}
+
+build_textile = {
+
+	type = our_provinces
+	
+	ai_mission = yes
+	
+	category = ADM
+	
+	allow = {
+		owner = {
+			monthly_income = 40
+			is_institution_enabled = manufactories
+			NOT = { has_institution = manufactories }
+			NOT = { textile = 3 }
+			NOT = { has_ruler_flag = had_textile_manufactory_mission }
+		}
+		can_build = textile
+		num_free_building_slots = 1
+		NOT = { manufactories = 100 }
+		OR = {
+			trade_goods = wool
+			trade_goods = cloth
+			trade_goods = silk
+			trade_goods = dyes
+		}
+		is_core = owner
+		is_state = yes
+	}
+	abort = {
+		OR = {
+			NOT = {	owned_by = FROM }
+			NOT = { num_free_building_slots = 1 }
+		}
+	}
+	success = {
+		has_building = textile
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.25
+			has_building = workshop
+		}
+		modifier = {
+			factor = 1.5
+			has_building = counting_house
+		}
+		modifier = {
+			factor = 0.5
+			trade_goods = wool
+		}
+		modifier = {
+			factor = 1.5
+			trade_goods = dyes
+		}
+		modifier = {
+			factor = 2.0
+			trade_goods = silk
+		}
+	}
+	effect = {
+		add_institution_embracement = {
+			which = "manufactories"
+			value = 50
+		}
+		add_base_production = 2
+		hidden_effect = {
+			owner = {
+				set_ruler_flag = had_textile_manufactory_mission
+			}
+		}
+	}
+}
+
+build_plantations = {
+
+	type = our_provinces
+	
+	ai_mission = yes
+	
+	category = ADM
+	
+	allow = {
+		owner = {
+			monthly_income = 40
+			is_institution_enabled = manufactories
+			NOT = { has_institution = manufactories }
+			NOT = { plantations = 3 }
+			NOT = { has_ruler_flag = had_plantations_manufactory_mission }
+		}
+		can_build = plantations
+		num_free_building_slots = 1
+		NOT = { manufactories = 100 }
+		OR = {
+			trade_goods = coffee
+			trade_goods = cotton
+			trade_goods = sugar
+			trade_goods = tobacco
+			trade_goods = cocoa
+			trade_goods = grain
+		}
+		is_core = owner
+		is_state = yes
+	}
+	abort = {
+		OR = {
+			NOT = {	owned_by = FROM }
+			NOT = { num_free_building_slots = 1 }
+		}
+	}
+	success = {
+		has_building = plantations
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.25
+			has_building = workshop
+		}
+		modifier = {
+			factor = 1.5
+			has_building = counting_house
+		}
+		modifier = {
+			factor = 0.5
+			trade_goods = grain
+		}
+		modifier = {
+			factor = 1.25
+			trade_goods = cotton
+		}
+		modifier = {
+			factor = 1.5
+			trade_goods = tobacco
+		}
+		modifier = {
+			factor = 1.5
+			trade_goods = coffee
+		}
+		modifier = {
+			factor = 2.0
+			trade_goods = sugar
+		}
+		modifier = {
+			factor = 2.5
+			trade_goods = cocoa
+		}
+	}
+	effect = {
+		add_institution_embracement = {
+			which = "manufactories"
+			value = 50
+		}
+		add_base_production = 2
+		hidden_effect = {
+			owner = {
+				set_ruler_flag = had_plantations_manufactory_mission
+			}
+		}
+	}
+}
+
+build_tradecompany = {
+
+	type = our_provinces
+	
+	ai_mission = yes
+	
+	category = ADM
+	
+	allow = {
+		owner = {
+			monthly_income = 40
+			is_institution_enabled = manufactories
+			NOT = { has_institution = manufactories }
+			NOT = { tradecompany = 3 }
+			NOT = { has_ruler_flag = had_trade_company_manufactory_mission }
+		}
+		can_build = tradecompany
+		num_free_building_slots = 1
+		NOT = { manufactories = 100 }
+		OR = {
+			trade_goods = ivory
+			trade_goods = tea
+			trade_goods = chinaware
+			trade_goods = slaves
+			trade_goods = spices
+			trade_goods = fur
+			trade_goods = wine
+			trade_goods = tropical_wood
+		}
+		is_core = owner
+		is_state = yes
+	}
+	abort = {
+		OR = {
+			NOT = {	owned_by = FROM }
+			NOT = { num_free_building_slots = 1 }
+		}
+	}
+	success = {
+		has_building = tradecompany
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.25
+			has_building = workshop
+		}
+		modifier = {
+			factor = 1.5
+			has_building = counting_house
+		}
+		modifier = {
+			factor = 0.5
+			trade_goods = slaves
+		}
+		modifier = {
+			factor = 0.9
+			trade_goods = tea
+		}
+		modifier = {
+			factor = 1.25
+			trade_goods = chinaware
+		}
+		modifier = {
+			factor = 1.5
+			trade_goods = spices
+		}
+		modifier = {
+			factor = 5.0
+			has_province_modifier = spice_islands_modifier
+		}
+		modifier = {
+			factor = 2.0
+			trade_goods = ivory
+		}
+	}
+	effect = {
+		add_institution_embracement = {
+			which = "manufactories"
+			value = 50
+		}
+		add_base_production = 2
+		hidden_effect = {
+			owner = {
+				set_ruler_flag = had_trade_company_manufactory_mission
+			}
+		}
+	}
+}
+
+build_trade_depot = {
+
+	type = our_provinces
+	
+	ai_mission = yes
+	
+	category = ADM
+	
+	allow = {
+		owner = {
+			num_of_cities = 15
+			is_institution_enabled = global_trade
+			NOT = { has_institution = global_trade }
+			NOT = { trade_depot = 3 }
+			NOT = { has_ruler_flag = had_trade_depot_mission }
+		}
+		has_building = marketplace
+		can_build = trade_depot
+		NOT = { has_province_modifier = growth_of_global_trade }
+		num_free_building_slots = 1
+		NOT = { global_trade = 100 }
+		is_core = owner
+		is_state = yes
+	}
+	abort = {
+		OR = {
+			NOT = {	owned_by = FROM }
+			NOT = { num_free_building_slots = 1 }
+		}
+	}
+	success = {
+		has_building = trade_depot
+	}
+	chance = {
+		factor = 1500
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 5.0
+			has_province_modifier = center_of_trade_modifier
+		}
+		modifier = {
+			factor = 5.0
+			has_province_modifier = inland_center_of_trade_modifier
+		}
+		modifier = {
+			factor = 2.0
+			province_trade_power = 15
+		}
+		modifier = {
+			factor = 1.5
+			province_trade_power = 10
+		}
+	}
+	effect = {
+		add_institution_embracement = {
+			which = "global_trade"
+			value = 50
+		}
+		add_province_modifier = {
+			name = "growth_of_global_trade"
+			duration = 3650
+		}
+		hidden_effect = {
+			owner = {
+				set_ruler_flag = had_trade_depot_mission
+			}
+		}
+	}
+}
+	
+build_marketplace = {
+
+	type = our_provinces
+	
+	ai_mission = yes
+	
+	category = ADM
+	
+	allow = {
+		owner = {
+			num_of_cities = 8
+			is_institution_enabled = global_trade
+			NOT = { has_institution = global_trade }
+			NOT = { marketplace = 5 }
+			NOT = { has_ruler_flag = had_marketplace_mission }
+		}
+		can_build = marketplace
+		num_free_building_slots = 1
+		NOT = { has_province_modifier = growth_of_global_trade }
+		NOT = { global_trade = 100 }
+		is_core = owner
+		is_state = yes
+	}
+	abort = {
+		OR = {
+			NOT = {	owned_by = FROM }
+			NOT = { num_free_building_slots = 1 }
+		}
+	}
+	success = {
+		has_building = marketplace
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 5.0
+			has_province_modifier = center_of_trade_modifier
+		}
+		modifier = {
+			factor = 5.0
+			has_province_modifier = inland_center_of_trade_modifier
+		}
+		modifier = {
+			factor = 2.0
+			province_trade_power = 15
+		}
+		modifier = {
+			factor = 1.5
+			province_trade_power = 10
+		}
+	}
+	effect = {
+		add_institution_embracement = {
+			which = "global_trade"
+			value = 50
+		}
+		add_province_modifier = {
+			name = "growth_of_global_trade"
+			duration = 3650
+		}
+		hidden_effect = {
+			owner = {
+				set_ruler_flag = had_marketplace_mission
+			}
+		}
+	}
+}
+
+build_stock_exchange = {
+
+	type = our_provinces
+	
+	ai_mission = yes
+	
+	category = ADM
+	
+	allow = {
+		owner = {
+			is_institution_enabled = global_trade
+			NOT = { has_institution = global_trade }
+			NOT = { stock_exchange = 1 }
+			NOT = { has_ruler_flag = had_stock_exchange_mission }
+		}
+		has_building = trade_depot
+		can_build = stock_exchange
+		num_free_building_slots = 1
+		NOT = { has_province_modifier = growth_of_global_trade }
+		NOT = { global_trade = 100 }
+		is_core = owner
+		is_state = yes
+	}
+	abort = {
+		OR = {
+			NOT = {	owned_by = FROM }
+			NOT = { num_free_building_slots = 1 }
+		}
+	}
+	success = {
+		has_building = stock_exchange
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 5.0
+			has_province_modifier = center_of_trade_modifier
+		}
+		modifier = {
+			factor = 5.0
+			has_province_modifier = inland_center_of_trade_modifier
+		}
+		modifier = {
+			factor = 2.0
+			province_trade_power = 15
+		}
+		modifier = {
+			factor = 1.5
+			province_trade_power = 10
+		}
+	}
+	effect = {
+		add_institution_embracement = {
+			which = "global_trade"
+			value = 50
+		}
+		add_province_modifier = {
+			name = "growth_of_global_trade"
+			duration = 3650
+		}
+		hidden_effect = {
+			owner = {
+				set_ruler_flag = had_stock_exchange_mission
+			}
+		}
+	}
+}
+
+build_university = {
+
+	type = our_provinces
+	
+	ai_mission = yes
+	
+	category = ADM
+	
+	allow = {
+		owner = {
+			is_institution_enabled = enlightenment
+			NOT = { has_institution = enlightenment }
+			NOT = { university = 1 }
+			NOT = { has_country_flag = had_university_mission }
+		}
+		can_build = university
+		NOT = { enlightenment = 100 }
+		is_core = owner
+		is_state = yes
+	}
+	abort = {
+		NOT = {	owned_by = FROM }
+	}
+	success = {
+		has_building = university
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_terrain = farmlands
+		}
+		modifier = {
+			factor = 1.25
+			has_terrain = grasslands
+		}
+		modifier = {
+			factor = 1.25
+			has_terrain = drylands
+		}
+	}
+	effect = {
+		add_institution_embracement = {
+			which = "enlightenment"
+			value = 50
+		}
+		add_base_tax = 2
+		hidden_effect = {
+			owner = {
+				set_country_flag = had_university_mission
+			}
+		}
+	}
+}

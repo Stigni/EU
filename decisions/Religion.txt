@@ -1,4 +1,4 @@
-religion_decisions = {
+country_decisions = {
 
 	# Catholic ones, that affects reform desire.
 	institute_the_societas_jesu = {
@@ -400,7 +400,7 @@ religion_decisions = {
 			add_piety = 0.10
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 			modifier = { 
 				NOT = { piety = -0.1 }
 				factor = 0
@@ -1313,7 +1313,7 @@ religion_decisions = {
 					NOT = {
 						has_dlc = "El Dorado"
 					}
-					technology_group = western
+					has_institution = renaissance
 				}
 			}
 			stability = 2
@@ -1353,7 +1353,7 @@ religion_decisions = {
 					NOT = {
 						has_dlc = "El Dorado"
 					}
-					technology_group = western
+					has_institution = renaissance
 				}
 			}
 			stability = 2
@@ -1393,7 +1393,7 @@ religion_decisions = {
 					NOT = {
 						has_dlc = "El Dorado"
 					}
-					technology_group = western
+					has_institution = renaissance
 				}
 			}
 			stability = 2
@@ -1411,6 +1411,163 @@ religion_decisions = {
 			modifier = {
 				has_idea_group = humanist_ideas
 				factor = 0
+			}
+		}
+	}
+	
+	pagan_conversion_to_christianity = {
+		potential = {
+			religion_group = pagan
+			NOT = { religion = tengri_pagan_reformed }
+			any_owned_province = {
+				religion_group = christian
+			}
+		}
+		allow = {
+			NOT = { government = tribal }
+			stability = 1
+		}
+		effect = {
+			custom_tooltip = pagan_conversion_to_christianity_tooltip
+			hidden_effect = {
+				country_event = { id = religious_events.18 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { religion = animism }
+			}
+		}
+	}
+	pagan_conversion_to_islam = {
+		potential = {
+			religion_group = pagan
+			NOT = { religion = tengri_pagan_reformed }
+			any_owned_province = {
+				religion_group = muslim
+			}
+		}
+		allow = {
+			NOT = { government = tribal }
+			stability = 1
+		}
+		effect = {
+			custom_tooltip = pagan_conversion_to_islam_tooltip
+			hidden_effect = {
+				country_event = { id = religious_events.19 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { religion = animism }
+			}
+		}
+	}
+	pagan_conversion_to_buddhism = {
+		potential = {
+			religion_group = pagan
+			NOT = { religion = tengri_pagan_reformed }
+			any_owned_province = {
+				religion_group = eastern
+			}
+		}
+		allow = {
+			NOT = { government = tribal }
+			stability = 1
+		}
+		effect = {
+			custom_tooltip = pagan_conversion_to_buddhism_tooltip
+			hidden_effect = {
+				country_event = { id = religious_events.20 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { religion = animism }
+			}
+		}
+	}
+	pagan_conversion_to_dharmic = {
+		potential = {
+			religion_group = pagan
+			NOT = { religion = tengri_pagan_reformed }
+			any_owned_province = {
+				religion_group = dharmic
+			}
+		}
+		allow = {
+			NOT = { government = tribal }
+			stability = 1
+		}
+		effect = {
+			custom_tooltip = pagan_conversion_to_dharmic_tooltip
+			hidden_effect = {
+				country_event = { id = religious_events.21 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { religion = animism }
+			}
+		}
+	}
+	pagan_conversion_to_zoroastrian = {
+		potential = {
+			religion_group = pagan
+			NOT = { religion = tengri_pagan_reformed }
+			any_owned_province = {
+				religion_group = zoroastrian_group
+			}
+		}
+		allow = {
+			NOT = { government = tribal }
+			stability = 1
+		}
+		effect = {
+			custom_tooltip = pagan_conversion_to_zoroastrian_tooltip
+			hidden_effect = {
+				country_event = { id = religious_events.22 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { religion = animism }
+			}
+		}
+	}
+	pagan_conversion_to_judaism = {
+		potential = {
+			religion_group = pagan
+			NOT = { religion = tengri_pagan_reformed }
+			any_owned_province = {
+				religion_group = zoroastrian_group
+			}
+		}
+		allow = {
+			NOT = { government = tribal }
+			stability = 1
+		}
+		effect = {
+			custom_tooltip = pagan_conversion_to_judaism_tooltip
+			hidden_effect = {
+				country_event = { id = religious_events.23 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { religion = animism }
 			}
 		}
 	}

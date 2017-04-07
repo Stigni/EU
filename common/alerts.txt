@@ -157,9 +157,6 @@ alerts = {
 		category = HIGH
 	}
 
-	alert_can_westernize = {
-		category = MEDIUM
-	}
 	
 	alert_can_migrate = {
 		category = LOW
@@ -228,6 +225,10 @@ alerts = {
 		category = LOW
 	}
 	
+	alert_pick_blessing = {
+		category = LOW
+	}
+	
 	alert_explorer_ready = {
 		category = LOW
 	}
@@ -283,7 +284,28 @@ alerts = {
 	alert_condottieri_can_be_cancelled = {
 		category = LOW
 	}
+	
 	alert_condottieri_low_participation = {
+		category = MEDIUM
+	}
+
+	alert_leaving_great_power = {
+		category = MEDIUM
+	}
+	
+	alert_condottieri_ai_hire = {
+		category = LOW
+	}
+
+	alert_no_fetishist_cult = {
+		category = MEDIUM
+	}
+	
+	alert_can_embrace = {
+		category = MEDIUM
+	}
+	
+	alert_can_intervene_in_war = {
 		category = MEDIUM
 	}
 }

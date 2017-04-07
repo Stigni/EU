@@ -2,7 +2,7 @@
 
 culture = khoisan
 religion = shamanism #Fetishism
-capital = "Angra Pequena"
+capital = "Walvis Bay"
 trade_goods = unknown
 hre = no
 base_tax = 1 

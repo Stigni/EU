@@ -62,7 +62,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_nov.EVTOPTA1"
-		add_mercantilism = 0.05
+		add_mercantilism = 5
 		random_owned_province = {
 			limit = {
 				has_province_flag = lit_noble_faction_flag

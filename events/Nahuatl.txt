@@ -290,7 +290,7 @@ country_event = {
 	option = {
 		name = nahuatl_events.8.a #Great!
 		add_doom = -5
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -383,7 +383,9 @@ country_event = {
 	
 	option = {
 		name = nahuatl_events.10.a #He must die.
-		kill_leader = random
+		kill_leader = {
+			type = random
+		}
 		add_mil_power = -25
 	}
 	option = {
@@ -911,7 +913,7 @@ country_event = {
 			}
 			add_doom = -10
 			add_prestige = 10
-			add_stability = 1
+			add_stability_or_adm_power = yes
 		}
 		every_subject_country = {
 			add_opinion = {
@@ -956,7 +958,7 @@ country_event = {
 				tag = AZT #Popularized by the Aztecs
 			}
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 

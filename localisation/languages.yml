@@ -7,7 +7,7 @@
  l_russian:0 "Russian"
  l_polish:0 "Polish"
 l_german:
- PDX_DUMMY_LOCALIZATION:0 ""
+ PDX_DUMMY_LOCALIZATION:0 " "
  l_english:0 "Englisch"
  l_german:0 "Deutsch"
  l_french:0 "Französisch"
@@ -15,7 +15,7 @@ l_german:
  l_russian:0 "Russisch"
  l_polish:0 "Polnisch"
 l_french:
- PDX_DUMMY_LOCALIZATION:0 ""
+ PDX_DUMMY_LOCALIZATION:0 " "
  l_english:0 "Anglais"
  l_german:0 "Allemand"
  l_french:0 "Français"
@@ -23,7 +23,7 @@ l_french:
  l_russian:0 "Russe"
  l_polish:0 "Polonais"
 l_spanish:
- PDX_DUMMY_LOCALIZATION:0 ""
+ PDX_DUMMY_LOCALIZATION:0 " "
  l_english:0 "Inglés"
  l_german:0 "Alemán"
  l_french:0 "Francés"

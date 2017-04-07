@@ -45,6 +45,7 @@ monarch_names = {
 	
 	"Werdja #0" = -1
 	"Tabassum #0" = -1
+	"Aisha  #0" = -10
 }
 
 leader_names = {

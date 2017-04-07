@@ -1,4 +1,4 @@
-government = despotic_monarchy
+government = tribal_kingdom
 primary_culture = tibetan
 religion = vajrayana
 technology_group = chinese

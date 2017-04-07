@@ -18,11 +18,7 @@ country_event = {
 	picture = BUDDHISM_BAD_eventPicture
 	
 	trigger = {
-		OR = {
-			religion = buddhism #Theravada 
-			religion = vajrayana
-			religion = mahayana
-		}
+		uses_karma = yes
 		has_dlc = "Common Sense"
 		has_regency = no
 		OR = {
@@ -331,11 +327,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		OR = {
-			religion = buddhism ##Theravada 
-			religion = vajrayana
-			religion = mahayana
-		}
+		uses_karma = yes
 		government = monarchy
 		has_regency = no
 		num_of_cities = 3
@@ -534,11 +526,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		OR = {
-			religion = buddhism
-			religion = vajrayana
-			religion = mahayana
-		}
+		uses_karma = yes
 		is_at_war = yes
 		government = monarchy
 		has_regency = no
@@ -907,11 +895,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		OR = {
-			religion = buddhism #Theravada
-			religion = mahayana
-			religion = vajrayana
-		}
+		uses_karma = yes
 		NOT = { has_country_modifier = grain_for_the_poor }
 		NOT = { has_country_modifier = grain_reserves }
 		has_regency = no
@@ -973,7 +957,8 @@ province_event = {
 		is_capital = no
 		local_autonomy = 50
 		is_colony = no
-		is_overseas = no
+		is_state = yes
+		has_estate = no
 		owner = {
 			OR = {
 				religion = buddhism #Theravada
@@ -1029,11 +1014,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		OR = {
-			religion = buddhism #Theravada
-			religion = mahayana
-			religion = vajrayana
-		}
+		uses_karma = yes
 		has_regency = no
 		is_monarch_leader = yes
 		NOT = { has_ruler_flag = pariccaga_flag }
@@ -1111,11 +1092,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		OR = {
-			religion = buddhism #Theravada
-			religion = mahayana
-			religion = vajrayana
-		}
+		uses_karma = yes
 		has_regency = no
 		NOT = { has_ruler_flag = akkodha }
 	}
@@ -1178,11 +1155,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		OR = {
-			religion = buddhism #Theravada
-			religion = mahayana
-			religion = vajrayana
-		}
+		uses_karma = yes
 		has_ruler_flag = helped_rival
 		had_ruler_flag = { flag = helped_rival days = 730 }
 	}
@@ -1213,11 +1186,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		OR = {
-			religion = buddhism #Theravada
-			religion = mahayana
-			religion = vajrayana
-		}
+		uses_karma = yes
 		has_ruler_flag = helped_rival
 		had_ruler_flag = { flag = helped_rival days = 730 }
 	}
@@ -1247,11 +1216,7 @@ province_event = {
 		NOT = { has_province_modifier = improvement_program }
 		NOT = { has_province_modifier = hampered_growth }
 		owner = {
-			OR = {
-				religion = buddhism #Theravada
-				religion = mahayana
-				religion = vajrayana
-			}
+			uses_karma = yes
 			has_regency = no
 		}
 	}
@@ -1389,8 +1354,8 @@ country_event = {
 			}
 		}
 		add_karma = -15
-		add_years_of_income = 0.1
-		random_owned_province = {
+		add_years_of_income = 0.25
+		random_owned_area = {
 			limit = {
 				is_capital = no
 			}
@@ -1418,6 +1383,8 @@ province_event = {
 			religion = vajrayana
 		}
 		is_capital = no
+		is_state = yes
+		has_estate = no
 		NOT = {
 			has_province_modifier = powerful_hostile_monastery
 		}
@@ -1771,11 +1738,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		OR = {
-			religion = buddhism #Theravada
-			religion = mahayana
-			religion = vajrayana
-		}
+		uses_karma = yes
 		has_regency = no
 		any_neighbor_country = {
 			NOT = {
@@ -1842,11 +1805,7 @@ province_event = {
 		NOT = { has_province_modifier = buddhist_nepotism }
 		owner = {
 			has_regency = no
-			OR = {
-				religion = buddhism #Theravada
-				religion = mahayana
-				religion = vajrayana
-			}
+			uses_karma = yes
 		}
 	}
 
@@ -2370,7 +2329,7 @@ country_event = {
 	
 	option = {
 		name = buddhism_events.37.a #Rejoice!
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 

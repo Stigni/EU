@@ -39,6 +39,21 @@ monarch_names = {
 	"Fath Muhammad #0" = 20
 	
 	"Arij #0" = -1
+	"Suhita #0" = -5
+	"Cinta #0" = -1
+	"Wangi #0" = -1
+	"Prajnaparamitha #0" = -1
+	"Tribhuawana #0" = -5
+	"Gayatri #0" = -10
+	"Narendra Duhita #0" = -1
+	"Indreswari #0" = -1
+	"Kawunganten #0" = -1
+	"Tepasari #0" = -1
+	"Semboja #0" = -1
+	"Tingkir #0" = -1
+	"Pakungwati #0" = -1
+	"Endang Geulis #0" = -1
+	"Adiningkusuma #0" = -1
 }
 
 leader_names = {

@@ -111,9 +111,6 @@ capital = 2054	# Ahmadabad
 		DIP = 2
 		MIL = 3
 	}
-}
-
-1442.1.1 = {
 	heir = {
 		name = "Ahmad"
 		monarch_name = "Ahmad Shah II"
@@ -125,6 +122,13 @@ capital = 2054	# Ahmadabad
 		DIP = 2
 		MIL = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = tolerant_personality #Nicknamed "Karim", intermarried extensively with Rajputs, employed Hindus in high positions 
+	#Bad sides of Muhammad Shah II (according to chroniclers):
+	#Overly generous, known as "Zarbakhsh" / "Giver of Gold"
+	#Also known for not being able to resist urges of the flesh especially (possibly just badmouthing Rajput intermarriage policy)
+	add_heir_personality = bold_fighter_personality
+	#add_heir_personality = cruel_personality #Brave but vindictive, violent and cruel according to chroniclers.
 }
 
 1451.2.9 = {
@@ -135,9 +139,6 @@ capital = 2054	# Ahmadabad
 		DIP = 2
 		MIL = 1
 	}
-}
-
-1451.2.9 = {
 	heir = {
 		name = "Mahmud"
 		monarch_name = "Mahmud Shah I"
@@ -149,6 +150,10 @@ capital = 2054	# Ahmadabad
 		DIP = 5
 		MIL = 5
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+	#add_ruler_personality = cruel_personality
+	add_heir_personality = bold_fighter_personality
 }
 
 1459.5.28 = {

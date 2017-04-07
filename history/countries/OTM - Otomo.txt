@@ -13,6 +13,8 @@ capital = 1014	# Bungo
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
 }
 
 1321.1.1 = {
@@ -37,6 +39,8 @@ capital = 1014	# Bungo
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = kind_hearted_personality
 }
 
 1362.11.19 = {
@@ -47,16 +51,20 @@ capital = 1014	# Bungo
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = craven_personality
 }
 
 1368.4.8 = {
 	monarch = {
-		name = "Chikayo" # ? - 1418.4.1 
+		name = "Chikayo" # ? - 1418.4.1
 		dynasty = "Otomo"
 		adm = 2
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = intricate_web_weaver_personality
 }
 
 1386.1.1 = {
@@ -73,7 +81,7 @@ capital = 1014	# Bungo
 	}
 }
 	
-1401.1.1 = { 
+1401.1.1 = {
 	monarch = {
 		name = "Chikaaki"
 		dynasty = "Otomo"
@@ -83,6 +91,8 @@ capital = 1014	# Bungo
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
 }
 	
 1401.1.1 = {
@@ -99,7 +109,7 @@ capital = 1014	# Bungo
 	}
 }
 	
-1423.1.1 = { 
+1423.1.1 = {
 	monarch = {
 		name = "Mochinao"
 		dynasty = "Otomo"
@@ -109,6 +119,8 @@ capital = 1014	# Bungo
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = greedy_personality
 }
 	
 1432.11.27 = {
@@ -125,7 +137,7 @@ capital = 1014	# Bungo
 	}
 }
 	
-1445.1.1 = { 
+1445.1.1 = {
 	monarch = {
 		name = "Chikatsuna"
 		dynasty = "Otomo"
@@ -135,6 +147,8 @@ capital = 1014	# Bungo
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = charismatic_negotiator_personality
 }
 	
 1450.1.1 = {
@@ -151,7 +165,7 @@ capital = 1014	# Bungo
 	}
 }
 	
-1453.1.1 = { 
+1453.1.1 = {
 	monarch = {
 		name = "Chikataka"
 		dynasty = "Otomo"
@@ -161,6 +175,8 @@ capital = 1014	# Bungo
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = charismatic_negotiator_personality
 }
 	
 1453.1.1 = {
@@ -177,7 +193,7 @@ capital = 1014	# Bungo
 	}
 }
 	
-1461.1.1 = { 
+1461.1.1 = {
 	monarch = {
 		name = "Chikashige"
 		dynasty = "Otomo"
@@ -187,6 +203,8 @@ capital = 1014	# Bungo
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = industrious_personality
 }
 	
 1461.1.1 = {
@@ -203,7 +221,7 @@ capital = 1014	# Bungo
 	}
 }
 	
-1473.1.1 = { 
+1473.1.1 = {
 	monarch = {
 		name = "Masachika"
 		dynasty = "Otomo"
@@ -213,6 +231,8 @@ capital = 1014	# Bungo
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = babbling_buffoon_personality
 }
 	
 1484.1.1 = {
@@ -229,7 +249,7 @@ capital = 1014	# Bungo
 	}
 }
 	
-1489.1.1 = { 
+1489.1.1 = {
 	monarch = {
 		name = "Yoshisuke"
 		dynasty = "Otomo"
@@ -241,7 +261,7 @@ capital = 1014	# Bungo
 	}
 }
 
-1496.7.7 = { 
+1496.7.7 = {
 	monarch = {
 		name = "Chikaharu"
 		dynasty = "Otomo"
@@ -251,6 +271,8 @@ capital = 1014	# Bungo
 		dip = 3
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = calm_personality
 }
 	
 1496.7.7 = {
@@ -267,7 +289,7 @@ capital = 1014	# Bungo
 	}
 }
 
-1501.1.1 = { 
+1501.1.1 = {
 	monarch = {
 		name = "Yoshinaga"
 		dynasty = "Otomo"
@@ -277,6 +299,8 @@ capital = 1014	# Bungo
 		dip = 3
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
 }
 	
 1502.1.1 = {
@@ -293,7 +317,7 @@ capital = 1014	# Bungo
 	}
 }
 
-1518.1.1 = { 
+1518.1.1 = {
 	monarch = {
 		name = "Yoshiaki"
 		dynasty = "Otomo"
@@ -303,6 +327,8 @@ capital = 1014	# Bungo
 		dip = 2
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = lawgiver_personality
 }
 	
 1530.1.31 = {
@@ -319,7 +345,7 @@ capital = 1014	# Bungo
 	}
 }
 
-1550.2.28 = { 
+1550.2.28 = {
 	monarch = {
 		name = "Yoshishige"
 		dynasty = "Otomo"
@@ -329,6 +355,9 @@ capital = 1014	# Bungo
 		dip = 4
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_advised_personality
+	add_ruler_personality = free_thinker_personality
 }
 
 1558.1.1 = {
@@ -349,7 +378,7 @@ capital = 1014	# Bungo
 
 1587.6.11 = { religion = shinto }
 
-1587.6.11 = { 
+1587.6.11 = {
 	monarch = {
 		name = "Yoshimune"
 		dynasty = "Otomo"
@@ -359,4 +388,8 @@ capital = 1014	# Bungo
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = malevolent_personality
+	add_ruler_personality = craven_personality
 }

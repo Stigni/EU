@@ -841,7 +841,6 @@ achievement_trade_hegemon = {
 		capital_scope = {
 			continent = europe
 		}
-		technology_group = western
 	}
 	
 	happened = {
@@ -1019,7 +1018,13 @@ achievement_no_trail_of_tears = {
 	}
 	
 	happened = {
-		technology_group = western
+		has_institution = feudalism
+		has_institution = renaissance
+		has_institution = new_world_i
+		has_institution = printing_press
+		has_institution = global_trade
+		has_institution = manufactories
+		has_institution = enlightenment
 		susquehanna_area = {
 			type = all
 			owned_by = CHE
@@ -1326,7 +1331,13 @@ achievement_turning_the_tide = {
 	
 	happened = {
 		has_switched_nation = no	
-		technology_group = western
+		has_institution = feudalism
+		has_institution = renaissance
+		has_institution = new_world_i
+		has_institution = printing_press
+		has_institution = global_trade
+		has_institution = manufactories
+		has_institution = enlightenment
 	}
 }
 
@@ -1644,7 +1655,7 @@ achievement_a_protected_market = {
 	}
 
 	happened = {
-		mercantilism = 1.0
+		mercantilism = 100
 	}
 }
 
@@ -2774,7 +2785,13 @@ achievement_a_sun_god = {
 
 	happened = {
 		has_switched_nation = no
-		technology_group = western
+		has_institution = feudalism
+		has_institution = renaissance
+		has_institution = new_world_i
+		has_institution = printing_press
+		has_institution = global_trade
+		has_institution = manufactories
+		has_institution = enlightenment
 		tag = INC
 		
 		south_america = {
@@ -4767,5 +4784,478 @@ achievement_just_resting_in_my_account = {
 			tooltip = achievement_just_resting_in_my_account_tooltip
 			has_country_flag = has_corrupted_officials
 		}
+	}
+}
+
+#Start RoM
+
+achievement_cities_of_cibola = {
+	id = 186
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = PUE
+	}
+
+	happened = {
+		num_of_owned_provinces_with = {
+			value = 7
+			development = 10
+		}
+	}
+}
+
+achievement_turkish_delight = {
+	id = 187
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = CND
+	}
+
+	happened = {
+		calc_true_if = {
+			all_province = {
+				OR = {
+					owned_by = CND
+					owner = {
+						is_subject_of = CND
+					}
+				}
+				trade_goods = sugar
+			}
+			amount = 20
+		}
+	}
+}
+
+achievement_baa_baa_black_sheep = {
+	id = 188
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = QAR
+	}
+
+	happened = {
+		production_leader = { trade_goods = wool }
+	}
+}
+
+achievement_fanatic_collectivist = {
+	id = 189
+
+	possible = {
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+
+	happened = {
+		is_institution_enabled = renaissance
+		is_institution_enabled = new_world_i
+		is_institution_enabled = printing_press
+		is_institution_enabled = global_trade
+		is_institution_enabled = manufactories
+		is_institution_enabled = enlightenment
+		custom_trigger_tooltip = {
+			tooltip = achievement_fanatic_collectivist_tooltip
+			any_owned_province = { has_province_modifier = birthplace_of_the_renaissance }
+			any_owned_province = { has_province_modifier = birthplace_of_the_new_world }
+			any_owned_province = { has_province_modifier = birthplace_of_printing_press }
+			any_owned_province = { has_province_modifier = birthplace_of_global_trade }
+			any_owned_province = { has_province_modifier = birthplace_of_manufactories }
+			any_owned_province = { has_province_modifier = birthplace_of_enlightenment }
+		}
+	}
+}
+
+achievement_core_fu = {
+	id = 190
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = CEP
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = achievement_core_fu_tooltip
+			has_country_flag = core_fu
+		}
+	}
+}
+
+achievement_rozwi_empire = {
+	id = 191
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = RZW
+	}
+
+	happened = {
+		zimbabwe_area = {
+			type = all
+			owned_by = ROOT
+		}
+		lower_zambezi_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+}
+
+achievement_sudanese_expedition = {
+	id = 192
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		tag = MOR
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+
+	happened = {
+		sahel_region = {
+			type = all
+			owned_by = ROOT
+		}
+		niger_region = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+}
+
+achievement_a_tale_of_two_families = {
+	id = 193
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		OR = {
+			tag = VIJ
+			tag = BAH
+		}
+	}
+
+	happened = {
+		OR = {
+			AND = {
+				tag = BAH
+				NOT = { exists = VIJ }
+			}
+			AND = {
+				tag = VIJ
+				NOT = { exists = BAH }
+			}
+		}
+		owns_core_province = 1948 #Bidar
+		owns_core_province = 541 #Vijayanagar
+	}
+}
+
+achievement_abu_bakr_IIs_ambition = {
+	id = 194
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = MAL
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = achievement_abu_bakr_IIs_ambition
+			calc_true_if = {
+				all_subject_country = {
+					is_colonial_nation = yes
+					capital_scope = {
+						continent = south_america
+					}
+				}
+				amount = 4
+			}
+		}
+	}
+}
+
+achievement_consulate_of_the_sea = {
+	id = 195
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = ARA
+	}
+
+	happened = {
+		owns = 101 #Genoa
+		owns = 112 #Venice
+		owns = 151 #Constantinople
+		owns = 137 #Ragusa
+		owns = 220 #Valencia
+		owns = 317 #Bursa
+		owns = 336 #Tlemcen
+		owns = 341 #Tunis
+		owns = 358 #Alexandria
+	}
+}
+
+achievement_we_bled_for_this = {
+	id = 196
+
+	possible = {
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+	
+	visible = {
+		has_dlc = "Rights of Man"
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = achievement_we_bled_for_this_tooltip
+			has_country_flag = just_a_statistic
+		}
+	}
+}
+
+achievement_pick_your_poison = {
+	id = 197
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = KAF
+	}
+	
+	visible = {
+		has_dlc = "Rights of Man"
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = achievement_pick_your_poison_tooltip
+			has_country_flag = pick_your_poison
+		}
+		any_subject_country = {
+			owns = 285
+		}
+	}
+}
+
+achievement_not_just_pizza = {
+	id = 198
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+		tag = NAP
+	}
+	
+	visible = {
+		has_dlc = "Rights of Man"
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = achievement_not_just_pizza_tooltip
+			has_country_flag = became_great_power_flag
+		}
+	}
+}
+
+achievement_all_that_is_thine_shall_be_mine = {
+	id = 199
+
+	possible = {
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+	
+	visible = {
+		has_dlc = "Rights of Man"
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = achievement_all_that_is_thine_shall_be_mine_tooltip
+			has_country_flag = greedy_set_from_code
+		}
+	}
+}
+
+achievement_a_blessed_nation = {
+	id = 200
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+	
+	visible = {
+		has_dlc = "Rights of Man"
+	}
+
+	happened = {
+		religion = coptic
+		num_of_active_blessings = 5
+	}
+}
+
+achievement_queen_of_conquest = {
+	id = 201
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+	
+	visible = {
+		has_dlc = "Rights of Man"
+	}
+
+	happened = {
+		has_consort_regency = yes
+		has_female_consort = yes
+		custom_trigger_tooltip = {
+			tooltip = achievement_queen_of_conquest_tooltip
+			has_country_flag = queen_of_conquest
+		}
+	}
+}
+
+achievement_aaa_credit = {
+	id = 202
+
+	possible = {
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		start_date = 1444.11.11
+	}
+	
+	visible = {
+		has_dlc = "Rights of Man"
+	}
+
+	happened = {
+		is_great_power = yes
+		custom_trigger_tooltip = {
+			tooltip = achievement_aaa_credit_tooltip
+			has_country_flag = aaa_credit
+		}
+	}
+}
+
+achievement_hoarder = {
+	id = 203
+
+	possible = {
+		NOT = { num_of_custom_nations = 1 }
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+		religion = shamanism
+	}
+	
+	visible = {
+		has_dlc = "Rights of Man"
+	}
+
+	happened = {
+		religion = shamanism
+		num_of_unlocked_cults = 13
+	}
+}
+
+achievement_gentle_persuasion = {
+	id = 204
+	
+	possible = {
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+	}
+	
+	visible = {
+		has_dlc = "Rights of Man"
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = achievement_gentle_persuasion_tooltip
+			has_country_flag = gentle_convincing
+		}
+	}
+}
+
+achievement_combined_arms = {
+	id = 205
+
+	possible = {
+		normal_or_historical_nations = yes	
+		normal_province_values = yes
+		ironman = yes
+	}
+	
+	visible = {
+		has_dlc = "Rights of Man"
+	}
+
+	happened = {
+		num_of_admirals_with_traits = 1
+		num_of_generals_with_traits = 1
 	}
 }

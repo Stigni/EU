@@ -50,7 +50,14 @@ finish_reconquista = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	chance = {
@@ -61,6 +68,10 @@ finish_reconquista = {
 			iberia_region = {
 				owned_by = GRA
 			}
+		}
+		modifier = {
+			factor = 1000
+			is_tutorial_active = yes
 		}
 	}
 	effect = {
@@ -250,7 +261,14 @@ continue_reconquista = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -339,20 +357,26 @@ establish_spanish_carribean = {
 		num_of_ports = 1
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		NOT = {
-			carribeans_region = {
+			colonial_the_carribean = {
 				owned_by =  ROOT
 			}
 		}
 		NOT = {
-			carribeans_region = {
+			colonial_the_carribean = {
 				owner = {
 					is_subject_of = ROOT
 				}
 			}
 		}
-		carribeans_region = {
+		colonial_the_carribean = {
 			has_discovered = ROOT
 			is_empty = yes
+			range = ROOT
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
 		}
 	}
 	abort = {
@@ -361,13 +385,13 @@ establish_spanish_carribean = {
 			NOT = {	has_idea = quest_for_the_new_world  }
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { carribeans_region = { owned_by = ROOT } }
-				NOT = { carribeans_region = { is_empty = yes } }
+				NOT = { colonial_the_carribean = { owned_by = ROOT } }
+				NOT = { colonial_the_carribean = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		carribeans_region = {
+		colonial_the_carribean = {
 			owned_by = ROOT
 			colonysize = 400
 		}
@@ -470,20 +494,25 @@ establish_spanish_main = {
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		num_of_ports = 1
 		NOT = {
-			colombia_region = {
+			colonial_colombia = {
 				owned_by =  ROOT
 			}
 		}
 		NOT = {
-			colombia_region = {
+			colonial_colombia = {
 				owner = {
 					is_subject_of = ROOT
 				}
 			}
 		}
-		colombia_region = {
+		colonial_colombia = {
 			has_discovered = ROOT
 			is_empty = yes
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
 		}
 	}
 	abort = {
@@ -492,13 +521,13 @@ establish_spanish_main = {
 			NOT = {	has_idea = quest_for_the_new_world  }
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { colombia_region = { owned_by = ROOT } }
-				NOT = { colombia_region = { is_empty = yes } }
+				NOT = { colonial_colombia = { owned_by = ROOT } }
+				NOT = { colonial_colombia = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		colombia_region = {
+		colonial_colombia = {
 			owned_by = ROOT
 			colonysize = 400
 		}
@@ -598,20 +627,26 @@ establish_spanish_la_plata = {
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		num_of_ports = 1
 		NOT = {
-			la_plata_region = {
+			colonial_la_plata = {
 				owned_by =  ROOT
 			}
 		}
 		NOT = {
-			la_plata_region = {
+			colonial_la_plata = {
 				owner = {
 					is_subject_of = ROOT
 				}
 			}
 		}
-		la_plata_region = {
+		colonial_la_plata = {
 			has_discovered = ROOT
 			is_empty = yes
+			range = ROOT
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
 		}
 	}
 	abort = {
@@ -620,13 +655,13 @@ establish_spanish_la_plata = {
 			NOT = {	has_idea = quest_for_the_new_world  }
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { la_plata_region = { owned_by = ROOT } }
-				NOT = { la_plata_region = { is_empty = yes } }
+				NOT = { colonial_la_plata = { owned_by = ROOT } }
+				NOT = { colonial_la_plata = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		la_plata_region = {
+		colonial_la_plata = {
 			owned_by = ROOT
 			colonysize = 400
 		}

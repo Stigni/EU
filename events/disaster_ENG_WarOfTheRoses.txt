@@ -852,7 +852,7 @@ country_event = {
 	
 	option = {		# Order has finally been restored
 		name = war_of_the_roses.100.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = 50
 		hidden_effect = {
 			if = {
@@ -952,7 +952,7 @@ country_event = {
 	
 	option = {		# Long live the House of Lancaster!
 		name = war_of_the_roses.101.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = -50
 		hidden_effect = {
 			every_country = {
@@ -1007,7 +1007,7 @@ country_event = {
 	
 	option = {		# Long live the House of York!
 		name = war_of_the_roses.102.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = -50
 		hidden_effect = {
 			every_country = {

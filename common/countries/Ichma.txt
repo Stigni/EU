@@ -91,6 +91,7 @@ monarch_names = {
 	
 	"Axomamma #0" = -1
 	"Cavillaca #0" = -1
+	"Sisa #0" = -1
 }
 
 ship_names = {

@@ -159,6 +159,10 @@ capital = 1224		# Gonder
 		dip = 5
 		mil = 5
 	}
+	
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = righteous_personality
 }
 
 1434.6.2 = {

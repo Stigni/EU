@@ -308,15 +308,13 @@ country_event = {
 			government = monastic_order_government
 		}
 		religion = catholic
-		OR = {
-			is_religion_enabled = protestant
-			any_owned_province = {
-				religion = catholic
-				development = 10
-				NOT = { is_capital = yes }
-				any_neighbor_province = {
-					religion = protestant
-				}
+		is_religion_enabled = protestant
+		any_owned_province = {
+			religion = catholic
+			development = 10
+			is_capital = no
+			any_neighbor_province = {
+				religion = protestant
 			}
 		}
 	}
@@ -327,7 +325,7 @@ country_event = {
 				limit = {
 					religion = catholic
 					development = 10
-					NOT = { is_capital = yes }
+					is_capital = no
 					any_neighbor_province = {
 						religion = protestant
 					}
@@ -371,7 +369,7 @@ country_event = {
 				loyalty = -10
 			}
 		}
-		every_owned_province = {
+		random_owned_province = {
 			limit = { has_province_flag = prov_wants_rel_free }
 			add_base_production = -1
 			clr_province_flag = prov_wants_rel_free	
@@ -393,7 +391,7 @@ country_event = {
 				loyalty = 10
 			}
 		}
-		every_owned_province = {
+		random_owned_province = {
 			limit = { has_province_flag = prov_wants_rel_free }
 			change_religion = protestant
 			add_local_autonomy = 20
@@ -661,7 +659,7 @@ country_event = {
 	
 	option = {
 		name = devotion_events.12.a
-		add_mercantilism = 0.01
+		add_mercantilism = 1
 	}
 }
 
@@ -731,6 +729,52 @@ country_event = {
 		name = devotion_events.14.a
 		add_prestige = 10
 		add_years_of_income = 0.1
+	}
+}
+
+# An Influential Reformer
+country_event = {
+	id = devotion_events.26
+	title = devotion_events.26.t
+	desc = devotion_events.26.d
+	picture = PROTESTANT_GREAT_REFORMER_eventPicture
+	
+	trigger = {
+		has_dlc = "Common Sense"
+		OR = {
+			government = theocratic_government
+			government = monastic_order_government
+		}
+		OR = {
+			religion = reformed
+			religion = protestant
+		}
+		has_country_flag = theo_influential_reformer_flag
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+		
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = theo_influential_reformer_flag
+		}
+	}
+	
+	option = {
+		name = devotion_events.26.a
+		add_prestige = 10
+		if = { 
+			limit = { religion = reformed }
+			add_fervor = 15
+		}
+		if = { 
+			limit = { religion = protestant }
+			add_church_power = 15
+		}
 	}
 }
 
@@ -1076,6 +1120,8 @@ province_event = {
 			}
 		}
 		local_autonomy = 25
+		is_state = yes
+		has_estate = no
 	}
 	
 	is_mtth_scaled_to_size = 1
@@ -1400,6 +1446,8 @@ country_event = {
 		num_of_cities = 2
 		any_owned_province = {
 			local_autonomy = 25
+			is_state = yes
+			has_estate = no
 		}
 	}
 	
@@ -1488,6 +1536,8 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				local_autonomy = 25
+				is_state = yes
+				has_estate = no
 			}
 			add_local_autonomy = -10
 			add_province_modifier = {
@@ -1715,7 +1765,9 @@ province_event = {
 		religion_group = christian
 		has_building = fort_15th
 		local_autonomy = 50
-		NOT = { is_capital = yes }
+		is_state = yes
+		has_estate = no
+		is_capital = no
 		NOT = { has_province_modifier = add_unrest_5_modifier }
 	}
 	
@@ -2032,7 +2084,7 @@ country_event = {
 				religion = protestant
 			}
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_devotion = 10
 	}
 	option = {
@@ -2045,7 +2097,7 @@ country_event = {
 				}
 			}
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_devotion = 10
 	}
 }
@@ -2261,7 +2313,7 @@ country_event = {
 		government = theocratic_government
 		OR = {
 			NOT = {
-				mercantilism = 0.5
+				mercantilism = 50
 			}
 			NOT = {
 				trade_efficiency = 0.5
@@ -2291,7 +2343,7 @@ country_event = {
 				}
 			}
 		}
-		add_mercantilism = 0.01
+		add_mercantilism = 1
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"

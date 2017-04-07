@@ -1,8 +1,12 @@
+namespace = cleanup_events
+
+
+
 #########################################################
 #	        Submission of the Clergy		#
 #########################################################
 country_event = {
-	id = 9600
+	id = cleanup_events.1
 	title = "EVTNAME9600"
 	desc = "EVTDESC9600"
 	picture = REFORM_eventPicture
@@ -59,7 +63,7 @@ country_event = {
 			duration = 3650
 		}
 		add_prestige = 5
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_papal_influence = -25
 		add_opinion = { who = PAP modifier = opinion_loyal_to_king }
 	}
@@ -75,7 +79,7 @@ country_event = {
 #	        Losing Renaissance Philosophy				#
 #########################################################
 country_event = {
-	id = 9610
+	id = cleanup_events.2
 	title = "EVTNAME9610"
 	desc = "EVTDESC9610"
 	picture = REFORM_eventPicture
@@ -106,4 +110,38 @@ country_event = {
 		name = "EVTOPTA9610"
 		remove_country_modifier = "blooming_renaissance"
 	}
+}
+
+
+
+#########################################
+# No more Harems
+#########################################
+
+country_event = {
+	id = cleanup_events.3
+	
+	title = cleanup_events.3.t
+	desc = cleanup_events.3.d
+	
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	trigger = {
+		OR = {
+			government = iqta
+			government = ottoman_government
+		}
+		NOT = {
+			religion_group = muslim
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = cleanup_events.3.a
+		change_government = despotic_monarchy 
+	}
+	
 }

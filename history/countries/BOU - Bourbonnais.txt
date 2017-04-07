@@ -180,7 +180,7 @@ fixed_capital = 190 # Cannot move capital away from this province & no power cos
 		adm = 4
 		dip = 1
 		mil = 1
-		leader = {	name = "Connétable Bourbon"   	type = general	rank = 0	fire = 2	shock = 3	manuever = 3	siege = 0 }
+		leader = {	name = "Charles de Bourbon"   	type = general	rank = 0	fire = 2	shock = 3	manuever = 3	siege = 0 }
 	}
 }
 
@@ -192,7 +192,7 @@ fixed_capital = 190 # Cannot move capital away from this province & no power cos
 		adm = 4
 		dip = 1
 		mil = 1
-		leader = {	name = "Connétable Bourbon"   	type = general	rank = 0	fire = 2	shock = 3	manuever = 3	siege = 0 }
+		leader = {	name = "Charles III"   	type = general	rank = 0	fire = 2	shock = 3	manuever = 3	siege = 0 }
 	}
 }
 
@@ -259,7 +259,7 @@ fixed_capital = 190 # Cannot move capital away from this province & no power cos
 		adm = 5
 		dip = 5
 		mil = 5
-		leader = {	name = "Henri de Bourbon"              	type = general	rank = 0	fire = 4	shock = 4	manuever = 2	siege = 0 }
+		leader = {	name = "Henri I"              	type = general	rank = 0	fire = 4	shock = 4	manuever = 2	siege = 0 }
 	}
 }
 
@@ -303,8 +303,8 @@ fixed_capital = 190 # Cannot move capital away from this province & no power cos
 
 1665.10.23 = {
 	heir = {
-		name = "Louis Joseph"
-		monarch_name = "Louis Joseph"
+		name = "Louis-Joseph"
+		monarch_name = "Louis-Joseph"
 		dynasty = "de Bourbon"
 		birth_date = 1654.7.1
 		death_date = 1712.6.11
@@ -317,7 +317,7 @@ fixed_capital = 190 # Cannot move capital away from this province & no power cos
 
 1669.8.7 = {
 	monarch = {
-		name = "Louis Joseph"
+		name = "Louis-Joseph"
 		dynasty = "de Bourbon"
 		birth_date = 1654.7.1
 		adm = 1

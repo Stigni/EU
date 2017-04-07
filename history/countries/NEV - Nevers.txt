@@ -9,7 +9,7 @@ fixed_capital = 191 # Cannot move capital away from this province & no power cos
 #Counts
 1384.1.1 = {
 	monarch = {
-		name = "John I"
+		name = "Jean I"
 		dynasty = "de Bourgogne"
 		dip = 2
 		adm = 2
@@ -19,8 +19,8 @@ fixed_capital = 191 # Cannot move capital away from this province & no power cos
 
 1389.10.1 = {
 	heir = {
-		name = "Philip"
-		monarch_name = "Philip II"
+		name = "Philippe"
+		monarch_name = "Philippe II"
 		dynasty = "de Bourgogne"
 		birth_date = 1389.10.1
 		death_date = 1415.10.25
@@ -33,7 +33,7 @@ fixed_capital = 191 # Cannot move capital away from this province & no power cos
 
 1404.1.1 = {
 	monarch = {
-		name = "Philip II"
+		name = "Philippe II"
 		dynasty = "de Bourgogne"
 		dip = 1
 		adm = 0
@@ -91,8 +91,8 @@ fixed_capital = 191 # Cannot move capital away from this province & no power cos
 
 1464.5.1 = {
 	heir = {
-		name = "Engelbert"
-		monarch_name = "Engelbert I"
+		name = "Engilbert"
+		monarch_name = "Engilbert I"
 		dynasty = "de Bourgogne"
 		birth_date = 1462.1.1
 		death_date = 1506.9.21
@@ -105,7 +105,7 @@ fixed_capital = 191 # Cannot move capital away from this province & no power cos
 
 1491.9.25 = {
 	monarch = {
-		name = "Engelbert I"
+		name = "Engilbert I"
 		dynasty = "de Clèves"
 		dip = 2
 		adm = 2

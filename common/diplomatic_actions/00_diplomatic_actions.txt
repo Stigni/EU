@@ -72,6 +72,7 @@
 # ask_for_march
 # sell_ships_action
 # counterespionage
+# abandon_union_action
 
 royal_marriage = {
 	condition = {
@@ -164,6 +165,19 @@ vassalaction = {
 				}
 			}
 			FROM = { is_at_war = no }
+		}
+	}
+}
+
+abandon_union_action = {
+	condition = {
+		potential = {
+		}
+		allow = {
+			ROOT = {
+				senior_union_with = FROM
+				is_at_war = no
+			}
 		}
 	}
 }

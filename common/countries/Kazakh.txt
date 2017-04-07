@@ -69,6 +69,9 @@ monarch_names = {
 	"Wali #0" = 10
 
 	"Hayfa #0" = -1
+	"Aisha #0" = -1
+	"Zuhra  #0" = -1
+	"Nigar  #0" = -1
 }
 
 leader_names = { 

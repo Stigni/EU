@@ -3,7 +3,6 @@ aspiration_for_liberty = {
 		NOT = { has_country_flag = had_liberalism }
 		NOT = { current_size_of_parliament = 1 }
 		uses_doom = no
-		technology_group = western
 		num_of_cities = 5
 		is_year = 1650
 		is_subject = no
@@ -13,8 +12,9 @@ aspiration_for_liberty = {
 	
 	can_start = {
 		has_any_disaster = no
-		adm_tech = 22
+		has_institution = enlightenment
 		NOT = { stability = 0 }
+		NOT = { has_country_modifier = liberal_constitution }
 	}
 	
 	can_stop = { 

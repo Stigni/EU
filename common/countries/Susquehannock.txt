@@ -42,7 +42,12 @@ monarch_names = {
 	"Rutchogah #0" = 10
 	"Nathheldaneh #0" = 10
 	
+	"Tyonajanegen #0" = -1
+	"Alliquippa #0" = -1
+	"Konwatsitiaienni #0" = -1
 	"Genessee #0" = -1
+	"Satékon #0" = -1
+	"Tekakwitha #0" = -1
 }
 
 leader_names = { 

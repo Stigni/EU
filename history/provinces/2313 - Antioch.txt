@@ -7,8 +7,8 @@ religion = sunni
 capital = "Antakya"
 trade_goods = cloth
 hre = no
-base_tax = 3 
-base_production = 3
+base_tax = 4
+base_production = 4
 base_manpower = 3
 is_city = yes
 estate = estate_nobles
@@ -23,7 +23,7 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = nomad_group
 discovered_by = indian
-
+discovered_by = east_african
 
 1516.8.24 = {
 	owner = TUR

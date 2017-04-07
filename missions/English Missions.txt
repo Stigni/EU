@@ -56,10 +56,24 @@ conquer_ireland = {
 	}
 	abort_effect = {
 		eastern_ireland_area = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 		western_ireland_area = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -138,7 +152,14 @@ conquer_scotland = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -299,6 +320,11 @@ english_colony_in_north_america = {
 			has_discovered = ROOT
 			is_empty = yes
 			range = ROOT
+			OR = {
+				NOT = { religion = catholic }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
 		}
 		NOT = { northeast_america_region = { owned_by = ROOT } }
 		NOT = {
@@ -415,14 +441,19 @@ english_colony_in_the_carribean = {
 		num_of_colonists = 1
 		num_of_ports = 3
 		NOT = { has_country_modifier = colonial_enthusiasm }
-		carribeans_region = {
+		colonial_the_carribean = {
 			has_discovered = ROOT
 			is_empty = yes
 			range = ROOT
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
 		}
-		NOT = { carribeans_region = { owned_by = ROOT } }
+		NOT = { colonial_the_carribean = { owned_by = ROOT } }
 		NOT = {
-			carribeans_region = {
+			colonial_the_carribean = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -433,13 +464,13 @@ english_colony_in_the_carribean = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { carribeans_region = { is_empty = yes } }
-				NOT = { carribeans_region = { owned_by = ROOT } }
+				NOT = { colonial_the_carribean = { is_empty = yes } }
+				NOT = { colonial_the_carribean = { owned_by = ROOT } }
 			}
 		}
 	}
 	success = {
-		carribeans_region = {
+		colonial_the_carribean = {
 			owned_by = ROOT
 			colonysize = 400
 		}
@@ -465,7 +496,7 @@ english_colony_in_the_carribean = {
 		modifier = {
 			factor = 0.5
 			any_subject_country = {
-				carribeans_region = { owned_by = PREV }
+				colonial_the_carribean = { owned_by = PREV }
 			}
 		}
 	}
@@ -603,14 +634,19 @@ english_colony_in_australia = {
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		num_of_colonists = 1
 		num_of_ports = 3
-		australia_region = {
+		colonial_australia = {
 			has_discovered = ROOT
 			is_empty = yes
 			range = ROOT
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
 		}
-		NOT = { australia_region = { owned_by = ROOT } }
+		NOT = { colonial_australia = { owned_by = ROOT } }
 		NOT = {
-			australia_region = {
+			colonial_australia = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -621,8 +657,8 @@ english_colony_in_australia = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { australia_region = { is_empty = yes } }
-				NOT = { australia_region = { owned_by = ROOT } }
+				NOT = { colonial_australia = { is_empty = yes } }
+				NOT = { colonial_australia = { owned_by = ROOT } }
 			}
 		}
 	}
@@ -933,8 +969,26 @@ conquer_normandie_and_caux = {
 		add_claim = 168
 	}
 	abort_effect = {
-		remove_claim = 167
-		remove_claim = 168
+		167 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+		168 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		add_country_modifier = {
@@ -994,8 +1048,26 @@ conquer_aquitaine = {
 		add_claim = 174
 	}
 	abort_effect = {
-		remove_claim = 173
-		remove_claim = 174
+		173 = {
+			if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+						}
+					}
+					remove_claim = ROOT
+				}
+		}
+		174 = {
+			if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+						}
+					}
+					remove_claim = ROOT
+				}
+		}
 	}
 	effect = {
 		add_country_modifier = {

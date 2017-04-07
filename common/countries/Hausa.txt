@@ -72,6 +72,13 @@ monarch_names = {
 	
 	"Sana #0" = -1
 	"Farrah #0" = -1
+	"Gauhar #0" = -1
+	"Rawiya #0" = -1
+	"Maimuna #0" = -1
+	"Aisha #0" = -1
+	"Hawa'u #0" = -1
+	"Hadiza #0" = -1
+	"Asma’u #0" = -1
 }
 
 leader_names = {

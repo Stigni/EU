@@ -45,7 +45,14 @@ conquer_finland = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -107,7 +114,14 @@ subjugate_tver = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -196,7 +210,14 @@ annex_yaroslavl = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -285,7 +306,14 @@ annex_ryazan = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -429,7 +457,14 @@ access_to_the_baltic_sea = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -705,7 +740,14 @@ annex_the_qasim_khanate = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -779,7 +821,14 @@ defend_russia_against_the_mongols = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	success = {
@@ -851,7 +900,14 @@ cross_the_mongol_border = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -923,7 +979,14 @@ subjugate_novgorod = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1089,7 +1152,14 @@ russia_partitions_poland = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1192,7 +1262,14 @@ russia_partitions_lithuania = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1267,7 +1344,14 @@ subjugate_crimea = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1344,7 +1428,14 @@ subjugate_kazan = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1377,6 +1468,7 @@ subjugate_the_siberian_khanate = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { alliance_with = ROOT }
 		}
 		NOT = { has_country_modifier = controlling_the_steppes }
 		NOT = { last_mission = subjugate_the_siberian_khanate }
@@ -1420,7 +1512,14 @@ subjugate_the_siberian_khanate = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1497,13 +1596,295 @@ subjugate_astrakhan = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
 		add_country_modifier = {
 			name = "controlling_the_steppes"
 			duration = 3650
+		}
+	}
+}
+
+conquer_nogai_area = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			area = nogai_area
+			area = bashkiria_area
+			area = saratov_area
+		}
+		owner = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MOS
+			tag = RUS
+		}
+		is_subject = no
+		owns = 305 #Perm
+		owns = 473 #Samara
+		owns = 1082 #Kazan
+		OR = {
+			nogai_area = {
+				owner = {
+					is_neighbor_of = ROOT
+					NOT = { num_of_cities = ROOT }
+					NOT = { is_subject_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			bashkiria_area = {
+				owner = {
+					is_neighbor_of = ROOT
+					NOT = { num_of_cities = ROOT }
+					NOT = { is_subject_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			saratov_area = {
+				owner = {
+					is_neighbor_of = ROOT
+					NOT = { num_of_cities = ROOT }
+					NOT = { is_subject_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+		}
+		NOT = { has_country_modifier = pushing_back_the_tatars }
+		OR = {
+			NOT = { has_country_flag = conquered_nogai_area }
+			had_country_flag = { flag = conquered_nogai_area days = 18250 } #50 years
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 5
+			last_mission = subjugate_astrakhan
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = conquered_nogai_area
+		add_country_modifier = {
+			name = "pushing_back_the_tatars"
+			duration = 5475
+		}
+	}
+}
+
+
+conquer_western_siberia_region = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			region = west_siberia_region
+			region = ural_region
+		}
+		owner = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MOS
+			tag = RUS
+		}
+		is_subject = no
+		any_owned_province = {
+			OR = {
+				region = west_siberia_region
+				region = ural_region
+			}
+		}
+		OR = {
+			west_siberia_region = {
+				owner = {
+					is_neighbor_of = ROOT
+					NOT = { num_of_cities = ROOT }
+					NOT = { is_subject_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			ural_region = {
+				owner = {
+					is_neighbor_of = ROOT
+					NOT = { num_of_cities = ROOT }
+					NOT = { is_subject_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+		}
+		NOT = { has_country_modifier = conquest_of_siberia }
+		OR = {
+			NOT = { has_country_flag = conquered_central_siberia }
+			had_country_flag = { flag = conquered_central_siberia days = 18250 } #50 years
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 4000
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = conquered_central_siberia
+		add_country_modifier = {
+			name = "conquest_of_siberia"
+			duration = 5475
+		}
+	}
+}
+
+
+conquer_east_siberia_region = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		region = east_siberia_region
+		owner = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MOS
+			tag = RUS
+		}
+		is_subject = no
+		any_owned_province = {
+			region = east_siberia_region
+		}
+		east_siberia_region = {
+			owner = {
+				is_neighbor_of = ROOT
+				NOT = { num_of_cities = ROOT }
+				NOT = { is_subject_of = ROOT }
+				NOT = { alliance_with = ROOT }
+			}
+		}
+		NOT = { has_country_modifier = conquest_of_siberia }
+		OR = {
+			NOT = { has_country_flag = conquered_east_siberia }
+			had_country_flag = { flag = conquered_east_siberia days = 18250 } #50 years
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 4000
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = conquered_east_siberia
+		add_country_modifier = {
+			name = "conquest_of_siberia"
+			duration = 5475
 		}
 	}
 }

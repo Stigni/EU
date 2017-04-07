@@ -244,7 +244,6 @@ country_event = {
 		name = flavor_may.3.a
 		change_religion = catholic
 		add_stability = -1
-		# TODO REVOLT?
 		SPA = {
 			add_opinion = { who = ROOT modifier = may_convert }
 			country_event = {
@@ -256,7 +255,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_may.3.b
-		add_prestige = 5 # TODO!
+		add_prestige = 5
 		set_country_flag = may_kan_ek_flag
 	}
 }
@@ -272,8 +271,8 @@ country_event = {
 	
 	option = {
 		name = flavor_may.4.a
-		add_prestige = 10 # TODO
-		add_papal_influence = 2 # TODO
+		add_prestige = 10
+		add_papal_influence = 2
 	}
 }
 
@@ -326,7 +325,6 @@ country_event = {
 		name = flavor_may.5.a
 		change_religion = catholic
 		add_stability = -1
-		# TODO REVOLT?
 		SPA = {
 			add_opinion = { who = ROOT modifier = may_convert }
 			country_event = {
@@ -338,7 +336,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_may.5.b
-		add_prestige = 10 # TODO
+		add_prestige = 10
 		set_country_flag = may_franciscan_friars_flag
 	}
 }
@@ -393,7 +391,6 @@ country_event = {
 		name = flavor_may.6.a
 		change_religion = catholic
 		add_stability = -1
-		# TODO REVOLT?
 		SPA = {
 			add_opinion = { who = ROOT modifier = may_convert }
 			country_event = {
@@ -405,7 +402,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_may.6.b
-		add_prestige = 10 # TODO
+		add_prestige = 10
 		tooltip = {
 			random_owned_province = {
 				limit = {

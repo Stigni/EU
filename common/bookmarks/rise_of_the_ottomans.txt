@@ -16,7 +16,7 @@ bookmark =
 	country = BRA	
 	country = SWE
 	country = MOS
-	country = VEN
+	country = BUR
 	country = POL
 	
 	easy_country = CAS

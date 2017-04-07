@@ -41,7 +41,6 @@ monarch_names = {
 	"Henri #4" = 20
 	"Frederick #3" = 10
 	"Thierry #1" = 10
-	"Sophie #1" = -10
 	"Theodoric #2" = 10
 	"Reginald #2" = 10
 	"Theobald #2" = 10
@@ -52,7 +51,6 @@ monarch_names = {
 	"Jean #0" = 10
 	"Antoine #0" = 10
 	"Nicolas #0" = 10
-	"Isabelle #0" = -10
 	"Léopold #0" = 10
 	"Claude #0" = 5
 	"Ferdinand Philippe #0" = 5
@@ -68,6 +66,13 @@ monarch_names = {
 	"Gérard #0" = 10
 	"Jacques #0" = 10
 	"Gaston #0" = 10
+	
+	"Sophie #1" = -10
+	"Isabelle #0" = -10
+	"Jeanne #0" = -1
+	"Anne #0" = -1
+	"Marguerite #0" = -1
+	"Yolande #0" = -10
 }
 
 leader_names = {

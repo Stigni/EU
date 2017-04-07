@@ -84,6 +84,8 @@ monarch_names = {
 	"Tacomtequah #0" = 20
 	
 	"Methoataske #0" = -1
+	"Tecumapese #0" = -1
+	"Lameteshe #0" = -1
 }
 
 leader_names = {

@@ -15,7 +15,6 @@ country_decisions = {
 		allow = {
 			is_core = 33
 			is_at_war = no
-			technology_group = western
 		}
 		effect = {
 			set_country_flag = relocated_capital_st_petersburg

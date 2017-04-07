@@ -17,6 +17,8 @@ estate_dhimmi = {
 	# If true, country will get estate
 	trigger = {	
 		NOT = { government = merchant_republic }
+		NOT = { government = trading_city }
+		NOT = { government = revolutionary_republic }
 		NOT = { government = native_council }
 		NOT = { government = siberian_native_council }
 		is_nomad = no
@@ -57,7 +59,7 @@ estate_dhimmi = {
 		local_missionary_strength = -1		
 	}
 	province_modifier_neutral = {
-		local_tax_modifier = 0.5
+		local_tax_modifier = 0.33
 		local_missionary_strength = -1		
 	}		
 	province_modifier_angry = {

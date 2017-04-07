@@ -92,9 +92,10 @@ capital = 1931	# Emden
 		dip = 2
 		mil = 2
 	}
-}
-
-1430.1.1 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = intricate_web_weaver_personality
+	add_heir_personality = charismatic_negotiator_personality
 	heir = {
 		name = "Ulrich"
 		monarch_name = "Ulrich I"
@@ -103,7 +104,7 @@ capital = 1931	# Emden
 		death_date = 1466.9.26
 		claim = 95
 		adm = 2
-		dip = 0
+		dip = 3
 		mil = 3
 	}
 }
@@ -114,9 +115,11 @@ capital = 1931	# Emden
 		dynasty = "Cirksena"
 		birth_date = 1408.1.1
 		adm = 2
-		dip = 0
+		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = charismatic_negotiator_personality
 }
 
 1461.1.1 = {

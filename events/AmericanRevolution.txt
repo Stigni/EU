@@ -142,7 +142,7 @@ province_event = {
 		owner = { 
 			has_country_flag = american_revolution
 			NOT = { has_country_flag = trade_restrictions }
-			NOT = { mercantilism = 0.5 }
+			NOT = {mercantilism = 50 }
 		}
 		NOT = { exists = USA }
 		
@@ -176,15 +176,15 @@ province_event = {
 		
 		modifier = {
 			factor = 0.9
-			owner = { NOT = { mercantilism = 0.3  } }
+			owner = { NOT = { mercantilism = 30  } }
 		}
 		modifier = {
 			factor = 0.8
-			owner = { NOT = { mercantilism = 0.2  } }
+			owner = { NOT = { mercantilism = 20  } }
 		}
 		modifier = {
 			factor = 0.8
-			owner = { NOT = { mercantilism = 0.1  } }
+			owner = { NOT = { mercantilism = 10  } }
 		}
 		modifier = {
 			factor = 0.8

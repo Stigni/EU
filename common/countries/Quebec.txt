@@ -39,12 +39,12 @@ monarch_names = {
 	"Albert #0" = 20
 	"Charles #0" = 20
 	"Gaspard #0" = 15
-	"Jean #0 Baptiste" = 15
+	"Jean-Baptiste #0" = 15
 	"Jean #0" = 10
 	"Joseph #0" = 10
 	"Alexandre #0 " = 0
 	"André #0" = 0
-	"Barthélémy #0" = 0
+	"Barthélemy #0" = 0
 	"Benoît #0" = 0
 	"Bertrand #0" = 0
 	"Christophe #0" = 0
@@ -83,23 +83,23 @@ monarch_names = {
 
 leader_names = {
 	Aucoin
-	Belivaeu Bergeron Bouchard Boulton Bourque Brisebois
+	Béliveau Bergeron Bouchard Boulton Bourque Brisebois
 	Chouniard Cloutier
 	Deveraux
-	Gagne Giguere
+	Gagné Giguère
 	Lacroix Lambert	Lecavalier Lemieux
 	Roy
 	Ysebeart
 }
 
 ship_names = {
-	Montréal
-	Québec
-	Trois-Rivières
-	Acadia
-	Louisbourg
-	Duquesne
-	"Île Royale" "Île Saint-Jean"
-	"Saint Croix"
-	Gaspé
+	"le Montréal"
+	"le Québec"
+	"le Trois-Rivières"
+	"l'Acadie"
+	"le Louisbourg"
+	"le Duquesne"
+	"l'Île-Royale" "l'Île Saint-Jean"
+	"la Sainte-Croix"
+	"le Gaspé"
 }

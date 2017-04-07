@@ -204,7 +204,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_azt.4.b #We do not need such laws, tradition will remain our guideline.
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_legitimacy = 15
 	}
 }
@@ -275,7 +275,7 @@ country_event = {
 	
 	option = {
 		name = flavor_azt.6.a #For thus it is ended; thus sickness and famine have left us (in the words of the Florentine Codex)
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		if = {
 			limit = {
 				has_dlc = "El Dorado"
@@ -311,7 +311,7 @@ country_event = {
 	
 	option = {
 		name = flavor_azt.7.a #Continue to centralize power in Tenochtitlan.
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = 5
 	}
 	option = {
@@ -354,7 +354,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_azt.8.b #Why meddle with that which has worked for generations?
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_legitimacy = 15
 	}
 }
@@ -514,10 +514,7 @@ country_event = {
 		capital_scope = {
 			continent = north_america
 		}
-		OR = {
-			technology_group = mesoamerican
-			technology_group = north_american
-		}
+		NOT = { has_institution = feudalism }
 		any_known_country = {
 			OR = {
 				capital_scope = {
@@ -544,7 +541,7 @@ country_event = {
 				limit = {
 					OR = {
 						is_capital = no
-						owner = { num_of_cities = 2 }
+						owner = { NOT = { num_of_cities = 2 } }
 					}
 				}
 				set_province_flag = NA_smallpox_here
@@ -560,7 +557,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 24
+		months = 120
 		
 		modifier = {
 			factor = 0.1
@@ -685,7 +682,7 @@ country_event = {
 				has_dlc = "El Dorado"
 				is_religion_reformed = no
 			}
-			technology_group = mesoamerican
+			NOT = { has_institution = feudalism }
 		}
 		any_known_country = {
 			capital_scope = { continent = europe }

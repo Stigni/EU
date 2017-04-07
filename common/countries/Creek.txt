@@ -33,7 +33,7 @@ monarch_names = {
 	"Hoboi-Hili-Miko #0" = 10
 	"Lamochattee #0" = 20
 	"Yahatatastenake #0" = 20
-	"Taskanugi Hatke" = 20
+	"Taskanugi Hatke" #0 = 20
 	"Mico Malatchi #0" = 20	
 	"Fuskatchemico #0" = 20
 	"Neathlock #0" = 20
@@ -56,6 +56,10 @@ monarch_names = {
 	"Mumagechee #0" = 20
 	
 	"Millaray #0" = -1
+	"Sehoy #0" = -1
+	"Kecharte #0" = -1
+	"Scenanka #0" = -1
+	"Talisa #0" = -1
 }
 
 leader_names = {

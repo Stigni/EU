@@ -55,7 +55,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_gua.1.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_neighbor_country = {
 			limit = {
 				capital_scope = { continent = europe }
@@ -135,7 +135,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_gua.3.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		reverse_add_opinion = { who = FROM modifier = gua_oppose_bandeirantes }
 	}
 }
@@ -222,7 +222,7 @@ country_event = {
 	
 	option = {
 		name = flavor_gua.5.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_neighbor_country = {
 			limit = {
 				OR = {

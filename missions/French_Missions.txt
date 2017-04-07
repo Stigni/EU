@@ -90,6 +90,7 @@ annex_savoy = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			NOT = { alliance_with = ROOT }
+			NOT = { marriage_with = ROOT }
 			NOT = { num_of_cities = 15 }
 		}
 	}
@@ -123,7 +124,14 @@ annex_savoy = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -252,14 +260,19 @@ french_colony_in_north_america = {
 		normal_or_historical_nations = yes
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		tag = FRA
-		northeast_america_region = {
+		colonial_eastern_america = {
 			has_discovered = ROOT
 			is_empty = yes
 			range = ROOT
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
 		}
-		NOT = { northeast_america_region = { owned_by = ROOT } }
+		NOT = { colonial_eastern_america = { owned_by = ROOT } }
 		NOT = {
-			northeast_america_region = {
+			colonial_eastern_america = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -272,13 +285,13 @@ french_colony_in_north_america = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { northeast_america_region = { owned_by = ROOT } }
-				NOT = { northeast_america_region = { is_empty = yes } }
+				NOT = { colonial_eastern_america = { owned_by = ROOT } }
+				NOT = { colonial_eastern_america = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		northeast_america_region = {
+		colonial_eastern_america = {
 			owned_by = ROOT
 			colonysize = 400
 		}
@@ -367,14 +380,19 @@ french_colony_in_the_carribean = {
 		normal_or_historical_nations = yes
 		tag = FRA
 		NOT = { has_country_modifier = colonial_enthusiasm }
-		carribeans_region = {
+		colonial_the_carribean = {
 			has_discovered = ROOT
 			is_empty = yes
 			range = ROOT
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
 		}
-		NOT = { carribeans_region = { owned_by = ROOT } }
+		NOT = { colonial_the_carribean = { owned_by = ROOT } }
 		NOT = {
-			carribeans_region = {
+			colonial_the_carribean = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -387,13 +405,13 @@ french_colony_in_the_carribean = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { carribeans_region = { owned_by = ROOT } }
-				NOT = { carribeans_region = { is_empty = yes } }
+				NOT = { colonial_the_carribean = { owned_by = ROOT } }
+				NOT = { colonial_the_carribean = { is_empty = yes } }
 			}	
 		}
 	}
 	success = {
-		carribeans_region = {
+		colonial_the_carribean = {
 			owned_by = ROOT
 			colonysize = 400
 		}
@@ -566,7 +584,16 @@ recover_calais = {
 		add_claim = 87
 	}
 	abort_effect = {
-		remove_claim = 87
+		87 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = calais_retaken
@@ -631,7 +658,14 @@ conquer_milan = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -698,7 +732,14 @@ annex_genoa = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -835,7 +876,14 @@ defend_the_netherlands = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {

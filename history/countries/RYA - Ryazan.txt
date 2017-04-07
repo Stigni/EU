@@ -63,6 +63,9 @@ fixed_capital = 301 # Cannot move capital away from this province & no power cos
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = craven_personality
 }
 
 1454.1.1 = {

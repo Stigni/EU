@@ -39,7 +39,16 @@ conquest_of_champaner = {
 		add_claim = 2056
 	}
 	abort_effect = {
-		remove_claim = 2056
+		2056 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = conquered_champaner

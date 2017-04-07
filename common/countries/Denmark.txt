@@ -46,9 +46,6 @@ monarch_names = {
 	"Adolf #0" = 10
 	"Niels #1" = 10
 	"Karl #0" = 10
-	"Sophie #0" = -5
-	"Dorothea #0" = -10
-	"Margrete #1" = -10
 	"Magnus #1" = 1
 	"Maximilian #0" = 10
 	"Ulrik #0" = 10
@@ -83,6 +80,13 @@ monarch_names = {
 	"Joachim #0" = 0
 	"Ernst #0" = 0
 	"Frans #0" = 0
+	"Sofie #0" = -5
+	"Dorothea #0" = -10
+	"Margrete #1" = -10
+	"Louise #0" = -1
+	"Vilhelmina #0" = -1
+	"Anne #0" = -1
+	"Christina #0" = -1
 }
 
 leader_names = {

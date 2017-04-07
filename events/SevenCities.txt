@@ -800,7 +800,9 @@ province_event = {
 				remove_country_modifier = sce_search_saguenay
 				remove_country_modifier = sce_search_quivira
 			}
-			kill_leader = conquistador
+			kill_leader = { 
+				type = conquistador
+			}
 		}
 	}
 	
@@ -2892,7 +2894,9 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			kill_leader = conquistador
+			kill_leader = {
+				type = conquistador
+			}
 		}
 	}
 	
@@ -3423,7 +3427,7 @@ province_event = {
 	}
 }
 
-# Mutiny in $PROVINCENAME$! # TODO DOOM AND COOLDOWN
+# Mutiny in $PROVINCENAME$!
 province_event = {
 	id = seven_cities_events.309
 	title = seven_cities_events.309.t
@@ -3578,7 +3582,9 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			kill_leader = conquistador
+			kill_leader = {
+				type = conquistador
+			}
 			add_country_modifier = {
 				name = sce_estevanico_timer
 				duration = 7300
@@ -3603,7 +3609,7 @@ province_event = {
 	option = {
 		name = seven_cities_events.400.b
 		FROM = {
-			add_adm_power = 50 # TODO OK?
+			add_adm_power = 50
 		}
 	}
 }
@@ -4182,7 +4188,9 @@ province_event = {
 		name = seven_cities_events.414.b
 		random_list = {
 			20 = {
-				kill_leader = conquistador
+				kill_leader = {
+					type = conquistador
+				}
 			}
 			80 = { }
 		}

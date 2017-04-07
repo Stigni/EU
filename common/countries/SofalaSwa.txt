@@ -60,8 +60,10 @@ monarch_names = {
 	"Twakali #0" = 0
 	"Janfar #0" = 0
 	"Muksedi #0" = 0
+	
 	"Abiria #0" = -1
 	"Fanikia #0" = -1
+	"Aiesha #0" = -1
 }
 
 leader_names = {

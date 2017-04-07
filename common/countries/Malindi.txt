@@ -65,6 +65,7 @@ monarch_names = {
 	
 	"Abiria #0" = -1
 	"Fanikia #0" = -1
+	"Aiesha #0" = -1
 }
 
 leader_names = {

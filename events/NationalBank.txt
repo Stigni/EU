@@ -44,7 +44,7 @@ country_event = {
 		name = "EVTOPTA4042"		# National loans at 6 months income
 		ai_chance = { factor = 90 }
 		add_inflation = -5
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		loan_size = 6
 		set_country_flag = bank
 	}
@@ -52,7 +52,7 @@ country_event = {
 		name = "EVTOPTB4042"		# National loans at 12 months income
 		ai_chance = { factor = 5 }
 		add_inflation = -5
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		loan_size = 12
 		set_country_flag = bank
 	}
@@ -60,7 +60,7 @@ country_event = {
 		name = "EVTOPTC4042"		# National loans at 24 months income
 		ai_chance = { factor = 5 }
 		add_inflation = -5
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		loan_size = 24
 		set_country_flag = bank
 	}

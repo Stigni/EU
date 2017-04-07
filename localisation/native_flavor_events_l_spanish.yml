@@ -1,6 +1,6 @@
 ﻿l_spanish:
  learning_from_the_land:0 "Aprendiendo de la Tierra"
- desc_learning_from_the_land:0 "Habiendo rechazado la ayuda de otros ahora debemos adaptarnos por nuestros propios medios a este clima hostil.                "
+ desc_learning_from_the_land:0 "Habiendo rechazado la ayuda de otros ahora debemos adaptarnos por nuestros propios medios a este clima hostil."
  counting_coup:0 "Golpe Asestado Sin Muerte"
  desc_counting_coup:0 "Mantenemos con orgullo la tradición de los guerreros demostrando su bravura en combate."
  intercultural_exchange:0 "Intercambio intercultural"
@@ -22,7 +22,7 @@
  native_americans.2.a:0 "Nuestra forma de vida es ir adaptándonos. Mandad a otros para que les enseñen."
  native_americans.2.b:0 "Permitirles que se vayan, si así lo desean."
  native_americans.3.t:0 "Nuestro Nuevo Hogar en el Norte"
- native_americans.3.d:0 "Nuestra tribu ha prosperado al viajar y nosotros también debemos aprender a desarrollarnos y progresar cuando viajamos. Puesto que nuestra ultima aventura ha resultado una tarea ardua. En [Root.GetName] las temperaturas y el clima son duros e inhóspitos particularmente en invierno. Afortunadamente una tribu vecina lleva mucho tiempo viviendo aquí y ha aprendido a cazar y cosechar en estos terrenos cubiertos de nieve. Parece que algunos de ellos quieren enseñarnos cómo hacerlo.            "
+ native_americans.3.d:0 "Nuestra tribu ha prosperado al viajar y nosotros también debemos aprender a desarrollarnos y progresar cuando viajamos. Puesto que nuestra ultima aventura ha resultado una tarea ardua. En [Root.GetName] las temperaturas y el clima son duros e inhóspitos particularmente en invierno. Afortunadamente una tribu vecina lleva mucho tiempo viviendo aquí y ha aprendido a cazar y cosechar en estos terrenos cubiertos de nieve. Parece que algunos de ellos quieren enseñarnos cómo hacerlo."
  native_americans.3.a:0 "En nuestro antiguo hogar éramos sabios pero aquí son ellos, los que saben.              "
  native_americans.3.b:0 "Aprendemos mejor de la tierra misma."
  native_americans.4.t:0 "Nuestro Nuevo Hogar en el Desierto."

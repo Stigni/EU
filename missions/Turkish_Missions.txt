@@ -41,7 +41,16 @@ defeat_the_byzantine_empire = {
 		add_claim = 151
 	}
 	abort_effect = {
-		remove_claim = 151
+		151 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = defeated_BYZ
@@ -109,7 +118,14 @@ conquer_the_byzantine_empire = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -257,7 +273,14 @@ conquer_serbia = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -320,7 +343,14 @@ conquer_bosnia = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -382,7 +412,14 @@ retake_smyrna = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -585,7 +622,16 @@ defeat_the_knights = {
 		add_claim = 320
 	}
 	abort_effect = {
-		remove_claim = 320
+		320 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = defeat_the_knights_flag
@@ -641,7 +687,16 @@ take_crete_from_venice = {
 		add_claim = 163
 	}
 	abort_effect = {
-		remove_claim = 163
+		163 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = take_crete_from_venice_flag
@@ -756,7 +811,16 @@ take_kaffa = {
 		add_claim = 285
 	}
 	abort_effect = {
-		remove_claim = 285
+		285 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = take_kaffa_mission
@@ -779,6 +843,7 @@ conquer_levant = {
 			area = aleppo_area
 			area = syria_area
 			area = palestine_area
+			area = rakka_area
 		}
 		owner = {
 			NOT = { alliance_with = ROOT }
@@ -798,6 +863,7 @@ conquer_levant = {
 					area = aleppo_area
 					area = syria_area
 					area = palestine_area
+					area = rakka_area
 				}
 			}
 			NOT = { alliance_with = ROOT }
@@ -827,7 +893,14 @@ conquer_levant = {
     }
     abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
     }
     effect = {
@@ -854,14 +927,7 @@ conquer_egypt = {
 			area = upper_egypt_area
 			area = cyrenaica_area
 			area = libyan_desert_area
-			AND = {
-				area = rakka_area
-				owned_by = MAM
-			}
-			AND = {
-				area = hejaz_area
-				owned_by = MAM
-			}
+			area = hejaz_area
 		}
 		owner = {
 			NOT = { alliance_with = ROOT }
@@ -912,7 +978,14 @@ conquer_egypt = {
     }
     abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
     }
     effect = {
@@ -981,7 +1054,14 @@ safeguard_eastern_anatolia = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1062,7 +1142,14 @@ conquer_mesopotamia = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1123,7 +1210,14 @@ conquer_hedjaz = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1195,10 +1289,46 @@ conquer_mocha = {
 		add_claim = 386
 	}
 	abort_effect = {
-		remove_claim = 387
-		remove_claim = 2346
-		remove_claim = 391
-		remove_claim = 386
+		387 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+		2346 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+		391 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+		386 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = conquer_mocha
@@ -1253,8 +1383,26 @@ conquer_haasa = {
 		add_claim = 2347
 	}
 	abort_effect = {
-		remove_claim = 394
-		remove_claim = 2347
+		394 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+		2347 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = conquer_haasa_flag
@@ -1302,7 +1450,16 @@ conquer_trebizond = {
 		add_claim = 330
 	}
 	abort_effect = {
-		remove_claim = 330
+		330 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = conquer_trebizond_flag
@@ -1362,7 +1519,14 @@ conquer_tripolitania = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1429,7 +1593,14 @@ conquer_tunisia = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1567,7 +1738,14 @@ conquer_algeria = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {

@@ -643,6 +643,7 @@ country_event = {
 			}
 			hidden_effect = {
 				country_event = { id = conquest_of_paradise.314 days = 3 }
+				clr_country_flag = colonial_border_conflict_country_1
 			}
 		}
 		random_country = {
@@ -655,6 +656,7 @@ country_event = {
 			}
 			hidden_effect = {
 				country_event = { id = conquest_of_paradise.315 days = 3 }
+				clr_country_flag = colonial_border_conflict_country_2
 			}
 		}
 	}
@@ -671,6 +673,7 @@ country_event = {
 			}
 			hidden_effect = {
 				country_event = { id = conquest_of_paradise.316 days = 3 }
+				clr_country_flag = colonial_border_conflict_country_2
 			}
 		}
 		random_country = {
@@ -683,6 +686,7 @@ country_event = {
 			}
 			hidden_effect = {
 				country_event = { id = conquest_of_paradise.317 days = 3 }
+				clr_country_flag = colonial_border_conflict_country_1
 			}
 		}
 	}

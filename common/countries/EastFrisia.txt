@@ -44,8 +44,6 @@ monarch_names = {
 	"Charles #0" = 10
 	"Albert #0" = 10
 	"Everhard #0" = 10
-	"Theda #0" = -10
-	"Anne #0" = -5
 	"Adalbert #0" = 0
 	"Albrecht #0" = 0
 	"Burkhard #0" = 0
@@ -87,6 +85,11 @@ monarch_names = {
 	"Wilbrand #0" = 0
 	"Wilfried #0" = 0
 	"Willem #0" = 0
+	
+	"Theda #0" = -10
+	"Anne #0" = -5
+	"Waltrud #0" = -1
+	"Johanna #0" = -1
 }
 
 leader_names = { 

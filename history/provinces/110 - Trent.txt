@@ -14,9 +14,6 @@ base_manpower = 1
 capital = "Trent"
 estate = estate_church
 is_city = yes
-
-
-
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

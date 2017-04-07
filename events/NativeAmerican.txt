@@ -616,7 +616,7 @@ country_event = {
 	# The Sun Dance is performed, giving a stability boost
 	option = {
 		name = "native_americans.15.a"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		clr_country_flag = preparing_sundance
 	}
 }

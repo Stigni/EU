@@ -4,8 +4,17 @@ namespace = elections
 country_event = {
 	id = 700
 	title = "EVTNAME700"
-	desc = "EVTDESC700"
 	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	desc = {
+		trigger = { NOT = { has_ruler_flag = leader_has_been_pushed_out } }
+		desc = EVTDESC700
+	}
+	
+	desc = {
+		trigger = { has_ruler_flag = leader_has_been_pushed_out }
+		desc = elections.700.d
+	}
 	
 	is_triggered_only = yes
 	
@@ -17,6 +26,7 @@ country_event = {
 		name = "EVTOPTA700"	# Current ruler stays
 		trigger = {
 			has_regency = no
+			NOT = { has_ruler_flag = leader_has_been_pushed_out }
 		}
 		ai_chance = { 
 			factor = 60

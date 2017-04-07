@@ -87,6 +87,8 @@ capital = 2047	# Tirhut
 		dip = 2
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
 }
 
 1440.1.1 = {

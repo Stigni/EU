@@ -335,6 +335,10 @@ VNZ	= {
 	}
 }
 
+ICE = {
+	is_core = ICE
+}
+
 # Ruthenia
 UKR = {
 	always = no

@@ -5,7 +5,7 @@ revolution = {
 		NOT = { tag = FRA }
 		is_subject = no
 		uses_doom = no
-		technology_group = western
+		capital_scope = { continent = europe }
 		num_of_cities = 30
 		NOT = { revolution_target_exists = yes }
 		is_year = 1700		

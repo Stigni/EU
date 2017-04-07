@@ -26,11 +26,13 @@ country_event = {
 			VEN = {
 				any_active_trade_node = {
 					province_id = 1320
+					has_merchant = PREV
 				}
 			}
 			GEN = {
 				any_active_trade_node = {
 					province_id = 1320
+					has_merchant = PREV
 				}
 			}
 		}
@@ -52,6 +54,7 @@ country_event = {
 				VEN = {
 					any_active_trade_node = {
 						province_id = 1320
+						has_merchant = PREV
 					}
 				}
 			}
@@ -67,6 +70,7 @@ country_event = {
 				GEN = {
 					any_active_trade_node = {
 						province_id = 1320
+						has_merchant = PREV
 					}
 				}
 			}
@@ -86,6 +90,7 @@ country_event = {
 				VEN = {
 					any_active_trade_node = {
 						province_id = 1320
+						has_merchant = PREV
 					}
 				}
 			}
@@ -101,6 +106,7 @@ country_event = {
 				GEN = {
 					any_active_trade_node = {
 						province_id = 1320
+						has_merchant = PREV
 					}
 				}
 			}
@@ -501,7 +507,7 @@ country_event = {
 				stability = 3
 			}
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -870,7 +876,7 @@ country_event = {
 	option = {		# Leave it be
 		name = "flavor_tur.EVTOPTB3375"
 		ai_chance = { factor = 25 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 
 	}
 }
@@ -1881,54 +1887,6 @@ country_event = {
 	}
 }
 
-
-
-
-# Janissary Revolt
-country_event = {
-	id = flavor_tur.110
-	title = "flavor_tur.EVTNAME110"
-	desc = "flavor_tur.EVTDESC110"
-	picture = ANGRY_MOB_eventPicture
-	
-	fire_only_once = yes
-	
-	
-	trigger = {
-		has_country_modifier = tur_janissary
-		is_westernising = yes
-	}
-	
-	mean_time_to_happen = {
-		months = 300
-		modifier = {
-			factor = 0.1
-			has_disaster = janissary_decadence
-		}
-	}
-	
-	
-	option = {		# They will not be able to stop progress
-		name = "flavor_tur.EVTOPTA110"
-		capital_scope = {
-			spawn_rebels = {
-				type = reactionary_rebels
-				size = 3
-				unrest = 10
-			}
-		}
-		random_owned_province = {
-			limit = {
-				region = anatolia_region
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = reactionary_rebels
-				size = 2
-			}			
-		}
-	}
-}
 
 
 

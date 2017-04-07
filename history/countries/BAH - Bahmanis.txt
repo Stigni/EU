@@ -3,7 +3,8 @@ technology_group = indian
 religion = shiite
 primary_culture = kannada
 capital = 1948	# Gulbarga
-
+add_accepted_culture = marathi
+add_accepted_culture = telegu
 
 1397.1.1 = {
 	monarch = {
@@ -65,9 +66,6 @@ capital = 1948	# Gulbarga
 		ADM = 4
 		MIL = 5
 	}
-}
-
-1436.4.17 = {
 	heir = {
 		name = "Ala ud-Din Humayun"
 		monarch_name = "Ala ud-Din Humanyun Shah"
@@ -79,19 +77,22 @@ capital = 1948	# Gulbarga
 		DIP = 3
 		MIL = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_connected_personality #Succesfully recruited talent from abroad extensively
+	add_ruler_personality = fierce_negotiator_personality #Extensive use of foreign mercenaries, manages to recruit from far away
+	#add_ruler_personality = drunkard_personality
+	add_heir_personality = well_advised_personality
 }
 
 1458.5.6 = {
 	monarch = {
 		name = "Ala ud-Din Humayun Shah"
+		birth_date = 1410.1.1
 		dynasty = "Bahmanid"
 		DIP = 3
 		ADM = 3
 		MIL = 4
 	}
-}
-
-1458.5.6 = {
 	heir = {
 		name = "Ahmad"
 		monarch_name = "Ahmad Shah III"
@@ -103,16 +104,24 @@ capital = 1948	# Gulbarga
 		DIP = 0
 		MIL = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_advised_personality #Mahmud Gawan in particular
+	#add_ruler_personality = kind_hearted_personality #Up to 1460
+	add_ruler_personality = cruel_personality #"Zalim" post 1460
+	#add_ruler_personality = drunkard_personality
 }
 
 1461.9.4 = {
 	monarch = {
 		name = "Makhduma-e-Jahan Nargis Begum"
+		#female = yes
 		regent = yes
 		DIP = 3
 		ADM = 4
 		MIL = 2
 	}
+	clear_scripted_personalities = yes
+	add_queen_personality = charismatic_negotiator_personality
 }
 
 1463.7.30 = {
@@ -123,6 +132,9 @@ capital = 1948	# Gulbarga
 		ADM = 4
 		MIL = 5
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_advised_personality
+	add_ruler_personality = naive_personality
 }
 
 1463.7.30 = {

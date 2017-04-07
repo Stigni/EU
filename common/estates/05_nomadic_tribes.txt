@@ -206,6 +206,7 @@ estate_nomadic_tribes = {
 		trigger = {
 			any_owned_province = {
 				has_estate = estate_nomadic_tribes
+				controlled_by = ROOT
 			}
 			estate_loyalty = {
 				estate = estate_nomadic_tribes
@@ -219,7 +220,10 @@ estate_nomadic_tribes = {
 		
 		effect = {
 			random_owned_province = {
-				limit = { has_estate = estate_nomadic_tribes }
+				limit = {
+						has_estate = estate_nomadic_tribes
+						controlled_by = ROOT
+				}
 				add_unit_construction = {
 					type = cavalry
 					amount = 5

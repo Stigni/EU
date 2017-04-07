@@ -718,3 +718,10 @@ ICM = "countries/Ichma.txt"
 # ???
 JMN = "countries/Jan Mayen.txt"
 ROM = "countries/RomanEmpire.txt"
+
+#Converter tags:
+#JOM = countries/Jomsvikings.txt
+#HAH = countries/Hashshashin.txt
+#ISR = countries/Israel.txt
+#TEM = countries/KnightsTemplar.txt
+#TRL = countries/Trapalanda.txt

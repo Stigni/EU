@@ -43,9 +43,26 @@ national_focus = ADM
 		dip = 1
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
+	add_ruler_personality = intricate_web_weaver_personality
 }
 
 1430.1.1 = { leader = {	name = "Dmitry Shemiaka"	type = general	rank = 2	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1453.1.1 } }
+
+1433.1.1 = {
+	queen = {
+		country_of_origin = YAR
+		name = "Maria"
+		dynasty = "Rurikovich"
+		birth_date = 1418.1.1
+		death_date = 1484.1.1
+		female = yes
+		adm = 3 
+		dip = 3
+		mil = 1
+	}
+}
 
 1440.1.22 = {
 	heir = {

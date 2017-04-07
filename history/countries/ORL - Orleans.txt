@@ -112,7 +112,7 @@ fixed_capital = 184 # Cannot move capital away from this province & no power cos
 
 1560.12.5 = {
 	monarch = {
-		name = "Henri Alexandre I"
+		name = "Henri I"
 		dynasty = "de Valois"
 		birth_date = 1551.9.19
 		adm = 5

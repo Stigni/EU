@@ -11,6 +11,7 @@
 91 = "Henegouwen"
 92 = "Brabant"
 93 = "Luik"
+94 = "Lutzenburgh"
 95 = "Breda"
 96 = "Zeeland"
 97 = "Holland"

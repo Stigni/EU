@@ -1,5 +1,6 @@
 government = iqta
 primary_culture = al_misr_arabic
+add_accepted_culture = al_suryah_arabic
 religion = sunni
 technology_group = muslim
 historical_rival = TUR
@@ -50,11 +51,15 @@ capital = 361 # Cairo
 1438.6.8 = {
 	monarch = {
 		name = "Jaqmaq"
+		birth_date = 1372.1.1
 		dynasty = "Burji"
 		adm = 1
 		dip = 2
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
+	add_ruler_personality = obsessive_perfectionist_personality
 }
 
 1453.2.13 = {

@@ -52,7 +52,14 @@ annex_dai_viet = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -249,6 +256,24 @@ start_the_conquest_of_ming_china = {
 	
 	category = MIL
 	
+	target_provinces = {
+		OR = {
+			province_id = 703
+			province_id = 704
+			province_id = 723
+			province_id = 726
+			province_id = 722
+			province_id = 2112
+			province_id = 2113
+			province_id = 2115
+		}
+		NOT = { owned_by = ROOT }
+		owner = {
+			NOT = { war_with = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	
 	allow = {
 		normal_or_historical_nations = yes
 		tag = MCH
@@ -276,14 +301,9 @@ start_the_conquest_of_ming_china = {
 	}
 	success = {
 		NOT = { war_with = MNG }
-		owns = 703
-		owns = 704
-		owns = 723
-		owns = 726
-		owns = 722
-		owns = 2112
-		owns = 2113
-		owns = 2115
+		all_target_province = {
+			owned_by = ROOT
+		}
 	}
 	chance = {
 		factor = 5000
@@ -293,24 +313,21 @@ start_the_conquest_of_ming_china = {
 		}	
 	}
 	immediate = {
-		add_claim = 703
-		add_claim = 704
-		add_claim = 723
-		add_claim = 726
-		add_claim = 722
-		add_claim = 2112
-		add_claim = 2113
-		add_claim = 2115
+		every_target_province = {
+			add_claim = ROOT
+		}
 	}
 	abort_effect = {
-		remove_claim = 703
-		remove_claim = 704
-		remove_claim = 723
-		remove_claim = 726
-		remove_claim = 722
-		remove_claim = 2112
-		remove_claim = 2113
-		remove_claim = 2115
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		add_country_modifier = {
@@ -368,7 +385,14 @@ unite_manchu = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {

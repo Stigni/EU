@@ -15,12 +15,13 @@ capital = 552	# Cuttack
 		MIL = 6
 		leader = { name = "Kapilendra"	type = general	rank = 1	fire = 3	shock = 5	manuever = 2	siege = 1 }
 	}
-}
-
-1434.1.1 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = inspiring_leader_personality
+	add_heir_personality = bold_fighter_personality
 	heir = {
 		name = "Hamvira"
-		monarch_name = "Purushottama"
+		monarch_name = "Hamvira"
 		dynasty = "Gajapati"
 		birth_date = 1418.1.1
 		death_Date = 1476.1.1
@@ -28,6 +29,17 @@ capital = 552	# Cuttack
 		ADM = 3
 		DIP = 2
 		MIL = 2
+	}
+	queen = {
+		country_of_origin = ORI
+		name = "Parvati Devi" #Mother of Purushottama
+		dynasty = "Dash" #Unkown Brahmin family
+		birth_date = 1420.1.1
+		death_date = 1480.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 
@@ -86,6 +98,20 @@ capital = 552	# Cuttack
 		ADM = 1
 		DIP = 3
 		MIL = 1
+	}
+}
+
+1489.1.1 = {
+	queen = {
+		country_of_origin = VIJ
+		name = "Padmavati Devi"
+		dynasty = "Saluva"
+		birth_date = 1420.1.1
+		death_date = 1480.1.1
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 2
 	}
 }
 

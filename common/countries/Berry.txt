@@ -36,7 +36,6 @@ historical_units = {
 monarch_names = {
 	"Jean #0" = 40
 	"Charles #0" = 40
-	"Jeanne #0" = -15
 	"François #0" = 20
 	"Pierre #0" = 5
 	"Hubert #0" = 5
@@ -73,6 +72,10 @@ monarch_names = {
 	"Tristan #0" = 0
 	"Valentin #0" = 0
 	"Victor #0" = 0
+	
+	"Jeanne #0" = -15
+	"Margaret #0" = -1
+	"Marie #0" = -1
 }
 
 ship_names = {

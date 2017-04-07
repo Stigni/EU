@@ -59,6 +59,21 @@ monarch_names = {
 	"Rajah Qasim #0" = 10
 	
 	"Azura #0" = -1
+	"Dayang #0" = -1
+	"Fatimah #0" = -1
+	"Sulong #0" = -1
+	"Sembuk #0" = -1
+	"Cik Fatimah #0" = -1
+	"Mariam #0" = -1
+	"Sharifah #0" = -1
+	"Azizah #0" = -1
+	"Aminah #0" = -1
+	"Zabedah #0" = -1
+	"Maimunah #0" = -1
+	"Zaharah #0" = -1
+	"Ismailiah #0" = -1
+	"Iskandariah #0" = -1
+
 }
 
 ship_names = {

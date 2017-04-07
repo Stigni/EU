@@ -125,7 +125,7 @@ country_event = {
 			faction = mr_traders
 			influence = -10
 		}
-		add_mercantilism = 0.01
+		add_mercantilism = 1
 		add_adm_power = -50
 		add_dip_power = -50
 	}
@@ -297,7 +297,7 @@ country_event = {
 			faction = mr_aristocrats
 			influence = -10
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = -15
 		custom_tooltip = "republic_factions.5.a.tt"
 		hidden_effect = {
@@ -368,7 +368,7 @@ country_event = {
 		NOT = { has_country_modifier = foreign_guild_infiltrated }
 		NOT = { has_country_modifier = guilds_compromised }
 		NOT = { has_country_modifier = suspended_diplomat }
-
+		
 	}
 
 	mean_time_to_happen = {
@@ -1083,5 +1083,479 @@ country_event = {
 	option = {
 		name = "republic_factions.24.b"
 		add_stability = -1
+	}
+}
+
+########################################
+# Violence in the Streets
+########################################
+
+# Revolution against Guilds
+country_event = {
+	id = republic_factions.101
+	title = "republic_factions.101.t"
+	desc = "republic_factions.101.d"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		has_dlc = "Res Publica"
+		government = merchant_republic
+		NOT = { has_ruler_flag = republic_revolution }
+		faction_influence = {
+			faction = mr_guilds
+			influence = 80
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.9
+			faction_influence = {
+				faction = mr_guilds
+				influence = 90
+			}
+		}
+		modifier = {
+			factor = 0.9
+			faction_influence = {
+				faction = mr_guilds
+				influence = 95
+			}
+		}
+		modifier = {
+			factor = 0.9
+			faction_influence = {
+				faction = mr_guilds
+				influence = 100
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				faction_influence = {
+					faction = mr_traders
+					influence = 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				faction_influence = {
+					faction = mr_aristocrats
+					influence = 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { republican_tradition = 0.8 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { republican_tradition = 0.6 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { republican_tradition = 0.4 }
+		}
+	}
+
+	immediate = {
+		set_ruler_flag = "republic_revolution"
+	}
+
+	option = {
+		name = "republic_factions.101.a" # We cannot allow the Republic to engulf in anarchy of the masses.
+		add_stability = -1
+		add_prestige = -15
+		add_republican_tradition = -0.20
+		if = {
+			limit = {
+				num_of_cities = 2
+				any_owned_province = {
+					is_capital = no
+					is_in_capital_area = yes
+				}
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_in_capital_area = yes
+				}
+				spawn_rebels = {
+					type = revolutionary_rebels
+					size = 2
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = { num_of_cities = 2 }
+					NOT = {
+						any_owned_province = {
+							is_capital = no
+							is_in_capital_area = yes
+						}
+					}
+				}
+				capital_scope = {
+					NOT = { has_province_modifier = wrecked_by_factional_riots } #If you already have it nothing happens, you're poor enough as it is.
+				}
+			}
+			capital_scope = {
+				add_province_modifier = {
+					name = "wrecked_by_factional_riots"
+					duration = 1825
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "republic_factions.101.b" # If these savages burn shops, what will they do next?
+		custom_tooltip = republic_factions.103.b.tt
+		add_stability = -1
+		add_years_of_income = -0.25
+		add_republican_tradition = 0.05
+		add_faction_influence = {
+			faction = mr_guilds
+			influence = -60
+		}
+		set_ruler_flag = leader_has_been_pushed_out
+		country_event = { id = 700 }
+	}
+}
+
+
+# Revolution against Traders
+country_event = {
+	id = republic_factions.102
+	title = "republic_factions.102.t"
+	desc = "republic_factions.102.d"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		has_dlc = "Res Publica"
+		government = merchant_republic
+		NOT = { has_ruler_flag = republic_revolution }
+		faction_influence = {
+			faction = mr_traders
+			influence = 80
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.9
+			faction_influence = {
+				faction = mr_traders
+				influence = 90
+			}
+		}
+		modifier = {
+			factor = 0.9
+			faction_influence = {
+				faction = mr_traders
+				influence = 95
+			}
+		}
+		modifier = {
+			factor = 0.9
+			faction_influence = {
+				faction = mr_traders
+				influence = 100
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				faction_influence = {
+					faction = mr_guilds
+					influence = 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				faction_influence = {
+					faction = mr_aristocrats
+					influence = 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { republican_tradition = 0.8 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { republican_tradition = 0.6 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { republican_tradition = 0.4 }
+		}
+	}
+
+	immediate = {
+		set_ruler_flag = "republic_revolution"
+	}
+
+	option = {
+		name = "republic_factions.102.a" # Let us not be intimidated by a bunch of scoundrels!
+		add_stability = -1
+		add_prestige = -15
+		add_republican_tradition = -0.20
+		if = {
+			limit = {
+				num_of_cities = 2
+				any_owned_province = {
+					is_capital = no
+					is_in_capital_area = yes
+				}
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_in_capital_area = yes
+				}
+				spawn_rebels = {
+					type = revolutionary_rebels
+					size = 2
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = { num_of_cities = 2 }
+					NOT = {
+						any_owned_province = {
+							is_capital = no
+							is_in_capital_area = yes
+						}
+					}
+				}
+				capital_scope = {
+					NOT = { has_province_modifier = wrecked_by_factional_riots } #If you already have it nothing happens, you're poor enough as it is.
+				}
+			}
+			capital_scope = {
+				add_province_modifier = {
+					name = "wrecked_by_factional_riots"
+					duration = 1825
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "republic_factions.102.b" # Would they seriously prefer full bellies in a ruined Republic?
+		custom_tooltip = republic_factions.103.b.tt
+		add_stability = -1
+		add_years_of_income = -0.25
+		add_republican_tradition = 0.05
+		add_faction_influence = {
+			faction = mr_traders
+			influence = -60
+		}
+		set_ruler_flag = leader_has_been_pushed_out
+		country_event = { id = 700 }
+	}
+}
+
+
+# Revolution against Aristocrats
+country_event = {
+	id = republic_factions.103
+	title = "republic_factions.103.t"
+	desc = "republic_factions.103.d"
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		has_dlc = "Res Publica"
+		government = merchant_republic
+		OR = {
+			NOT = { has_ruler_flag = republic_revolution }
+			had_ruler_flag = { flag = republic_revolution days = 3650 }
+		}
+		faction_influence = {
+			faction = mr_aristocrats
+			influence = 80
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.9
+			faction_influence = {
+				faction = mr_aristocrats
+				influence = 90
+			}
+		}
+		modifier = {
+			factor = 0.9
+			faction_influence = {
+				faction = mr_aristocrats
+				influence = 95
+			}
+		}
+		modifier = {
+			factor = 0.9
+			faction_influence = {
+				faction = mr_aristocrats
+				influence = 100
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				faction_influence = {
+					faction = mr_guilds
+					influence = 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.9
+			NOT = {
+				faction_influence = {
+					faction = mr_traders
+					influence = 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 0.95
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { republican_tradition = 0.8 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { republican_tradition = 0.6 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { republican_tradition = 0.4 }
+		}
+	}
+
+	immediate = {
+		set_country_flag = "republic_revolution"
+	}
+
+	option = {
+		name = "republic_factions.103.a" # We cannot possibly surrender to grocers!
+		add_stability = -1
+		add_prestige = -15
+		add_republican_tradition = -0.20
+		if = {
+			limit = {
+				num_of_cities = 2
+				any_owned_province = {
+					is_capital = no
+					is_in_capital_area = yes
+				}
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_in_capital_area = yes
+				}
+				spawn_rebels = {
+					type = revolutionary_rebels
+					size = 2
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = { num_of_cities = 2 }
+					NOT = {
+						any_owned_province = {
+							is_capital = no
+							is_in_capital_area = yes
+						}
+					}
+				}
+				capital_scope = {
+					NOT = { has_province_modifier = wrecked_by_factional_riots } #If you already have it nothing happens, you're poor enough as it is.
+				}
+			}
+			capital_scope = {
+				add_province_modifier = {
+					name = "wrecked_by_factional_riots"
+					duration = 1825
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "republic_factions.103.b" # Well… What do these villains seriously want?
+		custom_tooltip = republic_factions.103.b.tt
+		add_stability = -1
+		add_years_of_income = -0.25
+		add_republican_tradition = 0.05
+		add_faction_influence = {
+			faction = mr_aristocrats
+			influence = -60
+		}
+		set_ruler_flag = leader_has_been_pushed_out
+		country_event = { id = 700 }
 	}
 }

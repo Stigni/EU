@@ -61,6 +61,8 @@ monarch_names = {
 	"Quouqua #0" = 20
 
 	"Taima #0" = -1
+	"Myeerah #0" = -1
+	"Skamehndahteh #0" = -1
 }
 
 leader_names = {

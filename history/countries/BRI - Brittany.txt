@@ -16,6 +16,48 @@ capital = 172	# Nantes
 	}
 }
 
+1361.7.3 = { # Elfryc
+	queen = {
+		country_of_origin = ENG
+		name = "Mary"
+		dynasty = "Lancaster"
+		birth_date = 1344.10.10
+		death_date = 1361.9.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1366.5.1 = {
+	queen = {
+		country_of_origin = ENG
+		name = "Joan"
+		dynasty = "Holland"
+		birth_date = 1350.1.1
+		death_date = 1384.10.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1386.9.11 = {
+	queen = {
+		country_of_origin = NAV
+		name = "Jeanne"
+		dynasty = "d'Évreux"
+		birth_date = 1370.1.1
+		death_date = 1437.7.9
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
 1389.12.24 = {
 	heir = {
 		name = "Jean"
@@ -39,18 +81,29 @@ capital = 172	# Nantes
 		dip = 2
 		mil = 2
 	}
+	queen = {
+		country_of_origin = FRA
+		name = "Jeanne"
+		dynasty = "de Valois"
+		birth_date = 1391.1.24
+		death_date = 1433.9.27
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
 }
 
-1414.5.14 = {
+1414.5.11 = {
 	heir = {
 		name = "François"
 		monarch_name = "François I"
 		dynasty = "de Dreux"
-		birth_date = 1414.5.14
+		birth_date = 1414.5.11
 		death_date = 1450.7.18
 		claim = 95
 		adm = 1
-		dip = 1
+		dip = 3
 		mil = 2
 	}
 }
@@ -61,9 +114,11 @@ capital = 172	# Nantes
 		dynasty = "de Dreux"
 		birth_date = 1414.5.14
 		adm = 1
-		dip = 1
+		dip = 3
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = charismatic_negotiator_personality 
 }
 
 1442.8.29 = {
@@ -71,8 +126,8 @@ capital = 172	# Nantes
 		name = "Pierre"
 		monarch_name = "Pierre II"
 		dynasty = "de Dreux"
-		birth_date = 1418.1.1
-		death_date = 1457.9.23
+		birth_date = 1418.7.7
+		death_date = 1457.9.22
 		claim = 95
 		adm = 2
 		dip = 2
@@ -80,21 +135,45 @@ capital = 172	# Nantes
 	}
 }
 
-1450.7.20 = {
+1442.10.30 = {
+	queen = {
+		country_of_origin = SCO
+		name = "Isabel"
+		dynasty = "Stuart"
+		birth_date = 1426.1.1
+		death_date = 1494.10.13
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1450.7.19 = {
 	monarch = {
 		name = "Pierre II"
 		dynasty = "de Dreux"
-		birth_date = 1418.1.1
+		birth_date = 1418.7.7
 		adm = 2
 		dip = 2
 		mil = 3
+	}
+	queen = {
+		country_of_origin = FRA
+		name = "Françoise"
+		dynasty = "d'Amboise"
+		birth_date = 1427.5.29
+		death_date = 1485.11.4
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 
 1450.7.20 = {
 	heir = {
-		name = "Artur"
-		monarch_name = "Artur III"
+		name = "Arthur"
+		monarch_name = "Arthur III"
 		dynasty = "de Dreux"
 		birth_date = 1393.8.24
 		death_date = 1458.12.26
@@ -113,7 +192,7 @@ capital = 172	# Nantes
 		adm = 3
 		dip = 2
 		mil = 4
-		leader = { name = "Arthur de Richemont"	type = general	rank = 0	fire = 4	shock = 4	manuever = 4	siege = 1 }
+		leader = { name = "Arthur de Dreux"	type = general	rank = 0	fire = 4	shock = 4	manuever = 4	siege = 1 }
 	}
 }
 
@@ -129,6 +208,8 @@ capital = 172	# Nantes
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = cruel_personality  
 }
 
 1458.12.27 = {
@@ -140,6 +221,8 @@ capital = 172	# Nantes
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = cruel_personality  
 }
 
 1477.1.25 = {
@@ -167,6 +250,8 @@ capital = 172	# Nantes
 		mil = 1
 		female = yes
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = just_personality # Righteous would also be valid
 }
 
 1499.10.14 = {

@@ -52,6 +52,9 @@ monarch_names = {
 
 	"Kamala #0" = -1
 	"Indira #0" = -1
+	"Surah Palinyal #0" = -1
+	"Kunzang #0" = -1
+	"Deki Choden #0" = -1
 }
 
 leader_names = {

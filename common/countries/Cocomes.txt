@@ -84,7 +84,18 @@ monarch_names = {
 	"Hool #1" = 10
 	"Cilich #1" = 10
 
-	"Sacnite #0" = -1
+	"Sacnite #0" = -5
+	"Yohl Ik'nal #0" = -10
+	"Muwaan Mat #0" = -10
+	"Ik' Skull #0" = -10
+	"Sak K'uk' #0" = -10
+	"K'anal Ik'nal #0" = -10
+	"Gi-K'awiil #0" = -1
+
+
+
+
+
 }
 
 ship_names = {

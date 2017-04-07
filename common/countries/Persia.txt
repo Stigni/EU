@@ -57,6 +57,13 @@ monarch_names = {
 	"Fath Alî #0" = 10
 	
 	"Atiya #0" = -1
+	"Pari #0" = -1
+	"Khayr al-Nisa #0" = -1
+	"Tajlu #0" = -1
+	"Dilaram #0" = -1
+	"Shahbanu #0" = -1
+	"Razia #0" = -1
+	"Maryam #0" = -1
 }
 
 leader_names = {

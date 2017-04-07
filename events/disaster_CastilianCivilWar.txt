@@ -598,7 +598,7 @@ country_event = {
 			limit = {
 				NOT = { has_country_flag = cas_civil_war_rebels_won }
 			}
-			add_stability = 1
+			add_stability_or_adm_power = yes
 		}
 		add_opinion = {
 			who = ARA
@@ -647,7 +647,7 @@ country_event = {
 			limit = {
 				NOT = { has_country_flag = cas_civil_war_rebels_won }
 			}
-			add_stability = 1
+			add_stability_or_adm_power = yes
 		}
 		add_opinion = {
 			who = POR

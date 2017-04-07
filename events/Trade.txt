@@ -126,6 +126,7 @@ country_event = {
 	trigger = {
 		num_of_merchants = 3
 		any_active_trade_node = {
+			has_merchant = PREV
 			most_province_trade_power = {
 				NOT = { tag = ROOT }
 				exists = yes
@@ -142,6 +143,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 		random_active_trade_node = {
 			limit = {
+				has_merchant = PREV
 				NOT = { most_province_trade_power = { tag = ROOT } }
 			}
 			most_province_trade_power = {
@@ -163,6 +165,7 @@ country_event = {
 		random_active_trade_node = {
 			limit = {
 				NOT = { most_province_trade_power = { tag = ROOT } }
+				has_merchant = PREV
 			}
 			most_province_trade_power = {
 				add_opinion = {
@@ -307,6 +310,7 @@ country_event = {
 		num_of_merchants = 3
 		NOT = { luck = yes }
 		any_active_trade_node = {
+			has_merchant = PREV
 			is_sea = yes
 		}
 	}
@@ -320,6 +324,7 @@ country_event = {
 		random_active_trade_node = {
 			limit = {
 				is_sea = yes
+				has_merchant = PREV
 			}
 			add_trade_node_income = -10
 		}		
@@ -338,6 +343,7 @@ country_event = {
 	trigger = {
 		any_active_trade_node = {
 			NOT = { owned_by = ROOT }
+			has_merchant = PREV
 			NOT = { 
 				has_trade_modifier = {
 					who = ROOT
@@ -356,6 +362,7 @@ country_event = {
 		random_active_trade_node = {
 			limit = {
 				NOT = { owned_by = ROOT }
+				has_merchant = PREV
 				NOT = { 
 					has_trade_modifier = {
 						who = ROOT
@@ -385,6 +392,7 @@ country_event = {
 	trigger = {
 		any_active_trade_node = {
 			has_most_province_trade_power = root
+			has_merchant = PREV
 		}
 	}
 	
@@ -393,6 +401,7 @@ country_event = {
 		random_active_trade_node = {
 			limit = {
 				has_most_province_trade_power = root
+				has_merchant = PREV
 			}
 			add_trade_node_income = -5
 		}
@@ -409,7 +418,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		mercantilism = 0.55
+		mercantilism = 55
 		num_of_merchants = 3
 	}
 	
@@ -432,6 +441,7 @@ country_event = {
 		num_of_merchants = 3
 		any_active_trade_node = {
 			not = { has_most_province_trade_power = root }
+			has_merchant = PREV
 			NOT = { 
 				has_trade_modifier = {
 					who = ROOT
@@ -450,6 +460,7 @@ country_event = {
 		random_active_trade_node = {
 			limit = {
 				not = { has_most_province_trade_power = root }
+				has_merchant = PREV
 				NOT = { 
 					has_trade_modifier = {
 						who = ROOT
@@ -477,7 +488,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { mercantilism = 0.40 }
+		NOT = { mercantilism = 40 }
 		num_of_merchants = 3
 	}
 	
@@ -514,7 +525,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	trigger = {
-		mercantilism = 0.5
+		mercantilism = 50
 		num_of_merchants = 3
 		NOT = {
 			has_country_modifier = mercantilism_modifier
@@ -544,9 +555,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { mercantilism = 0.5 }
+		NOT = {mercantilism = 50 }
 		num_of_merchants = 1
 		any_active_trade_node = {
+			has_merchant = PREV
 			NOT = { 
 				has_trade_modifier = {
 					who = ROOT
@@ -567,12 +579,13 @@ country_event = {
 		name = "EVTOPTA6327"
 		random_active_trade_node = {
 			limit = {
+				has_merchant = PREV
 				NOT = { 
 					has_trade_modifier = {
 						who = ROOT
 						name = merchant_recalled
 					}
-				}				
+				}
 			}
 			add_trade_modifier = {
 				who = root
@@ -581,7 +594,7 @@ country_event = {
 				key = merchant_recalled
 			}			
 		}
-		add_mercantilism = 0.01
+		add_mercantilism = 1
 	}	
 
 	option = {
@@ -590,7 +603,7 @@ country_event = {
 			name = freetrade_modifier
 			duration = 3650
 		}
-		add_mercantilism = -0.01
+		add_mercantilism = -1
 	}
 } 
 
@@ -604,9 +617,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { mercantilism = 0.2 }
+		NOT = { mercantilism = 20 }
 		any_active_trade_node = {
 			is_sea = yes
+			has_merchant = PREV
 		}	
 		NOT = {
 			has_country_modifier = freetrade_modifier
@@ -636,7 +650,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { mercantilism = 0.4 }
+		NOT = { mercantilism = 40 }
 	}
 
 	mean_time_to_happen = {
@@ -652,7 +666,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB6329"
-		add_mercantilism = 0.01
+		add_mercantilism = 1
 		add_dip_power = -25
 	}
 }
@@ -680,5 +694,9 @@ province_event = {
 		name = "EVTOPTA9520"
 		change_trade_goods = unknown
 		remove_building = tradecompany
+		if = {
+			limit = { has_province_modifier = slave_entrepot }
+			remove_province_modifier = slave_entrepot
+		}
 	}
 }

@@ -67,3 +67,11 @@ vassal = {
 	start_date = 1434.1.1
 	end_date = 1454.1.1
 }
+
+#Chagatai Subject
+vassal = {
+	first = CHG
+	second = KAS
+	start_date = 1444.1.1
+	end_date = 1462.1.1
+}

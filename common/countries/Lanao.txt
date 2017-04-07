@@ -47,6 +47,12 @@ monarch_names = {
 	"Qudratullah Untung #0" = 30
 	
 	"Anela #0" = -1
+	"Cinta #0" = -1
+	"Wangi #0" = -1
+	"'Umniya #0" = -1
+	"Hafeeza #0" = -1
+	"Aisha #0" = -1
+	"Azura #0" = -1
 }
 
 leader_names = {

@@ -35,6 +35,11 @@ monarch_names = {
 	"Tahaygen #0" = 20
 	
 	"Kwoiyang #0" = -1
+	"Qawkúna #0" = -1
+	"Nasnan #0" = -1
+	"Sadzea #0" = -1
+	"Sadzi #0" = -1
+	"Sadzyah #0" = -1
 }
 
 leader_names = {

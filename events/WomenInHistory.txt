@@ -162,6 +162,7 @@ country_event = {
 		}
 		is_female = no
 		has_regency = yes
+		has_consort = no
 		is_lesser_in_union = no
 		government = monarchy
 		NOT = {
@@ -185,15 +186,33 @@ country_event = {
 	
 	option = {
 		name = women_history_events.3.a
-		define_ruler = {
-			name = "Kosem Sultan"
-			dynasty = "Osmanoglu"
-			fixed = yes
-			adm = 5
-			dip = 4
-			mil = 5
-			female = yes
+		if = {
+			limit = {
+				NOT = { has_dlc = "Rights of Man" }
+			}
+			define_ruler = {
+				name = "Kösem Sultan"
+				dynasty = "Osmanoglu"
+				fixed = yes
+				adm = 5
+				dip = 4
+				mil = 5
+				female = yes
+			}
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+			}
+			define_consort = {
+				name = "Kösem Sultan"
+				adm = 5
+				dip = 4
+				mil = 5
+				female = yes
+			}
+		}
+		
 	}
 	option = {
 		name = women_history_events.3.b
@@ -291,6 +310,7 @@ country_event = {
 		}
 		has_regency = no
 		is_female = no
+		has_consort = no
 		NOT = {
 			has_global_flag = wih_roxelana_tur_flag
 		}
@@ -614,6 +634,7 @@ country_event = {
 		}
 		has_regency = no
 		is_female = no
+		has_consort = no
 		has_heir = no
 		is_lesser_in_union = no
 		government = monarchy
@@ -720,6 +741,7 @@ country_event = {
 				culture_group = latin
 			}
 		}
+		has_consort = no
 		is_year = 1463 
 		NOT = {
 			is_year = 1510
@@ -780,6 +802,7 @@ country_event = {
 		}
 		has_regency = yes
 		has_female_heir = no
+		has_consort = no
 		is_lesser_in_union = no
 		government = monarchy
 		NOT = {
@@ -832,6 +855,7 @@ country_event = {
 	picture = wihgfx_FEMALE_RULER_eventPicture
 
 	trigger = {
+		NOT = { has_dlc = "Rights of Man" }
 		tag = HES
 		is_year = 1600
 		NOT = {
@@ -1044,6 +1068,7 @@ country_event = {
 		NOT = {
 			is_year = 1600
 		}
+		has_consort_regency = no
 		has_regency = yes
 		is_lesser_in_union = no
 		government = monarchy
@@ -1104,6 +1129,7 @@ country_event = {
 		}
 		is_female = no
 		has_female_heir = no
+		has_consort = no
 		is_lesser_in_union = no
 		government = monarchy
 		NOT = {
@@ -1170,6 +1196,7 @@ country_event = {
 		is_female = no
 		has_female_heir = no
 		is_lesser_in_union = no
+		has_consort = no
 		government = monarchy
 		NOT = {
 			OR = {
@@ -1387,6 +1414,7 @@ country_event = {
 	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
 
 	trigger = {
+		has_consort = no
 		OR = {
 			tag = ENG
 			tag = GBR
@@ -1434,6 +1462,7 @@ country_event = {
 	picture = wihgfx_FEMALE_GENERAL_eventPicture
 
 	trigger = {
+		has_consort = no
 		owns = 599
 		is_year = 1585
 		NOT = {
@@ -1489,6 +1518,7 @@ country_event = {
 	picture = wihgfx_FEMALE_RULER_eventPicture
 
 	trigger = {
+		has_consort = no
 		OR = {
 			tag = ENG
 			tag = GBR
@@ -1686,7 +1716,7 @@ country_event = {
 	
 	option = {
 		name = women_history_events.29.a
-		define_ruler = {
+		define_ruler = { #Change to Queen
 			fixed = yes
 			name = "Ayse Hafsa Sultan"
 			dynasty = "Osmanoglu"
@@ -4270,6 +4300,7 @@ country_event = {
 				}
 			}
 		}
+		NOT = { has_consort = yes }
 		NOT = {
 			has_global_flag = wih_eleniethiopia_flag
 		}
@@ -4306,10 +4337,9 @@ country_event = {
 	}
 	option = {
 		name = women_history_events.74.b
-		define_ruler = {
+		define_consort = {
 			name = "Eleni"
-			dynasty = "Solomonid"
-			fixed = yes
+			dynasty = "Hadiya"
 			adm = 4
 			dip = 4
 			mil = 3
@@ -4607,26 +4637,6 @@ country_event = {
 			duration = 7300
 		}
 	}
-	#option = {
-	#	name = women_history_events.79.c TODO GET HELP FROM MARTIN!
-	#	trigger = {
-	#		any_owned_province = {
-	#			any_neighbor_province = {
-	#				province_id = 1126
-	#			}
-	#		}
-	#		1126 = {
-	#			#is_colony = yes
-	#			is_city = no
-	#			NOT = {
-	#				colonysize = 1
-	#			}
-	#		}
-	#	}
-	#	1126 = {
-	#		add_colonysize = 1000
-	#	}
-	#}
 }
 
 # Ratu Hijau
@@ -5764,14 +5774,31 @@ country_event = {
 	}
 	option = {
 		name = women_history_events.97.b
-		define_ruler = {
-			name = "Nurbanu Sultan"
-			dynasty = "Osmanoglu"
-			fixed = yes
-			adm = 4
-			dip = 4
-			mil = 3
-			female = yes
+		if = {
+			limit = {
+				NOT = { has_dlc = "Rights of Man" }
+			}
+			define_ruler = {
+				name = "Nurbanu Sultan"
+				dynasty = "Osmanoglu"
+				fixed = yes
+				adm = 4
+				dip = 4
+				mil = 3
+				female = yes
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+			}
+			define_consort = {
+				name = "Nurbanu Sultan"
+				adm = 4
+				dip = 4
+				mil = 3
+				female = yes
+			}
 		}
 	}
 }

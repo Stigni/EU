@@ -16,7 +16,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 	}
 	
 	mean_time_to_happen = {
@@ -45,7 +45,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 	}
 	
 	mean_time_to_happen = {
@@ -74,7 +74,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 	}
 	
 	mean_time_to_happen = {
@@ -102,7 +102,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 	}
 	
 	mean_time_to_happen = {
@@ -129,7 +129,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 	}
 	
 	mean_time_to_happen = {
@@ -158,7 +158,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 	}
 	
 	mean_time_to_happen = {
@@ -186,7 +186,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 	}
 	
 	mean_time_to_happen = {
@@ -214,7 +214,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 	}
 	
 	mean_time_to_happen = {
@@ -241,7 +241,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 	}
 	
 	mean_time_to_happen = {
@@ -268,7 +268,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 		piety = 0.75
 	}
 	
@@ -297,7 +297,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 	}
 	
 	mean_time_to_happen = {
@@ -326,7 +326,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 	}
 	
 	mean_time_to_happen = {
@@ -355,7 +355,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 		NOT = { piety = -0.75 }
 	}
 	
@@ -383,7 +383,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 		piety = 0.75
 	}
 	
@@ -415,7 +415,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 	}
 	
 	mean_time_to_happen = {
@@ -445,7 +445,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 		NOT = { piety = -0.75 }
 		corruption = 5
 	}
@@ -475,9 +475,10 @@ country_event = {
 	picture = DEATH_OF_HEIR_eventPicture
 
 	trigger = {
-		religion_group = muslim
+		uses_piety = yes
 		government = iqta
 		has_regency = yes
+		has_consort_regency = no
 	}
 	
 	mean_time_to_happen = {

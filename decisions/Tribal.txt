@@ -14,6 +14,21 @@ country_decisions = {
 				full_idea_group = innovativeness_ideas
 				full_idea_group = administrative_ideas
 			}
+			custom_trigger_tooltip = {
+				tooltip = dlc_or_feudalism_tooltip
+				OR = {
+					AND = {
+						NOT = { has_dlc = "El Dorado" }
+						OR = {
+							religion = nahuatl
+							religion = mesoamerican_religion
+							religion = inti
+						}
+					}
+					NOT = { has_dlc = "Conquest of Paradise" }
+					has_institution = feudalism
+				}
+			}
 		}
 		effect = {
 			change_government = despotic_monarchy
@@ -40,6 +55,21 @@ country_decisions = {
 				full_idea_group = innovativeness_ideas
 				full_idea_group = administrative_ideas
 			}
+			custom_trigger_tooltip = {
+				tooltip = dlc_or_feudalism_tooltip
+				OR = {
+					AND = {
+						NOT = { has_dlc = "El Dorado" }
+						OR = {
+							religion = nahuatl
+							religion = mesoamerican_religion
+							religion = inti
+						}
+					}
+					NOT = { has_dlc = "Conquest of Paradise" }
+					has_institution = feudalism
+				}
+			}
 		}
 		effect = {
 			change_government = feudal_monarchy
@@ -65,6 +95,21 @@ country_decisions = {
 				full_idea_group = innovativeness_ideas
 				full_idea_group = administrative_ideas
 			}
+			custom_trigger_tooltip = {
+				tooltip = dlc_or_feudalism_tooltip
+				OR = {
+					AND = {
+						NOT = { has_dlc = "El Dorado" }
+						OR = {
+							religion = nahuatl
+							religion = mesoamerican_religion
+							religion = inti
+						}
+					}
+					NOT = { has_dlc = "Conquest of Paradise" }
+					has_institution = feudalism
+				}
+			}
 		}
 		effect = {
 			change_government = feudal_monarchy
@@ -85,6 +130,21 @@ country_decisions = {
 			adm_power = 200
 			republican_tradition = 0.99
 			stability = 3
+			custom_trigger_tooltip = {
+				tooltip = dlc_or_feudalism_tooltip
+				OR = {
+					AND = {
+						NOT = { has_dlc = "El Dorado" }
+						OR = {
+							religion = nahuatl
+							religion = mesoamerican_religion
+							religion = inti
+						}
+					}
+					NOT = { has_dlc = "Conquest of Paradise" }
+					has_institution = feudalism
+				}
+			}
 			OR = {
 				full_idea_group = economic_ideas
 				full_idea_group = innovativeness_ideas
@@ -116,6 +176,7 @@ country_decisions = {
 			adm_power = 200
 			legitimacy_or_horde_unity = 60
 			stability = 3
+			has_institution = feudalism
 			OR = {
 				full_idea_group = economic_ideas
 				full_idea_group = innovativeness_ideas
@@ -178,6 +239,7 @@ country_decisions = {
 		allow = {
 			adm_power = 200
 			stability = 3
+			has_institution = feudalism
 			OR = {
 				full_idea_group = economic_ideas
 				full_idea_group = innovativeness_ideas
@@ -194,4 +256,60 @@ country_decisions = {
 		}
 	}
 	
+	native_american_reform = {
+		major = yes
+		potential = {
+			primitives = yes
+			OR = {
+				NOT = { has_dlc = "Conquest of Paradise" }
+				AND = {
+					OR = {
+						religion = nahuatl
+						religion = mesoamerican_religion
+						religion = inti
+					}
+					NOT = { has_dlc = "El Dorado" }
+				}
+				AND = {
+					NOT = { government = native_council }
+					NOT = { religion = nahuatl }
+					NOT = { religion = mesoamerican_religion }
+					NOT = { religion = inti }
+				}
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = dlc_or_feudalism_tooltip
+				OR = {
+					AND = {
+						NOT = { has_dlc = "El Dorado" }
+						OR = {
+							religion = nahuatl
+							religion = mesoamerican_religion
+							religion = inti
+						}
+					}
+					NOT = { has_dlc = "Conquest of Paradise" }
+					AND = {
+						NOT = { government = native_council }
+						NOT = { religion = nahuatl }
+						NOT = { religion = mesoamerican_religion }
+						NOT = { religion = inti }
+					}
+					has_institution = feudalism
+				}
+			}
+			any_neighbor_country = {
+				has_institution = feudalism
+			}
+			stability = 1
+		}
+		effect = {
+			set_primitive = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

@@ -5,7 +5,6 @@ country_decisions = {
 			NOT = { tag = NED }
 			NOT = { has_country_modifier = hab_ostende_company }
 			NOT = { has_country_flag = trade_company }
-			technology_group = western
 			NOT = {
 				capital_scope = {
 					continent = asia
@@ -77,23 +76,18 @@ country_decisions = {
 		}
 
 		allow = {
-			dip_tech = 10
-			any_owned_province = {
-				OR = {
-					region = west_india_region
-					region = coromandel_region
-					region = deccan_region
-					region = bengal_region
-					region = malaya_region
-					region = moluccas_region
-					region = indonesia_region
-					region = indo_china_region
-					region = burma_region
-					region = japan_region
-					region = south_china_region
-					region = north_china_region
+			has_institution = global_trade
+			custom_trigger_tooltip = {
+				tooltip = own_port_province_in_far_east_tooltip
+				any_owned_province = {
+					OR = {
+						superregion = india_superregion
+						superregion = china_superregion
+						superregion = east_indies_superregion
+						region = japan_region
+					}
+					has_port = yes
 				}
-				has_port = yes
 			}
 		}
 
@@ -118,6 +112,49 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	expel_foreign_traders = {
+		potential = {
+			any_owned_province = {
+				has_province_modifier = trade_company_factory
+			}
+		}
+
+		allow = {
+			has_institution = global_trade
+			is_at_war = no
+			is_subject = no
+			stability = 2
+		}
+
+		effect = {
+			every_owned_province = {
+				limit = { has_province_modifier = trade_company_factory }
+				remove_province_modifier = trade_company_factory
+			}
+			every_known_country = {
+				limit = {
+					has_institution = global_trade
+					provinces_on_capital_continent_of = ROOT
+					ROOT = {
+						NOT = { provinces_on_capital_continent_of = PREV }
+					}
+				}
+				add_casus_belli = {
+					target = ROOT
+					type = cb_trade_war_triggered
+					months = 60
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_expelled_traders
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }

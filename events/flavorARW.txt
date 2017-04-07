@@ -58,7 +58,6 @@ country_event = {
 
 	
 	trigger = {
-		always = no # For now
 		tag = ARW
 		capital_scope = {
 			area = guyana_area
@@ -114,15 +113,4 @@ country_event = {
 			modifier = arw_hostility
 		}
 	}
-	option = {
-		name = flavor_arw.2.c #Try to enlist them as allies against the Caribs
-		trigger = {
-			exists = CAB
-			NOT = { alliance_with = CAB }
-		}
-		ai_chance = { factor = 50 }
-		
-	}
 }
-
-

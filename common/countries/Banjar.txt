@@ -43,6 +43,11 @@ monarch_names = {
 	"Adam Al-Watsiq Billah #0" = 20
 	
 	"Rim #0" = -1
+	"Bintang #0" = -1
+	"Bulan #0" = -1
+	"Saleha #0" = -1
+	"Sari Banun #0" = -1
+	"Sari Banun #0" = -1
 }
 
 leader_names = {

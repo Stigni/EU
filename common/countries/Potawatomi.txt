@@ -83,6 +83,8 @@ monarch_names = {
 	
 	"Hononegah #0" = -1
 	"Watseka #0" = -1
+	"Wehunsegah #0" = -1
+	"Inoquer #0" = -1
 }
 
 leader_names = {

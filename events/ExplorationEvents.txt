@@ -395,7 +395,9 @@ province_event = {
 	}
 	
 	immediate = {
-		kill_leader = explorer
+		kill_leader = {
+			type = explorer
+		}
 	}
 	
 	option = {
@@ -546,7 +548,9 @@ province_event = {
 	}
 	
 	immediate = {
-		kill_leader = explorer
+		kill_leader = {
+			type = explorer
+		}
 	}	
 	
 	option = {
@@ -560,15 +564,82 @@ country_event = {
 
 	id = exploration_events.16
 	title = exploration_events.16.t
-	desc = exploration_events.16.d
+	
 	picture = COASTLINE_MAP_eventPicture
 
 	is_triggered_only = yes
 	
+	desc = {
+		trigger = {
+			capital_scope = { continent = europe }
+			NOT = { tag = TUR }
+		}
+		desc = exploration_events.16.d #European
+	}
+	desc = {
+		trigger = {
+			capital_scope = {
+				OR = {
+					continent = oceania
+					AND = {
+						continent = asia
+						NOT = { culture_group = east_asian } #Chinese
+						NOT = { tag = TUR }
+						NOT = { capital_scope = { region = japan_region } }
+					}
+				}
+			}
+		}
+		desc = exploration_events.18.d #Asian
+	}
+	desc = {
+		trigger = {
+			capital_scope = {
+				continent = africa
+			}
+			NOT = { tag = TUR }
+		}
+		desc = exploration_events.19.d #Africa
+	}
+	desc = {
+		trigger = {
+			capital_scope = {
+				NOT = { continent = europe }
+				NOT = { continent = asia }
+				NOT = { continent = africa }
+				NOT = { continent = oceania }
+			}
+		}
+		desc = exploration_events.20.d #Americas
+	}
+	desc = {
+		trigger = {
+			culture_group = east_asian
+			capital_scope = { continent = asia }
+			NOT = { tag = TUR }
+		}
+		desc = exploration_events.21.d #Chinese version
+	}
+	desc = {
+		trigger = {
+			tag = TUR
+			OR = {
+				capital_scope = { continent = europe }
+				capital_scope = { continent = asia }
+				capital_scope = { continent = africa }
+			}
+		}
+		desc = exploration_events.22.d #Ottoman version
+	}
+	desc = {
+		trigger = {
+			capital_scope = { region = japan_region }
+		}
+		desc = exploration_events.23.d #Japanese version
+	}
+	
 	trigger = {
 		has_dlc = "El Dorado"
-		capital_scope = { continent = europe }
-		NOT = { tag = TUR }
 		NOT = { has_global_flag = circumnavigation_completed }
 		NOT = { has_country_flag = circumnavigation_first }
 	}
@@ -607,174 +678,5 @@ country_event = {
 		name = exploration_events.17.a
 		add_prestige = 10
 		add_navy_tradition = 10
-	}
-}
-
-country_event = {
-	major = yes
-
-	id = exploration_events.18
-	title = exploration_events.16.t
-	desc = exploration_events.18.d
-	picture = COASTLINE_MAP_eventPicture
-
-	is_triggered_only = yes
-	
-	trigger = {
-		has_dlc = "El Dorado"
-		capital_scope = {
-			OR = {
-				continent = oceania
-				AND = {
-					continent = asia
-					NOT = { culture_group = east_asian } #Chinese
-					NOT = { tag = TUR }
-				}
-			}
-		}
-		NOT = { has_global_flag = circumnavigation_completed }
-		NOT = { has_country_flag = circumnavigation_first }
-	}
-	
-	immediate = {
-		set_global_flag = circumnavigation_completed
-		set_country_flag = circumnavigation_first
-	}
-	
-	option = {
-		name = exploration_events.16.a
-		add_prestige = 100
-		add_navy_tradition = 40
-	}
-}
-
-country_event = {
-	major = yes
-
-	id = exploration_events.19
-	title = exploration_events.16.t
-	desc = exploration_events.19.d
-	picture = COASTLINE_MAP_eventPicture
-
-	is_triggered_only = yes
-	
-	trigger = {
-		has_dlc = "El Dorado"
-		capital_scope = {
-			continent = africa
-		}
-		NOT = { tag = TUR }
-		NOT = { has_global_flag = circumnavigation_completed }
-		NOT = { has_country_flag = circumnavigation_first }
-	}
-	
-	immediate = {
-		set_global_flag = circumnavigation_completed
-		set_country_flag = circumnavigation_first
-	}
-	
-	option = {
-		name = exploration_events.16.a
-		add_prestige = 100
-		add_navy_tradition = 40
-	}
-}
-
-country_event = {
-	major = yes
-
-	id = exploration_events.20 #For Anyone in the americas.
-	title = exploration_events.16.t
-	desc = exploration_events.20.d 
-	picture = COASTLINE_MAP_eventPicture
-
-	is_triggered_only = yes
-	
-	trigger = {
-		has_dlc = "El Dorado"
-		capital_scope = {
-			NOT = { continent = europe }
-			NOT = { continent = asia }
-			NOT = { continent = africa }
-			NOT = { continent = oceania }
-		}
-		NOT = { has_global_flag = circumnavigation_completed }
-		NOT = { has_country_flag = circumnavigation_first }
-	}
-	
-	immediate = {
-		set_global_flag = circumnavigation_completed
-		set_country_flag = circumnavigation_first
-	}
-	
-	option = {
-		name = exploration_events.16.a
-		add_prestige = 100
-		add_navy_tradition = 40
-	}
-}
-
-country_event = {
-	major = yes
-
-	id = exploration_events.21 #Chinese Version
-	title = exploration_events.16.t
-	desc = exploration_events.21.d 
-	picture = COASTLINE_MAP_eventPicture
-
-	is_triggered_only = yes
-	
-	trigger = {
-		has_dlc = "El Dorado"
-		culture_group = east_asian
-		capital_scope = { continent = asia }
-		NOT = { tag = TUR }
-		NOT = { has_global_flag = circumnavigation_completed }
-		NOT = { has_country_flag = circumnavigation_first }
-	}
-	
-	immediate = {
-		set_global_flag = circumnavigation_completed
-		set_country_flag = circumnavigation_first
-	}
-	
-	option = {
-		name = exploration_events.16.a
-		add_prestige = 100
-		add_navy_tradition = 40
-	}
-}
-
-country_event = {
-	major = yes
-
-	id = exploration_events.22 #Ottoman Version
-	title = exploration_events.16.t
-	desc = exploration_events.22.d 
-	picture = COASTLINE_MAP_eventPicture
-
-	is_triggered_only = yes
-	
-	trigger = {
-		has_dlc = "El Dorado"
-		tag = TUR
-		OR = {
-			capital_scope = { continent = europe }
-			capital_scope = { continent = asia }
-			capital_scope = { continent = africa }
-		}
-		NOT = { has_global_flag = circumnavigation_completed }
-		NOT = { has_country_flag = circumnavigation_first }
-	}
-	
-	immediate = {
-		set_global_flag = circumnavigation_completed
-		set_country_flag = circumnavigation_first
-	}
-	
-	option = {
-		name = exploration_events.16.a
-		add_prestige = 100
-		add_navy_tradition = 40
 	}
 }

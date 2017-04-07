@@ -51,6 +51,9 @@ fixed_capital = 1868 # Cannot move capital away from this province & no power co
 		mil = 2
 		dip = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = calm_personality
+	add_ruler_personality = pious_personality
 }
 
 1469.1.1 = {

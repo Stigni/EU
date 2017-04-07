@@ -149,8 +149,8 @@ capital = 199	# Clermont
 
 1519.4.13 = {
 	heir = {
-		name = "Cathérine"
-		monarch_name = "Cathérine I"
+		name = "Catherine"
+		monarch_name = "Catherine I"
 		dynasty = "de' Medici"
 		birth_date = 1519.4.13
 		death_date = 1589.1.5
@@ -165,7 +165,7 @@ capital = 199	# Clermont
 
 1524.6.1 = {
 	monarch = {
-		name = "Cathérine I"
+		name = "Catherine I"
 		dynasty = "de' Medici"
 		birth_date = 1519.4.13
 		adm = 1

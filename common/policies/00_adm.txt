@@ -18,6 +18,26 @@ the_combination_act = {
 	production_efficiency = 0.20
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { production_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.5
+		}		
 	}
 }
 
@@ -64,7 +84,19 @@ the_court_of_wards_and_liveries = {
 		modifier = {
 			factor = 1.5
 			NOT = { legitimacy = 20 }
-		}				
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { tax_income_percentage = 0.25 }
+		}			
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.45
+		}
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.7
+		}
 	}
 }
 
@@ -96,6 +128,18 @@ formalized_measures = {
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0.75
+			NOT = { tax_income_percentage = 0.25 }
+		}			
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.45
+		}
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.7
+		}
 	}
 }
 
@@ -177,7 +221,7 @@ naval_school_act = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 0
+			factor = 0.6
 			NOT = { navy_size = 20 }
 		}		
 	}
@@ -209,7 +253,7 @@ the_espionage_act = {
 	
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.6
 	}
 }
 
@@ -236,7 +280,23 @@ noble_loyalty_act = {
 	cavalry_power = 0.20
 	
 	ai_will_do = {
-		factor = 1		
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { cavalry_fraction = 0.2 }
+		}			
+		modifier = {
+			factor = 1.5
+			cavalry_fraction = 0.28
+		}
+		modifier = {
+			factor = 1.5
+			cavalry_fraction = 0.38
+		}
+		modifier = {
+			factor = 1.5
+			cavalry_fraction = 0.45
+		}
 	}
 }
 
@@ -262,35 +322,14 @@ manueline_architecture = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0.1
+			is_at_war = yes
+		}
 	}
 }
  
-privy_council_establishment_act = {
-	monarch_power = ADM
 
-
-	potential = {
-		has_idea_group = spy_ideas
-		has_idea_group = defensive_ideas
-		OR = {
-			full_idea_group = spy_ideas
-			full_idea_group = defensive_ideas
-		}
-	}
-	
-	allow = {
-		full_idea_group = spy_ideas
-		full_idea_group = defensive_ideas
-	}
-
-	defensiveness = 0.10
-	global_autonomy = -0.01
-	
-	ai_will_do = {
-		factor = 1
-	}
-
-}
  
 the_foreign_support_act = {
 	monarch_power = ADM
@@ -311,9 +350,10 @@ the_foreign_support_act = {
 	}
 
 	rebel_support_efficiency = 0.50
+	diplomats = 1
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0
 	}
 } 
 
@@ -341,35 +381,27 @@ deserteur_act = {
 	army_tradition_decay = -0.01
 	
 	ai_will_do = {
-		factor = 1
-	}
-}
-
-the_mercenary_registration_act = {
-	monarch_power = ADM
-
-
-	potential = {
-		has_idea_group = spy_ideas
-		has_idea_group = quantity_ideas
-		OR = {
-			full_idea_group = spy_ideas
-			full_idea_group = quantity_ideas
+		factor = 0.75
+		modifier = {
+			factor = 0
+			NOT = { army_tradition = 2 }
+		}			
+		modifier = {
+			factor = 1.5
+			army_tradition = 30
+		}
+		modifier = {
+			factor = 1.5
+			army_tradition = 50
+		}
+		modifier = {
+			factor = 1.5
+			army_tradition = 80
 		}
 	}
-	
-	allow = {
-		full_idea_group = spy_ideas
-		full_idea_group = quantity_ideas
-	}
-
-	possible_mercenaries = 0.25
-	merc_maintenance_modifier = -0.25
-	
-	ai_will_do = {
-		factor = 1
-	}
 }
+
+
 
 the_royal_commission_act = {
 	monarch_power = ADM
@@ -393,7 +425,7 @@ the_royal_commission_act = {
 	global_spy_defence = 0.2
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.6
 	}
 }
 
@@ -440,7 +472,24 @@ edict_of_expulsion = {
 		modifier = {
 			factor = 1.5
 			NOT = { religious_unity = 0.2 }
+		}
+
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 4
 		}			
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 8
+		}
 	}
 
 }
@@ -468,6 +517,26 @@ public_welfare_act = {
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 1.5
+			NOT = { average_effective_unrest = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 4
+		}			
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 8
+		}	
 	}
 }
 
@@ -489,11 +558,11 @@ the_spy_discovery_act = {
 		full_idea_group = administrative_ideas
 	}
 
-	stability_cost_modifier = -0.1
+	yearly_corruption = -0.1
 	global_spy_defence = 0.2
 
 	ai_will_do = {
-		factor = 1
+		factor = 0.6 #Keep in mind lower stab cost is probably pretty weak given this costs ADM...
 	}
 }
 
@@ -611,9 +680,25 @@ public_legitimacy = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 0
-			NOT = { num_of_cities = 10 }
+			factor = 1.5
+			NOT = { average_effective_unrest = 1 }
 		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 4
+		}			
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 8
+		}	
 	}
 }
 
@@ -678,7 +763,7 @@ the_stamp_act = {
 		full_idea_group = exploration_ideas
 	}
 	
-	global_tariffs = 0.2
+	global_tariffs = 0.25
 	
 	ai_will_do = {
 		factor = 1
@@ -724,7 +809,11 @@ weapon_quality_standards = {
 	discipline = 0.05
 	
 	ai_will_do = {
-		factor = 1
+		factor = 2
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
 	}
 }
 
@@ -751,6 +840,14 @@ colonial_administration_act = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { num_of_colonists = 1 }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { num_of_colonies = 1 }
+		}
 	}
 }
 
@@ -776,7 +873,7 @@ record_keeping_act = {
 	envoy_travel_time = -0.25
 
 	ai_will_do = {
-		factor = 1
+		factor = 0.6
 	}
 }
 
@@ -803,7 +900,7 @@ risk_assessment_policy = {
 	ae_impact = -0.1
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.6
 	}	
 }
 
@@ -831,9 +928,23 @@ land_inheritance_act = {
 	
 	ai_will_do = {
 		factor = 1
-	}	
-
-
+		modifier = {
+			factor = 0.75
+			NOT = { tax_income_percentage = 0.15 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { tax_income_percentage = 0.25 }
+		}			
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.45
+		}
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.7
+		}
+	}
 }
 
 
@@ -881,7 +992,24 @@ the_witchcraft_act = {
 		modifier = {
 			factor = 1.5
 			NOT = { religious_unity = 0.2 }
+		}
+		
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 4
 		}			
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 8
+		}
 	}
 }
 
@@ -908,7 +1036,7 @@ the_education_act = {
 	advisor_cost = -0.1
 
 	ai_will_do = {
-		factor = 1
+		factor = 0.8
 	}
 }
 
@@ -981,6 +1109,26 @@ black_chamber_act = {
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { average_autonomy_above_min = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			average_autonomy_above_min = 20
+		}
+		modifier = {
+			factor = 1.5
+			average_autonomy_above_min = 40
+		}			
+		modifier = {
+			factor = 1.5
+			average_autonomy_above_min = 60
+		}
+		modifier = {
+			factor = 1.5
+			average_autonomy_above_min = 80
+		}	
 	}
 }
 
@@ -1005,10 +1153,10 @@ exchange_of_ideas = {
 	}	
 	
 	idea_cost = -0.1
-	prestige = 0.5
+	global_institution_spread = 0.1
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.8
 	}
 }
 
@@ -1194,6 +1342,47 @@ enlightened_aristocracy = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0.6
+			religious_unity = 1
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.6 }
+		}			
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.2 }
+		}
+		
+		modifier = {
+			factor = 0.6
+			NOT = { production_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.5
+		}	
 	}
 }
 
@@ -1219,6 +1408,23 @@ the_liberation_act = {
 	
 	ai_will_do = {
 		factor = 1
+		
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 4
+		}			
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 8
+		}
 	}
 }
 
@@ -1243,7 +1449,7 @@ visionary_thinkers = {
 	prestige_decay = -0.01
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.6
 	}
 }
 
@@ -1268,7 +1474,27 @@ the_transportation_act = {
 	production_efficiency = 0.1
 	
 	ai_will_do = {
-		factor = 1
+		factor = 0.6
+		modifier = {
+			factor = 0
+			NOT = { production_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			production_income_percentage = 0.5
+		}	
 	}
 }
 
@@ -1294,6 +1520,26 @@ harbour_administration = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}	
 	}
 }
 
@@ -1315,10 +1561,30 @@ supply_convoys = {
 	}	
 	
 	global_tariffs = 0.1
-	global_ship_repair = 0.2
+	transport_power = 0.5
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { num_of_colonial_subjects = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_colonial_subjects = 2
+		}
+		modifier = {
+			factor = 1.5
+			num_of_colonial_subjects = 3
+		}			
+		modifier = {
+			factor = 1.5
+			num_of_colonial_subjects = 4
+		}
+		modifier = {
+			factor = 1.5
+			num_of_colonial_subjects = 5
+		}	
 	}
 }
 
@@ -1339,8 +1605,8 @@ cultural_recognition_act = {
 		full_idea_group = plutocracy_ideas
 	}	
 	
-	accepted_culture_threshold = -0.1
-	stability_cost_modifier = -0.1
+	num_accepted_cultures = 1
+	global_institution_spread = 0.1
 	
 	ai_will_do = {
 		factor = 1

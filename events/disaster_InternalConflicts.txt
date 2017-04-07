@@ -24,12 +24,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				is_capital = no
-				OR = {
-					has_building = fort_15th
-					has_building = fort_16th
-					has_building = fort_17th
-					has_building = fort_18th
-				}
+				fort_level = 1
 			}
 			spawn_rebels = {
 					type = noble_rebels
@@ -362,6 +357,6 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA3008"			# Restore order
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }

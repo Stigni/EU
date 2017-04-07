@@ -34,13 +34,16 @@ fixed_capital = 808 # Cannot move capital away from this province & no power cos
 	monarch = {
 		name = "Pachacuti"
 		dynasty = "Hanan"
+		birth_date = 1420.1.1
 		adm = 5
 		dip = 4
 		mil = 6
 		leader = { name = "Pachacuti"	type = general	rank = 1	fire = 3	shock = 5	manuever = 4	siege = 2 }
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
 }
-
+	
 1444.1.1 = {
 	heir = {
 		name = "Tupac-Yupanqui"
@@ -53,6 +56,9 @@ fixed_capital = 808 # Cannot move capital away from this province & no power cos
 		dip = 3
 		mil = 6
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_heir_personality = lawgiver_personality
 }
 
 1471.1.1 = {
@@ -63,6 +69,8 @@ fixed_capital = 808 # Cannot move capital away from this province & no power cos
 		dip = 3
 		mil = 6
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = lawgiver_personality
 }
 
 1475.1.1 = {

@@ -25,7 +25,6 @@ country_decisions = {
 			NOT = { is_year = 1650 } #end of crusades
 		}
 		allow = {
-			is_emperor = no
 			is_at_war = no
 			owns_core_province = 1854
 			owns_core_province = 364

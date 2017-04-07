@@ -40,7 +40,6 @@ monarch_names = {
 	"Dimitrije Zvonimir #1" = 20
 	"Trpimir #2" = 15
 	"Goislav #1" = 15
-	"Jelena #1" = -15
 	"Slavic #1" = 15
 	"Svetoslav #1" = 15
 	"Miroslav #1" = 10
@@ -78,6 +77,10 @@ monarch_names = {
 	"Toma #0" = 0
 	"Vladko #0" = 0
 	"Zvonimir #0" = 0
+	
+	"Jelena #1" = -15
+	"Marija #0" = -1
+	"Petra #0" = -1
 }
 
 leader_names = {

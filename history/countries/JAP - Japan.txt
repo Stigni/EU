@@ -5,7 +5,7 @@ religion = shinto
 technology_group = chinese
 capital = 1020	# Kyoto
 
-1325.1.1 = { 
+1325.1.1 = {
 	monarch = {
 		name = "Takauji"
 		dynasty = "Ashikaga"
@@ -15,6 +15,9 @@ capital = 1020	# Kyoto
 		dip = 5
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = inspiring_leader_personality
 }
 
 1330.7.4 = {
@@ -31,7 +34,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1358.5.7 = { 
+1358.5.7 = {
 	monarch = {
 		name = "Yoshiakira"
 		dynasty = "Ashikaga"
@@ -48,7 +51,7 @@ capital = 1020	# Kyoto
 		name = "Yoshimitsu"
 		monarch_name = "Yoshimitsu"
 		dynasty = "Ashikaga"
-		birth_date = 1358.9.25 
+		birth_date = 1358.9.25
 		death_date = 1408.5.31
 		claim = 90
 		adm = 2
@@ -57,7 +60,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1367.12.18 = { 
+1367.12.18 = {
 	monarch = {
 		name = "Yoshimitsu"
 		dynasty = "Ashikaga"
@@ -67,9 +70,12 @@ capital = 1020	# Kyoto
 		dip = 5
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = silver_tongue_personality
 }
 
-1368.1.1 = { 
+1368.1.1 = {
 	monarch = {
 		name = "Yoshimitsu"
 		dynasty = "Ashikaga"
@@ -95,7 +101,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1408.5.31 = { 
+1408.5.31 = {
 	monarch = {
 		name = "Yoshimochi"
 		dynasty = "Ashikaga"
@@ -105,6 +111,8 @@ capital = 1020	# Kyoto
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
 }
 	
 1408.5.31 = {
@@ -135,7 +143,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1428.2.3 = { 
+1428.2.3 = {
 	monarch = {
 		name = "Yoshinori"
 		dynasty = "Ashikaga"
@@ -145,6 +153,8 @@ capital = 1020	# Kyoto
 		dip = 2
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = cruel_personality
 }
 	
 1434.3.19 = {
@@ -161,7 +171,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1441.7.12 = { 
+1441.7.12 = {
 	monarch = {
 		name = "Yoshikatsu"
 		dynasty = "Ashikaga"
@@ -171,9 +181,10 @@ capital = 1020	# Kyoto
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
 }
 
-1443.8.16 = { 
+1443.8.16 = {
 	monarch = {
 		name = "Yoshimasa"
 		dynasty = "Ashikaga"
@@ -181,6 +192,8 @@ capital = 1020	# Kyoto
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = obsessive_perfectionist_personality
 }
 
 1464.1.1 = {
@@ -199,8 +212,8 @@ capital = 1020	# Kyoto
 
 1465.12.11 = {
 	heir = {
-		name = "Yoshinao"
-		monarch_name = "Yoshinao"
+		name = "Yoshihisa"
+		monarch_name = "Yoshihisa"
 		dynasty = "Ashikaga"
 		birth_date = 1465.12.11
 		death_date = 1489.4.26
@@ -211,9 +224,9 @@ capital = 1020	# Kyoto
 	}
 }
 
-1473.1.1 = { 
+1473.1.1 = {
 	monarch = {
-		name = "Yoshinao"
+		name = "Yoshihisa"
 		dynasty = "Ashikaga"
 #		birth_date = 1465.12.11
 #		death_date = 1489.4.26
@@ -221,6 +234,8 @@ capital = 1020	# Kyoto
 		dip = 1
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = drunkard_personality
 }
 	
 1490.1.1 = {
@@ -233,6 +248,7 @@ capital = 1020	# Kyoto
 		dip = 1
 		mil = 1
 	}
+	clear_scripted_personalities = yes
 }
 	
 1495.1.23 = {
@@ -245,6 +261,8 @@ capital = 1020	# Kyoto
 		dip = 1
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = craven_personality
 }
 	
 1508.7.1 = {
@@ -257,6 +275,7 @@ capital = 1020	# Kyoto
 		dip = 1
 		mil = 1
 	}
+	clear_scripted_personalities = yes
 }
 	
 1521.12.25 = {
@@ -269,6 +288,8 @@ capital = 1020	# Kyoto
 		dip = 2
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = charismatic_negotiator_personality
 }
 	
 1536.3.31 = {
@@ -287,7 +308,7 @@ capital = 1020	# Kyoto
 
 1546.12.1 = {
 	monarch = {
-		name = "Yoshiharu"
+		name = "Yoshiteru"
 		dynasty = "Ashikaga"
 #		birth_date = 1536.3.31
 #		death_date = 1565.6.17
@@ -295,6 +316,8 @@ capital = 1020	# Kyoto
 		dip = 4
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = martial_educator_personality
 }
 
 1565.6.17 = {
@@ -307,6 +330,8 @@ capital = 1020	# Kyoto
 		dip = 1
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = malevolent_personality
 }
 	
 1568.9.1 = {
@@ -319,6 +344,8 @@ capital = 1020	# Kyoto
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
 }
 
 1573.7.3 = {
@@ -331,10 +358,14 @@ capital = 1020	# Kyoto
 		dip = 5
 		mil = 6
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = free_thinker_personality
+	add_ruler_personality = tolerant_personality
+	add_ruler_personality = midas_touched_personality
 }
 #Nobunaga ousts Yoshiaki
 
-1582.6.22 = { 
+1582.6.22 = {
 	monarch = {
 		name = "Hideyoshi"
 		dynasty = "Toyotomi"
@@ -344,6 +375,10 @@ capital = 1020	# Kyoto
 		dip = 6
 		mil = 5
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = entrepreneur_personality
+	add_ruler_personality = cruel_personality
+	add_ruler_personality = infertile_personality
 }
 #Nobunaga is assassinated
 
@@ -361,7 +396,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1593.8.29 = { 
+1593.8.29 = {
 	heir = {
 		name = "Hideyori"
 		monarch_name = "Hideyori"
@@ -375,7 +410,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1598.9.18 = { 
+1598.9.18 = {
 	monarch = {
 		name = "Hideyori"
 		dynasty = "Toyotomi"
@@ -385,9 +420,10 @@ capital = 1020	# Kyoto
 		dip = 3
 		mil = 4
 	}
+	clear_scripted_personalities = yes
 }
 
-1603.3.24 = { 
+1603.3.24 = {
 	monarch = {
 		name = "Ieyasu"
 		dynasty = "Tokugawa"
@@ -397,6 +433,10 @@ capital = 1020	# Kyoto
 		dip = 5
 		mil = 5
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
+	add_ruler_personality = secretive_personality
+	add_ruler_personality = inspiring_leader_personality
 }
 #Founding of Tokugawa Shogunate
 
@@ -414,9 +454,9 @@ capital = 1020	# Kyoto
 	}
 }
 
-1603.3.24   = { capital = 1028 } # Musashi (Edo)
+1603.3.24  = { capital = 1028 } # Musashi (Edo)
 
-1616.5.22 = { 
+1616.5.22 = {
 	monarch = {
 		name = "Hidetada"
 		dynasty = "Tokugawa"
@@ -426,6 +466,8 @@ capital = 1020	# Kyoto
 		dip = 4
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = lawgiver_personality
 }
 	
 1616.5.22 = {
@@ -442,7 +484,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1632.3.14 = { 
+1632.3.14 = {
 	monarch = {
 		name = "Iemitsu"
 		dynasty = "Tokugawa"
@@ -452,6 +494,8 @@ capital = 1020	# Kyoto
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_advised_personality
 }
 	
 1641.9.7 = {
@@ -468,7 +512,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1651.6.8 = { 
+1651.6.8 = {
 	monarch = {
 		name = "Ietsuna"
 		dynasty = "Tokugawa"
@@ -478,6 +522,8 @@ capital = 1020	# Kyoto
 		dip = 3
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = calm_personality
 }
 
 1680.5.1 = {
@@ -494,7 +540,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1680.6.4 = { 
+1680.6.4 = {
 	monarch = {
 		name = "Tsunayoshi"
 		dynasty = "Tokugawa"
@@ -504,6 +550,9 @@ capital = 1020	# Kyoto
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = naive_personality
 }
 	
 1704.12.31 = {
@@ -520,7 +569,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1709.2.9 = { 
+1709.2.9 = {
 	monarch = {
 		name = "Ienobu"
 		dynasty = "Tokugawa"
@@ -530,6 +579,8 @@ capital = 1020	# Kyoto
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = benevolent_personality
 }
 	
 1709.8.8 = {
@@ -546,7 +597,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1712.11.12 = { 
+1712.11.12 = {
 	monarch = {
 		name = "Ietsugu"
 		dynasty = "Tokugawa"
@@ -556,9 +607,11 @@ capital = 1020	# Kyoto
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_connected_personality
 }
 	
-1716.6.19 = { 
+1716.6.19 = {
 	monarch = {
 		name = "Yoshimune"
 		dynasty = "Tokugawa"
@@ -568,6 +621,10 @@ capital = 1020	# Kyoto
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = incorruptible_personality
+	add_ruler_personality = industrious_personality
+	add_ruler_personality = martial_educator_personality
 }
 	
 1716.6.19 = {
@@ -584,7 +641,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1751.7.12 = { 
+1751.7.12 = {
 	monarch = {
 		name = "Ieshige"
 		dynasty = "Tokugawa"
@@ -594,6 +651,8 @@ capital = 1020	# Kyoto
 		dip = 2
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = malevolent_personality
 }
 	
 1751.7.12 = {
@@ -610,7 +669,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1760.5.3 = { 
+1760.5.3 = {
 	monarch = {
 		name = "Ieharu"
 		dynasty = "Tokugawa"
@@ -620,6 +679,8 @@ capital = 1020	# Kyoto
 		dip = 2
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = embezzler_personality
 }
 	
 1781.5.1 = {
@@ -636,7 +697,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1786.9.17 = { 
+1786.9.17 = {
 	monarch = {
 		name = "Ienari"
 		dynasty = "Tokugawa"
@@ -646,6 +707,8 @@ capital = 1020	# Kyoto
 		dip = 2
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = fertile_personality
 }
 	
 1793.6.22 = {
@@ -662,7 +725,7 @@ capital = 1020	# Kyoto
 	}
 }
 
-1841.2.27 = { 
+1841.2.27 = {
 	monarch = {
 		name = "Ieyoshi"
 		dynasty = "Tokugawa"
@@ -676,8 +739,8 @@ capital = 1020	# Kyoto
 	
 1841.2.27 = {
 	heir = {
-		name = "Ieyoshi"
-		monarch_name = "Ieyoshi"
+		name = "Iesada"
+		monarch_name = "Iesada"
 		dynasty = "Tokugawa"
 		birth_date = 1824.5.6
 		death_date = 1858.8.14
@@ -688,9 +751,9 @@ capital = 1020	# Kyoto
 	}
 }
 
-1853.7.27 = { 
+1853.7.27 = {
 	monarch = {
-		name = "Ieyoshi"
+		name = "Iesada"
 		dynasty = "Tokugawa"
 #		birth_date = 1824.5.6
 #		death_date = 1858.8.14
@@ -700,9 +763,9 @@ capital = 1020	# Kyoto
 	}
 }
 	
-1858.8.14 = { 
+1858.8.14 = {
 	monarch = {
-		name = "Ieshige"
+		name = "Iemochi"
 		dynasty = "Tokugawa"
 #		birth_date = 1846.7.17
 #		death_date = 1866.8.29

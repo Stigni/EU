@@ -71,6 +71,11 @@ monarch_names = {
 	"Satinvose #0" = 10
 	
 	"Elvamox #0" = -1 
+	"Coy #0" = -1
+	"Etla #0" = -1
+	"Topen #0" = -1
+	"Sain-Tah-Oodie #0" = -1
+
 }
 
 leader_names = {

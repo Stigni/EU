@@ -454,7 +454,7 @@ country_event = {
 
 	option = {
 		name = central_african.11.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -619,7 +619,7 @@ country_event = {
 	option = {
 		#Kasiyamaliro, the Antelope
 		name = central_african.15.c
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	option = {
 		#Mkango, The Lion
@@ -715,6 +715,62 @@ country_event = {
 				duration = 3650
 				hidden = yes
 			}
+			if = {
+				limit = {
+					any_neighbor_country = {
+						NOT = { alliance_with = ROOT }
+						NOT = { is_subject_of = ROOT }
+						any_owned_province = {
+							OR = {
+								area = rwanda_area
+								area = buzinza_area
+								area = uganda_area
+								area = kenya_area
+							}
+							NOT = { is_core = ROOT }
+							NOT = { is_claim = ROOT }
+							any_neighbor_province = {
+								owned_by = ROOT
+							}
+						}
+					}
+				}
+				random_neighbor_country = {
+					limit = {
+						NOT = { alliance_with = ROOT }
+						NOT = { is_subject_of = ROOT }
+						any_owned_province = {
+							OR = {
+								area = rwanda_area
+								area = buzinza_area
+								area = uganda_area
+								area = kenya_area
+							}
+							NOT = { is_core = ROOT }
+							NOT = { is_claim = ROOT }
+							any_neighbor_province = {
+								owned_by = ROOT
+							}
+						}
+					}
+					random_owned_province = {
+						limit = {
+							OR = {
+								area = rwanda_area
+								area = buzinza_area
+								area = uganda_area
+								area = kenya_area
+							}
+							NOT = { is_core = ROOT }
+							NOT = { is_claim = ROOT }
+							any_neighbor_province = {
+								owned_by = ROOT
+							}
+						}
+						set_province_flag = great_lakes_claim
+					}
+				}
+			}
 		}
 	}
 
@@ -722,7 +778,7 @@ country_event = {
 	option = {
 		name = central_african.17.a
 		add_prestige = 10
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 
 	#Ensure our neighbors know of our lineage.
@@ -736,34 +792,17 @@ country_event = {
 	option = {
 		name = central_african.17.c
 		trigger = {
-			any_neighbor_province = {
-				is_empty = no 
-				OR = {
-					area = rwanda_area
-					area = buzinza_area
-					area = uganda_area
-					area = kenya_area
-				}
-				NOT = { is_core = ROOT }
-				NOT = { is_claim = ROOT }
+			any_province = {
+				has_province_flag = great_lakes_claim
 			}
 		}
 		add_prestige = 10
-		random_neighbor_province = {
+		random_province = {
 			limit = {
-				any_neighbor_province = {
-					is_empty = no 
-					OR = {
-						area = rwanda_area
-						area = buzinza_area
-						area = uganda_area
-						area = kenya_area
-					}
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-				}
+				has_province_flag = great_lakes_claim
 			}
 			add_claim = ROOT
+			clr_province_flag = great_lakes_claim
 		}
 	}
 }

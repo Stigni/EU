@@ -154,7 +154,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA11004"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_faction_influence = {
 			faction = enuchs
 			influence = 6
@@ -227,17 +227,17 @@ country_event = {
 		months = 450
 		modifier = {
 			factor = 0.9
-			mercantilism = 0.6
+			mercantilism = 60
 		}
 		modifier = {
 			factor = 0.9
-			mercantilism = 0.8
+			mercantilism = 80
 		}
 		
 		modifier = {
 			factor = 1.5
 			NOT = {
-				mercantilism = 0.3
+				mercantilism = 30
 			}
 		}
 	}
@@ -248,7 +248,7 @@ country_event = {
 			name = mercantilism_modifier
 			duration = 3650
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_dip_power = -30
 		add_faction_influence = {
 			faction = enuchs
@@ -1011,6 +1011,11 @@ country_event = {
 	trigger = {
 		faction_in_power = bureaucrats
 		NOT = { gold = 2 }
+		any_owned_province = {
+			NOT = { trade_goods = gold }
+			has_port = no
+			NOT = { development = 10 }
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1036,6 +1041,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				NOT = { trade_goods = gold }
+				NOT = { development = 10 }
 				has_port = no
 			}
 			change_trade_goods = gold
@@ -1539,7 +1545,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA11212"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = 5
 		add_faction_influence = {
 			faction = temples
@@ -1615,7 +1621,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTB11214"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = narrowminded_modifier
 			duration = 3650
@@ -1863,7 +1869,7 @@ country_event = {
 			name = narrowminded_modifier
 			duration = 3650
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_owned_province = {
 			create_revolt = 5
 		}
@@ -1973,7 +1979,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA11226"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_faction_influence = {
 			faction = temples
 			influence = 4
@@ -2251,7 +2257,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA11234"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_faction_influence = {
 			faction = enuchs
 			influence = 4
@@ -2647,7 +2653,7 @@ country_event = {
 				add_stability = -1
 			}
 			60 = {
-				add_stability = 1
+				add_stability_or_adm_power = yes
 			}
 		}
 		add_faction_influence = {
@@ -2699,7 +2705,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA11302"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_years_of_income = -0.4
 		add_inflation = 3
 		add_faction_influence = {
@@ -2838,7 +2844,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA11306"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_dip_power = 20
 		add_faction_influence = {
 			faction = enuchs
@@ -3084,7 +3090,7 @@ country_event = {
 			}
 			70 = {
 				add_prestige = 10
-				add_stability = 1
+				add_stability_or_adm_power = yes
 				if = {
 					limit = { is_lesser_in_union = no }
 					add_legitimacy = 20

@@ -95,5 +95,33 @@ country_decisions = {
 			}
 		}
 	}
-
+	
+	no_more_celestial_empire = {
+		potential = {
+			government = celestial_empire
+		}
+		allow = {
+			OR = {
+				ADM = 4
+				DIP = 4
+				MIL = 4
+			}
+			has_institution = feudalism
+			has_institution = renaissance
+			has_institution = new_world_i
+			has_institution = printing_press
+			OR ={
+				has_institution = global_trade
+				has_institution = manufactories
+				has_institution = enlightenment
+			}
+		}
+		effect = {
+			change_government = constitutional_monarchy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 }

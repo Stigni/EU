@@ -211,6 +211,7 @@ nationalist_rebels = {
 			every_owned_province = {
 				limit = {
 					has_rebel_faction = REB
+					culture = REB
 				}
 				if = {
 					limit = { NOT = { is_core = REB } }
@@ -226,7 +227,9 @@ nationalist_rebels = {
 			every_owned_province = {
 				limit = {
 					has_rebel_faction = REB
+					culture = REB
 					NOT = { is_core = REB }
+					culture = REB
 				}
 				add_core = REB
 			}

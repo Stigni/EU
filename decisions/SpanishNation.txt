@@ -90,6 +90,19 @@ country_decisions = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			custom_tooltip = spanish_unification_effect.tooltip
 			hidden_effect = {
 				iberia_region = {
@@ -134,6 +147,10 @@ country_decisions = {
 					}
 				}
 			}
+			NOT = { #This overlaps with allow for AI, is meant to negate do_not_integrate
+				ai = yes
+				ARA = { num_of_cities = 32 } #Keep this number the same as below
+			}
 		}
 		allow = {
 			adm_tech = 10
@@ -154,7 +171,7 @@ country_decisions = {
 				ARA = {	vassal_of = CAS	}
 			}
 			ARA = {
-				NOT = { num_of_cities = 32 } #Original 17 +15
+				NOT = { num_of_cities = 32 } #Keep this number the same as above. Original 17 +15
 			}
 		}
 		effect = {
@@ -183,19 +200,6 @@ country_decisions = {
 				}
 				inherit = ARA
 			}	
-			if = {
-				limit = {
-					has_custom_ideas = no
-					OR = {
-						ai = no
-						AND = {
-							ai = yes
-							has_idea_group = default_ideas
-						}
-					}
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
 			custom_tooltip = spanish_unification_effect.tooltip
 			hidden_effect = {
 				iberia_region = {
@@ -212,6 +216,7 @@ country_decisions = {
 			factor = 1
 		}
 		ai_importance = 200
+		do_not_integrate = ARA
 	}	
 	
 }

@@ -71,6 +71,16 @@ monarch_names = {
 
 	"Aaliyah #0" = -1	
 	"Ikram #0" = -1	
+	"Söyembikä #0" = -10
+	"Aylin #0" = -1
+	"Beyza #0" = -1
+	"Dilara #0" = -1
+	"Ece #0" = -3
+	"Feriha #0" = -1
+	"Kelebek #0" = -1
+	"Kiraz #0" = -1
+	"Mehtap #0" = -1
+	"Nermin #0" = -1
 }
 
 leader_names = { 

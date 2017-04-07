@@ -44,7 +44,6 @@ monarch_names = {
 	"José #0" = 20
 	"Manuel #0" = 20
 	"Sebastião #0" = 20
-	"Maria #0" = -10
 	"Miguel #0" = 10
 	"Teodósio #0" = 10
 	"Dinis #1" = 5
@@ -84,6 +83,16 @@ monarch_names = {
 	"Simão #0" = 0
 	"Uriel #0" = 0
 	"Vicente #0" = 0
+	"Maria #0" = -10
+	"Isabel #0" = -5
+	"Joana #0" = -1
+	"Beatriz #0" = -1
+	"Maria Manuela #0" = -1
+	"Filipa #0" = -1
+	"Luísa #0" = -1
+	"Catarina #0" = -1
+	"Ana #0" = -1
+	"Barbara #0" = -1
 }
 
 leader_names = {

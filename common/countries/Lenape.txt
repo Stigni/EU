@@ -67,6 +67,7 @@ monarch_names = {
 	
 	"Awowas #0" = -1
 	"Moconnoquah #0" = -1
+	"Walela #0" = -1
 }
 
 leader_names = {

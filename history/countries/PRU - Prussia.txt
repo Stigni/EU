@@ -18,7 +18,37 @@ capital = 41	# Königsberg
 
 1525.1.1 = { religion = protestant }
 
-1525.1.1  = { changed_tag_from = TEU }
+1525.1.1  = { changed_tag_from = TEU
+		government = prussian_monarchy
+		 }
+
+1526.2.12 = {
+	queen = {
+		country_of_origin = DAN
+		name = "Dorothea"
+		dynasty = "von Oldenburg"
+		birth_date = 1504.8.1
+		death_date = 1547.4.11
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1550.1.1 = {
+	queen = {
+		country_of_origin = BRU
+		name = "Anna Marie"
+		dynasty = "von Welf"
+		birth_date = 1532.4.23
+		death_date = 1568.3.28
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
 
 1553.5.7 = {
 	heir = {
@@ -58,12 +88,37 @@ capital = 41	# Königsberg
 	}
 }
 
+1573.1.1 = {
+	queen = {
+		country_of_origin = KLE
+		name = "Marie Eleonore"
+		dynasty = "von der Mark"
+		birth_date = 1550.6.16
+		death_date = 1608.6.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
 1618.8.19 = {
 	monarch = {
 		name = "Johann Sigismund"
 		dynasty = "von Hohenzollern"
 		adm = 3
 		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = PRU
+		name = "Anna"
+		dynasty = "von Hohenzollern"
+		birth_date = 1576.7.3
+		death_date = 1625.8.30
+		female = yes
+		adm = 3
+		dip = 4
 		mil = 2
 	}
 }
@@ -91,6 +146,17 @@ capital = 41	# Königsberg
 		dip = 5
 		mil = 3
 		leader = {	name = "Georg Wilhelm"         	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0 }
+	}
+	queen = {
+		country_of_origin = PAL
+		name = "Elisabeth Charlotte"
+		dynasty = "von Wittelsbach"
+		birth_date = 1597.11.19
+		death_date = 1660.4.26
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
 	}
 }
 
@@ -120,6 +186,20 @@ capital = 41	# Königsberg
 	}
 }
 
+1646.12.7 = {
+	queen = {
+		country_of_origin = NSA
+		name = "Louise Henriette"
+		dynasty = "von Nassau"
+		birth_date = 1627.11.27
+		death_date = 1667.6.18
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
 1654.1.1 = { leader = {	name = "G. von Derfflinger"       	type = general	rank = 1	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1695.2.14 } }
 
 1657.7.11 = {
@@ -137,6 +217,20 @@ capital = 41	# Königsberg
 	}
 }
  
+1668.6.14 = {
+	queen = {
+		country_of_origin = SHL
+		name = "Sophia Dorothea"
+		dynasty = "von Holstein-Gottorp"
+		birth_date = 1627.11.27
+		death_date = 1667.6.18
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
 1670.1.1 = { leader = {	name = "F. Hessen-Homburg"        	type = general	rank = 3	fire = 2	shock = 4	manuever = 3	siege = 2	death_date = 1708.1.24 } }
 
 1686.1.1 = { leader = {	name = "F.W. von Kyau"              	type = general	rank = 5	fire = 2	shock = 2	manuever = 1	siege = 0	death_date = 1733.1.19 } }
@@ -150,9 +244,20 @@ capital = 41	# Königsberg
 		mil = 4
 		leader = {	name = "Friedrich I"           	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0 }
 	}
+	queen = {
+		country_of_origin = HAN
+		name = "Sophia Charlotte"
+		dynasty = "von Hannover"
+		birth_date = 1668.10.30
+		death_date = 1705.2.1
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
+	}
 }
 
-1688.5.10 = { government = absolute_monarchy }
+1688.5.10 = { government = prussian_monarchy }
 
 1688.8.14 = {
 	heir = {
@@ -174,6 +279,20 @@ capital = 41	# Königsberg
 
 1702.1.1 = { leader = {	name = "Leopold von Dessau"            	type = general	rank = 0	fire = 4	shock = 4	manuever = 4	siege = 3	death_date = 1747.4.7 } }
 
+1708.11.28 = {
+	queen = {
+		country_of_origin = MKL
+		name = "Sophia Louise"
+		dynasty = "von Mecklenburg"
+		birth_date = 1685.5.6
+		death_date = 1735.7.29
+		female = yes
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
 1713.2.24 = {
 	monarch = {
 		name = "Friedrich Wilhelm I"
@@ -182,6 +301,21 @@ capital = 41	# Königsberg
 		dip = 4
 		mil = 5
 	}
+	queen = {
+		country_of_origin = HAN
+		name = "Sophia Dorothea"
+		dynasty = "von Hannover"
+		birth_date = 1687.3.16
+		death_date = 1757.6.28
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = martial_educator_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = strict_personality
 }
 
 1713.2.24 = {
@@ -216,9 +350,24 @@ capital = 41	# Königsberg
 		mil = 6
 		leader = {	name = "Friedrich II der Große"          	type = general	rank = 0	fire = 6	shock = 6	manuever = 6	siege = 1 }
 	}
+	queen = {
+		country_of_origin = BRU
+		name = "Elisabeth Christine"
+		dynasty = "von Welf"
+		birth_date = 1715.11.8
+		death_date = 1797.1.13
+		female = yes
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+	add_ruler_personality = martial_educator_personality
+	add_ruler_personality = lawgiver_personality
 }
 
-1740.5.30 = { government = enlightened_despotism }
+#1740.5.30 = { government = enlightened_despotism }
 
 1741.1.1 = { leader = {	name = "Hans J. von Ziethen"	type = general	rank = 7	fire = 2	shock = 4	manuever = 4	siege = 0	death_date = 1760.11.3 } }
 
@@ -260,6 +409,17 @@ capital = 41	# Königsberg
 		dip = 4
 		mil = 2
 	}
+	queen = {
+		country_of_origin = HES
+		name = "Fredrika Louisa"
+		dynasty = "von Hessen"
+		birth_date = 1751.10.16
+		death_date = 1805.2.25
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
 }
 
 1786.8.18 = {
@@ -283,6 +443,18 @@ capital = 41	# Königsberg
 		adm = 0
 		dip = 5
 		mil = 2
+	}
+
+	queen = {
+		country_of_origin = MKL
+		name = "Louise"
+		dynasty = "von Mecklenburg"
+		birth_date = 1776.3.10
+		death_date = 1810.7.19
+		female = yes
+		adm = 1
+		dip = 6
+		mil = 3
 	}
 }
 

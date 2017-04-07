@@ -64,6 +64,8 @@ fixed_capital = 528 # Cannot move capital away from this province & no power cos
 		dip = 1
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality
 }
 
 1415.1.1 = {
@@ -102,6 +104,8 @@ fixed_capital = 528 # Cannot move capital away from this province & no power cos
 		dip = 2
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = lawgiver_personality
 }
 
 1491.1.1 = {
@@ -112,6 +116,8 @@ fixed_capital = 528 # Cannot move capital away from this province & no power cos
 		dip = 2
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = lawgiver_personality
 }
 
 1491.1.1 = {

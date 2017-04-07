@@ -42,6 +42,10 @@ monarch_names = {
 	
 	"Mya #0" = -1
 	"Shin Sawbu #0" = -1
+	"Yaza Dewi #0" = -1
+	"Mi Pakahtaw #0" = -1
+	"Shin Sawbu #0" = -20
+	"Soe Min Wimala #0" = -1
 }
 
 leader_names = {

@@ -51,7 +51,18 @@ monarch_names = {
 	"Khalid #0" = 10
 	"Fahd #0" = 10
 	
-	"Nadiyya #0" = -1
+	"Nadiyya #0" = -5
+	"Norah #0" = -5
+	"Fahda #0" = -5
+	"Nura #0" = -5
+	"Seeta #0" = -5
+	"Fatimah #0" = -1
+	"Walida #0" = -1
+	"Tahani #0" = -1
+	"Safaa  #0" = -1
+	"Randa #0" = -1
+	"Qismah #0" = -1
+	"Nadirah #0" = -1
 }
 
 leader_names = {

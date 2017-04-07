@@ -143,7 +143,10 @@ country_event = {
 		NOT = { war_exhaustion = 4 }
 		manpower_percentage = 0.95
 		stability = -2
-		has_regency = no
+		OR = {
+			has_regency = no
+			has_consort_regency = yes
+		}
 		any_country = {
 			any_owned_province = {
 				is_claim = ROOT

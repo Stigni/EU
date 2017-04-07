@@ -12,7 +12,9 @@ country_event = {
 	picture = THEATRE_eventPicture
 
 	trigger = {
-		technology_group = western
+		capital_scope = {
+			continent = europe
+		}
 		religion_group = christian
 		is_year = 1550
 		NOT = {
@@ -55,11 +57,9 @@ country_event = {
 
 	trigger = {
 		innovativeness_ideas = 7
-		is_year = 1650
-		technology_group = western
+		has_institution = enlightenment
 		NOT = {
-			is_year = 1800
-			has_country_flag = enlightenment_movement
+			has_country_flag = enlightenment_movement #Liberte Egalite Fraternite
 		}
 		adm_power = 10
 		adm = 3
@@ -78,7 +78,7 @@ country_event = {
 	option = {
 		name = cultural_event.2.a
 		add_country_modifier = {
-			name = "enlightenment_movement"
+			name = "enlightenment_movement" #Liberte Egalite Fraternite
 			duration = 7300
 		}
 		add_adm_power = -10
@@ -98,10 +98,7 @@ country_event = {
 	picture = BIG_BOOK_eventPicture
 
 	trigger = {
-		OR = {
-			technology_group = western
-			technology_group = eastern
-		}
+		has_institution = renaissance
 		religion_group = christian
 		NOT = {
 			exists = BYZ
@@ -153,10 +150,13 @@ country_event = {
 	picture = IMPORTANT_STATUE_eventPicture
 
 	trigger = {
-		technology_group = western
+		has_institution = renaissance
 		NOT = {
 			is_year = 1500
 			has_country_flag = florentine_school
+		}
+		capital_scope = {
+			continent = europe
 		}
 		prestige = 25
 		adm_power = 30
@@ -196,7 +196,8 @@ country_event = {
 	picture = TOURNAMENT_eventPicture
 
 	trigger = {
-		technology_group = western
+		has_institution = feudalism
+		capital_scope = { continent = europe }
 		government = monarchy
 		NOT = {
 			mil_tech = 6
@@ -278,16 +279,16 @@ country_event = {
 	picture = IMPORTANT_STATUE_eventPicture
 
 	trigger = {
+		owns = 97
 		97 = {
 			religion = reformed
-			controller = { tag = NED }
+			controller = { tag = root }
 		}
-		is_year = 1550
 		NOT = {
 			has_country_flag = dutch_masters
 			is_year = 1700
 		}
-		technology_group = western
+		has_institution = printing_press
 		has_idea = patron_of_art
 		years_of_income = 0.6
 		adm_power = 10
@@ -415,13 +416,13 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	trigger = {
-		is_year = 1450
+		is_institution_enabled = renaissance
+		capital_scope = { continent = europe }
 		NOT = {
 			is_year = 1600
 			num_of_cities = 6
 			has_country_flag = blooming_renaissance
 		}
-		technology_group = western
 		advisor = philosopher
 		adm_power = 30
 		years_of_income = 0.3
@@ -438,6 +439,12 @@ country_event = {
 	
 	option = {
 		name = cultural_event.4.a
+		capital_scope = {
+			add_institution_embracement = {
+				which = "renaissance"
+				value = 100
+			}
+		}
 		add_country_modifier = {
 			name = blooming_renaissance
 			duration = 7300
@@ -462,7 +469,7 @@ country_event = {
 		is_year = 1630
 		NOT = { is_year = 1720 }
 		NOT = { has_country_flag = south_german_organ_tradition }
-		technology_group = western
+		capital_scope = { continent = europe }
 		culture_group = germanic
 		any_owned_province = {
 			has_building = temple
@@ -507,7 +514,7 @@ country_event = {
 			is_year = 1750
 			has_country_flag = the_sound_of_music
 		}
-		technology_group = western
+		capital_scope = { continent = europe }
 		adm_power = 10
 		years_of_income = 0.1
 	}

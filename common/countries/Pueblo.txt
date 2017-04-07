@@ -37,6 +37,8 @@ monarch_names = {
 	"Catiti #0" = 20
 	
 	"Ootcakao #0" = -1
+	"Wanna #0" = -1
+	"Spider #0" = -1
 }
 
 leader_names = {

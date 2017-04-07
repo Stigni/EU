@@ -61,7 +61,6 @@ monarch_names = {
 	"Henry #0" = 20
 	"Alexander #3" = 10
 	"Arthur #0" = 10
-	"Mary #0" = -10
 	"Walter #0" = 10
 	"John #1" = 5
 	"Charles #0" = 5
@@ -96,6 +95,11 @@ monarch_names = {
 	"Munroe #0" = 0
 	"Scott #0" = 0
 	"Wallace #0" = 0
+	"Mary #0" = -10
+	"Elizabeth #0" = -1
+	"Margaret  #0" = -1
+	"Euphemia #0" = -1
+	"Anabella  #0" = -1
 }
 
 ship_names = {

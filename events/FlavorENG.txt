@@ -213,7 +213,7 @@ country_event = {
 	option = {			# We have lost our foothold in France
 		name = "flavor_eng.EVTOPTA9104"
 		ai_chance = { factor = 80 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		every_core_province = {
 			limit = {
 				region = france_region
@@ -289,7 +289,7 @@ country_event = {
 	option = {			# No that is the Noblemens job
 		name = "flavor_eng.EVTOPTB9105"
 		ai_chance = { factor = 25 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -374,7 +374,7 @@ country_event = {
 	option = {				# No we don't
 		name = "flavor_eng.EVTOPTB9107"
 		ai_chance = { factor = 10 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -434,7 +434,7 @@ country_event = {
 	option = {			# Do not Reform
 		name = "flavor_eng.EVTOPTB9108"
 		ai_chance = { factor = 25 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -490,7 +490,7 @@ country_event = {
 				modifier = accepted_supremacy_of_rome
 			}
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -600,6 +600,7 @@ country_event = {
 			is_year = 1560
 		}
 		has_regency = yes
+		has_consort_regency = no
 		OR = {
 			AND = {
 				tag = ENG
@@ -721,7 +722,7 @@ country_event = {
 				modifier = eng_tolerates_religious_freedom
 			}
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = religious_freedom_act
 			duration = 3650
@@ -929,7 +930,7 @@ country_event = {
 	option = {		# Keep Norfolk in the Tower and smash the rebels
 		name = "flavor_eng.EVTOPTA9118"
 		ai_chance = { factor = 60 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		if = {
 			limit = {
 				owns = 246		# Northumberland
@@ -1050,7 +1051,7 @@ country_event = {
 	option = {			# Expand Loan Market
 		name = "flavor_eng.EVTOPTA9119"
 		ai_chance = { factor = 50 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		loan_size = 24
 		add_years_of_income = 0.5
 		add_inflation = 3
@@ -1058,7 +1059,7 @@ country_event = {
 	option = {			# Issue Strict Control
 		name = "flavor_eng.EVTOPTB9119"
 		ai_chance = { factor = 50 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_inflation = -3
 	}
 }
@@ -1405,7 +1406,7 @@ country_event = {
 	option = {			# The present policy is perfect
 		name = "flavor_eng.EVTOPTB9127"
 		ai_chance = { factor = 25 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -1674,7 +1675,7 @@ country_event = {
 	option = {			# Use it as an excuse for War
 		name = "flavor_eng.EVTOPTA9141"
 		ai_chance = { factor = 75 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_casus_belli = {	
 			target = SPA
 			type = cb_insult
@@ -1960,7 +1961,7 @@ country_event = {
 	option = {			# Denounce the Agreement
 		name = "flavor_eng.EVTOPTB9193"
 		ai_chance = { factor = 25 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		POR = {
 			add_opinion = {
 				who = ROOT
@@ -2029,7 +2030,7 @@ country_event = {
 	option = {		# Punish all
 		name = "flavor_eng.EVTOPTA9182"
 		ai_chance = { factor = 75 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		every_owned_province = {
 			limit = {
 				has_province_flag = gunpowder_plot
@@ -2336,9 +2337,12 @@ country_event = {
 	
 	option = {		# Most troubling indeed
 		name = "flavor_eng.EVTOPTA9250"
-		add_ruler_modifier = {
-			name = low_fertility
-			duration = -1
+		if = {
+			limit = { NOT = { ruler_has_personality = infertile_personality } }
+			add_ruler_modifier = {
+				name = low_fertility
+				duration = -1
+			}
 		}
 	}
 }
@@ -2406,7 +2410,7 @@ country_event = {
 	option = {
 		name = flavor_eng.9237.b  # It is time for peace, let us join our two houses together in marriage 
 		ai_chance = { factor = 100 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		define_heir = {
 			claim = 100
 			name = "Henry #0"

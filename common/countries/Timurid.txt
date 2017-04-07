@@ -48,6 +48,10 @@ monarch_names = {
 	"Têmôr #1" = 1
 	
 	"Fatin #1" = -1
+	"Mumtaz #0" = -1
+	"Roshanara #0" = -1
+	"Jahanara #0" = -1
+	"Bahar Banu #0" = -1
 }
 
 leader_names = {

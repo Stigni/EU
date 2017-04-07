@@ -166,7 +166,7 @@ country_event = {
 	
 	option = {
 		name = flavor_guj.5.a #What a clear sighted man!
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_piety = 0.05
 	}
 }

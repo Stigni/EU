@@ -33,6 +33,8 @@ monarch_names = {
 	"Cajemé #0" = 10
 	
 	"Kahavasooah #0" = -1
+	"Jimulla #0" = -1
+	"Imkah #0" = -1
 }
 
 leader_names = {

@@ -13,7 +13,8 @@ country_decisions = {
 			NOT = { tag = MUG }
 			culture_group = dravidian
 			religion_group = muslim
-			NOT = { technology_group = nomad_group }
+			has_institution = feudalism
+			NOT = { government = steppe_horde }
 			OR = {
 				ai = no
 				AND = {
@@ -119,7 +120,8 @@ country_decisions = {
 			NOT = { tag = MUG }
 			culture_group = western_aryan
 			religion_group = muslim
-			NOT = { technology_group = nomad_group }
+			has_institution = feudalism
+			NOT = { government = steppe_horde }
 			OR = {
 				ai = no
 				AND = {
@@ -231,7 +233,8 @@ country_decisions = {
 			NOT = { tag = MUG }
 			religion_group = muslim
 			culture_group = hindusthani
-			NOT = { technology_group = nomad_group }
+			has_institution = feudalism
+			NOT = { government = steppe_horde }
 			OR = {
 				ai = no
 				AND = {
@@ -337,7 +340,8 @@ country_decisions = {
 			NOT = { tag = MUG }
 			religion_group = muslim
 			culture_group = eastern_aryan
-			NOT = { technology_group = nomad_group }
+			has_institution = feudalism
+			NOT = { government = steppe_horde }
 			OR = {
 				ai = no
 				AND = {
@@ -439,7 +443,8 @@ country_decisions = {
 			NOT = { tag = MUG }
 			religion_group = muslim
 			culture_group = central_indic
-			NOT = { technology_group = nomad_group }
+			has_institution = feudalism
+			NOT = { government = steppe_horde }
 			OR = {
 				ai = no
 				AND = {

@@ -41,6 +41,8 @@ fixed_capital = 520 # Cannot move capital away from this province & no power cos
 		MIL = 1
 		ADM = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
 }
 
 1441.1.1 = {

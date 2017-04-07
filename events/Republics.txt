@@ -55,12 +55,12 @@ country_event = {
 	option = {
 		name = republics.2.a
 		add_republican_tradition = 0.02
-		add_mercantilism = -0.03
+		add_mercantilism = -3
 	}
 	option = {
 		name = republics.2.b
 		add_republican_tradition = -0.02
-		add_mercantilism = 0.03
+		add_mercantilism = 3
 	}
 }
 
@@ -282,7 +282,7 @@ country_event = {
 	
 	option = {
 		name = republics.7.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_republican_tradition = -0.1
 	}
 
@@ -810,15 +810,15 @@ country_event = {
 		
 		modifier = {
 			factor = 0.9
-			mercantilism = 0.8
+			mercantilism = 80
 		}
 		modifier = {
 			factor = 0.9
-			mercantilism = 0.9
+			mercantilism = 90
 		}
 		modifier = {
 			factor = 0.9
-			mercantilism = 1.0
+			mercantilism = 100
 		}
 		modifier = {
 			factor = 0.9
@@ -916,27 +916,27 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			mercantilism = 0.8
+			mercantilism = 80
 		}
 		modifier = {
 			factor = 0.9
-			mercantilism = 0.9
+			mercantilism = 90
 		}
 		modifier = {
 			factor = 0.9
-			mercantilism = 1.0
+			mercantilism = 100
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { mercantilism = 0.3 }
+			NOT = { mercantilism = 30 }
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { mercantilism = 0.2 }
+			NOT = { mercantilism = 20 }
 		}
 		modifier = {
 			factor = 1.1
-			NOT = { mercantilism = 0.1 }
+			NOT = { mercantilism = 10 }
 		}
 		modifier = {
 			factor = 0.9
@@ -1554,7 +1554,7 @@ country_event = {
 			}
 		}
 		add_years_of_income = -0.10
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -3203,6 +3203,30 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 1
+	}
+	
+	option = {
+		name = republics.3.a
+		change_government = revolutionary_empire
+	}
+}
+
+# Imperials take over
+country_event = {
+	id = republics.101
+	title = republics.3.t
+	desc = republics.3.d
+	picture = COURT_eventPicture
+	
+	trigger = {
+		has_dlc = "Rights of Man"
+		faction_in_power = rr_royalists
+		NOT = { republican_tradition = 0.41 }
+		government = revolutionary_republic
+	}
+	
+	mean_time_to_happen = {
+		months = 12
 	}
 	
 	option = {

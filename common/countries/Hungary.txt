@@ -46,7 +46,6 @@ monarch_names = {
 	"András #3" = 15
 	"Károly #2" = 15
 	"Zsigmond #1" = 10
-	"Anna #0" = -10
 	"Béla #4" = 5
 	"Anasztáz #0" = 0
 	"Barnabás #0" = 0
@@ -75,6 +74,10 @@ monarch_names = {
 	"Simon #0" = 0
 	"Tamás #0" = 0
 	"Vencel #0" = 0
+	"Anna #0" = -10
+	"Erzsébet #0" = -5
+	"Agnes #0" = -1
+	"Katalin #0" = -1
 }
 
 leader_names = {

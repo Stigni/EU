@@ -282,15 +282,15 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.8
-			mercantilism = 0.5
+			mercantilism = 50
 		}
 		modifier = {
 			factor = 0.8
-			mercantilism = 0.7
+			mercantilism = 70
 		}
 		modifier = {
 			factor = 0.8
-			mercantilism = 0.9
+			mercantilism = 90
 		}
 		modifier = {
 			factor = 0.9
@@ -303,19 +303,19 @@ country_event = {
 		modifier = {
 			factor = 1.2
 			NOT = {
-				mercantilism = 0.5
+				mercantilism = 50
 			}
 		}
 		modifier = {
 			factor = 1.2
 			NOT = {
-				mercantilism = 0.3
+				mercantilism = 30
 			}
 		}
 		modifier = {
 			factor = 1.2
 			NOT = {
-				mercantilism = 0.1
+				mercantilism = 10
 			}
 		}
 	}
@@ -1107,7 +1107,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA9040"
 		kill_ruler = yes
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = 5
 		add_legitimacy = 5
 	}
@@ -1288,13 +1288,13 @@ country_event = {
 		modifier = {
 			factor = 1.5
 			NOT = {
-				mercantilism = 0.5
+				mercantilism = 50
 			}
 		}
 		modifier = {
 			factor = 1.5
 			NOT = {
-				mercantilism = 0.3
+				mercantilism = 30
 			}
 		}
 	}

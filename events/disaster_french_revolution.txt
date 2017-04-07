@@ -23,7 +23,7 @@ country_event = {
 	immediate = {
 		random_owned_province = { 
 			limit = {
-				has_building = fort_15th
+				fort_level = 1
 				is_capital = no
 			}
 			spawn_rebels = {
@@ -94,7 +94,7 @@ country_event = {
 	option = {		# A Revolution has struck us!
 		name = "flavor_fra.EVTOPTA3779"
 		disband_rebels = revolutionary_rebels
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		change_government = revolutionary_republic
 		set_revolution_target = ROOT
 		kill_ruler = yes
@@ -197,7 +197,7 @@ country_event = {
 	
 	option = {		# 361 votes for and 360 against execution
 		name = "flavor_fra.EVTOPTA3146"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		set_country_flag = fra_monarch_executed
 		every_neighbor_country = {
 			limit = {
@@ -406,7 +406,7 @@ country_event = {
 	}
 	option = {		# The revolution must continue!
 		name = "flavor_fra.EVTOPTB101"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -1102,22 +1102,22 @@ country_event = {
 		trigger = {
 			NOT = { government = revolutionary_republic }
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_legitimacy = 20
 	}
 	option = {		# Long Live the Republic!
 		name = "french_revolution.18.b"
 		trigger = {
 			government = revolutionary_republic
-			NOT = { dynasty = "Bonaparte" }
+			NOT = { has_ruler_flag = bonaparte_flag }
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	option = {		# Long Live the Republic!
 		name = "french_revolution.18.c"
 		trigger = {
 			is_revolution_target = yes
-			dynasty = "Bonaparte"
+			has_ruler_flag = bonaparte_flag
 			government = revolutionary_republic
 		}
 		country_event = { id = french_revolution.9 }

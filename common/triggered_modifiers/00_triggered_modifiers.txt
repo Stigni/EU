@@ -27,8 +27,8 @@ east_indian_trade_route = {
 		has_discovered = 1460 # Cape of Good Hope
 		num_of_ports = 4
 		has_idea = quest_for_the_new_world
-		technology_group = western
 		any_active_trade_node = {
+			has_merchant = yes
 			OR = {
 				province_id = 1361 # Straits of Johor
 				province_id = 1343 # Ganges Delta
@@ -360,27 +360,37 @@ papal_subjugation = {
 }
 
 
-######################################
-# Western Influences.
-######################################
-western_arms_trade = {
+rapid_collapse_of_society = {
 	potential = {
-		NOT = { technology_group = western }
-		NOT = { technology_group = high_american }
+		normal_or_historical_nations = yes
+		capital_scope = {
+			OR = {
+				continent = north_america
+				continent = south_america
+				continent = new_world
+			}
+		}
+		
 	}
-
 	trigger = {
-		any_neighbor_country = {
-			technology_group = western
-			is_subject = no
-			alliance_with = ROOT
-			has_opinion = { who = ROOT value = 150 }
+		NOT = { has_institution = feudalism }
+		custom_trigger_tooltip = {
+			tooltip = rapid_collapse_of_society_tooltip
+			has_country_flag = european_diseases_struck
+			NOT = {
+				had_country_flag = {
+					flag = european_diseases_struck
+					days = 9125
+				}
+			}
 		}
 	}
-
-	technology_cost = -0.10
+	
+	all_power_cost = 0.33
+	discipline = -0.1
+	land_morale = -0.2
+	
 }
-
 
 ######################################
 # Italian - Submission to Emperor
@@ -576,12 +586,9 @@ pentarchy_mod = {
 the_mandate_of_heaven = {
 	potential = {
 		government = celestial_empire
-		is_westernising = no
-		NOT = { technology_group = western }
 	}
 	
 	trigger = {	
-		is_westernising = no
 		stability = 0
 		legitimacy = 60
 		num_of_cities = 20
@@ -594,12 +601,9 @@ the_mandate_of_heaven = {
 the_mandate_of_heaven_lost = {
 	potential = {
 		government = celestial_empire
-		is_westernising = no
-		NOT = { technology_group = western }
 	}
 
 	trigger = {
-		is_westernising = no
 		OR = {
 			NOT = { stability = 0 }
 			NOT = { legitimacy = 60 }

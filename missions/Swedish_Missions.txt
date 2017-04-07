@@ -137,8 +137,26 @@ control_estonia = {
 		add_claim = 1842
 	}
 	abort_effect = {
-		remove_claim = 36
-		remove_claim = 1842
+		36 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+		1842 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		add_country_modifier = {
@@ -202,10 +220,46 @@ control_latvia = {
 		add_claim = 1834
 	}
 	abort_effect = {
-		remove_claim = 35
-		remove_claim = 37
-		remove_claim = 38
-		remove_claim = 1834
+		35 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+		37 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+		38 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+		1834 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		add_country_modifier = {
@@ -288,7 +342,14 @@ swedish_pommerania = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -342,7 +403,16 @@ control_gotland = {
 		add_claim = 25
 	}
 	abort_effect = {
-		remove_claim = 25
+		25 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}	
 	}
 	effect = {
 		add_country_modifier = {
@@ -524,7 +594,14 @@ reconquer_finland = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -548,17 +625,22 @@ swedish_colony_in_north_america = {
 		}
 		tag = SWE
 		is_year = 1600
-		northeast_america_region = {
+		colonial_eastern_america = {
 			has_discovered = ROOT
 			is_empty = yes
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
 		}
 		NOT = {
-			northeast_america_region = {
+			colonial_eastern_america = {
 				owned_by = ROOT
 			}
 		}
 		NOT = {
-			northeast_america_region = {
+			colonial_eastern_america = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -567,11 +649,11 @@ swedish_colony_in_north_america = {
 		num_of_colonists = 1
 	}
 	abort = {
-		NOT = { northeast_america_region = { is_empty = yes } }
-		NOT = { northeast_america_region = { owned_by = ROOT } }
+		NOT = { colonial_eastern_america = { is_empty = yes } }
+		NOT = { colonial_eastern_america = { owned_by = ROOT } }
 	}
 	success = {
-		northeast_america_region = {
+		colonial_eastern_america = {
 			owned_by = ROOT
 			colonysize = 400
 		}

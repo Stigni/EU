@@ -47,6 +47,28 @@ monarch_names = {
 	"Ahmad #0" = 10
 	
 	"Lujayn #0" = -1
+	"Ghanneyeh #0" = -3
+	"Ghaliya #0" = -3
+	"Ralie #0" = -3
+	"Fatimah #0" = -1
+	"Walida #0" = -1
+	"Tahani #0" = -1
+	"Safaa  #0" = -1
+	"Randa #0" = -1
+	"Qismah #0" = -1
+	"Nadirah #0" = -1
+	"Maram #0" = -1
+	"Layla #0" = -1
+	"Kamilah #0" = -1
+	"Jabirah #0" = -1
+	"Hudun #0" = -1
+	"Fadwa #0" = -1
+	"Daliyah #0" = -1
+	"Amirah #0" = -1
+	"Abal #0" = -1
+	"Nadiyya #0" = -1
+	"Norah #0" = -1
+	"Fahda #0" = -1
 }
 
 leader_names = {

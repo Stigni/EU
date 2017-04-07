@@ -586,7 +586,9 @@ country_event = {
 		change_statists_vs_orangists = -0.25
 		set_country_flag = supported_statists
 		clr_country_flag = supported_orangists
-		kill_leader = random
+		kill_leader = {
+			type = random
+		}
 		add_mil_power = 50
 	}
 

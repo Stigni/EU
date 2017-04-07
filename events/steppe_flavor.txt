@@ -498,7 +498,7 @@ country_event = {
 				loyalty = 10
 			}
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_army_tradition = 5		
 	}
 }
@@ -1138,7 +1138,6 @@ country_event = {
 	trigger = {
 		government = steppe_horde
 		legitimacy = 100
-		NOT = { stability = 3 }
 		is_at_war = yes	
 		capital_scope = {
 			OR = {
@@ -1159,7 +1158,7 @@ country_event = {
 	option = {
 		name = "randomeventsstapehordes.24.EVTOPTA"
 		add_prestige = 2
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -1172,6 +1171,7 @@ country_event = {
 
 	trigger = {
 		technology_group = nomad_group
+		NOT = { has_institution = feudalism }
 		NOT = { government = steppe_horde }
 	}
 

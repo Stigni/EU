@@ -350,8 +350,8 @@ capital = 189	# Nancy
 
 1708.12.8 = {
 	heir = {
-		name = "François Éttiene"
-		monarch_name = "François III Éttiene"
+		name = "François Étienne"
+		monarch_name = "François III Étienne"
 		dynasty = "de Vaudémont"
 		birth_date = 1708.12.8
 		death_date = 1737.7.9
@@ -364,7 +364,7 @@ capital = 189	# Nancy
 
 1729.3.28 = {
 	monarch = {
-		name = "François III Éttiene"
+		name = "François III Étienne"
 		dynasty = "de Vaudémont"
 		birth_date = 1708.12.8
 		adm = 0

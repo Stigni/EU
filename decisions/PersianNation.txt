@@ -14,6 +14,11 @@ country_decisions = {
 			}
 			NOT = { tag = MUG }
 			NOT = { tag = PER }
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			NOT = { tag = PAP }
+			NOT = { tag = TUR }
+			NOT = { tag = BYZ }
 			OR = {
 				culture_group = iranian
 				primary_culture = azerbaijani

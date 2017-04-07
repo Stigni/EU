@@ -36,12 +36,20 @@ monarch_names = {
 	"Hayam Wuruk #1" = 15
 	"Kalagamet #1" = 15
 	"Raden Wijaya #1" = 15
-	"Suhita #0" = -15
-	"Sri Gitarja #1" = -10
 	"Kertawardhana #0" = 10
 	"Raden Sotor #0" = 10
 	"Raden Sumirat #0" = 10
 	"Singhawardhana #0" = 10
+
+	"Sri Gitarja #1" = -10
+	"Suhita #0" = -10
+    "Cinta #0" = -1
+    "Wangi #0" = -1
+    "Prajnaparamitha #0" = -1
+    "Tribhuawana #0" = -10
+    "Gayatri #0" = -10
+    "Narendra Duhita #0" = -1
+    "Indreswari #0" = -1
 }
 
 leader_names = {

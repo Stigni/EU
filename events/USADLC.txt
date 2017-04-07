@@ -915,9 +915,9 @@ country_event = {
 	
 	option = {
 		name = "usa_dlc.EVTOPTA30"
-		add_mercantilism = 0.075
+		add_mercantilism = 7
 		PRU = {
-			add_mercantilism = 0.075
+			add_mercantilism = 7
 			add_opinion = {
 				who = ROOT
 				modifier = opinion_treaty_of_amity_and_commerce
@@ -2730,7 +2730,7 @@ country_event = {
 	
 	option = {
 		name = "usa_dlc.EVTOPTA66" # Thomas Jefferson
-		add_mercantilism = 0.05
+		add_mercantilism = 5
 		define_ruler = {
 			name = "Thomas Jefferson"
 			dip = 4
@@ -2741,7 +2741,7 @@ country_event = {
 
 	option = {
 		name = "usa_dlc.EVTOPTB66" # Charles Pinckney
-		add_mercantilism = -0.05
+		add_mercantilism = -5
 		define_ruler = {
 			name = "Charles Pinckney"
 			dip = 3	
@@ -2783,7 +2783,7 @@ country_event = {
 
 	option = {
 		name = "usa_dlc.EVTOPTA67" # James Madison
-		add_mercantilism = 0.05
+		add_mercantilism = 5
 		define_ruler = {
 			name = "James Madison"
 			dip = 5	
@@ -2794,7 +2794,7 @@ country_event = {
 
 	option = {
 		name = "usa_dlc.EVTOPTB67" # Charles Pinckney
-		add_mercantilism = -0.05
+		add_mercantilism = -5
 		define_ruler = {
 			name = "Charles Pinckney"
 			dip = 3	
@@ -2805,7 +2805,7 @@ country_event = {
 
 	option = {
 		name = "usa_dlc.EVTOPTC67" # George Clinton
-		add_mercantilism = -0.05
+		add_mercantilism = -5
 		define_ruler = {
 			name = "George Clinton"
 			dip = 5	
@@ -2903,8 +2903,8 @@ country_event = {
 			modifier = opinion_disappointed 
 			years = 20
 		}
-		add_stability = 1
-		add_mercantilism = 0.05
+		add_stability_or_adm_power = yes
+		add_mercantilism = 5
 		define_ruler = {
 			name = "James Madison"
 			dip = 5	
@@ -2921,7 +2921,7 @@ country_event = {
 			years = 20
 		}
 		add_stability = -1
-		add_mercantilism = -0.05
+		add_mercantilism = -5
 		define_ruler = {
 			name = "DeWitt Clinton"
 			adm = 4	
@@ -2960,7 +2960,7 @@ country_event = {
 	
 	option = {
 		name = "usa_dlc.EVTOPTA70" # James Monroe
-		add_mercantilism = 0.05
+		add_mercantilism = 5
 		add_stability = 2
 		# monarch = 04065
 		define_ruler = {
@@ -2973,7 +2973,7 @@ country_event = {
 
 	option = {
 		name = "usa_dlc.EVTOPTB70" # Rufus King
-		add_mercantilism = -0.05
+		add_mercantilism = -5
 		add_opinion = { 
 			who = GBR 
 			modifier = opinion_pleased

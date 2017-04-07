@@ -10,7 +10,7 @@ trade_goods = naval_supplies
 hre = no
 base_tax = 5 
 base_production = 5
-base_manpower = 3
+base_manpower = 5
 is_city = yes
 estate = estate_nomadic_tribes
 

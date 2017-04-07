@@ -4,5 +4,5 @@ discovered_by = ottoman
 
 1434.1.1 = { discovered_by = POR }
 1529.6.1 = { discovered_by = FRA } # Parmentier Brothers
-1434.1.1 = { discovered_by = POR }
+
 

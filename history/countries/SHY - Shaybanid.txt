@@ -2,8 +2,8 @@ government = steppe_horde
 technology_group = nomad_group
 religion = sunni
 primary_culture = uzbehk
-capital = 476	# Orda-Bazar
-
+capital = 1075 #Chimgi-Tura
+historical_rival = TIM
 
 1425.1.1 = { 
 	monarch = { 
@@ -46,6 +46,10 @@ capital = 476	# Orda-Bazar
 		mil = 6
 	}
 } 
+
+1480.1.1 = {
+	capital = 476	# Orda-Bazar
+}
 
 1501.1.1 = { capital = 454 government = iqta technology_group = muslim } # Muhammad crowned at Samarkand, Uzbeks settle down
 

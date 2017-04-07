@@ -27,7 +27,7 @@ capital = 1858	# Stettin
 		death_date = 1457.4.17
 		claim = 95
 		adm = 2
-		dip = 2
+		dip = 3
 		mil = 3
 	}
 }
@@ -38,9 +38,13 @@ capital = 1858	# Stettin
 		dynasty = "Gryf"
 		birth_date = 1400.1.1
 		adm = 2
-		dip = 2
+		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = benevolent_personality
+	add_ruler_personality = scholar_personality
 }
 
 1444.5.29 = {

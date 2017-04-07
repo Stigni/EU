@@ -18,7 +18,7 @@ country_event = {
 	
 	trigger = {
 		tag = CHM
-		knows_country = INC
+		knows_country = CSU
 	}
 	
 	mean_time_to_happen = {
@@ -29,7 +29,7 @@ country_event = {
 		name = flavor_chm.1.a
 		add_country_modifier = {
 			name = chm_great_artisans
-			duration = 365
+			duration = 3650
 		}
 	}
 }
@@ -60,6 +60,6 @@ country_event = {
 	}
 	option = {
 		name = flavor_chm.2.b #Ignore the reform ideas
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }

@@ -233,7 +233,7 @@ country_event = {
 	option = {
 		name = flavor_eth.6.b	
 		ai_chance = { factor = 10 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	
 }
@@ -260,7 +260,7 @@ country_event = {
 	option = { #This is how it always has been
 		name = flavor_eth.7.a 
 		ai_chance = { factor = 50 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		set_country_flag = eth_itinerant_capital_flag
 	}
 	
@@ -323,7 +323,7 @@ country_event = {
 	option = {
 		name = flavor_eth.8.b #Let us not break with tried traditions
 		ai_chance = { factor = 10 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -351,9 +351,11 @@ province_event = {
 	
 	option = {
 		name = flavor_eth.9.a #To the provinces!
-		set_country_flag = eth_itinerant_capital_flag
-		clr_country_flag = eth_debre_berhan_capital_flag
-		owner = { add_stability = -1 }
+		owner = {
+			set_country_flag = eth_itinerant_capital_flag
+			clr_country_flag = eth_debre_berhan_capital_flag
+			add_stability = -1
+		}
 	}
 }
 
@@ -403,7 +405,7 @@ country_event = {
 	option = {
 		name = flavor_eth.10.b #Let us not break with tried traditions
 		ai_chance = { factor = 10 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -729,7 +731,7 @@ country_event = {
 	option = {
 		name = flavor_eth.19.b #We must safeguard the privileges of the Monasteries.
 		ai_chance = { factor = 50 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		every_owned_province = {
 			limit = {
 				has_province_flag = eth_strong_monastaries
@@ -769,7 +771,7 @@ country_event = {
 	option = {
 		name = flavor_eth.20.a #We cannot break with our Patriarch
 		ai_chance = { factor = 90 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	option = {
 		name = flavor_eth.20.b #Our Church should be free of foreign influence.
@@ -1026,7 +1028,7 @@ country_event = {
 	option = {
 		name = flavor_eth.26.a #We are fortunate that our ancestors had such foresight.
 		ai_chance = { factor = 90 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		define_heir = {
 			claim = 100
 			dynasty = ROOT
@@ -1072,12 +1074,30 @@ country_event = {
 	option = {
 		name = flavor_eth.27.a #Ok
 		add_adm_power = 25
-		define_advisor = {
-			type = statesman
-			name = "Eleni"
-			skill = 3
-			female = yes
-			discount = yes
+		if = {
+			limit = {
+				NOT = { has_dlc = "Rights of Man" }
+			}
+			define_advisor = {
+				type = statesman
+				name = "Eleni"
+				skill = 3
+				female = yes
+				discount = yes
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+			}
+			define_consort = {
+				name = "Eleni"
+				dynasty = "Hadiya"
+				adm = 4
+				dip = 4
+				mil = 3
+				female = yes
+			}
 		}
 	}
 }

@@ -11,6 +11,8 @@
  TRADEPATROL_REPAIRING:0 "§RCette unité est en réparation. Elle poursuivra sa mission bientôt.§!"
  PEACE_VIEW_GOLD_ADD_REMOVE:0 "Cliquez sur les boutons « §G+§! » et « §G-§! » pour §Gajouter§! ou §Gretirer§! des éléments à votre offre ou à vos exigences.\n$GOLD|+$¤ équivalent à un score de guerre d'environ §Y$WS|+1$§!."
  PEACE_VIEW_GOLD_ADD_REMOVE_KEYS:0 "§YClic droit§! pour ajouter ou retirer §Gplus§!.\n§YShift + clic gauche§! pour ajouter ou retirer le §Gmaximum§!"
+ PEACE_VIEW_GOLD_ADD_KEYS:0 "§YClic droit§! pour en ajouter §Gplus§!.\n§YShift + clic§! pour en ajouter le §Gmaximum§!"
+ PEACE_VIEW_GOLD_REMOVE_KEYS:0 "§YClic droit§! pour en retirer §Gplus§!.\n§YShift + clic§! pour en retirer le §Gmaximum§!"
  SIEGE_ARTILLERY_EXPLANATION:0 "L'artillerie ajoute un bonus au jet de dé du siège, dépendant de la quantité d'artillerie par rapport au niveau des fortifications."
  SIEGE_ARTILLERY_LINE:0 "§Y$AMOUNT$§! unités d'artillerie : bonus de §Y+$BONUS$§!"
  SIEGE_STATUS_EXPLANATION:0 "L'avancée du siège est affectée par :"

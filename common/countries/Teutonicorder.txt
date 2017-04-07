@@ -88,7 +88,7 @@ leader_names = {
 	"von Dellinghausen" "von Drachenfels"
 	"von Ekesparre" "von Erlichshausen"
 	"von Freymann" "Freytag von Loringhoven"
-	"von Hehn" "von Helbrungen" "von Howen" "von Hunnius" "von Hoyningen" 
+	"von Hehn" "von Helbrungen" "von Hohenzollern" "von Howen" "von Hunnius" "von Hoyningen" 
 	"von Jungingen"
 	"von Keyserling" "von Koskull" "von Kniprode" "von Klot-Heydenfeldt" "von Krusenstiern"
 	"von Lilienfeld"

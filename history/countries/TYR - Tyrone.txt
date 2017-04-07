@@ -64,6 +64,9 @@ capital = 372	# Carrickfergus
 		dip = 3
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = fertile_personality
+	add_ruler_personality = bold_fighter_personality
 }
 
 1435.1.1 = {

@@ -65,6 +65,8 @@ fixed_capital = 527 # Cannot move capital away from this province & no power cos
 		DIP = 2
 		MIL = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = greedy_personality
 }
 
 1441.4.28 = {
@@ -76,8 +78,8 @@ fixed_capital = 527 # Cannot move capital away from this province & no power cos
 		death_date = 1503.9.6
 		claim = 95
 		ADM = 2
-		DIP = 2
-		MIL = 2
+		DIP = 4
+		MIL = 3
 	}
 }
 
@@ -86,8 +88,8 @@ fixed_capital = 527 # Cannot move capital away from this province & no power cos
 		name = "'Adil Khan II"
 		dynasty = "Faruqi"
 		ADM = 2
-		DIP = 2
-		MIL = 2
+		DIP = 4
+		MIL = 3
 	}
 }
 

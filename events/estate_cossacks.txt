@@ -407,7 +407,7 @@ country_event = {
 				add_casus_belli = {
 				    target = ROOT
 				    type = cb_border_war
-				    months = 3650
+				    months = 120
 				}
 			}
 		}
@@ -472,7 +472,7 @@ country_event = {
 		add_casus_belli = {
 		   target = FROM
 		   type = cb_border_war
-		   months = 3650
+		   months = 120
 		}
 		FROM = {
 			clr_country_flag = cossack_raids_started_here

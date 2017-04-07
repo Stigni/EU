@@ -5,13 +5,10 @@ culture = hessian
 religion = catholic
 trade_goods = cloth
 capital = "Kleves"
-base_tax = 4
-base_production = 4
+base_tax = 5
+base_production = 5
 base_manpower = 2
 is_city = yes
-
-
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

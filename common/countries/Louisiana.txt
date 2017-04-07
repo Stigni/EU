@@ -76,7 +76,7 @@ monarch_names = {
 	"Yves #0" = 0
 	"Zéphirin #0" = 0
 	
-	"Felicienne #0" = -1
+	"Félicienne #0" = -1
 	"Héloïse #0" = -1
 	"Lucille #0" = -1
 }
@@ -85,7 +85,7 @@ leader_names = {
       Abat Aguilar Allard Astier Azeret
       Ballard Barbarin Beauregard Beauvais Bellevue Bénard Bertonière Blanchard Bouligny Broussian
       Chauvin Courcelli
-      D'Abbadie Dabeville Davezac "de la Houssaye" Delagnoue Delaire Delorme Dubreuil Duclos Dufour Duvergier
+      D'Abbadie Dabeville Davezac "de La Houssaye" Delagnoue Delaire Delorme Dubreuil Duclos Dufour Duvergier
       Fabre Ferrière Florance Fortier Foucher Fournier
       Garnier Gasquet Girod Guesnard
       "L'Hermite" Labadie Labarre Laborde Labranche Lachaise Lacoste Lacouture Lacroix Lafarge Lafaye 
@@ -94,18 +94,18 @@ leader_names = {
       Mansoury Marigny Milhet Millaudon Montegut Musson
       Paimboeuf Paturel Pecquet Pelletier Périer Perrault Pilie Plicque
       Renault Rillieux Rivière Rochelle Roussel
-      "Saint Martin" Salaignac Salvant Seignouret Simard "Saint Blancard"
+      "Saint-Martin" Salaignac Salvant Seignouret Simard "Saint-Blancard"
       Terrasson Tourangier
       Valette Vidal Vignie Villere Vinot
 }
 
 ship_names = {
-	"Saint Louis"
-	Detroit
-	Natchitoches "New Orleans"
-	"Baton Rouge" 
-	"Fort Maurepas" "Fort de Chartres"
-	Mobile
-	Biloxi
-	Peoria
+	"le Saint-Louis"
+	"le Détroit"
+	"le Natchitoches" "le Nouvelle-Orléans"
+	"le Bâton-Rouge" 
+	"le Fort-Maurepas" "le Fort-de-Chartres"
+	"le Mobile"
+	"le Biloxi"
+	"le Péoria"
 }

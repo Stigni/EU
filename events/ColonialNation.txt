@@ -1003,16 +1003,9 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { adm_tech = 7 }
-			}
-			change_government = oligarchic_republic
-		}
-		if = {
-			limit = {
-				adm_tech = 7
 				NOT = { adm_tech = 12 }
 			}
-			change_government = noble_republic
+			change_government = oligarchic_republic
 		}
 		if = {
 			limit = {

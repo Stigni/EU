@@ -81,9 +81,13 @@ capital = 524 #Agra
 		mil = 6
 		leader = {	name = "Akbar"	type = general	rank = 0	fire = 4	shock = 4	manuever = 2	siege = 2 }
 	}
+	add_accepted_culture = bihari
+	add_accepted_culture = bengali
 }
 
 1558.1.1 = {  decision = islamic_centre_of_scholarly }
+
+1562.6.1 = { add_accepted_culture = malvi }
 
 1569.10.1 = {
 	heir = {
@@ -100,6 +104,10 @@ capital = 524 #Agra
 }
 
 1571.1.1 = { capital = 524 } # Agra
+
+1573.6.1 = {
+	add_accepted_culture = gujarati
+}
 
 1575.1.1 = { decision = ibadat_khana }
 

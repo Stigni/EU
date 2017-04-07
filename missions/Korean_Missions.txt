@@ -32,7 +32,16 @@ haixi_expedition = {
 		add_claim = 2111
 	}
 	abort_effect = {
-		remove_claim = 2111
+		2111 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		2111 = {
@@ -79,7 +88,16 @@ ninguta_expedition = {
 		add_claim = 2108
 	}
 	abort_effect = {
-		remove_claim = 2108
+		2108 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		2108 = {

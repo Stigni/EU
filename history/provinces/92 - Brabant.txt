@@ -12,9 +12,6 @@ base_tax = 8
 base_production = 8
 trade_goods = cloth
 base_manpower = 4
-
-
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
@@ -22,9 +19,8 @@ discovered_by = ottoman
 
 
 1477.1.5 = { owner = HAB controller = HAB add_core = HAB }
-1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB }
-1549.11.4 = { owner = NED controller = NED add_core = NED remove_core = HAB }
 1519.1.12 = { owner = SPA controller = SPA add_core = SPA } # Charles V gets total control over his Burgundian inheritance
+1549.11.4 = { owner = NED controller = NED add_core = NED remove_core = HAB }
 1579.1.23 = { controller = NED }
 1648.1.30 = { controller = SPA unrest = 0 } # Peace of Münster/Westphalia
 1665.9.17 = { add_claim = FRA } # Louis XIV's father-in-law, Philip IV of Spain, dies

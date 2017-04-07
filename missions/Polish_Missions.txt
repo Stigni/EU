@@ -6,6 +6,7 @@ conquer_danzig = {
 	ai_mission = yes
 	
 	allow = {
+		is_year = 1460
 		normal_or_historical_nations = yes
 		OR = {
 			tag = POL
@@ -48,7 +49,16 @@ conquer_danzig = {
 		add_claim = 43
 	}
 	abort_effect = {
-		remove_claim = 43
+		43 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		add_country_modifier = {
@@ -77,6 +87,7 @@ conquer_warmia = { #Conquer Western Prussia
 	}
 	
 	allow = {
+		is_year = 1460
 		normal_or_historical_nations = yes
 		OR = {
 			tag = POL
@@ -120,7 +131,14 @@ conquer_warmia = { #Conquer Western Prussia
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -249,7 +267,16 @@ conquer_smolensk = {
 		add_claim = 293
 	}
 	abort_effect = {
-		remove_claim = 293
+		293 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = conquered_smolensk
@@ -304,7 +331,16 @@ retake_podolia = {
 		add_claim = 281
 	}
 	abort_effect = {
-		remove_claim = 281
+		281 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = retook_podolia
@@ -522,7 +558,16 @@ retake_minsk = {
 		add_claim = 276
 	}
 	abort_effect = {
-		remove_claim = 276
+		276 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = retook_minsk
@@ -581,7 +626,14 @@ defend_polands_western_border = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -651,7 +703,14 @@ defend_polands_northern_border = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {

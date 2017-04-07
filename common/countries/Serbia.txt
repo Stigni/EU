@@ -81,16 +81,18 @@ monarch_names = {
 	"Branka #0" = -1
 	"Jagoda #0" = -1
 	"Mirna #0" = -1
+	"Jelena #0" = -1
+	"Ljubica #0" = -1
 }
 
 leader_names = {
 	Bojovic
 	Drascovic
 	Gingic
-	Hracovec
+	Hracovec Jovanovic
 	Lazarevic
 	Marcovic
-	Obilic
+	Obilic Obrenovic
 	Pertrovic Postek Putnik
 }
 

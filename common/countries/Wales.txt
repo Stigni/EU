@@ -95,6 +95,7 @@ monarch_names = {
 	"Ceridwen #0" = -1
 	"Elain #0" = -1
 	"Gwenyth #0" = -1
+	"Megan #0" = -1
 }
 
 ship_names = {

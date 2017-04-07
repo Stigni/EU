@@ -75,7 +75,7 @@ country_event = {
 	option = {
 		name = league_events.1.b
 		ai_chance = { factor = 0 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	
 }
@@ -445,7 +445,7 @@ country_event = {
 	option = {
 		name = league_events.8.b
 		ai_chance = { factor = 0 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 

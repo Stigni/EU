@@ -29,6 +29,7 @@ estate_nobles =
 	trigger = {	
 		NOT = { government = merchant_republic }
 		NOT = { government = native_council }
+		NOT = { government = trading_city }
 		NOT = { government = siberian_native_council }
 		NOT = { government = revolutionary_republic }
 		NOT = { government = revolutionary_empire }
@@ -131,6 +132,23 @@ estate_nobles =
 		loyalty = -20
 	}
 	
+	loyalty_modifier = {
+		desc = EST_VAL_NOBLE_CONSORT
+		trigger = {
+			has_dlc = "Rights of Man"
+			has_consort = yes
+			is_origin_of_consort = ROOT
+		}
+		loyalty = 5
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_JUNKERS
+		trigger = {
+			government = prussian_monarchy
+		}
+		loyalty = 10
+	}
 	
 	loyalty_modifier = {
 		desc = EST_VAL_VERY_LEGITIMATE
@@ -382,7 +400,7 @@ estate_nobles =
 		years_between_use = 15
 		
 		potential = {
-			has_idea_group = exploration_ideas
+			has_idea = quest_for_the_new_world
 			NOT = { has_disaster = estate_church_disaster }
 			NOT = { has_disaster = estate_burghers_disaster }
 		}

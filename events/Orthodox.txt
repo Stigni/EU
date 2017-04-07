@@ -10,7 +10,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion = orthodox
+		uses_patriarch_authority = yes
 	}
 	
 	mean_time_to_happen = {
@@ -38,7 +38,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion = orthodox
+		uses_patriarch_authority = yes
 	}
 	
 	mean_time_to_happen = {
@@ -52,7 +52,7 @@ country_event = {
 	option = {
 		name = orthodox_flavor.2.b
 		add_patriarch_authority = -0.05
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -66,7 +66,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion = orthodox
+		uses_patriarch_authority = yes
 		is_lesser_in_union = no
 	}
 	
@@ -97,7 +97,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion = orthodox
+		uses_patriarch_authority = yes
 	}
 	
 	mean_time_to_happen = {
@@ -125,7 +125,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		religion = orthodox
+		uses_patriarch_authority = yes
 	}
 	
 	mean_time_to_happen = {

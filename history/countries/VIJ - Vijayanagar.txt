@@ -133,9 +133,11 @@ capital = 541	# Vijayanagara
 		DIP = 3
 		MIL = 4
 	}
-}
-
-1424.1.1 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = tolerant_personality
+	#add_ruler_personality = righteous_personality
+	add_heir_personality = naive_personality
 	heir = {
 		name = "Mallikarjuna"
 		monarch_name = "Mallikarjuna"
@@ -157,6 +159,8 @@ capital = 541	# Vijayanagara
 		DIP = 2
 		MIL = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality
 }
 
 1447.1.1 = {
@@ -183,6 +187,8 @@ capital = 541	# Vijayanagara
 		DIP = 3
 		MIL = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = drunkard_personality
 }
 
 1465.1.1 = {
@@ -219,6 +225,10 @@ capital = 541	# Vijayanagara
 		leader = {	name = "Saluva Narisimha"	type = general	rank = 0	fire = 2	shock = 3	manuever = 2 siege = 1 }
 	}
 	primary_culture = telegu
+	add_accepted_culture = kannada
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
+	add_ruler_personality = strict_personality
 }
 
 1486.1.1 = {
@@ -301,6 +311,10 @@ capital = 541	# Vijayanagara
 		DIP = 4
 		MIL = 6
 	}
+	clear_scripted_personalities = yes #"brightest mind of his time"
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = strict_personality
+	add_ruler_personality = silver_tongue_personality
 }
 
 1509.8.9 = {
@@ -326,6 +340,8 @@ capital = 541	# Vijayanagara
 		MIL = 3
 	}
 	leader = {	name = "Rama Raya Aravidu"	type = general	rank = 0	fire = 2	shock = 2	siege = 1	manuever = 2 death_date = 1549.1.1 }
+	clear_scripted_personalities = yes
+	add_ruler_personality = drunkard_personality
 }
 
 1529.12.21 = {
@@ -384,6 +400,9 @@ capital = 541	# Vijayanagara
 		DIP = 6
 		MIL = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
+	add_ruler_personality = fierce_negotiator_personality
 }
 
 1549.1.1 = {
@@ -410,6 +429,8 @@ capital = 541	# Vijayanagara
 		DIP = 2
 		MIL = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality
 }
 
 1565.1.26 = {
@@ -434,6 +455,8 @@ capital = 541	# Vijayanagara
 		DIP = 0
 		MIL = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality #"Not entirely without achievement"
 }
 
 1571.1.1 = {

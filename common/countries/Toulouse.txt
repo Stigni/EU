@@ -39,7 +39,6 @@ monarch_names = {
 	"Simon #1" = 20
 	"Guillaume #4" = 15
 	"Bertrand #1" = 15
-	"Jeanne #0" = -15
 	"Bernard #2" = 10
 	"Pons #2" = 10
 	"Odo #1" = 10
@@ -74,6 +73,10 @@ monarch_names = {
 	"Sauson #0" = 0
 	"Valeray #0" = 0
 	"Xavier #0" = 0
+	
+	"Jeanne #0" = -15
+	"Marie #0" = -1
+	"Philippa #0" = -1
 }
 
 leader_names = {
@@ -98,16 +101,16 @@ leader_names = {
 }
 
 ship_names = {
-	Aucamville Auzeville-Tolosane Balma Beauzelle "Le Busca"
-	Blagnac Capitole Castanet-Tolosan Colomiers Cugneaux
-	"Ile du Ramier" Labège Labruc "La Cépière" "La Pasquière"
-	Laran Lardenne Launaguet "Le Grand Rond" "Le Mirail"
-	"Les Demoiselles" "Les Minimes" "Les Paradous" L'Union Marquisat
-	Montaudran Montrabé Muret Pechbonnieu Pechbusque
-	"Pech David" Pibrac Plaisance-du-Touch "Portet sur Garonne" Quint-Fonsegrives
-	"Patte d'Oie" Ramonville-St-Agne Rangueil Tournefeuille "Saint Aubin"
-	"St Geniès Bellevue" "St Martin du Touch" "Saint Orens" "Saint Sernin" "Saint Simon"
-	Salvetat-St-Gilles Soulé "Stade Toulousain" "Vieille Toulouse" "Villeneuve-Tolosane"
+	"l'Aucamville" "l'Auzeville-Tolosane" "le Balma" "le Beauzelle" "le Busca"
+	"le Blagnac" "le Capitole" "le Castanet-Tolosan" "le Colomiers" "le Cugneaux"
+	"l'Île-du-Ramier" "le Labège" "le Labruc" "le La Cépière" "le La Pasquière"
+	"le Laran" "le Lardenne" "le Launaguet" "le Grand-Rond" "le Mirail"
+	"le Demoiselles" "le Minimes" "le Paradous" "l'Union" "le Marquisat"
+	"le Montaudran" "le Montrabé" "le Muret" "le Pechbonnieu" "le Pechbusque"
+	"le Pech David" "le Pibrac" "le Plaisance-du-Touch" "le Portet-sur-Garonne" "le Quint-Fonsegrives"
+	"la Patte-d'Oie" "le Ramonville-Saintt-Agne" "le Rangueil" "le Tournefeuille" "le Saint-Aubin"
+	"le Saint-Geniès-Bellevue" "le Saint-Martin-du-Touch" "le Saint-Orens" "le Saint-Sernin" "le Saint-Simon"
+	"le Salvetat-Saint-Gilles" "le Soulé" "le Stade-Toulousain" "la Vieille-Toulouse" "le Villeneuve-Tolosane"
 }
 
 army_names = {

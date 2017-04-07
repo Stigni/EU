@@ -68,6 +68,9 @@ monarch_names = {
 	
 	"Cinta #0" = -1
 	"Wangi #0" = -1
+	"Nukila #0" = -1
+	"Bayanullah  #0" = -1
+	"Boki Tanjung  #0" = -1
 }
 
 ship_names = {

@@ -39,7 +39,16 @@ conquer_orkney = {
 		add_claim = 369
 	}
 	abort_effect = {
-		remove_claim = 369
+		369 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		369 = {
@@ -93,7 +102,14 @@ scottish_control = {
 	}
 	abort_effect = {
 		northern_england_area = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -166,6 +182,9 @@ scottish_defense = {
 			highlands_area = {
 				limit = {
 					owned_by = ENG
+					NOT = {
+						is_permanent_claim = ROOT
+					}
 				}
 				remove_claim = ROOT
 			}
@@ -177,6 +196,9 @@ scottish_defense = {
 			lowlands_area = {
 				limit = {
 					owned_by = ENG
+					NOT = {
+						is_permanent_claim = ROOT
+					}
 				}
 				remove_claim = ROOT
 			}

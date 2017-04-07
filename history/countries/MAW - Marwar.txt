@@ -86,6 +86,9 @@ capital = 514	# Jodphur
 		MIL = 4
 		ADM = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = righteous_personality
+	add_ruler_personality = tactical_genius_personality
 }
 
 1440.1.1 = {

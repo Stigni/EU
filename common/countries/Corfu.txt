@@ -79,6 +79,7 @@ monarch_names = {
 	"Xenia #0" = -1
 	"Zinovia #0" = -1
 	"Melina #0" = -1
+	"Petronella #0" = -1
 }
 
 leader_names = { 

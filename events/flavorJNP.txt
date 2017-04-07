@@ -70,7 +70,7 @@ country_event = {
 	}
 	option = {
 		name = "flavor_jnp.2.b"	#No, it is too dangerous to rely on these Hindus.
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_piety = 0.1
 	}
 }
@@ -213,7 +213,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_jnp.6.b"	#Let us allow the pilgrims free passage.
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 

@@ -14,6 +14,8 @@ christian = {
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 57 }
 
+	
+	
 	catholic = {
 		color = { 0.8 0.8 0 }
 		icon = 1
@@ -202,16 +204,16 @@ christian = {
 				}
 			}	
 			sanction_commercial_monopoly = {
-				cost = 100
+				cost = 50
 				potential = {
 					NOT = { tag = PAP }
 				}
 				allow = {
 					NOT = { war_with = PAP }
-					NOT = { mercantilism = 1 }
+					NOT = { mercantilism = 100 }
 				}
 				effect = {
-					add_mercantilism = 0.01
+					add_mercantilism = 1
 				}
 				ai_will_do = {
 					factor = 1
@@ -669,7 +671,6 @@ christian = {
 	
 	coptic = {
 	
-		# TODO:
 		flags_with_emblem_percentage = 20
 		flag_emblem_index_range = { 1 4 }
 
@@ -677,7 +678,7 @@ christian = {
 		icon = 14
 		country = {
 			defensiveness = 0.1
-			tolerance_own = 2
+			tolerance_own = 1
 		}
 		country_as_secondary = {
 			siege_ability = 0.1
@@ -689,7 +690,17 @@ christian = {
 		
 		heretic = { ZAMIKAELITES STEPHANITES EUSTATHIANS }
 		
-		misguided_heretic = yes		# Other christians hate them less (?)
+		misguided_heretic = yes
+		
+		holy_sites = { 358 1227 2313 1234 419 }
+		
+		blessings = {
+			legitimize_government
+			encourage_warriors_of_the_faith
+			send_monks_to_establish_monasteries
+			promote_territorial_rights
+			will_of_the_martyrs
+		}
 	}
 	
 	crusade_name = CRUSADE
@@ -998,6 +1009,8 @@ pagan = {
 			tolerance_own = 2
 			loot_amount = 0.25
 		}
+
+		fetishist_cult = yes
 		heretic = { GOAT_SKULL }
 	}
 	totemism = {

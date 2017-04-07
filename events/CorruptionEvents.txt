@@ -243,7 +243,7 @@ country_event = {
 
 
 # [Root.Culture.GetName] Community Distrusts Us
-province_event = {
+country_event = {
 	id = corruption_event.9
 	title = "corruption_event.9.t"
 	desc = "corruption_event.9.d"
@@ -251,38 +251,45 @@ province_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_owner_culture = no
+				}
+				save_event_target_as = culture_province
+			}
+		}
+	}
+	
 	trigger = {
 		corruption = 25
 		NOT = { corruption = 50 }
-		has_owner_culture = no
-		owner = {
-			any_known_country = {
-				primary_culture = ROOT
-				NOT = { corruption = 0.25 }
-			}
+		any_known_country = {
+			primary_culture = ROOT
+			NOT = { corruption = 0.25 }
+		}
+		any_owned_province = {
+			has_owner_culture = no
 		}
 	}
 	
 	# Apologize, promise to improve
 	option = {
 		name = "corruption_event.9.a"
-		owner = {
-			add_prestige = -10
-			every_owned_province = {
-				limit = { culture = ROOT }
-				add_local_autonomy = 10
-			}
+		add_prestige = -10
+		every_owned_province = {
+			limit = { culture = ROOT }
+			add_local_autonomy = 10
 		}
 	}
 
 	# Reject it as prejudice
 	option = {
 		name = "corruption_event.9.b"
-		owner = {
-			every_owned_province = {
-				limit = { culture = ROOT }
-				add_unrest = 4
-			}
+		every_owned_province = {
+			limit = { culture = ROOT }
+			add_unrest = 4
 		}
 	}
 }
@@ -322,7 +329,7 @@ country_event = {
 ### Severe Corruption, Bad Events
 
 # [Root.GetTradeGoodsName] "Disappearing"
-province_event = {
+country_event = {
 	id = corruption_event.11
 	title = "corruption_event.11.t"
 	desc = "corruption_event.11.d"
@@ -334,15 +341,21 @@ province_event = {
 		corruption = 50
 	}
 	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = trade_goods_province
+			}
+		}
+	}
+	
 	option = {
 		name = "corruption_event.11.a"
-		owner = {
-			every_owned_province = {
-				limit = { trade_goods = ROOT }
-				add_province_modifier = {
-					name = "embezzled_goods"
-					duration = 3650
-				}
+		every_owned_province = {
+			limit = { trade_goods = ROOT }
+			add_province_modifier = {
+				name = "embezzled_goods"
+				duration = 3650
 			}
 		}
 	}

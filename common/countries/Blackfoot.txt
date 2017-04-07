@@ -47,6 +47,9 @@ monarch_names = {
 	
 	"Axkahpsaypi #0" = -1
 	"Namopisi #0" = -1
+	"Ehyophsta #0" = -1
+	"Misstanstur #0" = -1
+	"Tahtahtoisneh #0" = -1
 }
 
 leader_names = {

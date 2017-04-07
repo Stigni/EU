@@ -49,6 +49,16 @@ monarch_names = {
 	"Dervis #0" = 10 
 	
 	"Havva #0" = -1
+	"Fatma #0" = -1
+	"Havva #0" = -1
+	"Gamze #0" = -1
+	"Hanife #0" = -1
+	"Melis #0" = -1
+	"Rabia #0" = -1
+	"Safiye #0" = -1
+	"Umut #0" = -1
+	"Ziynet #0" = -1
+	"Zübeyde #0" = -1
 }
 
 leader_names = {

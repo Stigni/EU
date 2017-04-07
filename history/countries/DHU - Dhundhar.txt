@@ -78,6 +78,8 @@ fixed_capital = 519 # Cannot move capital away from this province & no power cos
 		MIL = 3
 		ADM = 2
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = zealot_personality
 }
 
 1467.1.1 = {
@@ -88,6 +90,8 @@ fixed_capital = 519 # Cannot move capital away from this province & no power cos
 		MIL = 3
 		ADM = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
 }
 
 1467.1.1 = {
@@ -111,6 +115,17 @@ fixed_capital = 519 # Cannot move capital away from this province & no power cos
 		DIP = 0
 		MIL = 3
 		ADM = 1
+	}
+	queen = {
+		country_of_origin = JAN
+		name = "Bala Bai"
+		dynasty = "Rathore"
+		birth_date = 1480.1.1
+		death_date = 1530.1.1
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 2
 	}
 }
 
@@ -266,7 +281,7 @@ fixed_capital = 519 # Cannot move capital away from this province & no power cos
 		birth_date = 1540.5.9
 		death_date = 1614.7.6
 		claim = 95
-		DIP = 1
+		DIP = 2
 		MIL = 4
 		ADM = 3
 	}
@@ -276,7 +291,7 @@ fixed_capital = 519 # Cannot move capital away from this province & no power cos
 	monarch = {
 		name = "Man Singh I"
 		dynasty = "Kachhawa"
-		DIP = 1
+		DIP = 2
 		MIL = 4
 		ADM = 3
 	}
@@ -293,6 +308,20 @@ fixed_capital = 519 # Cannot move capital away from this province & no power cos
 		DIP = 0
 		MIL = 3
 		ADM = 1
+	}
+}
+
+1593.5.9 = {
+	queen = {
+		country_of_origin = GRJ
+		name = "Akshaya Devi"
+		dynasty = "Bhuyavamsha"
+		birth_date = 1560.1.1
+		death_date = 1630.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 
@@ -399,6 +428,20 @@ fixed_capital = 519 # Cannot move capital away from this province & no power cos
 		DIP = 3
 		MIL = 4
 		ADM = 5
+	}
+}
+
+1701.3.1 = {
+	queen = {
+		country_of_origin = MER
+		name = "Chandra Kunwar"
+		dynasty = "Sisodiya"
+		birth_date = 1680.1.1
+		death_date = 1750.1.1
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 2
 	}
 }
 

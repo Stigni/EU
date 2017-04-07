@@ -73,6 +73,9 @@ monarch_names = {
 	
 	"Amna #0" = -1
 	"Ghadir #0" = -1
+	"Sogolon #0" = -1
+	"Pog-wabga #0" = -1
+	"Yennenga #0" = -1
 }
 
 leader_names = {

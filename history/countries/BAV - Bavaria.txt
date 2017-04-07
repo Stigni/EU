@@ -39,7 +39,20 @@ capital = 65	# München!
 		adm = 2	
 		dip = 2
 		mil = 2
-    	}
+    }
+	queen = {
+		country_of_origin = BRU
+		name = "Anna"
+		dynasty = "von Welf"
+		birth_date = 1414.1.1
+		death_date = 1474.4.14
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = benevolent_personality
 }
 
 1438.7.3 = {
@@ -117,6 +130,20 @@ capital = 65	# München!
 	}
 }
 
+1487.1.2 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Kunigunde"
+		dynasty = "von Habsburg"
+		birth_date = 1465.3.16
+		death_date = 1520.8.6
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
 1493.11.13 = {
 	heir = {
 		name = "Wilhelm"
@@ -139,6 +166,20 @@ capital = 65	# München!
 		adm = 4
 		dip = 1
 		mil = 2
+	}
+}
+
+1522.10.5 = {
+	queen = {
+		country_of_origin = BAD
+		name = "Kunigunde"
+		dynasty = "von Zähringen"
+		birth_date = 1507.6.25
+		death_date = 1580.11.16
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
 	}
 }
 
@@ -166,6 +207,17 @@ capital = 65	# München!
 		dip = 3	
 		mil = 0
 	}
+	queen = {
+		country_of_origin = HAB
+		name = "Anna"
+		dynasty = "von Habsburg"
+		birth_date = 1528.7.7
+		death_date = 1590.10.16
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
 }
 
 1550.3.7 = {
@@ -189,6 +241,18 @@ capital = 65	# München!
 		birth_date = 1548.9.29
 		adm = 4	
 		dip = 1	
+		mil = 1
+	}
+
+	queen = {
+		country_of_origin = LOR
+		name = "Renata"
+		dynasty = "de Vaudémont"
+		birth_date = 1544.4.20
+		death_date = 1602.5.22
+		female = yes
+		adm = 3
+		dip = 3
 		mil = 1
 	}
 }
@@ -216,6 +280,17 @@ capital = 65	# München!
 		dip = 4	
 		mil = 0
 	}
+	queen = {
+		country_of_origin = LOR
+		name = "Elisabeth"
+		dynasty = "de Vaudémont"
+		birth_date = 1574.10.9
+		death_date = 1635.1.4
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
 }
 
 1609.1.1   = { leader = { name = "Tilly"	type = general	rank = 0	fire = 4	shock = 4	manuever = 3	siege = 1	death_date = 1632.4.30 } }
@@ -229,6 +304,20 @@ capital = 65	# München!
 1630.1.1   = { leader = { name = "Mercy"	type = general	rank = 0	fire = 3	shock = 3	manuever = 1	siege = 0	death_date = 1645.8.3 } }
 
 1635.1.1   = { leader = { name = "von Werth"	type = general	rank = 1	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1652.9.16 } }
+
+1635.7.15 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Maria Anna"
+		dynasty = "von Habsburg"
+		birth_date = 1610.3.13
+		death_date = 1665.9.25
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
 
 1636.10.31 = {
 	heir = {
@@ -259,6 +348,18 @@ capital = 65	# München!
 		dip = 2
 		mil = 3
 	}
+
+	queen = {
+		country_of_origin = SAV
+		name = "Henrietta Adelaide"
+		dynasty = "di Savoia"
+		birth_date = 1636.11.6
+		death_date = 1676.6.13
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 1
+	}
 }
 
 1662.7.11 = {
@@ -288,6 +389,35 @@ capital = 65	# München!
 	}
 }
 
+1685.7.15 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Maria Antonia"
+		dynasty = "von Habsburg"
+		birth_date = 1669.1.18
+		death_date = 1692.12.24
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1695.1.2 = {
+	queen = {
+		country_of_origin = PLC
+		name = "Theresa Kunigunde"
+		dynasty = "Sobieski"
+		birth_date = 1669.1.18
+		death_date = 1692.12.24
+		female = yes
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+
 1697.8.6 = {
 	heir = {
 		name = "Karl Albrecht"
@@ -313,6 +443,17 @@ capital = 65	# München!
 		dynasty = "von Wittelsbach"
 		birth_date = 1697.8.6
 		adm = 2
+		dip = 3
+		mil = 1
+	}
+	queen = {
+		country_of_origin = HAB
+		name = "Maria Amalia"
+		dynasty = "von Habsburg"
+		birth_date = 1701.10.22
+		death_date = 1756.12.11
+		female = yes
+		adm = 3
 		dip = 3
 		mil = 1
 	}
@@ -353,10 +494,24 @@ capital = 65	# München!
 		dynasty = "von Wittelsbach"
 		birth_date = 1724.12.11
 		death_date = 1799.2.16
-		claim = 95
+		claim = 65
 		adm = 3
 		dip = 4
 		mil = 0
+	}
+}
+
+1747.7.9 = {
+	queen = {
+		country_of_origin = SAX
+		name = "Maria Anna"
+		dynasty = "von Wettin"
+		birth_date = 1728.8.29
+		death_date = 1797.2.17
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
 	}
 }
 
@@ -368,6 +523,17 @@ capital = 65	# München!
 		adm = 3
 		dip = 4
 		mil = 0
+	}
+	queen = {
+		country_of_origin = PAL
+		name = "Elisabeth Auguste"
+		dynasty = "von Wittelsbach"
+		birth_date = 1721.1.17
+		death_date = 1794.8.17
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
 	}
 }
 
@@ -385,6 +551,20 @@ capital = 65	# München!
 	}
 }
 
+1795.2.15 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Maria Leopoldina"
+		dynasty = "von Habsburg"
+		birth_date = 1776.12.10
+		death_date = 1848.6.23
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
 1799.2.15  = {
 	monarch = {
 		name = "Maximilian IV Joseph"
@@ -394,9 +574,17 @@ capital = 65	# München!
 		dip = 5
 		mil = 2
 	}
-}
-
-1799.2.15 = {
+	queen = {
+		country_of_origin = BAD
+		name = "Karoline"
+		dynasty = "von Zähringen"
+		birth_date = 1776.6.13
+		death_date = 1841.11.13
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
 	heir = {
 		name = "Ludwig"
 		monarch_name = "Ludwig I"
@@ -408,6 +596,7 @@ capital = 65	# München!
 		dip = 3
 		mil = 2
 	}
+
 }
 
 1806.7.12 = { elector = no government_rank = 1 } # The HRE is formally abolished #government_rank = 2

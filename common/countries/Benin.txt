@@ -71,6 +71,12 @@ monarch_names = {
 	
 	"Akugbe #0" = -1
 	"iEsosa #0" = -1
+	"Sehdong Hongbe #0" = -1
+	"Nawi #0" = -1
+	"Afyavi #0" = -1
+	"Ahwlikponuwa #0" = -1
+	"Asiba #0" = -1
+	"Ayàbà #0" = -1
 }
 
 leader_names = {

@@ -854,7 +854,7 @@ spices = {
 coffee = {
 	color = { 0.22 0.15 0.09 }
 	modifier = {
-		defensiveness = 0.1
+		global_institution_spread = 0.05
 	}
 	chance = {
 		factor = 15
@@ -1097,7 +1097,7 @@ cocoa = {
 silk = {
 	color = { 0.72 0.10 0.10 }
 	modifier = {
-		accepted_culture_threshold = -0.1
+		num_accepted_cultures = 1
 	}
 	chance = {
 		factor = 10

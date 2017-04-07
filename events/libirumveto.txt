@@ -48,7 +48,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6501"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = "decentralization_modifier"
 			duration = 3650

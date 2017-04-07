@@ -58,7 +58,6 @@ monarch_names = {
 	"Richard #3" = 5
 	"Charles #2" = 5
 	"James #2" = 5
-	"Margaret #0" = -5
 	"Adam #0" = 0
 	"Alexander #0" = 0
 	"Ambrose #0" = 0
@@ -91,6 +90,11 @@ monarch_names = {
 	"Sydney #0" = 0
 	"Thomas #0" = 0
 	"Winston #0" = 0
+	"Jane #0" = -1
+	"Margaret #0" = -5
+	"Victoria #0" = -1
+	"Mary #0" = -5
+	"Elisabeth #0" = -5
 }
 
 leader_names = {

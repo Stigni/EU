@@ -42,7 +42,6 @@ monarch_names = {
 	"Federigo #0" = 20
 	"Ladislao #0" = 20
 	"Gioachino #0" = 20
-	"Giovanna #1" = -15
 	"Achille #0" = 15
 	"Gabriele #0" = 15
 	"Alberto #0" = 10
@@ -72,18 +71,28 @@ monarch_names = {
 	"Roberto #0" = 0
 	"Salvatore #0" = 0
 	"Vicenzo #0" = 0
+	
+	"Giovanna #1" = -15
+	"Julia #0" = -5
+	"Carlotta #0" = -5
+	"Isabella #0" = -1
 }
 
 leader_names = {
-	"degli Albizzi" Allori "d'Appiani d'Aragona" "d'Asburgo"
-	Barberini Bartolini Benciveni Bizzelli Boncompagni
-	Botta-Adorno Buontalenti Buti Butteri "di Campofregoso"
-	Cercignani Chiastavelli Chigi Corsini Cybo-Malaspina
-	"di Farnese" Gori Grimaldi "Grimaldi di Busca" Lanzi Lessi
-	Ludovisi Malaspina Mancinetti "de' Medici" "del Moro" Nasini
-	Orsini Piccolomini Pico Pierallini Pieroni Piombante Pontelli
-	Rivani Rospigliosi "del Rosso" Savaranola Soderini Tempesta
-	Terreni Tonelli Traballesi Ulivelli Vasari Zucchi
+	Pignatelli
+	Carafa
+	Caracciolo
+	Sanseverino
+	Acquaviva
+	Orsini
+	Marzano
+	Pignatelli
+	"d'Avalos"
+	Tocco
+	Mazziotti
+	Coscia
+	Mazzaccara
+	Rizzo
 }
 
 ship_names = {

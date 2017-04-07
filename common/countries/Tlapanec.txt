@@ -68,6 +68,9 @@ monarch_names = {
 	"Zyrx #0" = 0
 	"Zyanya #0" = -1
 	"Nayeli #0" = -1
+	"Donaji #0" = -1
+	"Yej Susen #0" = -1
+	"Itan De Hüi #0" = -1
 }
 
 leader_names = {

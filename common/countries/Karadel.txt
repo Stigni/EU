@@ -86,6 +86,8 @@ monarch_names = {
 	
 	"Orqina #0" = -1
 	"Sakina #0" = -1
+	"Turakina #0" = -1
+	"Ruqia #0" = -1
 }
 
 leader_names = { 

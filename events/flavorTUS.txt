@@ -145,7 +145,7 @@ country_event = {
 			}
 		}
 		add_legitimacy = 10
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		remove_country_modifier = emperor_condemns_tuscany
 	}
 }
@@ -324,7 +324,7 @@ country_event = {
 
 	option = {
 		name = flavor_tus.6.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_adm_power = 50
 		add_legitimacy = 10
 	}
@@ -395,10 +395,7 @@ country_event = {
 			tag = TUS
 			tag = LAN
 		}
-		is_year = 1580
-		NOT = {
-			is_year = 1610
-		}
+		has_institution = printing_press
 		is_at_war = no
 	}
 	mean_time_to_happen = {
@@ -469,7 +466,7 @@ country_event = {
 		modifier = {
 			factor = 0.7
 			any_country = {
-				region = italy_region
+				capital_scope = { region = italy_region }
 				OR = {
 					FRA = {
 						war_with = PREV
@@ -688,7 +685,7 @@ country_event = {
 	#God cares for his flock!
 	option = {
 		name = flavor_tus.13.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 

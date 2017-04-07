@@ -52,8 +52,8 @@ fixed_capital = 1857 # Cannot move capital away from this province & no power co
 		death_date = 1463.7.16
 		claim = 95
 		adm = 2
-		dip = 0
-		mil = 2
+		dip = 3
+		mil = 3
 	}
 }
 
@@ -62,10 +62,13 @@ fixed_capital = 1857 # Cannot move capital away from this province & no power co
 		name = "Bernhard II"
 		dynasty = "Askanier"
 		birth_date = 1385.1.1
-		dip = 2
-		mil = 0
+		dip = 3
+		mil = 3
 		adm = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = inspiring_leader_personality
+	add_ruler_personality = benevolent_personality
 }
 
 1439.7.18 = {

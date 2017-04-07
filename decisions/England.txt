@@ -76,7 +76,7 @@ country_decisions = {
 					add_opinion = { who = ENG modifier = opinion_designated_staple_port }
 				}
 			}
-			add_mercantilism = 0.10
+			add_mercantilism = 10
 			add_adm_power = -40
 			87 = {
 				add_province_modifier = {

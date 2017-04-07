@@ -4,6 +4,9 @@
 #
 # Uses all 'modifiers' possible that are exported as a Modifier.
 
+# Note that ai_will_do calculates a priority.
+# An advisor may be chosen over another if its random priority exceeds it. RandomPriority(advisor) := rand[1, 2[ * Priority(advisor).
+
 
 ######################################################
 # Administrative Advisors
@@ -19,6 +22,10 @@ philosopher = {
 	chance = {
 		factor = 1
 	}
+	
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 ######################################################
@@ -30,7 +37,11 @@ natural_scientist = {
 	
 	chance = {
 		factor = 1
-	}	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 ######################################################
@@ -42,7 +53,11 @@ artist = {
 	
 	chance = {
 		factor = 1
-	}	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 ######################################################
@@ -54,7 +69,11 @@ treasurer = {
 	
 	chance = {
 		factor = 1
-	}	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 ######################################################
@@ -68,6 +87,10 @@ theologian = {
 		factor = 1
 
 	}
+	
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 ######################################################
@@ -79,7 +102,11 @@ master_of_mint = {
 	
 	chance = {
 		factor = 1
-	}	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 ######################################################
@@ -90,6 +117,10 @@ inquisitor = {
 	global_missionary_strength = 0.02
 	
 	chance = {
+		factor = 1
+	}
+	
+	ai_will_do = {
 		factor = 1
 	}
 }
@@ -108,7 +139,11 @@ statesman = {
 	
 	chance = {
 		factor = 1
-	}	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 ######################################################
@@ -126,6 +161,10 @@ naval_reformer = {
 			has_port = no
 		}
 	}
+	
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 ######################################################
@@ -138,6 +177,10 @@ trader = {
 	chance = {
 		factor = 1
 	}
+	
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 ######################################################
@@ -148,6 +191,10 @@ spymaster = {
 	spy_offence = 0.25
 	
 	chance = {
+		factor = 1
+	}
+	
+	ai_will_do = {
 		factor = 1
 	}
 }
@@ -170,6 +217,10 @@ colonial_governor = {
 			owner = { is_colonial_nation = yes }
 		}
 	}
+	
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 ######################################################
@@ -180,6 +231,10 @@ diplomat = {
 	relations_decay_of_me = 0.2
 	
 	chance = {
+		factor = 1
+	}
+	
+	ai_will_do = {
 		factor = 1
 	}
 }
@@ -198,6 +253,10 @@ navigator = {
 			owner = { NOT = { num_of_colonists = 1 } }
 		}
 	}
+	
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 
@@ -214,7 +273,11 @@ army_reformer = {
 	
 	chance = {
 		factor = 1
-	}	
+	}
+	
+	ai_will_do = {
+		factor = 1.8
+	}
 }
 
 ######################################################
@@ -226,6 +289,10 @@ army_organiser = {
 	
 	chance = {
 		factor = 1
+	}
+	
+	ai_will_do = {
+		factor = 1.5
 	}
 }
 
@@ -239,6 +306,10 @@ commandant = {
 	chance = {
 		factor = 1
 	}
+	
+	ai_will_do = {
+		factor = 1.8
+	}
 }
 
 ######################################################
@@ -250,6 +321,14 @@ quartermaster = {
 
 	chance = {
 		factor = 1
+	}
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.4
+			is_at_war = yes
+		}
 	}
 }
 
@@ -263,6 +342,14 @@ recruitmaster = {
 	chance = {
 		factor = 1
 	}
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			is_at_war = no
+		}
+	}
 }
 
 ######################################################
@@ -275,7 +362,11 @@ fortification_expert = {
 	chance = {
 		factor = 1
 		
-	}	
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
 }
 
 ######################################################
@@ -287,5 +378,13 @@ grand_captain = {
 		
 	chance = {
 		factor = 1
+	}
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			is_at_war = no
+		}
 	}
 }

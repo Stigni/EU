@@ -42,6 +42,8 @@ monarch_names = {
 	
 	"Achieng #0" = -1
 	"Nuru #0" = -1
+	"Mthaniya #0" = -1
+	"Nandi #0" = -1
 }
 
 leader_names = {

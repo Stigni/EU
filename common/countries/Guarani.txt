@@ -63,6 +63,8 @@ monarch_names = {
 	"Ygary #0" = 10
 	
 	"Porasy #0" = -1
+	"Ka'a Jarýi #0" = -1
+	"Irupé #0" = -1
 }
 
  

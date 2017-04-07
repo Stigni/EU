@@ -49,7 +49,7 @@ country_event = {
 	}
 	option = {		# Let it be
 		name = "flavor_fra.EVTOPTB9100"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -109,7 +109,7 @@ country_event = {
 
 	option = {			# Time to build a stronger nation
 		name = "flavor_fra.EVTOPTA3104"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_adm_power = 50
 	}
 }
@@ -127,6 +127,11 @@ country_event = {
 		tag = FRA
 		NOT = { is_year = 1550 }
 		NOT = { senior_union_with = NAP }
+		NOT = { exists = PRO }
+		OR = {
+			dynasty = "de Valois"
+			dynasty = "de Anjou"
+		}
 		any_country = {
 			OR = {
 				tag = NAP
@@ -244,7 +249,7 @@ country_event = {
 	}
 	option = {		# Do not mess with the Guilds
 		name = "flavor_fra.EVTOPTB3106"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	option = {		# Give more control to the Guilds
 		name = "flavor_fra.EVTOPTC3106"
@@ -740,7 +745,7 @@ country_event = {
 	}
 	option = {		# Such a project will not benefit us
 		name = "flavor_fra.EVTOPTB3125"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -856,7 +861,7 @@ country_event = {
 	
 	option = {		# Expel the Traitors
 		name = "flavor_fra.EVTOPTA3128"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		if = {
 			limit = {
 				any_owned_province = {
@@ -1210,7 +1215,7 @@ country_event = {
 	}
 	option = {		# Do not introduce it
 		name = "flavor_fra.EVTOPTC3139"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -1247,7 +1252,7 @@ country_event = {
 	}
 	option = {		# Don't Let him Reform
 		name = "flavor_fra.EVTOPTB3141"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -1277,7 +1282,7 @@ country_event = {
 
 	option = {		# Remove him from his post
 		name = "flavor_fra.EVTOPTA3142"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	option ={		# Encourage his excellent work
 		name = "flavor_fra.EVTOPTB3142"
@@ -1462,7 +1467,7 @@ country_event = {
 
 	option = {		# Excellent
 		name = "EXCELLENT"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = 5
 	}
 }
