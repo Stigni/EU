@@ -103,3 +103,8 @@
  pagan_conversion_to_judaism_desc:0 "Les communautés juives du pays poussent l'État à adopter leur religion."
  pagan_conversion_to_judaism_tooltip:0 "[Root.GetName] va adopter en tant que nouvelle religion officielle la foi juive, que pratique déjà une partie de la population."
  abolished_slavery_act_tooltip:0 "Toutes les provinces possédées par [Root.GetName] vont cesser de produire des esclaves."
+ forming_spain_diplomatically_tooltip:0 "[Root.GetName] est suzerain ou partenaire majeur dans la relation de vassalité ou dans l'union personnelle entre la Castille et l'Aragon."
+ tatar_nation_title:0 "Reformer la Horde d'or"
+ tatar_nation_desc:0 "Il y a des siècles de cela, notre Grand Père a uni nos ancêtres dans leur pays. À sa mort, ses fils se sont disputés, déchirant son puissant empire en de nombreux royaumes de moindre rang, aussi petits et faibles qu'indignes de son héritage. Les vestiges éparpillés se retrouvent aujourd'hui dans toutes les steppes, semant l'effroi dans le cœur de leurs ennemis, tout comme la Grande armée des Mongols le faisait autrefois.\nMais maintenant, un peuple de valeur, fier de son passé, a recommencé de parcourir les steppes ! Même si nous nous inclinons devant un dieu nouveau, le sang de Gengis Khan coule toujours dans nos veines. Nous sommes la Horde d'or, et nous allons reprendre ce qui est nôtre !"
+ accept_rhodians_and_other_greeks_title:0 "Faire entrer les Rhodiens et les Grecs"
+ accept_rhodians_and_other_greeks_desc:0 "Face à la progression de l'infidèle, nous ne pouvons nous permettre de mettre à l'écart les Rhodiens et les autres Grecs de nos territoires. Tous ceux qui le peuvent doivent servir au sein de notre ordre."

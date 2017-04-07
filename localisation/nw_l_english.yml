@@ -244,5 +244,6 @@
  ADM_SCORE_OCCUPATION:0 "Occupation: §R$VAL$§!\n"
  MIL_SCORE_EXHAUSTION:0 "War exhaustion: §R$VAL$§!\n"
  DIP_SCORE_WARSCORE:0 "Losing Wars: §R$VAL$§!\n"
+ MIL_SCORE_MAIN_FORT:0 "Fort Maintenance: $VAL$\n"
  ENVOY_DIPLOMATING_IMPROVING_RELATION_DONE:0 "This relation can be improved by $OPINION|+$ more, estimated to be done $DATE|Y$."
  CHECK_ALL_DLC:0 "Select / Unselect All"

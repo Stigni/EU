@@ -262,14 +262,16 @@ conquer_neighbour = {
 		add_claim = FROM
 	}
 	abort_effect = {
-		every_target_province = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = FROM
+		owner = {
+			every_target_province = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = FROM
+						}
 					}
+					remove_claim = FROM
 				}
-				remove_claim = FROM
 			}
 		}
 	}

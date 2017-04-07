@@ -261,6 +261,7 @@ defend_denmark = {
 		NOT = { has_country_flag = defended_denmark_flag }
 		is_subject = no
 		denmark_area = { owned_by = SWE }
+		jutland_area = { owned_by = SWE }
 	}
 	abort = {
 		is_subject = yes
@@ -268,6 +269,7 @@ defend_denmark = {
 	success = {
 		NOT = { war_with = SWE }
 		NOT = { denmark_area = { owned_by = SWE } }
+		NOT = { jutland_area = { owned_by = SWE } }
 	}
 	chance = {
 		factor = 3000

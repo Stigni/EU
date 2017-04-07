@@ -277,6 +277,7 @@ connect_the_prussian_lands = {
 		OR = {
 			area = west_prussia_area
 			area = east_prussia_area
+			area = pomerelia_area
 		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
@@ -301,6 +302,10 @@ connect_the_prussian_lands = {
 			NOT = { owner = { alliance_with = ROOT } }
 		}
 		east_prussia_area = {
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+		}
+		pomerelia_area = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
 		}
@@ -716,6 +721,7 @@ prussia_partitions_poland = {
 		}
 		OR = {
 			area = west_prussia_area
+			area = pomerelia_area
 			area = east_prussia_area
 			area = wielkopolska_area
 		}
@@ -736,6 +742,7 @@ prussia_partitions_poland = {
 					OR = {
 						area = east_prussia_area
 						area = west_prussia_area
+						area = pomerelia_area
 						area = wielkopolska_area
 					}
 				}
@@ -750,6 +757,7 @@ prussia_partitions_poland = {
 						OR = {
 							area = east_prussia_area
 							area = west_prussia_area
+							area = pomerelia_area
 							area = wielkopolska_area
 						}
 					}

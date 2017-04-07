@@ -9,7 +9,7 @@
  LEDGER_TREASURY_TIP:0 "Money in the treasury: §Y$VAL$§W¤"
  LEDGER_TECHLEVELS:0 "Total number of technology levels: §Y$VAL$§W"
  LEDGER_IDEASUNLOCKED:0 "Total number of ideas unlocked: §Y$VAL$§W"
- LEDGER_TECH:0 "Technologies"
+ LEDGER_TECH:1 "Techs"
  LEDGER_PREVIOUS:0 "Previous"
  LEDGER_NEXT:0 "Next"
  LEDGER_CLOSE:0 "Close"

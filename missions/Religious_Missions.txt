@@ -69,6 +69,7 @@ convert_province_mission = {
 			num_of_missionaries = 1
 			NOT = { has_country_flag = converted_province_mission }
 		}
+		is_colony = no
 		NOT =  { religion = FROM }
 		NOT = { religion = secondary }
 		NOT = { has_province_modifier = religious_migration }

@@ -102,9 +102,7 @@ defend_korea = {
 	}
 	success = {
 		NOT = { war_with = JAP }
-		NOT = { north_korea_area = { owned_by = JAP } }
-		NOT = { central_korea_area = { owned_by = JAP } }
-		NOT = { south_korea_area = { owned_by = JAP } }
+		NOT = { korea_region = { owned_by = JAP } }
 	}
 	chance = {
 		factor = 3000
@@ -114,9 +112,7 @@ defend_korea = {
 		}	
 	}
 	effect = {
-		north_korea_area = { add_claim = ROOT }
-		central_korea_area = { add_claim = ROOT }
-		south_korea_area = { add_claim = ROOT }
+		korea_region = { add_claim = ROOT }
 	}
 }
 

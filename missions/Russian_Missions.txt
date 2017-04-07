@@ -490,10 +490,8 @@ russia_discovers_western_siberia = {
 			tag = RUS
 		}
 		num_of_colonists = 1
-		NOT = { central_siberia_area = { has_discovered =  ROOT } }
-		NOT = { ishim_area = { has_discovered =  ROOT } }
-		central_siberia_area = { range = ROOT }
-		ishim_area = { range = ROOT }
+		NOT = { west_siberia_region = { has_discovered =  ROOT } }
+		west_siberia_region = { range = ROOT }
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		NOT = { last_mission = russia_discovers_western_siberia }
 	}
@@ -501,10 +499,7 @@ russia_discovers_western_siberia = {
 		NOT = { num_of_colonists = 1 }
 	}
 	success = {
-		OR = {
-			central_siberia_area = { has_discovered =  ROOT }
-			ishim_area = { has_discovered =  ROOT }
-		}
+		west_siberia_region = { has_discovered =  ROOT }
 	}
 	chance = {
 		factor = 1000
@@ -544,8 +539,7 @@ russian_colony_in_west_siberia = {
 			is_empty = yes
 		}
 		num_of_colonists = 1
-		NOT = { ishim_area = { owned_by = ROOT } }
-		NOT = { central_siberia_area = { owned_by = ROOT } }
+		NOT = { west_siberia_region = { owned_by = ROOT } }
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		NOT = { last_mission = russian_colony_in_west_siberia }
 	}
@@ -553,23 +547,15 @@ russian_colony_in_west_siberia = {
 		OR = {
 			NOT = { num_of_colonists = 1 }
 			AND = {
-				NOT = { ishim_area = { is_empty = yes } }
-				NOT = { central_siberia_area = { is_empty = yes } }
-				NOT = { ishim_area = { owned_by = ROOT } }
-				NOT = { central_siberia_area = { owned_by = ROOT } }
+				NOT = { west_siberia_region = { is_empty = yes } }
+				NOT = { west_siberia_region = { owned_by = ROOT } }
 			}	
 		}
 	}
 	success = {
-		OR = {
-			ishim_area = {
-				owned_by = ROOT
-				colonysize = 400
-			}
-			central_siberia_area = {
-				owned_by = ROOT
-				colonysize = 400
-			}
+		west_siberia_region = {
+			owned_by = ROOT
+			colonysize = 400
 		}
 	}
 	chance = {
@@ -1624,6 +1610,7 @@ conquer_nogai_area = {
 	target_provinces = {
 		OR = {
 			area = nogai_area
+			area = lower_yik_area
 			area = bashkiria_area
 			area = saratov_area
 		}
@@ -1646,6 +1633,14 @@ conquer_nogai_area = {
 		owns = 1082 #Kazan
 		OR = {
 			nogai_area = {
+				owner = {
+					is_neighbor_of = ROOT
+					NOT = { num_of_cities = ROOT }
+					NOT = { is_subject_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			lower_yik_area = {
 				owner = {
 					is_neighbor_of = ROOT
 					NOT = { num_of_cities = ROOT }

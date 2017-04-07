@@ -141,7 +141,7 @@ befriend_rival_rival = {
 			NOT = { 
 				FROM = { has_country_flag = befriended_rival_rival_mission }
 			}
-			FROM {
+			FROM = {
 				had_country_flag = { flag = befriended_rival_rival_mission days = 3650 }
 			}
 		}

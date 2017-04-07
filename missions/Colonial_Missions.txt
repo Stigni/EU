@@ -230,7 +230,7 @@ establish_carribean_colony = {
 		}
 		NOT = {
 			colonial_the_carribean = {
-				owned_by =  ROOT
+				owned_by = ROOT
 			}
 		}
 		NOT = {

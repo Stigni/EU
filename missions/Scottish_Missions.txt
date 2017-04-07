@@ -9,6 +9,7 @@ conquer_orkney = {
 		normal_or_historical_nations = yes
 		tag = SCO
 		is_subject = no
+		is_year = 1480
 		369 = {
 			NOT = {
 				owned_by = ROOT

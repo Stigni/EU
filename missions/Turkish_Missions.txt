@@ -1169,7 +1169,11 @@ conquer_hedjaz = {
 	ai_mission = yes
 	
 	target_provinces = {
-		area = hejaz_area
+		OR = {
+			area = hejaz_area
+			area = tabuk_area
+			area = sarat_area
+		}
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
@@ -1180,6 +1184,16 @@ conquer_hedjaz = {
 		tag = TUR
 		owns = 358
 		hejaz_area = {
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+		}
+		tabuk_area = {
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+		}
+		sarat_area = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
@@ -1548,6 +1562,7 @@ conquer_tunisia = {
 	target_provinces = {
 		OR = {
 			area = tunisia_area
+			area = djerba_area
 			area = kabylia_area
 		}
 		owner = {

@@ -133,7 +133,7 @@
  DIPLO_NAVY_SIZE:0 "Fuerza naval $WHO$:"
  DIPLO_HALF_LAND_SIZE:0 "$COUNTRY01$ tiene la mitad de provincias comparado con $COUNTRY02$:"
  DIPLO_LESSER_IN_VASSAL:0 "$WHO$ es un vasallo:"
- DIPLO_PLAYER_AI_PREFS_KEEP_ALLY:0 "$WHO$ - La opción de IA §Gmantener alianza§! está §Gactivada§!:"
+ DIPLO_PLAYER_AI_PREFS_KEEP_ALLY:0 "$WHO$ El ajuste de IA §GMantener aliados y rivales§! está §Gactivado§!: "
  DIPLO_PLAYER_AI_PREFS_FIGHT_TO_DEATH:0 "$WHO$ - La opción de IA §GBuscar rápido la paz§! está §Gactivada§!:"
  DIPLO_VASSAL_UNDER:0 "$VASSAL$ es un vasallo de $LEADER$:"
  DIPLO_UNION_UNDER:0 "$UNDER$ es en una unión personal con $LEADER$:"
@@ -310,3 +310,4 @@
  DIPLO_LOAN_TOO_SMALL:0 "El préstamo es demasiado pequeño para molestarse: "
  DIPLO_ALREADY_HAVE_LOAN:0 "$LENDER$ ya ha prestado dinero a $WHO$."
  DIPLO_TRUST_WITH:0 "Confianza en $WHO$: "
+ DIPLO_TRADING_CITY:0 "Es la ciudad comercial: "

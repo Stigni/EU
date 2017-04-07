@@ -1294,6 +1294,7 @@ portugal_establish_naval_base_zanzibar = {
 		OR = {
 			area = central_swahili_coast_area
 			area = northern_swahili_coast_area
+			area = mombasa_area
 		}
 		has_port = yes
 	}
@@ -1313,6 +1314,7 @@ portugal_establish_naval_base_zanzibar = {
 				OR = {
 					area = central_swahili_coast_area
 					area = northern_swahili_coast_area
+					area = mombasa_area
 				}
 			}
 		}

@@ -428,6 +428,8 @@
  take_province_nationalist_desc:0 "War goal is to take a province."
  take_capital_imperial:0 "Take the capital"
  take_capital_imperial_desc:0 "War goal is to take the capital."
+ take_capital_mayan:0 "Take the capital"
+ take_capital_mayan_desc:0 "War goal is to take the capital."
  take_province_revolutionary:0 "Take a province in this revolution"
  take_province_revolutionary_desc:0 "War goal is to take a province."
  take_colony:0 "Take a colony"

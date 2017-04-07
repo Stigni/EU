@@ -233,7 +233,7 @@
  DIPLO_NOT_WANT_PROVINCES:0 "Ne souhaite aucune des provinces de $WHO$ que $CALLER$ n'a pas revendiquées : "
  DIPLO_WANTS_PROVINCES:0 "A promis des provinces $WHO$s : "
  DIPLO_PREPARED_FOR_WAR:0 "Préparé à la guerre : "
- DIPLO_PLAYER_AI_PREFS_KEEP_ALLY:0 "$WHO$ a §Gactivé§! le paramètre d'IA « §Gmaintien des alliances§! » : "
+ DIPLO_PLAYER_AI_PREFS_KEEP_ALLY:0 "$WHO$ a §Gactivé§! le paramètre d'I.A. « §Gmaintenir les alliés et rivaux§! » : "
  DIPLO_UNION_WAR_GREAT_POWER:0 "$WHO$ ne veut pas que $TARGET$ passe sous une union dirigée par $THEM$ : "
  DIPLO_PLAYER_AI_PREFS_FIGHT_TO_DEATH:0 "$WHO$ a §Gactivé§! le paramètre d'IA « §Grecherche de paix rapide§! » : "
  DIPLO_VASSAL_UNDER:0 "$VASSAL$ est une dépendance de $LEADER$ : "
@@ -346,3 +346,4 @@
  DIPLO_NO_ACCESS_TO_CAPITAL:0 "Aucun accès terrestre à la capitale : "
  DIPLO_CONDOTTIERI_MALUS:0 "Ne croit pas que nous allons nous impliquer : "
  DIPLO_VASSAL_WAR:0 "Le régime politique autorise les guerres de ses vassaux : "
+ DIPLO_TRADING_CITY:0 "Est une cité marchande : "

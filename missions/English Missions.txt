@@ -785,10 +785,7 @@ establish_trade_in_american_cot = {
 		}
 		NOT = {
 			1500 = {		# Chesapeake Bay
-				OR = {
-					is_strongest_trade_power = ENG
-					is_strongest_trade_power = GBR
-				}
+				is_strongest_trade_power = ROOT
 			}
 		}
 		NOT = { has_country_flag = establish_trade_in_american_cot }
@@ -797,10 +794,7 @@ establish_trade_in_american_cot = {
 	}
 	success = {
 		1500 = {		# Chesapeake Bay
-			OR = {
-				is_strongest_trade_power = ENG
-				is_strongest_trade_power = GBR
-			}
+			is_strongest_trade_power = ROOT
 		}
 	}
 	chance = {
@@ -835,27 +829,18 @@ monopolize_british_cot = {
 		}
 		NOT = {
 			236 = {
-				OR = {
-					is_strongest_trade_power = ENG
-					is_strongest_trade_power = GBR
-				}
+				is_strongest_trade_power = ROOT
 			}
 		}
-		OR = {
-			ENG = { controls = 236 }
-			GBR = { controls = 236 }
-		}
+		ROOT = { controls = 236 }
 		NOT = { has_country_flag = monopolize_british_cot }
 	}
 	abort = {
 	}
 	success = {
 		236 = {
-			OR = {
-				is_strongest_trade_power = ENG
-				is_strongest_trade_power = GBR
-			}
-		}	
+			is_strongest_trade_power = ROOT
+		}
 	}
 	chance = {
 		factor = 2000

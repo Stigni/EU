@@ -43,7 +43,7 @@ recover_abysmal_prestige = {
 		}		
 	}
 	effect = {
-		add_stability = 1
+		add_adm_power = 100
 		set_country_flag = recovered_abysmal_prestige
 	}
 	
@@ -59,10 +59,7 @@ improve_prestige = {
 	allow = {
 		prestige = -25
 		NOT = { prestige = 25 }
-		OR = {
-			NOT = { has_country_flag = improved_prestige_mission }
-			had_country_flag = { flag = improved_prestige_mission days = 3650 }
-		}
+		NOT = { has_country_flag = improved_prestige_mission }
 	}
 	abort = {
 	}
@@ -96,7 +93,7 @@ improve_prestige = {
 		}
 	}
 	effect = {
-		add_stability = 1
+		add_adm_power = 100
 		set_country_flag = improved_prestige_mission
 	}
 }

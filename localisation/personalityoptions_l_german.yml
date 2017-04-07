@@ -475,7 +475,7 @@
  DEATH_RANDOM_8:0 "[Root.Monarch.GetSheHeCap] starb an Herzversagen."
  DEATH_RANDOM_9:0 "[Root.Monarch.GetSheHeCap] starb an der Ruhr."
  leader_death_reason_accident:0 "[GetSheHeCap] starb bei einem Unfall, während [GetSheHeCap] [GetHerHis]e Truppen durch eine Übung führte."
- leader_death_reason_age:0 "Während [GetSheHeCap] im Angesicht der Gefahr niemals zurückwich, so war es doch das hohe Alter, das [GetHerHim] letztendlich holte."
+ leader_death_reason_age:0 "Während [GetSheHe] im Angesicht der Gefahr niemals zurückwich, so war es doch das hohe Alter, das [GetHerHim] letztendlich holte."
  leader_death_reason_disease:0 "[GetSheHeCap] starb an einer Krankheit, die [GetSheHeCap] sich im Feld geholt hatte."
  leader_death_reason_siege:0 "[GetSheHeCap] wurde von einem Irrläufer getroffen, als [GetSheHeCap] die Laufgräben während einer Belagerung inspizierte."
  leader_death_reason_naval_battle:0 "[GetSheHeCap] ging mit [GetHerHis]em Schiff unter, wie es sich für einen wahren Kapitän gehört."

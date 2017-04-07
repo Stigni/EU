@@ -9,7 +9,7 @@
  LEDGER_TREASURY_TIP:0 "Argent dans les coffres : §Y$VAL$§W¤"
  LEDGER_TECHLEVELS:0 "Nombre de technologies découvertes : §Y$VAL$§W"
  LEDGER_IDEASUNLOCKED:0 "Nombre de doctrines adoptées : §Y$VAL$§W"
- LEDGER_TECH:0 "Technologies"
+ LEDGER_TECH:0 "Techn."
  LEDGER_PREVIOUS:0 "Précédent"
  LEDGER_NEXT:0 "Suivant"
  LEDGER_CLOSE:0 "Fermer"

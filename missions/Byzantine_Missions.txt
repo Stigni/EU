@@ -252,10 +252,6 @@ convert_asia_minor = {
 				owned_by = ROOT
 				NOT = { religion = orthodox }
 			}
-			eastern_aegean_area = {
-				owned_by = ROOT
-				NOT = { religion = orthodox }
-			}
 		}
 	}
 	abort = {
@@ -264,7 +260,6 @@ convert_asia_minor = {
 			AND = {
 				NOT = { aydin_area = { owned_by = ROOT } }
 				NOT = { hudavendigar_area = { owned_by = ROOT } }
-				NOT = { eastern_aegean_area = { owned_by = ROOT } }
 			}
 		}
 	}
@@ -275,11 +270,6 @@ convert_asia_minor = {
 			religion = orthodox
 		}
 		hudavendigar_area = {
-			type = all
-			owned_by = ROOT
-			religion = orthodox
-		}
-		eastern_aegean_area = {
 			type = all
 			owned_by = ROOT
 			religion = orthodox

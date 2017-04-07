@@ -148,7 +148,7 @@
  LEDGER_TREASURY_TIP:0 "Dinero en el arca: §Y$VAL$§W¤"
  LEDGER_TECHLEVELS:0 "Número total de niveles de tecnología: §Y$VAL$§W"
  LEDGER_IDEASUNLOCKED:0 "Número total de ideas desbloqueadas: §Y$VAL$§W"
- LEDGER_TECH:0 "Tecnologías"
+ LEDGER_TECH:0 "Técnico"
  LEDGER_PROVINCE_OVERVIEW:0 "Descripción de las Provincias"
  LEDGER_TRADE_RANGE:0 "Alcance de Comercio"
  LEDGER_TRADE_NODES:0 "Nodo Comercial"
